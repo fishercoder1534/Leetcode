@@ -102,11 +102,13 @@ public class CommonUtils {
 		return previous;
 	}
 
-	public static void printList(ListNode head) {
+	public static void printList(final ListNode head) {
+	    ListNode temp = head;
 		System.out.println("--------------------------------------------");
-		while (head != null) {
-			System.out.print(head.val);
-			head = head.next;
+		while (temp != null) {
+			System.out.print(temp.val);
+			temp = temp.next;
+			if(temp != null) System.out.print("->");
 		}
 		System.out.println();
 	}
