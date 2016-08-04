@@ -19,47 +19,53 @@ Follow up: Could you improve it to O(n log n) time complexity?
 Credits:
 Special thanks to @pbrother for adding this problem and creating all test cases.*/
 public class LengthIncreasingSubsequence {
+    public static void main(String...strings){
+        LengthIncreasingSubsequence test = new LengthIncreasingSubsequence();
+        int[] nums = new int[]{10, 9, 2, 5, 3, 7, 101, 18};
+//        int[] nums = new int[]{10,9,2,5,3,4};
+//        int[] nums = new int[]{1,3,6,7,9,4,10,5,6};
+//        int[] nums = new int[]{18,55,66,2,3,54};
+        System.out.println(test.lengthOfLIS(nums));
+    }
+
+    /**This is the closest I got, passed all normal cases, made it to 22/23 test cases, but got TLE, as I expected,
+     * since this algorithm runs in O(n^3) time.
+     * My idea: compute a 2D tabular: n*n.
+     * 
+     * Then miracle happens, I was about to turn to Discuss, before that, I clicked the Show Tags button, it says:
+     * Binary Search, this hints me to take a second look at my code, then I added this line:
+     * if(nums.length-i < max) return max;
+     * then it got AC'ed!
+     * This is the power of pruning! So Cool!
+     * 
+     * Also, another key was that let j start from i, not 0, we don't need to initialize the bottom left part to 1, just
+     * leave them as zero, that's fine, since we don't need to touch that part at all!
+     * This also saves time! Cool!
+     * */
     public int lengthOfLIS(int[] nums) {
-        if(nums == null || nums.length == 0) return 0;
-        
+
+        if (nums == null || nums.length == 0)
+            return 0;
+
         int[][] dp = new int[nums.length][nums.length];
         int max = 0;
-        for(int i = 0; i < nums.length; i++){
-            int currentMaxForThisRow = nums[i];
-            for(int j = 0; j < nums.length; j++){
-                if(j <= i) dp[i][j] = 1;
-                else {
-                    if(nums[j] > nums[i]) {
-                        if(nums[j] > currentMaxForThisRow) {
-                            dp[i][j] = dp[i][j-1]+1;
-                            currentMaxForThisRow = nums[j];
-                        } else {
-                            dp[i][j] = dp[i][j-1];
-                            //in this case, we need to figure out when should we update currentMaxForThisRow? 
-                            for(int k = j-1; k >= 0; k--){
-                                if(nums[k] < nums[j]){
-                                    if(dp[i][k]+1 == dp[i][j] && nums[j-1] > nums[j]){
-                                        currentMaxForThisRow = nums[j];
-                                    }
-                                    break;
-                                }
-                            }
+        for (int i = 0; i < nums.length; i++) {
+            if(nums.length-i < max) return max;
+            for (int j = i; j < nums.length; j++) {
+                if (nums[j] > nums[i]) {
+                    for (int k = j - 1; k >= i; k--) {
+                        if (nums[k] < nums[j]) {
+                            dp[i][j] = Math.max(dp[i][k] + 1, dp[i][j]);
                         }
                     }
-                    else dp[i][j] = dp[i][j-1];
-                }
+                } else
+                    dp[i][j] = 1;
                 max = Math.max(max, dp[i][j]);
             }
         }
         CommonUtils.printMatrix(dp);
         return max;
+
     }
     
-    public static void main(String...strings){
-        LengthIncreasingSubsequence test = new LengthIncreasingSubsequence();
-//        int[] nums = new int[]{10, 9, 2, 5, 3, 7, 101, 18};
-//        int[] nums = new int[]{10,9,2,5,3,4};
-        int[] nums = new int[]{1,3,6,7,9,4,10,5,6};
-        System.out.println(test.lengthOfLIS(nums));
-    }
 }
