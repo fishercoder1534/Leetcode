@@ -1,4 +1,4 @@
-package com.sun.steve.VisitorPatternExample;
+package designPatterns.visitor_pattern;
 
 public class VisitorPatternDemo {
 	public static void main(String[] args) {
