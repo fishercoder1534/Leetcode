@@ -1,4 +1,4 @@
-package learnHeadFirstDesignPatterns.chapter_3_decorator_pattern;
+package designPatterns.chapter_3_decorator_pattern;
 
 public class Mocha extends CondimentDecorator {
 

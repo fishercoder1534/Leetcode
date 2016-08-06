@@ -1,4 +1,4 @@
-package learnHeadFirstDesignPatterns.chapter_2_observer_pattern;
+package designPatterns.chapter_2_observer_pattern;
 
 public interface CoreFamily {
 	public void registerRelative(Relative relative);

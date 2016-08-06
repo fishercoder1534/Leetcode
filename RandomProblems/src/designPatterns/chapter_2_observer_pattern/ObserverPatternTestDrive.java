@@ -1,4 +1,4 @@
-package learnHeadFirstDesignPatterns.chapter_2_observer_pattern;
+package designPatterns.chapter_2_observer_pattern;
 
 /**NOTE: I didn't really implement the Observer pattern from Head First book here.
  * Just implemented the introduction part here. Could continue if interests arise in the future. - 10/04/2015*/

@@ -1,4 +1,4 @@
-package learnHeadFirstDesignPatterns.chapter_2_observer_pattern;
+package designPatterns.chapter_2_observer_pattern;
 
 public class RelativeImpl implements Relative {
 	

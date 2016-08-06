@@ -1,4 +1,4 @@
-package learnHeadFirstDesignPatterns.chapter_1_strategy_pattern;
+package designPatterns.chapter_1_strategy_pattern;
 
 public class CookNoodlesBehavior implements CookBehavior {
 
