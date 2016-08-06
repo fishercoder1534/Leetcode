@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<context:annotation-config  />
+<!-- All magic hides in the above line, it tells Spring to wire up all beans (take a look at Person class, it has three other fields that are being annotated with @Resource annotation). -->
+
+<bean id="person" class="spring_resource_annotation.Person">
+</bean>
+<bean id="home123" class="spring_resource_annotation.City">
+    <property name="cityName" value="San Jose"/>
+    <property name="area" value="NorCal"/>
+</bean>
+<bean id="wife" class="spring_resource_annotation.Wife">
+    <property name="name" value="Sophie Yan"/>
+    <property name="faith" value="Christian"/>
+</bean>
+<bean id = "careerCurrent" class="spring_resource_annotation.Career">
+    <property name="jobType" value="SDE"/>
+    <property name="jobLevel" value="4"/>
+</bean>
+<bean id="careerFuture" class="spring_resource_annotation.Career">
+    <property name="jobType" value="SDE"/>
+    <property name="jobLevel" value="5"/>
+</bean>
+
+</beans>
