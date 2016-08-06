@@ -1,4 +1,4 @@
-package learnHeadFirstJava;
+package learnHeadFirstJava.constructorChaining;
 
 
 public class Animal extends Creature {

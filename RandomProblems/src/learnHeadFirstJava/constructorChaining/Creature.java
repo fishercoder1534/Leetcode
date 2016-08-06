@@ -1,4 +1,4 @@
-package learnHeadFirstJava;
+package learnHeadFirstJava.constructorChaining;
 
 public abstract class Creature {
 
