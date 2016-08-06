@@ -21,7 +21,7 @@ Follow up: Could you improve it to O(n log n) time complexity?
 Credits:
 Special thanks to @pbrother for adding this problem and creating all test cases.*/
 public class LengthIncreasingSubsequence {
-    
+    //TODO: completely understand the following approach and study other good solutions, this is a MUST!!! LIS is a very commonly seen interview question
     public int lengthOfLIS_using_binary_search_from_discuss(int[] nums) {
         /**Java doc for this Arrays.binarySearch method:
          * int java.util.Arrays.binarySearch(int[] a, int fromIndex, int toIndex, int key)

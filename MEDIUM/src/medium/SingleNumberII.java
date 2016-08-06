@@ -17,6 +17,8 @@ Show Similar Problems
 */
 public class SingleNumberII {
 
+    //TODO: study its bit manipulation approach, this is a MUST!
+    
     public int singleNumber(int[] nums) {
         Map<Integer, Integer> map = new HashMap();
         for(int i : nums){

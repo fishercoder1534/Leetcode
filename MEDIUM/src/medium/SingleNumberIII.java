@@ -18,6 +18,9 @@ The order of the result is not important. So in the above example, [5, 3] is als
 Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 */
 public class SingleNumberIII {
+//    TODO: study its bit manipulation way, this is a MUST!
+    
+    
     //Approach 1: normal hashmap
     public int[] singleNumber(int[] nums) {
         Map<Integer, Integer> map = new HashMap();
