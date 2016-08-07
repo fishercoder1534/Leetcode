@@ -11,6 +11,19 @@ public class CommonUtils {
     private static final int DEFAULT_TREE_SIZE = 10;
     private static final int DEFAULT_UPPER_BOUND = 100;
 
+    //How to make a method generic: declare <T> in its method signature
+    public static <T> void printArray_generic_type(T[] nums) {
+        for(T i : nums){
+            System.out.print(i + ", ");
+        }
+        System.out.println();
+    }
+    
+    public static void main(String...strings){
+        Integer[] nums = new Integer[]{1,2,3,4,5};
+        printArray_generic_type(nums);
+    }
+    
     public static void printArray(int[] nums) {
         for(int i : nums){
             System.out.print(i + ", ");
