@@ -132,4 +132,12 @@ public class CommonUtils {
         System.out.println("----------------------------------------------------");
     }
 
+    public static void print(List<String> list) {
+        System.out.println("----------------------------------------------------");
+        for(String str : list){
+            System.out.print(str + ", ");
+        }
+        System.out.println();
+    }
+
 }
