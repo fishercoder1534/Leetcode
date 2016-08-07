@@ -140,4 +140,13 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static void printIntegerList(List<List<Integer>> res) {
+        for(List<Integer> list : res){
+            for(int i : list){
+                System.out.print(i + ", ");
+            }
+            System.out.println();
+        }
+    }
+
 }
