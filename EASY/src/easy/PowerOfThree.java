@@ -11,6 +11,14 @@ Could you do it without using any loop / recursion?
 */
 
 public class PowerOfThree {
+    //then I turned to the Editorial solution, it's pretty elegant to use base conversion which can be easily extended to any radix k
+    //Idea: for a number in base 10, if it's power of 10, then it must be in this format: 10, 100, 1000... with a leading one and all trailing zeros
+    //similarly, if a number is power of 3, then in its base 3 format, it must be in this format as well: 10, 100, 1000, 1000...
+    //some Java built-in function could help us along the way:
+    public boolean isPowerOfThree_base_conversion(int n){
+        return Integer.toString(n, n).matches("^10*$");
+    }
+    
     //it turns out they're using a trick to solve this question without using a loop: find the max possible integer that is a power of 3, then do modulor with this number
     public boolean isPowerOfThree_without_loop(int n) {
         return (n > 0 && 1162261467 % n == 0);
