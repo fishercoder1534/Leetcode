@@ -7,7 +7,8 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
-/**This solution get AC'ed. Although it's not really doing random 8/4/2016
+/**This solution got AC'ed. Although it's not really doing random 8/4/2016, it got rejected ever since because they added test case 
+ * to see if it's really randomized.
  * Now, they've updated the test case and also the question description: Each element must have the same probability of being returned.*/
 public class RandomizedSet {
     
@@ -46,13 +47,26 @@ public class RandomizedSet {
     
     public static void main(String...args){
         RandomizedSet_2nd_solution test = new RandomizedSet_2nd_solution();
+        
+        //test 1:
+//        System.out.println(test.remove(0));
+//        System.out.println(test.remove(0));
+//        System.out.println(test.insert(0));
+//        System.out.println(test.getRandom());
+//        System.out.println(test.remove(0));
+//        System.out.println(test.insert(0));
+        
+        //test 2:
+        System.out.println(test.insert(0));
+        System.out.println(test.insert(2));
         System.out.println(test.insert(1));
-        System.out.println(test.delete(2));
-        System.out.println(test.insert(2));
+        System.out.println(test.insert(1));
+        System.out.println(test.insert(1));
+        System.out.println(test.remove(0));
+        System.out.println(test.insert(0));
         System.out.println(test.getRandom());
-        System.out.println(test.delete(1));
-        System.out.println(test.insert(2));
-        System.out.println(test.getRandom());
+        System.out.println(test.insert(1));
+        System.out.println(test.remove(2));
     }
 }
 
@@ -64,6 +78,7 @@ public class RandomizedSet {
  * int param_3 = obj.getRandom();
  */
 
+//this is right and got AC'ed.
 class RandomizedSet_2nd_solution {
     
     Map<Integer, Integer> forwardMap;//key is auto increment index, value if the inserted val
@@ -104,7 +119,11 @@ class RandomizedSet_2nd_solution {
     /** Get a random element from the set. */
     public int getRandom() {
         int max = forwardMap.size();
-        int randomNum = random.nextInt(max) == 0 ? 1 : random.nextInt(max);
+        if(max == 1) return forwardMap.get(index-1);
+        int randomNum = random.nextInt(max);
+        while(!forwardMap.containsKey(randomNum)) {
+            randomNum = random.nextInt(max);
+        }
         return forwardMap.get(randomNum);
     }
 
