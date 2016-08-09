@@ -7,7 +7,8 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
-/**This solution get AC'ed. Although it's not really doing random*/
+/**This solution get AC'ed. Although it's not really doing random 8/4/2016
+ * Now, they've updated the test case and also the question description: Each element must have the same probability of being returned.*/
 public class RandomizedSet {
     
     Set<Integer> set;
@@ -27,7 +28,7 @@ public class RandomizedSet {
     }
     
     /** Deletes a value from the set. Returns true if the set contained the specified element. */
-    public boolean delete(int val) {
+    public boolean remove(int val) {
         return set.remove(val);
     }
     
@@ -63,8 +64,6 @@ public class RandomizedSet {
  * int param_3 = obj.getRandom();
  */
 
-/**TODO: submit this solution on OJ later, it's throwing cannot find symbol remove() method on line 16,
- * this is an OJ bug that people reported on Discuss, submit it later, see if it can get AC'ed.*/
 class RandomizedSet_2nd_solution {
     
     Map<Integer, Integer> forwardMap;//key is auto increment index, value if the inserted val
@@ -91,7 +90,7 @@ class RandomizedSet_2nd_solution {
     }
     
     /** Deletes a value from the set. Returns true if the set contained the specified element. */
-    public boolean delete(int val) {
+    public boolean remove(int val) {
         if(forwardMap.containsValue(val)){
             int key = reverseMap.get(val);
             reverseMap.remove(val);
