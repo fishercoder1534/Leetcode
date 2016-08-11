@@ -35,14 +35,12 @@ public class BinaryTreeRightSideView {
 		while(!q.isEmpty()){
 			int currentSize = q.size();
 			int i = 0;
-			for(; i < currentSize-1; i++){
-				TreeNode currentNode = q.poll();
+			TreeNode currentNode = null;
+			for(; i < currentSize; i++){
+				currentNode = q.poll();
 				if(currentNode.left != null) q.offer(currentNode.left);
 				if(currentNode.right != null) q.offer(currentNode.right);
 			}
-			TreeNode currentNode = q.poll();
-			if(currentNode.left != null) q.offer(currentNode.left);
-			if(currentNode.right != null) q.offer(currentNode.right);
 			res.add(currentNode.val);
 		}
 		return res;
