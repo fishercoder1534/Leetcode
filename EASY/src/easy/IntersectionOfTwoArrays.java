@@ -22,7 +22,28 @@ public class IntersectionOfTwoArrays {
     //then I clicked its Tags, and find it's marked with so many tags: Binary Search, HashTable, Two Pointers, Sort, now I'll try to do it one by one
     //inspired by this post: https://discuss.leetcode.com/topic/45685/three-java-solutions
 	public int[] intersection_two_pointers(int[] nums1, int[] nums2) {
-		
+		Set<Integer> set = new HashSet();
+		Arrays.sort(nums1);
+		Arrays.sort(nums2);
+		int i = 0, j = 0;
+		for(; i < nums1.length && j < nums2.length;){
+		    if(nums1[i] < nums2[j]){
+		        i++;
+		    } else if(nums1[i] > nums2[j]){
+		        j++;
+		    } else {
+		        set.add(nums1[i]);
+		        i++;
+		        j++;
+		    }
+		}
+		int[] result = new int[set.size()];
+		Iterator<Integer> it = set.iterator();
+		int k = 0;
+		while(it.hasNext()){
+		    result[k++] = it.next();
+		}
+		return result;
 	}
 	
 	public int[] intersection_binary_search(int[] nums1, int[] nums2) {
