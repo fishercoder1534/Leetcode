@@ -45,7 +45,7 @@ public class NestedInteger {
         return list;
     }
     
-    public String printNi(NestedInteger thisNi, StringBuilder sb){
+    public static String printNi(NestedInteger thisNi, StringBuilder sb){
         if(thisNi.isInteger()) {
             sb.append(thisNi.integer);
             sb.append(",");
