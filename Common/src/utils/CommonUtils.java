@@ -162,4 +162,12 @@ public class CommonUtils {
         }
     }
 
+    public static <T> void printList(List<T> list) {
+        for(T t : list){
+            System.out.print(t);
+            System.out.print(",");
+        }
+        System.out.println();
+    }
+
 }
