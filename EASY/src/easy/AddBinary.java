@@ -88,6 +88,7 @@ public class AddBinary {
 //        String b = "1";
 //        String a = "100";
 //        String b = "110010";
+        
         String a = "101111";
         String b = "10";
         System.out.println(test.addBinary(a, b));
