@@ -1,5 +1,6 @@
 package _20160820_1st_contest;
 
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -67,14 +68,16 @@ public class LexicographicalNumbers {
 //        List<Integer> result = lexicalOrder_LTE_by_10458(58);
 //        List<Integer> result = lexicalOrder(120);//right  
 //        List<Integer> result = lexicalOrder(1200);
-        List<Integer> result = lexicalOrder(10);
-//        List<Integer> result = lexicalOrder_LTE_by_10458(10458);
+//        List<Integer> result = lexicalOrder(10);
+//        List<Integer> result = lexicalOrder(5000000);
+//        List<Integer> result = lexicalOrder_LTE_by_10458(50000);//this can finish in 183 ms
+        List<Integer> result = lexicalOrder_LTE_by_10458(500000);
 //        List<Integer> result = lexicalOrder_LTE_by_10458(14959);
         long lEndTime = new Date().getTime();
         long difference = lEndTime - lStartTime;
         System.out.println("Elapsed milliseconds: " + difference);
         System.out.println("result size is: " + result.size());
-        CommonUtils.printList(result);
+//        CommonUtils.printList(result);
   }
 
     /**The most naive way is to generate this list, sort it using a customized comparator and then return it.
