@@ -8,8 +8,9 @@ import utils.CommonUtils;
 public class Subsets {
 
     public static void main(String...strings){
-        int[] nums = new int[]{1,2,3};
-        List<List<Integer>> result = subsets(nums);
+//        int[] nums = new int[]{1,2,3};
+        int[] nums = new int[]{1,2,2};
+        List<List<Integer>> result = subsets_backtracking(nums);
         CommonUtils.printIntegerList(result);
     }
     
@@ -29,5 +30,23 @@ public class Subsets {
         }
         return result;
     }
+    
+    /**this post: https://discuss.leetcode.com/topic/46159/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning
+     * is really cool!*/
+    public static List<List<Integer>> subsets_backtracking(int[] nums) {
+        List<List<Integer>> result = new ArrayList();
+        backtracking(result, new ArrayList<>(), nums, 0);
+        return result;
+    }
 
+    private static void backtracking(List<List<Integer>> result, List<Integer> temp, int[] nums, int start) {
+        //ATTN: you'll have to make a new list here before entering the for loop
+        result.add(new ArrayList(temp));
+        for(int i = start; i < nums.length; i++){
+            if(i != start && nums[i] == nums[i-1]) continue;//add this line here to skip duplicates for Subsets II
+            temp.add(nums[i]);
+            backtracking(result, temp, nums, i+1);
+            temp.remove(temp.size()-1);
+        }
+    }
 }
