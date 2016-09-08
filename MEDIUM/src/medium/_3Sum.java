@@ -19,7 +19,7 @@ public class _3Sum {
                 list.add(nums[mid]);
                 list.add(nums[right]);
                 
-                //move left
+                //move left forward to get all possible combinations
             } else if(sum > 0){
                 right = mid;
             } else {
