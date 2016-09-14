@@ -6,6 +6,8 @@ public class PalindromePartitioningII {
     //cut[i] stands for the minimum number of cut needed to cut [0, i] into palindromes
     //we initiazlie cut[i] with its max possible value which is i, this is because a single char is naturally a palindrome, so, we'll cut this string into all single-char substrings, which is the max cuts needed
     
+    //dp[j][i] == true stands for s.substring(j,i) is a palindrome
+    
     public int minCut(String s) {
         int n = s.length();
         char[] c = s.toCharArray();
