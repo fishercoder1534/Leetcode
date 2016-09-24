@@ -144,6 +144,19 @@ public class CommonUtils {
         }
         System.out.println("----------------------------------------------------");
     }
+    
+    public static void printMatrixGeneric(boolean[][] matrix) {
+
+        System.out.println("Matrix is: ");
+        for(boolean[] row : matrix){
+            for(boolean t : row){
+                System.out.print(t + "\t");
+            }
+            System.out.println();
+        }
+        System.out.println("----------------------------------------------------");
+    
+    }
 
     public static void print(List<String> list) {
         System.out.println("----------------------------------------------------");
