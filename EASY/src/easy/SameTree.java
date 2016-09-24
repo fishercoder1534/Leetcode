@@ -15,7 +15,6 @@ public class SameTree {
 	//recursion idea flows out naturally.
 	public boolean isSameTree(TreeNode p, TreeNode q) {
 		if(p == null || q == null) return p == q;
-		if(p.val != q.val) return false;
-		return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+		return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
 	}
 }
