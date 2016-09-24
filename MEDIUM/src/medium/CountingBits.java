@@ -27,7 +27,21 @@ Or does the odd/even status of the number help you in calculating the number of 
 *
 */
 public class CountingBits {
-    //TODO: follow its hint to solve it using DP
+    private class DP_Solution{
+        //lixx2100's post is cool:https://discuss.leetcode.com/topic/40162/three-line-java-solution
+        //An easy recurrence for this problem is f[i] = f[i / 2] + i % 2
+        //and then we'll use bit manipulation to express the above recursion function
+        // right shift by 1 means to divide by 2
+        //AND with 1 means to modulo 2
+        //this is so cool!
+        public int[] countBits(int num) {
+            int[] ones = new int[num+1];
+            for(int i = 1; i <= num; i++){
+                ones[i] = ones[i >> 1] + (i&1);
+            }
+            return ones;
+        }
+    }
     
     
     //use the most regular method to get it AC'ed first
@@ -50,7 +64,7 @@ public class CountingBits {
     
     public static void main(String...strings){
         CountingBits test = new CountingBits();
-        int num = 5;
+        int num = 15;
         int[] ones = test.countBits(num);
         CommonUtils.printArray(ones);
     }
