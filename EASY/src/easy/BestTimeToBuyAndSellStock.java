@@ -43,19 +43,16 @@ public class BestTimeToBuyAndSellStock {
         System.out.println(test.maxProfit(prices));
     }
     
-    public int maxProfit_attemp1(int[] prices) {
-        if(prices == null || prices.length < 2) return 0;
-        int minBuy = prices[0], maxSell = prices[1], maxProfit = 0;
+
+    /**Pretty straightforward, sell before you buy, keep a global maxProfit variable, update it along the way if necessary.*/
+    public int maxProfit_20160924(int[] prices) {
+        if(prices == null || prices.length == 0 || prices.length < 2) return 0;
+        int minBuy = prices[0];
+        int maxSell = prices[1];
+        int maxProfit = (maxSell - minBuy) > 0 ? (maxSell - minBuy) : 0;
         for(int i = 1; i < prices.length; i++){
-            if(maxSell > minBuy){
-                maxProfit = Math.max(maxProfit, maxSell-minBuy);
-            }
-            if(prices[i] < minBuy){
-                minBuy = prices[i];
-            }
-            if(prices[i] > maxSell){
-                maxSell = prices[i];
-            }
+            minBuy = Math.min(minBuy, prices[i]);
+            maxProfit = Math.max(maxProfit, prices[i] - minBuy);
         }
         return maxProfit;
     }
