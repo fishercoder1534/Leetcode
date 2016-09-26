@@ -14,10 +14,23 @@ public class AddBinary {
     //Tricks and things learned that could be learned:
     //1. use StringBuilder.reverse() function! Nice!
     //2. if a numeric number is represented/stored in String, how to get its value: use Character.getNumericValue(s.charAt(i))
-    //3. directly adding/subtracting chars will end up working with their ASCII numbers, e.g. chars[0] = 'a', chars[1] = 'b', then chars[0] + chars[1] will become 195 
+    //3. directly adding/subtracting chars will end up working with their ASCII numbers, e.g. chars[0] = 'a', chars[1] = 'b', then chars[0] + chars[1] will become 195
+    public String addBinary(String a, String b){
+        int carry = 0, i = a.length()-1, j = b.length()-1;
+        StringBuilder sb = new StringBuilder();
+        while(i >= 0 || j >= 0){
+            int sum = carry;
+            if(i >= 0) sum += a.charAt(i--) - '0';
+            if(j >= 0) sum += b.charAt(j--) - '0';
+            sb.append(sum%2);
+            carry = sum/2;
+        }
+        if(carry != 0) sb.append(carry);
+        return sb.reverse().toString();
+    }
     
     //my original lengthy but AC'ed solution
-    public String addBinary(String a, String b) {
+    public String addBinary_my_original_accepted_but_lengthy_solution(String a, String b) {
         char[] longer = (a.length() >= b.length()) ? a.toCharArray() : b.toCharArray();
         char[] shorter = (a.length() < b.length()) ? a.toCharArray() : b.toCharArray();
         //at the maximum, the result length will be Math.max(a.length, b.length)+1;
