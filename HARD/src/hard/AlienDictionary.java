@@ -12,17 +12,13 @@ public class AlienDictionary {
  * And all code on the Discuss board fail by this test case.*/
     public static String alienOrder(String[] words) {
         Set<String> orders = new HashSet();
-        Set<Character> orderChar = new HashSet();
         for(int i = 0; i < words.length-1; i++){
             for(int j = 0; j < Math.min(words[i].length(), words[i+1].length());j++){
                 if(words[i].charAt(j) != words[i+1].charAt(j)){
                     String order = "" + words[i].charAt(j) + words[i+1].charAt(j);
                     String reverseOrder = "" + words[i+1].charAt(j) + words[i].charAt(j);
                     if(!orders.contains(order)) {
-                        orders.add(order);
-                        orderChar.add(words[i].charAt(j));
-                        orderChar.add(words[i+1].charAt(j));
-                    }
+                        orders.add(order);                    }
                     if(orders.contains(reverseOrder)) return "";
                     break;
                 }
@@ -36,10 +32,6 @@ public class AlienDictionary {
             for(char c : cs){
                 appearedLetters.add(c);
             }
-        }
-
-        for(char c : appearedLetters){
-            if(!orderChar.contains(c)) return "";
         }
 
         int[] indegree = new int[26];
