@@ -9,7 +9,7 @@ public class GraphValidTree {
 
     public boolean validTree(int n, int[][] edges){
         int[] nums = new int[n];
-        Arrays.fill(nums, -1);
+        for(int i =0; i < n; i++) nums[i] = i;
 
         for(int i = 0; i < edges.length; i++){
             int x = find(nums, edges[i][0]);
@@ -25,7 +25,7 @@ public class GraphValidTree {
     }
 
     int find(int[] nums, int i){
-        if(nums[i] == -1) return i;
+        if(nums[i] == i) return i;
         return find(nums, nums[i]);
     }
 }
