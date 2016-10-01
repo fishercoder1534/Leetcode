@@ -58,4 +58,32 @@ public class LongestConsecutiveSequence {
             return max;
         }
     }
+
+    class Solution_using_HashSet{
+    //inspired by this solution: https://discuss.leetcode.com/topic/25493/simple-fast-java-solution-using-set
+        public int longestConsecutive(int[] nums) {
+            if(nums == null || nums.length == 0) return 0;
+
+            Set<Integer> set = new HashSet();
+            for(int i : nums) set.add(i);
+            int max = 1;
+
+            for(int num : nums){
+                if(set.remove(num)){
+                    int val = num;
+                    int count = 1;
+                    while(set.remove(val-1)) val--;//we find all numbers that are smaller than num and remove them from the set
+                    count += num - val;
+
+                    val = num;
+                    while(set.remove(val+1)) val++;//then we find all numbers that are bigger than num and also remove them from the set
+                    count += val - num;
+
+                    max = Math.max(max, count);
+                }
+            }
+            return max;
+        }
+
+    }
 }
