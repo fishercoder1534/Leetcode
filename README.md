@@ -1,2 +1,4 @@
 # fishercoderLeetcode
-|410 |[Split Array Largest Sum][410_t]|\[ [Bisect + Greedy][410] \]|
+|  #  |      Title     |      Solutions
+|-----|----------------|-----------------
+|2|[Add Two Numbers][AddTwoNumbers]|\[[Solution][AddTwoNumbers]\]
