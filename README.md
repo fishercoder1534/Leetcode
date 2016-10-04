@@ -2,6 +2,7 @@
 |  #  |      Title     |      Solutions   | Time  | Space  | Difficulty | Tag | Notes
 |-----|----------------|------------------|-------|--------|------------|-----|------
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../blob/master/EASY/src/easy/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
+|139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](../../blob/master/MEDIUM/src/medium/WordBreak.java)| O(n^2)|O(n) | Medium| DP
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph/)|[Solution](../../blob/master/MEDIUM/src/medium/CloneGraph.java)| O(n)|O(n) | Medium| HashMap, BFS 
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../../blob/master/MEDIUM/src/medium/DecodeWays.java)| O(n)|O(n) | Medium| DP
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[Solution](../../blob/master/HARD/src/hard/MinimumWindowSubstring.java)|O(n)|O(k)|Hard|Two Pointers
