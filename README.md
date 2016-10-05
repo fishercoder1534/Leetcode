@@ -1,6 +1,6 @@
 # fishercoderLeetcode
-|  #  |      Title     |      Solutions   | Time  | Space  | Difficulty | Tag | Notes
-|-----|----------------|------------------|-------|--------|------------|-----|------
+|  #  |      Title               |         Solutions   | Time  | Space  | Difficulty | Tag | Notes
+|-----|--------------------------|---------------------|-------|--------|------------|-----|------
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../blob/master/EASY/src/easy/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../../blob/master/MEDIUM/src/medium/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](../../blob/master/HARD/src/hard/WordBreakII.java)| ? |O(n^2) | Hard| Backtracking/DFS
