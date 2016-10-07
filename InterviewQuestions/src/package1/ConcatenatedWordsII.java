@@ -14,6 +14,12 @@ import java.util.List;
 import java.util.Set;
 
 public class ConcatenatedWordsII {
+    /**The 2nd version of solution has these optimizations:
+
+1. It uses a Trie data structure which is a best fit for a problem domain like this, it saves a lot of memory space: instead of using a HashSet, Trie could save all words with the same prefix into the same place. This same location advantage also speeds up the loop up process when searching a particular word/substring.
+2. I implemented a remove() and undoRemove() method to mark one word off and on instead of creating a new copy of a HashSet to check every word. This is also a huge performance boost.
+
+This is why it turns a 12 minutes run to 800 ms.*/
     
     public static void main(String...args){
         try {
