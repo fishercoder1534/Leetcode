@@ -7,6 +7,7 @@
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../../blob/master/EASY/src/easy/MoveZeroes.java)| O(n)|O(1) | Easy| 
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../blob/master/EASY/src/easy/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../../blob/master/MEDIUM/src/medium/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
+|200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../../blob/master/MEDIUM/src/medium/NumberOfIslandsUnionFind.java) [DFS](../../blob/master/MEDIUM/src/medium/NumberofIslandsDFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](../../blob/master/HARD/src/hard/WordBreakII.java)| ? |O(n^2) | Hard| Backtracking/DFS
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](../../blob/master/MEDIUM/src/medium/WordBreak.java)| O(n^2)|O(n) | Medium| DP
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph/)|[Solution](../../blob/master/MEDIUM/src/medium/CloneGraph.java)| O(n)|O(n) | Medium| HashMap, BFS 
