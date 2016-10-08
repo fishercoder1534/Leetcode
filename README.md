@@ -13,10 +13,11 @@
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Solution](../../blob/master/MEDIUM/src/medium/PopulatingNextRightPointersinEachNode.java)| O(n)|O(1) | Medium| BFS
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../../blob/master/MEDIUM/src/medium/DecodeWays.java)| O(n)|O(n) | Medium| DP
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[Solution](../../blob/master/HARD/src/hard/MinimumWindowSubstring.java)|O(n)|O(k)|Hard|Two Pointers
+|67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../../blob/master/EASY/src/easy/AddBinary.java)|O(n)|O(1)|Easy|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](../../blob/master/HARD/src/hard/MergeIntervals.java)|O(n*logn)|O(1)|Hard|
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../../blob/master/HARD/src/hard/MergeKSortedList.java)|O(n*logk)|O(logk)|Hard|Heap
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../../blob/master/MEDIUM/src/medium/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
-|15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../../blob/master/MEDIUM/src/medium/_3Sum.java)|O(n^2)|O(1)|Medium|Two Pointers
+|15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../../blob/master/MEDIUM/src/medium/_3Sum.java)|O(nlogn)|O(1)|Medium|Two Pointers
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[Solution](../../blob/master/HARD/src/hard/RegularExpressionMatching.java)|O(m*n)|O(m*n)|Hard|DP
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../../blob/master/EASY/src/easy/StringToInteger.java)
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Solution](../../blob/master/EASY/src/easy/ReverseInteger.java)
