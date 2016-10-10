@@ -1,8 +1,8 @@
-package _20160820_1st_contest;
-
-import java.util.Stack;
+package medium;
 
 import utils.CommonUtils;
+
+import java.util.Stack;
 
 public class LongestAbsoluteFilePath {
     public static int lengthLongestPath(String input) {

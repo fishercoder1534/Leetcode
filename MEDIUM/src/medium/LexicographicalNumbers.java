@@ -1,13 +1,7 @@
-package _20160820_1st_contest;
+package medium;
 
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
-import utils.CommonUtils;
 /**
  * Given an integer n, return 1 - n in lexicographical order.
 
