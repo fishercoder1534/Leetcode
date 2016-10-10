@@ -2,7 +2,7 @@
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |415|[Add Strings](https://leetcode.com/problems/add-strings/)|[Solution](../../blob/master/EASY/src/easy/AddStrings.java)| O(n)|O(1) | Easy|
-|398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](../../blob/master/MEDIUM/src/medium/RandomPickIndex.java)| | | Medium| Reservoir Sampling
+|398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution] | | | Medium| Reservoir Sampling
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/)|[Solution](../../blob/master/EASY/src/easy/IntegerReplacement.java)| ? | ? | Easy| BFS
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function/)|[Solution](../../blob/master/EASY/src/easy/RotateFunction.java)| O(n^2) could be optimized to O(n) | O(1) | Easy|
 |390|[Elimination Game](https://leetcode.com/problems/elimination-game/)|[Solution](../../blob/master/MEDIUM/src/medium/EliminationGame.java)| O(logn)|O(1) | Medium|
