@@ -1,4 +1,4 @@
-package _20160910_4th_contest;
+package easy;
 
 //F(k) = 0 * Bk[0] + 1 * Bk[1] + ... + (n-1) * Bk[n-1]
 public class RotateFunction {
