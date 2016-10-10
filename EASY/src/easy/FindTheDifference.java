@@ -1,4 +1,4 @@
-package _20160827_2nd_contest;
+package easy;
 
 public class FindTheDifference {
     public char findTheDifference(String s, String t) {

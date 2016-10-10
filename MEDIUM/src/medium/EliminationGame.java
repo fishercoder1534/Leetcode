@@ -1,4 +1,4 @@
-package _20160827_2nd_contest;
+package medium;
 
 import java.util.ArrayList;
 import java.util.List;
