@@ -1,4 +1,4 @@
-package _20160910_4th_contest;
+package medium;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,7 +9,10 @@ public class RandomPickIndex {
 
 }
 
+//TODO: use reservoir sampling to solve it again
+
 class Solution {
+    //brute force
     int[] input;
     java.util.Random rand = new java.util.Random();
     public Solution(int[] nums) {
@@ -30,7 +33,7 @@ class Solution {
 }
 
 
-class Solution_MLE {
+class Solution_MemoryLimitExceeded {
 
     private Map<Integer, List<Integer>> map = new HashMap();
     java.util.Random rand = new java.util.Random();

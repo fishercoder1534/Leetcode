@@ -1,41 +1,8 @@
-package _20160910_4th_contest;
+package easy;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 
 public class IntegerReplacement {
-    public static int integerReplacement_failed(int n) {
-        if(n == 1) return 0;
-        int steps = 0;
-        while(n != 1){
-            if(n%2 == 1 && n > 1) {
-                n -= 1;
-                steps++;
-            }
-            
-            n /= 2;
-            steps++;
-        }
-        return steps;
-    }
-    
-    public static int integerReplacement_failed_2(int n) {
-        if(n == 1) return 0;
-        int temp = 2, steps = 1;
-        while(temp <= n){
-            temp *= 2;
-            steps++;
-            
-            if(temp%2 == 1){
-                temp += 1;
-                steps++;
-            }
-        }
-        return steps;
-    }
     
     public static int integerReplacement(int n) {
         long min = Long.MAX_VALUE;
