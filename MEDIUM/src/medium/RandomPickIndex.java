@@ -1,4 +1,4 @@
-package _20160910_4th_contest;
+package medium;
 
 import java.util.ArrayList;
 import java.util.HashMap;
