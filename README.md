@@ -31,6 +31,7 @@
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Solution](../../blob/master/EASY/src/easy/BestTimeToBuyAndSellStock.java)| O(n)|O(1) | Easy| DP
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Solution](../../blob/master/HARD/src/hard/PopulatingNextRightPointersinEachNodeII.java)| O(n)|O(1) | Hard| BFS
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Solution](../../blob/master/MEDIUM/src/medium/PopulatingNextRightPointersinEachNode.java)| O(n)|O(1) | Medium| BFS
+|111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)|[Solution](../../blob/master/EASY/src/easy/MinimumDepthofBinaryTree.java)| O(n)|O(1)~O(h) | Easy| BFS, DFS
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../../blob/master/MEDIUM/src/medium/DecodeWays.java)| O(n)|O(n) | Medium| DP
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Solution] | O(n) | O(1) | Medium | DFS/Recursion
 |79|[Word Search](https://leetcode.com/problems/word-search/)|[Solution](../../blob/master/MEDIUM/src/medium/WordSearch.java)|O(m*n*l) ? |O(m*n)|Medium|Backtracking/DFS
