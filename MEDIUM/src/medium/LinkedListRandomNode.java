@@ -28,9 +28,7 @@ solution.getRandom();
 */
 public class LinkedListRandomNode {
 
-}
-
-class Solution {
+private class Solution {
     private Map<Integer, ListNode> map;
     private Random rand;
     
@@ -49,5 +47,6 @@ class Solution {
     public int getRandom() {
         return map.get(rand.nextInt(map.size())).val;
     }
+}
 }
 

@@ -38,7 +38,7 @@ class Solution_MemoryLimitExceeded {
     private Map<Integer, List<Integer>> map = new HashMap();
     java.util.Random rand = new java.util.Random();
     
-    public Solution_MLE(int[] nums) {
+    public Solution_MemoryLimitExceeded(int[] nums) {
         for(int i = 0; i < nums.length; i++){
             if(map.containsKey(nums[i])){
                 List<Integer> list = map.get(nums[i]);
