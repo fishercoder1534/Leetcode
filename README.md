@@ -40,6 +40,7 @@
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors/)|[Solution]|O(n)|O(1)|Medium
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../../blob/master/HARD/src/hard/TextJustification.java)|O(n)|O(1)|Hard|
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../../blob/master/EASY/src/easy/AddBinary.java)|O(n)|O(1)|Easy|
+|58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Solution](../../blob/master/EASY/src/easy/LengthofLastWord.java)|O(n)|O(1)|Easy|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](../../blob/master/HARD/src/hard/MergeIntervals.java)|O(n*logn)|O(1)|Hard|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution]|||Medium
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../../blob/master/HARD/src/hard/MergeKSortedList.java)|O(n*logk)|O(logk)|Hard|Heap

@@ -1,0 +1,15 @@
+package easy;
+
+public class LengthofLastWord {
+
+    public int lengthOfLastWord(String s) {
+        if(s == null || s.length() == 0) return 0;
+        s = s.trim();
+        int n = s.length()-1;
+        while(n >= 0 && s.charAt(n) != ' '){
+            n--;
+        }
+        return s.length() - n - 1;
+    }
+
+}
