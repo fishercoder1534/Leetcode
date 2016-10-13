@@ -47,6 +47,7 @@
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../../blob/master/MEDIUM/src/medium/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../../blob/master/MEDIUM/src/medium/_3Sum.java)|O(nlogn)|O(1)|Medium|Two Pointers
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[Solution](../../blob/master/HARD/src/hard/RegularExpressionMatching.java)|O(m*n)|O(m*n)|Hard|DP
+|9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[Solution](../../blob/master/EASY/src/easy/PalindromeNumber.java)| O(logn)/(n) | O(1) | Easy
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../../blob/master/EASY/src/easy/StringToInteger.java)| O(n) | O(1) | Easy
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Solution](../../blob/master/EASY/src/easy/ReverseInteger.java) | O(1) | O(1) | Easy | 
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Solution](../../blob/master/MEDIUM/src/medium/AddTwoNumbers.java) | O(n) | O(1) | Medium | LinkedList
