@@ -22,6 +22,7 @@
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../../blob/master/MEDIUM/src/medium/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](../../blob/master/EASY/src/easy/ReverseLinkedList.java)| O(n)|O(1) | Easy
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../../blob/master/MEDIUM/src/medium/NumberOfIslandsUnionFind.java) [DFS](../../blob/master/MEDIUM/src/medium/NumberofIslandsDFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
+|189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Solution](../../blob/master/EASY/src/easy/RotateArray.java)| O(n)|O(n), could be optimized to O(1) | Easy
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Queue](../../blob/master/MEDIUM/src/medium/BSTIterator_using_q.java) [Stack](../../blob/master/MEDIUM/src/medium/BSTIterator_using_stack.java)| O(1) |O(h) | Medium|
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](../../blob/master/HARD/src/hard/WordBreakII.java)| ? |O(n^2) | Hard| Backtracking/DFS
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](../../blob/master/MEDIUM/src/medium/WordBreak.java)| O(n^2)|O(n) | Medium| DP
