@@ -32,6 +32,7 @@
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](../../blob/master/EASY/src/easy/ValidPalindrome.java)| O(n)|O(1) | Easy| Two Pointers
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[Solution](../../blob/master/MEDIUM/src/medium/BestTimeToBuyAndSellStockII.java)| O(n)|O(1) | Medium | Greedy
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Solution](../../blob/master/EASY/src/easy/BestTimeToBuyAndSellStock.java)| O(n)|O(1) | Easy| DP
+|119|[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)|[Solution](../../blob/master/EASY/src/easy/PascalsTriangleII.java)| O(n^2)|O(1) | Easy| 
 |118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[Solution](../../blob/master/EASY/src/easy/PascalsTriangle.java)| O(n^2)|O(1) | Easy| 
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Solution](../../blob/master/HARD/src/hard/PopulatingNextRightPointersinEachNodeII.java)| O(n)|O(1) | Hard| BFS
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Solution](../../blob/master/MEDIUM/src/medium/PopulatingNextRightPointersinEachNode.java)| O(n)|O(1) | Medium| BFS
