@@ -17,9 +17,9 @@ public class HelloChina {
 //    	System.out.println(message);
 //    }
 
-//    public void setMessage(String message) {
-//        this.message = message;
-//    }
+    public void setMessage(String message) {
+        this.message = message;
+    }
 
     // this init() method is required b/c I'm using HelloWorld as this
     // HelloChina's parent bean
@@ -32,4 +32,5 @@ public class HelloChina {
     public void destroy() {
         System.out.println("Bean HelloChina will destroy now.");
     }
+
 }
