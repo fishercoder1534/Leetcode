@@ -27,18 +27,18 @@ public class PathSum {
 
     public static void main(String...strings){
         PathSum test = new PathSum();
-//        TreeNode root = new TreeNode(1);
-//        root.left = new TreeNode(2);
-//        int sum = 1;
+        TreeNode root = new TreeNode(5);
+        root.left = new TreeNode(4);
+        int sum = 5;
         
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(-2);
-        root.left.left = new TreeNode(1);
-        root.left.right = new TreeNode(3);
-        root.right = new TreeNode(-3);
-        root.right.left = new TreeNode(-2);
-        root.left.left.left = new TreeNode(-1);
-        int sum = 2;
+//        TreeNode root = new TreeNode(1);
+//        root.left = new TreeNode(-2);
+//        root.left.left = new TreeNode(1);
+//        root.left.right = new TreeNode(3);
+//        root.right = new TreeNode(-3);
+//        root.right.left = new TreeNode(-2);
+//        root.left.left.left = new TreeNode(-1);
+//        int sum = 2;
 //         1
 //        / \
 //      -2   -3
@@ -46,6 +46,18 @@ public class PathSum {
 //     1   3 -2 
 //    /      
 //   -1
-        System.out.println(test.hasPathSum(root, sum));
+//        System.out.println(test.hasPathSum(root, sum));
+        System.out.println(test.hasPathSumAgain(root, sum));
     }
+    
+
+    public boolean hasPathSumAgain(TreeNode root, int sum) {
+        if(root == null) return false;
+        if(root.left == null && root.right == null){
+            if(sum == root.val) return true;
+            else return false;
+        }
+        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
+    }
+
 }

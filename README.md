@@ -41,6 +41,7 @@
 |118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[Solution](../../blob/master/EASY/src/easy/PascalsTriangle.java)| O(n^2)|O(1) | Easy| 
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Solution](../../blob/master/HARD/src/hard/PopulatingNextRightPointersinEachNodeII.java)| O(n)|O(1) | Hard| BFS
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Solution](../../blob/master/MEDIUM/src/medium/PopulatingNextRightPointersinEachNode.java)| O(n)|O(1) | Medium| BFS
+|112|[Path Sum](https://leetcode.com/problems/path-sum/)|[Solution](../../blob/master/EASY/src/easy/PathSum.java)| O(n)|O(1) | Easy| DFS
 |111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)|[Solution](../../blob/master/EASY/src/easy/MinimumDepthofBinaryTree.java)| O(n)|O(1)~O(h) | Easy| BFS, DFS
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../../blob/master/MEDIUM/src/medium/DecodeWays.java)| O(n)|O(n) | Medium| DP
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Solution] | O(n) | O(1) | Medium | DFS/Recursion
