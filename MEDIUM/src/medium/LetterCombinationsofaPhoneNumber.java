@@ -22,7 +22,7 @@ public class LetterCombinationsofaPhoneNumber {
     List<String> combine(String letters, List<String> result){
         List<String> newResult = new ArrayList();
 
-        for(int i = 0; i < letters.length(); i++){
+        for(int i = 0; i < letters.length(); i++){//the order of the two for loops doesn't matter, you could swap them and it still works.
             for(String str : result){
                 newResult.add(str + letters.charAt(i));
             }
