@@ -1,4 +1,4 @@
-package easy;
+package medium;
 
 public class SortColors {
 
