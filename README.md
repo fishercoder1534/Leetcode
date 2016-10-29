@@ -53,7 +53,7 @@
 |79|[Word Search](https://leetcode.com/problems/word-search/)|[Solution](../../blob/master/MEDIUM/src/medium/WordSearch.java)|O(m*n*l) ? |O(m*n)|Medium|Backtracking/DFS
 |78|[Subsets](https://leetcode.com/problems/subsets/)|[Solution](../../blob/master/MEDIUM/src/medium/Subsets.java)|O(n^2) ? |O(1)|Medium|Backtracking
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[Solution](../../blob/master/HARD/src/hard/MinimumWindowSubstring.java)|O(n)|O(k)|Hard|Two Pointers
-|75|[Sort Colors](https://leetcode.com/problems/sort-colors/)|[Solution]|O(n)|O(1)|Medium
+|75|[Sort Colors](https://leetcode.com/problems/sort-colors/)|[Solution](../../blob/master/MEDIUM/src/medium/SortColors.java)|O(n)|O(1)|Medium| Two Pointers
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../../blob/master/HARD/src/hard/TextJustification.java)|O(n)|O(1)|Hard|
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../../blob/master/EASY/src/easy/AddBinary.java)|O(n)|O(1)|Easy|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Solution](../../blob/master/EASY/src/easy/LengthofLastWord.java)|O(n)|O(1)|Easy|
