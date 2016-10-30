@@ -1,6 +1,7 @@
 # fishercoderLeetcode
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|441|[Arranging Coins](https://leetcode.com/problems/arrange-coins/)|[Solution](../../blob/master/EASY/src/easy/arrangeCoins.java)| O(n)|O(1) | Easy|
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../../blob/master/MEDIUM/src/medium/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
 |415|[Add Strings](https://leetcode.com/problems/add-strings/)|[Solution](../../blob/master/EASY/src/easy/AddStrings.java)| O(n)|O(1) | Easy|
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|[Solution](../../blob/master/EASY/src/easy/FizzBuzz.java)| O(n)|O(1) | Easy|
