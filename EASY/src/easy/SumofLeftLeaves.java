@@ -1,4 +1,4 @@
-package _20160924_6th_contest;
+package easy;
 
 import classes.TreeNode;
 
@@ -25,5 +25,22 @@ public class SumofLeftLeaves {
             rightResult = dfs(root.right, result, left);
         }
         return leftResult + rightResult;
+    }
+    
+    private class Solution_more_concise{
+
+        public int sumOfLeftLeaves(TreeNode root) {
+            int sum = 0;
+            if(root == null) return sum;
+            if(root.left != null){
+                if(root.left.left == null && root.left.right == null) sum += root.left.val;
+                else sum += sumOfLeftLeaves(root.left);
+            }
+            if(root.right != null){
+                sum += sumOfLeftLeaves(root.right);
+            }
+            return sum;
+        }
+
     }
 }

@@ -5,6 +5,7 @@
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../../blob/master/MEDIUM/src/medium/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
 |415|[Add Strings](https://leetcode.com/problems/add-strings/)|[Solution](../../blob/master/EASY/src/easy/AddStrings.java)| O(n)|O(1) | Easy|
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|[Solution](../../blob/master/EASY/src/easy/FizzBuzz.java)| O(n)|O(1) | Easy|
+|404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../../blob/master/EASY/src/easy/SumofLeftLeaves.java)| O(n)|O(h) | Easy|
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](../../blob/master/MEDIUM/src/medium/RandomPickIndex.java) | | | Medium| Reservoir Sampling
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/)|[Solution](../../blob/master/EASY/src/easy/IntegerReplacement.java)| ? | ? | Easy| BFS
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function/)|[Solution](../../blob/master/EASY/src/easy/RotateFunction.java)| O(n^2) could be optimized to O(n) | O(1) | Easy|
