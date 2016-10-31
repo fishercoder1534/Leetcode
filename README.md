@@ -63,6 +63,7 @@
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution]|||Medium
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[Solution](../../blob/master/EASY/src/easy/SwapNodesinPairs.java)|O(n)|O(1)|Easy| Recursion, LinkedList
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../../blob/master/HARD/src/hard/MergeKSortedList.java)|O(n*logk)|O(logk)|Hard|Heap
+|22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[Solution](../../blob/master/MEDIUM/src/medium/GenerateParentheses.java)|TBD|O(n)|Medium|Backtracking
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](../../blob/master/EASY/src/easy/MergeTwoSortedLists.java)|O(n)|O(1)|Easy|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Solution](../../blob/master/EASY/src/easy/ValidParentheses.java)|O(n)|O(n)|Easy|Stack
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../../blob/master/MEDIUM/src/medium/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
