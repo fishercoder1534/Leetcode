@@ -27,7 +27,7 @@
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|[Solution]| 
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../../blob/master/EASY/src/easy/BinaryTreePaths.java) | O(n*h) | O(h) | DFS/Recursion
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../../blob/master/EASY/src/easy/RectangleArea.java)| O(1)|O(1) | Easy| 
-|219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../../blob/master/EASY/src/easy/ContainsDuplicateII.java)| O(n)|O(1) | Easy| HashMap
+|219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../../blob/master/EASY/src/easy/ContainsDuplicateII.java)| O(n)|O(n) | Easy| HashMap
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../../blob/master/MEDIUM/src/medium/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](../../blob/master/EASY/src/easy/ReverseLinkedList.java)| O(n)|O(1) | Easy
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[Solution](../../blob/master/EASY/src/easy/IsomorphicStrings.java)| O(n)|O(1) | Easy
