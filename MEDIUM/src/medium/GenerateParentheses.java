@@ -32,5 +32,30 @@ public class GenerateParentheses {
         int n = 3;
         List<String> result = test.generateParenthesis(n);
         CommonUtils.print(result);
+        
+        Solution2 sol2 = new Solution2();
+        List<String> result2 = sol2.generateParenthesis(n);
+        CommonUtils.print(result2);
+    }
+    
+    static class Solution2{
+        public List<String> generateParenthesis(int n) {
+            List<String> result = new ArrayList();
+            if(n == 0) return result;
+            helper(result, "", n, n);
+            return result;
+        }
+        
+        void helper(List<String> result, String par, int left, int right){
+            if(left > 0){
+                helper(result, par+"(", left-1, right);
+            }
+            if(right > left){
+                helper(result, par+")", left, right-1);
+            }
+            if(right == 0){
+                result.add(par);
+            }
+        }
     }
 }
