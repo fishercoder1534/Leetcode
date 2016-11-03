@@ -18,6 +18,7 @@
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|[Solution](../../blob/master/EASY/src/easy/GuessNumberHigherorLower.java)| O(logn)|O(1) | Easy| Binary Search
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[Solution](../../blob/master/EASY/src/easy/IntersectionOfTwoArraysII.java)| O(m+n)|O((m+n)) could be optimized | Easy| HashMap, Binary Search
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[Solution](../../blob/master/EASY/src/easy/IntersectionOfTwoArrays.java)| O(m+n)|O(min(m,n)) | Easy| Two Pointers, Binary Search
+|339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[Solution](../../blob/master/EASY/src/easy/NestedListWeightSum.java)| O(n)|O(h)) | Easy| DFS
 |325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution] | O(n)|O(n) | Medium| HashMap
 |314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](../../blob/master/MEDIUM/src/medium/BinaryTreeVerticalOrderTraversal.java)| O(n)|O(n) | Medium| HashMap, BFS
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution]| ? | ? | Hard| BFS
