@@ -2,6 +2,7 @@
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |453|[Minimum Moves to Equal Array Elementss](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)|[Solution](../../blob/master/EASY/src/easy/MinimumMovestoEqualArrayElements.java)| O(n)|O(n) | Easy| BFS
+|447|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)|[Solution](../../blob/master/EASY/src/easy/NumberofBoomerangs.java)| O(n^2)|O(n) | Easy|
 |441|[Arranging Coins](https://leetcode.com/problems/arrange-coins/)|[Solution](../../blob/master/EASY/src/easy/ArrangingCoins.java)| O(n)|O(1) | Easy|
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../../blob/master/MEDIUM/src/medium/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](../../blob/master/MEDIUM/src/medium/PacificAtlanticWaterFlow.java) | O(m*n*Max(m,n)) |O(m*n) | Medium| DFS
