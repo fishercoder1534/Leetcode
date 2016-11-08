@@ -1,9 +1,10 @@
 # fishercoderLeetcode
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
-|453|[Minimum Moves to Equal Array Elementss](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)|[Solution](../../blob/master/EASY/src/easy/MinimumMovestoEqualArrayElements.java)| O(n)|O(1) | Easy|
+|453|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)|[Solution](../../blob/master/EASY/src/easy/MinimumMovestoEqualArrayElements.java)| O(n)|O(1) | Easy|
 |447|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)|[Solution](../../blob/master/EASY/src/easy/NumberofBoomerangs.java)| O(n^2)|O(n) | Easy| HashMap
 |441|[Arranging Coins](https://leetcode.com/problems/arrange-coins/)|[Solution](../../blob/master/EASY/src/easy/ArrangingCoins.java)| O(n)|O(1) | Easy|
+|435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../../blob/master/MEDIUM/src/medium/NonOverlappingIntervals.java) | O(nlogn) |O(1) | Medium| Greedy
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../../blob/master/MEDIUM/src/medium/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](../../blob/master/MEDIUM/src/medium/PacificAtlanticWaterFlow.java) | O(m*n*Max(m,n)) |O(m*n) | Medium| DFS
 |415|[Add Strings](https://leetcode.com/problems/add-strings/)|[Solution](../../blob/master/EASY/src/easy/AddStrings.java)| O(n)|O(1) | Easy|
