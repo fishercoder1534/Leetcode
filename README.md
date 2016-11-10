@@ -29,6 +29,7 @@
 |314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](../../blob/master/MEDIUM/src/medium/BinaryTreeVerticalOrderTraversal.java)| O(n)|O(n) | Medium| HashMap, BFS
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution]| ? | ? | Hard| BFS
 |299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|[Solution](../../blob/master/EASY/src/easy/BullsandCows.java)| O(n)|O(1) | Easy| 
+|295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|[Solution](../../blob/master/HARD/src/hard/FindMedianFromDataStream.java)| O(nlogn) | O(n) | Hard| Heap
 |292|[Nim Game](https://leetcode.com/problems/nim-game/)|[Solution](../../blob/master/EASY/src/easy/NimGame.java)| O(1)|O(1) | Easy| 
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../../blob/master/EASY/src/easy/WordPattern.java)| O(n)|O(n) | Easy| 
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../../blob/master/MEDIUM/src/medium/GameOfLife.java)| O(m*n)|O(m*n), could be optimized to O(1) | Medium|
