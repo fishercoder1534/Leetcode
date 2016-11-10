@@ -6,6 +6,7 @@
 |441|[Arranging Coins](https://leetcode.com/problems/arrange-coins/)|[Solution](../../blob/master/EASY/src/easy/ArrangingCoins.java)| O(n)|O(1) | Easy|
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../../blob/master/MEDIUM/src/medium/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../../blob/master/MEDIUM/src/medium/NonOverlappingIntervals.java) | O(nlogn) |O(1) | Medium| Greedy
+|420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker/)|[Solution](../../blob/master/HARD/src/hard/StrongPasswordChecker.java)| ? | ? | Hard| 
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../../blob/master/MEDIUM/src/medium/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](../../blob/master/MEDIUM/src/medium/PacificAtlanticWaterFlow.java) | O(m*n*Max(m,n)) |O(m*n) | Medium| DFS
 |415|[Add Strings](https://leetcode.com/problems/add-strings/)|[Solution](../../blob/master/EASY/src/easy/AddStrings.java)| O(n)|O(1) | Easy|
@@ -39,6 +40,7 @@
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../../blob/master/EASY/src/easy/RectangleArea.java)| O(1)|O(1) | Easy| 
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../../blob/master/EASY/src/easy/ContainsDuplicateII.java)| O(n)|O(n) | Easy| HashMap
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../../blob/master/MEDIUM/src/medium/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
+|208|[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Solution](../../blob/master/MEDIUM/src/medium/ImplementTrie.java)| O(n)|O(1) | Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](../../blob/master/EASY/src/easy/ReverseLinkedList.java)| O(n)|O(1) | Easy
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[Solution](../../blob/master/EASY/src/easy/IsomorphicStrings.java)| O(n)|O(1) | Easy
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../../blob/master/MEDIUM/src/medium/NumberOfIslandsUnionFind.java) [DFS](../../blob/master/MEDIUM/src/medium/NumberofIslandsDFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
