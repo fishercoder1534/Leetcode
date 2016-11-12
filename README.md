@@ -82,6 +82,7 @@
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Solution](../../blob/master/EASY/src/easy/ValidParentheses.java)|O(n)|O(n)|Easy|Stack
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../../blob/master/MEDIUM/src/medium/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../../blob/master/MEDIUM/src/medium/_3Sum.java)|O(n^2)|O(1)|Medium|Two Pointers
+|14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[Solution](../../blob/master/EASY/src/easy/LongestCommonPrefix.java)| O(n*min(wordLength in this array)) | O(1) | Easy
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[Solution](../../blob/master/HARD/src/hard/RegularExpressionMatching.java)|O(m*n)|O(m*n)|Hard|DP
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[Solution](../../blob/master/EASY/src/easy/PalindromeNumber.java)| O(logn)/(n) | O(1) | Easy
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../../blob/master/EASY/src/easy/StringToInteger.java)| O(n) | O(1) | Easy
