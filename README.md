@@ -12,6 +12,7 @@
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../../blob/master/MEDIUM/src/medium/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](../../blob/master/MEDIUM/src/medium/PacificAtlanticWaterFlow.java) | O(m*n*Max(m,n)) |O(m*n) | Medium| DFS
 |415|[Add Strings](https://leetcode.com/problems/add-strings/)|[Solution](../../blob/master/EASY/src/easy/AddStrings.java)| O(n)|O(1) | Easy|
+|414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)|[Solution](../../blob/master/EASY/src/easy/ThirdMaximumNumber.java)| O(n)|O(1) | Easy|
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)|[Solution](../../blob/master/MEDIUM/src/medium/ArithmeticSlices.java) | O(n) |O(1) | Medium| DP
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|[Solution](../../blob/master/EASY/src/easy/FizzBuzz.java)| O(n)|O(1) | Easy|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../../blob/master/EASY/src/easy/SumofLeftLeaves.java)| O(n)|O(h) | Easy|
