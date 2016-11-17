@@ -2,6 +2,7 @@
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[Solution](../../blob/master/EASY/src/easy/RepeatedSubstringPattern.java)| O(n)|O(n) | Easy| KMP
+|456|[132 Pattern](https://leetcode.com/problems/132-pattern/)|[Solution](../../blob/master/MEDIUM/src/medium/_132Pattern.java) | O(n) |O(n) | Medium| Stack
 |455|[Assign Cookies](https://leetcode.com/problems/assign-cookies/)|[Solution](../../blob/master/EASY/src/easy/AssignCookies.java)| O(n)|O(1) | Easy|
 |453|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)|[Solution](../../blob/master/EASY/src/easy/MinimumMovestoEqualArrayElements.java)| O(n)|O(1) | Easy|
 |447|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)|[Solution](../../blob/master/EASY/src/easy/NumberofBoomerangs.java)| O(n^2)|O(n) | Easy| HashMap
