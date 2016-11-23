@@ -31,6 +31,7 @@
 |386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/)|[Solution](../../blob/master/MEDIUM/src/medium/LexicographicalNumbers.java)| O(n)|O(1) | Medium| 
 |379|[Design Phone Directory](https://leetcode.com/problems/design-phone-directory/)|[Solution](../../blob/master/MEDIUM/src/medium/DesignPhoneDirectory.java)| O(1)|O(n) | Medium| 
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|[Solution](../../blob/master/EASY/src/easy/GuessNumberHigherorLower.java)| O(logn)|O(1) | Easy| Binary Search
+|370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../../blob/master/MEDIUM/src/medium/RangeAddition.java)| O(n+k)|O(1) | Medium| 
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[Solution](../../blob/master/EASY/src/easy/IntersectionOfTwoArraysII.java)| O(m+n)|O((m+n)) could be optimized | Easy| HashMap, Binary Search
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[Solution](../../blob/master/EASY/src/easy/IntersectionOfTwoArrays.java)| O(m+n)|O(min(m,n)) | Easy| Two Pointers, Binary Search
 |339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[Solution](../../blob/master/EASY/src/easy/NestedListWeightSum.java)| O(n)|O(h)) | Easy| DFS
