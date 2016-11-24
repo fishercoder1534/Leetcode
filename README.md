@@ -44,6 +44,7 @@
 |292|[Nim Game](https://leetcode.com/problems/nim-game/)|[Solution](../../blob/master/EASY/src/easy/NimGame.java)| O(1)|O(1) | Easy| 
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../../blob/master/EASY/src/easy/WordPattern.java)| O(n)|O(n) | Easy| 
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../../blob/master/MEDIUM/src/medium/GameOfLife.java)| O(m*n)|O(m*n), could be optimized to O(1) | Medium|
+|288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/)|[Solution](../../blob/master/EASY/src/easy/UniqueWordAbbreviation.java)| O(n)|O(1) | Easy| 
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../../blob/master/EASY/src/easy/MoveZeroes.java)| O(n)|O(1) | Easy| 
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)|[Solution](../../blob/master/MEDIUM/src/medium/WiggleSort.java)| O(n)|O(1) | Medium|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../blob/master/EASY/src/easy/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
