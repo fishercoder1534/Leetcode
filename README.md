@@ -76,6 +76,7 @@
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[Solution](../../blob/master/EASY/src/easy/IsomorphicStrings.java)| O(n)|O(1) | Easy
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../../blob/master/MEDIUM/src/medium/NumberOfIslandsUnionFind.java) [DFS](../../blob/master/MEDIUM/src/medium/NumberofIslandsDFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Solution](../../blob/master/EASY/src/easy/RotateArray.java)| O(n)|O(n), could be optimized to O(1) | Easy
+|182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../../blob/master/EASY/src/easy/Duplicate-Emails.sql)| O(n^2)|O(n)| Easy
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Queue](../../blob/master/MEDIUM/src/medium/BSTIterator_using_q.java) [Stack](../../blob/master/MEDIUM/src/medium/BSTIterator_using_stack.java)| O(1) |O(h) | Medium|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|[Solution](../../blob/master/EASY/src/easy/FactorialTrailingZeroes.java)| O(logn)|O(1)| Easy
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](../../blob/master/EASY/src/easy/TwoSumIIIDataStructureDesign.java)| O(n)|O(n)| Easy
