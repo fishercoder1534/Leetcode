@@ -63,6 +63,7 @@
 |259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)|[Solution](../../blob/master/MEDIUM/src/medium/_3Sum_Smaller.java)| O(n^2)|O(1) | Medium|
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../../blob/master/EASY/src/easy/BinaryTreePaths.java) | O(n*h) | O(h) | DFS/Recursion
 |252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](../../blob/master/EASY/src/easy/MeetingRooms.java) | O(nlogn) | O(1) | 
+|251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[Solution](../../blob/master/MEDIUM/src/medium/Flatten2DVector.java)| O(1)|O(m*n) | Medium| 
 |250|[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)|[Solution](../../blob/master/MEDIUM/src/medium/CountUnivalueSubtrees.java)| O(n)|O(h) | Medium| DFS
 |249|[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/)|[Solution](../../blob/master/EASY/src/easy/GroupShiftedStrings.java) | O(nlogn) | O(n) | 
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../../blob/master/EASY/src/easy/StrobogrammaticNumber.java) | O(n) | O(1) | 
