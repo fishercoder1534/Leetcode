@@ -49,6 +49,7 @@
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../../blob/master/EASY/src/easy/MoveZeroes.java)| O(n)|O(1) | Easy| 
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)|[Solution](../../blob/master/MEDIUM/src/medium/WiggleSort.java)| O(n)|O(1) | Medium|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../blob/master/EASY/src/easy/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
+|276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../../blob/master/EASY/src/easy/PaintFence.java)| O(n)|O(1) | Easy| DP
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|[Solution]| 
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../../blob/master/EASY/src/easy/BinaryTreePaths.java) | O(n*h) | O(h) | DFS/Recursion
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../../blob/master/EASY/src/easy/RectangleArea.java)| O(1)|O(1) | Easy| 
