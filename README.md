@@ -41,6 +41,7 @@
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)|[Solution](../../blob/master/MEDIUM/src/medium/CountingBits.java)| O(n)|O(n) | Medium| 
 |325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution] | O(n)|O(n) | Medium| HashMap
 |314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](../../blob/master/MEDIUM/src/medium/BinaryTreeVerticalOrderTraversal.java)| O(n)|O(n) | Medium| HashMap, BFS
+|311|[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/)|[Solution](../../blob/master/MEDIUM/src/medium/SparseMatrixMultiplication.java)| O(m*n*l)|O(m*l)| Medium|
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution]| ? | ? | Hard| BFS
 |299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|[Solution](../../blob/master/EASY/src/easy/BullsandCows.java)| O(n)|O(1) | Easy| 
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|[Solution](../../blob/master/HARD/src/hard/FindMedianFromDataStream.java)| O(nlogn) | O(n) | Hard| Heap
