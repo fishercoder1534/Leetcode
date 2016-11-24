@@ -51,6 +51,7 @@
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../blob/master/EASY/src/easy/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
 |276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../../blob/master/EASY/src/easy/PaintFence.java)| O(n)|O(1) | Easy| DP
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|[Solution]| 
+|270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/)|[Solution](../../blob/master/EASY/src/easy/ClosestBinarySearchTreeValue.java)| O(h)|O(1) | Easy| DFS
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../../blob/master/EASY/src/easy/BinaryTreePaths.java) | O(n*h) | O(h) | DFS/Recursion
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../../blob/master/EASY/src/easy/RectangleArea.java)| O(1)|O(1) | Easy| 
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../../blob/master/EASY/src/easy/ContainsDuplicateII.java)| O(n)|O(n) | Easy| HashMap
