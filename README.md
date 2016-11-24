@@ -33,6 +33,7 @@
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|[Solution](../../blob/master/EASY/src/easy/GuessNumberHigherorLower.java)| O(logn)|O(1) | Easy| Binary Search
 |370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../../blob/master/MEDIUM/src/medium/RangeAddition.java)| O(n+k)|O(1) | Medium| 
 |366|[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/)|[Solution](../../blob/master/MEDIUM/src/medium/FindLeavesofBinaryTree.java)| O(n)|O(h) | Medium| DFS
+|364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/)|[Solution](../../blob/master/MEDIUM/src/medium/NestedListWeightSumII.java)| O(n)|O(h) | Medium| DFS
 |359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/)|[Solution](../../blob/master/EASY/src/easy/LoggerRateLimiter.java)| amortized O(1)|O(k) | Easy| HashMap
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[Solution](../../blob/master/EASY/src/easy/IntersectionOfTwoArraysII.java)| O(m+n)|O((m+n)) could be optimized | Easy| HashMap, Binary Search
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[Solution](../../blob/master/EASY/src/easy/IntersectionOfTwoArrays.java)| O(m+n)|O(min(m,n)) | Easy| Two Pointers, Binary Search
