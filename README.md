@@ -70,6 +70,7 @@
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](../../blob/master/EASY/src/easy/TwoSumIIIDataStructureDesign.java)| O(n)|O(n)| Easy
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|[Solution](../../blob/master/EASY/src/easy/CompareVersionNumbers.java)| O(n)|O(1) | Easy|
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|[Solution](../../blob/master/MEDIUM/src/medium/FindPeakElement.java) | O(1) |O(logn)/O(n) | Binary Search|
+|161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance/)|[Solution](../../blob/master/MEDIUM/src/medium/OneEditDistance.java) | O(n) |O(1) | |
 |155|[Min Stack](https://leetcode.com/problems/min-stack/)|[Solution](../../blob/master/EASY/src/easy/MinStack.java)| O(1)|O(n) | Easy| Stack
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|[Solution](../../blob/master/MEDIUM/src/medium/ReverseWordsinaString.java)| O(n)|O(n) | Medium|
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](../../blob/master/HARD/src/hard/WordBreakII.java)| ? |O(n^2) | Hard| Backtracking/DFS
