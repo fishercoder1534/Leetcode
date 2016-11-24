@@ -60,6 +60,7 @@
 |259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)|[Solution](../../blob/master/MEDIUM/src/medium/_3Sum_Smaller.java)| O(n^2)|O(1) | Medium|
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../../blob/master/EASY/src/easy/BinaryTreePaths.java) | O(n*h) | O(h) | DFS/Recursion
 |252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](../../blob/master/EASY/src/easy/MeetingRooms.java) | O(nlogn) | O(1) | 
+|249|[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/)|[Solution](../../blob/master/EASY/src/easy/GroupShiftedStrings.java) | O(nlogn) | O(n) | 
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../../blob/master/EASY/src/easy/StrobogrammaticNumber.java) | O(n) | O(1) | 
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../../blob/master/EASY/src/easy/ShortestWordDistance.java) | O(n) | O(1) | 
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../../blob/master/EASY/src/easy/RectangleArea.java)| O(1)|O(1) | Easy| 
