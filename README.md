@@ -81,6 +81,7 @@
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Queue](../../blob/master/MEDIUM/src/medium/BSTIterator_using_q.java) [Stack](../../blob/master/MEDIUM/src/medium/BSTIterator_using_stack.java)| O(1) |O(h) | Medium|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|[Solution](../../blob/master/EASY/src/easy/FactorialTrailingZeroes.java)| O(logn)|O(1)| Easy
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](../../blob/master/EASY/src/easy/TwoSumIIIDataStructureDesign.java)| O(n)|O(n)| Easy
+|169|[Majority Element](https://leetcode.com/problems/majority-element/)|[Solution](../../blob/master/EASY/src/easy/MajorityElement.java)| O(n)|O(1) | Easy|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|[Solution](../../blob/master/EASY/src/easy/CompareVersionNumbers.java)| O(n)|O(1) | Easy|
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|[Solution](../../blob/master/MEDIUM/src/medium/FindPeakElement.java) | O(1) |O(logn)/O(n) | Binary Search|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance/)|[Solution](../../blob/master/MEDIUM/src/medium/OneEditDistance.java) | O(n) |O(1) | |
