@@ -128,6 +128,7 @@
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../../blob/master/EASY/src/easy/StringToInteger.java)| O(n) | O(1) | Easy
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Solution](../../blob/master/EASY/src/easy/ReverseInteger.java) | O(1) | O(1) | Easy | 
 |6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|[Solution](../../blob/master/EASY/src/easy/ZigZagConversion.java) | O(n) | O(n) | Easy | 
+|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[Solution](../../blob/master/MEDIUM/src/medium/LongestSubstringWithoutRepeatingCharacters.java) | O(n) | O(1) | Medium | HashMap, Sliding Window
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Solution](../../blob/master/MEDIUM/src/medium/AddTwoNumbers.java) | O(n) | O(1) | Medium | LinkedList
 |1|[Two Sum](https://leetcode.com/problems/two-sum/)|[Solution](../../blob/master/EASY/src/easy/TwoSum.java)| O(n)/O(n^2)|O(1)/O(n) | Easy| HashMap
 
