@@ -69,6 +69,7 @@
 |249|[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/)|[Solution](../../blob/master/EASY/src/easy/GroupShiftedStrings.java) | O(nlogn) | O(n) | 
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../../blob/master/EASY/src/easy/StrobogrammaticNumber.java) | O(n) | O(1) | 
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../../blob/master/EASY/src/easy/ShortestWordDistance.java) | O(n) | O(1) | 
+|226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[Solution](../../blob/master/EASY/src/easy/InvertBinaryTree.java)| O(n)|O(h) | Easy| DFS, recursion
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../../blob/master/EASY/src/easy/RectangleArea.java)| O(1)|O(1) | Easy| 
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../../blob/master/EASY/src/easy/ContainsDuplicateII.java)| O(n)|O(n) | Easy| HashMap
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../../blob/master/MEDIUM/src/medium/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
