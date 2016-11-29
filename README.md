@@ -116,6 +116,7 @@
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Solution](../../blob/master/EASY/src/easy/LengthofLastWord.java)|O(n)|O(1)|Easy|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](../../blob/master/HARD/src/hard/MergeIntervals.java)|O(n*logn)|O(1)|Hard|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution]|||Medium
+|31|[Next Permutation](https://leetcode.com/problems/next-permutation)|[Solution](../../blob/master/MEDIUM/src/medium/NextPermutation.java)|O(n)|O(1)|Medium|Array
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[Solution](../../blob/master/EASY/src/easy/SwapNodesinPairs.java)|O(n)|O(1)|Easy| Recursion, LinkedList
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../../blob/master/HARD/src/hard/MergeKSortedList.java)|O(n*logk)|O(logk)|Hard|Heap
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[Solution](../../blob/master/MEDIUM/src/medium/GenerateParentheses.java)|TBD|O(n)|Medium|Backtracking
