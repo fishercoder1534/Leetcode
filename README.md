@@ -13,6 +13,7 @@
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](../../blob/master/EASY/src/easy/FindAllAnagramsinaString.java)| O(n)|O(1) | Easy|
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../../blob/master/MEDIUM/src/medium/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../../blob/master/MEDIUM/src/medium/NonOverlappingIntervals.java) | O(nlogn) |O(1) | Medium| Greedy
+|434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../../blob/master/EASY/src/easy/NumberofSegmentsinaString.java)| O(n)|O(1) | Easy|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker/)|[Solution](../../blob/master/HARD/src/hard/StrongPasswordChecker.java)| ? | ? | Hard| 
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../../blob/master/MEDIUM/src/medium/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](../../blob/master/MEDIUM/src/medium/PacificAtlanticWaterFlow.java) | O(m*n*Max(m,n)) |O(m*n) | Medium| DFS
