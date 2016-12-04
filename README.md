@@ -1,6 +1,7 @@
 # fishercoderLeetcode
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../../blob/master/MEDIUM/src/medium/UniqueSubstringsinWraparoundString.java) | O(n) |O(1) | Medium| DP
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[Solution](../../blob/master/EASY/src/easy/IslandPerimeter.java)| O(m*n)|O(1) | Easy| 
 |462|[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/)|[Solution](../../blob/master/MEDIUM/src/medium/MinimumMovestoEqualArrayElementsII.java) | O(nlogn) |O(1) | Medium|
 |459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[Solution](../../blob/master/EASY/src/easy/RepeatedSubstringPattern.java)| O(n)|O(n) | Easy| KMP
