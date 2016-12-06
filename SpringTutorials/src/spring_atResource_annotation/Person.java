@@ -10,7 +10,6 @@ import lombok.Setter;
 
 public class Person {
 	@Resource(name = "home123") 
-	@Getter
 	private City city;
 
 	@Resource(name = "wife") 
@@ -22,5 +21,17 @@ public class Person {
 	@Resource(name = "careerCurrent") 
 	@Getter
 	private Career career;
+
+    public City getCity() {
+        return city;
+    }
+
+    public Wife getWife() {
+        return wife;
+    }
+
+    public Career getCareer() {
+        return career;
+    }
 	
 }
