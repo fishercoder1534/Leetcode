@@ -19,15 +19,19 @@ public class ConcatenatedWordsII {
 1. It uses a Trie data structure which is a best fit for a problem domain like this, it saves a lot of memory space: instead of using a HashSet, Trie could save all words with the same prefix into the same place. This same location advantage also speeds up the loop up process when searching a particular word/substring.
 2. I implemented a remove() and undoRemove() method to mark one word off and on instead of creating a new copy of a HashSet to check every word. This is also a huge performance boost.
 
-This is why it turns a 12 minutes run to 800 ms.*/
+This is why it turns a 12 minutes run to 800 ms.
+     * @throws Exception */
     
-    public static void main(String...args){
+    public static void main(String...args) throws Exception{
+        
         try {
           String FILE_PATH = "/Users/SteveSun/Google Drive/Developer/wordsforproblem.txt";
 //          String FILE_PATH = "/Users/SteveSun/Google Drive/Developer/first30.txt";
 //          String FILE_PATH = "/Users/SteveSun/Google Drive/Developer/first50.txt";
 //          String FILE_PATH = "/Users/SteveSun/Google Drive/Developer/first100.txt";
 //           String FILE_PATH = "/Users/SteveSun/Google Drive/Developer/test.txt";
+
+          readFromFileAndDecorateIntoJsonFormatForLeetcode(FILE_PATH);
           
           String OUTPUT_PATH = "/Users/SteveSun/Google Drive/Developer/output_wordsforproblem.txt";
 //          String OUTPUT_PATH = "/Users/SteveSun/Google Drive/Developer/output_first30.txt";
@@ -179,17 +183,7 @@ This is why it turns a 12 minutes run to 800 ms.*/
         public TrieNode() {}
     }
     
-    class ResultType {
-        Set<String> wordDict;
-        Integer maxWordLen;
-
-        ResultType(Set<String> wordDict, Integer maxWordLen) {
-            this.wordDict = wordDict;
-            this.maxWordLen = maxWordLen;
-        }
-    }
-    
-    public ResultType readFromFile(String filePath) throws Exception {
+    public static ResultType readFromFile(String filePath) throws Exception {
         Set<String> wordDict = new HashSet<>();
         int maxWordLen = Integer.MIN_VALUE;
         try {
@@ -214,4 +208,41 @@ This is why it turns a 12 minutes run to 800 ms.*/
         ResultType result = new ResultType(wordDict, maxWordLen);
         return result;
     }
+    
+    public static void readFromFileAndDecorateIntoJsonFormatForLeetcode(String filePath) throws Exception {
+        String OUTPUT_PATH2 = "/Users/SteveSun/Google Drive/Developer/output_wordsforproblem_for_leetcode.txt";
+        ResultType result = readFromFile(filePath);
+        writeToFile_ForLeetcode(OUTPUT_PATH2, result.wordDict);
+        
+    }
+    
+    private static void writeToFile_ForLeetcode(String OUTPUT_PATH, Set<String> validConcatenatedWords) throws IOException {
+
+        File file = new File(OUTPUT_PATH);
+
+        if (!file.exists())
+            file.createNewFile();
+
+        FileWriter fw = new FileWriter(file.getAbsoluteFile());
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write("[");
+        for (String word : validConcatenatedWords) {
+            bw.write("\"" + word + "\",");
+        }
+        bw.write("]");
+
+        bw.close();
+    }
+
 }
+
+class ResultType {
+    Set<String> wordDict;
+    Integer maxWordLen;
+
+    ResultType(Set<String> wordDict, Integer maxWordLen) {
+        this.wordDict = wordDict;
+        this.maxWordLen = maxWordLen;
+    }
+}
+
