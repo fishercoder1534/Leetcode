@@ -1,4 +1,4 @@
-package package1;
+package hard;
 
 import java.util.Comparator;
 import java.util.HashMap;
