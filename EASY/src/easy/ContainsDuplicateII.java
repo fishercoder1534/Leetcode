@@ -3,10 +3,8 @@ package easy;
 import java.util.HashMap;
 import java.util.Map;
 
-/**219. Contains Duplicate II  QuestionEditorial Solution  My Submissions
-Total Accepted: 69920
-Total Submissions: 228733
-Difficulty: Easy
+/**219. Contains Duplicate II
+ *
 Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the difference between i and j is at most k.*/
 public class ContainsDuplicateII {
     //pretty straightforward, use a hashmap, key is the number itself, value is the last index that this value appeared in the array

@@ -73,9 +73,11 @@
 |249|[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/)|[Solution](../../blob/master/EASY/src/easy/GroupShiftedStrings.java) | O(nlogn) | O(n) | 
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../../blob/master/EASY/src/easy/StrobogrammaticNumber.java) | O(n) | O(1) | 
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../../blob/master/EASY/src/easy/ShortestWordDistance.java) | O(n) | O(1) | 
+|237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[Solution](../../blob/master/EASY/src/easy/DeleteNodeInALinkedList.java)| O(1)|O(1) | Easy| LinkedList
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[Solution](../../blob/master/EASY/src/easy/InvertBinaryTree.java)| O(n)|O(h) | Easy| DFS, recursion
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../../blob/master/EASY/src/easy/RectangleArea.java)| O(1)|O(1) | Easy| 
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../../blob/master/EASY/src/easy/ContainsDuplicateII.java)| O(n)|O(n) | Easy| HashMap
+|217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|[Solution](../../blob/master/EASY/src/easy/ContainsDuplicate.java)| O(n)|O(n) | Easy| HashSet
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../../blob/master/MEDIUM/src/medium/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
 |208|[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Solution](../../blob/master/MEDIUM/src/medium/ImplementTrie.java)| O(n)|O(1) | Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](../../blob/master/EASY/src/easy/ReverseLinkedList.java)| O(n)|O(1) | Easy
@@ -128,6 +130,7 @@
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../../blob/master/MEDIUM/src/medium/PermutationsII.java)|O(n*n!)|O(n)|Medium|Backtracking
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution]|||Medium
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../../blob/master/MEDIUM/src/medium/CombinationSum.java)|O(k*n^k)|O(k)|Medium|Backtracking
+|38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../../blob/master/EASY/src/easy/CountandSay.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../../blob/master/MEDIUM/src/medium/SearchForARange.java)|O(logn)|O(1)|Medium|Array, Binary Search
 |31|[Next Permutation](https://leetcode.com/problems/next-permutation)|[Solution](../../blob/master/MEDIUM/src/medium/NextPermutation.java)|O(n)|O(1)|Medium|Array
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[Solution](../../blob/master/EASY/src/easy/SwapNodesinPairs.java)|O(n)|O(1)|Easy| Recursion, LinkedList

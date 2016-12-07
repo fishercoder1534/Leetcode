@@ -4,8 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 217. Contains Duplicate QuestionEditorial Solution My Submissions Total Accepted: 106831 Total
- * Submissions: 252115 Difficulty: Easy Given an array of integers, find if the array contains any
+ * 217. Contains Duplicate
+ * Given an array of integers, find if the array contains any
  * duplicates. Your function should return true if any value appears at least twice in the array,
  * and it should return false if every element is distinct.
  */
