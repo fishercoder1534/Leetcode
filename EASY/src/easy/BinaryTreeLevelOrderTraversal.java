@@ -9,10 +9,6 @@ import java.util.Queue;
 
 /**102. Binary Tree Level Order Traversal
 
-    Total Accepted: 117221
-    Total Submissions: 341219
-    Difficulty: Easy
-
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 
 For example:
