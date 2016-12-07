@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java-blue.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java-blue.svg language-Java%20%2F%20C++%2011-orange.svg)
 
 
 ## Algorithms
-* [Algorithms](https://github.com/fishercoder1534/LeetCode#Algorithms)
+* [Algorithms](https://github.com/fishercoder1534/LeetCode#algorithms)
 
 ## Database
 * [MySQL](https://github.com/fishercoder1534/LeetCode#mysql)
