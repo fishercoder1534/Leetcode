@@ -8,7 +8,7 @@
 * [MySQL](https://github.com/fishercoder1534/LeetCode#mysql)
 
 ## Shell
-* [Shell](https://github.com/fishercoder1534/LeetCode#shell)
+* [Shell](https://github.com/fishercoder1534/LeetCode#bash)
 
 
 ## Algorithms
@@ -170,6 +170,6 @@
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 
 
-## Shell
+## Bash
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
