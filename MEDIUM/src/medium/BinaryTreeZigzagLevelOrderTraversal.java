@@ -1,12 +1,8 @@
-package easy;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+package medium;
 
 import classes.TreeNode;
+
+import java.util.*;
 
 /**
  * 103. Binary Tree Zigzag Level Order Traversal  

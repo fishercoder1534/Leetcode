@@ -1,15 +1,13 @@
 package easy;
 
+import classes.TreeNode;
+import utils.CommonUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import utils.CommonUtils;
-import classes.TreeNode;
-
-/**257. Binary Tree Paths  Question Editorial Solution  My Submissions
-Total Accepted: 59117
-Total Submissions: 191659
-Difficulty: Easy
+/**257. Binary Tree Paths
+ *
 Given a binary tree, return all root-to-leaf paths.
 
 For example, given the following binary tree:
