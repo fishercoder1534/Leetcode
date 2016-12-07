@@ -1,4 +1,4 @@
-# Leetcode
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java-blue.svg)
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../../blob/master/MEDIUM/src/medium/UniqueSubstringsinWraparoundString.java) | O(n) |O(1) | Medium| DP
