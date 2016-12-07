@@ -1,4 +1,17 @@
 # [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java-blue.svg)
+
+
+## Algorithms
+* [Algorithms](https://github.com/fishercoder1534/LeetCode#Algorithms)
+
+## Database
+* [MySQL](https://github.com/fishercoder1534/LeetCode#mysql)
+
+## Shell
+* [Shell](https://github.com/fishercoder1534/LeetCode#shell)
+
+
+## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../../blob/master/MEDIUM/src/medium/UniqueSubstringsinWraparoundString.java) | O(n) |O(1) | Medium| DP
@@ -152,3 +165,11 @@
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Solution](../../blob/master/MEDIUM/src/medium/AddTwoNumbers.java) | O(n) | O(1) | Medium | LinkedList
 |1|[Two Sum](https://leetcode.com/problems/two-sum/)|[Solution](../../blob/master/EASY/src/easy/TwoSum.java)| O(n)/O(n^2)|O(1)/O(n) | Easy| HashMap
 
+## MySQL
+|  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
+|-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+
+
+## Shell
+|  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
+|-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
