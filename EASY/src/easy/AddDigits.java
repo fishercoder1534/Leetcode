@@ -1,5 +1,8 @@
 package easy;
 
+/**
+ * */
+
 public class AddDigits {
 //only three cases as the code shows
     public int addDigits(int num) {

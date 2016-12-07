@@ -1,14 +1,11 @@
 package easy;
-/**67. Add Binary  QuestionEditorial Solution  My Submissions
-Total Accepted: 96848
-Total Submissions: 337759
-Difficulty: Easy
-Given two binary strings, return their sum (also a binary string).
-
-For example,
-a = "11"
-b = "1"
-Return "100".*/
+/**
+ * 67. Add Binary
+ 	Given two binary strings, return their sum (also a binary string).
+	For example,
+	a = "11"
+	b = "1"
+	Return "100".*/
 public class AddBinary {
     //then I turned to Discuss, this post is concise: https://discuss.leetcode.com/topic/13698/short-ac-solution-in-java-with-explanation
     //Tricks and things learned that could be learned:

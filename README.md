@@ -65,6 +65,7 @@
 |266|[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)|[Solution](../../blob/master/EASY/src/easy/PalindromePermutation.java)| O(n)|O(1) | Easy| HashMap
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)|[Solution](../../blob/master/MEDIUM/src/medium/GraphValidTree.java)| O(V+E)|O(V+E) | Medium|
 |259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)|[Solution](../../blob/master/MEDIUM/src/medium/_3Sum_Smaller.java)| O(n^2)|O(1) | Medium|
+|258|[Add Digits](https://leetcode.com/problems/add-digits/)|[Solution](../../blob/master/EASY/src/easy/AddDigits.java)| O(1)|O(1) | Easy|
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../../blob/master/EASY/src/easy/BinaryTreePaths.java) | O(n*h) | O(h) | DFS/Recursion
 |252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](../../blob/master/EASY/src/easy/MeetingRooms.java) | O(nlogn) | O(1) | 
 |251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[Solution](../../blob/master/MEDIUM/src/medium/Flatten2DVector.java)| O(1)|O(m*n) | Medium| 
