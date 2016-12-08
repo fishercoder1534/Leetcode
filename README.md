@@ -87,6 +87,7 @@
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../../blob/master/EASY/src/easy/StrobogrammaticNumber.java) | O(n) | O(1) | 
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../../blob/master/EASY/src/easy/ShortestWordDistance.java) | O(n) | O(1) | 
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[Solution](../../blob/master/EASY/src/easy/DeleteNodeInALinkedList.java)| O(1)|O(1) | Easy| LinkedList
+|235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Solution](../../blob/master/EASY/src/easy/LowestCommonAncestorOfABinarySearchTree.java)| O(h)|O(1) | Easy| DFS
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[Solution](../../blob/master/EASY/src/easy/InvertBinaryTree.java)| O(n)|O(h) | Easy| DFS, recursion
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)|[Solution](../../blob/master/EASY/src/easy/ImplementStackUsingQueues.java)| O(n)|O(n) | Easy| Stack, Queue
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../../blob/master/EASY/src/easy/RectangleArea.java)| O(1)|O(1) | Easy| 
