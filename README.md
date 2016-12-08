@@ -152,6 +152,7 @@
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../../blob/master/EASY/src/easy/CountandSay.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../../blob/master/MEDIUM/src/medium/SearchForARange.java)|O(logn)|O(1)|Medium|Array, Binary Search
 |31|[Next Permutation](https://leetcode.com/problems/next-permutation)|[Solution](../../blob/master/MEDIUM/src/medium/NextPermutation.java)|O(n)|O(1)|Medium|Array
+|28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)|[Solution](../../blob/master/EASY/src/easy/ImplementStrStr.java)|O(n)|O(1)|Easy| String
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[Solution](../../blob/master/EASY/src/easy/SwapNodesinPairs.java)|O(n)|O(1)|Easy| Recursion, LinkedList
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../../blob/master/HARD/src/hard/MergeKSortedList.java)|O(n*logk)|O(logk)|Hard|Heap
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[Solution](../../blob/master/MEDIUM/src/medium/GenerateParentheses.java)|TBD|O(n)|Medium|Backtracking
