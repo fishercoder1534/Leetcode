@@ -118,6 +118,7 @@
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](../../blob/master/HARD/src/hard/WordBreakII.java)| ? |O(n^2) | Hard| Backtracking/DFS
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](../../blob/master/MEDIUM/src/medium/WordBreak.java)| O(n^2)|O(n) | Medium| DP
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph/)|[Solution](../../blob/master/MEDIUM/src/medium/CloneGraph.java)| O(n)|O(n) | Medium| HashMap, BFS 
+|132|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)|[Solution](../../blob/master/EASY/src/easy/ImplementQueueUsingStacks.java)| O(n)|O(n) | Easy| Stack, Queue
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](../../blob/master/EASY/src/easy/ValidPalindrome.java)| O(n)|O(1) | Easy| Two Pointers
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[Solution](../../blob/master/MEDIUM/src/medium/BestTimeToBuyAndSellStockII.java)| O(n)|O(1) | Medium | Greedy
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Solution](../../blob/master/EASY/src/easy/BestTimeToBuyAndSellStock.java)| O(n)|O(1) | Easy| DP
