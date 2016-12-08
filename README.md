@@ -8,7 +8,7 @@
 * [MySQL](https://github.com/fishercoder1534/LeetCode#mysql)
 
 ## Shell
-* [Shell](https://github.com/fishercoder1534/LeetCode#bash)
+* [Bash](https://github.com/fishercoder1534/LeetCode#bash)
 
 
 ## Algorithms
@@ -100,6 +100,7 @@
 |182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../../blob/master/EASY/src/easy/Duplicate-Emails.sql)| O(n^2)|O(n)| Easy
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Queue](../../blob/master/MEDIUM/src/medium/BSTIterator_using_q.java) [Stack](../../blob/master/MEDIUM/src/medium/BSTIterator_using_stack.java)| O(1) |O(h) | Medium|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|[Solution](../../blob/master/EASY/src/easy/FactorialTrailingZeroes.java)| O(logn)|O(1)| Easy
+|171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|[Solution](../../blob/master/EASY/src/easy/ExcelSheetColumnNumber.java)| O(n)|O(1)| Easy
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](../../blob/master/EASY/src/easy/TwoSumIIIDataStructureDesign.java)| O(n)|O(n)| Easy
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)|[Solution](../../blob/master/EASY/src/easy/MajorityElement.java)| O(n)|O(1) | Easy|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|[Solution](../../blob/master/EASY/src/easy/CompareVersionNumbers.java)| O(n)|O(1) | Easy|
@@ -168,7 +169,7 @@
 ## MySQL
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
-
+|182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../../blob/master/Database/DuplicateEmails.sql)| O(n^2)|O(n) | Easy| 
 
 ## Bash
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
