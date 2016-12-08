@@ -1,15 +1,11 @@
 package easy;
 
+import classes.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-import classes.TreeNode;
-
 /**226. Invert Binary Tree
-
-    Total Accepted: 111483
-    Total Submissions: 234377
-    Difficulty: Easy
 
 Invert a binary tree.
 
@@ -30,7 +26,7 @@ to
 Trivia:
 This problem was inspired by this original tweet by Max Howell:
 
-    Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so fuck off.*/
+    Google: 90% of our engineers use the software you wrote (Homebrew), but you canï¿½t invert a binary tree on a whiteboard so fuck off.*/
 public class InvertBinaryTree {
 	//then I turned to Editorial solution, it provides an iterative version: time complexity is the same with recursion version: O(n), space complexity could be O(n) which is worse than
 	//the recursive version which is O(h), h is the height of the tree since recursion might place h recursive calls on the stack
