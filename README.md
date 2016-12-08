@@ -8,7 +8,7 @@
 * [MySQL](https://github.com/fishercoder1534/LeetCode#mysql)
 
 ## Shell
-* [Bash](https://github.com/fishercoder1534/LeetCode#bash)
+* [Shell](https://github.com/fishercoder1534/LeetCode#bash)
 
 
 ## Algorithms
@@ -95,6 +95,7 @@
 |208|[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Solution](../../blob/master/MEDIUM/src/medium/ImplementTrie.java)| O(n)|O(1) | Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](../../blob/master/EASY/src/easy/ReverseLinkedList.java)| O(n)|O(1) | Easy
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[Solution](../../blob/master/EASY/src/easy/IsomorphicStrings.java)| O(n)|O(1) | Easy
+|202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Solution](../../blob/master/EASY/src/easy/HappyNumber.java)| O(k)|O(k) | Easy
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../../blob/master/MEDIUM/src/medium/NumberOfIslandsUnionFind.java) [DFS](../../blob/master/MEDIUM/src/medium/NumberofIslandsDFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Solution](../../blob/master/EASY/src/easy/RotateArray.java)| O(n)|O(n), could be optimized to O(1) | Easy
 |182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../../blob/master/EASY/src/easy/Duplicate-Emails.sql)| O(n^2)|O(n)| Easy
@@ -103,6 +104,7 @@
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|[Solution](../../blob/master/EASY/src/easy/ExcelSheetColumnNumber.java)| O(n)|O(1)| Easy
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](../../blob/master/EASY/src/easy/TwoSumIIIDataStructureDesign.java)| O(n)|O(n)| Easy
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)|[Solution](../../blob/master/EASY/src/easy/MajorityElement.java)| O(n)|O(1) | Easy|
+|168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[Solution](../../blob/master/EASY/src/easy/ExcelSheetColumnTitle.java)| O(n)|O(1) | Easy|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|[Solution](../../blob/master/EASY/src/easy/CompareVersionNumbers.java)| O(n)|O(1) | Easy|
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|[Solution](../../blob/master/MEDIUM/src/medium/FindPeakElement.java) | O(1) |O(logn)/O(n) | Binary Search|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance/)|[Solution](../../blob/master/MEDIUM/src/medium/OneEditDistance.java) | O(n) |O(1) | |

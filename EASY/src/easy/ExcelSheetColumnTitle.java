@@ -1,8 +1,6 @@
 package easy;
-/**168. Excel Sheet Column Title  QuestionEditorial Solution  My Submissions
-Total Accepted: 70066
-Total Submissions: 306198
-Difficulty: Easy
+/**168. Excel Sheet Column Title
+ *
 Given a positive integer, return its corresponding column title as appear in an Excel sheet.
 
 For example:
