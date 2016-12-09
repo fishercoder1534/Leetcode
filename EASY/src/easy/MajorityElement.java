@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import utils.CommonUtils;
 
 /**169. Majority Element  QuestionEditorial Solution  My Submissions
 Total Accepted: 132691

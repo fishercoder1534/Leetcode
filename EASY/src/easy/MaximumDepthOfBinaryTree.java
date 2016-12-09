@@ -2,16 +2,12 @@ package easy;
 
 import classes.TreeNode;
 
-/**104. Maximum Depth of Binary Tree  QuestionEditorial Solution  My Submissions
-Total Accepted: 163413
-Total Submissions: 333641
-Difficulty: Easy
+/**104. Maximum Depth of Binary Tree
+ *
 Given a binary tree, find its maximum depth.
 
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.*/
 public class MaximumDepthOfBinaryTree {
-    /**Key to understand recursion, applies to generic recursion:
-     * figure out all of the base cases/exit cases*/
     
     //more verbose version
     public int maxDepth(TreeNode root) {
