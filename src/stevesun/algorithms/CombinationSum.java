@@ -1,8 +1,10 @@
-package medium;
+package stevesun.algorithms;
 
-import java.util.*;
+import stevesun.common.utils.CommonUtils;
 
-import utils.CommonUtils;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class CombinationSum {
 

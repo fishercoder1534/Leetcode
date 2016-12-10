@@ -1,4 +1,4 @@
-package classes;
+package stevesun.common.classes;
 
 import java.util.*;
 

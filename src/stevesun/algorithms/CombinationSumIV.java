@@ -1,7 +1,10 @@
-package medium;
-import java.util.*;
+package stevesun.algorithms;
 
-import utils.CommonUtils;
+import stevesun.common.utils.CommonUtils;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class CombinationSumIV {
     //since this question doesn't require to return all the combination result, instead, it just wants one number, we could use DP

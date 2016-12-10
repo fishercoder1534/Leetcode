@@ -1,7 +1,11 @@
-package medium;
+package stevesun.algorithms;
 
-import classes.UndirectedGraphNode;
-import java.util.*;
+import stevesun.common.classes.UndirectedGraphNode;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.Queue;
 
 /**
  * Created by fishercoder1534 on 9/30/16.
