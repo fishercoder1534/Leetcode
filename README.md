@@ -182,3 +182,4 @@
 ## Bash
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|195|[Tenth Line](https://leetcode.com/problems/tenth-line/)|[Solution](../../blob/master/Shell/TenthLine.sh)| O(n)|O(1) | Easy|
