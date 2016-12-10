@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 
 public class PalindromePartitioningII {
     /**This solution is cooler than Jiuzhang: https://discuss.leetcode.com/topic/32575/easiest-java-dp-solution-97-36*/

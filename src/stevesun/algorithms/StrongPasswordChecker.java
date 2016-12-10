@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 
 public class StrongPasswordChecker {
     /**Looked at this solution: https://discuss.leetcode.com/topic/63854/o-n-java-solution-by-analyzing-changes-allowed-to-fix-each-condition*/

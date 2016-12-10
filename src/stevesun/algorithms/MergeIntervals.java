@@ -1,7 +1,12 @@
-package hard;
-import java.util.*;
-import classes.Interval;
+package stevesun.algorithms;
+
+import stevesun.common.classes.Interval;
 import utils.CommonUtils;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * Created by fishercoder1534 on 10/3/16.

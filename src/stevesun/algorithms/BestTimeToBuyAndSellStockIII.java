@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 
 
 /**123. Best Time to Buy and Sell Stock III  QuestionEditorial Solution  My Submissions

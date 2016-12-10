@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 
 public class EditDistance {
 

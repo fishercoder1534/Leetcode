@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 import classes.TreeLinkNode;
 /**
  * Created by fishercoder1534 on 10/5/16.

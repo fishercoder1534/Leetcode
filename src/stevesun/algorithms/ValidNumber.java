@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 /**65. Valid Number  QuestionEditorial Solution  My Submissions
 Total Accepted: 50950
 Total Submissions: 413050

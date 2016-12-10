@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 
 /**
  * Created by fishercoder1534 on 10/3/16.

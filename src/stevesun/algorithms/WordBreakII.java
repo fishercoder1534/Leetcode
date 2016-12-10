@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 import java.util.*;
 /**
  * Created by fishercoder1534 on 10/4/16.

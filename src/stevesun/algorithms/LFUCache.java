@@ -1,13 +1,8 @@
-package hard;
+package stevesun.algorithms;
 
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class LFUCache {

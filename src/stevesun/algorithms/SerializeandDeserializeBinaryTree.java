@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 
 import classes.TreeNode;
 import java.util.*;

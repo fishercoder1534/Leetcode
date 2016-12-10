@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 
 public class DistinctSubsequences {
     /**This is a typical DP problem, illustrated in Jiuzhang.

@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 
 public class LongestIncreasingPathInAMatrix {
 //inspired by this solution: https://discuss.leetcode.com/topic/34835/15ms-concise-java-solution, wrote it myself:

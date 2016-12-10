@@ -1,4 +1,4 @@
-package hard;
+package stevesun.algorithms;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
