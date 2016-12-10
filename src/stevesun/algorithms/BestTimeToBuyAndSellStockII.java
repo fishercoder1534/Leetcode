@@ -1,4 +1,4 @@
-package medium;
+package stevesun.algorithms;
 
 public class BestTimeToBuyAndSellStockII {
 

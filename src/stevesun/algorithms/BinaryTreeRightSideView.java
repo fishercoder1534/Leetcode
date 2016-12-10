@@ -1,11 +1,11 @@
-package medium;
+package stevesun.algorithms;
+
+import stevesun.common.classes.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-
-import classes.TreeNode;
 
 /**199. Binary Tree Right Side View
 

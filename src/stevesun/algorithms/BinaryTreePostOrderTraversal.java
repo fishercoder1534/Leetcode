@@ -1,12 +1,12 @@
-package medium;
+package stevesun.algorithms;
+
+import stevesun.common.classes.TreeNode;
+import stevesun.common.utils.CommonUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
-
-import utils.CommonUtils;
-import classes.TreeNode;
 
 public class BinaryTreePostOrderTraversal {
         /**I was really confused about how iterative version works for POST-order traversal, since we'lld need to add a field in TreeNode

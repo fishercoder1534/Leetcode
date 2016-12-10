@@ -1,11 +1,10 @@
-package medium;
+package stevesun.algorithms;
+
+import stevesun.common.classes.ListNode;
+import stevesun.common.utils.CommonUtils;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-
-import utils.CommonUtils;
-import classes.ListNode;
 
 /**2. Add Two Numbers  QuestionEditorial Solution  My Submissions
 Total Accepted: 164672

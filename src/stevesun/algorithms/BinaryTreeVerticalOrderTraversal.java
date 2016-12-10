@@ -1,14 +1,8 @@
-package medium;
+package stevesun.algorithms;
 
-import classes.TreeNode;
+import stevesun.common.classes.TreeNode;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
-import java.util.TreeMap;
+import java.util.*;
 
 public class BinaryTreeVerticalOrderTraversal {
     public List<List<Integer>> verticalOrder_using_treemap(TreeNode root) {

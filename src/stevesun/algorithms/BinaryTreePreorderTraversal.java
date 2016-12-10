@@ -1,10 +1,10 @@
-package medium;
+package stevesun.algorithms;
+
+import stevesun.common.classes.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
-
-import classes.TreeNode;
 
 public class BinaryTreePreorderTraversal {
     public List<Integer> preorderTraversal_iterative_original(TreeNode root) {
