@@ -1,6 +1,6 @@
 package stevesun.algorithms;
 
-import utils.CommonUtils;
+import stevesun.common.utils.CommonUtils;
 
 /**66. Plus One  QuestionEditorial Solution  My Submissions
 Total Accepted: 115402

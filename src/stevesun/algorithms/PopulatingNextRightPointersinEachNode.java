@@ -1,5 +1,5 @@
 package stevesun.algorithms;
-import classes.TreeLinkNode;
+import stevesun.common.classes.TreeLinkNode;
 
 /**
  * Created by fishercoder1534 on 10/5/16.

@@ -1,6 +1,6 @@
 package stevesun.algorithms;
 
-import utils.CommonUtils;
+import stevesun.common.utils.CommonUtils;
 
 /**174. Dungeon Game
 

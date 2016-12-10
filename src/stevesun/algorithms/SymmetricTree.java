@@ -1,6 +1,6 @@
 package stevesun.algorithms;
 
-import classes.TreeNode;
+import stevesun.common.classes.TreeNode;
 
 /**101. Symmetric Tree
 

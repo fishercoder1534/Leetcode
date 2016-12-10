@@ -1,7 +1,7 @@
 package stevesun.algorithms;
 
-import classes.TreeNode;
-import utils.CommonUtils;
+import stevesun.common.classes.TreeNode;
+import stevesun.common.utils.CommonUtils;
 
 import java.util.ArrayList;
 import java.util.List;

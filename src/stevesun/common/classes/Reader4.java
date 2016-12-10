@@ -1,4 +1,4 @@
-package classes;
+package stevesun.common.classes;
 
 public class Reader4 {
     public int read4(char[] buf){

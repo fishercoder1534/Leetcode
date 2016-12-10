@@ -1,12 +1,8 @@
 package stevesun.algorithms;
 
-import classes.TreeNode;
+import stevesun.common.classes.TreeNode;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**107. Binary Tree Level Order Traversal II
 

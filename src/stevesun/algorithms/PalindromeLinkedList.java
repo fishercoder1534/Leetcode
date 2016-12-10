@@ -1,9 +1,9 @@
 package stevesun.algorithms;
 
-import java.util.Stack;
+import stevesun.common.classes.ListNode;
+import stevesun.common.utils.CommonUtils;
 
-import utils.CommonUtils;
-import classes.ListNode;
+import java.util.Stack;
 
 public class PalindromeLinkedList {
     //then I turned to Discuss, and found that they actually reverse the half and then do the comparison, e.g. https://discuss.leetcode.com/topic/33376/java-easy-to-understand

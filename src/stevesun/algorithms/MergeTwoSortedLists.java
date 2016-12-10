@@ -1,6 +1,6 @@
 package stevesun.algorithms;
 
-import classes.ListNode;
+import stevesun.common.classes.ListNode;
 
 public class MergeTwoSortedLists {
 

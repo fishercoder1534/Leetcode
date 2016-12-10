@@ -1,9 +1,9 @@
 package stevesun.algorithms;
 
+import stevesun.common.classes.ListNode;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
-
-import classes.ListNode;
 
 /**As discussed with 司德君,王昊,薛博, this is super easy as long as you can think of heap, offer each of the head node into the min-heap.*/
 

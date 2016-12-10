@@ -1,6 +1,6 @@
 package stevesun.algorithms;
 
-import classes.TreeNode;
+import stevesun.common.classes.TreeNode;
 
 /**104. Maximum Depth of Binary Tree
  *

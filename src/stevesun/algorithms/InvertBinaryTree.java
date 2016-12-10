@@ -1,6 +1,6 @@
 package stevesun.algorithms;
 
-import classes.TreeNode;
+import stevesun.common.classes.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

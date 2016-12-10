@@ -1,4 +1,4 @@
-package classes;
+package stevesun.common.classes;
 
 /**
  * Created by fishercoder1534 on 10/5/16.

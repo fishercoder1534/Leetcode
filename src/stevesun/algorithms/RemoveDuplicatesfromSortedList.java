@@ -1,7 +1,7 @@
 package stevesun.algorithms;
 
-import utils.CommonUtils;
-import classes.ListNode;
+import stevesun.common.classes.ListNode;
+import stevesun.common.utils.CommonUtils;
 
 public class RemoveDuplicatesfromSortedList {
 

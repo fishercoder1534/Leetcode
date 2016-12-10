@@ -1,7 +1,9 @@
 package stevesun.algorithms;
 
-import classes.TreeNode;
-import java.util.*;
+import stevesun.common.classes.TreeNode;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Created by fishercoder1534 on 9/30/16.

@@ -1,7 +1,7 @@
 package stevesun.algorithms;
 
 import stevesun.common.classes.Interval;
-import utils.CommonUtils;
+import stevesun.common.utils.CommonUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;

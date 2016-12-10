@@ -1,7 +1,7 @@
 package stevesun.algorithms;
 
-import utils.CommonUtils;
-import classes.ListNode;
+import stevesun.common.classes.ListNode;
+import stevesun.common.utils.CommonUtils;
 
 /**19. Remove Nth Node From End of List  QuestionEditorial Solution  My Submissions
 Total Accepted: 122330

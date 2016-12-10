@@ -1,6 +1,6 @@
 package stevesun.algorithms;
 
-import classes.TreeNode;
+import stevesun.common.classes.TreeNode;
 
 /**
  * Given a binary tree, determine if it is height-balanced.

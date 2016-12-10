@@ -1,6 +1,6 @@
 package stevesun.algorithms;
 
-import classes.ListNode;
+import stevesun.common.classes.ListNode;
 
 public class IntersectionofTwoLinkedLists {
     /**Looked at this post: https://discuss.leetcode.com/topic/5492/concise-java-solution-o-1-memory-o-n-time*/

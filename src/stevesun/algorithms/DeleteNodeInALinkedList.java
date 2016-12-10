@@ -1,6 +1,6 @@
 package stevesun.algorithms;
 
-import classes.ListNode;
+import stevesun.common.classes.ListNode;
 
 /**237. Delete Node in a Linked List
  *

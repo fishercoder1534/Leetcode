@@ -1,7 +1,7 @@
 package stevesun.algorithms;
 
-import classes.ListNode;
-import utils.CommonUtils;
+import stevesun.common.classes.ListNode;
+import stevesun.common.utils.CommonUtils;
 
 /**203. Remove Linked List Elements  QuestionEditorial Solution  My Submissions
 Total Accepted: 74027

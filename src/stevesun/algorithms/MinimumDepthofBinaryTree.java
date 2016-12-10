@@ -1,9 +1,9 @@
 package stevesun.algorithms;
 
+import stevesun.common.classes.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
-
-import classes.TreeNode;
 
 public class MinimumDepthofBinaryTree {
 /**We can solve this problem using both BFS and DFS:

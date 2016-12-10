@@ -3,7 +3,7 @@
  */
 package stevesun.algorithms;
 
-import classes.ListNode;
+import stevesun.common.classes.ListNode;
 
 import java.util.HashMap;
 import java.util.Map;

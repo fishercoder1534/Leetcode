@@ -1,7 +1,7 @@
 /**
  * 
  */
-package utils;
+package stevesun.common.utils;
 
 import java.util.ArrayList;
 import java.util.Collections;

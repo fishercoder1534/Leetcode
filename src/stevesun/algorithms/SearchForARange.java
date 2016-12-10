@@ -1,6 +1,6 @@
 package stevesun.algorithms;
 
-import utils.CommonUtils;
+import stevesun.common.utils.CommonUtils;
 
 public class SearchForARange {
 
