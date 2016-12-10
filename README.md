@@ -145,7 +145,7 @@
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|[Solution](../../blob/master/MEDIUM/src/medium/SetMatrixZeroes.java)|O(mn)|O(mn)|Medium|
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[Solution](../../blob/master/EASY/src/easy/ClimbingStairs.java)|O(n)|O(n)|Easy| DP
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../../blob/master/HARD/src/hard/TextJustification.java)|O(n)|O(1)|Hard|
-|67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../../blob/master/EASY/src/easy/AddBinary.java)|O(n)|O(1)|Easy|
+|67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../../blob/master/src/stevesun/algorithms/AddBinary.java)|O(n)|O(1)|Easy|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Solution](../../blob/master/EASY/src/easy/LengthofLastWord.java)|O(n)|O(1)|Easy|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](../../blob/master/HARD/src/hard/MergeIntervals.java)|O(n*logn)|O(1)|Hard|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../../blob/master/MEDIUM/src/medium/PermutationsII.java)|O(n*n!)|O(n)|Medium|Backtracking
