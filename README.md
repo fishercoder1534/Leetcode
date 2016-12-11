@@ -113,6 +113,7 @@
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|[Solution](../../blob/master/src/stevesun/algorithms/FindPeakElement.java) | O(1) |O(logn)/O(n) | Binary Search|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance/)|[Solution](../../blob/master/src/stevesun/algorithms/OneEditDistance.java) | O(n) |O(1) | |
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|[Solution](../../blob/master/src/stevesun/algorithms/IntersectionofTwoLinkedLists.java)| O(m+n)|O(1) | Easy| Linked List
+|158|[Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/)|[Solution](../../blob/master/src/stevesun/algorithms/ReadNCharactersGivenRead4IICallMultipleTimes.java)| O(n)|O(1) | Hard|
 |157|[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/)|[Solution](../../blob/master/src/stevesun/algorithms/ReadNCharactersGivenRead4.java)| O(n)|O(1) | Easy| 
 |155|[Min Stack](https://leetcode.com/problems/min-stack/)|[Solution](../../blob/master/src/stevesun/algorithms/MinStack.java)| O(1)|O(n) | Easy| Stack
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|[Solution](../../blob/master/src/stevesun/algorithms/ReverseWordsinaString.java)| O(n)|O(n) | Medium|
