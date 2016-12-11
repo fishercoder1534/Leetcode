@@ -90,6 +90,7 @@
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/LowestCommonAncestorOfABinarySearchTree.java)| O(h)|O(1) | Easy| DFS
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/InvertBinaryTree.java)| O(n)|O(h) | Easy| DFS, recursion
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)|[Solution](../../blob/master/src/stevesun/algorithms/ImplementStackUsingQueues.java)| O(n)|O(n) | Easy| Stack, Queue
+|224|[Basic Calculator](https://leetcode.com/problems/basic-calculator/)|[Solution](../../blob/master/src/stevesun/algorithms/BasicCalculator.java)| ?|? | Hard| 
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../../blob/master/src/stevesun/algorithms/RectangleArea.java)| O(1)|O(1) | Easy| 
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/ContainsDuplicateII.java)| O(n)|O(n) | Easy| HashMap
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|[Solution](../../blob/master/src/stevesun/algorithms/ContainsDuplicate.java)| O(n)|O(n) | Easy| HashSet
