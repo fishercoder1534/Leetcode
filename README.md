@@ -183,3 +183,4 @@
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |195|[Tenth Line](https://leetcode.com/problems/tenth-line/)|[Solution](../../blob/master/Shell/TenthLine.sh)| O(n)|O(1) | Easy|
+|193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)|[Solution](../../blob/master/Shell/ValidPhoneNumbers.sh)| O(n)|O(1) | Easy|
