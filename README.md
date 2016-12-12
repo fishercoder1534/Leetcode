@@ -47,6 +47,7 @@
 |379|[Design Phone Directory](https://leetcode.com/problems/design-phone-directory/)|[Solution](../../blob/master/src/stevesun/algorithms/DesignPhoneDirectory.java)| O(1)|O(n) | Medium| 
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|[Solution](../../blob/master/src/stevesun/algorithms/GuessNumberHigherorLower.java)| O(logn)|O(1) | Easy| Binary Search
 |370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../../blob/master/src/stevesun/algorithms/RangeAddition.java)| O(n+k)|O(1) | Medium| 
+|367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[Solution](../../blob/master/src/stevesun/algorithms/ValidPerfectSquare.java)| O(n)|O(1) | Medium| 
 |366|[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/FindLeavesofBinaryTree.java)| O(n)|O(h) | Medium| DFS
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/NestedListWeightSumII.java)| O(n)|O(h) | Medium| DFS
 |362|[Design Hit Counter](https://leetcode.com/problems/design-hit-counter/)|[Solution](../../blob/master/src/stevesun/algorithms/DesignHitCounter.java)| O(1) amortized|O(k) | Medium| Design
