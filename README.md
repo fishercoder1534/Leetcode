@@ -187,4 +187,4 @@
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |195|[Tenth Line](https://leetcode.com/problems/tenth-line/)|[Solution](../../blob/master/Shell/TenthLine.sh)| O(n)|O(1) | Easy|
 |193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)|[Solution](../../blob/master/Shell/ValidPhoneNumbers.sh)| O(n)|O(1) | Easy|
-|192|[Word Frequency](https://leetcode.com/problems/word-frequency/)|[Solution](../../blob/master/Shell/WordFrequency.sh)| O(n)|O(k) | Easy|
+|192|[Word Frequency](https://leetcode.com/problems/word-frequency/)|[Solution](../../blob/master/Shell/WordFrequency.sh)| O(n)|O(k) | Medium|
