@@ -181,6 +181,7 @@
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../../blob/master/Database/DuplicateEmails.sql)| O(n^2)|O(n) | Easy| 
+|181|[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)|[Solution](../../blob/master/Database/EmployeesEarningMoreThanTheirManagers.sql)| O(n^2)|O(n) | Easy|
 
 ## Bash
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
