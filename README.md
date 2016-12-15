@@ -182,6 +182,7 @@
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../../blob/master/Database/DuplicateEmails.sql)| O(n^2)|O(n) | Easy| 
 |181|[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)|[Solution](../../blob/master/Database/EmployeesEarningMoreThanTheirManagers.sql)| O(n^2)|O(n) | Easy|
+|175|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)|[Solution](../../blob/master/Database/CombineTwoTables.sql)| O(m+n)|O(m+n) | Easy|
 
 ## Bash
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
