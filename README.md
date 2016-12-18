@@ -14,6 +14,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|472|[Concatenated Words](https://leetcode.com/problems/concatenated-words/)|[Solution](../../blob/master/src/stevesun/algorithms/ConcatenatedWords.java) | O(n^2) |O(n) | Hard| Trie, DP, DFS
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../../blob/master/src/stevesun/algorithms/UniqueSubstringsinWraparoundString.java) | O(n) |O(1) | Medium| DP
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[Solution](../../blob/master/src/stevesun/algorithms/IslandPerimeter.java)| O(m*n)|O(1) | Easy| 
 |462|[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/MinimumMovestoEqualArrayElementsII.java) | O(nlogn) |O(1) | Medium|
