@@ -17,6 +17,7 @@
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../../blob/master/src/stevesun/algorithms/UniqueSubstringsinWraparoundString.java) | O(n) |O(1) | Medium| DP
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[Solution](../../blob/master/src/stevesun/algorithms/IslandPerimeter.java)| O(m*n)|O(1) | Easy| 
 |462|[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/MinimumMovestoEqualArrayElementsII.java) | O(nlogn) |O(1) | Medium|
+|461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[Solution](../../blob/master/src/stevesun/algorithms/HammingDistance.java) | O(n) |O(1) | Easy|
 |459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[Solution](../../blob/master/src/stevesun/algorithms/RepeatedSubstringPattern.java)| O(n)|O(n) | Easy| KMP
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern/)|[Solution](../../blob/master/src/stevesun/algorithms/_132Pattern.java) | O(n) |O(n) | Medium| Stack
 |455|[Assign Cookies](https://leetcode.com/problems/assign-cookies/)|[Solution](../../blob/master/src/stevesun/algorithms/AssignCookies.java)| O(n)|O(1) | Easy|
