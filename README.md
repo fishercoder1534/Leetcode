@@ -190,6 +190,7 @@
 |183|[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)|[Solution](../../blob/master/Database/CustomersWhoNeverOrder.sql)| O(n^2)|O(n) | Easy|
 |182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../../blob/master/Database/DuplicateEmails.sql)| O(n^2)|O(n) | Easy| 
 |181|[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)|[Solution](../../blob/master/Database/EmployeesEarningMoreThanTheirManagers.sql)| O(n^2)|O(n) | Easy|
+|176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|[Solution](../../blob/master/Database/SecondHighestSalary.sql)| O(n)|O(1) | Easy|
 |175|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)|[Solution](../../blob/master/Database/CombineTwoTables.sql)| O(m+n)|O(m+n) | Easy|
 
 ## Bash
