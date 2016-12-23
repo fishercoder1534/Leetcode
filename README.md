@@ -104,7 +104,7 @@
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../../blob/master/src/stevesun/algorithms/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
 |208|[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/ImplementTrie.java)| O(n)|O(1) | Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](../../blob/master/src/stevesun/algorithms/ReverseLinkedList.java)| O(n)|O(1) | Easy
-|205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[Solution](../../blob/master/src/stevesun/algorithms/IsomorphicStrings.java)| O(n)|O(1) | Easy
+|205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[Solution](../../blob/master/src/94stevesun/algorithms/IsomorphicStrings.java)| O(n)|O(1) | Easy
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Solution](../../blob/master/src/stevesun/algorithms/HappyNumber.java)| O(k)|O(k) | Easy
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../../blob/master/src/stevesun/algorithms/NumberOfIslandsUnionFind.java) [DFS](../../blob/master/MEDIUM/src/medium/NumberofIslandsDFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
 |198|[House Robber](https://leetcode.com/problems/house-robber/)|[Solution](../../blob/master/src/stevesun/algorithms/HouseRobber.java)| O(n)|O(n)| Easy | DP
@@ -146,6 +146,7 @@
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/MaximumDepthOfBinaryTree.java)| O(n)|O(h) | Easy| DFS
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeZigzagLevelOrderTraversal.java)| O(n)|O(h) | Medium| BFS,DFS
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeLevelOrderTraversal.java)| O(n)|O(h) | Easy| BFS
+|94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeInorderTraversal.java)| O(n)|O(h) | Medium| Binary Tree
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../../blob/master/src/stevesun/algorithms/DecodeWays.java)| O(n)|O(n) | Medium| DP
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Solution] | O(n) | O(1) | Medium | DFS/Recursion
 |79|[Word Search](https://leetcode.com/problems/word-search/)|[Solution](../../blob/master/src/stevesun/algorithms/WordSearch.java)|O(m*n*l) ? |O(m*n)|Medium|Backtracking/DFS
