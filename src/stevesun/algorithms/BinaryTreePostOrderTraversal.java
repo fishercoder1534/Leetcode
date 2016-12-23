@@ -8,11 +8,21 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
+/**Given a binary tree, return the postorder traversal of its nodes' values.
+
+ For example:
+ Given binary tree {1,#,2,3},
+ 1
+  \
+   2
+  /
+ 3
+ return [3,2,1].
+
+ Note: Recursive solution is trivial, could you do it iteratively?*/
+
 public class BinaryTreePostOrderTraversal {
-        /**I was really confused about how iterative version works for POST-order traversal, since we'lld need to add a field in TreeNode
-        class called "visited", to mark this node has been visited before, otherwise it goes into indefinite loop.
-        Then I turned to Discuss, only found that the top-voted one is actually using such a trick:
-        modify the code for pre-order traversal so that it becomes root->right->left, and then reverse the result to get left->right->root, so tricky!!!*/
+	/**modify the code for pre-order traversal so that it becomes root->right->left, and then reverse the result to get left->right->root, so tricky!!!*/
     public static List<Integer> postorderTraversal_iterative(TreeNode root) {
         List<Integer> result = new ArrayList();
         Stack<TreeNode> stack = new Stack();
