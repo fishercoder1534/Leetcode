@@ -4,10 +4,6 @@ import java.util.Arrays;
 
 /**259. 3Sum Smaller
 
-    Total Accepted: 13428
-    Total Submissions: 33743
-    Difficulty: Medium
-
 Given an array of n integers nums and a target, find the number of index triplets i, j, k with 0 <= i < j < k < n that satisfy the condition nums[i] + nums[j] + nums[k] < target.
 
 For example, given nums = [-2, 0, 1, 3], and target = 2.

@@ -4,16 +4,23 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+
+ Note: The solution set must not contain duplicate triplets.
+
+ For example, given array S = [-1, 0, 1, 2, -1, -4],
+
+ A solution set is:
+ [
+ [-1, 0, 1],
+ [-1, -1, 2]
+ ]*/
+
 public class _3Sum {
-/**This solution is pretty clear and similar to my own thought:
- * https://discuss.leetcode.com/topic/26050/simple-o-n-2-two-pointers-java-solution*/
-    
-    /**ATTN: this two-pointer technique here doesn't need a middle pointer!!! Instead, we just increment/decrement left
-     * or right pointer by 1 each time when the sum != 0*/
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList();
         if(nums == null || nums.length == 0) return result;
-        Arrays.sort(nums);//you'll have to sort it first, this is very important and very natural to think of 
+        Arrays.sort(nums);
         for(int i = 0; i < nums.length; i++){//we can let i reach the last element, it's fine since we have other checks afterwards, it won't go out of bound exception.
             if(i >= 1 && nums[i] == nums[i-1]) continue;//skip equal elements to avoid duplicates
             int left = i+1, right = nums.length-1;
