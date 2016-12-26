@@ -25,6 +25,7 @@
 |455|[Assign Cookies](https://leetcode.com/problems/assign-cookies/)|[Solution](../../blob/master/src/stevesun/algorithms/AssignCookies.java)| O(n)|O(1) | Easy|
 |454|[4Sum II](https://leetcode.com/problems/4sum-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/_4SumII.java) | O(n) |O(n) | Medium| HashMap
 |453|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)|[Solution](../../blob/master/src/stevesun/algorithms/MinimumMovestoEqualArrayElements.java)| O(n)|O(1) | Easy|
+|448|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)|[Solution](../../blob/master/src/stevesun/algorithms/FindAllNumbersDisappearedinanArray.java)| O(n)|O(1) | Easy| Array, HashMap
 |447|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)|[Solution](../../blob/master/src/stevesun/algorithms/NumberofBoomerangs.java)| O(n^2)|O(n) | Easy| HashMap
 |441|[Arranging Coins](https://leetcode.com/problems/arrange-coins/)|[Solution](../../blob/master/src/stevesun/algorithms/ArrangingCoins.java)| O(n)|O(1) | Easy|
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](../../blob/master/src/stevesun/algorithms/FindAllAnagramsinaString.java)| O(n)|O(1) | Easy|
