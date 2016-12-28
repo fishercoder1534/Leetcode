@@ -2,11 +2,14 @@
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
+```
 1. Fork this repo
+
 2. Create your feature branch (`git checkout -b my-awesome-feature`)
 3. Commit your changes (`git commit -am 'Added some awesome feature'`)
 4. Push to the branch (`git push origin my-awesome-feature`)
 5. Create new Pull Request
+```
 
 ## Algorithms
 * [Algorithms](https://github.com/fishercoder1534/LeetCode#algorithms)
