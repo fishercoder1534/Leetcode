@@ -161,6 +161,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeInorderTraversal.java)| O(n)|O(h) | Medium| Binary Tree
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../../blob/master/src/stevesun/algorithms/DecodeWays.java)| O(n)|O(n) | Medium| DP
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Solution] | O(n) | O(1) | Medium | DFS/Recursion
+|85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)|[Solution](../../blob/master/src/stevesun/algorithms/MaximalRectangle.java)|O(m*n) |O(n)|Hard|DP
 |79|[Word Search](https://leetcode.com/problems/word-search/)|[Solution](../../blob/master/src/stevesun/algorithms/WordSearch.java)|O(m*n*l) ? |O(m*n)|Medium|Backtracking/DFS
 |78|[Subsets](https://leetcode.com/problems/subsets/)|[Solution](../../blob/master/src/stevesun/algorithms/Subsets.java)|O(n^2) ? |O(1)|Medium|Backtracking
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[Solution](../../blob/master/src/stevesun/algorithms/MinimumWindowSubstring.java)|O(n)|O(k)|Hard|Two Pointers
