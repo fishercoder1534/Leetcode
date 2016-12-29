@@ -2,9 +2,20 @@ package stevesun.algorithms;
 
 import java.util.Arrays;
 
+/**Given two strings s and t, write a function to determine if t is an anagram of s.
+
+ For example,
+ s = "anagram", t = "nagaram", return true.
+ s = "rat", t = "car", return false.
+
+ Note:
+ You may assume the string contains only lowercase alphabets.
+
+ Follow up:
+ What if the inputs contain unicode characters? How would you adapt your solution to such case?*/
+
 public class ValidAnagram {
     public boolean isAnagram_solution1(String s, String t) {
-        //I even thought about using HashMap to compute their character frequencies respectively and then compare each entry of the two maps, but totally unnecessary.
         char[] schar = s.toCharArray();
         char[] tchar = t.toCharArray();
         Arrays.sort(schar);
@@ -12,7 +23,7 @@ public class ValidAnagram {
         return new String(schar).equals(new String(tchar));
     }
     
-    //another way: altough much slower
+    //another way: although much slower
     public boolean isAnagram_solution2(String s, String t) {
         if(s == null || t == null || s.length() != t.length()) return false;
         int[] counts = new int[26];
