@@ -9,14 +9,14 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Created by fishercoder1534 on 10/3/16.
+ * Given a collection of intervals, merge all overlapping intervals.
+
+ For example,
+ Given [1,3],[2,6],[8,10],[15,18],
+ return [1,6],[8,10],[15,18].
  */
 public class MergeIntervals {
 
-    /**Inspired by this post: https://discuss.leetcode.com/topic/4319/a-simple-java-solution
-     * 1. Sort the intervals first, based on their starting point
-     * 2. then compare the end point with next interval's start point, if they overlap, then update the end point to the longest one,
-     * if they don't overlap, we add it into the result and continue the iteration.*/
     public static List<Interval> merge(List<Interval> intervals) {
         if(intervals.size() <= 1) return intervals;
 
