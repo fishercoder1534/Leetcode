@@ -103,7 +103,8 @@ Your ideas/fixes/algorithms are more than welcome!
 |251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[Solution](../../blob/master/src/stevesun/algorithms/Flatten2DVector.java)| O(1)|O(m*n) | Medium| 
 |250|[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)|[Solution](../../blob/master/src/stevesun/algorithms/CountUnivalueSubtrees.java)| O(n)|O(h) | Medium| DFS
 |249|[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/)|[Solution](../../blob/master/src/stevesun/algorithms/GroupShiftedStrings.java) | O(nlogn) | O(n) | 
-|246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../../blob/master/src/stevesun/algorithms/StrobogrammaticNumber.java) | O(n) | O(1) | 
+|247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/StrobogrammaticNumberII.java) | O(n^2) | O(n) | Medium | Recursion
+|246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../../blob/master/src/stevesun/algorithms/StrobogrammaticNumber.java) | O(n) | O(1) | Easy 
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../../blob/master/src/stevesun/algorithms/ShortestWordDistance.java) | O(n) | O(1) | 
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[Solution](../../blob/master/src/stevesun/algorithms/DeleteNodeInALinkedList.java)| O(1)|O(1) | Easy| LinkedList
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/LowestCommonAncestorOfABinarySearchTree.java)| O(h)|O(1) | Easy| DFS
