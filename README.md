@@ -90,6 +90,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../../blob/master/src/stevesun/algorithms/PaintFence.java)| O(n)|O(1) | Easy| DP
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|[Solution]| 
 |272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/ClosestBinarySearchTreeValueII.java)| O(h+k)|O(h) | Hard| Stack
+|271|[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)|[Solution](../../blob/master/src/stevesun/algorithms/EncodeandDecodeStrings.java)| O(n)|O(1) | Medium| 
 |270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/)|[Solution](../../blob/master/src/stevesun/algorithms/ClosestBinarySearchTreeValue.java)| O(h)|O(1) | Easy| DFS
 |266|[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)|[Solution](../../blob/master/src/stevesun/algorithms/PalindromePermutation.java)| O(n)|O(1) | Easy| HashMap
 |265|[Paint House II](https://leetcode.com/problems/paint-house-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/PaintHouseII.java)| ?|? | Hard| 
