@@ -87,6 +87,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/)|[Solution](../../blob/master/src/stevesun/algorithms/UniqueWordAbbreviation.java)| O(n)|O(1) | Easy| 
 |285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](../../blob/master/src/stevesun/algorithms/InorderSuccessorInBST.java)| O(h)|O(1) | Medium|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../../blob/master/src/stevesun/algorithms/MoveZeroes.java)| O(n)|O(1) | Easy| 
+|281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)|[Solution](../../blob/master/src/stevesun/algorithms/ZigzagIterator.java)| O(n)|O(n) | Medium|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)|[Solution](../../blob/master/src/stevesun/algorithms/WiggleSort.java)| O(n)|O(1) | Medium|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../blob/master/src/stevesun/algorithms/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
 |276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../../blob/master/src/stevesun/algorithms/PaintFence.java)| O(n)|O(1) | Easy| DP
