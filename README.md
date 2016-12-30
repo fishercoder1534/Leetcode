@@ -77,6 +77,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |311|[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/)|[Solution](../../blob/master/src/stevesun/algorithms/SparseMatrixMultiplication.java)| O(m*n*l)|O(m*l)| Medium|
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](../../blob/master/src/stevesun/algorithms/RemoveInvalidParentheses.java)| ? | ? | Hard| BFS
 |299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|[Solution](../../blob/master/src/stevesun/algorithms/BullsandCows.java)| O(n)|O(1) | Easy| 
+|298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeLongestConsecutiveSequence.java)| O(n)|O(n) | Medium | Tree
 |296|[Best Meeting Point](https://leetcode.com/problems/best-meeting-point/)|[Solution](../../blob/master/src/stevesun/algorithms/BestMeetingPoint.java)| ?|? | Hard|
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|[Solution](../../blob/master/src/stevesun/algorithms/FindMedianFromDataStream.java)| O(nlogn) | O(n) | Hard| Heap
 |293|[Flip Game](https://leetcode.com/problems/flip-game/)|[Solution](../../blob/master/src/stevesun/algorithms/FlipGame.java)| ?|O(n) | Easy| 

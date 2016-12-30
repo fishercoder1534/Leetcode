@@ -27,7 +27,7 @@ public class _3Sum_Smaller {
             while(left < right){
                 int sum = nums[i] + nums[left] + nums[right];
                 if(sum < target) {
-                    result += right-left;//this line is super cool!
+                    result += right-left;//this line is key!
                     left++;
                 } else right--;
             }
