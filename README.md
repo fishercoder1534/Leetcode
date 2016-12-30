@@ -123,6 +123,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Solution](../../blob/master/src/stevesun/algorithms/HappyNumber.java)| O(k)|O(k) | Easy
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../../blob/master/src/stevesun/algorithms/NumberOfIslandsUnionFind.java) [DFS](../../blob/master/MEDIUM/src/medium/NumberofIslandsDFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
 |198|[House Robber](https://leetcode.com/problems/house-robber/)|[Solution](../../blob/master/src/stevesun/algorithms/HouseRobber.java)| O(n)|O(n)| Easy | DP
+|190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|[Solution](../../blob/master/src/stevesun/algorithms/ReverseBits.java)| O(n)|O(1)| Easy | Bit Manipulation
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Solution](../../blob/master/src/stevesun/algorithms/RotateArray.java)| O(n)|O(n), could be optimized to O(1) | Easy
 |182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../../blob/master/src/stevesun/algorithms/Duplicate-Emails.sql)| O(n^2)|O(n)| Easy
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Queue](../../blob/master/src/stevesun/algorithms/BSTIterator_using_q.java) [Stack](../../blob/master/MEDIUM/src/medium/BSTIterator_using_stack.java)| O(1) |O(h) | Medium|

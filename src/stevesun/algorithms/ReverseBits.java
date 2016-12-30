@@ -1,16 +1,13 @@
 package stevesun.algorithms;
-/**190. Reverse Bits  QuestionEditorial Solution  My Submissions
-Total Accepted: 72198
-Total Submissions: 245079
-Difficulty: Easy
+
+/**190. Reverse Bits
+ *
 Reverse bits of a given 32 bits unsigned integer.
 
 For example, given input 43261596 (represented in binary as 00000010100101000001111010011100), return 964176192 (represented in binary as 00111001011110000010100101000000).
 
 Follow up:
-If this function is called many times, how would you optimize it?
-
-Related problem: Reverse Integer*/
+If this function is called many times, how would you optimize it?*/
 public class ReverseBits {
     /**This post: http://stackoverflow.com/questions/2811319/difference-between-and
      * gives a good explanation between logical right shift: ">>>" and arithmetic right shift: ">>".
@@ -23,7 +20,6 @@ public class ReverseBits {
     
     
  // you need treat n as an unsigned value
-    //inspired by this solution: https://discuss.leetcode.com/topic/9764/java-solution-and-optimization
     public int reverseBits(int n) {
         int res = 0;
         for(int i = 0; i < 32; i++){
