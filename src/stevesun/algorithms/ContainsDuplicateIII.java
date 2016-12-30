@@ -3,8 +3,9 @@ package stevesun.algorithms;
 import java.util.TreeSet;
 
 /**
- * 220. Contains Duplicate III QuestionEditorial Solution My Submissions Total Accepted: 33823 Total
- * Submissions: 176491 Difficulty: Medium Given an array of integers, find out whether there are two
+ * 220. Contains Duplicate III
+ *
+ * Given an array of integers, find out whether there are two
  * distinct indices i and j in the array such that the difference between nums[i] and nums[j] is at
  * most t and the difference between i and j is at most k.
  */
@@ -46,21 +47,6 @@ public class ContainsDuplicateIII {
             set.add(nums[i]);
             if(set.size() > k) set.remove(nums[i-k]);//set doesn't have indices and it's not ordered, we could only specify the element 
             //that we want to remove, this element is nums[i-k]
-        }
-        return false;
-    }
-
-    //My naive approach prior to looking on Discuss: 
-    //it must be a O(n^2), I cannot think of any algorithms that do better than this
-    // as expected, this following algorithm made it to 29/31 test cases and failed by the last
-    // extreme test case due to TLE.
-    public boolean containsNearbyAlmostDuplicate_TLE(int[] nums, int k, int t) {
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                long res = nums[j] - nums[i];// use long type to avoid overflow
-                if (Math.abs(res) <= t && j - i <= k)
-                    return true;
-            }
         }
         return false;
     }

@@ -117,6 +117,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)|[Solution](../../blob/master/src/stevesun/algorithms/ImplementStackUsingQueues.java)| O(n)|O(n) | Easy| Stack, Queue
 |224|[Basic Calculator](https://leetcode.com/problems/basic-calculator/)|[Solution](../../blob/master/src/stevesun/algorithms/BasicCalculator.java)| ?|? | Hard| 
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../../blob/master/src/stevesun/algorithms/RectangleArea.java)| O(1)|O(1) | Easy| 
+|220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)|[Solution](../../blob/master/src/stevesun/algorithms/ContainsDuplicateIII.java)| O(nlogn)|O(n) | Medium| TreeSet
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/ContainsDuplicateII.java)| O(n)|O(n) | Easy| HashMap
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|[Solution](../../blob/master/src/stevesun/algorithms/ContainsDuplicate.java)| O(n)|O(n) | Easy| HashSet
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../../blob/master/src/stevesun/algorithms/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
