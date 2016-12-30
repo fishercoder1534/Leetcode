@@ -2,12 +2,11 @@ package stevesun.algorithms;
 
 import java.util.Arrays;
 
+/**Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+ For example, given array S = {-1 2 1 -4}, and target = 1.
+ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).*/
+
 public class _3SumClosest {
-/**One implicit requirement is that you must have THREE elements!!! You cannot have just one!*/
-    
-    /**Another cool trick that I learned here is that:
-     * after comparing the absolute difference, we'll see if thisSum > target or not, then we decide to shift left or right pointer.*/
-    
 
     public int threeSumClosest(int[] nums, int target) {
         if(nums == null || nums.length == 0) return 0;

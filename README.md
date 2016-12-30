@@ -191,6 +191,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](../../blob/master/src/stevesun/algorithms/MergeTwoSortedLists.java)|O(n)|O(1)|Easy|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Solution](../../blob/master/src/stevesun/algorithms/ValidParentheses.java)|O(n)|O(n)|Easy|Stack
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../../blob/master/src/stevesun/algorithms/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
+|16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[Solution](../../blob/master/src/stevesun/algorithms/_3SumClosest.java)|O(nlogn)|O(1)|Medium|Two Pointers
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../../blob/master/src/stevesun/algorithms/_3Sum.java)|O(n^2)|O(1)|Medium|Two Pointers
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[Solution](../../blob/master/src/stevesun/algorithms/LongestCommonPrefix.java)| O(n*min(wordLength in this array)) | O(1) | Easy
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](../../blob/master/src/stevesun/algorithms/RomantoInteger.java)| O(1) | O(1) | Easy
