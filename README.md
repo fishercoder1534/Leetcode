@@ -105,6 +105,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../../blob/master/src/stevesun/algorithms/ShortestWordDistance.java) | O(n) | O(1) | 
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[Solution](../../blob/master/src/stevesun/algorithms/DeleteNodeInALinkedList.java)| O(1)|O(1) | Easy| LinkedList
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/LowestCommonAncestorOfABinarySearchTree.java)| O(h)|O(1) | Easy| DFS
+|233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)|[Solution](../../blob/master/src/stevesun/algorithms/NumberofDigitOne.java)| O(n)|O(1) | Hard| Math
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)|[Solution](../../blob/master/src/stevesun/algorithms/SummaryRanges.java)| O(n)|O(1) | Medium| Array
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/InvertBinaryTree.java)| O(n)|O(h) | Easy| DFS, recursion
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)|[Solution](../../blob/master/src/stevesun/algorithms/ImplementStackUsingQueues.java)| O(n)|O(n) | Easy| Stack, Queue
