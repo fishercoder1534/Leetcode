@@ -190,6 +190,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[Solution](../../blob/master/src/stevesun/algorithms/GenerateParentheses.java)|TBD|O(n)|Medium|Backtracking
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](../../blob/master/src/stevesun/algorithms/MergeTwoSortedLists.java)|O(n)|O(1)|Easy|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Solution](../../blob/master/src/stevesun/algorithms/ValidParentheses.java)|O(n)|O(n)|Easy|Stack
+|18|[4Sum](https://leetcode.com/problems/4sum/)|[Solution](../../blob/master/src/stevesun/algorithms/_4Sum.java)|O(n^2)|O(1)|Medium|Two Pointers
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../../blob/master/src/stevesun/algorithms/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[Solution](../../blob/master/src/stevesun/algorithms/_3SumClosest.java)|O(nlogn)|O(1)|Medium|Two Pointers
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../../blob/master/src/stevesun/algorithms/_3Sum.java)|O(n^2)|O(1)|Medium|Two Pointers
