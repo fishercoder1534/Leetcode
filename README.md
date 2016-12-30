@@ -36,6 +36,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |453|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)|[Solution](../../blob/master/src/stevesun/algorithms/MinimumMovestoEqualArrayElements.java)| O(n)|O(1) | Easy|
 |448|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)|[Solution](../../blob/master/src/stevesun/algorithms/FindAllNumbersDisappearedinanArray.java)| O(n)|O(1) | Easy| Array, HashMap
 |447|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)|[Solution](../../blob/master/src/stevesun/algorithms/NumberofBoomerangs.java)| O(n^2)|O(n) | Easy| HashMap
+|442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|[Solution](../../blob/master/src/stevesun/algorithms/FindAllDuplicatesinanArray.java)| O(n)|O(1) | Medium| Array
 |441|[Arranging Coins](https://leetcode.com/problems/arrange-coins/)|[Solution](../../blob/master/src/stevesun/algorithms/ArrangingCoins.java)| O(n)|O(1) | Easy|
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](../../blob/master/src/stevesun/algorithms/FindAllAnagramsinaString.java)| O(n)|O(1) | Easy|
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../../blob/master/src/stevesun/algorithms/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
