@@ -111,6 +111,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |249|[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/)|[Solution](../../blob/master/src/stevesun/algorithms/GroupShiftedStrings.java) | O(nlogn) | O(n) | 
 |247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/StrobogrammaticNumberII.java) | O(n^2) | O(n) | Medium | Recursion
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../../blob/master/src/stevesun/algorithms/StrobogrammaticNumber.java) | O(n) | O(1) | Easy 
+|245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)|[Solution](../../blob/master/src/stevesun/algorithms/ShortestWordDistanceIII.java) | O(n) | O(1) | Medium | 
 |244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/ShortestWordDistanceII.java) | O(n) | O(n) | Medium | HashMap
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../../blob/master/src/stevesun/algorithms/ShortestWordDistance.java) | O(n) | O(1) | 
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[Solution](../../blob/master/src/stevesun/algorithms/DeleteNodeInALinkedList.java)| O(1)|O(1) | Easy| LinkedList
