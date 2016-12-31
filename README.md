@@ -80,7 +80,8 @@ Your ideas/fixes/algorithms are more than welcome!
 |298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeLongestConsecutiveSequence.java)| O(n)|O(n) | Medium | Tree
 |296|[Best Meeting Point](https://leetcode.com/problems/best-meeting-point/)|[Solution](../../blob/master/src/stevesun/algorithms/BestMeetingPoint.java)| ?|? | Hard|
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|[Solution](../../blob/master/src/stevesun/algorithms/FindMedianFromDataStream.java)| O(nlogn) | O(n) | Hard| Heap
-|293|[Flip Game](https://leetcode.com/problems/flip-game/)|[Solution](../../blob/master/src/stevesun/algorithms/FlipGame.java)| ?|O(n) | Easy| 
+|294|[Flip Game II](https://leetcode.com/problems/flip-game-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/FlipGameII.java)| ? | ?| Medium| Backtracking
+|293|[Flip Game](https://leetcode.com/problems/flip-game/)|[Solution](../../blob/master/src/stevesun/algorithms/FlipGame.java)| O(n) | O(1)| Easy| 
 |292|[Nim Game](https://leetcode.com/problems/nim-game/)|[Solution](../../blob/master/src/stevesun/algorithms/NimGame.java)| O(1)|O(1) | Easy| 
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../../blob/master/src/stevesun/algorithms/WordPattern.java)| O(n)|O(n) | Easy| 
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../../blob/master/src/stevesun/algorithms/GameOfLife.java)| O(m*n)|O(m*n), could be optimized to O(1) | Medium|
