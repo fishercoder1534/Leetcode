@@ -104,6 +104,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)|[Solution](../../blob/master/src/stevesun/algorithms/_3Sum_Smaller.java)| O(n^2)|O(1) | Medium|
 |258|[Add Digits](https://leetcode.com/problems/add-digits/)|[Solution](../../blob/master/src/stevesun/algorithms/AddDigits.java)| O(1)|O(1) | Easy|
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreePaths.java) | O(n*h) | O(h) | DFS/Recursion
+|254|[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[Solution](../../blob/master/src/stevesun/algorithms/FactorCombinations.java) | O(nlogn) | O(nlogn) | Medium| Backtracking
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/MeetingRoomsII.java) | O(nlogn) | O(h) | Medium| Heap
 |252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](../../blob/master/src/stevesun/algorithms/MeetingRooms.java) | O(nlogn) | O(1) | Easy
 |251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[Solution](../../blob/master/src/stevesun/algorithms/Flatten2DVector.java)| O(1)|O(m*n) | Medium| 
