@@ -158,6 +158,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |156|[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeUpsideDown.java)| O(n)|O(h) | Medium| Tree, Recursion
 |155|[Min Stack](https://leetcode.com/problems/min-stack/)|[Solution](../../blob/master/src/stevesun/algorithms/MinStack.java)| O(1)|O(n) | Easy| Stack
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|[Solution](../../blob/master/src/stevesun/algorithms/ReverseWordsinaString.java)| O(n)|O(n) | Medium|
+|149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/)|[Solution](../../blob/master/src/stevesun/algorithms/MaxPointsonaLine.java)| O(?)|O(?) | Hard|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreePostOrderTraversal.java)| O(n)|O(h) | Hard| Binary Tree
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreePreorderTraversal.java)| O(n)|O(h) | Medium| Binary Tree
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/LinkedListCycleII.java)| O(n)|O(1) | Medium| Linked List
