@@ -199,6 +199,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[Solution](../../blob/master/src/stevesun/algorithms/ClimbingStairs.java)|O(n)|O(n)|Easy| DP
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../../blob/master/src/stevesun/algorithms/TextJustification.java)|O(n)|O(1)|Hard|
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../../blob/master/src/stevesun/algorithms/AddBinary.java)|O(n)|O(1)|Easy|
+|60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)|[Solution](../../blob/master/src/stevesun/algorithms/PermutationSequence.java)|?|?|Medium|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Solution](../../blob/master/src/stevesun/algorithms/LengthofLastWord.java)|O(n)|O(1)|Easy|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](../../blob/master/src/stevesun/algorithms/MergeIntervals.java)|O(n*logn)|O(1)|Hard|
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../../blob/master/src/stevesun/algorithms/MaximumSubarray.java)|O(n)|O(1)|Medium|
