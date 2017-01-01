@@ -94,7 +94,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../blob/master/src/stevesun/algorithms/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/)|[Solution](../../blob/master/src/stevesun/algorithms/FindtheCelebrity.java)| O(n)|O(1) | Medium| 
 |276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../../blob/master/src/stevesun/algorithms/PaintFence.java)| O(n)|O(1) | Easy| DP
-|273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|[Solution]| 
+|273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|[Solution](../../blob/master/src/stevesun/algorithms/IntegertoEnglishWords.java)| O(n)|O(1) | Hard| 
 |272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/ClosestBinarySearchTreeValueII.java)| O(h+k)|O(h) | Hard| Stack
 |271|[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)|[Solution](../../blob/master/src/stevesun/algorithms/EncodeandDecodeStrings.java)| O(n)|O(1) | Medium| 
 |270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/)|[Solution](../../blob/master/src/stevesun/algorithms/ClosestBinarySearchTreeValue.java)| O(h)|O(1) | Easy| DFS
