@@ -175,6 +175,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[Solution](../../blob/master/src/stevesun/algorithms/PascalsTriangle.java)| O(n^2)|O(1) | Easy| 
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/PopulatingNextRightPointersinEachNodeII.java)| O(n)|O(1) | Hard| BFS
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Solution](../../blob/master/src/stevesun/algorithms/PopulatingNextRightPointersinEachNode.java)| O(n)|O(1) | Medium| BFS
+|114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[Solution](../../blob/master/src/stevesun/algorithms/FlattenBinaryTreetoLinkedList.java)| O(n)|O(h) | Medium| Tree
 |112|[Path Sum](https://leetcode.com/problems/path-sum/)|[Solution](../../blob/master/src/stevesun/algorithms/PathSum.java)| O(n)|O(1) | Easy| DFS
 |111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/MinimumDepthofBinaryTree.java)| O(n)|O(1)~O(h) | Easy| BFS, DFS
 |110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/BalancedBinaryTree.java)| O(n)|O(1)~O(h) | Easy| DFS
