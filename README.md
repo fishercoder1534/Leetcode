@@ -91,6 +91,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../../blob/master/src/stevesun/algorithms/MoveZeroes.java)| O(n)|O(1) | Easy| 
 |281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)|[Solution](../../blob/master/src/stevesun/algorithms/ZigzagIterator.java)| O(n)|O(n) | Medium|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)|[Solution](../../blob/master/src/stevesun/algorithms/WiggleSort.java)| O(n)|O(1) | Medium|
+|279|[Perfect Squares](https://leetcode.com/problems/perfect-squares/)|[Solution](../../blob/master/src/stevesun/algorithms/PerfectSquares.java)| O(n)|O(1) | Medium| 
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../blob/master/src/stevesun/algorithms/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/)|[Solution](../../blob/master/src/stevesun/algorithms/FindtheCelebrity.java)| O(n)|O(1) | Medium| 
 |276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../../blob/master/src/stevesun/algorithms/PaintFence.java)| O(n)|O(1) | Easy| DP
