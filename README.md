@@ -86,6 +86,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../../blob/master/src/stevesun/algorithms/WordPattern.java)| O(n)|O(n) | Easy| 
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../../blob/master/src/stevesun/algorithms/GameOfLife.java)| O(m*n)|O(m*n), could be optimized to O(1) | Medium|
 |288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/)|[Solution](../../blob/master/src/stevesun/algorithms/UniqueWordAbbreviation.java)| O(n)|O(1) | Easy| 
+|286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](../../blob/master/src/stevesun/algorithms/WallsAndGates.java)| O(m*n)|O(g) | Medium| BFS
 |285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](../../blob/master/src/stevesun/algorithms/InorderSuccessorInBST.java)| O(h)|O(1) | Medium|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../../blob/master/src/stevesun/algorithms/MoveZeroes.java)| O(n)|O(1) | Easy| 
 |281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)|[Solution](../../blob/master/src/stevesun/algorithms/ZigzagIterator.java)| O(n)|O(n) | Medium|
@@ -106,6 +107,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |258|[Add Digits](https://leetcode.com/problems/add-digits/)|[Solution](../../blob/master/src/stevesun/algorithms/AddDigits.java)| O(1)|O(1) | Easy|
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreePaths.java) | O(n*h) | O(h) | DFS/Recursion
 |256|[Paint House](https://leetcode.com/problems/paint-house/)|[Solution](../../blob/master/src/stevesun/algorithms/PaintHouse.java) | O(n) | O(1) | Medium| DP
+|255|[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/VerifyPreorderSequenceinBinarySearchTree.java) | O(n) | O(h) | Medium| Tree
 |254|[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[Solution](../../blob/master/src/stevesun/algorithms/FactorCombinations.java) | O(nlogn) | O(nlogn) | Medium| Backtracking
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/MeetingRoomsII.java) | O(nlogn) | O(h) | Medium| Heap
 |252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](../../blob/master/src/stevesun/algorithms/MeetingRooms.java) | O(nlogn) | O(1) | Easy
