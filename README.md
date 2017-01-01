@@ -201,6 +201,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../../blob/master/src/stevesun/algorithms/MaximumSubarray.java)|O(n)|O(1)|Medium|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/PermutationsII.java)|O(n*n!)|O(n)|Medium|Backtracking
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution]|||Medium
+|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](../../blob/master/src/stevesun/algorithms/FirstMissingPositive.java)|O(n)|O(1)|Hard|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../../blob/master/src/stevesun/algorithms/CombinationSum.java)|O(k*n^k)|O(k)|Medium|Backtracking
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../../blob/master/src/stevesun/algorithms/CountandSay.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../../blob/master/src/stevesun/algorithms/SearchForARange.java)|O(logn)|O(1)|Medium|Array, Binary Search
