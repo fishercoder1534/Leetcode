@@ -203,6 +203,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../../blob/master/src/stevesun/algorithms/TextJustification.java)|O(n)|O(1)|Hard|
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../../blob/master/src/stevesun/algorithms/AddBinary.java)|O(n)|O(1)|Easy|
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)|[Solution](../../blob/master/src/stevesun/algorithms/PermutationSequence.java)|?|?|Medium|
+|59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/SpiralMatrixII.java)|O(n)|O(n)|Medium|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Solution](../../blob/master/src/stevesun/algorithms/LengthofLastWord.java)|O(n)|O(1)|Easy|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](../../blob/master/src/stevesun/algorithms/MergeIntervals.java)|O(n*logn)|O(1)|Hard|
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[Solution](../../blob/master/src/stevesun/algorithms/SpiralMatrix.java)|O(m*n)|O(m*n)|Medium|
@@ -211,6 +212,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/PermutationsII.java)|O(n*n!)|O(n)|Medium|Backtracking
 |45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/JumpGameII.java)|O(?)|O(?)|Hard|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution]|||Medium
+|42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[Solution](../../blob/master/src/stevesun/algorithms/TrappingRainWater.java)|O(n)|O(1)|Hard|
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](../../blob/master/src/stevesun/algorithms/FirstMissingPositive.java)|O(n)|O(1)|Hard|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../../blob/master/src/stevesun/algorithms/CombinationSum.java)|O(k*n^k)|O(k)|Medium|Backtracking
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../../blob/master/src/stevesun/algorithms/CountandSay.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
