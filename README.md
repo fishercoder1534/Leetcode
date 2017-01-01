@@ -192,6 +192,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |89|[Gray Code](https://leetcode.com/problems/gray-code/)|[Solution](../../blob/master/src/stevesun/algorithms/GrayCode.java)|O(n) |O(1)|Medium|Bit Manipulation
 |86|[Partition List](https://leetcode.com/problems/partition-list/)|[Solution](../../blob/master/src/stevesun/algorithms/PartitionList.java)|O(?) |O(?)|Medium|
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)|[Solution](../../blob/master/src/stevesun/algorithms/MaximalRectangle.java)|O(m*n) |O(n)|Hard|DP
+|81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/SearchinRotatedSortedArrayII.java)|O(logn)|O(1)|Medium|Binary Search
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/RemoveDuplicatesfromSortedArrayII.java)|O(n) |O(n)|Medium|
 |79|[Word Search](https://leetcode.com/problems/word-search/)|[Solution](../../blob/master/src/stevesun/algorithms/WordSearch.java)|O(m*n*l) ? |O(m*n)|Medium|Backtracking/DFS
 |78|[Subsets](https://leetcode.com/problems/subsets/)|[Solution](../../blob/master/src/stevesun/algorithms/Subsets.java)|O(n^2) ? |O(1)|Medium|Backtracking
