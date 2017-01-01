@@ -202,6 +202,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../../blob/master/src/stevesun/algorithms/MaximumSubarray.java)|O(n)|O(1)|Medium|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Solution](../../blob/master/src/stevesun/algorithms/PowXN.java)|O(logn)|O(logn)|Medium|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/PermutationsII.java)|O(n*n!)|O(n)|Medium|Backtracking
+|45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/JumpGameII.java)|O(?)|O(?)|Hard|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution]|||Medium
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](../../blob/master/src/stevesun/algorithms/FirstMissingPositive.java)|O(n)|O(1)|Hard|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../../blob/master/src/stevesun/algorithms/CombinationSum.java)|O(k*n^k)|O(k)|Medium|Backtracking
