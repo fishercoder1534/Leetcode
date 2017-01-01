@@ -138,7 +138,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |198|[House Robber](https://leetcode.com/problems/house-robber/)|[Solution](../../blob/master/src/stevesun/algorithms/HouseRobber.java)| O(n)|O(n)| Easy | DP
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|[Solution](../../blob/master/src/stevesun/algorithms/ReverseBits.java)| O(n)|O(1)| Easy | Bit Manipulation
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Solution](../../blob/master/src/stevesun/algorithms/RotateArray.java)| O(n)|O(n), could be optimized to O(1) | Easy
-|182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../../blob/master/src/stevesun/algorithms/Duplicate-Emails.sql)| O(n^2)|O(n)| Easy
+|186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/ReverseWordsinaStringII.java)| O(n)|O(1)| Medium
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Queue](../../blob/master/src/stevesun/algorithms/BSTIterator_using_q.java) [Stack](../../blob/master/MEDIUM/src/medium/BSTIterator_using_stack.java)| O(1) |O(h) | Medium|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|[Solution](../../blob/master/src/stevesun/algorithms/FactorialTrailingZeroes.java)| O(logn)|O(1)| Easy
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|[Solution](../../blob/master/src/stevesun/algorithms/ExcelSheetColumnNumber.java)| O(n)|O(1)| Easy
