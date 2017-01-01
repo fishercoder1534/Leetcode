@@ -213,6 +213,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](../../blob/master/src/stevesun/algorithms/FirstMissingPositive.java)|O(n)|O(1)|Hard|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../../blob/master/src/stevesun/algorithms/CombinationSum.java)|O(k*n^k)|O(k)|Medium|Backtracking
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../../blob/master/src/stevesun/algorithms/CountandSay.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
+|35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[Solution](../../blob/master/src/stevesun/algorithms/SearchInsertPosition.java)|O(n)|O(1)|Medium|Array
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../../blob/master/src/stevesun/algorithms/SearchForARange.java)|O(logn)|O(1)|Medium|Array, Binary Search
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](../../blob/master/src/stevesun/algorithms/SearchinRotatedSortedArray.java)|O(logn)|O(1)|Hard|Binary Search
 |32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|[Solution](../../blob/master/src/stevesun/algorithms/LongestValidParentheses.java)|O(n)|O(n)|Hard|Stack, DP
