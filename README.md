@@ -223,6 +223,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](../../blob/master/src/stevesun/algorithms/SearchinRotatedSortedArray.java)|O(logn)|O(1)|Hard|Binary Search
 |32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|[Solution](../../blob/master/src/stevesun/algorithms/LongestValidParentheses.java)|O(n)|O(n)|Hard|Stack, DP
 |31|[Next Permutation](https://leetcode.com/problems/next-permutation)|[Solution](../../blob/master/src/stevesun/algorithms/NextPermutation.java)|O(n)|O(1)|Medium|Array
+|30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)|[Solution](../../blob/master/src/stevesun/algorithms/SubstringwithConcatenationofAllWords.java)|O(n^2)|O(n)|Hard| HashMap
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)|[Solution](../../blob/master/src/stevesun/algorithms/ImplementStrStr.java)|O(n)|O(1)|Easy| String
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[Solution](../../blob/master/src/stevesun/algorithms/SwapNodesinPairs.java)|O(n)|O(1)|Easy| Recursion, LinkedList
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../../blob/master/src/stevesun/algorithms/MergeKSortedList.java)|O(n*logk)|O(logk)|Hard|Heap
