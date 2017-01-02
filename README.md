@@ -188,6 +188,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeZigzagLevelOrderTraversal.java)| O(n)|O(h) | Medium| BFS,DFS
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeLevelOrderTraversal.java)| O(n)|O(h) | Easy| BFS
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/ValidateBinarySearchTree.java) | O(n) | O(h) | Medium | DFS/Recursion
+|96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)|[Solution](../../blob/master/src/stevesun/algorithms/UniqueBinarySearchTrees.java) | O(n^2) | O(n) | Medium | Recursion, DP
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeInorderTraversal.java)| O(n)|O(h) | Medium| Binary Tree
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../../blob/master/src/stevesun/algorithms/DecodeWays.java)| O(n)|O(n) | Medium| DP
 |89|[Gray Code](https://leetcode.com/problems/gray-code/)|[Solution](../../blob/master/src/stevesun/algorithms/GrayCode.java)|O(n) |O(1)|Medium|Bit Manipulation
