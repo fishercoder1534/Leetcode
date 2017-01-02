@@ -121,6 +121,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)|[Solution](../../blob/master/src/stevesun/algorithms/ShortestWordDistanceIII.java) | O(n) | O(1) | Medium | 
 |244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/ShortestWordDistanceII.java) | O(n) | O(n) | Medium | HashMap
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../../blob/master/src/stevesun/algorithms/ShortestWordDistance.java) | O(n) | O(1) | 
+|240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/Searcha2DMatrixII.java)| O(log(m*n))|O(1) | Medium| Binary Search
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[Solution](../../blob/master/src/stevesun/algorithms/DeleteNodeInALinkedList.java)| O(1)|O(1) | Easy| LinkedList
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/LowestCommonAncestorOfABinarySearchTree.java)| O(h)|O(1) | Easy| DFS
 |233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)|[Solution](../../blob/master/src/stevesun/algorithms/NumberofDigitOne.java)| O(n)|O(1) | Hard| Math
