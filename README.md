@@ -159,6 +159,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |157|[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/)|[Solution](../../blob/master/src/stevesun/algorithms/ReadNCharactersGivenRead4.java)| O(n)|O(1) | Easy| 
 |156|[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreeUpsideDown.java)| O(n)|O(h) | Medium| Tree, Recursion
 |155|[Min Stack](https://leetcode.com/problems/min-stack/)|[Solution](../../blob/master/src/stevesun/algorithms/MinStack.java)| O(1)|O(n) | Easy| Stack
+|152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|[Solution](../../blob/master/src/stevesun/algorithms/MaximumProductSubarray.java)| O(n)|O(1) | Medium| Array
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|[Solution](../../blob/master/src/stevesun/algorithms/ReverseWordsinaString.java)| O(n)|O(n) | Medium|
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/)|[Solution](../../blob/master/src/stevesun/algorithms/MaxPointsonaLine.java)| O(?)|O(?) | Hard|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|[Solution](../../blob/master/src/stevesun/algorithms/BinaryTreePostOrderTraversal.java)| O(n)|O(h) | Hard| Binary Tree
