@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java%20%2F%20MySQL%20%2F%20Bash-blue.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java%20%2F%20MySQL%20%2F%20Bash-blue.svg) [![License](https://img.shields.io/badge/license-Apache_2.0-red.svg)](blob/master/LICENSE.MD)
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
