@@ -15,7 +15,7 @@ Your ideas/fixes/algorithms are more than welcome!
 ```
 
 ## Algorithms
-* [Algorithms](https://github.com/fishercoder1534/LeetCode#algorithms)
+* [Algorithms](https://github.com/fishercoder1534/Leetcode/tree/master/leetcode-algorithms)
 
 ## Database
 * [MySQL](https://github.com/fishercoder1534/LeetCode#mysql)
