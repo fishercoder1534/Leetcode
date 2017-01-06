@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-mvn test -B
+cd leetcode-algorithms && mvn test -B
