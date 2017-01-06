@@ -1,19 +1,5 @@
 # [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java-blue.svg) [![License](https://img.shields.io/badge/license-Apache_2.0-red.svg)](LICENSE.md) [![Build Status](https://travis-ci.org/fishercoder1534/Leetcode.svg?branch=master)](https://travis-ci.org/fishercoder1534/Leetcode.svg?branch=master)
 
-_If you like this project, please give us a star._ &#9733;
-
-> ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
-
-## Contributing
-Your ideas/fixes/algorithms are more than welcome!
-```
-1. Fork this repo
-2. Create your feature branch (`git checkout -b my-awesome-feature`)
-3. Commit your changes (`git commit -am 'Added some awesome feature'`)
-4. Push to the branch (`git push origin my-awesome-feature`)
-5. Create a new Pull Request
-```
-
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
