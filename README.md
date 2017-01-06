@@ -11,7 +11,7 @@ Your ideas/fixes/algorithms are more than welcome!
 2. Create your feature branch (`git checkout -b my-awesome-feature`)
 3. Commit your changes (`git commit -am 'Added some awesome feature'`)
 4. Push to the branch (`git push origin my-awesome-feature`)
-5. Create new Pull Request
+5. Create a new Pull Request
 ```
 
 ## Algorithms
@@ -67,6 +67,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../../blob/master/src/stevesun/algorithms/RangeAddition.java)| O(n+k)|O(1) | Medium| 
 |367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[Solution](../../blob/master/src/stevesun/algorithms/ValidPerfectSquare.java)| O(n)|O(1) | Medium| 
 |366|[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/)|[Solution](../../blob/master/src/stevesun/algorithms/FindLeavesofBinaryTree.java)| O(n)|O(h) | Medium| DFS
+|365|[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/)|[Solution](../../blob/master/src/stevesun/algorithms/WaterandJugProblem.java)| O(n)|O(1) | Medium| 
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/)|[Solution](../../blob/master/src/stevesun/algorithms/NestedListWeightSumII.java)| O(n)|O(h) | Medium| DFS
 |362|[Design Hit Counter](https://leetcode.com/problems/design-hit-counter/)|[Solution](../../blob/master/src/stevesun/algorithms/DesignHitCounter.java)| O(1) amortized|O(k) | Medium| Design
 |359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/)|[Solution](../../blob/master/src/stevesun/algorithms/LoggerRateLimiter.java)| amortized O(1)|O(k) | Easy| HashMap
