@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java-blue.svg) [![License](https://img.shields.io/badge/license-Apache_2.0-red.svg)](LICENSE.md) [![Build Status](https://travis-ci.org/fishercoder1534/Leetcode.svg?branch=master)](https://travis-ci.org/fishercoder1534/Leetcode)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java-blue.svg) [![License](https://img.shields.io/badge/license-Apache_2.0-red.svg)](LICENSE.md) [![Build Status](https://travis-ci.org/fishercoder1534/Leetcode.svg?branch=master)](https://travis-ci.org/fishercoder1534/Leetcode     )
 
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
@@ -38,6 +38,7 @@
 |388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LongestAbsoluteFilePath.java)| O(n)|O(d) | Medium| Stack
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FirstUniqueCharacterinaString.java)| O(n)|O(n) | Easy| HashMap
 |386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LexicographicalNumbers.java)| O(n)|O(1) | Medium| 
+|385|[Mini Parser](https://leetcode.com/problems/mini-parser/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MiniParser.java)| O(n)|O(h) | Medium| Stack
 |379|[Design Phone Directory](https://leetcode.com/problems/design-phone-directory/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DesignPhoneDirectory.java)| O(1)|O(n) | Medium| 
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/GuessNumberHigherorLower.java)| O(logn)|O(1) | Easy| Binary Search
 |370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RangeAddition.java)| O(n+k)|O(1) | Medium| 
