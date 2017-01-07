@@ -3,7 +3,7 @@
 ## Database
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
-|197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../../leetcode-database/master/Database/RisingTemperature.sql)| O(n^2)|O(n) | Easy|
+|197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../../blob/master/leetcode-database/RisingTemperature.sql)| O(n^2)|O(n) | Easy|
 |196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../../blob/master/Database/DeleteDuplicateEmails.sql)| O(n^2)|O(n) | Easy|
 |183|[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)|[Solution](../../blob/master/Database/CustomersWhoNeverOrder.sql)| O(n^2)|O(n) | Easy|
 |182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../../blob/master/Database/DuplicateEmails.sql)| O(n^2)|O(n) | Easy| 
