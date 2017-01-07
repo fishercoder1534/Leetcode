@@ -18,7 +18,7 @@ Your ideas/fixes/algorithms are more than welcome!
 * [Algorithms](https://github.com/fishercoder1534/Leetcode/tree/master/leetcode-algorithms)
 
 ## Database
-* [MySQL](https://github.com/fishercoder1534/LeetCode#mysql)
+* [MySQL](https://github.com/fishercoder1534/Leetcode/tree/master/leetcode-database#database)
 
 ## Shell
 * [Shell](https://github.com/fishercoder1534/LeetCode#bash)
