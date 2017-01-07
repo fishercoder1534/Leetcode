@@ -7,4 +7,9 @@ script: ./build.sh
 
 notifications:
   email:
-    - fishercoder@gmail.com
+    recipients:
+      - fishercoder@gmail.com
+      - steve.j.sun@gmail.com
+    on_success: always
+    on_failure: always
+
