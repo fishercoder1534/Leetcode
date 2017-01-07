@@ -21,7 +21,7 @@ Your ideas/fixes/algorithms are more than welcome!
 * [MySQL](https://github.com/fishercoder1534/Leetcode/tree/master/leetcode-database#database)
 
 ## Shell
-* [Shell](https://github.com/fishercoder1534/LeetCode#bash)
+* [Shell](https://github.com/fishercoder1534/Leetcode/tree/master/leetcode-shell#shell)
 
 ## Bash
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
