@@ -23,10 +23,3 @@ Your ideas/fixes/algorithms are more than welcome!
 ## Shell
 * [Shell](https://github.com/fishercoder1534/Leetcode/tree/master/leetcode-shell#shell)
 
-## Bash
-|  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
-|-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
-|195|[Tenth Line](https://leetcode.com/problems/tenth-line/)|[Solution](../../blob/master/Shell/TenthLine.sh)| O(n)|O(1) | Easy|
-|194|[Transpose File](https://leetcode.com/problems/transpose-file/)|[Solution](../../blob/master/Shell/TransposeFile.sh)| O(n^2)|O(n^2) | Medium|
-|193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)|[Solution](../../blob/master/Shell/ValidPhoneNumbers.sh)| O(n)|O(1) | Easy|
-|192|[Word Frequency](https://leetcode.com/problems/word-frequency/)|[Solution](../../blob/master/Shell/WordFrequency.sh)| O(n)|O(k) | Medium|
