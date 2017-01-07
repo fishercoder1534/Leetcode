@@ -151,6 +151,7 @@
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LinkedListCycle.java)| O(n)|O(1) | Easy| Linked List
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WordBreakII.java)| ? |O(n^2) | Hard| Backtracking/DFS
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WordBreak.java)| O(n^2)|O(n) | Medium| DP
+|135|[Candy](https://leetcode.com/problems/candy/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Candy.java)| O(n)|O(1) | Hard| Greedy
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CloneGraph.java)| O(n)|O(n) | Medium| HashMap, BFS 
 |132|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ImplementQueueUsingStacks.java)| O(n)|O(n) | Easy| Stack, Queue
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidPalindrome.java)| O(n)|O(1) | Easy| Two Pointers
