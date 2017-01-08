@@ -89,18 +89,4 @@ public class AddBinary {
         }
         return new String(result);
     }
-    
-    public static void main(String...args){
-        AddBinary test = new AddBinary();
-//        String a = "0";
-//        String b = "0";
-//        String a = "11";
-//        String b = "1";
-//        String a = "100";
-//        String b = "110010";
-        
-        String a = "101111";
-        String b = "10";
-        System.out.println(test.addBinary(a, b));
-    }
 }
