@@ -41,6 +41,7 @@
 |385|[Mini Parser](https://leetcode.com/problems/mini-parser/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MiniParser.java)| O(n)|O(h) | Medium| Stack
 |379|[Design Phone Directory](https://leetcode.com/problems/design-phone-directory/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DesignPhoneDirectory.java)| O(1)|O(n) | Medium| 
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/GuessNumberHigherorLower.java)| O(logn)|O(1) | Easy| Binary Search
+|372|[Super Pow](https://leetcode.com/problems/super-pow/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SuperPow.java)| O(n)|O(1) | Medium| Math
 |370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RangeAddition.java)| O(n+k)|O(1) | Medium| 
 |367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidPerfectSquare.java)| O(n)|O(1) | Medium| 
 |366|[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindLeavesofBinaryTree.java)| O(n)|O(h) | Medium| DFS
