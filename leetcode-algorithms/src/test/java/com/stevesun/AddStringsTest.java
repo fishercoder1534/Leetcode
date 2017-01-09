@@ -1,6 +1,5 @@
 package com.stevesun;
 
-import com.stevesun.solutions.AddBinary;
 import com.stevesun.solutions.AddStrings;
 import org.junit.Before;
 import org.junit.BeforeClass;

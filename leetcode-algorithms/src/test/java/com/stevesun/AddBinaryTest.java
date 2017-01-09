@@ -2,9 +2,6 @@ package com.stevesun;
 
 import com.stevesun.solutions.AddBinary;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
