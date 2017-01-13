@@ -54,6 +54,7 @@
 |346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MovingAveragefromDataStream.java)| O(1)|O(w)) | Easy| Queue
 |339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NestedListWeightSum.java)| O(n)|O(h)) | Easy| DFS
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CountingBits.java)| O(nlogn)|O(h) | Medium| 
+|336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PalindromePairs.java)| O(n^2)|O(n) | Hard|
 |333|[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LargestBSTSubtree.java)| O(n)|O(n) | Medium| 
 |325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution] | O(n)|O(n) | Medium| HashMap
 |314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BinaryTreeVerticalOrderTraversal.java)| O(n)|O(n) | Medium| HashMap, BFS
