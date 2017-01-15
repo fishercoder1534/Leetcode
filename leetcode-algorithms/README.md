@@ -3,6 +3,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaxConsecutiveOnes.java) | O(n) |O(1) | Easy| Array
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TotalHammingDistance.java) | O(n) |O(1) | Medium| Bit Manipulation
 |476|[Number Complement](https://leetcode.com/problems/number-complement/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NumberComplement.java) | O(n) |O(1) | Easy| Bit Manipulation
 |472|[Concatenated Words](https://leetcode.com/problems/concatenated-words/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ConcatenatedWords.java) | O(n^2) |O(n) | Hard| Trie, DP, DFS
