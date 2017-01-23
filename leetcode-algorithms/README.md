@@ -31,6 +31,7 @@
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ThirdMaximumNumber.java)| O(n)|O(1) | Easy|
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ArithmeticSlices.java) | O(n) |O(1) | Medium| DP
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FizzBuzz.java)| O(n)|O(1) | Easy|
+|408|[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidWordAbbreviation.java)| O(n)|O(1) | Easy|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SumofLeftLeaves.java)| O(n)|O(h) | Easy|
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RandomPickIndex.java) | | | Medium| Reservoir Sampling
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/IntegerReplacement.java)| ? | ? | Easy| BFS
