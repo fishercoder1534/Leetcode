@@ -9,6 +9,5 @@ notifications:
   email:
     recipients:
       - fishercoder@gmail.com
-    on_success: always
     on_failure: always
 
