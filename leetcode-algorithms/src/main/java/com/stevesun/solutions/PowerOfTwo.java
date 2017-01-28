@@ -1,9 +1,9 @@
 package com.stevesun.solutions;
-/**231. Power of Two  QuestionEditorial Solution  My Submissions
-Total Accepted: 90169
-Total Submissions: 237048
-Difficulty: Easy
-Given an integer, write a function to determine if it is a power of two.*/
+
+/**231. Power of Two
+ *
+ * Given an integer, write a function to determine if it is a power of two.*/
+
 public class PowerOfTwo {
     public boolean isPowerOfTwo(int n) {
         //after writing out the binary representation of some numbers: 1,2,4,8,16,32, you can easily figure out that
