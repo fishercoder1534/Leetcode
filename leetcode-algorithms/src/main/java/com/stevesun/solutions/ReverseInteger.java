@@ -1,15 +1,10 @@
 package com.stevesun.solutions;
-/**7. Reverse Integer  QuestionEditorial Solution  My Submissions
-Total Accepted: 155938
-Total Submissions: 655150
-Difficulty: Easy
+/**7. Reverse Integer
 Reverse digits of an integer.
 
 Example1: x = 123, return 321
 Example2: x = -123, return -321*/
 public class ReverseInteger {
-    //lastly, after making it AC'ed on my own, I turned to Discuss, and find this very short solution,
-    //it turns out we don't need to do any handling for the sign
     public int reverse_short_version(int x){
         long rev = 0;
         while(x != 0){
@@ -20,7 +15,6 @@ public class ReverseInteger {
         return (int) rev;
     }
     
-    //made it AC'ed on my own, cheers!
     public int reverse(int x) {
         if(x == 0) return 0;
         //save the first bit if it's a negative sign

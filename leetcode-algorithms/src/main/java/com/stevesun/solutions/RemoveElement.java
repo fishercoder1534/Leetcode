@@ -2,10 +2,6 @@ package com.stevesun.solutions;
 
 /**27. Remove Element
 
-    Total Accepted: 135216
-    Total Submissions: 384018
-    Difficulty: Easy
-
 Given an array and a value, remove all instances of that value in place and return the new length.
 
 Do not allocate extra space for another array, you must do this in place with constant memory.

@@ -2,10 +2,7 @@ package com.stevesun.solutions;
 
 import com.stevesun.common.classes.TreeNode;
 
-/**112. Path Sum  QuestionEditorial Solution  My Submissions
-Total Accepted: 115095
-Total Submissions: 360394
-Difficulty: Easy
+/**112. Path Sum
 Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
 
 For example:

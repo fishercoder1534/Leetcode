@@ -6,6 +6,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+
+ For example,
+ [1,1,2] have the following unique permutations:
+ [
+ [1,1,2],
+ [1,2,1],
+ [2,1,1]
+ ]*/
 public class PermutationsII {
     /**Looked at this post: https://discuss.leetcode.com/topic/31445/really-easy-java-solution-much-easier-than-the-solutions-with-very-high-vote*/
     public List<List<Integer>> permuteUnique(int[] nums) {

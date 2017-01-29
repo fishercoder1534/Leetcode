@@ -2,10 +2,7 @@ package com.stevesun.solutions;
 
 import com.stevesun.common.utils.CommonUtils;
 
-/**66. Plus One  QuestionEditorial Solution  My Submissions
-Total Accepted: 115402
-Total Submissions: 328650
-Difficulty: Easy
+/**66. Plus One
 Given a non-negative number represented as an array of digits, plus one to the number.
 
 The digits are stored such that the most significant digit is at the head of the list.*/
