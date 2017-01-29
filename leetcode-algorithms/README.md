@@ -3,6 +3,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|501|[Find Mode in Binary Tree](https://leetcode.com/problems/find-mode-in-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindModeinBinaryTree.java) | O(n) |O(k) | Easy| Binary Tree
 |492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ConstructTheRectangle.java) | O(n) |O(1) | Easy| Array
 |485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaxConsecutiveOnes.java) | O(n) |O(1) | Easy| Array
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TotalHammingDistance.java) | O(n) |O(1) | Medium| Bit Manipulation
