@@ -2,10 +2,8 @@ package com.stevesun.solutions;
 
 import com.stevesun.common.utils.CommonUtils;
 
-/**63. Unique Paths II  QuestionEditorial Solution  My Submissions
-Total Accepted: 72924
-Total Submissions: 243328
-Difficulty: Medium
+/**63. Unique Paths II
+ *
 Follow up for "Unique Paths":
 
 Now consider if some obstacles are added to the grids. How many unique paths would there be?
@@ -80,5 +78,4 @@ public class UniquePathsII {
         CommonUtils.printMatrix(obstacleGrid);
         System.out.println(test.uniquePathsWithObstacles(obstacleGrid));
     }
-
 }
