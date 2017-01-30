@@ -22,7 +22,7 @@ import java.util.Stack;
  Note: Recursive solution is trivial, could you do it iteratively?*/
 
 public class BinaryTreePostOrderTraversal {
-	/**modify the code for pre-order traversal so that it becomes root->right->left, and then reverse the result to get left->right->root, so tricky!!!*/
+	/**A tricky one: Modify the code for pre-order traversal so that it becomes root->right->left, and then reverse the result to get left->right->root.*/
     public static List<Integer> postorderTraversal_iterative(TreeNode root) {
         List<Integer> result = new ArrayList();
         Stack<TreeNode> stack = new Stack();

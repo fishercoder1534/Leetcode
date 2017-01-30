@@ -29,7 +29,6 @@ return its level order traversal as:
 ]
 */
 public class BinaryTreeLevelOrderTraversal {
-	//Cheers, easily made it AC'ed on the first submission now, practice does make perfect!
 	public List<List<Integer>> levelOrder(TreeNode root) {
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		if(root == null) return result;
