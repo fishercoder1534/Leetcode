@@ -1,5 +1,6 @@
 package com.stevesun.solutions;
 
+/**Given two strings S and T, determine if they are both one edit distance apart.*/
 public class OneEditDistance {
 
     public static boolean isOneEditDistance(String s, String t) {

@@ -12,16 +12,16 @@ public class InorderSuccessorInBST {
     //Amazed at this solution: https://discuss.leetcode.com/topic/25698/java-python-solution-o-h-time-and-o-1-space-iterative
     //I used brute force: traverse the tree and store and nodes in a list, then traverse the list to compare with p to return the successor if there is.
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
-        TreeNode succ = null;
+        TreeNode successor = null;
         while(root != null){
             if(p.val < root.val){
-                succ = root;
+                successor = root;
                 root = root.left;
             } else {
                 root = root.right;
             }
         }
-        return succ;
+        return successor;
     }
 
 }
