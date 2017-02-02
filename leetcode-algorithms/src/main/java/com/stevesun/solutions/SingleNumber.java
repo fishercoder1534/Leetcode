@@ -4,18 +4,12 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-/**136. Single Number  QuestionEditorial Solution  My Submissions
-Total Accepted: 141879
-Total Submissions: 277792
-Difficulty: Medium
+/**136. Single Number
 Given an array of integers, every element appears twice except for one. Find that single one.
 
 Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
-Hide Company Tags Palantir Airbnb
-Hide Tags Hash Table Bit Manipulation
-Hide Similar Problems (M) Single Number II (M) Single Number III (M) Missing Number (H) Find the Duplicate Number
 */
 public class SingleNumber {
     //approach 1: use set, since this problem explicitly states that every element appears twice and only one appears once
