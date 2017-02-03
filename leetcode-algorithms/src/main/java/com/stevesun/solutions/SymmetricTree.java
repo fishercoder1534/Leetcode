@@ -4,10 +4,6 @@ import com.stevesun.common.classes.TreeNode;
 
 /**101. Symmetric Tree
 
-    Total Accepted: 121737
-    Total Submissions: 346738
-    Difficulty: Easy
-
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 
 For example, this binary tree [1,2,2,3,4,4,3] is symmetric:

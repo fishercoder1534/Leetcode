@@ -1,9 +1,11 @@
 package com.stevesun.solutions;
+
 import java.util.*;
+
 public class Triangle {
 
     public static int minimumTotal(List<List<Integer>> triangle) {
-        /**Looked at this post: https://discuss.leetcode.com/topic/1669/dp-solution-for-triangle, @stellari has a very excellent explanation.
+        /**https://discuss.leetcode.com/topic/1669/dp-solution-for-triangle, @stellari has a very excellent explanation.
          * Basically, we use the bottom-up approach, starting from the bottom row of this triangle, and we only need to store the shortest path of each node
          * from its last row, and keep overwriting it until we reach the top.*/
         int n = triangle.size();
