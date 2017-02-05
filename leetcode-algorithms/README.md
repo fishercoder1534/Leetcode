@@ -129,6 +129,7 @@
 |220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ContainsDuplicateIII.java)| O(nlogn)|O(n) | Medium| TreeSet
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ContainsDuplicateII.java)| O(n)|O(n) | Easy| HashMap
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ContainsDuplicate.java)| O(n)|O(n) | Easy| HashSet
+|212|[Word Search II](https://leetcode.com/problems/word-search-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WordSearchII.java)| O(m*n*l)|O(l) | Hard | Trie
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
 |208|[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ImplementTrie.java)| O(n)|O(1) | Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ReverseLinkedList.java)| O(n)|O(1) | Easy
