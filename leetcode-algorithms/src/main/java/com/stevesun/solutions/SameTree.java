@@ -4,10 +4,6 @@ import com.stevesun.common.classes.TreeNode;
 
 /**100. Same Tree
 
-    Total Accepted: 145623
-    Total Submissions: 330537
-    Difficulty: Easy
-
 Given two binary trees, write a function to check if they are equal or not.
 
 Two binary trees are considered equal if they are structurally identical and the nodes have the same value. */
