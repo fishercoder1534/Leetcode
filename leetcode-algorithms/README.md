@@ -74,6 +74,7 @@
 |308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RangeSumQuery2DMutable.java)| ? | ? | Hard| Tree
 |306|[Additive Number](https://leetcode.com/problems/additive-number/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/AdditiveNumber.java)| ? | ? | Medium|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NumberofIslandsII.java)| ? | ? | Hard| Union Find
+|304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RangeSumQuery2DImmutable.java)| ? | ? |Medium| 
 |302|[Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SmallestRectangleEnclosingBlackPixels.java)| ? | O(m*n) | Hard| DFS, BFS
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RemoveInvalidParentheses.java)| ? | ? | Hard| BFS
 |299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BullsandCows.java)| O(n)|O(1) | Easy| 
@@ -182,9 +183,11 @@
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LinkedListCycle.java)| O(n)|O(1) | Easy| Linked List
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WordBreakII.java)| ? |O(n^2) | Hard| Backtracking/DFS
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WordBreak.java)| O(n^2)|O(n) | Medium| DP
+|137|[Single Number II](https://leetcode.com/problems/single-number-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SingleNumberII.java)| O(n)|O(n) | Medium|
 |135|[Candy](https://leetcode.com/problems/candy/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Candy.java)| O(n)|O(1) | Hard| Greedy
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CloneGraph.java)| O(n)|O(n) | Medium| HashMap, BFS 
 |132|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ImplementQueueUsingStacks.java)| O(n)|O(n) | Easy| Stack, Queue
+|129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SumRootToLeafNumbers.java)| O(n)|O(h) | Medium| DFS
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidPalindrome.java)| O(n)|O(1) | Easy| Two Pointers
 |124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BinaryTreeMaximumPathSum.java)| O(n)|O(h) | Hard | Tree
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BestTimeToBuyAndSellStockII.java)| O(n)|O(1) | Medium | Greedy
@@ -194,6 +197,7 @@
 |118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PascalsTriangle.java)| O(n^2)|O(1) | Easy| 
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PopulatingNextRightPointersinEachNodeII.java)| O(n)|O(1) | Hard| BFS
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PopulatingNextRightPointersinEachNode.java)| O(n)|O(1) | Medium| BFS
+|115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DistinctSubsequences.java)| O(m*n)|O(m*n) | Hard| DP
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FlattenBinaryTreetoLinkedList.java)| O(n)|O(h) | Medium| Tree
 |112|[Path Sum](https://leetcode.com/problems/path-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PathSum.java)| O(n)|O(1) | Easy| DFS
 |111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MinimumDepthofBinaryTree.java)| O(n)|O(1)~O(h) | Easy| BFS, DFS
@@ -208,6 +212,7 @@
 |97|[Interleaving String](https://leetcode.com/problems/interleaving-string/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/InterleavingString.java)| O(?)|O(?) | Hard| DP
 |96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/UniqueBinarySearchTrees.java) | O(n^2) | O(n) | Medium | Recursion, DP
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BinaryTreeInorderTraversal.java)| O(n)|O(h) | Medium| Binary Tree
+|92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ReverseLinkedListII.java)| O(n)|O(1) | Medium
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DecodeWays.java)| O(n)|O(n) | Medium| DP
 |89|[Gray Code](https://leetcode.com/problems/gray-code/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/GrayCode.java)|O(n) |O(1)|Medium|Bit Manipulation
 |86|[Partition List](https://leetcode.com/problems/partition-list/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PartitionList.java)|O(?) |O(?)|Medium|
@@ -252,6 +257,7 @@
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/GenerateParentheses.java)|TBD|O(n)|Medium|Backtracking
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MergeTwoSortedLists.java)|O(n)|O(1)|Easy|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidParentheses.java)|O(n)|O(n)|Easy|Stack
+|19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RemoveNthNodeFromEndOfList)|O(n)|O(1)|Medium| Linked List
 |18|[4Sum](https://leetcode.com/problems/4sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_4Sum.java)|O(n^2)|O(1)|Medium|Two Pointers
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_3SumClosest.java)|O(nlogn)|O(1)|Medium|Two Pointers

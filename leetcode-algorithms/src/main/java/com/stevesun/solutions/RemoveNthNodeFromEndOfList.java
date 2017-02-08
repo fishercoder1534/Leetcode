@@ -3,10 +3,7 @@ package com.stevesun.solutions;
 import com.stevesun.common.classes.ListNode;
 import com.stevesun.common.utils.CommonUtils;
 
-/**19. Remove Nth Node From End of List  QuestionEditorial Solution  My Submissions
-Total Accepted: 122330
-Total Submissions: 400291
-Difficulty: Easy
+/**19. Remove Nth Node From End of List
 Given a linked list, remove the nth node from the end of list and return its head.
 
 For example,
