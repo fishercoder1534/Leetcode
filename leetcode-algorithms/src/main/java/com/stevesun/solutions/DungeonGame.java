@@ -4,10 +4,6 @@ import com.stevesun.common.utils.CommonUtils;
 
 /**174. Dungeon Game
 
-    Total Accepted: 27313
-    Total Submissions: 125827
-    Difficulty: Hard
-
 The demons had captured the princess (P) and imprisoned her in the bottom-right corner of a dungeon. The dungeon consists of M x N rooms laid out in a 2D grid. Our valiant knight (K) was initially positioned in the top-left room and must fight his way through the dungeon to rescue the princess.
 
 The knight has an initial health point represented by a positive integer. If at any point his health point drops to 0 or below, he dies immediately.
@@ -27,9 +23,7 @@ Notes:
 
     The knight's health has no upper bound.
     Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.
-
-Credits:
-Special thanks to @stellari for adding this problem and creating all test cases.*/
+ */
 public class DungeonGame {
     
     /**This problem should fill the dp matrix from bottom right.*/
