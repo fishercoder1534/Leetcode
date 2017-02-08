@@ -45,6 +45,7 @@
 |386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LexicographicalNumbers.java)| O(n)|O(1) | Medium| 
 |385|[Mini Parser](https://leetcode.com/problems/mini-parser/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MiniParser.java)| O(n)|O(h) | Medium| Stack
 |379|[Design Phone Directory](https://leetcode.com/problems/design-phone-directory/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DesignPhoneDirectory.java)| O(1)|O(n) | Medium| 
+|375|[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/GuessNumberHigherorLowerII.java)| O(n^2)|O(n^2) | Medium| DP
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/GuessNumberHigherorLower.java)| O(logn)|O(1) | Easy| Binary Search
 |373|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindKPairsWithSmallestSums.java)| O(?)|O(?) | Medium| Heap
 |372|[Super Pow](https://leetcode.com/problems/super-pow/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SuperPow.java)| O(n)|O(1) | Medium| Math
@@ -209,6 +210,7 @@
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MinimumWindowSubstring.java)|O(n)|O(k)|Hard|Two Pointers
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SortColors.java)|O(n)|O(1)|Medium| Two Pointers
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SetMatrixZeroes.java)|O(mn)|O(mn)|Medium|
+|72|[Edit Distance](https://leetcode.com/problems/edit-distance/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/EditDistance.java)|O(m*n)|O(m+n)|Hard| 
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ClimbingStairs.java)|O(n)|O(n)|Easy| DP
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Sqrt.java)|O(logn)|O(1)|Easy|
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TextJustification.java)|O(n)|O(1)|Hard|
