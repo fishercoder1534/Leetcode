@@ -3,6 +3,7 @@ package com.stevesun.solutions;
 import com.stevesun.common.classes.ListNode;
 import com.stevesun.common.utils.CommonUtils;
 
+/**Reverse a singly linked list.*/
 public class ReverseLinkedList {
     //creating a newHead = null is a very common/smart way to handle such cases, the logic flows out very naturally:
 	//create a new node called "next" to hold current head's next node
