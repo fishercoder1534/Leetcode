@@ -63,7 +63,9 @@
 |339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NestedListWeightSum.java)| O(n)|O(h)) | Easy| DFS
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CountingBits.java)| O(nlogn)|O(h) | Medium| 
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PalindromePairs.java)| O(n^2)|O(n) | Hard|
+|334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/IncreasingTripletSubsequence.java)| O(n^2)|O(1) | Medium|
 |333|[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LargestBSTSubtree.java)| O(n)|O(n) | Medium| 
+|329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LongestIncreasingPathInAMatrix.java)| O(?)|O(?) | Hard|
 |325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution] | O(n)|O(n) | Medium| HashMap
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NumberOfConnectedComponentsInAnUndirectedGraph.java)| O(?)|O(?)| Medium|
 |317|[Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ShortestDistanceFromAllBuildings.java)| O(?)|O(?) | Hard| 
@@ -88,12 +90,14 @@
 |286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WallsAndGates.java)| O(m*n)|O(g) | Medium| BFS
 |285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/InorderSuccessorInBST.java)| O(h)|O(1) | Medium|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MoveZeroes.java)| O(n)|O(1) | Easy| 
+|282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ExpressionAddOperators.java)| O(?)|O(?) | Hard|
 |281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ZigzagIterator.java)| O(n)|O(n) | Medium|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WiggleSort.java)| O(n)|O(1) | Medium|
 |279|[Perfect Squares](https://leetcode.com/problems/perfect-squares/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PerfectSquares.java)| O(n)|O(1) | Medium| 
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindtheCelebrity.java)| O(n)|O(1) | Medium| 
 |276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PaintFence.java)| O(n)|O(1) | Easy| DP
+|274|[H-Index](https://leetcode.com/problems/h-index/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/HIndex.java)| O(nlogn)|O(1) | Medium| 
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/IntegertoEnglishWords.java)| O(n)|O(1) | Hard| 
 |272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ClosestBinarySearchTreeValueII.java)| O(h+k)|O(h) | Hard| Stack
 |271|[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/EncodeandDecodeStrings.java)| O(n)|O(1) | Medium| 
