@@ -5,7 +5,29 @@ import com.stevesun.common.utils.CommonUtils;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+/**Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target.
 
+ Example:
+
+ nums = [1, 2, 3]
+ target = 4
+
+ The possible combination ways are:
+ (1, 1, 1, 1)
+ (1, 1, 2)
+ (1, 2, 1)
+ (1, 3)
+ (2, 1, 1)
+ (2, 2)
+ (3, 1)
+
+ Note that different sequences are counted as different combinations.
+
+ Therefore the output is 7.
+ Follow up:
+ What if negative numbers are allowed in the given array?
+ How does it change the problem?
+ What limitation we need to add to the question to allow negative numbers?*/
 public class CombinationSumIV {
     //since this question doesn't require to return all the combination result, instead, it just wants one number, we could use DP
     //the idea is similar to Climbing Stairs.

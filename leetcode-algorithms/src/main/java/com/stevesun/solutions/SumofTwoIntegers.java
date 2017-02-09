@@ -1,8 +1,11 @@
 package com.stevesun.solutions;
 
+/**Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
+
+ Example:
+ Given a = 1 and b = 2, return 3.*/
 public class SumofTwoIntegers {
 //This post is very helpful: http://stackoverflow.com/questions/9070937/adding-two-numbers-without-operator-clarification
-    //I also shared my solution here: https://discuss.leetcode.com/topic/49870/one-liner-with-detailed-explanation
     public int getSum(int a, int b) {
         if(b == 0) return a;
         int sum = a^b;
