@@ -256,12 +256,15 @@
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaximumSubarray.java)|O(n)|O(1)|Medium|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PowXN.java)|O(logn)|O(logn)|Medium|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PermutationsII.java)|O(n*n!)|O(n)|Medium|Backtracking
+|46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Permutations.java)|O(n*n!)|O(n)|Medium|Backtracking
 |45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/JumpGameII.java)|O(?)|O(?)|Hard|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution]|||Medium
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TrappingRainWater.java)|O(n)|O(1)|Hard|
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FirstMissingPositive.java)|O(n)|O(1)|Hard|
+|40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CombinationSumII.java)|O(k*n^k)|O(k)|Medium|Backtracking
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CombinationSum.java)|O(k*n^k)|O(k)|Medium|Backtracking
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CountandSay.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
+|36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidSudoku.java)|O(?)|O(?)|Medium| 
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SearchInsertPosition.java)|O(n)|O(1)|Medium|Array
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SearchForARange.java)|O(logn)|O(1)|Medium|Array, Binary Search
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SearchinRotatedSortedArray.java)|O(logn)|O(1)|Hard|Binary Search
@@ -270,6 +273,8 @@
 |30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SubstringwithConcatenationofAllWords.java)|O(n^2)|O(n)|Hard| HashMap
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DivideTwoIntegers.java)|O(?)|O(?)|Medium|
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ImplementStrStr.java)|O(n)|O(1)|Easy| String
+|27|[Remove Element](https://leetcode.com/problems/remove-element/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RemoveElement.java)|O(n)|O(1)| Easy |
+|26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RemoveDuplicatesFromSortedArray.java)|O(n)|O(1)|Easy| 
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ReverseNodesinkGroup.java)|O(n)|O(1)| Hard | Recursion, LinkedList
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SwapNodesinPairs.java)|O(n)|O(1)|Easy| Recursion, LinkedList
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MergeKSortedList.java)|O(n*logk)|O(logk)|Hard|Heap
