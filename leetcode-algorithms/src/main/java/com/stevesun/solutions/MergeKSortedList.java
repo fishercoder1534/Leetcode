@@ -5,7 +5,7 @@ import com.stevesun.common.classes.ListNode;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-/**As discussed with 司德君,王昊,薛博, this is super easy as long as you can think of heap, offer each of the head node into the min-heap.*/
+/**Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.*/
 
 public class MergeKSortedList {
     public ListNode mergeKLists(ListNode[] lists) {

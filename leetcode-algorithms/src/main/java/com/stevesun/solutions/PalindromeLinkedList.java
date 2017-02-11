@@ -5,6 +5,10 @@ import com.stevesun.common.utils.CommonUtils;
 
 import java.util.Stack;
 
+/**Given a singly linked list, determine if it is a palindrome.
+
+ Follow up:
+ Could you do it in O(n) time and O(1) space?*/
 public class PalindromeLinkedList {
     //then I turned to Discuss, and found that they actually reverse the half and then do the comparison, e.g. https://discuss.leetcode.com/topic/33376/java-easy-to-understand
     //a strong candidate would try to restore the reversed half before return to keep the input intact

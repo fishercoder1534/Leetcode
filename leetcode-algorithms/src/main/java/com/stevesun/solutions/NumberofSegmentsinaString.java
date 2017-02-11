@@ -1,5 +1,5 @@
 package com.stevesun.solutions;
-/**434. Number of Segments in a String My SubmissionsBack To Contest
+/**434. Number of Segments in a String
 
 Count the number of segments in a string, where a segment is defined to be a contiguous sequence of non-space characters.
 
