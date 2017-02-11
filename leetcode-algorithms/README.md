@@ -278,6 +278,7 @@
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CombinationSumII.java)|O(k*n^k)|O(k)|Medium|Backtracking
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CombinationSum.java)|O(k*n^k)|O(k)|Medium|Backtracking
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CountandSay.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
+|37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SudokuSolver.java)|O((9!)^9)|O(1)|Hard|
 |36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidSudoku.java)|O(?)|O(?)|Medium| 
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SearchInsertPosition.java)|O(n)|O(1)|Medium|Array
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SearchForARange.java)|O(logn)|O(1)|Medium|Array, Binary Search
