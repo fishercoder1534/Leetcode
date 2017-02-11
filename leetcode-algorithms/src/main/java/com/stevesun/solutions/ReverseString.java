@@ -1,5 +1,9 @@
 package com.stevesun.solutions;
 
+/**Write a function that takes a string as input and returns the string reversed.
+
+ Example:
+ Given s = "hello", return "olleh".*/
 public class ReverseString {
     public String reverseString_cheating(String s) {
         return new StringBuilder(s).reverse().toString();

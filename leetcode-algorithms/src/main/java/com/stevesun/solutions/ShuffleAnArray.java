@@ -1,8 +1,5 @@
 package com.stevesun.solutions;
-/**384. Shuffle an Array  QuestionEditorial Solution  My Submissions
-Total Accepted: 94
-Total Submissions: 247
-Difficulty: Medium
+/**384. Shuffle an Array
 Shuffle a set of numbers without duplicates.
 
 Example:

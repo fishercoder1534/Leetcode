@@ -4,10 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-/**381. Insert Delete GetRandom O(1) - Duplicates allowed  QuestionEditorial Solution  My Submissions
-Total Accepted: 190
-Total Submissions: 613
-Difficulty: Medium
+/**381. Insert Delete GetRandom O(1) - Duplicates allowed
+ *
 Design a data structure that supports all following operations in average O(1) time.
 
 Note: Duplicate elements are allowed.

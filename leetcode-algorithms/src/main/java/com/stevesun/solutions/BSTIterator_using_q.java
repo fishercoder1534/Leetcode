@@ -5,10 +5,7 @@ import com.stevesun.common.classes.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**173. Binary Search Tree Iterator  QuestionEditorial Solution  My Submissions
-Total Accepted: 56053
-Total Submissions: 154876
-Difficulty: Medium
+/**173. Binary Search Tree Iterator
 Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
 
 Calling next() will return the next smallest number in the BST.

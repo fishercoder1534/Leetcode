@@ -9,6 +9,14 @@ import java.util.Map.Entry;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/**Given a non-empty array of integers, return the k most frequent elements.
+
+ For example,
+ Given [1,1,1,2,2,3] and k = 2, return [1,2].
+
+ Note:
+ You may assume k is always valid, 1 ≤ k ≤ number of unique elements.
+ Your algorithm's time complexity must be better than O(n log n), where n is the array's size.*/
 public class TopKFrequentElements {
 	// Approach 1: use buckets to hold numbers of the same frequency
 	/**Attn: we must use a simple array to solve this problem, instead of using List<List<Integer>>, 

@@ -7,11 +7,12 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
-/**This solution got AC'ed. Although it's not really doing random 8/4/2016, it got rejected ever since because they added test case 
+
+public class RandomizedSet {
+/**This solution got AC'ed. Although it's not really doing random 8/4/2016, it got rejected ever since because they added test case
  * to see if it's really randomized.
  * Now, they've updated the test case and also the question description: Each element must have the same probability of being returned.*/
-public class RandomizedSet {
-    
+
     Set<Integer> set;
 
     /** Initialize your data structure here. */

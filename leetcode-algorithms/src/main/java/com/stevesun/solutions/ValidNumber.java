@@ -1,8 +1,5 @@
 package com.stevesun.solutions;
-/**65. Valid Number  QuestionEditorial Solution  My Submissions
-Total Accepted: 50950
-Total Submissions: 413050
-Difficulty: Hard
+/**65. Valid Number
 Validate if a given string is numeric.
 
 Some examples:
