@@ -212,7 +212,7 @@
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CopyListWithRandomPointer.java)| O(?)|O(?) | Medium| 
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SingleNumberII.java)| O(n)|O(n) | Medium|
 |135|[Candy](https://leetcode.com/problems/candy/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Candy.java)| O(n)|O(1) | Hard| Greedy
-|133|[Clone Graph](https://leetcode.com/problems/clone-graph/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CloneGraph.java)| O(n)|O(n) | Medium| HashMap, BFS 
+|133|[Clone Graph](https://leetcode.com/problems/clone-graph/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CloneGraph.java)| O(n)|O(n) | Medium| HashMap, BFS, Graph 
 |132|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ImplementQueueUsingStacks.java)| O(n)|O(n) | Easy| Stack, Queue
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SurroundedRegionsBFS.java)| O(?)|O(?) | Medium|
 |129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SumRootToLeafNumbers.java)| O(n)|O(h) | Medium| DFS
