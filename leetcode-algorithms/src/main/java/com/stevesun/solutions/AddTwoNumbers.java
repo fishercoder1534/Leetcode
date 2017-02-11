@@ -6,10 +6,7 @@ import com.stevesun.common.utils.CommonUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-/**2. Add Two Numbers  QuestionEditorial Solution  My Submissions
-Total Accepted: 164672
-Total Submissions: 675656
-Difficulty: Medium
+/**2. Add Two Numbers
 You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)

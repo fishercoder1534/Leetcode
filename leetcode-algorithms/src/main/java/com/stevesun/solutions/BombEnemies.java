@@ -80,5 +80,4 @@ public class BombEnemies {
         }
         return result;
     }
-
 }

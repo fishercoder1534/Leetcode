@@ -9,10 +9,6 @@ import java.util.Queue;
 
 /**199. Binary Tree Right Side View
 
-    Total Accepted: 50496
-    Total Submissions: 138613
-    Difficulty: Medium
-
 Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
 
 For example:

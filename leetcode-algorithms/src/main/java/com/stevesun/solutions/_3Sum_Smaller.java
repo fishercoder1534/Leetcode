@@ -34,5 +34,4 @@ public class _3Sum_Smaller {
         }
         return result;
     }
-
 }
