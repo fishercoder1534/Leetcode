@@ -3,6 +3,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|515|[Find Largest Element in Each Row](https://leetcode.com/problems/find-largest-element-in-each-row/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindLargestElementinEachRow.java) | O(n) |O(k) | Medium| BFS
 |513|[Find Left Most Element](https://leetcode.com/problems/find-left-most-element/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindLeftMostElement.java) | O(n) |O(k) | Medium| BFS
 |504|[Base 7](https://leetcode.com/problems/base-7/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Base7.java) | O(1) |O(1) | Easy| 
 |501|[Find Mode in Binary Tree](https://leetcode.com/problems/find-mode-in-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindModeinBinaryTree.java) | O(n) |O(k) | Easy| Binary Tree
