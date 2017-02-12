@@ -265,17 +265,20 @@
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TextJustification.java)|O(n)|O(1)|Hard|
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/AddBinary.java)|O(n)|O(1)|Easy|
 |66|[Plus One](https://leetcode.com/problems/plus-one/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PlusOne.java)|O(n)|O(1)|Easy|
+|65|[Valid Number](https://leetcode.com/problems/valid-number/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidNumber.java)|O(n)|O(1)|Hard|
+|64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MinimumPathSum.java)|O(m*n)|O(m*n)|Medium| DP
+|63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/UniquePathsII.java)|O(m*n)|O(m*n)|Medium| DP
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PermutationSequence.java)|?|?|Medium|
 |59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SpiralMatrixII.java)|O(n)|O(n)|Medium|
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LengthofLastWord.java)|O(n)|O(1)|Easy|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MergeIntervals.java)|O(n*logn)|O(1)|Hard|
+|55|[Jump Game](https://leetcode.com/problems/jump-game/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/JumpGame.java)|O(n)|O(1)|Medium|
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SpiralMatrix.java)|O(m*n)|O(m*n)|Medium|
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaximumSubarray.java)|O(n)|O(1)|Medium|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PowXN.java)|O(logn)|O(logn)|Medium|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PermutationsII.java)|O(n*n!)|O(n)|Medium|Backtracking
 |46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Permutations.java)|O(n*n!)|O(n)|Medium|Backtracking
 |45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/JumpGameII.java)|O(?)|O(?)|Hard|
-|43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution]|||Medium
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TrappingRainWater.java)|O(n)|O(1)|Hard|
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FirstMissingPositive.java)|O(n)|O(1)|Hard|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CombinationSumII.java)|O(k*n^k)|O(k)|Medium|Backtracking
