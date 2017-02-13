@@ -33,9 +33,9 @@ import java.util.Queue;
  7
  Note: You may assume the tree (i.e., the given root node) is not NULL.
  */
-public class FindLeftMostElement {
+public class FindBottomLeftValue {
 
-    public int findLeftMostNode(TreeNode root) {
+    public int findBottomLeftValue(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         TreeNode leftMost = root;

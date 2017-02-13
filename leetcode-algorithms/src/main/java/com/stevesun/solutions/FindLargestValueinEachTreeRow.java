@@ -21,9 +21,9 @@ import java.util.Queue;
 
  Output: [1, 3, 9]
  */
-public class FindLargestElementinEachRow {
+public class FindLargestValueinEachTreeRow {
 
-    public int[] findValueMostElement(TreeNode root) {
+    public int[] largestValues(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
         if (root != null) {
             queue.offer(root);

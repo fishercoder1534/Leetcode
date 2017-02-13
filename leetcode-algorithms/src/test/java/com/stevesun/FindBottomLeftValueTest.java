@@ -1,7 +1,7 @@
 package com.stevesun;
 
 import com.stevesun.common.classes.TreeNode;
-import com.stevesun.solutions.FindLeftMostElement;
+import com.stevesun.solutions.FindBottomLeftValue;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -11,15 +11,15 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by stevesun on 1/15/17.
  */
-public class FindLeftMostElementTest {
-    private static FindLeftMostElement test;
+public class FindBottomLeftValueTest {
+    private static FindBottomLeftValue test;
     private static int expected;
     private static int actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup(){
-        test = new FindLeftMostElement();
+        test = new FindBottomLeftValue();
     }
 
     @Before
@@ -35,7 +35,7 @@ public class FindLeftMostElementTest {
         root.left = new TreeNode(1);
         root.right= new TreeNode(3);
         expected = 1;
-        actual = test.findLeftMostNode(root);
+        actual = test.findBottomLeftValue(root);
         assertEquals(expected, actual);
 
     }
@@ -50,7 +50,7 @@ public class FindLeftMostElementTest {
         root.right.right= new TreeNode(6);
         root.right.left.left= new TreeNode(7);
         expected = 7;
-        actual = test.findLeftMostNode(root);
+        actual = test.findBottomLeftValue(root);
         assertEquals(expected, actual);
     }
 }

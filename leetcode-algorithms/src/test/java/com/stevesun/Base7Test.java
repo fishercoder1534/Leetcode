@@ -32,7 +32,7 @@ public class Base7Test {
     public void test1(){
         num = 100;
         expected = "202";
-        actual = test.convertTo7(num);
+        actual = test.convertToBase7(num);
         assertEquals(expected, actual);
     }
 
@@ -40,7 +40,7 @@ public class Base7Test {
     public void test2(){
         num = -7;
         expected = "-10";
-        actual = test.convertTo7(num);
+        actual = test.convertToBase7(num);
         assertEquals(expected, actual);
     }
 }

@@ -1,22 +1,22 @@
 package com.stevesun;
 
 import com.stevesun.common.classes.TreeNode;
-import com.stevesun.solutions.FindLargestElementinEachRow;
+import com.stevesun.solutions.FindLargestValueinEachTreeRow;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class FindLargestElementinEachRowTest {
-    private static FindLargestElementinEachRow test;
+public class FindLargestValueinEachTreeRowTest {
+    private static FindLargestValueinEachTreeRow test;
     private static int[] expected;
     private static int[] actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup(){
-        test = new FindLargestElementinEachRow();
+        test = new FindLargestValueinEachTreeRow();
     }
 
     @Before
@@ -32,7 +32,7 @@ public class FindLargestElementinEachRowTest {
         root.left = new TreeNode(3);
         root.right= new TreeNode(2);
         expected = new int[]{1, 3};
-        actual = test.findValueMostElement(root);
+        actual = test.largestValues(root);
         assertArrayEquals(expected, actual);
 
     }
@@ -40,7 +40,7 @@ public class FindLargestElementinEachRowTest {
     @Test
     public void test2(){
         expected = new int[]{};
-        actual = test.findValueMostElement(null);
+        actual = test.largestValues(null);
         assertArrayEquals(expected, actual);
 
     }

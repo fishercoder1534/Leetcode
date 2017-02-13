@@ -14,7 +14,7 @@ package com.stevesun.solutions;
  */
 public class Base7 {
 
-    public String convertTo7(int num) {
+    public String convertToBase7(int num) {
         return String.valueOf(Integer.toString(num, 7));
     }
 }
