@@ -13,6 +13,7 @@
 |485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaxConsecutiveOnes.java) | O(n) |O(1) | Easy| Array
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TotalHammingDistance.java) | O(n) |O(1) | Medium| Bit Manipulation
 |476|[Number Complement](https://leetcode.com/problems/number-complement/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NumberComplement.java) | O(n) |O(1) | Easy| Bit Manipulation
+|474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/OnesandZeroes.java) | O(n) |O(m*n) | Medium| DP
 |472|[Concatenated Words](https://leetcode.com/problems/concatenated-words/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ConcatenatedWords.java) | O(n^2) |O(n) | Hard| Trie, DP, DFS
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/UniqueSubstringsinWraparoundString.java) | O(n) |O(1) | Medium| DP
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/IslandPerimeter.java)| O(m*n)|O(1) | Easy| 
