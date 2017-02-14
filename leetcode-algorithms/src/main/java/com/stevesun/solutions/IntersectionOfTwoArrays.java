@@ -5,10 +5,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-/**349. Intersection of Two Arrays  QuestionEditorial Solution  My Submissions
-Total Accepted: 37539
-Total Submissions: 84405
-Difficulty: Easy
+/**349. Intersection of Two Arrays
+ *
 Given two arrays, write a function to compute their intersection.
 
 Example:
