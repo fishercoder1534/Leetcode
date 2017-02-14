@@ -23,11 +23,11 @@ import java.util.Queue;
  */
 public class FindLargestValueinEachTreeRow {
 
-    public int[] largestValues(TreeNode root) {
+    public List<Integer> largestValues(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         if (root != null) {
             queue.offer(root);
-            List<Integer> list = new ArrayList<>();
             while (!queue.isEmpty()) {
                 int max = Integer.MIN_VALUE;
                 int size = queue.size();
@@ -39,13 +39,7 @@ public class FindLargestValueinEachTreeRow {
                 }
                 list.add(max);
             }
-            int[] result = new int[list.size()];
-            for (int i = 0; i < list.size(); i++) {
-                result[i] = list.get(i);
-            }
-            return result;
-        } else {
-            return new int[]{};
         }
+        return list;
     }
 }

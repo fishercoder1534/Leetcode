@@ -8,6 +8,7 @@
 |506|[Relative Ranks](https://leetcode.com/problems/relative-ranks/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RelativeRanks.java) | O(nlogn) |O(n) | Easy|
 |504|[Base 7](https://leetcode.com/problems/base-7/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Base7.java) | O(1) |O(1) | Easy| 
 |501|[Find Mode in Binary Tree](https://leetcode.com/problems/find-mode-in-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindModeinBinaryTree.java) | O(n) |O(k) | Easy| Binary Tree
+|500|[Keyboard Row](https://leetcode.com/problems/keyboard-row/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/KeyboardRow.java) | O(n) |O(1) | Easy|
 |492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ConstructTheRectangle.java) | O(n) |O(1) | Easy| Array
 |485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaxConsecutiveOnes.java) | O(n) |O(1) | Easy| Array
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TotalHammingDistance.java) | O(n) |O(1) | Medium| Bit Manipulation

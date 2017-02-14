@@ -6,12 +6,16 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 public class FindLargestValueinEachTreeRowTest {
     private static FindLargestValueinEachTreeRow test;
-    private static int[] expected;
-    private static int[] actual;
+    private static List<Integer> expected;
+    private static List<Integer> actual;
     private static TreeNode root;
 
     @BeforeClass
@@ -21,8 +25,8 @@ public class FindLargestValueinEachTreeRowTest {
 
     @Before
     public void setupForEachTest(){
-        expected = new int[]{};
-        actual = new int[]{};
+        expected = new ArrayList<>();
+        actual = new ArrayList<>();
         root = new TreeNode(0);
     }
 
@@ -31,17 +35,17 @@ public class FindLargestValueinEachTreeRowTest {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(3);
         root.right= new TreeNode(2);
-        expected = new int[]{1, 3};
+        expected = Arrays.asList(1, 3);
         actual = test.largestValues(root);
-        assertArrayEquals(expected, actual);
+        assertEquals(expected, actual);
 
     }
 
     @Test
     public void test2(){
-        expected = new int[]{};
+        expected = new ArrayList<>();
         actual = test.largestValues(null);
-        assertArrayEquals(expected, actual);
+        assertEquals(expected, actual);
 
     }
 }
