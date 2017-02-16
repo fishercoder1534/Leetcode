@@ -7,9 +7,6 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by stevesun on 1/15/17.
- */
 public class _4SumIITest {
     private static _4SumII test;
     private static int expected;
