@@ -9,6 +9,7 @@
 |504|[Base 7](https://leetcode.com/problems/base-7/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Base7.java) | O(1) |O(1) | Easy| 
 |501|[Find Mode in Binary Tree](https://leetcode.com/problems/find-mode-in-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindModeinBinaryTree.java) | O(n) |O(k) | Easy| Binary Tree
 |500|[Keyboard Row](https://leetcode.com/problems/keyboard-row/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/KeyboardRow.java) | O(n) |O(1) | Easy|
+|494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TargetSum.java) | O(2^n) |O(1) | Medium| 
 |492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ConstructTheRectangle.java) | O(n) |O(1) | Easy| Array
 |485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaxConsecutiveOnes.java) | O(n) |O(1) | Easy| Array
 |482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LicenseKeyFormatting.java) | O(n) |O(n) | Medium| 
