@@ -3,7 +3,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
-|515|[Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindLargestElementinEachRow.java) | O(n) |O(k) | Medium| BFS
+|515|[Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindLargestValueinEachTreeRow.java) | O(n) |O(k) | Medium| BFS
 |513|[Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindBottomLeftValue.java) | O(n) |O(k) | Medium| BFS
 |506|[Relative Ranks](https://leetcode.com/problems/relative-ranks/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RelativeRanks.java) | O(nlogn) |O(n) | Easy|
 |504|[Base 7](https://leetcode.com/problems/base-7/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Base7.java) | O(1) |O(1) | Easy| 
