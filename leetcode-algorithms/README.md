@@ -11,6 +11,7 @@
 |504|[Base 7](https://leetcode.com/problems/base-7/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Base7.java) | O(1) |O(1) | Easy| 
 |501|[Find Mode in Binary Tree](https://leetcode.com/problems/find-mode-in-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindModeinBinaryTree.java) | O(n) |O(k) | Easy| Binary Tree
 |500|[Keyboard Row](https://leetcode.com/problems/keyboard-row/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/KeyboardRow.java) | O(n) |O(1) | Easy|
+|499|[The Maze III](https://leetcode.com/problems/the-maze-iii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TheMazeIII.java) | O(m*n) |O(m*n) | Hard| BFS
 |494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TargetSum.java) | O(2^n) |O(1) | Medium| 
 |492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ConstructTheRectangle.java) | O(n) |O(1) | Easy| Array
 |490|[The Maze](https://leetcode.com/problems/the-maze/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TheMaze.java) | O(m*n) |O(m*n) | Medium| BFS
