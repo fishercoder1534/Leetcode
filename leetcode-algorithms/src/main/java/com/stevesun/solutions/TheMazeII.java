@@ -64,21 +64,20 @@ public class TheMazeII {
 
         while (!queue.isEmpty()) {
             Point curr = queue.poll();
-            int x = curr.x, y = curr.y, distance = curr.distance;//keep the original value
-            if (length[x][y] <= distance) continue;
-            length[x][y] = distance;
+            if (length[curr.x][curr.y] <= curr.distance) continue;
+            length[curr.x][curr.y] = curr.distance;
             for (int i = 0; i < directions.length - 1; i++) {
-                int xx = curr.x, yy = curr.y, distanceDistance = curr.distance;//use temp variables to move
+                int x = curr.x, y = curr.y, distance = curr.distance;//use temp variables to move
                 //we need below while loop to find only "stop" points that could be put into the queue
-                while (xx >= 0 && yy >= 0 && xx < m && yy < n && maze[xx][yy] == 0) {
-                    xx += directions[i];
-                    yy += directions[i + 1];
-                    distanceDistance++;
+                while (x >= 0 && y >= 0 && x < m && y < n && maze[x][y] == 0) {
+                    x += directions[i];
+                    y += directions[i + 1];
+                    distance++;
                 }
-                xx -= directions[i];
-                yy -= directions[i + 1];
-                distanceDistance--;
-                queue.offer(new Point(xx, yy, distanceDistance));
+                x -= directions[i];
+                y -= directions[i + 1];
+                distance--;
+                queue.offer(new Point(x, y, distance));
             }
         }
         return length[destination[0]][destination[1]] == Integer.MAX_VALUE ? -1 : length[destination[0]][destination[1]];
