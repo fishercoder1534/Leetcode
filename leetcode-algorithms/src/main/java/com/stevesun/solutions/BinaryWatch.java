@@ -1,4 +1,4 @@
-package com.stevesun;
+package com.stevesun.solutions;
 
 import java.util.ArrayList;
 import java.util.List;
