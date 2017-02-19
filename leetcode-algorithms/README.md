@@ -3,6 +3,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|520|[Detect Capital](https://leetcode.com/problems/detect-capital/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DetectCapital.java) | O(n) |O(1) | Easy| 
 |515|[Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindLargestValueinEachTreeRow.java) | O(n) |O(k) | Medium| BFS
 |513|[Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindBottomLeftValue.java) | O(n) |O(k) | Medium| BFS
 |508|[Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MostFrequentSubtreeSum.java) | O(n) |O(n) | Medium| DFS, Tree
