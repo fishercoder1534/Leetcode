@@ -199,7 +199,7 @@
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MajorityElement.java)| O(n)|O(1) | Easy|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ExcelSheetColumnTitle.java)| O(n)|O(1) | Easy|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CompareVersionNumbers.java)| O(n)|O(1) | Easy|
-|164|[Maximum Gap](https://leetcode.com/problems/maximum-gap/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaximumGap.java) | O(?) |O(?) | Hard|
+|164|[Maximum Gap](https://leetcode.com/problems/maximum-gap/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaximumGap.java) | O(n) |O(n) | Hard|
 |163|[Missing Ranges](https://leetcode.com/problems/missing-ranges/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MissingRanges.java) | O(n) |O(1) | |
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindPeakElement.java) | O(1) |O(logn)/O(n) | Binary Search|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/OneEditDistance.java) | O(n) |O(1) | |
