@@ -49,6 +49,7 @@
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FizzBuzz.java)| O(n)|O(1) | Easy|
 |408|[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidWordAbbreviation.java)| O(n)|O(1) | Easy|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SumofLeftLeaves.java)| O(n)|O(h) | Easy|
+|401|[Binary Watch](https://leetcode.com/problems/binary-watch/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BinaryWatch.java)| O(1)|O(1) | Easy|
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RandomPickIndex.java) | | | Medium| Reservoir Sampling
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/IntegerReplacement.java)| ? | ? | Easy| BFS
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RotateFunction.java)| O(n^2) could be optimized to O(n) | O(1) | Easy|
