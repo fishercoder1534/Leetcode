@@ -31,7 +31,6 @@ public class SerializeandDeserializeBinaryTree {
      then eventually just return the root.
      */
 
-
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         if(root == null) return "";
@@ -77,5 +76,4 @@ public class SerializeandDeserializeBinaryTree {
         }
         return root;
     }
-
 }
