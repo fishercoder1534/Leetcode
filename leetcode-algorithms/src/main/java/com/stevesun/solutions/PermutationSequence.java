@@ -41,5 +41,4 @@ public class PermutationSequence {
         }
         return sb.toString();
     }
-
 }
