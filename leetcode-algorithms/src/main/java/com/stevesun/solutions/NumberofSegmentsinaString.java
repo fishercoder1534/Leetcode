@@ -11,7 +11,7 @@ Input: "Hello, my name is John"
 Output: 5*/
 public class NumberofSegmentsinaString {
 
-    public static int countSegments(String s) {
+    public int countSegments(String s) {
         if (s == null || s.isEmpty()) return 0;
         String[] segments = s.split(" ");
         int count = 0;
@@ -20,10 +20,5 @@ public class NumberofSegmentsinaString {
             count++;
         }
         return count;
-    }
-
-    public static void main(String...args){
-        String test = ", , , ,        a, eaefa";
-        System.out.println(countSegments(test));
     }
 }
