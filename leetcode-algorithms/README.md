@@ -40,6 +40,7 @@
 |442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindAllDuplicatesinanArray.java)| O(n)|O(1) | Medium| Array
 |441|[Arranging Coins](https://leetcode.com/problems/arrange-coins/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ArrangingCoins.java)| O(n)|O(1) | Easy|
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindAllAnagramsinaString.java)| O(n)|O(1) | Easy|
+|437|[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PathSumIII.java) | O(n^2) |O(n) | Easy| DFS, recursion
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NonOverlappingIntervals.java) | O(nlogn) |O(1) | Medium| Greedy
 |434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NumberofSegmentsinaString.java)| O(n)|O(1) | Easy|
