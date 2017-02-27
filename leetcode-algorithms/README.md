@@ -4,6 +4,7 @@
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |530|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MinimumAbsoluteDifferenceinBST.java) | O(n) |O(n) | Easy| DFS
+|529|[Minesweeper](https://leetcode.com/problems/minesweeper/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Minesweeper.java) | O(m*n) |O(k) | Medium | BFS
 |520|[Detect Capital](https://leetcode.com/problems/detect-capital/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DetectCapital.java) | O(n) |O(1) | Easy| 
 |515|[Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindLargestValueinEachTreeRow.java) | O(n) |O(k) | Medium| BFS
 |513|[Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindBottomLeftValue.java) | O(n) |O(k) | Medium| BFS

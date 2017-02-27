@@ -36,7 +36,6 @@ public class ContainsDuplicateIII {
      * we continue. Return false when we finished the loop.
      */
 
-    //Really, computing is all about data structures! Cool! Learned the gist again!
     public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
         TreeSet<Integer> set = new TreeSet<Integer>();
         for(int i = 0; i < nums.length; i++){
