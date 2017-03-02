@@ -45,6 +45,7 @@
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NonOverlappingIntervals.java) | O(nlogn) |O(1) | Medium| Greedy
 |434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NumberofSegmentsinaString.java)| O(n)|O(1) | Easy|
+|422|[Valid Word Square](https://leetcode.com/problems/valid-word-square/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidWordSquare.java)| O(n) | O(1) | Easy|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/StrongPasswordChecker.java)| ? | ? | Hard| 
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PacificAtlanticWaterFlow.java) | O(m*n*Max(m,n)) |O(m*n) | Medium| DFS
