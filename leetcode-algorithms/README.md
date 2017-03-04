@@ -128,6 +128,7 @@
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WordPattern.java)| O(n)|O(n) | Easy| 
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/GameOfLife.java)| O(m*n)|O(m*n), could be optimized to O(1) | Medium|
 |288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/UniqueWordAbbreviation.java)| O(n)|O(1) | Easy| 
+|287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindtheDuplicateNumber.java)| O(n)|O(1) | Medium| 
 |286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WallsAndGates.java)| O(m*n)|O(g) | Medium| BFS
 |285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/InorderSuccessorInBST.java)| O(h)|O(1) | Medium|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MoveZeroes.java)| O(n)|O(1) | Easy| 
