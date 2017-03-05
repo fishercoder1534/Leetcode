@@ -4,6 +4,7 @@
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/EncodeandDecodeTinyURL.java) | O(1) |O(n) | Medium | Design
+|531|[Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LonelyPixelI.java) | O(m*n) |O(1) | Medium | 
 |530|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MinimumAbsoluteDifferenceinBST.java) | O(n) |O(n) | Easy| DFS
 |529|[Minesweeper](https://leetcode.com/problems/minesweeper/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Minesweeper.java) | O(m*n) |O(k) | Medium | BFS
 |520|[Detect Capital](https://leetcode.com/problems/detect-capital/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DetectCapital.java) | O(n) |O(1) | Easy| 
