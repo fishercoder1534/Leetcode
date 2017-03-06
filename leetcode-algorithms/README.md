@@ -91,6 +91,7 @@
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/IntersectionOfTwoArrays.java)| O(m+n)|O(min(m,n)) | Easy| Two Pointers, Binary Search
 |348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DesignTicTacToe.java)| O(?)|O(?) | Medium| 
 |346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MovingAveragefromDataStream.java)| O(1)|O(w)) | Easy| Queue
+|343|[Integer Break](https://leetcode.com/problems/integer-break/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/IntegerBreak.java)| O(1)|O(1) | Medium| Math
 |339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NestedListWeightSum.java)| O(n)|O(h)) | Easy| DFS
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/CountingBits.java)| O(nlogn)|O(h) | Medium| 
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PalindromePairs.java)| O(n^2)|O(n) | Hard|
