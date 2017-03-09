@@ -3,6 +3,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SingleElementinaSortedArray.java) | O(n) |O(1) | Medium | 
 |535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/EncodeandDecodeTinyURL.java) | O(1) |O(n) | Medium | Design
 |532|[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/KdiffPairsinanArray.java) | O(n) |O(n) | Easy | HashMap
 |531|[Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LonelyPixelI.java) | O(m*n) |O(1) | Medium | 
