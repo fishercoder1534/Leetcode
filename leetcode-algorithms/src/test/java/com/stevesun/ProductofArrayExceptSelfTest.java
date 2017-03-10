@@ -39,4 +39,12 @@ public class ProductofArrayExceptSelfTest {
         actual = test.productExceptSelf(nums);
         assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void test3(){
+        nums = new int[]{1,2,3,4};
+        expected = new int[]{24,12,8,6};
+        actual = test.productExceptSelf(nums);
+        assertArrayEquals(expected, actual);
+    }
 }
