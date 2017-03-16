@@ -290,6 +290,7 @@
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SortColors.java)|O(n)|O(1)|Medium| Two Pointers
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SetMatrixZeroes.java)|O(mn)|O(mn)|Medium|
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/EditDistance.java)|O(m*n)|O(m+n)|Hard| 
+|71|[Simplify Path](https://leetcode.com/problems/simplify-path/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SimplifyPath.java)|O(n)|O(n)|Medium| Stack
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ClimbingStairs.java)|O(n)|O(n)|Easy| DP
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Sqrt.java)|O(logn)|O(1)|Easy|
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TextJustification.java)|O(n)|O(1)|Hard|
