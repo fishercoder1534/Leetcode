@@ -3,6 +3,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DiameterofBinaryTree.java) | O(n) |O(h) | Easy | Tree/DFS/Recursion
 |541|[Reverse String II](https://leetcode.com/problems/reverse-string-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ReverseStringII.java) | O(n) |O(1) | Easy | String
 |540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SingleElementinaSortedArray.java) | O(n) |O(1) | Medium | 
 |539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MinimumTimeDifference.java) | O(n) |O(1) | Medium | String
