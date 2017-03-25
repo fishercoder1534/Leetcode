@@ -29,6 +29,7 @@
 |494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TargetSum.java) | O(2^n) |O(1) | Medium| 
 |492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ConstructTheRectangle.java) | O(n) |O(1) | Easy| Array
 |490|[The Maze](https://leetcode.com/problems/the-maze/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TheMaze.java) | O(m*n) |O(m*n) | Medium| BFS
+|487|[Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaxConsecutiveOnesII.java) | O(n) |O(n) | Medium| Array
 |485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MaxConsecutiveOnes.java) | O(n) |O(1) | Easy| Array
 |482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LicenseKeyFormatting.java) | O(n) |O(n) | Medium| 
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TotalHammingDistance.java) | O(n) |O(1) | Medium| Bit Manipulation
