@@ -67,4 +67,49 @@ public class ContinuousSubarraySumTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void test6(){
+        nums = new int[]{1,1};
+        expected = true;
+        k = 2;
+        actual = test.checkSubarraySum(nums, k);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void test7(){
+        nums = new int[]{0};
+        expected = false;
+        k = -1;
+        actual = test.checkSubarraySum(nums, k);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void test8(){
+        nums = new int[]{23,2,4,6,7};
+        expected = true;
+        k = -6;
+        actual = test.checkSubarraySum(nums, k);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void test9(){
+        nums = new int[]{1,2,3};
+        expected = false;
+        k = 4;
+        actual = test.checkSubarraySum(nums, k);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void test10(){
+        nums = new int[]{5,2,4};
+        expected = false;
+        k = 5;
+        actual = test.checkSubarraySum(nums, k);
+        assertEquals(expected, actual);
+    }
+
 }

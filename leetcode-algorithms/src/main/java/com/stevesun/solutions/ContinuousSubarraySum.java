@@ -1,7 +1,9 @@
 package com.stevesun.solutions;
 
 /**
- * Given a list of non-negative numbers and a target integer k, write a function to check if the array has a continuous subarray of size at least 2 that sums up to the multiple of k, that is, sums up to n*k where n is also an integer.
+ * Given a list of non-negative numbers and a target integer k,
+ * write a function to check if the array has a continuous subarray of size at least 2
+ * that sums up to the multiple of k, that is, sums up to n*k where n is also an integer.
 
  Example 1:
  Input: [23, 2, 4, 6, 7],  k=6
@@ -30,17 +32,16 @@ public class ContinuousSubarraySum {
         }
 
         //then k cannot be zero any more
-        if (k == 0) return false;
+        if (k == 0 || nums.length < 2) return false;
 
-        int[] preSums = new int[nums.length];
-        preSums[0] = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            preSums[i] = preSums[i-1] + nums[i];
+        int[] preSums = new int[nums.length+1];
+        for (int i = 1; i <= nums.length; i++) {
+            preSums[i] = preSums[i-1] + nums[i-1];
         }
 
-        for (int i = 1; i < nums.length; i++) {
-            for (int j = 0; j <= i-1; j++) {
-                if ((preSums[i] - nums[j]) % k == 0) return true;
+        for (int i = 1; i <= nums.length; i++) {
+            for (int j = 0; j < i-1; j++) {
+                if ((preSums[i] - preSums[j]) % k == 0) return true;
             }
         }
         return false;
