@@ -3,6 +3,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|547|[Friend Circles](https://leetcode.com/problems/friend-circles/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FriendCircles.java) | O(m*n) |O(m*n) | Medium | Union Find
 |545|[Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BoundaryofBinaryTree.java) | O(n) |O(n) | Medium | Recursion
 |544|[Output Contest Matches](https://leetcode.com/problems/output-contest-matches/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/OutputContestMatches.java) | O(n) |O(n) | Medium | Recursion
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/DiameterofBinaryTree.java) | O(n) |O(h) | Easy | Tree/DFS/Recursion
