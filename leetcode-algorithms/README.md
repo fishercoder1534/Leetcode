@@ -3,6 +3,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|548|[Split Array with Equal Sum](https://leetcode.com/problems/split-array-with-equal-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SplitArraywithEqualSum.java) | O(n^2) |O(1) | Medium | Array
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FriendCircles.java) | O(n^2) |O(n) | Medium | Union Find
 |545|[Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BoundaryofBinaryTree.java) | O(n) |O(n) | Medium | Recursion
 |544|[Output Contest Matches](https://leetcode.com/problems/output-contest-matches/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/OutputContestMatches.java) | O(n) |O(n) | Medium | Recursion
