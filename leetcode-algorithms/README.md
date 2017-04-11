@@ -5,6 +5,7 @@
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ReverseWordsinaStringIII.java) | O(n) |O(n) | Easy | String
 |554|[Brick Wall](https://leetcode.com/problems/brick-wall/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BrickWall.java) | O(n) (n is total number of bricks in the wall) |O(m) (m is width of the wall) | Medium | HashMap
+|549|[Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BinaryTreeLongestConsecutiveSequenceII.java) | O(n) |O(n) | Medium | Tree
 |548|[Split Array with Equal Sum](https://leetcode.com/problems/split-array-with-equal-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SplitArraywithEqualSum.java) | O(n^2) |O(1) | Medium | Array
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FriendCircles.java) | O(n^2) |O(n) | Medium | Union Find
 |545|[Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BoundaryofBinaryTree.java) | O(n) |O(n) | Medium | Recursion
