@@ -1,5 +1,9 @@
 package com.stevesun.solutions;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
 /**
  * You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
 
@@ -24,7 +28,27 @@ package com.stevesun.solutions;
  */
 public class NextGreaterElementI {
 
-    public int[] nextGreaterElement(int[] findNums, int[] nums) {
+    public int[] nextGreaterElement_clever_way(int[] findNums, int[] nums) {
+        Stack<Integer> stack = new Stack();
+        Map<Integer, Integer> map = new HashMap();
+        for (int i = 0; i < nums.length; i++) {
+            while (!stack.isEmpty() && nums[i] > stack.peek()) {
+                map.put(stack.pop(), nums[i]);
+            }
+            stack.push(nums[i]);
+        }
+
+        while (!stack.isEmpty()) map.put(stack.pop(), -1);
+
+        int[] result = new int[findNums.length];
+        for (int i = 0; i < findNums.length; i++) {
+            result[i] = map.get(findNums[i]);
+        }
+        return result;
+    }
+
+
+    public int[] nextGreaterElement_naive_way(int[] findNums, int[] nums) {
         int[] result = new int[findNums.length];
         for (int i = 0; i < findNums.length; i++) {
             boolean found = false;

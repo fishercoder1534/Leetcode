@@ -32,7 +32,10 @@ public class NextGreaterElementITest {
         findNums = new int[]{4,1,2};
         nums = new int[]{1,3,4,2};
         expected = new int[]{-1, 3, -1};
-        actual = test.nextGreaterElement(findNums, nums);
+        actual = test.nextGreaterElement_naive_way(findNums, nums);
+        assertArrayEquals(expected, actual);
+
+        actual = test.nextGreaterElement_clever_way(findNums, nums);
         assertArrayEquals(expected, actual);
     }
 }
