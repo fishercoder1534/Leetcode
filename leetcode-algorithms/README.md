@@ -35,6 +35,7 @@
 |506|[Relative Ranks](https://leetcode.com/problems/relative-ranks/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RelativeRanks.java) | O(nlogn) |O(n) | Easy|
 |505|[The Maze II](https://leetcode.com/problems/the-maze-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TheMazeII.java) | O(m*n) |O(m*n) | Medium| BFS
 |504|[Base 7](https://leetcode.com/problems/base-7/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/Base7.java) | O(1) |O(1) | Easy| 
+|503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NextGreaterElementII.java) | O(n) |O(n) | Medium| Stack
 |501|[Find Mode in Binary Tree](https://leetcode.com/problems/find-mode-in-binary-tree/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindModeinBinaryTree.java) | O(n) |O(k) | Easy| Binary Tree
 |500|[Keyboard Row](https://leetcode.com/problems/keyboard-row/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/KeyboardRow.java) | O(n) |O(1) | Easy|
 |499|[The Maze III](https://leetcode.com/problems/the-maze-iii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TheMazeIII.java) | O(m*n) |O(m*n) | Hard| BFS
