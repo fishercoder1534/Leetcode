@@ -1,4 +1,4 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java-blue.svg) [![Build Status](https://travis-ci.org/fishercoder1534/Leetcode.svg?branch=master)](https://travis-ci.org/fishercoder1534/Leetcode     ) [![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg)](LICENSE.md)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Java-blue.svg) [![Build Status](https://travis-ci.org/fishercoder1534/Leetcode.svg?branch=master)](https://travis-ci.org/fishercoder1534/Leetcode) [![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg)](LICENSE.md)
 
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
@@ -6,6 +6,7 @@
 |557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ReverseWordsinaStringIII.java) | O(n) |O(n) | Easy | String
 |556|[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NextGreaterElementIII.java) | O(n)|O(1)| Medium | String
 |554|[Brick Wall](https://leetcode.com/problems/brick-wall/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BrickWall.java) | O(n) (n is total number of bricks in the wall) |O(m) (m is width of the wall) | Medium | HashMap
+|551|[Student Attendance Record I](https://leetcode.com/problems/Student Attendance Record I/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/StudentAttendanceRecordI.java) | O(n)| O(1) | Easy| String 
 |549|[Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BinaryTreeLongestConsecutiveSequenceII.java) | O(n) |O(n) | Medium | Tree
 |548|[Split Array with Equal Sum](https://leetcode.com/problems/split-array-with-equal-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/SplitArraywithEqualSum.java) | O(n^2) |O(1) | Medium | Array
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FriendCircles.java) | O(n^2) |O(n) | Medium | Union Find
