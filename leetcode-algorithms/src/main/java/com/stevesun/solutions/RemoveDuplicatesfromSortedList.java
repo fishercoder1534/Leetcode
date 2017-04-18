@@ -1,7 +1,6 @@
 package com.stevesun.solutions;
 
 import com.stevesun.common.classes.ListNode;
-import com.stevesun.common.utils.CommonUtils;
 
 /**Given a sorted linked list, delete all duplicates such that each element appear only once.
 
@@ -20,16 +19,5 @@ public class RemoveDuplicatesfromSortedList {
             head = head.next;
         }
         return ret.next;
-    }
-
-    public static void main(String...strings){
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(1);
-        head.next.next = new ListNode(2);
-        head.next.next.next = new ListNode(3);
-        head.next.next.next.next = new ListNode(3);
-        CommonUtils.printList(head);
-        ListNode result = deleteDuplicates(head);
-        CommonUtils.printList(result);
     }
 }
