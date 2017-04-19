@@ -18,7 +18,6 @@ public class ConstructBinaryTreefromPreorderandInorderTraversal {
 		TreeNode node = new TreeNode(preorder[preorderIndex]);
 		int inorderIndex = findInorderIndex(inorder, start, end, preorder[preorderIndex]);
 		int leftTreeSize = inorderIndex - start;
-		int rightTreeSize = end - inorderIndex;
 		node.left = buildTree(preorder, inorder, preorderIndex + 1, start, inorderIndex - 1);
 		node.right = buildTree(preorder, inorder, preorderIndex + leftTreeSize + 1, inorderIndex + 1, end);
 		return node;
