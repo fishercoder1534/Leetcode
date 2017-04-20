@@ -29,7 +29,7 @@ import java.util.Set;
  Topological sort could also be done via BFS.*/
 public class CourseSchedule {
 
-    public static boolean canFinish(int numCourses, int[][] prerequisites) {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
         int[] indegree = new int[numCourses];
         for(int[] prereq : prerequisites){
             indegree[prereq[0]]++;
@@ -56,12 +56,6 @@ public class CourseSchedule {
             if(i != 0) return false;
         }
         return true;
-    }
-    
-    public static void main(String...strings){
-        int numCourses = 2;
-        int[][] prerequisites = new int[][]{{0,1}};
-        System.out.print(canFinish(numCourses, prerequisites));
     }
 
 }
