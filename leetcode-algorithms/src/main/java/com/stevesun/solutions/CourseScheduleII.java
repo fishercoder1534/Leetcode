@@ -34,17 +34,17 @@ import java.util.Set;
 public class CourseScheduleII {
 
     public int[] findOrder(int numCourses, int[][] prerequisites) {
-        int[] degree = new int[numCourses];
+        int[] inDegree = new int[numCourses];
         for(int[] course : prerequisites){
-            degree[course[0]]++;
+            inDegree[course[0]]++;
         }
         
         Set<Integer> zeroDegree = new HashSet();
-        Queue<Integer> q = new LinkedList();
+        Queue<Integer> queue = new LinkedList();
         for(int i = 0; i < numCourses; i++){
-            if(degree[i] == 0) {
+            if(inDegree[i] == 0) {
                 zeroDegree.add(i);
-                q.offer(i);
+                queue.offer(i);
             }
         }
         
@@ -56,23 +56,23 @@ public class CourseScheduleII {
             zeroDegree.remove(course);
             for(int[] pre : prerequisites){
                 if(course == pre[1]){
-                    degree[pre[0]]--;
-                    if(degree[pre[0]] == 0){
+                    inDegree[pre[0]]--;
+                    if(inDegree[pre[0]] == 0){
                         zeroDegree.add(pre[0]);
-                        q.offer(pre[0]);
+                        queue.offer(pre[0]);
                     }
                 }
             }
         }
         
         for(int i = 0; i < numCourses; i++){
-            if(degree[i] != 0) return new int[0];
+            if(inDegree[i] != 0) return new int[0];
         }
         
-        int[] result = new int[q.size()];
+        int[] result = new int[queue.size()];
         int i = 0;
-        while(!q.isEmpty()){
-            result[i++] = q.poll();
+        while(!queue.isEmpty()){
+            result[i++] = queue.poll();
         }
         return result;
     }
