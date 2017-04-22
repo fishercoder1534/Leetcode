@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class _4SumIITest {
+public class _18IITest {
     private static _4SumII test;
     private static int expected;
     private static int actual;

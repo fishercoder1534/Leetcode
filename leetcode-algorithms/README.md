@@ -59,7 +59,7 @@
 |461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/HammingDistance.java) | O(n) |O(1) | Easy|
 |459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RepeatedSubstringPattern.java)| O(n)|O(n) | Easy| KMP
 |458|[Poor Pigs](https://leetcode.com/problems/poor-pigs/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PoorPigs.java) | O(1) |O(1) | Easy| Math
-|456|[132 Pattern](https://leetcode.com/problems/132-pattern/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_132Pattern.java) | O(n) |O(n) | Medium| Stack
+|456|[132 Pattern](https://leetcode.com/problems/132-pattern/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_456.java) | O(n) |O(n) | Medium| Stack
 |455|[Assign Cookies](https://leetcode.com/problems/assign-cookies/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/AssignCookies.java)| O(n)|O(1) | Easy|
 |454|[4Sum II](https://leetcode.com/problems/4sum-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_4SumII.java) | O(n) |O(n) | Medium| HashMap
 |453|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MinimumMovestoEqualArrayElements.java)| O(n)|O(1) | Easy|
@@ -358,7 +358,7 @@
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MergeTwoSortedLists.java)|O(n)|O(1)|Easy|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidParentheses.java)|O(n)|O(n)|Easy|Stack
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/RemoveNthNodeFromEndOfList)|O(n)|O(1)|Medium| Linked List
-|18|[4Sum](https://leetcode.com/problems/4sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_4Sum.java)|O(n^2)|O(1)|Medium|Two Pointers
+|18|[4 Sum](https://leetcode.com/problems/4sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_18.java)|O(n^2)|O(1)|Medium|Two Pointers
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_3SumClosest.java)|O(nlogn)|O(1)|Medium|Two Pointers
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_3Sum.java)|O(n^2)|O(1)|Medium|Two Pointers

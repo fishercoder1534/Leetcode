@@ -23,7 +23,7 @@ import java.util.Stack;
  Output: True
 
  Explanation: There are three 132 patterns in the sequence: [-1, 3, 2], [-1, 3, 0] and [-1, 2, 0].*/
-public class _132Pattern {
+public class _456 {
 
     /**Looked at this post: https://discuss.leetcode.com/topic/67881/single-pass-c-o-n-space-and-time-solution-8-lines-with-detailed-explanation
      * It scans only once, this is the power of using correct data structure.
