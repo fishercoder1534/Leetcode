@@ -15,7 +15,7 @@ import java.util.Map;
  Notes:
  You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.*/
 
-public class WordPattern {
+public class _290 {
 
     public boolean wordPattern(String pattern, String str) {
         String[] words = str.split(" ");

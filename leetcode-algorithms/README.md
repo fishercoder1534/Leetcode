@@ -156,8 +156,8 @@
 |294|[Flip Game II](https://leetcode.com/problems/flip-game-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FlipGameII.java)| ? | ?| Medium| Backtracking
 |293|[Flip Game](https://leetcode.com/problems/flip-game/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FlipGame.java)| O(n) | O(1)| Easy| 
 |292|[Nim Game](https://leetcode.com/problems/nim-game/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NimGame.java)| O(1)|O(1) | Easy| 
-|291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WordPatternII.java)| O(n)|O(n) | Hard|
-|290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WordPattern.java)| O(n)|O(n) | Easy| 
+|291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_291.java)| O(n)|O(n) | Hard|
+|290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_290.java)| O(n)|O(n) | Easy| 
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/GameOfLife.java)| O(m*n)|O(m*n), could be optimized to O(1) | Medium|
 |288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/UniqueWordAbbreviation.java)| O(n)|O(1) | Easy| 
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FindtheDuplicateNumber.java)| O(n)|O(1) | Medium| 
@@ -165,7 +165,7 @@
 |285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/InorderSuccessorInBST.java)| O(h)|O(1) | Medium|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MoveZeroes.java)| O(n)|O(1) | Easy| 
 |282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ExpressionAddOperators.java)| O(?)|O(?) | Hard|
-|281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ZigzagIterator.java)| O(n)|O(n) | Medium|
+|281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_281.java)| O(n)|O(n) | Medium|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/WiggleSort.java)| O(n)|O(1) | Medium|
 |279|[Perfect Squares](https://leetcode.com/problems/perfect-squares/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PerfectSquares.java)| O(n)|O(1) | Medium| 
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
@@ -370,7 +370,7 @@
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PalindromeNumber.java)| O(logn)/(n) | O(1) | Easy
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/StringToInteger.java)| O(n) | O(1) | Easy
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ReverseInteger.java) | O(1) | O(1) | Easy | 
-|6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ZigZagConversion.java) | O(n) | O(n) | Easy | 
+|6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_6.java) | O(n) | O(n) | Easy | 
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LongestPalindromicSubstring.java) | O(n^2) | O(1) | Medium|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MedianofTwoSortedArrays.java) | ? | ? | Hard | Divide and Conquer
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LongestSubstringWithoutRepeatingCharacters.java) | O(n) | O(1) | Medium | HashMap, Sliding Window

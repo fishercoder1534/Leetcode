@@ -15,7 +15,7 @@ package com.stevesun.solutions;
  word = "ABCCED", -> returns true,
  word = "SEE", -> returns true,
  word = "ABCB", -> returns false.*/
-public class WordSearch {
+public class _79 {
 //I made it this time, completely by myself! Cheers! This let me completely understand backtracking!
     public boolean exist(char[][] board, String word) {
         int m = board.length, n = board[0].length;
@@ -50,7 +50,7 @@ public class WordSearch {
     }
 
     public static void main(String...strings){
-        WordSearch test = new WordSearch();
+        _79 test = new _79();
 //        char[][] board = new char[][]{
 //                {'A','B','C','E'},
 //                {'S','F','C','S'},

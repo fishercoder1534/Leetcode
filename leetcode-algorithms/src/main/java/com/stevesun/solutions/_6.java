@@ -13,7 +13,7 @@ package com.stevesun.solutions;
 
  */
 
-public class ZigZagConversion {
+public class _6 {
 
     public String convert(String s, int numRows) {
         StringBuilder[] sb = new StringBuilder[numRows];

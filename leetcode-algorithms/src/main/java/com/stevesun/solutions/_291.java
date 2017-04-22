@@ -17,7 +17,7 @@ import java.util.Set;
  Notes:
  You may assume both pattern and str contains only lowercase letters.
  */
-public class WordPatternII {
+public class _291 {
     Map<Character, String> map = new HashMap();
     Set<String> set = new HashSet();
 

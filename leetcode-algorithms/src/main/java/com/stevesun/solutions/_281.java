@@ -22,11 +22,11 @@ import java.util.List;
  [8,9]
  It should return [1,4,8,2,5,9,3,6,7].
  */
-public class ZigzagIterator {
+public class _281 {
 
     private Iterator<Integer> i, j, tmp;
 
-    public ZigzagIterator(List<Integer> v1, List<Integer> v2) {
+    public _281(List<Integer> v1, List<Integer> v2) {
         i = v2.iterator();
         j = v1.iterator();
     }
