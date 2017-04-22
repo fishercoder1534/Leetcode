@@ -9,7 +9,7 @@ Some examples:
 "1 a" => false
 "2e10" => true
 Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.*/
-public class ValidNumber {
+public class _65 {
     //strip off all leading whitespaces until encounter the first number or period
     //after that, only one 'e' is allowed and one '.' is allowed
     //also, this string could be negative, don't miss this case
@@ -76,7 +76,7 @@ public class ValidNumber {
     }
     
     public static void main(String...strings){
-        ValidNumber test = new ValidNumber();
+        _65 test = new _65();
 //        String s = "1 a";
 //        String s = "2e10";
 //        String s = "abc";

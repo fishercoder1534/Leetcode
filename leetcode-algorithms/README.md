@@ -320,7 +320,7 @@
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/TextJustification.java)|O(n)|O(1)|Hard|
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/AddBinary.java)|O(n)|O(1)|Easy|
 |66|[Plus One](https://leetcode.com/problems/plus-one/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PlusOne.java)|O(n)|O(1)|Easy|
-|65|[Valid Number](https://leetcode.com/problems/valid-number/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ValidNumber.java)|O(n)|O(1)|Hard|
+|65|[Valid Number](https://leetcode.com/problems/valid-number/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_65.java)|O(n)|O(1)|Hard|
 |64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/MinimumPathSum.java)|O(m*n)|O(m*n)|Medium| DP
 |63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/UniquePathsII.java)|O(m*n)|O(m*n)|Medium| DP
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/PermutationSequence.java)|?|?|Medium|
