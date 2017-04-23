@@ -3,6 +3,7 @@
 ## Algorithms
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|561|[Array Partition I](https://leetcode.com/problems/array-partition-i/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_561.java) | O(nlogn) |O(1) | Easy | Array
 |557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/ReverseWordsinaStringIII.java) | O(n) |O(n) | Easy | String
 |556|[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/NextGreaterElementIII.java) | O(n)|O(1)| Medium | String
 |554|[Brick Wall](https://leetcode.com/problems/brick-wall/)|[Solution](../../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/BrickWall.java) | O(n) (n is total number of bricks in the wall) |O(m) (m is width of the wall) | Medium | HashMap
