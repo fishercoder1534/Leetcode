@@ -71,6 +71,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](../master/src/main/java/com/stevesun/solutions/LicenseKeyFormatting.java) | O(n) |O(n) | Medium| 
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](../master/src/main/java/com/stevesun/solutions/TotalHammingDistance.java) | O(n) |O(1) | Medium| Bit Manipulation
 |476|[Number Complement](https://leetcode.com/problems/number-complement/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberComplement.java) | O(n) |O(1) | Easy| Bit Manipulation
+|475|[Heaters](https://leetcode.com/problems/heaters/)|[Solution](../master/src/main/java/com/stevesun/solutions/_475.java) | max(O(nlogn), O(mlogn)) - m is the length of houses, n is the length of heaters |O(1) | Easy | Array Binary Search
 |474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/)|[Solution](../master/src/main/java/com/stevesun/solutions/OnesandZeroes.java) | O(n) |O(m*n) | Medium| DP
 |472|[Concatenated Words](https://leetcode.com/problems/concatenated-words/)|[Solution](../master/src/main/java/com/stevesun/solutions/ConcatenatedWords.java) | O(n^2) |O(n) | Hard| Trie, DP, DFS
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/UniqueSubstringsinWraparoundString.java) | O(n) |O(1) | Medium| DP
