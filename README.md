@@ -401,26 +401,26 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
-|197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../master/leetcode-database/RisingTemperature.sql)| O(n^2)|O(n) | Easy|
-|196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../master/leetcode-database/DeleteDuplicateEmails.sql)| O(n^2)|O(n) | Easy|
-|184|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary)|[Solution](../master/leetcode-database/_184.sql.sql)| O(n^2)|O(n) | Medium|
-|183|[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)|[Solution](../master/leetcode-database/CustomersWhoNeverOrder.sql)| O(n^2)|O(n) | Easy|
-|182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../master/leetcode-database/DuplicateEmails.sql)| O(n^2)|O(n) | Easy| 
-|181|[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)|[Solution](../master/leetcode-database/EmployeesEarningMoreThanTheirManagers.sql)| O(n^2)|O(n) | Easy|
-|180|[Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers)|[Solution](../master/leetcode-database/_180.sql)| O(n)|O(n) | Medium|
-|178|[Rank Scores](https://leetcode.com/problems/rank-scores/)|[Solution](../master/leetcode-database/RankScores.sql)| ? | ? | Medium|
-|177|[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)|[Solution](../master/leetcode-database/_177.sql)| O(n) | O(1) | Medium|
-|176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|[Solution](../master/leetcode-database/SecondHighestSalary.sql)| O(n)|O(1) | Easy|
-|175|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)|[Solution](../master/leetcode-database/CombineTwoTables.sql)| O(m+n)|O(m+n) | Easy|
+|197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../master/database/RisingTemperature.sql)| O(n^2)|O(n) | Easy|
+|196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../master/database/DeleteDuplicateEmails.sql)| O(n^2)|O(n) | Easy|
+|184|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary)|[Solution](../master/database/_184.sql.sql)| O(n^2)|O(n) | Medium|
+|183|[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)|[Solution](../master/database/CustomersWhoNeverOrder.sql)| O(n^2)|O(n) | Easy|
+|182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../master/database/DuplicateEmails.sql)| O(n^2)|O(n) | Easy| 
+|181|[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)|[Solution](../master/database/EmployeesEarningMoreThanTheirManagers.sql)| O(n^2)|O(n) | Easy|
+|180|[Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers)|[Solution](../master/atabase/_180.sql)| O(n)|O(n) | Medium|
+|178|[Rank Scores](https://leetcode.com/problems/rank-scores/)|[Solution](../master/database/RankScores.sql)| ? | ? | Medium|
+|177|[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)|[Solution](../master/database/_177.sql)| O(n) | O(1) | Medium|
+|176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|[Solution](../master/database/SecondHighestSalary.sql)| O(n)|O(1) | Easy|
+|175|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)|[Solution](../master/database/CombineTwoTables.sql)| O(m+n)|O(m+n) | Easy|
 
 
 ## Shell
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
-|195|[Tenth Line](https://leetcode.com/problems/tenth-line/)|[Solution](../master/leetcode-shell/TenthLine.sh)| O(n)|O(1) | Easy|
-|194|[Transpose File](https://leetcode.com/problems/transpose-file/)|[Solution](../master/leetcode-shell/TransposeFile.sh)| O(n^2)|O(n^2) | Medium|
-|193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)|[Solution](../master/leetcode-shell/ValidPhoneNumbers.sh)| O(n)|O(1) | Easy|
-|192|[Word Frequency](https://leetcode.com/problems/word-frequency/)|[Solution](../master/leetcode-shell/WordFrequency.sh)| O(n)|O(k) | Medium|
+|195|[Tenth Line](https://leetcode.com/problems/tenth-line/)|[Solution](../master/shell/TenthLine.sh)| O(n)|O(1) | Easy|
+|194|[Transpose File](https://leetcode.com/problems/transpose-file/)|[Solution](../master/shell/TransposeFile.sh)| O(n^2)|O(n^2) | Medium|
+|193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)|[Solution](../master/shell/ValidPhoneNumbers.sh)| O(n)|O(1) | Easy|
+|192|[Word Frequency](https://leetcode.com/problems/word-frequency/)|[Solution](../master/shell/WordFrequency.sh)| O(n)|O(k) | Medium|
 
 
