@@ -403,11 +403,11 @@ Your ideas/fixes/algorithms are more than welcome!
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../master/database/RisingTemperature.sql)| O(n^2)|O(n) | Easy|
 |196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../master/database/DeleteDuplicateEmails.sql)| O(n^2)|O(n) | Easy|
-|184|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary)|[Solution](../master/database/_184.sql.sql)| O(n^2)|O(n) | Medium|
+|184|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary)|[Solution](../master/database/_184.sql)| O(n^2)|O(n) | Medium|
 |183|[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)|[Solution](../master/database/CustomersWhoNeverOrder.sql)| O(n^2)|O(n) | Easy|
 |182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../master/database/DuplicateEmails.sql)| O(n^2)|O(n) | Easy| 
 |181|[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/)|[Solution](../master/database/EmployeesEarningMoreThanTheirManagers.sql)| O(n^2)|O(n) | Easy|
-|180|[Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers)|[Solution](../master/atabase/_180.sql)| O(n)|O(n) | Medium|
+|180|[Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers)|[Solution](../master/database/_180.sql)| O(n)|O(n) | Medium|
 |178|[Rank Scores](https://leetcode.com/problems/rank-scores/)|[Solution](../master/database/RankScores.sql)| ? | ? | Medium|
 |177|[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)|[Solution](../master/database/_177.sql)| O(n) | O(1) | Medium|
 |176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|[Solution](../master/database/SecondHighestSalary.sql)| O(n)|O(1) | Easy|
