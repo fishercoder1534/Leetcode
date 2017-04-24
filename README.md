@@ -401,5 +401,12 @@ Your ideas/fixes/algorithms are more than welcome!
 * [MySQL](https://github.com/fishercoder1534/Leetcode/master/leetcode-database#database)
 
 ## Shell
-* [Shell](https://github.com/fishercoder1534/Leetcode/master/leetcode-shell#shell)
+
+|  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
+|-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|195|[Tenth Line](https://leetcode.com/problems/tenth-line/)|[Solution](../master/leetcode-shell/TenthLine.sh)| O(n)|O(1) | Easy|
+|194|[Transpose File](https://leetcode.com/problems/transpose-file/)|[Solution](../master/leetcode-shell/TransposeFile.sh)| O(n^2)|O(n^2) | Medium|
+|193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)|[Solution](../master/leetcode-shell/ValidPhoneNumbers.sh)| O(n)|O(1) | Easy|
+|192|[Word Frequency](https://leetcode.com/problems/word-frequency/)|[Solution](../master/leetcode-shell/WordFrequency.sh)| O(n)|O(k) | Medium|
+
 
