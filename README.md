@@ -399,6 +399,8 @@ Your ideas/fixes/algorithms are more than welcome!
 
 ## Database
 
+|  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
+|-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../master/leetcode-database/RisingTemperature.sql)| O(n^2)|O(n) | Easy|
 |196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../master/leetcode-database/DeleteDuplicateEmails.sql)| O(n^2)|O(n) | Easy|
 |184|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary)|[Solution](../master/leetcode-database/_184.sql.sql)| O(n^2)|O(n) | Medium|
