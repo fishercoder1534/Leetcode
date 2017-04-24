@@ -17,7 +17,6 @@ Your ideas/fixes/algorithms are more than welcome!
 ```
 
 ## Algorithms
-* [Algorithms](https://github.com/fishercoder1534/Leetcode/master/)
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
