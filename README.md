@@ -210,7 +210,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |256|[Paint House](https://leetcode.com/problems/paint-house/)|[Solution](../master/src/main/java/com/stevesun/solutions/PaintHouse.java) | O(n) | O(1) | Medium| DP
 |255|[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/VerifyPreorderSequenceinBinarySearchTree.java) | O(n) | O(h) | Medium| Tree
 |254|[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[Solution](../master/src/main/java/com/stevesun/solutions/FactorCombinations.java) | O(nlogn) | O(nlogn) | Medium| Backtracking
-|253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/MeetingRoomsII.java) | O(nlogn) | O(h) | Medium| Heap
+|253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_253.java) | O(nlogn) | O(h) | Medium| Heap
 |252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](../master/src/main/java/com/stevesun/solutions/MeetingRooms.java) | O(nlogn) | O(1) | Easy
 |251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[Solution](../master/src/main/java/com/stevesun/solutions/Flatten2DVector.java)| O(1)|O(m*n) | Medium| 
 |250|[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)|[Solution](../master/src/main/java/com/stevesun/solutions/CountUnivalueSubtrees.java)| O(n)|O(h) | Medium| DFS

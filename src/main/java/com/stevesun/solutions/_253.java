@@ -13,7 +13,7 @@ import java.util.PriorityQueue;
  Given [[0, 30],[5, 10],[15, 20]],
  return 2.
  */
-public class MeetingRoomsII {
+public class _253 {
 
     public int minMeetingRooms(Interval[] intervals) {
         if (intervals == null || intervals.length == 0)
