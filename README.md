@@ -68,7 +68,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |490|[The Maze](https://leetcode.com/problems/the-maze/)|[Solution](../master/src/main/java/com/stevesun/solutions/TheMaze.java) | O(m*n) |O(m*n) | Medium| BFS
 |487|[Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/MaxConsecutiveOnesII.java) | O(n) |O(n) | Medium| Array
 |485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Solution](../master/src/main/java/com/stevesun/solutions/MaxConsecutiveOnes.java) | O(n) |O(1) | Easy| Array
-|484|[Find Permutation](https://leetcode.com/problems/find-permutation/)|[Solution](../master/src/main/java/com/stevesun/solutions/_484.java) | O(n) |O(1) | Medium | Array String
+|484|[Find Permutation](https://leetcode.com/problems/find-permutation/)|[Solution](../master/src/main/java/com/stevesun/solutions/_484.java) | O(n) |O(1) | Medium | Array, String, Greedy
 |482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](../master/src/main/java/com/stevesun/solutions/LicenseKeyFormatting.java) | O(n) |O(n) | Medium| 
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](../master/src/main/java/com/stevesun/solutions/TotalHammingDistance.java) | O(n) |O(1) | Medium| Bit Manipulation
 |476|[Number Complement](https://leetcode.com/problems/number-complement/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberComplement.java) | O(n) |O(1) | Easy| Bit Manipulation
