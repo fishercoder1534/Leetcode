@@ -106,6 +106,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)|[Solution](../master/src/main/java/com/stevesun/solutions/ArithmeticSlices.java) | O(n) |O(1) | Medium| DP
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|[Solution](../master/src/main/java/com/stevesun/solutions/FizzBuzz.java)| O(n)|O(1) | Easy|
 |408|[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidWordAbbreviation.java)| O(n)|O(1) | Easy|
+|405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)|[Solution](../master/src/main/java/com/stevesun/solutions/_405.java)| O(n)|O(1) | Easy|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../master/src/main/java/com/stevesun/solutions/SumofLeftLeaves.java)| O(n)|O(h) | Easy|
 |401|[Binary Watch](https://leetcode.com/problems/binary-watch/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryWatch.java)| O(1)|O(1) | Easy|
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](../master/src/main/java/com/stevesun/solutions/RandomPickIndex.java) | | | Medium| Reservoir Sampling
