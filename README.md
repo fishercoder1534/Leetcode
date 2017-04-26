@@ -109,6 +109,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)|[Solution](../master/src/main/java/com/stevesun/solutions/_405.java)| O(n)|O(1) | Easy|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../master/src/main/java/com/stevesun/solutions/SumofLeftLeaves.java)| O(n)|O(h) | Easy|
 |401|[Binary Watch](https://leetcode.com/problems/binary-watch/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryWatch.java)| O(1)|O(1) | Easy|
+|400|[Nth Digit](https://leetcode.com/problems/nth-digit/)|[Solution](../master/src/main/java/com/stevesun/solutions/_400.java)| O(n)|O(1) | Easy|
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](../master/src/main/java/com/stevesun/solutions/RandomPickIndex.java) | | | Medium| Reservoir Sampling
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/)|[Solution](../master/src/main/java/com/stevesun/solutions/IntegerReplacement.java)| ? | ? | Easy| BFS
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function/)|[Solution](../master/src/main/java/com/stevesun/solutions/RotateFunction.java)| O(n^2) could be optimized to O(n) | O(1) | Easy|
