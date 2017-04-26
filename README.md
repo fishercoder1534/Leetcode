@@ -132,6 +132,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/NestedListWeightSumII.java)| O(n)|O(h) | Medium| DFS
 |362|[Design Hit Counter](https://leetcode.com/problems/design-hit-counter/)|[Solution](../master/src/main/java/com/stevesun/solutions/DesignHitCounter.java)| O(1) amortized|O(k) | Medium| Design
 |361|[Bomb Enemy](https://leetcode.com/problems/bomb-enemy/)|[Solution](../master/src/main/java/com/stevesun/solutions/BombEnemies.java)| O(?)|O(?) | Medium| 
+|360|[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_360.java)| O(n)|O(1) | Medium| Two Pointers, Math
 |359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/)|[Solution](../master/src/main/java/com/stevesun/solutions/LoggerRateLimiter.java)| amortized O(1)|O(k) | Easy| HashMap
 |357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[Solution](../master/src/main/java/com/stevesun/solutions/CountNumbersWithUniqueDigits.java)| O(?)|O(?) | Medium|
 |353|[Design Snake Game](https://leetcode.com/problems/design-snake-game/)|[Solution](../master/src/main/java/com/stevesun/solutions/DesignSnakeGame.java)| O(?)|O(?) | Medium|
