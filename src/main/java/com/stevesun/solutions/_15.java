@@ -16,7 +16,7 @@ import java.util.List;
  [-1, -1, 2]
  ]*/
 
-public class _3Sum {
+public class _15 {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList();
         if(nums == null || nums.length == 0) return result;

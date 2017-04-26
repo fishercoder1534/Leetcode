@@ -6,7 +6,7 @@ import java.util.Arrays;
  For example, given array S = {-1 2 1 -4}, and target = 1.
  The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).*/
 
-public class _3SumClosest {
+public class _16 {
 
     public int threeSumClosest(int[] nums, int target) {
         if(nums == null || nums.length == 0) return 0;

@@ -1,6 +1,6 @@
 package com.stevesun;
 
-import com.stevesun.solutions._4SumII;
+import com.stevesun.solutions._454;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _18IITest {
-    private static _4SumII test;
+    private static _454 test;
     private static int expected;
     private static int actual;
     private static int[] A;
@@ -18,7 +18,7 @@ public class _18IITest {
 
     @BeforeClass
     public static void setup(){
-        test = new _4SumII();
+        test = new _454();
     }
 
     @Before

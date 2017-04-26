@@ -34,7 +34,7 @@ import java.util.List;
  There are at least one 0 in the given matrix.
  The cells are adjacent in only four directions: up, down, left and right.
  */
-public class _01Matrix {
+public class _542 {
 
     public List<List<Integer>> updateMatrix(List<List<Integer>> matrix) {
         int m = matrix.size();

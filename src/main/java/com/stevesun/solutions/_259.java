@@ -15,7 +15,7 @@ Return 2. Because there are two triplets which sums are less than 2:
 
 Follow up:
 Could you solve it in O(n2) runtime? */
-public class _3Sum_Smaller {
+public class _259 {
 
     /**Basically, very similar to 3Sum, but the key is that you'll have to add result by (right-left), not just increment result by 1!*/
     public int threeSumSmaller(int[] nums, int target) {

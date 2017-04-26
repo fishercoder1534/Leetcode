@@ -33,7 +33,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |545|[Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/BoundaryofBinaryTree.java) | O(n) |O(n) | Medium | Recursion
 |544|[Output Contest Matches](https://leetcode.com/problems/output-contest-matches/)|[Solution](../master/src/main/java/com/stevesun/solutions/OutputContestMatches.java) | O(n) |O(n) | Medium | Recursion
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/DiameterofBinaryTree.java) | O(n) |O(h) | Easy | Tree/DFS/Recursion
-|542|[01 Matrix](https://leetcode.com/problems/01-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/_01Matrix.java) | O(m*n) |O(n) | Medium | BFS
+|542|[01 Matrix](https://leetcode.com/problems/01-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/_542.java) | O(m*n) |O(n) | Medium | BFS
 |541|[Reverse String II](https://leetcode.com/problems/reverse-string-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReverseStringII.java) | O(n) |O(1) | Easy | String
 |540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/SingleElementinaSortedArray.java) | O(n) |O(1) | Medium | 
 |539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/)|[Solution](../master/src/main/java/com/stevesun/solutions/MinimumTimeDifference.java) | O(n) |O(1) | Medium | String
@@ -83,7 +83,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |458|[Poor Pigs](https://leetcode.com/problems/poor-pigs/)|[Solution](../master/src/main/java/com/stevesun/solutions/PoorPigs.java) | O(1) |O(1) | Easy| Math
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern/)|[Solution](../master/src/main/java/com/stevesun/solutions/_456.java) | O(n) |O(n) | Medium| Stack
 |455|[Assign Cookies](https://leetcode.com/problems/assign-cookies/)|[Solution](../master/src/main/java/com/stevesun/solutions/AssignCookies.java)| O(n)|O(1) | Easy|
-|454|[4Sum II](https://leetcode.com/problems/4sum-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_4SumII.java) | O(n) |O(n) | Medium| HashMap
+|454|[4Sum II](https://leetcode.com/problems/4sum-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_454.java) | O(n) |O(n) | Medium| HashMap
 |453|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)|[Solution](../master/src/main/java/com/stevesun/solutions/MinimumMovestoEqualArrayElements.java)| O(n)|O(1) | Easy|
 |451|[Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)|[Solution](../master/src/main/java/com/stevesun/solutions/SortCharactersByFrequency.java) | O(nlogn) |O(n) | Medium| HashMap
 |449|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[Solution](../master/src/main/java/com/stevesun/solutions/SerializeandDeserializeBST.java)| O(n)|O(h) | Medium| BFS
@@ -206,7 +206,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |265|[Paint House II](https://leetcode.com/problems/paint-house-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/PaintHouseII.java)| ?|? | Hard| 
 |263|[Ugly Number](https://leetcode.com/problems/ugly-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/UglyNumber.java)| O(n)|O(1) | Easy|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/GraphValidTree.java)| O(V+E)|O(V+E) | Medium|
-|259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)|[Solution](../master/src/main/java/com/stevesun/solutions/_3Sum_Smaller.java)| O(n^2)|O(1) | Medium|
+|259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)|[Solution](../master/src/main/java/com/stevesun/solutions/_259.java)| O(n^2)|O(1) | Medium|
 |258|[Add Digits](https://leetcode.com/problems/add-digits/)|[Solution](../master/src/main/java/com/stevesun/solutions/AddDigits.java)| O(1)|O(1) | Easy|
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryTreePaths.java) | O(n*h) | O(h) | DFS/Recursion
 |256|[Paint House](https://leetcode.com/problems/paint-house/)|[Solution](../master/src/main/java/com/stevesun/solutions/PaintHouse.java) | O(n) | O(1) | Medium| DP
@@ -384,8 +384,8 @@ Your ideas/fixes/algorithms are more than welcome!
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/RemoveNthNodeFromEndOfList)|O(n)|O(1)|Medium| Linked List
 |18|[4 Sum](https://leetcode.com/problems/4sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/_18.java)|O(n^2)|O(1)|Medium|Two Pointers
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
-|16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[Solution](../master/src/main/java/com/stevesun/solutions/_3SumClosest.java)|O(nlogn)|O(1)|Medium|Two Pointers
-|15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/_3Sum.java)|O(n^2)|O(1)|Medium|Two Pointers
+|16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[Solution](../master/src/main/java/com/stevesun/solutions/_16.java)|O(nlogn)|O(1)|Medium|Two Pointers
+|15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/_15.java)|O(n^2)|O(1)|Medium|Two Pointers
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[Solution](../master/src/main/java/com/stevesun/solutions/LongestCommonPrefix.java)| O(n*min(wordLength in this array)) | O(1) | Easy
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](../master/src/main/java/com/stevesun/solutions/RomantoInteger.java)| O(1) | O(1) | Easy
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|[Solution](../master/src/main/java/com/stevesun/solutions/IntegertoRoman.java)|O(1)|O(1)|Medium|
