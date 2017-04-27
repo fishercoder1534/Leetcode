@@ -97,6 +97,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../master/src/main/java/com/stevesun/solutions/NonOverlappingIntervals.java) | O(nlogn) |O(1) | Medium| Greedy
 |434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberofSegmentsinaString.java)| O(n)|O(1) | Easy|
+|423|[Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english/)|[Solution](../master/src/main/java/com/stevesun/solutions/_423.java)| O(n) | O(1) | Medium| Math
 |422|[Valid Word Square](https://leetcode.com/problems/valid-word-square/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidWordSquare.java)| O(n) | O(1) | Easy|
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker/)|[Solution](../master/src/main/java/com/stevesun/solutions/StrongPasswordChecker.java)| ? | ? | Hard| 
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../master/src/main/java/com/stevesun/solutions/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
