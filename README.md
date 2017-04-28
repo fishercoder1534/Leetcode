@@ -99,6 +99,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberofSegmentsinaString.java)| O(n)|O(1) | Easy|
 |423|[Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english/)|[Solution](../master/src/main/java/com/stevesun/solutions/_423.java)| O(n) | O(1) | Medium| Math
 |422|[Valid Word Square](https://leetcode.com/problems/valid-word-square/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidWordSquare.java)| O(n) | O(1) | Easy|
+|421|[Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_421.java)| O(n) | O(1) | Medium | Bit Manipulation, Trie
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker/)|[Solution](../master/src/main/java/com/stevesun/solutions/StrongPasswordChecker.java)| ? | ? | Hard| 
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../master/src/main/java/com/stevesun/solutions/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](../master/src/main/java/com/stevesun/solutions/PacificAtlanticWaterFlow.java) | O(m*n*Max(m,n)) |O(m*n) | Medium| DFS
