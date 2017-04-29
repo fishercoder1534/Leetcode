@@ -25,6 +25,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |561|[Array Partition I](https://leetcode.com/problems/array-partition-i/)|[Solution](../master/src/main/java/com/stevesun/solutions/_561.java) | O(nlogn) |O(1) | Easy | Array
 |557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReverseWordsinaStringIII.java) | O(n) |O(n) | Easy | String
 |556|[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/)|[Solution](../master/src/main/java/com/stevesun/solutions/NextGreaterElementIII.java) | O(n)|O(1)| Medium | String
+|555|[Split Concatenated Strings](https://leetcode.com/problems/split-concatenated-strings/)|[Solution](../master/src/main/java/com/stevesun/solutions/_555.java) | O(n^2) |O(n) | Medium | String
 |554|[Brick Wall](https://leetcode.com/problems/brick-wall/)|[Solution](../master/src/main/java/com/stevesun/solutions/BrickWall.java) | O(n) (n is total number of bricks in the wall) |O(m) (m is width of the wall) | Medium | HashMap
 |551|[Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i/)|[Solution](../master/src/main/java/com/stevesun/solutions/StudentAttendanceRecordI.java) | O(n)| O(1) | Easy| String 
 |549|[Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryTreeLongestConsecutiveSequenceII.java) | O(n) |O(n) | Medium | Tree
