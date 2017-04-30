@@ -270,6 +270,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](../master/src/main/java/com/stevesun/solutions/TwoSumIIIDataStructureDesign.java)| O(n)|O(n)| Easy
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)|[Solution](../master/src/main/java/com/stevesun/solutions/MajorityElement.java)| O(n)|O(1) | Easy|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[Solution](../master/src/main/java/com/stevesun/solutions/ExcelSheetColumnTitle.java)| O(n)|O(1) | Easy|
+|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Solution](../master/src/main/java/com/stevesun/solutions/_167.java)| O(logn)|O(1) | Easy|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|[Solution](../master/src/main/java/com/stevesun/solutions/CompareVersionNumbers.java)| O(n)|O(1) | Easy|
 |164|[Maximum Gap](https://leetcode.com/problems/maximum-gap/)|[Solution](../master/src/main/java/com/stevesun/solutions/MaximumGap.java) | O(n) |O(n) | Hard|
 |163|[Missing Ranges](https://leetcode.com/problems/missing-ranges/)|[Solution](../master/src/main/java/com/stevesun/solutions/MissingRanges.java) | O(n) |O(1) | |
