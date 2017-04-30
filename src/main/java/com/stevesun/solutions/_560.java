@@ -17,6 +17,7 @@ import java.util.Map;
  */
 public class _560 {
 
+    //credit: https://discuss.leetcode.com/topic/87850/java-solution-presum-hashmap
     public int subarraySum(int[] nums, int k) {
         Map<Integer, Integer> preSum = new HashMap();
         int sum = 0;
