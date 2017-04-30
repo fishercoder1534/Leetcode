@@ -3,7 +3,7 @@ package com.stevesun.solutions;
 import com.stevesun.common.classes.ListNode;
 
 /**Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.*/
-public class MergeTwoSortedLists {
+public class _21 {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode pre = new ListNode(-1);

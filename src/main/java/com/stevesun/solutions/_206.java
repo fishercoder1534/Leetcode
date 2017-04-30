@@ -4,7 +4,7 @@ import com.stevesun.common.classes.ListNode;
 import com.stevesun.common.utils.CommonUtils;
 
 /**Reverse a singly linked list.*/
-public class ReverseLinkedList {
+public class _206 {
     //creating a newHead = null is a very common/smart way to handle such cases, the logic flows out very naturally:
 	//create a new node called "next" to hold current head's next node
 	//then we could redirect head's next pointer to point to newHead which is head's previous node
@@ -49,7 +49,7 @@ public class ReverseLinkedList {
     }
 
 	public static void main(String...strings){
-        ReverseLinkedList test = new ReverseLinkedList();
+        _206 test = new _206();
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);

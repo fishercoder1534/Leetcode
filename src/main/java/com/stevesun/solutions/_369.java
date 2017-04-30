@@ -16,7 +16,7 @@ import com.stevesun.common.classes.ListNode;
  Output:
  1->2->4
  */
-public class PlusOneLinkedList {
+public class _369 {
 
     public ListNode plusOne(ListNode head) {
         //get the length of the list and take out the value of each node and store them into an array

@@ -8,7 +8,7 @@ Write a function to delete a node (except the tail) in a singly linked list, giv
 
 Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node with value 3, the linked list should become 1 -> 2 -> 4 after calling your function.
 */
-public class DeleteNodeInALinkedList {
+public class _237 {
 
 	/**We're not really deleting the node, but we're overwriting this node's value with its successor's value,
 	 * and then append its successor's successor to its new successor.

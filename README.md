@@ -130,7 +130,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |372|[Super Pow](https://leetcode.com/problems/super-pow/)|[Solution](../master/src/main/java/com/stevesun/solutions/SuperPow.java)| O(n)|O(1) | Medium| Math
 |371|[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)|[Solution](../master/src/main/java/com/stevesun/solutions/SumofTwoIntegers.java)| O(n)|O(1) | Easy| 
 |370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../master/src/main/java/com/stevesun/solutions/RangeAddition.java)| O(n+k)|O(1) | Medium| 
-|369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/PlusOneLinkedList.java)| O(n)|O(1) | Medium| Linked List
+|369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/_369.java)| O(n)|O(1) | Medium| Linked List
 |367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidPerfectSquare.java)| O(n)|O(1) | Medium| 
 |366|[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindLeavesofBinaryTree.java)| O(n)|O(h) | Medium| DFS
 |365|[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/)|[Solution](../master/src/main/java/com/stevesun/solutions/WaterandJugProblem.java)| O(n)|O(1) | Medium| 
@@ -230,7 +230,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/Searcha2DMatrixII.java)| O(log(m*n))|O(1) | Medium| Binary Search
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|[Solution](../master/src/main/java/com/stevesun/solutions/SlidingWindowMaximum.java)| O(nlogn)|O(k) | Hard| Heap
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[Solution](../master/src/main/java/com/stevesun/solutions/ProductofArrayExceptSelf.java)| O(n)|O(1) | Medium| Array
-|237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/DeleteNodeInALinkedList.java)| O(1)|O(1) | Easy| LinkedList
+|237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/_237.java)| O(1)|O(1) | Easy| LinkedList
 |235|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/LowestCommonAncestorOfABinaryTree.java)| O(h)|O(1) | Medium| DFS
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/LowestCommonAncestorOfABinarySearchTree.java)| O(h)|O(1) | Easy| DFS
 |233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberofDigitOne.java)| O(n)|O(1) | Hard| Math
@@ -250,7 +250,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
 |208|[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/ImplementTrie.java)| O(n)|O(1) | Medium|
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule/)|[Solution](../master/src/main/java/com/stevesun/solutions/CourseSchedule.java)| O(?)|O(?) | Medium|
-|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReverseLinkedList.java)| O(n)|O(1) | Easy
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/_206.java)| O(n)|O(1) | Easy
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[Solution](../../blmaster/src/94stevesun/algorithms/IsomorphicStrings.java)| O(n)|O(1) | Easy
 |204|[Count Primes](https://leetcode.com/problems/count-primes/)|[Solution](../master/src/main/java/com/stevesun/solutions/CountPrime.java)| O(?)|O(?) | Easy
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/HappyNumber.java)| O(k)|O(k) | Easy
@@ -328,7 +328,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/UniqueBinarySearchTreesII.java) | O(?) | O(?) | Medium | Recursion
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryTreeInorderTraversal.java)| O(n)|O(h) | Medium| Binary Tree
 |93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)|[Solution](../master/src/main/java/com/stevesun/solutions/RestoreIPAddresses.java)| O(1)|O(1) | Medium | Backtracking
-|92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReverseLinkedListII.java)| O(n)|O(1) | Medium
+|92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_92.java)| O(n)|O(1) | Medium
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../master/src/main/java/com/stevesun/solutions/DecodeWays.java)| O(n)|O(n) | Medium| DP
 |89|[Gray Code](https://leetcode.com/problems/gray-code/)|[Solution](../master/src/main/java/com/stevesun/solutions/GrayCode.java)|O(n) |O(1)|Medium|Bit Manipulation
 |86|[Partition List](https://leetcode.com/problems/partition-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/PartitionList.java)|O(?) |O(?)|Medium|
@@ -383,9 +383,9 @@ Your ideas/fixes/algorithms are more than welcome!
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[Solution](../master/src/main/java/com/stevesun/solutions/SwapNodesinPairs.java)|O(n)|O(1)|Easy| Recursion, LinkedList
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../master/src/main/java/com/stevesun/solutions/MergeKSortedList.java)|O(n*logk)|O(logk)|Hard|Heap
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[Solution](../master/src/main/java/com/stevesun/solutions/GenerateParentheses.java)|TBD|O(n)|Medium|Backtracking
-|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](../master/src/main/java/com/stevesun/solutions/MergeTwoSortedLists.java)|O(n)|O(1)|Easy|
+|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](../master/src/main/java/com/stevesun/solutions/_21.java)|O(n)|O(1)|Easy|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidParentheses.java)|O(n)|O(n)|Easy|Stack
-|19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/RemoveNthNodeFromEndOfList)|O(n)|O(1)|Medium| Linked List
+|19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/_19.java)|O(n)|O(1)|Medium| Linked List
 |18|[4 Sum](https://leetcode.com/problems/4sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/_18.java)|O(n^2)|O(1)|Medium|Two Pointers
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[Solution](../master/src/main/java/com/stevesun/solutions/_16.java)|O(nlogn)|O(1)|Medium|Two Pointers

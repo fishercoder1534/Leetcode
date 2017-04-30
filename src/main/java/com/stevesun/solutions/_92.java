@@ -13,7 +13,7 @@ import com.stevesun.common.utils.CommonUtils;
  Note:
  Given m, n satisfy the following condition:
  1 ≤ m ≤ n ≤ length of list.*/
-public class ReverseLinkedListII {
+public class _92 {
 
     // then I turned to Discuss and find this most upvoted solution:
     // https://discuss.leetcode.com/topic/8976/simple-java-solution-with-clear-explanation, it's
@@ -95,7 +95,7 @@ public class ReverseLinkedListII {
     }
 
     public static void main(String... strings) {
-        ReverseLinkedListII test = new ReverseLinkedListII();
+        _92 test = new _92();
         // ListNode head = new ListNode(1);
         // head.next = new ListNode(2);
         // head.next.next = new ListNode(3);

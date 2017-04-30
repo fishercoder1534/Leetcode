@@ -14,7 +14,7 @@ For example,
 Note:
 Given n will always be valid.
 Try to do this in one pass.*/
-public class RemoveNthNodeFromEndOfList {
+public class _19 {
     
     /**Naive/most straightforward approach:
      * go through the list, find its total length, then go through the list a second time:
@@ -45,7 +45,7 @@ public class RemoveNthNodeFromEndOfList {
         int n = 2;
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
-        RemoveNthNodeFromEndOfList test = new RemoveNthNodeFromEndOfList();
+        _19 test = new _19();
 //        ListNode res = test.removeNthFromEnd_two_passes(head, n);
         ListNode res = test.removeNthFromEnd_one_pass(head, n);
         CommonUtils.printList(res);
