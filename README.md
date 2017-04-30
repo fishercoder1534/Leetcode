@@ -260,7 +260,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../master/src/main/java/com/stevesun/solutions/NumberOfIslandsUnionFind.java) [DFS](../../blmaster/MEDIUM/src/medium/NumberofIslandsDFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
 |198|[House Robber](https://leetcode.com/problems/house-robber/)|[Solution](../master/src/main/java/com/stevesun/solutions/HouseRobber.java)| O(n)|O(n)| Easy | DP
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReverseBits.java)| O(n)|O(1)| Easy | Bit Manipulation
-|189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/RotateArray.java)| O(n)|O(n), could be optimized to O(1) | Easy
+|189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_189.java)| O(n)|O(n), could be optimized to O(1) | Easy
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReverseWordsinaStringII.java)| O(n)|O(1)| Medium
 |179|[Largest Number](https://leetcode.com/problems/largest-number/)|[Queue](../master/src/main/java/com/stevesun/solutions/BSTIterator_using_q.java) [Stack](../../blmaster/MEDIUM/src/medium/LargestNumber.java)| O(?) |O(?) | Medium|
 |174|[Dungeon Game](https://leetcode.com/problems/dungeon-game/)|[Queue](../master/src/main/java/com/stevesun/solutions/BSTIterator_using_q.java) [Stack](../../blmaster/MEDIUM/src/medium/DungeonGame.java)| O(?) |O(?) | Hard|
