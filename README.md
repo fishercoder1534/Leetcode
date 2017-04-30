@@ -20,6 +20,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|567|[Permutation in String](https://leetcode.com/problems/permutation-in-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/_567.java) | O(max(m,n)) |O(1) | Medium | Sliding Windows, Two Pointers
 |566|[Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/_566.java) | O(m*n) |O(1) | Easy | 
 |563|[Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/)|[Solution](../master/src/main/java/com/stevesun/solutions/_563.java) | O(n) |O(n) | Easy | Tree Recursion
 |562|[Longest Line of Consecutive One in Matrix](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/_562.java) | O(m*n) |O(m*n) | Medium | Matrix DP
