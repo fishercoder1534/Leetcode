@@ -360,7 +360,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../master/src/main/java/com/stevesun/solutions/MaximumSubarray.java)|O(n)|O(1)|Medium|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Solution](../master/src/main/java/com/stevesun/solutions/PowXN.java)|O(logn)|O(logn)|Medium|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/PermutationsII.java)|O(n*n!)|O(n)|Medium|Backtracking
-|46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](../master/src/main/java/com/stevesun/solutions/Permutations.java)|O(n*n!)|O(n)|Medium|Backtracking
+|46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](../master/src/main/java/com/stevesun/solutions/_46.java)|O(n*n!)|O(n)|Medium|Backtracking
 |45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/JumpGameII.java)|O(?)|O(?)|Hard|
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[Solution](../master/src/main/java/com/stevesun/solutions/TrappingRainWater.java)|O(n)|O(1)|Hard|
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](../master/src/main/java/com/stevesun/solutions/FirstMissingPositive.java)|O(n)|O(1)|Hard|

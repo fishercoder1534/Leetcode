@@ -14,7 +14,7 @@ import java.util.List;
  [3,1,2],
  [3,2,1]
  ]*/
-public class Permutations {
+public class _46 {
     static class Accepted_solution {
         //this solution has a recursive function that has a return type
         public static List<List<Integer>> permute(int[] nums) {
