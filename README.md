@@ -267,7 +267,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Queue](../master/src/main/java/com/stevesun/solutions/BSTIterator_using_q.java) [Stack](../../blmaster/MEDIUM/src/medium/BSTIterator_using_stack.java)| O(1) |O(h) | Medium|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|[Solution](../master/src/main/java/com/stevesun/solutions/FactorialTrailingZeroes.java)| O(logn)|O(1)| Easy
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/ExcelSheetColumnNumber.java)| O(n)|O(1)| Easy
-|170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](../master/src/main/java/com/stevesun/solutions/TwoSumIIIDataStructureDesign.java)| O(n)|O(n)| Easy
+|170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](../master/src/main/java/com/stevesun/solutions/_170.java)| O(n)|O(n)| Easy
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)|[Solution](../master/src/main/java/com/stevesun/solutions/MajorityElement.java)| O(n)|O(1) | Easy|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[Solution](../master/src/main/java/com/stevesun/solutions/ExcelSheetColumnTitle.java)| O(n)|O(1) | Easy|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Solution](../master/src/main/java/com/stevesun/solutions/_167.java)| O(logn)|O(1) | Easy|

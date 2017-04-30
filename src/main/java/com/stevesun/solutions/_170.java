@@ -6,7 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 
-/**Design and implement a _1 class. It should support the following operations: add and find.
+/**
+ * 170. Two Sum III - Data structure design
+ *
+ * Design and implement a _1 class. It should support the following operations: add and find.
 
  add - Add the number to an internal data structure.
  find - Find if there exists any pair of numbers which sum is equal to the value.
@@ -20,7 +23,7 @@ import java.util.Map;
 //_1 twoSum = new _1();
 //twoSum.add(number);
 //twoSum.find(value);
-public class TwoSumIIIDataStructureDesign {
+public class _170 {
     private Map<Integer, Integer> map = new HashMap();
     private List<Integer> list = new ArrayList();
     
