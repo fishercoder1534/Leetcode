@@ -252,7 +252,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[Solution](../master/src/main/java/com/stevesun/solutions/AddAndSearchWord_DataStructureDesign.java)| O(n)|O(h) | Medium| Trie
 |210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/CourseScheduleII.java)| O(?)|O(?) | Medium|
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
-|208|[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/ImplementTrie.java)| O(n)|O(1) | Medium|
+|208|[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/_208.java)| O(n)|O(1) | Medium| Trie
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule/)|[Solution](../master/src/main/java/com/stevesun/solutions/CourseSchedule.java)| O(?)|O(?) | Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/_206.java)| O(n)|O(1) | Easy
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[Solution](../../blmaster/src/94stevesun/algorithms/IsomorphicStrings.java)| O(n)|O(1) | Easy

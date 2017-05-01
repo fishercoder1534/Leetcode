@@ -1,6 +1,6 @@
 package com.stevesun.solutions;
 
-public class ImplementTrie {
+public class _208 {
     class TrieNode {
         
         char val;
