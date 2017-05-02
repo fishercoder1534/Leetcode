@@ -7,7 +7,7 @@ import com.stevesun.common.classes.ListNode;
  For example,
  Given 1->1->2, return 1->2.
  Given 1->1->2->3->3, return 1->2->3.*/
-public class RemoveDuplicatesfromSortedList {
+public class _83 {
 
     public static ListNode deleteDuplicates(ListNode head) {
         ListNode ret = new ListNode(-1);

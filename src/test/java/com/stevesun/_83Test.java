@@ -1,14 +1,14 @@
 package com.stevesun;
 
 import com.stevesun.common.classes.ListNode;
-import com.stevesun.solutions.RemoveDuplicatesfromSortedList;
+import com.stevesun.solutions._83;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
  * Created by stevesun on 4/18/17.
  */
-public class RemoveDuplicatesfromSortedListTest {
+public class _83Test {
 
     @Test
     public void test1() {
@@ -18,7 +18,7 @@ public class RemoveDuplicatesfromSortedListTest {
         head.next.next.next = new ListNode(3);
         head.next.next.next.next = new ListNode(3);
 
-        RemoveDuplicatesfromSortedList test = new RemoveDuplicatesfromSortedList();
+        _83 test = new _83();
 
         ListNode expected = new ListNode(1);
         expected.next = new ListNode(2);
