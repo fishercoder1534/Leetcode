@@ -339,6 +339,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |86|[Partition List](https://leetcode.com/problems/partition-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/PartitionList.java)|O(?) |O(?)|Medium|
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)|[Solution](../master/src/main/java/com/stevesun/solutions/MaximalRectangle.java)|O(m*n) |O(n)|Hard|DP
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/_83.java)|O(n) |O(1)|Medium| Linked List
+|82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_82.java)|O(n) |O(1)|Medium| Linked List
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/SearchinRotatedSortedArrayII.java)|O(logn)|O(1)|Medium|Binary Search
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/RemoveDuplicatesfromSortedArrayII.java)|O(n) |O(n)|Medium|
 |79|[Word Search](https://leetcode.com/problems/word-search/)|[Solution](../master/src/main/java/com/stevesun/solutions/WordSearch.java)|O(m*n*l) ? |O(m*n)|Medium|Backtracking/DFS
