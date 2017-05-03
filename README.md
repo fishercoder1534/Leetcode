@@ -84,7 +84,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[Solution](../master/src/main/java/com/stevesun/solutions/IslandPerimeter.java)| O(m*n)|O(1) | Easy| 
 |462|[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/MinimumMovestoEqualArrayElementsII.java) | O(nlogn) |O(1) | Medium|
 |461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[Solution](../master/src/main/java/com/stevesun/solutions/HammingDistance.java) | O(n) |O(1) | Easy|
-|459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[Solution](../master/src/main/java/com/stevesun/solutions/RepeatedSubstringPattern.java)| O(n)|O(n) | Easy| KMP
+|459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[Solution](../master/src/main/java/com/stevesun/solutions/_459.java)| O(n)|O(n) | Easy| KMP
 |458|[Poor Pigs](https://leetcode.com/problems/poor-pigs/)|[Solution](../master/src/main/java/com/stevesun/solutions/PoorPigs.java) | O(1) |O(1) | Easy| Math
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern/)|[Solution](../master/src/main/java/com/stevesun/solutions/_456.java) | O(n) |O(n) | Medium| Stack
 |455|[Assign Cookies](https://leetcode.com/problems/assign-cookies/)|[Solution](../master/src/main/java/com/stevesun/solutions/AssignCookies.java)| O(n)|O(1) | Easy|

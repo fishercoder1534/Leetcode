@@ -18,8 +18,8 @@ package com.stevesun.solutions;
  Output: True
 
  Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)*/
-public class RepeatedSubstringPattern {
-    /**Looked at this post: https://discuss.leetcode.com/topic/68089/repeated-substring-pattern-simple-java-solution-using-kmp*/
+public class _459 {
+    /**credit: https://discuss.leetcode.com/topic/68089/repeated-substring-pattern-simple-java-solution-using-kmp*/
     public static boolean repeatedSubstringPattern(String str) {
         //build the KMP pattern.
         int n = str.length(), cur = 0, j = 1;
