@@ -122,6 +122,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](../master/src/main/java/com/stevesun/solutions/RandomPickIndex.java) | | | Medium| Reservoir Sampling
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/)|[Solution](../master/src/main/java/com/stevesun/solutions/IntegerReplacement.java)| ? | ? | Easy| BFS
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function/)|[Solution](../master/src/main/java/com/stevesun/solutions/RotateFunction.java)| O(n^2) could be optimized to O(n) | O(1) | Easy|
+|392|[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|[Solution](../master/src/main/java/com/stevesun/solutions/_392.java)| O(m*n)|O(1) | Medium| Array, String
 |390|[Elimination Game](https://leetcode.com/problems/elimination-game/)|[Solution](../master/src/main/java/com/stevesun/solutions/EliminationGame.java)| O(logn)|O(1) | Medium|
 |389|[Find the Difference](https://leetcode.com/problems/find-the-difference/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindTheDifference.java)| O(n)|O(1) | Easy|
 |388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|[Solution](../master/src/main/java/com/stevesun/solutions/LongestAbsoluteFilePath.java)| O(n)|O(d) | Medium| Stack
