@@ -104,6 +104,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../master/src/main/java/com/stevesun/solutions/NonOverlappingIntervals.java) | O(nlogn) |O(1) | Medium| Greedy
 |434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberofSegmentsinaString.java)| O(n)|O(1) | Easy|
+|424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)|[Solution](../master/src/main/java/com/stevesun/solutions/_424.java)| O(n) | O(1) | Medium| Sliding Window
 |423|[Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english/)|[Solution](../master/src/main/java/com/stevesun/solutions/_423.java)| O(n) | O(1) | Medium| Math
 |422|[Valid Word Square](https://leetcode.com/problems/valid-word-square/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidWordSquare.java)| O(n) | O(1) | Easy|
 |421|[Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_421.java)| O(n) | O(1) | Medium | Bit Manipulation, Trie
