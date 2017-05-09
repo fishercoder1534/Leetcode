@@ -157,6 +157,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)|[Solution](../master/src/main/java/com/stevesun/solutions/MovingAveragefromDataStream.java)| O(1)|O(w)) | Easy| Queue
 |344|[Reverse String](https://leetcode.com/problems/reverse-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReverseString.java) | O(n) |O(1) | Easy | String
 |343|[Integer Break](https://leetcode.com/problems/integer-break/)|[Solution](../master/src/main/java/com/stevesun/solutions/IntegerBreak.java)| O(1)|O(1) | Medium| Math
+|341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[Solution](../master/src/main/java/com/stevesun/solutions/_341.java)| O(n)|O(n) | Medium| Stack
 |339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/NestedListWeightSum.java)| O(n)|O(h)) | Easy| DFS
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)|[Solution](../master/src/main/java/com/stevesun/solutions/CountingBits.java)| O(nlogn)|O(h) | Medium| 
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)|[Solution](../master/src/main/java/com/stevesun/solutions/PalindromePairs.java)| O(n^2)|O(n) | Hard|
