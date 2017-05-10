@@ -254,6 +254,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ContainsDuplicateIII.java)| O(nlogn)|O(n) | Medium| TreeSet
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ContainsDuplicateII.java)| O(n)|O(n) | Easy| HashMap
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|[Solution](../master/src/main/java/com/stevesun/solutions/ContainsDuplicate.java)| O(n)|O(n) | Easy| HashSet
+|215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_215.java)| O(nlogn)|O(n) | Medium| Heap
 |212|[Word Search II](https://leetcode.com/problems/word-search-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/WordSearchII.java)| O(m*n*l)|O(l) | Hard | Trie
 |211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[Solution](../master/src/main/java/com/stevesun/solutions/AddAndSearchWord_DataStructureDesign.java)| O(n)|O(h) | Medium| Trie
 |210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/CourseScheduleII.java)| O(?)|O(?) | Medium|
