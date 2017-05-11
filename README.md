@@ -149,6 +149,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |360|[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_360.java)| O(n)|O(1) | Medium| Two Pointers, Math
 |359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/)|[Solution](../master/src/main/java/com/stevesun/solutions/LoggerRateLimiter.java)| amortized O(1)|O(k) | Easy| HashMap
 |357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[Solution](../master/src/main/java/com/stevesun/solutions/CountNumbersWithUniqueDigits.java)| O(?)|O(?) | Medium|
+|355|[Design Twitter](https://leetcode.com/problems/design-twitter/)|[Solution](../master/src/main/java/com/stevesun/solutions/_355.java)| O(n)|O(n) | Medium| Design, HashMap, Heap
 |353|[Design Snake Game](https://leetcode.com/problems/design-snake-game/)|[Solution](../master/src/main/java/com/stevesun/solutions/DesignSnakeGame.java)| O(?)|O(?) | Medium|
 |351|[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/)|[Solution](../master/src/main/java/com/stevesun/solutions/AndroidUnlockPatterns.java)| O(?)|O(?) | Medium|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/IntersectionOfTwoArraysII.java)| O(m+n)|O((m+n)) could be optimized | Easy| HashMap, Binary Search
