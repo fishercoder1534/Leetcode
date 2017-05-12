@@ -7,7 +7,7 @@ import java.util.Map;
 
  Return a deep copy of the list.*/
 
-public class CopyListWithRandomPointer {
+public class _138 {
 
     public RandomListNode copyRandomList(RandomListNode head) {
         Map<RandomListNode, RandomListNode> map = new HashMap();
@@ -36,4 +36,4 @@ class RandomListNode {
      int label;
      RandomListNode next, random;
      RandomListNode(int x) { this.label = x; }
- };
+ }
