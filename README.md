@@ -269,7 +269,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |204|[Count Primes](https://leetcode.com/problems/count-primes/)|[Solution](../master/src/main/java/com/stevesun/solutions/CountPrime.java)| O(?)|O(?) | Easy
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/HappyNumber.java)| O(k)|O(k) | Easy
 |201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)|[Solution](../master/src/main/java/com/stevesun/solutions/_201.java)| O(min(m,n))|O(1) | Medium | Bit Manipulation
-|200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../master/src/main/java/com/stevesun/solutions/NumberOfIslandsUnionFind.java) [DFS](../../blmaster/MEDIUM/src/medium/NumberofIslandsDFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
+|200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../master/src/main/java/com/stevesun/solutions/_200UnionFind.java) [DFS](../master/MEDIUM/src/medium/_200DFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
 |198|[House Robber](https://leetcode.com/problems/house-robber/)|[Solution](../master/src/main/java/com/stevesun/solutions/HouseRobber.java)| O(n)|O(n)| Easy | DP
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReverseBits.java)| O(n)|O(1)| Easy | Bit Manipulation
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_189.java)| O(n)|O(n), could be optimized to O(1) | Easy

@@ -20,7 +20,7 @@ package com.stevesun.solutions;
  Answer: 3
  */
 
-public class NumberOfIslandsUnionFind {
+public class _200UnionFind {
 
     class UnionFind{
         int count;

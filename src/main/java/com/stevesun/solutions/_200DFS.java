@@ -19,7 +19,7 @@ package com.stevesun.solutions;
  00011
  Answer: 3
  */
-public class NumberofIslandsDFS {
+public class _200DFS {
 
 
     public static int numIslands(char[][] grid) {
