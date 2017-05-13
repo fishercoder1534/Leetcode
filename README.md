@@ -111,7 +111,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |422|[Valid Word Square](https://leetcode.com/problems/valid-word-square/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidWordSquare.java)| O(n) | O(1) | Easy|
 |421|[Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_421.java)| O(n) | O(1) | Medium | Bit Manipulation, Trie
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker/)|[Solution](../master/src/main/java/com/stevesun/solutions/StrongPasswordChecker.java)| ? | ? | Hard| 
-|419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../master/src/main/java/com/stevesun/solutions/BattleshipsinaBoard.java) | O(n^2) |O(1) | Medium| DFS
+|419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../master/src/main/java/com/stevesun/solutions/_419.java) | O(m*n) |O(1) | Medium| DFS
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](../master/src/main/java/com/stevesun/solutions/PacificAtlanticWaterFlow.java) | O(m*n*Max(m,n)) |O(m*n) | Medium| DFS
 |415|[Add Strings](https://leetcode.com/problems/add-strings/)|[Solution](../master/src/main/java/com/stevesun/solutions/AddStrings.java)| O(n)|O(1) | Easy|
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/ThirdMaximumNumber.java)| O(n)|O(1) | Easy|
@@ -213,7 +213,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindtheCelebrity.java)| O(n)|O(1) | Medium| 
 |276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../master/src/main/java/com/stevesun/solutions/PaintFence.java)| O(n)|O(1) | Easy| DP
 |274|[H-Index](https://leetcode.com/problems/h-index/)|[Solution](../master/src/main/java/com/stevesun/solutions/HIndex.java)| O(nlogn)|O(1) | Medium| 
-|273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|[Solution](../master/src/main/java/com/stevesun/solutions/IntegertoEnglishWords.java)| O(n)|O(1) | Hard| 
+|273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|[Solution](../master/src/main/java/com/stevesun/solutions/_273.java)| O(n)|O(1) | Hard| Math, String 
 |272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ClosestBinarySearchTreeValueII.java)| O(h+k)|O(h) | Hard| Stack
 |271|[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)|[Solution](../master/src/main/java/com/stevesun/solutions/EncodeandDecodeStrings.java)| O(n)|O(1) | Medium| 
 |270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/)|[Solution](../master/src/main/java/com/stevesun/solutions/ClosestBinarySearchTreeValue.java)| O(h)|O(1) | Easy| DFS

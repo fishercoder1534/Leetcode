@@ -25,10 +25,12 @@ package com.stevesun.solutions;
  Could you do it in one-pass, using only O(1) extra memory and without modifying the value of the board?
 
  */
-public class BattleshipsinaBoard {
+public class _419 {
     
-    /**Then I turned to Discuss and found this solution from the contributor of this problem: https://discuss.leetcode.com/topic/62970/simple-java-solution,
-     * basically, it only counts the top-left one while ignoring all other parts of one battleship.*/
+    /**credit: https://discuss.leetcode.com/topic/62970/simple-java-solution,
+     * basically, it only counts the top-left one while ignoring all other parts of one battleship,
+     * using the top-left one as a representative for one battle.
+     * This is achieved by counting cells that don't have 'X' to the left and above them.*/
     public int countBattleships_no_modify_original_input(char[][] board) {
         if(board == null || board.length == 0) return 0;
         int count = 0, m = board.length, n = board[0].length;
@@ -80,7 +82,7 @@ public class BattleshipsinaBoard {
             {'.', '.', '.', 'X'},
         };
         
-        BattleshipsinaBoard test = new BattleshipsinaBoard();
+        _419 test = new _419();
         System.out.println(test.countBattleships(board));
     }
 }
