@@ -424,7 +424,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[Solution](../master/src/main/java/com/stevesun/solutions/LongestPalindromicSubstring.java) | O(n^2) | O(1) | Medium|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[Solution](../master/src/main/java/com/stevesun/solutions/MedianofTwoSortedArrays.java) | ? | ? | Hard | Divide and Conquer
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[Solution](../master/src/main/java/com/stevesun/solutions/LongestSubstringWithoutRepeatingCharacters.java) | O(n) | O(1) | Medium | HashMap, Sliding Window
-|2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Solution](../master/src/main/java/com/stevesun/solutions/AddTwoNumbers.java) | O(n) | O(1) | Medium | LinkedList
+|2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Solution](../master/src/main/java/com/stevesun/solutions/_2.java) | O(max(m,n)) | O(1) | Medium | LinkedList
 |1|[Two Sum](https://leetcode.com/problems/two-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/_1.java)| O(n)/O(n^2)|O(1)/O(n) | Easy| HashMap
 
 ## Database
