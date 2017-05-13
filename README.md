@@ -349,6 +349,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_92.java)| O(n)|O(1) | Medium
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../master/src/main/java/com/stevesun/solutions/DecodeWays.java)| O(n)|O(n) | Medium| DP
 |89|[Gray Code](https://leetcode.com/problems/gray-code/)|[Solution](../master/src/main/java/com/stevesun/solutions/GrayCode.java)|O(n) |O(1)|Medium|Bit Manipulation
+|88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_88.java)|O(max(m,n)) |O(1)|Easy|
 |86|[Partition List](https://leetcode.com/problems/partition-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/PartitionList.java)|O(?) |O(?)|Medium|
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)|[Solution](../master/src/main/java/com/stevesun/solutions/MaximalRectangle.java)|O(m*n) |O(n)|Hard|DP
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/_83.java)|O(n) |O(1)|Medium| Linked List
