@@ -2,6 +2,8 @@ package com.stevesun.solutions;
 
 import com.stevesun.common.classes.ListNode;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Stack;
 
 /**
@@ -17,17 +19,17 @@ import java.util.Stack;
  Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
  Output: 7 -> 8 -> 0 -> 7
  */
-public class AddTwoNumbersII {
+public class _445 {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        Stack<Integer> stack1 = popIntoStack(l1);
-        Stack<Integer> stack2 = popIntoStack(l2);
+        Deque<Integer> stack1 = popIntoStack(l1);
+        Deque<Integer> stack2 = popIntoStack(l2);
 
         int sum = 0;
         ListNode list = new ListNode(0);
         while (!stack1.isEmpty() || !stack2.isEmpty()) {
-            if (!stack1.isEmpty()) sum += stack1.pop();
-            if (!stack2.isEmpty()) sum += stack2.pop();
+            if (!stack1.isEmpty()) sum += stack1.removeFirst();
+            if (!stack2.isEmpty()) sum += stack2.removeFirst();
             list.val = sum % 10;
             ListNode head = new ListNode(sum / 10);
             head.next = list;
@@ -37,9 +39,9 @@ public class AddTwoNumbersII {
         return list.val == 0 ? list.next : list;
     }
 
-    private Stack<Integer> popIntoStack(ListNode head) {
+    private Deque<Integer> popIntoStack(ListNode head) {
         ListNode tmp = head;
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
         while (tmp != null) {
             stack.push(tmp.val);
             tmp = tmp.next;
