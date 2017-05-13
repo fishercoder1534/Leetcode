@@ -12,21 +12,15 @@ package com.stevesun.solutions;
  AA -> 27
  AB -> 28
  */
-public class ExcelSheetColumnNumber {
+public class _171 {
 
-    public static int titleToNumber(String s) {
+    public int titleToNumber(String s) {
         char[] c = s.toCharArray();
         int result = 0;
         for(int i = s.length()-1; i >= 0; i--){
-            result += (c[i]-64)* ((int) Math.pow(26, s.length()-i-1));
+            result += (c[i]-64) * ((int) Math.pow(26, s.length()-i-1));//The ASCII value of A is 65
         }
-        
         return result;
     }
     
-    public static void main(String...strings){
-        String s = "AB";
-        System.out.println(titleToNumber(s));
-    }
-
 }
