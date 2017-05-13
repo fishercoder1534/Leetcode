@@ -377,7 +377,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Solution](../master/src/main/java/com/stevesun/solutions/LengthofLastWord.java)|O(n)|O(1)|Easy|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](../master/src/main/java/com/stevesun/solutions/MergeIntervals.java)|O(n*logn)|O(1)|Hard|
 |55|[Jump Game](https://leetcode.com/problems/jump-game/)|[Solution](../master/src/main/java/com/stevesun/solutions/JumpGame.java)|O(n)|O(1)|Medium|
-|54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/SpiralMatrix.java)|O(m*n)|O(m*n)|Medium|
+|54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/_54.java)|O(m*n)|O(m*n)|Medium| Array
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../master/src/main/java/com/stevesun/solutions/MaximumSubarray.java)|O(n)|O(1)|Medium|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Solution](../master/src/main/java/com/stevesun/solutions/PowXN.java)|O(logn)|O(logn)|Medium|
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image/)|[Solution](../master/src/main/java/com/stevesun/solutions/_48.java)|O(n^2)|O(1)|Medium|Array
