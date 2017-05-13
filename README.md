@@ -244,8 +244,8 @@ Your ideas/fixes/algorithms are more than welcome!
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|[Solution](../master/src/main/java/com/stevesun/solutions/SlidingWindowMaximum.java)| O(nlogn)|O(k) | Hard| Heap
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[Solution](../master/src/main/java/com/stevesun/solutions/ProductofArrayExceptSelf.java)| O(n)|O(1) | Medium| Array
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/_237.java)| O(1)|O(1) | Easy| LinkedList
-|235|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/LowestCommonAncestorOfABinaryTree.java)| O(h)|O(1) | Medium| DFS
-|235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/LowestCommonAncestorOfABinarySearchTree.java)| O(h)|O(1) | Easy| DFS
+|236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/LowestCommonAncestorOfABinaryTree.java)| O(h)|O(1) | Medium| DFS
+|235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/_235.java)| O(h)|O(1) | Easy| DFS
 |233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberofDigitOne.java)| O(n)|O(1) | Hard| Math
 |229|[Majority Element II](https://leetcode.com/problems/majority-element-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/MajorityElementII.java)| O(n)|O(n) | Medium|
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)|[Solution](../master/src/main/java/com/stevesun/solutions/SummaryRanges.java)| O(n)|O(1) | Medium| Array
