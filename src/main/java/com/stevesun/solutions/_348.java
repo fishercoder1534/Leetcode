@@ -59,11 +59,27 @@ package com.stevesun.solutions;
  You need two arrays: int rows[n], int cols[n], plus two variables: diagonal, anti_diagonal.
 
  */
-public class DesignTicTacToe {
-    class TicTacToe {
+public class _348 {
+    //credit: https://discuss.leetcode.com/topic/44548/java-o-1-solution-easy-to-understand
+    /**Key: in order to win a TicTacToe, you must have the entire row or column,
+     * thus, we don't need to keep track of the entire n^2 board.
+     * We only need to keep a count for each row and column.
+     * If at any time, a row or column matches the size of the board, then that player has won.*/
+    public static class TicTacToe {
 
         private int diagonal;
+        /**This is diagonal:
+         |X| | |
+         | |X| |
+         | | |X|
+         So, its condition is always like this: if (row == col)*/
+
         private int antidiagonal;
+        /**This is antidiagonal:
+         | | |X|
+         | |X| |
+         |X| | |
+         So, its condition is always like this: if (col == size - row - 1)*/
         private int[] rows;
         private int[] cols;
 
@@ -86,18 +102,19 @@ public class DesignTicTacToe {
 
             rows[row] += toAdd;
             cols[col] += toAdd;
+            int size = rows.length;
 
             if(row == col){
                 diagonal += toAdd;
             }
-            if(col == (cols.length-row-1)){
+            if(col == (size - row - 1)){
                 antidiagonal += toAdd;
             }
 
-            if (Math.abs(rows[row]) == rows.length
-                    || Math.abs(cols[col]) == rows.length
-                    || Math.abs(antidiagonal) == rows.length
-                    || Math.abs(diagonal) == rows.length)
+            if (Math.abs(rows[row]) == size
+                    || Math.abs(cols[col]) == size
+                    || Math.abs(antidiagonal) == size
+                    || Math.abs(diagonal) == size)
                 return player;
 
             return 0;

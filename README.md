@@ -155,7 +155,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |351|[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/)|[Solution](../master/src/main/java/com/stevesun/solutions/AndroidUnlockPatterns.java)| O(?)|O(?) | Medium|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/IntersectionOfTwoArraysII.java)| O(m+n)|O((m+n)) could be optimized | Easy| HashMap, Binary Search
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[Solution](../master/src/main/java/com/stevesun/solutions/IntersectionOfTwoArrays.java)| O(m+n)|O(min(m,n)) | Easy| Two Pointers, Binary Search
-|348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)|[Solution](../master/src/main/java/com/stevesun/solutions/DesignTicTacToe.java)| O(?)|O(?) | Medium| 
+|348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)|[Solution](../master/src/main/java/com/stevesun/solutions/_348.java)| O(1)|O(n) | Medium| Design 
 |346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)|[Solution](../master/src/main/java/com/stevesun/solutions/MovingAveragefromDataStream.java)| O(1)|O(w)) | Easy| Queue
 |344|[Reverse String](https://leetcode.com/problems/reverse-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReverseString.java) | O(n) |O(1) | Easy | String
 |343|[Integer Break](https://leetcode.com/problems/integer-break/)|[Solution](../master/src/main/java/com/stevesun/solutions/IntegerBreak.java)| O(1)|O(1) | Medium| Math
