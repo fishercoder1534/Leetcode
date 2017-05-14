@@ -1,21 +1,21 @@
 package com.stevesun;
 
-import com.stevesun.solutions.ProductofArrayExceptSelf;
+import com.stevesun.solutions._238;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class ProductofArrayExceptSelfTest {
-    private static ProductofArrayExceptSelf test;
+public class _238Test {
+    private static _238 test;
     private static int[] expected;
     private static int[] actual;
     private static int[] nums;
 
     @BeforeClass
     public static void setup(){
-        test = new ProductofArrayExceptSelf();
+        test = new _238();
     }
 
     @Before
