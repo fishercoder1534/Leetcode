@@ -217,7 +217,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ClosestBinarySearchTreeValueII.java)| O(h+k)|O(h) | Hard| Stack
 |271|[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)|[Solution](../master/src/main/java/com/stevesun/solutions/EncodeandDecodeStrings.java)| O(n)|O(1) | Medium| 
 |270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/)|[Solution](../master/src/main/java/com/stevesun/solutions/ClosestBinarySearchTreeValue.java)| O(h)|O(1) | Easy| DFS
-|268|[Missing Number](https://leetcode.com/problems/missing-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/PalindromePermutation.java)| O(n)|O(1) | Easy| HashMap
+|268|[Missing Number](https://leetcode.com/problems/missing-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/_268.java)| O(n)|O(1) | Easy| Bit Manipulation
 |267|[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/PalindromePermutationII.java)| O(n*n!)|O(n) | Medium|
 |266|[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)|[Solution](../master/src/main/java/com/stevesun/solutions/PalindromePermutation.java)| O(n)|O(1) | Easy|
 |265|[Paint House II](https://leetcode.com/problems/paint-house-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/PaintHouseII.java)| ?|? | Hard| 
