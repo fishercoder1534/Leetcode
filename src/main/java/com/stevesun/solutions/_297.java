@@ -22,7 +22,7 @@ import java.util.Queue;
 
  Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.
  */
-public class SerializeandDeserializeBinaryTree {
+public class _297 {
 
     /**The idea is very straightforward:
      use "#" as the terminator, do BFS, level order traversal to store all nodes values into a StringBuilder.
