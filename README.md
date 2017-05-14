@@ -307,7 +307,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryTreePreorderTraversal.java)| O(n)|O(h) | Medium| Binary Tree
 |143|[Reorder List](https://leetcode.com/problems/reorder-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReorderList.java)| O(n)|O(1) | Medium|
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/LinkedListCycleII.java)| O(n)|O(1) | Medium| Linked List
-|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|[Solution](../master/src/main/java/com/stevesun/solutions/LinkedListCycle.java)| O(n)|O(1) | Easy| Linked List
+|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|[Solution](../master/src/main/java/com/stevesun/solutions/_141.java)| O(n)|O(1) | Easy| Linked List
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/WordBreakII.java)| ? |O(n^2) | Hard| Backtracking/DFS
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](../master/src/main/java/com/stevesun/solutions/WordBreak.java)| O(n^2)|O(n) | Medium| DP
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[Solution](../master/src/main/java/com/stevesun/solutions/_138.java)| O(n)|O(n) | Medium| LinkedList, HashMap 

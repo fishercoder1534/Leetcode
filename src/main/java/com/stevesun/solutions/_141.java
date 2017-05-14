@@ -16,7 +16,7 @@ Follow up:
 Can you solve it without using extra space?
  *
  */
-public class LinkedListCycle {
+public class _141 {
 
 	public boolean hasCycle(ListNode head) {
 		ListNode slow = head, fast = head;
