@@ -12,22 +12,10 @@ For example:
     26 -> Z
     27 -> AA
     28 -> AB */
-public class ExcelSheetColumnTitle {
-    public String convertToTitle_accepted(int n) {
-        /**'Z' is the corner case, so we'll have to special case handling specially, also, we'll have to do (n-1)/26,
-         * only when this is not equal to 1, we'll continue.*/
-        StringBuilder sb = new StringBuilder();
-        while(n != 0){
-            int temp = n%26;
-            if(temp == 0) sb.append("Z");
-            else sb.append((char)(temp+64));
-            n = (n-1)/26;
-        }
-        return sb.reverse().toString();
-    }
-    
-    public String convertToTitle_accepted_more_beautiful(int n) {
+public class _168 {
 
+    public String convertToTitle_accepted_more_beautiful(int n) {
+        /**Get the right most digit first, move to the left, e.g. when n = 28, we get 'B' first, then we get 'A'.*/
         StringBuilder sb = new StringBuilder();
         while(n != 0){
             int temp = (n-1)%26;
@@ -39,7 +27,7 @@ public class ExcelSheetColumnTitle {
     }
     
     public static void main(String...strings){
-        ExcelSheetColumnTitle test = new ExcelSheetColumnTitle();
+        _168 test = new _168();
 //        int n = 28899;
 //        int n = 1;
 //        int n = 1000000001;
@@ -56,7 +44,20 @@ public class ExcelSheetColumnTitle {
 //        System.out.println(702%26);
 //        System.out.println(702/26);
         System.out.println(Integer.parseInt(String.valueOf(26), 10));
-        System.out.println(test.convertToTitle_accepted(n));
+        System.out.println(test.convertToTitle_accepted_more_beautiful(n));
+    }
+
+    public String convertToTitle_accepted(int n) {
+        /**'Z' is the corner case, so we'll have to special case handling specially, also, we'll have to do (n-1)/26,
+         * only when this is not equal to 1, we'll continue.*/
+        StringBuilder sb = new StringBuilder();
+        while(n != 0){
+            int temp = n%26;
+            if(temp == 0) sb.append("Z");
+            else sb.append((char)(temp+64));
+            n = (n-1)/26;
+        }
+        return sb.reverse().toString();
     }
     
 }

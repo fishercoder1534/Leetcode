@@ -15,8 +15,8 @@ import java.util.List;
  [1,2,1],
  [2,1,1]
  ]*/
-public class PermutationsII {
-    /**Looked at this post: https://discuss.leetcode.com/topic/31445/really-easy-java-solution-much-easier-than-the-solutions-with-very-high-vote*/
+public class _47 {
+    /**credit: https://discuss.leetcode.com/topic/31445/really-easy-java-solution-much-easier-than-the-solutions-with-very-high-vote*/
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> result = new ArrayList();
         if (nums == null || nums.length == 0) return result;
@@ -53,7 +53,7 @@ public class PermutationsII {
 
     public static void main(String...args){
         int[] nums = new int[]{1,1,2};
-        PermutationsII test = new PermutationsII();
+        _47 test = new _47();
         List<List<Integer>> result = test.permuteUnique(nums);
         CommonUtils.printIntegerList(result);
     }

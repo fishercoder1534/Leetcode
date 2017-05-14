@@ -23,11 +23,10 @@ import com.stevesun.common.classes.TreeNode;
  2   3
  Binary tree [1,2,3], return false.
  */
-public class ValidateBinarySearchTree {
+public class _98 {
     public boolean isValidBST(TreeNode root) {
         if (root == null) return true;
         return dfs(root.left, Long.MIN_VALUE, root.val) && dfs(root.right, root.val, Long.MAX_VALUE);
-
     }
 
     private boolean dfs(TreeNode root, long minValue, long maxValue) {

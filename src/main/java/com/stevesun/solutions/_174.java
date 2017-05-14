@@ -24,7 +24,7 @@ Notes:
     The knight's health has no upper bound.
     Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.
  */
-public class DungeonGame {
+public class _174 {
     
     /**This problem should fill the dp matrix from bottom right.*/
     public int calculateMinimumHP(int[][] dungeon) {
@@ -60,7 +60,7 @@ public class DungeonGame {
 
     
     public static void main(String...strings){
-        DungeonGame test = new DungeonGame();
+        _174 test = new _174();
 //        int[][] dungeon = new int[1][1];
 //        dungeon[0][0] = 0;
         

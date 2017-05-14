@@ -277,13 +277,13 @@ Your ideas/fixes/algorithms are more than welcome!
 |187|[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|[Solution](../master/src/main/java/com/stevesun/solutions/_187.java)| O(n)|O(n) | Medium
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_186.java)| O(n)|O(1)| Medium
 |179|[Largest Number](https://leetcode.com/problems/largest-number/)|[Queue](../master/src/main/java/com/stevesun/solutions/BSTIterator_using_q.java) [Stack](../../blmaster/MEDIUM/src/medium/LargestNumber.java)| O(?) |O(?) | Medium|
-|174|[Dungeon Game](https://leetcode.com/problems/dungeon-game/)|[Queue](../master/src/main/java/com/stevesun/solutions/BSTIterator_using_q.java) [Stack](../../blmaster/MEDIUM/src/medium/DungeonGame.java)| O(?) |O(?) | Hard|
+|174|[Dungeon Game](https://leetcode.com/problems/dungeon-game/)|[Queue](../master/src/main/java/com/stevesun/solutions/BSTIterator_using_q.java) [Stack](../../blmaster/MEDIUM/src/medium/_174.java)| O(m*n) |O(m*n) | Hard| DP
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Queue](../master/src/main/java/com/stevesun/solutions/BSTIterator_using_q.java) [Stack](../../blmaster/MEDIUM/src/medium/BSTIterator_using_stack.java)| O(1) |O(h) | Medium|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|[Solution](../master/src/main/java/com/stevesun/solutions/FactorialTrailingZeroes.java)| O(logn)|O(1)| Easy
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/_171.java)| O(n)|O(1)| Easy
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](../master/src/main/java/com/stevesun/solutions/_170.java)| O(n)|O(n)| Easy
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)|[Solution](../master/src/main/java/com/stevesun/solutions/MajorityElement.java)| O(n)|O(1) | Easy|
-|168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[Solution](../master/src/main/java/com/stevesun/solutions/ExcelSheetColumnTitle.java)| O(n)|O(1) | Easy|
+|168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[Solution](../master/src/main/java/com/stevesun/solutions/_168.java)| O(n)|O(1) | Easy|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Solution](../master/src/main/java/com/stevesun/solutions/_167.java)| O(logn)|O(1) | Easy|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|[Solution](../master/src/main/java/com/stevesun/solutions/CompareVersionNumbers.java)| O(n)|O(1) | Easy|
 |164|[Maximum Gap](https://leetcode.com/problems/maximum-gap/)|[Solution](../master/src/main/java/com/stevesun/solutions/MaximumGap.java) | O(n) |O(n) | Hard|
@@ -302,7 +302,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|[Solution](../master/src/main/java/com/stevesun/solutions/EvaluateReversePolishNotation.java)| O(?)|O(?) | Medium
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/)|[Solution](../master/src/main/java/com/stevesun/solutions/MaxPointsonaLine.java)| O(?)|O(?) | Hard|
 |147|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/InsertionSortList.java) O(n^2)|O(1) | Medium| Linked List
-|146|[LRU Cache](https://leetcode.com/problems/lru-cache/)|[Doubly Linked List](../master/src/main/java/com/stevesun/solutions/LRUCache_use_DoublyLinkedList_plus_HashMap.java) |[Linked Hash Map](../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/LRUCache_use_LinkedHashMap.java)| O(?)|O(?) | Hard| Linked List
+|146|[LRU Cache](https://leetcode.com/problems/lru-cache/)|[Doubly Linked List](../master/src/main/java/com/stevesun/solutions/_146_use_DoublyLinkedList_plus_HashMap.java) |[Linked Hash Map](../master/leetcode-algorithms/src/main/java/com/stevesun/solutions/_146_use_LinkedHashMap.java)| O(?)|O(?) | Hard| Linked List
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryTreePostOrderTraversal.java)| O(n)|O(h) | Hard| Binary Tree
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryTreePreorderTraversal.java)| O(n)|O(h) | Medium| Binary Tree
 |143|[Reorder List](https://leetcode.com/problems/reorder-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReorderList.java)| O(n)|O(1) | Medium|
@@ -341,7 +341,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|[Solution](../master/src/main/java/com/stevesun/solutions/_103.java)| O(n)|O(h) | Medium| BFS,DFS
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryTreeLevelOrderTraversal.java)| O(n)|O(h) | Easy| BFS
 |99|[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/RecoverBinarySearchTree.java) | O(?) | O(?) | Hard |
-|98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidateBinarySearchTree.java) | O(n) | O(h) | Medium | DFS/Recursion
+|98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/_98.java) | O(n) | O(h) | Medium | DFS/Recursion
 |97|[Interleaving String](https://leetcode.com/problems/interleaving-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/InterleavingString.java)| O(?)|O(?) | Hard| DP
 |96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)|[Solution](../master/src/main/java/com/stevesun/solutions/UniqueBinarySearchTrees.java) | O(n^2) | O(n) | Medium | Recursion, DP
 |95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/UniqueBinarySearchTreesII.java) | O(?) | O(?) | Medium | Recursion
@@ -383,7 +383,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../master/src/main/java/com/stevesun/solutions/_53.java)|O(n)|O(1)|Easy|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Solution](../master/src/main/java/com/stevesun/solutions/PowXN.java)|O(logn)|O(logn)|Medium|
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image/)|[Solution](../master/src/main/java/com/stevesun/solutions/_48.java)|O(n^2)|O(1)|Medium|Array
-|47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/PermutationsII.java)|O(n*n!)|O(n)|Medium|Backtracking
+|47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_47.java)|O(n*n!)|O(n)|Medium|Backtracking
 |46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](../master/src/main/java/com/stevesun/solutions/_46.java)|O(n*n!)|O(n)|Medium|Backtracking
 |45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/JumpGameII.java)|O(?)|O(?)|Hard|
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[Solution](../master/src/main/java/com/stevesun/solutions/TrappingRainWater.java)|O(n)|O(1)|Hard|
@@ -407,20 +407,20 @@ Your ideas/fixes/algorithms are more than welcome!
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[Solution](../master/src/main/java/com/stevesun/solutions/SwapNodesinPairs.java)|O(n)|O(1)|Easy| Recursion, LinkedList
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../master/src/main/java/com/stevesun/solutions/MergeKSortedList.java)|O(n*logk)|O(logk)|Hard|Heap
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[Solution](../master/src/main/java/com/stevesun/solutions/GenerateParentheses.java)|TBD|O(n)|Medium|Backtracking
-|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](../master/src/main/java/com/stevesun/solutions/_21.java)|O(n)|O(1)|Easy|
-|20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidParentheses.java)|O(n)|O(n)|Easy|Stack
+|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](../master/src/main/java/com/stevesun/solutions/_21.java)|O(n)|O(h)|Easy| Recursion
+|20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Solution](../master/src/main/java/com/stevesun/solutions/_20.java)|O(n)|O(n)|Easy|Stack
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/_19.java)|O(n)|O(1)|Medium| Linked List
 |18|[4 Sum](https://leetcode.com/problems/4sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/_18.java)|O(n^2)|O(1)|Medium|Two Pointers
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/LetterCombinationsofaPhoneNumber.java)|O(n*4^n)|O(n)|Medium|Backtracking
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[Solution](../master/src/main/java/com/stevesun/solutions/_16.java)|O(nlogn)|O(1)|Medium|Two Pointers
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/_15.java)|O(n^2)|O(1)|Medium|Two Pointers
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[Solution](../master/src/main/java/com/stevesun/solutions/LongestCommonPrefix.java)| O(n*min(wordLength in this array)) | O(1) | Easy
-|13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](../master/src/main/java/com/stevesun/solutions/RomantoInteger.java)| O(1) | O(1) | Easy
+|13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](../master/src/main/java/com/stevesun/solutions/_13.java)| O(1) | O(1) | Easy
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|[Solution](../master/src/main/java/com/stevesun/solutions/IntegertoRoman.java)|O(1)|O(1)|Medium|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|[Solution](../master/src/main/java/com/stevesun/solutions/ContainerWithMostWater.java)|O(n)|O(1)|Medium|
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[Solution](../master/src/main/java/com/stevesun/solutions/RegularExpressionMatching.java)|O(m*n)|O(m*n)|Hard|DP
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/PalindromeNumber.java)| O(logn)/(n) | O(1) | Easy
-|8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../master/src/main/java/com/stevesun/solutions/StringToInteger.java)| O(n) | O(1) | Easy
+|8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../master/src/main/java/com/stevesun/solutions/_8.java)| O(n) | O(1) | Medium
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Solution](../master/src/main/java/com/stevesun/solutions/ReverseInteger.java) | O(1) | O(1) | Easy | 
 |6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|[Solution](../master/src/main/java/com/stevesun/solutions/_6.java) | O(n) | O(n) | Easy | 
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[Solution](../master/src/main/java/com/stevesun/solutions/LongestPalindromicSubstring.java) | O(n^2) | O(1) | Medium|

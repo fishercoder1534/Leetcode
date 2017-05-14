@@ -13,7 +13,7 @@ import java.util.Map;
  1 0 0 1 0
  Return 4.
  */
-public class LRUCache_use_DoublyLinkedList_plus_HashMap {
+public class _146_use_DoublyLinkedList_plus_HashMap {
     private class Node {
         int key, value;
         Node prev, next;
@@ -35,7 +35,7 @@ public class LRUCache_use_DoublyLinkedList_plus_HashMap {
     private Map<Integer, Node> map;// ATTN: the value should be Node type! This is the whole point
                                    // of having a class called Node!
 
-    public LRUCache_use_DoublyLinkedList_plus_HashMap(int capacity) {
+    public _146_use_DoublyLinkedList_plus_HashMap(int capacity) {
         this.capacity = capacity;
         this.count = 0;// we need a count to keep track of the number of elements in the cache so
                        // that we know when to evict the LRU one from the cache

@@ -22,7 +22,7 @@ The function first discards as many whitespace characters as necessary until the
 The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.
 If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.
 If no valid conversion could be performed, a zero value is returned. If the correct value is out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.*/
-public class StringToInteger {
+public class _8 {
 	public int myAtoi_clean_version(String str){
 		int p = 0, result = 0;
 		while(p < str.length() && Character.isWhitespace(str.charAt(p))) p++;
@@ -36,10 +36,28 @@ public class StringToInteger {
 				int digit = str.charAt(p) - '0';
 				if(!negativeFlag && result > (Integer.MAX_VALUE - digit)/10) return Integer.MAX_VALUE;
 				else if (negativeFlag && result < (Integer.MIN_VALUE + digit)/10) return Integer.MIN_VALUE;
-				result = result*10 + (negativeFlag? -digit:digit);
+				result = result*10 + (negativeFlag ? -digit:digit);
 			}
 		}
 		return result;
+	}
+
+	public static void main(String...strings){
+		_8 test = new _8();
+//	    String str = "2147483648";
+//	    String str = "+-2";//a really interesting test case, you never know how stupid one's input could be like, this is to challenge your program to be more robust. It's expecting to return 0 for this case which means it's not a valid number
+//	    String str = "+";
+//	    String str = "abc";
+//	    String str = "1";
+//	    String str = "-2147483648";
+//	    String str = "++1";//I'm really amazed by OJ's test case variety, it's expecting 0 in this case
+//	    String str = "-2147483649";
+		String str = "9223372036854775809";
+		System.out.println(test.myAtoi(str));
+
+
+//	    System.out.println(Double.parseDouble("1.2098"));
+//	    System.out.println(Integer.parseInt("123456789"));
 	}
 
 	//Eventually, made it AC'ed, lots of corner cases, but now, really felt much easier and the though process is super clear than the first time I tried to solve it which was 3~4 years ago from now. 8/9/2016
@@ -125,23 +143,5 @@ public class StringToInteger {
 	    
 	    if(negative) result = -result;
 	    return result;
-	}
-	
-	public static void main(String...strings){
-	    StringToInteger test = new StringToInteger();
-//	    String str = "2147483648";
-//	    String str = "+-2";//a really interesting test case, you never know how stupid one's input could be like, this is to challenge your program to be more robust. It's expecting to return 0 for this case which means it's not a valid number
-//	    String str = "+";
-//	    String str = "abc";
-//	    String str = "1";
-//	    String str = "-2147483648";
-//	    String str = "++1";//I'm really amazed by OJ's test case variety, it's expecting 0 in this case
-//	    String str = "-2147483649";
-	    String str = "9223372036854775809";
-	    System.out.println(test.myAtoi(str));
-	    
-	    
-//	    System.out.println(Double.parseDouble("1.2098"));
-//	    System.out.println(Integer.parseInt("123456789"));
 	}
 }
