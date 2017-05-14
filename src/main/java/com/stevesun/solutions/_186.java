@@ -10,10 +10,8 @@ package com.stevesun.solutions;
  return "blue is sky the".
 
  Could you do it in-place without allocating extra space?
-
- Related problem: Rotate Array
  */
-public class ReverseWordsinaStringII {
+public class _186 {
 
     public void reverseWords(char[] s) {
         // Three steps to reverse
@@ -21,7 +19,6 @@ public class ReverseWordsinaStringII {
         reverse(s, 0, s.length - 1);
         // 2, reverse each word
         int start = 0;
-        int end = -1;
         for (int i = 0; i < s.length; i++) {
             if (s[i] == ' ') {
                 reverse(s, start, i - 1);

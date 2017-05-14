@@ -9,7 +9,7 @@ package com.stevesun.solutions;
 
  You may assume no duplicate exists in the array.
  */
-public class FindMinimuminRotatedSortedArray {
+public class _153 {
 
     public int findMin(int[] nums) {
         int left = 0;

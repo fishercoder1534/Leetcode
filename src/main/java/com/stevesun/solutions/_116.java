@@ -31,44 +31,40 @@ import com.stevesun.common.classes.TreeLinkNode;
   / \  / \
  4->5->6->7 -> NULL */
 
-public class PopulatingNextRightPointersinEachNode {
-    //copied this post: https://discuss.leetcode.com/topic/1106/o-1-space-o-n-complexity-iterative-solution
-    //very clever and concise to make it in O(1) space
-
+public class _116 {
+    //credit: https://discuss.leetcode.com/topic/1106/o-1-space-o-n-complexity-iterative-solution
     //based on level order traversal
     public static void connect(TreeLinkNode root) {
 
         TreeLinkNode head = null; //head of the next level
         TreeLinkNode prev = null; //the leading node on the next level
-        TreeLinkNode cur = root;  //current node of current level
+        TreeLinkNode curr = root;  //current node of current level
 
-        while (cur != null) {
-
-            while (cur != null) { //iterate on the current level
+        while (curr != null) {
+            while (curr != null) { //iterate on the current level
                 //left child
-                if (cur.left != null) {
+                if (curr.left != null) {
                     if (prev != null) {
-                        prev.next = cur.left;
+                        prev.next = curr.left;
                     } else {
-                        head = cur.left;
+                        head = curr.left;
                     }
-                    prev = cur.left;
+                    prev = curr.left;
                 }
                 //right child
-                if (cur.right != null) {
+                if (curr.right != null) {
                     if (prev != null) {
-                        prev.next = cur.right;
+                        prev.next = curr.right;
                     } else {
-                        head = cur.right;
+                        head = curr.right;
                     }
-                    prev = cur.right;
+                    prev = curr.right;
                 }
                 //move to next node
-                cur = cur.next;
+                curr = curr.next;
             }
-
             //move to next level
-            cur = head;
+            curr = head;
             head = null;
             prev = null;
         }

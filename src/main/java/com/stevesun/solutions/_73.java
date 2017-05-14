@@ -2,8 +2,6 @@ package com.stevesun.solutions;
 
 /**Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
 
- click to show follow up.
-
  Follow up:
  Did you use extra space?
  A straight forward solution using O(mn) space is probably a bad idea.
@@ -11,7 +9,7 @@ package com.stevesun.solutions;
  Could you devise a constant space solution?
 
  */
-public class SetMatrixZeroes {
+public class _73 {
     //this is the most straightforward solution which uses O(mn) space
     public void setZeroes(int[][] matrix) {
         if(matrix == null || matrix.length == 0) return;
@@ -31,4 +29,6 @@ public class SetMatrixZeroes {
             }
         }
     }
+
+    //TODO: use better solutions
 }

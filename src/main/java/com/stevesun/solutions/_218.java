@@ -41,7 +41,7 @@ when the start point of one building is is also the end point of another buildin
 For the sake of efficiency (better time complexity), we’ll use TreeMap which supports O(logn) for remove() operation, this is the reason we choose TreeMap over a normal PriorityQueue in Java (PriorityQueue supports add() and getMaxVal() in both O(logn) time, however, for remove(), it does NOT.)
 But TreeMap in Java supports all the three operations in O(logn) time.*/
 
-public class TheSkylineProblem {
+public class _218 {
 
     class BuildingPoint implements Comparable<BuildingPoint>{
         int x;

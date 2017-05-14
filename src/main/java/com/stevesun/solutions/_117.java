@@ -24,7 +24,7 @@ import com.stevesun.common.classes.TreeLinkNode;
   / \    \
  4-> 5 -> 7 -> NULL */
 
-public class PopulatingNextRightPointersinEachNodeII {
+public class _117 {
     //copied this post: https://discuss.leetcode.com/topic/1106/o-1-space-o-n-complexity-iterative-solution
     //very clever and concise to make it in O(1) space
 

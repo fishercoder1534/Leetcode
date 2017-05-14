@@ -1,6 +1,6 @@
 package com.stevesun;
 
-import com.stevesun.solutions.FindMinimuminRotatedSortedArray;
+import com.stevesun.solutions._153;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,15 +10,15 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by stevesun on 1/10/17.
  */
-public class FindMinimuminRotatedSortedArrayTest {
-    private static FindMinimuminRotatedSortedArray test;
+public class _153Test {
+    private static _153 test;
     private static int expected;
     private static int actual;
     private static int[] nums;
 
     @BeforeClass
     public static void setup(){
-        test = new FindMinimuminRotatedSortedArray();
+        test = new _153();
     }
 
     @Before
