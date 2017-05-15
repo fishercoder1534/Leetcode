@@ -16,7 +16,7 @@ package com.stevesun.solutions;
 
  Output: "bb"
  */
-public class LongestPalindromicSubstring {
+public class _5 {
 
     private int lo, maxLen;
 

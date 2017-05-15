@@ -8,7 +8,6 @@ import java.util.*;
  For example,
  path = "/home/", => "/home"
  path = "/a/./b/../../c/", => "/c"
- click to show corner cases.
 
  Corner Cases:
  Did you consider the case where path = "/../"?
@@ -16,7 +15,7 @@ import java.util.*;
  Another corner case is the path might contain multiple slashes '/' together, such as "/home//foo/".
  In this case, you should ignore redundant slashes and return "/home/foo".
  */
-public class SimplifyPath {
+public class _71 {
 
     public String simplifyPath(String path) {
         Deque<String> stack = new LinkedList<>();

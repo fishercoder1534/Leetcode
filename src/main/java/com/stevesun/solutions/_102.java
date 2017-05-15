@@ -28,7 +28,7 @@ return its level order traversal as:
   [15,7]
 ]
 */
-public class BinaryTreeLevelOrderTraversal {
+public class _102 {
 	public List<List<Integer>> levelOrder(TreeNode root) {
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		if(root == null) return result;
