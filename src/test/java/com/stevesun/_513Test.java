@@ -1,7 +1,7 @@
 package com.stevesun;
 
 import com.stevesun.common.classes.TreeNode;
-import com.stevesun.solutions.FindBottomLeftValue;
+import com.stevesun.solutions._513;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -11,15 +11,15 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by stevesun on 1/15/17.
  */
-public class FindBottomLeftValueTest {
-    private static FindBottomLeftValue test;
+public class _513Test {
+    private static _513 test;
     private static int expected;
     private static int actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup(){
-        test = new FindBottomLeftValue();
+        test = new _513();
     }
 
     @Before

@@ -1,6 +1,7 @@
 package com.stevesun.solutions;
 
 import com.stevesun.common.classes.ListNode;
+import com.stevesun.common.utils.CommonUtils;
 
 /**
  * Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
@@ -18,7 +19,7 @@ import com.stevesun.common.classes.ListNode;
 
  For k = 3, you should return: 3->2->1->4->5
  */
-public class ReverseNodesinkGroup {
+public class _25 {
 
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode curr = head;
@@ -41,6 +42,18 @@ public class ReverseNodesinkGroup {
             head = curr;
         }
         return head;//we run out of nodes before we hit count == k, so we'll just directly return head in this case as well
+    }
+
+    public static void main(String...args) {
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+
+        CommonUtils.printList(head);
+        _25 test = new _25();
+        CommonUtils.printList(test.reverseKGroup(head, 2));
     }
 
 }

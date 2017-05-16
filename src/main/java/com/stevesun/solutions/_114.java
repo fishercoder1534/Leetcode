@@ -29,7 +29,7 @@ import com.stevesun.common.classes.TreeNode;
  Hints:
  If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.
  */
-public class FlattenBinaryTreetoLinkedList {
+public class _114 {
 
     public void flatten(TreeNode root) {
         while (root != null) {
@@ -44,6 +44,18 @@ public class FlattenBinaryTreetoLinkedList {
             }
             root = root.right;
         }
+    }
+
+    public static void main(String... args) {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(4);
+        root.right = new TreeNode(5);
+        root.right.right = new TreeNode(6);
+
+        _114 test = new _114();
+        test.flatten(root);
     }
 
 }

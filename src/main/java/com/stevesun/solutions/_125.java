@@ -10,7 +10,7 @@ package com.stevesun.solutions;
  Have you consider that the string might be empty? This is a good question to ask during an interview.
 
  For the purpose of this problem, we define empty string as valid palindrome.*/
-public class ValidPalindrome {
+public class _125 {
 
     public boolean isPalindrome(String s) {
         int i = 0, j = s.length()-1;

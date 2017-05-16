@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 /**Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.*/
 
-public class MergeKSortedList {
+public class _23 {
     public ListNode mergeKLists(ListNode[] lists) {
         PriorityQueue<ListNode> heap = new PriorityQueue(new Comparator<ListNode>(){
             @Override

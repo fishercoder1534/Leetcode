@@ -20,7 +20,7 @@ import java.util.Stack;
 
  Note: Recursive solution is trivial, could you do it iteratively?*/
 
-public class BinaryTreeInorderTraversal {
+public class _94 {
 
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList();

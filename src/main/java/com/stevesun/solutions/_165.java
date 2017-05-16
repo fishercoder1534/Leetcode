@@ -10,7 +10,7 @@ package com.stevesun.solutions;
 
  0.1 < 1.1 < 1.2 < 13.37*/
 
-public class CompareVersionNumbers {
+public class _165 {
 
     public static int compareVersion(String version1, String version2) {
         String[] v1s = version1.split("\\.");//escaping it is very important! Otherwise, it's not going to work as expected!
@@ -30,7 +30,6 @@ public class CompareVersionNumbers {
             } else {
                 if(Integer.parseInt(v1s[i]) > Integer.parseInt(v2s[i])) return 1;
                 else if(Integer.parseInt(v2s[i]) > Integer.parseInt(v1s[i])) return -1;
-                else continue;//this line is not necessary, but just to make the logic more clear
             }
         }
         return 0;

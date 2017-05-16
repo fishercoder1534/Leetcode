@@ -14,23 +14,23 @@ public class _105 {
 	//credit: https://discuss.leetcode.com/topic/29838/5ms-java-clean-solution-with-caching
 	//use HashMap as the cache so that accessing inorder index becomes O(1) time
 	public TreeNode buildTree(int[] preorder, int[] inorder) {
-		Map<Integer, Integer> inMap = new HashMap();
+		Map<Integer, Integer> inorderMap = new HashMap();
 		for (int i = 0; i < inorder.length; i++) {
-			inMap.put(inorder[i], i);
+			inorderMap.put(inorder[i], i);
 		}
 
-		return buildTree(preorder, 0, preorder.length-1, 0, inorder.length-1, inMap);
+		return buildTree(preorder, 0, preorder.length-1, 0, inorder.length-1, inorderMap);
 	}
 
-	private TreeNode buildTree(int[] preorder, int preStart, int preEnd, int inStart, int inEnd, Map<Integer, Integer> inMap) {
+	private TreeNode buildTree(int[] preorder, int preStart, int preEnd, int inStart, int inEnd, Map<Integer, Integer> inorderMap) {
 		if (preStart > preEnd || inStart > inEnd) return null;
 
 		TreeNode root = new TreeNode(preorder[preStart]);
-		int inRoot = inMap.get(root.val);
+		int inRoot = inorderMap.get(root.val);
 		int numsLeft = inRoot - inStart;
 
-		root.left = buildTree(preorder, preStart+1, preStart+numsLeft, inStart, inRoot-1, inMap);
-		root.right = buildTree(preorder, preStart+numsLeft+1, preEnd, inRoot+1, inEnd, inMap);
+		root.left = buildTree(preorder, preStart+1, preStart+numsLeft, inStart, inRoot-1, inorderMap);
+		root.right = buildTree(preorder, preStart+numsLeft+1, preEnd, inRoot+1, inEnd, inorderMap);
 		return root;
 	}
 

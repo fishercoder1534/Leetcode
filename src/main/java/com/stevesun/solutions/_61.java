@@ -23,12 +23,12 @@ public class _61 {
             copyHead = copyHead.next;
             len++;
         }
-        copyHead.next = head;
+        copyHead.next = head;//link the tail and head to make it a circle
         for (int i = len - k%len; i > 1; i--) {
             head = head.next;
         }
         copyHead = head.next;
-        head.next = null;
+        head.next = null;//break the circle
         return copyHead;
     }
 

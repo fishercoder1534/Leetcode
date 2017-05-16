@@ -15,7 +15,7 @@ import java.util.List;
  Given [1,3],[2,6],[8,10],[15,18],
  return [1,6],[8,10],[15,18].
  */
-public class MergeIntervals {
+public class _56 {
 
     public static List<Interval> merge(List<Interval> intervals) {
         if(intervals.size() <= 1) return intervals;

@@ -47,8 +47,7 @@ public class _273 {
         if (num >= 20) {
             if (num % 10 != 0) {
                 nstr = nstr + belowHundred[num / 10 - 2] + " " + belowTen[num % 10] + " ";
-            }
-            else {
+            } else {
                 nstr = nstr + belowHundred[num / 10 - 2] + " ";
             }
         } else if (num >= 10) {

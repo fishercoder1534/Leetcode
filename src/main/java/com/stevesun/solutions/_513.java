@@ -33,7 +33,7 @@ import java.util.Queue;
  7
  Note: You may assume the tree (i.e., the given root node) is not NULL.
  */
-public class FindBottomLeftValue {
+public class _513 {
 
     public int findBottomLeftValue(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();

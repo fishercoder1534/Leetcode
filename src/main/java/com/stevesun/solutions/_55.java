@@ -10,7 +10,7 @@ package com.stevesun.solutions;
  A = [2,3,1,1,4], return true.
 
  A = [3,2,1,0,4], return false.*/
-public class JumpGame {
+public class _55 {
     
     public static boolean canJump_greedy(int[] nums) {
         int farthest = nums[0];

@@ -1,6 +1,7 @@
 package com.stevesun.solutions;
 
 /**
+ * 153. Find Minimum in Rotated Sorted Array
  * Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
 
  (i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
@@ -22,8 +23,7 @@ public class _153 {
             if (nums[mid] > nums[left]) {
                 min = Math.min(nums[left], min);
                 left = mid+1;
-            }
-            else if (nums[mid] < nums[left]) {
+            } else if (nums[mid] < nums[left]) {
                 right = mid-1;
             }
         }

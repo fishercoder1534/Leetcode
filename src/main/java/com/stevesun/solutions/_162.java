@@ -1,6 +1,15 @@
 package com.stevesun.solutions;
 
-public class FindPeakElement {
+/**
+ * 162. Find Peak Element
+ *
+ * A peak element is an element that is greater than its neighbors.
+ Given an input array where num[i] ≠ num[i+1], find a peak element and return its index.
+ The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.
+ You may imagine that num[-1] = num[n] = -∞.
+ For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.*/
+
+public class _162 {
 
     /**
      * On discuss, this post has very good explanation about an O(logn) solution:
@@ -25,6 +34,14 @@ public class FindPeakElement {
         return (left == nums.length-1 || nums[left] > nums[left+1]) ? left : right;
     
     }
+
+    public static void main(String...strings){
+//        int[] nums = new int[]{1,2};
+//        int[] nums = new int[]{1};
+        int[] nums = new int[]{1,2,3,1};
+//        System.out.println(findPeakElement(nums));
+        System.out.println(findPeakElement_Ologn(nums));
+    }
     
     /**My original O(n) solution.*/
     public static int findPeakElement(int[] nums) {
@@ -43,13 +60,5 @@ public class FindPeakElement {
             }
         }
         return result;
-    }
-
-    public static void main(String...strings){
-//        int[] nums = new int[]{1,2};
-//        int[] nums = new int[]{1};
-        int[] nums = new int[]{1,2,3,1};
-//        System.out.println(findPeakElement(nums));
-        System.out.println(findPeakElement_Ologn(nums));
     }
 }

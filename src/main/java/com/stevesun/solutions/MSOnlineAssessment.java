@@ -3,6 +3,10 @@ package com.stevesun.solutions;
 import java.util.*;
 
 public class MSOnlineAssessment {
+    /**Given an array, return the start/end indices of the contiguous subarray that have the largest sum.
+
+     Note:
+     1. There could be multiple subarrays, return all of the indices.*/
 
     public static void main(String... args) {
         int[] nums = new int[]{1,2,3,4,5, -1, -3, -6, 3, 2, -4};

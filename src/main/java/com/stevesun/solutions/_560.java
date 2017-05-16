@@ -17,7 +17,14 @@ import java.util.Map;
  */
 public class _560 {
 
-    //credit: https://discuss.leetcode.com/topic/87850/java-solution-presum-hashmap
+    /**credit: https://discuss.leetcode.com/topic/87850/java-solution-presum-hashmap
+     * We know the key to solve this problem is SUM[i, j].
+     * So if we know SUM[0, i - 1] and SUM[0, j],
+     * then we can easily get SUM[i, j] via (SUM[0, j] - SUM[0, i-1]).
+     * To achieve this, we just need to go through the array,
+     * calculate the current sum and save number of all seen PreSum to a HashMap.
+     *
+     * Time complexity O(n), Space complexity O(n).*/
     public int subarraySum(int[] nums, int k) {
         Map<Integer, Integer> preSum = new HashMap();
         int sum = 0;

@@ -18,8 +18,9 @@ package com.stevesun.solutions;
  You may find this Wikipedia article: https://en.wikipedia.org/wiki/Digital_root useful.
  * */
 
-public class AddDigits {
-//only three cases as the code shows
+public class _258 {
+
+    //only three cases as the code shows
     public int addDigits(int num) {
         if(num == 0) return 0;
         if(num % 9 == 0) return 9;

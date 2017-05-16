@@ -10,7 +10,7 @@ Implement an iterator over a binary search tree (BST). Your iterator will be ini
 Calling next() will return the next smallest number in the BST.
 
 Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.*/
-public class BSTIterator_using_stack {
+public class _173_using_stack {
     /**This is a super cool/clever idea: use a stack to store all the current left nodes of the BST, when pop(), we
      * push all its right nodes into the stack if there are any.
      * This way, we use only O(h) memory for this iterator, this is a huge saving when the tree is huge
@@ -18,7 +18,7 @@ public class BSTIterator_using_stack {
     
     private Stack<TreeNode> stack;
     
-    public BSTIterator_using_stack(TreeNode root) {
+    public _173_using_stack(TreeNode root) {
         stack = new Stack();
         pushToStack(root, stack);
     }

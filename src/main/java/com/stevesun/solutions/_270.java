@@ -7,7 +7,7 @@ import com.stevesun.common.classes.TreeNode;
  Note:
  Given target value is a floating point.
  You are guaranteed to have only one unique value in the BST that is closest to the target.*/
-public class ClosestBinarySearchTreeValue {
+public class _270 {
     
     class General_tree_solution {
         //this finished in 1 ms
