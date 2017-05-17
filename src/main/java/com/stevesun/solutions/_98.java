@@ -24,6 +24,21 @@ import com.stevesun.common.classes.TreeNode;
  Binary tree [1,2,3], return false.
  */
 public class _98 {
+    class MoreConciseSolution {
+
+        public boolean isValidBST(TreeNode root) {
+            return valid(root, null, null);
+        }
+
+        private boolean valid(TreeNode root, Integer min, Integer max) {
+            if (root == null) return true;
+            if ((min != null && root.val <= min)
+                    || (max != null && root.val >= max)) return false;
+            return valid(root.left, min, root.val) && valid(root.right, root.val, max);
+        }
+    }
+
+
     public boolean isValidBST(TreeNode root) {
         if (root == null) return true;
         return dfs(root.left, Long.MIN_VALUE, root.val) && dfs(root.right, root.val, Long.MAX_VALUE);
