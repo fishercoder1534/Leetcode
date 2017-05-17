@@ -20,7 +20,7 @@ import java.util.Map;
 
  Note: The length of the given binary array will not exceed 50,000.
  */
-public class ContiguousArray {
+public class _525 {
 
     //credit: https://leetcode.com/articles/contiguous-array/#approach-3-using-hashmap-accepted
     public int findMaxLength(int[] nums) {

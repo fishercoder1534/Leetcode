@@ -1,21 +1,20 @@
 package com.stevesun;
 
-import com.stevesun.solutions.ContiguousArray;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class ContiguousArrayTest {
-    private static ContiguousArray test;
+public class _525Test {
+    private static com.stevesun.solutions._525 test;
     private static int expected;
     private static int actual;
     private static int[] nums;
 
     @BeforeClass
     public static void setup(){
-        test = new ContiguousArray();
+        test = new com.stevesun.solutions._525();
     }
 
     @Before
