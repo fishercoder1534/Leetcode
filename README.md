@@ -254,6 +254,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/_235.java)| O(h)|O(1) | Easy| DFS
 |233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberofDigitOne.java)| O(n)|O(1) | Hard| Math
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)|[Solution](../master/src/main/java/com/stevesun/solutions/_232.java)| O(n)|O(n) | Medium| Stack, Design
+|230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|[Solution](../master/src/main/java/com/stevesun/solutions/_230.java)| O(n)|O(k) | Medium| Tree
 |229|[Majority Element II](https://leetcode.com/problems/majority-element-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/MajorityElementII.java)| O(n)|O(n) | Medium|
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)|[Solution](../master/src/main/java/com/stevesun/solutions/SummaryRanges.java)| O(n)|O(1) | Medium| Array
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/InvertBinaryTree.java)| O(n)|O(h) | Easy| DFS, recursion
