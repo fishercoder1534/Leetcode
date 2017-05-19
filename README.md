@@ -53,7 +53,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |532|[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/KdiffPairsinanArray.java) | O(n) |O(n) | Easy | HashMap
 |531|[Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/)|[Solution](../master/src/main/java/com/stevesun/solutions/LonelyPixelI.java) | O(m*n) |O(1) | Medium | 
 |530|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|[Solution](../master/src/main/java/com/stevesun/solutions/MinimumAbsoluteDifferenceinBST.java) | O(n) |O(n) | Easy| DFS
-|529|[Minesweeper](https://leetcode.com/problems/minesweeper/)|[Solution](../master/src/main/java/com/stevesun/solutions/Minesweeper.java) | O(m*n) |O(k) | Medium | BFS
+|529|[Minesweeper](https://leetcode.com/problems/minesweeper/)|[Solution](../master/src/main/java/com/stevesun/solutions/_529.java) | O(m*n) |O(k) | Medium | BFS
 |526|[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)|[Solution](../master/src/main/java/com/stevesun/solutions/BeautifulArrangement.java) | O(n) |O(h) | Medium | Backtracking
 |525|[Contiguous Array](https://leetcode.com/problems/contiguous-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_525.java) | O(n) |O(n) | Medium | HashMap
 |524|[Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/)|[Solution](../master/src/main/java/com/stevesun/solutions/_524.java) | O(n) |O(n) | Medium | Sort
