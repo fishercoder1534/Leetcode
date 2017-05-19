@@ -104,6 +104,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_445.java)| O(max(m,n)|O(max(m,n)) | Medium| Stack, LinkedList
 |442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindAllDuplicatesinanArray.java)| O(n)|O(1) | Medium| Array
 |441|[Arranging Coins](https://leetcode.com/problems/arrange-coins/)|[Solution](../master/src/main/java/com/stevesun/solutions/ArrangingCoins.java)| O(n)|O(1) | Easy|
+|439|[Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/)|[Solution](../master/src/main/java/com/stevesun/solutions/_439.java)| O(n)|O(n) | Medium| Stack
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindAllAnagramsinaString.java)| O(n)|O(1) | Easy|
 |437|[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[Solution](../master/src/main/java/com/stevesun/solutions/PathSumIII.java) | O(n^2) |O(n) | Easy| DFS, recursion
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
