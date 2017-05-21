@@ -6,7 +6,7 @@ package com.stevesun.solutions;
 	a = "11"
 	b = "1"
 	Return "100".*/
-public class AddBinary {
+public class _67 {
     //then I turned to Discuss, this post is concise: https://discuss.leetcode.com/topic/13698/short-ac-solution-in-java-with-explanation
     //Tricks and things learned that could be learned:
     //1. use StringBuilder.reverse() function! Nice!

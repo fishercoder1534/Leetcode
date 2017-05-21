@@ -379,7 +379,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[Solution](../master/src/main/java/com/stevesun/solutions/ClimbingStairs.java)|O(n)|O(n)|Easy| DP
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[Solution](../master/src/main/java/com/stevesun/solutions/Sqrt.java)|O(logn)|O(1)|Easy|
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../master/src/main/java/com/stevesun/solutions/TextJustification.java)|O(n)|O(1)|Hard|
-|67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../master/src/main/java/com/stevesun/solutions/AddBinary.java)|O(n)|O(1)|Easy|
+|67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../master/src/main/java/com/stevesun/solutions/_67.java)|O(n)|O(1)|Easy|
 |66|[Plus One](https://leetcode.com/problems/plus-one/)|[Solution](../master/src/main/java/com/stevesun/solutions/PlusOne.java)|O(n)|O(1)|Easy|
 |65|[Valid Number](https://leetcode.com/problems/valid-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/_65.java)|O(n)|O(1)|Hard|
 |64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/MinimumPathSum.java)|O(m*n)|O(m*n)|Medium| DP

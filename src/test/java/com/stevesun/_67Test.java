@@ -1,6 +1,6 @@
 package com.stevesun;
 
-import com.stevesun.solutions.AddBinary;
+import com.stevesun.solutions._67;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -10,8 +10,8 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by stevesun on 1/8/17.
  */
-public class AddBinaryTest {
-    private static AddBinary test;
+public class _67Test {
+    private static _67 test;
     private static String expected;
     private static String actual;
     private static String a;
@@ -19,7 +19,7 @@ public class AddBinaryTest {
 
     @BeforeClass
     public static void setup(){
-        test = new AddBinary();
+        test = new _67();
         expected = new String();
         actual = new String();
         a = new String();
