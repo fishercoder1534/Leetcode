@@ -12,7 +12,7 @@ package com.stevesun.solutions;
 
  Note: The input will be in range of [-1e7, 1e7].
  */
-public class Base7 {
+public class _504 {
 
     public String convertToBase7(int num) {
         return String.valueOf(Integer.toString(num, 7));

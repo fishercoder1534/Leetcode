@@ -1,6 +1,6 @@
 package com.stevesun;
 
-import com.stevesun.solutions.Base7;
+import com.stevesun.solutions._504;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,15 +10,15 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by stevesun on 1/15/17.
  */
-public class Base7Test {
-    private static Base7 test;
+public class _504Test {
+    private static _504 test;
     private static String expected;
     private static String actual;
     private static int num;
 
     @BeforeClass
     public static void setup(){
-        test = new Base7();
+        test = new _504();
     }
 
     @Before
