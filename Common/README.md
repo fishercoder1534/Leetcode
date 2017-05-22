@@ -1,1 +1,0 @@
-This is a utilities package: including some commonly used classes/methods for solutions on Leetcode.
