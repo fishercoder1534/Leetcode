@@ -21,6 +21,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |594|[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/)|[Solution](../master/src/main/java/com/stevesun/solutions/_594.java) | O(n) |O(n) | Easy | Array, HashMap
+|593|[Valid Square](https://leetcode.com/problems/valid-square/)|[Solution](../master/src/main/java/com/stevesun/solutions/_593.java) | O(1) |O(1) | Medium | Math
 |583|[Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)|[Solution](../master/src/main/java/com/stevesun/solutions/_583.java) | O(m*n) |O(m*n) could be optimized to O(n) | Medium | DP
 |582|[Kill Process](https://leetcode.com/problems/kill-process/)|[Solution](../master/src/main/java/com/stevesun/solutions/_582.java) | O(n) |O(h) | Medium | Stack
 |581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)|[Solution](../master/src/main/java/com/stevesun/solutions/_581.java) | O(n) |O(1) | Easy | Array, Sort
