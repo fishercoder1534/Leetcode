@@ -322,7 +322,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/LinkedListCycleII.java)| O(n)|O(1) | Medium| Linked List
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|[Solution](../master/src/main/java/com/stevesun/solutions/_141.java)| O(n)|O(1) | Easy| Linked List
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_140.java)| ? |O(n^2) | Hard| Backtracking/DFS
-|139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](../master/src/main/java/com/stevesun/solutions/WordBreak.java)| O(n^2)|O(n) | Medium| DP
+|139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](../master/src/main/java/com/stevesun/solutions/_139.java)| O(n^2)|O(n) | Medium| DP
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|[Solution](../master/src/main/java/com/stevesun/solutions/_138.java)| O(n)|O(n) | Medium| LinkedList, HashMap 
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/SingleNumberII.java)| O(n)|O(n) | Medium|
 |135|[Candy](https://leetcode.com/problems/candy/)|[Solution](../master/src/main/java/com/stevesun/solutions/Candy.java)| O(n)|O(1) | Hard| Greedy

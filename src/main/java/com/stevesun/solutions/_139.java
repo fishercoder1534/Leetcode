@@ -12,7 +12,7 @@ import java.util.Set;
 
  UPDATE (2017/1/4):
  The wordDict parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.*/
-public class WordBreak {
+public class _139 {
 
     //Jiuzhang gives a very good illustration for this problem!
 
