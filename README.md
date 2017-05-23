@@ -248,7 +248,8 @@ Your ideas/fixes/algorithms are more than welcome!
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/StrobogrammaticNumber.java) | O(n) | O(1) | Easy 
 |245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ShortestWordDistanceIII.java) | O(n) | O(1) | Medium | 
 |244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ShortestWordDistanceII.java) | O(n) | O(n) | Medium | HashMap
-|243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../master/src/main/java/com/stevesun/solutions/ShortestWordDistance.java) | O(n) | O(1) | 
+|243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../master/src/main/java/com/stevesun/solutions/ShortestWordDistance.java) | O(n) | O(1) | Easy
+|242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[Solution](../master/src/main/java/com/stevesun/solutions/_242.java) | O(n) | O(1) | Easy
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/Searcha2DMatrixII.java)| O(log(m*n))|O(1) | Medium| Binary Search
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|[Solution](../master/src/main/java/com/stevesun/solutions/SlidingWindowMaximum.java)| O(nlogn)|O(k) | Hard| Heap
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[Solution](../master/src/main/java/com/stevesun/solutions/_238.java)| O(n)|O(1) | Medium| Array

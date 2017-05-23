@@ -14,7 +14,7 @@ import java.util.Arrays;
  Follow up:
  What if the inputs contain unicode characters? How would you adapt your solution to such case?*/
 
-public class ValidAnagram {
+public class _242 {
     public boolean isAnagram_solution1(String s, String t) {
         char[] schar = s.toCharArray();
         char[] tchar = t.toCharArray();
