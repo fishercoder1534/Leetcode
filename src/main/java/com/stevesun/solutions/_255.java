@@ -10,7 +10,7 @@ import java.util.Stack;
  Follow up:
  Could you do it using only constant space complexity?
  */
-public class VerifyPreorderSequenceinBinarySearchTree {
+public class _255 {
 
     public boolean verifyPreorder(int[] preorder) {
         int low = Integer.MIN_VALUE;
