@@ -12,7 +12,7 @@ import java.util.*;
  A solution is ["cats and dog", "cat sand dog"].
 
  */
-public class WordBreakII {
+public class _140 {
     public List<String> wordBreak(String s, Set<String> wordDict) {
         return dfs(s, wordDict, new HashMap<String, ArrayList<String>>());
     }
@@ -48,7 +48,7 @@ public class WordBreakII {
         temp2.add("");
         System.out.println(temp2);
 
-        WordBreakII test = new WordBreakII();
+        _140 test = new _140();
         Set<String> wordDict = new HashSet();
         wordDict.add("cat");
         wordDict.add("cats");
