@@ -19,7 +19,7 @@ package com.stevesun.solutions;
  Input: "zab"
  Output: 6
  Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string "zab" in the string s.*/
-public class UniqueSubstringsinWraparoundString {
+public class _467 {
     /**A naive solution would definitely result in TLE.
      * Since the pattern keeps repeating, DP is the way to go.
      * Because the input consists merely of lowercase English letters, we could maintain an array of size 26,

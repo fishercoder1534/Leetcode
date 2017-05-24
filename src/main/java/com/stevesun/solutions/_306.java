@@ -18,7 +18,7 @@ package com.stevesun.solutions;
  Follow up:
  How would you handle overflow for very large input integers?
  */
-public class AdditiveNumber {
+public class _306 {
 
     public boolean isAdditiveNumber(String num) {
         if (num == null || num.length() < 3) {

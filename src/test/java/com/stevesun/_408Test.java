@@ -1,6 +1,6 @@
 package com.stevesun;
 
-import com.stevesun.solutions.ValidWordAbbreviation;
+import com.stevesun.solutions._408;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,8 +10,8 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by stevesun on 1/21/17.
  */
-public class ValidWordAbbreviationTest {
-    private static ValidWordAbbreviation test;
+public class _408Test {
+    private static _408 test;
     private static Boolean expected;
     private static Boolean actual;
     private static String word;
@@ -19,7 +19,7 @@ public class ValidWordAbbreviationTest {
 
     @BeforeClass
     public static void setup(){
-        test = new ValidWordAbbreviation();
+        test = new _408();
     }
 
     @Before

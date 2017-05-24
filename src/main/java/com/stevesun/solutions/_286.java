@@ -23,7 +23,7 @@ import java.util.*;
  0  -1   3   4
 
  */
-public class WallsAndGates {
+public class _286 {
     class BFS_solution_without_queue{
 
         int[] dirs = new int[]{0,1,0,-1,0};

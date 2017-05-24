@@ -20,7 +20,7 @@ package com.stevesun.solutions;
 
  Return false.
  */
-public class ValidWordAbbreviation {
+public class _408 {
 
     public boolean validWordAbbreviation(String word, String abbr) {
         if (abbr.length() > word.length()) return false;

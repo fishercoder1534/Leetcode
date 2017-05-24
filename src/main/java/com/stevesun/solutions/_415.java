@@ -10,7 +10,7 @@ package com.stevesun.solutions;
  Both num1 and num2 does not contain any leading zero.
  You must not use any built-in BigInteger library or convert the inputs to integer directly.
  */
-public class AddStrings {
+public class _415 {
 
     public static String addStrings(String num1, String num2) {
         if (num1 == null || num1.length() == 0) return num2;

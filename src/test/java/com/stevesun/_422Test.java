@@ -1,6 +1,6 @@
 package com.stevesun;
 
-import com.stevesun.solutions.ValidWordSquare;
+import com.stevesun.solutions._422;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -11,15 +11,15 @@ import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 
-public class ValidWordSquareTest {
-    private static ValidWordSquare test;
+public class _422Test {
+    private static _422 test;
     private static boolean expected;
     private static boolean actual;
     private static List<String> words;
 
     @BeforeClass
     public static void setup(){
-        test = new ValidWordSquare();
+        test = new _422();
     }
 
     @Before

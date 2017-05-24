@@ -89,7 +89,8 @@ Your ideas/fixes/algorithms are more than welcome!
 |475|[Heaters](https://leetcode.com/problems/heaters/)|[Solution](../master/src/main/java/com/stevesun/solutions/_475.java) | max(O(nlogn), O(mlogn)) - m is the length of houses, n is the length of heaters |O(1) | Easy | Array Binary Search
 |474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/)|[Solution](../master/src/main/java/com/stevesun/solutions/OnesandZeroes.java) | O(n) |O(m*n) | Medium| DP
 |472|[Concatenated Words](https://leetcode.com/problems/concatenated-words/)|[Solution](../master/src/main/java/com/stevesun/solutions/ConcatenatedWords.java) | O(n^2) |O(n) | Hard| Trie, DP, DFS
-|467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/UniqueSubstringsinWraparoundString.java) | O(n) |O(1) | Medium| DP
+|468|[Validate IP Address](https://leetcode.com/problems/validate-ip-address/)|[Solution](../master/src/main/java/com/stevesun/solutions/_468.java) | O(n^2) |O(n) | Hard| Trie, DP, DFS
+|467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/_467.java) | O(n) |O(1) | Medium| DP
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[Solution](../master/src/main/java/com/stevesun/solutions/IslandPerimeter.java)| O(m*n)|O(1) | Easy| 
 |462|[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/MinimumMovestoEqualArrayElementsII.java) | O(nlogn) |O(1) | Medium|
 |461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[Solution](../master/src/main/java/com/stevesun/solutions/HammingDistance.java) | O(n) |O(1) | Easy|
@@ -115,16 +116,16 @@ Your ideas/fixes/algorithms are more than welcome!
 |434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberofSegmentsinaString.java)| O(n)|O(1) | Easy|
 |424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)|[Solution](../master/src/main/java/com/stevesun/solutions/_424.java)| O(n) | O(1) | Medium| Sliding Window
 |423|[Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english/)|[Solution](../master/src/main/java/com/stevesun/solutions/_423.java)| O(n) | O(1) | Medium| Math
-|422|[Valid Word Square](https://leetcode.com/problems/valid-word-square/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidWordSquare.java)| O(n) | O(1) | Easy|
+|422|[Valid Word Square](https://leetcode.com/problems/valid-word-square/)|[Solution](../master/src/main/java/com/stevesun/solutions/_422.java)| O(n) | O(1) | Easy|
 |421|[Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_421.java)| O(n) | O(1) | Medium | Bit Manipulation, Trie
 |420|[Strong Password Checker](https://leetcode.com/problems/strong-password-checker/)|[Solution](../master/src/main/java/com/stevesun/solutions/StrongPasswordChecker.java)| ? | ? | Hard| 
 |419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/)|[Solution](../master/src/main/java/com/stevesun/solutions/_419.java) | O(m*n) |O(1) | Medium| DFS
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](../master/src/main/java/com/stevesun/solutions/PacificAtlanticWaterFlow.java) | O(m*n*Max(m,n)) |O(m*n) | Medium| DFS
-|415|[Add Strings](https://leetcode.com/problems/add-strings/)|[Solution](../master/src/main/java/com/stevesun/solutions/AddStrings.java)| O(n)|O(1) | Easy|
+|415|[Add Strings](https://leetcode.com/problems/add-strings/)|[Solution](../master/src/main/java/com/stevesun/solutions/_415.java)| O(n)|O(1) | Easy|
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/ThirdMaximumNumber.java)| O(n)|O(1) | Easy|
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)|[Solution](../master/src/main/java/com/stevesun/solutions/ArithmeticSlices.java) | O(n) |O(1) | Medium| DP
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|[Solution](../master/src/main/java/com/stevesun/solutions/FizzBuzz.java)| O(n)|O(1) | Easy|
-|408|[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidWordAbbreviation.java)| O(n)|O(1) | Easy|
+|408|[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/)|[Solution](../master/src/main/java/com/stevesun/solutions/_408.java)| O(n)|O(1) | Easy|
 |405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)|[Solution](../master/src/main/java/com/stevesun/solutions/_405.java)| O(n)|O(1) | Easy|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../master/src/main/java/com/stevesun/solutions/SumofLeftLeaves.java)| O(n)|O(h) | Easy|
 |401|[Binary Watch](https://leetcode.com/problems/binary-watch/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryWatch.java)| O(1)|O(1) | Easy|
@@ -148,7 +149,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |371|[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)|[Solution](../master/src/main/java/com/stevesun/solutions/SumofTwoIntegers.java)| O(n)|O(1) | Easy| 
 |370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../master/src/main/java/com/stevesun/solutions/RangeAddition.java)| O(n+k)|O(1) | Medium| 
 |369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/)|[Solution](../master/src/main/java/com/stevesun/solutions/_369.java)| O(n)|O(1) | Medium| Linked List
-|367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidPerfectSquare.java)| O(n)|O(1) | Medium| 
+|367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[Solution](../master/src/main/java/com/stevesun/solutions/_367.java)| O(n)|O(1) | Medium| 
 |366|[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindLeavesofBinaryTree.java)| O(n)|O(h) | Medium| DFS
 |365|[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/)|[Solution](../master/src/main/java/com/stevesun/solutions/_365.java)| O(n)|O(1) | Medium| Math
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/NestedListWeightSumII.java)| O(n)|O(h) | Medium| DFS
@@ -190,7 +191,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-cooldown/)|[Solution](../master/src/main/java/com/stevesun/solutions/BestTimeToBuyAndSellStockWithCooldown.java)| O(n)|O(1) | Medium| DP
 |308|[Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/)|[Solution](../master/src/main/java/com/stevesun/solutions/RangeSumQuery2DMutable.java)| ? | ? | Hard| Tree
 |307|[Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)|[Solution](../master/src/main/java/com/stevesun/solutions/RangeSumQueryMutable.java)| ? | ? | Medium| Tree
-|306|[Additive Number](https://leetcode.com/problems/additive-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/AdditiveNumber.java)| ? | ? | Medium|
+|306|[Additive Number](https://leetcode.com/problems/additive-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/_306.java)| O(n^2) | O(n) | Medium|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberofIslandsII.java)| ? | ? | Hard| Union Find
 |304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)|[Solution](../master/src/main/java/com/stevesun/solutions/RangeSumQuery2DImmutable.java)| ? | ? |Medium| 
 |303|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)|[Solution](../master/src/main/java/com/stevesun/solutions/RangeSumQueryImmutable.java)| O(n) | O(1) |Easy|
@@ -208,9 +209,9 @@ Your ideas/fixes/algorithms are more than welcome!
 |291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_291.java)| O(n)|O(n) | Hard|
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../master/src/main/java/com/stevesun/solutions/_290.java)| O(n)|O(n) | Easy| 
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../master/src/main/java/com/stevesun/solutions/GameOfLife.java)| O(m*n)|O(m*n), could be optimized to O(1) | Medium|
-|288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/)|[Solution](../master/src/main/java/com/stevesun/solutions/UniqueWordAbbreviation.java)| O(n)|O(1) | Easy| 
+|288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/)|[Solution](../master/src/main/java/com/stevesun/solutions/_288.java)| O(n)|O(1) | Easy| 
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindtheDuplicateNumber.java)| O(n)|O(1) | Medium| 
-|286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](../master/src/main/java/com/stevesun/solutions/WallsAndGates.java)| O(m*n)|O(g) | Medium| BFS
+|286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](../master/src/main/java/com/stevesun/solutions/_286.java)| O(m*n)|O(g) | Medium| BFS
 |285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](../master/src/main/java/com/stevesun/solutions/_285.java)| O(h)|O(1) | Medium| Tree
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)|[Solution](../master/src/main/java/com/stevesun/solutions/_284.java)| O(n)|O(n) | Medium| Design
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../master/src/main/java/com/stevesun/solutions/MoveZeroes.java)| O(n)|O(1) | Easy| 
@@ -273,7 +274,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_215.java)| O(nlogn)|O(n) | Medium| Heap
 |213|[House Robber II](https://leetcode.com/problems/house-robber-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_213.java)| O(n)|O(n)| Medium | DP
 |212|[Word Search II](https://leetcode.com/problems/word-search-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/WordSearchII.java)| O(m*n*l)|O(l) | Hard | Trie
-|211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[Solution](../master/src/main/java/com/stevesun/solutions/AddAndSearchWord_DataStructureDesign.java)| O(n)|O(h) | Medium| Trie
+|211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[Solution](../master/src/main/java/com/stevesun/solutions/_211.java)| O(n)|O(h) | Medium| Trie
 |210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/CourseScheduleII.java)| O(?)|O(?) | Medium|
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
 |208|[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/_208.java)| O(n)|O(1) | Medium| Trie
@@ -407,7 +408,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/CombinationSum.java)|O(k*n^k)|O(k)|Medium|Backtracking
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../master/src/main/java/com/stevesun/solutions/CountandSay.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
 |37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|[Solution](../master/src/main/java/com/stevesun/solutions/SudokuSolver.java)|O((9!)^9)|O(1)|Hard|
-|36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|[Solution](../master/src/main/java/com/stevesun/solutions/ValidSudoku.java)|O(?)|O(?)|Medium| 
+|36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|[Solution](../master/src/main/java/com/stevesun/solutions/_36.java)|O(1)|O(1)|Medium| 
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[Solution](../master/src/main/java/com/stevesun/solutions/SearchInsertPosition.java)|O(n)|O(1)|Medium|Array
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../master/src/main/java/com/stevesun/solutions/SearchForARange.java)|O(logn)|O(1)|Medium|Array, Binary Search
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](../master/src/main/java/com/stevesun/solutions/_33.java)|O(logn)|O(1)|Medium|Binary Search

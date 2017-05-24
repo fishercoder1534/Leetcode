@@ -1,6 +1,6 @@
 package com.stevesun;
 
-import com.stevesun.solutions.AddStrings;
+import com.stevesun.solutions._415;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,8 +10,8 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by stevesun on 1/8/17.
  */
-public class AddStringsTest {
-    private static AddStrings test;
+public class _415Test {
+    private static _415 test;
     private static String expected;
     private static String actual;
     private static String num1;
@@ -19,7 +19,7 @@ public class AddStringsTest {
 
     @BeforeClass
     public static void setup() {
-        test = new AddStrings();
+        test = new _415();
         expected = new String();
         actual = new String();
         num1 = new String();

@@ -21,7 +21,7 @@ package com.stevesun.solutions;
 
  You should be familiar with how a Trie works. If not, please work on this problem: Implement Trie (Prefix Tree) first.
  */
-public class AddAndSearchWord_DataStructureDesign {
+public class _211 {
     public class WordDictionary {
         WordNode root = new WordNode();
 

@@ -14,7 +14,7 @@ package com.stevesun.solutions;
  Input: 14
  Returns: False
  */
-public class ValidPerfectSquare {
+public class _367 {
 
 	public boolean isPerfectSquare(int num) {
 		long i = 1, temp = 1;

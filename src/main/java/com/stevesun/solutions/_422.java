@@ -69,7 +69,7 @@ import java.util.List;
 
  Therefore, it is NOT a valid word square.
  */
-public class ValidWordSquare {
+public class _422 {
 
     public boolean validWordSquare(List<String> words) {
         for (int i = 0; i < words.size(); i++) {

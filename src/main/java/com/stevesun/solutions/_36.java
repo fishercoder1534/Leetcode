@@ -9,7 +9,7 @@ package com.stevesun.solutions;
 
  Note:
  A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.*/
-public class ValidSudoku {
+public class _36 {
 
     // this is my original solution, pretty straightforward, but lengthy, there's a very concise
     // version: https://discuss.leetcode.com/topic/9748/shared-my-concise-java-code, it uses
@@ -85,7 +85,7 @@ public class ValidSudoku {
     }
 
     public static void main(String... strings) {
-        ValidSudoku test = new ValidSudoku();
+        _36 test = new _36();
         // char[][] board = new char[][]{
         // {'4', '3', '5', '2', '6', '9', '7', '8', '1'},
         // {'6', '8', '2', '5', '7', '1', '4', '9', '3'},

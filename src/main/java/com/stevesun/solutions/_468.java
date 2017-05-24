@@ -40,7 +40,7 @@ package com.stevesun.solutions;
  Explanation: This is neither a IPv4 address nor a IPv6 address.
 
  */
-public class ValidateIPAddress {
+public class _468 {
 
     public String validIPAddress(String IP) {
         String[] bytes = IP.split(".");

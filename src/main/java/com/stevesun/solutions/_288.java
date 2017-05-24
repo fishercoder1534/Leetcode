@@ -37,7 +37,7 @@ import java.util.Set;
  isUnique("make") ->
  true
  */
-public class UniqueWordAbbreviation {
+public class _288 {
 
     private class ValidWordAbbr {
         private Map<String, String> dict;
