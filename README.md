@@ -78,6 +78,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |500|[Keyboard Row](https://leetcode.com/problems/keyboard-row/)|[Solution](../master/src/main/java/com/stevesun/solutions/KeyboardRow.java) | O(n) |O(1) | Easy|
 |499|[The Maze III](https://leetcode.com/problems/the-maze-iii/)|[Solution](../master/src/main/java/com/stevesun/solutions/TheMazeIII.java) | O(m*n) |O(m*n) | Hard| BFS
 |496|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)|[Solution](../master/src/main/java/com/stevesun/solutions/NextGreaterElementI.java) | O(n*m) |O(1) | Easy|
+|498|[Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/)|[Solution](../master/src/main/java/com/stevesun/solutions/_498.java) | O(m*n) |O(1) | Medium| 
 |495|[Teemo Attacking](https://leetcode.com/problems/teemo-attacking/)|[Solution](../master/src/main/java/com/stevesun/solutions/_495.java) | O(n) |O(1) | Medium| Array
 |494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/TargetSum.java) | O(2^n) |O(1) | Medium| 
 |492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[Solution](../master/src/main/java/com/stevesun/solutions/ConstructTheRectangle.java) | O(n) |O(1) | Easy| Array
