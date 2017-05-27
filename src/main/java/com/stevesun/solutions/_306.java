@@ -19,36 +19,30 @@ package com.stevesun.solutions;
  How would you handle overflow for very large input integers?
  */
 public class _306 {
-
+    /**Credit: https://discuss.leetcode.com/topic/29856/java-recursive-and-iterative-solutions/2*/
     public boolean isAdditiveNumber(String num) {
-        if (num == null || num.length() < 3) {
-            return false;
-        }
-        int len = num.length();
-        for (int i = 1; i < len; i++) {
-            for (int j = i + 1; j < len; j++) {
-                int first = 0, second = i, third = j;
-                if (num.charAt(second) == '0' && third > second + 1){
-                    break;// This is the pruning part, for each iteration, if this condition
-                    // meets, returns false immediately
-                }
-                while (third < len) {
-                    Long result = Long.parseLong(num.substring(first, second))
-                            + Long.parseLong(num.substring(second, third));
-                    if (num.substring(third).startsWith((result.toString()))) {
-                        first = second;
-                        second = third;
-                        third += result.toString().length();
-                    } else {
-                        break;// This is another part of pruning! Cool!
-                    }
-                }
-                if(third == len){
-                    return true;
-                }
+        int n = num.length();
+        for (int i = 1; i <= n / 2; ++i) {
+            for (int j = 1; Math.max(j, i) <= n - i - j; ++j) {
+                if (isValid(i, j, num)) return true;
             }
         }
         return false;
+    }
+
+    private boolean isValid(int i, int j, String num) {
+        if (num.charAt(0) == '0' && i > 1) return false;
+        if (num.charAt(i) == '0' && j > 1) return false;
+        String sum;
+        Long x1 = Long.parseLong(num.substring(0, i));
+        Long x2 = Long.parseLong(num.substring(i, i + j));
+        for (int start = i + j; start != num.length(); start += sum.length()) {
+            x2 = x2 + x1;
+            x1 = x2 - x1;
+            sum = x2.toString();
+            if (!num.startsWith(sum, start)) return false;
+        }
+        return true;
     }
 
 }
