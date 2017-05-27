@@ -22,7 +22,7 @@ import java.util.*;
  addNum(3)
  findMedian() -> 2
  */
-public class FindMedianFromDataStream {
+public class _295 {
 }
 
 class MedianFinder {
