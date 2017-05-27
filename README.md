@@ -403,6 +403,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/_54.java)|O(m*n)|O(m*n)|Medium| Array
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../master/src/main/java/com/stevesun/solutions/_53.java)|O(n)|O(1)|Easy|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Solution](../master/src/main/java/com/stevesun/solutions/PowXN.java)|O(logn)|O(logn)|Medium|
+|49|[Group Anagrams](https://leetcode.com/problems/anagrams/)|[Solution](../master/src/main/java/com/stevesun/solutions/_49.java)|O(m*logn)|O(m*n)|Medium| HashMap
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image/)|[Solution](../master/src/main/java/com/stevesun/solutions/_48.java)|O(n^2)|O(1)|Medium|Array
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_47.java)|O(n*n!)|O(n)|Medium|Backtracking
 |46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](../master/src/main/java/com/stevesun/solutions/_46.java)|O(n*n!)|O(n)|Medium|Backtracking
