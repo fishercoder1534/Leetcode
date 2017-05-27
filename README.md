@@ -200,7 +200,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |302|[Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/)|[Solution](../master/src/main/java/com/stevesun/solutions/SmallestRectangleEnclosingBlackPixels.java)| ? | O(m*n) | Hard| DFS, BFS
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](../master/src/main/java/com/stevesun/solutions/RemoveInvalidParentheses.java)| ? | ? | Hard| BFS
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|[Solution](../master/src/main/java/com/stevesun/solutions/_300.java)| O(logn)|O(n) | Medium| DP
-|299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|[Solution](../master/src/main/java/com/stevesun/solutions/BullsandCows.java)| O(n)|O(1) | Easy| 
+|299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|[Solution](../master/src/main/java/com/stevesun/solutions/_299.java)| O(n)|O(1) | Easy| 
 |298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[Solution](../master/src/main/java/com/stevesun/solutions/BinaryTreeLongestConsecutiveSequence.java)| O(n)|O(n) | Medium | Tree
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/_297.java)| O(n) | O(h) | Hard| BFS
 |296|[Best Meeting Point](https://leetcode.com/problems/best-meeting-point/)|[Solution](../master/src/main/java/com/stevesun/solutions/BestMeetingPoint.java)| ?|? | Hard|
