@@ -26,15 +26,16 @@ public class _295 {
 }
 
 class MedianFinder {
-    //Thanks to Stefan's post: https://discuss.leetcode.com/topic/27521/short-simple-java-c-python-o-log-n-o-1
     /**
+     * credit: https://discuss.leetcode.com/topic/27521/short-simple-java-c-python-o-log-n-o-1
+     *
      * The idea is for sure to use two heaps, one is max heap, one is min heap, we always let the max heap be one element
      * bigger than min heap if the total number of elements is not even.
      * we could always get the median in O(1) time.
      * 1. use Long type to avoid overflow
      * 2. negate the numbers for small heap to save the effort for writing a reverse comparator, brilliant!*/
-    private Queue<Long> large = new PriorityQueue<Long>();
-    private Queue<Long> small = new PriorityQueue<Long>();
+    private Queue<Long> large = new PriorityQueue<>();
+    private Queue<Long> small = new PriorityQueue<>();
 
     // Adds a number into the data structure.
     public void addNum(int num) {
