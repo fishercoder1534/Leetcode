@@ -70,6 +70,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |522|[Longest Uncommon Subsequence II](https://leetcode.com/problems/longest-uncommon-subsequence-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/LongestUncommonSubsequenceII.java) | O(x*n^2) (x is average length of strings)|O(1) | Medium|
 |521|[Longest Uncommon Subsequence I](https://leetcode.com/problems/longest-uncommon-subsequence-i/)|[Solution](../master/src/main/java/com/stevesun/solutions/LongestUncommonSubsequenceI.java) | O(max(x,y)) (x and y are length of strings) |O(1) | Easy|
 |520|[Detect Capital](https://leetcode.com/problems/detect-capital/)|[Solution](../master/src/main/java/com/stevesun/solutions/DetectCapital.java) | O(n) |O(1) | Easy| 
+|516|[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)|[Solution](../master/src/main/java/com/stevesun/solutions/_516.java) | O(n^2) |O(n^2) | Medium| DP
 |515|[Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)|[Solution](../master/src/main/java/com/stevesun/solutions/FindLargestValueinEachTreeRow.java) | O(n) |O(k) | Medium| BFS
 |513|[Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)|[Solution](../master/src/main/java/com/stevesun/solutions/_513.java) | O(n) |O(k) | Medium| BFS
 |508|[Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/MostFrequentSubtreeSum.java) | O(n) |O(n) | Medium| DFS, Tree
