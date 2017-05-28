@@ -33,6 +33,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/_572.java) | O(m*n) |O(1) | Easy | Tree
 |567|[Permutation in String](https://leetcode.com/problems/permutation-in-string/)|[Solution](../master/src/main/java/com/stevesun/solutions/_567.java) | O(max(m,n)) |O(1) | Medium | Sliding Windows, Two Pointers
 |566|[Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/_566.java) | O(m*n) |O(1) | Easy | 
+|565|[Array Nesting](https://leetcode.com/problems/array-nesting/)|[Solution](../master/src/main/java/com/stevesun/solutions/_565.java) | O(n) |O(n) | Medium | 
 |563|[Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/)|[Solution](../master/src/main/java/com/stevesun/solutions/_563.java) | O(n) |O(n) | Easy | Tree Recursion
 |562|[Longest Line of Consecutive One in Matrix](https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/_562.java) | O(m*n) |O(m*n) | Medium | Matrix DP
 |561|[Array Partition I](https://leetcode.com/problems/array-partition-i/)|[Solution](../master/src/main/java/com/stevesun/solutions/_561.java) | O(nlogn) |O(1) | Easy | Array
