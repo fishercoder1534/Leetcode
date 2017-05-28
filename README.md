@@ -413,6 +413,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_47.java)|O(n*n!)|O(n)|Medium|Backtracking
 |46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](../master/src/main/java/com/stevesun/solutions/_46.java)|O(n*n!)|O(n)|Medium|Backtracking
 |45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/JumpGameII.java)|O(?)|O(?)|Hard|
+|43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution](../master/src/main/java/com/stevesun/solutions/_43.java)|O(n)|O(1)|Medium| Array, String
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[Solution](../master/src/main/java/com/stevesun/solutions/TrappingRainWater.java)|O(n)|O(1)|Hard|
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](../master/src/main/java/com/stevesun/solutions/FirstMissingPositive.java)|O(n)|O(1)|Hard|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/CombinationSumII.java)|O(k*n^k)|O(k)|Medium|Backtracking
