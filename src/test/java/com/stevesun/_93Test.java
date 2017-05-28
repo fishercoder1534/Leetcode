@@ -1,6 +1,6 @@
 package com.stevesun;
 
-import com.stevesun.solutions.RestoreIPAddresses;
+import com.stevesun.solutions._93;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,15 +10,15 @@ import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 
-public class RestoreIPAddressesTest {
-    private static RestoreIPAddresses test;
+public class _93Test {
+    private static _93 test;
     private static List<String> expected;
     private static List<String> actual;
     private static String s;
 
     @BeforeClass
     public static void setup(){
-        test = new RestoreIPAddresses();
+        test = new _93();
     }
 
     @Before

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 93. Restore IP Addresses
+ *
  * Given a string containing only digits, restore it by returning all possible valid IP address combinations.
 
  For example:
@@ -11,7 +13,7 @@ import java.util.List;
 
  return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
  */
-public class RestoreIPAddresses {
+public class _93 {
 
     public List<String> restoreIpAddresses(String s) {
         List<String> allValidIpAddresses = new ArrayList<>();
@@ -47,6 +49,5 @@ public class RestoreIPAddresses {
         int num = Integer.valueOf(oneByte);
         return (num >= 0 && num < 256);
     }
-
 
 }
