@@ -261,6 +261,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/ShortestWordDistanceII.java) | O(n) | O(n) | Medium | HashMap
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../master/src/main/java/com/stevesun/solutions/ShortestWordDistance.java) | O(n) | O(1) | Easy
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[Solution](../master/src/main/java/com/stevesun/solutions/_242.java) | O(n) | O(1) | Easy
+|241|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[Solution](../master/src/main/java/com/stevesun/solutions/_241.java) | O(O(n * 4^n / n^(3/2))) | O(n * 4^n / n^(3/2)) | Medium | Divide and Conquer
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/Searcha2DMatrixII.java)| O(log(m*n))|O(1) | Medium| Binary Search
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|[Solution](../master/src/main/java/com/stevesun/solutions/SlidingWindowMaximum.java)| O(nlogn)|O(k) | Hard| Heap
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[Solution](../master/src/main/java/com/stevesun/solutions/_238.java)| O(n)|O(1) | Medium| Array
