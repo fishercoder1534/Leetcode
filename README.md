@@ -310,6 +310,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)|[Solution](../master/src/main/java/com/stevesun/solutions/MajorityElement.java)| O(n)|O(1) | Easy|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/)|[Solution](../master/src/main/java/com/stevesun/solutions/_168.java)| O(n)|O(1) | Easy|
 |167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Solution](../master/src/main/java/com/stevesun/solutions/_167.java)| O(logn)|O(1) | Easy|
+|166|[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/)|[Solution](../master/src/main/java/com/stevesun/solutions/_166.java) | O(1) |O(1) | Medium| HashMap
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|[Solution](../master/src/main/java/com/stevesun/solutions/_165.java)| O(n)|O(1) | Easy|
 |164|[Maximum Gap](https://leetcode.com/problems/maximum-gap/)|[Solution](../master/src/main/java/com/stevesun/solutions/MaximumGap.java) | O(n) |O(n) | Hard|
 |163|[Missing Ranges](https://leetcode.com/problems/missing-ranges/)|[Solution](../master/src/main/java/com/stevesun/solutions/MissingRanges.java) | O(n) |O(1) | |
