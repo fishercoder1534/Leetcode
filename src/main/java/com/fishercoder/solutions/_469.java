@@ -29,6 +29,7 @@ import java.util.List;
  */
 public class _469 {
 
+    /**credit: https://discuss.leetcode.com/topic/70706/beyond-my-knowledge-java-solution-with-in-line-explanation*/
     public boolean isConvex(List<List<Integer>> points) {
         // For each set of three adjacent points A, B, C, find the cross product AB · BC. If the sign of
         // all the cross products is the same, the angles are all positive or negative (depending on the
