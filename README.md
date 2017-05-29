@@ -188,6 +188,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/LongestIncreasingPathInAMatrix.java)| O(?)|O(?) | Hard|
 |327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/CountOfRangeSum.java)| O(?)|O(?) | Hard|
 |325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution] | O(n)|O(n) | Medium| HashMap
+|324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/)|[Solution](../master/src/main/java/com/stevesun/solutions/_324.java)| O(n)|O(n) | Medium| Sort
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)|[Solution](../master/src/main/java/com/stevesun/solutions/NumberOfConnectedComponentsInAnUndirectedGraph.java)| O(?)|O(?)| Medium|
 |322|[Coin Change](https://leetcode.com/problems/coin-change/)|[Solution](../master/src/main/java/com/stevesun/solutions/CoinChange.java)| O(?)|O(?) | Medium|
 |321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)|[Solution](../master/src/main/java/com/stevesun/solutions/CreateMaximumNumber.java)| O(?)|O(?) | Hard
