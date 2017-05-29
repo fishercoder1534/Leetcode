@@ -19,6 +19,7 @@ import java.util.*;
  */
 public class _227 {
 
+    /**Credit: https://discuss.leetcode.com/topic/16935/share-my-java-solution*/
     public int calculate(String s) {
         if (s == null || s.length() == 0) return 0;
         int len = s.length();
