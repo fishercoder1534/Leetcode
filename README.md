@@ -99,6 +99,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |475|[Heaters](https://leetcode.com/problems/heaters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_475.java) | max(O(nlogn), O(mlogn)) - m is the length of houses, n is the length of heaters |O(1) | Easy | Array Binary Search
 |474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_474.java) | O(n) |O(m*n) | Medium| DP
 |472|[Concatenated Words](https://leetcode.com/problems/concatenated-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ConcatenatedWords.java) | O(n^2) |O(n) | Hard| Trie, DP, DFS
+|469|[Convex Polygon](https://leetcode.com/problems/convex-polygon/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_469.java) | O(n) |O(1) | Medium| Math
 |468|[Validate IP Address](https://leetcode.com/problems/validate-ip-address/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_468.java) | O(n^2) |O(n) | Hard| Trie, DP, DFS
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_467.java) | O(n) |O(1) | Medium| DP
 |464|[Can I Win](https://leetcode.com/problems/can-i-win/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_464.java)| O(2^n)|O(n) | Medium| DP
