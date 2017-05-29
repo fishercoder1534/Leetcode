@@ -184,6 +184,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)|[Solution](../master/src/main/java/com/stevesun/solutions/PalindromePairs.java)| O(n^2)|O(n) | Hard|
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Solution](../master/src/main/java/com/stevesun/solutions/IncreasingTripletSubsequence.java)| O(n^2)|O(1) | Medium|
 |333|[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree/)|[Solution](../master/src/main/java/com/stevesun/solutions/_333.java)| O(n)|O(n) | Medium| Tree 
+|331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)|[Solution](../master/src/main/java/com/stevesun/solutions/_331.java)| O(n)|O(n) | Medium| Stack
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)|[Solution](../master/src/main/java/com/stevesun/solutions/LongestIncreasingPathInAMatrix.java)| O(?)|O(?) | Hard|
 |327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)|[Solution](../master/src/main/java/com/stevesun/solutions/CountOfRangeSum.java)| O(?)|O(?) | Hard|
 |325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution] | O(n)|O(n) | Medium| HashMap
