@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * You are playing the following Flip Game with your friend: Given a string that contains only these two characters: + and -, you and your friend take turns to flip two consecutive "++" into "--". The game ends when a person can no longer make a move and therefore the other person will be the winner.
+ * You are playing the following Flip Game with your friend:
+ * Given a string that contains only these two characters: + and -,
+ * you and your friend take turns to flip two consecutive "++" into "--".
+ * The game ends when a person can no longer make a move and therefore the other person will be the winner.
 
  Write a function to determine if the starting player can guarantee a win.
 
@@ -13,7 +16,7 @@ import java.util.List;
  Follow up:
  Derive your algorithm's runtime complexity.
  */
-public class FlipGameII {
+public class _294 {
 
     public boolean canWin(String s) {
         List<String> res = new ArrayList<String>();
@@ -32,8 +35,7 @@ public class FlipGameII {
         /**The above part is the same of Flip Game I.
          * The only added part is the following piece of logic (so-called backtracking.)*/
         for(String str : res){
-            if(!canWin(str))
-                return true;
+            if(!canWin(str)) return true;
         }
         return false;
     }
