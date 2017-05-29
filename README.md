@@ -331,6 +331,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_151.java)| O(n)|O(n) | Medium|
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/EvaluateReversePolishNotation.java)| O(?)|O(?) | Medium
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MaxPointsonaLine.java)| O(?)|O(?) | Hard|
+|148|[Sort List](https://leetcode.com/problems/sort-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_148.java) O(nlogn)|O(h) | Medium| Linked List, Sort
 |147|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/InsertionSortList.java) O(n^2)|O(1) | Medium| Linked List
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/)|[Doubly Linked List](../master/src/main/java/com/fishercoder/solutions/_146_use_DoublyLinkedList_plus_HashMap.java) |[Linked Hash Map](../master/leetcode-algorithms/src/main/java/com/fishercoder/solutions/_146_use_LinkedHashMap.java)| O(?)|O(?) | Hard| Linked List
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/BinaryTreePostOrderTraversal.java)| O(n)|O(h) | Hard| Binary Tree
