@@ -30,7 +30,7 @@ package com.fishercoder.solutions;
  The purely recursive implementation of minimax would be worthless for even a small n. You MUST use dynamic programming.
  As a follow-up, how would you modify your code to solve the problem of minimizing the expected loss, instead of the worst-case loss?
  */
-public class GuessNumberHigherOrLowerII {
+public class _375 {
     public int getMoneyAmount(int n) {
         int[][] table = new int[n+1][n+1];
         return dp(table, 1, n);
