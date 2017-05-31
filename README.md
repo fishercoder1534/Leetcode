@@ -145,6 +145,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SumofLeftLeaves.java)| O(n)|O(h) | Easy|
 |401|[Binary Watch](https://leetcode.com/problems/binary-watch/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_401.java)| O(1)|O(1) | Easy|
 |400|[Nth Digit](https://leetcode.com/problems/nth-digit/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_400.java)| O(n)|O(1) | Easy|
+|399|[Evaluate Division](https://leetcode.com/problems/evaluate-division/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_399.java)| O(n*n!)|O(n) | Medium| Graph, DFS, Backtracking
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/RandomPickIndex.java) | | | Medium| Reservoir Sampling
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/IntegerReplacement.java)| ? | ? | Easy| BFS
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function/)|[Solution](../master/src/main/java/com/fishercoder/solutions/RotateFunction.java)| O(n^2) could be optimized to O(n) | O(1) | Easy|
