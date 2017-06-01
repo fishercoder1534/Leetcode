@@ -2,7 +2,6 @@ package com.fishercoder;
 
 import com.fishercoder.solutions._533;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -29,9 +28,9 @@ public class _533Test {
         assertEquals(6, test.findBlackPixel(picture, 3));
     }
 
-//    @Test
-//    public void test2(){
-//        picture = new char[][]{{'B'}};
-//        assertEquals(1, test.findBlackPixel(picture, 1));
-//    }
+    @Test
+    public void test2(){
+        picture = new char[][]{{'B'}};
+        assertEquals(1, test.findBlackPixel(picture, 1));
+    }
 }

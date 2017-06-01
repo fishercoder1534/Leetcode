@@ -59,6 +59,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |537|[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ComplexNumberMultiplication.java) | O(1) |O(1) | Medium | Math, String
 |536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ConstructBinaryTreefromString.java) | O(n) |O(h) | Medium | Recursion
 |535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|[Solution](../master/src/main/java/com/fishercoder/solutions/EncodeandDecodeTinyURL.java) | O(1) |O(n) | Medium | Design
+|533|[Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_533.java) | O(m*n) |O(m) (m is number of rows) | Medium | HashMap
 |532|[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/KdiffPairsinanArray.java) | O(n) |O(n) | Easy | HashMap
 |531|[Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/LonelyPixelI.java) | O(m*n) |O(1) | Medium | 
 |530|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MinimumAbsoluteDifferenceinBST.java) | O(n) |O(n) | Easy| DFS
