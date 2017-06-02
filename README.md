@@ -205,6 +205,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/CreateMaximumNumber.java)| O(?)|O(?) | Hard
 |320|[Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/GeneralizedAbbreviation.java)| O(n*2^n)|O(n) | Medium| Backtracking, Bit Manipulation
 |317|[Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ShortestDistanceFromAllBuildings.java)| O(?)|O(?) | Hard| 
+|316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_316.java)| O(n)|O(1)| Hard| Stack, Recursion, Greedy
 |315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)|[Solution](../master/src/main/java/com/fishercoder/solutions/CountOfSmallerNumbersAfterSelf.java)| O(?)|O(?)| Hard| Tree
 |314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/BinaryTreeVerticalOrderTraversal.java)| O(n)|O(n) | Medium| HashMap, BFS
 |313|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SuperUglyNumber.java)| O(?)|O(?)| Medium| 
