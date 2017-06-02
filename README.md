@@ -80,6 +80,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |505|[The Maze II](https://leetcode.com/problems/the-maze-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/TheMazeII.java) | O(m*n) |O(m*n) | Medium| BFS
 |504|[Base 7](https://leetcode.com/problems/base-7/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_504.java) | O(1) |O(1) | Easy| 
 |503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NextGreaterElementII.java) | O(n) |O(n) | Medium| Stack
+|502|[IPO](https://leetcode.com/problems/ipo/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_502.java) | O(nlogn) |O(n) | Hard| Heap, Greedy
 |501|[Find Mode in Binary Tree](https://leetcode.com/problems/find-mode-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FindModeinBinaryTree.java) | O(n) |O(k) | Easy| Binary Tree
 |500|[Keyboard Row](https://leetcode.com/problems/keyboard-row/)|[Solution](../master/src/main/java/com/fishercoder/solutions/KeyboardRow.java) | O(n) |O(1) | Easy|
 |499|[The Maze III](https://leetcode.com/problems/the-maze-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/TheMazeIII.java) | O(m*n) |O(m*n) | Hard| BFS
