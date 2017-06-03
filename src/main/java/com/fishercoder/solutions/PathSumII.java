@@ -94,7 +94,7 @@ public class PathSumII {
 //    /  \    / \
 //   7    2  5   1
         List<List<Integer>> res = test.pathSum(root, sum);
-        CommonUtils.printIntegerList(res);
+        CommonUtils.printListList(res);
     }
 
 }

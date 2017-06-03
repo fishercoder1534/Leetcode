@@ -48,7 +48,7 @@ public class CombinationSumII {
         int[] candidates = new int[]{10,1,2,7,6,1,5};
         int target = 8;
         List<List<Integer>> result = test.combinationSum2(candidates, target);
-        CommonUtils.printIntegerList(result);
+        CommonUtils.printListList(result);
     }
 
 

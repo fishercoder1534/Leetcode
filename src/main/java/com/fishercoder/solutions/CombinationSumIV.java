@@ -71,6 +71,6 @@ public class CombinationSumIV {
         CombinationSumIV test = new CombinationSumIV();
         int[] nums = new int[]{1,2,3};
         int target = 4;
-        CommonUtils.printIntegerList(test.combinationSum4_printout(nums, target));
+        CommonUtils.printListList(test.combinationSum4_printout(nums, target));
     }
 }

@@ -167,9 +167,9 @@ public class CommonUtils {
         System.out.println();
     }
 
-    public static void printIntegerList(List<List<Integer>> res) {
-        for(List<Integer> list : res){
-            for(int i : list){
+    public static <T> void printListList(List<List<T>> res) {
+        for(List<T> list : res){
+            for(T i : list){
                 System.out.print(i + ", ");
             }
             System.out.println();

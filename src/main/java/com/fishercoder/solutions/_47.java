@@ -55,6 +55,6 @@ public class _47 {
         int[] nums = new int[]{1,1,2};
         _47 test = new _47();
         List<List<Integer>> result = test.permuteUnique(nums);
-        CommonUtils.printIntegerList(result);
+        CommonUtils.printListList(result);
     }
 }

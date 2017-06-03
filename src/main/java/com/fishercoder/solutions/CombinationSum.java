@@ -50,7 +50,7 @@ public class CombinationSum {
         int[] candidates = new int[]{2,3,6,7};
         int target = 7;
         List<List<Integer>> result = test.combinationSum(candidates, target);
-        CommonUtils.printIntegerList(result);
+        CommonUtils.printListList(result);
     }
 
 }

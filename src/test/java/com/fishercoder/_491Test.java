@@ -23,6 +23,6 @@ public class _491Test {
     public void test1(){
         nums = new int[]{4,6,7,7};
         List<List<Integer>> actual = test.findSubsequences(nums);
-        CommonUtils.printIntegerList(actual);
+        CommonUtils.printListList(actual);
     }
 }

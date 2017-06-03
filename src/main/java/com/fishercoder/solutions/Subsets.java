@@ -30,7 +30,7 @@ public class Subsets {
 //        int[] nums = new int[]{1,2,3};
         int[] nums = new int[]{1,2,2};
         List<List<Integer>> result = subsets_backtracking(nums);
-        CommonUtils.printIntegerList(result);
+        CommonUtils.printListList(result);
     }
     
     public static List<List<Integer>> subsets(int[] nums) {

@@ -47,7 +47,7 @@ public class SubsetsII {
     public static void main(String...args){
         int[] nums = new int[]{1,2,2};
         List<List<Integer>> result = subsetsWithDup(nums);
-        CommonUtils.printIntegerList(result);
+        CommonUtils.printListList(result);
     }
 
 }
