@@ -20,6 +20,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|606|[Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_606.java) | O(n) |O(n) | Easy | Tree, Recursion
 |600|[Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_600.java) | O(log2(max_int) = 32) | O(log2(max_int) = 32) | Hard | Bit Manipulation, DP
 |599|[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_599.java) | O(max(m,n))|O(max(m,n)) | Easy | HashMap
 |598|[Range Addition II](https://leetcode.com/problems/range-addition-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_598.java) | O(n) (n is the number of operations) |O(1) | Easy | 
