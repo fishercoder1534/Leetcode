@@ -198,6 +198,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PalindromePairs.java)| O(n^2)|O(n) | Hard|
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/IncreasingTripletSubsequence.java)| O(n^2)|O(1) | Medium|
 |333|[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_333.java)| O(n)|O(n) | Medium| Tree 
+|332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_332.java)| O(n)|O(n) | Medium| Graph, DFS
 |331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_331.java)| O(n)|O(n) | Medium| Stack
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/LongestIncreasingPathInAMatrix.java)| O(?)|O(?) | Hard|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_328.java)| O(n)|O(1) | Medium| Linked List
