@@ -10,6 +10,12 @@ public class _206 {
     //the above two steps finished the reversion, to continue this process until we reach the end of the original list,
     //we'll assign current "head" to new "newHead", and current "next" to be new "head" for the next iteration, here's the code
     public ListNode reverseList_iterative(ListNode head) {
+        /**It works out the best to set up a debug point and visualize this process:
+         * e.g. 1->2->3-null
+         * at the end of the first iteration of the while loop, the status is like this:
+         * newHead: 1->null
+         * head: 2->3-null
+         * then it continues the iteration.*/
         ListNode newHead = null;
         while (head != null) {
             ListNode next = head.next;
