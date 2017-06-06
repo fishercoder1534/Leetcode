@@ -150,6 +150,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ThirdMaximumNumber.java)| O(n)|O(1) | Easy|
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ArithmeticSlices.java) | O(n) |O(1) | Medium| DP
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FizzBuzz.java)| O(n)|O(1) | Easy|
+|411|[Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_411.java)| O(?)|O(?) | Hard| NP-Hard, Backtracking, Trie, Recursion
 |408|[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_408.java)| O(n)|O(1) | Easy|
 |405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_405.java)| O(n)|O(1) | Easy|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SumofLeftLeaves.java)| O(n)|O(h) | Easy|
