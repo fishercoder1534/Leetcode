@@ -193,4 +193,14 @@ public class CommonUtils {
         }
         System.out.println();
     }
+
+    public static void printArrayArray(int[][] arrayArrays) {
+        for (int[] array : arrayArrays) {
+            for (int i : array) {
+                System.out.print(i + ", ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
 }
