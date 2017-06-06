@@ -19,7 +19,7 @@ package com.fishercoder.solutions;
  Output: False
 
  */
-public class StudentAttendanceRecordI {
+public class _551 {
 
     public boolean checkRecord(String s) {
         int aCount = 0;

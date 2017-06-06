@@ -1,21 +1,21 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.StudentAttendanceRecordI;
+import com.fishercoder.solutions._551;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class StudentAttendanceRecordITest {
-    private static StudentAttendanceRecordI test;
+public class _551Test {
+    private static _551 test;
     private static boolean expected;
     private static boolean actual;
     private static String s;
 
     @BeforeClass
     public static void setup(){
-        test = new StudentAttendanceRecordI();
+        test = new _551();
     }
 
     @Before
