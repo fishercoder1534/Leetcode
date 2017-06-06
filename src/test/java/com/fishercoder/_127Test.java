@@ -4,9 +4,9 @@ import com.fishercoder.solutions._127;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class _127Test {
     private static _127 test;
-    private static Set<String> wordList;
+    private static List<String> wordList;
 
     @BeforeClass
     public static void setup(){
@@ -24,13 +24,13 @@ public class _127Test {
 
     @Test
     public void test1(){
-        wordList = new HashSet<>(Arrays.asList("hot","dot","dog","lot","log"));
+        wordList = new ArrayList<>(Arrays.asList("hot","dot","dog","lot","log"));
         assertEquals(0, test.ladderLength("hit", "cog", wordList));
     }
 
     @Test
     public void test2(){
-        wordList = new HashSet<>(Arrays.asList("hot","dot","dog","lot","log","cog"));
+        wordList = new ArrayList<>(Arrays.asList("hot","dot","dog","lot","log","cog"));
         assertEquals(5, test.ladderLength("hit", "cog", wordList));
     }
 }
