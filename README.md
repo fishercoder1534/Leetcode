@@ -271,7 +271,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |267|[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PalindromePermutationII.java)| O(n*n!)|O(n) | Medium|
 |266|[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PalindromePermutation.java)| O(n)|O(1) | Easy|
 |265|[Paint House II](https://leetcode.com/problems/paint-house-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PaintHouseII.java)| ?|? | Hard| 
-|263|[Ugly Number](https://leetcode.com/problems/ugly-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/UglyNumber.java)| O(n)|O(1) | Easy|
+|263|[Ugly Number](https://leetcode.com/problems/ugly-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_263.java)| O(n)|O(1) | Easy|
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/GraphValidTree.java)| O(V+E)|O(V+E) | Medium|
 |259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_259.java)| O(n^2)|O(1) | Medium|
 |258|[Add Digits](https://leetcode.com/problems/add-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_258.java)| O(1)|O(1) | Easy|

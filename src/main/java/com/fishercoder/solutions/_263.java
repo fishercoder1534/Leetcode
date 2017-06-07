@@ -6,7 +6,7 @@ package com.fishercoder.solutions;
 
  Note that 1 is typically treated as an ugly number.*/
 
-public class UglyNumber {
+public class _263 {
 
     public boolean isUgly(int num) {
         if(num == 0) return false;
