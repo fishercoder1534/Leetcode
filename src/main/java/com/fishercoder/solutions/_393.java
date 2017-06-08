@@ -38,22 +38,21 @@ package com.fishercoder.solutions;
  */
 public class _393 {
 
+    /**credit: https://discuss.leetcode.com/topic/58338/bit-manipulation-java-6ms/4*/
     public boolean validUtf8(int[] data) {
-        //TODO: not finished yet
-        if (data == null || data.length == 0 || data.length > 4) return false;
-        int len = data.length;
-        String[] last8Bits = new String[len];
-        for (int i = 0; i < len; i++) {
-            String bin = Integer.toBinaryString(data[i]);
-            last8Bits[i] = bin.length() >= 8 ? bin.substring(0, 8) : String.format("%08d", Integer.parseInt(bin));//pad left with zeroes to make sure each number is 8 bits long to make coding easier in the later part
+        int count = 0;
+        for(int d:data){
+            if(count == 0){
+                if((d >> 5) == 0b110) count = 1;
+                else if((d >> 4) == 0b1110) count = 2;
+                else if((d >> 3) == 0b11110) count = 3;
+                else if((d >> 7) ==  1) return false;
+            } else {
+                if((d>>6) != 0b10) return false;
+                else count--;
+            }
         }
-        if (len == 1) {
-            if (Integer.valueOf(last8Bits[0].substring(0,1)) != 0) return false;
-            return true;
-        } else {
-
-        }
-        return false;
+        return count == 0;
     }
 
 }
