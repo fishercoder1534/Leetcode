@@ -143,6 +143,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NonOverlappingIntervals.java) | O(nlogn) |O(1) | Medium| Greedy
 |434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NumberofSegmentsinaString.java)| O(n)|O(1) | Easy|
+|432|[All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_432.java)| O(1)|O(n) | Hard| Design
 |425|[Word Squares](https://leetcode.com/problems/word-squares/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_425.java)| O(n!)|O(n) | Hard| Trie, Backtracking, Recursion
 |424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_424.java)| O(n) | O(1) | Medium| Sliding Window
 |423|[Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_423.java)| O(n) | O(1) | Medium| Math
