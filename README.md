@@ -196,6 +196,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |361|[Bomb Enemy](https://leetcode.com/problems/bomb-enemy/)|[Solution](../master/src/main/java/com/fishercoder/solutions/BombEnemies.java)| O(?)|O(?) | Medium| 
 |360|[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_360.java)| O(n)|O(1) | Medium| Two Pointers, Math
 |359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/LoggerRateLimiter.java)| amortized O(1)|O(k) | Easy| HashMap
+|358|[Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_358.java)| O(n)|O(n) | Hard| HashMap, Heap, Greedy
 |357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/CountNumbersWithUniqueDigits.java)| O(?)|O(?) | Medium|
 |356|[Line Reflection](https://leetcode.com/problems/line-reflection/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_356.java)| O(n)|O(n) | Medium| HashSet
 |355|[Design Twitter](https://leetcode.com/problems/design-twitter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_355.java)| O(n)|O(n) | Medium| Design, HashMap, Heap
