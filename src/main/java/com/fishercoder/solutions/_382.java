@@ -23,27 +23,31 @@ Solution solution = new Solution(head);
 // getRandom() should return either 1, 2, or 3 randomly. Each element should have equal probability of returning.
 solution.getRandom();
 */
-public class LinkedListRandomNode {
+public class _382 {
 
-private class Solution {
-    private Map<Integer, ListNode> map;
-    private Random rand;
-    
-    /** @param head The linked list's head. Note that the head is guanranteed to be not null, so it contains at least one node. */
-    public Solution(ListNode head) {
-        map = new HashMap();
-        rand = new Random();
-        int i = 0;
-        while(head != null){
-            map.put(i++, head);
-            head = head.next;
+    class Solution {
+        private Map<Integer, ListNode> map;
+        private Random rand;
+
+        /**
+         * @param head The linked list's head. Note that the head is guanranteed to be not null, so it contains at least one node.
+         */
+        public Solution(ListNode head) {
+            map = new HashMap();
+            rand = new Random();
+            int i = 0;
+            while (head != null) {
+                map.put(i++, head);
+                head = head.next;
+            }
+        }
+
+        /**
+         * Returns a random node's value.
+         */
+        public int getRandom() {
+            return map.get(rand.nextInt(map.size())).val;
         }
     }
-    
-    /** Returns a random node's value. */
-    public int getRandom() {
-        return map.get(rand.nextInt(map.size())).val;
-    }
-}
 }
 
