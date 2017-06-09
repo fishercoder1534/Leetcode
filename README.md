@@ -341,6 +341,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_191.java)| O(n)|O(1)| Easy | Bit Manipulation
 |190|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ReverseBits.java)| O(n)|O(1)| Easy | Bit Manipulation
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_189.java)| O(n)|O(n), could be optimized to O(1) | Easy
+|188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_188.java)| O(n*k)|O(n*k) | Hard | DP
 |187|[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_187.java)| O(n)|O(n) | Medium
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_186.java)| O(n)|O(1)| Medium
 |179|[Largest Number](https://leetcode.com/problems/largest-number/)|[Queue](../master/src/main/java/com/fishercoder/solutions/BSTIterator_using_q.java) [Stack](../../blmaster/MEDIUM/src/medium/LargestNumber.java)| O(?) |O(?) | Medium|
