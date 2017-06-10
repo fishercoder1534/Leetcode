@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.SlidingWindowMaximum;
+import com.fishercoder.solutions._239;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -9,8 +9,8 @@ import org.junit.Test;
 /**
  * Created by fishercoder on 1/10/17.
  */
-public class SlidingWindowMaximumTest {
-    private static SlidingWindowMaximum test;
+public class _239Test {
+    private static _239 test;
     private static int[] expected;
     private static int[] actual;
     private static int[] nums;
@@ -18,7 +18,7 @@ public class SlidingWindowMaximumTest {
 
     @BeforeClass
     public static void setup(){
-        test = new SlidingWindowMaximum();
+        test = new _239();
     }
 
     @Before

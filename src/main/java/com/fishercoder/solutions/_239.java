@@ -3,7 +3,8 @@ package com.fishercoder.solutions;
 import java.util.*;
 
 /**
- * Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
+ * Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right.
+ * You can only see the k numbers in the window. Each time the sliding window moves right by one position.
 
  For example,
  Given nums = [1,3,-1,-3,5,3,6,7], and k = 3.
@@ -30,19 +31,17 @@ import java.util.*;
  The queue size need not be the same as the window’s size.
  Remove redundant elements and the queue should store only elements that need to be considered.
  */
-public class SlidingWindowMaximum {
+public class _239 {
 
     public int[] maxSlidingWindow(int[] nums, int k) {
         if(nums == null || nums.length == 0 || k == 0) return new int[0];
         Queue<Integer> heap = new PriorityQueue<Integer>(new Comparator<Integer>(){
-
             @Override
             public int compare(Integer o1, Integer o2) {
                 if(o1 > o2) return -1;
                 else if(o1 < o2) return 1;
                 else return 0;
             }
-
         }
         );
         int i = 0;
