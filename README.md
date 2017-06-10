@@ -276,7 +276,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FirstBadVersion.java)| O(logn)|O(1) | Easy| Binary Search
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FindtheCelebrity.java)| O(n)|O(1) | Medium| 
 |276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PaintFence.java)| O(n)|O(1) | Easy| DP
-|274|[H-Index](https://leetcode.com/problems/h-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/HIndex.java)| O(nlogn)|O(1) | Medium| 
+|274|[H-Index](https://leetcode.com/problems/h-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_274.java)| O(nlogn)|O(1) | Medium| 
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_273.java)| O(n)|O(1) | Hard| Math, String 
 |272|[Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ClosestBinarySearchTreeValueII.java)| O(h+k)|O(h) | Hard| Stack
 |271|[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/EncodeandDecodeStrings.java)| O(n)|O(1) | Medium| 

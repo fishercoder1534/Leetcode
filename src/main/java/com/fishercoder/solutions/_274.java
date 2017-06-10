@@ -17,7 +17,7 @@ import java.util.Arrays;
  What are the possible values of h-index?
  A faster approach is to use extra space.
  */
-public class HIndex {
+public class _274 {
 
     public int hIndex(int[] citations) {
         if(citations == null || citations.length == 0)
