@@ -115,7 +115,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |473|[Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_473.java) | O(n!) |O(n) | Medium| Backtracking, DFS
 |472|[Concatenated Words](https://leetcode.com/problems/concatenated-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ConcatenatedWords.java) | O(n^2) |O(n) | Hard| Trie, DP, DFS
 |469|[Convex Polygon](https://leetcode.com/problems/convex-polygon/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_469.java) | O(n) |O(1) | Medium| Math
-|468|[Validate IP Address](https://leetcode.com/problems/validate-ip-address/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_468.java) | O(n^2) |O(n) | Hard| Trie, DP, DFS
+|468|[Validate IP Address](https://leetcode.com/problems/validate-ip-address/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_468.java) | O(n) |O(1) | Medium | String
 |467|[Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_467.java) | O(n) |O(1) | Medium| DP
 |466|[Count The Repetitions](https://leetcode.com/problems/count-the-repetitions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_466.java)| O(max(m,n))|O(1) | Hard| DP
 |464|[Can I Win](https://leetcode.com/problems/can-i-win/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_464.java)| O(2^n)|O(n) | Medium| DP
