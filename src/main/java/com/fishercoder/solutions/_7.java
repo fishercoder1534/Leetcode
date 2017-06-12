@@ -4,7 +4,7 @@ Reverse digits of an integer.
 
 Example1: x = 123, return 321
 Example2: x = -123, return -321*/
-public class ReverseInteger {
+public class _7 {
     public int reverse_short_version(int x){
         long rev = 0;
         while(x != 0){
@@ -44,7 +44,7 @@ public class ReverseInteger {
     }
     
     public static void main(String...strings){
-        ReverseInteger test = new ReverseInteger();
+        _7 test = new _7();
         //when the input is 1534236469, it's expecting 0 as the correct answer, this is due to its reversed number is greater than Integer.MAX_VALUE, thus return 0
         System.out.println(1534236469 > Integer.MAX_VALUE);
         System.out.println("1534236469\n" + Integer.MAX_VALUE);
