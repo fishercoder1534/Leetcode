@@ -10,7 +10,7 @@ package com.fishercoder.solutions;
  You could also try reversing an integer. However, if you have solved the problem "Reverse Integer", you know that the reversed integer might overflow. How would you handle such case?
 
  There is a more generic way of solving this problem.*/
-public class PalindromeNumber {
+public class _9 {
     
     /**Purely my original solution: just reverse the entire number and compare with itself, return if they two are equal or not.*/
     public boolean isPalindrome(int x) {
