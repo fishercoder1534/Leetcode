@@ -5,7 +5,7 @@ package com.fishercoder.solutions;
 
  Note: You may not slant the container and n is at least 2.
  */
-public class ContainerWithMostWater {
+public class _11 {
 
     public int maxArea(int[] height) {
         int max = Integer.MIN_VALUE;
