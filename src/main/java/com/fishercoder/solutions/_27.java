@@ -12,7 +12,7 @@ Example:
 Given input array nums = [3,2,2,3], val = 3
 
 Your function should return length = 2, with the first two elements of nums being 2.*/
-public class RemoveElement {
+public class _27 {
     //then I looked at the Editorial solution, really neat!!! Super elegant and smart!
     public int removeElement_editorial_solution_1(int[] nums, int val){
         //use two pointers, increment j as long as its not equal to val, return i in the end
@@ -60,7 +60,7 @@ public class RemoveElement {
 	}
 	
 	public static void main(String...strings){
-		RemoveElement test = new RemoveElement();
+		_27 test = new _27();
 //		int[] nums = new int[]{3,2,2,3};
 //		int val = 3;
 		
