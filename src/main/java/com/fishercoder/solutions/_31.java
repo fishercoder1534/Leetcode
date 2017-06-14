@@ -12,7 +12,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 1,2,3 → 1,3,2
 3,2,1 → 1,2,3
 1,1,5 → 1,5,1*/
-public class NextPermutation {
+public class _31 {
     /**Leetcode has a very good article to illustrate this problem and with animation: https://leetcode.com/articles/next-permutation/
      * 1. if the array is already in decrementing order, then there's no next larger permutation possible. 
      * 2. if not, start from the end of the array, find the first pair of numbers that break the decrementing order
