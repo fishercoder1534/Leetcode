@@ -5,7 +5,7 @@ package com.fishercoder.solutions;
 
  If it is overflow, return MAX_INT.
  */
-public class DivideTwoIntegers {
+public class _29 {
 
     public int divide(int dividend, int divisor) {
         if (divisor == 0 || (dividend == Integer.MIN_VALUE && divisor == -1))
