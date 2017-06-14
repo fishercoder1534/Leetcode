@@ -21,7 +21,7 @@ package com.fishercoder.solutions;
  isMatch("aab", "c*a*b") → true
 
  */
-public class RegularExpressionMatching {
+public class _10 {
 
     public boolean isMatch(String s, String p) {
         if (s == null || p == null) {
