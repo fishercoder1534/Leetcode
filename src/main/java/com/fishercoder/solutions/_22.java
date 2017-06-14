@@ -17,7 +17,7 @@ import java.util.List;
  "()()()"
  ]*/
 
-public class GenerateParentheses {
+public class _22 {
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList();
         backtrack(result, "", 0, 0, n);
@@ -40,7 +40,7 @@ public class GenerateParentheses {
     }
     
     public static void main(String...args){
-        GenerateParentheses test = new GenerateParentheses();
+        _22 test = new _22();
         int n = 3;
         List<String> result = test.generateParenthesis(n);
         CommonUtils.print(result);
