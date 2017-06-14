@@ -1,6 +1,6 @@
 package com.fishercoder.solutions;
 /**Write a function to find the longest common prefix string amongst an array of strings.*/
-public class LongestCommonPrefix {
+public class _14 {
 
     public static String longestCommonPrefix(String[] strs) {
         if(strs.length == 0) return "";
