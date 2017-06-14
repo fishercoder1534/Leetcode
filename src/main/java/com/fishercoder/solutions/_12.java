@@ -3,7 +3,7 @@ package com.fishercoder.solutions;
 /**Given an integer, convert it to a roman numeral.
 
  Input is guaranteed to be within the range from 1 to 3999.*/
-public class IntegertoRoman {
+public class _12 {
     //looked at this post: https://discuss.leetcode.com/topic/12384/simple-solution
     public String intToRoman(int num) {
         String M[] = {"", "M", "MM", "MMM"};
