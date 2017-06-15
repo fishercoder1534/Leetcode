@@ -16,7 +16,7 @@ package com.fishercoder.solutions;
 
  Note: Given n will be between 1 and 9 inclusive.
  */
-public class PermutationSequence {
+public class _60 {
 
     public String getPermutation(int n, int k) {
         int[] nums = new int[n + 1];

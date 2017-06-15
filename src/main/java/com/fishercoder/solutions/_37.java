@@ -7,7 +7,7 @@ package com.fishercoder.solutions;
   * A sudoku puzzle...
  * ...and its solution numbers marked in red.
  */
-public class SudokuSolver {
+public class _37 {
 
     public void solveSudoku(char[][] board) {
         if (board == null || board.length == 0) return;

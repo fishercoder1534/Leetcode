@@ -7,7 +7,7 @@ package com.fishercoder.solutions;
 
  * Created by fishercoder on 1/25/17.
  */
-public class Sqrt {
+public class _69 {
     public int mySqrt(int x) {
         long i = 0, j = x/2+1;
         while(i <= j){

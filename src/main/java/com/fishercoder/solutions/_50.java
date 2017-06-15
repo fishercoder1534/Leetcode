@@ -3,7 +3,7 @@ package com.fishercoder.solutions;
 /**
  * Implement pow(x, n).
  */
-public class PowXN {
+public class _50 {
 
     public double myPow(double x, int n) {
         if(n == 0)

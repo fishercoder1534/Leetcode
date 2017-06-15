@@ -8,7 +8,7 @@ package com.fishercoder.solutions;
  For example,
  Given s = "Hello World",
  return 5.*/
-public class LengthofLastWord {
+public class _58 {
 
     public int lengthOfLastWord(String s) {
         if(s == null || s.length() == 0) return 0;

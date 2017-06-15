@@ -12,7 +12,7 @@ import com.fishercoder.common.utils.CommonUtils;
  Given [5, 7, 7, 8, 8, 10] and target value 8,
  return [3, 4].
  */
-public class SearchForARange {
+public class _34 {
 
     public static int[] searchRange(int[] nums, int target) {
         int start = 0, end = nums.length-1;

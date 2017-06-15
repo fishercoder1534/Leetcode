@@ -21,7 +21,7 @@ There is one obstacle in the middle of a 3x3 grid as illustrated below.
 The total number of unique paths is 2.
 
 Note: m and n will be at most 100.*/
-public class UniquePathsII {
+public class _63 {
     /**Idea: grid[i][j] has to be set to zero if obstacleGrid[i][j] == 1,
      * otherwise, we can get dp[i][j] from its top and left dp.*/
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
@@ -53,7 +53,7 @@ public class UniquePathsII {
     }
     
     public static void main(String...strings){
-        UniquePathsII test = new UniquePathsII();
+        _63 test = new _63();
 //        int[][] obstacleGrid = new int[3][3];
 //        obstacleGrid[0][0] = 0;
 //        obstacleGrid[0][1] = 0;

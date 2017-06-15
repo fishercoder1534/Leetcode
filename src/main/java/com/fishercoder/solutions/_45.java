@@ -15,7 +15,7 @@ package com.fishercoder.solutions;
  Note:
  You can assume that you can always reach the last index.
  */
-public class JumpGameII {
+public class _45 {
 
     public int jump(int[] A) {
         int jumps = 0;

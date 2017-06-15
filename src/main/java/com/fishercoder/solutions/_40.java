@@ -20,7 +20,7 @@ import java.util.List;
  [2, 6],
  [1, 1, 6]
  ]*/
-public class CombinationSumII {
+public class _40 {
 
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList();
@@ -44,7 +44,7 @@ public class CombinationSumII {
     }
 
     public static void main(String...args){
-        CombinationSumII test = new CombinationSumII();
+        _40 test = new _40();
         int[] candidates = new int[]{10,1,2,7,6,1,5};
         int target = 8;
         List<List<Integer>> result = test.combinationSum2(candidates, target);

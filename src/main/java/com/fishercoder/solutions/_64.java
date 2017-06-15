@@ -7,8 +7,8 @@ import com.fishercoder.common.utils.CommonUtils;
 Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path.
 
 Note: You can only move either down or right at any point in time.*/
-public class MinimumPathSum {
-    /**Same idea as ClimbingStairs, also typical trick:
+public class _64 {
+    /**Same idea as _70, also typical trick:
      * have to initialize the first row and the first column and start the for loop from i==1 and j==1 for the rest
      * of the matrix.*/
     public int minPathSum(int[][] grid) {
@@ -33,7 +33,7 @@ public class MinimumPathSum {
     }
     
     public static void main(String...strings){
-        MinimumPathSum test = new MinimumPathSum();
+        _64 test = new _64();
 //        int[][] grid = new int[2][2];
 //        grid[0][0] = 1;
 //        grid[0][1] = 2;

@@ -13,7 +13,7 @@ package com.fishercoder.solutions;
  [ 7, 6, 5 ]
  ]
  */
-public class SpiralMatrixII {
+public class _59 {
 
     public int[][] generateMatrix(int num) {
         int temp = num;

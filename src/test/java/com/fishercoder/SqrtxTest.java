@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.Sqrt;
+import com.fishercoder.solutions._69;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -11,14 +11,14 @@ import static junit.framework.Assert.assertEquals;
  * Created by fishercoder on 1/25/17.
  */
 public class SqrtxTest {
-    private static Sqrt test;
+    private static _69 test;
     private static int expected;
     private static int actual;
     private static int input;
 
     @BeforeClass
     public static void setup(){
-        test = new Sqrt();
+        test = new _69();
     }
 
     @Before

@@ -10,7 +10,7 @@ package com.fishercoder.solutions;
  Your algorithm should run in O(n) time and uses constant space.
 
  */
-public class FirstMissingPositive {
+public class _41 {
 
     public int firstMissingPositive(int[] A) {
         int i = 0;

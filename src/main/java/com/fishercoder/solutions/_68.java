@@ -27,7 +27,7 @@ import java.util.*;
  A line other than the last line might contain only one word. What should you do in this case?
  In this case, that line should be left-justified.
  */
-public class TextJustification {
+public class _68 {
 
     public static List<String> fullJustify(String[] words, int L) {
         ArrayList<String> result = new ArrayList();

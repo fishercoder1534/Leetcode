@@ -1,6 +1,6 @@
 package com.fishercoder.solutions;
 
-public class CountandSay {
+public class _38 {
 /**The count-and-say sequence is the sequence of integers beginning as follows:
  1, 11, 21, 1211, 111221, ...
 

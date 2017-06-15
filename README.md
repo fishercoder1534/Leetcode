@@ -455,40 +455,40 @@ Your ideas/fixes/algorithms are more than welcome!
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_73.java)|O(mn)|O(mn)|Medium|
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/EditDistance.java)|O(m*n)|O(m+n)|Hard| 
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_71.java)|O(n)|O(n)|Medium| Stack
-|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ClimbingStairs.java)|O(n)|O(n)|Easy| DP
-|69|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[Solution](../master/src/main/java/com/fishercoder/solutions/Sqrt.java)|O(logn)|O(1)|Easy|
-|68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../master/src/main/java/com/fishercoder/solutions/TextJustification.java)|O(n)|O(1)|Hard|
+|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_70.java)|O(n)|O(n)|Easy| DP
+|69|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_69.java)|O(logn)|O(1)|Easy|
+|68|[Text Justification](https://leetcode.com/problems/text-justification/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_68.java)|O(n)|O(1)|Hard|
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_67.java)|O(n)|O(1)|Easy|
-|66|[Plus One](https://leetcode.com/problems/plus-one/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PlusOne.java)|O(n)|O(1)|Easy|
+|66|[Plus One](https://leetcode.com/problems/plus-one/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_66.java)|O(n)|O(1)|Easy|
 |65|[Valid Number](https://leetcode.com/problems/valid-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_65.java)|O(n)|O(1)|Hard|
-|64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MinimumPathSum.java)|O(m*n)|O(m*n)|Medium| DP
-|63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/UniquePathsII.java)|O(m*n)|O(m*n)|Medium| DP
+|64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_64.java)|O(m*n)|O(m*n)|Medium| DP
+|63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_63.java)|O(m*n)|O(m*n)|Medium| DP
 |61|[Rotate List](https://leetcode.com/problems/rotate-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_61.java)|O(n)|O(1)|Medium| Linked List
-|60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PermutationSequence.java)|?|?|Medium|
-|59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SpiralMatrixII.java)|O(n)|O(n)|Medium|
-|58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/LengthofLastWord.java)|O(n)|O(1)|Easy|
+|60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_60.java)|?|?|Medium|
+|59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_59.java)|O(n)|O(n)|Medium|
+|58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_58.java)|O(n)|O(1)|Easy|
 |57|[Insert Intervals](https://leetcode.com/problems/insert-interval/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_57.java)|O(n)|O(1)|Hard| Array, Sort
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_56.java)|O(n*logn)|O(1)|Medium| Array, Sort
 |55|[Jump Game](https://leetcode.com/problems/jump-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_55.java)|O(n)|O(1)|Medium| Greedy
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_54.java)|O(m*n)|O(m*n)|Medium| Array
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_53.java)|O(n)|O(1)|Easy|
-|50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PowXN.java)|O(logn)|O(logn)|Medium|
+|50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_50.java)|O(logn)|O(logn)|Medium|
 |49|[Group Anagrams](https://leetcode.com/problems/anagrams/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_49.java)|O(m*logn)|O(m*n)|Medium| HashMap
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_48.java)|O(n^2)|O(1)|Medium|Array
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_47.java)|O(n*n!)|O(n)|Medium|Backtracking
 |46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_46.java)|O(n*n!)|O(n)|Medium|Backtracking
-|45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/JumpGameII.java)|O(?)|O(?)|Hard|
+|45|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_45.java)|O(?)|O(?)|Hard|
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_44.java)|O(m*n)|O(m*n)|Hard| Backtracking, DP, Greedy, String
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_43.java)|O(n)|O(1)|Medium| Array, String
-|42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[Solution](../master/src/main/java/com/fishercoder/solutions/TrappingRainWater.java)|O(n)|O(1)|Hard|
-|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FirstMissingPositive.java)|O(n)|O(1)|Hard|
-|40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/CombinationSumII.java)|O(k*n^k)|O(k)|Medium|Backtracking
-|39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/CombinationSum.java)|O(k*n^k)|O(k)|Medium|Backtracking
-|38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../master/src/main/java/com/fishercoder/solutions/CountandSay.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
-|37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SudokuSolver.java)|O((9!)^9)|O(1)|Hard|
+|42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_42.java)|O(n)|O(1)|Hard|
+|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_41.java)|O(n)|O(1)|Hard|
+|40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_40.java)|O(k*n^k)|O(k)|Medium|Backtracking
+|39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_39.java)|O(k*n^k)|O(k)|Medium|Backtracking
+|38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_38.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
+|37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_37.java)|O((9!)^9)|O(1)|Hard|
 |36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_36.java)|O(1)|O(1)|Medium| 
-|35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SearchInsertPosition.java)|O(n)|O(1)|Medium|Array
-|34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SearchForARange.java)|O(logn)|O(1)|Medium|Array, Binary Search
+|35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_35.java)|O(n)|O(1)|Medium|Array
+|34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_34.java)|O(logn)|O(1)|Medium|Array, Binary Search
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_33.java)|O(logn)|O(1)|Medium|Binary Search
 |32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_32.java)|O(n)|O(n)|Hard|Stack, DP
 |31|[Next Permutation](https://leetcode.com/problems/next-permutation)|[Solution](../master/src/main/java/com/fishercoder/solutions/_31.java)|O(n)|O(1)|Medium|Array

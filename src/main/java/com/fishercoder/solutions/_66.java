@@ -6,7 +6,7 @@ import com.fishercoder.common.utils.CommonUtils;
 Given a non-negative number represented as an array of digits, plus one to the number.
 
 The digits are stored such that the most significant digit is at the head of the list.*/
-public class PlusOne {
+public class _66 {
     //also looked at Discuss, basically the same idea as mine, just their code is more concise.
     
     public int[] plusOne(int[] digits) {
@@ -43,7 +43,7 @@ public class PlusOne {
     }
     
     public static void main(String...strings){
-        PlusOne test = new PlusOne();
+        _66 test = new _66();
 //        int[] digits = new int[]{9,9,9,9};
 //        int[] digits = new int[]{8,9,9,9};
         int[] digits = new int[]{2,4,9,3,9};
