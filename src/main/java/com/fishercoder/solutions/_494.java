@@ -26,7 +26,7 @@ package com.fishercoder.solutions;
  Your output answer is guaranteed to be fitted in a 32-bit integer.
 
  */
-public class TargetSum {
+public class _494 {
 
 //  Time: O(2^n) brute force
     public int findTargetSumWays(int[] nums, int S) {

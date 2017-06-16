@@ -30,7 +30,7 @@ package com.fishercoder.solutions;
 
 
  */
-public class AndroidUnlockPatterns {
+public class _351 {
 
     private int[][] jumps;
     private boolean[] visited;

@@ -100,7 +100,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |496|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NextGreaterElementI.java) | O(n*m) |O(1) | Easy|
 |498|[Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_498.java) | O(m*n) |O(1) | Medium| 
 |495|[Teemo Attacking](https://leetcode.com/problems/teemo-attacking/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_495.java) | O(n) |O(1) | Medium| Array
-|494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/TargetSum.java) | O(2^n) |O(1) | Medium| 
+|494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_494.java) | O(2^n) |O(1) | Medium| 
 |493|[Reverse Pairs](https://leetcode.com/problems/reverse-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_493.java) | O(?) |O(?) | Hard|
 |492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ConstructTheRectangle.java) | O(n) |O(1) | Easy| Array
 |491|[Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_491.java) | O(n!) |O(n) | Medium| Backtracking, DFS
@@ -214,7 +214,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |355|[Design Twitter](https://leetcode.com/problems/design-twitter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_355.java)| O(n)|O(n) | Medium| Design, HashMap, Heap
 |353|[Design Snake Game](https://leetcode.com/problems/design-snake-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/DesignSnakeGame.java)| O(?)|O(?) | Medium|
 |352|[Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_352.java)| O(logn)|O(n) | Hard| TreeMap
-|351|[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/)|[Solution](../master/src/main/java/com/fishercoder/solutions/AndroidUnlockPatterns.java)| O(?)|O(?) | Medium|
+|351|[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_351.java)| O(?)|O(?) | Medium|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/IntersectionOfTwoArraysII.java)| O(m+n)|O((m+n)) could be optimized | Easy| HashMap, Binary Search
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/IntersectionOfTwoArrays.java)| O(m+n)|O(min(m,n)) | Easy| Two Pointers, Binary Search
 |348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_348.java)| O(1)|O(n) | Medium| Design 
