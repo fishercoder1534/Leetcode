@@ -24,7 +24,7 @@ package com.fishercoder.solutions;
  A = [1, 2, 3, 4]
 
  return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.*/
-public class ArithmeticSlices {
+public class _413 {
 
     //copied this solution: https://discuss.leetcode.com/topic/62884/2ms-java-o-n-time-o-1-space-solution
     public int numberOfArithmeticSlices(int[] A) {
