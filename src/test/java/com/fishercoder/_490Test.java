@@ -1,14 +1,14 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.TheMaze;
+import com.fishercoder.solutions._490;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class TheMazeTest {
-    private static TheMaze test;
+public class _490Test {
+    private static _490 test;
     private static boolean expected;
     private static boolean actual;
     private static int[][] maze;
@@ -17,7 +17,7 @@ public class TheMazeTest {
 
     @BeforeClass
     public static void setup(){
-        test = new TheMaze();
+        test = new _490();
     }
 
     @Before

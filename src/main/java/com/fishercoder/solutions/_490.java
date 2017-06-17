@@ -48,7 +48,7 @@ import java.util.Queue;
  The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
  The maze contains at least 2 empty spaces, and both the width and height of the maze won't exceed 100.
  */
-public class TheMaze {
+public class _490 {
     /**
      * BFS: the key part of this algorithm is that: this is a ball that won't stop rolling until it hits a wall.
      * This means we'll have to store all the empty spaces where the ball was forced to stop into the queue, these are
