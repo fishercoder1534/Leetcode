@@ -7,7 +7,7 @@ import com.fishercoder.common.classes.TreeNode;
 
  Note:
  A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?*/
-public class RecoverBinarySearchTree {
+public class _99 {
 	TreeNode firstElement = null;
 	TreeNode secondElement = null;
 
