@@ -42,6 +42,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |575|[Distribute Candies](https://leetcode.com/problems/distribute-candies/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_575.java) | O(nlogn) |O(1) | Easy | Array
 |573|[Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_573.java) | O(n) |O(1) | Medium | Math
 |572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_572.java) | O(m*n) |O(1) | Easy | Tree
+|568|[Maximum Vacation Days](https://leetcode.com/problems/maximum-vacation-days/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_568.java) | O(n^2*k) |O(n*k) | Hard | DP
 |567|[Permutation in String](https://leetcode.com/problems/permutation-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_567.java) | O(max(m,n)) |O(1) | Medium | Sliding Windows, Two Pointers
 |566|[Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_566.java) | O(m*n) |O(1) | Easy | 
 |565|[Array Nesting](https://leetcode.com/problems/array-nesting/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_565.java) | O(n) |O(n) | Medium | 
