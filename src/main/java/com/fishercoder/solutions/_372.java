@@ -16,7 +16,7 @@ package com.fishercoder.solutions;
 
  Result: 1024
  */
-public class SuperPow {
+public class _372 {
     /**Reference: https://discuss.leetcode.com/topic/50586/math-solusion-based-on-euler-s-theorem-power-called-only-once-c-java-1-line-python*/
 
     public int superPow(int a, int[] b) {

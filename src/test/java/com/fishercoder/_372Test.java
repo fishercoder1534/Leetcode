@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.SuperPow;
+import com.fishercoder.solutions._372;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,8 +10,8 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by fishercoder on 1/9/17.
  */
-public class SuperPowTest {
-    private static SuperPow test;
+public class _372Test {
+    private static _372 test;
     private static int expected;
     private static int actual;
     private static int a;
@@ -19,7 +19,7 @@ public class SuperPowTest {
 
     @BeforeClass
     public static void setup() {
-        test = new SuperPow();
+        test = new _372();
     }
 
     @Before
