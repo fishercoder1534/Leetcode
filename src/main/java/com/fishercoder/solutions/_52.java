@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by fishercoder on 2/19/17.
  */
-public class NQueensII {
+public class _52 {
 
     public int totalNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
