@@ -27,7 +27,7 @@ import java.util.List;
  ".Q.."]
  ]
  */
-public class NQueens {
+public class _51 {
 
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
@@ -88,7 +88,7 @@ public class NQueens {
     }
 
     public static void main (String...args) {
-        NQueens test = new NQueens();
+        _51 test = new _51();
 
         ArrayList<Integer> col = new ArrayList<>();
         col.add(0);//false, false, true, true,

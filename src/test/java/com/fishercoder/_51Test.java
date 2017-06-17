@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.NQueens;
+import com.fishercoder.solutions._51;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -11,15 +11,15 @@ import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 
-public class NQueensTest {
-    private static NQueens test;
+public class _51Test {
+    private static _51 test;
     private static List<List<String>> expected;
     private static List<List<String>> actual;
     private static int n;
 
     @BeforeClass
     public static void setup(){
-        test = new NQueens();
+        test = new _51();
     }
 
     @Before
