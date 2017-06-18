@@ -20,6 +20,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|624|[Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_624.java) | O(nlogn) |O(1) | Easy | Sort, Array
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_617.java) | O(n) |O(h) | Easy | Tree, Recursion
 |616|[Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_616.java) | O(n*k) (n is length of string, k is size of dict) |O(n) | Medium | String
 |611|[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_611.java) | O(n^2logn) |O(logn) | Medium | Binary Search
