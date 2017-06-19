@@ -23,7 +23,7 @@ Or does the odd/even status of the number help you in calculating the number of 
 *
 *
 */
-public class CountingBits {
+public class _338 {
     private class DP_Solution{
         //lixx2100's post is cool:https://discuss.leetcode.com/topic/40162/three-line-java-solution
         //An easy recurrence for this problem is f[i] = f[i / 2] + i % 2
@@ -60,7 +60,7 @@ public class CountingBits {
     }
     
     public static void main(String...strings){
-        CountingBits test = new CountingBits();
+        _338 test = new _338();
         int num = 15;
         int[] ones = test.countBits(num);
         CommonUtils.printArray(ones);

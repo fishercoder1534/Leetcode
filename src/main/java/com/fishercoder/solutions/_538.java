@@ -23,7 +23,7 @@ import java.util.TreeMap;
   20   13
  */
 
-public class ConvertBSTtoGreaterTree {
+public class _538 {
     //This solution is generic for both BST and regular binary trees
     public TreeNode convertBST(TreeNode root) {
         if (root == null) return root;

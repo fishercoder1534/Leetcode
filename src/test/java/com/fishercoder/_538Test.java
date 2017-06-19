@@ -1,22 +1,22 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.solutions.ConvertBSTtoGreaterTree;
+import com.fishercoder.solutions._538;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class ConvertBSTtoGreaterTreeTest {
-    private static ConvertBSTtoGreaterTree test;
+public class _538Test {
+    private static _538 test;
     private static TreeNode actualRoot;
     private static TreeNode expectedRoot;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup(){
-        test = new ConvertBSTtoGreaterTree();
+        test = new _538();
     }
 
     @Before
