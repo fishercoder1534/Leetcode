@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.TheMazeIII;
+import com.fishercoder.solutions._499;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class TheMazeIIITest {
-    private static TheMazeIII test;
+    private static _499 test;
     private static String expected;
     private static String actual;
     private static int[][] maze;
@@ -17,7 +17,7 @@ public class TheMazeIIITest {
 
     @BeforeClass
     public static void setup(){
-        test = new TheMazeIII();
+        test = new _499();
     }
 
     @Before

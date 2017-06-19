@@ -13,7 +13,7 @@ package com.fishercoder.solutions;
  and x = 0, y = 2,
  Return 6.
  */
-public class SmallestRectangleEnclosingBlackPixels {
+public class _302 {
     class Solution {
         private char[][] image;
         public int minArea(char[][] iImage, int x, int y) {

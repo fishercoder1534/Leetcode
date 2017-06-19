@@ -9,7 +9,7 @@ package com.fishercoder.solutions;
  Children with a higher rating get more candies than their neighbors.
  What is the minimum candies you must give?
  */
-public class Candy {
+public class _135 {
 
     public int candy(int[] ratings) {
         int[] candy = new int[ratings.length];

@@ -8,7 +8,7 @@ Design an algorithm to find the maximum profit. You may complete at most two tra
 
 Note:
 You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).*/
-public class BestTimeToBuyAndSellStockIII {
+public class _123 {
     
     //this is a very clear solution and very highly upvoted in Discuss, but not extensibel to K solution.
     public int maxProfit(int[] prices) {
@@ -87,7 +87,7 @@ public class BestTimeToBuyAndSellStockIII {
 //        int[] prices = new int[]{6,1,3,2,4,7};
 //        int[] prices = new int[]{1,2,4,2,5,7,2,4,9,0};//(7-2)+(9-2) = 5+7 = 12 is wrong, it should be (7-1)+(9-2) = 6+7 = 13
         int[] prices = new int[]{2,5,7,1,4,3,1,3};
-        BestTimeToBuyAndSellStockIII test = new BestTimeToBuyAndSellStockIII();
+        _123 test = new _123();
         System.out.println(test.maxProfit(prices));
     }
     

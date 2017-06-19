@@ -24,7 +24,7 @@ import java.util.List;
  ]
  */
 
-public class Subsets {
+public class _78 {
 
     public static void main(String...strings){
 //        int[] nums = new int[]{1,2,3};
@@ -62,7 +62,7 @@ public class Subsets {
         //ATTN: you'll have to make a new list here before entering the for loop
         result.add(new ArrayList(temp));
         for(int i = start; i < nums.length; i++){
-            if(i != start && nums[i] == nums[i-1]) continue;//add this line here to skip duplicates for Subsets II
+            if(i != start && nums[i] == nums[i-1]) continue;//add this line here to skip duplicates for _78 II
             temp.add(nums[i]);
             backtracking(result, temp, nums, i+1);
             temp.remove(temp.size()-1);

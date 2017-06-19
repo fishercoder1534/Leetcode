@@ -30,7 +30,7 @@ package com.fishercoder.solutions;
  ¤ ¤
 
  Because the 4th row is incomplete, we return 3.*/
-public class ArrangingCoins {
+public class _441 {
 
     public static int arrangeCoins(int n) {
         if(n < 2) return n;

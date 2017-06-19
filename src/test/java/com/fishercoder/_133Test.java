@@ -1,7 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.UndirectedGraphNode;
-import com.fishercoder.solutions.CloneGraph;
+import com.fishercoder.solutions._133;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -11,14 +11,14 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by fishercoder on 1/15/17.
  */
-public class CloneGraphTest {
-    private static CloneGraph test;
+public class _133Test {
+    private static _133 test;
     private static UndirectedGraphNode expected;
     private static UndirectedGraphNode actual;
 
     @BeforeClass
     public static void setup(){
-        test = new CloneGraph();
+        test = new _133();
     }
 
     @Before

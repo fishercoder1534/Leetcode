@@ -10,7 +10,7 @@ package com.fishercoder.solutions;
 
  Note:
  You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.*/
-public class ShortestWordDistance {
+public class _243 {
 
     public int shortestDistance(String[] words, String word1, String word2) {
         

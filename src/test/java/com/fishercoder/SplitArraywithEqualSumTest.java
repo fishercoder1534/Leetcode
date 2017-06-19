@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.SplitArraywithEqualSum;
+import com.fishercoder.solutions._548;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -8,14 +8,14 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class SplitArraywithEqualSumTest {
-    private static SplitArraywithEqualSum test;
+    private static _548 test;
     private static boolean expected;
     private static boolean actual;
     private static int[] nums;
 
     @BeforeClass
     public static void setup(){
-        test = new SplitArraywithEqualSum();
+        test = new _548();
     }
 
     @Before

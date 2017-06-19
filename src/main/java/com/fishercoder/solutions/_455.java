@@ -26,7 +26,7 @@ import java.util.Arrays;
  You have 3 cookies and their sizes are big enough to gratify all of the children,
  You need to output 2.*/
 
-public class AssignCookies {
+public class _455 {
 
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
@@ -44,7 +44,7 @@ public class AssignCookies {
     }
     
     public static void main(String...args){
-        AssignCookies test = new AssignCookies();
+        _455 test = new _455();
         int[] g = new int[]{1,2,3};
         int[] s = new int[]{1,1};
         System.out.println(test.findContentChildren(g, s));

@@ -15,7 +15,7 @@ import java.util.List;
    3     2     1      1   3      2
   /     /       \                 \
  2     1         2                 3*/
-public class UniqueBinarySearchTreeII {
+public class _95 {
 
 	public List<TreeNode> generateTrees_pure_recursion(int n) {
 		List<TreeNode> result = new ArrayList<TreeNode>();

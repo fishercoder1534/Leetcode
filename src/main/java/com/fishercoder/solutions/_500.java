@@ -16,7 +16,7 @@ import java.util.*;
  * You may use one character in the keyboard more than once.
  * You may assume the input string will only contain letters of alphabet.
  */
-public class KeyboardRow {
+public class _500 {
 
     public String[] findWords(String[] words) {
         final Set<Character> row1 = new HashSet<>(Arrays.asList('q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'));

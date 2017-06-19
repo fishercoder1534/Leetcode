@@ -21,7 +21,7 @@ package com.fishercoder.solutions;
       |  1 0 0 |   | 7 0 0 |   |  7 0 0 |
  AB = | -1 0 3 | x | 0 0 0 | = | -7 0 3 |
                    | 0 0 1 |*/
-public class SparseMatrixMultiplication {
+public class _311 {
 
     public int[][] multiply(int[][] A, int[][] B) {
         int m = A.length, n = A[0].length, p = B[0].length;

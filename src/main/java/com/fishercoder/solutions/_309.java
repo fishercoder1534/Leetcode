@@ -11,7 +11,7 @@ package com.fishercoder.solutions;
  prices = [1, 2, 3, 0, 2]
  maxProfit = 3
  transactions = [buy, sell, cooldown, buy, sell]*/
-public class BestTimeToBuyAndSellStockWithCooldown {
+public class _309 {
     static class solutionFromProblemAuthor {
         /**
          * The series of problems are typical dp. The key for dp is to find the variables to

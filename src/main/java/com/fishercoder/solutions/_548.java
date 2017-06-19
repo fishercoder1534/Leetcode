@@ -23,7 +23,7 @@ import java.util.HashSet;
  1 <= n <= 2000.
  Elements in the given array will be in range [-1,000,000, 1,000,000].
  */
-public class SplitArraywithEqualSum {
+public class _548 {
 
     public boolean splitArray_O_N_3(int[] nums) {//TODO: this one is failed by test4, probably some index wrong
         if (nums == null || nums.length == 0) return false;

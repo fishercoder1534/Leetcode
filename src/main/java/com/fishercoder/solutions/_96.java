@@ -13,7 +13,7 @@ package com.fishercoder.solutions;
  2    1         2                 3
 
  */
-public class UniqueBinarySearchTrees {
+public class _96 {
 
     public int numTrees(int n) {
         int [] G = new int[n+1];

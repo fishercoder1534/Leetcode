@@ -49,7 +49,7 @@ import java.util.Queue;
  The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
  The maze contains at least 2 empty spaces, and both the width and height of the maze won't exceed 100.
  */
-public class TheMazeII {
+public class _505 {
 
     /**The difference between II and I of this problem:
      * the extra array is not boolean type any more, but int type, and it's recording the length of each point to start point.*/

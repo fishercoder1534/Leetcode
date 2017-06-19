@@ -29,7 +29,7 @@ package com.fishercoder.solutions;
  Note:
  N is a positive integer and will not exceed 15.
  */
-public class BeautifulArrangement {
+public class _526 {
     //A good post to look at: https://discuss.leetcode.com/topic/79916/java-solution-backtracking and it's generic template afterwards for backtracking problems
 
     int count = 0;

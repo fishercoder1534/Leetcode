@@ -7,7 +7,7 @@ import com.fishercoder.common.classes.TreeNode;
 
  For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.*/
 
-public class BalancedBinaryTree {
+public class _110 {
     
     class Solution_1 {
         //recursively get the height of each subtree of each node, compare their difference, if greater than 1, then return false

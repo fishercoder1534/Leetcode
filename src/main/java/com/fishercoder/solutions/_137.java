@@ -10,7 +10,7 @@ Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
 */
-public class SingleNumberII {
+public class _137 {
 
     public int singleNumber(int[] nums) {
         Map<Integer, Integer> map = new HashMap();
@@ -25,7 +25,7 @@ public class SingleNumberII {
     
     public static void main(String...strings){
         int[] nums = new int[]{2,2,3,2};
-        SingleNumberII test = new SingleNumberII();
+        _137 test = new _137();
         System.out.println(test.singleNumber(nums));
     }
 

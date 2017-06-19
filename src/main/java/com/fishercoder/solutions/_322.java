@@ -14,7 +14,7 @@ package com.fishercoder.solutions;
  Note:
  You may assume that you have an infinite number of each kind of coin.
  */
-public class CoinChange {
+public class _322 {
 
     public int coinChange(int[] coins, int amount) {
         if(amount < 1) return 0;

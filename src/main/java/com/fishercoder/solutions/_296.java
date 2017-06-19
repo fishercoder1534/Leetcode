@@ -16,7 +16,7 @@ import java.util.List;
  0 - 0 - 1 - 0 - 0
  The point (0,2) is an ideal meeting point, as the total travel distance of 2+2+2=6 is minimal. So return 6.
  */
-public class BestMeetingPoint {
+public class _296 {
 	public int minTotalDistance(int[][] grid) {
 		int m = grid.length;
 		int n = grid[0].length;
