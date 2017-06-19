@@ -2,14 +2,14 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.utils.CommonUtils;
 
-/**Leetcode 62. Unique Paths
+/**Unique Paths
 
 A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
-
-The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+The robot can only move either down or right at any point in time. The robot is trying to reach
+the bottom-right corner of the grid (marked 'Finish' in the diagram below).
 
 How many possible unique paths are there?*/
-public class UniquePaths {
+public class _62 {
     
     /**Another typical DP question, use a 2d array:
      * the first row and the first column need to be initialized to be 1 since there's only one way to reach every
@@ -44,7 +44,7 @@ public class UniquePaths {
     }
     
     public static void main(String...strings){
-        UniquePaths test = new UniquePaths();
+        _62 test = new _62();
         int m = 1;
         int n = 2;
         System.out.println(test.uniquePaths(m, n));

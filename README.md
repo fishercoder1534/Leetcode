@@ -468,6 +468,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |65|[Valid Number](https://leetcode.com/problems/valid-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_65.java)|O(n)|O(1)|Hard|
 |64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_64.java)|O(m*n)|O(m*n)|Medium| DP
 |63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_63.java)|O(m*n)|O(m*n)|Medium| DP
+|62|[Unique Paths](https://leetcode.com/problems/unique-paths/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_62.java)|O(m*n)|O(m*n)|Medium| DP
 |61|[Rotate List](https://leetcode.com/problems/rotate-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_61.java)|O(n)|O(1)|Medium| Linked List
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_60.java)|?|?|Medium|
 |59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_59.java)|O(n)|O(n)|Medium|
