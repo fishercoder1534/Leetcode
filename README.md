@@ -180,6 +180,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |406|[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_406.java)| O(nlogn)|O(1) | Medium| LinkedList, PriorityQueue
 |405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_405.java)| O(n)|O(1) | Easy|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SumofLeftLeaves.java)| O(n)|O(h) | Easy|
+|403|[Frog Jump](https://leetcode.com/problems/frog-jump/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_403.java)| O(n^2)|O(n^2) | Hard| DP
 |402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_402.java)| O(n)|O(n) | Medium| Greedy, Stack
 |401|[Binary Watch](https://leetcode.com/problems/binary-watch/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_401.java)| O(1)|O(1) | Easy|
 |400|[Nth Digit](https://leetcode.com/problems/nth-digit/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_400.java)| O(n)|O(1) | Easy|
