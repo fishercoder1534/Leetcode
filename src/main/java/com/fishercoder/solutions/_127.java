@@ -7,7 +7,9 @@ import java.util.Set;
 /**
  * 127. Word Ladder
  *
- *  Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:
+ *  Given two words (beginWord and endWord),
+ *  and a dictionary's word list,
+ *  find the length of shortest transformation sequence from beginWord to endWord, such that:
 
  Only one letter can be changed at a time.
  Each transformed word must exist in the word list. Note that beginWord is not a transformed word.
@@ -33,7 +35,7 @@ import java.util.Set;
  */
 public class _127 {
 
-    /**Credit: https://discuss.leetcode.com/topic/29303/two-end-bfs-in-java-31ms/16*/
+    /**reference: https://discuss.leetcode.com/topic/29303/two-end-bfs-in-java-31ms/16*/
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> dict = new HashSet<>(wordList);
         Set<String> startSet = new HashSet<>();
