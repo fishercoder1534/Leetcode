@@ -7,7 +7,7 @@ import com.fishercoder.common.classes.TreeNode;
 Given a binary tree, find its maximum depth.
 
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.*/
-public class MaximumDepthOfBinaryTree {
+public class _104 {
     
     //more verbose version
     public int maxDepth(TreeNode root) {
