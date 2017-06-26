@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.NestedInteger;
 
 import java.util.List;
 
-public class NestedListWeightSum {
+public class _339 {
     class Solution_with_global_sum {
         private int sum = 0;
 

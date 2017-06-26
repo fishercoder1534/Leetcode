@@ -27,7 +27,7 @@ import com.fishercoder.common.classes.TreeNode;
 1
  Longest consecutive sequence path is 2-3,not3-2-1, so return 2.
  */
-public class BinaryTreeLongestConsecutiveSequence {
+public class _298 {
 
     private int max = 1;
     public int longestConsecutive(TreeNode root) {

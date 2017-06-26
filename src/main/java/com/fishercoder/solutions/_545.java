@@ -54,7 +54,7 @@ import java.util.Set;
  So order them in anti-clockwise without duplicate nodes we have [1,2,4,7,8,9,10,6,3].
 
  */
-public class BoundaryofBinaryTree {
+public class _545 {
     public List<Integer> boundaryOfBinaryTree(TreeNode root) {
         List<Integer> nodes = new ArrayList<>(1000);
         if(root == null) return nodes;

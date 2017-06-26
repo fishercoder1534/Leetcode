@@ -20,6 +20,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|628|[Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_628.java) | O(nlogn) |O(1) | Easy |
 |625|[Minimum Factorization](https://leetcode.com/problems/minimum-factorization/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_625.java) | O(?) |O(?) | Medium | 
 |624|[Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_624.java) | O(nlogn) |O(1) | Easy | Sort, Array
 |623|[Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_623.java) | O(n) |O(h) | Medium | Tree
@@ -58,7 +59,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ReverseWordsinaStringIII.java) | O(n) |O(n) | Easy | String
 |556|[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NextGreaterElementIII.java) | O(n)|O(1)| Medium | String
 |555|[Split Concatenated Strings](https://leetcode.com/problems/split-concatenated-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_555.java) | O(n^2) |O(n) | Medium | String
-|554|[Brick Wall](https://leetcode.com/problems/brick-wall/)|[Solution](../master/src/main/java/com/fishercoder/solutions/BrickWall.java) | O(n) (n is total number of bricks in the wall) |O(m) (m is width of the wall) | Medium | HashMap
+|554|[Brick Wall](https://leetcode.com/problems/brick-wall/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_554.java) | O(n) (n is total number of bricks in the wall) |O(m) (m is width of the wall) | Medium | HashMap
 |553|[Optimal Division](https://leetcode.com/problems/optimal-division/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_553.java) | O(n) | O(n) | Medium | String
 |552|[Student Attendance Record II](https://leetcode.com/problems/student-attendance-record-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_552.java) | O(n)| O(1) | Hard| DP
 |551|[Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_551.java) | O(n)| O(1) | Easy| String 
@@ -66,7 +67,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |548|[Split Array with Equal Sum](https://leetcode.com/problems/split-array-with-equal-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_548.java) | O(n^2) |O(1) | Medium | Array
 |547|[Friend Circles](https://leetcode.com/problems/friend-circles/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FriendCircles.java) | O(n^2) |O(n) | Medium | Union Find
 |546|[Remove Boxes](https://leetcode.com/problems/remove-boxes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_546.java) | O(n^3) |O(n^3) | Hard| DFS, DP
-|545|[Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/BoundaryofBinaryTree.java) | O(n) |O(n) | Medium | Recursion
+|545|[Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_545.java) | O(n) |O(n) | Medium | Recursion
 |544|[Output Contest Matches](https://leetcode.com/problems/output-contest-matches/)|[Solution](../master/src/main/java/com/fishercoder/solutions/OutputContestMatches.java) | O(n) |O(n) | Medium | Recursion
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/DiameterofBinaryTree.java) | O(n) |O(h) | Easy | Tree/DFS/Recursion
 |542|[01 Matrix](https://leetcode.com/problems/01-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_542.java) | O(m*n) |O(n) | Medium | BFS
@@ -157,7 +158,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FindAllAnagramsinaString.java)| O(n)|O(1) | Easy|
 |437|[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PathSumIII.java) | O(n^2) |O(n) | Easy| DFS, recursion
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
-|435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NonOverlappingIntervals.java) | O(nlogn) |O(1) | Medium| Greedy
+|435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_435.java) | O(nlogn) |O(1) | Medium| Greedy
 |434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NumberofSegmentsinaString.java)| O(n)|O(1) | Easy|
 |432|[All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_432.java)| O(1)|O(n) | Hard| Design
 |425|[Word Squares](https://leetcode.com/problems/word-squares/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_425.java)| O(n!)|O(n) | Hard| Trie, Backtracking, Recursion
@@ -213,7 +214,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |365|[Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_365.java)| O(n)|O(1) | Medium| Math
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NestedListWeightSumII.java)| O(n)|O(h) | Medium| DFS
 |362|[Design Hit Counter](https://leetcode.com/problems/design-hit-counter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/DesignHitCounter.java)| O(1) amortized|O(k) | Medium| Design
-|361|[Bomb Enemy](https://leetcode.com/problems/bomb-enemy/)|[Solution](../master/src/main/java/com/fishercoder/solutions/BombEnemies.java)| O(?)|O(?) | Medium| 
+|361|[Bomb Enemy](https://leetcode.com/problems/bomb-enemy/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_361.java)| O(?)|O(?) | Medium| 
 |360|[Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_360.java)| O(n)|O(1) | Medium| Two Pointers, Math
 |359|[Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/LoggerRateLimiter.java)| amortized O(1)|O(k) | Easy| HashMap
 |358|[Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_358.java)| O(n)|O(n) | Hard| HashMap, Heap, Greedy
@@ -231,7 +232,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |343|[Integer Break](https://leetcode.com/problems/integer-break/)|[Solution](../master/src/main/java/com/fishercoder/solutions/IntegerBreak.java)| O(1)|O(1) | Medium| Math
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_341.java)| O(n)|O(n) | Medium| Stack
 |340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_340.java)| O(n)|O(1) | Hard| Sliding Window
-|339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NestedListWeightSum.java)| O(n)|O(h)) | Easy| DFS
+|339|[Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_339.java)| O(n)|O(h)) | Easy| DFS
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_338.java)| O(nlogn)|O(h) | Medium| 
 |337|[House Robber III](https://leetcode.com/problems/house-robber-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_337.java)| O(n)|O(n)| Medium | DP
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PalindromePairs.java)| O(n^2)|O(n) | Hard|
@@ -269,13 +270,13 @@ Your ideas/fixes/algorithms are more than welcome!
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/RemoveInvalidParentheses.java)| ? | ? | Hard| BFS
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_300.java)| O(logn)|O(n) | Medium| DP
 |299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_299.java)| O(n)|O(1) | Easy| 
-|298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/BinaryTreeLongestConsecutiveSequence.java)| O(n)|O(n) | Medium | Tree
+|298|[Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_298.java)| O(n)|O(n) | Medium | Tree
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_297.java)| O(n) | O(h) | Hard| BFS
 |296|[Best Meeting Point](https://leetcode.com/problems/best-meeting-point/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_296.java)| ?|? | Hard|
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_295.java)| O(nlogn) | O(n) | Hard| Heap
 |294|[Flip Game II](https://leetcode.com/problems/flip-game-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_294.java)| O(?) | O(?)| Medium| Backtracking
 |293|[Flip Game](https://leetcode.com/problems/flip-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FlipGame.java)| O(n) | O(1)| Easy| 
-|292|[Nim Game](https://leetcode.com/problems/nim-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NimGame.java)| O(1)|O(1) | Easy| 
+|292|[Nim Game](https://leetcode.com/problems/nim-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_292.java)| O(1)|O(1) | Easy| 
 |291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_291.java)| O(n)|O(n) | Hard|
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_290.java)| O(n)|O(n) | Easy| 
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../master/src/main/java/com/fishercoder/solutions/GameOfLife.java)| O(m*n)|O(m*n), could be optimized to O(1) | Medium|
@@ -308,7 +309,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |261|[Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/GraphValidTree.java)| O(V+E)|O(V+E) | Medium|
 |259|[3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_259.java)| O(n^2)|O(1) | Medium|
 |258|[Add Digits](https://leetcode.com/problems/add-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_258.java)| O(1)|O(1) | Easy|
-|257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../master/src/main/java/com/fishercoder/solutions/BinaryTreePaths.java) | O(n*h) | O(h) | DFS/Recursion
+|257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_257.java) | O(n*h) | O(h) | DFS/Recursion
 |256|[Paint House](https://leetcode.com/problems/paint-house/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PaintHouse.java) | O(n) | O(1) | Medium| DP
 |255|[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_255.java) | O(n) | O(h) | Medium| Tree
 |254|[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FactorCombinations.java) | O(nlogn) | O(nlogn) | Medium| Backtracking

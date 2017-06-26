@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.BrickWall;
+import com.fishercoder.solutions._554;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -11,15 +11,15 @@ import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 
-public class BrickWallTest {
-    private static BrickWall test;
+public class _554Test {
+    private static _554 test;
     private static int expected;
     private static int actual;
     private static List<List<Integer>> wall;
 
     @BeforeClass
     public static void setup(){
-        test = new BrickWall();
+        test = new _554();
     }
 
     @Before

@@ -21,7 +21,8 @@ All root-to-leaf paths are:
 
 ["1->2->5", "1->3"]
 */
-public class BinaryTreePaths {
+
+public class _257 {
     //a very typical/good question to test your recursion/dfs understanding.
     public List<String> binaryTreePaths_more_concise(TreeNode root) {
         List<String> paths = new ArrayList<String>();
@@ -41,7 +42,7 @@ public class BinaryTreePaths {
     }
     
     public static void main(String...strings){
-        BinaryTreePaths test = new BinaryTreePaths();
+        _257 test = new _257();
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.left.right = new TreeNode(5);

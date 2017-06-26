@@ -29,10 +29,14 @@ import java.util.Comparator;
  Output: 0
 
  Explanation: You don't need to remove any of the intervals since they're already non-overlapping.*/
-public class NonOverlappingIntervals {
-/**Looked at these two posts: https://discuss.leetcode.com/topic/65828/java-solution-with-clear-explain
- * and https://discuss.leetcode.com/topic/65594/java-least-is-most
- * Sort the intervals by their end time, if equal, then sort by their start time.*/
+
+public class _435 {
+
+    /**
+     * References:: https://discuss.leetcode.com/topic/65828/java-solution-with-clear-explain
+     * and https://discuss.leetcode.com/topic/65594/java-least-is-most
+     * Sort the intervals by their end time, if equal, then sort by their start time.
+     */
     public static int eraseOverlapIntervals(Interval[] intervals) {
         Collections.sort(Arrays.asList(intervals), new Comparator<Interval>(){
             @Override
@@ -57,8 +61,6 @@ public class NonOverlappingIntervals {
         Interval interval3 = new Interval(1,11);
         Interval interval4 = new Interval(2,12);
         Interval[] intervals = new Interval[]{interval1, interval2, interval3, interval4};
-        
-        
         System.out.println(eraseOverlapIntervals(intervals));
     }
 

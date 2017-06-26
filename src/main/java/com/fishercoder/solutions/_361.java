@@ -14,7 +14,7 @@ package com.fishercoder.solutions;
 
  return 3. (Placing a bomb at (1,1) kills 3 enemies)
  */
-public class BombEnemies {
+public class _361 {
 
     public int maxKilledEnemies(char[][] grid) {
         int m = grid.length;
