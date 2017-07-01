@@ -15,7 +15,7 @@ import java.util.*;
 
  Note:
  Bonus point if you are able to do this using only O(n) extra space, where n is the total number of rows in the triangle.*/
-public class Triangle {
+public class _120 {
 
     public static int minimumTotal(List<List<Integer>> triangle) {
         /**https://discuss.leetcode.com/topic/1669/dp-solution-for-triangle, @stellari has a very excellent explanation.
