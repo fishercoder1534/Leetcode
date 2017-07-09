@@ -1,7 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.solutions.BinaryTreeLongestConsecutiveSequenceII;
+import com.fishercoder.solutions._549;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
@@ -9,15 +9,15 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class BinaryTreeLongestConsecutiveSequenceIITest {
-    private static BinaryTreeLongestConsecutiveSequenceII test;
+public class _549Test {
+    private static _549 test;
     private static int expected;
     private static int actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup(){
-        test = new BinaryTreeLongestConsecutiveSequenceII();
+        test = new _549();
     }
 
     @Before

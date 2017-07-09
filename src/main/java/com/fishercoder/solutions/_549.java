@@ -24,7 +24,7 @@ import com.fishercoder.common.classes.TreeNode;
  Explanation: The longest consecutive path is [1, 2, 3] or [3, 2, 1].
  Note: All the values of tree nodes are in the range of [-1e7, 1e7].
  */
-public class BinaryTreeLongestConsecutiveSequenceII {
+public class _549 {
 
     int max = 0;
     public int longestConsecutive(TreeNode root) {
