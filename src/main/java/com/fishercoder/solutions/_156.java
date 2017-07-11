@@ -12,14 +12,14 @@ import com.fishercoder.common.classes.TreeNode;
     1
    / \
   2  3
- /    \
-4     5
+ / \
+4   5
  return the root of the binary tree [4,5,2,#,#,3,1].
     4
    / \
   5  2
- /    \
-3     1
+    / \
+   3  1
  confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on OJ.
  */
 public class _156 {
