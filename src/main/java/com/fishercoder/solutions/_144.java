@@ -19,7 +19,7 @@ import java.util.Stack;
 
  Note: Recursive solution is trivial, could you do it iteratively?*/
 
-public class BinaryTreePreorderTraversal {
+public class _144 {
     public List<Integer> preorderTraversal_iterative_original(TreeNode root) {
         List<Integer> list = new ArrayList();
         Stack<TreeNode> stack = new Stack();
