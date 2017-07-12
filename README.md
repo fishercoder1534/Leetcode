@@ -20,6 +20,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|640|[Solve the Equation](https://leetcode.com/problems/solve-the-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_640.java) | O(n) |O(n) | Medium |
 |637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_637.java) | O(n) |O(1) | Easy | 
 |634|[Find the Derangement of An Array](https://leetcode.com/problems/find-the-derangement-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_634.java) | O(n) |O(1) | Medium | Math
 |633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_633.java) | O(logn) |O(1) | Easy | Binary Search
