@@ -21,7 +21,8 @@ Given the following binary tree,
   5     4       <---
 
 You should return [1, 3, 4]. */
-public class BinaryTreeRightSideView {
+
+public class _199 {
 	//Using BFS is pretty straightforward. But there might be a smarter way.
 	public List<Integer> rightSideView(TreeNode root) {
 		List<Integer> res = new ArrayList<Integer>();
@@ -43,7 +44,7 @@ public class BinaryTreeRightSideView {
 	}
 	
 	public static void main(String...strings){
-		BinaryTreeRightSideView test = new BinaryTreeRightSideView();
+		_199 test = new _199();
 		TreeNode root = new TreeNode(1);
 		root.left = new TreeNode(2);
 		root.right = new TreeNode(3);
