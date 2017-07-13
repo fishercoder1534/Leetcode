@@ -60,7 +60,7 @@ import java.util.*;
  [8,2],
  [7]
  ]*/
-public class BinaryTreeVerticalOrderTraversal {
+public class _314 {
     public List<List<Integer>> verticalOrder_using_treemap(TreeNode root) {
         List<List<Integer>> result = new ArrayList();
         if(root == null) return result;
