@@ -26,7 +26,7 @@ import java.util.Stack;
  You would need two stacks to track the path in finding predecessor and successor node separately.
 
  */
-public class ClosestBinarySearchTreeValueII {
+public class _272 {
 
 	public List<Integer> closestKValues(TreeNode root, double target, int k) {
 		List<Integer> res = new ArrayList();
