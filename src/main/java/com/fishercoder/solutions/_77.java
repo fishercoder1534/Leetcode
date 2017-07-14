@@ -14,7 +14,7 @@ import java.util.*;
  [1,3],
  [1,4],
  ]*/
-public class Combinations {
+public class _77 {
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> result = new ArrayList();
         int[] nums = new int[n];
