@@ -34,6 +34,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |616|[Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_616.java) | O(n*k) (n is length of string, k is size of dict) |O(n) | Medium | String
 |611|[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_611.java) | O(n^2logn) |O(logn) | Medium | Binary Search
 |609|[Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_609.java) | O(n*x) (x is the average length of each string) |O(n*x) | Medium | HashMap
+|607|[Sales Person](https://leetcode.com/problems/sales-person/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_607.java) | | | Easy | 
 |606|[Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_606.java) | O(n) |O(n) | Easy | Tree, Recursion
 |605|[Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_605.java) | O(n) |O(1) | Easy | Array
 |604|[Design Compressed String Iterator](https://leetcode.com/problems/design-compressed-string-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_604.java) | O(n) |O(n) | Easy |Design, String
