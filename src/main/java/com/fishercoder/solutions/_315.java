@@ -4,7 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
+ * 315. Count of Smaller Numbers After Self
+ *
+ * You are given an integer array nums and you have to return a new counts array.
+ * The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
 
  Example:
 
@@ -17,7 +20,7 @@ import java.util.List;
  Return the array [2, 1, 1, 0].
 
  */
-public class CountOfSmallerNumbersAfterSelf {
+public class _315 {
 
     class Node{
         int val;
