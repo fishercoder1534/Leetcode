@@ -239,7 +239,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_348.java)| O(1)|O(n) | Medium| Design 
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_347.java)| O(n)|O(1) | Medium| HashTable, Heap
 |346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MovingAveragefromDataStream.java)| O(1)|O(w)) | Easy| Queue
-|344|[Reverse String](https://leetcode.com/problems/reverse-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ReverseString.java) | O(n) |O(1) | Easy | String
+|344|[Reverse String](https://leetcode.com/problems/reverse-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_344.java) | O(n) |O(1) | Easy | String
 |343|[Integer Break](https://leetcode.com/problems/integer-break/)|[Solution](../master/src/main/java/com/fishercoder/solutions/IntegerBreak.java)| O(1)|O(1) | Medium| Math
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_341.java)| O(n)|O(n) | Medium| Stack
 |340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_340.java)| O(n)|O(1) | Hard| Sliding Window
