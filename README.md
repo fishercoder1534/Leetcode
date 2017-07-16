@@ -48,6 +48,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |591|[Tag Validator](https://leetcode.com/problems/tag-validator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_591.java) | O(n) |O(n) | Hard | Stack, String
 |588|[Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_588.java) | O(n) |O(h) | Hard | Trie, Design
 |587|[Erect the Fence](https://leetcode.com/problems/erect-the-fence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_587.java) | O(?) |O(?) | Hard | Geometry
+|584|[Find Customer Referee](https://leetcode.com/problems/find-customer-referee/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_584.java) | || Easy| 
 |583|[Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_583.java) | O(m*n) |O(m*n) could be optimized to O(n) | Medium | DP
 |582|[Kill Process](https://leetcode.com/problems/kill-process/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_582.java) | O(n) |O(h) | Medium | Stack
 |581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_581.java) | O(n) |O(1) | Easy | Array, Sort
