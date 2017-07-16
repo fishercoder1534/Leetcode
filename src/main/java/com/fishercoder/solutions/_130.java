@@ -3,6 +3,8 @@ package com.fishercoder.solutions;
 import java.util.*;
 
 /**
+ * 130. Surrounded Regions
+ *
  * Given a 2D board containing 'X' and 'O' (the letter O), capture all regions surrounded by 'X'.
 
  A region is captured by flipping all 'O's into 'X's in that surrounded region.
@@ -12,17 +14,16 @@ import java.util.*;
  X O O X
  X X O X
  X O X X
+
  After running your function, the board should be:
 
  X X X X
  X X X X
  X X X X
  X O X X
- Show Tags
- Show Similar Problems
-
  */
-public class SurroundedRegionsBFS {
+public class _130 {
+
     /**I won't call this problem hard, it's just confusing, you'll definitely want to clarify what the problem means before coding.
      * This problem eactually means:
      * any grid that is 'O' but on the four edges, will never be marked to 'X';
@@ -36,7 +37,8 @@ public class SurroundedRegionsBFS {
         if(board == null || board.length == 0 || board[0].length == 0) return;
         int m = board.length, n = board[0].length;
         Queue<int[]> queue = new LinkedList();
-        //check first row and last row and mark all those '0' on these two rows to be '+' to let them be different from other 'O', at the same time, we put them into the queue to get ready for a BFS to mark all those adjacent 'O' nodes to '+' as well
+        //check first row and last row and mark all those '0' on these two rows to be '+' to let them be different from other 'O',
+        //at the same time, we put them into the queue to get ready for a BFS to mark all those adjacent 'O' nodes to '+' as well
         for(int j = 0; j < n; j++){
             if(board[0][j] == 'O') {
                 board[0][j] = '+';
