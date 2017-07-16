@@ -53,6 +53,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |583|[Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_583.java) | O(m*n) |O(m*n) could be optimized to O(n) | Medium | DP
 |582|[Kill Process](https://leetcode.com/problems/kill-process/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_582.java) | O(n) |O(h) | Medium | Stack
 |581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_581.java) | O(n) |O(1) | Easy | Array, Sort
+|577|[Employee Bonus](https://leetcode.com/problems/employee-bonus/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_577.java) | || Easy | 
 |576|[Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_576.java) | O(N*m*n) |O(m*n) | Hard | DP, DFS
 |575|[Distribute Candies](https://leetcode.com/problems/distribute-candies/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_575.java) | O(nlogn) |O(1) | Easy | Array
 |573|[Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_573.java) | O(n) |O(1) | Medium | Math
