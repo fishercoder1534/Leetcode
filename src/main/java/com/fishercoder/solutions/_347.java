@@ -9,7 +9,10 @@ import java.util.Map.Entry;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-/**Given a non-empty array of integers, return the k most frequent elements.
+/**
+ * 347. Top K Frequent Elements
+ *
+ * Given a non-empty array of integers, return the k most frequent elements.
 
  For example,
  Given [1,1,1,2,2,3] and k = 2, return [1,2].
@@ -17,7 +20,8 @@ import java.util.Queue;
  Note:
  You may assume k is always valid, 1 ≤ k ≤ number of unique elements.
  Your algorithm's time complexity must be better than O(n log n), where n is the array's size.*/
-public class TopKFrequentElements {
+
+public class _347 {
 	// Approach 1: use buckets to hold numbers of the same frequency
 	/**Attn: we must use a simple array to solve this problem, instead of using List<List<Integer>>, 
 	 * we have to use List<Integer>[], otherwise, cases like this one: [-1,-1] 
@@ -98,7 +102,7 @@ public class TopKFrequentElements {
 
 	public static void main(String[] args) {
 		int[] nums = new int[] { 3, 0, 1, 0 };
-		TopKFrequentElements test = new TopKFrequentElements();
+		_347 test = new _347();
 		test.topKFrequent_using_heap(nums, 1);
 //		test.topKFrequent_using_bucket(nums, 1);
 	}
