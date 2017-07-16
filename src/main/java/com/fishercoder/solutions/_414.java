@@ -1,6 +1,10 @@
 package com.fishercoder.solutions;
 
-/**Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
+/**
+ * 414. Third Maximum Number
+ *
+ * Given a non-empty array of integers, return the third maximum number in this array.
+ * If it does not exist, return the maximum number. The time complexity must be in O(n).
 
  Example 1:
  Input: [3, 2, 1]
@@ -22,9 +26,9 @@ package com.fishercoder.solutions;
  Explanation: Note that the third maximum here means the third maximum distinct number.
  Both numbers with value 2 are both considered as second maximum.
  */
-public class ThirdMaximumNumber {
+public class _414 {
 
-    public static int thirdMax_20161115(int[] nums) {
+    public static int thirdMax(int[] nums) {
 
         if (nums == null || nums.length == 0) return 0;
         if (nums.length < 3) {
@@ -73,7 +77,7 @@ public class ThirdMaximumNumber {
         int[] nums = new int[]{1,2,-2147483648};//should be -2147483648
 //        int[] nums = new int[]{3,2,1};
 //        System.out.println(thirdMax(nums));
-        System.out.println(thirdMax_20161115(nums));
+        System.out.println(thirdMax(nums));
     }
 
 }
