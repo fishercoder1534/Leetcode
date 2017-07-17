@@ -32,6 +32,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |623|[Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_623.java) | O(n) |O(h) | Medium | Tree
 |621|[Task Scheduler](https://leetcode.com/problems/task-scheduler/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_621.java) | O(n) |O(26) | Medium | Greedy, Queue
 |620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_620.java) | | | Easy | 
+|619|[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_619.java) | | | Easy |
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_617.java) | O(n) |O(h) | Easy | Tree, Recursion
 |616|[Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_616.java) | O(n*k) (n is length of string, k is size of dict) |O(n) | Medium | String
 |611|[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_611.java) | O(n^2logn) |O(logn) | Medium | Binary Search
