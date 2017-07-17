@@ -24,7 +24,7 @@ return
    [5,8,4,5]
 ]
 */
-public class PathSumII {
+public class _113 {
     //also, it's possible that a node's value could be negative, as long as the sum of root to leaf ends up to sum
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         List<List<Integer>> allPaths = new ArrayList();
@@ -54,7 +54,7 @@ public class PathSumII {
 
 
     public static void main(String...strings){
-        PathSumII test = new PathSumII();
+        _113 test = new _113();
 //        TreeNode root = new TreeNode(1);
 //        root.left = new TreeNode(2);
 //        int sum = 1;
