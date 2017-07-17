@@ -3,6 +3,8 @@ package com.fishercoder.solutions;
 import com.fishercoder.common.classes.TreeNode;
 
 /**
+ * 98. Validate Binary Search Tree
+ *
  * Given a binary tree, determine if it is a valid binary search tree (BST).
 
  Assume a BST is defined as follows:
@@ -51,5 +53,9 @@ public class _98 {
         if (root.left != null) leftResult = dfs(root.left, minValue, root.val);
         if (root.right != null) rightResult = dfs(root.right, root.val, maxValue);
         return leftResult && rightResult;
+    }
+
+    public static void main(String... args) {
+        System.out.println(Integer.MAX_VALUE == 2147483647);
     }
 }
