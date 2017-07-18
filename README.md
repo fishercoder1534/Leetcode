@@ -561,7 +561,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
-|613|[Shortest Distance in a Line](https://leetcode.com/problems/shortest-distance-in-a-line/)|[Solution](../master/database/_613.java) | || Easy|
+|613|[Shortest Distance in a Line](https://leetcode.com/problems/shortest-distance-in-a-line/)|[Solution](../master/database/_613.sql) | || Easy|
 |197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../master/database/RisingTemperature.sql)| O(n^2)|O(n) | Easy|
 |196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../master/database/DeleteDuplicateEmails.sql)| O(n^2)|O(n) | Easy|
 |184|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary)|[Solution](../master/database/_184.sql)| O(n^2)|O(n) | Medium|
