@@ -28,38 +28,29 @@ Your ideas/fixes/algorithms are more than welcome!
 |634|[Find the Derangement of An Array](https://leetcode.com/problems/find-the-derangement-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_634.java) | O(n) |O(1) | Medium | Math
 |633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_633.java) | O(logn) |O(1) | Easy | Binary Search
 |628|[Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_628.java) | O(nlogn) |O(1) | Easy |
-|627|[Swap Salary](https://leetcode.com/problems/swap-salary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_627.java) | | | Easy |
 |625|[Minimum Factorization](https://leetcode.com/problems/minimum-factorization/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_625.java) | O(?) |O(?) | Medium | 
 |624|[Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_624.java) | O(nlogn) |O(1) | Easy | Sort, Array
 |623|[Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_623.java) | O(n) |O(h) | Medium | Tree
 |621|[Task Scheduler](https://leetcode.com/problems/task-scheduler/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_621.java) | O(n) |O(26) | Medium | Greedy, Queue
-|620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_620.java) | | | Easy | 
-|619|[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_619.java) | | | Easy |
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_617.java) | O(n) |O(h) | Easy | Tree, Recursion
 |616|[Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_616.java) | O(n*k) (n is length of string, k is size of dict) |O(n) | Medium | String 
 |611|[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_611.java) | O(n^2logn) |O(logn) | Medium | Binary Search
 |609|[Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_609.java) | O(n*x) (x is the average length of each string) |O(n*x) | Medium | HashMap
-|607|[Sales Person](https://leetcode.com/problems/sales-person/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_607.java) | | | Easy | 
 |606|[Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_606.java) | O(n) |O(n) | Easy | Tree, Recursion
 |605|[Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_605.java) | O(n) |O(1) | Easy | Array
 |604|[Design Compressed String Iterator](https://leetcode.com/problems/design-compressed-string-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_604.java) | O(n) |O(n) | Easy |Design, String
 |600|[Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_600.java) | O(log2(max_int) = 32) | O(log2(max_int) = 32) | Hard | Bit Manipulation, DP
 |599|[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_599.java) | O(max(m,n))|O(max(m,n)) | Easy | HashMap
 |598|[Range Addition II](https://leetcode.com/problems/range-addition-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_598.java) | O(n) (n is the number of operations) |O(1) | Easy | 
-|596|[Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_596.java) | || Easy |
-|595|[Big Countries](https://leetcode.com/problems/big-countries/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_595.java) | O(n) |O(1) | Easy | 
 |594|[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_594.java) | O(n) |O(n) | Easy | Array, HashMap
 |593|[Valid Square](https://leetcode.com/problems/valid-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_593.java) | O(1) |O(1) | Medium | Math
 |592|[Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_592.java) | O(nlogx) |O(n) | Medium | Math
 |591|[Tag Validator](https://leetcode.com/problems/tag-validator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_591.java) | O(n) |O(n) | Hard | Stack, String
 |588|[Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_588.java) | O(n) |O(h) | Hard | Trie, Design
 |587|[Erect the Fence](https://leetcode.com/problems/erect-the-fence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_587.java) | O(?) |O(?) | Hard | Geometry
-|586|[Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_586.java) | | | Easy| 
-|584|[Find Customer Referee](https://leetcode.com/problems/find-customer-referee/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_584.java) | || Easy| 
 |583|[Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_583.java) | O(m*n) |O(m*n) could be optimized to O(n) | Medium | DP
 |582|[Kill Process](https://leetcode.com/problems/kill-process/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_582.java) | O(n) |O(h) | Medium | Stack
 |581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_581.java) | O(n) |O(1) | Easy | Array, Sort
-|577|[Employee Bonus](https://leetcode.com/problems/employee-bonus/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_577.java) | || Easy | 
 |576|[Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_576.java) | O(N*m*n) |O(m*n) | Hard | DP, DFS
 |575|[Distribute Candies](https://leetcode.com/problems/distribute-candies/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_575.java) | O(nlogn) |O(1) | Easy | Array
 |573|[Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_573.java) | O(n) |O(1) | Medium | Math
@@ -561,7 +552,16 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|627|[Swap Salary](https://leetcode.com/problems/swap-salary/)|[Solution](../master/database/_627.sql) | | | Easy |
+|620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|[Solution](../master/database/_620.sql) | | | Easy |
+|619|[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)|[Solution](../master/database/_619.sql) | | | Easy |
 |613|[Shortest Distance in a Line](https://leetcode.com/problems/shortest-distance-in-a-line/)|[Solution](../master/database/_613.sql) | || Easy|
+|607|[Sales Person](https://leetcode.com/problems/sales-person/)|[Solution](../master/database/_607.sql) | | | Easy |
+|596|[Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/)|[Solution](../master/database/_596.sql) | || Easy |
+|595|[Big Countries](https://leetcode.com/problems/big-countries/)|[Solution](../master/database/_595.sql) | O(n) |O(1) | Easy |
+|586|[Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/)|[Solution](../master/database/_586.sql) | | | Easy|
+|584|[Find Customer Referee](https://leetcode.com/problems/find-customer-referee/)|[Solution](../master/database/_584.java) | || Easy|
+|577|[Employee Bonus](https://leetcode.com/problems/employee-bonus/)|[Solution](../master/database/_577.sql) | || Easy |
 |197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../master/database/RisingTemperature.sql)| O(n^2)|O(n) | Easy|
 |196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../master/database/DeleteDuplicateEmails.sql)| O(n^2)|O(n) | Easy|
 |184|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary)|[Solution](../master/database/_184.sql)| O(n^2)|O(n) | Medium|
