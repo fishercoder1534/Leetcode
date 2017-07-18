@@ -37,6 +37,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |619|[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_619.java) | | | Easy |
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_617.java) | O(n) |O(h) | Easy | Tree, Recursion
 |616|[Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_616.java) | O(n*k) (n is length of string, k is size of dict) |O(n) | Medium | String
+|613|[Shortest Distance in a Line](https://leetcode.com/problems/shortest-distance-in-a-line/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_613.java) | || Easy| 
 |611|[Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_611.java) | O(n^2logn) |O(logn) | Medium | Binary Search
 |609|[Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_609.java) | O(n*x) (x is the average length of each string) |O(n*x) | Medium | HashMap
 |607|[Sales Person](https://leetcode.com/problems/sales-person/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_607.java) | | | Easy | 
