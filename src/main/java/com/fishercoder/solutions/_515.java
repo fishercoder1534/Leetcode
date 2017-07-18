@@ -21,7 +21,7 @@ import java.util.Queue;
 
  Output: [1, 3, 9]
  */
-public class FindLargestValueinEachTreeRow {
+public class _515 {
 
     public List<Integer> largestValues(TreeNode root) {
         List<Integer> list = new ArrayList<>();

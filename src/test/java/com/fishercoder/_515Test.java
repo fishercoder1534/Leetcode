@@ -1,7 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.solutions.FindLargestValueinEachTreeRow;
+import com.fishercoder.solutions._515;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -12,15 +12,15 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class FindLargestValueinEachTreeRowTest {
-    private static FindLargestValueinEachTreeRow test;
+public class _515Test {
+    private static _515 test;
     private static List<Integer> expected;
     private static List<Integer> actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup(){
-        test = new FindLargestValueinEachTreeRow();
+        test = new _515();
     }
 
     @Before
