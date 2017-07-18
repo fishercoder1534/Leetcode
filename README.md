@@ -556,6 +556,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|[Solution](../master/database/_620.sql) | | | Easy |
 |619|[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)|[Solution](../master/database/_619.sql) | | | Easy |
 |613|[Shortest Distance in a Line](https://leetcode.com/problems/shortest-distance-in-a-line/)|[Solution](../master/database/_613.sql) | || Easy|
+|612|[Shortest Distance in a Plane](https://leetcode.com/problems/shortest-distance-in-a-plane/)|[Solution](../master/database/_612.sql) | || Medium|
 |607|[Sales Person](https://leetcode.com/problems/sales-person/)|[Solution](../master/database/_607.sql) | | | Easy |
 |596|[Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/)|[Solution](../master/database/_596.sql) | || Easy |
 |595|[Big Countries](https://leetcode.com/problems/big-countries/)|[Solution](../master/database/_595.sql) | O(n) |O(1) | Easy |
