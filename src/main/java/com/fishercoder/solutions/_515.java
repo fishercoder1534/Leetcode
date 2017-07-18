@@ -42,4 +42,27 @@ public class _515 {
         }
         return list;
     }
+
+    public List<Integer> largestValuesDFS(TreeNode root) {
+        List<Integer> res =  new ArrayList<>();
+        if(root == null) {
+            return  res;
+        }
+        dfs(root, res, 0);
+        return res;
+
+    }
+
+    public void dfs(TreeNode root, List<Integer> res, int level) {
+        if(root == null) {
+            return;
+        }
+        if(level == res.size()) {
+            res.add(root.val);
+        }
+        res.set(level, Math.max(res.get(level), root.val));
+        dfs(root.left, res, level +1);
+        dfs(root.right, res, level +1);
+    }
+
 }
