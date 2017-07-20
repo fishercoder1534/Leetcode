@@ -8,7 +8,7 @@ import java.util.List;
 
  For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
  */
-public class SummaryRanges {
+public class _228 {
 
     public static List<String> summaryRanges(int[] nums) {
         List<String> result = new ArrayList<>();
