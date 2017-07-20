@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 89. Gray Code
+ *
  * The gray code is a binary numeral system where two successive values differ in only one bit.
 
  Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.
@@ -21,7 +23,8 @@ import java.util.List;
 
  For now, the judge is able to judge based on one instance of gray code sequence. Sorry about that.
  */
-public class GrayCode {
+
+public class _89 {
 
     public List<Integer> grayCode(int n) {
         List<Integer> result = new ArrayList();

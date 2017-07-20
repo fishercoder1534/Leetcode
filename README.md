@@ -463,7 +463,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_93.java)| O(1)|O(1) | Medium | Backtracking
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_92.java)| O(n)|O(1) | Medium
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_91.java)| O(n)|O(n) | Medium| DP
-|89|[Gray Code](https://leetcode.com/problems/gray-code/)|[Solution](../master/src/main/java/com/fishercoder/solutions/GrayCode.java)|O(n) |O(1)|Medium|Bit Manipulation
+|89|[Gray Code](https://leetcode.com/problems/gray-code/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_89.java)|O(n) |O(1)|Medium|Bit Manipulation
 |88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_88.java)|O(max(m,n)) |O(1)|Easy|
 |87|[Scramble String](https://leetcode.com/problems/scramble-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_87.java)|O(?) |O(?)|Hard| Recursion
 |86|[Partition List](https://leetcode.com/problems/partition-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PartitionList.java)|O(?) |O(?)|Medium|
