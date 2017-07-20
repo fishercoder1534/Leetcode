@@ -2,7 +2,10 @@ package com.fishercoder.solutions;
 
 import java.util.*;
 
-/**Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.
+/**
+ * 216. Combination Sum III
+ * Find all possible combinations of k numbers that add up to a number n,
+ * given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.
 
 
  Example 1:
@@ -20,7 +23,8 @@ import java.util.*;
  Output:
 
  [[1,2,6], [1,3,5], [2,3,4]]*/
-public class CombinationSumIII {
+public class _216 {
+
     public List<List<Integer>> combinationSum3(int k, int n) {
         List<List<Integer>> result = new ArrayList();
         int[] nums = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -32,11 +36,9 @@ public class CombinationSumIII {
         if (n > 0) {
             for (int i = start; i < nums.length; i++) {
                 curr.add(nums[i]);
-                helper(k, n - nums[i], nums, i + 1, curr, result);// it needs to be a unique set of
-                                                                  // numbers, so we need to set it
-                                                                  // as i+1 here: each number is
-                                                                  // used only once in this array:
-                                                                  // [1,2,3,4,5,6,7,8,9]
+                /** it needs to be a unique set of numbers, so we need to set it
+                 as i+1 here: each number is used only once in this array: [1,2,3,4,5,6,7,8,9]*/
+                helper(k, n - nums[i], nums, i + 1, curr, result);
                 curr.remove(curr.size() - 1);
             }
         } else if (n == 0 && curr.size() == k) {//this is the major difference here: check size of curr list is of k before adding it
