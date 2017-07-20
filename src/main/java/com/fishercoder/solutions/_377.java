@@ -5,7 +5,8 @@ import com.fishercoder.common.utils.CommonUtils;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-/**Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target.
+/**Given an integer array with all positive numbers and no duplicates,
+ * find the number of possible combinations that add up to a positive integer target.
 
  Example:
 
@@ -24,14 +25,15 @@ import java.util.List;
  Note that different sequences are counted as different combinations.
 
  Therefore the output is 7.
+
  Follow up:
  What if negative numbers are allowed in the given array?
  How does it change the problem?
  What limitation we need to add to the question to allow negative numbers?*/
-public class CombinationSumIV {
-    //since this question doesn't require to return all the combination result, instead, it just wants one number, we could use DP
-    //the idea is similar to Climbing Stairs.
-    //adopted this solution: https://discuss.leetcode.com/topic/52186/my-3ms-java-dp-solution
+public class _377 {
+    /**since this question doesn't require to return all the combination result, instead, it just wants one number, we could use DP
+    the idea is similar to Climbing Stairs.
+    adopted this solution: https://discuss.leetcode.com/topic/52186/my-3ms-java-dp-solution*/
     public int combinationSum4(int[] nums, int target){
         Arrays.sort(nums);
         int[] result = new int[target+1];
@@ -68,7 +70,7 @@ public class CombinationSumIV {
     }
     
     public static void main(String...strings){
-        CombinationSumIV test = new CombinationSumIV();
+        _377 test = new _377();
         int[] nums = new int[]{1,2,3};
         int target = 4;
         CommonUtils.printListList(test.combinationSum4_printout(nums, target));
