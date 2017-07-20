@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Random;
 
-public class ShuffleAnArray {
+public class _384 {
     
     public static void main(String...strings){
         int[] nums = new int[]{1,2,3};
@@ -30,6 +30,7 @@ public class ShuffleAnArray {
     }
 
 }
+
 class Solution_for_this_question {
     //Note: the problem states that this is a set without duplicates which makes building all combinations easier
     
