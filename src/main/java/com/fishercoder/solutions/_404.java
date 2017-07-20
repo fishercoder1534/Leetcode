@@ -12,7 +12,7 @@ import com.fishercoder.common.classes.TreeNode;
   15   7
 
  There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.*/
-public class SumofLeftLeaves {
+public class _404 {
     public int sumOfLeftLeaves(TreeNode root) {
         int result = 0;
         if(root == null) return result;
