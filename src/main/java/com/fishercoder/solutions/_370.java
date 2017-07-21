@@ -39,7 +39,8 @@ package com.fishercoder.solutions;
  For each update operation, do you really need to update all elements between i and j?
  Update only the first and end element is sufficient.
  The optimal time complexity is O(k + n) and uses O(1) extra space.*/
-public class RangeAddition {
+
+public class _370 {
     /**Previously AC'ed brute force solution results in TLE now.*/
     public static int[] getModifiedArray_TLE(int length, int[][] updates) {
         int[] nums = new int[length];
