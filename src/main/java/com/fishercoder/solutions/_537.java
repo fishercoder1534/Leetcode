@@ -19,7 +19,7 @@ package com.fishercoder.solutions;
  The input strings will not have extra blank.
  The input strings will be given in the form of a+bi, where the integer a and b will both belong to the range of [-100, 100]. And the output should be also in this form.
  */
-public class ComplexNumberMultiplication {
+public class _537 {
 
     public String complexNumberMultiply(String a, String b) {
         String[] part1And2 = a.split("\\+");

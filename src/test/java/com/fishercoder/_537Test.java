@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.ComplexNumberMultiplication;
+import com.fishercoder.solutions._537;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,8 +10,8 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by fishercoder on 1/25/17.
  */
-public class ComplexNumberMultiplicationTest {
-    private static ComplexNumberMultiplication test;
+public class _537Test {
+    private static _537 test;
     private static String expected;
     private static String actual;
     private static String a;
@@ -19,7 +19,7 @@ public class ComplexNumberMultiplicationTest {
 
     @BeforeClass
     public static void setup(){
-        test = new ComplexNumberMultiplication();
+        test = new _537();
     }
 
     @Before
