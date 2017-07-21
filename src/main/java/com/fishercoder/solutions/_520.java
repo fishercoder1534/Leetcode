@@ -18,7 +18,7 @@ package com.fishercoder.solutions;
  Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.
 
  */
-public class DetectCapital {
+public class _520 {
     public boolean detectCapitalUse(String word) {
         char[] words = word.toCharArray();
         boolean firstLetterCap = false;
