@@ -11,7 +11,8 @@ Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
 */
-public class SingleNumber {
+
+public class _136 {
     //approach 1: use set, since this problem explicitly states that every element appears twice and only one appears once
     //so, we could safely remove the ones that are already in the set, O(n) time and O(n) space.
     //HashTable approach works similarly like this one, but it could be more easily extend to follow-up questions.
