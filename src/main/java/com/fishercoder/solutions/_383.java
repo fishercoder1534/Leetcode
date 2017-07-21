@@ -13,7 +13,7 @@ canConstruct("a", "b") -> false
 canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 */
-public class RansomNote {
+public class _383 {
 
     public boolean canConstruct_20160924(String ransomNote, String magazine) {
         char[] mchars = magazine.toCharArray();
@@ -58,7 +58,7 @@ public class RansomNote {
     }
     
     public static void main(String...strings){
-        RansomNote test = new RansomNote();
+        _383 test = new _383();
         String ransomNote = "aa";
         String magazine = "aab";
         System.out.println(test.canConstruct(ransomNote, magazine));
