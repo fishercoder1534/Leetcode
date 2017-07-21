@@ -8,7 +8,7 @@ import com.fishercoder.common.classes.ListNode;
 
  Follow up:
  Can you solve it without using extra space?*/
-public class LinkedListCycleII {
+public class _142 {
 
     public ListNode detectCycle(ListNode head) {
         ListNode slow = head, fast = head;
