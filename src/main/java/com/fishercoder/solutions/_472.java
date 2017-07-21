@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 472. Concatenated Words
+ *
  * Given a list of words, please write a program that returns all concatenated words in the given list of words.
 
  A concatenated word is defined as a string that is comprised entirely of at least two shorter words in the given array.
@@ -23,7 +25,8 @@ import java.util.List;
  The returned elements order does not matter.
 
  */
-public class ConcatenatedWords {
+
+public class _472 {
 
 	private TrieNode root;
 	private int maxWordLen;
