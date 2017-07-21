@@ -4,7 +4,7 @@ package com.fishercoder.solutions;
  *
  * Given an integer, write a function to determine if it is a power of two.*/
 
-public class PowerOfTwo {
+public class _231 {
     public boolean isPowerOfTwo(int n) {
         //after writing out the binary representation of some numbers: 1,2,4,8,16,32, you can easily figure out that
         //every number that is power of two has only one bit that is 1
@@ -13,7 +13,7 @@ public class PowerOfTwo {
     }
     
     public static void main(String...strings){
-        PowerOfTwo test = new PowerOfTwo();
+        _231 test = new _231();
         System.out.println(test.isPowerOfTwo(14));
     }
 }
