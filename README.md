@@ -569,6 +569,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |612|[Shortest Distance in a Plane](https://leetcode.com/problems/shortest-distance-in-a-plane/)|[Solution](../master/database/_612.sql) | || Medium|
 |610|[Triangle Judgement](https://leetcode.com/problems/triangle-judgement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_610.java) | | | Easy | 
 |607|[Sales Person](https://leetcode.com/problems/sales-person/)|[Solution](../master/database/_607.sql) | | | Easy |
+|597|[Friend Requests I: Overall Acceptance Rate](https://leetcode.com/problems/friend-requests-i-overall-acceptance-rate/)|[Solution](../master/database/_597.sql) | | | Easy |
 |596|[Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/)|[Solution](../master/database/_596.sql) | || Easy |
 |595|[Big Countries](https://leetcode.com/problems/big-countries/)|[Solution](../master/database/_595.sql) | O(n) |O(1) | Easy |
 |586|[Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/)|[Solution](../master/database/_586.sql) | | | Easy|
