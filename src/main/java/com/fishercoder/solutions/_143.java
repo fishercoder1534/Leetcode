@@ -3,6 +3,8 @@ package com.fishercoder.solutions;
 import com.fishercoder.common.classes.ListNode;
 
 /**
+ * 143. Reorder List
+ *
  * Given a singly linked list L: L0→L1→…→Ln-1→Ln,
  reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
 
@@ -11,7 +13,7 @@ import com.fishercoder.common.classes.ListNode;
  For example,
  Given {1,2,3,4}, reorder it to {1,4,2,3}.
  */
-public class ReorderList {
+public class _143 {
 
     public void reorderList(ListNode head) {
         if (head == null || head.next == null) {

@@ -418,7 +418,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/)|[Doubly Linked List](../master/src/main/java/com/fishercoder/solutions/_146_use_DoublyLinkedList_plus_HashMap.java) |[Linked Hash Map](../master/leetcode-algorithms/src/main/java/com/fishercoder/solutions/_146_use_LinkedHashMap.java)| O(?)|O(?) | Hard| Linked List
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_145.java)| O(n)|O(h) | Hard| Binary Tree
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_144.java)| O(n)|O(h) | Medium| Binary Tree
-|143|[Reorder List](https://leetcode.com/problems/reorder-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ReorderList.java)| O(n)|O(1) | Medium|
+|143|[Reorder List](https://leetcode.com/problems/reorder-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_143.java)| O(n)|O(1) | Medium|
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_142.java)| O(n)|O(1) | Medium| Linked List
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_141.java)| O(n)|O(1) | Easy| Linked List
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_140.java)| ? |O(n^2) | Hard| Backtracking/DFS
