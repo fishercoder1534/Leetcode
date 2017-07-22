@@ -6,7 +6,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
+/**
+ * 39. Combination Sum
+ *
+ * Given a set of candidate numbers (C) (without duplicates) and a target number (T),
+ * find all unique combinations in C where the candidate numbers sums to T.
 
  The same repeated number may be chosen from C unlimited number of times.
 
@@ -39,8 +43,7 @@ public class _39 {
                 curr.remove(curr.size()-1);
             }
         } else if(target == 0){
-            List<Integer> list = new ArrayList(curr);
-            result.add(list);
+            result.add(new ArrayList(curr));
         }
     }
 
