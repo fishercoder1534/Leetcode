@@ -575,6 +575,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |595|[Big Countries](https://leetcode.com/problems/big-countries/)|[Solution](../master/database/_595.sql) | O(n) |O(1) | Easy |
 |586|[Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/)|[Solution](../master/database/_586.sql) | | | Easy|
 |584|[Find Customer Referee](https://leetcode.com/problems/find-customer-referee/)|[Solution](../master/database/_584.java) | || Easy|
+|580|[Count Student Number in Departments](https://leetcode.com/problems/count-student-number-in-departments/)|[Solution](../master/database/_580.sql) | || Medium | Left Join
 |577|[Employee Bonus](https://leetcode.com/problems/employee-bonus/)|[Solution](../master/database/_577.sql) | || Easy |
 |197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../master/database/RisingTemperature.sql)| O(n^2)|O(n) | Easy|
 |196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../master/database/DeleteDuplicateEmails.sql)| O(n^2)|O(n) | Easy|
