@@ -20,6 +20,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|645|[Set Mismatch](https://leetcode.com/problems/set-mismatch/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_645.java) | O(nlogn) |O(1) | Easy | 
 |644|[Maximum Average Subarray II](https://leetcode.com/problems/maximum-average-subarray-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_644.java) | |O(1) | Hard | Binary Search
 |643|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_643.java) | O(n) |O(1) | Easy |
 |642|[Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_642.java) | O(n) |O(n) | Hard | Design
