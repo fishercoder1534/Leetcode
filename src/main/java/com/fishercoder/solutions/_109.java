@@ -6,11 +6,10 @@ import com.fishercoder.common.classes.TreeNode;
 /**
  * Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
  */
-public class ConvertSortedListtoBinarySearchTree {
+public class _109 {
 
     public TreeNode sortedListToBST(ListNode head) {
-        TreeNode res = rec(head, null);
-        return res;
+        return rec(head, null);
     }
 
     public TreeNode rec(ListNode start, ListNode end) {
