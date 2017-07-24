@@ -7,7 +7,8 @@ import java.util.*;
 
  Note:
  Could you optimize your algorithm to use only O(k) extra space?*/
-public class PascalsTriangleII {
+
+public class _119 {
 
     public List<Integer> getRow(int rowIndex) {
         if(rowIndex < 0) return new ArrayList();
