@@ -22,7 +22,7 @@ import com.fishercoder.common.classes.TreeNode;
  There will only be '(', ')', '-' and '0' ~ '9' in the input string.
  An empty tree is represented by "" instead of "()".
  */
-public class ConstructBinaryTreefromString {
+public class _536 {
 
     public TreeNode str2tree(String s) {
         if (s.equals("")) return null;

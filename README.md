@@ -88,7 +88,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MinimumTimeDifference.java) | O(n) |O(1) | Medium | String
 |538|[Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_538.java) | O(nlogn) |O(n) | Medium | Tree
 |537|[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_537.java) | O(1) |O(1) | Medium | Math, String
-|536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ConstructBinaryTreefromString.java) | O(n) |O(h) | Medium | Recursion
+|536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_536.java) | O(n) |O(h) | Medium | Recursion
 |535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_535.java) | O(1) |O(n) | Medium | Design
 |533|[Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_533.java) | O(m*n) |O(m) (m is number of rows) | Medium | HashMap
 |532|[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/KdiffPairsinanArray.java) | O(n) |O(n) | Easy | HashMap
