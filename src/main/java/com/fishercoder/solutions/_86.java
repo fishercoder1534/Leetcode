@@ -11,7 +11,7 @@ import com.fishercoder.common.classes.ListNode;
  Given 1->4->3->2->5->2 and x = 3,
  return 1->2->2->4->3->5.
  */
-public class PartitionList {
+public class _86 {
 
     public ListNode partition(ListNode head, int x) {
         if(head == null){
