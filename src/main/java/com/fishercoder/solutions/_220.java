@@ -9,7 +9,7 @@ import java.util.TreeSet;
  * distinct indices i and j in the array such that the difference between nums[i] and nums[j] is at
  * most t and the difference between i and j is at most k.
  */
-public class ContainsDuplicateIII {
+public class _220 {
     /**
      * TreeSet: per Java doc, is a NavigableSet implementation based on a TreeMap. The elements are ordered
      * using their natural ordering, or by a Comparator provided at set creation time, depending on
@@ -65,7 +65,7 @@ public class ContainsDuplicateIII {
      */
 
     public static void main(String... strings) {
-        ContainsDuplicateIII test = new ContainsDuplicateIII();
+        _220 test = new _220();
         // int[] nums = new int[]{-1, -1};
         // int k = 1;
         // int t = 0;
