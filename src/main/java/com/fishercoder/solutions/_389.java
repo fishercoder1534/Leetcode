@@ -16,7 +16,7 @@ package com.fishercoder.solutions;
 
  Explanation:
  'e' is the letter that was added.*/
-public class FindTheDifference {
+public class _389 {
     public char findTheDifference(String s, String t) {
         int[] counts = new int[128];
         char[] schars = s.toCharArray();
