@@ -13,7 +13,7 @@ import java.util.*;
   [1,3,3,1],
  [1,4,6,4,1]
  ]*/
-public class PascalsTriangle {
+public class _118 {
 
     public static List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList();
