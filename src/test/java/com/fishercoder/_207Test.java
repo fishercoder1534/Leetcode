@@ -1,13 +1,13 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.CourseSchedule;
+import com.fishercoder.solutions._207;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class CourseScheduleTest {
-    private static CourseSchedule test;
+public class _207Test {
+    private static _207 test;
     private static boolean actual;
     private static boolean expected;
     private static int[][] prerequisites;
@@ -15,7 +15,7 @@ public class CourseScheduleTest {
 
     @BeforeClass
     public static void setup(){
-        test = new CourseSchedule();
+        test = new _207();
     }
 
     @Test
