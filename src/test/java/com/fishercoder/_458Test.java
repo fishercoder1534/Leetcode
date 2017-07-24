@@ -1,14 +1,14 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.PoorPigs;
+import com.fishercoder.solutions._458;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class PoorPigsTest {
-    private static PoorPigs test;
+public class _458Test {
+    private static _458 test;
     private static int expected;
     private static int actual;
     private static int buckets;
@@ -17,7 +17,7 @@ public class PoorPigsTest {
 
     @BeforeClass
     public static void setup(){
-        test = new PoorPigs();
+        test = new _458();
     }
 
     @Before

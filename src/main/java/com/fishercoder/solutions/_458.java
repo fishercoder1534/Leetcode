@@ -9,7 +9,7 @@ package com.fishercoder.solutions;
 
  If there are n buckets and a pig drinking poison will die within m minutes, how many pigs (x) you need to figure out the "poison" bucket within p minutes? There is exact one bucket with poison.
  */
-public class PoorPigs {
+public class _458 {
 
     public int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
         if (buckets--==1){
