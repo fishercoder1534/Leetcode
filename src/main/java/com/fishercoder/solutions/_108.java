@@ -5,7 +5,7 @@ import com.fishercoder.common.classes.TreeNode;
 /**
  * Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
  */
-public class ConvertSortedArraytoBinarySearchTree {
+public class _108 {
 
     public TreeNode sortedArrayToBST(int[] num) {
         return rec(num, 0, num.length - 1);
