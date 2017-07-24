@@ -333,7 +333,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_253.java) | O(nlogn) | O(h) | Medium| Heap
 |252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MeetingRooms.java) | O(nlogn) | O(1) | Easy
 |251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[Solution](../master/src/main/java/com/fishercoder/solutions/Flatten2DVector.java)| O(1)|O(m*n) | Medium| 
-|250|[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/CountUnivalueSubtrees.java)| O(n)|O(h) | Medium| DFS
+|250|[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_250.java)| O(n)|O(h) | Medium| DFS
 |249|[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/GroupShiftedStrings.java) | O(nlogn) | O(n) | 
 |248|[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_248.java) | O(?) | O(?) | Hard | Recursion, DFS 
 |247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/StrobogrammaticNumberII.java) | O(n^2) | O(n) | Medium | Recursion

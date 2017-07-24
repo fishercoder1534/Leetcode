@@ -16,7 +16,7 @@ import com.fishercoder.common.classes.TreeNode;
  return 4.
 
  */
-public class CountUnivalueSubtrees {
+public class _250 {
 
     public int countUnivalSubtrees(TreeNode root) {
         int[] count = new int[1];
