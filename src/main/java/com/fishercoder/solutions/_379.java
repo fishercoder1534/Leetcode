@@ -36,7 +36,7 @@ import java.util.Set;
  // Number 2 is available again, return true.
  directory.check(2);
  */
-public class DesignPhoneDirectory {
+public class _379 {
 
     private class PhoneDirectory {
         private Queue<Integer> phoneDir;
