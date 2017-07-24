@@ -98,7 +98,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |526|[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_526.java) | O(n) |O(h) | Medium | Backtracking
 |525|[Contiguous Array](https://leetcode.com/problems/contiguous-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_525.java) | O(n) |O(n) | Medium | HashMap
 |524|[Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_524.java) | O(n) |O(n) | Medium | Sort
-|523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ContinuousSubarraySum.java) | O(n^2) |O(n) | Medium|
+|523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_523.java) | O(n^2) |O(n) | Medium|
 |522|[Longest Uncommon Subsequence II](https://leetcode.com/problems/longest-uncommon-subsequence-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/LongestUncommonSubsequenceII.java) | O(x*n^2) (x is average length of strings)|O(1) | Medium|
 |521|[Longest Uncommon Subsequence I](https://leetcode.com/problems/longest-uncommon-subsequence-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/LongestUncommonSubsequenceI.java) | O(max(x,y)) (x and y are length of strings) |O(1) | Easy|
 |520|[Detect Capital](https://leetcode.com/problems/detect-capital/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_520.java) | O(n) |O(1) | Easy| 

@@ -20,8 +20,8 @@ package com.fishercoder.solutions;
  You may assume the sum of all the numbers is in the range of a signed 32-bit integer.
 
  */
-public class ContinuousSubarraySum {
-    //TODO: could be optimized to O(n) time and O(k) space, reference: https://discuss.leetcode.com/topic/80793/java-o-n-time-o-k-space
+public class _523 {
+    /**TODO: could be optimized to O(n) time and O(k) space, reference: https://discuss.leetcode.com/topic/80793/java-o-n-time-o-k-space*/
 
     public boolean checkSubarraySum(int[] nums, int k) {
         if (nums == null || nums.length == 0) return false;

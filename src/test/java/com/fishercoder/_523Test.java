@@ -1,14 +1,14 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.ContinuousSubarraySum;
+import com.fishercoder.solutions._523;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class ContinuousSubarraySumTest {
-    private static ContinuousSubarraySum test;
+public class _523Test {
+    private static _523 test;
     private static boolean expected;
     private static boolean actual;
     private static int[] nums;
@@ -16,7 +16,7 @@ public class ContinuousSubarraySumTest {
 
     @BeforeClass
     public static void setup(){
-        test = new ContinuousSubarraySum();
+        test = new _523();
     }
 
     @Before
