@@ -371,7 +371,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |213|[House Robber II](https://leetcode.com/problems/house-robber-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_213.java)| O(n)|O(n)| Medium | DP
 |212|[Word Search II](https://leetcode.com/problems/word-search-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/WordSearchII.java)| O(m*n*l)|O(l) | Hard | Trie
 |211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_211.java)| O(n)|O(h) | Medium| Trie
-|210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/CourseScheduleII.java)| O(?)|O(?) | Medium|
+|210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_210.java)| O(?)|O(?) | Medium|
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MinimumSizeSubarraySum.java)| O(n)|O(1) | Medium|
 |208|[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_208.java)| O(n)|O(1) | Medium| Trie
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_207.java)| O(?)|O(?) | Medium|
