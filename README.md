@@ -121,7 +121,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |495|[Teemo Attacking](https://leetcode.com/problems/teemo-attacking/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_495.java) | O(n) |O(1) | Medium| Array
 |494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_494.java) | O(2^n) |O(1) | Medium| 
 |493|[Reverse Pairs](https://leetcode.com/problems/reverse-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_493.java) | O(?) |O(?) | Hard|
-|492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ConstructTheRectangle.java) | O(n) |O(1) | Easy| Array
+|492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_492.java) | O(n) |O(1) | Easy| Array
 |491|[Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_491.java) | O(n!) |O(n) | Medium| Backtracking, DFS
 |490|[The Maze](https://leetcode.com/problems/the-maze/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_490.java) | O(m*n) |O(m*n) | Medium| BFS
 |488|[Zuma Game](https://leetcode.com/problems/zuma-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_488.java) | O(?) |O(?) | Hard | DFS, Backtracking
