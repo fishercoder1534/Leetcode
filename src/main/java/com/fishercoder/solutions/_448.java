@@ -20,7 +20,7 @@ import java.util.Map;
  Output:
  [5,6]
  */
-public class FindAllNumbersDisappearedinanArray {
+public class _448 {
 
     /**O(n) space
      * O(n) time*/
@@ -75,7 +75,7 @@ public class FindAllNumbersDisappearedinanArray {
     }
 
     public static void main(String...args){
-        FindAllNumbersDisappearedinanArray test = new FindAllNumbersDisappearedinanArray();
+        _448 test = new _448();
 //        int[] nums = new int[]{4,3,2,7,8,2,3,1};
         int[] nums = new int[]{1,1};
         List<Integer> result = test.findDisappearedNumbers_2(nums);
