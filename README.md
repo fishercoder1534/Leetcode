@@ -259,7 +259,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |330|[Patching Array](https://leetcode.com/problems/patching-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_330.java)| O(m+logn)|O(1) | Hard| Greedy
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/LongestIncreasingPathInAMatrix.java)| O(?)|O(?) | Hard|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_328.java)| O(n)|O(1) | Medium| Linked List
-|327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/CountOfRangeSum.java)| O(?)|O(?) | Hard|
+|327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_327.java)| O(?)|O(?) | Hard|
 |325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution] | O(n)|O(n) | Medium| HashMap
 |324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_324.java)| O(n)|O(n) | Medium| Sort
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NumberOfConnectedComponentsInAnUndirectedGraph.java)| O(?)|O(?)| Medium|

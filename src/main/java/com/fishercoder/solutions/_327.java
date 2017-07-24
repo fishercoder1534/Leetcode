@@ -12,7 +12,7 @@ package com.fishercoder.solutions;
  Return 3.
  The three ranges are : [0, 0], [2, 2], [0, 2] and their respective sums are: -2, -1, 2.
  */
-public class CountOfRangeSum {
+public class _327 {
 
     public int countRangeSum(int[] nums, int lower, int upper) {
         int n = nums.length;
