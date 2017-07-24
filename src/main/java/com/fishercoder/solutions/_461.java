@@ -21,7 +21,7 @@ package com.fishercoder.solutions;
 
  The above arrows point to positions where the corresponding bits are different.
  */
-public class HammingDistance {
+public class _461 {
 	public int hammingDistance(int x, int y) {
 		int n = x^y;
 		int count = 0;
