@@ -590,7 +590,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |180|[Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers)|[Solution](../master/database/_180.sql)| O(n)|O(n) | Medium|
 |178|[Rank Scores](https://leetcode.com/problems/rank-scores/)|[Solution](../master/database/RankScores.sql)| ? | ? | Medium|
 |177|[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)|[Solution](../master/database/_177.sql)| O(n) | O(1) | Medium|
-|176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|[Solution](../master/database/SecondHighestSalary.sql)| O(n)|O(1) | Easy|
+|176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|[Solution](../master/database/_176.sql)| O(n)|O(1) | Easy|
 |175|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)|[Solution](../master/database/CombineTwoTables.sql)| O(m+n)|O(m+n) | Easy|
 
 
