@@ -14,7 +14,7 @@ package com.fishercoder.solutions;
  n = 10, I pick 6.
 
  Return 6.*/
-public class GuessNumberHigherorLower {
+public class _374 {
     /**The core problem/trouble to solve this problem is to figure out the problem description:
      * this API: guess(int num) means to take your guess num and let you know if your guessed num is bigger or smaller than the answer.
      * That's why if num > target, it returns -1 which means the target is smaller than your guess!!!*/
@@ -44,7 +44,7 @@ public class GuessNumberHigherorLower {
     }
     
     public static void main(String...strings){
-        GuessNumberHigherorLower test = new GuessNumberHigherorLower();
+        _374 test = new _374();
         System.out.println(test.guessNumber(10));
     }
 
