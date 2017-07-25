@@ -11,30 +11,27 @@ package com.fishercoder.solutions;
  Note:
  You may assume that the array does not change.
  There are many calls to sumRange function.*/
-public class RangeSumQueryImmutable {
+public class _303 {
+    class NumArray {
+        int[] sums;
 
-    
-}
-
-class NumArray {
-    int[] sums;
-    public NumArray(int[] nums) {
-        sums = new int[nums.length];
-        for(int i = 0; i < nums.length; i++){
-            if(i == 0){
-                sums[i] = nums[i];
-            } else {
-                sums[i] = sums[i-1] + nums[i];
+        public NumArray(int[] nums) {
+            sums = new int[nums.length];
+            for (int i = 0; i < nums.length; i++) {
+                if (i == 0) {
+                    sums[i] = nums[i];
+                } else {
+                    sums[i] = sums[i - 1] + nums[i];
+                }
             }
         }
-    }
 
-    public int sumRange(int i, int j) {
-        if(i == 0) return sums[j];
-        return sums[j] - sums[i-1];
+        public int sumRange(int i, int j) {
+            if (i == 0) return sums[j];
+            return sums[j] - sums[i - 1];
+        }
     }
 }
-
 
 // Your NumArray object will be instantiated and called as such:
 // NumArray numArray = new NumArray(nums);

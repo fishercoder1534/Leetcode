@@ -283,7 +283,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |306|[Additive Number](https://leetcode.com/problems/additive-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_306.java)| O(n^2) | O(n) | Medium|
 |305|[Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NumberofIslandsII.java)| ? | ? | Hard| Union Find
 |304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)|[Solution](../master/src/main/java/com/fishercoder/solutions/RangeSumQuery2DImmutable.java)| ? | ? |Medium| 
-|303|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)|[Solution](../master/src/main/java/com/fishercoder/solutions/RangeSumQueryImmutable.java)| O(n) | O(1) |Easy|
+|303|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_303.java)| O(n) | O(1) |Easy|
 |302|[Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_302.java)| ? | O(m*n) | Hard| DFS, BFS
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/RemoveInvalidParentheses.java)| ? | ? | Hard| BFS
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_300.java)| O(logn)|O(n) | Medium| DP
