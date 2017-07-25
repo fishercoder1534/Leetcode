@@ -19,7 +19,7 @@ import java.util.Set;
  Output:
  [2,3]
  */
-public class FindAllDuplicatesinanArray {
+public class _442 {
 
     //O(n) space
     //O(n) time
