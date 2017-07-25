@@ -16,7 +16,7 @@ Return:
 
 [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]] (positions with parentheses in above matrix).*/
 
-public class PacificAtlanticWaterFlow {
+public class _417 {
     //looked at this post: https://discuss.leetcode.com/topic/62379/java-bfs-dfs-from-ocean
     
     /**One typical trick to work on 2d grid problems is to go through the border and put proper ones into a queue if using BFS.*/
@@ -61,7 +61,7 @@ public class PacificAtlanticWaterFlow {
     }
     
     public static void main(String...args){
-        PacificAtlanticWaterFlow test = new PacificAtlanticWaterFlow();
+        _417 test = new _417();
 //        int[][] matrix = new int[][]{
 //                {1,2,2,3,5},
 //                {3,2,3,4,4},
