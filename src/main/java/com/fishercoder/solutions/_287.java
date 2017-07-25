@@ -14,7 +14,7 @@ import java.util.Set;
  There is only one duplicate number in the array, but it could be repeated more than once.
 
  */
-public class FindtheDuplicateNumber {
+public class _287 {
 
     //no-brainer, used O(n) space
     public int findDuplicate(int[] nums) {

@@ -303,7 +303,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_290.java)| O(n)|O(n) | Easy| 
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_289.java)| O(m*n)|O(m*n), could be optimized to O(1) | Medium|
 |288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_288.java)| O(n)|O(1) | Easy| 
-|287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FindtheDuplicateNumber.java)| O(n)|O(1) | Medium| 
+|287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_287.java)| O(n)|O(1) | Medium| 
 |286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_286.java)| O(m*n)|O(g) | Medium| BFS
 |285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_285.java)| O(h)|O(1) | Medium| Tree
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_284.java)| O(n)|O(n) | Medium| Design
