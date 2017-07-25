@@ -30,7 +30,7 @@ import java.util.Queue;
  Follow up:
  As an added challenge, try to code it using only iterators in C++ or iterators in Java.*/
 
-public class Flatten2DVector {
+public class _251 {
 
     class Vector2D implements Iterator<Integer> {
         private Queue<Integer> cache;
