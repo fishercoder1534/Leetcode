@@ -3,7 +3,7 @@ package com.fishercoder.solutions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FindAllAnagramsinaString {
+public class _438 {
     /**O(m*n) solution, my original and most intuitive one, but kind of brute force.*/
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> result = new ArrayList();
