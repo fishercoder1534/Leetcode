@@ -22,7 +22,7 @@ import java.util.List;
  Return the sum = 12 + 13 = 25.
 
  */
-public class SumRootToLeafNumbers {
+public class _129 {
     public int sumNumbers(TreeNode root) {
         if(root == null) return 0;
         List<Integer> allNumbers = new ArrayList();
