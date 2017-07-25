@@ -1,7 +1,10 @@
 package com.fishercoder.solutions;
 
 /**
- * Given two arrays of length m and n with digits 0-9 representing two numbers. Create the maximum number of length k <= m + n from digits of the two. The relative order of the digits from the same array must be preserved. Return an array of the k digits. You should try to optimize your time and space complexity.
+ * Given two arrays of length m and n with digits 0-9 representing two numbers.
+ * Create the maximum number of length k <= m + n from digits of the two.
+ * The relative order of the digits from the same array must be preserved.
+ * Return an array of the k digits. You should try to optimize your time and space complexity.
 
  Example 1:
  nums1 = [3, 4, 6, 5]
@@ -21,7 +24,7 @@ package com.fishercoder.solutions;
  k = 3
  return [9, 8, 9]
  */
-public class CreateMaximumNumber {
+public class _321 {
     public int[] maxNumber(int[] nums1, int[] nums2, int k) {
         int n = nums1.length;
         int m = nums2.length;
