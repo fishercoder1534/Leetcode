@@ -83,7 +83,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |546|[Remove Boxes](https://leetcode.com/problems/remove-boxes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_546.java) | O(n^3) |O(n^3) | Hard| DFS, DP
 |545|[Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_545.java) | O(n) |O(n) | Medium | Recursion
 |544|[Output Contest Matches](https://leetcode.com/problems/output-contest-matches/)|[Solution](../master/src/main/java/com/fishercoder/solutions/OutputContestMatches.java) | O(n) |O(n) | Medium | Recursion
-|543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/DiameterofBinaryTree.java) | O(n) |O(h) | Easy | Tree/DFS/Recursion
+|543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_543.java) | O(n) |O(h) | Easy | Tree/DFS/Recursion
 |542|[01 Matrix](https://leetcode.com/problems/01-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_542.java) | O(m*n) |O(n) | Medium | BFS
 |541|[Reverse String II](https://leetcode.com/problems/reverse-string-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ReverseStringII.java) | O(n) |O(1) | Easy | String
 |540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SingleElementinaSortedArray.java) | O(n) |O(1) | Medium | 
