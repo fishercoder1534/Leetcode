@@ -19,10 +19,10 @@ import java.util.Map;
  Note:
  You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
  */
-public class ShortestWordDistanceII {
+public class _244 {
 
     private Map<String, List<Integer>> map;
-    public ShortestWordDistanceII(String[] words) {
+    public _244(String[] words) {
         map = new HashMap<String, List<Integer>>();
         for(int i = 0; i < words.length; i++) {
             String w = words[i];

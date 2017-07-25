@@ -342,7 +342,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/StrobogrammaticNumberII.java) | O(n^2) | O(n) | Medium | Recursion
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/StrobogrammaticNumber.java) | O(n) | O(1) | Easy 
 |245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ShortestWordDistanceIII.java) | O(n) | O(1) | Medium | 
-|244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ShortestWordDistanceII.java) | O(n) | O(n) | Medium | HashMap
+|244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_244.java) | O(n) | O(n) | Medium | HashMap
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_243.java) | O(n) | O(1) | Easy
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_242.java) | O(n) | O(1) | Easy
 |241|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_241.java) | O(O(n * 4^n / n^(3/2))) | O(n * 4^n / n^(3/2)) | Medium | Divide and Conquer
