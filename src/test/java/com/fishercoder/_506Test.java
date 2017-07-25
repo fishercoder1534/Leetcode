@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.RelativeRanks;
+import com.fishercoder.solutions._506;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,15 +10,15 @@ import static org.junit.Assert.assertArrayEquals;
 /**
  * Created by fishercoder on 1/15/17.
  */
-public class RelativeRanksTest {
-    private static RelativeRanks test;
+public class _506Test {
+    private static _506 test;
     private static String[] expected;
     private static String[] actual;
     private static int[] nums;
 
     @BeforeClass
     public static void setup(){
-        test = new RelativeRanks();
+        test = new _506();
     }
 
     @Before

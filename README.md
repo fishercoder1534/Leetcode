@@ -110,7 +110,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |513|[Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_513.java) | O(n) |O(k) | Medium| BFS
 |508|[Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MostFrequentSubtreeSum.java) | O(n) |O(n) | Medium| DFS, Tree
 |507|[Perfect Number](https://leetcode.com/problems/perfect-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PerfectNumber.java) | O(sqrt(n)) |O(1) | Easy| Math
-|506|[Relative Ranks](https://leetcode.com/problems/relative-ranks/)|[Solution](../master/src/main/java/com/fishercoder/solutions/RelativeRanks.java) | O(nlogn) |O(n) | Easy|
+|506|[Relative Ranks](https://leetcode.com/problems/relative-ranks/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_506.java) | O(nlogn) |O(n) | Easy|
 |505|[The Maze II](https://leetcode.com/problems/the-maze-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_505.java) | O(m*n) |O(m*n) | Medium| BFS
 |504|[Base 7](https://leetcode.com/problems/base-7/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_504.java) | O(1) |O(1) | Easy| 
 |503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NextGreaterElementII.java) | O(n) |O(n) | Medium| Stack

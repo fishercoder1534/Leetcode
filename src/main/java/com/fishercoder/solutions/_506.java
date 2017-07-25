@@ -17,7 +17,7 @@ import java.util.Map;
  N is a positive integer and won't exceed 10,000.
  All the scores of athletes are guaranteed to be unique.
  */
-public class RelativeRanks {
+public class _506 {
 
     public String[] findRelativeRanks(int[] nums) {
         int[] tmp = new int[nums.length];
