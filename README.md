@@ -203,7 +203,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |399|[Evaluate Division](https://leetcode.com/problems/evaluate-division/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_399.java)| O(n*n!)|O(n) | Medium| Graph, DFS, Backtracking
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_398.java) | | | Medium| Reservoir Sampling
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/IntegerReplacement.java)| ? | ? | Easy| BFS
-|396|[Rotate Function](https://leetcode.com/problems/rotate-function/)|[Solution](../master/src/main/java/com/fishercoder/solutions/RotateFunction.java)| O(n^2) could be optimized to O(n) | O(1) | Easy|
+|396|[Rotate Function](https://leetcode.com/problems/rotate-function/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_396.java)| O(n^2) could be optimized to O(n) | O(1) | Easy|
 |393|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_393.java)| O(?)|O(?) | Medium| Bit Manipulation
 |392|[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_392.java)| O(m*n)|O(1) | Medium| Array, String
 |390|[Elimination Game](https://leetcode.com/problems/elimination-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/EliminationGame.java)| O(logn)|O(1) | Medium|

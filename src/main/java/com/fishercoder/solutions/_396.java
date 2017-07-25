@@ -22,7 +22,7 @@ package com.fishercoder.solutions;
 
  So the maximum value of F(0), F(1), F(2), F(3) is F(3) = 26.*/
 //F(k) = 0 * Bk[0] + 1 * Bk[1] + ... + (n-1) * Bk[n-1]
-public class RotateFunction {
+public class _396 {
     public int maxRotateFunction(int[] A) {
         if(A == null || A.length == 0) return 0;
         int[] F = new int[A.length];
@@ -55,7 +55,7 @@ public class RotateFunction {
     
     public static void main(String...strings){
         int[] nums = new int[]{4, 3, 2, 6};
-        RotateFunction test = new RotateFunction();
+        _396 test = new _396();
         System.out.println(test.maxRotateFunction(nums));
     }
 }
