@@ -1,15 +1,12 @@
 package com.fishercoder.solutions;
-/**342. Power of Four  QuestionEditorial Solution  My Submissions
-Total Accepted: 31004
-Total Submissions: 86897
-Difficulty: Easy
+/**342. Power of Four
 Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
 
 Example:
 Given num = 16, return true. Given num = 5, return false.
 
 Follow up: Could you solve it without loops/recursion?*/
-public class PowerOfFour {
+public class _342 {
     //with my original idea in the bottom, just dive a little bit deeper, you can realize that another important feature of a number
     //that is power of four is that its only single one bit must appear on the odd position, and power of two won't meet this requirement
     //decimal number 8 has binary format: 0000-0000-0000-0000-0000-0000-0000-1000
