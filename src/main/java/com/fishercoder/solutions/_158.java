@@ -10,7 +10,7 @@ package com.fishercoder.solutions;
  Note:
  The read function may be called multiple times.
  */
-public class ReadNCharactersGivenRead4IICallMultipleTimes {
+public class _158 {
 
 	/**
 	 * @param buf Destination buffer
