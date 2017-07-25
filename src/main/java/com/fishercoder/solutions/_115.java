@@ -1,6 +1,6 @@
 package com.fishercoder.solutions;
 
-public class DistinctSubsequences {
+public class _115 {
     /**This is a typical DP problem, illustrated in Jiuzhang.
      * 
      * I've drawn out the 2d matrix on the whiteboard:
