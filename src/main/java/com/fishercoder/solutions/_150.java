@@ -15,7 +15,7 @@ import java.util.Stack;
  ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
 
  */
-public class EvaluateReversePolishNotation {
+public class _150 {
 
     public int evalRPN(String[] tokens) {
         Stack<String> stack = new Stack<String>();
