@@ -20,7 +20,7 @@ package com.fishercoder.solutions;
 
  Given target = 20, return false.
  */
-public class Searcha2DMatrixII {
+public class _240 {
 
     public boolean searchMatrix(int[][] matrix, int target) {
         int m = matrix.length;
