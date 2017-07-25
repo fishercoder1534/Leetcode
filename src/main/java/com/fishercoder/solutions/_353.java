@@ -53,7 +53,7 @@ import java.util.Set;
 
  snake.move("U"); -> Returns -1 (Game over because snake collides with border)
  */
-public class DesignSnakeGame {
+public class _353 {
     public class SnakeGame {
         private Set<Integer> set;//Use a set to hold all occupied points for the snake body, this is for easy access for the case of eating its own body
         private Deque<Integer> body;//use a queue to hold all occupied points for the snake body as well, this is for easy access to update the tail
