@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.Interval;
 
 import java.util.*;
 
-public class FindRightInterval {
+public class _436 {
 
     public static int[] findRightInterval(Interval[] intervals) {
         if(intervals == null || intervals.length == 0) return new int[0];

@@ -174,7 +174,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |439|[Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_439.java)| O(n)|O(n) | Medium| Stack
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_438.java)| O(n)|O(1) | Easy|
 |437|[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_437.java) | O(n^2) |O(n) | Easy| DFS, recursion
-|436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FindRightInterval.java) | O(nlogn) |O(n) | Medium| Binary Search
+|436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_436.java) | O(nlogn) |O(n) | Medium| Binary Search
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_435.java) | O(nlogn) |O(1) | Medium| Greedy
 |434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NumberofSegmentsinaString.java)| O(n)|O(1) | Easy|
 |432|[All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_432.java)| O(1)|O(n) | Hard| Design
