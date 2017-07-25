@@ -4,7 +4,9 @@ import com.fishercoder.common.utils.CommonUtils;
 
 import java.util.*;
 
-/** Given a collection of integers that might contain duplicates, nums, return all possible subsets.
+/**90. Subsets II
+ *
+ *  Given a collection of integers that might contain duplicates, nums, return all possible subsets.
 
  Note: The solution set must not contain duplicate subsets.
 
@@ -20,7 +22,7 @@ import java.util.*;
  []
  ]
  */
-public class SubsetsII {
+public class _90 {
 
     public static List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> result = new ArrayList();
