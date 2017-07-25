@@ -30,6 +30,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |640|[Solve the Equation](https://leetcode.com/problems/solve-the-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_640.java) | O(n) |O(n) | Medium |
 |638|[Shopping Offers](https://leetcode.com/problems/shopping-offers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_638.java) | O(2^n) |O(n) | Medium | DP, DFS
 |637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_637.java) | O(n) |O(1) | Easy | 
+|636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_636.java) | O(n) |O(n/2) | Medium | Stack
 |635|[Design Log Storage System](https://leetcode.com/problems/design-log-storage-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_635.java) | O(n) |O(1) | Medium | Design
 |634|[Find the Derangement of An Array](https://leetcode.com/problems/find-the-derangement-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_634.java) | O(n) |O(1) | Medium | Math
 |633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_633.java) | O(logn) |O(1) | Easy | Binary Search
