@@ -1,14 +1,14 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.Searcha2DMatrix;
+import com.fishercoder.solutions._74;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class Searcha2DMatrixTest {
-    private static Searcha2DMatrix test;
+public class _74Test {
+    private static _74 test;
     private static boolean actual;
     private static boolean expected;
     private static int target;
@@ -16,7 +16,7 @@ public class Searcha2DMatrixTest {
 
     @BeforeClass
     public static void setup(){
-        test = new Searcha2DMatrix();
+        test = new _74();
     }
 
     @Before

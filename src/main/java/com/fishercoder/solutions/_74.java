@@ -18,7 +18,7 @@ package com.fishercoder.solutions;
  Given target = 3, return true.
 
  */
-public class Searcha2DMatrix {
+public class _74 {
 
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return false;
