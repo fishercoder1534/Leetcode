@@ -13,7 +13,7 @@ import java.util.Set;
 
  Note:
  The vowels does not include the letter "y".*/
-public class ReverseVowelsOfAString {
+public class _345 {
 	public String reverseVowels(String s) {
 		StringBuilder sb = new StringBuilder(s);
 		Set<Character> vowels = new HashSet();
@@ -48,7 +48,7 @@ public class ReverseVowelsOfAString {
 	}
 	
 	public static void main(String...strings){
-		ReverseVowelsOfAString test = new ReverseVowelsOfAString();
+		_345 test = new _345();
 		String s = "leetcode";
 		System.out.println(test.reverseVowels(s));
 	}
