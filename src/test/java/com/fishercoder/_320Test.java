@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.GeneralizedAbbreviation;
+import com.fishercoder.solutions._320;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -14,15 +14,15 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by fishercoder on 2/10/17.
  */
-public class GeneralizedAbbreviationTest {
-    private static GeneralizedAbbreviation test;
+public class _320Test {
+    private static _320 test;
     private static List<String> expected;
     private static List<String> actual;
     private static String word;
 
     @BeforeClass
     public static void setup(){
-        test = new GeneralizedAbbreviation();
+        test = new _320();
     }
 
     @Before
