@@ -335,7 +335,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_257.java) | O(n*h) | O(h) | DFS/Recursion
 |256|[Paint House](https://leetcode.com/problems/paint-house/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PaintHouse.java) | O(n) | O(1) | Medium| DP
 |255|[Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_255.java) | O(n) | O(h) | Medium| Tree
-|254|[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FactorCombinations.java) | O(nlogn) | O(nlogn) | Medium| Backtracking
+|254|[Factor Combinations](https://leetcode.com/problems/factor-combinations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_254.java) | O(nlogn) | O(nlogn) | Medium| Backtracking
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_253.java) | O(nlogn) | O(h) | Medium| Heap
 |252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MeetingRooms.java) | O(nlogn) | O(1) | Easy
 |251|[Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_251.java)| O(1)|O(m*n) | Medium| 
