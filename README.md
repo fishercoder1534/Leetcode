@@ -222,7 +222,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_376.java)| O(n)|O(1) | Medium| DP, Greedy
 |375|[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_375.java)| O(n^2)|O(n^2) | Medium| DP
 |374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)|[Solution](../master/src/main/java/com/fishercoder/solutions/GuessNumberHigherorLower.java)| O(logn)|O(1) | Easy| Binary Search
-|373|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)|[Solution](../master/src/main/java/com/fishercoder/solutions/FindKPairsWithSmallestSums.java)| O(?)|O(?) | Medium| Heap
+|373|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_373.java)| O(?)|O(?) | Medium| Heap
 |372|[Super Pow](https://leetcode.com/problems/super-pow/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_372.java)| O(n)|O(1) | Medium| Math
 |371|[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_371.java)| O(n)|O(1) | Easy| 
 |370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_370.java)| O(n+k)|O(1) | Medium| 

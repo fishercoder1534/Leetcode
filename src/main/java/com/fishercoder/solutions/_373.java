@@ -40,7 +40,7 @@ import java.util.Queue;
  [1,3],[2,3]
 
  */
-public class FindKPairsWithSmallestSums {
+public class _373 {
 
     final int[][] neighbors = new int[][]{{0,1}, {1,0}};
     public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
