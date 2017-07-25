@@ -21,7 +21,7 @@ import java.util.Map;
  ]
 
  */
-public class GroupShiftedStrings {
+public class _249 {
 
     public List<List<String>> groupStrings(String[] strings) {
      
