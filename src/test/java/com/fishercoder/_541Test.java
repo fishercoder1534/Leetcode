@@ -1,14 +1,14 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.ReverseStringII;
+import com.fishercoder.solutions._541;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class ReverseStringIITest {
-    private static ReverseStringII test;
+public class _541Test {
+    private static _541 test;
     private static String expected;
     private static String actual;
     private static String s;
@@ -16,7 +16,7 @@ public class ReverseStringIITest {
 
     @BeforeClass
     public static void setup(){
-        test = new ReverseStringII();
+        test = new _541();
     }
 
     @Before

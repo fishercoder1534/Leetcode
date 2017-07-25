@@ -13,7 +13,7 @@ package com.fishercoder.solutions;
  The string consists of lower English letters only.
  Length of the given string and k will in the range [1, 10000]
  */
-public class ReverseStringII {
+public class _541 {
 
     public String reverseStr(String s, int k) {
         StringBuilder stringBuilder = new StringBuilder();
