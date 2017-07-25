@@ -8,7 +8,7 @@ For example, given input 43261596 (represented in binary as 00000010100101000001
 
 Follow up:
 If this function is called many times, how would you optimize it?*/
-public class ReverseBits {
+public class _190 {
     /**This post: http://stackoverflow.com/questions/2811319/difference-between-and
      * gives a good explanation between logical right shift: ">>>" and arithmetic right shift: ">>".
      * Basically, ">>" preserves the most left bit and treats it as the sign for this number,
@@ -35,7 +35,7 @@ public class ReverseBits {
     
     public static void main(String...strings){
         System.out.println(Integer.toBinaryString(4));
-        ReverseBits test = new ReverseBits();
+        _190 test = new _190();
         int n = 1;
         System.out.println(test.reverseBits(n));
         System.out.println(Integer.parseInt("11000", 2));
