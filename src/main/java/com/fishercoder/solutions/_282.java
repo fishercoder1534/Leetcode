@@ -13,7 +13,7 @@ import java.util.List;
  "00", 0 -> ["0+0", "0-0", "0*0"]
  "3456237490", 9191 -> []
  */
-public class ExpressionAddOperators {
+public class _282 {
 
     public List<String> addOperators(String num, int target) {
         List<String> res = new ArrayList<String>();
