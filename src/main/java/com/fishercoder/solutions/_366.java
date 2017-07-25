@@ -5,7 +5,8 @@ import com.fishercoder.common.classes.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-/**Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
+/**Given a binary tree, collect a tree's nodes as if you were doing this:
+ * Collect and remove all leaves, repeat until the tree is empty.
 
  Example:
  Given binary tree
@@ -31,7 +32,7 @@ import java.util.List;
  Returns [4, 5, 3], [2], [1].
 
  */
-public class FindLeavesofBinaryTree {
+public class _366 {
 
     List<List<Integer>> result = new ArrayList<List<Integer>>();
     public List<List<Integer>> findLeaves(TreeNode root) {
