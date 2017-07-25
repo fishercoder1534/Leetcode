@@ -8,7 +8,7 @@ package com.fishercoder.solutions;
  Write a function strongPasswordChecker(s), that takes a string s as input, and return the MINIMUM change required to make s a strong password. If s is already strong, return 0.
 
  Insertion, deletion or replace of any one character are all considered as one change.*/
-public class StrongPasswordChecker {
+public class _420 {
     /**Looked at this solution: https://discuss.leetcode.com/topic/63854/o-n-java-solution-by-analyzing-changes-allowed-to-fix-each-condition*/
     public int strongPasswordChecker(String s) {
         int res = 0, a = 1, A = 1, d = 1;
