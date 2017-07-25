@@ -19,7 +19,7 @@ import java.util.*;
  Note: If a tree has more than one mode, you can return them in any order.
 
  */
-public class FindModeinBinaryTree {
+public class _501 {
 
     public int[] findMode(TreeNode root) {
         int[] result = new int[]{};

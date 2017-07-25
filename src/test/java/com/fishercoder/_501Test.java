@@ -2,7 +2,7 @@ package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.CommonUtils;
-import com.fishercoder.solutions.FindModeinBinaryTree;
+import com.fishercoder.solutions._501;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -12,15 +12,15 @@ import static org.junit.Assert.assertArrayEquals;
 /**
  * Created by fishercoder on 1/28/17.
  */
-public class FindModeinBinaryTreeTest {
-    private static FindModeinBinaryTree test;
+public class _501Test {
+    private static _501 test;
     private static int[] expected;
     private static int[] actual;
     private static TreeNode treeNode;
 
     @BeforeClass
     public static void setup(){
-        test = new FindModeinBinaryTree();
+        test = new _501();
     }
 
     @Before
