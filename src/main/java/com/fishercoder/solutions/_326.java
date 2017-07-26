@@ -1,16 +1,14 @@
 package com.fishercoder.solutions;
-/**326. Power of Three  QuestionEditorial Solution  My Submissions
-Total Accepted: 57555
-Total Submissions: 151383
-Difficulty: Easy
+
+/**326. Power of Three
+ *
 Given an integer, write a function to determine if it is a power of three.
 
 Follow up:
 Could you do it without using any loop / recursion?
-
 */
 
-public class PowerOfThree {
+public class _326 {
     //then I turned to the Editorial solution, it's pretty elegant to use base conversion which can be easily extended to any radix k
     //Idea: for a number in base 10, if it's power of 10, then it must be in this format: 10, 100, 1000... with a leading one and all trailing zeros
     //similarly, if a number is power of 3, then in its base 3 format, it must be in this format as well: 10, 100, 1000, 1000...
@@ -35,7 +33,7 @@ public class PowerOfThree {
     }
     
     public static void main(String...strings){
-        PowerOfThree test = new PowerOfThree();
+        _326 test = new _326();
         System.out.println(test.isPowerOfThree(12));
         
         //find the max integer that is power of 3
