@@ -3,7 +3,8 @@ package com.fishercoder.solutions;
 /**
  * 498. Diagonal Traverse
  *
- *  Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal order as shown in the below image.
+ *  Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal order
+ *  as shown in the below image.
 
  Example:
 
@@ -22,7 +23,7 @@ package com.fishercoder.solutions;
  */
 public class _498 {
 
-    /**Credit: https://discuss.leetcode.com/topic/77865/concise-java-solution/2
+    /**Reference: https://discuss.leetcode.com/topic/77865/concise-java-solution/2
      * Just keep walking the matrix, when hitting the four borders (top, bottom, left or right),
      * just directions and keep walking.*/
     public int[] findDiagonalOrder(int[][] matrix) {
