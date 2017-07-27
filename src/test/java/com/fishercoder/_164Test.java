@@ -1,21 +1,21 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.MaximumGap;
+import com.fishercoder.solutions._164;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class MaximumGapTest {
-    private static MaximumGap test;
+public class _164Test {
+    private static _164 test;
     private static int expected;
     private static int actual;
     private static int[] nums;
 
     @BeforeClass
     public static void setup(){
-        test = new MaximumGap();
+        test = new _164();
     }
 
     @Before

@@ -4,14 +4,11 @@ import java.util.Arrays;
 
 /**
  * Given an unsorted array, find the maximum difference between the successive elements in its sorted form.
- * <p>
  * Try to solve it in linear time/space.
- * <p>
  * Return 0 if the array contains less than 2 elements.
- * <p>
  * You may assume all elements in the array are non-negative integers and fit in the 32-bit signed integer range.
  */
-public class MaximumGap {
+public class _164 {
     //brute force
     public int maximumGap(int[] nums) {
         if (nums.length < 2) return 0;
