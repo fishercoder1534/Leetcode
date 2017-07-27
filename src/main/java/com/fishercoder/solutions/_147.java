@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Sort a linked list using insertion sort.
  */
-public class InsertionSortList {
+public class _147 {
 
     public ListNode insertionSortList(ListNode head) {
         ListNode temp = head;
