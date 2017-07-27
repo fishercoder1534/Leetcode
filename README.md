@@ -343,7 +343,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |250|[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_250.java)| O(n)|O(h) | Medium| DFS
 |249|[Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_249.java) | O(nlogn) | O(n) | 
 |248|[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_248.java) | O(?) | O(?) | Hard | Recursion, DFS 
-|247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/StrobogrammaticNumberII.java) | O(n^2) | O(n) | Medium | Recursion
+|247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_247.java) | O(n^2) | O(n) | Medium | Recursion
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_246.java) | O(n) | O(1) | Easy 
 |245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ShortestWordDistanceIII.java) | O(n) | O(1) | Medium | 
 |244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_244.java) | O(n) | O(n) | Medium | HashMap

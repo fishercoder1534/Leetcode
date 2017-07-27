@@ -16,7 +16,7 @@ import java.util.List;
 
  Try to use recursion and notice that it should recurse with n - 2 instead of n - 1.
  */
-public class StrobogrammaticNumberII {
+public class _247 {
     public List<String> findStrobogrammatic(int n) {
         return recursiveHelper(n, n);
     }
