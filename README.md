@@ -35,6 +35,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |634|[Find the Derangement of An Array](https://leetcode.com/problems/find-the-derangement-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_634.java) | O(n) |O(1) | Medium | Math
 |633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_633.java) | O(logn) |O(1) | Easy | Binary Search
 |632|[Smallest Range](https://leetcode.com/problems/smallest-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_632.java) | O(n*logk) |O(k) | Hard| Heap
+|631|[Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_631.java) | | | Hard| Design, Topological Sort
 |630|[Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_630.java) | O(n*logn) |O(n) | Hard| Heap, Greedy
 |628|[Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_628.java) | O(nlogn) |O(1) | Easy |
 |625|[Minimum Factorization](https://leetcode.com/problems/minimum-factorization/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_625.java) | O(?) |O(?) | Medium | 
