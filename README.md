@@ -258,7 +258,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_338.java)| O(nlogn)|O(h) | Medium| 
 |337|[House Robber III](https://leetcode.com/problems/house-robber-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_337.java)| O(n)|O(n)| Medium | DP
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PalindromePairs.java)| O(n^2)|O(n) | Hard|
-|334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/IncreasingTripletSubsequence.java)| O(n^2)|O(1) | Medium|
+|334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_334.java)| O(n^2)|O(1) | Medium|
 |333|[Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_333.java)| O(n)|O(n) | Medium| Tree 
 |332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_332.java)| O(n)|O(n) | Medium| Graph, DFS
 |331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_331.java)| O(n)|O(n) | Medium| Stack

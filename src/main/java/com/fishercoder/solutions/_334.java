@@ -15,7 +15,7 @@ package com.fishercoder.solutions;
  Given [5, 4, 3, 2, 1],
  return false.
  */
-public class IncreasingTripletSubsequence {
+public class _334 {
 
     public boolean increasingTriplet(int[] nums) {
         if(nums == null || nums.length == 0) return false;
