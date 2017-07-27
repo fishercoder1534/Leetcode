@@ -12,7 +12,7 @@ package com.fishercoder.solutions;
  There is a simple O(n) solution to this problem.
  You may check the breaking results of n ranging from 7 to 10 to discover the regularities.
  */
-public class IntegerBreak {
+public class _343 {
     public int integerBreak(int n) {
         if (n == 2)
             return 1;

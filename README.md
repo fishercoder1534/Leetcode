@@ -250,7 +250,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_346.java)| O(1)|O(w)) | Easy| Queue
 |345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_345.java) | O(n) |O(1) | Easy | String
 |344|[Reverse String](https://leetcode.com/problems/reverse-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_344.java) | O(n) |O(1) | Easy | String
-|343|[Integer Break](https://leetcode.com/problems/integer-break/)|[Solution](../master/src/main/java/com/fishercoder/solutions/IntegerBreak.java)| O(1)|O(1) | Medium| Math
+|343|[Integer Break](https://leetcode.com/problems/integer-break/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_343.java)| O(1)|O(1) | Medium| Math
 |342|[Power of Four](https://leetcode.com/problems/power-of-four/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_342.java)| O(n)|O(1) | Easy| Math
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_341.java)| O(n)|O(n) | Medium| Stack
 |340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_340.java)| O(n)|O(1) | Hard| Sliding Window
