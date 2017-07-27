@@ -10,7 +10,7 @@ For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums sh
 Note:
 You must do this in-place without making a copy of the array.
 Minimize the total number of operations.*/
-public class MoveZeroes {
+public class _283 {
     public void moveZeroes_Editorial_solution2(int[] nums){
         //this solutoin is the most optimal since it minimizes the number of operations
         //the idea is to swap the non-zero element to the first zero number position
@@ -74,7 +74,7 @@ public class MoveZeroes {
     }
     
     public static void main(String...strings){
-        MoveZeroes test = new MoveZeroes();
+        _283 test = new _283();
         int[] nums = new int[]{0,1,0,3,12};
         test.moveZeroes_Editorial_solution2(nums);
     }
