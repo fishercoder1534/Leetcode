@@ -11,7 +11,7 @@ import java.util.Set;
 
  For example, the numbers "69", "88", and "818" are all strobogrammatic.*/
 
-public class StrobogrammaticNumber {
+public class _246 {
 
     public boolean isStrobogrammatic_map(String num) {
         int i = 0, j = num.length()-1;
