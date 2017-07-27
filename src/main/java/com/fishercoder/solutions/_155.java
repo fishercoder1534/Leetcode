@@ -9,7 +9,7 @@ import java.util.*;
  top() -- Get the top element.
  getMin() -- Retrieve the minimum element in the stack.
  Example:
- MinStack minStack = new MinStack();
+ _155 minStack = new _155();
  minStack.push(-2);
  minStack.push(0);
  minStack.push(-3);
@@ -18,13 +18,13 @@ import java.util.*;
  minStack.top();      --> Returns 0.
  minStack.getMin();   --> Returns -2.
  */
-public class MinStack {
+public class _155 {
     
     private Stack<Integer> stack;
     private int min;
 
     /** initialize your data structure here. */
-    public MinStack() {
+    public _155() {
         stack = new Stack();
         min = Integer.MAX_VALUE;
     }
