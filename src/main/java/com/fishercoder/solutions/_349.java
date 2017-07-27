@@ -15,7 +15,7 @@ Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
 Note:
 Each element in the result must be unique.
 The result can be in any order.*/
-public class IntersectionOfTwoArrays {
+public class _349 {
     
     //then I clicked its Tags, and find it's marked with so many tags: Binary Search, HashTable, Two Pointers, Sort, now I'll try to do it one by one
     //inspired by this post: https://discuss.leetcode.com/topic/45685/three-java-solutions
@@ -97,7 +97,7 @@ public class IntersectionOfTwoArrays {
 	}
 
 	public static void main(String...strings){
-		IntersectionOfTwoArrays test = new IntersectionOfTwoArrays();
+		_349 test = new _349();
 		int[] nums1 = new int[]{1,2};
 		int[] nums2 = new int[]{2,1};
 		test.intersection_binary_search(nums1 , nums2);
