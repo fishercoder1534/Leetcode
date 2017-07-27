@@ -11,7 +11,7 @@ package com.fishercoder.solutions;
  * When s3 = "aadbbcbcac", return true.
  * When s3 = "aadbbbaccc", return false.
  */
-public class InterleavingString {
+public class _97 {
     public boolean isInterleave(String s1, String s2, String s3) {
         // write your code here
         int m = s1.length(), n = s2.length();
