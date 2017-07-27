@@ -15,7 +15,7 @@ import java.util.Queue;
  Update (2015-06-11):
  The class name of the Java function had been updated to MyStack instead of Stack.*/
 
-public class ImplementStackUsingQueues {
+public class _225 {
     class MyStack {
         
         Queue<Integer> q = new LinkedList();
