@@ -3,10 +3,8 @@ package com.fishercoder.solutions;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-/**378. Kth Smallest Element in a Sorted Matrix  QuestionEditorial Solution  My Submissions
-Total Accepted: 5
-Total Submissions: 7
-Difficulty: Medium
+/**378. Kth Smallest Element in a Sorted Matrix
+ *
 Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.
 
 Note that it is the kth smallest element in the sorted order, not the kth distinct element.
@@ -21,9 +19,10 @@ matrix = [
 k = 8,
 
 return 13.
-Note: 
+
+ Note:
 You may assume k is always valid, 1 ≤ k ≤ n2.*/
-public class KthSmallestElementInASortedMatrix {
+public class _378 {
     //brute force made it AC'ed, extreme test case needed for OJ
     public int kthSmallest(int[][] matrix, int k) {
         List<Integer> list = new ArrayList<Integer>();
