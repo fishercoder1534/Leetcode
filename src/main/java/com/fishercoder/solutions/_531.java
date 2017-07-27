@@ -18,7 +18,7 @@ package com.fishercoder.solutions;
  Note:
  The range of width and height of the input 2D array is [1,500].
  */
-public class LonelyPixelI {
+public class _531 {
 
     public int findLonelyPixel(char[][] picture) {
         int m = picture.length;
