@@ -1,14 +1,14 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.KdiffPairsinanArray;
+import com.fishercoder.solutions._532;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class KdiffPairsinanArrayTest {
-    private static KdiffPairsinanArray test;
+public class _532Test {
+    private static _532 test;
     private static int expected;
     private static int actual;
     private static int k;
@@ -16,7 +16,7 @@ public class KdiffPairsinanArrayTest {
 
     @BeforeClass
     public static void setup() {
-        test = new KdiffPairsinanArray();
+        test = new _532();
     }
 
     @Before

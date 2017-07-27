@@ -3,7 +3,8 @@ package com.fishercoder.solutions;
 import java.util.*;
 
 /**
- * Given an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array. Here a k-diff pair is defined as an integer pair (i, j), where i and j are both numbers in the array and their absolute difference is k.
+ * Given an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array.
+ * Here a k-diff pair is defined as an integer pair (i, j), where i and j are both numbers in the array and their absolute difference is k.
 
  Example 1:
  Input: [3, 1, 4, 1, 5], k = 2
@@ -26,7 +27,7 @@ import java.util.*;
  The length of the array won't exceed 10,000.
  All the integers in the given input belong to the range: [-1e7, 1e7].
  */
-public class KdiffPairsinanArray {
+public class _532 {
 
     //this O(n^2) will result in TLE
     public int findPairs_On2(int[] nums, int k) {
