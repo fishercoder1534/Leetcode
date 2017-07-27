@@ -17,7 +17,7 @@ import java.util.Map;
 
  Note:
  You may assume both s and t have the same length.*/
-public class IsomorphicStrings {
+public class _205 {
     /**space should be O(1) since it only has alphabetic letters which are capped at 52.*/
 
     public boolean isIsomorphic(String s, String t) {
