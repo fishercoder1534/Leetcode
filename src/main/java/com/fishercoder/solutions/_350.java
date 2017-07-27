@@ -19,7 +19,7 @@ import java.util.Map;
  Show Tags
  Show Similar Problems
  */
-public class IntersectionofTwoArraysII {
+public class _350 {
 
     public int[] intersect(int[] nums1, int[] nums2) {
         Map<Integer, Integer> map1 = new HashMap();
