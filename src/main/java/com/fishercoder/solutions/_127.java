@@ -41,8 +41,12 @@ public class _127 {
         Set<String> startSet = new HashSet<>();
         Set<String> endSet = new HashSet<>();
         Set<String> visited = new HashSet<>();
+
         startSet.add(beginWord);
-        if (dict.contains(endWord)) endSet.add(endWord); // all transformed words must be in dict (including endWord)
+        if (dict.contains(endWord)) {
+            endSet.add(endWord); // all transformed words must be in dict (including endWord)
+        }
+
         for (int len = 2; !startSet.isEmpty(); len++) {
             Set<String> nq = new HashSet<>();
             for (String w : startSet) {
@@ -52,11 +56,16 @@ public class _127 {
                         if (c == w.charAt(j)) continue; // beginWord and endWord should not be the same
                         ch[j] = c;
                         String nb = String.valueOf(ch);
-                        if (endSet.contains(nb)) return len; // meet from two ends
-                        if (dict.contains(nb) && visited.add(nb)) nq.add(nb); // not meet yet, visited is safe to use
+                        if (endSet.contains(nb)) {
+                            return len; // meet from two ends
+                        }
+                        if (dict.contains(nb) && visited.add(nb)) {
+                            nq.add(nb); // not meet yet, visited is safe to use
+                        }
                     }
                 }
             }
+
             startSet = (nq.size() < endSet.size()) ? nq : endSet; // switch to small one to traverse from other end
             endSet = (startSet == nq) ? endSet : nq;
         }
