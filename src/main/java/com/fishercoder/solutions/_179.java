@@ -10,7 +10,7 @@ import java.util.Comparator;
 
  Note: The result may be very large, so you need to return a string instead of an integer.
  */
-public class LargestNumber {
+public class _179 {
 
     public String largestNumber(int[] num) {
         if (num.length == 0)
