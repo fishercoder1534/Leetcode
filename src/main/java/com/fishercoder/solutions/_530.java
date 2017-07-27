@@ -25,7 +25,7 @@ import java.util.TreeSet;
  The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).
  Note: There are at least two nodes in this BST.
  */
-public class MinimumAbsoluteDifferenceinBST {
+public class _530 {
 
     public int getMinimumDifference(TreeNode root) {
         TreeSet<Integer> treeset = new TreeSet<>();

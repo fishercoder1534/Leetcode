@@ -1,22 +1,22 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.solutions.MinimumAbsoluteDifferenceinBST;
+import com.fishercoder.solutions._530;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class MinimumAbsoluteDifferenceinBSTTest {
-    private static MinimumAbsoluteDifferenceinBST test;
+public class _530Test {
+    private static _530 test;
     private static int expected;
     private static int actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup(){
-        test = new MinimumAbsoluteDifferenceinBST();
+        test = new _530();
     }
 
     @Before
