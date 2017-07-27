@@ -29,7 +29,7 @@ import java.util.*;
  7 -> 8 -> 4 -> 2 -> 1
  or
  7 -> 6 -> 3 -> 2 -> 1*/
-public class IntegerReplacement {
+public class _397 {
     
     public static int integerReplacement(int n) {
         long min = Long.MAX_VALUE;
