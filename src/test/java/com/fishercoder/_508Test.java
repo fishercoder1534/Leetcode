@@ -1,22 +1,22 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.solutions.MostFrequentSubtreeSum;
+import com.fishercoder.solutions._508;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class MostFrequentSubtreeSumTest {
-    private static MostFrequentSubtreeSum test;
+public class _508Test {
+    private static _508 test;
     private static int[] expected;
     private static int[] actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup(){
-        test = new MostFrequentSubtreeSum();
+        test = new _508();
     }
 
     @Before
