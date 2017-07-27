@@ -29,7 +29,7 @@ import java.util.Stack;
  i.  An integer containing value 456.
  ii. A nested list with one element:
  a. An integer containing value 789.*/
-public class MiniParser {
+public class _385 {
     
     //Lessons: ask the interviewer to clarify the input, for this question, the input could be "324", "[324]", they are different
     //the former should return a nested integer with one single integer, the latter should return a nested integer with a list
@@ -113,7 +113,7 @@ public class MiniParser {
     }
 
     public static void main(String...args){
-        MiniParser test = new MiniParser();
+        _385 test = new _385();
 //        String s = "[-1]";
 //        String s = "324";
 //        String s = "[]";
