@@ -316,7 +316,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_282.java)| O(?)|O(?) | Hard|
 |281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_281.java)| O(n)|O(n) | Medium|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_280.java)| O(n)|O(1) | Medium|
-|279|[Perfect Squares](https://leetcode.com/problems/perfect-squares/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PerfectSquares.java)| O(n)|O(1) | Medium| 
+|279|[Perfect Squares](https://leetcode.com/problems/perfect-squares/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_279.java)| O(n)|O(1) | Medium| 
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_278.java)| O(logn)|O(1) | Easy| Binary Search
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_277.java)| O(n)|O(1) | Medium| 
 |276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_276.java)| O(n)|O(1) | Easy| DP
@@ -328,7 +328,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |270|[Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_270.java)| O(h)|O(1) | Easy| DFS
 |269|[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_269.java)| O(?)|O(?) | Hard| Topological Sort
 |268|[Missing Number](https://leetcode.com/problems/missing-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_268.java)| O(n)|O(1) | Easy| Bit Manipulation
-|267|[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PalindromePermutationII.java)| O(n*n!)|O(n) | Medium|
+|267|[Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_267.java)| O(n*n!)|O(n) | Medium|
 |266|[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_266.java)| O(n)|O(1) | Easy|
 |265|[Paint House II](https://leetcode.com/problems/paint-house-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/PaintHouseII.java)| ?|? | Hard| 
 |264|[Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_264.java)| O(n)|O(n) | Medium| DP
