@@ -11,7 +11,7 @@ package com.fishercoder.solutions;
  Output: 10
  Note: Your solution should run in O(log n) time and O(1) space.
  */
-public class SingleElementinaSortedArray {
+public class _540 {
 //  TODO:  Could be optimized to O(logn) by using binary search
     public int singleNonDuplicate(int[] nums) {
         int result = 0;

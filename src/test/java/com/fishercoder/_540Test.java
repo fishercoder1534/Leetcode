@@ -1,21 +1,21 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.SingleElementinaSortedArray;
+import com.fishercoder.solutions._540;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class SingleElementinaSortedArrayTest {
-    private static SingleElementinaSortedArray test;
+public class _540Test {
+    private static _540 test;
     private static int expected;
     private static int actual;
     private static int[] nums;
 
     @BeforeClass
     public static void setup(){
-        test = new SingleElementinaSortedArray();
+        test = new _540();
     }
 
     @Before
