@@ -4,7 +4,7 @@ import com.fishercoder.common.utils.CommonUtils;
 
 import java.util.Stack;
 
-public class LongestAbsoluteFilePath {
+public class _388 {
     public static int lengthLongestPath(String input) {
         Stack<Integer> stack = new Stack();
         int longestLen = 0, currDirLen = 0;
