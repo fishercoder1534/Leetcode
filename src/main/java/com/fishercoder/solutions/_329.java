@@ -23,7 +23,7 @@ package com.fishercoder.solutions;
  ]
  Return 4
  The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.*/
-public class LongestIncreasingPathInAMatrix {
+public class _329 {
 //inspired by this solution: https://discuss.leetcode.com/topic/34835/15ms-concise-java-solution, wrote it myself:
 
     final int dirs[] = new int[]{0, 1, 0, -1, 0};
