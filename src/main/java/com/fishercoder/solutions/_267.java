@@ -19,7 +19,7 @@ import java.util.Map;
  If a palindromic permutation exists, we just need to generate the first half of the string.
  To generate all distinct permutations of a (half of) string, use a similar approach from: _46 II or Next Permutation.
  */
-public class PalindromePermutationII {
+public class _267 {
 
     public List<String> generatePalindromes(String s) {
         int odd = 0;
