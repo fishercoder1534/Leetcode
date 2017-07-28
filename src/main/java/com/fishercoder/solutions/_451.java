@@ -42,7 +42,7 @@ import java.util.*;
  Note that 'A' and 'a' are treated as two different characters.
 
  */
-public class SortCharactersByFrequency {
+public class _451 {
 
     public String frequencySort(String s) {
         Map<Character, Integer> map = new HashMap();

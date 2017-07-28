@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.SortCharactersByFrequency;
+import com.fishercoder.solutions._451;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,15 +10,15 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by fishercoder on 1/15/17.
  */
-public class SortCharactersByFrequencyTest {
-    private static SortCharactersByFrequency test;
+public class _451Test {
+    private static _451 test;
     private static String expected;
     private static String actual;
     private static String input;
 
     @BeforeClass
     public static void setup(){
-        test = new SortCharactersByFrequency();
+        test = new _451();
     }
 
     @Before
