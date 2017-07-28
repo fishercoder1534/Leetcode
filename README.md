@@ -243,6 +243,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |357|[Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_357.java)| O(?)|O(?) | Medium|
 |356|[Line Reflection](https://leetcode.com/problems/line-reflection/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_356.java)| O(n)|O(n) | Medium| HashSet
 |355|[Design Twitter](https://leetcode.com/problems/design-twitter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_355.java)| O(n)|O(n) | Medium| Design, HashMap, Heap
+|354|[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_354.java)| O(nlogn)|O(1) | Hard| DP, Binary Search
 |353|[Design Snake Game](https://leetcode.com/problems/design-snake-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_353.java)| O(?)|O(?) | Medium|
 |352|[Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_352.java)| O(logn)|O(n) | Hard| TreeMap
 |351|[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_351.java)| O(?)|O(?) | Medium|
