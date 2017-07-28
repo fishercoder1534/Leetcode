@@ -18,7 +18,7 @@ package com.fishercoder.solutions;
  Both strings' lengths will not exceed 100.
  Only letters from a ~ z will appear in input strings.
  */
-public class LongestUncommonSubsequenceI {
+public class _521 {
     //The gotcha point of this question is:
     //1. if a and b are identical, then there will be no common subsequence, return -1
     //2. else if a and b are of equal length, then any one of them will be a subsequence of the other string
