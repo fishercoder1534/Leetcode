@@ -1,14 +1,14 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.LicenseKeyFormatting;
+import com.fishercoder.solutions._482;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class LicenseKeyFormattingTest {
-    private static LicenseKeyFormatting test;
+public class _482Test {
+    private static _482 test;
     private static String expected;
     private static String actual;
     private static String S;
@@ -16,7 +16,7 @@ public class LicenseKeyFormattingTest {
 
     @BeforeClass
     public static void setup(){
-        test = new LicenseKeyFormatting();
+        test = new _482();
     }
 
     @Before

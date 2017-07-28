@@ -137,7 +137,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MaxConsecutiveOnes.java) | O(n) |O(1) | Easy| Array
 |484|[Find Permutation](https://leetcode.com/problems/find-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_484.java) | O(n) |O(1) | Medium | Array, String, Greedy
 |483|[Smallest Good Base](https://leetcode.com/problems/smallest-good-base/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_483.java) | O(logn) |O(1) | Hard | Binary Search, Math
-|482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](../master/src/main/java/com/fishercoder/solutions/LicenseKeyFormatting.java) | O(n) |O(n) | Medium| 
+|482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_482.java) | O(n) |O(n) | Medium| 
 |481|[Magical String](https://leetcode.com/problems/magical-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_481.java) | O(?) |O(?) | Medium| 
 |480|[Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_480.java) | O(nlogk) |O(k) | Hard| Heap
 |479|[Largest Palindrome Product](https://leetcode.com/problems/largest-palindrome-product/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_479.java) | O(n) |O(1) | Easy| 

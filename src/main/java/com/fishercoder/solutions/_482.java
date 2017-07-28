@@ -30,7 +30,7 @@ package com.fishercoder.solutions;
  String S is non-empty.
 
  */
-public class LicenseKeyFormatting {
+public class _482 {
 
     public String licenseKeyFormatting(String S, int K) {
         StringBuilder stringBuilder = new StringBuilder();
