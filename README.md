@@ -100,6 +100,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |531|[Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_531.java) | O(m*n) |O(1) | Medium | 
 |530|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_530.java) | O(n) |O(n) | Easy| DFS
 |529|[Minesweeper](https://leetcode.com/problems/minesweeper/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_529.java) | O(m*n) |O(k) | Medium | BFS
+|527|[Word Abbreviation](https://leetcode.com/problems/word-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_527.java) | O(n^2) |O(n) | Hard | 
 |526|[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_526.java) | O(n) |O(h) | Medium | Backtracking
 |525|[Contiguous Array](https://leetcode.com/problems/contiguous-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_525.java) | O(n) |O(n) | Medium | HashMap
 |524|[Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_524.java) | O(n) |O(n) | Medium | Sort
