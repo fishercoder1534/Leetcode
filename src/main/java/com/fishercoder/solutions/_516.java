@@ -22,7 +22,7 @@ package com.fishercoder.solutions;
 public class _516 {
 
     /**Inspired by https://discuss.leetcode.com/topic/78603/straight-forward-java-dp-solution*/
-    public int longestPalindromeSubseq(String s) {
+    public static int longestPalindromeSubseq(String s) {
         int[][] dp = new int[s.length()][s.length()];
         for (int i = s.length()-1; i >= 0; i--) {
             dp[i][i] = 1;//initialization
@@ -35,6 +35,11 @@ public class _516 {
             }
         }
         return dp[0][s.length()-1];
+    }
+
+    public static void main(String... args) {
+        longestPalindromeSubseq("bbbab");
+        System.out.println("Done.");
     }
 
 }
