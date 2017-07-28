@@ -8,7 +8,7 @@ package com.fishercoder.solutions;
  Output: "s'teL ekat edoCteeL tsetnoc"
  Note: In the string, each word is separated by single space and there will not be any extra space in the string.
  */
-public class ReverseWordsinaStringIII {
+public class _557 {
 
     public String reverseWords(String s) {
         StringBuilder stringBuilder = new StringBuilder();

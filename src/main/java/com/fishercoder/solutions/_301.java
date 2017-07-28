@@ -12,7 +12,7 @@ import java.util.*;
  "(a)())()" -> ["(a)()()", "(a())()"]
  ")(" -> [""]
  */
-public class RemoveInvalidParentheses {
+public class _301 {
 
 	public List<String> removeInvalidParentheses(String s)
 	{

@@ -16,7 +16,7 @@ package com.fishercoder.solutions;
  * The problem description is pretty ambiguous, actually the problem means to Keep reading until
  * either you have gotten n characters or there is no more characters to read.
  */
-public class ReadNCharactersGivenRead4 {
+public class _157 {
     public int read(char[] buf, int n) {
         int index = 0, next= 0;
         char[] buffer = new char[4];
