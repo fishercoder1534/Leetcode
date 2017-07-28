@@ -1,7 +1,7 @@
 package com.fishercoder.solutions;
 
 /**Given two strings S and T, determine if they are both one edit distance apart.*/
-public class OneEditDistance {
+public class _161 {
 
     public static boolean isOneEditDistance(String s, String t) {
         char[] schar = s.toCharArray();

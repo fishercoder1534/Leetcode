@@ -11,7 +11,7 @@ package com.fishercoder.solutions;
  Follow up:
  Could you solve it in O(nk) runtime?
  */
-public class PaintHouseII {
+public class _265 {
 
 	public int minCostII(int[][] costs) {
 		if (costs == null || costs.length == 0)

@@ -13,7 +13,7 @@ package com.fishercoder.solutions;
  The input array will only contain 0 and 1.
  The length of input array is a positive integer and will not exceed 10,000
  */
-public class MaxConsecutiveOnes {
+public class _487 {
 
     public static int findMaxConsecutiveOnes(int[] nums) {
         int maxOnes = 0;

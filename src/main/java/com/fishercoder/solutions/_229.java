@@ -13,7 +13,7 @@ import java.util.Map;
  How many majority elements could it possibly have?
  Do you have a better hint? Suggest it!
  */
-public class MajorityElementII {
+public class _229 {
 
     public List<Integer> majorityElement(int[] nums) {
         Map<Integer, Integer> counterMap = new HashMap<Integer, Integer>();

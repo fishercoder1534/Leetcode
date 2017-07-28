@@ -1,21 +1,21 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.OutputContestMatches;
+import com.fishercoder.solutions._544;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class OutputContestMatchesTest {
-    private static OutputContestMatches test;
+public class _544Test {
+    private static _544 test;
     private static int n;
     private static String expected;
     private static String actual;
 
     @BeforeClass
     public static void setup(){
-        test = new OutputContestMatches();
+        test = new _544();
     }
 
     @Before

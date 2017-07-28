@@ -14,7 +14,7 @@ import java.util.*;
  Return [[0, 1], [1, 0], [3, 2], [2, 4]]
  The palindromes are ["dcbaabcd", "abcddcba", "slls", "llssssll"]
  */
-public class PalindromePairs {
+public class _336 {
 
     public List<List<Integer>> palindromePairs(String[] words) {
         List<List<Integer>> pairs = new ArrayList<List<Integer>>();

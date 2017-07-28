@@ -1,21 +1,21 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.MaxConsecutiveOnes;
+import com.fishercoder.solutions._487;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class MaxConsecutiveOnesTest {
-    private static MaxConsecutiveOnes test;
+public class _487Test {
+    private static _487 test;
     private static int[] nums;
     private static int expected;
     private static int actual;
 
     @BeforeClass
     public static void setup(){
-        test = new MaxConsecutiveOnes();
+        test = new _487();
     }
 
     @Before

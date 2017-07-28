@@ -47,7 +47,7 @@ import java.util.List;
  The n is in range [2, 212].
  We ensure that the input n can be converted into the form 2k, where k is a positive integer.
  */
-public class OutputContestMatches {
+public class _544 {
 
     public String findContestMatch(int n) {
         List<String> pairs = new ArrayList<>();

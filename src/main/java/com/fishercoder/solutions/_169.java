@@ -11,7 +11,7 @@ Given an array of size n, find the majority element. The majority element is the
 You may assume that the array is non-empty and the majority element always exist in the array.
 
 */
-public class MajorityElement {
+public class _169 {
     
     public int majorityElement_bit_manipulation(int[] nums){
         int[] bit = new int[32];//because an integer is 32 bits, so we use an array of 32 long
@@ -46,7 +46,7 @@ public class MajorityElement {
     
     public static void main(String...strings){
         int[] nums = new int[]{1,2,3,4,2,3,2,2,4,2};
-        MajorityElement test = new MajorityElement();
+        _169 test = new _169();
         System.out.println(test.majorityElement_bit_manipulation(nums));
     }
     

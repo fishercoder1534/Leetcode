@@ -8,7 +8,7 @@ package com.fishercoder.solutions;
  Note:
  All costs are positive integers.
  */
-public class PaintHouse {
+public class _256 {
 
     public int minCost(int[][] costs) {
         if(costs == null || costs.length == 0){
