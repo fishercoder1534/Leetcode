@@ -9,7 +9,7 @@ import java.util.HashMap;
 
  T is "ece" which its length is 3.
  */
-public class LongestSubstringwithAtMostTwoDistinctCharacters {
+public class _159 {
 
     public int lengthOfLongestSubstringTwoDistinct(String s) {
         if (s.length() < 1)
