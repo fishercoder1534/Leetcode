@@ -16,6 +16,7 @@ import java.util.Arrays;
 
  */
 public class _354 {
+    /**reference: https://discuss.leetcode.com/topic/47469/java-nlogn-solution-with-explanation*/
     public int maxEnvelopes(int[][] envelopes) {
         if (envelopes == null || envelopes.length == 0
                 || envelopes[0].length == 0 || envelopes[0].length != 2) {
