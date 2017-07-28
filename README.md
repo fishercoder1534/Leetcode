@@ -28,6 +28,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |643|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_643.java) | O(n) |O(1) | Easy |
 |642|[Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_642.java) | O(n) |O(n) | Hard | Design
 |640|[Solve the Equation](https://leetcode.com/problems/solve-the-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_640.java) | O(n) |O(n) | Medium |
+|639|[Decode Ways II](https://leetcode.com/problems/decode-ways-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_639.java) | O(n) |O(n) | Hard| DP
 |638|[Shopping Offers](https://leetcode.com/problems/shopping-offers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_638.java) | O(2^n) |O(n) | Medium | DP, DFS
 |637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_637.java) | O(n) |O(1) | Easy | 
 |636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_636.java) | O(n) |O(n/2) | Medium | Stack
