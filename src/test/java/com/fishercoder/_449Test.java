@@ -1,21 +1,21 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.solutions.SerializeandDeserializeBST;
+import com.fishercoder.solutions._449;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class SerializeandDeserializeBSTTest {
-    private static SerializeandDeserializeBST test;
+public class _449Test {
+    private static _449 test;
     private static TreeNode actualRoot;
     private static TreeNode expectedRoot;
 
     @BeforeClass
     public static void setup(){
-        test = new SerializeandDeserializeBST();
+        test = new _449();
     }
 
     @Before

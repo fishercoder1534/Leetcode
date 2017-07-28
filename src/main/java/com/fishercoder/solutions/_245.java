@@ -16,7 +16,7 @@ package com.fishercoder.solutions;
  Note:
  You may assume word1 and word2 are both in the list.
  */
-public class ShortestWordDistanceIII {
+public class _245 {
 
     public int shortestWordDistance(String[] words, String word1, String word2) {
         int p1 = -1;

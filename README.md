@@ -166,7 +166,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_452.java) | O(nlogn) |O(1) | Medium| Array, Greedy
 |451|[Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_451.java) | O(nlogn) |O(n) | Medium| HashMap
 |450|[Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_450.java)| O(?)|O(?) | Medium| Tree, Recursion
-|449|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SerializeandDeserializeBST.java)| O(n)|O(h) | Medium| BFS
+|449|[Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_449.java)| O(n)|O(h) | Medium| BFS
 |448|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_448.java)| O(n)|O(1) | Easy| Array, HashMap
 |447|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NumberofBoomerangs.java)| O(n^2)|O(n) | Easy| HashMap
 |445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_445.java)| O(max(m,n)|O(max(m,n)) | Medium| Stack, LinkedList
@@ -278,7 +278,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_321.java)| O(?)|O(?) | Hard
 |320|[Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_320.java)| O(n*2^n)|O(n) | Medium| Backtracking, Bit Manipulation
 |319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_319.java)| O(1)|O(1) | Medium| Brainteaser
-|317|[Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ShortestDistanceFromAllBuildings.java)| O(?)|O(?) | Hard| 
+|317|[Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_317.java)| O(?)|O(?) | Hard| 
 |316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_316.java)| O(n)|O(1)| Hard| Stack, Recursion, Greedy
 |315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_315.java)| O(?)|O(?)| Hard| Tree
 |314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_314.java)| O(n)|O(n) | Medium| HashMap, BFS
@@ -349,7 +349,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |248|[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_248.java) | O(?) | O(?) | Hard | Recursion, DFS 
 |247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_247.java) | O(n^2) | O(n) | Medium | Recursion
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_246.java) | O(n) | O(1) | Easy 
-|245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/ShortestWordDistanceIII.java) | O(n) | O(1) | Medium | 
+|245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_245.java) | O(n) | O(1) | Medium | 
 |244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_244.java) | O(n) | O(n) | Medium | HashMap
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_243.java) | O(n) | O(1) | Easy
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_242.java) | O(n) | O(1) | Easy
@@ -492,7 +492,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_84.java)|O(n) |O(n)|Hard|Array, Stack
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_83.java)|O(n) |O(1)|Medium| Linked List
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_82.java)|O(n) |O(1)|Medium| Linked List
-|81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/SearchinRotatedSortedArrayII.java)|O(logn)|O(1)|Medium|Binary Search
+|81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_81.java)|O(logn)|O(1)|Medium|Binary Search
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/RemoveDuplicatesfromSortedArrayII.java)|O(n) |O(n)|Medium|
 |79|[Word Search](https://leetcode.com/problems/word-search/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_79.java)|O(m*n*l) ? |O(m*n)|Medium|Backtracking, DFS
 |78|[Subsets](https://leetcode.com/problems/subsets/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_78.java)|O(n^2) ? |O(1)|Medium|Backtracking

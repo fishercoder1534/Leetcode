@@ -8,7 +8,7 @@ package com.fishercoder.solutions;
 
  Write a function to determine if a given target is in the array.
  */
-public class SearchinRotatedSortedArrayII {
+public class _81 {
 
     public boolean search(int[] A, int target) {
         int len = A.length;

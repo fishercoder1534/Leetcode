@@ -14,7 +14,7 @@ import java.util.Queue;
 
  Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.
  */
-public class SerializeandDeserializeBST {
+public class _449 {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
