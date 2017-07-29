@@ -23,7 +23,7 @@ Example 3:
 Given ["a", "aa", "aaa", "aaaa"]
 Return 0
 No such pair of words.*/
-public class MaximumProductOfWordLengths {
+public class _318 {
     //Inspired by this awesome post: https://discuss.leetcode.com/topic/35539/java-easy-version-to-understand
     //Idea: this question states that all words consisted of lower case (total only 26 unique chars), 
     //this is a big hint that we could use integer (total 32 bits) to represent each char
@@ -42,7 +42,9 @@ public class MaximumProductOfWordLengths {
         for(int i = 0; i < words.length; i++){
             for(int j = 0; j < words.length; j++){
                 //check if values[i] AND values[j] equals to zero, this means they share NO common chars
-                if((values[i] & values[j]) == 0 && words[i].length() * words[j].length() > maxProduct) maxProduct = words[i].length()*words[j].length();
+                if((values[i] & values[j]) == 0 && words[i].length() * words[j].length() > maxProduct) {
+                    maxProduct = words[i].length()*words[j].length();
+                }
             }
         }
         return maxProduct;
@@ -114,7 +116,7 @@ public class MaximumProductOfWordLengths {
     }
     
     public static void main(String...strings){
-        MaximumProductOfWordLengths test = new MaximumProductOfWordLengths();
+        _318 test = new _318();
         String[] words = new String[]{"abcw","baz","foo","bar","xtfn","abcdef"};
 //        System.out.println(test.maxProduct_with_pruning(words));
 //        System.out.println(test.maxProduct(words));

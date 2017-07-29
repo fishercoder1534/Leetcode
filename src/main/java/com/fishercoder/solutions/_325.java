@@ -21,7 +21,7 @@ import java.util.Map;
  Follow Up:
  Can you do it in O(n) time?*/
 
-public class MaximumSizeSubarraySumEqualsK {
+public class _325 {
     public int maxSubArrayLen_On_solution(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap();
         int sum = 0, max = 0;

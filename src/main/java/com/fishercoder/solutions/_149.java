@@ -5,7 +5,7 @@ import com.fishercoder.common.classes.Point;
 /**
  * Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
  */
-public class MaxPointsonaLine {
+public class _149 {
 
     public int maxPoints(Point[] points) {
         int max = 0;

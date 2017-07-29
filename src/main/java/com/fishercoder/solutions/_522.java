@@ -18,7 +18,7 @@ import java.util.Comparator;
  All the given strings' lengths will not exceed 10.
  The length of the given list will be in the range of [2, 50].
  */
-public class LongestUncommonSubsequenceII {
+public class _522 {
 
     //Idea: if there's such a LUS there in the list, it must be one of the strings in the given list,
     //so we'll just go through the list and check if one string is NOT subsequence of any others, if so, return it, otherwise, return -1

@@ -13,7 +13,7 @@ import java.util.Arrays;
  1 0 0 1 0
  Return 6.
  */
-public class MaximalRectangle {
+public class _85 {
     public int maximalRectangle(char[][] matrix) {
         if (matrix.length == 0) return 0;
         int m = matrix.length, n = matrix[0].length;

@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.LongestUncommonSubsequenceII;
+import com.fishercoder.solutions._522;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -11,14 +11,14 @@ import static junit.framework.Assert.assertEquals;
  */
 public class LongestUncommonSubsequenceIITest {
 
-    private static LongestUncommonSubsequenceII test;
+    private static _522 test;
     private static int expected;
     private static int actual;
     private static String[] strs;
 
     @BeforeClass
     public static void setup(){
-        test = new LongestUncommonSubsequenceII();
+        test = new _522();
     }
 
     @Test

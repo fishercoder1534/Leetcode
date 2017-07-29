@@ -43,7 +43,7 @@ import java.util.*;
 
  (2) The height of a rooted tree is the number of edges on the longest downward path between the root and a leaf.
  */
-public class MinimumHeightTrees {
+public class _310 {
 
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {
         if (n == 1)

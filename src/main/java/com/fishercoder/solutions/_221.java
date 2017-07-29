@@ -1,6 +1,9 @@
 package com.fishercoder.solutions;
 
-/**Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
+/**
+ * 221. Maximal Square
+ *
+ * Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
 
  For example, given the following matrix:
 
@@ -10,7 +13,7 @@ package com.fishercoder.solutions;
  1 0 0 1 0
  Return 4.
  */
-public class MaximalSquare {
+public class _221 {
 
     /**The idea is pretty straightforward: use a 2d dp table to store the intermediate results*/
     public static int maximalSquare(char[][] matrix) {
