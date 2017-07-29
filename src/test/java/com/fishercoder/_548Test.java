@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-public class SplitArraywithEqualSumTest {
+public class _548Test {
     private static _548 test;
     private static boolean expected;
     private static boolean actual;

@@ -12,7 +12,7 @@ package com.fishercoder.solutions;
  * Input: 21
  * Output: -1
  */
-public class NextGreaterElementIII {
+public class _556 {
     //credit: https://discuss.leetcode.com/topic/85759/this-problem-is-the-same-to-next-permutation-algorithm-only and https://discuss.leetcode.com/topic/85755/java-solution-like-next-permutation-problem-o-n
 
     public int nextGreaterElement(int n) {

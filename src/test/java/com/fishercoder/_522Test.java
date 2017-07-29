@@ -9,7 +9,7 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by fishercoder on 12/31/16.
  */
-public class LongestUncommonSubsequenceIITest {
+public class _522Test {
 
     private static _522 test;
     private static int expected;

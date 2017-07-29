@@ -16,7 +16,7 @@ import java.util.Stack;
  The second 1's next greater number needs to search circularly, which is also 2.
  Note: The length of given array won't exceed 10000.
  */
-public class NextGreaterElementII {
+public class _503 {
 
     //Credit: https://discuss.leetcode.com/topic/77881/typical-ways-to-solve-circular-array-problems-java-solution
     //Note: we store INDEX into the stack, reversely, the larger index put at the bottom of the stack, the smaller index at the top

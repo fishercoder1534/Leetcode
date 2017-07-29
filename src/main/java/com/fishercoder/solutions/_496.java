@@ -26,7 +26,7 @@ import java.util.Stack;
  All elements in nums1 and nums2 are unique.
  The length of both nums1 and nums2 would not exceed 1000.
  */
-public class NextGreaterElementI {
+public class _496 {
 
     public int[] nextGreaterElement_clever_way(int[] findNums, int[] nums) {
         Stack<Integer> stack = new Stack();

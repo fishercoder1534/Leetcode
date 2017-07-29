@@ -15,7 +15,7 @@ package com.fishercoder.solutions;
  Output: 0
  Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
  */
-public class NumberComplement {
+public class _476 {
 
     public int findComplement_oneLiner(int num) {
         return ~num & ((Integer.highestOneBit(num) << 1) - 1);

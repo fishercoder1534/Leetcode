@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.MinimumTimeDifference;
+import com.fishercoder.solutions._539;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -11,15 +11,15 @@ import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 
-public class MinimumTimeDifferenceTest {
-    private static MinimumTimeDifference test;
+public class _539Test {
+    private static _539 test;
     private static int expected;
     private static int actual;
     private static List<String> timePoints;
 
     @BeforeClass
     public static void setup(){
-        test = new MinimumTimeDifference();
+        test = new _539();
     }
 
     @Before

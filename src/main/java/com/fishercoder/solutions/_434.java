@@ -9,7 +9,7 @@ Example:
 
 Input: "Hello, my name is John"
 Output: 5*/
-public class NumberofSegmentsinaString {
+public class _434 {
 
     public int countSegments(String s) {
         if (s == null || s.isEmpty()) return 0;

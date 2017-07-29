@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.NextGreaterElementIII;
+import com.fishercoder.solutions._556;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -8,15 +8,15 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class NextGreaterElementIIITest {
-    private static NextGreaterElementIII test;
+public class _556Test {
+    private static _556 test;
     private static int n;
     private static int expected;
     private static int actual;
 
     @BeforeClass
     public static void setup(){
-        test = new NextGreaterElementIII();
+        test = new _556();
     }
 
     @Before

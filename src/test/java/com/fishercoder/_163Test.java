@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.MissingRanges;
+import com.fishercoder.solutions._163;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -13,9 +13,9 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Created by fishercoder on 12/31/16.
  */
-public class MissingRangesTest {
+public class _163Test {
 
-    private static MissingRanges test;
+    private static _163 test;
     private static List<String> expected;
     private static List<String> actual;
     private static int lower;
@@ -24,7 +24,7 @@ public class MissingRangesTest {
 
     @BeforeClass
     public static void setup(){
-        test = new MissingRanges();
+        test = new _163();
         expected = new ArrayList();
         actual = new ArrayList();
     }
