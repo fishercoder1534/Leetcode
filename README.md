@@ -212,6 +212,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_396.java)| O(n^2) could be optimized to O(n) | O(1) | Easy|
 |393|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_393.java)| O(?)|O(?) | Medium| Bit Manipulation
 |392|[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_392.java)| O(m*n)|O(1) | Medium| Array, String
+|391|[Perfect Rectangle](https://leetcode.com/problems/perfect-rectangle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_391.java)| O(n)|O(1) | Hard| 
 |390|[Elimination Game](https://leetcode.com/problems/elimination-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_390.java)| O(logn)|O(1) | Medium|
 |389|[Find the Difference](https://leetcode.com/problems/find-the-difference/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_389.java)| O(n)|O(1) | Easy|
 |388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_388.java)| O(n)|O(d) | Medium| Stack
