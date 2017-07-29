@@ -202,6 +202,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |411|[Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_411.java)| O(?)|O(?) | Hard| NP-Hard, Backtracking, Trie, Recursion
 |410|[Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_410.java)| O(nlogn)|O(1) | Hard| Binary Search, DP
 |408|[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_408.java)| O(n)|O(1) | Easy|
+|407|[Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_407.java)| | | Hard| Heap
 |406|[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_406.java)| O(nlogn)|O(1) | Medium| LinkedList, PriorityQueue
 |405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_405.java)| O(n)|O(1) | Easy|
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_404.java)| O(n)|O(h) | Easy|
