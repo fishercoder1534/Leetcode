@@ -8,7 +8,7 @@ package com.fishercoder.solutions;
  Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.
 
  */
-public class PalindromePartitioningII {
+public class _132 {
     /**This solution is cooler than Jiuzhang: https://discuss.leetcode.com/topic/32575/easiest-java-dp-solution-97-36*/
     
     //cut[i] stands for the minimum number of cut needed to cut [0, i] into palindromes

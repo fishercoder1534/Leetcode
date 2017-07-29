@@ -13,7 +13,7 @@ package com.fishercoder.solutions;
 
  If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
  */
-public class MinimumWindowSubstring {
+public class _76 {
 
     public String minWindow(String s, String t) {
         int[] counts = new int[256];

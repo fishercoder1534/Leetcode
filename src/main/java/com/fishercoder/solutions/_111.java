@@ -9,7 +9,7 @@ import java.util.Queue;
 
  The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.*/
 
-public class MinimumDepthofBinaryTree {
+public class _111 {
 /**We can solve this problem using both BFS and DFS:
  * DFS is to visit every single root to leaf path and return the shortest one.
  * BFS is to visit every level and return whenever we find the first leaf node.*/
@@ -23,7 +23,7 @@ public class MinimumDepthofBinaryTree {
     }
     
     public static void main(String[] args){
-        MinimumDepthofBinaryTree test = new MinimumDepthofBinaryTree();
+        _111 test = new _111();
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);

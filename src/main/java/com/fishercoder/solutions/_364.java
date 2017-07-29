@@ -16,7 +16,7 @@ import java.util.Queue;
 
  Example 2:
  Given the list [1,[4,[6]]], return 17. (one 1 at depth 3, one 4 at depth 2, and one 6 at depth 1; 1*3 + 4*2 + 6*1 = 17)*/
-public class NestedListWeightSumII {
+public class _364 {
 
     public int depthSumInverse(List<NestedInteger> nestedList) {
         Queue<NestedInteger> q = new LinkedList<NestedInteger>();

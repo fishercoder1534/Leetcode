@@ -1,19 +1,16 @@
 package com.fishercoder.solutions;
 
-
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.CommonUtils;
 
-/**203. Remove Linked List Elements  QuestionEditorial Solution  My Submissions
-Total Accepted: 74027
-Total Submissions: 249238
-Difficulty: Easy
+/**203. Remove Linked List Elements
+ *
 Remove all elements from a linked list of integers that have value val.
 
 Example
 Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
 Return: 1 --> 2 --> 3 --> 4 --> 5*/
-public class RemoveLinkedListElements {
+public class _203 {
 	/**This is a very good question to test your understanding of pointers/memory/addresses, although it's marked as EASY.
 	 * All the three nodes: dummy, curr and prev are indispensable.
 
@@ -42,7 +39,7 @@ public class RemoveLinkedListElements {
 	}
 	
 	public static void main(String...strings){
-		RemoveLinkedListElements test = new RemoveLinkedListElements();
+		_203 test = new _203();
 		int val = 6;
 		ListNode head = new ListNode(1);
 		head.next = new ListNode(2);

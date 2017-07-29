@@ -14,7 +14,7 @@ import java.util.List;
  ["aa","b"],
  ["a","a","b"]
  ]*/
-public class PalindromePartitioning {
+public class _131 {
 
     public List<List<String>> partition(String s) {
         List<List<String>> result = new ArrayList();
@@ -59,7 +59,7 @@ public class PalindromePartitioning {
 
     
     public static void main(String...strings){
-        PalindromePartitioning test = new PalindromePartitioning();
+        _131 test = new _131();
         String s = "aab";
         List<List<String>> result = test.partition(s);
         for(List<String> list : result){

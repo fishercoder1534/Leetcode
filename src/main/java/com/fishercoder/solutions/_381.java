@@ -15,7 +15,7 @@ getRandom: Returns a random element from current collection of elements. The pro
 Example:
 
 // Init an empty collection.
-RandomizedCollection collection = new RandomizedCollection();
+_381 collection = new _381();
 
 // Inserts 1 to the collection. Returns true as the collection did not contain 1.
 collection.insert(1);
@@ -34,7 +34,7 @@ collection.remove(1);
 
 // getRandom should return 1 and 2 both equally likely.
 collection.getRandom();*/
-public class RandomizedCollection {
+public class _381 {
     
     Map<Integer, Integer> forwardMap;//key is the to-be-inserted number, value is its auto-incremented index
     Map<Integer, Integer> reverseMap;//the other way around
@@ -42,7 +42,7 @@ public class RandomizedCollection {
     Random rand;
     
     /** Initialize your data structure here. */
-    public RandomizedCollection() {
+    public _381() {
         forwardMap = new HashMap();
         reverseMap = new HashMap();
         index = 0;
@@ -92,7 +92,7 @@ public class RandomizedCollection {
     }
     
     public static void main(String...strings){
-        RandomizedCollection test = new RandomizedCollection();
+        _381 test = new _381();
         System.out.println(test.insert(1));
         System.out.println(test.insert(1));
         System.out.println(test.insert(2));

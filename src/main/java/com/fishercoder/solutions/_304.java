@@ -23,7 +23,7 @@ package com.fishercoder.solutions;
  There are many calls to sumRegion function.
  You may assume that row1 ≤ row2 and col1 ≤ col2.
  */
-public class RangeSumQuery2DImmutable {
+public class _304 {
 
     public class NumMatrix {
 

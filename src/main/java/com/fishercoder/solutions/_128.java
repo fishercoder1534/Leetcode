@@ -10,7 +10,7 @@ import java.util.*;
 
  Your algorithm should run in O(n) complexity.
  */
-public class LongestConsecutiveSequence {
+public class _128 {
     //inspired by this solution: https://discuss.leetcode.com/topic/29286/my-java-solution-using-unionfound
     public int longestConsecutive(int[] nums) {
         Map<Integer, Integer> map = new HashMap();//<value, index>

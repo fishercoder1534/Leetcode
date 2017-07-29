@@ -27,7 +27,7 @@ import java.util.Queue;
  Note:
  You can assume that no duplicate edges will appear in edges. Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.
  */
-public class NumberOfConnectedComponentsInAnUndirectedGraph {
+public class _323 {
 
     public int countComponents(int n, int[][] edges) {
         if(n <= 1) return n;

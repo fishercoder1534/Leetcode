@@ -11,7 +11,7 @@ package com.fishercoder.solutions;
 
  Beware of overflow.
  */
-public class NumberofDigitOne {
+public class _233 {
 
     public int countDigitOne(int n) {
         int count = 0;

@@ -23,7 +23,7 @@ package com.fishercoder.solutions;
  You may assume the number of calls to update and sumRegion function is distributed evenly.
  You may assume that row1 ≤ row2 and col1 ≤ col2.
  */
-public class RangeSumQuery2DMutable {
+public class _308 {
     class Solution {
         public class NumMatrix {
             int[][] nums;

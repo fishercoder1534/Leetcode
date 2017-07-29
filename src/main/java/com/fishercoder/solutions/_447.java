@@ -16,7 +16,7 @@ import java.util.Map;
 
  Explanation:
  The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]*/
-public class NumberofBoomerangs {
+public class _447 {
     /**Looked at these two posts: https://discuss.leetcode.com/topic/66587/clean-java-solution-o-n-2-166ms and 
      * https://discuss.leetcode.com/topic/66521/share-my-straightforward-solution-with-hashmap-o-n-2, basically,
      * have a HashMap, key is the distance, value is the number of points that are this distance apart to this point.
@@ -54,7 +54,7 @@ public class NumberofBoomerangs {
     }
 
     public static void main(String... args) {
-        NumberofBoomerangs test = new NumberofBoomerangs();
+        _447 test = new _447();
         // int[][] points = new int[][]{
         // {0,0},
         // {1,0},

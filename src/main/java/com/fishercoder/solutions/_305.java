@@ -40,7 +40,7 @@ import java.util.List;
 
  Can you do it in time complexity O(k log mn), where k is the length of the positions?
  */
-public class NumberofIslandsII {
+public class _305 {
 
     public int find(int[] father, int id) {
         int tf = father[id];

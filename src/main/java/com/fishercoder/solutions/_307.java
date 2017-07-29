@@ -12,7 +12,7 @@ package com.fishercoder.solutions;
  Note:
  The array is only modifiable by the update function.
  You may assume the number of calls to update and sumRange function is distributed evenly.*/
-public class RangeSumQueryMutable {
+public class _307 {
 
 	public static void main(String... strings) {
 		//        int[] nums = new int[]{1,3,5};
