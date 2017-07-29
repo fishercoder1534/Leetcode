@@ -9,7 +9,7 @@ import java.util.Stack;
 
  Follow up:
  Could you do it in O(n) time and O(1) space?*/
-public class PalindromeLinkedList {
+public class _234 {
     //then I turned to Discuss, and found that they actually reverse the half and then do the comparison, e.g. https://discuss.leetcode.com/topic/33376/java-easy-to-understand
     //a strong candidate would try to restore the reversed half before return to keep the input intact
     //practice does make perfect! Cheers! I implemented this code in 20 mins this time! Cheers!
@@ -77,7 +77,7 @@ public class PalindromeLinkedList {
     }
     
     public static void main(String...strings){
-        PalindromeLinkedList test = new PalindromeLinkedList();
+        _234 test = new _234();
 //        ListNode head = new ListNode(1);
 //        head.next = new ListNode(2);
 //        head.next.next = new ListNode(3);
