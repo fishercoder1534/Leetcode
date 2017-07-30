@@ -38,20 +38,17 @@ import com.fishercoder.common.classes.TreeNode;
  Return false.
  */
 public class _572 {
+
     public boolean isSubtree(TreeNode s, TreeNode t) {
         if (s == null && t == null) return true;
-        return dfs(s, t);
-    }
-
-    private boolean dfs(TreeNode s, TreeNode t) {
         boolean isSubTree = false;
         if (s != null && t != null && s.val == t.val) isSubTree = isSameTree(s, t);
         if (isSubTree) return true;
         boolean isSubTreeLeft = false;
-        if (s.left != null) isSubTreeLeft= dfs(s.left, t);
+        if (s.left != null) isSubTreeLeft= isSubtree(s.left, t);
         if (isSubTreeLeft) return true;
         boolean isSubTreeRight = false;
-        if (s.right != null) isSubTreeRight = dfs(s.right, t);
+        if (s.right != null) isSubTreeRight = isSubtree(s.right, t);
         if (isSubTreeRight) return true;
         return false;
     }
