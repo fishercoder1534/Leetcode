@@ -31,6 +31,10 @@ import java.util.*;
 public class _652 {
 
     /**credit: https://discuss.leetcode.com/topic/97584/java-concise-postorder-traversal-solution*/
+
+    /**You don't actually need to check if every other tree is a duplicate of current node,
+     * just when you go through each node, you'll see whether there's already one in the map,
+     * since map.containsKey() checks this TreeNode.*/
     public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
         List<TreeNode> res = new LinkedList<>();
         postorder(root, new HashMap<>(), res);
