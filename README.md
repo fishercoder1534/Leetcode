@@ -23,6 +23,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |652|[Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_652.java) | O(n) |O(n) | Medium | Tree
 |651|[4 Keys Keyboard](https://leetcode.com/problems/4-keys-keyboard/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_651.java) | O(n^2) |O(n) | Medium | DP
 |650|[2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_650.java) | O(n^2) |O(n) | Medium | DP
+|649|[Dota2 Senate](https://leetcode.com/problems/dota2-senate/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_649.java) | O(n) |O(n) | Medium | Greedy
 |648|[Replace Words](https://leetcode.com/problems/replace-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_648.java) | O(n) |O(n) | Medium | Trie
 |647|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_647.java) | O(n^2) |O(1) | Medium | DP
 |646|[Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_646.java) | O(nlogn) |O(1) | Medium | DP
