@@ -596,6 +596,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |627|[Swap Salary](https://leetcode.com/problems/swap-salary/)|[Solution](../master/database/_627.sql) | | | Easy |
 |620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|[Solution](../master/database/_620.sql) | | | Easy |
 |619|[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)|[Solution](../master/database/_619.sql) | | | Easy |
+|614|[Second Degree Follower](https://leetcode.com/problems/second-degree-follower/)|[Solution](../master/database/_614.sql) | | | Medium | Inner Join
 |613|[Shortest Distance in a Line](https://leetcode.com/problems/shortest-distance-in-a-line/)|[Solution](../master/database/_613.sql) | || Easy|
 |612|[Shortest Distance in a Plane](https://leetcode.com/problems/shortest-distance-in-a-plane/)|[Solution](../master/database/_612.sql) | || Medium|
 |610|[Triangle Judgement](https://leetcode.com/problems/triangle-judgement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_610.java) | | | Easy | 
