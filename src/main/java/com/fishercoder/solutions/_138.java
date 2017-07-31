@@ -29,11 +29,14 @@ public class _138 {
         
         return map.get(head);
     }
-}
 
-// Definition for singly-linked list with a random pointer.
-class RandomListNode {
-     int label;
-     RandomListNode next, random;
-     RandomListNode(int x) { this.label = x; }
- }
+    // Definition for singly-linked list with a random pointer.
+    class RandomListNode {
+        int label;
+        RandomListNode next, random;
+
+        RandomListNode(int x) {
+            this.label = x;
+        }
+    }
+}
