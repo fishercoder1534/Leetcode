@@ -142,7 +142,8 @@ public class _146 {
         }
 
         private void remove(DoublyLinkedListPlusHashMapSolution.Node node) {
-            DoublyLinkedListPlusHashMapSolution.Node next = node.next, prev = node.prev;
+            DoublyLinkedListPlusHashMapSolution.Node next = node.next;
+            DoublyLinkedListPlusHashMapSolution.Node prev = node.prev;
             prev.next = next;
             next.prev = prev;
         }
