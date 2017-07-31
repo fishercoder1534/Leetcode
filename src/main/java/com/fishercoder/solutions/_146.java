@@ -84,8 +84,8 @@ public class _146 {
         private int capacity;
         private int count;
         private DoublyLinkedListPlusHashMapSolution.Node head, tail;
-        private Map<Integer, DoublyLinkedListPlusHashMapSolution.Node> map;// ATTN: the value should be Node type! This is the whole point
-        // of having a class called Node!
+        private Map<Integer, DoublyLinkedListPlusHashMapSolution.Node> map;
+        // ATTN: the value should be Node type! This is the whole point of having a class called Node!
 
         public DoublyLinkedListPlusHashMapSolution(int capacity) {
             this.capacity = capacity;
@@ -99,8 +99,8 @@ public class _146 {
         }
 
         public int get(int key) {
-            DoublyLinkedListPlusHashMapSolution.Node node = map.get(key);// HashMap allows value to be null, this is superior than
-            // HashTable!
+            DoublyLinkedListPlusHashMapSolution.Node node = map.get(key);
+            // HashMap allows value to be null, this is superior than HashTable!
             if (node == null) {
                 return -1;
             } else {
@@ -118,9 +118,9 @@ public class _146 {
                 count++;
 
                 if (count > capacity) {
-                    // ATTN: It's tail.prev, not tail, because tail is always an invalid node, it
-                    // doesn't contain anything, it's always the tail.prev that is the last node in the
-                    // cache
+                    /** ATTN: It's tail.prev, not tail, because tail is always an invalid node, it
+                    doesn't contain anything, it's always the tail.prev that is the last node in the
+                    cache*/
                     DoublyLinkedListPlusHashMapSolution.Node toDelete = tail.prev;
                     map.remove(toDelete.key);
                     remove(toDelete);
@@ -134,10 +134,9 @@ public class _146 {
         }
 
         private void update(DoublyLinkedListPlusHashMapSolution.Node node) {
-            // this simplifies the process, just do two operations, remove the old node first, and then
-            // just add the node again
-            // this will guarantee that this node will be at the latest position: the most recently used
-            // position.
+            /** this simplifies the process, just do two operations, remove the old node first, and then
+             just add the node again this will guarantee that this node will be at the latest position:
+             the most recently used position.*/
             remove(node);
             add(node);
         }
@@ -148,8 +147,8 @@ public class _146 {
             next.prev = prev;
         }
 
-        private void add(DoublyLinkedListPlusHashMapSolution.Node node) {// ATTN: we'll always add the node into the first position:
-            // head.next!!!!
+        private void add(DoublyLinkedListPlusHashMapSolution.Node node) {
+            // ATTN: we'll always add the node into the first position: head.next!!!!
             DoublyLinkedListPlusHashMapSolution.Node next = head.next;
             head.next = node;
             node.next = next;
