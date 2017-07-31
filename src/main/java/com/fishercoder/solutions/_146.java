@@ -104,7 +104,15 @@ public class _146 {
             if (node == null) {
                 return -1;
             } else {
-                update(node);
+
+                /**Do two operations: this makes the process more clear:
+                 * remove the old node first, and then
+                 * just add the node again.
+                 * This will guarantee that this node will be at the latest position:
+                 * the most recently used position.*/
+                remove(node);
+                add(node);
+
                 return node.value;
             }
         }
@@ -131,14 +139,6 @@ public class _146 {
                 node.value = value;
                 add(node);
             }
-        }
-
-        private void update(DoublyLinkedListPlusHashMapSolution.Node node) {
-            /** this simplifies the process, just do two operations, remove the old node first, and then
-             just add the node again this will guarantee that this node will be at the latest position:
-             the most recently used position.*/
-            remove(node);
-            add(node);
         }
 
         private void remove(DoublyLinkedListPlusHashMapSolution.Node node) {
