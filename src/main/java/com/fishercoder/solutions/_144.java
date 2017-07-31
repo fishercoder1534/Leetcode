@@ -2,11 +2,11 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
-/**Given a binary tree, return the preorder traversal of its nodes' values.
+/**
+ * 144. Binary Tree Preorder Traversal
+ * Given a binary tree, return the preorder traversal of its nodes' values.
 
  For example:
  Given binary tree {1,#,2,3},
@@ -20,21 +20,24 @@ import java.util.Stack;
  Note: Recursive solution is trivial, could you do it iteratively?*/
 
 public class _144 {
-    public List<Integer> preorderTraversal_iterative_original(TreeNode root) {
+
+    public List<Integer> preorderTraversal_iterative(TreeNode root) {
         List<Integer> list = new ArrayList();
-        Stack<TreeNode> stack = new Stack();
         if(root == null) return list;
+        Deque<TreeNode> stack = new ArrayDeque<>();
         stack.push(root);
         while(!stack.isEmpty()){
             TreeNode curr = stack.pop();
             list.add(curr.val);
+            /**We push right nodes onto the stack first, since they'll be popped out later than
+             * the left nodes, to meet the preorder: root -> left -> right. */
             if(curr.right != null) stack.push(curr.right);
             if(curr.left != null) stack.push(curr.left);
         }
         return list;
     }
 
-    public List<Integer> preorderTraversal_recursive_1(TreeNode root) {
+    public List<Integer> preorderTraversal_recursive(TreeNode root) {
         List<Integer> list = new ArrayList();
         return pre(root, list);
     }
@@ -46,19 +49,5 @@ public class _144 {
         pre(root.right, list);
         return list;
     }
-
-
-	public List<Integer> preorderTraversal_recursive_2(TreeNode root) {
-		List<Integer> result = new ArrayList();
-		if (root != null) dfs(root, result);
-		return result;
-	}
-
-	private void dfs(TreeNode root, List<Integer> result){
-		result.add(root.val);
-		if (root.left != null) dfs(root.left, result);
-		if (root.right != null) dfs(root.right, result);
-	}
-
 
 }
