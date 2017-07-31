@@ -1,7 +1,6 @@
 package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.common.utils.CommonUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -36,20 +35,6 @@ public class _145 {
         }
         Collections.reverse(result);
         return result;
-    }
-    
-    public static void main(String...strings){
-//        TreeNode root = new TreeNode(1);
-//        root.left = new TreeNode(2);
-//        root.right = new TreeNode(3);
-        
-//        TreeNode root = new TreeNode(1);
-//        root.left = new TreeNode(2);
-        
-        TreeNode root = new TreeNode(1);
-        root.right = new TreeNode(2);
-        List<Integer> result = postorderTraversal_iterative(root);
-        CommonUtils.printList(result);
     }
     
     public List<Integer> postorderTraversal_recursive(TreeNode root) {
