@@ -1,6 +1,11 @@
 package com.fishercoder.solutions;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
+ * 523. Continuous Subarray Sum
+ *
  * Given a list of non-negative numbers and a target integer k,
  * write a function to check if the array has a continuous subarray of size at least 2
  * that sums up to the multiple of k, that is, sums up to n*k where n is also an integer.
@@ -21,7 +26,29 @@ package com.fishercoder.solutions;
 
  */
 public class _523 {
-    /**TODO: could be optimized to O(n) time and O(k) space, reference: https://discuss.leetcode.com/topic/80793/java-o-n-time-o-k-space*/
+
+    public boolean checkSubarraySumOnTimeO1Space(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+            if (k != 0) {
+                /**Because if k == 0, sum %= k will throw ArithmeticException.*/
+                sum %= k;
+            }
+            Integer prev = map.get(sum);
+            if (prev != null) {
+                if (i - prev > 1) {
+                    /**This makes sure that it has length at least 2*/
+                    return true;
+                }
+            } else {
+                map.put(sum, i);
+            }
+        }
+        return false;
+    }
 
     public boolean checkSubarraySum(int[] nums, int k) {
         if (nums == null || nums.length == 0) return false;
