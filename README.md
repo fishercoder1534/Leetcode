@@ -408,7 +408,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_203.java)| O(n)|O(1) | Easy
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_202.java)| O(k)|O(k) | Easy
 |201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_201.java)| O(min(m,n))|O(1) | Medium | Bit Manipulation
-|200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Union Find](../master/src/main/java/com/fishercoder/solutions/_200UnionFind.java) [DFS](../master/MEDIUM/src/medium/_200DFS.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
+|200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Solution](../master/MEDIUM/src/medium/_200.java)| O(m*n)|O(m*n) | Medium| Union Find, DFS
 |199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_199.java)| O(n)|O(n)| Medium | BFS 
 |198|[House Robber](https://leetcode.com/problems/house-robber/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_198.java)| O(n)|O(n)| Easy | DP
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_191.java)| O(n)|O(1)| Easy | Bit Manipulation
