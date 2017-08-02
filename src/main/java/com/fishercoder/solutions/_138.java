@@ -11,10 +11,11 @@ import java.util.Map;
 public class _138 {
 
     public RandomListNode copyRandomList(RandomListNode head) {
+        /**Key is the original nodes, value is the new nodes we're deep copying to.*/
         Map<RandomListNode, RandomListNode> map = new HashMap();
         RandomListNode node = head;
 
-        //loop for the first time: copy the node themselves
+        //loop for the first time: copy the node themselves with only labels
         while(node != null){
             map.put(node, new RandomListNode(node.label));
             node = node.next;
