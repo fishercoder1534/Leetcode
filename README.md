@@ -163,7 +163,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_463.java)| O(m*n)|O(1) | Easy| 
 |462|[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_462.java) | O(nlogn) |O(1) | Medium|
 |461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_461.java) | O(n) |O(1) | Easy|
-|460|[LFU Cache](https://leetcode.com/problems/lfu-cache/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_460.java) | O(?) |O(?) | Hard| Design
+|460|[LFU Cache](https://leetcode.com/problems/lfu-cache/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_460.java) | O(1) |O(n) | Hard| Design, LinkedHashMap, HashMap
 |459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_459.java)| O(n)|O(n) | Easy| KMP
 |458|[Poor Pigs](https://leetcode.com/problems/poor-pigs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_458.java) | O(1) |O(1) | Easy| Math
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_456.java) | O(n) |O(n) | Medium| Stack
