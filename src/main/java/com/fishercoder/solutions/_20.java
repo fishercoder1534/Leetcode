@@ -1,28 +1,30 @@
 package com.fishercoder.solutions;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
-/**Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-
- The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.*/
+/**
+ * 20. Valid Parentheses
+ *
+ * Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+ * The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.*/
 public class _20 {
 
     public boolean isValid(String s) {
-        Stack<Character> stack = new Stack();
-        char[] schar = s.toCharArray();
-        for(int i = 0; i < schar.length; i++){
-            if(schar[i] == '(' || schar[i] == '[' || schar[i] == '{') stack.push(schar[i]);
-            else if(schar[i] == ')' || schar[i] == ']' || schar[i] == '}'){
-                if(stack.isEmpty()) return false;
+        Deque<Character> stack = new ArrayDeque<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {
+                stack.push(s.charAt(i));
+            } else {
+                if (stack.isEmpty()) return false;
                 else {
-                    char pop = stack.pop();
-                    if(schar[i] == ')' && pop != '(') return false;
-                    else if(schar[i] == ']' && pop != '[') return false;
-                    else if(schar[i] == '}' && pop != '{') return false;
+                    if (stack.peek() == '(' && s.charAt(i) != ')') return false;
+                    else if (stack.peek() == '{' && s.charAt(i) != '}') return false;
+                    else if (stack.peek() == '[' && s.charAt(i) != ']') return false;
+                    stack.pop();
                 }
             }
         }
         return stack.isEmpty();
     }
-
 }
