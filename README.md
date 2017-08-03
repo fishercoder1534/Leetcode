@@ -183,7 +183,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |441|[Arranging Coins](https://leetcode.com/problems/arrange-coins/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_441.java)| O(n)|O(1) | Easy|
 |440|[K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_440.java)| O(n^2)|O(1) | Hard|
 |439|[Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_439.java)| O(n)|O(n) | Medium| Stack
-|438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_438.java)| O(n)|O(1) | Easy|
+|438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_438.java)| O(n)|O(1) | Easy| Sliding Window
 |437|[Path Sum III](https://leetcode.com/problems/path-sum-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_437.java) | O(n^2) |O(n) | Easy| DFS, recursion
 |436|[Find Right Interval](https://leetcode.com/problems/find-right-interval/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_436.java) | O(nlogn) |O(n) | Medium| Binary Search
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_435.java) | O(nlogn) |O(1) | Medium| Greedy
