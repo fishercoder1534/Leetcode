@@ -3,6 +3,8 @@ package com.fishercoder.solutions;
 import java.util.*;
 
 /**
+ * 239. Sliding Window Maximum
+ *
  * Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right.
  * You can only see the k numbers in the window. Each time the sliding window moves right by one position.
 
@@ -11,7 +13,7 @@ import java.util.*;
 
  Window position                Max
  ---------------               -----
- [1  3  -1] -3  5  3  6  7       3
+ [1  3  -1] -3  5  3  6  7      3
  1 [3  -1  -3] 5  3  6  7       3
  1  3 [-1  -3  5] 3  6  7       5
  1  3  -1 [-3  5  3] 6  7       5
@@ -34,32 +36,21 @@ import java.util.*;
 public class _239 {
 
     public int[] maxSlidingWindow(int[] nums, int k) {
-        if(nums == null || nums.length == 0 || k == 0) return new int[0];
-        Queue<Integer> heap = new PriorityQueue<Integer>(new Comparator<Integer>(){
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                if(o1 > o2) return -1;
-                else if(o1 < o2) return 1;
-                else return 0;
+        if (nums == null || nums.length == 0 || k == 0) return new int[0];
+        PriorityQueue<Integer> heap = new PriorityQueue<>((a, b) -> b - a);
+        int[] res = new int[nums.length - k + 1];
+        for (int i = 0; i < nums.length; i++) {
+            if (i < k) {
+                heap.offer(nums[i]);
+                if (i == k - 1) {
+                    res[0] = heap.peek();
+                }
+            } else {
+                heap.remove(nums[i - k]);
+                heap.offer(nums[i]);
+                res[i - k + 1] = heap.peek();
             }
-        }
-        );
-        int i = 0;
-        for(; i < k; i++){
-            heap.offer(nums[i]);
-        }
-        List<Integer> list = new ArrayList<Integer>();
-        list.add(heap.peek());
-        for(; i < nums.length; i++){
-            heap.remove(nums[i-k]);
-            heap.offer(nums[i]);
-            list.add(heap.peek());
-        }
-        int[] res = new int[list.size()];
-        for(int j = 0; j < list.size(); j++){
-            res[j] = list.get(j);
         }
         return res;
     }
-
 }

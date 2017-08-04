@@ -23,9 +23,9 @@ public class _239Test {
 
     @Before
     public void setupForEachTest(){
-        expected = new int[1000];
-        actual = new int[1000];
-        nums = new int[1000];
+        expected = new int[]{};
+        actual = new int[]{};
+        nums = new int[]{};
         k = 0;
     }
 
