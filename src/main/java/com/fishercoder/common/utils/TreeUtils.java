@@ -12,7 +12,7 @@ import java.util.*;
  * This is a util class to contain all tree related methods.
  */
 public class TreeUtils {
-	
+
 	/**
 	 * This method is to construct a normal binary tree. The input reads like
 	 * this for [5, 3, 6, 2, 4, null, null, 1]:
@@ -21,64 +21,32 @@ public class TreeUtils {
 	         /   \
 	        3     6
 	       / \    / \
-	      2   4  N   N
+	      2   4  #   #
 	     /
 	    1 
 	    
-	 * where N is null.
-	 * 
-	 * Basically you go from top level to bottom, then left to right within the level
-	 * 
-	 * Cool! Confirmed/tested out that this one does exactly the same as the bruteforce one does!
 	 */
-	@Notes(issue = "This is usually how Leetcode OJ passes a binary tree into testing.")
+	@Notes(context = "This is usually how Leetcode OJ passes a binary tree into testing: " +
+			"https://leetcode.com/faq/#binary-tree, I wrote this function for my own ease of testing when copying" +
+			"the test case from Leetcode in the form of [1, null, 2, 3].")
 	public static TreeNode constructBinaryTree(List<Integer> treeValues) {
-		TreeNode root = new TreeNode(null, treeValues.get(0), null);
-
-		final Queue<TreeNode> queue = new LinkedList<TreeNode>();
-		queue.add(root);
-
-		final int half = treeValues.size() / 2;
-
-		for (int i = 0; i < half; i++) {
+		TreeNode root = new TreeNode(treeValues.get(0));
+		Queue<TreeNode> queue = new LinkedList<>();
+		queue.offer(root);
+		for (int i = 1; i < treeValues.size(); i++) {
+			TreeNode curr = queue.poll();
 			if (treeValues.get(i) != null) {
-				final TreeNode current = queue.poll();
-				final int left = 2 * i + 1;
-				final int right = 2 * i + 2;
-
-				if (treeValues.get(left) != null) {
-					current.left = new TreeNode(null, treeValues.get(left),
-							null);
-					queue.add(current.left);
-				}
-				if (right < treeValues.size() && treeValues.get(right) != null) {
-					current.right = new TreeNode(null, treeValues.get(right),
-							null);
-					queue.add(current.right);
-				}
+				curr.left = new TreeNode(treeValues.get(i));
+				queue.offer(curr.left);
+			}
+			if (++i < treeValues.size() && treeValues.get(i) != null) {
+				curr.right = new TreeNode(treeValues.get(i));
+				queue.offer(curr.right);
 			}
 		}
 		return root;
 	}
 	
-	@Notes(issue = "This brute force takes in only first seven values to construct a tree, I really need to write one method that takes any arbitrary number of values.")
-	public static TreeNode bruteForceConstructBinaryTree(
-			List<Integer> treeValues) {
-		TreeNode root = null;
-
-		if (treeValues.size() < 7)
-			return root;
-
-		root = new TreeNode(treeValues.get(0));
-		root.left = new TreeNode(treeValues.get(1));
-		root.right = new TreeNode(treeValues.get(2));
-		root.left.left = new TreeNode(treeValues.get(3));
-		root.left.right = new TreeNode(treeValues.get(4));
-		root.right.left = new TreeNode(treeValues.get(5));
-		root.right.right = new TreeNode(treeValues.get(6));
-		return root;
-	}
-
 	public static void printBinaryTree(TreeNode root) {
 		CommonUtils.println("\n\nPrinting out the binary tree in a very visual manner as below:");
 		
@@ -89,8 +57,9 @@ public class TreeUtils {
 	}
 	
 	private static int maxLevel(TreeNode root) {
-		if (root == null)
+		if (root == null) {
 			return 0;
+		}
 
 		return Math.max(TreeUtils.maxLevel(root.left),
 				TreeUtils.maxLevel(root.right)) + 1;
@@ -166,7 +135,7 @@ public class TreeUtils {
 		System.out.print(root.val + " ");
 		inOrder(root.right);
 	}
-	
+
 	public static void main (String... args){
 	    //test random int generator
 		List<Integer> treeValues = CommonUtils.randomIntArrayGenerator(24);
@@ -174,13 +143,19 @@ public class TreeUtils {
 		List<Integer> treeValues2 = Arrays.asList(0, 1, 2, 3, 4, 5, 6);
 		
 		//test tree construction
-		TreeNode root1 = bruteForceConstructBinaryTree(treeValues2);
-		inOrderTraversal(root1);
-		printBinaryTree(root1);
+//		TreeNode root1 = bruteForceConstructBinaryTree(treeValues2);
+//		inOrderTraversal(root1);
+//		printBinaryTree(root1);
 		
 		// test tree construction
 		TreeNode root2 = constructBinaryTree(treeValues);
 		inOrderTraversal(root2);
+		printBinaryTree(root2);
+
+		List<Integer> treeVals = new ArrayList<>(Arrays.asList(1, null, 2, 3));
+		CommonUtils.printList(treeVals);
+		root2 = constructBinaryTree(treeVals);
+//		inOrderTraversal(root2);
 		printBinaryTree(root2);
 	}
 }
