@@ -548,7 +548,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |52|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_52.java)|O(?)|O(?)|Hard|
 |51|[N-Queens](https://leetcode.com/problems/n-queens/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_51.java)|O(?)|O(?)|Hard|
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_50.java)|O(logn)|O(logn)|Medium|
-|49|[Group Anagrams](https://leetcode.com/problems/anagrams/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_49.java)|O(m*logn)|O(m*n)|Medium| HashMap
+|49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_49.java)|O(m*logn)|O(m*n)|Medium| HashMap
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_48.java)|O(n^2)|O(1)|Medium|Array
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_47.java)|O(n*n!)|O(n)|Medium|Backtracking
 |46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_46.java)|O(n*n!)|O(n)|Medium|Backtracking
