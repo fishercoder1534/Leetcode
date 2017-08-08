@@ -44,9 +44,11 @@ import java.util.*;
  */
 public class _451 {
 
-    public String frequencySort(String s) {
+    public static String frequencySort(String s) {
         Map<Character, Integer> map = new HashMap();
-        for (char c : s.toCharArray()) map.put(c, map.getOrDefault(c, 0) + 1);
+        for (char c : s.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
         List<Map.Entry<Character, Integer>> list = new ArrayList<>(map.entrySet());
         Collections.sort(list, (o1, o2) -> (o2.getValue()).compareTo(o1.getValue()));
         StringBuilder stringBuilder = new StringBuilder();
@@ -56,5 +58,9 @@ public class _451 {
             }
         }
         return stringBuilder.toString();
+    }
+    public static void main(String[] args) {
+        String s = "trete" ;
+        System.out.println(frequencySort(s));
     }
 }

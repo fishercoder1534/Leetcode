@@ -27,7 +27,7 @@ public class _459 {
         pattern[0] = 0;
         
         while (j < n) {
-            if (str.charAt(cur) == str.charAt(j)){
+            if (str.charAt(cur) == str.charAt(j)) {
                 pattern[j++] = ++cur;
             } else {
                 if (cur == 0) pattern[j++] = 0;
@@ -35,9 +35,28 @@ public class _459 {
             }
         }
         
-        return (pattern[n-1] > 0 && n%(n-pattern[n-1]) == 0);
+        return (pattern[n - 1] > 0 && n % (n-pattern[n - 1]) == 0);
     }
-
+    // the idea is that the length substring will be divisor of the length s, then find the
+    //sub string and append s.length/sub.length times to check if the string is equaled to the original string.
+    //credit:
+    public static boolean repeatedSubstringPattern_2(String s) {
+        int len = s.length();
+        for (int i = len/2; i >=1; i--) {
+            if (len % i == 0) {
+                int n = len / i;
+                String sub = s.substring(0, i);
+                StringBuilder sb = new StringBuilder();
+                for (int j = 0; j < n; j++) {
+                    sb.append(sub);
+                }
+                if (sb.toString().equals(s)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     public static void main(String...args){
 //        String str = "aba";
 //        String str = "abab";//should be true
@@ -47,5 +66,6 @@ public class _459 {
 //        String str = "abababc";
         String str = "abababaaba";
         System.out.println(repeatedSubstringPattern(str));
+        System.out.println(repeatedSubstringPattern_2(str));
     }
 }
