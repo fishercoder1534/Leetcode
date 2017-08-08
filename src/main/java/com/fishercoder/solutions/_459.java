@@ -27,7 +27,7 @@ public class _459 {
         pattern[0] = 0;
         
         while (j < n) {
-            if (str.charAt(cur) == str.charAt(j)){
+            if (str.charAt(cur) == str.charAt(j)) {
                 pattern[j++] = ++cur;
             } else {
                 if (cur == 0) pattern[j++] = 0;
