@@ -15,8 +15,10 @@ import java.util.*;
  ["nat","tan"],
  ["bat"]
  ]
+
  Note: All inputs will be in lower-case.
  */
+
 public class _49 {
 
     public List<List<String>> groupAnagrams(String[] strs) {
