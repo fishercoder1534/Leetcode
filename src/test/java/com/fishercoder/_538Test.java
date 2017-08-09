@@ -11,7 +11,6 @@ import static junit.framework.Assert.assertEquals;
 public class _538Test {
     private static _538.GenericSolution genericSolution;
     private static _538.BSTSolution bstSolution;
-    private static TreeNode actualRoot;
     private static TreeNode expectedRoot;
     private static TreeNode root;
 
