@@ -61,5 +61,23 @@ public class _538 {
         if (root.left != null) putNodeToList(list, root.left);
         if (root.right != null) putNodeToList(list, root.right);
     }
+    //easy recursive solution for bst, the idea is to do a reverse inorder traversal.
+    int sum = 0;
+    public TreeNode convertBST_rec(TreeNode root) {
+        if(root == null) {
+            return root;
+        }
+        helper(root);
+        return root;
 
+    }
+    public void helper(TreeNode root) {
+        if(root == null) {
+            return;
+        }
+        helper(root.right);
+        root.val += sum;
+        sum =root.val;
+        helper(root.left);
+    }
 }

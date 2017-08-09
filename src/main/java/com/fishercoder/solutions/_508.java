@@ -81,3 +81,35 @@ public class _508 {
     //a more concise and space-efficient solution: https://discuss.leetcode.com/topic/77775/verbose-java-solution-postorder-traverse-hashmap-18ms
     //the key difference between the above post and my original solution is that it's using Frequency as the key of the HashMap
 }
+public class Solution {
+    Map<Integer, Integer> map;// record the sub sums and their frequence
+    int max;
+    public int[] findFrequentTreeSum(TreeNode root) {
+        map = new HashMap<Integer, Integer>();
+        max = 0;
+        helper(root);// post order to put the subsum to the map
+        List<Integer> list = new ArrayList<>();
+        for (int key : map.keySet()) {
+            if (map.get(key) == max) {
+                list.add(key);
+            }
+        }
+        int[] res = new int[list.size()];
+        for (int i = 0; i < res.length; i++) {
+            res[i] = list.get(i);
+        }
+        return res;
+    }
+    public int helper(TreeNode root) {
+        if (root ==null) {
+            return 0;
+        }
+        int left = helper(root.left);
+        int right = helper(root.right);
+        int sum = left + right + root.val;
+        map.put(sum, map.getOrDefault(sum, 0) + 1);
+        max = Math.max(max, map.get(sum));//update the max frequence each time we put in a sum to the map.
+        return sum;
+
+    }
+}
