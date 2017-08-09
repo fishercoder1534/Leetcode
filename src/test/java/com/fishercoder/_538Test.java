@@ -9,14 +9,16 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _538Test {
-    private static _538 test;
+    private static _538.GenericSolution genericSolution;
+    private static _538.BSTSolution bstSolution;
     private static TreeNode actualRoot;
     private static TreeNode expectedRoot;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup(){
-        test = new _538();
+        bstSolution = new _538.BSTSolution();
+        genericSolution = new _538.GenericSolution();
     }
 
     @Before
@@ -28,20 +30,18 @@ public class _538Test {
         root = new TreeNode(5);
         root.left = new TreeNode(2);
         root.right = new TreeNode(13);
-
         expectedRoot = new TreeNode(18);
         expectedRoot.left = new TreeNode(20);
         expectedRoot.right = new TreeNode(13);
-        actualRoot = test.convertBST(root);
-        assertEquals(expectedRoot.toString(), actualRoot.toString());
+        assertEquals(expectedRoot.toString(), genericSolution.convertBST(root).toString());
+        assertEquals(expectedRoot.toString(), bstSolution.convertBST(root).toString());
     }
 
     @Test
     public void test2(){
         root = null;
-
         expectedRoot = null;
-        actualRoot = test.convertBST(root);
-        assertEquals(expectedRoot, actualRoot);
+        assertEquals(expectedRoot, genericSolution.convertBST(root));
+        assertEquals(expectedRoot, bstSolution.convertBST(root));
     }
 }
