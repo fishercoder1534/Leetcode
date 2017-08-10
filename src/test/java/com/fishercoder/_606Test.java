@@ -20,7 +20,7 @@ public class _606Test {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         t = new TreeNode(1);
         t.left = new TreeNode(2);
         t.right = new TreeNode(3);
@@ -30,12 +30,21 @@ public class _606Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         t = new TreeNode(1);
         t.left = new TreeNode(2);
         t.right = new TreeNode(3);
         t.left.right = new TreeNode(4);
         System.out.println("Test2");
         assertEquals("1(2()(4))(3)", test.tree2str(t));
+    }
+
+    @Test
+    public void test3() {
+        t= new TreeNode(1);
+        t.right = new TreeNode(2);
+        t.right.right = new TreeNode(3);
+        System.out.println("Test3");
+        assertEquals("1()(2()(3))", test.tree2str(t));
     }
 }
