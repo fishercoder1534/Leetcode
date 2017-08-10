@@ -52,6 +52,7 @@ public class _396 {
         a[a.length-1] = first;
         return a;
     }
+
     //**credit : https://discuss.leetcode.com/topic/58459/java-o-n-solution-with-explanation
     public int maxRotateFunction_1(int[] A) {
         int allSum = 0;
