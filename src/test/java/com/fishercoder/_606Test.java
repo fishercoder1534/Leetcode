@@ -38,4 +38,12 @@ public class _606Test {
         System.out.println("Test2");
         assertEquals("1(2()(4))(3)", test.tree2str(t));
     }
+    @Test
+    public void test3(){
+        t= new TreeNode(1);
+        t.right = new TreeNode(2);
+        t.right.right = new TreeNode(3);
+        System.out.println("Test3");
+        assertEquals("1()(2()(3))", test.tree2str(t));
+    }
 }
