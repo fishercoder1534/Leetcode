@@ -44,7 +44,6 @@ public class _553 {
         if (nums.length == 1) return "" + nums[0];
         if (nums.length == 2) return nums[0] + "/" + nums[1];
 
-
         /**Tricky one: the solution is fixed: always wrap the one from the second until the last.
          * Another important thing to note that such way could work is that:
          * the prerequisite is: Elements will be in range [2,1000], so no elements are smaller than 1.*/
