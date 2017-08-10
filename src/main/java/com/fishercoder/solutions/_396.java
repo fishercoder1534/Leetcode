@@ -1,6 +1,9 @@
 package com.fishercoder.solutions;
 
-/**Given an array of integers A and let n to be its length.
+/**
+ * 396. Rotate Function
+ *
+ * Given an array of integers A and let n to be its length.
 
  Assume Bk to be an array obtained by rotating the array A k positions clock-wise, we define a "rotation function" F on A as follow:
 
@@ -21,6 +24,7 @@ package com.fishercoder.solutions;
  F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
 
  So the maximum value of F(0), F(1), F(2), F(3) is F(3) = 26.*/
+
 //F(k) = 0 * Bk[0] + 1 * Bk[1] + ... + (n-1) * Bk[n-1]
 public class _396 {
     public int maxRotateFunction(int[] A) {
@@ -54,7 +58,7 @@ public class _396 {
     }
 
     //**credit : https://discuss.leetcode.com/topic/58459/java-o-n-solution-with-explanation
-    public int maxRotateFunction_1(int[] A) {
+    public int maxRotateFunctionV2(int[] A) {
         int allSum = 0;
         int len = A.length;
         int F = 0;
@@ -74,6 +78,6 @@ public class _396 {
         int[] nums = new int[]{4, 3, 2, 6};
         _396 test = new _396();
         System.out.println(test.maxRotateFunction(nums));
-        System.out.println(test.maxRotateFunction_1(nums));
+        System.out.println(test.maxRotateFunctionV2(nums));
     }
 }
