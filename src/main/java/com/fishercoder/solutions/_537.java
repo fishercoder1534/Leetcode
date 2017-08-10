@@ -51,5 +51,17 @@ public class _537 {
         return String.valueOf(numberPart * Integer.valueOf(p)) + "i";
     }
 
-
+/* Mathematical Solution
+(a + ib) * (x + iy) = ax + by(i^2) + i(bx + ay) = ax - by + i(bx+ay)
+credit : https://leetcode.com/problems/complex-number-multiplication/solution/
+*/
+public String complexNumberMultiply2(String a, String b) {
+    String[] m = a.split("\\+|i");
+    String[] n = b.split("\\+|i");
+    int aFirst = Integer.parseInt(m[0]);
+    int aSecond = Integer.parseInt(m[1]);
+    int bFirst =  Integer.parseInt(n[0]);
+    int bSecond = Integer.parseInt(n[1]);
+    return(aFirst * bFirst - aSecond*bSecond) + "+" + (aFirst * bSecond + aSecond * bFirst) + "i";
+}
 }
