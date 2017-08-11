@@ -17,15 +17,10 @@ public class _344 {
         char[] chars = s.toCharArray();
         while(i < j){
             char temp = chars[i];
-            chars[i] = chars[j];
-            chars[j] = temp;
-            i++;
-            j--;
+            chars[i++] = chars[j];
+            chars[j--] = temp;
+
         }
-        StringBuilder sb = new StringBuilder();
-        for(char c : chars){
-            sb.append(c);
-        }
-        return sb.toString();
+        return new String(chars);
     }
 }
