@@ -54,7 +54,7 @@ public class _396 {
     }
 
     //**credit : https://discuss.leetcode.com/topic/58459/java-o-n-solution-with-explanation
-    public int maxRotateFunction_1(int[] A) {
+    public int maxRotateFunction1(int[] A) {
         int allSum = 0;
         int len = A.length;
         int F = 0;
@@ -74,6 +74,6 @@ public class _396 {
         int[] nums = new int[]{4, 3, 2, 6};
         _396 test = new _396();
         System.out.println(test.maxRotateFunction(nums));
-        System.out.println(test.maxRotateFunction_1(nums));
+        System.out.println(test.maxRotateFunction1(nums));
     }
 }
