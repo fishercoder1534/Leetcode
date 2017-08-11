@@ -12,7 +12,7 @@ public class _344 {
         return new StringBuilder(s).reverse().toString();
     }
     
-    public String reverseString(String s) {
+    public String reverseString(String s){
         int i = 0, j = s.length()-1;
         char[] chars = s.toCharArray();
         while(i < j){
