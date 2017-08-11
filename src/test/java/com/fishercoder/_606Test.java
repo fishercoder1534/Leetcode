@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class _606Test {
     private static _606 test;
-    private static TreeNode t;
+    private static TreeNode treeNode;
 
     @BeforeClass
     public static void setup(){
@@ -21,30 +21,30 @@ public class _606Test {
 
     @Test
     public void test1() {
-        t = new TreeNode(1);
-        t.left = new TreeNode(2);
-        t.right = new TreeNode(3);
-        t.left.left = new TreeNode(4);
+        treeNode = new TreeNode(1);
+        treeNode.left = new TreeNode(2);
+        treeNode.right = new TreeNode(3);
+        treeNode.left.left = new TreeNode(4);
         System.out.println("Test1");
-        assertEquals("1(2(4))(3)", test.tree2str(t));
+        assertEquals("1(2(4))(3)", test.tree2str(treeNode));
     }
 
     @Test
     public void test2() {
-        t = new TreeNode(1);
-        t.left = new TreeNode(2);
-        t.right = new TreeNode(3);
-        t.left.right = new TreeNode(4);
+        treeNode = new TreeNode(1);
+        treeNode.left = new TreeNode(2);
+        treeNode.right = new TreeNode(3);
+        treeNode.left.right = new TreeNode(4);
         System.out.println("Test2");
-        assertEquals("1(2()(4))(3)", test.tree2str(t));
+        assertEquals("1(2()(4))(3)", test.tree2str(treeNode));
     }
 
     @Test
     public void test3() {
-        t= new TreeNode(1);
-        t.right = new TreeNode(2);
-        t.right.right = new TreeNode(3);
+        treeNode = new TreeNode(1);
+        treeNode.right = new TreeNode(2);
+        treeNode.right.right = new TreeNode(3);
         System.out.println("Test3");
-        assertEquals("1()(2()(3))", test.tree2str(t));
+        assertEquals("1()(2()(3))", test.tree2str(treeNode));
     }
 }
