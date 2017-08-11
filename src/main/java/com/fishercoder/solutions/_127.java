@@ -33,39 +33,53 @@ import java.util.Set;
 
 public class _127 {
 
-    /**reference: https://discuss.leetcode.com/topic/29303/two-end-bfs-in-java-31ms/16*/
+    /**this one https://discuss.leetcode.com/topic/29303/two-end-bfs-in-java-31ms fails by test case _127Test.test1().
+     * All transformed words, including endWord must be in wordList.
+     *
+     * And we can share a visited set from both ends since we cannot remove word from dict.*/
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        Set<String> dict = new HashSet<>(wordList);
-        Set<String> startSet = new HashSet<>();
+        Set<String> beginSet = new HashSet<>();
         Set<String> endSet = new HashSet<>();
         Set<String> visited = new HashSet<>();
+        Set<String> dict = new HashSet<>(wordList);
+        int len = 1;
 
-        startSet.add(beginWord);
+        beginSet.add(beginWord);
+
         if (dict.contains(endWord)) {
-            endSet.add(endWord); // all transformed words must be in dict (including endWord)
+            endSet.add(endWord);
         }
 
-        for (int len = 2; !startSet.isEmpty(); len++) {
-            Set<String> nq = new HashSet<>();
-            for (String w : startSet) {
-                for (int j = 0; j < w.length(); j++) {
-                    char[] ch = w.toCharArray();
+        while (!beginSet.isEmpty() && !endSet.isEmpty()) {
+            if (beginSet.size() > endSet.size()) {
+                Set<String> temp = beginSet;
+                beginSet = endSet;
+                endSet = temp;
+            }
+
+            Set<String> temp = new HashSet<>();
+            for (String word : beginSet) {
+                char[] chars = word.toCharArray();
+                for (int i = 0; i < chars.length; i++) {
                     for (char c = 'a'; c <= 'z'; c++) {
-                        if (c == w.charAt(j)) continue; // beginWord and endWord should not be the same
-                        ch[j] = c;
-                        String nb = String.valueOf(ch);
-                        if (endSet.contains(nb)) {
-                            return len; // meet from two ends
+                        char old = chars[i];
+                        chars[i] = c;
+                        String newWord = new String(chars);
+                        if (endSet.contains(newWord)) {
+                            return len + 1;
                         }
-                        if (dict.contains(nb) && visited.add(nb)) {
-                            nq.add(nb); // not meet yet, visited is safe to use
+
+                        if (!visited.contains(newWord) && dict.contains(newWord)) {
+                            visited.add(newWord);
+                            temp.add(newWord);
                         }
+                        chars[i] = old;
                     }
                 }
             }
 
-            startSet = (nq.size() < endSet.size()) ? nq : endSet; // switch to small one to traverse from other end
-            endSet = (startSet == nq) ? endSet : nq;
+            beginSet = temp;
+            len++;
         }
         return 0;
     }

@@ -470,7 +470,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_130.java)| O(?)|O(?) | Medium|
 |129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_129.java)| O(n)|O(h) | Medium| DFS
 |128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_128.java)| O(?)|O(?) | Hard| Union Find 
-|127|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_127.java)| O(?)|O(?) | Medium| BFS
+|127|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_127.java)| O(n^2)|O(n) | Medium| BFS
 |126|[Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_126.java)| O(?)|O(?) | Hard| BFS
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_125.java)| O(n)|O(1) | Easy| Two Pointers
 |124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_124.java)| O(n)|O(h) | Hard | Tree, DFS
