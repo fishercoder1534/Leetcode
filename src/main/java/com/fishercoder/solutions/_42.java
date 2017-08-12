@@ -12,31 +12,42 @@ package com.fishercoder.solutions;
 
 public class _42 {
 
-    public int trap(int[] height) {
-        int len = height.length;
-        if (len == 0) {
-            return 0;
-        }
-        int res = 0;
+    public static class Solution1 {
+        /**O(n) time and O(1) space, awesome!*/
+        /**reference: https://discuss.leetcode.com/topic/22976/my-accepted-java-solution*/
+        public int trap(int[] height) {
+            if (height == null || height.length <= 2) return 0;
 
-        //first use DP to calculate left and right arrays
-        int[] left = new int[height.length];
-        int[] right = new int[height.length];
+            int max = height[0];
+            int maxIndex = 0;
+            for (int i = 0; i < height.length; i++) {
+                if (height[i] > max) {
+                    max = height[i];
+                    maxIndex = i;
+                }
+            }
 
-        left[0] = height[0];
-        for (int i = 1; i < height.length; i++) {
-            left[i] = Math.max(left[i - 1], height[i]);
-        }
+            int water = 0;
 
-        right[height.length - 1] = height[height.length - 1];
-        for (int i = height.length - 2; i >= 0; i--) {
-            right[i] = Math.max(right[i + 1], height[i]);
-        }
+            int leftMax = height[0];
+            for (int i = 0; i < maxIndex; i++) {
+                if (height[i] > leftMax) {
+                    leftMax = height[i];
+                } else {
+                    water += leftMax - height[i];
+                }
+            }
 
-        for (int i = 1; i < height.length - 1; i++) {
-            res += Math.min(left[i], right[i]) - height[i];
+            int rightMax = height[height.length-1];
+            for (int i = height.length-1; i > maxIndex; i--) {
+                if (height[i] > rightMax) {
+                    rightMax = height[i];
+                } else {
+                    water += rightMax - height[i];
+                }
+            }
+
+            return water;
         }
-        return res;
     }
-
 }
