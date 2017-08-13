@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|660|[Remove 9](https://leetcode.com/problems/remove-9/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_660.java) | O(n) | O(1) | Hard | Math
 |659|[Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_659.java) | O(n) | O(n) | Medium | HashMap
 |658|[Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_658.java) | O(n) | O(1) | Medium |
 |657|[Judge Route Circle](https://leetcode.com/problems/judge-route-circle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_657.java) | O(n) | O(1) | Easy | 
