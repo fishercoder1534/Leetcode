@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 5/9/17.
  */
 public class _215Test {
-    private static _215 test;
+    private static _215.Solution2 solution2;
     private static int k;
     private static int[] nums;
     private static int actual;
@@ -18,14 +18,14 @@ public class _215Test {
 
     @BeforeClass
     public static void setup(){
-        test = new _215();
+        solution2 = new _215.Solution2();
     }
 
     @Test
     public void test1(){
         k = 2;
         nums = new int[]{3,2,1,5,6,4};
-        actual = test.findKthLargest(nums, k);
+        actual = solution2.findKthLargest(nums, k);
         expected = 5;
         assertEquals(expected, actual);
     }
