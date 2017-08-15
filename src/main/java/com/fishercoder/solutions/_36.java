@@ -1,5 +1,5 @@
 package com.fishercoder.solutions;
-
+import java.util.*;
 /**Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
 
  The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
@@ -84,6 +84,21 @@ public class _36 {
         return true;
     }
 
+    // the 3sets version
+    public boolean isValidSudoku1(char[][] board) {
+        for(int i = 0; i < 9; i++) {
+        Set<Character> rows = new HashSet<>();
+        Set<Character> cols = new HashSet<>();
+        Set<Character> cube = new HashSet<>();
+        for (int j = 0;j < 9; j++) {
+            if(board[i][j] != '.' && ! rows.add(board[i][j])) return false;
+            if(board[j][i] != '.' && ! cols.add(board[j][i])) return false;
+            if(board[3*(i/3) + j/3][3*(i%3) + j % 3] != '.' && !cube.add(board[3*(i/3) + j/3][3*(i%3) + j % 3] )) return false;
+        }
+    }
+        return true;
+}
+
     public static void main(String... strings) {
         _36 test = new _36();
         // char[][] board = new char[][]{
@@ -126,5 +141,6 @@ public class _36 {
         // ["....5..1.",".4.3.....",".....3..1","8......2.","..2.7....",".15......",".....2...",".2.9.....","..4......"]
 
         System.out.println(test.isValidSudoku(board));
+        System.out.println(test.isValidSudoku1(board));
     }
 }
