@@ -9,14 +9,16 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _536Test {
-    private static _536 test;
+    private static _536.Solution1 solution1;
+    private static _536.Solution2 solution2;
     private static TreeNode expected;
     private static TreeNode actual;
     private static String s;
 
     @BeforeClass
     public static void setup(){
-        test = new _536();
+        solution1 = new _536.Solution1();
+        solution2 = new _536.Solution2();
     }
 
     @Before
@@ -30,8 +32,10 @@ public class _536Test {
     public void test1(){
         s = "";
         expected = null;
-        actual = test.str2tree(s);
+        actual = solution1.str2tree(s);
         assertEquals(expected, actual);
 
+        actual = solution2.str2tree(s);
+        assertEquals(expected, actual);
     }
 }
