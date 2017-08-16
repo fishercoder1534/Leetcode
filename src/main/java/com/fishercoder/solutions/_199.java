@@ -33,7 +33,7 @@ public class _199 {
 			int size = q.size();
 			for (int i = 0; i < size; i++) {
 				TreeNode curr = q.poll();
-				if (i == size-1) {
+				if (i == size - 1) {
 					result.add(curr.val);
 				}
 				if (curr.left != null) {
@@ -46,17 +46,5 @@ public class _199 {
 		}
 		return result;
 	}
-	
-	public static void main(String...strings){
-		_199 test = new _199();
-		TreeNode root = new TreeNode(1);
-		root.left = new TreeNode(2);
-		root.right = new TreeNode(3);
-		root.left.right = new TreeNode(5);
-		root.right.right = new TreeNode(4);
-		List<Integer> result = test.rightSideView(root);
-		for(int i : result){
-			System.out.print(i + ", ");
-		}
-	}
+
 }
