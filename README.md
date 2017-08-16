@@ -22,7 +22,11 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|660|[Remove 9](https://leetcode.com/problems/remove-9/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_660.java) | O(n) | O(1) | Hard | Math
+|659|[Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_659.java) | O(n) | O(n) | Medium | HashMap
+|658|[Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_658.java) | O(n) | O(1) | Medium |
 |657|[Judge Route Circle](https://leetcode.com/problems/judge-route-circle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_657.java) | O(n) | O(1) | Easy | 
+|656|[Coin Path](https://leetcode.com/problems/coin-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_656.java) | O(n*B) | O(n) | Hard | DP
 |654|[Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_654.java) | O(n^2) | O(n) | Medium | Tree
 |653|[Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_653.java) |  |  | Easy | Tree
 |652|[Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_652.java) | O(n) |O(n) | Medium | Tree
@@ -563,7 +567,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_38.java)|O(n*2^n)|O(2^n)|Easy| Recursion, LinkedList
 |37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_37.java)|O((9!)^9)|O(1)|Hard|
 |36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_36.java)|O(1)|O(1)|Medium| 
-|35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_35.java)|O(n)|O(1)|Medium|Array
+|35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_35.java)|O(n)|O(1)|Easy|Array
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_34.java)|O(logn)|O(1)|Medium|Array, Binary Search
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_33.java)|O(logn)|O(1)|Medium|Binary Search
 |32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_32.java)|O(n)|O(n)|Hard|Stack, DP
@@ -575,7 +579,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_26.java)|O(n)|O(1)|Easy| Array 
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_25.java)|O(n)|O(1)| Hard | Recursion, LinkedList
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_24.java)|O(n)|O(h)|Medium| Recursion, LinkedList
-|23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_23.java)|O(n*logk)|O(logk)|Hard|Heap
+|23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_23.java)|O(n*logk)|O(k)|Hard|Heap
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_22.java)|TBD|O(n)|Medium|Backtracking
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_21.java)|O(n)|O(h)|Easy| Recursion
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_20.java)|O(n)|O(n)|Easy|Stack
@@ -606,6 +610,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |627|[Swap Salary](https://leetcode.com/problems/swap-salary/)|[Solution](../master/database/_627.sql) | | | Easy |
 |620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|[Solution](../master/database/_620.sql) | | | Easy |
 |619|[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)|[Solution](../master/database/_619.sql) | | | Easy |
+|618|[Students Report By Geography](https://leetcode.com/problems/students-report-by-geography/)|[Solution](../master/database/_618.sql) | | | Hard | Session Variables
 |614|[Second Degree Follower](https://leetcode.com/problems/second-degree-follower/)|[Solution](../master/database/_614.sql) | | | Medium | Inner Join
 |613|[Shortest Distance in a Line](https://leetcode.com/problems/shortest-distance-in-a-line/)|[Solution](../master/database/_613.sql) | || Easy|
 |612|[Shortest Distance in a Plane](https://leetcode.com/problems/shortest-distance-in-a-plane/)|[Solution](../master/database/_612.sql) | || Medium|

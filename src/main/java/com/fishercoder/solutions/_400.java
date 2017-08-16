@@ -25,7 +25,12 @@ package com.fishercoder.solutions;
  */
 public class _400 {
 
-    //credit: https://discuss.leetcode.com/topic/59314/java-solution
+    /**credit: https://discuss.leetcode.com/topic/59314/java-solution:
+     *
+     * 1. find the length of the number where the nth digit is from
+     * 2. find the actual number where the nth digit is from
+     * 3. find the nth digit and return
+     * */
     public int findNthDigit(int n) {
         int len = 1;
         long count = 9;
