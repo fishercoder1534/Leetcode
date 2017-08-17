@@ -23,19 +23,11 @@ public class _279 {
         Arrays.fill(dp, Integer.MAX_VALUE);
         dp[0] = 0;
         dp[1] = 1;
-<<<<<<< HEAD
-        for(int i = 1; i <= n; i++) {
-            int min = Integer.MAX_VALUE;
-            int j = 1;
-            while(i -j*j >= 0) {
-                min = Math.min(min, dp[i - j*j] + 1);
-=======
         for (int i = 1; i <= n; i++) {
             int min = Integer.MAX_VALUE;
             int j = 1;
             while (i - j * j >= 0) {
                 min = Math.min(min, dp[i - j * j] + 1);
->>>>>>> f71782f55e700a624b0b1b3cadd83390c37ed16c
                 j++;
             }
             dp[i] = min;
