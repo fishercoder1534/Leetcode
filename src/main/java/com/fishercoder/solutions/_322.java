@@ -1,5 +1,5 @@
 package com.fishercoder.solutions;
-
+import java.util.*;
 /**
  * You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
 
@@ -39,6 +39,23 @@ public class _322 {
         }
         return count[remaining-1] = (min == Integer.MAX_VALUE) ? -1 : min;
 
+    }
+
+    //dp solution
+    public int coinChangeDP(int[] coins, int amount) {
+        int max = amount + 1;
+        int [] dp = new int[max];
+        Arrays.fill(dp, max);// initial the dp array with amount + 1 which is not valid case.
+        dp[0] = 0;//initial first amount 0 = 0;
+        for(int i = 1; i <= amount; i++) {
+            for(int j = 0; j < coins.length; j++) {
+                if(coins[j] <= i) {
+                    dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);//the dp[coins[j]] will ba a valid case, then if dp[i - coins[j]] is  valid
+                    // then we update dp[i], otherwise dp[i] = max;
+                }
+            }
+        }
+        return dp[amount] > amount ? -1 : dp[amount];
     }
 
 }
