@@ -379,7 +379,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_243.java) | O(n) | O(1) | Easy
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_242.java) | O(n) | O(1) | Easy
 |241|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_241.java) | O(O(n * 4^n / n^(3/2))) | O(n * 4^n / n^(3/2)) | Medium | Divide and Conquer
-|240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_240.java)| O(log(m*n))|O(1) | Medium| Binary Search
+|240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_240.java)| O(m+n)|O(1) | Medium| Binary Search
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_239.java)| O(nlogn)|O(k) | Hard| Heap
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_238.java)| O(n)|O(1) | Medium| Array
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_237.java)| O(1)|O(1) | Easy| LinkedList
@@ -452,7 +452,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_154.java)| O(logn)|O(1) | Hard| Array, Binary Search
 |153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_153.java)| O(logn)|O(1) | Medium| Array, Binary Search
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_152.java)| O(n)|O(1) | Medium| Array
-|151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_151.java)| O(n)|O(n) | Medium|
+|151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_151.java)| O(n)|O(n) | Medium| String
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_150.java)| O(?)|O(?) | Medium
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_149.java)| O(?)|O(?) | Hard|
 |148|[Sort List](https://leetcode.com/problems/sort-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_148.java) O(nlogn)|O(h) | Medium| Linked List, Sort
@@ -529,7 +529,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |77|[Combinations](https://leetcode.com/problems/combinations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_77.java)|O(n^2) ? |O(1)|Medium|Backtracking
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_76.java)|O(n)|O(k)|Hard|Two Pointers
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_75.java)|O(n)|O(1)|Medium| Two Pointers
-|74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_74.java)|O(logn)|O(1)|Medium| Binary Search
+|74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_74.java)|O(log(m*n))|O(1)|Medium| Binary Search
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_73.java)|O(mn)|O(mn)|Medium|
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_72.java)|O(m*n)|O(m+n)|Hard| 
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_71.java)|O(n)|O(n)|Medium| Stack
@@ -588,7 +588,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |18|[4 Sum](https://leetcode.com/problems/4sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_18.java)|O(n^2)|O(1)|Medium|Two Pointers
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_17.java)|O(n*4^n)|O(n)|Medium|Backtracking
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_16.java)|O(nlogn)|O(1)|Medium|Two Pointers
-|15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_15.java)|O(n^2)|O(1)|Medium|Two Pointers
+|15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_15.java)|O(n^2)|O(1)|Medium|Two Pointers, Binary Search
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_14.java)| O(n*min(wordLength in this array)) | O(1) | Easy
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](../master/src/main/java/com/fishercoder/solutions/_13.java)| O(1) | O(1) | Easy
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_12.java)|O(1)|O(1)|Medium|
@@ -600,7 +600,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_6.java) | O(n) | O(n) | Easy | 
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_5.java) | O(n^2) | O(1) | Medium|
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_4.java) | ? | ? | Hard | Divide and Conquer
-|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_3.java) | O(n) | O(1) | Medium | HashMap, Sliding Window
+|3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_3.java) | O(n) | O(k) | Medium | HashMap, Sliding Window
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_2.java) | O(max(m,n)) | O(1) | Medium | LinkedList
 |1|[Two Sum](https://leetcode.com/problems/two-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1.java)| O(n)| O(n) | Easy| HashMap
 

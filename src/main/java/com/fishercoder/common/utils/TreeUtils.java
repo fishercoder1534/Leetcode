@@ -48,7 +48,7 @@ public class TreeUtils {
 	}
 	
 	public static void printBinaryTree(TreeNode root) {
-		CommonUtils.println("\n\nPrinting out the binary tree in a very visual manner as below:");
+		CommonUtils.println("\nPrinting out the binary tree in a very visual manner as below:\n");
 		
 		// imitating from BTreePrinter class
 		int maxLevel = TreeUtils.maxLevel(root);
