@@ -37,4 +37,29 @@ public class _378 {
     }
     
     //TODO: use heap and binary search to do it.
+
+    //Binary Search : The idea is to pick a mid number than compare it with the elements in each row, we start form
+    // end of row util we find the element is less than the mid, the left side element is all less than mid; keep tracking elements
+    // that less than mid and compare with k, then update the k.
+    public int kthSmallestBS(int[][] matrix, int k) {
+        int row = matrix.length - 1, col = matrix[0].length - 1;
+        int lo = matrix[0][0];
+        int hi = matrix[row][col] ;
+        while(lo < hi) {
+            int mid = lo + (hi - lo)/2;
+            int count = 0, j = col;
+            for(int i= 0; i <= row; i++) {
+                while(j >=0 && matrix[i][j] > mid) {
+                    j--;
+                }
+                count += (j + 1);
+            }
+            if(count < k) {
+                lo = mid + 1;
+            } else {
+                hi = mid;
+            }
+        }
+        return lo;
+    }
 }
