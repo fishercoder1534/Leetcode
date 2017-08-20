@@ -54,9 +54,14 @@ public class _98 {
         private boolean dfs(TreeNode root, long minValue, long maxValue) {
             if (root == null) return true;
             if (root != null && (root.val <= minValue || root.val >= maxValue)) return false;
-            boolean leftResult = true, rightResult = true;
-            if (root.left != null) leftResult = dfs(root.left, minValue, root.val);
-            if (root.right != null) rightResult = dfs(root.right, root.val, maxValue);
+            boolean leftResult = true;
+            boolean rightResult = true;
+            if (root.left != null) {
+                leftResult = dfs(root.left, minValue, root.val);
+            }
+            if (root.right != null) {
+                rightResult = dfs(root.right, root.val, maxValue);
+            }
             return leftResult && rightResult;
         }
     }
