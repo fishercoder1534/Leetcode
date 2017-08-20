@@ -28,5 +28,8 @@ public class UndirectedGraphNode {
         return result;
     }
 
-    public UndirectedGraphNode(int x) { label = x; neighbors = new ArrayList<UndirectedGraphNode>(); }
+    public UndirectedGraphNode(int x) {
+        label = x;
+        neighbors = new ArrayList<UndirectedGraphNode>();
+    }
 }

@@ -13,7 +13,8 @@ public class LinkedListUtils {
         ListNode head = new ListNode(nums[0]);
         pre.next = head;
         for (int i = 1; i < nums.length; i++) {
-            head.next = new ListNode(nums[i]);;
+            head.next = new ListNode(nums[i]);
+            ;
             head = head.next;
         }
         return pre.next;

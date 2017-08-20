@@ -1,6 +1,8 @@
 package com.fishercoder.common.classes;
 
-/**This is a class used by one OJ problem: MeetingRooms*/
+/**
+ * This is a class used by one OJ problem: MeetingRooms
+ */
 public class Interval implements Comparable<Interval> {
     public int start;
     public int end;
@@ -12,12 +14,18 @@ public class Interval implements Comparable<Interval> {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Interval)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Interval)) {
+            return false;
+        }
 
         Interval interval = (Interval) o;
 
-        if (start != interval.start) return false;
+        if (start != interval.start) {
+            return false;
+        }
         return end == interval.end;
     }
 
@@ -28,7 +36,7 @@ public class Interval implements Comparable<Interval> {
         return result;
     }
 
-    public Interval(int s, int e){
+    public Interval(int s, int e) {
 
         this.start = s;
         this.end = e;

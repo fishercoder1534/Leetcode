@@ -14,24 +14,24 @@ public class CommonUtils {
 
     //How to make a method generic: declare <T> in its method signature
     public static <T> void printArray_generic_type(T[] nums) {
-        for(T i : nums){
+        for (T i : nums) {
             System.out.print(i + ", ");
         }
         System.out.println();
     }
-    
-    public static void main(String...strings){
-        Integer[] nums = new Integer[]{1,2,3,4,5};
+
+    public static void main(String... strings) {
+        Integer[] nums = new Integer[]{1, 2, 3, 4, 5};
         printArray_generic_type(nums);
     }
-    
+
     public static void printArray(int[] nums) {
-        for(int i : nums){
+        for (int i : nums) {
             System.out.print(i + ", ");
         }
         System.out.println();
     }
-    
+
     public static void print(String message) {
         System.out.print(message);
     }
@@ -145,31 +145,31 @@ public class CommonUtils {
         }
         System.out.println("----------------------------------------------------");
     }
-    
+
     public static void printMatrixGeneric(boolean[][] matrix) {
 
         System.out.println("Matrix is: ");
-        for(boolean[] row : matrix){
-            for(boolean t : row){
+        for (boolean[] row : matrix) {
+            for (boolean t : row) {
                 System.out.print(t + "\t");
             }
             System.out.println();
         }
         System.out.println("----------------------------------------------------");
-    
+
     }
 
     public static void print(List<String> list) {
         System.out.println("----------------------------------------------------");
-        for(String str : list){
+        for (String str : list) {
             System.out.print(str + ", ");
         }
         System.out.println();
     }
 
     public static <T> void printListList(List<List<T>> res) {
-        for(List<T> list : res){
-            for(T i : list){
+        for (List<T> list : res) {
+            for (T i : list) {
                 System.out.print(i + ", ");
             }
             System.out.println();
@@ -178,10 +178,10 @@ public class CommonUtils {
 
     public static <T> void printList(List<T> list) {
         int count = 0;
-        for(T t : list){
+        for (T t : list) {
             count++;
             System.out.print(t);
-            if(count%10 != 0) System.out.print("\t");
+            if (count % 10 != 0) System.out.print("\t");
             else System.out.println();
         }
         System.out.println();

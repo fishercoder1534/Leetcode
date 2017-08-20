@@ -7,13 +7,13 @@ public class NestedInteger {
 
     private List<NestedInteger> list;
     private Integer integer;
-    
-    public NestedInteger(List<NestedInteger> list){
+
+    public NestedInteger(List<NestedInteger> list) {
         this.list = list;
     }
-    
+
     public void add(NestedInteger nestedInteger) {
-        if(this.list != null){
+        if (this.list != null) {
             this.list.add(nestedInteger);
         } else {
             this.list = new ArrayList();
@@ -25,7 +25,7 @@ public class NestedInteger {
         this.integer = num;
     }
 
-    public NestedInteger(Integer integer){
+    public NestedInteger(Integer integer) {
         this.integer = integer;
     }
 
@@ -44,19 +44,18 @@ public class NestedInteger {
     public List<NestedInteger> getList() {
         return list;
     }
-    
-    public static String printNi(NestedInteger thisNi, StringBuilder sb){
-        if(thisNi.isInteger()) {
+
+    public static String printNi(NestedInteger thisNi, StringBuilder sb) {
+        if (thisNi.isInteger()) {
             sb.append(thisNi.integer);
             sb.append(",");
         }
         sb.append("[");
-        for(NestedInteger ni : thisNi.list){
-            if(ni.isInteger()) {
+        for (NestedInteger ni : thisNi.list) {
+            if (ni.isInteger()) {
                 sb.append(ni.integer);
                 sb.append(",");
-            }
-            else {
+            } else {
                 printNi(ni, sb);
             }
         }
