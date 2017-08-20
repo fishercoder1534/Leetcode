@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|664|[Strange Printer](https://leetcode.com/problems/strange-printer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_664.java) | O(n^3) | O(n^2) | Hard | DP
 |663|[Equal Tree Partition](https://leetcode.com/problems/equal-tree-partition/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_663.java) | O(n) | O(n) | Medium | Tree
 |662|[Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_662.java) | O(n) | O(k) | Medium | BFS, DFS
 |661|[Image Smoother](https://leetcode.com/problems/image-smoother/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_661.java) | O(m*n) | O(1) | Easy | Array 
