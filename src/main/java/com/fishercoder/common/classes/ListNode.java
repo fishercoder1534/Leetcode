@@ -52,13 +52,16 @@ public class ListNode {
         return head;
     }
 
-    /**TODO: this function is NOT working as supposed to, I need to fix it! Commit from my Windows machine!*/
+    /**
+     * TODO: this function is NOT working as supposed to, I need to fix it! Commit from my Windows machine!
+     */
     public static ListNode createSinglyLinkedList(List<Integer> listValues) {
-        if (listValues == null || listValues.size() == 0)
+        if (listValues == null || listValues.size() == 0) {
             throw new IllegalArgumentException(
                     "Please pass in a valid listValues to create a singly linked list.");
+        }
         ListNode head = new ListNode(listValues.get(0));
-        for(int i : listValues){
+        for (int i : listValues) {
             appendNode(head, i);
         }
         printList(head);
@@ -79,8 +82,8 @@ public class ListNode {
             temp = temp.next;
         }
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         List<Integer> values = CommonUtils.randomIntArrayGenerator(10, 20);
         createSinglyLinkedList(values);
         ListNode head = createSinglyLinkedList();
@@ -90,12 +93,18 @@ public class ListNode {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof ListNode)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof ListNode)) {
+            return false;
+        }
 
         ListNode listNode = (ListNode) o;
 
-        if (val != listNode.val) return false;
+        if (val != listNode.val) {
+            return false;
+        }
         return next != null ? next.equals(listNode.next) : listNode.next == null;
     }
 
@@ -108,11 +117,7 @@ public class ListNode {
 
     @Override
     public String toString() {
-
-        return "ListNode{" +
-                "val=" + val +
-                ", next=" + next +
-                '}';
+        return "ListNode{" + "val=" + val + ", next=" + next + '}';
     }
 
 }

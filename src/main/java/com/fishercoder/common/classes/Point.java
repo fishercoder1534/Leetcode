@@ -13,7 +13,7 @@ public class Point {
     }
 
     public Point(int a, int b) {
-        x = a;
-        y = b;
+        this.x = a;
+        this.y = b;
     }
 }

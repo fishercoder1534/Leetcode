@@ -28,19 +28,19 @@ public class _103 {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         Queue<TreeNode> q = new LinkedList();
         List<List<Integer>> levels = new ArrayList();
-        if(root == null) return levels;
+        if (root == null) return levels;
         q.offer(root);
         boolean forward = true;
-        while(!q.isEmpty()){
+        while (!q.isEmpty()) {
             int size = q.size();
             List<Integer> level = new ArrayList();
-            for(int i = 0; i < size; i++){
+            for (int i = 0; i < size; i++) {
                 TreeNode curr = q.poll();
                 level.add(curr.val);
-                if(curr.left != null) q.offer(curr.left);
-                if(curr.right != null) q.offer(curr.right);
+                if (curr.left != null) q.offer(curr.left);
+                if (curr.right != null) q.offer(curr.right);
             }
-            if(forward){
+            if (forward) {
                 forward = false;
                 levels.add(level);
             } else {
