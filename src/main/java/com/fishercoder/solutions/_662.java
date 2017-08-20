@@ -66,6 +66,10 @@ import java.util.*;
  Note: Answer will in the range of 32-bit signed integer.
  */
 public class _662 {
+    /**
+     * Use a map to store the node to value map,
+     * we use root as index 1, then its left child is 2*i-1 and right child is 2*i
+     */
     public int widthOfBinaryTree(TreeNode root) {
         if (root == null) {
             return 0;
