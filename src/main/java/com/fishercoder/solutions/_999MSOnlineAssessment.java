@@ -2,7 +2,7 @@ package com.fishercoder.solutions;
 
 import java.util.*;
 
-public class MSOnlineAssessment {
+public class _999MSOnlineAssessment {
     /**
      * Given an array, return the start/end indices of the contiguous subarray that have the largest sum.
      * <p>
