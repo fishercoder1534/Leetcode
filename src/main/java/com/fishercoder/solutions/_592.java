@@ -74,7 +74,9 @@ public class _592 {
         int d2 = Integer.parseInt(frac2[1]);
         int numerator = n1*d2 + n2*d1;
         int denominator = d1*d2;
-        if (numerator == 0) return "0/1";
+        if (numerator == 0) {
+            return "0/1";
+        }
 
         boolean negative = numerator*denominator < 0;
         numerator = Math.abs(numerator);
@@ -85,7 +87,9 @@ public class _592 {
     }
 
     private int getGCD(int a, int b) {
-        if (a == 0 || b == 0) return a + b;
+        if (a == 0 || b == 0) {
+            return a + b;
+        }
         return getGCD(b, a%b);
     }
 

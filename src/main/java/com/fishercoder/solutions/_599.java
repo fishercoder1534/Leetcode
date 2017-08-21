@@ -35,7 +35,9 @@ import java.util.Map;
  */
 public class _599 {
     public String[] findRestaurant(String[] list1, String[] list2) {
-        if (list1 == null || list2 == null) return new String[0];
+        if (list1 == null || list2 == null) {
+            return new String[0];
+        }
         Map<String, Integer> map1 = putIntoMap(list1);
         Map<String, Integer> map2 = putIntoMap(list2);
         int leastIndexSum = Integer.MAX_VALUE;

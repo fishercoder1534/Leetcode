@@ -53,7 +53,9 @@ public class _600 {
     public int findIntegers(int num) {
         int answer = 0;
         for (int i = 0; i <= num; i++) {
-            if (hasConsecutiveOnes(i)) answer++;
+            if (hasConsecutiveOnes(i)) {
+                answer++;
+            }
         }
         return answer;
     }
@@ -61,7 +63,9 @@ public class _600 {
     private boolean hasConsecutiveOnes(int num) {
         String bin = Integer.toBinaryString(num);
         for (int i = 0; i < bin.length()-1; i++) {
-            if (bin.charAt(i) == '1' && bin.charAt(i+1) == '1') return false;
+            if (bin.charAt(i) == '1' && bin.charAt(i+1) == '1') {
+                return false;
+            }
         }
         return true;
     }
