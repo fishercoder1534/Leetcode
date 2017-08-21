@@ -89,14 +89,16 @@ public class CommonUtils {
     // @Notes(context =
     // "I'm assuing only classes in this PACKAGE will call the following two methods, so just leave the modifier as default, i.e. no public, private, or protected.")
     public static void printWhitespaces(int count) {
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < count; i++) {
             System.out.print(" ");
+        }
     }
 
     public static <T> boolean isAllElementsNull(List<T> list) {
         for (Object object : list) {
-            if (object != null)
+            if (object != null) {
                 return false;
+            }
         }
 
         return true;
@@ -129,8 +131,9 @@ public class CommonUtils {
         while (temp != null) {
             System.out.print(temp.val);
             temp = temp.next;
-            if (temp != null)
+            if (temp != null) {
                 System.out.print("->");
+            }
         }
         System.out.println();
     }
@@ -181,8 +184,11 @@ public class CommonUtils {
         for (T t : list) {
             count++;
             System.out.print(t);
-            if (count % 10 != 0) System.out.print("\t");
-            else System.out.println();
+            if (count % 10 != 0) {
+                System.out.print("\t");
+            } else {
+                System.out.println();
+            }
         }
         System.out.println();
     }
