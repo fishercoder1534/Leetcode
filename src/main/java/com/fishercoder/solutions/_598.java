@@ -40,7 +40,9 @@ package com.fishercoder.solutions;
  */
 public class _598 {
     public int maxCount(int m, int n, int[][] ops) {
-        if (ops == null || ops.length == 0) return m*n;
+        if (ops == null || ops.length == 0) {
+            return m*n;
+        }
         int x = m;
         int y = n;
         for (int[] op : ops) {

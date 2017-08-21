@@ -107,8 +107,9 @@ public class _59 {
         for(int m = 0; m < num; m++){
             for(int n = 0; n < num; n++){
                 System.out.print(fourEdges[m][n] + "\t");
-                if((n+1) % num == 0)
+                if((n+1) % num == 0) {
                     System.out.println();
+                }
             }
         }
         return fourEdges;

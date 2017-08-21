@@ -29,7 +29,9 @@ public class _593 {
         List<int[]> input = new ArrayList<>(Arrays.asList(p1, p2, p3, p4));
         List<List<int[]>> allPermuations = getAllPermutations(input);
         for (List<int[]> eachPermutation : allPermuations) {
-            if (isValid(eachPermutation)) return true;
+            if (isValid(eachPermutation)) {
+                return true;
+            }
         }
         return false;
     }
