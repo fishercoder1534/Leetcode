@@ -7,13 +7,21 @@ public class TreeNode {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof TreeNode)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof TreeNode)) {
+            return false;
+        }
 
         TreeNode treeNode = (TreeNode) o;
 
-        if (val != treeNode.val) return false;
-        if (left != null ? !left.equals(treeNode.left) : treeNode.left != null) return false;
+        if (val != treeNode.val) {
+            return false;
+        }
+        if (left != null ? !left.equals(treeNode.left) : treeNode.left != null) {
+            return false;
+        }
         return right != null ? right.equals(treeNode.right) : treeNode.right == null;
     }
 

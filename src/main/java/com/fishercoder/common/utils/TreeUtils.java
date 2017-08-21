@@ -63,8 +63,9 @@ public static TreeNode constructBinaryTree(List<Integer> treeValues) {
 
 	private static void printNodeInternal(
 			List<TreeNode> list, int level, int maxLevel) {
-		if (list.isEmpty() || CommonUtils.isAllElementsNull(list))
+		if (list.isEmpty() || CommonUtils.isAllElementsNull(list)) {
 			return;
+		}
 
 		int floor = maxLevel - level;
 		int endgeLines = (int) Math.pow(2, (Math.max(floor - 1, 0)));
@@ -98,17 +99,19 @@ public static TreeNode constructBinaryTree(List<Integer> treeValues) {
 					continue;
 				}
 
-				if (list.get(j).left != null)
+				if (list.get(j).left != null) {
 					System.out.print("/");
-				else
+				} else {
 					CommonUtils.printWhitespaces(1);
+				}
 
 				CommonUtils.printWhitespaces(i + i - 1);
 
-				if (list.get(j).right != null)
+				if (list.get(j).right != null) {
 					System.out.print("\\");
-				else
+				} else {
 					CommonUtils.printWhitespaces(1);
+				}
 
 				CommonUtils.printWhitespaces(endgeLines + endgeLines - i);
 			}
