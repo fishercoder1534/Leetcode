@@ -12,8 +12,9 @@ public class _81 {
 
     public boolean search(int[] A, int target) {
         int len = A.length;
-        if (len == 0)
+        if (len == 0) {
             return false;
+        }
         if (len == 1) {
             if (A[0] == target) {
                 return true;
@@ -43,9 +44,9 @@ public class _81 {
         }
         System.out.println("watershed = " + watershed + "\twatershedIndex = "
                 + watershedIndex);
-        if (target == watershed)
+        if (target == watershed) {
             return true;
-        else if (target > watershed) {
+        } else if (target > watershed) {
 			/*
 			 * here is the tricky part: when target is greater than watershed,
 			 * it's also possible that this list is ZERO rotated, i.e. it didn't
@@ -69,8 +70,9 @@ public class _81 {
                     }
                 }
                 return false;
-            } else
+            } else {
                 return false;
+            }
         } else if (target < watershed) {
 			/*
 			 * target could be in either part of this sorted array, then we
