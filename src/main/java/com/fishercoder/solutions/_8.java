@@ -25,17 +25,26 @@ If no valid conversion could be performed, a zero value is returned. If the corr
 public class _8 {
 	public int myAtoi_clean_version(String str){
 		int p = 0, result = 0;
-		while(p < str.length() && Character.isWhitespace(str.charAt(p))) p++;
-		if(p == str.length()) return 0;
+		while(p < str.length() && Character.isWhitespace(str.charAt(p))) {
+			p++;
+		}
+		if(p == str.length()) {
+			return 0;
+		}
 		boolean negativeFlag = (str.charAt(p) == '-');
-		if(str.charAt(p) == '+' || str.charAt(p) == '-') p++;
+		if(str.charAt(p) == '+' || str.charAt(p) == '-') {
+			p++;
+		}
 		for(; p<str.length(); p++){
 			if(str.charAt(p) > '9' || str.charAt(p) < '0'){
 				break;
 			} else {
 				int digit = str.charAt(p) - '0';
-				if(!negativeFlag && result > (Integer.MAX_VALUE - digit)/10) return Integer.MAX_VALUE;
-				else if (negativeFlag && result < (Integer.MIN_VALUE + digit)/10) return Integer.MIN_VALUE;
+				if(!negativeFlag && result > (Integer.MAX_VALUE - digit)/10) {
+					return Integer.MAX_VALUE;
+				} else if (negativeFlag && result < (Integer.MIN_VALUE + digit)/10) {
+					return Integer.MIN_VALUE;
+				}
 				result = result*10 + (negativeFlag ? -digit:digit);
 			}
 		}
@@ -73,7 +82,9 @@ public class _8 {
 		//case 5: when finding the first non-whitespace character, it could possibly be a '+' or '-' sign, after that, we parse all the consecutive numbers
 		
 	    str = str.trim();//cut off its leading and trailing whitespace characters
-	    if(str == null || str.isEmpty()) return 0;
+	    if(str == null || str.isEmpty()) {
+	    	return 0;
+		}
 	    Set<Character> numbers = new HashSet();
 	    for(int i = 0; i < 10; i++){
 	        numbers.add(Character.forDigit(i, 10));
@@ -95,19 +106,29 @@ public class _8 {
 	    		break;
 	    	}
 	    }
-	    if((plusSignCount > 0 && minuSignCount > 0) || minuSignCount > 1 || plusSignCount > 1) return 0;
+	    if((plusSignCount > 0 && minuSignCount > 0) || minuSignCount > 1 || plusSignCount > 1) {
+	    	return 0;
+		}
 	    negative = minuSignCount%2 != 0;
-	    if(i >= chars.length) return 0;
+	    if(i >= chars.length) {
+	    	return 0;
+		}
 	    
 	    //it might be a floating number, so consider '.'
 	    int period = 0;
 	    while(i < chars.length && numbers.contains(chars[i])){
-	        if(chars[i] == '.') period++;
-	        if(period > 1) break;
+	        if(chars[i] == '.') {
+	        	period++;
+			}
+	        if(period > 1) {
+	        	break;
+			}
 	        sb.append(chars[i++]);
 	    }
 	    
-	    if(sb == null || sb.length() == 0) return 0;
+	    if(sb == null || sb.length() == 0) {
+	    	return 0;
+		}
 	    
 	    int result = 0;
 	    if(period > 0){
@@ -128,19 +149,31 @@ public class _8 {
 		        	try{
 		        		temp = Long.parseLong(sb.toString());
 		        	} catch(Exception e){
-		        		if(sb.length() >= Integer.MAX_VALUE) result = Integer.MAX_VALUE;
+		        		if(sb.length() >= Integer.MAX_VALUE) {
+		        			result = Integer.MAX_VALUE;
+						}
 		        	}
 		        	if(temp > (long) Integer.MAX_VALUE+1) {
-		        		if(!negative)return Integer.MAX_VALUE;
-		        		else return Integer.MIN_VALUE;
-		        	} else if(temp == (long) Integer.MAX_VALUE+1 && negative) return Integer.MIN_VALUE;
-		        	else if(temp == (long) Integer.MAX_VALUE+1) return Integer.MAX_VALUE;
-		        	else if(temp < Integer.MIN_VALUE) result = Integer.MIN_VALUE;
-		        	else result = (int) temp;
+		        		if (!negative) {
+		        			return Integer.MAX_VALUE;
+						} else {
+		        			return Integer.MIN_VALUE;
+						}
+		        	} else if(temp == (long) Integer.MAX_VALUE+1 && negative) {
+		        		return Integer.MIN_VALUE;
+					} else if(temp == (long) Integer.MAX_VALUE+1) {
+		        		return Integer.MAX_VALUE;
+					} else if(temp < Integer.MIN_VALUE) {
+		        		result = Integer.MIN_VALUE;
+					} else {
+		        		result = (int) temp;
+					}
 	        	}
 	    }
 	    
-	    if(negative) result = -result;
+	    if (negative) {
+	    	result = -result;
+		}
 	    return result;
 	}
 }

@@ -16,7 +16,9 @@ import com.fishercoder.common.classes.ListNode;
 public class _86 {
 
     public ListNode partition(ListNode head, int x) {
-        if (head == null || head.next == null) return head;
+        if (head == null || head.next == null) {
+            return head;
+        }
         ListNode left = new ListNode(0);
         ListNode right = new ListNode(0);
         ListNode less = left;

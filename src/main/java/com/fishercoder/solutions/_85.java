@@ -15,7 +15,9 @@ import java.util.Arrays;
  */
 public class _85 {
     public int maximalRectangle(char[][] matrix) {
-        if (matrix.length == 0) return 0;
+        if (matrix.length == 0) {
+            return 0;
+        }
         int m = matrix.length, n = matrix[0].length;
         int[] left = new int[n];
         int[] right = new int[n];
@@ -29,14 +31,18 @@ public class _85 {
 
             //compute height, this can be achieved from either side
             for (int j = 0; j < n; j++){
-                if (matrix[i][j] == '1') height[j]++;
-                else height[j] = 0;
+                if (matrix[i][j] == '1') {
+                    height[j]++;
+                } else {
+                    height[j] = 0;
+                }
             }
 
             //compute left, from left to right
             for (int j = 0; j < n; j++){
-                if (matrix[i][j] == '1') left[j] = Math.max(left[j], currLeft);
-                else {
+                if (matrix[i][j] == '1') {
+                    left[j] = Math.max(left[j], currLeft);
+                } else {
                     left[j] = 0;
                     currLeft = j+1;
                 }
@@ -44,8 +50,9 @@ public class _85 {
 
             //compute right, from right to left
             for (int j = n-1; j >= 0; j--){
-                if (matrix[i][j] == '1') right[j] = Math.min(right[j], currRight);
-                else {
+                if (matrix[i][j] == '1') {
+                    right[j] = Math.min(right[j], currRight);
+                } else {
                     right[j] = n;
                     currRight = j;
                 }

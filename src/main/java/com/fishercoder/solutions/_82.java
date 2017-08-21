@@ -15,7 +15,9 @@ import com.fishercoder.common.classes.ListNode;
 public class _82 {
 
     public ListNode deleteDuplicates(ListNode head) {
-        if (head == null) return head;
+        if (head == null) {
+            return head;
+        }
         ListNode fakeHead = new ListNode(-1);
         fakeHead.next = head;
         ListNode pre = fakeHead;
