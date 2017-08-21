@@ -12,7 +12,9 @@ public class _64 {
      * have to initialize the first row and the first column and start the for loop from i==1 and j==1 for the rest
      * of the matrix.*/
     public int minPathSum(int[][] grid) {
-        if(grid == null || grid.length == 0) return 0;
+        if(grid == null || grid.length == 0) {
+            return 0;
+        }
         
         int height = grid.length, width = grid[0].length;
         int[][] dp = new int[height][width];

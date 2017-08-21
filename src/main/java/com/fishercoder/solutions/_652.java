@@ -42,7 +42,9 @@ public class _652 {
     }
 
     private String postorder(TreeNode curr, HashMap<String, Integer> map, List<TreeNode> res) {
-        if (curr == null) return "#";
+        if (curr == null) {
+            return "#";
+        }
         String serial = curr.val + "," + postorder(curr.left, map, res) + "," + postorder(curr.right, map, res);
         if (map.getOrDefault(serial, 0) == 1) {
             res.add(curr);
@@ -63,7 +65,9 @@ public class _652 {
          */
         public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
             List<TreeNode> result = new ArrayList<>();
-            if (root == null) return result;
+            if (root == null) {
+                return result;
+            }
             Map<TreeNode, List<TreeNode>> map = new HashMap<>();
             Queue<TreeNode> oldQueue = new LinkedList<>();
             Queue<TreeNode> newQueue = new LinkedList<>();
@@ -113,21 +117,37 @@ public class _652 {
         }
 
         private boolean isSubtree(TreeNode s, TreeNode t) {
-            if (s == null && t == null) return true;
+            if (s == null && t == null) {
+                return true;
+            }
             boolean isSubTree = false;
-            if (s != null && t != null && s.val == t.val) isSubTree = isSameTree(s, t);
-            if (isSubTree) return true;
+            if (s != null && t != null && s.val == t.val) {
+                isSubTree = isSameTree(s, t);
+            }
+            if (isSubTree) {
+                return true;
+            }
             boolean isSubTreeLeft = false;
-            if (s.left != null) isSubTreeLeft = isSubtree(s.left, t);
-            if (isSubTreeLeft) return true;
+            if (s.left != null) {
+                isSubTreeLeft = isSubtree(s.left, t);
+            }
+            if (isSubTreeLeft) {
+                return true;
+            }
             boolean isSubTreeRight = false;
-            if (s.right != null) isSubTreeRight = isSubtree(s.right, t);
-            if (isSubTreeRight) return true;
+            if (s.right != null) {
+                isSubTreeRight = isSubtree(s.right, t);
+            }
+            if (isSubTreeRight) {
+                return true;
+            }
             return false;
         }
 
         private boolean isSameTree(TreeNode p, TreeNode q) {
-            if (p == null || q == null) return p == q;
+            if (p == null || q == null) {
+                return p == q;
+            }
             return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
         }
     }
