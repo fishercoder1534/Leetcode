@@ -52,7 +52,9 @@ public class _659 {
                 freqMap.put(i+1, freqMap.get(i+1) - 1);
                 freqMap.put(i+2, freqMap.get(i+2) - 1);
                 appendFreqMap.put(i+3, appendFreqMap.getOrDefault(i+3, 0) + 1);
-            } else return false;
+            } else {
+                return false;
+            }
             freqMap.put(i, freqMap.get(i) - 1);
         }
         return true;

@@ -24,7 +24,9 @@ public class _664 {
     /**reference: https://discuss.leetcode.com/topic/100137/java-solution-dp*/
     public int strangePrinter(String s) {
         int n = s.length();
-        if (n == 0) return 0;
+        if (n == 0) {
+            return 0;
+        }
 
         int[][] dp = new int[101][101];
         for (int i = 0; i < n; i++) {

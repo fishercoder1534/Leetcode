@@ -13,9 +13,13 @@ public class _69 {
         while(i <= j){
             long mid = (i+j)/2;
             long result = mid*mid;
-            if(result == (long) x) return (int) mid;
-            else if(result > x) j = mid-1;
-            else i = mid+1;
+            if(result == (long) x) {
+                return (int) mid;
+            } else if(result > x) {
+                j = mid-1;
+            } else {
+                i = mid+1;
+            }
             System.out.println(mid + " * " + mid + " = " + result + "\ti = " + i + "\tj = " + j);
         }
         return (int) j;

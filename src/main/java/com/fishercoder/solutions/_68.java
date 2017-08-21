@@ -31,8 +31,9 @@ public class _68 {
 
     public static List<String> fullJustify(String[] words, int L) {
         ArrayList<String> result = new ArrayList();
-        if(words == null || words.length == 0)
+        if(words == null || words.length == 0) {
             return result;
+        }
         int count = 0;
         int last = 0;
         for(int i = 0; i < words.length; i++){

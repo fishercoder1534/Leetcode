@@ -30,7 +30,9 @@ package com.fishercoder.solutions;
  */
 public class _661 {
     public int[][] imageSmoother(int[][] M) {
-        if (M == null || M.length == 0) return M;
+        if (M == null || M.length == 0) {
+            return M;
+        }
         int m = M.length;
         int n = M[0].length;
         int[][] result = new int[m][n];

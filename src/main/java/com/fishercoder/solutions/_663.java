@@ -59,7 +59,9 @@ public class _663 {
     public boolean checkEqualTree(TreeNode root) {
         Map<TreeNode, Integer> map = new HashMap<>();
         int totalSum = sumForEachNode(root, map);
-        if (totalSum % 2 != 0 || map.size() < 2) return false;
+        if (totalSum % 2 != 0 || map.size() < 2) {
+            return false;
+        }
         for (TreeNode key : map.keySet()) {
             if (map.get(key) == totalSum / 2) {
                 return true;

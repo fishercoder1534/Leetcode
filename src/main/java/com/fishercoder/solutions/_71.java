@@ -21,8 +21,11 @@ public class _71 {
         Deque<String> stack = new LinkedList<>();
         Set<String> skipSet = new HashSet<>(Arrays.asList("..", ".", ""));
         for (String dir : path.split("/")) {
-            if (dir.equals("..") && !stack.isEmpty()) stack.pop();
-            else if (!skipSet.contains(dir)) stack.push(dir);
+            if (dir.equals("..") && !stack.isEmpty()) {
+                stack.pop();
+            } else if (!skipSet.contains(dir)) {
+                stack.push(dir);
+            }
         }
         String result = "";
         for (String dir : stack) {
