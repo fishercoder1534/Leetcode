@@ -3,7 +3,6 @@ package com.fishercoder.solutions;
 import com.fishercoder.common.classes.Interval;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -21,14 +20,10 @@ public class _253 {
             return 0;
 
         // Sort the intervals by start time
-        Arrays.sort(intervals, new Comparator<Interval>() {
-            public int compare(Interval a, Interval b) { return a.start - b.start; }
-        });
+        Arrays.sort(intervals, (a, b) -> a.start - b.start);
 
         // Use a min heap to track the minimum end time of merged intervals
-        PriorityQueue<Interval> heap = new PriorityQueue<Interval>(intervals.length, new Comparator<Interval>() {
-            public int compare(Interval a, Interval b) { return a.end - b.end; }
-        });
+        PriorityQueue<Interval> heap = new PriorityQueue<>(intervals.length, (a, b) -> a.end - b.end);
 
         // start with the first meeting, put it to a meeting room
         heap.offer(intervals[0]);

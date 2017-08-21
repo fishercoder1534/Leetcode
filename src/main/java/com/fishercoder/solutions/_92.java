@@ -51,7 +51,9 @@ public class _92 {
         // find node at position m, let's call it "revHead"
         // set its previous node as "newRevHead", then start processing until we reach node at
         // position n
-        ListNode newRevHead = null, revHead = head, pre = new ListNode(-1);
+        ListNode newRevHead = null;
+        ListNode revHead = head;
+        ListNode pre = new ListNode(-1);
         pre.next = head;
         if (m > 1) {
             int mCnt = 1;
@@ -108,7 +110,8 @@ public class _92 {
 
         ListNode head = new ListNode(3);
         head.next = new ListNode(5);
-        int m = 1, n = 2;
+        int m = 1;
+        int n = 2;
 
         CommonUtils.printList(head);
         ListNode result = test.reverseBetween(head, m, n);

@@ -67,9 +67,9 @@ public class _587 {
             for (int i = 1; i < points.length; i++) {
                 if (i == curIndex) continue;
                 int cross = crossProductLength(cur, points[i], next);
-                if (nextIndex == curIndex || cross > 0 ||
+                if (nextIndex == curIndex || cross > 0
                         // Handle collinear points
-                        (cross == 0 && distance(points[i], cur) > distance(next, cur))) {
+                        || (cross == 0 && distance(points[i], cur) > distance(next, cur))) {
                     next = points[i];
                     nextIndex = i;
                 }

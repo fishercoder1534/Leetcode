@@ -17,8 +17,7 @@ public class _66 {
         if(digits[len-1] + 1 == 10) {
             carry = true;
             temp[len-1] = 0;
-        }
-        else {
+        } else {
             temp[len-1] += 1;
             return temp;
         }

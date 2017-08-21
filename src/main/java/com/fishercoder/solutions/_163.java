@@ -5,8 +5,8 @@ import java.util.List;
 
 /**
  * Given a sorted integer array where the range of elements are in the inclusive range [lower, upper], return its missing ranges.
-
- For example, given [0, 1, 3, 50, 75], lower = 0 and upper = 99, return ["2", "4->49", "51->74", "76->99"].
+ * <p>
+ * For example, given [0, 1, 3, 50, 75], lower = 0 and upper = 99, return ["2", "4->49", "51->74", "76->99"].
  */
 public class _163 {
 
@@ -19,9 +19,8 @@ public class _163 {
         if (nums.length == 0) {
             res.add(getRange(lower, longUpper));
             return res;
-        }
-        else if (nums.length == 1 && nums[0] == -2147483648 && lower == -2147483648 && upper == 2147483647){
-            res.add(getRange(lower+1, longUpper));
+        } else if (nums.length == 1 && nums[0] == -2147483648 && lower == -2147483648 && upper == 2147483647) {
+            res.add(getRange(lower + 1, longUpper));
             return res;
         }
 
@@ -44,8 +43,10 @@ public class _163 {
         }
 
         // do a final check
-        if (next > Integer.MIN_VALUE && next <= longUpper && longUpper < Integer.MAX_VALUE) res.add(getRange(next, longUpper));
-        if (next == Integer.MIN_VALUE && longUpper == Integer.MAX_VALUE && nums.length == 0) res.add(getRange(next, longUpper));
+        if (next > Integer.MIN_VALUE && next <= longUpper && longUpper < Integer.MAX_VALUE)
+            res.add(getRange(next, longUpper));
+        if (next == Integer.MIN_VALUE && longUpper == Integer.MAX_VALUE && nums.length == 0)
+            res.add(getRange(next, longUpper));
 
         return res;
     }

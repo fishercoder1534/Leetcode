@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'checkstyle'
+
+group = 'com.fishercoder'
+version = '1.0-SNAPSHOT'
+
+checkstyle {
+    //include ( '**/*.java')
+    configFile = file("${rootDir}/fishercoder_codestyle.xml")
+}
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+}

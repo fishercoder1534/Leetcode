@@ -38,13 +38,17 @@ public class _333 {
         int max = 0;
 
         public int largestBSTSubtree(TreeNode root) {
-            if (root == null) { return 0; }
+            if (root == null) {
+                return 0;
+            }
             traverse(root);
             return max;
         }
 
         private Result traverse(TreeNode root) {
-            if (root == null) { return new Result(0, Integer.MAX_VALUE, Integer.MIN_VALUE); }
+            if (root == null) {
+                return new Result(0, Integer.MAX_VALUE, Integer.MIN_VALUE);
+            }
             Result left = traverse(root.left);
             Result right = traverse(root.right);
             if (left.size == -1 || right.size == -1 || root.val <= left.upper || root.val >= right.lower) {

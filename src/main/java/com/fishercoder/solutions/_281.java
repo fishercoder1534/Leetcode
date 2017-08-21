@@ -32,7 +32,9 @@ public class _281 {
     }
 
     public int next() {
-        if (j.hasNext()) { tmp = j; j = i; i = tmp; }
+        if (j.hasNext()) {
+            tmp = j; j = i; i = tmp;
+        }
         return i.next();
     }
 

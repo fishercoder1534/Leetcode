@@ -166,13 +166,15 @@ public class BTreePrinter {
 
         return root;
     }
-}
 
-class Node<T extends Comparable<?>> {
+
+public static class Node<T extends Comparable<?>> {
     Node<T> left, right;
     T data;
 
     public Node(T data) {
         this.data = data;
     }
+}
+
 }

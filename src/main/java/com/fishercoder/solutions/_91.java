@@ -90,8 +90,7 @@ public class _91 {
             } else if(!validStrings.contains(s.substring(i,i+1)) && validStrings.contains(s.substring(i-1,i+1))){
                 if(i > 1) dp[i] = dp[i-2];
                 else dp[i] = dp[i-1];
-            }
-            else dp[i] = dp[i-1];
+            } else dp[i] = dp[i-1];
         }
 
         return dp[n-1];

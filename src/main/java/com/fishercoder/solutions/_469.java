@@ -50,8 +50,7 @@ public class _469 {
                             points.get(C).get(0), points.get(C).get(1));
             if (crossProduct < 0) {
                 gotNegative = true;
-            }
-            else if (crossProduct > 0) {
+            } else if (crossProduct > 0) {
                 gotPositive = true;
             }
             if (gotNegative && gotPositive) return false;

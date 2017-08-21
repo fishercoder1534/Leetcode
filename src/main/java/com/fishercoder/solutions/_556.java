@@ -30,8 +30,7 @@ public class _556 {
         reverse(digits, i + 1);
         try{
             return Integer.parseInt(new String(digits));
-        }
-        catch(Exception e){
+        } catch(Exception e){
             return -1;
         }
     }

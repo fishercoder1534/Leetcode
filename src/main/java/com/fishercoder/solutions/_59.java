@@ -62,11 +62,8 @@ public class _59 {
                 temp--;
             }
 
-        }
-        else//when num is odd
-        {
-            while(i < num/2 && j < num/2 && temp >= 0)
-            {
+        } else {//when num is odd
+            while(i < num/2 && j < num/2 && temp >= 0) {
 				/* Assign the top row */
                 while(j < temp)
                 {

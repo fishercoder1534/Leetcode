@@ -25,7 +25,7 @@ public class _346 {
          */
         public MovingAverage(int size) {
             q = new LinkedList();
-            sum = 0l;
+            sum = 0L;
             max = size;
         }
 

@@ -26,9 +26,9 @@ public class TreeUtils {
 	    1 
 	    
 	 */
-	@Notes(context = "This is usually how Leetcode OJ passes a binary tree into testing: " +
-			"https://leetcode.com/faq/#binary-tree, I wrote this function for my own ease of testing when copying" +
-			"the test case from Leetcode in the form of [1, null, 2, 3].")
+	@Notes(context = "This is usually how Leetcode OJ passes a binary tree into testing: "
+			+ "https://leetcode.com/faq/#binary-tree, I wrote this function for my own ease of testing when copying"
+			+ "the test case from Leetcode in the form of [1, null, 2, 3].")
 	public static TreeNode constructBinaryTree(List<Integer> treeValues) {
 		TreeNode root = new TreeNode(treeValues.get(0));
 		Queue<TreeNode> queue = new LinkedList<>();
@@ -136,17 +136,17 @@ public class TreeUtils {
 		inOrder(root.right);
 	}
 
-	public static void main (String... args){
-	    //test random int generator
+	public static void main(String... args) {
+		//test random int generator
 		List<Integer> treeValues = CommonUtils.randomIntArrayGenerator(24);
-		
+
 		List<Integer> treeValues2 = Arrays.asList(0, 1, 2, 3, 4, 5, 6);
-		
+
 		//test tree construction
 //		TreeNode root1 = bruteForceConstructBinaryTree(treeValues2);
 //		inOrderTraversal(root1);
 //		printBinaryTree(root1);
-		
+
 		// test tree construction
 		TreeNode root2 = constructBinaryTree(treeValues);
 		inOrderTraversal(root2);
