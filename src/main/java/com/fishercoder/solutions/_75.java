@@ -19,9 +19,13 @@ public class _75 {
     public void sortColors(int[] nums) {
         int zero = 0, two = nums.length-1;
         for(int i = 0; i <= two;){
-            if(nums[i] == 0 && i > zero) swap(nums, i, zero++);
-            else if(nums[i] == 2 && i < two) swap(nums, i, two--);
-            else i++;
+            if(nums[i] == 0 && i > zero) {
+                swap(nums, i, zero++);
+            } else if(nums[i] == 2 && i < two) {
+                swap(nums, i, two--);
+            } else {
+                i++;
+            }
         }
     }
     

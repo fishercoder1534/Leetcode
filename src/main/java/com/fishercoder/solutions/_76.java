@@ -23,7 +23,9 @@ public class _76 {
 
         int start = 0, end = 0, minStart = 0, minLen = Integer.MAX_VALUE, counter = t.length();
         while(end < s.length()){
-            if(counts[s.charAt(end)] > 0) counter--;
+            if(counts[s.charAt(end)] > 0) {
+                counter--;
+            }
 
             counts[s.charAt(end)]--;
             end++;
@@ -34,12 +36,16 @@ public class _76 {
                     minLen = end-start;
                 }
                 counts[s.charAt(start)]++;
-                if(counts[s.charAt(start)] > 0) counter++;
+                if(counts[s.charAt(start)] > 0) {
+                    counter++;
+                }
                 start++;
             }
         }
 
-        if(minLen == Integer.MAX_VALUE) return "";
+        if(minLen == Integer.MAX_VALUE) {
+            return "";
+        }
         return s.substring(minStart, minStart+minLen);
     }
 

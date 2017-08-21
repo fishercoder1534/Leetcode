@@ -30,7 +30,9 @@ public class _78 {
             List<List<Integer>> result = new ArrayList();
             List<Integer> empty = new ArrayList();
             result.add(empty);
-            if (nums == null) return result;
+            if (nums == null) {
+                return result;
+            }
             for (int i = 0; i < nums.length; i++) {
                 List<List<Integer>> temp = new ArrayList();
                 //you'll have to create a new one here, otherwise, it'll throw ConcurrentModificationException.

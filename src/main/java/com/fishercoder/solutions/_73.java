@@ -19,7 +19,9 @@ public class _73 {
          * Space: O(m*n)
          */
         public void setZeroes(int[][] matrix) {
-            if (matrix == null || matrix.length == 0) return;
+            if (matrix == null || matrix.length == 0) {
+                return;
+            }
             int height = matrix.length, width = matrix[0].length;
             boolean[][] zero = new boolean[height][width];
             for (int i = 0; i < height; i++) {
@@ -85,7 +87,9 @@ public class _73 {
          * Space: O(1)
          */
         public void setZeroes(int[][] matrix) {
-            if (matrix == null || matrix.length == 0) return;
+            if (matrix == null || matrix.length == 0) {
+                return;
+            }
             int m = matrix.length;
             int n = matrix[0].length;
             boolean firstRow = false;
