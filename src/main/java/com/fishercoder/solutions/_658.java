@@ -54,7 +54,9 @@ public class _658 {
     }
 
     private int findInsertPosition(List<Integer> arr, int x) {
-        if (arr == null || arr.size() == 0) return 0;
+        if (arr == null || arr.size() == 0) {
+            return 0;
+        }
         int len = arr.size();
         for (int i = 0; i < len; i++) {
             if (arr.get(0) > x) {

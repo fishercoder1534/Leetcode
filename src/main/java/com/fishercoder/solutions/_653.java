@@ -41,12 +41,16 @@ public class _653 {
 
     public static class ListSolution {
         public boolean findTarget(TreeNode root, int k) {
-            if (root == null) return false;
+            if (root == null) {
+                return false;
+            }
             List<Integer> list = new ArrayList<>();
             dfs(root, list);
             for (int i = 0; i < list.size() - 1; i++) {
                 for (int j = i + 1; j < list.size(); j++) {
-                    if (list.get(i) + list.get(j) == k) return true;
+                    if (list.get(i) + list.get(j) == k) {
+                        return true;
+                    }
                 }
             }
             return false;
@@ -66,7 +70,9 @@ public class _653 {
     @Notes(todo = "This solution fails by _653Test.test6(), need to fix it.")
     public static class MapSolution {
         public boolean findTarget(TreeNode root, int k) {
-            if (root == null) return false;
+            if (root == null) {
+                return false;
+            }
             Map<Integer, Integer> map = new HashMap();//value is index
             int index = 0;
             preorder(root, map, index);

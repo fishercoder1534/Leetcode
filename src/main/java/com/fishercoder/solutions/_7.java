@@ -10,13 +10,17 @@ public class _7 {
         while(x != 0){
             rev = rev*10 + x%10;
             x /= 10;
-            if(rev > Integer.MAX_VALUE || rev < Integer.MIN_VALUE) return 0;
+            if(rev > Integer.MAX_VALUE || rev < Integer.MIN_VALUE) {
+                return 0;
+            }
         }
         return (int) rev;
     }
     
     public int reverse(int x) {
-        if(x == 0) return 0;
+        if(x == 0) {
+            return 0;
+        }
         //save the first bit if it's a negative sign
         StringBuilder sb = new StringBuilder();
         sb.append(x);
