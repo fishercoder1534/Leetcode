@@ -16,7 +16,9 @@ public class _97 {
         // write your code here
         int m = s1.length();
         int n = s2.length();
-        if (m + n != s3.length()) return false;
+        if (m + n != s3.length()) {
+            return false;
+        }
 
         boolean[][] dp = new boolean[m + 1][n + 1];
 

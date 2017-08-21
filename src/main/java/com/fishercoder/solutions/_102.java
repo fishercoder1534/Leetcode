@@ -33,7 +33,9 @@ public class _102 {
 
 	public List<List<Integer>> levelOrder(TreeNode root) {
 		List<List<Integer>> result = new ArrayList<>();
-		if (root == null) return result;
+		if (root == null) {
+			return result;
+		}
 		Queue<TreeNode> q = new LinkedList();
 		q.offer(root);
 		while (!q.isEmpty()) {
@@ -42,8 +44,12 @@ public class _102 {
 			for (int i = 0; i < qSize; i++) {
 				TreeNode curr = q.poll();
 				thisLevel.add(curr.val);
-				if (curr.left != null) q.offer(curr.left);
-				if (curr.right != null) q.offer(curr.right);
+				if (curr.left != null) {
+					q.offer(curr.left);
+				}
+				if (curr.right != null) {
+					q.offer(curr.right);
+				}
 			}
 			result.add(thisLevel);
 		}

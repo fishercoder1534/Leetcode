@@ -31,10 +31,16 @@ public class _94 {
     }
     
     List<Integer> inorder(TreeNode root, List<Integer> result){
-        if(root == null) return result;
-        if(root.left != null) inorder(root.left, result);
+        if(root == null) {
+            return result;
+        }
+        if(root.left != null) {
+            inorder(root.left, result);
+        }
         result.add(root.val);
-        if(root.right != null) inorder(root.right, result);
+        if(root.right != null) {
+            inorder(root.right, result);
+        }
         return result;
     }
 

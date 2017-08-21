@@ -75,8 +75,9 @@ public class _92 {
             nCnt++;
         }
 
-        if (nCnt > n)
+        if (nCnt > n) {
             nCnt--;
+        }
         // append next to the tail of the reversed part
         ListNode reversedPart = newRevHead;
         if (reversedPart != null) {
@@ -88,10 +89,11 @@ public class _92 {
         }
 
         // append the reversed part head to the node at position m-1
-        if (node_prior_to_m != null)
+        if (node_prior_to_m != null) {
             node_prior_to_m.next = newRevHead;
-        else
+        } else {
             pre.next = newRevHead;
+        }
 
         return pre.next;
     }
