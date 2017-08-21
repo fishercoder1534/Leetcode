@@ -47,13 +47,19 @@ public class _98 {
 
     public static class Solution2 {
         public boolean isValidBST(TreeNode root) {
-            if (root == null) return true;
+            if (root == null) {
+                return true;
+            }
             return dfs(root.left, Long.MIN_VALUE, root.val) && dfs(root.right, root.val, Long.MAX_VALUE);
         }
 
         private boolean dfs(TreeNode root, long minValue, long maxValue) {
-            if (root == null) return true;
-            if (root != null && (root.val <= minValue || root.val >= maxValue)) return false;
+            if (root == null) {
+                return true;
+            }
+            if (root != null && (root.val <= minValue || root.val >= maxValue)) {
+                return false;
+            }
             boolean leftResult = true;
             boolean rightResult = true;
             if (root.left != null) {
