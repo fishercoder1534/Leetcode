@@ -71,8 +71,7 @@ public class _480 {
     private void remove(int num) {
         if (num < getMedian()) {
             maxHeap.remove(num);
-        }
-        else {
+        } else {
             minHeap.remove(num);
         }
         if (maxHeap.size() > minHeap.size()) {
@@ -86,8 +85,7 @@ public class _480 {
     private void add(int num) {
         if (num < getMedian()) {
             maxHeap.add(num);
-        }
-        else {
+        } else {
             minHeap.add(num);
         }
         if (maxHeap.size() > minHeap.size()) {

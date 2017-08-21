@@ -133,8 +133,7 @@ public class _8 {
 		        	if(temp > (long) Integer.MAX_VALUE+1) {
 		        		if(!negative)return Integer.MAX_VALUE;
 		        		else return Integer.MIN_VALUE;
-		        	}
-		        	else if(temp == (long) Integer.MAX_VALUE+1 && negative) return Integer.MIN_VALUE;
+		        	} else if(temp == (long) Integer.MAX_VALUE+1 && negative) return Integer.MIN_VALUE;
 		        	else if(temp == (long) Integer.MAX_VALUE+1) return Integer.MAX_VALUE;
 		        	else if(temp < Integer.MIN_VALUE) result = Integer.MIN_VALUE;
 		        	else result = (int) temp;

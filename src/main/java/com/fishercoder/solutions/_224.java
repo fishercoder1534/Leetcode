@@ -56,9 +56,7 @@ public class _224 {
 				stack1.push(filteredStr.get(i));
 				i++;
 			}
-			if(i == filteredStr.size()){
-
-			} else {
+			if(i != filteredStr.size()){
 				while(!stack1.isEmpty() && !stack1.peek().equals("(")){
 					stack2.push(stack1.pop());
 				}

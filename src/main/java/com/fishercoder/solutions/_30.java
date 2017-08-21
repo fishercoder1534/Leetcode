@@ -30,8 +30,7 @@ public class _30 {
             Integer val = map.get(L[i]);
             if(val == null){
                 map.put(L[i], 1);
-            }
-            else{
+            } else{
                 map.put(L[i], val + 1);
             }
         }
@@ -61,12 +60,10 @@ public class _30 {
 
                 if(val == null){
                     break;
-                }
-                else{
+                } else{
                     if(val == 1){
                         map.remove(sub);
-                    }
-                    else{
+                    } else{
                         map.put(sub, val - 1);
                     }
                 }

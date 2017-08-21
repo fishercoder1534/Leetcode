@@ -37,11 +37,9 @@ public class _617 {
         TreeNode mergedNode = null;
         if (t1 != null && t2 != null) {
             mergedNode = new TreeNode(t1.val + t2.val);
-        }
-        else if (t1 != null) {
+        } else if (t1 != null) {
             mergedNode = t1;
-        }
-        else if (t2 != null) {
+        } else if (t2 != null) {
             mergedNode = t2;
         }
         mergedNode.left = mergeTrees(t1.left, t2.left);

@@ -144,8 +144,7 @@ public class _631 {
             for (String st : strs) {
                 if (st.indexOf(":") < 0) {
                     res.put(st, res.getOrDefault(st, 0) + 1);
-                }
-                else {
+                } else {
                     String[] cells = st.split(":");
                     int si = Integer.parseInt(cells[0].substring(1)), ei = Integer.parseInt(cells[1].substring(1));
                     char sj = cells[0].charAt(0), ej = cells[1].charAt(0);

@@ -32,11 +32,9 @@ public class _324 {
 
             if (nums[newIndex(i,n)] > median) {
                 swap(nums, newIndex(left++,n), newIndex(i++,n));
-            }
-            else if (nums[newIndex(i,n)] < median) {
+            } else if (nums[newIndex(i,n)] < median) {
                 swap(nums, newIndex(right--,n), newIndex(i,n));
-            }
-            else {
+            } else {
                 i++;
             }
         }

@@ -15,10 +15,8 @@ public class _388 {
         while(i < input.length()){
             currLevel = nextLevel;
             int currStrLen = 0;
-            while(i < input.length() && 
-                    (Character.isLetterOrDigit(input.charAt(i)) 
-                            || period.equals(input.charAt(i)) || 
-                            space.equals(input.charAt(i)))) {
+            while(i < input.length() && (Character.isLetterOrDigit(input.charAt(i))
+                            || period.equals(input.charAt(i)) || space.equals(input.charAt(i)))) {
                 if(period.equals(input.charAt(i))) {
                     isFile = true;
                 }
@@ -26,8 +24,7 @@ public class _388 {
             }
             if(isFile) {
                 longestLen = Math.max(longestLen, currDirLen+currStrLen);
-            }
-            else {
+            } else {
                 currDirLen += currStrLen+1;
                 stack.push(currStrLen+1);
             }

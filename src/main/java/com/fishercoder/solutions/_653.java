@@ -71,8 +71,7 @@ public class _653 {
             int index = 0;
             preorder(root, map, index);
             for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-                if (map.containsKey(k - entry.getKey()) &&
-                        map.get(k - entry.getKey()) != entry.getValue()) {
+                if (map.containsKey(k - entry.getKey()) && map.get(k - entry.getKey()) != entry.getValue()) {
                     return true;
                 }
             }

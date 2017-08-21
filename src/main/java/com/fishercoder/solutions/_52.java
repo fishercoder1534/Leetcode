@@ -15,7 +15,7 @@ public class _52 {
         return result.size();
     }
 
-    private void search (int n, ArrayList<Integer> col, List<List<String>> result) {
+    private void search(int n, ArrayList<Integer> col, List<List<String>> result) {
         if (col.size() == n) {
             result.add(drawChessBoard(col));
             return;

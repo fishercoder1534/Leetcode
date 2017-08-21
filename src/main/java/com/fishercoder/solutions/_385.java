@@ -55,8 +55,7 @@ public class _385 {
             }
             int num = Integer.parseInt(sb.toString());
             return new NestedInteger(num);
-        }//all other cases, we'll return a nested integer with a list
-        else{
+        } else {//all other cases, we'll return a nested integer with a list
             while (i < s.length()) {
                 if (s.charAt(i) == '[') {
                     NestedInteger ni = new NestedInteger();
@@ -93,9 +92,8 @@ public class _385 {
                     if (ni.isInteger()) {
                         // we'll add it to this ni
                         ni.add(new NestedInteger(num));
-                    }
-                    // case 2: if this one contains a nested integer
-                    else if (ni.getList() != null && ni.getList().size() != 0) {
+                    } else if (ni.getList() != null && ni.getList().size() != 0) {
+                        // case 2: if this one contains a nested integer
                         // we'll get the last nested integer and add this one to it
                         ni.add(new NestedInteger(num));
                     } else {

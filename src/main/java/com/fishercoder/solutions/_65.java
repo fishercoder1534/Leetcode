@@ -52,8 +52,7 @@ public class _65 {
                     if(s.charAt(index-1) == '+' || s.charAt(index-1) == '-') {
                         index++;
                         continue;
-                    }
-                    else return false;
+                    } else return false;
                 }
                 if(index+1 < s.length() && (Character.getNumericValue(s.charAt(index+1)) >= 10 || Character.getNumericValue(s
                         .charAt(index+1)) < 0)){

@@ -14,7 +14,8 @@ package com.fishercoder.solutions;
 public class _97 {
     public boolean isInterleave(String s1, String s2, String s3) {
         // write your code here
-        int m = s1.length(), n = s2.length();
+        int m = s1.length();
+        int n = s2.length();
         if (m + n != s3.length()) return false;
 
         boolean[][] dp = new boolean[m + 1][n + 1];

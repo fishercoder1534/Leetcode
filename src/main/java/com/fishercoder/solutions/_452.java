@@ -43,8 +43,7 @@ public class _452 {
             if(p[0]>currentEnd) {
                 count++;
                 currentEnd = p[1];
-            }
-            else continue;
+            } else continue;
         }
         return count;
     }

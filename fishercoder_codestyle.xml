@@ -32,11 +32,11 @@
       <property name="eachLine" value="false"/>
     </module>-->
 
-    <module name="SuppressionCommentFilter">
-        <property name="offCommentFormat" value="CHECKSTYLE_OFF\: ([\w\|]+)"/>
-        <property name="onCommentFormat" value="CHECKSTYLE_OFF\: ([\w\|]+)"/>
-        <property name="checkFormat" value="$1"/>
-    </module>
+    <!--<module name="SuppressionCommentFilter">-->
+        <!--<property name="offCommentFormat" value="CHECKSTYLE_OFF\: ([\w\|]+)"/>-->
+        <!--<property name="onCommentFormat" value="CHECKSTYLE_OFF\: ([\w\|]+)"/>-->
+        <!--<property name="checkFormat" value="$1"/>-->
+    <!--</module>-->
 
     <module name="TreeWalker">
         <property name="tabWidth" value="4"/>
@@ -53,7 +53,7 @@
         </module> -->
         <module name="LineLength">
             <!--change it to 100 later-->
-            <property name="max" value="1000"/>
+            <property name="max" value="1000000"/>
             <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
         </module>
         <!-- <module name="AvoidStarImport"/> -->
@@ -84,28 +84,28 @@
                      <!--value="WhitespaceAround: ''{0}'' is not preceded with whitespace."/>-->
         <!--</module>-->
         <!--<module name="OneStatementPerLine"/>-->
-        <module name="MultipleVariableDeclarations"/>
-        <module name="ArrayTypeStyle"/>
-        <module name="MissingSwitchDefault"/>
+        <!--<module name="MultipleVariableDeclarations"/>-->
+        <!--<module name="ArrayTypeStyle"/>-->
+        <!--<module name="MissingSwitchDefault"/>-->
         <module name="FallThrough"/>
         <module name="UpperEll"/>
         <module name="ModifierOrder"/>
-        <module name="EmptyLineSeparator">
-            <property name="allowNoEmptyLineBetweenFields" value="true"/>
-        </module>
-        <module name="SeparatorWrap">
-            <property name="tokens" value="DOT"/>
-            <property name="option" value="nl"/>
-        </module>
+        <!--<module name="EmptyLineSeparator">-->
+            <!--<property name="allowNoEmptyLineBetweenFields" value="true"/>-->
+        <!--</module>-->
+        <!--<module name="SeparatorWrap">-->
+            <!--<property name="tokens" value="DOT"/>-->
+            <!--<property name="option" value="nl"/>-->
+        <!--</module>-->
         <module name="SeparatorWrap">
             <property name="tokens" value="COMMA"/>
             <property name="option" value="EOL"/>
         </module>
-        <module name="PackageName">
-            <property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
-            <message key="name.invalidPattern"
-                     value="Package name ''{0}'' must match pattern ''{1}''."/>
-        </module>
+        <!--<module name="PackageName">-->
+            <!--<property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>-->
+            <!--<message key="name.invalidPattern"-->
+                     <!--value="Package name ''{0}'' must match pattern ''{1}''."/>-->
+        <!--</module>-->
         <!--<module name="TypeName">-->
             <!--<message key="name.invalidPattern"-->
                      <!--value="Type name ''{0}'' must match pattern ''{1}''."/>-->
@@ -161,9 +161,9 @@
             <property name="allowedAbbreviationLength" value="10"/>
         </module>
         <!--<module name="OverloadMethodsDeclarationOrder"/>-->
-        <module name="VariableDeclarationUsageDistance">
-            <property name="allowedDistance" value="20"/>
-        </module>
+        <!--<module name="VariableDeclarationUsageDistance">-->
+            <!--<property name="allowedDistance" value="20"/>-->
+        <!--</module>-->
         <module name="MethodParamPad"/>
         <module name="OperatorWrap">
             <property name="option" value="NL"/>
@@ -196,14 +196,14 @@
           <property name="allowedAnnotations" value="Override, Test"/>
           <property name="allowThrowsTagsForSubclasses" value="true"/>
         </module>-->
-        <module name="MethodName">
-            <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>
-            <message key="name.invalidPattern"
-                     value="Method name ''{0}'' must match pattern ''{1}''."/>
-        </module>
+        <!--<module name="MethodName">-->
+            <!--<property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>-->
+            <!--<message key="name.invalidPattern"-->
+                     <!--value="Method name ''{0}'' must match pattern ''{1}''."/>-->
+        <!--</module>-->
         <module name="MethodLength">
             <property name="tokens" value="METHOD_DEF"/>
-            <property name="max" value="100"/>
+            <property name="max" value="200000"/>
             <property name="countEmpty" value="false"/>
         </module>
         <!--<module name="SingleLineJavadoc"/> -->

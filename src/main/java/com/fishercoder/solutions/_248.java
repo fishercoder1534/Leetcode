@@ -39,8 +39,8 @@ public class _248 {
         public void dfs(String low, String high , char[] c, int left, int right, int[] count) {
             if (left > right) {
                 String s = new String(c);
-                if ((s.length() == low.length() && s.compareTo(low) < 0) ||
-                        (s.length() == high.length() && s.compareTo(high) > 0)) {
+                if ((s.length() == low.length() && s.compareTo(low) < 0)
+                        || (s.length() == high.length() && s.compareTo(high) > 0)) {
                     return;
                 }
                 count[0]++;

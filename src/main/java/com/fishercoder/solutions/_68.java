@@ -81,8 +81,7 @@ public class _68 {
 
     public static void main(String...args){
 //        String[] words = new String[]{"This", "is", "an", "example", "of", "text", "justification."};
-        String[] words = new String[]{"This", "is", "a", "good", "test!", "\n", "What", "do", "you", "\n", "think?", "\n", "I"
-                , "think", "so", "too!"};
+        String[] words = new String[]{"This", "is", "a", "good", "test!", "\n", "What", "do", "you", "\n", "think?", "\n", "I", "think", "so", "too!"};
         int L = 16;
         List<String> result = fullJustify(words, L);
         for(String str : result) {
