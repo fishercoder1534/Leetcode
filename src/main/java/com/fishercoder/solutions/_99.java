@@ -23,7 +23,9 @@ public class _99 {
 	}
 
 	private void traverseTree(TreeNode root) {
-		if (root == null) return;
+		if (root == null) {
+			return;
+		}
 
 		traverseTree(root.left);
 
