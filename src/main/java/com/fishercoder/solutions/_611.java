@@ -27,7 +27,9 @@ public class _611 {
      * If so, then these three could form a valid triangle.*/
 
     public int triangleNumber(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         Arrays.sort(nums);
         int triplets = 0;
         for (int i = 2; i < nums.length; i++) {

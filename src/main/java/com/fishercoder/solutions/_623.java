@@ -82,7 +82,9 @@ public class _623 {
     }
 
     private void dfs(TreeNode root, int v, int d) {
-        if (root == null) return;;
+        if (root == null) {
+            return;
+        }
         if (d == 2) {
             TreeNode newLeft = new TreeNode(v);
             TreeNode newRight = new TreeNode(v);

@@ -49,7 +49,9 @@ public class _621 {
                     }
                 }
                 times++;
-                if (maxHeap.isEmpty() && temp.size() == 0) break;
+                if (maxHeap.isEmpty() && temp.size() == 0) {
+                    break;
+                }
                 i++;
             }
             for (Task task : temp) {
