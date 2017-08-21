@@ -7,55 +7,51 @@ import com.fishercoder.common.classes.TreeNode;
 
 import java.util.*;
 
-
 /**
  * This is a util class to contain all tree related methods.
  */
 public class TreeUtils {
-
-	/**
-	 * This method is to construct a normal binary tree. The input reads like
-	 * this for [5, 3, 6, 2, 4, null, null, 1]:
-
-		       5
-	         /   \
-	        3     6
-	       / \    / \
-	      2   4  #   #
-	     /
-	    1 
-	    
-	 */
-	@Notes(context = "This is usually how Leetcode OJ passes a binary tree into testing: "
-			+ "https://leetcode.com/faq/#binary-tree, I wrote this function for my own ease of testing when copying"
-			+ "the test case from Leetcode in the form of [1, null, 2, 3].")
-	public static TreeNode constructBinaryTree(List<Integer> treeValues) {
-		TreeNode root = new TreeNode(treeValues.get(0));
-		Queue<TreeNode> queue = new LinkedList<>();
-		queue.offer(root);
-		for (int i = 1; i < treeValues.size(); i++) {
-			TreeNode curr = queue.poll();
-			if (treeValues.get(i) != null) {
-				curr.left = new TreeNode(treeValues.get(i));
-				queue.offer(curr.left);
-			}
-			if (++i < treeValues.size() && treeValues.get(i) != null) {
-				curr.right = new TreeNode(treeValues.get(i));
-				queue.offer(curr.right);
-			}
+/**
+* This method is to construct a normal binary tree. The input reads like
+* this for [5, 3, 6, 2, 4, null, null, 1]:
+               5
+             /   \
+            3     6
+           / \    / \
+          2   4  #   #
+         /
+        1
+*/
+@Notes(context = "This is usually how Leetcode OJ passes a binary tree into testing: "
+		+ "https://leetcode.com/faq/#binary-tree, I wrote this function for my own ease of testing when copying"
+		+ "the test case from Leetcode in the form of [1, null, 2, 3].")
+public static TreeNode constructBinaryTree(List<Integer> treeValues) {
+	TreeNode root = new TreeNode(treeValues.get(0));
+	Queue<TreeNode> queue = new LinkedList<>();
+	queue.offer(root);
+	for (int i = 1; i < treeValues.size(); i++) {
+		TreeNode curr = queue.poll();
+		if (treeValues.get(i) != null) {
+			curr.left = new TreeNode(treeValues.get(i));
+			queue.offer(curr.left);
 		}
-		return root;
+		if (++i < treeValues.size() && treeValues.get(i) != null) {
+			curr.right = new TreeNode(treeValues.get(i));
+			queue.offer(curr.right);
+		}
 	}
-	
+	return root;
+}
+
 	public static void printBinaryTree(TreeNode root) {
 		CommonUtils.println("\nPrinting out the binary tree in a very visual manner as below:\n");
-		
+
 		// imitating from BTreePrinter class
 		int maxLevel = TreeUtils.maxLevel(root);
 
 		printNodeInternal(Collections.singletonList(root), 1, maxLevel);
 	}
-	
+
 	private static int maxLevel(TreeNode root) {
 		if (root == null) {
 			return 0;
@@ -64,7 +60,7 @@ public class TreeUtils {
 		return Math.max(TreeUtils.maxLevel(root.left),
 				TreeUtils.maxLevel(root.right)) + 1;
 	}
-	
+
 	private static void printNodeInternal(
 			List<TreeNode> list, int level, int maxLevel) {
 		if (list.isEmpty() || CommonUtils.isAllElementsNull(list))
@@ -122,13 +118,13 @@ public class TreeUtils {
 
 		printNodeInternal(newNodes, level + 1, maxLevel);
 	}
-	
-	public static void inOrderTraversal(TreeNode root){
+
+	public static void inOrderTraversal(TreeNode root) {
 		inOrder(root);
 	}
 
 	private static void inOrder(TreeNode root) {
-		if(root == null) {
+		if (root == null) {
 			return;
 		}
 		inOrder(root.left);
