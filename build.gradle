@@ -7,7 +7,7 @@ version = '1.0-SNAPSHOT'
 
 checkstyle {
     //include ( '**/*.java')
-    configFile = file("${rootDir}/fishercoder_codestyle.xml")
+    configFile = file("${rootDir}/fishercoder_checkstyle.xml")
 }
 
 description = """"""
