@@ -34,11 +34,11 @@
       <!--<property name="eachLine" value="false"/>-->
     <!--</module>-->
 
-    <!--<module name="SuppressionCommentFilter">-->
-        <!--<property name="offCommentFormat" value="CHECKSTYLE_OFF\: ([\w\|]+)"/>-->
-        <!--<property name="onCommentFormat" value="CHECKSTYLE_OFF\: ([\w\|]+)"/>-->
-        <!--<property name="checkFormat" value="$1"/>-->
-    <!--</module>-->
+    <module name="SuppressionCommentFilter">
+        <property name="offCommentFormat" value="CHECKSTYLE_OFF\: ([\w\|]+)"/>
+        <property name="onCommentFormat" value="CHECKSTYLE_OFF\: ([\w\|]+)"/>
+        <property name="checkFormat" value="$1"/>
+    </module>
 
     <module name="TreeWalker">
         <property name="tabWidth" value="4"/>
