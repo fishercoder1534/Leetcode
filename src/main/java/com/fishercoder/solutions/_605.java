@@ -33,17 +33,23 @@ public class _605 {
                 count++;
                 flowerbed[i] = 1;
             }
-            if (count >= n) return true;
+            if (count >= n) {
+                return true;
+            }
             i++;
         }
-        if (count >= n) return true;
+        if (count >= n) {
+            return true;
+        }
         return false;
     }
 
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         int len = flowerbed.length;
         if (len == 1) {
-            if ((flowerbed[0] == 0 && n <= 1) || n == 0) return true;
+            if ((flowerbed[0] == 0 && n <= 1) || n == 0) {
+                return true;
+            }
             return false;
         }
         if (flowerbed[0] == 0 && flowerbed[1] == 0) {
@@ -55,10 +61,16 @@ public class _605 {
                 n--;
                 flowerbed[i] = 1;//modify the input, discuss this with interviwer, if not allowed, then have a copy of this input and modify copy
             }
-            if (n <= 0) return true;
+            if (n <= 0) {
+                return true;
+            }
         }
-        if (len >= 2 && flowerbed[len-2] == 0 && flowerbed[len-1] == 0) n--;
-        if (n <= 0) return true;
+        if (len >= 2 && flowerbed[len-2] == 0 && flowerbed[len-1] == 0) {
+            n--;
+        }
+        if (n <= 0) {
+            return true;
+        }
         return false;
     }
 

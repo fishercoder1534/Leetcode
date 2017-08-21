@@ -47,7 +47,9 @@ public class _616 {
                 continue;
             }
             int j = i;
-            while (j < s.length() && shouldBold[j]) j++;
+            while (j < s.length() && shouldBold[j]) {
+                j++;
+            }
             stringBuilder.append("<b>" + s.substring(i, j) + "</b>");
             i = j-1;
         }
