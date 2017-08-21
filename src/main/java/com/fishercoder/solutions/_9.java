@@ -14,8 +14,12 @@ public class _9 {
     
     /**Purely my original solution: just reverse the entire number and compare with itself, return if they two are equal or not.*/
     public boolean isPalindrome(int x) {
-        if(x == 0) return true;
-        if(x < 0) return false;
+        if(x == 0) {
+            return true;
+        }
+        if(x < 0) {
+            return false;
+        }
         int rev = 0, tmp = x;
         while(tmp != 0){
             rev *= 10;

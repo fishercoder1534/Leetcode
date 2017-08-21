@@ -19,8 +19,9 @@ public class _95 {
 
 	public List<TreeNode> generateTrees_pure_recursion(int n) {
 		List<TreeNode> result = new ArrayList<TreeNode>();
-		if (n == 0)
+		if (n == 0) {
 			return result;
+		}
 		return generateTrees(1, n);
 	}
 

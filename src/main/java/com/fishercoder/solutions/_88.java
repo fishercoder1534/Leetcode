@@ -14,16 +14,23 @@ public class _88 {
         int j = n-1;
         int k = m+n-1;
         while (i >= 0 && j >= 0) {
-            if (nums1[i] > nums2[j]) nums1[k--] = nums1[i--];
-            else nums1[k--] = nums2[j--];
+            if (nums1[i] > nums2[j]) {
+                nums1[k--] = nums1[i--];
+            } else {
+                nums1[k--] = nums2[j--];
+            }
         }
-        while (j >= 0) nums1[k--] = nums2[j--];
+        while (j >= 0) {
+            nums1[k--] = nums2[j--];
+        }
     }
 
     /**I used O(m) extra space to create a temp array, but this could be optimized.*/
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         int[] temp = new int[m];
-        for(int i = 0; i < m; i++) temp[i] = nums1[i];
+        for(int i = 0; i < m; i++) {
+            temp[i] = nums1[i];
+        }
         for(int i = 0, j = 0, k = 0; i < m || j < n;){
             if(i == m){
                 for(; j < n;){

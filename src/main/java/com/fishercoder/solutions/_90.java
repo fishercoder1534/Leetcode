@@ -25,7 +25,9 @@ public class _90 {
             List<List<Integer>> result = new ArrayList();
             List<Integer> empty = new ArrayList();
             result.add(empty);
-            if (nums == null) return result;
+            if (nums == null) {
+                return result;
+            }
             Arrays.sort(nums);
             for (int i = 0; i < nums.length; i++) {
                 Set<List<Integer>> temp = new HashSet();
@@ -55,7 +57,9 @@ public class _90 {
         void backtrack(int[] nums, int start, List<Integer> curr, List<List<Integer>> result) {
             result.add(new ArrayList(curr));
             for (int i = start; i < nums.length; i++) {
-                if (i > start && nums[i] == nums[i - 1]) continue;
+                if (i > start && nums[i] == nums[i - 1]) {
+                    continue;
+                }
                 curr.add(nums[i]);
                 backtrack(nums, i + 1, curr, result);
                 curr.remove(curr.size() - 1);
