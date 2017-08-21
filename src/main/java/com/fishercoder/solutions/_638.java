@@ -54,7 +54,9 @@ public class _638 {
         int j = 0;
         for (j = 0; j < special.get(i).size() - 1; j++) {
             int diff = clone.get(j) - special.get(i).get(j);
-            if (diff < 0) break;
+            if (diff < 0) {
+                break;
+            }
             clone.set(j, diff);
         }
         if (j == special.get(i).size() - 1) {

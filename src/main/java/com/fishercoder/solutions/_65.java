@@ -15,16 +15,29 @@ public class _65 {
     //also, this string could be negative, don't miss this case
     public boolean isNumber(String s) {
         s = s.trim();
-        if (s.isEmpty())
+        if (s.isEmpty()) {
             return false;
-        int eCount = 0, periodCount = 0, index = 0, numberCount = 0;
-        while(index < s.length()) {
-            if(s.charAt(index) == '.') periodCount++;
-            if((s.charAt(index) == '-') || s.charAt(index) == '+' || s.charAt(index) == '.') index++;
-            if(periodCount >= 2) return false;
-            else break;
         }
-        if(index >= s.length()) return false;
+        int eCount = 0;
+        int periodCount = 0;
+        int index = 0;
+        int numberCount = 0;
+        while(index < s.length()) {
+            if(s.charAt(index) == '.') {
+                periodCount++;
+            }
+            if((s.charAt(index) == '-') || s.charAt(index) == '+' || s.charAt(index) == '.') {
+                index++;
+            }
+            if(periodCount >= 2) {
+                return false;
+            } else {
+                break;
+            }
+        }
+        if(index >= s.length()) {
+            return false;
+        }
         while (index < s.length()) {
             if ((Character.getNumericValue(s.charAt(index)) < 10 && Character.getNumericValue(s
                     .charAt(index)) >= 0)) {
@@ -32,27 +45,39 @@ public class _65 {
                 numberCount++;
                 continue;
             } else if (s.charAt(index) == 'e') {
-                if(eCount > 1 || numberCount == 0) return false;
+                if(eCount > 1 || numberCount == 0) {
+                    return false;
+                }
                 if (eCount < 2 && index != 0 && index != (s.length() - 1)) {
                     eCount++;
-                } else if (index == (s.length() - 1) || index == 0)
+                } else if (index == (s.length() - 1) || index == 0) {
                     return false;
-                if(eCount > 1) return false;
+                }
+                if(eCount > 1) {
+                    return false;
+                }
                 index++;
                 //after 'e', there could be '+' or '-' as long as there are numbers after these two signs
                 if(index < s.length() && (s.charAt(index) == '+' || s.charAt(index) == '-')) {
                     index++;
-                    if(index >= s.length()) return false;
-                    else continue;
+                    if(index >= s.length()) {
+                        return false;
+                    } else {
+                        continue;
+                    }
                 }
             } else if (s.charAt(index) == '.') {
-                if(eCount >= 1) return false;
+                if(eCount >= 1) {
+                    return false;
+                }
                 if(index-1 >= 0 && (Character.getNumericValue(s.charAt(index-1)) >= 10 || Character.getNumericValue(s
                         .charAt(index-1)) < 0)){
                     if(s.charAt(index-1) == '+' || s.charAt(index-1) == '-') {
                         index++;
                         continue;
-                    } else return false;
+                    } else {
+                        return false;
+                    }
                 }
                 if(index+1 < s.length() && (Character.getNumericValue(s.charAt(index+1)) >= 10 || Character.getNumericValue(s
                         .charAt(index+1)) < 0)){
@@ -66,10 +91,12 @@ public class _65 {
                     index++;
                     periodCount++;
                 }
-                if (periodCount >= 2 || (index == 0 && index + 1 >= s.length()))
+                if (periodCount >= 2 || (index == 0 && index + 1 >= s.length())) {
                     return false;
-            } else
+                }
+            } else {
                 return false;
+            }
         }
         return numberCount != 0;
     }

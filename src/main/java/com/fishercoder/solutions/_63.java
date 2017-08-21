@@ -25,7 +25,9 @@ public class _63 {
     /**Idea: grid[i][j] has to be set to zero if obstacleGrid[i][j] == 1,
      * otherwise, we can get dp[i][j] from its top and left dp.*/
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        if(obstacleGrid == null || obstacleGrid.length == 0) return 0;
+        if(obstacleGrid == null || obstacleGrid.length == 0) {
+            return 0;
+        }
         
         int height = obstacleGrid.length, width = obstacleGrid[0].length;
         int[][] dp = new int[height][width];
@@ -39,11 +41,16 @@ public class _63 {
         
         for(int i = 1; i < height; i++){
             for(int j = 1; j < width; j++){
-                if(obstacleGrid[i][j] == 1) dp[i][j] = 0;
-                else {
+                if(obstacleGrid[i][j] == 1) {
+                    dp[i][j] = 0;
+                } else {
                     int paths = 0;
-                    if(obstacleGrid[i-1][j] == 0) paths += dp[i-1][j];
-                    if(obstacleGrid[i][j-1] == 0) paths += dp[i][j-1];
+                    if(obstacleGrid[i-1][j] == 0) {
+                        paths += dp[i-1][j];
+                    }
+                    if(obstacleGrid[i][j-1] == 0) {
+                        paths += dp[i][j-1];
+                    }
                     dp[i][j] =  paths;
                 }
             }

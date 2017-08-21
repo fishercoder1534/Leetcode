@@ -56,8 +56,11 @@ public class _649 {
         Queue<Integer> direQ = new LinkedList<>();
         int len = senate.length();
         for (int i = 0; i < len; i++) {
-            if (senate.charAt(i) == 'R') radiantQ.offer(i);
-            else direQ.offer(i);
+            if (senate.charAt(i) == 'R') {
+                radiantQ.offer(i);
+            } else {
+                direQ.offer(i);
+            }
         }
         while (!radiantQ.isEmpty() && !direQ.isEmpty()) {
             int radiantIndex = radiantQ.poll();

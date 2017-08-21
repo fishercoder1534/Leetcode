@@ -122,11 +122,13 @@ public class _631 {
         }
 
         public void topologicalSort(int r, int c) {
-            for (int i = 0; i < Formulas.length; i++)
-                for (int j = 0; j < Formulas[0].length; j++)
+            for (int i = 0; i < Formulas.length; i++) {
+                for (int j = 0; j < Formulas[0].length; j++) {
                     if (Formulas[i][j] != null && Formulas[i][j].cells.containsKey("" + (char) ('A' + c) + (r + 1))) {
                         topologicalSort(i, j);
                     }
+                }
+            }
             stack.push(new int[]{r, c});
         }
 
