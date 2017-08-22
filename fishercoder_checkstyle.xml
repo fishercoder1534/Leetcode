@@ -65,10 +65,13 @@
             <property name="option" value="TEXT"/>
             <property name="tokens" value="LITERAL_TRY, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE, LITERAL_SWITCH"/>
         </module>
+
         <!--<module name="NeedBraces"/>-->
-        <!--<module name="LeftCurly">-->
-        <!--<property name="maxLineLength" value="100"/>-->
-        <!--</module>-->
+
+        <module name="LeftCurly">
+            <property name="maxLineLength" value="100"/>
+        </module>
+
         <module name="RightCurly"/>
         <module name="RightCurly">
             <property name="option" value="alone"/>
@@ -157,14 +160,16 @@
             <!--<message key="ws.notPreceded"-->
                      <!--value="GenericWhitespace ''{0}'' is not preceded with whitespace."/>-->
         <!--</module>-->
-        <!--<module name="Indentation">
-          <property name="basicOffset" value="4"/>
-          <property name="braceAdjustment" value="0"/>
-          <property name="caseIndent" value="4"/>
-          <property name="throwsIndent" value="4"/>
-          <property name="lineWrappingIndentation" value="4"/>
-          <property name="arrayInitIndent" value="4"/>
-        </module>-->
+
+        <!--<module name="Indentation">-->
+            <!--<property name="basicOffset" value="4"/>-->
+            <!--<property name="braceAdjustment" value="0"/>-->
+            <!--<property name="caseIndent" value="4"/>-->
+            <!--<property name="throwsIndent" value="4"/>-->
+            <!--<property name="lineWrappingIndentation" value="4"/>-->
+            <!--<property name="arrayInitIndent" value="4"/>-->
+        <!--</module>-->
+
         <module name="AbbreviationAsWordInName">
             <property name="ignoreFinal" value="false"/>
             <property name="allowedAbbreviationLength" value="10"/>

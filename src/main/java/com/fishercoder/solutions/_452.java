@@ -37,8 +37,7 @@ public class _452 {
         Arrays.sort(points, (p1, p2) -> Integer.compare(p1[1],p2[1]));
         int currentEnd = points[0][1];
         int count = 1;
-        for(int[] p: points)
-        {
+        for(int[] p: points) {
             // if the point starts after currentEnd, it means this balloons not been bursted. Then we shot the balloon in its end point. Otherwise, means this balloon has been bursted, then ignore it.
             if(p[0]>currentEnd) {
                 count++;

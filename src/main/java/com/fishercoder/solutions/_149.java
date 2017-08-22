@@ -41,9 +41,9 @@ public class _149 {
                             }
                         }
                     } else
-                        for (int k = 0; (k < points.length); k++)
-						/*
-						 * Here, I must put the judgment (k!=i) && (k!=j) in the
+                        for (int k = 0; (k < points.length); k++) {
+                        /*
+                         * Here, I must put the judgment (k!=i) && (k!=j) in the
 						 * if statement instead of in the for, otherwise, when k
 						 * equals i or j, it will stop traversing the rest of
 						 * the points that k represents!
@@ -53,7 +53,6 @@ public class _149 {
 						 *
 						 * It took me an hour and couldn't find any clue!
 						 */
-                        {
                             if ((k != i) && (k != j)) {
                                 if (((points[k].x == points[i].x) && (points[k].y == points[i].y))) {
                                     maxPoints[i][j]++;
