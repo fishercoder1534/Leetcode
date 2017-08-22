@@ -12,8 +12,8 @@ public class _83 {
     public static ListNode deleteDuplicates(ListNode head) {
         ListNode ret = new ListNode(-1);
         ret.next = head;
-        while(head != null){
-            while(head.next != null && head.next.val == head.val){
+        while (head != null) {
+            while (head.next != null && head.next.val == head.val) {
                 head.next = head.next.next;
             }
             head = head.next;

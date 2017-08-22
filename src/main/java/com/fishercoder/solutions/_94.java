@@ -29,16 +29,16 @@ public class _94 {
         List<Integer> result = new ArrayList();
         return inorder(root, result);
     }
-    
-    List<Integer> inorder(TreeNode root, List<Integer> result){
-        if(root == null) {
+
+    List<Integer> inorder(TreeNode root, List<Integer> result) {
+        if (root == null) {
             return result;
         }
-        if(root.left != null) {
+        if (root.left != null) {
             inorder(root.left, result);
         }
         result.add(root.val);
-        if(root.right != null) {
+        if (root.right != null) {
             inorder(root.right, result);
         }
         return result;
@@ -47,8 +47,8 @@ public class _94 {
     public List<Integer> inorderTraversal_iterative(TreeNode root) {
         List<Integer> result = new ArrayList();
         Stack<TreeNode> stack = new Stack();
-        while(root != null || !stack.isEmpty()){
-            while(root != null){
+        while (root != null || !stack.isEmpty()) {
+            while (root != null) {
                 stack.push(root);
                 root = root.left;
             }

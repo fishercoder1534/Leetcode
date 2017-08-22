@@ -34,19 +34,19 @@ public class _93 {
                 stringBuilder.append(bytes.get(i));
                 stringBuilder.append(".");
             }
-            stringBuilder.setLength(stringBuilder.length()-1);
+            stringBuilder.setLength(stringBuilder.length() - 1);
             result.add(stringBuilder.toString());
             return;
         }
 
-        for (int i = pos; i < pos+4 && i < s.length(); i++) {
-            String oneByte = s.substring(pos, i+1);
+        for (int i = pos; i < pos + 4 && i < s.length(); i++) {
+            String oneByte = s.substring(pos, i + 1);
             if (!isValid(oneByte)) {
                 continue;
             }
             bytes.add(oneByte);
-            backtracking(s, bytes, result, i+1);
-            bytes.remove(bytes.size()-1);
+            backtracking(s, bytes, result, i + 1);
+            bytes.remove(bytes.size() - 1);
         }
     }
 
