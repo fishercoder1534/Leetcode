@@ -22,6 +22,7 @@ public class _79 {
         //credit: https://discuss.leetcode.com/topic/21142/my-java-solution
 
         boolean visited[][];
+
         public boolean exist(char[][] board, String word) {
             int m = board.length;
             int n = board[0].length;

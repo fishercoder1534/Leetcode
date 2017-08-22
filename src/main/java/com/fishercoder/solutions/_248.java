@@ -71,7 +71,8 @@ public class _248 {
             map.put('0', '0');
         }
 
-        String low = "", high = "";
+        String low = "";
+        String high = "";
 
         public int strobogrammaticInRange(String low, String high) {
             this.low = low;

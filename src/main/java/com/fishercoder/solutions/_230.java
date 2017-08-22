@@ -38,6 +38,7 @@ public class _230 {
     public static class BetterWay {
         int count = 0;
         int result = Integer.MIN_VALUE;
+
         public int kthSmallest(TreeNode root, int k) {
             inorder(root, k);
             return result;

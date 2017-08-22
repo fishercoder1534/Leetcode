@@ -57,7 +57,8 @@ public class _200 {
 
         class UnionFind{
             int count;
-            int m, n;
+            int m;
+            int n;
             int[] ids;
 
             public UnionFind(char[][] grid){

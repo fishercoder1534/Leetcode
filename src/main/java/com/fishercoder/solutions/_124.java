@@ -22,6 +22,7 @@ import com.fishercoder.common.classes.TreeNode;
 public class _124 {
 
     int max = Integer.MIN_VALUE;
+
     public int maxPathSum(TreeNode root) {
         dfs(root);
         return max;

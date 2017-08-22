@@ -27,6 +27,7 @@ public class _286 {
     class BFSSolutionWithoutQueue {
 
         int[] dirs = new int[]{0,1,0,-1,0};
+
         public void wallsAndGates(int[][] rooms) {
             if(rooms == null || rooms.length == 0 || rooms[0].length == 0) return;
             int m = rooms.length, n = rooms[0].length;
@@ -54,6 +55,7 @@ public class _286 {
 
         //push all gates into the queue first, and then put all its neighbours into the queue with one distance to the gate, then continue to push the rest of the nodes into the queue, and put all their neighbours into the queue with the nodes' value plus one until the queue is empty
         int[] dirs = new int[]{0,1,0,-1,0};
+
         public void wallsAndGates(int[][] rooms) {
             if(rooms == null || rooms.length == 0 || rooms[0].length == 0) return;
             int m = rooms.length, n = rooms[0].length;

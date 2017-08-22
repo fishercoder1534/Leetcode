@@ -1,4 +1,5 @@
 package com.fishercoder.solutions;
+
 import  java.util.*;
 /**
  * A message containing letters from A-Z is being encoded to numbers using the following mapping:

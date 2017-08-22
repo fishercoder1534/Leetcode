@@ -34,6 +34,7 @@ public class _464 {
 
     Map<Integer, Boolean> map;
     boolean[] used;
+
     public boolean canIWin(int maxChoosableInteger, int desiredTotal) {
         int sum = (1+maxChoosableInteger)*maxChoosableInteger/2;
         if(sum < desiredTotal) return false;

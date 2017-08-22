@@ -43,6 +43,7 @@ import java.util.Queue;
 public class _373 {
 
     final int[][] neighbors = new int[][]{{0,1}, {1,0}};
+
     public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         List<int[]> result = new ArrayList<int[]>();
         if(nums1 == null || nums2 == null || k == 0 || nums1.length == 0 || nums2.length == 0) return result;

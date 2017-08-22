@@ -51,6 +51,7 @@ public class _488 {
         int result = dfs(board + "#", handCount);  // append a "#" to avoid special process while j==board.length, make the code shorter.
         return result == maxcount ? -1 : result;
     }
+
     private int dfs(String s, int[] handCount) {
         s = removeConsecutive(s);
         if (s.equals("#")) return 0;

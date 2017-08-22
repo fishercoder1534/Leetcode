@@ -19,6 +19,7 @@ import com.fishercoder.common.classes.TreeNode;
 public class _543 {
 
     int diameter = 0;
+
     public int diameterOfBinaryTree(TreeNode root) {
         dfs(root);
         return diameter;

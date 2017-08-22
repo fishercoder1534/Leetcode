@@ -27,6 +27,7 @@ import com.fishercoder.common.classes.TreeNode;
 public class _549 {
 
     int max = 0;
+
     public int longestConsecutive(TreeNode root) {
         longestPath(root);
         return max;

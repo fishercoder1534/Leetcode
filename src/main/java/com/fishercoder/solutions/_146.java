@@ -67,8 +67,11 @@ public class _146 {
 
     public class DoublyLinkedListPlusHashMapSolution {
         private class Node {
-            int key, value;
-            DoublyLinkedListPlusHashMapSolution.Node prev, next;
+            int key;
+            int value;
+
+            DoublyLinkedListPlusHashMapSolution.Node prev;
+            DoublyLinkedListPlusHashMapSolution.Node next;
 
             Node(int k, int v) {
                 this.key = k;
@@ -83,7 +86,8 @@ public class _146 {
 
         private int capacity;
         private int count;
-        private DoublyLinkedListPlusHashMapSolution.Node head, tail;
+        private DoublyLinkedListPlusHashMapSolution.Node head;
+        private DoublyLinkedListPlusHashMapSolution.Node tail;
         private Map<Integer, DoublyLinkedListPlusHashMapSolution.Node> map;
         // ATTN: the value should be Node type! This is the whole point of having a class called Node!
 

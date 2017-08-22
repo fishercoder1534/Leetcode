@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.fishercoder.common.utils;
 
 import com.fishercoder.common.classes.TreeNode;

@@ -46,6 +46,7 @@ public class _588 {
             Map<String, TrieNode> map;
             String name;
             StringBuilder stringBuilder;
+
             TrieNode(String name) {
                 this.name = name;
                 map = new HashMap<>();

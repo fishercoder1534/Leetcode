@@ -16,7 +16,8 @@ package com.fishercoder.solutions;
  */
 public class _5 {
 
-    private int low, maxLen;
+    private int low;
+    private int maxLen;
 
     public String longestPalindrome(String s) {
         int len = s.length();

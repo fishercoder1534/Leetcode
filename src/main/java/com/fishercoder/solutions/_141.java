@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.ListNode;

@@ -34,6 +34,7 @@ public class _556 {
             return -1;
         }
     }
+
     private void reverse(char[] a, int start) {
         int i = start, j = a.length - 1;
         while (i < j) {
@@ -42,6 +43,7 @@ public class _556 {
             j--;
         }
     }
+
     private void swap(char[] a, int i, int j) {
         char temp = a[i];
         a[i] = a[j];

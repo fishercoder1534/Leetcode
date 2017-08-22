@@ -64,6 +64,7 @@ public class _621 {
     class Task {
         int total;
         char character;
+
         public Task(int total, char character) {
             this.total = total;
             this.character = character;

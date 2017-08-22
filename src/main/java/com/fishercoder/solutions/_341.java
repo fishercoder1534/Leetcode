@@ -30,6 +30,7 @@ public class _341 {
 
         private Queue<Integer> flattenedList;
         private Iterator<Integer> iterator;
+
         public NestedIterator(List<NestedInteger> nestedList) {
             flattenedList = new LinkedList<>();
             constructList(nestedList);

@@ -20,6 +20,7 @@ public class _158 {
 	private int buffPtr = 0;
 	private int buffCnt = 0;
 	private char[] buff = new char[4];
+
 	public int read(char[] buf, int n) {
 		int ptr = 0;
 		while(ptr < n){
