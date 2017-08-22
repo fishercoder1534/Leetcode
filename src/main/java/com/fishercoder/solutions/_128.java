@@ -1,6 +1,10 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 /**
  * Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
 

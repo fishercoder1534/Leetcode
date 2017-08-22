@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 412. Fizz Buzz
  *

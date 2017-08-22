@@ -1,6 +1,11 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Set;
 
 /**
  * Given an absolute path for a file (Unix-style), simplify it.

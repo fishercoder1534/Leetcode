@@ -1,6 +1,13 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
 
 /**
  * 126. Word Ladder II
@@ -81,7 +88,7 @@ public class _126 {
                         if (map.containsKey(newWord)) {//Build adjacent Graph
                             map.get(newWord).add(word);
                         } else {
-                            List<String> list = new LinkedList<String>();
+                            List<String> list = new LinkedList();
                             list.add(word);
                             map.put(newWord, list);
                             //It is possible to write three lines in one:

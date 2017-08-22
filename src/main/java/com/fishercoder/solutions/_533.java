@@ -1,6 +1,7 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 533. Lonely Pixel II

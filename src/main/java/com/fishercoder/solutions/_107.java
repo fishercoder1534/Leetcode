@@ -2,7 +2,12 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 
 /**107. Binary Tree Level Order Traversal II
 
@@ -28,10 +33,10 @@ return its bottom-up level order traversal as:
 
 public class _107 {
 	public List<List<Integer>> levelOrder(TreeNode root) {
-		List<List<Integer>> result = new ArrayList<List<Integer>>();
+		List<List<Integer>> result = new ArrayList();
 		if(root == null) return result;
 		
-		Queue<TreeNode> q = new LinkedList<TreeNode>();
+		Queue<TreeNode> q = new LinkedList();
 		q.offer(root);
 		while(!q.isEmpty()){
 			List<Integer> thisLevel = new ArrayList<Integer>();

@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 659. Split Array into Consecutive Subsequences

@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.
 

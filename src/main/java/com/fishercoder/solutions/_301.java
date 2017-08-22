@@ -1,6 +1,11 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Set;
 
 /**
  * Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
@@ -14,13 +19,12 @@ import java.util.*;
  */
 public class _301 {
 
-	public List<String> removeInvalidParentheses(String s)
-	{
+	public List<String> removeInvalidParentheses(String s) {
 		List<String> result = new ArrayList<>();
 		if(s == null) return result;
 
 		Set<String> visited = new HashSet();
-		Queue<String> q = new LinkedList<String>();
+		Queue<String> q = new LinkedList();
 
 		q.offer(s);
 		visited.add(s);

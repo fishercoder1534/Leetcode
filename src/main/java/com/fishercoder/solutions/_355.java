@@ -1,6 +1,12 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Set;
 
 /**
  * 355. Design Twitter
@@ -89,7 +95,7 @@ public class _355 {
 
         /** Initialize your data structure here. */
         public Twitter() {
-            map = new HashMap<>();
+            map = new HashMap();
         }
 
         /** Compose a new tweet. */

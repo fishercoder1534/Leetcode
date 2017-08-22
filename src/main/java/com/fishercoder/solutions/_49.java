@@ -1,6 +1,10 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 49. Group Anagrams
@@ -27,7 +31,9 @@ public class _49 {
             char[] c = word.toCharArray();
             Arrays.sort(c);
             String key = new String(c);
-            if (!map.containsKey(key)) map.put(key, new ArrayList<>());
+            if (!map.containsKey(key)) {
+                map.put(key, new ArrayList<>());
+            }
             map.get(key).add(word);
         }
         return new ArrayList<>(map.values());
