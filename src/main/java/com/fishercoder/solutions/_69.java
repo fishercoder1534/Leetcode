@@ -9,16 +9,16 @@ package com.fishercoder.solutions;
  */
 public class _69 {
     public int mySqrt(int x) {
-        long i = 0, j = x/2+1;
-        while(i <= j){
-            long mid = (i+j)/2;
-            long result = mid*mid;
-            if(result == (long) x) {
+        long i = 0, j = x / 2 + 1;
+        while (i <= j) {
+            long mid = (i + j) / 2;
+            long result = mid * mid;
+            if (result == (long) x) {
                 return (int) mid;
-            } else if(result > x) {
-                j = mid-1;
+            } else if (result > x) {
+                j = mid - 1;
             } else {
-                i = mid+1;
+                i = mid + 1;
             }
             System.out.println(mid + " * " + mid + " = " + result + "\ti = " + i + "\tj = " + j);
         }
