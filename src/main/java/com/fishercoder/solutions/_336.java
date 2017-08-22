@@ -1,6 +1,10 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Given a list of unique words, find all pairs of distinct indices (i, j) in the given list, so that the concatenation of the two words, i.e. words[i] + words[j] is a palindrome.
@@ -17,8 +21,8 @@ import java.util.*;
 public class _336 {
 
     public List<List<Integer>> palindromePairs(String[] words) {
-        List<List<Integer>> pairs = new ArrayList<List<Integer>>();
-        Map<String, Integer> map = new HashMap<String, Integer>();
+        List<List<Integer>> pairs = new ArrayList();
+        Map<String, Integer> map = new HashMap();
         for(int i = 0; i < words.length; i++){
             map.put(words[i], i);
         }

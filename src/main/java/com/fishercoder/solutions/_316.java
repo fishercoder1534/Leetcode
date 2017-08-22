@@ -1,6 +1,7 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * 316. Remove Duplicate Letters

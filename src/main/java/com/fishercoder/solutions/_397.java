@@ -1,6 +1,11 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Set;
+
 /**Given a positive integer n and you can do operations as follow:
 
  If n is even, replace n with n/2.
@@ -33,7 +38,7 @@ public class _397 {
     
     public static int integerReplacement(int n) {
         long min = Long.MAX_VALUE;
-        Set<long[]> set = new HashSet(); 
+        Set<long[]> set = new HashSet();
         Queue<long[]> q = new LinkedList();
         long[] pair = new long[]{n, 0};
         q.offer(pair);

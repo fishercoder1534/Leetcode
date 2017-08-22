@@ -2,7 +2,10 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.Interval;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TreeMap;
+
 
 /**
  * 352. Data Stream as Disjoint Intervals

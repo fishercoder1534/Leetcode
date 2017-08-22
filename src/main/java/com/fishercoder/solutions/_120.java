@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
 

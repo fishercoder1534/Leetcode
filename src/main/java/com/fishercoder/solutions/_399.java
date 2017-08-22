@@ -1,6 +1,10 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 399. Evaluate Division
@@ -30,8 +34,8 @@ public class _399 {
      *
      * Image a/b = k as a link between node a and b, the weight from a to b is k, the reverse link is 1/k. Query is to find a path between two nodes.*/
     public double[] calcEquation(String[][] equations, double[] values, String[][] queries) {
-        Map<String, ArrayList<String>> pairs = new HashMap<>();
-        Map<String, ArrayList<Double>> valuePairs = new HashMap<>();
+        Map<String, List<String>> pairs = new HashMap<>();
+        Map<String, List<Double>> valuePairs = new HashMap<>();
         for (int i = 0; i < equations.length; i++) {
             String[] equation = equations[i];
             if (!pairs.containsKey(equation[0])) {
@@ -57,7 +61,7 @@ public class _399 {
         return result;
     }
 
-    private double dfs(String start, String end, Map<String, ArrayList<String>> pairs, Map<String, ArrayList<Double>> valuePairs, HashSet<String> set, double value) {
+    private double dfs(String start, String end, Map<String, List<String>> pairs, Map<String, List<Double>> valuePairs, HashSet<String> set, double value) {
         if (set.contains(start)) return 0.0;
         if (!pairs.containsKey(start)) return 0.0;
         if (start.equals(end)) return value;

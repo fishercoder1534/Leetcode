@@ -2,7 +2,13 @@ package com.fishercoder.common.utils;
 
 import com.fishercoder.common.classes.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 
 /**
  * This is a util class to contain all tree related methods.
@@ -71,7 +77,7 @@ public static TreeNode constructBinaryTree(List<Integer> treeValues) {
 
 		CommonUtils.printWhitespaces(firstSpaces);
 
-		List<TreeNode> newNodes = new ArrayList<TreeNode>();
+		List<TreeNode> newNodes = new ArrayList<>();
 		for (TreeNode node : list) {
 			if (node != null) {
 				System.out.print(node.val);

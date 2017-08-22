@@ -1,6 +1,10 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 /**
  * 358. Rearrange String k Distance Apart
