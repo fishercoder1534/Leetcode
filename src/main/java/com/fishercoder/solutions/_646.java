@@ -21,7 +21,9 @@ import java.util.Arrays;
  */
 public class _646 {
 
-    /**credit: https://discuss.leetcode.com/topic/96804/java-o-nlog-n-time-o-1-space*/
+    /**
+     * credit: https://discuss.leetcode.com/topic/96804/java-o-nlog-n-time-o-1-space
+     */
     public int findLongestChain(int[][] pairs) {
         Arrays.sort(pairs, (o1, o2) -> o1[1] - o2[1]);
         int result = 0;
@@ -30,7 +32,7 @@ public class _646 {
         while (++i < n) {
             result++;
             int curEnd = pairs[i][1];
-            while (i+1 < n && pairs[i+1][0] <= curEnd) {
+            while (i + 1 < n && pairs[i + 1][0] <= curEnd) {
                 /**This means, we'll keep incrementing i until pairs[i+1][0] is
                  * exactly greater than curEnd.*/
                 i++;
@@ -39,29 +41,4 @@ public class _646 {
         return result;
     }
 
-    public static void main(String... args) {
-        _646 test = new _646();
-
-//        int[][] pairs = new int[][]{
-//                {1,2},
-//                {2,3},
-//                {5,6},
-//                {3,4}
-//        };
-
-        int[][] pairs = new int[][]{
-                {9,10},
-                {-9,9},
-                {-6,1},
-                {-4,1},
-                {8,10},
-                {7,10},
-                {9,10},
-                {2,10}
-        };
-
-        int i = test.findLongestChain(pairs);
-        System.out.println(i);
-        System.out.println("Hello World!");
-    }
 }
