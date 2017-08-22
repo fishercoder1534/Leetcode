@@ -57,7 +57,7 @@ public class _609 {
         for (String path : paths) {
             String[] dirAndFiles = path.split(" ");
             for (int i = 1; i < dirAndFiles.length; i++) {
-                String content = dirAndFiles[i].substring(dirAndFiles[i].indexOf("(")+1,dirAndFiles[i].indexOf(")"));
+                String content = dirAndFiles[i].substring(dirAndFiles[i].indexOf("(") + 1, dirAndFiles[i].indexOf(")"));
                 if (!map.containsKey(content)) {
                     map.put(content, new ArrayList<>());
                 }

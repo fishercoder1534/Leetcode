@@ -28,8 +28,8 @@ public class _605 {
     public boolean canPlaceFlowers_more_concise_version(int[] flowerbed, int n) {
         int count = 0;
         int i = 0;
-        while ( i < flowerbed.length) {
-            if (flowerbed[i] == 0 && (i == 0 || flowerbed[i-1] == 0) && (i == flowerbed.length-1 || flowerbed[i+1] == 0)) {
+        while (i < flowerbed.length) {
+            if (flowerbed[i] == 0 && (i == 0 || flowerbed[i - 1] == 0) && (i == flowerbed.length - 1 || flowerbed[i + 1] == 0)) {
                 count++;
                 flowerbed[i] = 1;
             }
@@ -56,8 +56,8 @@ public class _605 {
             flowerbed[0] = 1;
             n--;
         }
-        for (int i = 1; i < len-1; i++) {
-            if (flowerbed[i] == 0 && flowerbed[i-1] == 0 && flowerbed[i+1] == 0) {
+        for (int i = 1; i < len - 1; i++) {
+            if (flowerbed[i] == 0 && flowerbed[i - 1] == 0 && flowerbed[i + 1] == 0) {
                 n--;
                 flowerbed[i] = 1;//modify the input, discuss this with interviwer, if not allowed, then have a copy of this input and modify copy
             }
@@ -65,7 +65,7 @@ public class _605 {
                 return true;
             }
         }
-        if (len >= 2 && flowerbed[len-2] == 0 && flowerbed[len-1] == 0) {
+        if (len >= 2 && flowerbed[len - 2] == 0 && flowerbed[len - 1] == 0) {
             n--;
         }
         if (n <= 0) {

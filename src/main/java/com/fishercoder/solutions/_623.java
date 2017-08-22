@@ -93,8 +93,8 @@ public class _623 {
             root.left = newLeft;
             root.right = newRight;
         } else {
-            dfs(root.left, v, d-1);
-            dfs(root.right, v, d-1);
+            dfs(root.left, v, d - 1);
+            dfs(root.right, v, d - 1);
         }
     }
 

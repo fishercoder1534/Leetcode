@@ -37,7 +37,7 @@ public class _625 {
         for (int i = 9; i > 1; i--) {
             //if current digit divides a, then store all occurences of current digit in res
             while (a % i == 0) {
-                a = a/i;
+                a = a / i;
                 resultArray.add(i);
             }
         }
@@ -49,8 +49,8 @@ public class _625 {
 
         //get the result from the result array in reverse order
         long result = 0;
-        for (int i = resultArray.size()-1; i >=0; i--) {
-            result = result*10 + resultArray.get(i);
+        for (int i = resultArray.size() - 1; i >= 0; i--) {
+            result = result * 10 + resultArray.get(i);
             if (result > Integer.MAX_VALUE) {
                 return 0;
             }
