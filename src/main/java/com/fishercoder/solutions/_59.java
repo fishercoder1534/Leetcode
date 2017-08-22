@@ -20,13 +20,10 @@ public class _59 {
         int[][] fourEdges = new int[num][num];
         int  value = 1;
         int i = 0, j = 0;
-        if(num%2 == 0)//when num is even
-        {
-            while(i < num/2 && j < num/2 && temp >= 0)
-            {
+        if(num%2 == 0) {//when num is even
+            while(i < num/2 && j < num/2 && temp >= 0) {
 				/* Assign the top row */
-                while(j < temp)
-                {
+                while(j < temp) {
                     fourEdges[i][j] = value;
                     j++;
                     value++;
@@ -34,7 +31,7 @@ public class _59 {
                 }
 
 				/* Assign the right column */
-                while(i < temp - 1){
+                while(i < temp - 1) {
                     i++;
                     fourEdges[i][j - 1] = value;
                     value++;
@@ -42,7 +39,7 @@ public class _59 {
                 j = j - 2;
 
 				/* Assign the bottom row */
-                while(j >= num - temp){
+                while(j >= num - temp) {
                     fourEdges[i][j] = value;
                     j--;
                     value++;
@@ -51,7 +48,7 @@ public class _59 {
                 j++;
 
 				/* Assign the left column */
-                while(i > num - temp){
+                while(i > num - temp) {
                     fourEdges[i][j] = value;
                     i--;
                     value++;
@@ -65,8 +62,7 @@ public class _59 {
         } else {//when num is odd
             while(i < num/2 && j < num/2 && temp >= 0) {
 				/* Assign the top row */
-                while(j < temp)
-                {
+                while(j < temp) {
                     fourEdges[i][j] = value;
                     j++;
                     value++;
