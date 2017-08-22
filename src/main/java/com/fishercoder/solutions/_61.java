@@ -26,7 +26,7 @@ public class _61 {
             len++;
         }
         copyHead.next = head;//link the tail and head to make it a circle
-        for (int i = len - k%len; i > 1; i--) {
+        for (int i = len - k % len; i > 1; i--) {
             head = head.next;
         }
         copyHead = head.next;

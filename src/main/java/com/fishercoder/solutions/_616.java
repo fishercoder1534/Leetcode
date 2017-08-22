@@ -51,7 +51,7 @@ public class _616 {
                 j++;
             }
             stringBuilder.append("<b>" + s.substring(i, j) + "</b>");
-            i = j-1;
+            i = j - 1;
         }
         return stringBuilder.toString();
     }

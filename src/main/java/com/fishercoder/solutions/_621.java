@@ -47,7 +47,7 @@ public class _621 {
                 if (!maxHeap.isEmpty()) {
                     if (maxHeap.peek().total > 1) {
                         Task curr = maxHeap.poll();
-                        temp.add(new Task(curr.total-1, curr.character));
+                        temp.add(new Task(curr.total - 1, curr.character));
                     } else {
                         maxHeap.poll();
                     }

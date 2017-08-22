@@ -41,7 +41,7 @@ public class _648 {
             stringBuilder.append(getShortestReplacement(token, root));
             stringBuilder.append(" ");
         }
-        return stringBuilder.substring(0, stringBuilder.length()-1);
+        return stringBuilder.substring(0, stringBuilder.length() - 1);
     }
 
     private String getShortestReplacement(String token, final TrieNode root) {
