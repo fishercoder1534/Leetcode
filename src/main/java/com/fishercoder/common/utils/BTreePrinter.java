@@ -173,7 +173,8 @@ public class BTreePrinter {
 
 
     public static class Node<T extends Comparable<?>> {
-        Node<T> left, right;
+        Node<T> left;
+        Node<T> right;
         T data;
 
         public Node(T data) {

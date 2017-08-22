@@ -92,9 +92,9 @@
         <module name="FallThrough"/>
         <module name="UpperEll"/>
         <module name="ModifierOrder"/>
-        <!--<module name="EmptyLineSeparator">-->
-            <!--<property name="allowNoEmptyLineBetweenFields" value="true"/>-->
-        <!--</module>-->
+        <module name="EmptyLineSeparator">
+            <property name="allowNoEmptyLineBetweenFields" value="true"/>
+        </module>
         <!--<module name="SeparatorWrap">-->
             <!--<property name="tokens" value="DOT"/>-->
             <!--<property name="option" value="nl"/>-->

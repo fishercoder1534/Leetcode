@@ -33,6 +33,7 @@ public class _526 {
     //A good post to look at: https://discuss.leetcode.com/topic/79916/java-solution-backtracking and it's generic template afterwards for backtracking problems
 
     int count = 0;
+
     public int countArrangement(int N) {
         backtracking(N, new int[N+1], 1);
         return count;

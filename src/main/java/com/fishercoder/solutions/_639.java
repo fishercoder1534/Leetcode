@@ -33,6 +33,7 @@ package com.fishercoder.solutions;
 public class _639 {
     /**reference: https://leetcode.com/articles/decode-ways-ii/#approach-2-dynamic-programming-accepted*/
     int m = 1000000007;
+
     public int numDecodings(String s) {
         long[] dp = new long[s.length() + 1];
         dp[0] = 1;

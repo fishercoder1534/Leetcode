@@ -30,6 +30,7 @@ import com.fishercoder.common.classes.TreeNode;
 public class _298 {
 
     private int max = 1;
+
     public int longestConsecutive(TreeNode root) {
         if (root == null) return 0;
         dfs(root, 0, root.val);

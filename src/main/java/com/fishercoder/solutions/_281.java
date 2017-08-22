@@ -24,7 +24,9 @@ import java.util.List;
  */
 public class _281 {
 
-    private Iterator<Integer> i, j, tmp;
+    private Iterator<Integer> i;
+    private Iterator<Integer> j;
+    private Iterator<Integer> tmp;
 
     public _281(List<Integer> v1, List<Integer> v2) {
         i = v2.iterator();

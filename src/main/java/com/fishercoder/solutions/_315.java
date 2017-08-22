@@ -28,6 +28,7 @@ public class _315 {
         int dup = 1;
         Node left;
         Node right;
+
         public Node(int v, int s){
             this.val = v;
             this.sum = s;

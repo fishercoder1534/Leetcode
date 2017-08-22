@@ -1,4 +1,5 @@
 package com.fishercoder.solutions;
+
 import com.fishercoder.common.classes.NestedInteger;
 
 import java.util.LinkedList;

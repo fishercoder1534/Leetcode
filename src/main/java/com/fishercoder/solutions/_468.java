@@ -56,6 +56,7 @@ import java.util.Set;
 public class _468 {
 
     static final String NEITHER = "Neither";
+
     public String validIPAddress(String IP) {
         if (IP.contains(".")) {
             return isValidIPv4(IP);

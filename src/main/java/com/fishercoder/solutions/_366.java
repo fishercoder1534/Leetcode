@@ -35,6 +35,7 @@ import java.util.List;
 public class _366 {
 
     List<List<Integer>> result = new ArrayList<List<Integer>>();
+
     public List<List<Integer>> findLeaves(TreeNode root) {
         dfs(root);
         return result;

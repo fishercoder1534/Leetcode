@@ -16,6 +16,7 @@ package com.fishercoder.solutions;
 public class _302 {
     class Solution {
         private char[][] image;
+
         public int minArea(char[][] iImage, int x, int y) {
             image = iImage;
             int m = image.length, n = image[0].length;
@@ -25,6 +26,7 @@ public class _302 {
             int bottom = searchRows(x + 1, m, left, right, false);
             return (right - left) * (bottom - top);
         }
+
         private int searchColumns(int i, int j, int top, int bottom, boolean opt) {
             while (i != j) {
                 int k = top, mid = (i + j) / 2;
@@ -36,6 +38,7 @@ public class _302 {
             }
             return i;
         }
+
         private int searchRows(int i, int j, int left, int right, boolean opt) {
             while (i != j) {
                 int k = left, mid = (i + j) / 2;

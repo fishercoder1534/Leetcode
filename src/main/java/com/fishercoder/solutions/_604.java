@@ -38,6 +38,7 @@ public class _604 {
     public static class StringIterator {
 
         Deque<int[]> deque;
+
         public StringIterator(String compressedString) {
             deque = new ArrayDeque<>();
             int len = compressedString.length();

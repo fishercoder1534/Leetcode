@@ -5,6 +5,7 @@ import com.fishercoder.solutions._67;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
 import static junit.framework.Assert.assertEquals;
 
 /**

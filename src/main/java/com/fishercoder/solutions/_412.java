@@ -1,4 +1,5 @@
 package com.fishercoder.solutions;
+
 import java.util.*;
 /**
  * 412. Fizz Buzz

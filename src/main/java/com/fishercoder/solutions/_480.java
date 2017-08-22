@@ -40,6 +40,7 @@ public class _480 {
      * so we'll have to use the original numbers themselves to store in the heaps.*/
     private PriorityQueue<Integer> minHeap = new PriorityQueue<>();
     private PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+
     public double[] medianSlidingWindow(int[] nums, int k) {
         int n = nums.length - k + 1;
         if (n <= 0) return new double[0];

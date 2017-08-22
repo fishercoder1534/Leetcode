@@ -23,6 +23,7 @@ public class _284 {
     public static class PeekingIterator implements Iterator<Integer> {
 
         private Queue<Integer> queue;
+
         public PeekingIterator(Iterator<Integer> iterator) {
             // initialize any member here.
             queue = new LinkedList<>();

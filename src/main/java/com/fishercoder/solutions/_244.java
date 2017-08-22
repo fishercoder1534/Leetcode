@@ -22,6 +22,7 @@ import java.util.Map;
 public class _244 {
 
     private Map<String, List<Integer>> map;
+
     public _244(String[] words) {
         map = new HashMap<String, List<Integer>>();
         for(int i = 0; i < words.length; i++) {
