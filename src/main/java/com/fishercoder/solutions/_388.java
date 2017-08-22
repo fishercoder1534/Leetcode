@@ -20,7 +20,8 @@ public class _388 {
                 if(period.equals(input.charAt(i))) {
                     isFile = true;
                 }
-                i++; currStrLen++;
+                i++;
+                currStrLen++;
             }
             if(isFile) {
                 longestLen = Math.max(longestLen, currDirLen+currStrLen);

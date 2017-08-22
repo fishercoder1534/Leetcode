@@ -33,7 +33,9 @@ public class _128 {
 
         public UnionFind(int[] nums){
             ids = new int[nums.length];
-            for(int i = 0; i < nums.length; i++) ids[i] = i;
+            for(int i = 0; i < nums.length; i++) {
+                ids[i] = i;
+            }
         }
 
         public void union(int i, int j){

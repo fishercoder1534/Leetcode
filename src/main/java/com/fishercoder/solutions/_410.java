@@ -52,14 +52,18 @@ public class _410 {
      Both of them mean that we should lower mid because we need to find the minimum one. This leads to r = mid - 1;*/
 
     public int splitArray(int[] nums, int m) {
-        int max = 0; long sum = 0;
+        int max = 0;
+        long sum = 0;
         for (int num : nums) {
             max = Math.max(num, max);
             sum += num;
         }
-        if (m == 1) return (int) sum;
+        if (m == 1) {
+            return (int) sum;
+        }
         //binary search
-        long l = max; long r = sum;
+        long l = max;
+        long r = sum;
         while (l <= r) {
             long mid = (l + r)/ 2;
             if (valid(mid, nums, m)) {
