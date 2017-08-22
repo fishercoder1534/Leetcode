@@ -82,7 +82,7 @@ public class _631 {
     /**Credit: https://leetcode.com/articles/design-excel-sum-formula/#approach-1-using-topological-sortaccepted*/
     public static class Excel {
 
-        Formula[][] Formulas;
+        Formula[][] formulas;
 
         class Formula {
             Formula(HashMap<String, Integer> c, int v) {
@@ -97,18 +97,18 @@ public class _631 {
         Stack<int[]> stack = new Stack<>();
 
         public Excel(int H, char W) {
-            Formulas = new Formula[H][(W - 'A') + 1];
+            formulas = new Formula[H][(W - 'A') + 1];
         }
 
         public int get(int r, char c) {
-            if (Formulas[r - 1][c - 'A'] == null) {
+            if (formulas[r - 1][c - 'A'] == null) {
                 return 0;
             }
-            return Formulas[r - 1][c - 'A'].val;
+            return formulas[r - 1][c - 'A'].val;
         }
 
         public void set(int r, char c, int v) {
-            Formulas[r - 1][c - 'A'] = new Formula(new HashMap<String, Integer>(), v);
+            formulas[r - 1][c - 'A'] = new Formula(new HashMap<String, Integer>(), v);
             topologicalSort(r - 1, c - 'A');
             execute_stack();
         }
@@ -117,14 +117,14 @@ public class _631 {
             HashMap<String, Integer> cells = convert(strs);
             int summ = calculate_sum(r - 1, c - 'A', cells);
             set(r, c, summ);
-            Formulas[r - 1][c - 'A'] = new Formula(cells, summ);
+            formulas[r - 1][c - 'A'] = new Formula(cells, summ);
             return summ;
         }
 
         public void topologicalSort(int r, int c) {
-            for (int i = 0; i < Formulas.length; i++) {
-                for (int j = 0; j < Formulas[0].length; j++) {
-                    if (Formulas[i][j] != null && Formulas[i][j].cells.containsKey("" + (char) ('A' + c) + (r + 1))) {
+            for (int i = 0; i < formulas.length; i++) {
+                for (int j = 0; j < formulas[0].length; j++) {
+                    if (formulas[i][j] != null && formulas[i][j].cells.containsKey("" + (char) ('A' + c) + (r + 1))) {
                         topologicalSort(i, j);
                     }
                 }
@@ -135,8 +135,8 @@ public class _631 {
         public void execute_stack() {
             while (!stack.isEmpty()) {
                 int[] top = stack.pop();
-                if (Formulas[top[0]][top[1]].cells.size() > 0) {
-                    calculate_sum(top[0], top[1], Formulas[top[0]][top[1]].cells);
+                if (formulas[top[0]][top[1]].cells.size() > 0) {
+                    calculate_sum(top[0], top[1], formulas[top[0]][top[1]].cells);
                 }
             }
         }
@@ -164,9 +164,9 @@ public class _631 {
             int sum = 0;
             for (String s : cells.keySet()) {
                 int x = Integer.parseInt(s.substring(1)) - 1, y = s.charAt(0) - 'A';
-                sum += (Formulas[x][y] != null ? Formulas[x][y].val : 0) * cells.get(s);
+                sum += (formulas[x][y] != null ? formulas[x][y].val : 0) * cells.get(s);
             }
-            Formulas[r][c] = new Formula(cells, sum);
+            formulas[r][c] = new Formula(cells, sum);
             return sum;
         }
     }
