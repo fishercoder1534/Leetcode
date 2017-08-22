@@ -27,10 +27,10 @@ public class _97 {
         for (int i = 0; i < m; i++) {
             if (s1.charAt(i) == s3.charAt(i)) {
                 dp[i + 1][0] = true;
-            } else {//if one char fails, that means it breaks, the rest of the chars won't matter any more.
+            } else {
+                //if one char fails, that means it breaks, the rest of the chars won't matter any more.
                 //Mian and I found one missing test case on Lintcode: ["b", "aabccc", "aabbbcb"]
                 //if we don't break, here, Lintcode could still accept this code, but Leetcode fails it.
-
                 break;
             }
         }
