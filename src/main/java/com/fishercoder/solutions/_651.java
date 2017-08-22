@@ -44,11 +44,11 @@ public class _651 {
      * That's why we have j = 3 in the inner for loop below.
      * */
     public int maxA(int N) {
-        int[] dp = new int[N+1];
+        int[] dp = new int[N + 1];
         for (int i = 1; i <= N; i++) {
             dp[i] = i;
             for (int j = 3; j < i; j++) {
-                dp[i] = Math.max(dp[i], dp[i-j] * (j-1));
+                dp[i] = Math.max(dp[i], dp[i - j] * (j - 1));
             }
         }
         return dp[N];
