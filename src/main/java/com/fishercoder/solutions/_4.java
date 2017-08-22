@@ -73,7 +73,7 @@ public class _4 {
         }
 
         // k is the number of elements to REMOVE, or "Chop off"
-        public double findMedianSortedArrays(int A[], int B[], int K) {
+        public double findMedianSortedArrays(int[] A, int[] B, int K) {
 
             int lowA = 0, lowB = 0;
             int highA = A.length;

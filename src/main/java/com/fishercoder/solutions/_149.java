@@ -22,7 +22,7 @@ public class _149 {
                 max++;
             }
         } else {
-            int maxPoints[][] = new int[points.length][points.length];
+            int[][] maxPoints = new int[points.length][points.length];
             for (int i = 0; i < points.length; i++) {
                 for (int j = 0; j < points.length && j != i; j++) {
                     maxPoints[i][j] = 2;

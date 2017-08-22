@@ -87,7 +87,7 @@
         <!--</module>-->
         <!--<module name="OneStatementPerLine"/>-->
         <!--<module name="MultipleVariableDeclarations"/>-->
-        <!--<module name="ArrayTypeStyle"/>-->
+        <module name="ArrayTypeStyle"/>
         <!--<module name="MissingSwitchDefault"/>-->
         <module name="FallThrough"/>
         <module name="UpperEll"/>
