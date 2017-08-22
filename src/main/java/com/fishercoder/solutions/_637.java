@@ -51,7 +51,7 @@ public class _637 {
                     queue.offer(curr.right);
                 }
             }
-            result.add(sum/size);
+            result.add(sum / size);
         }
         return result;
     }

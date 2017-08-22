@@ -71,7 +71,7 @@ public class _116 {
 
     }
 
-    public static void main(String...args){
+    public static void main(String... args) {
         TreeLinkNode root = new TreeLinkNode(1);
         root.left = new TreeLinkNode(2);
         root.right = new TreeLinkNode(3);
