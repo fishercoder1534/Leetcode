@@ -42,7 +42,8 @@ public class _345 {
 			char temp = left;
 			sb.setCharAt(i, right);
 			sb.setCharAt(j, temp);
-			i++; j--;
+			i++;
+			j--;
 		}
 		return sb.toString();
 	}

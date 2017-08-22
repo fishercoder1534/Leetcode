@@ -58,7 +58,9 @@ public class _499 {
         heap.offer(new Point(ball[0], ball[1], 0, ""));
         int m = maze.length, n = maze[0].length;
         Point[][] points = new Point[m][n];
-        for (int i = 0; i < m*n; i++) points[i/n][i%n] = new Point(i/n, i%n);//initialize the length array
+        for (int i = 0; i < m*n; i++) {
+            points[i/n][i%n] = new Point(i/n, i%n);//initialize the length array
+        }
         String[] ds = new String[]{"u", "r", "d", "l"};
         while (!heap.isEmpty()) {
             Point curr = heap.poll();
