@@ -95,10 +95,10 @@
         <module name="EmptyLineSeparator">
             <property name="allowNoEmptyLineBetweenFields" value="true"/>
         </module>
-        <!--<module name="SeparatorWrap">-->
-            <!--<property name="tokens" value="DOT"/>-->
-            <!--<property name="option" value="nl"/>-->
-        <!--</module>-->
+        <module name="SeparatorWrap">
+            <property name="tokens" value="DOT"/>
+            <property name="option" value="nl"/>
+        </module>
         <module name="SeparatorWrap">
             <property name="tokens" value="COMMA"/>
             <property name="option" value="EOL"/>
