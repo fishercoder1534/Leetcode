@@ -17,7 +17,7 @@ public class _59 {
 
     public int[][] generateMatrix(int num) {
         int temp = num;
-        int fourEdges[][] = new int[num][num];
+        int[][] fourEdges = new int[num][num];
         int  value = 1;
         int i = 0, j = 0;
         if(num%2 == 0)//when num is even

@@ -33,7 +33,7 @@ public class _576 {
     /**reference: https://leetcode.com/articles/out-of-boundary-paths/#approach-2-recursion-with-memoization-accepted*/
     public int findPaths(int m, int n, int N, int x, int y) {
         int M = 1000000000 + 7;
-        int dp[][] = new int[m][n];
+        int[][] dp = new int[m][n];
         dp[x][y] = 1;
         int count = 0;
         for (int moves = 1; moves <= N; moves++) {

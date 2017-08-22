@@ -26,7 +26,7 @@ public class _211 {
         WordNode root = new WordNode();
 
         public void addWord(String word) {
-            char chars[] = word.toCharArray();
+            char[] chars = word.toCharArray();
             addWord(chars, 0, root);
         }
 

@@ -69,7 +69,7 @@ public class _123 {
             /**First row should be zero because it means, you're allowed to make ZERO transaction, so no profit
              * First column should be zero because it means,  on day ZERO, you could only buy and make no profit*/
             int K = 2;//number of allowed transactions.
-            int dp[][] = new int[K+1][prices.length];
+            int[][] dp = new int[K+1][prices.length];
             for(int i = 1; i <= K; i++){
                 for(int j = 1; j < prices.length; j++){
                         int maxProfitOnDayJ = 0;

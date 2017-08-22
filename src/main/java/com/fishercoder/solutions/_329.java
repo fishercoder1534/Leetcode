@@ -26,7 +26,7 @@ package com.fishercoder.solutions;
 public class _329 {
 //inspired by this solution: https://discuss.leetcode.com/topic/34835/15ms-concise-java-solution, wrote it myself:
 
-    final int dirs[] = new int[]{0, 1, 0, -1, 0};
+    final int[] dirs = new int[]{0, 1, 0, -1, 0};
     
     public int longestIncreasingPath(int[][] matrix) {
         if(matrix == null || matrix.length == 0) return 0;
