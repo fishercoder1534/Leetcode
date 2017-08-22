@@ -28,7 +28,7 @@ public class _647 {
         int count = 0;
         for (int i = 0; i < s.length(); i++) {
             count += extendPalindrome(s, i, i);//odd length
-            count += extendPalindrome(s, i, i+1);//even length
+            count += extendPalindrome(s, i, i + 1);//even length
         }
         return count;
     }

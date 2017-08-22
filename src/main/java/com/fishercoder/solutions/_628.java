@@ -24,11 +24,11 @@ public class _628 {
         Arrays.sort(nums);
         int product = 1;
         if (nums.length >= 3) {
-            for (int i = nums.length-1; i >= nums.length-3; i--) {
+            for (int i = nums.length - 1; i >= nums.length - 3; i--) {
                 product *= nums[i];
             }
             int anotherProduct = nums[0] * nums
-                    [1] * nums[nums.length-1];
+                    [1] * nums[nums.length - 1];
             product = Math.max(product, anotherProduct);
         } else {
             for (int i = 0; i < nums.length; i++) {
@@ -42,7 +42,7 @@ public class _628 {
         _628 test = new _628();
 //        int[] nums = new int[]{1,2,3};
 //        int[] nums = new int[]{1,2,3,4};
-        int[] nums = new int[]{-4,-3,-2,-1,60};
+        int[] nums = new int[]{-4, -3, -2, -1, 60};
         System.out.println(test.maximumProduct(nums));
     }
 }
