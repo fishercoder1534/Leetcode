@@ -434,7 +434,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |186|[Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_186.java)| O(n)|O(1)| Medium
 |179|[Largest Number](https://leetcode.com/problems/largest-number/)|[Solution](../../master/src/main/java/com/fishercoder/solutions/_179.java)| O(?) |O(?) | Medium|
 |174|[Dungeon Game](https://leetcode.com/problems/dungeon-game/)|[Queue](../master/src/main/java/com/fishercoder/solutions/BSTIterator_using_q.java) [Stack](../../blmaster/MEDIUM/src/medium/_174.java)| O(m*n) |O(m*n) | Hard| DP
-|173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Queue](../master/src/main/java/com/fishercoder/solutions/_173_using_q.java) [Stack](../../blmaster/MEDIUM/src/medium/_173_using_stack.java)| O(1) |O(h) | Medium| Stack, Design
+|173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Solution](../../blmaster/MEDIUM/src/medium/_173.java)| O(1) |O(h) | Medium| Stack, Design
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_172.java)| O(logn)|O(1)| Easy
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_171.java)| O(n)|O(1)| Easy
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_170.java)| O(n)|O(n)| Easy

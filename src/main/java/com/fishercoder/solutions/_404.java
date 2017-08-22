@@ -37,7 +37,7 @@ public class _404 {
         return leftResult + rightResult;
     }
     
-    private class Solution_more_concise{
+    private class Solution2 {
 
         public int sumOfLeftLeaves(TreeNode root) {
             int sum = 0;

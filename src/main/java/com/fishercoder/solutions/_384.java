@@ -26,17 +26,17 @@ public class _384 {
 
     public static void main(String... strings) {
         int[] nums = new int[]{1, 2, 3};
-        Solution_for_this_question test = new Solution_for_this_question(nums);
+        Solution test = new Solution(nums);
     }
 
-    public static class Solution_for_this_question {
+    public static class Solution {
         //Note: the problem states that this is a set without duplicates which makes building all combinations easier
 
         private List<List<Integer>> combinations;
         private int[] original;
         private Random random;
 
-        public Solution_for_this_question(int[] nums) {
+        public Solution(int[] nums) {
             original = nums;
             random = new Random();
             combinations = buildAllComb(nums);

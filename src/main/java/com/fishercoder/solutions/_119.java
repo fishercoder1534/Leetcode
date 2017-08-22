@@ -35,7 +35,7 @@ public class _119 {
         }
     }
 
-    public static class Solution_OkSpace {
+    public static class SolutionOkSpace {
         public List<Integer> getRow(int rowIndex) {
             List<Integer> row = new ArrayList<>();
             for (int i = 0; i < rowIndex + 1; i++) {

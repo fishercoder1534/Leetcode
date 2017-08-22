@@ -47,12 +47,12 @@ public class _398 {
     }
 
 
-    class Solution_MemoryLimitExceeded {
+    class SolutionMemoryLimitExceeded {
 
         private Map<Integer, List<Integer>> map = new HashMap();
         java.util.Random rand = new java.util.Random();
 
-        public Solution_MemoryLimitExceeded(int[] nums) {
+        public SolutionMemoryLimitExceeded(int[] nums) {
             for (int i = 0; i < nums.length; i++) {
                 if (map.containsKey(nums[i])) {
                     List<Integer> list = map.get(nums[i]);

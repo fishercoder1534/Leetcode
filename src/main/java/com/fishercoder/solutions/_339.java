@@ -5,7 +5,7 @@ import com.fishercoder.common.classes.NestedInteger;
 import java.util.List;
 
 public class _339 {
-    class Solution_with_global_sum {
+    class SolutionWithGlobalSum {
         private int sum = 0;
 
         public int depthSum(List<NestedInteger> nestedList) {
@@ -24,7 +24,7 @@ public class _339 {
         }
     }
     
-    class Solution_with_local_sum {
+    class SolutionWithLocalSum {
         public int depthSum(List<NestedInteger> nestedList) {
             return dfs(nestedList, 1);
         }

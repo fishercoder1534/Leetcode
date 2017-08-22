@@ -9,7 +9,7 @@ import com.fishercoder.common.classes.TreeNode;
  You are guaranteed to have only one unique value in the BST that is closest to the target.*/
 public class _270 {
     
-    class General_tree_solution {
+    class GeneralTreeSolution {
         //this finished in 1 ms
         public int closestValue(TreeNode root, double target) {
             if (root == null)
@@ -33,7 +33,7 @@ public class _270 {
         }
     }
     
-    class BST_solution_recursive{
+    class BSTSolutionRecursive {
         //we can tailor the solution to use the BST feature: left subtrees are always smaller than the root the right subtrees
         //this finished in 0 ms
         public int closestValue(TreeNode root, double target) {
@@ -55,7 +55,7 @@ public class _270 {
         }
     }
     
-    class General_tree_solution_more_concise{
+    class GeneralTreeSolutionMoreConcise {
         public int closestValue(TreeNode root, double target) {
             if(root == null) return 0;
             return dfs(root, target, root.val);
@@ -73,7 +73,7 @@ public class _270 {
         }
     }
     
-    class BST_solution_iterative{
+    class BSTSolutionIterative {
         public int closestValue(TreeNode root, double target) {
             long minVal = Long.MAX_VALUE;
             while(root != null){
