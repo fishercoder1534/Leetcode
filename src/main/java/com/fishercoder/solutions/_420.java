@@ -28,33 +28,33 @@ public class _420 {
             arr[j] = i - j;
         }
 
-        int total_missing = (a + A + d);
+        int totalMissing = (a + A + d);
 
         if (arr.length < 6) {
-            res += total_missing + Math.max(0, 6 - (arr.length + total_missing));
+            res += totalMissing + Math.max(0, 6 - (arr.length + totalMissing));
         } else {
-            int over_len = Math.max(arr.length - 20, 0), left_over = 0;
-            res += over_len;
+            int overLen = Math.max(arr.length - 20, 0), leftOver = 0;
+            res += overLen;
 
             for (int k = 1; k < 3; k++) {
-                for (int i = 0; i < arr.length && over_len > 0; i++) {
+                for (int i = 0; i < arr.length && overLen > 0; i++) {
                     if (arr[i] < 3 || arr[i] % 3 != (k - 1)) continue;
-                    arr[i] -= Math.min(over_len, k);
-                    over_len -= k;
+                    arr[i] -= Math.min(overLen, k);
+                    overLen -= k;
                 }
             }
 
             for (int i = 0; i < arr.length; i++) {
-                if (arr[i] >= 3 && over_len > 0) {
+                if (arr[i] >= 3 && overLen > 0) {
                     int need = arr[i] - 2;
-                    arr[i] -= over_len;
-                    over_len -= need;
+                    arr[i] -= overLen;
+                    overLen -= need;
                 }
 
-                if (arr[i] >= 3) left_over += arr[i] / 3;
+                if (arr[i] >= 3) leftOver += arr[i] / 3;
             }
 
-            res += Math.max(total_missing, left_over);
+            res += Math.max(totalMissing, leftOver);
         }
 
         return res;

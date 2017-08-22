@@ -67,29 +67,29 @@ public class _126 {
                 StringBuilder builder = new StringBuilder(word);
                 for (char ch = 'a'; ch <= 'z'; ch++) {
                     builder.setCharAt(i, ch);
-                    String new_word = builder.toString();
-                    if (ladder.containsKey(new_word)) {
+                    String newWord = builder.toString();
+                    if (ladder.containsKey(newWord)) {
 
-                        if (step > ladder.get(new_word)) {//Check if it is the shortest path to one word.
+                        if (step > ladder.get(newWord)) {//Check if it is the shortest path to one word.
                             continue;
-                        } else if (step < ladder.get(new_word)) {
-                            queue.add(new_word);
-                            ladder.put(new_word, step);
+                        } else if (step < ladder.get(newWord)) {
+                            queue.add(newWord);
+                            ladder.put(newWord, step);
                         } else ;// It is a KEY line. If one word already appeared in one ladder,
                         // Do not insert the same word inside the queue twice. Otherwise it gets TLE.
 
-                        if (map.containsKey(new_word)) {//Build adjacent Graph
-                            map.get(new_word).add(word);
+                        if (map.containsKey(newWord)) {//Build adjacent Graph
+                            map.get(newWord).add(word);
                         } else {
                             List<String> list = new LinkedList<String>();
                             list.add(word);
-                            map.put(new_word, list);
+                            map.put(newWord, list);
                             //It is possible to write three lines in one:
                             //map.put(new_word,new LinkedList<String>(Arrays.asList(new String[]{word})));
                             //Which one is better?
                         }
 
-                        if (new_word.equals(end)) {
+                        if (newWord.equals(end)) {
                             min = step;
                         }
 
