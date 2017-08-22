@@ -16,13 +16,15 @@ import java.util.Map;
  */
 public class _106 {
 
-    /**https://discuss.leetcode.com/topic/3296/my-recursive-java-code-with-o-n-time-and-o-n-space
-     *
+    /**
+     * https://discuss.leetcode.com/topic/3296/my-recursive-java-code-with-o-n-time-and-o-n-space
+     * <p>
      * Note: the last element of postorder array is the root!
-     *
+     * <p>
      * The idea is to take the last element in postorder as the root; find the position of the root in the inorder array;
      * then locate the range for left sub-tree and right sub-tree and do recursion,
-     * use a hashmap to record the index of root in the inorder array.*/
+     * use a hashmap to record the index of root in the inorder array.
+     */
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         if (inorder == null || postorder == null || inorder.length != postorder.length) {
             return null;
@@ -32,14 +34,14 @@ public class _106 {
             inorderMap.put(inorder[i], i);
         }
         /**At the beginning, both start from 0 to nums.length-1*/
-        return buildTreeRecursively(0, inorder.length-1, postorder, 0, postorder.length-1,inorderMap);
+        return buildTreeRecursively(0, inorder.length - 1, postorder, 0, postorder.length - 1, inorderMap);
     }
 
-    private TreeNode buildTreeRecursively(int inorderStart, int inorderEnd, int[] postorder, int postorderStart, int postorderEnd, Map<Integer, Integer> inorderMap){
+    private TreeNode buildTreeRecursively(int inorderStart, int inorderEnd, int[] postorder, int postorderStart, int postorderEnd, Map<Integer, Integer> inorderMap) {
         if (postorderStart > postorderEnd || inorderStart > inorderEnd) return null;
         TreeNode root = new TreeNode(postorder[postorderEnd]);
         int inRoot = inorderMap.get(postorder[postorderEnd]);
-        int numsLeft = inRoot-inorderStart;
+        int numsLeft = inRoot - inorderStart;
 
         /**It's easy to understand and remember:
          * for the indices of inorder array:
@@ -55,10 +57,9 @@ public class _106 {
          * this is also easy to understand and remember:
          * since the last one in postorder is the root and we have used it in this recursion call already, so the end is definitely postorderEnd-1;
          * then the postorderEnd for root.left is contiguous to the postorderStart of root.right, :)*/
-        root.left = buildTreeRecursively(inorderStart, inRoot-1, postorder, postorderStart, postorderStart+numsLeft-1, inorderMap);
-        root.right = buildTreeRecursively(inRoot+1, inorderEnd, postorder, postorderStart+numsLeft, postorderEnd-1, inorderMap);
+        root.left = buildTreeRecursively(inorderStart, inRoot - 1, postorder, postorderStart, postorderStart + numsLeft - 1, inorderMap);
+        root.right = buildTreeRecursively(inRoot + 1, inorderEnd, postorder, postorderStart + numsLeft, postorderEnd - 1, inorderMap);
         return root;
     }
-
 
 }

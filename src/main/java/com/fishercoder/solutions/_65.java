@@ -1,14 +1,17 @@
 package com.fishercoder.solutions;
-/**65. Valid Number
-Validate if a given string is numeric.
 
-Some examples:
-"0" => true
-" 0.1 " => true
-"abc" => false
-"1 a" => false
-"2e10" => true
-Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.*/
+/**
+ * 65. Valid Number
+ * Validate if a given string is numeric.
+ * <p>
+ * Some examples:
+ * "0" => true
+ * " 0.1 " => true
+ * "abc" => false
+ * "1 a" => false
+ * "2e10" => true
+ * Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
+ */
 public class _65 {
     //strip off all leading whitespaces until encounter the first number or period
     //after that, only one 'e' is allowed and one '.' is allowed
@@ -22,20 +25,20 @@ public class _65 {
         int periodCount = 0;
         int index = 0;
         int numberCount = 0;
-        while(index < s.length()) {
-            if(s.charAt(index) == '.') {
+        while (index < s.length()) {
+            if (s.charAt(index) == '.') {
                 periodCount++;
             }
-            if((s.charAt(index) == '-') || s.charAt(index) == '+' || s.charAt(index) == '.') {
+            if ((s.charAt(index) == '-') || s.charAt(index) == '+' || s.charAt(index) == '.') {
                 index++;
             }
-            if(periodCount >= 2) {
+            if (periodCount >= 2) {
                 return false;
             } else {
                 break;
             }
         }
-        if(index >= s.length()) {
+        if (index >= s.length()) {
             return false;
         }
         while (index < s.length()) {
@@ -45,7 +48,7 @@ public class _65 {
                 numberCount++;
                 continue;
             } else if (s.charAt(index) == 'e') {
-                if(eCount > 1 || numberCount == 0) {
+                if (eCount > 1 || numberCount == 0) {
                     return false;
                 }
                 if (eCount < 2 && index != 0 && index != (s.length() - 1)) {
@@ -53,35 +56,35 @@ public class _65 {
                 } else if (index == (s.length() - 1) || index == 0) {
                     return false;
                 }
-                if(eCount > 1) {
+                if (eCount > 1) {
                     return false;
                 }
                 index++;
                 //after 'e', there could be '+' or '-' as long as there are numbers after these two signs
-                if(index < s.length() && (s.charAt(index) == '+' || s.charAt(index) == '-')) {
+                if (index < s.length() && (s.charAt(index) == '+' || s.charAt(index) == '-')) {
                     index++;
-                    if(index >= s.length()) {
+                    if (index >= s.length()) {
                         return false;
                     } else {
                         continue;
                     }
                 }
             } else if (s.charAt(index) == '.') {
-                if(eCount >= 1) {
+                if (eCount >= 1) {
                     return false;
                 }
-                if(index-1 >= 0 && (Character.getNumericValue(s.charAt(index-1)) >= 10 || Character.getNumericValue(s
-                        .charAt(index-1)) < 0)){
-                    if(s.charAt(index-1) == '+' || s.charAt(index-1) == '-') {
+                if (index - 1 >= 0 && (Character.getNumericValue(s.charAt(index - 1)) >= 10 || Character.getNumericValue(s
+                        .charAt(index - 1)) < 0)) {
+                    if (s.charAt(index - 1) == '+' || s.charAt(index - 1) == '-') {
                         index++;
                         continue;
                     } else {
                         return false;
                     }
                 }
-                if(index+1 < s.length() && (Character.getNumericValue(s.charAt(index+1)) >= 10 || Character.getNumericValue(s
-                        .charAt(index+1)) < 0)){
-                    if(s.charAt(index+1) == 'e'){
+                if (index + 1 < s.length() && (Character.getNumericValue(s.charAt(index + 1)) >= 10 || Character.getNumericValue(s
+                        .charAt(index + 1)) < 0)) {
+                    if (s.charAt(index + 1) == 'e') {
                         index++;
                         continue;
                     }
@@ -100,8 +103,8 @@ public class _65 {
         }
         return numberCount != 0;
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         _65 test = new _65();
 //        String s = "1 a";
 //        String s = "2e10";
@@ -128,7 +131,7 @@ public class _65 {
 //        String s = " 005047e+6";
         String s = " 4e+";
         System.out.println(test.isNumber(s));
-        
+
         Integer.parseInt(s);
     }
 }

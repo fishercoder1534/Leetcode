@@ -20,7 +20,7 @@ public class _633 {
         int left = 0;
         int right = (int) (Math.sqrt(c));
         while (left <= right) {
-            int curr = left*left + right*right;
+            int curr = left * left + right * right;
             if (curr > c) {
                 right--;
             } else if (curr < c) {

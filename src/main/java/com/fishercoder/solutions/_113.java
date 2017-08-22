@@ -28,37 +28,37 @@ public class _113 {
     //also, it's possible that a node's value could be negative, as long as the sum of root to leaf ends up to sum
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         List<List<Integer>> allPaths = new ArrayList();
-        if(root == null) return allPaths;
+        if (root == null) return allPaths;
         List<Integer> path = new ArrayList();
         dfs(root, path, allPaths, sum);
         return allPaths;
     }
 
-    
+
     private void dfs(TreeNode root, List<Integer> path, List<List<Integer>> allPaths, int sum) {
         path.add(root.val);
-        if(root.left != null){
-            dfs(root.left, path, allPaths, sum-root.val);
+        if (root.left != null) {
+            dfs(root.left, path, allPaths, sum - root.val);
         }
-        if(root.right != null){
-            dfs(root.right, path, allPaths, sum-root.val);
+        if (root.right != null) {
+            dfs(root.right, path, allPaths, sum - root.val);
         }
-        if(root.left == null && root.right == null){
-            if(sum == root.val){
+        if (root.left == null && root.right == null) {
+            if (sum == root.val) {
                 List<Integer> onePath = new ArrayList(path);
                 allPaths.add(onePath);
             }
         }
-        path.remove(path.size()-1);
+        path.remove(path.size() - 1);
     }
 
 
-    public static void main(String...strings){
+    public static void main(String... strings) {
         _113 test = new _113();
 //        TreeNode root = new TreeNode(1);
 //        root.left = new TreeNode(2);
 //        int sum = 1;
-        
+
 //        TreeNode root = new TreeNode(1);
 //        root.left = new TreeNode(-2);
 //        root.left.left = new TreeNode(1);
@@ -74,7 +74,7 @@ public class _113 {
 //     1   3 -2 
 //    /      
 //   -1
-        
+
         TreeNode root = new TreeNode(5);
         root.left = new TreeNode(4);
         root.left.left = new TreeNode(11);

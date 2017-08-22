@@ -61,10 +61,10 @@ public class _658 {
         for (int i = 0; i < len; i++) {
             if (arr.get(0) > x) {
                 return 0;
-            } else if (arr.get(len-1) < x) {
+            } else if (arr.get(len - 1) < x) {
                 return len;
-            } else if (arr.get(i) < x && arr.get(i+1) > x) {
-                return i+1;
+            } else if (arr.get(i) < x && arr.get(i + 1) > x) {
+                return i + 1;
             } else if (arr.get(i) == x) {
                 return i;
             }

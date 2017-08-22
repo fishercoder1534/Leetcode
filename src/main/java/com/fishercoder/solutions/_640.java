@@ -34,7 +34,9 @@ package com.fishercoder.solutions;
 
  */
 public class _640 {
-    /**Reference: https://discuss.leetcode.com/topic/95203/concise-java-solution/7*/
+    /**
+     * Reference: https://discuss.leetcode.com/topic/95203/concise-java-solution/7
+     */
     public String solveEquation(String equation) {
         String[] parts = equation.split("=");
         int[] left = evaluate(parts[0]);
@@ -56,7 +58,7 @@ public class _640 {
             } else if (token.equals("-x")) {
                 result[0]--;
             } else if (token.contains("x")) {
-                result[0] += Integer.parseInt(token.substring(0, token.length()-1));
+                result[0] += Integer.parseInt(token.substring(0, token.length() - 1));
             } else {
                 result[1] += Integer.parseInt(token);
             }
