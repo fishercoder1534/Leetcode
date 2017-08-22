@@ -29,16 +29,18 @@ import java.util.TreeMap;
 public class _538 {
 
     public static class BSTSolution {
-        /**reference: https://discuss.leetcode.com/topic/83455/java-recursive-o-n-time/13
-         *
-         * A reversed version of inorder traversal: right -> root -> left*/
+        /**
+         * Traverse in this order: right -> root -> left
+         */
         public TreeNode convertBST(TreeNode root) {
             dfs(root, 0);
             return root;
         }
 
         private int dfs(TreeNode root, int val) {
-            if (root == null) return val;
+            if (root == null) {
+                return val;
+            }
             int right = dfs(root.right, val);
             root.val += right;
             int left = dfs(root.left, root.val);
@@ -85,4 +87,5 @@ public class _538 {
             if (root.right != null) putNodeToList(list, root.right);
         }
     }
+
 }
