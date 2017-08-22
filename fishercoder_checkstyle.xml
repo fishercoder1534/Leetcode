@@ -42,25 +42,33 @@
 
     <module name="TreeWalker">
         <property name="tabWidth" value="4"/>
+
         <module name="OuterTypeFilename"/>
+
         <module name="IllegalTokenText">
           <property name="tokens" value="STRING_LITERAL, CHAR_LITERAL"/>
           <property name="format" value="\\u00(08|09|0(a|A)|0(c|C)|0(d|D)|22|27|5(C|c))|\\(0(10|11|12|14|15|42|47)|134)"/>
           <property name="message" value="Avoid using corresponding octal or Unicode escape."/>
         </module>
+
         <module name="AvoidEscapedUnicodeCharacters">
           <property name="allowEscapesForControlCharacters" value="true"/>
           <property name="allowByTailComment" value="true"/>
           <property name="allowNonPrintableEscapes" value="true"/>
         </module>
+
         <module name="LineLength">
             <!--change it to 100 later-->
             <property name="max" value="1000000"/>
             <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
         </module>
+
         <module name="AvoidStarImport"/>
+
         <module name="OneTopLevelClass"/>
+
         <module name="NoLineWrap"/>
+
         <module name="EmptyBlock">
             <property name="option" value="TEXT"/>
             <property name="tokens" value="LITERAL_TRY, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE, LITERAL_SWITCH"/>
@@ -73,6 +81,7 @@
         </module>
 
         <module name="RightCurly"/>
+
         <module name="RightCurly">
             <property name="option" value="alone"/>
             <property name="tokens"
@@ -99,39 +108,49 @@
         <module name="MissingSwitchDefault"/>
 
         <module name="FallThrough"/>
+
         <module name="UpperEll"/>
+
         <module name="ModifierOrder"/>
+
         <module name="EmptyLineSeparator">
             <property name="allowNoEmptyLineBetweenFields" value="true"/>
         </module>
+
         <module name="SeparatorWrap">
             <property name="tokens" value="DOT"/>
             <property name="option" value="nl"/>
         </module>
+
         <module name="SeparatorWrap">
             <property name="tokens" value="COMMA"/>
             <property name="option" value="EOL"/>
         </module>
+
         <module name="PackageName">
             <property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
             <message key="name.invalidPattern"
                      value="Package name ''{0}'' must match pattern ''{1}''."/>
         </module>
+
         <module name="TypeName">
             <property name="format" value="^[_]*[0-9]*[a-zA-Z0-9]*$"/>
             <message key="name.invalidPattern"
                      value="Type name ''{0}'' must match pattern ''{1}''."/>
         </module>
+
         <module name="MemberName">
             <property name="format" value="^[a-z]*[a-z0-9][a-zA-Z0-9]*$"/>
             <message key="name.invalidPattern"
                      value="Member name ''{0}'' must match pattern ''{1}''."/>
         </module>
+
         <module name="ParameterName">
             <property name="format" value="^[a-zA-Z][a-zA-Z0-9]*$"/>
             <message key="name.invalidPattern"
                      value="Parameter name ''{0}'' must match pattern ''{1}''."/>
         </module>
+
         <module name="LocalVariableName">
             <property name="tokens" value="VARIABLE_DEF"/>
             <property name="format" value="^[a-zA-Z][a-zA-Z0-9]*$"/>
@@ -139,16 +158,19 @@
             <message key="name.invalidPattern"
                      value="Local variable name ''{0}'' must match pattern ''{1}''."/>
         </module>
+
         <module name="ClassTypeParameterName">
             <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
             <message key="name.invalidPattern"
                      value="Class type name ''{0}'' must match pattern ''{1}''."/>
         </module>
+
         <module name="MethodTypeParameterName">
             <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
             <message key="name.invalidPattern"
                      value="Method type name ''{0}'' must match pattern ''{1}''."/>
         </module>
+
         <module name="NoFinalizer"/>
         <!--<module name="GenericWhitespace">-->
             <!--<message key="ws.followed"-->
@@ -174,11 +196,15 @@
             <property name="ignoreFinal" value="false"/>
             <property name="allowedAbbreviationLength" value="10"/>
         </module>
+
         <module name="OverloadMethodsDeclarationOrder"/>
+
         <module name="VariableDeclarationUsageDistance">
             <property name="allowedDistance" value="20"/>
         </module>
+
         <module name="MethodParamPad"/>
+
         <module name="OperatorWrap">
             <property name="option" value="NL"/>
             <property name="tokens"
@@ -190,6 +216,7 @@
             <message key="name.invalidPattern"
                      value="Method name ''{0}'' must match pattern ''{1}''."/>
         </module>
+
         <module name="MethodLength">
             <property name="tokens" value="METHOD_DEF"/>
             <property name="max" value="200000"/>
