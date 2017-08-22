@@ -1,7 +1,6 @@
 package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.common.utils.CommonUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,52 +22,46 @@ All root-to-leaf paths are:
 */
 
 public class _257 {
-    //a very typical/good question to test your recursion/dfs understanding.
-    public List<String> binaryTreePaths_more_concise(TreeNode root) {
-        List<String> paths = new ArrayList<String>();
-        if(root == null) return paths;
-        dfs(root, paths, "");
-        return paths;
-    }
-    
-    private void dfs(TreeNode root, List<String> paths, String path) {
-        if(root.left == null && root.right == null){
-            paths.add(path + root.val);
-            return;
+    public static class Solution1 {
+        //a very typical/good question to test your recursion/dfs understanding.
+        public List<String> binaryTreePaths_more_concise(TreeNode root) {
+            List<String> paths = new ArrayList<String>();
+            if (root == null) return paths;
+            dfs(root, paths, "");
+            return paths;
         }
-        path += root.val + "->";
-        if(root.left != null) dfs(root.left, paths, path);
-        if(root.right != null) dfs(root.right, paths, path);
+
+        private void dfs(TreeNode root, List<String> paths, String path) {
+            if (root.left == null && root.right == null) {
+                paths.add(path + root.val);
+                return;
+            }
+            path += root.val + "->";
+            if (root.left != null) dfs(root.left, paths, path);
+            if (root.right != null) dfs(root.right, paths, path);
+        }
     }
     
-    public static void main(String...strings){
-        _257 test = new _257();
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.left.right = new TreeNode(5);
-        root.right = new TreeNode(3);
-        List<String> res = test.binaryTreePaths(root);
-        CommonUtils.print(res);
-    }
+    public static class Solution2 {
+        public List<String> binaryTreePaths(TreeNode root) {
+            List<String> paths = new ArrayList<String>();
+            dfs(root, paths, new StringBuilder());
+            return paths;
+        }
 
-    public List<String> binaryTreePaths(TreeNode root) {
-        List<String> paths = new ArrayList<String>();
-        dfs(root, paths, new StringBuilder());
-        return paths;
-    }
-
-    private void dfs(TreeNode root, List<String> paths, StringBuilder sb) {
-        if(root == null) return;
-        if(root.left == null && root.right == null){
-          sb.append(root.val);
-          paths.add(sb.toString());
-          return ;
-        } 
-        sb.append(root.val + "->");
-        String curr = sb.toString();
-        if(root.left != null) dfs(root.left, paths, sb);
-        sb.setLength(0);
-        sb.append(curr);
-        if(root.right != null) dfs(root.right, paths, sb);
+        private void dfs(TreeNode root, List<String> paths, StringBuilder sb) {
+            if (root == null) return;
+            if (root.left == null && root.right == null) {
+                sb.append(root.val);
+                paths.add(sb.toString());
+                return;
+            }
+            sb.append(root.val + "->");
+            String curr = sb.toString();
+            if (root.left != null) dfs(root.left, paths, sb);
+            sb.setLength(0);
+            sb.append(curr);
+            if (root.right != null) dfs(root.right, paths, sb);
+        }
     }
 }

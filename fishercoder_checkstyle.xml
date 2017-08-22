@@ -162,7 +162,7 @@
             <property name="ignoreFinal" value="false"/>
             <property name="allowedAbbreviationLength" value="10"/>
         </module>
-        <!--<module name="OverloadMethodsDeclarationOrder"/>-->
+        <module name="OverloadMethodsDeclarationOrder"/>
         <!--<module name="VariableDeclarationUsageDistance">-->
             <!--<property name="allowedDistance" value="20"/>-->
         <!--</module>-->
