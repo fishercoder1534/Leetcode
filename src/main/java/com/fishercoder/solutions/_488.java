@@ -41,7 +41,7 @@ public class _488 {
     /**credit: https://discuss.leetcode.com/topic/79820/short-java-solution-beats-98
      * Two layer of recursion, pretty cool!*/
 
-    int MAXCOUNT = 6;   // the max balls you need will not exceed 6 since "The number of balls in your hand won't exceed 5"
+    int maxcount = 6;   // the max balls you need will not exceed 6 since "The number of balls in your hand won't exceed 5"
 
     public int findMinStep(String board, String hand) {
         int[] handCount = new int[26];
@@ -49,12 +49,12 @@ public class _488 {
             ++handCount[hand.charAt(i) - 'A'];
         }
         int result = dfs(board + "#", handCount);  // append a "#" to avoid special process while j==board.length, make the code shorter.
-        return result == MAXCOUNT ? -1 : result;
+        return result == maxcount ? -1 : result;
     }
     private int dfs(String s, int[] handCount) {
         s = removeConsecutive(s);
         if (s.equals("#")) return 0;
-        int result = MAXCOUNT;
+        int result = maxcount;
         int need = 0;
         for (int i = 0, j = 0 ; j < s.length(); ++j) {
             if (s.charAt(j) == s.charAt(i)) continue;

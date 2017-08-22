@@ -7,7 +7,7 @@ package com.fishercoder.solutions;
 public class _12 {
     //looked at this post: https://discuss.leetcode.com/topic/12384/simple-solution
     public String intToRoman(int num) {
-        String M[] = new String[]{"", "M", "MM", "MMM"};
+        String M[] = new String[]{"", "m", "MM", "MMM"};
         String C[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
         String X[] = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
         String I[] = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
