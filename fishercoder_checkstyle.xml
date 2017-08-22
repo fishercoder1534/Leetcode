@@ -163,9 +163,9 @@
             <property name="allowedAbbreviationLength" value="10"/>
         </module>
         <module name="OverloadMethodsDeclarationOrder"/>
-        <!--<module name="VariableDeclarationUsageDistance">-->
-            <!--<property name="allowedDistance" value="20"/>-->
-        <!--</module>-->
+        <module name="VariableDeclarationUsageDistance">
+            <property name="allowedDistance" value="20"/>
+        </module>
         <module name="MethodParamPad"/>
         <module name="OperatorWrap">
             <property name="option" value="NL"/>
