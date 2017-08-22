@@ -62,7 +62,7 @@ public class _92 {
                 revHead = revHead.next;
             }
         }
-        ListNode node_prior_to_m = newRevHead;
+        ListNode nodePriorToM = newRevHead;
 
         // iteratively
         int nCnt = m;
@@ -89,8 +89,8 @@ public class _92 {
         }
 
         // append the reversed part head to the node at position m-1
-        if (node_prior_to_m != null) {
-            node_prior_to_m.next = newRevHead;
+        if (nodePriorToM != null) {
+            nodePriorToM.next = newRevHead;
         } else {
             pre.next = newRevHead;
         }

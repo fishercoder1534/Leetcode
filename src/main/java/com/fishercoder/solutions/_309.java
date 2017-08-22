@@ -62,12 +62,12 @@ public class _309 {
          * And here we are at our final solution:
          */
         public int maxProfit(int[] prices) {
-            int sell = 0, prev_sell = 0, buy = Integer.MIN_VALUE, prev_buy;
+            int sell = 0, prevSell = 0, buy = Integer.MIN_VALUE, prevBuy;
             for (int price : prices) {
-                prev_buy = buy;
-                buy = Math.max(prev_sell - price, prev_buy);
-                prev_sell = sell;
-                sell = Math.max(prev_buy + price, prev_sell);
+                prevBuy = buy;
+                buy = Math.max(prevSell - price, prevBuy);
+                prevSell = sell;
+                sell = Math.max(prevBuy + price, prevSell);
             }
             return sell;
         }

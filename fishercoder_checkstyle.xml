@@ -122,13 +122,13 @@
             <message key="name.invalidPattern"
                      value="Parameter name ''{0}'' must match pattern ''{1}''."/>
         </module>
-        <!--<module name="LocalVariableName">-->
-        <!--<property name="tokens" value="VARIABLE_DEF"/>-->
-        <!--<property name="format" value="^[a-z][a-zA-Z0-9]*$"/>-->
-        <!--<property name="allowOneCharVarInForLoop" value="true"/>-->
-        <!--<message key="name.invalidPattern"-->
-        <!--value="Local variable name ''{0}'' must match pattern ''{1}''."/>-->
-        <!--</module>-->
+        <module name="LocalVariableName">
+            <property name="tokens" value="VARIABLE_DEF"/>
+            <property name="format" value="^[a-zA-Z][a-zA-Z0-9]*$"/>
+            <property name="allowOneCharVarInForLoop" value="true"/>
+            <message key="name.invalidPattern"
+                     value="Local variable name ''{0}'' must match pattern ''{1}''."/>
+        </module>
         <module name="ClassTypeParameterName">
             <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
             <message key="name.invalidPattern"

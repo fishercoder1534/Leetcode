@@ -43,17 +43,17 @@ public class _656 {
         Arrays.fill(next, -1);
         List<Integer> res = new ArrayList();
         for (int i = A.length - 2; i >= 0; i--) {
-            long min_cost = Integer.MAX_VALUE;
+            long minCost = Integer.MAX_VALUE;
             for (int j = i + 1; j <= i + B && j < A.length; j++) {
                 if (A[j] >= 0) {
                     long cost = A[i] + dp[j];
-                    if (cost < min_cost) {
-                        min_cost = cost;
+                    if (cost < minCost) {
+                        minCost = cost;
                         next[i] = j;
                     }
                 }
             }
-            dp[i] = min_cost;
+            dp[i] = minCost;
         }
         int i;
         for (i = 0; i < A.length && next[i] > 0; i = next[i]) {

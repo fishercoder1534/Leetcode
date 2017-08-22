@@ -40,10 +40,10 @@ public class _652Test {
         root.right.left.left = new TreeNode(4);
         root.right.right = new TreeNode(4);
 
-        TreeNode _2 = new TreeNode(2);
-        _2.left = new TreeNode(4);
-        TreeNode _4 = new TreeNode(4);
-        expected = new ArrayList<>(Arrays.asList(_4, _2));
+        TreeNode tree1 = new TreeNode(2);
+        tree1.left = new TreeNode(4);
+        TreeNode tree2 = new TreeNode(4);
+        expected = new ArrayList<>(Arrays.asList(tree2, tree1));
         assertEquals(expected, test.findDuplicateSubtrees(root));
     }
 
@@ -59,8 +59,8 @@ public class _652Test {
         root.left = new TreeNode(1);
         root.right = new TreeNode(1);
 
-        TreeNode _1 = new TreeNode(1);
-        expected = new ArrayList<>(Arrays.asList(_1));
+        TreeNode tree1 = new TreeNode(1);
+        expected = new ArrayList<>(Arrays.asList(tree1));
         assertEquals(expected, test.findDuplicateSubtrees(root));
     }
 }

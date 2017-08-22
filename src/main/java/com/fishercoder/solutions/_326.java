@@ -37,10 +37,10 @@ public class _326 {
         System.out.println(test.isPowerOfThree(12));
         
         //find the max integer that is power of 3
-        int maxPowerOf3_one_step_further = 3, maxPowerOf3 = 0;
-        while(maxPowerOf3_one_step_further >= 0){
-            maxPowerOf3_one_step_further = (int) maxPowerOf3_one_step_further*3;
-            if(maxPowerOf3_one_step_further > 0) maxPowerOf3 = maxPowerOf3_one_step_further;
+        int maxPowerOf3OneStepFurther = 3, maxPowerOf3 = 0;
+        while(maxPowerOf3OneStepFurther >= 0){
+            maxPowerOf3OneStepFurther = (int) maxPowerOf3OneStepFurther*3;
+            if(maxPowerOf3OneStepFurther > 0) maxPowerOf3 = maxPowerOf3OneStepFurther;
             System.out.println("maxPowerOf3 is: " + maxPowerOf3);
         }
     }
