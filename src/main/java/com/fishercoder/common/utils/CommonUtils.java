@@ -40,6 +40,14 @@ public class CommonUtils {
         System.out.print(num);
     }
 
+    public static void print(List<String> list) {
+        System.out.println("----------------------------------------------------");
+        for (String str : list) {
+            System.out.print(str + ", ");
+        }
+        System.out.println();
+    }
+
     public static void println(String message) {
         System.out.println(message);
     }
@@ -138,6 +146,20 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static <T> void printList(List<T> list) {
+        int count = 0;
+        for (T t : list) {
+            count++;
+            System.out.print(t);
+            if (count % 10 != 0) {
+                System.out.print("\t");
+            } else {
+                System.out.println();
+            }
+        }
+        System.out.println();
+    }
+
     public static void printMatrix(int[][] matrix) {
         System.out.println("Matrix is: ");
         for (int i = 0; i < matrix.length; i++) {
@@ -162,14 +184,6 @@ public class CommonUtils {
 
     }
 
-    public static void print(List<String> list) {
-        System.out.println("----------------------------------------------------");
-        for (String str : list) {
-            System.out.print(str + ", ");
-        }
-        System.out.println();
-    }
-
     public static <T> void printListList(List<List<T>> res) {
         for (List<T> list : res) {
             for (T i : list) {
@@ -177,20 +191,6 @@ public class CommonUtils {
             }
             System.out.println();
         }
-    }
-
-    public static <T> void printList(List<T> list) {
-        int count = 0;
-        for (T t : list) {
-            count++;
-            System.out.print(t);
-            if (count % 10 != 0) {
-                System.out.print("\t");
-            } else {
-                System.out.println();
-            }
-        }
-        System.out.println();
     }
 
     public static void printIntervals(List<Interval> intervals) {
