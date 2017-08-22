@@ -120,7 +120,9 @@ public class CommonUtils {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode previous, current, next;
+        ListNode previous;
+        ListNode current;
+        ListNode next;
         previous = head;
         current = head.next;
         while (current != null) {
