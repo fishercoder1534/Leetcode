@@ -45,7 +45,7 @@ public class _486 {
      --> nums[s]-helper(nums,s+1,e): this player select the front item, leaving the other player a choice from s+1 to e
      --> nums[e]-helper(nums,s,e-1): this player select the tail item, leaving the other player a choice from s to e-1
      Then take the max of these two options as this player's selection, return it.*/
-    public boolean PredictTheWinner(int[] nums) {
+    public boolean predictTheWinner(int[] nums) {
         return helper(nums, 0, nums.length-1, new Integer[nums.length][nums.length]) >= 0;
     }
 
