@@ -60,6 +60,8 @@ public class _241 {
                             case '*':
                                 result = a1 * a2;
                                 break;
+                            default:
+                                break;
                         }
                         answer.add(result);
                     }
