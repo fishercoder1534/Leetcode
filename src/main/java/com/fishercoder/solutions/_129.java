@@ -48,7 +48,7 @@ public class _129 {
         sb.deleteCharAt(sb.length()-1);
     }
     
-    class more_concise_version {
+    class MoreConciseVersion {
         public int sumNumbers(TreeNode root) {
             return dfs(root, 0);
         }

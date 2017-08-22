@@ -29,7 +29,7 @@ public class _287 {
         return dup;
     }
 
-    class Solution_O1 {
+    class SolutionO1 {
         public int findDuplicate(int[] nums) {
             int slow = 0;
             int fast = 0;

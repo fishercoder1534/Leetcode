@@ -9,7 +9,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _110 {
     
-    class Solution_1 {
+    class Solution1 {
         //recursively get the height of each subtree of each node, compare their difference, if greater than 1, then return false
         //although this is working, but it's not efficient, since it repeatedly computes the heights of each node every time
         //Its time complexity is O(n^2).
@@ -27,7 +27,7 @@ public class _110 {
         }
     }
     
-    class Solution_2 {
+    class Solution2 {
 
         public boolean isBalanced(TreeNode root) {
             return getH(root) != -1;

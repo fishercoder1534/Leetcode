@@ -65,7 +65,7 @@ public class _128 {
         }
     }
 
-    class Solution_using_HashSet{
+    class SolutionUsingHashSet {
     //inspired by this solution: https://discuss.leetcode.com/topic/25493/simple-fast-java-solution-using-set
         public int longestConsecutive(int[] nums) {
             if(nums == null || nums.length == 0) return 0;

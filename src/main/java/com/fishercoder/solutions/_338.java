@@ -24,7 +24,7 @@ Or does the odd/even status of the number help you in calculating the number of 
 *
 */
 public class _338 {
-    private class DP_Solution{
+    private class DPSolution {
         //lixx2100's post is cool:https://discuss.leetcode.com/topic/40162/three-line-java-solution
         //An easy recurrence for this problem is f[i] = f[i / 2] + i % 2
         //and then we'll use bit manipulation to express the above recursion function

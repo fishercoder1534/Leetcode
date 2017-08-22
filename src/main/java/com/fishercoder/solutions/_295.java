@@ -60,11 +60,11 @@ public class _295 {
 
     }
 
-    public static class MedianFinder_verbose {
+    public static class MedianFinderVerbose {
         private Queue<Long> large;
         private Queue<Long> small;
 
-        public MedianFinder_verbose() {
+        public MedianFinderVerbose() {
             large = new PriorityQueue<>();
             small = new PriorityQueue<>(Collections.reverseOrder());
         }

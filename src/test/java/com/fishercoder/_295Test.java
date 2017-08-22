@@ -10,11 +10,11 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 5/27/17.
  */
 public class _295Test {
-    private static _295.MedianFinder_verbose test;
+    private static _295.MedianFinderVerbose test;
 
     @BeforeClass
     public static void setup(){
-        test = new _295.MedianFinder_verbose();
+        test = new _295.MedianFinderVerbose();
     }
 
     @Test
