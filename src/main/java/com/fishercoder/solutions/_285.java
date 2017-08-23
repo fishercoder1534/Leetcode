@@ -22,8 +22,8 @@ public class _285 {
      */
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         TreeNode successor = null;
-        while(root != null){
-            if(p.val < root.val){
+        while (root != null) {
+            if (p.val < root.val) {
                 successor = root;
                 root = root.left;
             } else {

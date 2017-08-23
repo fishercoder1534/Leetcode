@@ -83,9 +83,9 @@ public class _269 {
         return result;
     }
 
-    public static void main(String ... args){
+    public static void main(String... args) {
         System.out.println("Hello world.");
-        String[] words = new String[]{"wrt","wrf","er","ett","rftt"};
+        String[] words = new String[]{"wrt", "wrf", "er", "ett", "rftt"};
         String order = alienOrder(words);
         System.out.print(order);
     }
