@@ -11,7 +11,8 @@ public class _115 {
      * 4. starting from (1,1)*/
 
     public int numDistinct(String s, String t) {
-        int m = s.length(), n = t.length();
+        int m = s.length();
+        int n = t.length();
         int[][] dp = new int[m + 1][n + 1];
 
         char[] schar = s.toCharArray();
