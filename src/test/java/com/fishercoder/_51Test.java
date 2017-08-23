@@ -18,18 +18,18 @@ public class _51Test {
     private static int n;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _51();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new ArrayList<>();
         actual = new ArrayList<>();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         n = 4;
         expected = new ArrayList<>();
         expected.add(Arrays.asList("..Q.", "Q...", "...Q", ".Q.."));

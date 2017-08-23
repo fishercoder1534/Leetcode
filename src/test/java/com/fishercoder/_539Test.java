@@ -18,27 +18,27 @@ public class _539Test {
     private static List<String> timePoints;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _539();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = 0;
         actual = 0;
     }
 
     @Test
-    public void test1(){
-        timePoints = new ArrayList<>(Arrays.asList("23:59","00:00"));
+    public void test1() {
+        timePoints = new ArrayList<>(Arrays.asList("23:59", "00:00"));
         expected = 1;
         actual = test.findMinDifference(timePoints);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test2(){
-        timePoints = new ArrayList<>(Arrays.asList("23:59","00:00", "01:20"));
+    public void test2() {
+        timePoints = new ArrayList<>(Arrays.asList("23:59", "00:00", "01:20"));
         expected = 1;
         actual = test.findMinDifference(timePoints);
         assertEquals(expected, actual);

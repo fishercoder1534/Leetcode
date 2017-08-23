@@ -14,19 +14,19 @@ public class _503Test {
     private static int[] actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _503();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new int[]{};
         nums = new int[]{};
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{1,2,1};
+    public void test1() {
+        nums = new int[]{1, 2, 1};
         expected = new int[]{2, -1, 2};
         actual = test.nextGreaterElements(nums);
         assertArrayEquals(expected, actual);

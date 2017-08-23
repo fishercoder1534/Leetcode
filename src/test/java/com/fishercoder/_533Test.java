@@ -14,12 +14,12 @@ public class _533Test {
     private static char[][] picture;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _533();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         picture = new char[][]{
                 {'W', 'B', 'W', 'B', 'B', 'W'},
                 {'W', 'B', 'W', 'B', 'B', 'W'},
@@ -29,7 +29,7 @@ public class _533Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         picture = new char[][]{{'B'}};
         assertEquals(1, test.findBlackPixel(picture, 1));
     }

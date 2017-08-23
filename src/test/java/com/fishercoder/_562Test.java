@@ -16,16 +16,16 @@ public class _562Test {
     private static int[][] M;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _562();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         M = new int[][]{
-                {0,1,1,0},
-                {0,1,1,0},
-                {0,0,0,1}
+                {0, 1, 1, 0},
+                {0, 1, 1, 0},
+                {0, 0, 0, 1}
         };
         expected = 3;
         actual = test.longestLine(M);

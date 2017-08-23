@@ -22,97 +22,97 @@ public class _57Test {
     private static List<Interval> actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _57();
     }
 
     @Test
-    public void test1(){
-        intervals = new ArrayList<>(Arrays.asList(new Interval(1,3), new Interval(6,9)));
-        expected = new ArrayList<>(Arrays.asList(new Interval(1,5), new Interval(6,9)));
+    public void test1() {
+        intervals = new ArrayList<>(Arrays.asList(new Interval(1, 3), new Interval(6, 9)));
+        expected = new ArrayList<>(Arrays.asList(new Interval(1, 5), new Interval(6, 9)));
         CommonUtils.printIntervals(intervals);
-        actual = test.insert(intervals, new Interval(2,5));
+        actual = test.insert(intervals, new Interval(2, 5));
         CommonUtils.printIntervals(actual);
         assertEquals(expected, actual);
     }
 
 
     @Test
-    public void test2(){
-        intervals = new ArrayList<>(Arrays.asList(new Interval(1,2), new Interval(3,5), new Interval(6,7), new Interval(8,10), new Interval(12,16)));
+    public void test2() {
+        intervals = new ArrayList<>(Arrays.asList(new Interval(1, 2), new Interval(3, 5), new Interval(6, 7), new Interval(8, 10), new Interval(12, 16)));
         CommonUtils.printIntervals(intervals);
-        expected = new ArrayList<>(Arrays.asList(new Interval(1,2), new Interval(3,10), new Interval(12,16)));
-        actual = test.insert(intervals, new Interval(4,9));
+        expected = new ArrayList<>(Arrays.asList(new Interval(1, 2), new Interval(3, 10), new Interval(12, 16)));
+        actual = test.insert(intervals, new Interval(4, 9));
         CommonUtils.printIntervals(actual);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test3(){
-        intervals = new ArrayList<>(Arrays.asList(new Interval(1,5)));
+    public void test3() {
+        intervals = new ArrayList<>(Arrays.asList(new Interval(1, 5)));
         CommonUtils.printIntervals(intervals);
-        expected = new ArrayList<>(Arrays.asList(new Interval(1,5)));
-        actual = test.insert(intervals, new Interval(2,3));
+        expected = new ArrayList<>(Arrays.asList(new Interval(1, 5)));
+        actual = test.insert(intervals, new Interval(2, 3));
         CommonUtils.printIntervals(actual);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         intervals = new ArrayList<>(Arrays.asList());
         CommonUtils.printIntervals(intervals);
-        expected = new ArrayList<>(Arrays.asList(new Interval(5,7)));
-        actual = test.insert(intervals, new Interval(5,7));
+        expected = new ArrayList<>(Arrays.asList(new Interval(5, 7)));
+        actual = test.insert(intervals, new Interval(5, 7));
         CommonUtils.printIntervals(actual);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test5(){
-        intervals = new ArrayList<>(Arrays.asList(new Interval(1,5)));
-        expected = new ArrayList<>(Arrays.asList(new Interval(1,5), new Interval(6,8)));
+    public void test5() {
+        intervals = new ArrayList<>(Arrays.asList(new Interval(1, 5)));
+        expected = new ArrayList<>(Arrays.asList(new Interval(1, 5), new Interval(6, 8)));
         CommonUtils.printIntervals(intervals);
-        actual = test.insert(intervals, new Interval(6,8));
+        actual = test.insert(intervals, new Interval(6, 8));
         CommonUtils.printIntervals(actual);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test6(){
-        intervals = new ArrayList<>(Arrays.asList(new Interval(1,5)));
-        expected = new ArrayList<>(Arrays.asList(new Interval(0,5)));
+    public void test6() {
+        intervals = new ArrayList<>(Arrays.asList(new Interval(1, 5)));
+        expected = new ArrayList<>(Arrays.asList(new Interval(0, 5)));
         CommonUtils.printIntervals(intervals);
-        actual = test.insert(intervals, new Interval(0,3));
+        actual = test.insert(intervals, new Interval(0, 3));
         CommonUtils.printIntervals(actual);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test7(){
-        intervals = new ArrayList<>(Arrays.asList(new Interval(1,5)));
-        expected = new ArrayList<>(Arrays.asList(new Interval(0,0), new Interval(1,5)));
+    public void test7() {
+        intervals = new ArrayList<>(Arrays.asList(new Interval(1, 5)));
+        expected = new ArrayList<>(Arrays.asList(new Interval(0, 0), new Interval(1, 5)));
         CommonUtils.printIntervals(intervals);
-        actual = test.insert(intervals, new Interval(0,0));
+        actual = test.insert(intervals, new Interval(0, 0));
         CommonUtils.printIntervals(actual);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test8(){
-        intervals = new ArrayList<>(Arrays.asList(new Interval(2,5), new Interval(6,7), new Interval(8,9)));
-        expected = new ArrayList<>(Arrays.asList(new Interval(0,1), new Interval(2,5), new Interval(6,7), new Interval(8,9)));
+    public void test8() {
+        intervals = new ArrayList<>(Arrays.asList(new Interval(2, 5), new Interval(6, 7), new Interval(8, 9)));
+        expected = new ArrayList<>(Arrays.asList(new Interval(0, 1), new Interval(2, 5), new Interval(6, 7), new Interval(8, 9)));
         CommonUtils.printIntervals(intervals);
-        actual = test.insert(intervals, new Interval(0,1));
+        actual = test.insert(intervals, new Interval(0, 1));
         CommonUtils.printIntervals(actual);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test9(){
-        intervals = new ArrayList<>(Arrays.asList(new Interval(2,4), new Interval(5,7), new Interval(8,10), new Interval(11,13)));
-        expected = new ArrayList<>(Arrays.asList(new Interval(2,7), new Interval(8,10), new Interval(11,13)));
+    public void test9() {
+        intervals = new ArrayList<>(Arrays.asList(new Interval(2, 4), new Interval(5, 7), new Interval(8, 10), new Interval(11, 13)));
+        expected = new ArrayList<>(Arrays.asList(new Interval(2, 7), new Interval(8, 10), new Interval(11, 13)));
         CommonUtils.printIntervals(intervals);
-        actual = test.insert(intervals, new Interval(3,6));
+        actual = test.insert(intervals, new Interval(3, 6));
         CommonUtils.printIntervals(actual);
         assertEquals(expected, actual);
     }

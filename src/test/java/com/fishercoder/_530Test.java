@@ -15,18 +15,18 @@ public class _530Test {
     private static TreeNode root;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _530();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = 0;
         actual = 0;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = new TreeNode(1);
         root.right = new TreeNode(3);
         root.right.left = new TreeNode(2);
@@ -36,7 +36,7 @@ public class _530Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         root = new TreeNode(1);
         root.right = new TreeNode(5);
         root.right.left = new TreeNode(3);
@@ -45,7 +45,7 @@ public class _530Test {
         assertEquals(expected, actual);
     }
 
-//    [543,384,652,null,445,null,699]
+    //    [543,384,652,null,445,null,699]
     @Test
     public void test3() {
         root = new TreeNode(543);

@@ -19,19 +19,19 @@ public class _501Test {
     private static TreeNode treeNode;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _501();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new int[]{};
         actual = new int[]{};
         treeNode = new TreeNode(0);
     }
 
     @Test
-    public void test1(){
+    public void test1() {
 
         treeNode = new TreeNode(1);
         treeNode.right = new TreeNode(2);

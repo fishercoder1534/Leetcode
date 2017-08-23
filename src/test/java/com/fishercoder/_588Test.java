@@ -17,11 +17,11 @@ public class _588Test {
     private static _588.FileSystem fileSystem;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         fileSystem = new _588.FileSystem();
         List<String> list = new ArrayList<>();
         assertEquals(list, fileSystem.ls("/"));
@@ -33,7 +33,7 @@ public class _588Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         fileSystem = new _588.FileSystem();
         List<String> list = new ArrayList<>();
         assertEquals(list, fileSystem.ls("/"));

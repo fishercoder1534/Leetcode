@@ -17,19 +17,19 @@ public class _504Test {
     private static int num;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _504();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = "";
         actual = "";
         num = 0;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         num = 100;
         expected = "202";
         actual = test.convertToBase7(num);
@@ -37,7 +37,7 @@ public class _504Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         num = -7;
         expected = "-10";
         actual = test.convertToBase7(num);

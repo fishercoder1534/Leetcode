@@ -18,13 +18,13 @@ public class _563Test {
     private static TreeNode root;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _563();
         actual = 0;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
@@ -35,7 +35,7 @@ public class _563Test {
 
     @Ignore
     @Test
-    public void test2(){
+    public void test2() {
         root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);

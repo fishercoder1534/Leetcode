@@ -19,22 +19,22 @@ public class _515Test {
     private static TreeNode root;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _515();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new ArrayList<>();
         actual = new ArrayList<>();
         root = new TreeNode(0);
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(3);
-        root.right= new TreeNode(2);
+        root.right = new TreeNode(2);
         expected = Arrays.asList(1, 3);
         actual = test.largestValues(root);
         assertEquals(expected, actual);
@@ -42,7 +42,7 @@ public class _515Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         expected = new ArrayList<>();
         actual = test.largestValues(null);
         assertEquals(expected, actual);

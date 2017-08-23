@@ -17,12 +17,12 @@ public class _567Test {
     private static String s2;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _567();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         s1 = "ab";
         s2 = "eidbaooo";
         expected = true;

@@ -17,12 +17,12 @@ public class _545Test {
     private static List<Integer> expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _545();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, null, 4, 5, null, 6, 7));
         TreeUtils.printBinaryTree(root);
         expected = Arrays.asList(1, 2, 4, 6, 7, 5, 3);

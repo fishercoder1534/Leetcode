@@ -17,13 +17,13 @@ public class _560Test {
     private static int k;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _560();
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{1,1,1};
+    public void test1() {
+        nums = new int[]{1, 1, 1};
         k = 2;
         expected = 2;
         actual = test.subarraySum(nums, k);

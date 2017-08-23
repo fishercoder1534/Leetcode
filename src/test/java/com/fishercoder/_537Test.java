@@ -18,15 +18,16 @@ public class _537Test {
     private static String b;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _537();
     }
 
     @Before
-    public void setupForEachTest(){}
+    public void setupForEachTest() {
+    }
 
     @Test
-    public void test1(){
+    public void test1() {
         expected = "0+2i";
         a = "1+1i";
         b = "1+1i";
@@ -35,7 +36,7 @@ public class _537Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         expected = "0+-2i";
         a = "1+-1i";
         b = "1+-1i";

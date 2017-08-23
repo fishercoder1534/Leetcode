@@ -15,17 +15,17 @@ public class _538Test {
     private static TreeNode root;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         bstSolution = new _538.BSTSolution();
         genericSolution = new _538.GenericSolution();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = new TreeNode(5);
         root.left = new TreeNode(2);
         root.right = new TreeNode(13);
@@ -37,7 +37,7 @@ public class _538Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         root = null;
         expectedRoot = null;
         assertEquals(expectedRoot, genericSolution.convertBST(root));

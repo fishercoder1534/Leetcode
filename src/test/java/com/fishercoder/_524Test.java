@@ -20,13 +20,13 @@ public class _524Test {
     private static ArrayList d;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _524();
     }
 
     @Test
-    public void test1(){
-        d = new ArrayList(Arrays.asList("ale","apple","monkey","plea"));
+    public void test1() {
+        d = new ArrayList(Arrays.asList("ale", "apple", "monkey", "plea"));
         s = "abpcplea";
         expected = "apple";
         actual = test.findLongestWord(expected, d);
@@ -34,8 +34,8 @@ public class _524Test {
     }
 
     @Test
-    public void test2(){
-        d = new ArrayList(Arrays.asList("a","b","c"));
+    public void test2() {
+        d = new ArrayList(Arrays.asList("a", "b", "c"));
         s = "abpcplea";
         expected = "a";
         actual = test.findLongestWord(expected, d);
@@ -43,8 +43,8 @@ public class _524Test {
     }
 
     @Test
-    public void test3(){
-        d = new ArrayList(Arrays.asList("apple","ewaf","awefawfwaf", "awef", "awefe", "ewafeffewafewf"));
+    public void test3() {
+        d = new ArrayList(Arrays.asList("apple", "ewaf", "awefawfwaf", "awef", "awefe", "ewafeffewafewf"));
         s = "aewfafwafjlwajflwajflwafj";
         expected = "ewaf";
         actual = test.findLongestWord(expected, d);

@@ -14,26 +14,26 @@ public class _548Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _548();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         nums = new int[1000];
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{1,2,1,2,1,2,1};
+    public void test1() {
+        nums = new int[]{1, 2, 1, 2, 1, 2, 1};
         expected = true;
         actual = test.splitArray_O_N_3(nums);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test2(){
-        nums = new int[]{1,2,1,2,1,2,1,2};
+    public void test2() {
+        nums = new int[]{1, 2, 1, 2, 1, 2, 1, 2};
         expected = false;
         actual = test.splitArray_O_N_3(nums);
         assertEquals(expected, actual);
@@ -2051,9 +2051,9 @@ public class _548Test {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         //equalSum is 3, j = 6, k = 9
-        nums = new int[]{1,2,1,3,0,0,2,2,1,3,3};
+        nums = new int[]{1, 2, 1, 3, 0, 0, 2, 2, 1, 3, 3};
         expected = true;
         actual = test.splitArray_O_N_2(nums);
         assertEquals(expected, actual);

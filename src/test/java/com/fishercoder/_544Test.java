@@ -14,15 +14,16 @@ public class _544Test {
     private static String actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _544();
     }
 
     @Before
-    public void setupForEachTest(){}
+    public void setupForEachTest() {
+    }
 
     @Test
-    public void test1(){
+    public void test1() {
         n = 2;
         expected = "(1,2)";
         actual = test.findContestMatch(n);
@@ -30,7 +31,7 @@ public class _544Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         n = 4;
         expected = "((1,4),(2,3))";
         actual = test.findContestMatch(n);
@@ -38,7 +39,7 @@ public class _544Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         n = 8;
         expected = "(((1,8),(4,5)),((2,7),(3,6)))";
         actual = test.findContestMatch(n);
