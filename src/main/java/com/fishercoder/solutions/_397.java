@@ -35,18 +35,18 @@ import java.util.Set;
  or
  7 -> 6 -> 3 -> 2 -> 1*/
 public class _397 {
-    
+
     public static int integerReplacement(int n) {
         long min = Long.MAX_VALUE;
         Set<long[]> set = new HashSet();
         Queue<long[]> q = new LinkedList();
         long[] pair = new long[]{n, 0};
         q.offer(pair);
-        while(!q.isEmpty()){
+        while (!q.isEmpty()) {
             int size = q.size();
-            for(int i = 0; i < size; i++){
+            for (int i = 0; i < size; i++) {
                 long[] curr = q.poll();
-                if(curr[0] == 1) set.add(curr);
+                if (curr[0] == 1) set.add(curr);
                 else {
 
                     if (curr[0] % 2 == 0) {
@@ -67,15 +67,15 @@ public class _397 {
                 }
             }
         }
-        
+
         Iterator<long[]> it = set.iterator();
-        while(it.hasNext()){
+        while (it.hasNext()) {
             min = Math.min(min, it.next()[1]);
         }
         return (int) min;
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         System.out.println(integerReplacement(2147483647));
         System.out.println(integerReplacement(65535));//should be 17
         System.out.println(integerReplacement(1234));//should be 14

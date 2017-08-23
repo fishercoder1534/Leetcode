@@ -21,29 +21,31 @@ public class _374 {
 
     public int guessNumber(int n) {
         int left = 1, right = n;
-        while(left+1 < right){
-            int mid = left + (right-left)/2;
+        while (left + 1 < right) {
+            int mid = left + (right - left) / 2;
             int g = guess(mid);
-            if(g == 0) return mid;
-            else if(g > 0) left = mid;
+            if (g == 0) return mid;
+            else if (g > 0) left = mid;
             else right = mid;
         }
-        if(guess(left) == 0) return left;
+        if (guess(left) == 0) return left;
         return right;
     }
 
-    /**This is a fake guess method that I wrote just to compile/test, I'll have to change it to another number other than 6 based on the number to be found.*/
+    /**
+     * This is a fake guess method that I wrote just to compile/test, I'll have to change it to another number other than 6 based on the number to be found.
+     */
     private int guess(int num) {
-        if(num > 6){
+        if (num > 6) {
             return -1;
-        } else if(num < 6){
+        } else if (num < 6) {
             return 1;
         } else {
             return 0;
         }
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         _374 test = new _374();
         System.out.println(test.guessNumber(10));
     }

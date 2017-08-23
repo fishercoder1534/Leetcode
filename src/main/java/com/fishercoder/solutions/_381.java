@@ -35,21 +35,25 @@ collection.remove(1);
 // getRandom should return 1 and 2 both equally likely.
 collection.getRandom();*/
 public class _381 {
-    
+
     Map<Integer, Integer> forwardMap;//key is the to-be-inserted number, value is its auto-incremented index
     Map<Integer, Integer> reverseMap;//the other way around
     int index;
     Random rand;
-    
-    /** Initialize your data structure here. */
+
+    /**
+     * Initialize your data structure here.
+     */
     public _381() {
         forwardMap = new HashMap();
         reverseMap = new HashMap();
         index = 0;
         rand = new Random();
     }
-    
-    /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
+
+    /**
+     * Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
+     */
     public boolean insert(int val) {
         boolean contains;
         if (reverseMap.containsValue(val)) {
@@ -62,13 +66,15 @@ public class _381 {
         index++;
         return contains;
     }
-    
-    /** Removes a value from the collection. Returns true if the collection contained the specified element. */
+
+    /**
+     * Removes a value from the collection. Returns true if the collection contained the specified element.
+     */
     public boolean remove(int val) {
         boolean contains;
         if (reverseMap.containsValue(val)) {
             contains = true;
-            if(forwardMap.containsKey(val)) {
+            if (forwardMap.containsKey(val)) {
                 int i = forwardMap.get(val);
                 forwardMap.remove(val);
                 reverseMap.remove(i);
@@ -81,17 +87,19 @@ public class _381 {
         }
         return contains;
     }
-    
-    /** Get a random element from the collection. */
+
+    /**
+     * Get a random element from the collection.
+     */
     public int getRandom() {
         int randNum = rand.nextInt(index);
-        while(!reverseMap.containsKey(randNum)){
+        while (!reverseMap.containsKey(randNum)) {
             randNum = rand.nextInt(index);
         }
         return reverseMap.get(randNum);
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         _381 test = new _381();
         System.out.println(test.insert(1));
         System.out.println(test.insert(1));

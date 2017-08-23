@@ -34,19 +34,19 @@ public class _377 {
     /**since this question doesn't require to return all the combination result, instead, it just wants one number, we could use DP
     the idea is similar to Climbing Stairs.
     adopted this solution: https://discuss.leetcode.com/topic/52186/my-3ms-java-dp-solution*/
-    public int combinationSum4(int[] nums, int target){
+    public int combinationSum4(int[] nums, int target) {
         Arrays.sort(nums);
-        int[] result = new int[target+1];
-        for(int i = 1; i < result.length; i++){
-            for(int n : nums){
-                if(n > target) break;
-                else if(n == target) result[i] ++;
-                else result[i] += result[i-n];
+        int[] result = new int[target + 1];
+        for (int i = 1; i < result.length; i++) {
+            for (int n : nums) {
+                if (n > target) break;
+                else if (n == target) result[i]++;
+                else result[i] += result[i - n];
             }
         }
         return result[target];
     }
-    
+
     //this normal backtracking recursive solution will end up in TLE.
     public List<List<Integer>> combinationSum4_printout(int[] nums, int target) {
         List<List<Integer>> result = new ArrayList();
@@ -56,22 +56,22 @@ public class _377 {
     }
 
     private void backtracking(int start, int[] nums, int target, ArrayList temp,
-            List<List<Integer>> result) {
-        if(target == 0){
+                              List<List<Integer>> result) {
+        if (target == 0) {
             List<Integer> newTemp = new ArrayList(temp);
             result.add(newTemp);
-        } else if(target > 0){
-            for(int i = start; i < nums.length; i++){
+        } else if (target > 0) {
+            for (int i = start; i < nums.length; i++) {
                 temp.add(nums[i]);
-                backtracking(i, nums, target-nums[i], temp, result);
-                temp.remove(temp.size()-1);
+                backtracking(i, nums, target - nums[i], temp, result);
+                temp.remove(temp.size() - 1);
             }
         }
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         _377 test = new _377();
-        int[] nums = new int[]{1,2,3};
+        int[] nums = new int[]{1, 2, 3};
         int target = 4;
         CommonUtils.printListList(test.combinationSum4_printout(nums, target));
     }

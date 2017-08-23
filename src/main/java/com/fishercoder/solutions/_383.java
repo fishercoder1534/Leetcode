@@ -18,19 +18,19 @@ public class _383 {
     public boolean canConstruct_20160924(String ransomNote, String magazine) {
         char[] mchars = magazine.toCharArray();
         int[] mcnt = new int[256];
-        for(int i = 0; i < mchars.length; i++){
+        for (int i = 0; i < mchars.length; i++) {
             mcnt[mchars[i] - 'a']++;
         }
-        
+
         char[] rchars = ransomNote.toCharArray();
-        for(int i = 0; i < rchars.length; i++){
-            if(mcnt[rchars[i] - 'a'] <= 0) return false;
+        for (int i = 0; i < rchars.length; i++) {
+            if (mcnt[rchars[i] - 'a'] <= 0) return false;
             mcnt[rchars[i] - 'a']--;
         }
         return true;
     }
 
-    
+
     public boolean canConstruct(String ransomNote, String magazine) {
         Map<Character, Integer> ransomMap = new HashMap();
         Set<Character> ransomSet = new HashSet();
@@ -38,26 +38,26 @@ public class _383 {
         Set<Character> magazineSet = new HashSet();
         char[] ransom = ransomNote.toCharArray();
         char[] maga = magazine.toCharArray();
-        for(int i = 0; i < ransom.length; i++){
+        for (int i = 0; i < ransom.length; i++) {
             ransomSet.add(ransom[i]);
-            ransomMap.put(ransom[i], ransomMap.getOrDefault(ransom[i], 0)+1);
+            ransomMap.put(ransom[i], ransomMap.getOrDefault(ransom[i], 0) + 1);
         }
-        for(int i = 0; i < maga.length; i++){
+        for (int i = 0; i < maga.length; i++) {
             magazineSet.add(maga[i]);
-            magazineMap.put(maga[i], magazineMap.getOrDefault(maga[i], 0)+1);
+            magazineMap.put(maga[i], magazineMap.getOrDefault(maga[i], 0) + 1);
         }
-        
-        for(char c : ransomSet){
-            if(!magazineSet.contains(c)) return false;
+
+        for (char c : ransomSet) {
+            if (!magazineSet.contains(c)) return false;
         }
-        for(char c : ransomMap.keySet()){
-            if(!magazineMap.containsKey(c)) return false;
-            if(magazineMap.get(c) < ransomMap.get(c)) return false;
+        for (char c : ransomMap.keySet()) {
+            if (!magazineMap.containsKey(c)) return false;
+            if (magazineMap.get(c) < ransomMap.get(c)) return false;
         }
         return true;
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         _383 test = new _383();
         String ransomNote = "aa";
         String magazine = "aab";
