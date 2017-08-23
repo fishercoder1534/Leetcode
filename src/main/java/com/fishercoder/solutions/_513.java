@@ -39,11 +39,11 @@ public class _513 {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         TreeNode leftMost = root;
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int size = queue.size();
-            for (int i = 0; i < size; i++){
+            for (int i = 0; i < size; i++) {
                 TreeNode curr = queue.poll();
-                if (i == 0){
+                if (i == 0) {
                     leftMost = curr;
                 }
                 if (curr.left != null) queue.offer(curr.left);
