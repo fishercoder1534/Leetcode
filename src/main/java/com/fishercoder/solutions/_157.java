@@ -18,10 +18,10 @@ package com.fishercoder.solutions;
  */
 public class _157 {
     public int read(char[] buf, int n) {
-        int index = 0, next= 0;
+        int index = 0, next = 0;
         char[] buffer = new char[4];
-        while(index < n && (next = read4(buffer)) != 0){
-            for(int i = 0; i < next && index < n; index++, i++){
+        while (index < n && (next = read4(buffer)) != 0) {
+            for (int i = 0; i < next && index < n; index++, i++) {
                 buf[index] = buffer[i];
             }
         }

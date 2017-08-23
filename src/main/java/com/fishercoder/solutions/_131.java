@@ -20,30 +20,31 @@ public class _131 {
         List<List<String>> result = new ArrayList();
         int n = s.length();
         boolean[][] dp = new boolean[n][n];
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j <= i; j++){
-                if(s.charAt(j) == s.charAt(i) && (j+1 >= i-1 || dp[j+1][i-1])){// j+1 >= i-1 means j and i are adjance to each other or only one char apart from each other
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                if (s.charAt(j) == s.charAt(i) && (j + 1 >= i - 1 || dp[j + 1][i - 1])) {
+                    // j+1 >= i-1 means j and i are adjance to each other or only one char apart from each other
                     //dp[j+1][i-1] means its inner substring is a palindrome, so as long as s.charAt(j) == s.charAt(i), then dp[j][i] must be a palindrome.
                     dp[j][i] = true;
                 }
             }
         }
-        
-        for(boolean[] list : dp){
-            for(boolean b : list){
+
+        for (boolean[] list : dp) {
+            for (boolean b : list) {
                 System.out.print(b + ", ");
             }
             System.out.println();
         }
         System.out.println();
-        
+
         backtracking(s, 0, dp, new ArrayList(), result);
-        
+
         return result;
     }
-    
+
     void backtracking(String s, int start, boolean[][] dp, List<String> temp,
-            List<List<String>> result) {
+                      List<List<String>> result) {
         if (start == s.length()) {
             List<String> newTemp = new ArrayList(temp);
             result.add(newTemp);
@@ -57,13 +58,13 @@ public class _131 {
         }
     }
 
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         _131 test = new _131();
         String s = "aab";
         List<List<String>> result = test.partition(s);
-        for(List<String> list : result){
-            for(String str : list){
+        for (List<String> list : result) {
+            for (String str : list) {
                 System.out.print(str + ", ");
             }
             System.out.println();

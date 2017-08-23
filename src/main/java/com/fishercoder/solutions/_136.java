@@ -18,20 +18,20 @@ public class _136 {
     //HashTable approach works similarly like this one, but it could be more easily extend to follow-up questions.
     public int singleNumber_using_set(int[] nums) {
         Set<Integer> set = new HashSet();
-        for(int i : nums){
-            if(!set.add(i)) set.remove(i);
+        for (int i : nums) {
+            if (!set.add(i)) set.remove(i);
         }
         Iterator<Integer> it = set.iterator();
         return it.next();
     }
-    
+
 
     //approach 2: bit manipulation, use exclusive or ^ to solve this problem:
     //we're using the trick here: every number ^ itself will become zero, so, the only remaining element will be the one that
     //appeared only once.
     public int singleNumber_using_bit(int[] nums) {
         int res = 0;
-        for(int i : nums){
+        for (int i : nums) {
             res ^= i;
         }
         return res;
