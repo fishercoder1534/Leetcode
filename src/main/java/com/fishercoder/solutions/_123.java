@@ -13,8 +13,10 @@ public class _123 {
     //this is a very clear solution and very highly upvoted in Discuss, but not extensibel to K solution.
     public int maxProfit(int[] prices) {
         if (prices.length < 2) return 0;
-        int buy1 = Integer.MIN_VALUE, buy2 = Integer.MIN_VALUE;//we use negative numbers to denote buy1 and buy2, thus use Integer.MIN_VALUE here is more convenient.
-        int sell1 = 0, sell2 = 0;
+        int buy1 = Integer.MIN_VALUE;
+        int buy2 = Integer.MIN_VALUE;//we use negative numbers to denote buy1 and buy2, thus use Integer.MIN_VALUE here is more convenient.
+        int sell1 = 0;
+        int sell2 = 0;
         for (int i = 0; i < prices.length; i++) {
             buy1 = Math.max(buy1, -prices[i]);
             sell1 = Math.max(sell1, buy1 + prices[i]);

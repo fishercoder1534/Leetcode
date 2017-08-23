@@ -10,7 +10,8 @@ public class _11 {
     public int maxArea(int[] height) {
         int max = Integer.MIN_VALUE;
         int len = height.length;
-        int i = 0, j = len - 1;
+        int i = 0;
+        int j = len - 1;
         while (i < j) {
             if (Math.min(height[i], height[j]) * (j - i) > max) {
                 max = Math.min(height[i], height[j]) * (j - i);
