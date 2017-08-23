@@ -13,37 +13,37 @@ public class _651Test {
     private static _651 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _651();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals(3, test.maxA(3));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         assertEquals(324, test.maxA(20));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         assertEquals(256, test.maxA(19));
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         assertEquals(1, test.maxA(1));
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         assertEquals(1327104, test.maxA(50));
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         assertEquals(9, test.maxA(7));
     }
 }

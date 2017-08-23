@@ -15,12 +15,12 @@ public class _98Test {
     private static TreeNode root;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         solution1 = new _98.Solution1();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = new TreeNode(2);
         root.left = new TreeNode(1);
         root.right = new TreeNode(3);
@@ -28,13 +28,13 @@ public class _98Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         root = new TreeNode(0);
         assertEquals(true, solution1.isValidBST(root));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         root = new TreeNode(1);
         root.left = new TreeNode(1);
         assertEquals(false, solution1.isValidBST(root));

@@ -16,14 +16,14 @@ public class _160Test {
     private static ListNode expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         solution1 = new _160.Solution1();
         solution2 = new _160.Solution2();
         solution3 = new _160.Solution3();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         headA = new ListNode(3);
         headB = new ListNode(2);
         headB.next = new ListNode(3);

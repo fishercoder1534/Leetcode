@@ -17,34 +17,34 @@ public class _593Test {
     private static int[] p4;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _593();
     }
 
     @Test
-    public void test1(){
-        p1 = new int[]{0,0};
-        p2 = new int[]{1,1};
-        p3 = new int[]{1,0};
-        p4 = new int[]{0,1};
+    public void test1() {
+        p1 = new int[]{0, 0};
+        p2 = new int[]{1, 1};
+        p3 = new int[]{1, 0};
+        p4 = new int[]{0, 1};
         assertEquals(true, test.validSquare(p1, p2, p3, p4));
     }
 
     @Test
-    public void test2(){
-        p1 = new int[]{1,1};
-        p2 = new int[]{5,3};
-        p3 = new int[]{3,5};
-        p4 = new int[]{7,7};
+    public void test2() {
+        p1 = new int[]{1, 1};
+        p2 = new int[]{5, 3};
+        p3 = new int[]{3, 5};
+        p4 = new int[]{7, 7};
         assertEquals(false, test.validSquare(p1, p2, p3, p4));
     }
 
     @Test
-    public void test3(){
-        p1 = new int[]{0,0};
-        p2 = new int[]{0,0};
-        p3 = new int[]{0,0};
-        p4 = new int[]{0,0};
+    public void test3() {
+        p1 = new int[]{0, 0};
+        p2 = new int[]{0, 0};
+        p3 = new int[]{0, 0};
+        p4 = new int[]{0, 0};
         System.out.println(test.noDuplicate(p1, p2, p3, p4));
         assertEquals(false, test.validSquare(p1, p2, p3, p4));
     }

@@ -17,18 +17,18 @@ public class _93Test {
     private static String s;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _93();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new ArrayList<>();
         actual = new ArrayList<>();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         s = "25525511135";
         expected.add("255.255.11.135");
         expected.add("255.255.111.35");

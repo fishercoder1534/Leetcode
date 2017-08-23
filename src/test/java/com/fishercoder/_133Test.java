@@ -17,18 +17,18 @@ public class _133Test {
     private static UndirectedGraphNode actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _133();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = null;
         actual = null;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         UndirectedGraphNode node0 = new UndirectedGraphNode(0);
         UndirectedGraphNode node1 = new UndirectedGraphNode(1);
         UndirectedGraphNode node2 = new UndirectedGraphNode(2);

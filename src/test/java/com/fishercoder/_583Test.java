@@ -15,19 +15,19 @@ public class _583Test {
     private static String word2;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _583();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         word1 = "sea";
         word2 = "eat";
         assertEquals(2, test.minDistance(word1, word2));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         word1 = "sea";
         word2 = "ate";
         assertEquals(4, test.minDistance(word1, word2));

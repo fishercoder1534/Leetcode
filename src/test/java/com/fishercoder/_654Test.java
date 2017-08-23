@@ -13,13 +13,13 @@ public class _654Test {
     private static _654.VerboseButCompletelyOriginalSolution verboseButCompletelyOriginalSolution;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         verboseButCompletelyOriginalSolution = new _654.VerboseButCompletelyOriginalSolution();
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{3,2,1,6,0,5};
+    public void test1() {
+        nums = new int[]{3, 2, 1, 6, 0, 5};
         expected = new TreeNode(6);
         expected.left = new TreeNode(3);
         expected.left.right = new TreeNode(2);

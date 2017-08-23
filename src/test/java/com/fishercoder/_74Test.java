@@ -15,16 +15,16 @@ public class _74Test {
     private static int[][] matrix;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _74();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         target = 3;
         matrix = new int[][]{
                 {1, 3, 5, 7},

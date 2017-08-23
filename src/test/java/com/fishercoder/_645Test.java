@@ -14,13 +14,13 @@ public class _645Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _645();
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{1,2,2,4};
-        assertArrayEquals(new int[]{2,3}, test.findErrorNums(nums));
+    public void test1() {
+        nums = new int[]{1, 2, 2, 4};
+        assertArrayEquals(new int[]{2, 3}, test.findErrorNums(nums));
     }
 }

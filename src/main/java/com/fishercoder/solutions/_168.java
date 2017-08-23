@@ -17,16 +17,16 @@ public class _168 {
     public String convertToTitle_accepted_more_beautiful(int n) {
         /**Get the right most digit first, move to the left, e.g. when n = 28, we get 'B' first, then we get 'A'.*/
         StringBuilder sb = new StringBuilder();
-        while(n != 0){
-            int temp = (n-1)%26;
-            sb.append((char)(temp+65));
-            n = (n-1)/26;
+        while (n != 0) {
+            int temp = (n - 1) % 26;
+            sb.append((char) (temp + 65));
+            n = (n - 1) / 26;
         }
         return sb.reverse().toString();
-    
+
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         _168 test = new _168();
 //        int n = 28899;
 //        int n = 1;
@@ -51,13 +51,13 @@ public class _168 {
         /**'Z' is the corner case, so we'll have to special case handling specially, also, we'll have to do (n-1)/26,
          * only when this is not equal to 1, we'll continue.*/
         StringBuilder sb = new StringBuilder();
-        while(n != 0){
-            int temp = n%26;
-            if(temp == 0) sb.append("Z");
-            else sb.append((char)(temp+64));
-            n = (n-1)/26;
+        while (n != 0) {
+            int temp = n % 26;
+            if (temp == 0) sb.append("Z");
+            else sb.append((char) (temp + 64));
+            n = (n - 1) / 26;
         }
         return sb.reverse().toString();
     }
-    
+
 }

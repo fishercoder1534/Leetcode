@@ -12,14 +12,14 @@ public class _167Test {
     private static int[] expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _167();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         numbers = new int[]{-3, 3, 4, 90};
-        expected = new int[]{1,2};
+        expected = new int[]{1, 2};
         assertArrayEquals(expected, test.twoSum(numbers, 0));
     }
 }

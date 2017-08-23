@@ -20,12 +20,12 @@ public class _187Test {
     private static List<String> actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _187();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         s = "AAAAAAAAAAA";
         System.out.println(s.length());
         actual = test.findRepeatedDnaSequences(s);

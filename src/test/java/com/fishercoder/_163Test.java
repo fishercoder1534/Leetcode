@@ -23,20 +23,20 @@ public class _163Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _163();
         expected = new ArrayList();
         actual = new ArrayList();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected.clear();
         actual.clear();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
 
         //test case 1: should return ["0->2147483646"]
         lower = 0;
@@ -49,11 +49,11 @@ public class _163Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         //test case 2: should return ["-2147483647->-1","1->2147483646"]
         lower = -2147483648;
         upper = 2147483647;
-        nums = new int[]{-2147483648,-2147483648,0,2147483647,2147483647};
+        nums = new int[]{-2147483648, -2147483648, 0, 2147483647, 2147483647};
         expected.add("-2147483647->-1");
         expected.add("1->2147483646");
         actual = test.findMissingRanges(nums, lower, upper);
@@ -61,7 +61,7 @@ public class _163Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         //test case 3: should return ["-2147483648->2147483647"]
         lower = -2147483648;
         upper = 2147483647;
@@ -72,7 +72,7 @@ public class _163Test {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         //test case 4: should return ["-2147483648->2147483646"]
         lower = -2147483648;
         upper = 2147483647;
@@ -83,7 +83,7 @@ public class _163Test {
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         //test case 5: should return ["0->2147483647"]
         lower = 0;
         upper = 2147483647;
@@ -94,7 +94,7 @@ public class _163Test {
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         //test case 6: should return ["-2147483647->2147483647"]
         lower = -2147483648;
         upper = 2147483647;

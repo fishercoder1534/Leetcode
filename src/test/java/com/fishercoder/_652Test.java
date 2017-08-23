@@ -21,17 +21,17 @@ public class _652Test {
     private static TreeNode root;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _652();
     }
 
     @Before
-    public void setUp(){
+    public void setUp() {
         root = null;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.left.left = new TreeNode(4);
@@ -48,13 +48,13 @@ public class _652Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         expected = new ArrayList<>();
         assertEquals(expected, test.findDuplicateSubtrees(root));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         root = new TreeNode(2);
         root.left = new TreeNode(1);
         root.right = new TreeNode(1);

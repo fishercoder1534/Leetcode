@@ -32,7 +32,6 @@ public class _164 {
     }
 
 
-
     //http://www.programcreek.com/2014/03/leetcode-maximum-gap-java/
     class Bucket {
         int min = -1;
@@ -61,7 +60,7 @@ public class _164 {
             buckets[i] = new Bucket();
         }
 
-        double interval = (double) nums.length/(maxNum - minNum);
+        double interval = (double) nums.length / (maxNum - minNum);
         //distribute the array to different buckets
         for (int i = 0; i < nums.length; i++) {
             int index = (int) ((nums[i] - minNum) * interval);
@@ -104,10 +103,10 @@ public class _164 {
             buckets[i] = new Bucket();
         }
 
-        double gap = (double) (maxNum - minNum)/(nums.length-1);
+        double gap = (double) (maxNum - minNum) / (nums.length - 1);
         //distribute the array to different buckets
         for (int i = 0; i < nums.length; i++) {
-            int index = (int) ((nums[i] - minNum)/gap);
+            int index = (int) ((nums[i] - minNum) / gap);
             if (buckets[index].min == -1) {
                 buckets[index].min = nums[i];
                 buckets[index].max = nums[i];

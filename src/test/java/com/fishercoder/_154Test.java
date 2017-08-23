@@ -14,13 +14,13 @@ public class _154Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _154();
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{1,1,1};
+    public void test1() {
+        nums = new int[]{1, 1, 1};
         assertEquals(1, test.findMin(nums));
     }
 }

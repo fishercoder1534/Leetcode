@@ -20,25 +20,25 @@ public class _582Test {
     private static Integer kill;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _582();
     }
 
     @Test
-    public void test1(){
-        pid = Arrays.asList(1,3,10,5);
-        ppid = Arrays.asList(3,0,5,3);
+    public void test1() {
+        pid = Arrays.asList(1, 3, 10, 5);
+        ppid = Arrays.asList(3, 0, 5, 3);
         kill = 5;
-        expected = Arrays.asList(5,10);
+        expected = Arrays.asList(5, 10);
         assertEquals(expected, test.killProcess(pid, ppid, kill));
     }
 
     @Test
-    public void test2(){
-        pid = Arrays.asList(1,3,10,5);
-        ppid = Arrays.asList(3,0,5,3);
+    public void test2() {
+        pid = Arrays.asList(1, 3, 10, 5);
+        ppid = Arrays.asList(3, 0, 5, 3);
         kill = 3;
-        expected = Arrays.asList(3,1,5,10);
+        expected = Arrays.asList(3, 1, 5, 10);
         assertEquals(expected, test.killProcess(pid, ppid, kill));
     }
 }

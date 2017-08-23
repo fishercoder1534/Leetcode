@@ -17,19 +17,19 @@ public class _69Test {
     private static int input;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _69();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = 0;
         actual = 0;
         input = 0;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         expected = 4;
         input = 16;
         actual = test.mySqrt(input);

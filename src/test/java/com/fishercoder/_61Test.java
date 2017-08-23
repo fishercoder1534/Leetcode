@@ -18,12 +18,12 @@ public class _61Test {
     private static int k;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _61();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         k = 2;
         expected = new ListNode(4);
         expected.next = new ListNode(5);

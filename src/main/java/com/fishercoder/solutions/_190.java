@@ -22,18 +22,19 @@ public class _190 {
  // you need treat n as an unsigned value
     public int reverseBits(int n) {
         int res = 0;
-        for(int i = 0; i < 32; i++){
-            res += n&1;//get the most right bit each time
+        for (int i = 0; i < 32; i++) {
+            res += n & 1;//get the most right bit each time
             n = n >>> 1;//do UN-signed right shift by 1 each time
-            if(i < 31) res = res << 1;//shift this number to the left by 1 each time, so that eventually, this number is reversed
+            if (i < 31)
+                res = res << 1;//shift this number to the left by 1 each time, so that eventually, this number is reversed
         }
         return res;
     }
-    
+
     //follow-up: if this function is called many times, how to improve it?
     //Divide the integer into 4 bytes, reverse each byte and then combine them into one in the end, use cache to store the reversed results for reuse if possible.
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         System.out.println(Integer.toBinaryString(4));
         _190 test = new _190();
         int n = 1;
@@ -44,7 +45,7 @@ public class _190 {
 //        System.out.println(Integer.toBinaryString(-2 >>> 1));
 //        System.out.println(Integer.toBinaryString(-2));
         System.out.println(Integer.toBinaryString(-1));
-        
+
         System.out.println(Integer.toBinaryString(6));
     }
 }

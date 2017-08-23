@@ -14,13 +14,13 @@ public class _594Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _594();
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{1,3,2,2,5,2,3,7};
+    public void test1() {
+        nums = new int[]{1, 3, 2, 2, 5, 2, 3, 7};
         assertEquals(5, test.findLHS(nums));
     }
 }

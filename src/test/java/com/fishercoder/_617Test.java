@@ -15,12 +15,12 @@ public class _617Test {
     private static TreeNode actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _617();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         t1 = new TreeNode(1);
         t1.left = new TreeNode(3);
         t1.right = new TreeNode(2);

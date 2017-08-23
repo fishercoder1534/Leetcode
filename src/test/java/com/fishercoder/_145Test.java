@@ -17,12 +17,12 @@ public class _145Test {
     private static List<Integer> expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _145();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);

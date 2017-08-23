@@ -18,34 +18,34 @@ public class _658Test {
     private static int x;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _658();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         k = 4;
         x = 3;
-        expected = new ArrayList<>(Arrays.asList(1,2,3,4));
-        arr = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        expected = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+        arr = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
         assertEquals(expected, test.findClosestElements(arr, k, x));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         k = 4;
         x = -1;
-        expected = new ArrayList<>(Arrays.asList(1,2,3,4));
-        arr = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        expected = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+        arr = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
         assertEquals(expected, test.findClosestElements(arr, k, x));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         k = 3;
         x = 5;
-        arr = new ArrayList<>(Arrays.asList(0,0,1,2,3,3,4,7,7,8));
-        expected = new ArrayList<>(Arrays.asList(3,3,4));
+        arr = new ArrayList<>(Arrays.asList(0, 0, 1, 2, 3, 3, 4, 7, 7, 8));
+        expected = new ArrayList<>(Arrays.asList(3, 3, 4));
         assertEquals(expected, test.findClosestElements(arr, k, x));
     }
 }
