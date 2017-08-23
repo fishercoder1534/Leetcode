@@ -13,12 +13,12 @@ public class _479Test {
     private static _479 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _479();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals(123, test.largestPalindrome(3));
     }
 }

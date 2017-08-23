@@ -16,18 +16,18 @@ public class _458Test {
     private static int minutesToTest;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _458();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = 0;
         actual = 0;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         buckets = 1000;
         minutesToDie = 15;
         minutesToTest = 60;
@@ -37,7 +37,7 @@ public class _458Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         buckets = 1;
         minutesToDie = 1;
         minutesToTest = 1;
@@ -47,7 +47,7 @@ public class _458Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         buckets = 1000;
         minutesToDie = 12;
         minutesToTest = 60;

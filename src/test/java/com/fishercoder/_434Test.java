@@ -14,18 +14,18 @@ public class _434Test {
     private static String s;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _434();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = 0;
         actual = 0;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         s = "Hello, my name is John";
         expected = 5;
         actual = test.countSegments(s);
@@ -33,7 +33,7 @@ public class _434Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         s = ", , , ,        a, eaefa";
         expected = 6;
         actual = test.countSegments(s);

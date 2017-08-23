@@ -15,13 +15,13 @@ public class _491Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _491();
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{4,6,7,7};
+    public void test1() {
+        nums = new int[]{4, 6, 7, 7};
         List<List<Integer>> actual = test.findSubsequences(nums);
         CommonUtils.printListList(actual);
     }

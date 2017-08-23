@@ -15,18 +15,18 @@ public class _482Test {
     private static int k;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _482();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = "";
         actual = "";
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         S = "2-4A0r7-4k";
         k = 4;
         expected = "24A0-R74K";
@@ -35,7 +35,7 @@ public class _482Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         S = "2-4A0r7-4k";
         k = 3;
         expected = "24-A0R-74K";
@@ -44,7 +44,7 @@ public class _482Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         S = "--a-a-a-a--";
         k = 2;
         expected = "AA-AA";
@@ -53,7 +53,7 @@ public class _482Test {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         S = "---";
         k = 3;
         expected = "";

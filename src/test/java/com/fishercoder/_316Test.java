@@ -13,17 +13,17 @@ public class _316Test {
     private static _316 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _316();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals("abc", test.removeDuplicateLetters("bcabc"));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         assertEquals("acdb", test.removeDuplicateLetters("cbacdcbc"));
     }
 }

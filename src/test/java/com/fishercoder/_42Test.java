@@ -14,13 +14,13 @@ public class _42Test {
     private static int[] height;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         solution1 = new _42.Solution1();
     }
 
     @Test
-    public void test1(){
-        height = new int[]{0,1,0,2,1,0,1,3,2,1,2,1};
+    public void test1() {
+        height = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
         assertEquals(6, solution1.trap(height));
     }
 

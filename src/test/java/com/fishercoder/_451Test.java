@@ -17,18 +17,18 @@ public class _451Test {
     private static String input;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _451();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = "";
         actual = "";
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         input = "tree";
         expected = "eert";
         actual = test.frequencySort(input);
@@ -36,7 +36,7 @@ public class _451Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         input = "cccaaa";
         expected = "aaaccc";
         actual = test.frequencySort(input);
@@ -44,7 +44,7 @@ public class _451Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         input = "Aabb";
         expected = "bbAa";
         actual = test.frequencySort(input);

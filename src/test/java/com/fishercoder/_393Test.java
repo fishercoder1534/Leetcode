@@ -17,13 +17,13 @@ public class _393Test {
     private static int[] data;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _393();
     }
 
     @Test
     @Ignore
-    public void test1(){
+    public void test1() {
         data = new int[]{197, 130, 1};
         expected = true;
         actual = test.validUtf8(data);
@@ -31,7 +31,7 @@ public class _393Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         data = new int[]{5};
         expected = true;
         actual = test.validUtf8(data);

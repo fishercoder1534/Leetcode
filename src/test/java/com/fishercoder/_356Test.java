@@ -14,24 +14,24 @@ public class _356Test {
     private static int[][] points;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _356();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         points = new int[][]{
-                {1,1},
-                {-1,1},
+                {1, 1},
+                {-1, 1},
         };
         assertEquals(true, test.isReflected(points));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         points = new int[][]{
-                {1,1},
-                {-1,-1},
+                {1, 1},
+                {-1, -1},
         };
         assertEquals(false, test.isReflected(points));
     }

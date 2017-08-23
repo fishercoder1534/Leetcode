@@ -13,12 +13,12 @@ public class _295Test {
     private static _295.MedianFinderVerbose test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _295.MedianFinderVerbose();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         test.addNum(1);
         test.addNum(3);
         test.addNum(-1);

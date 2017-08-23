@@ -14,13 +14,13 @@ public class _473Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _473();
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{1,1,2,2,2};
+    public void test1() {
+        nums = new int[]{1, 1, 2, 2, 2};
         assertEquals(true, test.makesquare(nums));
     }
 }

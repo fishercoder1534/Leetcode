@@ -14,13 +14,13 @@ public class _410Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _410();
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{7,2,5,10,8};
+    public void test1() {
+        nums = new int[]{7, 2, 5, 10, 8};
         assertEquals(18, test.splitArray(nums, 2));
     }
 }

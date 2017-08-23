@@ -14,12 +14,12 @@ public class _445Test {
     private static _445 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _445();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         ListNode l1 = new ListNode(7);
         l1.next = new ListNode(2);
         l1.next.next = new ListNode(4);

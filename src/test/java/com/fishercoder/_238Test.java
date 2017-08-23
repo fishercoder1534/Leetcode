@@ -14,18 +14,18 @@ public class _238Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _238();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new int[]{};
         actual = new int[]{};
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         nums = new int[]{0, 0};
         expected = new int[]{0, 0};
         actual = test.productExceptSelf(nums);
@@ -33,7 +33,7 @@ public class _238Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         nums = new int[]{1, 0};
         expected = new int[]{0, 1};
         actual = test.productExceptSelf(nums);
@@ -41,9 +41,9 @@ public class _238Test {
     }
 
     @Test
-    public void test3(){
-        nums = new int[]{1,2,3,4};
-        expected = new int[]{24,12,8,6};
+    public void test3() {
+        nums = new int[]{1, 2, 3, 4};
+        expected = new int[]{24, 12, 8, 6};
         actual = test.productExceptSelf(nums);
         assertArrayEquals(expected, actual);
     }

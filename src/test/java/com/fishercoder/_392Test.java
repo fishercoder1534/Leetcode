@@ -17,12 +17,12 @@ public class _392Test {
     private static boolean actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _392();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         s = "abc";
         t = "ahbgdc";
         expected = true;
@@ -31,7 +31,7 @@ public class _392Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         s = "axc";
         t = "ahbgdc";
         expected = false;

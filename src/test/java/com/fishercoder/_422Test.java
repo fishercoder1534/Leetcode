@@ -18,40 +18,41 @@ public class _422Test {
     private static List<String> words;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _422();
     }
 
     @Before
-    public void setupForEachTest(){}
+    public void setupForEachTest() {
+    }
 
     @Test
-    public void test1(){
-        words = new ArrayList<>(Arrays.asList("abcd","bnrt","crmy","dtye"));
+    public void test1() {
+        words = new ArrayList<>(Arrays.asList("abcd", "bnrt", "crmy", "dtye"));
         expected = true;
         actual = test.validWordSquare(words);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test2(){
+    public void test2() {
 //        abcd
 //        bnrt
 //        crm
 //        dt
-        words = new ArrayList<>(Arrays.asList("abcd","bnrt","crm","dt"));
+        words = new ArrayList<>(Arrays.asList("abcd", "bnrt", "crm", "dt"));
         expected = true;
         actual = test.validWordSquare(words);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         //ball
         //asee
         //let
         //lep
-        words = new ArrayList<>(Arrays.asList("ball","asee","let","lep"));
+        words = new ArrayList<>(Arrays.asList("ball", "asee", "let", "lep"));
         expected = false;
         actual = test.validWordSquare(words);
         assertEquals(expected, actual);

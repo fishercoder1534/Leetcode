@@ -14,13 +14,13 @@ public class _425Test {
     private static String[] words;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _425();
     }
 
     @Test
-    public void test1(){
-        words = new String[]{"area","lead","wall","lady","ball"};
+    public void test1() {
+        words = new String[]{"area", "lead", "wall", "lady", "ball"};
         List<List<String>> result = test.wordSquares(words);
     }
 }

@@ -17,12 +17,12 @@ public class _454Test {
     private static int[] D;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _454();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = 0;
         actual = 0;
         A = new int[1000];
@@ -32,12 +32,12 @@ public class _454Test {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
 
-        A = new int[]{1,2};
-        B = new int[]{-2,-1};
-        C = new int[]{-1,2};
-        D = new int[]{0,2};
+        A = new int[]{1, 2};
+        B = new int[]{-2, -1};
+        C = new int[]{-1, 2};
+        D = new int[]{0, 2};
         expected = 2;
         actual = test.fourSumCount(A, B, C, D);
         assertEquals(expected, actual);

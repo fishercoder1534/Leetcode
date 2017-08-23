@@ -16,12 +16,12 @@ public class _352Test {
     private static List<Interval> actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _352.SummaryRanges();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         test.addNum(1);
         actual = test.getIntervals();
         CommonUtils.printIntervals(actual);

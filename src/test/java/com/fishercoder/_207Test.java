@@ -14,12 +14,12 @@ public class _207Test {
     private static int numCourses;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _207();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         numCourses = 2;
         prerequisites = new int[][]{{0, 1}};
         expected = true;

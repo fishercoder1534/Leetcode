@@ -16,33 +16,33 @@ public class _439Test {
     private static String actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _439();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         expression = "T?2:3";
         expected = "2";
         assertEquals(expected, test.parseTernary(expression));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         expression = "F?1:T?4:5";
         expected = "4";
         assertEquals(expected, test.parseTernary(expression));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         expression = "T?T?F:5:3";
         expected = "F";
         assertEquals(expected, test.parseTernary(expression));
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         expression = "T?T:F?T?1:2:F?3:4";
         expected = "T";
         assertEquals(expected, test.parseTernary(expression));

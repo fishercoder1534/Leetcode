@@ -18,18 +18,18 @@ public class _408Test {
     private static String abbr;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _408();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         word = "";
         abbr = "";
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         word = "internationalization";
         abbr = "i12iz4n";
         expected = true;
@@ -39,7 +39,7 @@ public class _408Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         word = "apple";
         abbr = "a2e";
         expected = false;
@@ -49,7 +49,7 @@ public class _408Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         word = "internationalization";
         abbr = "i5a11o1";
         expected = true;
@@ -59,7 +59,7 @@ public class _408Test {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         word = "hi";
         abbr = "1";
         expected = false;
@@ -68,7 +68,7 @@ public class _408Test {
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         word = "a";
         abbr = "1";
         expected = true;
@@ -77,7 +77,7 @@ public class _408Test {
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         word = "a";
         abbr = "2";
         expected = false;
@@ -86,7 +86,7 @@ public class _408Test {
     }
 
     @Test
-    public void test7(){
+    public void test7() {
         word = "hi";
         abbr = "1i";
         expected = true;
@@ -95,7 +95,7 @@ public class _408Test {
     }
 
     @Test
-    public void test8(){
+    public void test8() {
         word = "hi";
         abbr = "3";
         expected = false;
@@ -104,7 +104,7 @@ public class _408Test {
     }
 
     @Test
-    public void test9(){
+    public void test9() {
         word = "hi";
         abbr = "11";
         expected = false;
@@ -113,7 +113,7 @@ public class _408Test {
     }
 
     @Test
-    public void test10(){
+    public void test10() {
         word = "word";
         abbr = "1o1d";
         expected = true;
@@ -122,7 +122,7 @@ public class _408Test {
     }
 
     @Test
-    public void test11(){
+    public void test11() {
         word = "abbreviation";
         abbr = "a010n";
         expected = false;

@@ -14,24 +14,24 @@ public class _306Test {
     private static String num;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _306();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         num = "0235813";
         assertEquals(false, test.isAdditiveNumber(num));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         num = "000";
         assertEquals(true, test.isAdditiveNumber(num));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         num = "011235";
         assertEquals(true, test.isAdditiveNumber(num));
     }
