@@ -93,7 +93,9 @@ package com.fishercoder.solutions;
 public class _204 {
 
     public static class Solution1 {
-        /**This solution works, but takes too long and resulted in TLE on Leetcode.*/
+        /**
+         * This solution works, but takes too long and resulted in TLE on Leetcode.
+         */
         public int countPrimes(int n) {
             int count = 0;
             for (int i = 1; i < n; i++) {
@@ -108,7 +110,7 @@ public class _204 {
             if (k <= 1) {
                 return false;
             }
-            for (int i = 2; i*i <= k; i++) {
+            for (int i = 2; i * i <= k; i++) {
                 if (k % i == 0) {
                     return false;
                 }

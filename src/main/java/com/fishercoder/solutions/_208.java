@@ -11,14 +11,15 @@ package com.fishercoder.solutions;
 
 public class _208 {
     class TrieNode {
-        
+
         char val;
         boolean isWord;
         TrieNode[] children = new TrieNode[26];
-        
+
         // Initialize your data structure here.
-        public TrieNode() {}
-        
+        public TrieNode() {
+        }
+
         public TrieNode(char c) {
             this.val = c;
         }
@@ -35,8 +36,8 @@ public class _208 {
         // Inserts a word into the trie.
         public void insert(String word) {
             TrieNode node = root;
-            for(int i = 0; i < word.length(); i++){
-                if(node.children[word.charAt(i) - 'a'] == null){
+            for (int i = 0; i < word.length(); i++) {
+                if (node.children[word.charAt(i) - 'a'] == null) {
                     node.children[word.charAt(i) - 'a'] = new TrieNode(word.charAt(i));
                 }
                 node = node.children[word.charAt(i) - 'a'];
@@ -47,8 +48,8 @@ public class _208 {
         // Returns if the word is in the trie.
         public boolean search(String word) {
             TrieNode node = root;
-            for(int i = 0; i < word.length(); i++){
-                if(node.children[word.charAt(i) - 'a'] == null) return false;
+            for (int i = 0; i < word.length(); i++) {
+                if (node.children[word.charAt(i) - 'a'] == null) return false;
                 node = node.children[word.charAt(i) - 'a'];
             }
             return node.isWord;
@@ -58,8 +59,8 @@ public class _208 {
         // that starts with the given prefix.
         public boolean startsWith(String prefix) {
             TrieNode node = root;
-            for(int i = 0; i < prefix.length(); i++){
-                if(node.children[prefix.charAt(i) - 'a'] == null) return false;
+            for (int i = 0; i < prefix.length(); i++) {
+                if (node.children[prefix.charAt(i) - 'a'] == null) return false;
                 node = node.children[prefix.charAt(i) - 'a'];
             }
             return true;

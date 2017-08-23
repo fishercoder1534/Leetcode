@@ -27,8 +27,8 @@ public class _203 {
 		ListNode dummy = new ListNode(-1);
 		dummy.next = head;
 		ListNode curr = head, prev = dummy;
-		while(curr != null){
-			if(curr.val == val){
+		while (curr != null) {
+			if (curr.val == val) {
 				prev.next = curr.next;
 			} else {
 				prev = prev.next;
@@ -37,8 +37,8 @@ public class _203 {
 		}
 		return dummy.next;
 	}
-	
-	public static void main(String...strings){
+
+	public static void main(String... strings) {
 		_203 test = new _203();
 		int val = 6;
 		ListNode head = new ListNode(1);

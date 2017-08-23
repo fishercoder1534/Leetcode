@@ -38,13 +38,15 @@ public class _220 {
 
     public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
         TreeSet<Integer> set = new TreeSet<Integer>();
-        for(int i = 0; i < nums.length; i++){
+        for (int i = 0; i < nums.length; i++) {
             Integer s = set.ceiling(nums[i]);//take the smallest greater number than nums[i] is there exists
-            if(s != null && s - nums[i] <= t) return true;//it must be s - nums[i] here, otherwise, cases like [4,2] 2, 1 wont' pass, because we'll get 2-4 = -2 which is a negative number that for sure will be smaller than t
+            if (s != null && s - nums[i] <= t)
+                return true;//it must be s - nums[i] here, otherwise, cases like [4,2] 2, 1 wont' pass, because we'll get 2-4 = -2 which is a negative number that for sure will be smaller than t
             Integer g = set.floor(nums[i]);//take the biggest smaller number than nums[i] if there exists
-            if(g != null && (long) nums[i] - g <= t) return true;
+            if (g != null && (long) nums[i] - g <= t) return true;
             set.add(nums[i]);
-            if(set.size() > k) set.remove(nums[i-k]);//set doesn't have indices and it's not ordered, we could only specify the element 
+            if (set.size() > k)
+                set.remove(nums[i - k]);//set doesn't have indices and it's not ordered, we could only specify the element
             //that we want to remove, this element is nums[i-k]
         }
         return false;
@@ -52,13 +54,13 @@ public class _220 {
 
     /**
      * converting to (long) is essential, otherwise cases like this:
-     * 
+     * <p>
      * [-1,2147483647]
-     * 
+     * <p>
      * 1
-     * 
+     * <p>
      * 2147483647
-     * 
+     * <p>
      * will overflow, i.e. Integer in Java is 32 bit which means Integer.MAX_VALUE =2147483647 and
      * Integer.MIN_VALUE = -2147483648, thus 2147483647 -(-1) = 2147483647+1 =-2147483648 instead of
      * 2147483648 (Java Integer won’t have this number), causing this test case to fail.
@@ -73,8 +75,8 @@ public class _220 {
 //        int[] nums = new int[] { 1, 2 };
 //        int k = 0;
 //        int t = 1;
-        
-        int[] nums = new int[] { 4, 2 };
+
+        int[] nums = new int[]{4, 2};
         int k = 2;
         int t = 1;
 

@@ -13,9 +13,9 @@ public class _219 {
     //the later indices won't even do either. So, we only need to keep one index in the value of the HashMap. Cheers!
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap();
-        for(int i = 0; i < nums.length; i++){
-            if(map.containsKey(nums[i])) {
-                if(i - map.get(nums[i]) <= k) {
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(nums[i])) {
+                if (i - map.get(nums[i]) <= k) {
                     return true;
                 } else map.put(nums[i], i);
             } else map.put(nums[i], i);

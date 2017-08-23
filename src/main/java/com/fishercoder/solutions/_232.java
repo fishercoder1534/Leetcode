@@ -14,10 +14,10 @@ import java.util.Stack;
 public class _232 {
 
     class MyQueue {
-        
+
         Stack<Integer> input = new Stack();
         Stack<Integer> output = new Stack();
-        
+
         // Push element x to the back of queue.
         public void push(int x) {
             input.push(x);
@@ -31,8 +31,8 @@ public class _232 {
 
         // Get the front element.
         public int peek() {
-            if(output.isEmpty()){
-                while(!input.isEmpty()){
+            if (output.isEmpty()) {
+                while (!input.isEmpty()) {
                     output.push(input.pop());
                 }
             }

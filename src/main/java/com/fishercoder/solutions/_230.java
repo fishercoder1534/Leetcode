@@ -23,7 +23,7 @@ public class _230 {
         public int kthSmallest(TreeNode root, int k) {
             List<Integer> inorderList = new ArrayList<>();
             inorder(root, inorderList);
-            return inorderList.get(k-1);
+            return inorderList.get(k - 1);
         }
 
         private void inorder(TreeNode root, List<Integer> inorderList) {

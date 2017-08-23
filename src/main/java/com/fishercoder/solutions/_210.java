@@ -41,43 +41,43 @@ public class _210 {
 
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         int[] inDegree = new int[numCourses];
-        for(int[] course : prerequisites){
+        for (int[] course : prerequisites) {
             inDegree[course[0]]++;
         }
-        
+
         Set<Integer> zeroDegree = new HashSet();
         Queue<Integer> queue = new LinkedList();
-        for(int i = 0; i < numCourses; i++){
-            if(inDegree[i] == 0) {
+        for (int i = 0; i < numCourses; i++) {
+            if (inDegree[i] == 0) {
                 zeroDegree.add(i);
                 queue.offer(i);
             }
         }
-        
-        if(zeroDegree.isEmpty()) return new int[0];
-        
-        while(!zeroDegree.isEmpty()){
+
+        if (zeroDegree.isEmpty()) return new int[0];
+
+        while (!zeroDegree.isEmpty()) {
             Iterator<Integer> it = zeroDegree.iterator();
             int course = it.next();
             zeroDegree.remove(course);
-            for(int[] pre : prerequisites){
-                if(course == pre[1]){
+            for (int[] pre : prerequisites) {
+                if (course == pre[1]) {
                     inDegree[pre[0]]--;
-                    if(inDegree[pre[0]] == 0){
+                    if (inDegree[pre[0]] == 0) {
                         zeroDegree.add(pre[0]);
                         queue.offer(pre[0]);
                     }
                 }
             }
         }
-        
-        for(int i = 0; i < numCourses; i++){
-            if(inDegree[i] != 0) return new int[0];
+
+        for (int i = 0; i < numCourses; i++) {
+            if (inDegree[i] != 0) return new int[0];
         }
-        
+
         int[] result = new int[queue.size()];
         int i = 0;
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             result[i++] = queue.poll();
         }
         return result;
