@@ -47,7 +47,7 @@ public class _572 {
         if (s != null && t != null && s.val == t.val) isSubTree = isSameTree(s, t);
         if (isSubTree) return true;
         boolean isSubTreeLeft = false;
-        if (s.left != null) isSubTreeLeft= isSubtree(s.left, t);
+        if (s.left != null) isSubTreeLeft = isSubtree(s.left, t);
         if (isSubTreeLeft) return true;
         boolean isSubTreeRight = false;
         if (s.right != null) isSubTreeRight = isSubtree(s.right, t);
@@ -56,7 +56,7 @@ public class _572 {
     }
 
     private boolean isSameTree(TreeNode p, TreeNode q) {
-        if(p == null || q == null) return p == q;
+        if (p == null || q == null) return p == q;
         return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 }

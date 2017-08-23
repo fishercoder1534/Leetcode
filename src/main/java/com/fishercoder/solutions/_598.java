@@ -41,7 +41,7 @@ package com.fishercoder.solutions;
 public class _598 {
     public int maxCount(int m, int n, int[][] ops) {
         if (ops == null || ops.length == 0) {
-            return m*n;
+            return m * n;
         }
         int x = m;
         int y = n;
@@ -49,6 +49,6 @@ public class _598 {
             x = Math.min(x, op[0]);
             y = Math.min(y, op[1]);
         }
-        return x*y;
+        return x * y;
     }
 }

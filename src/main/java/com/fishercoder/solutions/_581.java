@@ -28,18 +28,20 @@ public class _581 {
      * Time: O(n)
      * Space: O(1)*/
     public int findUnsortedSubarray(int[] nums) {
-        int n = nums.length, start = -1, end = -2, min = nums[n-1], max = nums[0];
-        for (int i=1;i<n;i++) {
+        int n = nums.length, start = -1, end = -2, min = nums[n - 1], max = nums[0];
+        for (int i = 1; i < n; i++) {
             max = Math.max(max, nums[i]);
-            min = Math.min(min, nums[n-1-i]);
+            min = Math.min(min, nums[n - 1 - i]);
             if (nums[i] < max) end = i;
-            if (nums[n-1-i] > min) start = n-1-i;
+            if (nums[n - 1 - i] > min) start = n - 1 - i;
         }
         return end - start + 1;
     }
 
-    /**Time: O(nlogn)
-     * Space: O(n)*/
+    /**
+     * Time: O(nlogn)
+     * Space: O(n)
+     */
     public int findUnsortedSubarray_sorting(int[] nums) {
         int[] clones = nums.clone();
         Arrays.sort(clones);
@@ -51,7 +53,7 @@ public class _581 {
                 end = Math.max(end, i);
             }
         }
-        return (end - start > 0) ? end-start+1 : 0;
+        return (end - start > 0) ? end - start + 1 : 0;
     }
 
 }

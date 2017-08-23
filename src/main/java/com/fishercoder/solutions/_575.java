@@ -31,7 +31,7 @@ public class _575 {
         for (int i = 0; i < candies.length; i++) {
             int val = candies[i];
             sisCount++;
-            if (sisCount >= candies.length/2) return candies.length/2;
+            if (sisCount >= candies.length / 2) return candies.length / 2;
             while (i < candies.length && candies[i] == val) {
                 i++;
             }
