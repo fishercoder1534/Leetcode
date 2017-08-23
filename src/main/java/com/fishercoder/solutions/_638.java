@@ -46,7 +46,7 @@ public class _638 {
         return shopping(price, special, needs, 0);
     }
 
-    public int shopping(List < Integer > price, List < List < Integer >> special, List < Integer > needs, int i) {
+    public int shopping(List<Integer> price, List<List<Integer>> special, List<Integer> needs, int i) {
         if (i == special.size()) {
             return dot(needs, price);
         }
