@@ -16,12 +16,12 @@ public class _555Test {
     private static String[] strs;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _555();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         strs = new String[]{"abc", "xyz"};
         expected = "zyxcba";
         actual = test.splitLoopedString(strs);

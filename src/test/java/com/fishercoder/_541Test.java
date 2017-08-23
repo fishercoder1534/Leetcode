@@ -15,15 +15,16 @@ public class _541Test {
     private static int k;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _541();
     }
 
     @Before
-    public void setupForEachTest(){}
+    public void setupForEachTest() {
+    }
 
     @Test
-    public void test1(){
+    public void test1() {
         s = "abcd";
         k = 5;
         expected = "dcba";
@@ -32,7 +33,7 @@ public class _541Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         s = "abcdefg";
         k = 2;
         expected = "bacdfeg";
@@ -41,7 +42,7 @@ public class _541Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         s = "abcd";
         k = 4;
         expected = "dcba";
@@ -50,7 +51,7 @@ public class _541Test {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         s = "abcdefg";
         k = 3;
         expected = "cbadefg";
@@ -59,7 +60,7 @@ public class _541Test {
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         s = "abcd";
         k = 3;
         expected = "cbad";
@@ -68,7 +69,7 @@ public class _541Test {
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         s = "hyzqyljrnigxvdtneasepfahmtyhlohwxmkqcdfehybknvdmfrfvtbsovjbdhevlfxpdaovjgunjqlimjkfnqcqnajmebeddqsgl";
         System.out.println("s.length() = " + s.length());
         k = 39;

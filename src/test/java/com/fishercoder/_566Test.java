@@ -18,12 +18,12 @@ public class _566Test {
     private static int c;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _566();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         nums = new int[][]{
                 {1, 2},
                 {3, 4},

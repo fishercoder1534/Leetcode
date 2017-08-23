@@ -17,15 +17,16 @@ public class _507Test {
     private static int num;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _507();
     }
 
     @Before
-    public void setupForEachTest(){}
+    public void setupForEachTest() {
+    }
 
     @Test
-    public void test1(){
+    public void test1() {
         expected = true;
         num = 28;
         actual = test.checkPerfectNumber(num);

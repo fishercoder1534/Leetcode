@@ -14,15 +14,16 @@ public class _551Test {
     private static String s;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _551();
     }
 
     @Before
-    public void setupForEachTest(){}
+    public void setupForEachTest() {
+    }
 
     @Test
-    public void test1(){
+    public void test1() {
         s = "ALLAPPL";
         expected = false;
         actual = test.checkRecord(s);

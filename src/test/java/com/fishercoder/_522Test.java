@@ -17,12 +17,12 @@ public class _522Test {
     private static String[] strs;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _522();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         strs = new String[]{"aaa", "aaa", "aa"};
         expected = -1;
         actual = test.findLUSlength(strs);

@@ -16,12 +16,12 @@ public class _572Test {
     private static boolean actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _572();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         TreeNode s = new TreeNode(3);
         s.left = new TreeNode(4);
         s.right = new TreeNode(5);
@@ -38,7 +38,7 @@ public class _572Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         TreeNode s = new TreeNode(3);
         s.left = new TreeNode(4);
         s.right = new TreeNode(5);

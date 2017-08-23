@@ -18,22 +18,23 @@ public class _554Test {
     private static List<List<Integer>> wall;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _554();
     }
 
     @Before
-    public void setupForEachTest(){}
+    public void setupForEachTest() {
+    }
 
     @Test
-    public void test1(){
+    public void test1() {
         wall = new ArrayList<>();
-        wall.add(Arrays.asList(1,2,2,1));
-        wall.add(Arrays.asList(3,1,2));
-        wall.add(Arrays.asList(1,3,2));
-        wall.add(Arrays.asList(2,4));
-        wall.add(Arrays.asList(3,1,2));
-        wall.add(Arrays.asList(1,3,1,1));
+        wall.add(Arrays.asList(1, 2, 2, 1));
+        wall.add(Arrays.asList(3, 1, 2));
+        wall.add(Arrays.asList(1, 3, 2));
+        wall.add(Arrays.asList(2, 4));
+        wall.add(Arrays.asList(3, 1, 2));
+        wall.add(Arrays.asList(1, 3, 1, 1));
         expected = 2;
         actual = test.leastBricks(wall);
         assertEquals(expected, actual);

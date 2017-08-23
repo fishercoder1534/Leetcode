@@ -13,15 +13,16 @@ public class _525Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new com.fishercoder.solutions._525();
     }
 
     @Before
-    public void setupForEachTest(){}
+    public void setupForEachTest() {
+    }
 
     @Test
-    public void test1(){
+    public void test1() {
         nums = new int[]{0, 1};
         expected = 2;
         actual = test.findMaxLength(nums);
@@ -29,7 +30,7 @@ public class _525Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         nums = new int[]{0, 1, 0};
         expected = 2;
         actual = test.findMaxLength(nums);
@@ -37,8 +38,8 @@ public class _525Test {
     }
 
     @Test
-    public void test3(){
-        nums = new int[]{0,0,1,0,0,0,1,1};
+    public void test3() {
+        nums = new int[]{0, 0, 1, 0, 0, 0, 1, 1};
         expected = 6;
         actual = test.findMaxLength(nums);
         assertEquals(expected, actual);

@@ -16,20 +16,20 @@ public class _536Test {
     private static String s;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         solution1 = new _536.Solution1();
         solution2 = new _536.Solution2();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = null;
         actual = null;
         s = "";
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         s = "";
         expected = null;
         actual = solution1.str2tree(s);

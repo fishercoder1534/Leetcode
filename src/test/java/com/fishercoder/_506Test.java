@@ -17,27 +17,27 @@ public class _506Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _506();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new String[]{};
         actual = new String[]{};
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{2,4,1};
-        expected = new String[]{"Silver Medal","Gold Medal","Bronze Medal"};
+    public void test1() {
+        nums = new int[]{2, 4, 1};
+        expected = new String[]{"Silver Medal", "Gold Medal", "Bronze Medal"};
         actual = test.findRelativeRanks(nums);
         assertArrayEquals(expected, actual);
 
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         nums = new int[]{5, 4, 3, 2, 1};
         expected = new String[]{"Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"};
         actual = test.findRelativeRanks(nums);

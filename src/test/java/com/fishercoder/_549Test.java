@@ -16,18 +16,18 @@ public class _549Test {
     private static TreeNode root;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _549();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         root = null;
         actual = 0;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
@@ -37,7 +37,7 @@ public class _549Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         root = new TreeNode(2);
         root.left = new TreeNode(1);
         root.right = new TreeNode(3);
@@ -47,8 +47,9 @@ public class _549Test {
     }
 
     @Test
-    @Ignore//NOTE: somehow it's always returning wrong when running with other tests, even if it passes on Leetcode OJ, so ignore this case
-    public void test3(){
+    @Ignore
+//NOTE: somehow it's always returning wrong when running with other tests, even if it passes on Leetcode OJ, so ignore this case
+    public void test3() {
         root = new TreeNode(1);
         actual = test.longestConsecutive(root);
         expected = 1;
@@ -56,7 +57,7 @@ public class _549Test {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.left.left = new TreeNode(3);

@@ -15,14 +15,14 @@ public class _502Test {
     private static int[] Capital;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _502();
     }
 
     @Test
-    public void test1(){
-        Profits = new int[]{1,2,3};
-        Capital = new int[]{0,1,1};
-        assertEquals(4, test.findMaximizedCapital(2,0, Profits, Capital));
+    public void test1() {
+        Profits = new int[]{1, 2, 3};
+        Capital = new int[]{0, 1, 1};
+        assertEquals(4, test.findMaximizedCapital(2, 0, Profits, Capital));
     }
 }

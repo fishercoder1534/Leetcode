@@ -16,12 +16,12 @@ public class _500Test {
     private String[] words;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _500();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         words = new String[]{"Alaska", "Hello", "Dad", "Peace"};
         expected = new String[]{"Alaska", "Dad"};
         actual = test.findWords(words);
