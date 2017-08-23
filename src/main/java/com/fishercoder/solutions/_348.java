@@ -68,35 +68,44 @@ public class _348 {
     public static class TicTacToe {
 
         private int diagonal;
-        /**This is diagonal:
-         |X| | |
-         | |X| |
-         | | |X|
-         So, its condition is always like this: if (row == col)*/
+        /**
+         * This is diagonal:
+         * |X| | |
+         * | |X| |
+         * | | |X|
+         * So, its condition is always like this: if (row == col)
+         */
 
         private int antidiagonal;
-        /**This is antidiagonal:
-         | | |X|
-         | |X| |
-         |X| | |
-         So, its condition is always like this: if (col == size - row - 1)*/
+        /**
+         * This is antidiagonal:
+         * | | |X|
+         * | |X| |
+         * |X| | |
+         * So, its condition is always like this: if (col == size - row - 1)
+         */
         private int[] rows;
         private int[] cols;
 
-        /** Initialize your data structure here. */
+        /**
+         * Initialize your data structure here.
+         */
         public TicTacToe(int n) {
             rows = new int[n];
             cols = new int[n];
         }
 
-        /** Player {player} makes a move at ({row}, {col}).
-         @param row The row of the board.
-         @param col The column of the board.
-         @param player The player, can be either 1 or 2.
-         @return The current winning condition, can be either:
-         0: No one wins.
-         1: Player 1 wins.
-         2: Player 2 wins. */
+        /**
+         * Player {player} makes a move at ({row}, {col}).
+         *
+         * @param row    The row of the board.
+         * @param col    The column of the board.
+         * @param player The player, can be either 1 or 2.
+         * @return The current winning condition, can be either:
+         * 0: No one wins.
+         * 1: Player 1 wins.
+         * 2: Player 2 wins.
+         */
         public int move(int row, int col, int player) {
             int toAdd = player == 1 ? 1 : -1;
 
@@ -104,10 +113,10 @@ public class _348 {
             cols[col] += toAdd;
             int size = rows.length;
 
-            if(row == col){
+            if (row == col) {
                 diagonal += toAdd;
             }
-            if(col == (size - row - 1)){
+            if (col == (size - row - 1)) {
                 antidiagonal += toAdd;
             }
 

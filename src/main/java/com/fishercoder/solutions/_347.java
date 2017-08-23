@@ -31,37 +31,38 @@ public class _347 {
 	 * works the best, you should use List<Integer>[], this will simplify the code.*/
 	public List<Integer> topKFrequent_using_bucket(int[] nums, int k) {
 		Map<Integer, Integer> map = new HashMap();
-		for(int i : nums){
-			map.put(i, map.getOrDefault(i, 0)+1);
+		for (int i : nums) {
+			map.put(i, map.getOrDefault(i, 0) + 1);
 		}
-		
-		ArrayList[] bucket = new ArrayList[nums.length+1];
-		for(Entry<Integer, Integer> e : map.entrySet()){
+
+		ArrayList[] bucket = new ArrayList[nums.length + 1];
+		for (Entry<Integer, Integer> e : map.entrySet()) {
 			int frequency = e.getValue();
-			if(bucket[frequency] == null){
+			if (bucket[frequency] == null) {
 				bucket[frequency] = new ArrayList<Integer>();
 			}
 			bucket[frequency].add(e.getKey());
 		}
 		List<Integer> result = new ArrayList<Integer>();
-		for(int i = bucket.length-1; i >= 0 && result.size() < k; i--){
-			if(bucket[i] != null) result.addAll(bucket[i]);
+		for (int i = bucket.length - 1; i >= 0 && result.size() < k; i--) {
+			if (bucket[i] != null) result.addAll(bucket[i]);
 		}
-		
+
 		return result;
 	}
 
 	// Approach 2: use hashtable and heap
+
 	/**
 	 * Bonus tips on how to write a priority queue:
-	 * 
+	 * <p>
 	 * Tip1:
 	 * it should be like this:
 	 * PriorityQueue's angle brackets should be left blank, the type should be in
 	 * Comparator's angle brackets and the compare method should be in Comparator's
 	 * brackets. new PriorityQueue<>(new Comparator<int[]>(){ public int
 	 * compare(int[] o1, int[] o2){ } })
-	 * 
+	 * <p>
 	 * Tip2:
 	 * if you want things in DEscending order, then if(01 > o2), it should return -1
 	 * if Ascending order, then if(01 > o2), it should return 1
@@ -101,7 +102,7 @@ public class _347 {
 	}
 
 	public static void main(String[] args) {
-		int[] nums = new int[] { 3, 0, 1, 0 };
+		int[] nums = new int[]{3, 0, 1, 0};
 		_347 test = new _347();
 		test.topKFrequent_using_heap(nums, 1);
 //		test.topKFrequent_using_bucket(nums, 1);

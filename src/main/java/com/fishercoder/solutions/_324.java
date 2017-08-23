@@ -30,10 +30,10 @@ public class _324 {
 
         while (i <= right) {
 
-            if (nums[newIndex(i,n)] > median) {
-                swap(nums, newIndex(left++,n), newIndex(i++,n));
-            } else if (nums[newIndex(i,n)] < median) {
-                swap(nums, newIndex(right--,n), newIndex(i,n));
+            if (nums[newIndex(i, n)] > median) {
+                swap(nums, newIndex(left++, n), newIndex(i++, n));
+            } else if (nums[newIndex(i, n)] < median) {
+                swap(nums, newIndex(right--, n), newIndex(i, n));
             } else {
                 i++;
             }
@@ -58,7 +58,7 @@ public class _324 {
     }
 
     private int newIndex(int index, int n) {
-        return (1 + 2*index) % (n | 1);
+        return (1 + 2 * index) % (n | 1);
     }
 
 }

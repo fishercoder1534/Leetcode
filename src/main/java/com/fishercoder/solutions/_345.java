@@ -28,14 +28,14 @@ public class _345 {
 		vowels.add('O');
 		vowels.add('U');
 		//use two pointers approach would be the fastest
-		int i = 0, j = s.length()-1;
-		while (i < j){
+		int i = 0, j = s.length() - 1;
+		while (i < j) {
 			char left = s.charAt(i), right = s.charAt(j);
-			while(i < j && !vowels.contains(left)){
+			while (i < j && !vowels.contains(left)) {
 				i++;
 				left = s.charAt(i);
 			}
-			while(i < j && !vowels.contains(right)){
+			while (i < j && !vowels.contains(right)) {
 				j--;
 				right = s.charAt(j);
 			}
@@ -47,8 +47,8 @@ public class _345 {
 		}
 		return sb.toString();
 	}
-	
-	public static void main(String...strings){
+
+	public static void main(String... strings) {
 		_345 test = new _345();
 		String s = "leetcode";
 		System.out.println(test.reverseVowels(s));
