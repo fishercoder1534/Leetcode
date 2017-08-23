@@ -37,8 +37,8 @@ public class _532 {
     //this O(n^2) will result in TLE
     public int findPairs_On2(int[] nums, int k) {
         Set<List<Integer>> pairsSet = new HashSet<>();
-        for (int i = 0; i < nums.length-1; i++) {
-            for (int j = i+1; j < nums.length; j++) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
                 if (Math.abs(nums[j] - nums[i]) == k) {
                     pairsSet.add(nums[i] > nums[j] ? Arrays.asList(nums[j], nums[i]) : Arrays.asList(nums[i], nums[j]));
                 }

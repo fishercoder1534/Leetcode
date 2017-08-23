@@ -42,7 +42,7 @@ public class _547 {
         int m = M.length;//number of rows in this matrix
         UnionFind unionFind = new UnionFind(m);
         for (int i = 0; i < m; i++) {
-            for (int j = i+1; j < m; j++) {
+            for (int j = i + 1; j < m; j++) {
                 if (M[i][j] == 1) {
                     unionFind.union(i, j);
                 }

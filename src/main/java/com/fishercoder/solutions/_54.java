@@ -27,9 +27,9 @@ public class _54 {
             return result;
         }
         int rowStart = 0;
-        int rowEnd = matrix.length-1;
+        int rowEnd = matrix.length - 1;
         int colStart = 0;
-        int colEnd = matrix[0].length-1;
+        int colEnd = matrix[0].length - 1;
         while (rowStart <= rowEnd && colStart <= colEnd) {
             //traverse to the right
             for (int j = colStart; j <= colEnd; j++) {

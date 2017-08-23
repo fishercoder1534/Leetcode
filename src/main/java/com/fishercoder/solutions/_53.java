@@ -9,7 +9,7 @@ package com.fishercoder.solutions;
 public class _53 {
     public int maxSubArray(int[] nums) {
         int maxSum = nums[0], currentSum = nums[0];
-        for(int i = 1; i < nums.length; i++){
+        for (int i = 1; i < nums.length; i++) {
             currentSum = Math.max(nums[i], currentSum + nums[i]);
             maxSum = Math.max(currentSum, maxSum);
         }

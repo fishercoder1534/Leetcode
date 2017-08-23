@@ -25,23 +25,24 @@ import java.util.HashSet;
  */
 public class _548 {
 
-    public boolean splitArray_O_N_3(int[] nums) {//TODO: this one is failed by test4, probably some index wrong
+    public boolean splitArray_O_N_3(int[] nums) {
+        //TODO: this one is failed by test4, probably some index wrong
         if (nums == null || nums.length == 0) return false;
-        long[] previousSums = new long[nums.length+1];
+        long[] previousSums = new long[nums.length + 1];
         for (int i = 1; i <= nums.length; i++) {
-            previousSums[i] = previousSums[i-1] + nums[i-1];
+            previousSums[i] = previousSums[i - 1] + nums[i - 1];
         }
 
         int n = nums.length;
-        for (int i = 1; i <= n-6; i++) {
+        for (int i = 1; i <= n - 6; i++) {
             long sum1 = previousSums[i] - previousSums[0];
-            for (int j = i+2; j <= n-4; j++) {
-                long sum2 = previousSums[j] - previousSums[i+1];
+            for (int j = i + 2; j <= n - 4; j++) {
+                long sum2 = previousSums[j] - previousSums[i + 1];
                 if (sum1 != sum2) break;
-                for (int k = j+2; k <= n-2; k++) {
-                    long sum3 = previousSums[k] - previousSums[j+1];
+                for (int k = j + 2; k <= n - 2; k++) {
+                    long sum3 = previousSums[k] - previousSums[j + 1];
                     if (sum2 != sum3) break;
-                    long sum4 = previousSums[n] - previousSums[k+1];
+                    long sum4 = previousSums[n] - previousSums[k + 1];
                     if (sum3 == sum4) return true;
                 }
             }
