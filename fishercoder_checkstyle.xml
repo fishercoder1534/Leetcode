@@ -184,6 +184,7 @@
                      value="GenericWhitespace ''{0}'' is not preceded with whitespace."/>
         </module>
 
+        <!--I need to import this .xml format as my Intellij Java codestyle to make it work-->
         <!--<module name="Indentation">-->
             <!--<property name="basicOffset" value="4"/>-->
             <!--<property name="braceAdjustment" value="0"/>-->
