@@ -27,15 +27,15 @@ public class _378 {
     public int kthSmallest(int[][] matrix, int k) {
         List<Integer> list = new ArrayList<Integer>();
         int n = matrix.length;
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < n; j++){
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
                 list.add(matrix[i][j]);
             }
         }
         Collections.sort(list);
-        return list.get(k-1);
+        return list.get(k - 1);
     }
-    
+
     //TODO: use heap and binary search to do it.
 
     //Binary Search : The idea is to pick a mid number than compare it with the elements in each row, we start form
@@ -44,17 +44,17 @@ public class _378 {
     public int kthSmallestBS(int[][] matrix, int k) {
         int row = matrix.length - 1, col = matrix[0].length - 1;
         int lo = matrix[0][0];
-        int hi = matrix[row][col] ;
-        while(lo < hi) {
-            int mid = lo + (hi - lo)/2;
+        int hi = matrix[row][col];
+        while (lo < hi) {
+            int mid = lo + (hi - lo) / 2;
             int count = 0, j = col;
-            for(int i= 0; i <= row; i++) {
-                while(j >=0 && matrix[i][j] > mid) {
+            for (int i = 0; i <= row; i++) {
+                while (j >= 0 && matrix[i][j] > mid) {
                     j--;
                 }
                 count += (j + 1);
             }
-            if(count < k) {
+            if (count < k) {
                 lo = mid + 1;
             } else {
                 hi = mid;

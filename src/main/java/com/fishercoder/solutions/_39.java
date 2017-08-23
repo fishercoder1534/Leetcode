@@ -31,26 +31,26 @@ public class _39 {
         backtracking(candidates, target, 0, new ArrayList(), result);
         return result;
     }
-    
-    private void backtracking(int[] candidates, int target, int startIndex, List<Integer> curr, List<List<Integer>> result){
-        if(target > 0){
+
+    private void backtracking(int[] candidates, int target, int startIndex, List<Integer> curr, List<List<Integer>> result) {
+        if (target > 0) {
             int prev = -1;
-            for(int i = startIndex; i < candidates.length; i++){
+            for (int i = startIndex; i < candidates.length; i++) {
                 if (candidates[i] > target) return;//this is one very important step to optimize this algorithm: pruning
                 if (prev != -1 && prev == candidates[i]) continue;
                 curr.add(candidates[i]);
-                backtracking(candidates, target-candidates[i], i, curr, result);
-                curr.remove(curr.size()-1);
+                backtracking(candidates, target - candidates[i], i, curr, result);
+                curr.remove(curr.size() - 1);
             }
-        } else if(target == 0){
+        } else if (target == 0) {
             result.add(new ArrayList(curr));
         }
     }
 
-    
-    public static void main(String...args){
+
+    public static void main(String... args) {
         _39 test = new _39();
-        int[] candidates = new int[]{2,3,6,7};
+        int[] candidates = new int[]{2, 3, 6, 7};
         int target = 7;
         List<List<Integer>> result = test.combinationSum(candidates, target);
         CommonUtils.printListList(result);

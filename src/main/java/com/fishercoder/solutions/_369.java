@@ -22,7 +22,7 @@ public class _369 {
         //get the length of the list and take out the value of each node and store them into an array
         ListNode temp = head;
         int len = 0;
-        while(temp != null){
+        while (temp != null) {
             len++;
             temp = temp.next;
         }
@@ -30,14 +30,14 @@ public class _369 {
         int[] nums = new int[len];
         temp = head;
         int j = 0;
-        while(temp != null){
+        while (temp != null) {
             nums[j++] = temp.val;
             temp = temp.next;
         }
 
         //plus one into this array: nums
-        for(int i = len-1; i >= 0; i--){
-            if(nums[i] != 9){
+        for (int i = len - 1; i >= 0; i--) {
+            if (nums[i] != 9) {
                 nums[i]++;
                 break;
             } else {
@@ -47,19 +47,19 @@ public class _369 {
 
         //still assuming the first value in the list should not be zero as it's representing a valid number, although it's in a list
         ListNode pre = new ListNode(-1);
-        if(nums[0] == 0){
+        if (nums[0] == 0) {
             //in this case, let's just construct a new linked list and return: only first node value is 1, all the rest is 0
             ListNode newHead = new ListNode(1);
             ListNode result = newHead;
             int count = 0;
-            while(count++ < len){
+            while (count++ < len) {
                 newHead.next = new ListNode(0);
                 newHead = newHead.next;
             }
             return result;
         } else {
             pre.next = head;
-            for(int i = 0; i < len; i++){
+            for (int i = 0; i < len; i++) {
                 head.val = nums[i];
                 head = head.next;
             }

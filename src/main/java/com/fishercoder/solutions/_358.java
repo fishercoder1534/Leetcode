@@ -45,7 +45,7 @@ public class _358 {
         while (!heap.isEmpty()) {
             Map.Entry<Character, Integer> entry = heap.poll();
             stringBuilder.append(entry.getKey());
-            entry.setValue(entry.getValue()-1);
+            entry.setValue(entry.getValue() - 1);
             waitQueue.offer(entry);
             if (waitQueue.size() < k) continue; //there's only k-1 chars in the waitHeap, not full yet
             Map.Entry<Character, Integer> front = waitQueue.poll();

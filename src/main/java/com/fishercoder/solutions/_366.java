@@ -40,14 +40,14 @@ public class _366 {
         dfs(root);
         return result;
     }
-    
-    int dfs(TreeNode root){
-        if(root == null) return 0;
-        int level = Math.max(dfs(root.left), dfs(root.right))+1;
-        if(result.size() < level){
+
+    int dfs(TreeNode root) {
+        if (root == null) return 0;
+        int level = Math.max(dfs(root.left), dfs(root.right)) + 1;
+        if (result.size() < level) {
             result.add(new ArrayList<Integer>());
         }
-        result.get(level-1).add(root.val);
+        result.get(level - 1).add(root.val);
         return level;
     }
 

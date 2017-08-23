@@ -27,8 +27,8 @@ public class _387 {
         }
         return -1;
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         String s = "leetcode";
         System.out.println(firstUniqChar(s));
     }

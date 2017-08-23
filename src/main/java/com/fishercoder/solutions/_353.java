@@ -7,51 +7,51 @@ import java.util.Set;
 
 /**
  * Design a Snake game that is played on a device with screen size = width x height. Play the game online if you are not familiar with the game.
-
- The snake is initially positioned at the top left corner (0,0) with length = 1 unit.
-
- You are given a list of food's positions in row-column order. When a snake eats the food, its length and the game's score both increase by 1.
-
- Each food appears one by one on the screen. For example, the second food will not appear until the first food was eaten by the snake.
-
- When a food does appear on the screen, it is guaranteed that it will not appear on a block occupied by the snake.
-
- Example:
- Given width = 3, height = 2, and food = [[1,2],[0,1]].
-
- Snake snake = new Snake(width, height, food);
-
- Initially the snake appears at position (0,0) and the food at (1,2).
-
- |S| | |
- | | |F|
-
- snake.move("R"); -> Returns 0
-
- | |S| |
- | | |F|
-
- snake.move("D"); -> Returns 0
-
- | | | |
- | |S|F|
-
- snake.move("R"); -> Returns 1 (Snake eats the first food and right after that, the second food appears at (0,1) )
-
- | |F| |
- | |S|S|
-
- snake.move("U"); -> Returns 1
-
- | |F|S|
- | | |S|
-
- snake.move("L"); -> Returns 2 (Snake eats the second food)
-
- | |S|S|
- | | |S|
-
- snake.move("U"); -> Returns -1 (Game over because snake collides with border)
+ * <p>
+ * The snake is initially positioned at the top left corner (0,0) with length = 1 unit.
+ * <p>
+ * You are given a list of food's positions in row-column order. When a snake eats the food, its length and the game's score both increase by 1.
+ * <p>
+ * Each food appears one by one on the screen. For example, the second food will not appear until the first food was eaten by the snake.
+ * <p>
+ * When a food does appear on the screen, it is guaranteed that it will not appear on a block occupied by the snake.
+ * <p>
+ * Example:
+ * Given width = 3, height = 2, and food = [[1,2],[0,1]].
+ * <p>
+ * Snake snake = new Snake(width, height, food);
+ * <p>
+ * Initially the snake appears at position (0,0) and the food at (1,2).
+ * <p>
+ * |S| | |
+ * | | |F|
+ * <p>
+ * snake.move("R"); -> Returns 0
+ * <p>
+ * | |S| |
+ * | | |F|
+ * <p>
+ * snake.move("D"); -> Returns 0
+ * <p>
+ * | | | |
+ * | |S|F|
+ * <p>
+ * snake.move("R"); -> Returns 1 (Snake eats the first food and right after that, the second food appears at (0,1) )
+ * <p>
+ * | |F| |
+ * | |S|S|
+ * <p>
+ * snake.move("U"); -> Returns 1
+ * <p>
+ * | |F|S|
+ * | | |S|
+ * <p>
+ * snake.move("L"); -> Returns 2 (Snake eats the second food)
+ * <p>
+ * | |S|S|
+ * | | |S|
+ * <p>
+ * snake.move("U"); -> Returns -1 (Game over because snake collides with border)
  */
 public class _353 {
     public class SnakeGame {
@@ -63,11 +63,14 @@ public class _353 {
         int width;
         int height;
 
-        /** Initialize your data structure here.
-         @param width - screen width
-         @param height - screen height
-         @param food - A list of food positions
-         E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */
+        /**
+         * Initialize your data structure here.
+         *
+         * @param width  - screen width
+         * @param height - screen height
+         * @param food   - A list of food positions
+         *               E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].
+         */
         public SnakeGame(int width, int height, int[][] food) {
             this.set = new HashSet();
             set.add(0);//initially at [0][0]
@@ -78,17 +81,20 @@ public class _353 {
             this.height = height;
         }
 
-        /** Moves the snake.
-         @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
-         @return The game's score after the move. Return -1 if game over.
-         Game over when snake crosses the screen boundary or bites its body. */
+        /**
+         * Moves the snake.
+         *
+         * @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
+         * @return The game's score after the move. Return -1 if game over.
+         * Game over when snake crosses the screen boundary or bites its body.
+         */
         public int move(String direction) {
-            if(score == -1) return -1;
+            if (score == -1) return -1;
 
             //compute head
             int rowHead = body.peekFirst() / width;
             int colHead = body.peekFirst() % width;
-            switch(direction){
+            switch (direction) {
                 case "U":
                     rowHead--;
                     break;
@@ -101,11 +107,11 @@ public class _353 {
                 default:
                     colHead++;
             }
-            int newHead = rowHead*width+colHead;
+            int newHead = rowHead * width + colHead;
 
             set.remove(body.peekLast());//we'll remove the tail from set for now to see if it hits its tail
             //if it hits the boundary
-            if(set.contains(newHead) || rowHead < 0 || colHead < 0 || rowHead >= height || colHead >= width){
+            if (set.contains(newHead) || rowHead < 0 || colHead < 0 || rowHead >= height || colHead >= width) {
                 return score = -1;
             }
 
@@ -114,7 +120,7 @@ public class _353 {
             body.offerFirst(newHead);
 
             //normal eat case: keep tail, add head
-            if(foodIndex < food.length && rowHead == food[foodIndex][0] && colHead == food[foodIndex][1]){
+            if (foodIndex < food.length && rowHead == food[foodIndex][0] && colHead == food[foodIndex][1]) {
                 set.add(body.peekLast());//old tail does not change, so add it back to set since we removed it earlier
                 foodIndex++;
                 return ++score;

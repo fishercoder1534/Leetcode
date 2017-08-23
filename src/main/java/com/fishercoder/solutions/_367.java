@@ -18,7 +18,7 @@ public class _367 {
 
 	public boolean isPerfectSquare(int num) {
 		long i = 1, temp = 1;
-		while(temp < num){
+		while (temp < num) {
 			i += 2;
 			temp += i;
 		}

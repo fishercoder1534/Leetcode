@@ -49,7 +49,7 @@ public class _399 {
             pairs.get(equation[0]).add(equation[1]);
             pairs.get(equation[1]).add(equation[0]);
             valuePairs.get(equation[0]).add(values[i]);
-            valuePairs.get(equation[1]).add(1/values[i]);
+            valuePairs.get(equation[1]).add(1 / values[i]);
         }
 
         double[] result = new double[queries.length];
@@ -71,7 +71,7 @@ public class _399 {
         List<Double> valueList = valuePairs.get(start);
         double tmp = 0.0;
         for (int i = 0; i < stringList.size(); i++) {
-            tmp = dfs(stringList.get(i), end, pairs, valuePairs, set, value*valueList.get(i));
+            tmp = dfs(stringList.get(i), end, pairs, valuePairs, set, value * valueList.get(i));
             if (tmp != 0.0) break;
         }
         set.remove(start);

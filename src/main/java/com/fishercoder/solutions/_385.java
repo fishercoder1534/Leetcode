@@ -41,21 +41,22 @@ public class _385 {
     //if it's ']', we'll just pop one nested integer from the working stack and assign it to the result
 
     public NestedInteger deserialize(String s) {
-        if(s == null || s.isEmpty() || s.length() == 0) return new NestedInteger();
+        if (s == null || s.isEmpty() || s.length() == 0) return new NestedInteger();
         Stack<NestedInteger> workStack = new Stack<NestedInteger>();
         NestedInteger result = null;
         StringBuilder sb = new StringBuilder();
         int i = 0;
         //if it's just a single number, then we'll just return a nested integer with one integer
-        if(s.charAt(i) != '['){
+        if (s.charAt(i) != '[') {
             sb.setLength(0);
-            while(i < s.length() && ((Character.getNumericValue(s.charAt(i)) < 10 && Character.getNumericValue(s.charAt(i)) >= 0) || s.charAt(i) == '-')){
+            while (i < s.length() && ((Character.getNumericValue(s.charAt(i)) < 10 && Character.getNumericValue(s.charAt(i)) >= 0) || s.charAt(i) == '-')) {
                 sb.append(s.charAt(i));
                 i++;
             }
             int num = Integer.parseInt(sb.toString());
             return new NestedInteger(num);
-        } else {//all other cases, we'll return a nested integer with a list
+        } else {
+            //all other cases, we'll return a nested integer with a list
             while (i < s.length()) {
                 if (s.charAt(i) == '[') {
                     NestedInteger ni = new NestedInteger();
@@ -78,7 +79,7 @@ public class _385 {
                     sb.setLength(0);
                     while (i < s.length()
                             && ((Character.getNumericValue(s.charAt(i)) < 10 && Character
-                                    .getNumericValue(s.charAt(i)) >= 0) || s.charAt(i) == '-')) {
+                            .getNumericValue(s.charAt(i)) >= 0) || s.charAt(i) == '-')) {
                         sb.append(s.charAt(i));
                         i++;
                     }
@@ -98,7 +99,7 @@ public class _385 {
                         ni.add(new NestedInteger(num));
                     } else {
                         // case 3: if this is an empty nested integer
-                        if(i > 0) ni.add(new NestedInteger(num));
+                        if (i > 0) ni.add(new NestedInteger(num));
                         else ni.setInteger(num);
                     }
                     workStack.push(ni);
@@ -110,7 +111,7 @@ public class _385 {
         return result;
     }
 
-    public static void main(String...args){
+    public static void main(String... args) {
         _385 test = new _385();
 //        String s = "[-1]";
 //        String s = "324";

@@ -33,7 +33,7 @@ public class _356 {
             String str = point[0] + "a" + point[1];
             set.add(str);
         }
-        int sum = max+min;
+        int sum = max + min;
         for (int[] p : points) {
             String str = (sum - p[0]) + "a" + p[1];
             if (!set.contains(str)) return false;

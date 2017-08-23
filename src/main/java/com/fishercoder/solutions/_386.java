@@ -16,23 +16,23 @@ public class _386 {
     //Radix sort doesn't apply here! Don't confuse myself!
     
     //rewrote their solution from Python to Java:https://discuss.leetcode.com/topic/54986/python-memory-limit-exceeded-for-problem-386/17
-    public static List<Integer> lexicalOrder(int n){
+    public static List<Integer> lexicalOrder(int n) {
         List<Integer> result = new ArrayList();
         int i = 1;
-        while(true){
+        while (true) {
             result.add(i);
-            if(i * 10 <= n){
+            if (i * 10 <= n) {
                 i *= 10;
             } else {
-                while(i%10 == 9 || i == n){
+                while (i % 10 == 9 || i == n) {
                     i /= 10;
                 }
-                if(i == 0) return result;
+                if (i == 0) return result;
                 i++;
             }
         }
     }
-    
+
     //someone on Discuss hinted that you could use recursion to solve it in Java
     //then I wrote the following method, eventually, got all test cases produce the right output, but unfortunately TLE'ed by OJ
     public static List<Integer> lexicalOrder_LTE_by_10458(int n) {
@@ -40,24 +40,24 @@ public class _386 {
         int insertPosition = 0;
         return addNumbers(result, 1, insertPosition, n);
     }
-    
+
     private static List<Integer> addNumbers(List<Integer> result, int insertNumber, int insertPosition, int n) {
         int i;
-        for(i = 0; i < 9; i++){
-            if(insertNumber+i > n) return result;
-            result.add(insertPosition+i, insertNumber+i);
-            if((insertNumber+i) % 10 == 0 && (insertNumber+i) == (insertNumber+10)) break;
+        for (i = 0; i < 9; i++) {
+            if (insertNumber + i > n) return result;
+            result.add(insertPosition + i, insertNumber + i);
+            if ((insertNumber + i) % 10 == 0 && (insertNumber + i) == (insertNumber + 10)) break;
         }
-        while((insertNumber+i) % 10 != 0 && (insertNumber+i) <= n){
-            result.add(insertPosition+i, insertNumber+i);
+        while ((insertNumber + i) % 10 != 0 && (insertNumber + i) <= n) {
+            result.add(insertPosition + i, insertNumber + i);
             i++;
         }
         //find next insert position:
-        insertPosition = result.indexOf((insertNumber+i)/10);
-        return addNumbers(result, insertNumber+i, insertPosition+1, n);
+        insertPosition = result.indexOf((insertNumber + i) / 10);
+        return addNumbers(result, insertNumber + i, insertPosition + 1, n);
     }
 
-    public static void main(String...strings){
+    public static void main(String... strings) {
         long lStartTime = new Date().getTime();
 
 //      CommonUtils.printList(lexicalOrder_TLE_by_23489(23489));
@@ -76,13 +76,15 @@ public class _386 {
         System.out.println("Elapsed milliseconds: " + difference);
         System.out.println("result size is: " + result.size());
 //        CommonUtils.printList(result);
-  }
+    }
 
-    /**The most naive way is to generate this list, sort it using a customized comparator and then return it.
-     * Unfortunately, this results in TLE with this input: 23489*/
+    /**
+     * The most naive way is to generate this list, sort it using a customized comparator and then return it.
+     * Unfortunately, this results in TLE with this input: 23489
+     */
     public static List<Integer> lexicalOrder_TLE_by_23489(int n) {
         List<Integer> result = new ArrayList();
-        for(int i = 1; i <= n; i++){
+        for (int i = 1; i <= n; i++) {
             result.add(i);
         }
         Collections.sort(result, new Comparator<Integer>() {
@@ -95,5 +97,5 @@ public class _386 {
         });
         return result;
     }
-    
+
 }

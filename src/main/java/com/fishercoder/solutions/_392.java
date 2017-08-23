@@ -32,7 +32,7 @@ public class _392 {
             int j = left;
             for (; j < t.length(); j++) {
                 if (s.charAt(i) == t.charAt(j)) {
-                    left = j+1;
+                    left = j + 1;
                     foundI = true;
                     break;
                 }
