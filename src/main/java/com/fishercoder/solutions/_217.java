@@ -11,16 +11,16 @@ import java.util.Set;
  */
 public class _217 {
     public boolean containsDuplicate(int[] nums) {
-        if(nums == null || nums.length == 0) return false;
+        if (nums == null || nums.length == 0) return false;
         Set<Integer> set = new HashSet();
-        for(int i : nums){
-            if(!set.add(i)) return true;
+        for (int i : nums) {
+            if (!set.add(i)) return true;
         }
         return false;
     }
-    
-    public static void main(String...strings){
-        int[] nums = new int[]{1,2,3,4, 3};
+
+    public static void main(String... strings) {
+        int[] nums = new int[]{1, 2, 3, 4, 3};
         _217 test = new _217();
         System.out.println(test.containsDuplicate(nums));
     }

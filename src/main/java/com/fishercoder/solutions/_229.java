@@ -17,17 +17,17 @@ public class _229 {
 
     public List<Integer> majorityElement(int[] nums) {
         Map<Integer, Integer> counterMap = new HashMap<Integer, Integer>();
-        for(int i = 0; i < nums.length; i++){
-            if(counterMap.containsKey(nums[i])){
-                counterMap.put(nums[i], counterMap.get(nums[i])+1);
+        for (int i = 0; i < nums.length; i++) {
+            if (counterMap.containsKey(nums[i])) {
+                counterMap.put(nums[i], counterMap.get(nums[i]) + 1);
             } else {
                 counterMap.put(nums[i], 1);
             }
         }
         int size = nums.length;
         List<Integer> result = new ArrayList<Integer>();
-        for(Integer i : counterMap.keySet()){
-            if(counterMap.get(i) > size/3){
+        for (Integer i : counterMap.keySet()) {
+            if (counterMap.get(i) > size / 3) {
                 result.add(i);
             }
         }

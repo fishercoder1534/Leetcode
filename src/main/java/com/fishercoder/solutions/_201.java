@@ -14,7 +14,7 @@ public class _201 {
     public int rangeBitwiseAnd_TLE(int m, int n) {
         if (m == 0) return m;
         int result = m;
-        for (int i = m+1; i <= n; i++) {
+        for (int i = m + 1; i <= n; i++) {
             result &= i;
         }
         return result;

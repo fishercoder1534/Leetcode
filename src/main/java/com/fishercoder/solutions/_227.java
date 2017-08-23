@@ -30,17 +30,17 @@ public class _227 {
         char sign = '+';
         for (int i = 0; i < len; i++) {
             if (Character.isDigit(s.charAt(i))) {
-                num = num*10 + s.charAt(i) - '0';
+                num = num * 10 + s.charAt(i) - '0';
             }
-            if ((!Character.isDigit(s.charAt(i))) && ' ' != s.charAt(i) || i == len-1) {
+            if ((!Character.isDigit(s.charAt(i))) && ' ' != s.charAt(i) || i == len - 1) {
                 if (sign == '+') {
                     stack.addLast(num);
                 } else if (sign == '-') {
                     stack.addLast(-num);
                 } else if (sign == '/') {
-                    stack.addLast(stack.pollLast()/num);
+                    stack.addLast(stack.pollLast() / num);
                 } else if (sign == '*') {
-                    stack.addLast(stack.pollLast()*num);
+                    stack.addLast(stack.pollLast() * num);
                 }
                 sign = s.charAt(i);
                 num = 0;

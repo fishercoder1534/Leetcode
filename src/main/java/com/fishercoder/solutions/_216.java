@@ -28,7 +28,7 @@ public class _216 {
 
     public List<List<Integer>> combinationSum3(int k, int n) {
         List<List<Integer>> result = new ArrayList();
-        int[] nums = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int[] nums = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
         helper(k, n, nums, 0, new ArrayList(), result);
         return result;
     }
@@ -42,7 +42,8 @@ public class _216 {
                 helper(k, n - nums[i], nums, i + 1, curr, result);
                 curr.remove(curr.size() - 1);
             }
-        } else if (n == 0 && curr.size() == k) {//this is the major difference here: check size of curr list is of k before adding it
+        } else if (n == 0 && curr.size() == k) {
+            //this is the major difference here: check size of curr list is of k before adding it
             List<Integer> temp = new ArrayList(curr);
             result.add(temp);
         }

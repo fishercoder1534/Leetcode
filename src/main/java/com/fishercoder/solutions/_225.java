@@ -17,13 +17,13 @@ import java.util.Queue;
 
 public class _225 {
     class MyStack {
-        
+
         Queue<Integer> q = new LinkedList();
-        
+
         // Push element x onto stack.
         public void push(int x) {
             q.offer(x);
-            for(int i = 1; i < q.size(); i++){
+            for (int i = 1; i < q.size(); i++) {
                 q.offer(q.remove());
             }
         }

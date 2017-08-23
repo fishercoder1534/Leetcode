@@ -12,13 +12,13 @@ public class _228 {
 
     public static List<String> summaryRanges(int[] nums) {
         List<String> result = new ArrayList<>();
-        for (int i = 0; i < nums.length; i++){
+        for (int i = 0; i < nums.length; i++) {
             String start = String.valueOf(nums[i]);
             int tmpI = i;
-            while ((i+1) < nums.length && (nums[i]+1) == nums[i+1]){
+            while ((i + 1) < nums.length && (nums[i] + 1) == nums[i + 1]) {
                 i++;
             }
-            if (tmpI == i){
+            if (tmpI == i) {
                 result.add(start);
             } else {
                 result.add(start + "->" + String.valueOf(nums[i]));
@@ -27,10 +27,10 @@ public class _228 {
         return result;
     }
 
-    public static void main(String...args){
-        int[] nums = new int[]{0,1,2,4,5,7};
+    public static void main(String... args) {
+        int[] nums = new int[]{0, 1, 2, 4, 5, 7};
         List<String> result = summaryRanges(nums);
-        for (String s : result){
+        for (String s : result) {
             System.out.println(s);
         }
     }

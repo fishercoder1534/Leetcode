@@ -31,24 +31,24 @@ This problem was inspired by this original tweet by Max Howell:
     Google: 90% of our engineers use the software you wrote (Homebrew), but you can�t invert a binary tree on a whiteboard so fuck off.*/
 public class _226 {
 
-	public TreeNode invertTree_Editorial_solution_iterative(TreeNode root){
-		if(root == null) return root;
+	public TreeNode invertTree_Editorial_solution_iterative(TreeNode root) {
+		if (root == null) return root;
 		Queue<TreeNode> q = new LinkedList<TreeNode>();
 		q.offer(root);
-		while(!q.isEmpty()){
+		while (!q.isEmpty()) {
 			TreeNode curr = q.poll();
 			TreeNode temp = curr.left;
 			curr.left = curr.right;
 			curr.right = temp;
-			if(curr.left != null) q.offer(curr.left);
-			if(curr.right != null) q.offer(curr.right);
+			if (curr.left != null) q.offer(curr.left);
+			if (curr.right != null) q.offer(curr.right);
 		}
 		return root;
 	}
-	
+
 	//a super classic recursion problem
 	public TreeNode invertTree(TreeNode root) {
-		if(root == null) return root;
+		if (root == null) return root;
 		TreeNode temp = root.left;
 		root.left = root.right;
 		root.right = temp;
