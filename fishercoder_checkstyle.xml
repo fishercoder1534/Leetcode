@@ -26,10 +26,10 @@
 
     <property name="severity" value="error"/>
 
-    <!-- Checks for whitespace                               -->
-    <!-- See http://checkstyle.sf.net/config_whitespace.html -->
     <!--this cannot be enabled because right now Intellij CE cannot import my fishercoder_checkstyle.xml as -->
     <!--my chosen Java code style-->
+    <!-- Checks for whitespace                               -->
+    <!-- See http://checkstyle.sf.net/config_whitespace.html -->
     <!--<module name="FileTabCharacter">-->
       <!--<property name="eachLine" value="false"/>-->
     <!--</module>-->
@@ -101,8 +101,6 @@
 
         <module name="OneStatementPerLine"/>
 
-        <!--<module name="MultipleVariableDeclarations"/>-->
-
         <module name="ArrayTypeStyle"/>
 
         <module name="MissingSwitchDefault"/>
@@ -116,6 +114,8 @@
         <module name="EmptyLineSeparator">
             <property name="allowNoEmptyLineBetweenFields" value="true"/>
         </module>
+
+        <!--<module name="MultipleVariableDeclarations"/>-->
 
         <module name="SeparatorWrap">
             <property name="tokens" value="DOT"/>
