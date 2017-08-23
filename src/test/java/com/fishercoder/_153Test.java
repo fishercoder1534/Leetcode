@@ -17,15 +17,16 @@ public class _153Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _153();
     }
 
     @Before
-    public void setupForEachTest(){}
+    public void setupForEachTest() {
+    }
 
     @Test
-    public void test1(){
+    public void test1() {
 
         nums = new int[]{4, 5, 6, 7, 0, 1, 2};
         expected = 0;
@@ -35,7 +36,7 @@ public class _153Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         nums = new int[]{1};
         expected = 1;
         actual = test.findMin(nums);
@@ -43,7 +44,7 @@ public class _153Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         nums = new int[]{2, 1};
         expected = 1;
         actual = test.findMin(nums);
@@ -51,8 +52,8 @@ public class _153Test {
     }
 
     @Test
-    public void test4(){
-        nums = new int[]{2,3,4,5,1};
+    public void test4() {
+        nums = new int[]{2, 3, 4, 5, 1};
         expected = 1;
         actual = test.findMin(nums);
         assertEquals(expected, actual);

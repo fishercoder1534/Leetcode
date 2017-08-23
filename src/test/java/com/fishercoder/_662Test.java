@@ -17,27 +17,27 @@ public class _662Test {
     private static int expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _662();
     }
 
     @Test
-    public void test1(){
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1,3,2,5,3,null,9));
+    public void test1() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, 5, 3, null, 9));
         expected = 4;
         assertEquals(expected, test.widthOfBinaryTree(root));
     }
 
     @Test
-    public void test2(){
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1,3,null, 5 ,3));
+    public void test2() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, null, 5, 3));
         expected = 2;
         assertEquals(expected, test.widthOfBinaryTree(root));
     }
 
     @Test
-    public void test3(){
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1,3,2,5));
+    public void test3() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, 5));
         expected = 2;
         assertEquals(expected, test.widthOfBinaryTree(root));
     }
@@ -45,14 +45,14 @@ public class _662Test {
     @Test
     @Ignore
     /**TODO: need to figure out how to pass in the input for the 4th example on Leetcode*/
-    public void test4(){
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1,3,2,5,null,null,9,6,null,null,null,null,null,null,7));
+    public void test4() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, 5, null, null, 9, 6, null, null, null, null, null, null, 7));
         expected = 8;
         assertEquals(expected, test.widthOfBinaryTree(root));
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1));
         expected = 1;
         assertEquals(expected, test.widthOfBinaryTree(root));

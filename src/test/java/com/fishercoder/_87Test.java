@@ -13,22 +13,22 @@ public class _87Test {
     private static _87 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _87();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals(true, test.isScramble("great", "rgeat"));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         assertEquals(true, test.isScramble("great", "rgtae"));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         assertEquals(true, test.isScramble("abc", "bca"));
     }
 

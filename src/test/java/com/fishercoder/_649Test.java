@@ -13,42 +13,42 @@ public class _649Test {
     private static _649 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _649();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals("Dire", test.predictPartyVictory("RDDDR"));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         assertEquals("Radiant", test.predictPartyVictory("RD"));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         assertEquals("Dire", test.predictPartyVictory("RDD"));
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         assertEquals("Radiant", test.predictPartyVictory("RDDR"));
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         assertEquals("Dire", test.predictPartyVictory("RDDRD"));
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         assertEquals("Dire", test.predictPartyVictory("RDDDDDRR"));
     }
 
     @Test
-    public void test7(){
+    public void test7() {
         assertEquals("Dire", test.predictPartyVictory("RDDDDRR"));
     }
 }

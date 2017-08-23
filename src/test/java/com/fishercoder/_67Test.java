@@ -19,7 +19,7 @@ public class _67Test {
     private static String b;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _67();
         expected = new String();
         actual = new String();
@@ -28,7 +28,7 @@ public class _67Test {
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = "";
         actual = "";
         a = "";
@@ -36,7 +36,7 @@ public class _67Test {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
 
         a = "0";
         b = "0";
@@ -47,7 +47,7 @@ public class _67Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
 
         a = "11";
         b = "1";
@@ -58,7 +58,7 @@ public class _67Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
 
         a = "100";
         b = "110010";
@@ -69,7 +69,7 @@ public class _67Test {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
 
         a = "101111";
         b = "10";

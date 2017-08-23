@@ -19,12 +19,12 @@ public class _655Test {
     private static _655 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _655();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2));
         expected = new ArrayList<>(2);
         List<String> row1 = new ArrayList<>(3);
@@ -42,14 +42,14 @@ public class _655Test {
     }
 
     @Test
-    public void test2(){
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3 ,null, 4));
+    public void test2() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, null, 4));
         TreeUtils.printBinaryTree(root);
         CommonUtils.printListList(test.printTree(root));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(3, null, 30, 10, null, null, 15, null, 45));
         TreeUtils.printBinaryTree(root);
         CommonUtils.printListList(test.printTree(root));

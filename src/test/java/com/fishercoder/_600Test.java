@@ -14,13 +14,13 @@ public class _600Test {
     private static _600.DPSolution dpSolution;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _600();
         dpSolution = new _600.DPSolution();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals(5, dpSolution.findIntegers(5));
         assertEquals(514229, dpSolution.findIntegers(100000000));
 

@@ -18,12 +18,12 @@ public class _106Test {
     private static int[] postorder;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _106();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         /**it should be a tree like this:
          *    3
          *   /
@@ -31,8 +31,8 @@ public class _106Test {
          *   \
          *   2
          */
-        inorder = new int[]{2,1,3};
-        postorder = new int[]{1,2,3};
+        inorder = new int[]{2, 1, 3};
+        postorder = new int[]{1, 2, 3};
         actual = test.buildTree(postorder, inorder);
         expected = new TreeNode(3);
         expected.left = new TreeNode(1);
@@ -41,7 +41,7 @@ public class _106Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         /**it should be a tree like this:
          *    3
          *   /
@@ -53,8 +53,8 @@ public class _106Test {
          *  \
          *  4
          */
-        inorder = new int[]{4,2,5,1,3};
-        postorder = new int[]{1,2,4,5,3};
+        inorder = new int[]{4, 2, 5, 1, 3};
+        postorder = new int[]{1, 2, 4, 5, 3};
         actual = test.buildTree(postorder, inorder);
         expected = new TreeNode(3);
         expected.left = new TreeNode(1);

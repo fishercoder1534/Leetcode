@@ -13,32 +13,32 @@ public class _650Test {
     private static _650 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _650();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals(3, test.minSteps(3));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         assertEquals(9, test.minSteps(20));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         assertEquals(19, test.minSteps(19));
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         assertEquals(0, test.minSteps(1));
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         assertEquals(35, test.minSteps(741));
     }
 }

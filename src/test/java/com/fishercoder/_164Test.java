@@ -14,18 +14,18 @@ public class _164Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _164();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = 0;
         actual = 0;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         nums = new int[]{};
         expected = 0;
         actual = test.maximumGap(nums);
@@ -39,8 +39,8 @@ public class _164Test {
     }
 
     @Test
-    public void test2(){
-        nums = new int[]{1,3,6,5};
+    public void test2() {
+        nums = new int[]{1, 3, 6, 5};
         expected = 2;
         actual = test.maximumGap(nums);
         assertEquals(expected, actual);
@@ -53,7 +53,7 @@ public class _164Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         nums = new int[]{1, 100000};
         expected = 99999;
         actual = test.maximumGap(nums);

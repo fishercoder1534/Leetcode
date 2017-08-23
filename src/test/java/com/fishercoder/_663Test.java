@@ -16,36 +16,36 @@ public class _663Test {
     private static boolean expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _663();
     }
 
     @Test
-    public void test1(){
-        root = TreeUtils.constructBinaryTree(Arrays.asList(5,10,10,null, null, 2,3));
+    public void test1() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(5, 10, 10, null, null, 2, 3));
         TreeUtils.printBinaryTree(root);
         expected = true;
         assertEquals(expected, test.checkEqualTree(root));
     }
 
     @Test
-    public void test2(){
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1,2,10,null, null, 2,20));
+    public void test2() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 10, null, null, 2, 20));
         TreeUtils.printBinaryTree(root);
         expected = false;
         assertEquals(expected, test.checkEqualTree(root));
     }
 
     @Test
-    public void test3(){
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1,null, 2, 2));
+    public void test3() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, null, 2, 2));
         TreeUtils.printBinaryTree(root);
         expected = false;
         assertEquals(expected, test.checkEqualTree(root));
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(0));
         TreeUtils.printBinaryTree(root);
         expected = false;

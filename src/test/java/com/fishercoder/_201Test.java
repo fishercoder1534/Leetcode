@@ -17,12 +17,12 @@ public class _201Test {
     private static int expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _201();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         m = 5;
         n = 7;
         actual = test.rangeBitwiseAnd_TLE(m, n);
@@ -33,7 +33,7 @@ public class _201Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         m = 1;
         n = 2;
         actual = test.rangeBitwiseAnd_TLE(m, n);
@@ -44,7 +44,7 @@ public class _201Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         m = 0;
         n = 2147483647;
         long start = System.currentTimeMillis();
@@ -57,7 +57,7 @@ public class _201Test {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         m = 20000;
         n = 2147483647;
         long start = System.currentTimeMillis();

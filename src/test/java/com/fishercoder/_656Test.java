@@ -19,14 +19,14 @@ public class _656Test {
     private static List<Integer> expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _656();
     }
 
     @Test
-    public void test1(){
-        A = new int[]{1,2,4,-1,2};
-        expected = new ArrayList<>(Arrays.asList(1,3,5));
+    public void test1() {
+        A = new int[]{1, 2, 4, -1, 2};
+        expected = new ArrayList<>(Arrays.asList(1, 3, 5));
         assertEquals(expected, test.cheapestJump(A, 2));
     }
 }

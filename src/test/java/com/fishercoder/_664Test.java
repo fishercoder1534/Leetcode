@@ -10,17 +10,17 @@ public class _664Test {
     private static _664 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _664();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals(2, test.strangePrinter("aaabbb"));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         assertEquals(2, test.strangePrinter("aba"));
     }
 

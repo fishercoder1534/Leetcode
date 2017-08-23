@@ -13,12 +13,12 @@ public class _171Test {
     private static _171 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _171();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals(28, test.titleToNumber("AB"));
     }
 }

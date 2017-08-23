@@ -23,25 +23,25 @@ public class _19 {
     public ListNode removeNthFromEnd_two_passes(ListNode head, int n) {
         ListNode temp = head;
         int len = 0;
-        while(temp != null){
+        while (temp != null) {
             temp = temp.next;
             len++;
         }
-        if(n == len) return head.next;
-        
+        if (n == len) return head.next;
+
         temp = head;
-        int cut = len-n;
-        while(cut-- > 1){
+        int cut = len - n;
+        while (cut-- > 1) {
             temp = temp.next;
         }
-        if(temp.next != null){
+        if (temp.next != null) {
             temp.next = temp.next.next;
             return head;
         }
         return null;
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         int n = 2;
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
@@ -50,7 +50,7 @@ public class _19 {
         ListNode res = test.removeNthFromEnd_one_pass(head, n);
         CommonUtils.printList(res);
     }
-    
+
     public ListNode removeNthFromEnd_one_pass(ListNode head, int n) {
         //this approach uses two pointers, fast moves first for n nodes, when fast reaches n, then we start to move slow
         //then, when fast reaches null, slow reaches the point where the node should be deleted.
@@ -58,42 +58,42 @@ public class _19 {
         dummy.next = head;
         ListNode slow = head, fast = head;
         int tempN = n;
-        while(tempN-- > 0){
+        while (tempN-- > 0) {
             fast = fast.next;
         }
-        
-        if(fast == null) {
-            if(n > 0) {
+
+        if (fast == null) {
+            if (n > 0) {
                 // this is for cases like this: [1,2] 2 or [1,2,3,4] 4, namely, remove the head of
                 // the list and return the second node from the original list
                 dummy.next = dummy.next.next;
             }
             return dummy.next;
         }
-        
+
         fast = fast.next;//we'll have to move fast pointer one node forward before moving the two together, this way,
         //when fast reaches null, slow will be at the previous node to the node that should be deleted, thus, we can change the next pointer easily
-        
-        while(fast != null){
+
+        while (fast != null) {
             fast = fast.next;
             slow = slow.next;
         }
-        
-        if(slow.next != null) slow.next = slow.next.next;
+
+        if (slow.next != null) slow.next = slow.next.next;
         return dummy.next;
     }
-    
+
     //a more concise version using the same idea found on Discuss
     public ListNode removeNthFromEnd_one_pass_more_concise_version(ListNode head, int n) {
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
         ListNode slow = dummy, fast = dummy;
-        while(fast.next != null){
-            if(n <= 0) slow = slow.next;
+        while (fast.next != null) {
+            if (n <= 0) slow = slow.next;
             fast = fast.next;
             n--;
         }
-        if(slow.next != null) slow.next = slow.next.next;
+        if (slow.next != null) slow.next = slow.next.next;
         return dummy.next;
     }
 }

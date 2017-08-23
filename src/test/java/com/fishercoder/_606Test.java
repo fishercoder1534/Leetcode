@@ -15,7 +15,7 @@ public class _606Test {
     private static TreeNode treeNode;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _606();
     }
 

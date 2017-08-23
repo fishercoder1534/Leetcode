@@ -19,18 +19,18 @@ public class _653Test {
     private static TreeNode root;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         listSolution = new _653.ListSolution();
         mapSolution = new _653.MapSolution();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         root = null;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = TreeUtils.constructBinaryTree(new ArrayList<>(Arrays.asList(5, 3, 2, 4, 6, 7)));
         expected = true;
         assertEquals(expected, listSolution.findTarget(root, 9));
@@ -38,7 +38,7 @@ public class _653Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         root = TreeUtils.constructBinaryTree(new ArrayList<>(Arrays.asList(2, 1, 3)));
         expected = true;
         assertEquals(expected, listSolution.findTarget(root, 4));
@@ -46,7 +46,7 @@ public class _653Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         root = new TreeNode(1);
         expected = false;
         assertEquals(expected, listSolution.findTarget(root, 2));
@@ -54,7 +54,7 @@ public class _653Test {
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         /**
          *       2
          *      / \
@@ -73,7 +73,7 @@ public class _653Test {
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         root = TreeUtils.constructBinaryTree(new ArrayList<>(Arrays.asList(2, 1, 3, -4, 0)));
         expected = true;
         assertEquals(expected, listSolution.findTarget(root, 2));
@@ -81,7 +81,7 @@ public class _653Test {
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         root = TreeUtils.constructBinaryTree(new ArrayList<>(Arrays.asList(
                 3393, 2264, 4972, 1908, 3252, 4128, 5140, 965, 2018,
                 3082, null, 3838, 4196, 5085, null, 559, 1187, null, 2143, 2968,
