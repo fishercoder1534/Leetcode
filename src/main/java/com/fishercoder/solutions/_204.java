@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
 /**
+ * 204. Count Primes
+ *
  * Description:
 
  Count the number of prime numbers less than a non-negative number, n.
@@ -41,6 +43,7 @@ package com.fishercoder.solutions;
      }
      return true;
  }
+
  The Sieve of Eratosthenes is one of the most efficient ways to find all prime numbers up to n.
  But don't let that name scare you, I promise that the concept is surprisingly simple.
 
@@ -89,18 +92,44 @@ package com.fishercoder.solutions;
  */
 public class _204 {
 
-    public int countPrimes(int n) {
-        boolean[] notPrime = new boolean[n];
-        int count = 0;
-        for (int i = 2; i < n; i++) {
-            if (!notPrime[i]) {
-                count++;
-                for (int j = 2; i*j < n; j++) {
-                    notPrime[i*j] = true;
+    public static class Solution1 {
+        /**This solution works, but takes too long and resulted in TLE on Leetcode.*/
+        public int countPrimes(int n) {
+            int count = 0;
+            for (int i = 1; i < n; i++) {
+                if (isPrime(i)) {
+                    count++;
                 }
             }
+            return count;
         }
-        return count;
+
+        private boolean isPrime(int k) {
+            if (k <= 1) {
+                return false;
+            }
+            for (int i = 2; i*i <= k; i++) {
+                if (k % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 
+    public static class Solution2 {
+        public int countPrimes(int n) {
+            boolean[] notPrime = new boolean[n];
+            int count = 0;
+            for (int i = 2; i < n; i++) {
+                if (!notPrime[i]) {
+                    count++;
+                    for (int j = 2; i * j < n; j++) {
+                        notPrime[i * j] = true;
+                    }
+                }
+            }
+            return count;
+        }
+    }
 }
