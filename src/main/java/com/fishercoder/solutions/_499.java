@@ -58,8 +58,8 @@ public class _499 {
         heap.offer(new Point(ball[0], ball[1], 0, ""));
         int m = maze.length, n = maze[0].length;
         Point[][] points = new Point[m][n];
-        for (int i = 0; i < m*n; i++) {
-            points[i/n][i%n] = new Point(i/n, i%n);//initialize the length array
+        for (int i = 0; i < m * n; i++) {
+            points[i / n][i % n] = new Point(i / n, i % n);//initialize the length array
         }
         String[] ds = new String[]{"u", "r", "d", "l"};
         while (!heap.isEmpty()) {
@@ -79,13 +79,13 @@ public class _499 {
                     y -= directions[i + 1];
                     distance--;
                 }
-                heap.offer(new Point(x, y, distance, curr.path+ds[i]));
+                heap.offer(new Point(x, y, distance, curr.path + ds[i]));
             }
         }
         return points[hole[0]][hole[1]].distance == Integer.MAX_VALUE ? "impossible" : points[hole[0]][hole[1]].path;
     }
 
-    class Point implements Comparable<Point>{
+    class Point implements Comparable<Point> {
         int x;
         int y;
         int distance;

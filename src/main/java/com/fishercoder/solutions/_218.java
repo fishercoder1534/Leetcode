@@ -43,27 +43,27 @@ But TreeMap in Java supports all the three operations in O(logn) time.*/
 
 public class _218 {
 
-    class BuildingPoint implements Comparable<BuildingPoint>{
+    class BuildingPoint implements Comparable<BuildingPoint> {
         int x;
         boolean isStart;
         int h;
-        
-        public BuildingPoint(int x, boolean isStart, int h){
+
+        public BuildingPoint(int x, boolean isStart, int h) {
             this.x = x;
             this.h = h;
             this.isStart = isStart;
         }
-        
+
         @Override
-        public int compareTo(BuildingPoint o){
-            if(this.x != o.x){
+        public int compareTo(BuildingPoint o) {
+            if (this.x != o.x) {
                 return this.x - o.x;
             } else {
-                if(this.isStart && o.isStart){
-                    return  o.h - this.h;
-                } else if(this.isStart && !o.isStart){
+                if (this.isStart && o.isStart) {
+                    return o.h - this.h;
+                } else if (this.isStart && !o.isStart) {
                     return -this.h - o.h;
-                } else if(!this.isStart && !o.isStart){
+                } else if (!this.isStart && !o.isStart) {
                     return this.h - o.h;
                 } else {
                     return this.h + o.h;
@@ -71,20 +71,20 @@ public class _218 {
             }
         }
     }
-    
+
     public List<int[]> getSkyline(int[][] buildings) {
-        BuildingPoint[] bps = new BuildingPoint[buildings.length*2];
+        BuildingPoint[] bps = new BuildingPoint[buildings.length * 2];
         int index = 0;
-        for(int[] building : buildings){
+        for (int[] building : buildings) {
             BuildingPoint bp1 = new BuildingPoint(building[0], true, building[2]);
             BuildingPoint bp2 = new BuildingPoint(building[1], false, building[2]);
             bps[index++] = bp1;
             bps[index++] = bp2;
         }
-        
+
         //this is one key step:
         Arrays.sort(bps);
-        
+
         List<int[]> result = new ArrayList();
         TreeMap<Integer, Integer> treeMap = new TreeMap();
         treeMap.put(0, 1);
@@ -107,7 +107,7 @@ public class _218 {
             }
 
         }
-        
+
         return result;
     }
 
