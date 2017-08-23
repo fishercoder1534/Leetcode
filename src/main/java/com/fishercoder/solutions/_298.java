@@ -37,13 +37,13 @@ public class _298 {
         return max;
     }
 
-    private void dfs(TreeNode root, int curr, int target){
+    private void dfs(TreeNode root, int curr, int target) {
         if (root == null) return;
         if (root.val == target) curr++;
         else curr = 1;
         max = Math.max(max, curr);
-        dfs(root.left, curr, root.val+1);
-        dfs(root.right, curr, root.val+1);
+        dfs(root.left, curr, root.val + 1);
+        dfs(root.right, curr, root.val + 1);
     }
 
 }

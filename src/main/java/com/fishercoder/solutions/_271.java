@@ -36,7 +36,7 @@ public class _271 {
     // Encodes a list of strings to a single string.
     public String encode(List<String> strs) {
         StringBuilder sb = new StringBuilder();
-        for(String s : strs){
+        for (String s : strs) {
             sb.append(s.length()).append('/').append(s);
         }
         return sb.toString();
@@ -46,10 +46,10 @@ public class _271 {
     public List<String> decode(String s) {
         List<String> result = new ArrayList<String>();
         int i = 0;
-        while(i < s.length()){
+        while (i < s.length()) {
             int slash = s.indexOf('/', i);
             int size = Integer.valueOf(s.substring(i, slash));
-            result.add(s.substring(slash+1, slash+1+size));
+            result.add(s.substring(slash + 1, slash + 1 + size));
             i = slash + size + 1;
         }
         return result;

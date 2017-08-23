@@ -24,17 +24,17 @@ package com.fishercoder.solutions;
  */
 public class _261 {
 
-    public boolean validTree(int n, int[][] edges){
+    public boolean validTree(int n, int[][] edges) {
         int[] nums = new int[n];
-        for(int i =0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             nums[i] = i;
         }
 
-        for(int i = 0; i < edges.length; i++){
+        for (int i = 0; i < edges.length; i++) {
             int x = find(nums, edges[i][0]);
             int y = find(nums, edges[i][1]);
 
-            if(x == y) {
+            if (x == y) {
                 return false;
             }
 
@@ -42,11 +42,11 @@ public class _261 {
             nums[x] = y;
         }
 
-        return edges.length == n-1;
+        return edges.length == n - 1;
     }
 
-    int find(int[] nums, int i){
-        if(nums[i] == i) {
+    int find(int[] nums, int i) {
+        if (nums[i] == i) {
             return i;
         }
         return find(nums, nums[i]);

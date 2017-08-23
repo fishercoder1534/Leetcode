@@ -41,16 +41,16 @@ public class _297 {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        if(root == null) return "";
+        if (root == null) return "";
 
         StringBuilder sb = new StringBuilder();
         Queue<TreeNode> queue = new LinkedList();
         queue.offer(root);
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int size = queue.size();
-            for(int i = 0; i < size; i++){
+            for (int i = 0; i < size; i++) {
                 TreeNode curr = queue.poll();
-                if(curr == null){
+                if (curr == null) {
                     sb.append("# ");
                     continue;
                 }
@@ -65,19 +65,19 @@ public class _297 {
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        if(data == null || data.isEmpty()) return null;
+        if (data == null || data.isEmpty()) return null;
 
         String[] nodes = data.split(" ");
         TreeNode root = new TreeNode(Integer.valueOf(nodes[0]));
         Queue<TreeNode> queue = new LinkedList();
         queue.offer(root);
-        for(int i = 1; i < nodes.length; i++){
+        for (int i = 1; i < nodes.length; i++) {
             TreeNode curr = queue.poll();
-            if(!nodes[i].equals("#")){
+            if (!nodes[i].equals("#")) {
                 curr.left = new TreeNode(Integer.valueOf(nodes[i]));
                 queue.offer(curr.left);
             }
-            if(!nodes[++i].equals("#")){
+            if (!nodes[++i].equals("#")) {
                 curr.right = new TreeNode(Integer.valueOf(nodes[i]));
                 queue.offer(curr.right);
             }

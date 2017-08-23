@@ -24,15 +24,17 @@ public class _25 {
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode curr = head;
         int count = 0;
-        while(curr != null && count != k){//find the k+1 node
+        while (curr != null && count != k) {
+            //find the k+1 node
             curr = curr.next;
             count++;
         }
 
-        if(count == k){//if k+1 is found
+        if (count == k) {
+            //if k+1 is found
             curr = reverseKGroup(curr, k);//reverse list that has k+1 as head
 
-            while(count > 0){
+            while (count > 0) {
                 ListNode temp = head.next;
                 head.next = curr;
                 curr = head;
@@ -44,7 +46,7 @@ public class _25 {
         return head;//we run out of nodes before we hit count == k, so we'll just directly return head in this case as well
     }
 
-    public static void main(String...args) {
+    public static void main(String... args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
