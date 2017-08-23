@@ -40,22 +40,22 @@ public class _456 {
      * but it also keeps poping elements out of the stack as long as the current element is bigger than this number.*/
     public static boolean find132pattern(int[] nums) {
         Deque<Integer> stack = new LinkedList<>();
-        
+
         int s3 = Integer.MIN_VALUE;
-        for (int i = nums.length-1; i >= 0; i--){
+        for (int i = nums.length - 1; i >= 0; i--) {
             if (nums[i] < s3) return true;
             else {
-                while (!stack.isEmpty() && nums[i] > stack.peek()){
+                while (!stack.isEmpty() && nums[i] > stack.peek()) {
                     s3 = Math.max(s3, stack.pop());
                 }
             }
             stack.push(nums[i]);
         }
-        
+
         return false;
     }
 
-    public static void main(String...args){
+    public static void main(String... args) {
         int[] nums = new int[]{-1, 3, 2, 0};
         System.out.println(find132pattern(nums));
     }

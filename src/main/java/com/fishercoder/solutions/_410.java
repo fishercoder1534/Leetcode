@@ -65,7 +65,7 @@ public class _410 {
         long l = max;
         long r = sum;
         while (l <= r) {
-            long mid = (l + r)/ 2;
+            long mid = (l + r) / 2;
             if (valid(mid, nums, m)) {
                 r = mid - 1;
             } else {
@@ -78,7 +78,7 @@ public class _410 {
     public boolean valid(long target, int[] nums, int m) {
         int count = 1;
         long total = 0;
-        for(int num : nums) {
+        for (int num : nums) {
             total += num;
             if (total > target) {
                 total = num;

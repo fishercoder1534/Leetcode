@@ -22,7 +22,8 @@ public class _48 {
         int m = matrix.length;
         int n = matrix[0].length;
         for (int i = 0; i < m; i++) {
-            for (int j = i; j < n; j++) {/**ATTN: j starts from i, so that the diagonal changes with itself, no change.*/
+            for (int j = i; j < n; j++) {
+                /**ATTN: j starts from i, so that the diagonal changes with itself, no change.*/
                 int tmp = matrix[i][j];
                 matrix[i][j] = matrix[j][i];
                 matrix[j][i] = tmp;
@@ -30,10 +31,10 @@ public class _48 {
         }
 
         for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n/2; j++) {
+            for (int j = 0; j < n / 2; j++) {
                 int tmp = matrix[i][j];
-                matrix[i][j] = matrix[i][n-1-j];
-                matrix[i][n-1-j] = tmp;
+                matrix[i][j] = matrix[i][n - 1 - j];
+                matrix[i][n - 1 - j] = tmp;
             }
         }
     }
@@ -48,8 +49,8 @@ public class _48 {
         int m = matrix.length;
         int n = matrix[0].length;
         int top = 0;
-        int bottom = n-1;
-        while (top < bottom){
+        int bottom = n - 1;
+        while (top < bottom) {
             int[] tmp = matrix[top];
             matrix[top] = matrix[bottom];
             matrix[bottom] = tmp;
@@ -58,7 +59,7 @@ public class _48 {
         }
 
         for (int i = 0; i < m; i++) {
-            for (int j = i+1; j < n; j++) {
+            for (int j = i + 1; j < n; j++) {
                 int tmp = matrix[i][j];
                 matrix[i][j] = matrix[j][i];
                 matrix[j][i] = tmp;

@@ -38,14 +38,16 @@ public class _45 {
                 int tempMax = 0;
                 int tempMaxIndex = 0;
                 tempMax = A[index + 1];
-                for (int i = 0; i < val; i++) {// here's another tricky part:
+                for (int i = 0; i < val; i++) {
+                    // here's another tricky part:
                     // must set i = 0 as starting
                     // point
                     if (i + index >= len - 1) {
                         jumps++;
                         return jumps;
                     }
-                    if (i + A[index + i + 1] >= tempMax) {// when set i = 0 as
+                    if (i + A[index + i + 1] >= tempMax) {
+                        // when set i = 0 as
                         // starting point,
                         // then here must
                         // add 1
@@ -53,7 +55,8 @@ public class _45 {
                         tempMaxIndex = index + i + 1;
                     }
                 }
-                if (tempMax >= max) {// here must be great than or equal, equal
+                if (tempMax >= max) {
+                    // here must be great than or equal, equal
                     // is very important!
                     max = tempMax;
                     index = tempMaxIndex;

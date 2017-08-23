@@ -65,7 +65,7 @@ public class _403 {
             int stone = stones[i];
             for (int step : map.get(stone)) {
                 int reach = step + stone;
-                if (reach == stones[stones.length-1]) return true;
+                if (reach == stones[stones.length - 1]) return true;
                 Set<Integer> set = map.get(reach);
                 if (set != null) {
                     set.add(step);

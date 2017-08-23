@@ -35,7 +35,7 @@ public class _483 {
     public String smallestGoodBase(String n) {
         long nn = Long.parseLong(n);
         long res = 0;
-        for(int k = 60; k >= 2; k--){
+        for (int k = 60; k >= 2; k--) {
             long start = 2, end = nn;
             while (start < end) {
                 long m = start + (end - start) / 2;
@@ -44,17 +44,17 @@ public class _483 {
                 left = left.pow(k).subtract(BigInteger.ONE);
                 BigInteger right = BigInteger.valueOf(nn).multiply(BigInteger.valueOf(m).subtract(BigInteger.ONE));
                 int cmr = left.compareTo(right);
-                if(cmr == 0){
-                    res =  m;
+                if (cmr == 0) {
+                    res = m;
                     break;
-                } else if(cmr < 0){
+                } else if (cmr < 0) {
                     start = m + 1;
                 } else {
                     end = m;
                 }
             }
 
-            if(res != 0) break;
+            if (res != 0) break;
         }
 
         return "" + res;

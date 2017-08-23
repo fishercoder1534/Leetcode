@@ -57,7 +57,7 @@ public class _424 {
         for (int i = 0; i < s.length(); i++) {
             int count = 1;
             char val = s.charAt(i);
-            for (int j = i+1; j < s.length(); j++) {
+            for (int j = i + 1; j < s.length(); j++) {
                 if (s.charAt(j) == val) {
                     count++;
                 } else {

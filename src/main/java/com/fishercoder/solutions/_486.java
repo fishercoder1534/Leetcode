@@ -46,14 +46,14 @@ public class _486 {
      --> nums[e]-helper(nums,s,e-1): this player select the tail item, leaving the other player a choice from s to e-1
      Then take the max of these two options as this player's selection, return it.*/
     public boolean predictTheWinner(int[] nums) {
-        return helper(nums, 0, nums.length-1, new Integer[nums.length][nums.length]) >= 0;
+        return helper(nums, 0, nums.length - 1, new Integer[nums.length][nums.length]) >= 0;
     }
 
-    private int helper(int[] nums, int start, int end, Integer[][] mem){
-        if(mem[start][end]==null) {
-            mem[start][end] = start==end ? nums[end] :
-                    Math.max(nums[end]-helper(nums,start,end-1,mem),
-                            nums[start]-helper(nums,start+1,end,mem));
+    private int helper(int[] nums, int start, int end, Integer[][] mem) {
+        if (mem[start][end] == null) {
+            mem[start][end] = start == end ? nums[end] :
+                    Math.max(nums[end] - helper(nums, start, end - 1, mem),
+                            nums[start] - helper(nums, start + 1, end, mem));
         }
         return mem[start][end];
     }

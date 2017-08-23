@@ -1,8 +1,6 @@
 package com.fishercoder.solutions;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * 473. Matchsticks to Square
@@ -38,9 +36,9 @@ public class _473 {
         reverse(nums);
         int sum = 0;
         for (int i : nums) sum += i;
-        if (sum%4 != 0) return false;
+        if (sum % 4 != 0) return false;
 
-        return dfs(nums, new int[4], 0, sum/4);
+        return dfs(nums, new int[4], 0, sum / 4);
     }
 
     private boolean dfs(int[] nums, int[] sums, int index, int target) {
@@ -51,7 +49,7 @@ public class _473 {
         for (int i = 0; i < 4; i++) {
             if (sums[i] + nums[index] > target) continue;
             sums[i] += nums[index];
-            if (dfs(nums, sums, index+1, target)) return true;
+            if (dfs(nums, sums, index + 1, target)) return true;
             sums[i] -= nums[index];
         }
         return false;
@@ -59,7 +57,7 @@ public class _473 {
 
     private void reverse(int[] nums) {
         int left = 0;
-        int right = nums.length-1;
+        int right = nums.length - 1;
         while (left < right) {
             int tmp = nums[left];
             nums[left] = nums[right];

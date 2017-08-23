@@ -24,8 +24,10 @@ import java.util.Queue;
 public class _449 {
 
     public static class Solution1 {
-        /**Preorder
-         * Reference: https://discuss.leetcode.com/topic/97922/pre-or-post-order-with-only-keeping-one-bound-beat-98-and-95*/
+        /**
+         * Preorder
+         * Reference: https://discuss.leetcode.com/topic/97922/pre-or-post-order-with-only-keeping-one-bound-beat-98-and-95
+         */
 
         // Encodes a tree to a single string.
         public String serialize(TreeNode root) {
@@ -66,8 +68,10 @@ public class _449 {
     }
 
     public static class Solution2 {
-        /**Postorder
-         * Reference: https://discuss.leetcode.com/topic/97922/pre-or-post-order-with-only-keeping-one-bound-beat-98-and-95*/
+        /**
+         * Postorder
+         * Reference: https://discuss.leetcode.com/topic/97922/pre-or-post-order-with-only-keeping-one-bound-beat-98-and-95
+         */
 
         public String serialize(TreeNode root) {
             if (root == null) {
@@ -93,7 +97,7 @@ public class _449 {
                 return null;
             }
             String[] values = data.split(" ");
-            int[] index = new int[]{values.length-1};/**TODO: This is not just one element any more like in the preorder solution above*/
+            int[] index = new int[]{values.length - 1};/**TODO: This is not just one element any more like in the preorder solution above*/
             return deserialize(values, index, Integer.MIN_VALUE);
         }
 
@@ -109,7 +113,9 @@ public class _449 {
     }
 
     public static class Solution3 {
-        /**This is a generic solution that applies to both BT and BST.*/
+        /**
+         * This is a generic solution that applies to both BT and BST.
+         */
 
         // Encodes a tree to a single string.
         public String serialize(TreeNode root) {

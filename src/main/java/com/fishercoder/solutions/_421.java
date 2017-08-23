@@ -34,7 +34,7 @@ public class _421 {
                 System.out.println("mask & num = " + Integer.toBinaryString(mask & num));
             }
 
-            int candidate = max | (1<<i);
+            int candidate = max | (1 << i);
             System.out.println("candidate = " + Integer.toBinaryString(candidate));
             /**Reason behind this: if a ^ prefix = candidate, then a ^ candidate = prefix, also prefix ^ candidate = a
              * in this below code: we use this one: prefix ^ candidate = a*/

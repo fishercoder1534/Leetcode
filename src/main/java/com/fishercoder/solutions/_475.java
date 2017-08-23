@@ -38,7 +38,7 @@ public class _475 {
 			if (index < 0) {
 				index = ~index;
 			}
-			int distance1 = index - 1 >= 0 ? house - heaters[index-1] : Integer.MAX_VALUE;
+			int distance1 = index - 1 >= 0 ? house - heaters[index - 1] : Integer.MAX_VALUE;
 			int distance2 = index < heaters.length ? heaters[index] - house : Integer.MAX_VALUE;
 
 			radius = Math.max(radius, Math.min(distance1, distance2));

@@ -27,13 +27,13 @@ public class _47 {
         return result;
     }
 
-    
+
     private void dfs(int[] nums, boolean[] used, List<Integer> list, List<List<Integer>> result) {
-        if (list.size() == nums.length){
+        if (list.size() == nums.length) {
             result.add(new ArrayList(list));
             return;
         }
-        for (int i = 0; i < nums.length; i++){
+        for (int i = 0; i < nums.length; i++) {
             if (used[i]) continue;
             if (i > 0 && nums[i - 1] == nums[i] && !used[i - 1])
                 continue;
@@ -46,13 +46,13 @@ public class _47 {
             list.add(nums[i]);
             dfs(nums, used, list, result);
             used[i] = false;
-            list.remove(list.size()-1);
+            list.remove(list.size() - 1);
         }
     }
 
 
-    public static void main(String...args){
-        int[] nums = new int[]{1,1,2};
+    public static void main(String... args) {
+        int[] nums = new int[]{1, 1, 2};
         _47 test = new _47();
         List<List<Integer>> result = test.permuteUnique(nums);
         CommonUtils.printListList(result);

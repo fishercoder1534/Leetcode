@@ -31,9 +31,9 @@ public class _455 {
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);
-        
+
         int result = 0;
-        for (int i = 0, j = 0; i < g.length && j < s.length;){
+        for (int i = 0, j = 0; i < g.length && j < s.length; ) {
             if (s[j] >= g[i]) {
                 result++;
                 i++;
@@ -42,11 +42,11 @@ public class _455 {
         }
         return result;
     }
-    
-    public static void main(String...args){
+
+    public static void main(String... args) {
         _455 test = new _455();
-        int[] g = new int[]{1,2,3};
-        int[] s = new int[]{1,1};
+        int[] g = new int[]{1, 2, 3};
+        int[] s = new int[]{1, 1};
         System.out.println(test.findContentChildren(g, s));
     }
 

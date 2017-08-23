@@ -34,21 +34,21 @@ public class _467 {
         dp[p.charAt(0) - 'a'] = 1;
         int len = 1;
         for (int i = 1; i < p.length(); i++) {
-            if (p.charAt(i) - 1 == p.charAt(i-1) || (p.charAt(i) == 'a' && p.charAt(i-1) == 'z')){
+            if (p.charAt(i) - 1 == p.charAt(i - 1) || (p.charAt(i) == 'a' && p.charAt(i - 1) == 'z')) {
                 len++;
             } else {
                 len = 1;
             }
             dp[p.charAt(i) - 'a'] = Math.max(len, dp[p.charAt(i) - 'a']);
         }
-        
-        for (int i : dp){
+
+        for (int i : dp) {
             count += i;
         }
         return count;
     }
-    
-    public static void main(String...args){
+
+    public static void main(String... args) {
 //        String p = "a";
 //        String p = "abcgha";
         String p = "zab";
