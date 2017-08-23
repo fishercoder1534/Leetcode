@@ -19,7 +19,7 @@ public class _557 {
             stringBuilder.append(sbUtils.reverse().toString());
             stringBuilder.append(" ");
         }
-        stringBuilder.setLength(stringBuilder.length()-1);
+        stringBuilder.setLength(stringBuilder.length() - 1);
         return stringBuilder.toString();
     }
 

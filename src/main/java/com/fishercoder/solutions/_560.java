@@ -33,7 +33,7 @@ public class _560 {
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
             if (preSum.containsKey(sum - k)) {
-                result += preSum.get(sum-k);
+                result += preSum.get(sum - k);
             }
             preSum.put(sum, preSum.getOrDefault(sum, 0) + 1);
         }

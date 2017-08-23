@@ -43,7 +43,7 @@ public class _555 {
             for (String str : new String[]{strs[i], reverse}) {
                 for (int k = 0; k < str.length(); k++) {
                     StringBuilder sb = new StringBuilder(str.substring(k));
-                    for (int j = i+1; j < strs.length; j++) {
+                    for (int j = i + 1; j < strs.length; j++) {
                         sb.append(strs[j]);
                     }
                     for (int j = 0; j < i; j++) {
