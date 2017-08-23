@@ -57,7 +57,7 @@ public class _472 {
 				}
 			}
 
-			if(dp[n]) validConcatenatedWords.add(word);
+			if (dp[n]) validConcatenatedWords.add(word);
 			undoRemove(word, root);
 		}
 		return validConcatenatedWords;
@@ -69,13 +69,13 @@ public class _472 {
 		TrieNode root = new TrieNode();
 		int maxWordLen = 0;
 
-		for(String word : words){
+		for (String word : words) {
 			maxWordLen = Math.max(maxWordLen, word.length());
 			char[] chars = word.toCharArray();
 			TrieNode node = root;
-			for(int i = 0; i < chars.length; i++){
+			for (int i = 0; i < chars.length; i++) {
 				char c = chars[i];
-				if(node.children[c - 'a'] == null){
+				if (node.children[c - 'a'] == null) {
 					node.children[c - 'a'] = new TrieNode();
 				}
 				node = node.children[c - 'a'];
@@ -88,7 +88,7 @@ public class _472 {
 		return result;
 	}
 
-	public class ResultType{
+	public class ResultType {
 		int maxWordLen;
 		TrieNode root;
 	}
@@ -96,8 +96,8 @@ public class _472 {
 	// Returns true if the word is in the trie.
 	public boolean contains(String word, TrieNode root) {
 		TrieNode node = root;
-		for(int i = 0; i < word.length(); i++){
-			if(node.children[word.charAt(i) - 'a'] == null) return false;
+		for (int i = 0; i < word.length(); i++) {
+			if (node.children[word.charAt(i) - 'a'] == null) return false;
 			node = node.children[word.charAt(i) - 'a'];
 		}
 		return node.isWord;
@@ -106,7 +106,7 @@ public class _472 {
 	// mark that word on
 	public void undoRemove(String word, TrieNode root) {
 		TrieNode node = root;
-		for(int i = 0; i < word.length(); i++){
+		for (int i = 0; i < word.length(); i++) {
 			node = node.children[word.charAt(i) - 'a'];
 		}
 		node.isWord = true;
@@ -115,7 +115,7 @@ public class _472 {
 	// mark that word off, we are not really deleting that word
 	public void remove(String word, TrieNode root) {
 		TrieNode node = root;
-		for(int i = 0; i < word.length(); i++){
+		for (int i = 0; i < word.length(); i++) {
 			node = node.children[word.charAt(i) - 'a'];
 		}
 		node.isWord = false;
@@ -125,6 +125,7 @@ public class _472 {
 		boolean isWord;
 		TrieNode[] children = new TrieNode[26];
 
-		public TrieNode() {}
+		public TrieNode() {
+		}
 	}
 }

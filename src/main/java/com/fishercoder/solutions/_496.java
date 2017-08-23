@@ -54,8 +54,8 @@ public class _496 {
             boolean found = false;
             boolean foundNext = false;
             for (int j = 0; j < nums.length; j++) {
-                if ( findNums[i] != nums[j] && !found) continue;
-                else if (!found){
+                if (findNums[i] != nums[j] && !found) continue;
+                else if (!found) {
                     found = true;
                 } else {
                     if (nums[j] > findNums[i]) {

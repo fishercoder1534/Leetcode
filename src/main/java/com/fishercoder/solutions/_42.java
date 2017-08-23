@@ -14,7 +14,9 @@ public class _42 {
 
     public static class Solution1 {
         /**O(n) time and O(1) space, awesome!*/
-        /**reference: https://discuss.leetcode.com/topic/22976/my-accepted-java-solution*/
+        /**
+         * reference: https://discuss.leetcode.com/topic/22976/my-accepted-java-solution
+         */
         public int trap(int[] height) {
             if (height == null || height.length <= 2) return 0;
 
@@ -38,8 +40,8 @@ public class _42 {
                 }
             }
 
-            int rightMax = height[height.length-1];
-            for (int i = height.length-1; i > maxIndex; i--) {
+            int rightMax = height[height.length - 1];
+            for (int i = height.length - 1; i > maxIndex; i--) {
                 if (height[i] > rightMax) {
                     rightMax = height[i];
                 } else {

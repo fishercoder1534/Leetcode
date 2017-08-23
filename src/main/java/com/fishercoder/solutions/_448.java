@@ -31,20 +31,20 @@ public class _448 {
         max = Math.max(max, nums.length);
         //if using extra space is allowed, it'll be super easy as follows:
         Map<Integer, Integer> map = new HashMap();
-        for (int i = 1; i <= max; i++){
+        for (int i = 1; i <= max; i++) {
             map.put(i, 0);
         }
 
-        for ( int i : nums){
-            if (map.get(i) == 0){
+        for (int i : nums) {
+            if (map.get(i) == 0) {
                 map.put(i, 1);
             } else {
-                map.put(i, map.get(i)+1);
+                map.put(i, map.get(i) + 1);
             }
         }
 
         List<Integer> result = new ArrayList();
-        for (int i : map.keySet()){
+        for (int i : map.keySet()) {
             if (map.get(i) == 0) result.add(i);
         }
 
@@ -52,21 +52,23 @@ public class _448 {
 
     }
 
-    /**O(1) space
-     * O(n) time*/
+    /**
+     * O(1) space
+     * O(n) time
+     */
     public List<Integer> findDisappearedNumbers_2(int[] nums) {
 
-        for ( int i = 0; i < nums.length; i++){
+        for (int i = 0; i < nums.length; i++) {
             int val = Math.abs(nums[i]) - 1;
-            if (nums[val] > 0){
+            if (nums[val] > 0) {
                 nums[val] = -nums[val];
             }
         }
 
         List<Integer> result = new ArrayList();
-        for (int i = 0; i < nums.length; i++){
-            if (nums[i] > 0){
-                result.add(i+1);
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > 0) {
+                result.add(i + 1);
             }
         }
 
@@ -74,12 +76,12 @@ public class _448 {
 
     }
 
-    public static void main(String...args){
+    public static void main(String... args) {
         _448 test = new _448();
 //        int[] nums = new int[]{4,3,2,7,8,2,3,1};
-        int[] nums = new int[]{1,1};
+        int[] nums = new int[]{1, 1};
         List<Integer> result = test.findDisappearedNumbers_2(nums);
-        for (int i : result){
+        for (int i : result) {
             System.out.println(i);
         }
     }

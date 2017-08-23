@@ -41,7 +41,7 @@ public class _46 {
             return backtracking(result, nums, pos + 1);
         }
     }
-    
+
     static class AcceptedSolutionWithVoidType {
         public static List<List<Integer>> permute(int[] nums) {
             List<List<Integer>> result = new ArrayList();
@@ -52,10 +52,10 @@ public class _46 {
         }
 
         private static void recursive(List<List<Integer>> result, int[] nums, int pos) {
-            if(pos == nums.length) return;
+            if (pos == nums.length) return;
             List<List<Integer>> newResult = new ArrayList();
-            for(List<Integer> eachList : result){
-                for(int i = 0; i <= eachList.size(); i++){
+            for (List<Integer> eachList : result) {
+                for (int i = 0; i <= eachList.size(); i++) {
                     List<Integer> newList = new ArrayList(eachList);
                     newList.add(i, nums[pos]);
                     newResult.add(newList);
@@ -64,15 +64,15 @@ public class _46 {
             /**You'll have to use the two lines, instead of this line: result = newResult; otherwise, it won't work!!!*/
             result.clear();
             result.addAll(newResult);
-            
+
             //then recursion
-            recursive(result, nums, pos+1);
+            recursive(result, nums, pos + 1);
         }
     }
-    
-    public static void main(String...args){
-        int[] nums = new int[]{1,2,2};
-        
+
+    public static void main(String... args) {
+        int[] nums = new int[]{1, 2, 2};
+
     }
 
 }

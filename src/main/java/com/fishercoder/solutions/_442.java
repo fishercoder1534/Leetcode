@@ -26,8 +26,8 @@ public class _442 {
     public List<Integer> findDuplicates_solution1(int[] nums) {
         Set<Integer> set = new HashSet();
         List<Integer> result = new ArrayList();
-        for (int i : nums){
-            if (!set.add(i)){
+        for (int i : nums) {
+            if (!set.add(i)) {
                 result.add(i);
             }
         }
@@ -38,9 +38,9 @@ public class _442 {
     //O(n) time
     public List<Integer> findDuplicates_solution2(int[] nums) {
         List<Integer> result = new ArrayList();
-        for (int i = 0; i < nums.length; i++){
-            int index = Math.abs(nums[i])-1;
-            if (nums[index] < 0) result.add(Math.abs(index+1));
+        for (int i = 0; i < nums.length; i++) {
+            int index = Math.abs(nums[i]) - 1;
+            if (nums[index] < 0) result.add(Math.abs(index + 1));
             nums[index] = -nums[index];
         }
         return result;

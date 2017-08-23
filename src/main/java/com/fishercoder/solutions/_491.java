@@ -36,10 +36,10 @@ public class _491 {
             answer.add(new ArrayList<>(currList));
         }
         for (int i = start; i < nums.length; i++) {
-            if (currList.size() == 0 || currList.get(currList.size()-1) <= nums[i]) {
+            if (currList.size() == 0 || currList.get(currList.size() - 1) <= nums[i]) {
                 currList.add(nums[i]);
                 backtracking(nums, i + 1, currList, answer);
-                currList.remove(currList.size()-1);
+                currList.remove(currList.size() - 1);
             }
         }
         return answer;

@@ -15,7 +15,7 @@ public class _434 {
         if (s == null || s.isEmpty()) return 0;
         String[] segments = s.split(" ");
         int count = 0;
-        for (String seg : segments){
+        for (String seg : segments) {
             if (seg.equals("")) continue;
             count++;
         }
