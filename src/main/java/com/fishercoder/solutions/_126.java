@@ -77,7 +77,8 @@ public class _126 {
                     String newWord = builder.toString();
                     if (ladder.containsKey(newWord)) {
 
-                        if (step > ladder.get(newWord)) {//Check if it is the shortest path to one word.
+                        if (step > ladder.get(newWord)) {
+                            //Check if it is the shortest path to one word.
                             continue;
                         } else if (step < ladder.get(newWord)) {
                             queue.add(newWord);
@@ -85,7 +86,8 @@ public class _126 {
                         } else ;// It is a KEY line. If one word already appeared in one ladder,
                         // Do not insert the same word inside the queue twice. Otherwise it gets TLE.
 
-                        if (map.containsKey(newWord)) {//Build adjacent Graph
+                        if (map.containsKey(newWord)) {
+                            //Build adjacent Graph
                             map.get(newWord).add(word);
                         } else {
                             List<String> list = new LinkedList();
@@ -100,10 +102,14 @@ public class _126 {
                             min = step;
                         }
 
-                    }//End if dict contains new_word
-                }//End:Iteration from 'a' to 'z'
-            }//End:Iteration from the first to the last
-        }//End While
+                    }
+                    //End if dict contains new_word
+                }
+                //End:Iteration from 'a' to 'z'
+            }
+            //End:Iteration from the first to the last
+        }
+        //End While
 
         //BackTracking
         LinkedList<String> result = new LinkedList<>();

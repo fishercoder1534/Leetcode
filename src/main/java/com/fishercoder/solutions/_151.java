@@ -39,7 +39,7 @@ public class _151 {
         while (!stack.isEmpty()) {
             stringBuilder.append(stack.pollLast()).append(" ");
         }
-        return stringBuilder.substring(0, stringBuilder.length()-1).toString();
+        return stringBuilder.substring(0, stringBuilder.length() - 1).toString();
     }
 
     public static void main(String... args) {

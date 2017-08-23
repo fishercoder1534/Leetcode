@@ -35,17 +35,18 @@ import java.util.Queue;
 public class _133 {
 
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
-        if(node == null) return node;
+        if (node == null) return node;
 
         Map<Integer, UndirectedGraphNode> map = new HashMap();
         Queue<UndirectedGraphNode> queue = new LinkedList();
         UndirectedGraphNode root = new UndirectedGraphNode(node.label);
         map.put(root.label, root);
-        queue.offer(node);//remember to offer the original input node into the queue which contains all the information
-        while(!queue.isEmpty()){
+        queue.offer(node);
+        //remember to offer the original input node into the queue which contains all the information
+        while (!queue.isEmpty()) {
             UndirectedGraphNode curr = queue.poll();
-            for(UndirectedGraphNode eachNode : curr.neighbors){
-                if(!map.containsKey(eachNode.label)){
+            for (UndirectedGraphNode eachNode : curr.neighbors) {
+                if (!map.containsKey(eachNode.label)) {
                     map.put(eachNode.label, new UndirectedGraphNode(eachNode.label));
                     queue.offer(eachNode);
                 }

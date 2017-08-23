@@ -16,7 +16,8 @@ public class _11 {
             if (Math.min(height[i], height[j]) * (j - i) > max) {
                 max = Math.min(height[i], height[j]) * (j - i);
             }
-            if (height[i] <= height[j]) {// we need to find the shorter one,
+            if (height[i] <= height[j]) {
+                // we need to find the shorter one,
                 // then calculate its area
                 i++;
             } else {

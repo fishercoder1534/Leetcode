@@ -16,19 +16,19 @@ public class _138 {
         RandomListNode node = head;
 
         //loop for the first time: copy the node themselves with only labels
-        while(node != null){
+        while (node != null) {
             map.put(node, new RandomListNode(node.label));
             node = node.next;
         }
-        
+
         //loop for the second time: copy random and next pointers
         node = head;
-        while(node != null){
+        while (node != null) {
             map.get(node).next = map.get(node.next);
             map.get(node).random = map.get(node.random);
             node = node.next;
         }
-        
+
         return map.get(head);
     }
 

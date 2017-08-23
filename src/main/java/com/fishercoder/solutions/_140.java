@@ -25,20 +25,20 @@ public class _140 {
 
     private List<String> dfs(String s, Set<String> wordDict,
                              HashMap<String, ArrayList<String>> map) {
-        if(map.containsKey(s)){
+        if (map.containsKey(s)) {
             return map.get(s);
         }
 
         ArrayList<String> res = new ArrayList<String>();
-        if(s.length() == 0){
+        if (s.length() == 0) {
             res.add("");
             return res;
         }
 
-        for(String word : wordDict){
-            if(s.startsWith(word)){
+        for (String word : wordDict) {
+            if (s.startsWith(word)) {
                 List<String> subList = dfs(s.substring(word.length()), wordDict, map);
-                for(String sub : subList){
+                for (String sub : subList) {
                     res.add(word + (sub.length() == 0 ? "" : " ") + sub);
                 }
             }
@@ -47,7 +47,7 @@ public class _140 {
         return res;
     }
 
-    public static void main(String...strings){
+    public static void main(String... strings) {
         List<String> temp = new ArrayList<String>();
         System.out.println(temp);
         List<String> temp2 = new ArrayList<String>(temp);
@@ -64,7 +64,7 @@ public class _140 {
         String s = "catsanddog";
 //        List<String> list = test.wordBreak(s, wordDict);
         List<String> list = test.wordBreak(s, wordDict);
-        for(String word : list){
+        for (String word : list) {
             System.out.print(word + ", ");
         }
         System.out.println();
