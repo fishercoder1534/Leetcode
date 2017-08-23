@@ -60,8 +60,8 @@ public class _505 {
         queue.offer(new Point(start[0], start[1], 0));
         int m = maze.length, n = maze[0].length;
         int[][] length = new int[m][n];
-        for (int i = 0; i < m*n; i++) {
-            length[i/n][i%n] = Integer.MAX_VALUE;//initialize the length array
+        for (int i = 0; i < m * n; i++) {
+            length[i / n][i % n] = Integer.MAX_VALUE;//initialize the length array
         }
 
         while (!queue.isEmpty()) {

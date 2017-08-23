@@ -59,7 +59,7 @@ public class _527 {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(word.substring(0, k));
         stringBuilder.append(word.length() - 1 - k);
-        stringBuilder.append(word.substring(word.length()-1));
+        stringBuilder.append(word.substring(word.length() - 1));
         return stringBuilder.toString();
     }
 

@@ -33,7 +33,7 @@ public class _501 {
         if (root == null) return result;
         List<Integer> list = bfs(root, map);
         result = new int[list.size()];
-        for (int i = 0; i < list.size(); i++){
+        for (int i = 0; i < list.size(); i++) {
             result[i] = list.get(i);
         }
         return result;
@@ -42,9 +42,9 @@ public class _501 {
     private List<Integer> bfs(TreeNode root, Map<Integer, Integer> map) {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int size = queue.size();
-            for (int i = 0; i < size; i++){
+            for (int i = 0; i < size; i++) {
                 TreeNode treeNode = queue.poll();
                 if (treeNode.left != null) queue.offer(treeNode.left);
                 if (treeNode.right != null) queue.offer(treeNode.right);
@@ -54,12 +54,12 @@ public class _501 {
 
         int highestFrequency = 0;
         List<Integer> list = new ArrayList<>();
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()){
-            if (entry.getValue() > highestFrequency){
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > highestFrequency) {
                 highestFrequency = entry.getValue();
                 list.clear();
                 list.add(entry.getKey());
-            } else if (entry.getValue() == highestFrequency){
+            } else if (entry.getValue() == highestFrequency) {
                 list.add(entry.getKey());
             }
         }
