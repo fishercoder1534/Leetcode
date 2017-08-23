@@ -66,7 +66,8 @@ public class _3 {
     }
 
     public static class Solution3 {
-        /**Sliding Window
+        /**
+         * Sliding Window
          * O(n) time
          * O(n) space
          */
@@ -89,7 +90,8 @@ public class _3 {
     }
 
     public static class Solution4 {
-        /**Sliding Window Optimized
+        /**
+         * Sliding Window Optimized
          * O(n) time
          * O(n) space
          */
@@ -102,8 +104,8 @@ public class _3 {
             /**Try to extend the range (i, j)*/
             for (int i = 0, j = 0; j < s.length(); j++) {
                 i = Math.max(index[s.charAt(j)], i);
-                max = Math.max(max, j -i + 1);
-                index[s.charAt(j)] = j+1;
+                max = Math.max(max, j - i + 1);
+                index[s.charAt(j)] = j + 1;
             }
             return max;
         }

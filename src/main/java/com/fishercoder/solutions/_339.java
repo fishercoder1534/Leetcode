@@ -23,7 +23,7 @@ public class _339 {
             return sum;
         }
     }
-    
+
     class SolutionWithLocalSum {
         public int depthSum(List<NestedInteger> nestedList) {
             return dfs(nestedList, 1);
@@ -31,8 +31,8 @@ public class _339 {
 
         private int dfs(List<NestedInteger> nestedList, int depth) {
             int sum = 0;
-            for(NestedInteger ni : nestedList){
-                sum += ni.isInteger() ? depth*ni.getInteger() : dfs(ni.getList(), depth+1);
+            for (NestedInteger ni : nestedList) {
+                sum += ni.isInteger() ? depth * ni.getInteger() : dfs(ni.getList(), depth + 1);
             }
             return sum;
         }

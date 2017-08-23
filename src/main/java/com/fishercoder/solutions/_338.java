@@ -32,19 +32,19 @@ public class _338 {
         //AND with 1 means to modulo 2
         //this is so cool!
         public int[] countBits(int num) {
-            int[] ones = new int[num+1];
-            for(int i = 1; i <= num; i++){
-                ones[i] = ones[i >> 1] + (i&1);
+            int[] ones = new int[num + 1];
+            for (int i = 1; i <= num; i++) {
+                ones[i] = ones[i >> 1] + (i & 1);
             }
             return ones;
         }
     }
-    
-    
+
+
     //use the most regular method to get it AC'ed first
     public int[] countBits(int num) {
-        int[] ones = new int[num+1];
-        for(int i = 0; i <= num; i++){
+        int[] ones = new int[num + 1];
+        for (int i = 0; i <= num; i++) {
             ones[i] = countOnes(i);
         }
         return ones;
@@ -52,14 +52,14 @@ public class _338 {
 
     private int countOnes(int i) {
         int ones = 0;
-        while(i != 0){
+        while (i != 0) {
             ones++;
-            i &= (i-1);
+            i &= (i - 1);
         }
         return ones;
     }
-    
-    public static void main(String...strings){
+
+    public static void main(String... strings) {
         _338 test = new _338();
         int num = 15;
         int[] ones = test.countBits(num);
