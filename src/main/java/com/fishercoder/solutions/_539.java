@@ -23,7 +23,7 @@ public class _539 {
             String[] timeParts = eachTime.split(":");
             int hour = Integer.valueOf(timeParts[0]);
             int minute = Integer.valueOf(timeParts[1]);
-            int value = hour*60 + minute;
+            int value = hour * 60 + minute;
             if (allTimePoints[value]) return 0;
             allTimePoints[value] = true;
         }

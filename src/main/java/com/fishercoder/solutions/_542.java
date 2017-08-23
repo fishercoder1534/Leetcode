@@ -50,12 +50,13 @@ public class _542 {
         final int[] dirs = new int[]{0, 1, 0, -1, 0};
         while (!deque.isEmpty()) {
             int[] currentCell = deque.poll();
-            for (int i = 0; i < dirs.length-1; i++) {
-                int nextRow = currentCell[0]+dirs[i];
-                int nextCol = currentCell[1]+dirs[i+1];
-                if (nextRow < 0 || nextCol < 0 || nextRow >= m || nextCol >= n || matrix.get(nextRow).get(nextCol) <= matrix.get(currentCell[0]).get(currentCell[1])+1) continue;
+            for (int i = 0; i < dirs.length - 1; i++) {
+                int nextRow = currentCell[0] + dirs[i];
+                int nextCol = currentCell[1] + dirs[i + 1];
+                if (nextRow < 0 || nextCol < 0 || nextRow >= m || nextCol >= n || matrix.get(nextRow).get(nextCol) <= matrix.get(currentCell[0]).get(currentCell[1]) + 1)
+                    continue;
                 deque.offer(new int[]{nextRow, nextCol});
-                matrix.get(nextRow).set(nextCol, matrix.get(currentCell[0]).get(currentCell[1])+1);
+                matrix.get(nextRow).set(nextCol, matrix.get(currentCell[0]).get(currentCell[1]) + 1);
             }
         }
         return matrix;

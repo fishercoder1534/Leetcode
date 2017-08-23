@@ -35,7 +35,7 @@ public class _526 {
     int count = 0;
 
     public int countArrangement(int N) {
-        backtracking(N, new int[N+1], 1);
+        backtracking(N, new int[N + 1], 1);
         return count;
     }
 
@@ -47,7 +47,7 @@ public class _526 {
         for (int i = 1; i <= N; i++) {
             if (used[i] == 0 && (i % pos == 0 || pos % i == 0)) {
                 used[i] = 1;
-                backtracking(N, used, pos+1);
+                backtracking(N, used, pos + 1);
                 used[i] = 0;
             }
         }

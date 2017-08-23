@@ -34,20 +34,20 @@ public class _537 {
     }
 
     private String sumTwoI(String product2, String product3) {
-        int number2 = Integer.parseInt(product2.substring(0, product2.length()-1));
-        int number3 = Integer.parseInt(product3.substring(0, product3.length()-1));
+        int number2 = Integer.parseInt(product2.substring(0, product2.length() - 1));
+        int number3 = Integer.parseInt(product3.substring(0, product3.length() - 1));
         return String.valueOf(number2 + number3) + "i";
     }
 
     private String multiplyTwoIs(String p, String q) {
-        int number1 = Integer.parseInt(p.substring(0, p.length()-1));
-        int number2 = Integer.parseInt(q.substring(0, q.length()-1));
+        int number1 = Integer.parseInt(p.substring(0, p.length() - 1));
+        int number2 = Integer.parseInt(q.substring(0, q.length() - 1));
         int numberProduct = number1 * number2;
         return String.valueOf(-numberProduct);
     }
 
     private String multiply(String p, String withI) {
-        int numberPart = Integer.parseInt(withI.substring(0, withI.length()-1));
+        int numberPart = Integer.parseInt(withI.substring(0, withI.length() - 1));
         return String.valueOf(numberPart * Integer.valueOf(p)) + "i";
     }
 
