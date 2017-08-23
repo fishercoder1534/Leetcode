@@ -21,18 +21,18 @@ public class _320Test {
     private static String word;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _320();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new ArrayList<>();
         actual = new ArrayList<>();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         word = "word";
         expected = Arrays.asList("word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d", "wo2", "1o1d", "1or1", "w1r1", "1o2", "2r1", "3d", "w3", "4");
         actual = test.generateAbbreviations(word);

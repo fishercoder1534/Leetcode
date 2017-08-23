@@ -16,14 +16,14 @@ public class _480Test {
     private static int k;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _480();
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{1,3,-1,-3,5,3,6,7};
-        expected = new double[]{1,-1,-1,3,5,6};
+    public void test1() {
+        nums = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
+        expected = new double[]{1, -1, -1, 3, 5, 6};
         k = 3;
         assertArrayEquals(expected, test.medianSlidingWindow(nums, k), 0);
     }

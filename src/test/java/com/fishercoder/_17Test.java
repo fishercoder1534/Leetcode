@@ -18,12 +18,12 @@ public class _17Test {
     private static List<String> actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _17();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         digits = "2";
         actual = test.letterCombinations(digits);
         expected = new ArrayList<>(Arrays.asList("a", "b", "c"));
@@ -31,10 +31,10 @@ public class _17Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         digits = "23";
         actual = test.letterCombinations(digits);
-        expected = new ArrayList<>(Arrays.asList("ad","ae","af","bd","be","bf","cd","ce","cf"));
+        expected = new ArrayList<>(Arrays.asList("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"));
         /**order doesn't matter, so we check like below*/
         assertTrue(expected.containsAll(actual) && actual.containsAll(expected));
     }

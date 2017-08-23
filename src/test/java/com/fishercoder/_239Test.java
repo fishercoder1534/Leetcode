@@ -17,12 +17,12 @@ public class _239Test {
     private static int k;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _239();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new int[]{};
         actual = new int[]{};
         nums = new int[]{};
@@ -30,11 +30,11 @@ public class _239Test {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
 
-        nums = new int[]{1,3,-1,-3,5,3,6,7};
+        nums = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
         k = 3;
-        expected = new int[]{3,3,5,5,6,7};
+        expected = new int[]{3, 3, 5, 5, 6, 7};
         actual = test.maxSlidingWindow(nums, k);
         Assert.assertArrayEquals(expected, actual);
 

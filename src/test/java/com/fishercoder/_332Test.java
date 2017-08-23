@@ -16,20 +16,20 @@ public class _332Test {
     private static List<String> expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _332();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         tickets = new String[][]{{"MUC", "LHR"}, {"JFK", "MUC"}, {"SFO", "SJC"}, {"LHR", "SFO"}};
         expected = test.findItinerary(tickets);
         CommonUtils.print(expected);
     }
 
     @Test
-    public void test2(){
-        tickets = new String[][]{{"JFK","SFO"},{"JFK","ATL"},{"SFO","ATL"},{"ATL","JFK"},{"ATL","SFO"}};
+    public void test2() {
+        tickets = new String[][]{{"JFK", "SFO"}, {"JFK", "ATL"}, {"SFO", "ATL"}, {"ATL", "JFK"}, {"ATL", "SFO"}};
         expected = test.findItinerary(tickets);
         CommonUtils.print(expected);
     }

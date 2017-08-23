@@ -14,20 +14,20 @@ public class _487Test {
     private static int actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _487();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = 0;
         actual = 0;
         nums = new int[1000];
     }
 
     @Test
-    public void test1(){
-        nums = new int[]{1,1,0,1,1,1};
+    public void test1() {
+        nums = new int[]{1, 1, 0, 1, 1, 1};
         expected = 3;
         actual = test.findMaxConsecutiveOnes(nums);
         assertEquals(expected, actual);
@@ -35,8 +35,8 @@ public class _487Test {
     }
 
     @Test
-    public void test2(){
-        nums = new int[]{1,1,1,1,1,1};
+    public void test2() {
+        nums = new int[]{1, 1, 1, 1, 1, 1};
         expected = 6;
         actual = test.findMaxConsecutiveOnes(nums);
         assertEquals(expected, actual);
@@ -44,7 +44,7 @@ public class _487Test {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         nums = new int[]{};
         expected = 0;
         actual = test.findMaxConsecutiveOnes(nums);

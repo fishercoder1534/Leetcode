@@ -17,13 +17,13 @@ public class _230Test {
     private static int k;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         naiveWay = new _230.MostNaiveWay();
         betterWay = new _230.BetterWay();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = new TreeNode(1);
         k = 1;
         assertEquals(1, naiveWay.kthSmallest(root, k));
@@ -31,7 +31,7 @@ public class _230Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         root = new TreeNode(2);
         root.left = new TreeNode(1);
         k = 1;

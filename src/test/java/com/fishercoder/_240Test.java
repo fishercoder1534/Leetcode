@@ -15,16 +15,16 @@ public class _240Test {
     private static int[][] matrix;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _240();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         target = 5;
         matrix = new int[][]{
                 {1, 4, 7, 11, 15},
@@ -39,7 +39,7 @@ public class _240Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         target = 0;
         matrix = new int[][]{};
         expected = false;

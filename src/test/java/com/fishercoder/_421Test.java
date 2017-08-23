@@ -16,12 +16,12 @@ public class _421Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _421();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         nums = new int[]{3, 10, 5, 25, 2, 8};
         expected = 28;
         actual = test.findMaximumXOR(nums);

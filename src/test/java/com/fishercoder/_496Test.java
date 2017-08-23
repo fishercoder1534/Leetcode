@@ -15,12 +15,12 @@ public class _496Test {
     private static int[] actual;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _496();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new int[]{};
         actual = new int[]{};
         findNums = new int[]{};
@@ -28,9 +28,9 @@ public class _496Test {
     }
 
     @Test
-    public void test1(){
-        findNums = new int[]{4,1,2};
-        nums = new int[]{1,3,4,2};
+    public void test1() {
+        findNums = new int[]{4, 1, 2};
+        nums = new int[]{1, 3, 4, 2};
         expected = new int[]{-1, 3, -1};
         actual = test.nextGreaterElement_naive_way(findNums, nums);
         assertArrayEquals(expected, actual);

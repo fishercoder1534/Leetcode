@@ -15,19 +15,19 @@ public class _494Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _494();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = 0;
         actual = 0;
         nums = new int[1000];
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         S = 3;
         nums = new int[]{1, 1, 1, 1, 1};
         expected = 5;

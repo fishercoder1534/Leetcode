@@ -10,7 +10,7 @@ public class _460Test {
     private static _460.LFUCache lfuCache;
 
     @Test
-    public void test1(){
+    public void test1() {
         lfuCache = new _460.LFUCache(2);
         lfuCache.put(1, 1);
         lfuCache.put(2, 2);

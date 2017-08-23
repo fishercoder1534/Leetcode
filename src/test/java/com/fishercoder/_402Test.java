@@ -13,12 +13,12 @@ public class _402Test {
     private static _402 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _402();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals("1219", test.removeKdigits("1432219", 3));
     }
 }

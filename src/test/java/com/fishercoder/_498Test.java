@@ -15,31 +15,31 @@ public class _498Test {
     private static int[] expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _498();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         matrix = new int[][]{
-                {1,2,3},
-                {4,5,6},
-                {7,8,9},
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9},
         };
-        expected = new int[]{1,2,4,7,5,3,6,8,9};
+        expected = new int[]{1, 2, 4, 7, 5, 3, 6, 8, 9};
         assertArrayEquals(expected, test.findDiagonalOrder(matrix));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         matrix = new int[][]{
-                {1,2,3},
-                {4,5,6},
-                {7,8,9},
-                {10,11,12},
-                {13,14,15},
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9},
+                {10, 11, 12},
+                {13, 14, 15},
         };
-        expected = new int[]{1,2,4,7,5,3,6,8,10,13,11,9,12,14,15};
+        expected = new int[]{1, 2, 4, 7, 5, 3, 6, 8, 10, 13, 11, 9, 12, 14, 15};
         assertArrayEquals(expected, test.findDiagonalOrder(matrix));
     }
 }

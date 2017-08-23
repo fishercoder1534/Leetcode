@@ -14,24 +14,24 @@ public class _273Test {
     private static int num;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _273();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         num = 123;
         assertEquals("One Hundred Twenty Three", test.numberToWords(num));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         num = 12345;
         assertEquals("Twelve Thousand Three Hundred Forty Five", test.numberToWords(num));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         num = 1234567;
         assertEquals("One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven", test.numberToWords(num));
     }

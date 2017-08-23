@@ -17,29 +17,29 @@ public class _492Test {
     private static int area;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _492();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
         expected = new int[]{0, 0};
         actual = new int[]{0, 0};
         area = 0;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         area = 4;
-        expected = new int[]{2,2};
+        expected = new int[]{2, 2};
         actual = test.constructRectangle(area);
         assertArrayEquals(expected, actual);
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         area = 3;
-        expected = new int[]{3,1};
+        expected = new int[]{3, 1};
         actual = test.constructRectangle(area);
         assertArrayEquals(expected, actual);
     }

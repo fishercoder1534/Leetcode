@@ -12,22 +12,22 @@ public class _358Test {
     private static _358 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _358();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         System.out.println(test.rearrangeString("aabbcc", 3));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         System.out.println(test.rearrangeString("aaabc", 3));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         System.out.println(test.rearrangeString("aaadbbcc", 2));
     }
 }

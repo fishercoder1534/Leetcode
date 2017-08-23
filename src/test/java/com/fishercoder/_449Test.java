@@ -15,18 +15,18 @@ public class _449Test {
     private static TreeNode expectedRoot;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         solution1 = new _449.Solution1();
         solution2 = new _449.Solution2();
         solution3 = new _449.Solution3();
     }
 
     @Before
-    public void setupForEachTest(){
+    public void setupForEachTest() {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         expectedRoot = new TreeNode(3);
         expectedRoot.left = new TreeNode(1);
         expectedRoot.right = new TreeNode(4);
@@ -37,7 +37,7 @@ public class _449Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         expectedRoot = new TreeNode(2);
         expectedRoot.left = new TreeNode(1);
         expectedRoot.right = new TreeNode(3);

@@ -19,12 +19,12 @@ public class _341Test {
     private static List<NestedInteger> nestedList;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _341();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         NestedInteger six = new NestedInteger(6);
         List<NestedInteger> sixList = new ArrayList<>();
         sixList.add(six);
@@ -42,7 +42,7 @@ public class _341Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         List<NestedInteger> bigList = new ArrayList<>();
 
         NestedInteger one = new NestedInteger(1);

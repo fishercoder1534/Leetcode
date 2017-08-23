@@ -13,17 +13,17 @@ public class _264Test {
     private static _264 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _264();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals(12, test.nthUglyNumber(10));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         assertEquals(402653184, test.nthUglyNumber(1352));
     }
 }

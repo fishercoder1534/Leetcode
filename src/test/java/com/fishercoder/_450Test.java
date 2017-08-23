@@ -17,12 +17,12 @@ public class _450Test {
     private static TreeNode root;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _450();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         root = new TreeNode(5);
         root.left = new TreeNode(3);
         root.left.left = new TreeNode(2);

@@ -13,12 +13,12 @@ public class _294Test {
     private static _294 test;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _294();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         assertEquals(true, test.canWin("++++"));
     }
 }

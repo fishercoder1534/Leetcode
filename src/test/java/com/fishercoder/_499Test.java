@@ -16,24 +16,25 @@ public class _499Test {
     private static int[] destination;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _505();
     }
 
     @Before
-    public void setupForEachTest(){}
+    public void setupForEachTest() {
+    }
 
     @Test
-    public void test1(){
+    public void test1() {
         maze = new int[][]{
-        {0,0,0,0,0},
-        {1,1,0,0,1},
-        {0,0,0,0,0},
-        {0,1,0,0,1},
-        {0,1,0,0,0}
+                {0, 0, 0, 0, 0},
+                {1, 1, 0, 0, 1},
+                {0, 0, 0, 0, 0},
+                {0, 1, 0, 0, 1},
+                {0, 1, 0, 0, 0}
         };
-        start = new int[]{4,3};
-        destination = new int[]{0,1};
+        start = new int[]{4, 3};
+        destination = new int[]{0, 1};
         actual = test.shortestDistance(maze, start, destination);
         expected = -1;
         assertEquals(expected, actual);
@@ -41,16 +42,16 @@ public class _499Test {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         maze = new int[][]{
-                {0,0,1,0,0},
-                {0,0,0,0,0},
-                {0,0,0,1,0},
-                {1,1,0,1,1},
-                {0,0,0,0,0}
+                {0, 0, 1, 0, 0},
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 1, 0},
+                {1, 1, 0, 1, 1},
+                {0, 0, 0, 0, 0}
         };
-        start = new int[]{0,4};
-        destination = new int[]{4,4};
+        start = new int[]{0, 4};
+        destination = new int[]{4, 4};
         actual = test.shortestDistance(maze, start, destination);
         expected = 12;
         assertEquals(expected, actual);

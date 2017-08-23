@@ -12,16 +12,16 @@ public class _48Test {
     private static int[][] matrix;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _48();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         matrix = new int[][]{
-                {1,2,3},
-                {4,5,6},
-                {7,8,9},
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9},
         };
         test.rotate_On(matrix);
     }

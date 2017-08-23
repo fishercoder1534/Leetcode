@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 5/10/17.
  */
 public class _355Test {
-    private static _355.Twitter twitter ;
+    private static _355.Twitter twitter;
 
     @BeforeClass
     public static void setup() {
@@ -20,7 +20,7 @@ public class _355Test {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         twitter.postTweet(1, 5);
         List<Integer> user1newsFeed = twitter.getNewsFeed(1);
         assertEquals(1, user1newsFeed.size());

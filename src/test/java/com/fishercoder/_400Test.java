@@ -16,12 +16,12 @@ public class _400Test {
     private static int n;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _400();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         n = 11;
         expected = 0;
         actual = test.findNthDigit(n);

@@ -17,13 +17,13 @@ public class _475Test {
     private static int[] heaters;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _475();
     }
 
     @Test
-    public void test1(){
-        houses = new int[]{1,2,3};
+    public void test1() {
+        houses = new int[]{1, 2, 3};
         heaters = new int[]{2};
         expected = 1;
         actual = test.findRadius(houses, heaters);
@@ -31,27 +31,27 @@ public class _475Test {
     }
 
     @Test
-    public void test2(){
-        houses = new int[]{1,2,3,4};
-        heaters = new int[]{1,4};
+    public void test2() {
+        houses = new int[]{1, 2, 3, 4};
+        heaters = new int[]{1, 4};
         expected = 1;
         actual = test.findRadius(houses, heaters);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         houses = new int[]{1};
-        heaters = new int[]{1,2,3,4};
+        heaters = new int[]{1, 2, 3, 4};
         expected = 0;
         actual = test.findRadius(houses, heaters);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void test4(){
-        houses = new int[]{1,2,3,5,15};
-        heaters = new int[]{2,30};
+    public void test4() {
+        houses = new int[]{1, 2, 3, 5, 15};
+        heaters = new int[]{2, 30};
         expected = 13;
         actual = test.findRadius(houses, heaters);
         assertEquals(expected, actual);

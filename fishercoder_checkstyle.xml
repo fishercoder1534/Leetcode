@@ -88,16 +88,16 @@
                       value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, LITERAL_DO, STATIC_INIT, INSTANCE_INIT"/>
         </module>
 
-        <!--<module name="WhitespaceAround">-->
-            <!--<property name="allowEmptyConstructors" value="true"/>-->
-            <!--<property name="allowEmptyMethods" value="true"/>-->
-            <!--<property name="allowEmptyTypes" value="true"/>-->
-            <!--<property name="allowEmptyLoops" value="true"/>-->
-            <!--<message key="ws.notFollowed"-->
-                     <!--value="WhitespaceAround: ''{0}'' is not followed by whitespace."/>-->
-            <!--<message key="ws.notPreceded"-->
-                     <!--value="WhitespaceAround: ''{0}'' is not preceded with whitespace."/>-->
-        <!--</module>-->
+        <module name="WhitespaceAround">
+            <property name="allowEmptyConstructors" value="true"/>
+            <property name="allowEmptyMethods" value="true"/>
+            <property name="allowEmptyTypes" value="true"/>
+            <property name="allowEmptyLoops" value="true"/>
+            <message key="ws.notFollowed"
+                     value="WhitespaceAround: ''{0}'' is not followed by whitespace."/>
+            <message key="ws.notPreceded"
+                     value="WhitespaceAround: ''{0}'' is not preceded with whitespace."/>
+        </module>
 
         <module name="OneStatementPerLine"/>
 

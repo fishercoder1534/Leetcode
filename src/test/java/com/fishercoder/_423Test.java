@@ -16,12 +16,12 @@ public class _423Test {
     private static String s;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _423();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         s = "fviefuro";
         expected = "45";
         actual = test.originalDigits(s);

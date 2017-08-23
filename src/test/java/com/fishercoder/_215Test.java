@@ -17,14 +17,14 @@ public class _215Test {
     private static int expected;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         solution2 = new _215.Solution2();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         k = 2;
-        nums = new int[]{3,2,1,5,6,4};
+        nums = new int[]{3, 2, 1, 5, 6, 4};
         actual = solution2.findKthLargest(nums, k);
         expected = 5;
         assertEquals(expected, actual);

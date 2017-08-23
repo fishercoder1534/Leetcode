@@ -15,12 +15,12 @@ public class _206Test {
     private static ListNode head;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _206();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);

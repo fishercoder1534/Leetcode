@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class _348Test {
     @Test
-    public void test1(){
+    public void test1() {
         int n = 3;
         _348.TicTacToe ticTacToe = new _348.TicTacToe(n);
         assertEquals(0, ticTacToe.move(0, 0, 1));

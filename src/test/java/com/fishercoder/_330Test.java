@@ -18,12 +18,12 @@ public class _330Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup(){
+    public static void setup() {
         test = new _330();
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         nums = new int[]{1, 2, 4, 13, 43};
         List<Integer> expected = new ArrayList(Arrays.asList(8, 29));
         assertEquals(expected, test.findPatches(nums, 100));
