@@ -27,7 +27,8 @@ public class _18 {
             if (i > 0 && nums[i - 1] == nums[i]) continue;
             for (int j = i + 1; j < nums.length - 2; j++) {
                 if (j > i + 1 && nums[j - 1] == nums[j]) continue;
-                int left = j + 1, right = nums.length - 1;
+                int left = j + 1;
+                int right = nums.length - 1;
                 while (left < right) {
                     int sum = nums[i] + nums[j] + nums[left] + nums[right];
                     if (sum == target) {

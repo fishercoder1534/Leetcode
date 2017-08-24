@@ -32,7 +32,8 @@ public class _169 {
     //saw a really clever solution on Discuss, though it didn't use bit manipulatoin
     //this is actually applying a famous algorithm called Moore Voting algorithm: http://www.cs.utexas.edu/~moore/best-ideas/mjrty/example.html
     public int majorityElement_moore_voting_algorithm(int[] nums) {
-        int count = 1, majority = nums[0];
+        int count = 1;
+        int majority = nums[0];
         for (int i = 1; i < nums.length; i++) {
             if (count == 0) {
                 count++;

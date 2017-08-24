@@ -41,7 +41,8 @@ public class _644 {
      * Now, we need to find if a subarray with length greater than or equal to kk is possible with an average sum greater than this midmid value.
      */
     public double findMaxAverage(int[] nums, int k) {
-        double l = -10000, r = 10000;
+        double l = -10000;
+        double r = 10000;
         while (r - l > 10e-7) {
             double mid = (l + r) / 2;
             if (getMaxSubbaraySumOfSizeK(nums, k, mid) >= 0) {
@@ -58,7 +59,8 @@ public class _644 {
         for (int i = 0; i <= k - 1; i++) {
             sum += nums[i] - mid;
         }
-        double maxSum = sum, prev = nums[0] - mid;
+        double maxSum = sum;
+        double prev = nums[0] - mid;
         for (int i = k; i < nums.length; i++) {
             sum = sum - nums[i - k] + nums[i];
             maxSum = Math.max(maxSum, Math.max(sum, sum + prev));

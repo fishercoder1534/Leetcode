@@ -13,7 +13,9 @@ public class _67 {
     //2. if a numeric number is represented/stored in String, how to get its value: use Character.getNumericValue(s.charAt(i))
     //3. directly adding/subtracting chars will end up working with their ASCII numbers, e.g. chars[0] = 'a', chars[1] = 'b', then chars[0] + chars[1] will become 195
     public String addBinary(String a, String b) {
-        int carry = 0, i = a.length() - 1, j = b.length() - 1;
+        int carry = 0;
+        int i = a.length() - 1;
+        int j = b.length() - 1;
         StringBuilder sb = new StringBuilder();
         while (i >= 0 || j >= 0) {
             int sum = carry;
@@ -40,7 +42,8 @@ public class _67 {
         //let's use Math.max() as the length first, if the most signifant bits add up to a carry, then we'll add one more bit
         char[] result = new char[longer.length];
         boolean carry = false;
-        int i = longer.length - 1, j = shorter.length - 1;
+        int i = longer.length - 1;
+        int j = shorter.length - 1;
         System.out.println(Character.getNumericValue(longer[i]) + Character.getNumericValue(shorter[j]));
         System.out.println((int) longer[i] + (int) shorter[j]);
         System.out.println(longer[i] + shorter[j]);

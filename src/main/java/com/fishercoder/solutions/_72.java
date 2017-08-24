@@ -13,7 +13,8 @@ package com.fishercoder.solutions;
 public class _72 {
 
     public int minDistance(String word1, String word2) {
-        int m = word1.length(), n = word2.length();
+        int m = word1.length();
+        int n = word2.length();
         if (m == 0) {
             return n;
         }

@@ -30,7 +30,8 @@ public class _174 {
     public int calculateMinimumHP(int[][] dungeon) {
         if (dungeon == null || dungeon.length == 0) return 0;
 
-        int height = dungeon.length, width = dungeon[0].length;
+        int height = dungeon.length;
+        int width = dungeon[0].length;
         int[][] dp = new int[height][width];
         dp[height - 1][width - 1] = (dungeon[height - 1][width - 1] > 0) ? 1 : 1 - dungeon[height - 1][width - 1];
 
@@ -122,7 +123,8 @@ public class _174 {
     public int calculateMinimumHP_attemp2_failed(int[][] dungeon) {
         if (dungeon == null || dungeon.length == 0) return 0;
 
-        int height = dungeon.length, width = dungeon[0].length;
+        int height = dungeon.length;
+        int width = dungeon[0].length;
         int[][] dp = new int[height][width];
         dp[0][0] = dungeon[0][0] > 0 ? 1 : 1 - dungeon[0][0];
 

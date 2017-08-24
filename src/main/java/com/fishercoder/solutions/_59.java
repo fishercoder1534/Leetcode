@@ -19,7 +19,8 @@ public class _59 {
         int temp = num;
         int[][] fourEdges = new int[num][num];
         int value = 1;
-        int i = 0, j = 0;
+        int i = 0;
+        int j = 0;
         if (num % 2 == 0) {
             //when num is even
             while (i < num / 2 && j < num / 2 && temp >= 0) {

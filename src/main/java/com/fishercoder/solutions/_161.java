@@ -11,7 +11,9 @@ public class _161 {
             char[] longer = (s.length() > t.length()) ? schar : tchar;
             char[] shorter = (longer == schar) ? tchar : schar;
 
-            int diffCnt = 0, i = 0, j = 0;
+            int diffCnt = 0;
+            int i = 0;
+            int j = 0;
             for (; i < shorter.length && j < longer.length; ) {
                 if (longer[j] != shorter[i]) {
                     diffCnt++;

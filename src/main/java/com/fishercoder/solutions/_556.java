@@ -36,7 +36,8 @@ public class _556 {
     }
 
     private void reverse(char[] a, int start) {
-        int i = start, j = a.length - 1;
+        int i = start;
+        int j = a.length - 1;
         while (i < j) {
             swap(a, i, j);
             i++;

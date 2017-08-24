@@ -149,8 +149,10 @@ public class _631 {
                     res.put(st, res.getOrDefault(st, 0) + 1);
                 } else {
                     String[] cells = st.split(":");
-                    int si = Integer.parseInt(cells[0].substring(1)), ei = Integer.parseInt(cells[1].substring(1));
-                    char sj = cells[0].charAt(0), ej = cells[1].charAt(0);
+                    int si = Integer.parseInt(cells[0].substring(1));
+                    int ei = Integer.parseInt(cells[1].substring(1));
+                    char sj = cells[0].charAt(0);
+                    char ej = cells[1].charAt(0);
                     for (int i = si; i <= ei; i++) {
                         for (char j = sj; j <= ej; j++) {
                             res.put("" + j + i, res.getOrDefault("" + j + i, 0) + 1);
@@ -164,7 +166,8 @@ public class _631 {
         public int calculate_sum(int r, int c, HashMap<String, Integer> cells) {
             int sum = 0;
             for (String s : cells.keySet()) {
-                int x = Integer.parseInt(s.substring(1)) - 1, y = s.charAt(0) - 'A';
+                int x = Integer.parseInt(s.substring(1)) - 1;
+                int y = s.charAt(0) - 'A';
                 sum += (formulas[x][y] != null ? formulas[x][y].val : 0) * cells.get(s);
             }
             formulas[r][c] = new Formula(cells, sum);

@@ -51,7 +51,9 @@ public class _517 {
         if (total % machines.length != 0) {
             return -1;
         }
-        int avg = total / machines.length, cnt = 0, max = 0;
+        int avg = total / machines.length;
+        int cnt = 0;
+        int max = 0;
         for (int load : machines) {
             cnt += load - avg; //load-avg is "gain/lose"
             max = Math.max(Math.max(max, Math.abs(cnt)), load - avg);

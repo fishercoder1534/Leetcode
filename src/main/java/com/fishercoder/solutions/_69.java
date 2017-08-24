@@ -9,7 +9,8 @@ package com.fishercoder.solutions;
  */
 public class _69 {
     public int mySqrt(int x) {
-        long i = 0, j = x / 2 + 1;
+        long i = 0;
+        long j = x / 2 + 1;
         while (i <= j) {
             long mid = (i + j) / 2;
             long result = mid * mid;
@@ -20,7 +21,6 @@ public class _69 {
             } else {
                 i = mid + 1;
             }
-            System.out.println(mid + " * " + mid + " = " + result + "\ti = " + i + "\tj = " + j);
         }
         return (int) j;
     }

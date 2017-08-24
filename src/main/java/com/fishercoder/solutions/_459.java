@@ -22,7 +22,9 @@ public class _459 {
     /**credit: https://discuss.leetcode.com/topic/68089/repeated-substring-pattern-simple-java-solution-using-kmp*/
     public static boolean repeatedSubstringPattern(String str) {
         //build the KMP pattern.
-        int n = str.length(), cur = 0, j = 1;
+        int n = str.length();
+        int cur = 0;
+        int j = 1;
         int[] pattern = new int[n];
         pattern[0] = 0;
 
