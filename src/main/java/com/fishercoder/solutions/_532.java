@@ -1,13 +1,11 @@
 package com.fishercoder.solutions;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 /**
+ * 532. K-diff Pairs in an Array
+ *
  * Given an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array.
  * Here a k-diff pair is defined as an integer pair (i, j), where i and j are both numbers in the array and their absolute difference is k.
 
@@ -34,33 +32,26 @@ import java.util.Set;
  */
 public class _532 {
 
-    //this O(n^2) will result in TLE
-    public int findPairs_On2(int[] nums, int k) {
-        Set<List<Integer>> pairsSet = new HashSet<>();
-        for (int i = 0; i < nums.length - 1; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (Math.abs(nums[j] - nums[i]) == k) {
-                    pairsSet.add(nums[i] > nums[j] ? Arrays.asList(nums[j], nums[i]) : Arrays.asList(nums[i], nums[j]));
-                }
-            }
-        }
-        return pairsSet.size();
-    }
-
     public int findPairs(int[] nums, int k) {
-        if (nums == null || nums.length == 0 || k < 0) return 0;
+        if (nums == null || nums.length == 0 || k < 0) {
+            return 0;
+        }
 
         Map<Integer, Integer> map = new HashMap();
-        for (int i : nums) {
-            map.put(i, map.getOrDefault(i, 0) + 1);
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
         int answer = 0;
         for (int key : map.keySet()) {
             if (k == 0) {
-                if (map.get(key) >= 2) answer++;
+                if (map.get(key) >= 2) {
+                    answer++;
+                }
             } else {
-                if (map.containsKey(key + k)) answer++;
+                if (map.containsKey(key + k)) {
+                    answer++;
+                }
             }
         }
         return answer;

@@ -5,6 +5,10 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
 import static junit.framework.Assert.assertEquals;
 
 public class _532Test {
@@ -15,8 +19,11 @@ public class _532Test {
     private static int[] nums;
 
     @BeforeClass
-    public static void setup() {
+    public static void setup() throws IOException {
         test = new _532();
+        Properties properties = new Properties();
+        InputStream inputStream = _532.class.getClassLoader().getResourceAsStream("fishercoder.properties");
+        properties.load(inputStream);
     }
 
     @Before
@@ -55,8 +62,8 @@ public class _532Test {
     }
 
 //    This test case will throw TLE error if your algorithm is O(n^2)
-//    And it doesn't compile in IntelliJ, so I'll ignore it for build
-//    @Ignore("Ignored")
+//    And it doesn't compile in IntelliJ, it throws "java: code too large" error
+//    so I'll comment it out for build
 //    @Test
 //    public void test4() {
 //        k = -139;
