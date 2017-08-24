@@ -64,8 +64,12 @@ public class _588 {
         TrieNode dfs(String path) {
             TrieNode node = root;
             for (String eachPath : path.split("/")) {
-                if (eachPath.isEmpty()) continue;
-                if (!node.map.containsKey(eachPath)) node.map.put(eachPath, new TrieNode(eachPath));
+                if (eachPath.isEmpty()) {
+                    continue;
+                }
+                if (!node.map.containsKey(eachPath)) {
+                    node.map.put(eachPath, new TrieNode(eachPath));
+                }
                 node = node.map.get(eachPath);
             }
             return node;

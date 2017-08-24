@@ -54,7 +54,9 @@ public class _582 {
             int curr = stack.poll();
             result.add(curr);
             List<Integer> list = map.get(curr);
-            if (list != null) stack.addAll(list);
+            if (list != null) {
+                stack.addAll(list);
+            }
         }
         return result;
     }

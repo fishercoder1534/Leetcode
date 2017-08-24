@@ -36,8 +36,12 @@ public class _581 {
         for (int i = 1; i < n; i++) {
             max = Math.max(max, nums[i]);
             min = Math.min(min, nums[n - 1 - i]);
-            if (nums[i] < max) end = i;
-            if (nums[n - 1 - i] > min) start = n - 1 - i;
+            if (nums[i] < max) {
+                end = i;
+            }
+            if (nums[n - 1 - i] > min) {
+                start = n - 1 - i;
+            }
         }
         return end - start + 1;
     }
