@@ -22,7 +22,8 @@ public class _9 {
         if (x < 0) {
             return false;
         }
-        int rev = 0, tmp = x;
+        int rev = 0;
+        int tmp = x;
         while (tmp != 0) {
             rev *= 10;
             rev += tmp % 10;

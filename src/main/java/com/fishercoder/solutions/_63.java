@@ -31,7 +31,8 @@ public class _63 {
             return 0;
         }
 
-        int height = obstacleGrid.length, width = obstacleGrid[0].length;
+        int height = obstacleGrid.length;
+        int width = obstacleGrid[0].length;
         int[][] dp = new int[height][width];
         dp[0][0] = obstacleGrid[0][0] == 1 ? 0 : 1;
         for (int i = 1; i < height; i++) {

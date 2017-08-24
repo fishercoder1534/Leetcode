@@ -24,7 +24,8 @@ If the first sequence of non-whitespace characters in str is not a valid integra
 If no valid conversion could be performed, a zero value is returned. If the correct value is out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.*/
 public class _8 {
 	public int myAtoi_clean_version(String str) {
-		int p = 0, result = 0;
+		int p = 0;
+		int result = 0;
 		while (p < str.length() && Character.isWhitespace(str.charAt(p))) {
 			p++;
 		}
@@ -93,7 +94,8 @@ public class _8 {
 		char[] chars = str.toCharArray();
 		StringBuilder sb = new StringBuilder();
 		boolean negative;
-		int minuSignCount = 0, plusSignCount = 0;
+		int minuSignCount = 0;
+		int plusSignCount = 0;
 		int i = 0;
 		while (i < chars.length) {
 			if (chars[i] == '-') {

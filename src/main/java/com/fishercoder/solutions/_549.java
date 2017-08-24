@@ -35,7 +35,8 @@ public class _549 {
 
     private int[] longestPath(TreeNode root) {
         if (root == null) return new int[]{0, 0};
-        int increasing = 1, decreasing = 1;
+        int increasing = 1;
+        int decreasing = 1;
         if (root.left != null) {
             int[] left = longestPath(root.left);
             if (root.val == root.left.val + 1) decreasing = left[1] + 1;

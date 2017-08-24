@@ -21,7 +21,11 @@ public class _76 {
             counts[c]++;
         }
 
-        int start = 0, end = 0, minStart = 0, minLen = Integer.MAX_VALUE, counter = t.length();
+        int start = 0;
+        int end = 0;
+        int minStart = 0;
+        int minLen = Integer.MAX_VALUE;
+        int counter = t.length();
         while (end < s.length()) {
             if (counts[s.charAt(end)] > 0) {
                 counter--;

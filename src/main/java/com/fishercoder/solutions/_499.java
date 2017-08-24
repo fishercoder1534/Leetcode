@@ -56,7 +56,8 @@ public class _499 {
         final int[] directions = new int[]{-1, 0, 1, 0, -1};
         Queue<Point> heap = new PriorityQueue<>();
         heap.offer(new Point(ball[0], ball[1], 0, ""));
-        int m = maze.length, n = maze[0].length;
+        int m = maze.length;
+        int n = maze[0].length;
         Point[][] points = new Point[m][n];
         for (int i = 0; i < m * n; i++) {
             points[i / n][i % n] = new Point(i / n, i % n);//initialize the length array
@@ -67,7 +68,9 @@ public class _499 {
             if (points[curr.x][curr.y].compareTo(curr) <= 0) continue;//if we have already found a shorter route
             points[curr.x][curr.y] = curr;
             for (int i = 0; i < directions.length - 1; i++) {
-                int x = curr.x, y = curr.y, distance = curr.distance;//use temp variables to move
+                int x = curr.x;
+                int y = curr.y;
+                int distance = curr.distance;//use temp variables to move
                 //we need below while loop to find only "stop" points that could be put into the queue
                 while (x >= 0 && y >= 0 && x < m && y < n && maze[x][y] == 0 && (x != hole[0] || y != hole[1])) {
                     x += directions[i];

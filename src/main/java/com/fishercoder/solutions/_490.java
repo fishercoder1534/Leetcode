@@ -62,13 +62,15 @@ public class _490 {
         final int[] directions = new int[]{-1, 0, 1, 0, -1};
         Queue<Point> queue = new LinkedList<>();
         queue.offer(new Point(start[0], start[1]));
-        int m = maze.length, n = maze[0].length;
+        int m = maze.length;
+        int n = maze[0].length;
         boolean[][] visited = new boolean[m][n];
         visited[start[0]][start[1]] = true;
 
         while (!queue.isEmpty()) {
             Point curr = queue.poll();
-            int x = curr.x, y = curr.y;//keep the original value
+            int x = curr.x;
+            int y = curr.y;//keep the original value
             for (int i = 0; i < directions.length - 1; i++) {
                 int xx = x, yy = y;//use temp variables to move
                 while (xx >= 0 && yy >= 0 && xx < m && yy < n && maze[xx][yy] == 0) {

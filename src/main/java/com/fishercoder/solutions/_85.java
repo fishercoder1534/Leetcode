@@ -18,7 +18,8 @@ public class _85 {
         if (matrix.length == 0) {
             return 0;
         }
-        int m = matrix.length, n = matrix[0].length;
+        int m = matrix.length;
+        int n = matrix[0].length;
         int[] left = new int[n];
         int[] right = new int[n];
         int[] height = new int[n];
@@ -27,7 +28,8 @@ public class _85 {
         Arrays.fill(height, 0);
         int maxA = 0;
         for (int i = 0; i < m; i++) {
-            int currLeft = 0, currRight = n;
+            int currLeft = 0;
+            int currRight = n;
 
             //compute height, this can be achieved from either side
             for (int j = 0; j < n; j++) {

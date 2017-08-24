@@ -58,7 +58,8 @@ public class _505 {
         final int[] directions = new int[]{-1, 0, 1, 0, -1};
         Queue<Point> queue = new LinkedList<>();
         queue.offer(new Point(start[0], start[1], 0));
-        int m = maze.length, n = maze[0].length;
+        int m = maze.length;
+        int n = maze[0].length;
         int[][] length = new int[m][n];
         for (int i = 0; i < m * n; i++) {
             length[i / n][i % n] = Integer.MAX_VALUE;//initialize the length array
@@ -69,7 +70,9 @@ public class _505 {
             if (length[curr.x][curr.y] <= curr.distance) continue;
             length[curr.x][curr.y] = curr.distance;
             for (int i = 0; i < directions.length - 1; i++) {
-                int x = curr.x, y = curr.y, distance = curr.distance;//use temp variables to move
+                int x = curr.x;
+                int y = curr.y;
+                int distance = curr.distance;//use temp variables to move
                 //we need below while loop to find only "stop" points that could be put into the queue
                 while (x >= 0 && y >= 0 && x < m && y < n && maze[x][y] == 0) {
                     x += directions[i];

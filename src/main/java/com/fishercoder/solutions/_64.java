@@ -18,7 +18,8 @@ public class _64 {
             return 0;
         }
 
-        int height = grid.length, width = grid[0].length;
+        int height = grid.length;
+        int width = grid[0].length;
         int[][] dp = new int[height][width];
         dp[0][0] = grid[0][0];
         for (int i = 1; i < height; i++) {

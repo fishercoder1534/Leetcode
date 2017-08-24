@@ -38,7 +38,8 @@ public class _130 {
 
     public void solve(char[][] board) {
         if (board == null || board.length == 0 || board[0].length == 0) return;
-        int m = board.length, n = board[0].length;
+        int m = board.length;
+        int n = board[0].length;
         Queue<int[]> queue = new LinkedList();
         //check first row and last row and mark all those '0' on these two rows to be '+' to let them be different from other 'O',
         //at the same time, we put them into the queue to get ready for a BFS to mark all those adjacent 'O' nodes to '+' as well

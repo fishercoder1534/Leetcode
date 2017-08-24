@@ -22,7 +22,8 @@ public class _162 {
     public static int findPeakElement_Ologn(int[] nums) {
 
         if (nums == null || nums.length == 0) return 0;
-        int left = 0, right = nums.length - 1;
+        int left = 0;
+        int right = nums.length - 1;
         while (left + 1 < right) {
             int mid = left + (right - left) / 2;
             if (nums[mid] < nums[mid + 1]) {
@@ -48,7 +49,8 @@ public class _162 {
      */
     public static int findPeakElement(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
-        int n = nums.length, result = 0;
+        int n = nums.length;
+        int result = 0;
         for (int i = 0; i < n; i++) {
             if (i == 0 && n > 1 && nums[i] > nums[i + 1]) {
                 result = i;

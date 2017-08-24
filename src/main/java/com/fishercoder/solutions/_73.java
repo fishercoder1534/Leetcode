@@ -22,7 +22,8 @@ public class _73 {
             if (matrix == null || matrix.length == 0) {
                 return;
             }
-            int height = matrix.length, width = matrix[0].length;
+            int height = matrix.length;
+            int width = matrix[0].length;
             boolean[][] zero = new boolean[height][width];
             for (int i = 0; i < height; i++) {
                 for (int j = 0; j < width; j++) {

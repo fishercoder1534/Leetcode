@@ -32,7 +32,8 @@ public class _160 {
     public static class Solution1 {
 
         public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-            int lenA = findLen(headA), lenB = findLen(headB);
+            int lenA = findLen(headA);
+            int lenB = findLen(headB);
             /**align headA and headB to the same starting point and then move together until we find the intersection point*/
             while (lenA < lenB) {
                 headB = headB.next;
