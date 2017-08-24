@@ -27,7 +27,8 @@ public class _417 {
         List<int[]> result = new ArrayList();
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return result;
 
-        int m = matrix.length, n = matrix[0].length;
+        int m = matrix.length;
+        int n = matrix[0].length;
         boolean[][] pacific = new boolean[m][n];
         boolean[][] atlantic = new boolean[m][n];
 
@@ -53,7 +54,8 @@ public class _417 {
     }
 
     void dfs(int[][] matrix, boolean[][] visited, int height, int x, int y) {
-        int m = matrix.length, n = matrix[0].length;
+        int m = matrix.length;
+        int n = matrix[0].length;
         if (x < 0 || y < 0 || x >= m || y >= n || matrix[x][y] < height || visited[x][y]) return;
         visited[x][y] = true;
         dfs(matrix, visited, matrix[x][y], x + 1, y);

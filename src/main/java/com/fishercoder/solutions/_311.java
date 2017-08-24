@@ -24,7 +24,9 @@ package com.fishercoder.solutions;
 public class _311 {
 
     public int[][] multiply(int[][] A, int[][] B) {
-        int m = A.length, n = A[0].length, p = B[0].length;
+        int m = A.length;
+        int n = A[0].length;
+        int p = B[0].length;
         int[][] C = new int[m][p];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {

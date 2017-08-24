@@ -28,7 +28,8 @@ public class _413 {
 
     //copied this solution: https://discuss.leetcode.com/topic/62884/2ms-java-o-n-time-o-1-space-solution
     public int numberOfArithmeticSlices(int[] A) {
-        int sum = 0, len = 2;
+        int sum = 0;
+        int len = 2;
         for (int i = 2; i < A.length; i++) {
             if (A[i] - A[i - 1] == A[i - 1] - A[i - 2]) {
                 len++;
@@ -48,7 +49,8 @@ public class _413 {
     class Solution2 {
         //a more clear solution: https://discuss.leetcode.com/topic/63302/simple-java-solution-9-lines-2ms
         public int numberOfArithmeticSlices(int[] A) {
-            int sum = 0, curr = 0;
+            int sum = 0;
+            int curr = 0;
             for (int i = 2; i < A.length; i++) {
                 if (A[i] - A[i - 1] == A[i - 1] - A[i - 2]) {
                     curr++;

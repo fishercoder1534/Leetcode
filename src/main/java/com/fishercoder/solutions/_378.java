@@ -42,12 +42,14 @@ public class _378 {
     // end of row util we find the element is less than the mid, the left side element is all less than mid; keep tracking elements
     // that less than mid and compare with k, then update the k.
     public int kthSmallestBS(int[][] matrix, int k) {
-        int row = matrix.length - 1, col = matrix[0].length - 1;
+        int row = matrix.length - 1;
+        int col = matrix[0].length - 1;
         int lo = matrix[0][0];
         int hi = matrix[row][col];
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
-            int count = 0, j = col;
+            int count = 0;
+            int j = col;
             for (int i = 0; i <= row; i++) {
                 while (j >= 0 && matrix[i][j] > mid) {
                     j--;

@@ -115,7 +115,7 @@
             <property name="allowNoEmptyLineBetweenFields" value="true"/>
         </module>
 
-        <!--<module name="MultipleVariableDeclarations"/>-->
+        <module name="MultipleVariableDeclarations"/>
 
         <module name="SeparatorWrap">
             <property name="tokens" value="DOT"/>

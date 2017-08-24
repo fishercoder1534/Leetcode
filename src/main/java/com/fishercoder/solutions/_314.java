@@ -111,7 +111,8 @@ public class _314 {
         HashMap<Integer, List<Integer>> map = new HashMap();
         bfsQ.offer(root);
         indexQ.offer(0);//we set the root as index 0, left will be negative, right will be positive
-        int min = 0, max = 0;
+        int min = 0;
+        int max = 0;
         while (!bfsQ.isEmpty()) {
             int qSize = bfsQ.size();
             for (int i = 0; i < qSize; i++) {

@@ -20,7 +20,8 @@ public class _374 {
      * That's why if num > target, it returns -1 which means the target is smaller than your guess!!!*/
 
     public int guessNumber(int n) {
-        int left = 1, right = n;
+        int left = 1;
+        int right = n;
         while (left + 1 < right) {
             int mid = left + (right - left) / 2;
             int g = guess(mid);

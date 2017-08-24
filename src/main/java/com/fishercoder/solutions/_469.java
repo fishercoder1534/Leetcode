@@ -37,7 +37,8 @@ public class _469 {
         boolean gotNegative = false;
         boolean gotPositive = false;
         int numPoints = points.size();
-        int B, C;
+        int B;
+        int C;
         for (int A = 0; A < numPoints; A++) {
             // Trick to calc the last 3 points: n - 1, 0 and 1.
             B = (A + 1) % numPoints;

@@ -36,7 +36,8 @@ public class _483 {
         long nn = Long.parseLong(n);
         long res = 0;
         for (int k = 60; k >= 2; k--) {
-            long start = 2, end = nn;
+            long start = 2;
+            long end = nn;
             while (start < end) {
                 long m = start + (end - start) / 2;
 

@@ -30,7 +30,8 @@ public class _368 {
         int[] count = new int[len];
         int[] pre = new int[len];
         Arrays.sort(nums);
-        int max = 0, index = -1;
+        int max = 0;
+        int index = -1;
         for (int i = 0; i < len; i++) {
             count[i] = 1;
             pre[i] = -1;

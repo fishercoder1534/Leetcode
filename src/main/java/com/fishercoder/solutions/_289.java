@@ -25,7 +25,8 @@ package com.fishercoder.solutions;
 
 public class _289 {
     public void gameOfLife(int[][] board) {
-        int height = board.length, width = board[0].length;
+        int height = board.length;
+        int width = board[0].length;
         int[][] next = new int[height][width];
 
         for (int i = 0; i < board.length; i++) {

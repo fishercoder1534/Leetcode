@@ -46,7 +46,8 @@ public class _305 {
         int tf = father[id];
         while (tf != father[tf])
             tf = father[tf];
-        int cur = id, tmp;
+        int cur = id;
+        int tmp;
         while (father[cur] != tf) {
             tmp = father[cur];
             father[cur] = tf;
@@ -79,7 +80,11 @@ public class _305 {
         int[] sz = new int[m * n];
         int[] dr = { 0, 0, -1, 1 };
         int[] dc = { -1, 1, 0, 0 };
-        int r, c, nr, nc, count = 0;
+        int r;
+        int c;
+        int nr;
+        int nc;
+        int count = 0;
         for (int i = 0; i < positions.length; i++) {
             r = positions[i][0];
             c = positions[i][1];

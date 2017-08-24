@@ -18,7 +18,8 @@ public class _221 {
     /**The idea is pretty straightforward: use a 2d dp table to store the intermediate results*/
     public static int maximalSquare(char[][] matrix) {
         if (matrix == null || matrix.length == 0) return 0;
-        int m = matrix.length, n = matrix[0].length;
+        int m = matrix.length;
+        int n = matrix[0].length;
         int max = Integer.MIN_VALUE;
         int[][] dp = new int[m][n];
         for (int i = 0; i < m; i++) {

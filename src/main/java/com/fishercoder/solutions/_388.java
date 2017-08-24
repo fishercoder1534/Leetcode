@@ -7,11 +7,14 @@ import java.util.Stack;
 public class _388 {
     public static int lengthLongestPath(String input) {
         Stack<Integer> stack = new Stack();
-        int longestLen = 0, currDirLen = 0;
-        int i = 0, currLevel = 0;
+        int longestLen = 0;
+        int currDirLen = 0;
+        int i = 0;
+        int currLevel = 0;
         int nextLevel = 0;
         boolean isFile = false;
-        Character period = '.', space = ' ';
+        Character period = '.';
+        Character space = ' ';
         while (i < input.length()) {
             currLevel = nextLevel;
             int currStrLen = 0;
@@ -99,8 +102,12 @@ public class _388 {
             System.out.print("\t");
         }
         System.out.println();
-        Character slash = '\\', space = ' ', n = 'n', t = 't';
-        String newLine = "\\n", newTab = "\\t";
+        Character slash = '\\';
+        char space = ' ';
+        char n = 'n';
+        char t = 't';
+        String newLine = "\\n";
+        String newTab = "\\t";
         for (int i = 0; i < len; i++) {
             switch (s.charAt(i)) {
                 case '\n':

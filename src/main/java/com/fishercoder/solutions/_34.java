@@ -15,7 +15,8 @@ import com.fishercoder.common.utils.CommonUtils;
 public class _34 {
 
     public static int[] searchRange(int[] nums, int target) {
-        int start = 0, end = nums.length - 1;
+        int start = 0;
+        int end = nums.length - 1;
         int[] range = new int[2];
         range[0] = -1;
         range[1] = -1;

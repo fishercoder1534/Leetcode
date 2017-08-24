@@ -74,7 +74,8 @@ public class _465 {
             else poss.add(m);
         }
         int ans = Integer.MAX_VALUE;
-        Stack<Integer> stNeg = new Stack<>(), stPos = new Stack<>();
+        Stack<Integer> stNeg = new Stack<>();
+        Stack<Integer> stPos = new Stack<>();
         for (int i = 0; i < 1000; i++) {
             for (Integer num : negs) stNeg.push(num);
             for (Integer num : poss) stPos.push(num);

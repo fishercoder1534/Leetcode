@@ -27,7 +27,8 @@ public class _454 {
 
     public static int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
         Map<Integer, Integer> map = new HashMap();
-        int result = 0, len = A.length;
+        int result = 0;
+        int len = A.length;
         for (int i = 0; i < len; i++) {
             for (int j = 0; j < len; j++) {
                 int sum = A[i] + B[j];

@@ -28,7 +28,8 @@ public class _336 {
         }
 
         for (int i = 0; i < words.length; i++) {
-            int l = 0, r = 0;
+            int l = 0;
+            int r = 0;
             while (l <= r) {
                 String s = words[i].substring(l, r);
                 Integer j = map.get(new StringBuilder(s).reverse().toString());
