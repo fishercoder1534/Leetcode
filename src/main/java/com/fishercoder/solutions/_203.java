@@ -26,7 +26,8 @@ public class _203 {
 	public ListNode removeElements(ListNode head, int val) {
 		ListNode dummy = new ListNode(-1);
 		dummy.next = head;
-		ListNode curr = head, prev = dummy;
+		ListNode curr = head;
+		ListNode prev = dummy;
 		while (curr != null) {
 			if (curr.val == val) {
 				prev.next = curr.next;

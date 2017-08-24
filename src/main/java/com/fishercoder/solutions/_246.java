@@ -16,7 +16,8 @@ import java.util.Set;
 public class _246 {
 
     public boolean isStrobogrammatic_map(String num) {
-        int i = 0, j = num.length() - 1;
+        int i = 0;
+        int j = num.length() - 1;
         Map<Character, Character> map = new HashMap();
         map.put('8', '8');
         map.put('1', '1');
@@ -47,7 +48,8 @@ public class _246 {
         set.add('8');
         set.add('9');
         char[] nums = num.toCharArray();
-        int i = 0, j = num.length() - 1;
+        int i = 0;
+        int j = num.length() - 1;
         while (i <= j) {
             if (!set.contains(nums[i]) || !set.contains(nums[j])) return false;
             if (nums[i] == '6' && nums[j] != '9') return false;

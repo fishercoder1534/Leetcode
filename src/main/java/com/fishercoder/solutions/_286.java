@@ -31,10 +31,13 @@ public class _286 {
 
         public void wallsAndGates(int[][] rooms) {
             if (rooms == null || rooms.length == 0 || rooms[0].length == 0) return;
-            int m = rooms.length, n = rooms[0].length;
+            int m = rooms.length;
+            int n = rooms[0].length;
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
-                    if (rooms[i][j] == 0) bfs(rooms, i, j, m, n);
+                    if (rooms[i][j] == 0) {
+                        bfs(rooms, i, j, m, n);
+                    }
                 }
             }
         }
@@ -59,7 +62,8 @@ public class _286 {
 
         public void wallsAndGates(int[][] rooms) {
             if (rooms == null || rooms.length == 0 || rooms[0].length == 0) return;
-            int m = rooms.length, n = rooms[0].length;
+            int m = rooms.length;
+            int n = rooms[0].length;
             Queue<int[]> queue = new LinkedList();
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {

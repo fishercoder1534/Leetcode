@@ -24,15 +24,17 @@ public class _364 {
         for (NestedInteger next : nestedList) {
             q.offer(next);
         }
-        int prev = 0, total = 0;
+        int prev = 0;
+        int total = 0;
 
         while (!q.isEmpty()) {
             int size = q.size();
             int levelSum = 0;
             for (int i = 0; i < size; i++) {
                 NestedInteger next = q.poll();
-                if (next.isInteger()) levelSum += next.getInteger();
-                else {
+                if (next.isInteger()) {
+                    levelSum += next.getInteger();
+                } else {
                     List<NestedInteger> list = next.getList();
                     for (NestedInteger n : list) {
                         q.offer(n);

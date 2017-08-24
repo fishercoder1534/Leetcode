@@ -25,12 +25,20 @@ public class _436 {
 
         for (int i = 1; i < intervals.length; i++) {
             //TODO: use binary search for the minimum start interval for interval[i-1] instead of a while loop
-            int tmp = i - 1, tmpI = i;
-            while (tmpI < intervals.length && intervals[tmpI].start < intervals[tmp].end) tmpI++;
-            if (tmpI < intervals.length) result[map.get(intervals[tmp])] = map.get(intervals[tmpI]);
-            else result[map.get(intervals[tmp])] = -1;
+            int tmp = i - 1;
+            int tmpI = i;
+            while (tmpI < intervals.length && intervals[tmpI].start < intervals[tmp].end) {
+                tmpI++;
+            }
+            if (tmpI < intervals.length) {
+                result[map.get(intervals[tmp])] = map.get(intervals[tmpI]);
+            } else {
+                result[map.get(intervals[tmp])] = -1;
+            }
         }
-        if (result[intervals.length - 1] == 0 && last.end > first.start) result[intervals.length - 1] = -1;
+        if (result[intervals.length - 1] == 0 && last.end > first.start) {
+            result[intervals.length - 1] = -1;
+        }
         return result;
     }
 

@@ -17,13 +17,16 @@ public class _265 {
 		if (costs == null || costs.length == 0)
 			return 0;
 
-		int n = costs.length, k = costs[0].length;
+		int n = costs.length;
+		int k = costs[0].length;
 		// min1 is the index of the 1st-smallest cost till previous house
 		// min2 is the index of the 2nd-smallest cost till previous house
-		int min1 = -1, min2 = -1;
+		int min1 = -1;
+		int min2 = -1;
 
 		for (int i = 0; i < n; i++) {
-			int last1 = min1, last2 = min2;
+			int last1 = min1;
+			int last2 = min2;
 			min1 = -1;
 			min2 = -1;
 

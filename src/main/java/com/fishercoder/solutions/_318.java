@@ -129,7 +129,9 @@ public class _318 {
         //left shift is equivalent to multiplication of powers of 2, so "4 << 1" equals to " 4 * 2^1"
         //similarly, "4 << 3" equals to "4 * 2^3" which equals "4 * 8"
         String sample = "f";
-        int bits = 0, shiftLeftByHowMany = 0, shiftLeftResult = 0;
+        int bits = 0;
+        int shiftLeftByHowMany = 0;
+        int shiftLeftResult = 0;
         for (int j = 0; j < sample.length(); j++) {
             shiftLeftByHowMany = sample.charAt(j) - 'a';
             shiftLeftResult = 1 << shiftLeftByHowMany;

@@ -26,7 +26,8 @@ public class _27 {
 	public int removeElement_editorial_solution_2(int[] nums, int val) {
 		//this approach is very similar to the one below that I came up totally by myself, but it's much concise
 		//Here, it didn't check whether nums[n-1] will be equal to val, because in the next iteration, it will still check that number, smart!
-		int i = 0, n = nums.length;
+		int i = 0;
+		int n = nums.length;
 		while (i < n) {
 			if (nums[i] == val) {
 				nums[i] = nums[n - 1];
@@ -41,7 +42,8 @@ public class _27 {
 	//just throw all numbers that are equal to val to the end and make a count of it
 	public int removeElement(int[] nums, int val) {
 		int count = 0;
-		int len = nums.length, throwPosition = len - 1;
+		int len = nums.length;
+		int throwPosition = len - 1;
 		for (int i = 0; i <= throwPosition; i++) {
 			while (throwPosition >= 0 && nums[throwPosition] == val) {
 				throwPosition--;

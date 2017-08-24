@@ -63,7 +63,9 @@ public class _438 {
             for (char c : p.toCharArray()) {
                 hash[c - 'a']++;
             }
-            int start = 0, end = 0, count = p.length();
+            int start = 0;
+            int end = 0;
+            int count = p.length();
             while (end < s.length()) {
                 if (hash[s.charAt(end) - 'a'] > 0) {
                     count--;

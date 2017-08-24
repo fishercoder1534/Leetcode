@@ -11,7 +11,10 @@ package com.fishercoder.solutions;
 public class _420 {
     /**Looked at this solution: https://discuss.leetcode.com/topic/63854/o-n-java-solution-by-analyzing-changes-allowed-to-fix-each-condition*/
     public int strongPasswordChecker(String s) {
-        int res = 0, a = 1, A = 1, d = 1;
+        int res = 0;
+        int a = 1;
+        int A = 1;
+        int d = 1;
         char[] carr = s.toCharArray();
         int[] arr = new int[carr.length];
 
@@ -33,7 +36,8 @@ public class _420 {
         if (arr.length < 6) {
             res += totalMissing + Math.max(0, 6 - (arr.length + totalMissing));
         } else {
-            int overLen = Math.max(arr.length - 20, 0), leftOver = 0;
+            int overLen = Math.max(arr.length - 20, 0);
+            int leftOver = 0;
             res += overLen;
 
             for (int k = 1; k < 3; k++) {

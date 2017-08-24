@@ -51,7 +51,8 @@ public class _544 {
 
     public String findContestMatch(int n) {
         List<String> pairs = new ArrayList<>();
-        int left = 1, right = n;
+        int left = 1;
+        int right = n;
         while (left < right) {
             pairs.add("(" + left + "," + right + ")");
             left++;

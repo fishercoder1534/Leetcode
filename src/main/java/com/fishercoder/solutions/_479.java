@@ -24,7 +24,8 @@ public class _479 {
         }
 
         // if n = 3 then upperBound = 999 and lowerBound = 99
-        int upperBound = (int) Math.pow(10, n) - 1, lowerBound = upperBound / 10;
+        int upperBound = (int) Math.pow(10, n) - 1;
+        int lowerBound = upperBound / 10;
         long maxNumber = (long) upperBound * (long) upperBound;
 
         // represents the first half of the maximum assumed palindrom.

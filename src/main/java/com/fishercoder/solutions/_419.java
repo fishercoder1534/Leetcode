@@ -35,7 +35,9 @@ public class _419 {
      */
     public int countBattleships_no_modify_original_input(char[][] board) {
         if (board == null || board.length == 0) return 0;
-        int count = 0, m = board.length, n = board[0].length;
+        int count = 0;
+        int m = board.length;
+        int n = board[0].length;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (board[i][j] == '.') continue;//if it can pass this line, then board[i][j] must be 'X'
@@ -52,7 +54,9 @@ public class _419 {
      */
     public int countBattleships(char[][] board) {
         if (board == null || board.length == 0) return 0;
-        int result = 0, m = board.length, n = board[0].length;
+        int result = 0;
+        int m = board.length;
+        int n = board[0].length;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (board[i][j] == 'X') {

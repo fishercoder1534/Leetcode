@@ -56,7 +56,8 @@ public class _19 {
         //then, when fast reaches null, slow reaches the point where the node should be deleted.
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
-        ListNode slow = head, fast = head;
+        ListNode slow = head;
+        ListNode fast = head;
         int tempN = n;
         while (tempN-- > 0) {
             fast = fast.next;
@@ -87,7 +88,8 @@ public class _19 {
     public ListNode removeNthFromEnd_one_pass_more_concise_version(ListNode head, int n) {
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
-        ListNode slow = dummy, fast = dummy;
+        ListNode slow = dummy;
+        ListNode fast = dummy;
         while (fast.next != null) {
             if (n <= 0) slow = slow.next;
             fast = fast.next;

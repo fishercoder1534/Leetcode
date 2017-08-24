@@ -29,7 +29,9 @@ package com.fishercoder.solutions;
 public class _414 {
 
     public int thirdMax(int[] nums) {
-        long max1 = Long.MIN_VALUE, max2 = Long.MIN_VALUE, max3 = Long.MIN_VALUE;
+        long max1 = Long.MIN_VALUE;
+        long max2 = Long.MIN_VALUE;
+        long max3 = Long.MIN_VALUE;
         for (int i : nums) {
             max1 = Math.max(max1, i);
         }

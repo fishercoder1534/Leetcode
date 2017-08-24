@@ -13,7 +13,8 @@ public class _344 {
     }
 
     public String reverseString(String s) {
-        int i = 0, j = s.length() - 1;
+        int i = 0;
+        int j = s.length() - 1;
         char[] chars = s.toCharArray();
         while (i < j) {
             char temp = chars[i];

@@ -72,7 +72,8 @@ public class _418 {
      */
     public int wordsTyping(String[] sentence, int rows, int cols) {
         String s = String.join(" ", sentence) + " ";
-        int start = 0, l = s.length();
+        int start = 0;
+        int l = s.length();
         for (int i = 0; i < rows; i++) {
             start += cols;
             if (s.charAt(start % l) == ' ') {

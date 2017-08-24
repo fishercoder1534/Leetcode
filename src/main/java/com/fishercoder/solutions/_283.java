@@ -26,7 +26,8 @@ public class _283 {
 
     public void moveZeroes_Editorial_solution1(int[] nums) {
         //keep the last non-zero index and keep overwriting it, then append zeroes to fill the end
-        int j = 0, i = 0;
+        int j = 0;
+        int i = 0;
         for (; j < nums.length; j++) {
             if (nums[j] != 0) {
                 nums[i++] = nums[j];
@@ -59,7 +60,8 @@ public class _283 {
 
     //this approach won't preserve the relative order of the non-zero numbers
     public void moveZeroes_1st_attempt(int[] nums) {
-        int i = 0, j = nums.length - 1;
+        int i = 0;
+        int j = nums.length - 1;
         while (i < j) {
             if (nums[i] == 0) {
                 int temp = nums[j];

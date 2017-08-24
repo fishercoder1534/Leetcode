@@ -8,7 +8,8 @@ package com.fishercoder.solutions;
 public class _278 {
 
 	public int firstBadVersion(int n) {
-		int left = 1, right = n;
+		int left = 1;
+		int right = n;
 		if (isBadVersion(left))
 			return left;
 

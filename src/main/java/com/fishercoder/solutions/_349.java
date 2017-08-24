@@ -23,7 +23,8 @@ public class _349 {
 		Set<Integer> set = new HashSet();
 		Arrays.sort(nums1);
 		Arrays.sort(nums2);
-		int i = 0, j = 0;
+		int i = 0;
+		int j = 0;
 		for (; i < nums1.length && j < nums2.length; ) {
 			if (nums1[i] < nums2[j]) {
 				i++;
@@ -63,7 +64,8 @@ public class _349 {
 	}
 
 	private boolean binarySearch(int i, int[] nums) {
-		int left = 0, right = nums.length - 1;
+		int left = 0;
+		int right = nums.length - 1;
 		while (left <= right) {
 			int mid = left + (right - left) / 2;
 			if (nums[mid] == i) {
@@ -80,7 +82,8 @@ public class _349 {
 	//tried a friend's recommended approach, didn't finish it to get it AC'ed, turned to normal approach as above and got it AC'ed.
 	private boolean binarySearch_not_working_version(int i, int[] nums) {
 		if (nums == null || nums.length == 0) return false;
-		int left = 0, right = nums.length - 1;
+		int left = 0;
+		int right = nums.length - 1;
 		while (left + 1 < right) {
 			int mid = left + (right - left) / 2;
 			if (nums[mid] > i) {

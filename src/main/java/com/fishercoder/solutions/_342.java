@@ -41,7 +41,8 @@ public class _342 {
     }
 
     public static void main(String... strings) {
-        int temp = 4, maxPowerOf4 = 4;
+        int temp = 4;
+        int maxPowerOf4 = 4;
         while (temp > 0) {
             temp *= 4;
             if (temp > 0) maxPowerOf4 = temp;

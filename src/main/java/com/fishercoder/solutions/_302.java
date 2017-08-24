@@ -19,7 +19,8 @@ public class _302 {
 
         public int minArea(char[][] iImage, int x, int y) {
             image = iImage;
-            int m = image.length, n = image[0].length;
+            int m = image.length;
+            int n = image[0].length;
             int left = searchColumns(0, y, 0, m, true);
             int right = searchColumns(y + 1, n, 0, m, false);
             int top = searchRows(0, x, left, right, true);
@@ -29,24 +30,30 @@ public class _302 {
 
         private int searchColumns(int i, int j, int top, int bottom, boolean opt) {
             while (i != j) {
-                int k = top, mid = (i + j) / 2;
-                while (k < bottom && image[k][mid] == '0') ++k;
-                if (k < bottom == opt)
+                int k = top;
+                int mid = (i + j) / 2;
+                while (k < bottom && image[k][mid] == '0') {
+                    ++k;
+                }
+                if (k < bottom == opt) {
                     j = mid;
-                else
+                } else {
                     i = mid + 1;
+                }
             }
             return i;
         }
 
         private int searchRows(int i, int j, int left, int right, boolean opt) {
             while (i != j) {
-                int k = left, mid = (i + j) / 2;
+                int k = left;
+                int mid = (i + j) / 2;
                 while (k < right && image[mid][k] == '0') ++k;
-                if (k < right == opt)
+                if (k < right == opt) {
                     j = mid;
-                else
+                } else {
                     i = mid + 1;
+                }
             }
             return i;
         }

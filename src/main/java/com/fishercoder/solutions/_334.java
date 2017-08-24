@@ -19,13 +19,16 @@ public class _334 {
 
     public boolean increasingTriplet(int[] nums) {
         if (nums == null || nums.length == 0) return false;
-        int small = nums[0], medium = Integer.MAX_VALUE;
+        int small = nums[0];
+        int medium = Integer.MAX_VALUE;
         for (int i = 1; i < nums.length; i++) {
             small = Math.min(small, nums[i - 1]);
             if (nums[i] > small) {
                 medium = Math.min(medium, nums[i]);
                 for (int j = i + 1; j < nums.length; j++) {
-                    if (nums[j] > nums[i] || nums[j] > medium) return true;
+                    if (nums[j] > nums[i] || nums[j] > medium) {
+                        return true;
+                    }
                 }
             }
         }

@@ -72,7 +72,8 @@ public class _490 {
             int x = curr.x;
             int y = curr.y;//keep the original value
             for (int i = 0; i < directions.length - 1; i++) {
-                int xx = x, yy = y;//use temp variables to move
+                int xx = x;
+                int yy = y;//use temp variables to move
                 while (xx >= 0 && yy >= 0 && xx < m && yy < n && maze[xx][yy] == 0) {
                     xx += directions[i];
                     yy += directions[i + 1];

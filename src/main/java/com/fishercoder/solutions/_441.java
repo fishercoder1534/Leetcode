@@ -34,7 +34,8 @@ public class _441 {
 
     public static int arrangeCoins(int n) {
         if (n < 2) return n;
-        int row = 0, count = 0;
+        int row = 0;
+        int count = 0;
         long sum = 0;
         while (sum < n) {
             row += 1;

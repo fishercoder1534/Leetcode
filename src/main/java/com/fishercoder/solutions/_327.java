@@ -27,7 +27,9 @@ public class _327 {
         if (end - start <= 1) return 0;
         int mid = (start + end) / 2;
         int count = countWhileMergeSort(sums, start, mid, lower, upper) + countWhileMergeSort(sums, mid, end, lower, upper);
-        int j = mid, k = mid, t = mid;
+        int j = mid;
+        int k = mid;
+        int t = mid;
         long[] cache = new long[end - start];
         for (int i = start, r = 0; i < mid; i++, r++) {
             while (k < end && sums[k] - sums[i] < lower) k++;

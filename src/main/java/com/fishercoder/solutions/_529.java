@@ -60,7 +60,8 @@ import java.util.Queue;
  */
 public class _529 {
     public char[][] updateBoard(char[][] board, int[] click) {
-        int m = board.length, n = board[0].length;
+        int m = board.length;
+        int n = board[0].length;
         Queue<int[]> queue = new LinkedList();
         queue.offer(click);
         while (!queue.isEmpty()) {

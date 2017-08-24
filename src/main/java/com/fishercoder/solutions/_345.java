@@ -28,9 +28,11 @@ public class _345 {
 		vowels.add('O');
 		vowels.add('U');
 		//use two pointers approach would be the fastest
-		int i = 0, j = s.length() - 1;
+		int i = 0;
+		int j = s.length() - 1;
 		while (i < j) {
-			char left = s.charAt(i), right = s.charAt(j);
+			char left = s.charAt(i);
+			char right = s.charAt(j);
 			while (i < j && !vowels.contains(left)) {
 				i++;
 				left = s.charAt(i);

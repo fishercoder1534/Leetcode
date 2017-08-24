@@ -10,9 +10,11 @@ import java.util.Arrays;
 public class _279 {
 
     public int numSquares(int n) {
-        int result = n, num = 2;
+        int result = n;
+        int num = 2;
         while (num * num <= n) {
-            int temp1 = n / (num * num), temp2 = n % (num * num);
+            int temp1 = n / (num * num);
+            int temp2 = n % (num * num);
             result = Math.min(result, temp1 + numSquares(temp2));
             num++;
         }
