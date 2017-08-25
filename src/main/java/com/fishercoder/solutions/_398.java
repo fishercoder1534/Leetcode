@@ -40,7 +40,9 @@ public class _398 {
                     list.add(i);
                 }
             }
-            if (list.size() == 1) return list.get(0);
+            if (list.size() == 1) {
+                return list.get(0);
+            }
             int randomIndex = rand.nextInt(list.size());
             return list.get(randomIndex);
         }
@@ -68,7 +70,9 @@ public class _398 {
 
         public int pick(int target) {
             List<Integer> list = map.get(target);
-            if (list.size() == 1) return list.get(0);
+            if (list.size() == 1) {
+                return list.get(0);
+            }
             int randomIndex = rand.nextInt(list.size());
             return list.get(randomIndex);
         }

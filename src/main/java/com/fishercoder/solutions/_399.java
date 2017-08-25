@@ -56,15 +56,23 @@ public class _399 {
         for (int i = 0; i < queries.length; i++) {
             String[] query = queries[i];
             result[i] = dfs(query[0], query[1], pairs, valuePairs, new HashSet<>(), 1.0);
-            if (result[i] == 0.0) result[i] = -1.0;
+            if (result[i] == 0.0) {
+                result[i] = -1.0;
+            }
         }
         return result;
     }
 
     private double dfs(String start, String end, Map<String, List<String>> pairs, Map<String, List<Double>> valuePairs, HashSet<String> set, double value) {
-        if (set.contains(start)) return 0.0;
-        if (!pairs.containsKey(start)) return 0.0;
-        if (start.equals(end)) return value;
+        if (set.contains(start)) {
+            return 0.0;
+        }
+        if (!pairs.containsKey(start)) {
+            return 0.0;
+        }
+        if (start.equals(end)) {
+            return value;
+        }
         set.add(start);
 
         List<String> stringList = pairs.get(start);
@@ -72,7 +80,9 @@ public class _399 {
         double tmp = 0.0;
         for (int i = 0; i < stringList.size(); i++) {
             tmp = dfs(stringList.get(i), end, pairs, valuePairs, set, value * valueList.get(i));
-            if (tmp != 0.0) break;
+            if (tmp != 0.0) {
+                break;
+            }
         }
         set.remove(start);
         return tmp;
