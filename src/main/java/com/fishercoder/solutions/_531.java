@@ -37,13 +37,17 @@ public class _531 {
     private boolean isLonely(int row, int col, char[][] picture, int m, int n) {
         for (int i = 0; i < m; i++) {
             if (i != row) {
-                if (picture[i][col] == 'B') return false;
+                if (picture[i][col] == 'B') {
+                    return false;
+                }
             }
         }
 
         for (int j = 0; j < n; j++) {
             if (j != col) {
-                if (picture[row][j] == 'B') return false;
+                if (picture[row][j] == 'B') {
+                    return false;
+                }
             }
         }
         return true;

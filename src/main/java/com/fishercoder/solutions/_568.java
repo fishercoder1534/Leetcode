@@ -84,10 +84,12 @@ public class _568 {
     }
 
     public int dfs(int[][] flights, int[][] days, int curCity, int weekno, int[][] memo) {
-        if (weekno == days[0].length)
+        if (weekno == days[0].length) {
             return 0;
-        if (memo[curCity][weekno] != Integer.MIN_VALUE)
+        }
+        if (memo[curCity][weekno] != Integer.MIN_VALUE) {
             return memo[curCity][weekno];
+        }
         int maxvac = 0;
         for (int i = 0; i < flights.length; i++) {
             if (flights[curCity][i] == 1 || i == curCity) {

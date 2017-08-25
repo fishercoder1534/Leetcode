@@ -34,7 +34,9 @@ public class _555 {
         for (int i = 0; i < strs.length; i++) {
             stringBuilder.setLength(0);
             String reverse = stringBuilder.append(strs[i]).reverse().toString();
-            if (strs[i].compareTo(reverse) < 0) strs[i] = reverse;
+            if (strs[i].compareTo(reverse) < 0) {
+                strs[i] = reverse;
+            }
         }
         String result = "";
         for (int i = 0; i < strs.length; i++) {

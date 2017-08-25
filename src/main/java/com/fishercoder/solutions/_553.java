@@ -41,8 +41,12 @@ public class _553 {
          sj.add("George").add("Sally").add("Fred");
          String desiredString = sj.toString();*/
 
-        if (nums.length == 1) return "" + nums[0];
-        if (nums.length == 2) return nums[0] + "/" + nums[1];
+        if (nums.length == 1) {
+            return "" + nums[0];
+        }
+        if (nums.length == 2) {
+            return nums[0] + "/" + nums[1];
+        }
 
         /**Tricky one: the solution is fixed: always wrap the one from the second until the last.
          * Another important thing to note that such way could work is that:

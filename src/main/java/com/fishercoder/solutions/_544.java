@@ -58,7 +58,9 @@ public class _544 {
             left++;
             right--;
         }
-        if (n == 2) return pairs.get(0);
+        if (n == 2) {
+            return pairs.get(0);
+        }
         return generateFinal(pairs, n / 2);
     }
 

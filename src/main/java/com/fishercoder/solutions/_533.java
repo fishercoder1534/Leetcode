@@ -49,7 +49,9 @@ public class _533 {
      * 2. then we could go through the HashMap keyset:
      * if one row has N number of 'B's, we go through this row's each column to see if any element in this row is 'B' and also that element's column has N 'B's*/
     public int findBlackPixel(char[][] picture, int N) {
-        if (picture == null || picture.length == 0 || picture[0].length == 0) return 0;
+        if (picture == null || picture.length == 0 || picture[0].length == 0) {
+            return 0;
+        }
         int m = picture.length;
         int n = picture[0].length;
         int[] cols = new int[n];
@@ -73,9 +75,13 @@ public class _533 {
 
         int answer = 0;
         for (String key : map.keySet()) {
-            if (map.get(key) != N) continue;
+            if (map.get(key) != N) {
+                continue;
+            }
             for (int i = 0; i < n; i++) {
-                if (key.charAt(i) == 'B' && cols[i] == N) answer += N;
+                if (key.charAt(i) == 'B' && cols[i] == N) {
+                    answer += N;
+                }
             }
         }
         return answer;

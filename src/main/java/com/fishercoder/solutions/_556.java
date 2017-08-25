@@ -21,7 +21,9 @@ public class _556 {
         while (i >= 0 && digits[i + 1] <= digits[i]) {
             i--;
         }
-        if (i < 0) return -1;
+        if (i < 0) {
+            return -1;
+        }
         int j = digits.length - 1;
         while (j >= 0 && digits[j] <= digits[i]) {
             j--;
