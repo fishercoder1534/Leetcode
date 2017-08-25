@@ -10,7 +10,9 @@ public class _52 {
 
     public int totalNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
-        if (n <= 0) return result.size();
+        if (n <= 0) {
+            return result.size();
+        }
         search(n, new ArrayList<>(), result);
         return result.size();
     }

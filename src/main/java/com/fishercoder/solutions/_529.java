@@ -75,10 +75,14 @@ public class _529 {
                 int count = 0;
                 for (int i = -1; i < 2; i++) {
                     for (int j = -1; j < 2; j++) {
-                        if (i == 0 && j == 0) continue;
+                        if (i == 0 && j == 0) {
+                            continue;
+                        }
                         int r = row + i;
                         int c = col + j;
-                        if (r >= m || r < 0 || c >= n || c < 0) continue;
+                        if (r >= m || r < 0 || c >= n || c < 0) {
+                            continue;
+                        }
                         if (board[r][c] == 'M' || board[r][c] == 'X') {
                             count++;
                         }
@@ -91,10 +95,14 @@ public class _529 {
                     board[row][col] = 'B';
                     for (int i = -1; i < 2; i++) {
                         for (int j = -1; j < 2; j++) {
-                            if (i == 0 && j == 0) continue;
+                            if (i == 0 && j == 0) {
+                                continue;
+                            }
                             int r = row + i;
                             int c = col + j;
-                            if (r >= m || r < 0 || c >= n || c < 0) continue;
+                            if (r >= m || r < 0 || c >= n || c < 0) {
+                                continue;
+                            }
                             if (board[r][c] == 'E') {
                                 queue.offer(new int[]{r, c});
                                 board[r][c] = 'B';

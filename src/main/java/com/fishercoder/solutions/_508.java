@@ -39,7 +39,9 @@ public class _508 {
     public static class Solution1 {
         //my purely original but verbose solution
         public int[] findFrequentTreeSum(TreeNode root) {
-            if (root == null) return new int[]{};
+            if (root == null) {
+                return new int[]{};
+            }
 
             Map<TreeNode, Integer> map = new HashMap();
             postOrder(root, map);

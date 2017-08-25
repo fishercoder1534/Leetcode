@@ -40,7 +40,9 @@ public class _502 {
             while (!capitalHeap.isEmpty() && capitalHeap.peek()[0] <= W) {
                 profitHeap.add(capitalHeap.poll());
             }
-            if (profitHeap.isEmpty()) break;
+            if (profitHeap.isEmpty()) {
+                break;
+            }
             W += profitHeap.poll()[1];
         }
         return W;

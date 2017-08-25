@@ -21,7 +21,9 @@ public class _503 {
     //Credit: https://discuss.leetcode.com/topic/77881/typical-ways-to-solve-circular-array-problems-java-solution
     //Note: we store INDEX into the stack, reversely, the larger index put at the bottom of the stack, the smaller index at the top
     public int[] nextGreaterElements(int[] nums) {
-        if (nums == null || nums.length == 0) return nums;
+        if (nums == null || nums.length == 0) {
+            return nums;
+        }
         int len = nums.length;
         Stack<Integer> stack = new Stack<>();
         for (int i = len - 1; i >= 0; i--) {

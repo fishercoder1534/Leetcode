@@ -41,7 +41,9 @@ public class _524 {
                     i++;
                 }
             }
-            if (i == dictWord.length()) return dictWord;
+            if (i == dictWord.length()) {
+                return dictWord;
+            }
         }
         return "";
     }
