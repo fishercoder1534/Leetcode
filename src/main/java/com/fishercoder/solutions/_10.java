@@ -1,16 +1,18 @@
 package com.fishercoder.solutions;
 
 /**
+ * 10. Regular Expression Matching
+ *
  * Implement regular expression matching with support for '.' and '*'.
- * <p>
+ *
  * '.' Matches any single character.
  * '*' Matches zero or more of the preceding element.
- * <p>
+ *
  * The matching should cover the entire input string (not partial).
- * <p>
+ *
  * The function prototype should be:
  * bool isMatch(const char *s, const char *p)
- * <p>
+ *
  * Some examples:
  * isMatch("aa","a") → false
  * isMatch("aa","aa") → true
@@ -20,6 +22,7 @@ package com.fishercoder.solutions;
  * isMatch("ab", ".*") → true
  * isMatch("aab", "c*a*b") → true
  */
+
 public class _10 {
 
     public boolean isMatch(String s, String p) {
@@ -35,10 +38,7 @@ public class _10 {
         }
         for (int i = 0; i < s.length(); i++) {
             for (int j = 0; j < p.length(); j++) {
-                if (p.charAt(j) == '.') {
-                    dp[i + 1][j + 1] = dp[i][j];
-                }
-                if (p.charAt(j) == s.charAt(i)) {
+                if (p.charAt(j) == '.' || p.charAt(j) == s.charAt(i)) {
                     dp[i + 1][j + 1] = dp[i][j];
                 }
                 if (p.charAt(j) == '*') {
