@@ -27,7 +27,9 @@ public class _386 {
                 while (i % 10 == 9 || i == n) {
                     i /= 10;
                 }
-                if (i == 0) return result;
+                if (i == 0) {
+                    return result;
+                }
                 i++;
             }
         }
@@ -44,9 +46,13 @@ public class _386 {
     private static List<Integer> addNumbers(List<Integer> result, int insertNumber, int insertPosition, int n) {
         int i;
         for (i = 0; i < 9; i++) {
-            if (insertNumber + i > n) return result;
+            if (insertNumber + i > n) {
+                return result;
+            }
             result.add(insertPosition + i, insertNumber + i);
-            if ((insertNumber + i) % 10 == 0 && (insertNumber + i) == (insertNumber + 10)) break;
+            if ((insertNumber + i) % 10 == 0 && (insertNumber + i) == (insertNumber + 10)) {
+                break;
+            }
         }
         while ((insertNumber + i) % 10 != 0 && (insertNumber + i) <= n) {
             result.add(insertPosition + i, insertNumber + i);

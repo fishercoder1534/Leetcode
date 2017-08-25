@@ -134,7 +134,9 @@ public class _388 {
             int thisLen = 0;
             String[] paths = path.split("\\t");
             CommonUtils.printArray_generic_type(paths);
-            if (paths[paths.length - 1].contains(".")) isFile = true;
+            if (paths[paths.length - 1].contains(".")) {
+                isFile = true;
+            }
             if (isFile) {
                 for (String eachDir : paths) {
                     thisLen += eachDir.length();

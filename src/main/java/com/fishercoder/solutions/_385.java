@@ -41,7 +41,9 @@ public class _385 {
     //if it's ']', we'll just pop one nested integer from the working stack and assign it to the result
 
     public NestedInteger deserialize(String s) {
-        if (s == null || s.isEmpty() || s.length() == 0) return new NestedInteger();
+        if (s == null || s.isEmpty() || s.length() == 0) {
+            return new NestedInteger();
+        }
         Stack<NestedInteger> workStack = new Stack<NestedInteger>();
         NestedInteger result = null;
         StringBuilder sb = new StringBuilder();
@@ -85,10 +87,11 @@ public class _385 {
                     }
                     int num = Integer.parseInt(sb.toString());
                     NestedInteger ni = null;
-                    if (!workStack.isEmpty())
+                    if (!workStack.isEmpty()) {
                         ni = workStack.pop();
-                    else
+                    } else {
                         ni = new NestedInteger();
+                    }
                     // case 1: if this one contains one integer
                     if (ni.isInteger()) {
                         // we'll add it to this ni
@@ -99,12 +102,16 @@ public class _385 {
                         ni.add(new NestedInteger(num));
                     } else {
                         // case 3: if this is an empty nested integer
-                        if (i > 0) ni.add(new NestedInteger(num));
-                        else ni.setInteger(num);
+                        if (i > 0) {
+                            ni.add(new NestedInteger(num));
+                        } else {
+                            ni.setInteger(num);
+                        }
                     }
                     workStack.push(ni);
-                    if (i == s.length())
+                    if (i == s.length()) {
                         return ni;// this is for test cases like this: "324", there's no '[' or ']'
+                    }
                 }
             }
         }

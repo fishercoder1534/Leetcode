@@ -26,7 +26,9 @@ public String countAndSay(int n) {
                 curr.append(count).append(say);
                 count = 1;
                 say = prev.charAt(j);
-            } else count++;
+            } else {
+                count++;
+            }
         }
         curr.append(count).append(say);
     }

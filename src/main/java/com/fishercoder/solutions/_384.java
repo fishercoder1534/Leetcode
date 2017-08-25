@@ -45,8 +45,10 @@ public class _384 {
         //insert next value into all possible positions, I wrote this method myself, of course it could be simplified to not use a queue
         //but it just naturally came into my mind that I used a queue
         private List<List<Integer>> buildAllComb(int[] nums) {
-            List<List<Integer>> result = new ArrayList<List<Integer>>();
-            if (nums == null || nums.length == 0) return result;
+            List<List<Integer>> result = new ArrayList();
+            if (nums == null || nums.length == 0) {
+                return result;
+            }
 
             List<Integer> list = new ArrayList<Integer>();
             list.add(nums[0]);
@@ -80,7 +82,9 @@ public class _384 {
          * Returns a random shuffling of the array.
          */
         public int[] shuffle() {
-            if (original == null || original.length == 0) return original;
+            if (original == null || original.length == 0) {
+                return original;
+            }
             int randomIndex = random.nextInt(combinations.size());
             List<Integer> list = combinations.get(randomIndex);
             int[] result = new int[list.size()];

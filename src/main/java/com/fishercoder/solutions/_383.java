@@ -24,7 +24,9 @@ public class _383 {
 
         char[] rchars = ransomNote.toCharArray();
         for (int i = 0; i < rchars.length; i++) {
-            if (mcnt[rchars[i] - 'a'] <= 0) return false;
+            if (mcnt[rchars[i] - 'a'] <= 0) {
+                return false;
+            }
             mcnt[rchars[i] - 'a']--;
         }
         return true;
@@ -48,11 +50,17 @@ public class _383 {
         }
 
         for (char c : ransomSet) {
-            if (!magazineSet.contains(c)) return false;
+            if (!magazineSet.contains(c)) {
+                return false;
+            }
         }
         for (char c : ransomMap.keySet()) {
-            if (!magazineMap.containsKey(c)) return false;
-            if (magazineMap.get(c) < ransomMap.get(c)) return false;
+            if (!magazineMap.containsKey(c)) {
+                return false;
+            }
+            if (magazineMap.get(c) < ransomMap.get(c)) {
+                return false;
+            }
         }
         return true;
     }

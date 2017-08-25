@@ -36,8 +36,12 @@ public class _39 {
         if (target > 0) {
             int prev = -1;
             for (int i = startIndex; i < candidates.length; i++) {
-                if (candidates[i] > target) return;//this is one very important step to optimize this algorithm: pruning
-                if (prev != -1 && prev == candidates[i]) continue;
+                if (candidates[i] > target) {
+                    return;//this is one very important step to optimize this algorithm: pruning
+                }
+                if (prev != -1 && prev == candidates[i]) {
+                    continue;
+                }
                 curr.add(candidates[i]);
                 backtracking(candidates, target - candidates[i], i, curr, result);
                 curr.remove(curr.size() - 1);
