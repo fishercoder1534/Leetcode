@@ -18,7 +18,9 @@ public class _42 {
          * reference: https://discuss.leetcode.com/topic/22976/my-accepted-java-solution
          */
         public int trap(int[] height) {
-            if (height == null || height.length <= 2) return 0;
+            if (height == null || height.length <= 2) {
+                return 0;
+            }
 
             int max = height[0];
             int maxIndex = 0;

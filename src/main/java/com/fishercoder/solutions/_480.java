@@ -43,7 +43,9 @@ public class _480 {
 
     public double[] medianSlidingWindow(int[] nums, int k) {
         int n = nums.length - k + 1;
-        if (n <= 0) return new double[0];
+        if (n <= 0) {
+            return new double[0];
+        }
         double[] result = new double[n];
 
         for (int i = 0; i <= nums.length; i++) {
@@ -60,7 +62,9 @@ public class _480 {
     }
 
     private double getMedian() {
-        if (maxHeap.isEmpty() && minHeap.isEmpty()) return 0;
+        if (maxHeap.isEmpty() && minHeap.isEmpty()) {
+            return 0;
+        }
 
         if (maxHeap.size() == minHeap.size()) {
             return ((double)maxHeap.peek() + (double)minHeap.peek()) / 2.0;

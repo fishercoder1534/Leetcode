@@ -54,7 +54,9 @@ public class _446 {
 
             for (int j = 0; j < i; j++) {
                 long diff = (long) A[i] - A[j];
-                if (diff <= Integer.MIN_VALUE || diff > Integer.MAX_VALUE) continue;
+                if (diff <= Integer.MIN_VALUE || diff > Integer.MAX_VALUE) {
+                    continue;
+                }
 
                 int d = (int) diff;
                 int c1 = map[i].getOrDefault(d, 0);

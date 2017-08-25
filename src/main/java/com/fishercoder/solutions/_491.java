@@ -25,7 +25,9 @@ public class _491 {
 
     /**I made it by myself this time! Cheers!*/
     public List<List<Integer>> findSubsequences(int[] nums) {
-        if (nums == null || nums.length == 1) return new ArrayList<>();
+        if (nums == null || nums.length == 1) {
+            return new ArrayList<>();
+        }
         Set<List<Integer>> answer = new HashSet<>();
         List<Integer> list = new ArrayList<>();
         return new ArrayList<>(backtracking(nums, 0, list, answer));

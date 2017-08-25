@@ -20,15 +20,16 @@ public class _45 {
     public int jump(int[] A) {
         int jumps = 0;
         int len = A.length;
-        if (len == 0 || len == 1)
+        if (len == 0 || len == 1) {
             return jumps;
-        else if (len == 2) {
+        } else if (len == 2) {
             return 1;
         } else {
             int val = A[0];
             int index = 0;
-            if (val == 0)
+            if (val == 0) {
                 return jumps;
+            }
             while (index < len) {
                 int max = A[index];
                 if (max + index >= len - 1) {

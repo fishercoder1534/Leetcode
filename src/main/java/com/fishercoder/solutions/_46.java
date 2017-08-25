@@ -52,7 +52,9 @@ public class _46 {
         }
 
         private static void recursive(List<List<Integer>> result, int[] nums, int pos) {
-            if (pos == nums.length) return;
+            if (pos == nums.length) {
+                return;
+            }
             List<List<Integer>> newResult = new ArrayList();
             for (List<Integer> eachList : result) {
                 for (int i = 0; i <= eachList.size(); i++) {

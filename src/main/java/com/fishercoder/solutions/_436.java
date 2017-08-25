@@ -11,7 +11,9 @@ import java.util.Map;
 public class _436 {
 
     public static int[] findRightInterval(Interval[] intervals) {
-        if (intervals == null || intervals.length == 0) return new int[0];
+        if (intervals == null || intervals.length == 0) {
+            return new int[0];
+        }
         int[] result = new int[intervals.length];
         result[0] = -1;
         Interval last = intervals[intervals.length - 1];

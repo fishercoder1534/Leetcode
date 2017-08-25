@@ -54,11 +54,15 @@ public class _488 {
 
     private int dfs(String s, int[] handCount) {
         s = removeConsecutive(s);
-        if (s.equals("#")) return 0;
+        if (s.equals("#")) {
+            return 0;
+        }
         int result = maxcount;
         int need = 0;
         for (int i = 0, j = 0 ; j < s.length(); ++j) {
-            if (s.charAt(j) == s.charAt(i)) continue;
+            if (s.charAt(j) == s.charAt(i)) {
+                continue;
+            }
             need = 3 - (j - i);     //balls need to remove current consecutive balls.
             if (handCount[s.charAt(i) - 'A'] >= need) {
                 handCount[s.charAt(i) - 'A'] -= need;
@@ -73,9 +77,14 @@ public class _488 {
     //remove consecutive balls longer than 3
     private String removeConsecutive(String board) {
         for (int i = 0, j = 0; j < board.length(); ++j) {
-            if (board.charAt(j) == board.charAt(i)) continue;
-            if (j - i >= 3) return removeConsecutive(board.substring(0, i) + board.substring(j));
-            else i = j;
+            if (board.charAt(j) == board.charAt(i)) {
+                continue;
+            }
+            if (j - i >= 3) {
+                return removeConsecutive(board.substring(0, i) + board.substring(j));
+            } else {
+                i = j;
+            }
         }
         return board;
     }

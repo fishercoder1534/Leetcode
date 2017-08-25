@@ -31,16 +31,36 @@ public class _423 {
          * we'll have to dedupe for counts[3], counts[5], counts[7] first before we dedupe counts[1] and counts[9].*/
         int[] counts = new int[10];
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == 'o') counts[1]++;//2,4,0
-            if (s.charAt(i) == 'w') counts[2]++;
-            if (s.charAt(i) == 'h') counts[3]++;//8
-            if (s.charAt(i) == 'u') counts[4]++;
-            if (s.charAt(i) == 'f') counts[5]++;//4
-            if (s.charAt(i) == 'x') counts[6]++;
-            if (s.charAt(i) == 'v') counts[7]++;//5
-            if (s.charAt(i) == 'g') counts[8]++;
-            if (s.charAt(i) == 'i') counts[9]++;//5,6,8
-            if (s.charAt(i) == 'z') counts[0]++;
+            if (s.charAt(i) == 'o') {
+                counts[1]++;//2,4,0
+            }
+            if (s.charAt(i) == 'w') {
+                counts[2]++;
+            }
+            if (s.charAt(i) == 'h') {
+                counts[3]++;//8
+            }
+            if (s.charAt(i) == 'u') {
+                counts[4]++;
+            }
+            if (s.charAt(i) == 'f') {
+                counts[5]++;//4
+            }
+            if (s.charAt(i) == 'x') {
+                counts[6]++;
+            }
+            if (s.charAt(i) == 'v') {
+                counts[7]++;//5
+            }
+            if (s.charAt(i) == 'g') {
+                counts[8]++;
+            }
+            if (s.charAt(i) == 'i') {
+                counts[9]++;//5,6,8
+            }
+            if (s.charAt(i) == 'z') {
+                counts[0]++;
+            }
         }
 
         counts[3] -= counts[8];

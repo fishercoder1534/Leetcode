@@ -55,7 +55,9 @@ public class _424 {
     //this one can pass all test from test1 to test5, but tests like test6 won't pass
     public int characterReplacement_failed_attempt(String s, int k) {
         int longest = 0;
-        if (s == null || s.length() == 0) return 0;
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
         for (int i = 0; i < s.length(); i++) {
             int count = 1;
             char val = s.charAt(i);

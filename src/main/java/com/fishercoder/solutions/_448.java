@@ -27,7 +27,9 @@ public class _448 {
     public List<Integer> findDisappearedNumbers_1(int[] nums) {
 
         int max = Integer.MIN_VALUE;
-        for (int i : nums) max = Math.max(max, i);
+        for (int i : nums) {
+            max = Math.max(max, i);
+        }
         max = Math.max(max, nums.length);
         //if using extra space is allowed, it'll be super easy as follows:
         Map<Integer, Integer> map = new HashMap();
@@ -45,7 +47,9 @@ public class _448 {
 
         List<Integer> result = new ArrayList();
         for (int i : map.keySet()) {
-            if (map.get(i) == 0) result.add(i);
+            if (map.get(i) == 0) {
+                result.add(i);
+            }
         }
 
         return result;

@@ -65,8 +65,9 @@ public class _432 {
                 changeKey(key, 1);
             } else {
                 keyCountMap.put(key, 1);
-                if (head.next.count != 1)
+                if (head.next.count != 1) {
                     addBucketAfter(new Bucket(1), head);
+                }
                 head.next.keySet.add(key);
                 countBucketMap.put(1, head.next);
             }

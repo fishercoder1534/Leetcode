@@ -37,7 +37,9 @@ public class _438 {
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> result = new ArrayList();
         for (int i = 0; i <= s.length() - p.length(); i++) {
-            if (isAnagram(s.substring(i, i + p.length()), p)) result.add(i);
+            if (isAnagram(s.substring(i, i + p.length()), p)) {
+                result.add(i);
+            }
         }
         return result;
     }
@@ -50,7 +52,9 @@ public class _438 {
         }
 
         for (int i : c) {
-            if (i != 0) return false;
+            if (i != 0) {
+                return false;
+            }
         }
         return true;
     }
@@ -73,10 +77,14 @@ public class _438 {
                 hash[s.charAt(end) - 'a']--;
                 end++;
 
-                if (count == 0) result.add(start);
+                if (count == 0) {
+                    result.add(start);
+                }
 
                 if ((end - start) == p.length()) {
-                    if (hash[s.charAt(start) - 'a'] >= 0) count++;
+                    if (hash[s.charAt(start) - 'a'] >= 0) {
+                        count++;
+                    }
                     hash[s.charAt(start) - 'a']++;
                     start++;
                 }

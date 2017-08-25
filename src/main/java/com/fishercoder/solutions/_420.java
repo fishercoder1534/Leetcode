@@ -19,15 +19,20 @@ public class _420 {
         int[] arr = new int[carr.length];
 
         for (int i = 0; i < arr.length;) {
-            if (Character.isLowerCase(carr[i]))
+            if (Character.isLowerCase(carr[i])) {
                 a = 0;
-            if (Character.isUpperCase(carr[i]))
+            }
+            if (Character.isUpperCase(carr[i])) {
                 A = 0;
-            if (Character.isDigit(carr[i]))
+            }
+            if (Character.isDigit(carr[i])) {
                 d = 0;
+            }
 
             int j = i;
-            while (i < carr.length && carr[i] == carr[j]) i++;
+            while (i < carr.length && carr[i] == carr[j]) {
+                i++;
+            }
             arr[j] = i - j;
         }
 
@@ -42,7 +47,9 @@ public class _420 {
 
             for (int k = 1; k < 3; k++) {
                 for (int i = 0; i < arr.length && overLen > 0; i++) {
-                    if (arr[i] < 3 || arr[i] % 3 != (k - 1)) continue;
+                    if (arr[i] < 3 || arr[i] % 3 != (k - 1)) {
+                        continue;
+                    }
                     arr[i] -= Math.min(overLen, k);
                     overLen -= k;
                 }
@@ -55,7 +62,9 @@ public class _420 {
                     overLen -= need;
                 }
 
-                if (arr[i] >= 3) leftOver += arr[i] / 3;
+                if (arr[i] >= 3) {
+                    leftOver += arr[i] / 3;
+                }
             }
 
             res += Math.max(totalMissing, leftOver);

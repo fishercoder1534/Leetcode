@@ -27,8 +27,12 @@ public class _467 {
      * 
      * Inspired by this: https://discuss.leetcode.com/topic/70658/concise-java-solution-using-dp*/
     public static int findSubstringInWraproundString(String p) {
-        if (p == null || p.isEmpty()) return 0;
-        if (p.length() < 2) return p.length();
+        if (p == null || p.isEmpty()) {
+            return 0;
+        }
+        if (p.length() < 2) {
+            return p.length();
+        }
         int count = 0;
         int[] dp = new int[26];
         dp[p.charAt(0) - 'a'] = 1;

@@ -33,7 +33,9 @@ package com.fishercoder.solutions;
 public class _441 {
 
     public static int arrangeCoins(int n) {
-        if (n < 2) return n;
+        if (n < 2) {
+            return n;
+        }
         int row = 0;
         int count = 0;
         long sum = 0;
@@ -42,7 +44,9 @@ public class _441 {
             sum += row;
             count++;
         }
-        if (sum == n) return count;
+        if (sum == n) {
+            return count;
+        }
         return count - 1;
     }
 

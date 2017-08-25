@@ -29,8 +29,12 @@ public class _445 {
         int sum = 0;
         ListNode list = new ListNode(0);
         while (!stack1.isEmpty() || !stack2.isEmpty()) {
-            if (!stack1.isEmpty()) sum += stack1.removeFirst();
-            if (!stack2.isEmpty()) sum += stack2.removeFirst();
+            if (!stack1.isEmpty()) {
+                sum += stack1.removeFirst();
+            }
+            if (!stack2.isEmpty()) {
+                sum += stack2.removeFirst();
+            }
             list.val = sum % 10;
             ListNode head = new ListNode(sum / 10);
             head.next = list;

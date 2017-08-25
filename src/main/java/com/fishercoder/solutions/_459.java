@@ -32,8 +32,11 @@ public class _459 {
             if (str.charAt(cur) == str.charAt(j)) {
                 pattern[j++] = ++cur;
             } else {
-                if (cur == 0) pattern[j++] = 0;
-                else cur = pattern[cur - 1];//start from beginning of current matching pattern.
+                if (cur == 0) {
+                    pattern[j++] = 0;
+                } else {
+                    cur = pattern[cur - 1];//start from beginning of current matching pattern.
+                }
             }
         }
 

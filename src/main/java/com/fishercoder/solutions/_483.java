@@ -55,7 +55,9 @@ public class _483 {
                 }
             }
 
-            if (res != 0) break;
+            if (res != 0) {
+                break;
+            }
         }
 
         return "" + res;
