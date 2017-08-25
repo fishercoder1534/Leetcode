@@ -36,8 +36,11 @@ public class _336 {
                 if (j != null && j != i && isPalindrome(words[i].substring(l == 0 ? r : 0, l == 0 ? words[i].length() : l))) {
                     pairs.add(Arrays.asList(l == 0 ? new Integer[]{i, j} : new Integer[]{j, i}));
                 }
-                if (r < words[i].length()) r++;
-                else l++;
+                if (r < words[i].length()) {
+                    r++;
+                } else {
+                    l++;
+                }
             }
         }
         return pairs;
@@ -45,7 +48,9 @@ public class _336 {
 
     private boolean isPalindrome(String s) {
         for (int i = 0; i < s.length() / 2; i++) {
-            if (s.charAt(i) != s.charAt(s.length() - 1 - i)) return false;
+            if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {
+                return false;
+            }
         }
         return true;
     }

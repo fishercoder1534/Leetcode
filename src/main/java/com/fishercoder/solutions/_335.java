@@ -49,7 +49,9 @@ public class _335 {
     /**reference: https://discuss.leetcode.com/topic/38014/java-oms-with-explanation/2*/
     public boolean isSelfCrossing(int[] x) {
         int l = x.length;
-        if (l <= 3) return false;
+        if (l <= 3) {
+            return false;
+        }
 
         for (int i = 3; i < l; i++) {
             if (x[i] >= x[i - 2] && x[i - 1] <= x[i - 3]) {

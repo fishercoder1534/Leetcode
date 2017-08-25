@@ -42,7 +42,9 @@ public class _366 {
     }
 
     int dfs(TreeNode root) {
-        if (root == null) return 0;
+        if (root == null) {
+            return 0;
+        }
         int level = Math.max(dfs(root.left), dfs(root.right)) + 1;
         if (result.size() < level) {
             result.add(new ArrayList<Integer>());

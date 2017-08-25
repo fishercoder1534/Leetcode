@@ -69,7 +69,9 @@ import java.util.TreeMap;
 public class _314 {
     public List<List<Integer>> verticalOrder_using_treemap(TreeNode root) {
         List<List<Integer>> result = new ArrayList();
-        if (root == null) return result;
+        if (root == null) {
+            return result;
+        }
         Queue<TreeNode> bfsQ = new LinkedList();
         Queue<Integer> indexQ = new LinkedList();
         TreeMap<Integer, List<Integer>> map = new TreeMap();
@@ -105,7 +107,9 @@ public class _314 {
 
     public List<List<Integer>> verticalOrder_using_hashmap(TreeNode root) {
         List<List<Integer>> result = new ArrayList();
-        if (root == null) return result;
+        if (root == null) {
+            return result;
+        }
         Queue<TreeNode> bfsQ = new LinkedList();
         Queue<Integer> indexQ = new LinkedList();
         HashMap<Integer, List<Integer>> map = new HashMap();

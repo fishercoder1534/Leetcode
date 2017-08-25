@@ -36,7 +36,9 @@ public class _376 {
 
     /**credit: https://leetcode.com/articles/wiggle-subsequence/#approach-5-greedy-approach-accepted*/
     public int wiggleMaxLength(int[] nums) {
-        if (nums.length < 2) return nums.length;
+        if (nums.length < 2) {
+            return nums.length;
+        }
         int prevDiff = nums[1] - nums[0];
         int count = (prevDiff != 0) ? 2 : 1;
         for (int i = 2; i < nums.length; i++) {

@@ -39,9 +39,13 @@ public class _377 {
         int[] result = new int[target + 1];
         for (int i = 1; i < result.length; i++) {
             for (int n : nums) {
-                if (n > target) break;
-                else if (n == target) result[i]++;
-                else result[i] += result[i - n];
+                if (n > target) {
+                    break;
+                } else if (n == target) {
+                    result[i]++;
+                } else {
+                    result[i] += result[i - n];
+                }
             }
         }
         return result[target];

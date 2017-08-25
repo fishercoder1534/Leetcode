@@ -27,7 +27,9 @@ public class _317 {
 
     public int shortestDistance(int[][] grid) {
         int m = grid.length;
-        if (m == 0) return -1;
+        if (m == 0) {
+            return -1;
+        }
         int n = grid[0].length;
         int[][] reach = new int[m][n];
         int[][] distance = new int[m][n];

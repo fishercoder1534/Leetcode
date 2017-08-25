@@ -32,7 +32,9 @@ public class _311 {
             for (int j = 0; j < n; j++) {
                 if (A[i][j] != 0) {
                     for (int k = 0; k < p; k++) {
-                        if (B[j][k] != 0) C[i][k] += A[i][j] * B[j][k];
+                        if (B[j][k] != 0) {
+                            C[i][k] += A[i][j] * B[j][k];
+                        }
                     }
                 }
             }

@@ -40,7 +40,9 @@ public class _352 {
         }
 
         public void addNum(int val) {
-            if (treeMap.containsKey(val)) return;
+            if (treeMap.containsKey(val)) {
+                return;
+            }
             Integer lower = treeMap.lowerKey(val);
             Integer higher = treeMap.higherKey(val);
             if (lower != null && higher != null && treeMap.get(lower).end + 1 == val && higher == val + 1) {

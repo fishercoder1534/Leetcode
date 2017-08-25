@@ -27,7 +27,9 @@ public class _303 {
         }
 
         public int sumRange(int i, int j) {
-            if (i == 0) return sums[j];
+            if (i == 0) {
+                return sums[j];
+            }
             return sums[j] - sums[i - 1];
         }
     }

@@ -25,11 +25,17 @@ public class _374 {
         while (left + 1 < right) {
             int mid = left + (right - left) / 2;
             int g = guess(mid);
-            if (g == 0) return mid;
-            else if (g > 0) left = mid;
-            else right = mid;
+            if (g == 0) {
+                return mid;
+            } else if (g > 0) {
+                left = mid;
+            } else {
+                right = mid;
+            }
         }
-        if (guess(left) == 0) return left;
+        if (guess(left) == 0) {
+            return left;
+        }
         return right;
     }
 

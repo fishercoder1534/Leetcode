@@ -48,7 +48,9 @@ public class _302 {
             while (i != j) {
                 int k = left;
                 int mid = (i + j) / 2;
-                while (k < right && image[mid][k] == '0') ++k;
+                while (k < right && image[mid][k] == '0') {
+                    ++k;
+                }
                 if (k < right == opt) {
                     j = mid;
                 } else {

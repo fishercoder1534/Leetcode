@@ -19,7 +19,9 @@ import java.util.Arrays;
 public class _322 {
 
     public int coinChange(int[] coins, int amount) {
-        if (amount < 1) return 0;
+        if (amount < 1) {
+            return 0;
+        }
         int[] count = new int[amount];
         int result = helper(coins, amount, count);
 
@@ -29,9 +31,15 @@ public class _322 {
     //remaining means the remaining coins after the last step;
     //count[remaining] means the minimum number of coins to sum up to remaining
     private int helper(int[] coins, int remaining, int[] count) {
-        if (remaining < 0) return -1;//not valid case, thus, per problem description, we should return -1
-        if (remaining == 0) return 0;//completed, this is also a base case for this recursive function
-        if (count[remaining - 1] != 0) return count[remaining - 1];//already computed, so reuse it.
+        if (remaining < 0) {
+            return -1;//not valid case, thus, per problem description, we should return -1
+        }
+        if (remaining == 0) {
+            return 0;//completed, this is also a base case for this recursive function
+        }
+        if (count[remaining - 1] != 0) {
+            return count[remaining - 1];//already computed, so reuse it.
+        }
         int min = Integer.MAX_VALUE;
         for (int coin : coins) {
             int res = helper(coins, remaining - coin, count);

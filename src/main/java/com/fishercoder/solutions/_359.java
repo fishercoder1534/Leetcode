@@ -55,8 +55,9 @@ public class _359 {
                 set.add(message);
                 return true;
             } else {
-                if (timestamp - map.get(message) < 10) return false;
-                else {
+                if (timestamp - map.get(message) < 10) {
+                    return false;
+                } else {
                     map.put(message, timestamp);
                     return true;
                 }

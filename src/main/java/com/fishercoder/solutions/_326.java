@@ -24,9 +24,13 @@ public class _326 {
 
     //I'm not able to think of a method that has no loop to do it, use regular method to solve it first
     public boolean isPowerOfThree(int n) {
-        if (n < 3 && n != 1) return false;
+        if (n < 3 && n != 1) {
+            return false;
+        }
         while (n != 1) {
-            if (n % 3 != 0) return false;
+            if (n % 3 != 0) {
+                return false;
+            }
             n /= 3;
         }
         return true;
@@ -41,7 +45,9 @@ public class _326 {
         int maxPowerOf3 = 0;
         while (maxPowerOf3OneStepFurther >= 0) {
             maxPowerOf3OneStepFurther = (int) maxPowerOf3OneStepFurther * 3;
-            if (maxPowerOf3OneStepFurther > 0) maxPowerOf3 = maxPowerOf3OneStepFurther;
+            if (maxPowerOf3OneStepFurther > 0) {
+                maxPowerOf3 = maxPowerOf3OneStepFurther;
+            }
             System.out.println("maxPowerOf3 is: " + maxPowerOf3);
         }
     }

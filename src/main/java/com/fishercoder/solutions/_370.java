@@ -67,7 +67,9 @@ public class _370 {
             int end = updates[i][1];
             int inc = updates[i][2];
             nums[start] += inc;
-            if (end < length - 1) nums[end + 1] -= inc;
+            if (end < length - 1) {
+                nums[end + 1] -= inc;
+            }
         }
 
         int sum = 0;

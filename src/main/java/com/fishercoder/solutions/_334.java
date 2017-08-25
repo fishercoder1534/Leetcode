@@ -18,7 +18,9 @@ package com.fishercoder.solutions;
 public class _334 {
 
     public boolean increasingTriplet(int[] nums) {
-        if (nums == null || nums.length == 0) return false;
+        if (nums == null || nums.length == 0) {
+            return false;
+        }
         int small = nums[0];
         int medium = Integer.MAX_VALUE;
         for (int i = 1; i < nums.length; i++) {

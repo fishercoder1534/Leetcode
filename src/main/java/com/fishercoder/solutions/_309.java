@@ -121,8 +121,9 @@ public class _309 {
          * We cannot sell. The max profit at i = 0 ending with a sell is 0.
          */
         public int maxProfit(int[] prices) {
-            if (prices == null || prices.length <= 1)
+            if (prices == null || prices.length <= 1) {
                 return 0;
+            }
 
             int b0 = -prices[0];
             int b1 = b0;

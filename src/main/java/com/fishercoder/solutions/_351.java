@@ -53,9 +53,13 @@ public class _351 {
     }
 
     private int dfs(int num, int len, int count, int m, int n) {
-        if (len >= m) count++;
+        if (len >= m) {
+            count++;
+        }
         len++;
-        if (len > n) return count;
+        if (len > n) {
+            return count;
+        }
         visited[num] = true;
         for (int next = 1; next <= 9; next++) {
             int jump = jumps[num][next];

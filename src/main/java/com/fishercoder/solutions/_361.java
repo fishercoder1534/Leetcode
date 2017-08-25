@@ -18,7 +18,9 @@ public class _361 {
 
     public int maxKilledEnemies(char[][] grid) {
         int m = grid.length;
-        if (grid == null || m == 0) return 0;
+        if (grid == null || m == 0) {
+            return 0;
+        }
         int n = grid[0].length;
 
         int[][] max = new int[m][n];
@@ -75,7 +77,9 @@ public class _361 {
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (max[i][j] > result) result = max[i][j];
+                if (max[i][j] > result) {
+                    result = max[i][j];
+                }
             }
         }
         return result;

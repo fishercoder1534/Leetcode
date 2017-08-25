@@ -45,7 +45,9 @@ public class _347 {
 		}
 		List<Integer> result = new ArrayList<Integer>();
 		for (int i = bucket.length - 1; i >= 0 && result.size() < k; i--) {
-			if (bucket[i] != null) result.addAll(bucket[i]);
+			if (bucket[i] != null) {
+				result.addAll(bucket[i]);
+			}
 		}
 
 		return result;
@@ -72,10 +74,11 @@ public class _347 {
 		Queue<Entry<Integer, Integer>> heap = new PriorityQueue<>(new Comparator<Entry<Integer, Integer>>() {
 			@Override
 			public int compare(Entry<Integer, Integer> o1, Entry<Integer, Integer> o2) {
-				if (o1.getValue() > o2.getValue())
+				if (o1.getValue() > o2.getValue()) {
 					return -1;
-				else if (o1.getValue() < o2.getValue())
+				} else if (o1.getValue() < o2.getValue()) {
 					return 1;
+				}
 				return 0;
 			}
 		});
@@ -83,10 +86,11 @@ public class _347 {
 		// construct the frequency map first, and then iterate through the map
 		// and put them into the heap, this is O(n)
 		for (int x : nums) {
-			if (map.containsKey(x))
+			if (map.containsKey(x)) {
 				map.put(x, map.get(x) + 1);
-			else
+			} else {
 				map.put(x, 1);
+			}
 		}
 
 		// build heap, this is O(n) as well
@@ -94,7 +98,7 @@ public class _347 {
 			heap.offer(entry);
 		}
 
-		List<Integer> res = new ArrayList<Integer>();
+		List<Integer> res = new ArrayList();
 		while (k-- > 0) {
 			res.add(heap.poll().getKey());
 		}

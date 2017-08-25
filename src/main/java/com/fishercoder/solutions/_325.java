@@ -46,9 +46,14 @@ public class _325 {
         int[] sums = new int[nums.length];
         int max = 0;
         for (int i = 0; i < nums.length; i++) {
-            if (i == 0) sums[i] = nums[i];
-            else sums[i] = sums[i - 1] + nums[i];
-            if (sums[i] == k) max = i + 1;//then this one must be the max
+            if (i == 0) {
+                sums[i] = nums[i];
+            } else {
+                sums[i] = sums[i - 1] + nums[i];
+            }
+            if (sums[i] == k) {
+                max = i + 1;//then this one must be the max
+            }
         }
         CommonUtils.printArray(sums);
         //do computation for each possible subarray of sums and find the max length
