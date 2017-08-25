@@ -36,8 +36,11 @@ public class _390 {
         boolean forward = true;
         while (remaining > 1) {
             remaining /= 2;
-            if (forward) start = start + step * remaining - step / 2;
-            else start = start - step * remaining + step / 2;
+            if (forward) {
+                start = start + step * remaining - step / 2;
+            } else {
+                start = start - step * remaining + step / 2;
+            }
             step *= 2;
             forward = !forward;
         }
@@ -53,15 +56,21 @@ public class _390 {
         boolean forward = true;
         while (list.size() > 1) {
             int size = list.size() / 2;
-            if (list.size() == 1) return list.get(0);
+            if (list.size() == 1) {
+                return list.get(0);
+            }
             if (forward) {
-                if (list.size() == 1) return list.get(0);
+                if (list.size() == 1) {
+                    return list.get(0);
+                }
                 for (int i = 0; i <= size && i < list.size(); i++) {
                     list.remove(i);
                 }
                 forward = false;
             } else {
-                if (list.size() == 1) return list.get(0);
+                if (list.size() == 1) {
+                    return list.get(0);
+                }
                 for (int i = list.size() - 1, count = 0; i >= 0 && count <= size; count++) {
                     list.remove(i);
                     i -= 2;
