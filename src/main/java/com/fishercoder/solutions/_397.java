@@ -46,8 +46,9 @@ public class _397 {
             int size = q.size();
             for (int i = 0; i < size; i++) {
                 long[] curr = q.poll();
-                if (curr[0] == 1) set.add(curr);
-                else {
+                if (curr[0] == 1) {
+                    set.add(curr);
+                } else {
 
                     if (curr[0] % 2 == 0) {
                         curr[0] /= 2;

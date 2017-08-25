@@ -68,8 +68,9 @@ public class _380 {
          * Inserts a value to the set. Returns true if the set did not already contain the specified element.
          */
         public boolean insert(int val) {
-            if (forwardMap.containsValue(val)) return false;
-            else {
+            if (forwardMap.containsValue(val)) {
+                return false;
+            } else {
                 forwardMap.put(index, val);
                 reverseMap.put(val, index++);
                 return true;
@@ -95,7 +96,9 @@ public class _380 {
          */
         public int getRandom() {
             int max = forwardMap.size();
-            if (max == 1) return forwardMap.get(index - 1);
+            if (max == 1) {
+                return forwardMap.get(index - 1);
+            }
             int randomNum = random.nextInt(max);
             while (!forwardMap.containsKey(randomNum)) {
                 randomNum = random.nextInt(max);

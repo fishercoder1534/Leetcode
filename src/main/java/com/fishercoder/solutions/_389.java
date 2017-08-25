@@ -29,7 +29,9 @@ public class _389 {
         }
         char result = 'a';
         for (int i = 0; i < 128; i++) {
-            if (counts[i] != 0) result = (char) i;
+            if (counts[i] != 0) {
+                result = (char) i;
+            }
         }
         return result;
     }

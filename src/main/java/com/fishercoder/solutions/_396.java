@@ -28,7 +28,9 @@ package com.fishercoder.solutions;
 //F(k) = 0 * Bk[0] + 1 * Bk[1] + ... + (n-1) * Bk[n-1]
 public class _396 {
     public int maxRotateFunction(int[] A) {
-        if (A == null || A.length == 0) return 0;
+        if (A == null || A.length == 0) {
+            return 0;
+        }
         int[] F = new int[A.length];
         int[] B = A;
         int max = Integer.MIN_VALUE;
