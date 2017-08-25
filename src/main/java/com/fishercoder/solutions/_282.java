@@ -25,11 +25,15 @@ public class _282 {
 
     private void dfs(List<String> res, StringBuilder sb, String num, int pos, int target, long prev, long multi) {
         if (pos == num.length()) {
-            if (target == prev) res.add(sb.toString());
+            if (target == prev) {
+                res.add(sb.toString());
+            }
             return;
         }
         for (int i = pos; i < num.length(); i++) {
-            if (num.charAt(pos) == '0' && i != pos) break;
+            if (num.charAt(pos) == '0' && i != pos) {
+                break;
+            }
             long curr = Long.parseLong(num.substring(pos, i + 1));
             int len = sb.length();
             if (pos == 0) {

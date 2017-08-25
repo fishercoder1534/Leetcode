@@ -38,13 +38,17 @@ public class _287 {
                 slow = nums[slow];
                 fast = nums[nums[fast]];
 
-                if (slow == fast) break;
+                if (slow == fast) {
+                    break;
+                }
             }
 
             while (true) {
                 slow = nums[slow];
                 finder = nums[finder];
-                if (slow == finder) return slow;
+                if (slow == finder) {
+                    return slow;
+                }
             }
         }
     }

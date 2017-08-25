@@ -34,14 +34,30 @@ public class _289 {
                 int liveCellsCount = 0;
                 //count all its live cells
 
-                if (j + 1 < width && board[i][j + 1] == 1) liveCellsCount++;//right cell
-                if (j - 1 >= 0 && board[i][j - 1] == 1) liveCellsCount++;//left cell
-                if (i + 1 < height && board[i + 1][j] == 1) liveCellsCount++;//down cell
-                if (i - 1 >= 0 && board[i - 1][j] == 1) liveCellsCount++;//up cell
-                if (i - 1 >= 0 && j - 1 >= 0 && board[i - 1][j - 1] == 1) liveCellsCount++;//up left cell
-                if (i - 1 >= 0 && j + 1 < width && board[i - 1][j + 1] == 1) liveCellsCount++;//up right cell
-                if (i + 1 < height && j - 1 >= 0 && board[i + 1][j - 1] == 1) liveCellsCount++;//down left cell
-                if (i + 1 < height && j + 1 < width && board[i + 1][j + 1] == 1) liveCellsCount++;//down right cell
+                if (j + 1 < width && board[i][j + 1] == 1) {
+                    liveCellsCount++;//right cell
+                }
+                if (j - 1 >= 0 && board[i][j - 1] == 1) {
+                    liveCellsCount++;//left cell
+                }
+                if (i + 1 < height && board[i + 1][j] == 1) {
+                    liveCellsCount++;//down cell
+                }
+                if (i - 1 >= 0 && board[i - 1][j] == 1) {
+                    liveCellsCount++;//up cell
+                }
+                if (i - 1 >= 0 && j - 1 >= 0 && board[i - 1][j - 1] == 1) {
+                    liveCellsCount++;//up left cell
+                }
+                if (i - 1 >= 0 && j + 1 < width && board[i - 1][j + 1] == 1) {
+                    liveCellsCount++;//up right cell
+                }
+                if (i + 1 < height && j - 1 >= 0 && board[i + 1][j - 1] == 1) {
+                    liveCellsCount++;//down left cell
+                }
+                if (i + 1 < height && j + 1 < width && board[i + 1][j + 1] == 1) {
+                    liveCellsCount++;//down right cell
+                }
 
                 if (board[i][j] == 1) {
                     if (liveCellsCount > 3 || liveCellsCount < 2) {

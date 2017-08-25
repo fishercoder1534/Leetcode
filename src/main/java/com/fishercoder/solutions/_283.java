@@ -48,8 +48,9 @@ public class _283 {
                 while (j < nums.length && nums[j] == 0) {
                     j++;
                 }
-                if (j >= nums.length) return;
-                else {
+                if (j >= nums.length) {
+                    return;
+                } else {
                     int temp = nums[j];
                     nums[j] = nums[i];
                     nums[i] = temp;

@@ -41,7 +41,9 @@ public class _297 {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        if (root == null) return "";
+        if (root == null) {
+            return "";
+        }
 
         StringBuilder sb = new StringBuilder();
         Queue<TreeNode> queue = new LinkedList();
@@ -65,7 +67,9 @@ public class _297 {
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        if (data == null || data.isEmpty()) return null;
+        if (data == null || data.isEmpty()) {
+            return null;
+        }
 
         String[] nodes = data.split(" ");
         TreeNode root = new TreeNode(Integer.valueOf(nodes[0]));

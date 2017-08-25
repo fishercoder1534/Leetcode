@@ -35,7 +35,9 @@ public class _294 {
         /**The above part is the same of Flip Game I.
          * The only added part is the following piece of logic (so-called backtracking.)*/
         for (String str : res) {
-            if (!canWin(str)) return true;
+            if (!canWin(str)) {
+                return true;
+            }
         }
         return false;
     }

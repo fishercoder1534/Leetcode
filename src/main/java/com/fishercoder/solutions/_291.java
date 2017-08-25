@@ -22,22 +22,27 @@ public class _291 {
     Set<String> set = new HashSet();
 
     public boolean wordPatternMatch(String pattern, String str) {
-        if (pattern.isEmpty())
+        if (pattern.isEmpty()) {
             return str.isEmpty();
+        }
         if (map.containsKey(pattern.charAt(0))) {
             String value = map.get(pattern.charAt(0));
-            if (str.length() < value.length() || !str.substring(0, value.length()).equals(value))
+            if (str.length() < value.length() || !str.substring(0, value.length()).equals(value)) {
                 return false;
-            if (wordPatternMatch(pattern.substring(1), str.substring(value.length())))
+            }
+            if (wordPatternMatch(pattern.substring(1), str.substring(value.length()))) {
                 return true;
+            }
         } else {
             for (int i = 1; i <= str.length(); i++) {
-                if (set.contains(str.substring(0, i)))
+                if (set.contains(str.substring(0, i))) {
                     continue;
+                }
                 map.put(pattern.charAt(0), str.substring(0, i));
                 set.add(str.substring(0, i));
-                if (wordPatternMatch(pattern.substring(1), str.substring(i)))
+                if (wordPatternMatch(pattern.substring(1), str.substring(i))) {
                     return true;
+                }
                 set.remove(str.substring(0, i));
                 map.remove(pattern.charAt(0));
             }
