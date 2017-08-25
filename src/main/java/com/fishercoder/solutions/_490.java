@@ -58,7 +58,9 @@ public class _490 {
      * Also, another point to note is: it must be a stop point for the ball.
      */
     public boolean hasPath(int[][] maze, int[] start, int[] destination) {
-        if (start[0] == destination[0] && destination[0] == destination[1]) return true;
+        if (start[0] == destination[0] && destination[0] == destination[1]) {
+            return true;
+        }
         final int[] directions = new int[]{-1, 0, 1, 0, -1};
         Queue<Point> queue = new LinkedList<>();
         queue.offer(new Point(start[0], start[1]));

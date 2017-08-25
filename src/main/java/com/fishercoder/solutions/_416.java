@@ -39,7 +39,9 @@ public class _416 {
             sum += num;
         }
 
-        if ((sum & 1) == 1) return false;
+        if ((sum & 1) == 1) {
+            return false;
+        }
 
         sum /= 2;
 

@@ -65,7 +65,9 @@ public class _499 {
         String[] ds = new String[]{"u", "r", "d", "l"};
         while (!heap.isEmpty()) {
             Point curr = heap.poll();
-            if (points[curr.x][curr.y].compareTo(curr) <= 0) continue;//if we have already found a shorter route
+            if (points[curr.x][curr.y].compareTo(curr) <= 0) {
+                continue;//if we have already found a shorter route
+            }
             points[curr.x][curr.y] = curr;
             for (int i = 0; i < directions.length - 1; i++) {
                 int x = curr.x;

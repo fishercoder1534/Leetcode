@@ -53,7 +53,9 @@ public class _403 {
     /**Reference: https://discuss.leetcode.com/topic/59903/very-easy-to-understand-java-solution-with-explanations/2
      * and https://leetcode.com/articles/frog-jump/#approach-5-using-dynamic-programmingaccepted*/
     public boolean canCross(int[] stones) {
-        if (stones.length == 0) return true;
+        if (stones.length == 0) {
+            return true;
+        }
         Map<Integer, Set<Integer>> map = new HashMap<>(stones.length);
         map.put(0, new HashSet<>());
         map.get(0).add(1);
@@ -65,7 +67,9 @@ public class _403 {
             int stone = stones[i];
             for (int step : map.get(stone)) {
                 int reach = step + stone;
-                if (reach == stones[stones.length - 1]) return true;
+                if (reach == stones[stones.length - 1]) {
+                    return true;
+                }
                 Set<Integer> set = map.get(reach);
                 if (set != null) {
                     set.add(step);

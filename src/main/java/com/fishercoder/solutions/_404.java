@@ -15,7 +15,9 @@ import com.fishercoder.common.classes.TreeNode;
 public class _404 {
     public int sumOfLeftLeaves(TreeNode root) {
         int result = 0;
-        if (root == null) return result;
+        if (root == null) {
+            return result;
+        }
         return dfs(root, result, false);
     }
 
@@ -41,10 +43,15 @@ public class _404 {
 
         public int sumOfLeftLeaves(TreeNode root) {
             int sum = 0;
-            if (root == null) return sum;
+            if (root == null) {
+                return sum;
+            }
             if (root.left != null) {
-                if (root.left.left == null && root.left.right == null) sum += root.left.val;
-                else sum += sumOfLeftLeaves(root.left);
+                if (root.left.left == null && root.left.right == null) {
+                    sum += root.left.val;
+                } else {
+                    sum += sumOfLeftLeaves(root.left);
+                }
             }
             if (root.right != null) {
                 sum += sumOfLeftLeaves(root.right);
