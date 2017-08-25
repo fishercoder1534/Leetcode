@@ -34,11 +34,15 @@ public class _413 {
             if (A[i] - A[i - 1] == A[i - 1] - A[i - 2]) {
                 len++;
             } else {
-                if (len > 2) sum += calculateSlices(len);
+                if (len > 2) {
+                    sum += calculateSlices(len);
+                }
                 len = 2;//reset it to 2
             }
         }
-        if (len > 2) sum += calculateSlices(len);
+        if (len > 2) {
+            sum += calculateSlices(len);
+        }
         return sum;
     }
 

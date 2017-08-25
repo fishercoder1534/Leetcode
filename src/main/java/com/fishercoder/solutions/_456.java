@@ -43,8 +43,9 @@ public class _456 {
 
         int s3 = Integer.MIN_VALUE;
         for (int i = nums.length - 1; i >= 0; i--) {
-            if (nums[i] < s3) return true;
-            else {
+            if (nums[i] < s3) {
+                return true;
+            } else {
                 while (!stack.isEmpty() && nums[i] > stack.peek()) {
                     s3 = Math.max(s3, stack.pop());
                 }

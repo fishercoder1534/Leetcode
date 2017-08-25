@@ -41,8 +41,9 @@ public class _407 {
     }
 
     public int trapRainWater(int[][] heights) {
-        if (heights == null || heights.length == 0 || heights[0].length == 0)
+        if (heights == null || heights.length == 0 || heights[0].length == 0) {
             return 0;
+        }
 
         PriorityQueue<Cell> queue = new PriorityQueue<>(1, (a, b) -> a.height - b.height);
 

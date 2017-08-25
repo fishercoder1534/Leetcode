@@ -41,15 +41,21 @@ public class _435 {
         Collections.sort(Arrays.asList(intervals), new Comparator<Interval>() {
             @Override
             public int compare(Interval o1, Interval o2) {
-                if (o1.end != o2.end) return o1.end - o2.end;
-                else return o2.start - o1.start;
+                if (o1.end != o2.end) {
+                    return o1.end - o2.end;
+                } else {
+                    return o2.start - o1.start;
+                }
             }
         });
         int end = Integer.MIN_VALUE;
         int count = 0;
         for (Interval interval : intervals) {
-            if (interval.start >= end) end = interval.end;
-            else count++;
+            if (interval.start >= end) {
+                end = interval.end;
+            } else {
+                count++;
+            }
         }
         return count;
     }

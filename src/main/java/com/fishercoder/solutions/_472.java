@@ -38,7 +38,9 @@ public class _472 {
 
 		List<String> validConcatenatedWords = new ArrayList();
 		for (String word : words) {
-			if (word == null || word.length() == 0) continue;
+			if (word == null || word.length() == 0) {
+				continue;
+			}
 			remove(word, root);/** every word is comprised of every word itself, thus this word itself needs to be removed first for checking it*/
 			int n = word.length();
 			boolean[] dp = new boolean[n + 1];
@@ -46,8 +48,9 @@ public class _472 {
 
 			for (int i = 1; i <= n; i++) {
 				for (int j = 1; j <= i && j <= maxWordLen; j++) {
-					if (!dp[i - j])
+					if (!dp[i - j]) {
 						continue;
+					}
 
 					String subWord = word.substring(i - j, i);
 					if (contains(subWord, root)) {
@@ -57,7 +60,9 @@ public class _472 {
 				}
 			}
 
-			if (dp[n]) validConcatenatedWords.add(word);
+			if (dp[n]) {
+				validConcatenatedWords.add(word);
+			}
 			undoRemove(word, root);
 		}
 		return validConcatenatedWords;
@@ -97,7 +102,9 @@ public class _472 {
 	public boolean contains(String word, TrieNode root) {
 		TrieNode node = root;
 		for (int i = 0; i < word.length(); i++) {
-			if (node.children[word.charAt(i) - 'a'] == null) return false;
+			if (node.children[word.charAt(i) - 'a'] == null) {
+				return false;
+			}
 			node = node.children[word.charAt(i) - 'a'];
 		}
 		return node.isWord;

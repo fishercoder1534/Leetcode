@@ -12,11 +12,15 @@ Output: 5*/
 public class _434 {
 
     public int countSegments(String s) {
-        if (s == null || s.isEmpty()) return 0;
+        if (s == null || s.isEmpty()) {
+            return 0;
+        }
         String[] segments = s.split(" ");
         int count = 0;
         for (String seg : segments) {
-            if (seg.equals("")) continue;
+            if (seg.equals("")) {
+                continue;
+            }
             count++;
         }
         return count;

@@ -54,7 +54,9 @@ public class _450 {
         c. node only has right subtree- return the right subtree
         d. node has both left and right - find the minimum value in the right subtree, set that value to the currently found node, then recursively delete the minimum value in the right subtree*/
     public TreeNode deleteNode(TreeNode root, int key) {
-        if (root == null) return root;
+        if (root == null) {
+            return root;
+        }
         if (root.val > key) {
             root.left = deleteNode(root.left, key);
         } else if (root.val < key) {

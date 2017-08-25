@@ -43,7 +43,9 @@ public class _454 {
         for (int i = 0; i < len; i++) {
             for (int j = 0; j < len; j++) {
                 int sum = -(C[i] + D[j]);
-                if (map.containsKey(sum)) result += map.get(sum);
+                if (map.containsKey(sum)) {
+                    result += map.get(sum);
+                }
             }
         }
 

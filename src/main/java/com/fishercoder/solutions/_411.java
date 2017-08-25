@@ -108,7 +108,9 @@ public class _411 {
             }
             return;
         }
-        if (num <= 0) return;
+        if (num <= 0) {
+            return;
+        }
         char cur = target.charAt(i);
         abbrGenerator(target, i + 1, abbr == 0 ? tmp + cur : tmp + abbr + cur, 0, abbr == 0 ? num - 1 : num - 2);
         abbrGenerator(target, i + 1, tmp, abbr + 1, num);

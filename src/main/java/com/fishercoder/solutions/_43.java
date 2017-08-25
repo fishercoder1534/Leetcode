@@ -19,7 +19,9 @@ public class _43 {
      * Basically, the rule we can find is that products of each two digits will land in this position in the final product:
      * i+j and i+j+1*/
     public String multiply(String num1, String num2) {
-        if (isZero(num1) || isZero(num2)) return "0";
+        if (isZero(num1) || isZero(num2)) {
+            return "0";
+        }
         int[] a1 = new int[num1.length()];
         int[] a2 = new int[num2.length()];
         int[] product = new int[num1.length() + num2.length()];
@@ -42,7 +44,9 @@ public class _43 {
 
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < product.length; i++) {
-            if (i == 0 && product[i] == 0) continue;
+            if (i == 0 && product[i] == 0) {
+                continue;
+            }
             stringBuilder.append(product[i]);
         }
         return stringBuilder.toString();
@@ -50,7 +54,9 @@ public class _43 {
 
     private boolean isZero(String num) {
         for (char c : num.toCharArray()) {
-            if (c != '0') return false;
+            if (c != '0') {
+                return false;
+            }
         }
         return true;
     }

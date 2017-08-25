@@ -37,8 +37,12 @@ public class _464 {
 
     public boolean canIWin(int maxChoosableInteger, int desiredTotal) {
         int sum = (1 + maxChoosableInteger) * maxChoosableInteger / 2;
-        if (sum < desiredTotal) return false;
-        if (desiredTotal <= 0) return true;
+        if (sum < desiredTotal) {
+            return false;
+        }
+        if (desiredTotal <= 0) {
+            return true;
+        }
 
         map = new HashMap();
         used = new boolean[maxChoosableInteger + 1];
@@ -46,7 +50,9 @@ public class _464 {
     }
 
     public boolean helper(int desiredTotal) {
-        if (desiredTotal <= 0) return false;
+        if (desiredTotal <= 0) {
+            return false;
+        }
         int key = format(used);
         if (!map.containsKey(key)) {
             // try every unchosen number as next step
@@ -72,7 +78,9 @@ public class _464 {
         int num = 0;
         for (boolean b : used) {
             num <<= 1;
-            if (b) num |= 1;
+            if (b) {
+                num |= 1;
+            }
         }
         return num;
     }

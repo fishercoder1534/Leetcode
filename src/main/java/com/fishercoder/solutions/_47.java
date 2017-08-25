@@ -19,7 +19,9 @@ public class _47 {
     /**credit: https://discuss.leetcode.com/topic/31445/really-easy-java-solution-much-easier-than-the-solutions-with-very-high-vote*/
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> result = new ArrayList();
-        if (nums == null || nums.length == 0) return result;
+        if (nums == null || nums.length == 0) {
+            return result;
+        }
         boolean[] used = new boolean[nums.length];
         List<Integer> list = new ArrayList();
         Arrays.sort(nums);
@@ -34,9 +36,12 @@ public class _47 {
             return;
         }
         for (int i = 0; i < nums.length; i++) {
-            if (used[i]) continue;
-            if (i > 0 && nums[i - 1] == nums[i] && !used[i - 1])
+            if (used[i]) {
                 continue;
+            }
+            if (i > 0 && nums[i - 1] == nums[i] && !used[i - 1]) {
+                continue;
+            }
             /**
              * For this line, both !used[i-1] and used[i-1] will AC. It is because the first one makes sure when
              * duplicates are selected, the order is ascending (index from small to large). However,
@@ -49,7 +54,6 @@ public class _47 {
             list.remove(list.size() - 1);
         }
     }
-
 
     public static void main(String... args) {
         int[] nums = new int[]{1, 1, 2};

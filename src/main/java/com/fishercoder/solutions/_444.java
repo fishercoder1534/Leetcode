@@ -93,12 +93,18 @@ public class _444 {
         int index = 0;
         while (!queue.isEmpty()) {
             int size = queue.size();
-            if (size > 1) return false;
+            if (size > 1) {
+                return false;
+            }
             int curr = queue.poll();
-            if (index == org.length || curr != org[index++]) return false;
+            if (index == org.length || curr != org[index++]) {
+                return false;
+            }
             for (int next : map.get(curr)) {
                 indegree.put(next, indegree.get(next) - 1);
-                if (indegree.get(next) == 0) queue.offer(next);
+                if (indegree.get(next) == 0) {
+                    queue.offer(next);
+                }
             }
         }
         return index == org.length && index == map.size();

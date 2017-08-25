@@ -82,9 +82,13 @@ public class _490 {
                 }
                 xx -= directions[i];
                 yy -= directions[i + 1];
-                if (visited[xx][yy]) continue;
+                if (visited[xx][yy]) {
+                    continue;
+                }
                 visited[xx][yy] = true;
-                if (destination[0] == xx && destination[1] == yy) return true;
+                if (destination[0] == xx && destination[1] == yy) {
+                    return true;
+                }
                 queue.offer(new Point(xx, yy));
             }
         }

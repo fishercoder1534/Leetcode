@@ -74,7 +74,9 @@ public class _439 {
                     stack.addFirst(tmpStack.pollFirst());
                 }
             }
-            if (stack.size() == 1) break;
+            if (stack.size() == 1) {
+                break;
+            }
         }
         return Character.toString(stack.removeFirst());
     }

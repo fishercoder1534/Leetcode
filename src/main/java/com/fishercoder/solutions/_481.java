@@ -39,8 +39,12 @@ public class _481 {
      3. Need to create the array 1 element more than n to avoid overflow because the last round head might points to a number 2.
      4. A trick to flip number back and forth between 1 and 2: num = num ^ 3*/
     public int magicalString(int n) {
-        if (n <= 0) return 0;
-        if (n <= 3) return 1;
+        if (n <= 0) {
+            return 0;
+        }
+        if (n <= 3) {
+            return 1;
+        }
 
         int[] a = new int[n + 1];
         a[0] = 1;
@@ -55,7 +59,9 @@ public class _481 {
         while (tail < n) {
             for (int i = 0; i < a[head]; i++) {
                 a[tail] = num;
-                if (num == 1 && tail < n) result++;
+                if (num == 1 && tail < n) {
+                    result++;
+                }
                 tail++;
             }
             num = num ^ 3;

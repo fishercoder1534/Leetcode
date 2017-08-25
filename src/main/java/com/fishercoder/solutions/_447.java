@@ -27,14 +27,16 @@ public class _447 {
 
     public int numberOfBoomerangs(int[][] points) {
         int result = 0;
-        if (points == null || points.length == 0 || points[0].length == 0)
+        if (points == null || points.length == 0 || points[0].length == 0) {
             return result;
+        }
         int totalPts = points.length;
         Map<Long, Integer> map = new HashMap();
         for (int i = 0; i < totalPts; i++) {
             for (int j = 0; j < totalPts; j++) {
-                if (i == j)
+                if (i == j) {
                     continue;
+                }
                 long d = calcDistance(points[i], points[j]);
                 map.put(d, map.getOrDefault(d, 0) + 1);
             }
