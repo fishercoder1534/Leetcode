@@ -51,7 +51,9 @@ public class _538 {
     public static class GenericSolution {
         //This solution is generic for both BST and regular binary trees
         public TreeNode convertBST(TreeNode root) {
-            if (root == null) return root;
+            if (root == null) {
+                return root;
+            }
             List<Integer> list = new ArrayList<>();
             putNodeToList(list, root);
             Collections.sort(list);
@@ -69,7 +71,9 @@ public class _538 {
         }
 
         private TreeNode generateResultRoot(TreeNode root, TreeMap<Integer, Integer> treeMap, TreeNode result) {
-            if (root != null) result.val = treeMap.get(root.val) + root.val;
+            if (root != null) {
+                result.val = treeMap.get(root.val) + root.val;
+            }
             if (root.left != null) {
                 result.left = new TreeNode(0);
                 generateResultRoot(root.left, treeMap, result.left);
@@ -82,9 +86,15 @@ public class _538 {
         }
 
         private void putNodeToList(List<Integer> list, TreeNode root) {
-            if (root != null) list.add(root.val);
-            if (root.left != null) putNodeToList(list, root.left);
-            if (root.right != null) putNodeToList(list, root.right);
+            if (root != null) {
+                list.add(root.val);
+            }
+            if (root.left != null) {
+                putNodeToList(list, root.left);
+            }
+            if (root.right != null) {
+                putNodeToList(list, root.right);
+            }
         }
     }
 

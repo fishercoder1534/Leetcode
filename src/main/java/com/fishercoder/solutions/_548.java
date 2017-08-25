@@ -27,7 +27,9 @@ public class _548 {
 
     public boolean splitArray_O_N_3(int[] nums) {
         //TODO: this one is failed by test4, probably some index wrong
-        if (nums == null || nums.length == 0) return false;
+        if (nums == null || nums.length == 0) {
+            return false;
+        }
         long[] previousSums = new long[nums.length + 1];
         for (int i = 1; i <= nums.length; i++) {
             previousSums[i] = previousSums[i - 1] + nums[i - 1];
@@ -38,12 +40,18 @@ public class _548 {
             long sum1 = previousSums[i] - previousSums[0];
             for (int j = i + 2; j <= n - 4; j++) {
                 long sum2 = previousSums[j] - previousSums[i + 1];
-                if (sum1 != sum2) break;
+                if (sum1 != sum2) {
+                    break;
+                }
                 for (int k = j + 2; k <= n - 2; k++) {
                     long sum3 = previousSums[k] - previousSums[j + 1];
-                    if (sum2 != sum3) break;
+                    if (sum2 != sum3) {
+                        break;
+                    }
                     long sum4 = previousSums[n] - previousSums[k + 1];
-                    if (sum3 == sum4) return true;
+                    if (sum3 == sum4) {
+                        return true;
+                    }
                 }
             }
         }
@@ -51,8 +59,9 @@ public class _548 {
     }
 
     public boolean splitArray_O_N_2(int[] nums) {
-        if (nums.length < 7)
+        if (nums.length < 7) {
             return false;
+        }
         int[] sum = new int[nums.length];
         sum[0] = nums[0];
         for (int i = 1; i < nums.length; i++) {
@@ -61,12 +70,14 @@ public class _548 {
         for (int j = 3; j < nums.length - 3; j++) {
             HashSet<Integer> set = new HashSet<>();
             for (int i = 1; i < j - 1; i++) {
-                if (sum[i - 1] == sum[j - 1] - sum[i])
+                if (sum[i - 1] == sum[j - 1] - sum[i]) {
                     set.add(sum[i - 1]);
+                }
             }
             for (int k = j + 2; k < nums.length - 1; k++) {
-                if (sum[nums.length - 1] - sum[k] == sum[k - 1] - sum[j] && set.contains(sum[k - 1] - sum[j]))
+                if (sum[nums.length - 1] - sum[k] == sum[k - 1] - sum[j] && set.contains(sum[k - 1] - sum[j])) {
                     return true;
+                }
             }
         }
         return false;

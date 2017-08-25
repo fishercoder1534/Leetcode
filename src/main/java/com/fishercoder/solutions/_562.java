@@ -21,7 +21,9 @@ package com.fishercoder.solutions;
 public class _562 {
 
     public int longestLine(int[][] M) {
-        if (M == null || M.length == 0) return 0;
+        if (M == null || M.length == 0) {
+            return 0;
+        }
         int[][] directions = new int[][]{
                 {-1, 0},
                 {-1, 1},

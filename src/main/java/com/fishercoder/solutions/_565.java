@@ -29,7 +29,9 @@ package com.fishercoder.solutions;
 public class _565 {
 
     public int arrayNesting(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         boolean[] visited = new boolean[nums.length];
         int answer = 0;
         for (int i : nums) {

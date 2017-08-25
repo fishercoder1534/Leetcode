@@ -18,7 +18,9 @@ import java.util.List;
 public class _56 {
 
     public static List<Interval> merge(List<Interval> intervals) {
-        if (intervals.size() <= 1) return intervals;
+        if (intervals.size() <= 1) {
+            return intervals;
+        }
 
         Collections.sort(intervals, new Comparator<Interval>() {
             @Override

@@ -38,7 +38,9 @@ package com.fishercoder.solutions;
 public class _547 {
 
     public int findCircleNum(int[][] M) {
-        if (M == null || M.length == 0 || M[0].length == 0) return 0;
+        if (M == null || M.length == 0 || M[0].length == 0) {
+            return 0;
+        }
         int m = M.length;//number of rows in this matrix
         UnionFind unionFind = new UnionFind(m);
         for (int i = 0; i < m; i++) {
@@ -73,7 +75,9 @@ public class _547 {
         }
 
         public int find(int[] ids, int i) {
-            if (ids[i] == i) return i;
+            if (ids[i] == i) {
+                return i;
+            }
             return find(ids, ids[i]);
         }
     }

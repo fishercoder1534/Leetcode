@@ -42,8 +42,11 @@ public class _542 {
         Deque<int[]> deque = new LinkedList<>();
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (matrix.get(i).get(j) == 0) deque.offer(new int[]{i, j});
-                else matrix.get(i).set(j, Integer.MAX_VALUE);
+                if (matrix.get(i).get(j) == 0) {
+                    deque.offer(new int[]{i, j});
+                } else {
+                    matrix.get(i).set(j, Integer.MAX_VALUE);
+                }
             }
         }
 
@@ -53,8 +56,9 @@ public class _542 {
             for (int i = 0; i < dirs.length - 1; i++) {
                 int nextRow = currentCell[0] + dirs[i];
                 int nextCol = currentCell[1] + dirs[i + 1];
-                if (nextRow < 0 || nextCol < 0 || nextRow >= m || nextCol >= n || matrix.get(nextRow).get(nextCol) <= matrix.get(currentCell[0]).get(currentCell[1]) + 1)
+                if (nextRow < 0 || nextCol < 0 || nextRow >= m || nextCol >= n || matrix.get(nextRow).get(nextCol) <= matrix.get(currentCell[0]).get(currentCell[1]) + 1) {
                     continue;
+                }
                 deque.offer(new int[]{nextRow, nextCol});
                 matrix.get(nextRow).set(nextCol, matrix.get(currentCell[0]).get(currentCell[1]) + 1);
             }
