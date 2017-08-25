@@ -47,7 +47,9 @@ public class _411 {
             abbrs = new ArrayList<>();
             abbrGenerator(target, 0, "", 0, i + 1);
             for (String s : abbrs) {
-                if (search(s, root, 0, 0) == false) return s;
+                if (search(s, root, 0, 0) == false) {
+                    return s;
+                }
             }
         }
         return "";
@@ -66,16 +68,22 @@ public class _411 {
     }
 
     public boolean search(String target, Trie root, int i, int loop) {
-        if (root == null) return false;
+        if (root == null) {
+            return false;
+        }
 
         if (loop != 0) {
             for (int a = 0; a < 26; a++) {
-                if (search(target, root.children[a], i, loop - 1)) return true;
+                if (search(target, root.children[a], i, loop - 1)) {
+                    return true;
+                }
             }
             return false;
         }
         if (i == target.length()) {
-            if (root.isWord) return true;
+            if (root.isWord) {
+                return true;
+            }
             return false;
         }
         if (Character.isDigit(target.charAt(i))) {
@@ -92,8 +100,12 @@ public class _411 {
 
     public void abbrGenerator(String target, int i, String tmp, int abbr, int num) {
         if (i == target.length()) {
-            if (num == 0 && abbr == 0) abbrs.add(tmp);
-            if (num == 1 && abbr != 0) abbrs.add(tmp + abbr);
+            if (num == 0 && abbr == 0) {
+                abbrs.add(tmp);
+            }
+            if (num == 1 && abbr != 0) {
+                abbrs.add(tmp + abbr);
+            }
             return;
         }
         if (num <= 0) return;

@@ -32,8 +32,9 @@ public class _40 {
     void helper(int[] candidates, int target, int start, List<Integer> curr, List<List<Integer>> result) {
         if (target > 0) {
             for (int i = start; i < candidates.length && target >= candidates[i]; i++) {
-                if (i > start && candidates[i] == candidates[i - 1])
+                if (i > start && candidates[i] == candidates[i - 1]) {
                     continue;//skip duplicates, this is one difference from Combination Sum I
+                }
                 curr.add(candidates[i]);
                 helper(candidates, target - candidates[i], i + 1, curr, result);//i+1 is the other difference from Combination Sum I
                 curr.remove(curr.size() - 1);

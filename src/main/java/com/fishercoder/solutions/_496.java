@@ -38,7 +38,9 @@ public class _496 {
             stack.push(nums[i]);
         }
 
-        while (!stack.isEmpty()) map.put(stack.pop(), -1);
+        while (!stack.isEmpty()) {
+            map.put(stack.pop(), -1);
+        }
 
         int[] result = new int[findNums.length];
         for (int i = 0; i < findNums.length; i++) {
@@ -54,8 +56,9 @@ public class _496 {
             boolean found = false;
             boolean foundNext = false;
             for (int j = 0; j < nums.length; j++) {
-                if (findNums[i] != nums[j] && !found) continue;
-                else if (!found) {
+                if (findNums[i] != nums[j] && !found) {
+                    continue;
+                } else if (!found) {
                     found = true;
                 } else {
                     if (nums[j] > findNums[i]) {
@@ -65,7 +68,9 @@ public class _496 {
                     }
                 }
             }
-            if (!foundNext) result[i] = -1;
+            if (!foundNext) {
+                result[i] = -1;
+            }
         }
         return result;
     }

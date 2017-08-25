@@ -25,7 +25,9 @@ public class _417 {
     public List<int[]> pacificAtlantic(int[][] matrix) {
 
         List<int[]> result = new ArrayList();
-        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return result;
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return result;
+        }
 
         int m = matrix.length;
         int n = matrix[0].length;
@@ -56,7 +58,9 @@ public class _417 {
     void dfs(int[][] matrix, boolean[][] visited, int height, int x, int y) {
         int m = matrix.length;
         int n = matrix[0].length;
-        if (x < 0 || y < 0 || x >= m || y >= n || matrix[x][y] < height || visited[x][y]) return;
+        if (x < 0 || y < 0 || x >= m || y >= n || matrix[x][y] < height || visited[x][y]) {
+            return;
+        }
         visited[x][y] = true;
         dfs(matrix, visited, matrix[x][y], x + 1, y);
         dfs(matrix, visited, matrix[x][y], x, y + 1);

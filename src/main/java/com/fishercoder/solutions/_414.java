@@ -36,11 +36,15 @@ public class _414 {
             max1 = Math.max(max1, i);
         }
         for (int i : nums) {
-            if (i == max1) continue;
+            if (i == max1) {
+                continue;
+            }
             max2 = Math.max(max2, i);
         }
         for (int i : nums) {
-            if (i == max1 || i == max2) continue;
+            if (i == max1 || i == max2) {
+                continue;
+            }
             max3 = Math.max(max3, i);
         }
         return (int) (max3 == Long.MIN_VALUE ? max1 : max3);

@@ -41,19 +41,30 @@ public class _4 {
         }
 
         public double getkth(int[] A, int aStart, int[] B, int bStart, int k) {
-            if (aStart > A.length - 1) return B[bStart + k - 1];
-            if (bStart > B.length - 1) return A[aStart + k - 1];
-            if (k == 1) return Math.min(A[aStart], B[bStart]);
+            if (aStart > A.length - 1) {
+                return B[bStart + k - 1];
+            }
+            if (bStart > B.length - 1) {
+                return A[aStart + k - 1];
+            }
+            if (k == 1) {
+                return Math.min(A[aStart], B[bStart]);
+            }
 
             int aMid = Integer.MAX_VALUE;
             int bMid = Integer.MAX_VALUE;
-            if (aStart + k / 2 - 1 < A.length) aMid = A[aStart + k / 2 - 1];
-            if (bStart + k / 2 - 1 < B.length) bMid = B[bStart + k / 2 - 1];
+            if (aStart + k / 2 - 1 < A.length) {
+                aMid = A[aStart + k / 2 - 1];
+            }
+            if (bStart + k / 2 - 1 < B.length) {
+                bMid = B[bStart + k / 2 - 1];
+            }
 
-            if (aMid < bMid)
+            if (aMid < bMid) {
                 return getkth(A, aStart + k / 2, B, bStart, k - k / 2);// Check: aRight + bLeft
-            else
+            } else {
                 return getkth(A, aStart, B, bStart + k / 2, k - k / 2);// Check: bRight + aLeft
+            }
         }
     }
 
@@ -98,9 +109,15 @@ public class _4 {
                 }
             }
 
-            if (highA == 0 && highB == 0) return 0;
-            if (highA == 0) return B[highB - 1 - K];
-            if (highB == 0) return A[highA - 1 - K];
+            if (highA == 0 && highB == 0) {
+                return 0;
+            }
+            if (highA == 0) {
+                return B[highB - 1 - K];
+            }
+            if (highB == 0) {
+                return A[highA - 1 - K];
+            }
             return max(A[highA - 1], B[highB - 1]);
         }
     }
