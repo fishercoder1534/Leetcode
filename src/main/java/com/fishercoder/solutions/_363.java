@@ -24,7 +24,9 @@ public class _363 {
     /**reference: https://discuss.leetcode.com/topic/48854/java-binary-search-solution-time-complexity-min-m-n-2-max-m-n-log-max-m-n*/
     public int maxSumSubmatrix(int[][] matrix, int k) {
         int row = matrix.length;
-        if (row == 0) return 0;
+        if (row == 0) {
+            return 0;
+        }
         int col = matrix[0].length;
         int m = Math.min(row, col);
         int n = Math.max(row, col);

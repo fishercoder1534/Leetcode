@@ -26,9 +26,13 @@ public class _342 {
 
     //a regular loop method to make it AC'ed
     public boolean isPowerOfFour(int num) {
-        if (num < 4 && num != 1) return false;
+        if (num < 4 && num != 1) {
+            return false;
+        }
         while (num != 1) {
-            if (num % 4 != 0) return false;
+            if (num % 4 != 0) {
+                return false;
+            }
             num /= 4;
         }
         return true;
@@ -45,7 +49,9 @@ public class _342 {
         int maxPowerOf4 = 4;
         while (temp > 0) {
             temp *= 4;
-            if (temp > 0) maxPowerOf4 = temp;
+            if (temp > 0) {
+                maxPowerOf4 = temp;
+            }
         }
         System.out.println("maxPowerOf4 is: " + maxPowerOf4);
 

@@ -89,7 +89,9 @@ public class _353 {
          * Game over when snake crosses the screen boundary or bites its body.
          */
         public int move(String direction) {
-            if (score == -1) return -1;
+            if (score == -1) {
+                return -1;
+            }
 
             //compute head
             int rowHead = body.peekFirst() / width;

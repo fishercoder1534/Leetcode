@@ -44,8 +44,9 @@ public class _305 {
 
     public int find(int[] father, int id) {
         int tf = father[id];
-        while (tf != father[tf])
+        while (tf != father[tf]) {
             tf = father[tf];
+        }
         int cur = id;
         int tmp;
         while (father[cur] != tf) {
@@ -71,12 +72,14 @@ public class _305 {
     }
 
     public List<Integer> numIslands2(int m, int n, int[][] positions) {
-        if (m == 0 || n == 0)
-            return new ArrayList<Integer>();
-        ArrayList<Integer> res = new ArrayList<Integer>();
+        if (m == 0 || n == 0) {
+            return new ArrayList<>();
+        }
+        ArrayList<Integer> res = new ArrayList();
         int[] father = new int[m * n];
-        for (int i = 0; i < father.length; i++)
+        for (int i = 0; i < father.length; i++) {
             father[i] = -1;
+        }
         int[] sz = new int[m * n];
         int[] dr = { 0, 0, -1, 1 };
         int[] dc = { -1, 1, 0, 0 };

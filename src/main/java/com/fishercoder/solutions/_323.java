@@ -30,7 +30,9 @@ import java.util.Queue;
 public class _323 {
 
     public int countComponents(int n, int[][] edges) {
-        if (n <= 1) return n;
+        if (n <= 1) {
+            return n;
+        }
 
         List<List<Integer>> adList = new ArrayList<List<Integer>>();
         for (int i = 0; i < n; i++) {

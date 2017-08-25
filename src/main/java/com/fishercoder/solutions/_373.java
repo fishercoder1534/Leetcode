@@ -46,7 +46,9 @@ public class _373 {
 
     public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         List<int[]> result = new ArrayList<int[]>();
-        if (nums1 == null || nums2 == null || k == 0 || nums1.length == 0 || nums2.length == 0) return result;
+        if (nums1 == null || nums2 == null || k == 0 || nums1.length == 0 || nums2.length == 0) {
+            return result;
+        }
         Queue<Node> meanHeap = new PriorityQueue<Node>();
         meanHeap.offer(new Node(0, 0, nums1[0] + nums2[0]));
         boolean[][] visited = new boolean[nums1.length][nums2.length];
@@ -58,8 +60,9 @@ public class _373 {
             for (int[] neighbor : neighbors) {
                 int nextRow = node.row + neighbor[0];
                 int nextCol = node.col + neighbor[1];
-                if (nextRow < 0 || nextCol < 0 || nextRow >= nums1.length || nextCol >= nums2.length || visited[nextRow][nextCol])
+                if (nextRow < 0 || nextCol < 0 || nextRow >= nums1.length || nextCol >= nums2.length || visited[nextRow][nextCol]) {
                     continue;
+                }
                 visited[nextRow][nextCol] = true;
                 meanHeap.offer(new Node(nextRow, nextCol, nums1[nextRow] + nums2[nextCol]));
             }

@@ -29,7 +29,9 @@ public class _329 {
     final int[] dirs = new int[]{0, 1, 0, -1, 0};
 
     public int longestIncreasingPath(int[][] matrix) {
-        if (matrix == null || matrix.length == 0) return 0;
+        if (matrix == null || matrix.length == 0) {
+            return 0;
+        }
         int max = 0;
         int[][] cache = new int[matrix.length][matrix[0].length];
         for (int i = 0; i < matrix.length; i++) {
@@ -42,7 +44,9 @@ public class _329 {
     }
 
     int dfs(int[][] matrix, int row, int col, int[][] cache) {
-        if (cache[row][col] != 0) return cache[row][col];
+        if (cache[row][col] != 0) {
+            return cache[row][col];
+        }
         int max = 1;
         for (int i = 0; i < 4; i++) {
             int nextRow = row + dirs[i];

@@ -16,19 +16,22 @@ public class _36 {
     //three HashSets in each loop, pretty cool!
     public boolean isValidSudoku(char[][] board) {
         for (int i = 0; i < 9; i++) {
-            if (!isValidRow(board, i))
+            if (!isValidRow(board, i)) {
                 return false;
+            }
         }
 
         for (int j = 0; j < 9; j++) {
-            if (!isValidCol(board, j))
+            if (!isValidCol(board, j)) {
                 return false;
+            }
         }
 
         for (int i = 0; i < 7; i = i + 3) {
             for (int j = 0; j < 7; j = j + 3) {
-                if (!isValidSquare(board, i, j))
+                if (!isValidSquare(board, i, j)) {
                     return false;
+                }
             }
         }
         return true;
@@ -40,12 +43,14 @@ public class _36 {
             nums[i] = 1;
         }
         for (int j = 0; j < 9; j++) {
-            if (board[row][j] != '.')
+            if (board[row][j] != '.') {
                 nums[Character.getNumericValue(board[row][j]) - 1]--;
+            }
         }
         for (int i : nums) {
-            if (i < 0)
+            if (i < 0) {
                 return false;
+            }
         }
         return true;
     }
@@ -56,12 +61,14 @@ public class _36 {
             nums[i] = 1;
         }
         for (int i = 0; i < 9; i++) {
-            if (board[i][col] != '.')
+            if (board[i][col] != '.') {
                 nums[Character.getNumericValue(board[i][col]) - 1]--;
+            }
         }
         for (int i : nums) {
-            if (i < 0)
+            if (i < 0) {
                 return false;
+            }
         }
         return true;
     }
@@ -73,13 +80,15 @@ public class _36 {
         }
         for (int i = row; i < row + 3; i++) {
             for (int j = col; j < col + 3; j++) {
-                if (board[i][j] != '.')
+                if (board[i][j] != '.') {
                     nums[Character.getNumericValue(board[i][j]) - 1]--;
+                }
             }
         }
         for (int i : nums) {
-            if (i < 0)
+            if (i < 0) {
                 return false;
+            }
         }
         return true;
     }

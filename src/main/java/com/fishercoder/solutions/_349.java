@@ -81,7 +81,9 @@ public class _349 {
 
 	//tried a friend's recommended approach, didn't finish it to get it AC'ed, turned to normal approach as above and got it AC'ed.
 	private boolean binarySearch_not_working_version(int i, int[] nums) {
-		if (nums == null || nums.length == 0) return false;
+		if (nums == null || nums.length == 0) {
+			return false;
+		}
 		int left = 0;
 		int right = nums.length - 1;
 		while (left + 1 < right) {
@@ -131,7 +133,9 @@ public class _349 {
 		Set<Integer> set = new HashSet();
 		for (int i = 0; i < nums1.length; i++) {
 			for (int j = 0; j < nums2.length; j++) {
-				if (nums1[i] == nums2[j]) set.add(nums1[i]);
+				if (nums1[i] == nums2[j]) {
+					set.add(nums1[i]);
+				}
 			}
 		}
 		int[] result = new int[set.size()];

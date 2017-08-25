@@ -23,8 +23,9 @@ public class _340 {
                 num++;
             }
             if (num > k) {
-                while (--count[s.charAt(left++)] > 0);
-                num--;
+                while (--count[s.charAt(left++)] > 0) {
+                    num--;
+                }
             }
             result = Math.max(result, right - left + 1);
         }

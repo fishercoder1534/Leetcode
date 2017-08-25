@@ -62,7 +62,9 @@ public class _379 {
          * @return - Return an available number. Return -1 if none is available.
          */
         public int get() {
-            if (phoneDir.peek() == null) return -1;
+            if (phoneDir.peek() == null) {
+                return -1;
+            }
             int newNumber = phoneDir.poll();
             used.add(newNumber);
             return newNumber;

@@ -32,7 +32,9 @@ public class _321 {
         for (int i = Math.max(0, k - m); i <= k && i <= n; ++i) {
             //what is this and why?
             int[] candidate = merge(maxArray(nums1, i), maxArray(nums2, k - i), k);
-            if (greater(candidate, 0, ans, 0)) ans = candidate;
+            if (greater(candidate, 0, ans, 0)) {
+                ans = candidate;
+            }
         }
         return ans;
     }
@@ -57,8 +59,12 @@ public class _321 {
         int n = nums.length;
         int[] ans = new int[k];
         for (int i = 0, j = 0; i < n; i++) {
-            while (n - i + j > k && j > 0 && ans[j - 1] < nums[i]) j--;
-            if (j < k) ans[j++] = nums[i];
+            while (n - i + j > k && j > 0 && ans[j - 1] < nums[i]) {
+                j--;
+            }
+            if (j < k) {
+                ans[j++] = nums[i];
+            }
         }
         return ans;
     }

@@ -112,7 +112,9 @@ public class _355 {
         /** Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
         public List<Integer> getNewsFeed(int userId) {
             List<Integer> newsFeed = new LinkedList<>();
-            if (!map.containsKey(userId)) return newsFeed;
+            if (!map.containsKey(userId)) {
+                return newsFeed;
+            }
             Set<Integer> users = map.get(userId).followed;
             PriorityQueue<Tweet> heap = new PriorityQueue<>(users.size(), (a, b) -> b.time - a.time);
             for (int user : users) {
@@ -153,7 +155,9 @@ public class _355 {
 
         /** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
         public void unfollow(int followerId, int followeeId) {
-            if (!map.containsKey(followerId) || followeeId == followerId) return;
+            if (!map.containsKey(followerId) || followeeId == followerId) {
+                return;
+            }
             map.get(followerId).unfollow(followeeId);
         }
     }

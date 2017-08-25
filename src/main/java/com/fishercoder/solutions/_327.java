@@ -24,7 +24,9 @@ public class _327 {
     }
 
     private int countWhileMergeSort(long[] sums, int start, int end, int lower, int upper) {
-        if (end - start <= 1) return 0;
+        if (end - start <= 1) {
+            return 0;
+        }
         int mid = (start + end) / 2;
         int count = countWhileMergeSort(sums, start, mid, lower, upper) + countWhileMergeSort(sums, mid, end, lower, upper);
         int j = mid;
@@ -32,9 +34,15 @@ public class _327 {
         int t = mid;
         long[] cache = new long[end - start];
         for (int i = start, r = 0; i < mid; i++, r++) {
-            while (k < end && sums[k] - sums[i] < lower) k++;
-            while (j < end && sums[j] - sums[i] <= upper) j++;
-            while (t < end && sums[t] < sums[i]) cache[r++] = sums[t++];
+            while (k < end && sums[k] - sums[i] < lower) {
+                k++;
+            }
+            while (j < end && sums[j] - sums[i] <= upper) {
+                j++;
+            }
+            while (t < end && sums[t] < sums[i]) {
+                cache[r++] = sums[t++];
+            }
             cache[r] = sums[i];
             count += j - k;
         }

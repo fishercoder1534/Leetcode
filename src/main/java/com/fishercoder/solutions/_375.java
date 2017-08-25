@@ -37,8 +37,12 @@ public class _375 {
     }
 
     private int dp(int[][] table, int s, int e) {
-        if (s >= e) return 0;
-        if (table[s][e] != 0) return table[s][e];
+        if (s >= e) {
+            return 0;
+        }
+        if (table[s][e] != 0) {
+            return table[s][e];
+        }
         int res = Integer.MAX_VALUE;
         for (int i = s; i <= e; i++) {
             int temp = i + Math.max(dp(table, s, i - 1), dp(table, i + 1, e));
@@ -49,7 +53,9 @@ public class _375 {
     }
 
     public int getMoneyAmount2(int n) {
-        if (n == 1) return 0;
+        if (n == 1) {
+            return 0;
+        }
         int[][] dp = new int[n + 1][n + 1];
         for (int x = 1; x < n; x++) {
             for (int i = 0; i + x <= n; i++) {

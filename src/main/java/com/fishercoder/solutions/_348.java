@@ -123,8 +123,9 @@ public class _348 {
             if (Math.abs(rows[row]) == size
                     || Math.abs(cols[col]) == size
                     || Math.abs(antidiagonal) == size
-                    || Math.abs(diagonal) == size)
+                    || Math.abs(diagonal) == size) {
                 return player;
+            }
 
             return 0;
         }

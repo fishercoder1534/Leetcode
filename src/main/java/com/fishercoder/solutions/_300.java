@@ -44,9 +44,13 @@ public class _300 {
              *         that this guarantees that the return value will be &gt;= 0 if
              *         and only if the key is found.*/
             int index = Arrays.binarySearch(dp, 0, len, x);
-            if (index < 0) index = -(index + 1);
+            if (index < 0) {
+                index = -(index + 1);
+            }
             dp[index] = x;
-            if (index == len) len++;
+            if (index == len) {
+                len++;
+            }
         }
         return len;
     }

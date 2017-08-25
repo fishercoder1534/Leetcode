@@ -32,7 +32,9 @@ public class _308 {
             int width;
 
             public NumMatrix(int[][] matrix) {
-                if (matrix.length == 0 || matrix[0].length == 0) return;
+                if (matrix.length == 0 || matrix[0].length == 0) {
+                    return;
+                }
                 height = matrix.length;
                 width = matrix[0].length;
                 this.nums = new int[height][width];
@@ -45,7 +47,9 @@ public class _308 {
             }
 
             public void update(int rowIndex, int colIndex, int newVal) {
-                if (height == 0 || width == 0) return;
+                if (height == 0 || width == 0) {
+                    return;
+                }
                 int delta = newVal - nums[rowIndex][colIndex];
                 nums[rowIndex][colIndex] = newVal;
                 for (int i = rowIndex + 1; i <= height; i += i & (-i)) {
@@ -56,7 +60,9 @@ public class _308 {
             }
 
             public int sumRegion(int row1, int col1, int row2, int col2) {
-                if (height == 0 || width == 0) return 0;
+                if (height == 0 || width == 0) {
+                    return 0;
+                }
                 return sum(row2 + 1, col2 + 1) + sum(row1, col1) - sum(row1, col2 + 1) - sum(row2 + 1, col1);
             }
 

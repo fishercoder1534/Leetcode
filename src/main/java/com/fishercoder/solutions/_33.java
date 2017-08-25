@@ -12,18 +12,26 @@ package com.fishercoder.solutions;
 public class _33 {
 
     public int search(int[] nums, int target) {
-        if (nums == null || nums.length == 0) return -1;
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
         int minIdx = findMinIdx(nums);
-        if (target == nums[minIdx]) return minIdx;
+        if (target == nums[minIdx]) {
+            return minIdx;
+        }
         int m = nums.length;
         int start = (target <= nums[m - 1]) ? minIdx : 0;
         int end = (target > nums[m - 1]) ? minIdx : m - 1;
 
         while (start <= end) {
             int mid = start + (end - start) / 2;
-            if (nums[mid] == target) return mid;
-            else if (target > nums[mid]) start = mid + 1;
-            else end = mid - 1;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (target > nums[mid]) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
         }
         return -1;
     }
@@ -34,8 +42,11 @@ public class _33 {
 
         while (start < end) {
             int mid = start + (end -  start) / 2;
-            if (nums[mid] > nums[end]) start = mid + 1;
-            else end = mid;
+            if (nums[mid] > nums[end]) {
+                start = mid + 1;
+            } else {
+                end = mid;
+            }
         }
         return start;
     }

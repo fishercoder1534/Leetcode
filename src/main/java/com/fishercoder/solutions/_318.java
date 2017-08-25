@@ -1,7 +1,6 @@
 package com.fishercoder.solutions;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,7 +28,9 @@ public class _318 {
     //this is a big hint that we could use integer (total 32 bits) to represent each char
     //values[i] means how many unique characters this string words[i] has
     public int maxProduct(String[] words) {
-        if (words == null || words.length == 0) return 0;
+        if (words == null || words.length == 0) {
+            return 0;
+        }
         int len = words.length;
         int[] values = new int[len];
         for (int i = 0; i < words.length; i++) {
@@ -54,21 +55,26 @@ public class _318 {
     public int maxProduct_with_pruning(String[] words) {
         int maxProduct = 0;
         //use a customized comparator to make the words list sorted in descending order, brilliant!
-        Arrays.sort(words, new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                if (o1.length() > o2.length()) return -1;
-                else if (o1.length() < o2.length()) return 1;
-                else return 0;
+        Arrays.sort(words, (o1, o2) -> {
+            if (o1.length() > o2.length()) {
+                return -1;
+            } else if (o1.length() < o2.length()) {
+                return 1;
+            } else {
+                return 0;
             }
         });
         for (int i = 0; i < words.length - 1; i++) {
             String currWord = words[i];
             int currWordLen = currWord.length();
-            if (maxProduct > currWordLen * words[i + 1].length()) break;//pruning
+            if (maxProduct > currWordLen * words[i + 1].length()) {
+                break;//pruning
+            }
             char[] chars = currWord.toCharArray();
             Set<Character> set = new HashSet();
-            for (char c : chars) set.add(c);
+            for (char c : chars) {
+                set.add(c);
+            }
             for (int j = i + 1; j < words.length; j++) {
                 char[] chars2 = words[j].toCharArray();
                 boolean valid = true;
@@ -98,7 +104,9 @@ public class _318 {
             int currWordLen = currWord.length();
             char[] chars = currWord.toCharArray();
             Set<Character> set = new HashSet();
-            for (char c : chars) set.add(c);
+            for (char c : chars) {
+                set.add(c);
+            }
             for (int j = i + 1; j < words.length; j++) {
                 char[] chars2 = words[j].toCharArray();
                 boolean valid = true;

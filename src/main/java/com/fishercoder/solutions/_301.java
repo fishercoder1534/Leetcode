@@ -21,7 +21,9 @@ public class _301 {
 
 	public List<String> removeInvalidParentheses(String s) {
 		List<String> result = new ArrayList<>();
-		if (s == null) return result;
+		if (s == null) {
+			return result;
+		}
 
 		Set<String> visited = new HashSet();
 		Queue<String> q = new LinkedList();
@@ -38,12 +40,14 @@ public class _301 {
 				result.add(curr);
 			}
 
-			if (found)
+			if (found) {
 				continue;//this means if the initial input is already a valid one, we'll just directly return it and there's actually only one valid result
+			}
 
 			for (int i = 0; i < curr.length(); i++) {
-				if (curr.charAt(i) != '(' && curr.charAt(i) != ')')
+				if (curr.charAt(i) != '(' && curr.charAt(i) != ')') {
 					continue;//this is to rule out those non-parentheses characters
+				}
 
 				String next = curr.substring(0, i) + curr.substring(i + 1);
 				if (!visited.contains(next)) {
@@ -61,10 +65,14 @@ public class _301 {
 		int count = 0;
 		for (int i = 0; i < chars.length; i++) {
 			char c = chars[i];
-			if (c == '(') count++;
+			if (c == '(') {
+				count++;
+			}
 			if (c == ')') {
 				count--;
-				if (count == -1) return false;
+				if (count == -1) {
+					return false;
+				}
 			}
 		}
 		return count == 0;

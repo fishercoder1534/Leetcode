@@ -28,8 +28,9 @@ public class _304 {
     public class NumMatrix {
 
         public NumMatrix(int[][] matrix) {
-            if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
+            if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
                 return;
+            }
 
             /**The dimensions of this tot matrix is actually 1 bigger than the given matrix, cool!*/
             tot = new int[matrix.length + 1][matrix[0].length + 1];

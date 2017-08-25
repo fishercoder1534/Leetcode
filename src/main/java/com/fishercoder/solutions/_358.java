@@ -47,9 +47,13 @@ public class _358 {
             stringBuilder.append(entry.getKey());
             entry.setValue(entry.getValue() - 1);
             waitQueue.offer(entry);
-            if (waitQueue.size() < k) continue; //there's only k-1 chars in the waitHeap, not full yet
+            if (waitQueue.size() < k) {
+                continue; //there's only k-1 chars in the waitHeap, not full yet
+            }
             Map.Entry<Character, Integer> front = waitQueue.poll();
-            if (front.getValue() > 0) heap.offer(front);
+            if (front.getValue() > 0) {
+                heap.offer(front);
+            }
         }
 
         return stringBuilder.length() == s.length() ? stringBuilder.toString() : "";
