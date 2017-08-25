@@ -8,13 +8,16 @@ package com.fishercoder.solutions;
 public class _29 {
 
     public int divide(int dividend, int divisor) {
-        if (divisor == 0 || (dividend == Integer.MIN_VALUE && divisor == -1))
+        if (divisor == 0 || (dividend == Integer.MIN_VALUE && divisor == -1)) {
             return Integer.MAX_VALUE;
+        }
         if (dividend != Integer.MIN_VALUE
-                && Math.abs(dividend) < Math.abs(divisor))
+                && Math.abs(dividend) < Math.abs(divisor)) {
             return 0;
-        if (divisor == Integer.MIN_VALUE)
+        }
+        if (divisor == Integer.MIN_VALUE) {
             return (dividend == Integer.MIN_VALUE) ? 1 : 0;
+        }
         //
         boolean flag = (dividend < 0) ^ (divisor < 0);
         dividend = -Math.abs(dividend);
@@ -31,8 +34,9 @@ public class _29 {
         }
         int result = 0;
         int index = 1;
-        while (num[index] < 0)
+        while (num[index] < 0) {
             ++index;
+        }
         index -= 1;
         while (dividend <= divisor) {
             while (dividend <= num[index]) {

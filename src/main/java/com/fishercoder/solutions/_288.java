@@ -56,8 +56,11 @@ public class _288 {
 
         public boolean isUnique(String word) {
             String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
-            if (!dict.containsKey(key)) return true;
-            else return dict.get(key) != "" && dict.get(key).equals(word);
+            if (!dict.containsKey(key)) {
+                return true;
+            } else {
+                return dict.get(key) != "" && dict.get(key).equals(word);
+            }
         }
     }
 
@@ -83,10 +86,13 @@ public class _288 {
 
         public boolean isUnique(String word) {
             String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
-            if (!dict.containsKey(key)) return true;
-            else {
+            if (!dict.containsKey(key)) {
+                return true;
+            } else {
                 Set<String> set = dict.get(key);
-                if (set.size() != 1) return false;
+                if (set.size() != 1) {
+                    return false;
+                }
                 Iterator<String> it = set.iterator();
                 return it.next().equals(word);
             }
