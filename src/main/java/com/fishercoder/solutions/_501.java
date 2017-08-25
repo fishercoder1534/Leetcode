@@ -30,7 +30,9 @@ public class _501 {
     public int[] findMode(TreeNode root) {
         int[] result = new int[]{};
         Map<Integer, Integer> map = new HashMap();
-        if (root == null) return result;
+        if (root == null) {
+            return result;
+        }
         List<Integer> list = bfs(root, map);
         result = new int[list.size()];
         for (int i = 0; i < list.size(); i++) {
@@ -46,8 +48,12 @@ public class _501 {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 TreeNode treeNode = queue.poll();
-                if (treeNode.left != null) queue.offer(treeNode.left);
-                if (treeNode.right != null) queue.offer(treeNode.right);
+                if (treeNode.left != null) {
+                    queue.offer(treeNode.left);
+                }
+                if (treeNode.right != null) {
+                    queue.offer(treeNode.right);
+                }
                 map.put(treeNode.val, map.getOrDefault(treeNode.val, 0) + 1);
             }
         }

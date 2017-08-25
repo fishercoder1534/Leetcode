@@ -67,7 +67,9 @@ public class _505 {
 
         while (!queue.isEmpty()) {
             Point curr = queue.poll();
-            if (length[curr.x][curr.y] <= curr.distance) continue;
+            if (length[curr.x][curr.y] <= curr.distance) {
+                continue;
+            }
             length[curr.x][curr.y] = curr.distance;
             for (int i = 0; i < directions.length - 1; i++) {
                 int x = curr.x;

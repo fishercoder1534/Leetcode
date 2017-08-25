@@ -22,7 +22,9 @@ public class _520 {
     public boolean detectCapitalUse(String word) {
         char[] words = word.toCharArray();
         boolean firstLetterCap = false;
-        if (Character.isUpperCase(words[0])) firstLetterCap = true;
+        if (Character.isUpperCase(words[0])) {
+            firstLetterCap = true;
+        }
 
         if (firstLetterCap) {
             if (words.length >= 2) {
@@ -30,14 +32,18 @@ public class _520 {
                 if (Character.isUpperCase(words[1])) {
                     //then all following must be all uppercase
                     while (i < words.length) {
-                        if (!Character.isUpperCase(words[i])) return false;
+                        if (!Character.isUpperCase(words[i])) {
+                            return false;
+                        }
                         i++;
                     }
                     return true;
                 } else {
                     //then all following must be all lowercase
                     while (i < words.length) {
-                        if (!Character.isLowerCase(words[i])) return false;
+                        if (!Character.isLowerCase(words[i])) {
+                            return false;
+                        }
                         i++;
                     }
                     return true;
@@ -48,7 +54,9 @@ public class _520 {
             //then all following must be all lowercase
             int i = 1;
             while (i < words.length) {
-                if (!Character.isLowerCase(words[i])) return false;
+                if (!Character.isLowerCase(words[i])) {
+                    return false;
+                }
                 i++;
             }
             return true;

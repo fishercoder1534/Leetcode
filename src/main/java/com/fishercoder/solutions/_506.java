@@ -28,10 +28,15 @@ public class _506 {
         Map<Integer, String> rankMap = new HashMap();
         int len = nums.length;
         for (int i = len - 1; i >= 0; i--) {
-            if (i == len - 1) rankMap.put(tmp[i], "Gold Medal");
-            else if (i == len - 2) rankMap.put(tmp[i], "Silver Medal");
-            else if (i == len - 3) rankMap.put(tmp[i], "Bronze Medal");
-            else rankMap.put(tmp[i], String.valueOf(len - i));
+            if (i == len - 1) {
+                rankMap.put(tmp[i], "Gold Medal");
+            } else if (i == len - 2) {
+                rankMap.put(tmp[i], "Silver Medal");
+            } else if (i == len - 3) {
+                rankMap.put(tmp[i], "Bronze Medal");
+            } else {
+                rankMap.put(tmp[i], String.valueOf(len - i));
+            }
         }
         String[] result = new String[len];
         for (int i = 0; i < len; i++) {

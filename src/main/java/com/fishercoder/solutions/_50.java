@@ -6,8 +6,9 @@ package com.fishercoder.solutions;
 public class _50 {
 
     public double myPow(double x, int n) {
-        if (n == 0)
+        if (n == 0) {
             return 1;
+        }
         if (n == Integer.MIN_VALUE) {
             ++n;
             n = -n;

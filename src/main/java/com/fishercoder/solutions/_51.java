@@ -31,7 +31,9 @@ public class _51 {
 
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
-        if (n <= 0) return result;
+        if (n <= 0) {
+            return result;
+        }
         search(n, new ArrayList<>(), result);
         return result;
     }

@@ -24,7 +24,9 @@ public class _525 {
 
     //credit: https://leetcode.com/articles/contiguous-array/#approach-3-using-hashmap-accepted
     public int findMaxLength(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         int count = 0;
         int max = 0;
         Map<Integer, Integer> map = new HashMap();

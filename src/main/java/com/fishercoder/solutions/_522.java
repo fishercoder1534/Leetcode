@@ -33,13 +33,16 @@ public class _522 {
         for (int i = 0; i < strs.length; i++) {
             boolean found = true;
             for (int j = 0; j < strs.length; j++) {
-                if (i == j) continue;
-                else if (isSubsequence(strs[i], strs[j])) {
+                if (i == j) {
+                    continue;
+                } else if (isSubsequence(strs[i], strs[j])) {
                     found = false;
                     break;
                 }
             }
-            if (found) return strs[i].length();
+            if (found) {
+                return strs[i].length();
+            }
         }
         return -1;
     }
@@ -47,7 +50,9 @@ public class _522 {
     private boolean isSubsequence(String a, String b) {
         int i = 0;
         for (int j = 0; i < a.length() && j < b.length(); j++) {
-            if (a.charAt(i) == b.charAt(j)) i++;
+            if (a.charAt(i) == b.charAt(j)) {
+                i++;
+            }
         }
         return i == a.length();
     }

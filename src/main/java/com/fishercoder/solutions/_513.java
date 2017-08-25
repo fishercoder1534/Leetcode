@@ -46,8 +46,12 @@ public class _513 {
                 if (i == 0) {
                     leftMost = curr;
                 }
-                if (curr.left != null) queue.offer(curr.left);
-                if (curr.right != null) queue.offer(curr.right);
+                if (curr.left != null) {
+                    queue.offer(curr.left);
+                }
+                if (curr.right != null) {
+                    queue.offer(curr.right);
+                }
             }
         }
         return leftMost.val;

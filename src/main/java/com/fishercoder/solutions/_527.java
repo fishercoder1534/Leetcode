@@ -41,12 +41,17 @@ public class _527 {
             while (true) {
                 HashSet<Integer> set = new HashSet<>();
                 for (int j = i + 1; j < len; j++) {
-                    if (ans[j].equals(ans[i])) set.add(j); // check all strings with the same abbreviation
+                    if (ans[j].equals(ans[i])) {
+                        set.add(j); // check all strings with the same abbreviation
+                    }
                 }
-                if (set.isEmpty()) break;
+                if (set.isEmpty()) {
+                    break;
+                }
                 set.add(i);
-                for (int k : set)
+                for (int k : set) {
                     ans[k] = abbreviate(dict.get(k), ++prefix[k]); // increase the prefix
+                }
             }
         }
         return Arrays.asList(ans);

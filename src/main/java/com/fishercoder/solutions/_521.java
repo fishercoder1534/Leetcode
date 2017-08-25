@@ -26,7 +26,9 @@ public class _521 {
 
     //Or in other words, when a.length() != b.length(), no subsequence of b will be equal to a, so return Math.max(a.length(), b.length())
     public int findLUSlength(String a, String b) {
-        if (a.equals(b)) return -1;
+        if (a.equals(b)) {
+            return -1;
+        }
         return Math.max(a.length(), b.length());
     }
 
