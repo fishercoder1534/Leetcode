@@ -1,37 +1,55 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
+import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions._617;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.Arrays;
+
+import static junit.framework.TestCase.assertEquals;
 
 /**
  * Created by stevesun on 6/10/17.
  */
 public class _617Test {
-    private static _617 test;
+    private static _617.Solution1 solution1;
+    private static _617.Solution2 solution2;
     private static TreeNode t1;
     private static TreeNode t2;
     private static TreeNode actual;
+    private static TreeNode expected;
 
     @BeforeClass
     public static void setup() {
-        test = new _617();
+        solution1 = new _617.Solution1();
+        solution2 = new _617.Solution2();
     }
 
     @Test
     public void test1() {
-        t1 = new TreeNode(1);
-        t1.left = new TreeNode(3);
-        t1.right = new TreeNode(2);
-        t1.left.left = new TreeNode(5);
+        t1 = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, 5));
 
-        t2 = new TreeNode(2);
-        t2.left = new TreeNode(1);
-        t2.right = new TreeNode(3);
-        t2.left.right = new TreeNode(4);
-        t2.right.right = new TreeNode(7);
+        t2 = TreeUtils.constructBinaryTree(Arrays.asList(2, 1, 3, null, 4, null, 7));
 
-        actual = test.mergeTrees(t1, t2);
+        expected = TreeUtils.constructBinaryTree(Arrays.asList(3, 4, 5, 5, 4, null, 7));
+
+        actual = solution1.mergeTrees(t1, t2);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void test2() {
+        t1 = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, 5));
+
+        t2 = TreeUtils.constructBinaryTree(Arrays.asList(2, 1, 3, null, 4, null, 7));
+
+        expected = TreeUtils.constructBinaryTree(Arrays.asList(3, 4, 5, 5, 4, null, 7));
+
+        actual = solution2.mergeTrees(t1, t2);
+
+        assertEquals(expected, actual);
     }
 }
