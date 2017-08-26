@@ -11,15 +11,16 @@ import static junit.framework.Assert.assertEquals;
  * Created by fishercoder on 1/25/17.
  */
 public class _537Test {
-    private static _537 test;
+    private static _537 .Solution1 solution1;
+    private static _537 .Solution2 solution2;
     private static String expected;
-    private static String actual;
     private static String a;
     private static String b;
 
     @BeforeClass
     public static void setup() {
-        test = new _537();
+        solution1 = new _537.Solution1();
+        solution2 = new _537.Solution2();
     }
 
     @Before
@@ -31,8 +32,8 @@ public class _537Test {
         expected = "0+2i";
         a = "1+1i";
         b = "1+1i";
-        actual = test.complexNumberMultiply(a, b);
-        assertEquals(expected, actual);
+        assertEquals(expected, solution1.complexNumberMultiply(a, b));
+        assertEquals(expected, solution2.complexNumberMultiply(a, b));
     }
 
     @Test
@@ -40,7 +41,6 @@ public class _537Test {
         expected = "0+-2i";
         a = "1+-1i";
         b = "1+-1i";
-        actual = test.complexNumberMultiply(a, b);
-        assertEquals(expected, actual);
+        assertEquals(expected, solution2.complexNumberMultiply(a, b));
     }
 }
