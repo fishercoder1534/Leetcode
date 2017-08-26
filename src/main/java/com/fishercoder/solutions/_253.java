@@ -16,8 +16,9 @@ import java.util.PriorityQueue;
 public class _253 {
 
     public int minMeetingRooms(Interval[] intervals) {
-        if (intervals == null || intervals.length == 0)
+        if (intervals == null || intervals.length == 0) {
             return 0;
+        }
 
         // Sort the intervals by start time
         Arrays.sort(intervals, (a, b) -> a.start - b.start);

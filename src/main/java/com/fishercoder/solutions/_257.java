@@ -26,7 +26,9 @@ public class _257 {
         //a very typical/good question to test your recursion/dfs understanding.
         public List<String> binaryTreePaths_more_concise(TreeNode root) {
             List<String> paths = new ArrayList<String>();
-            if (root == null) return paths;
+            if (root == null) {
+                return paths;
+            }
             dfs(root, paths, "");
             return paths;
         }
@@ -37,8 +39,12 @@ public class _257 {
                 return;
             }
             path += root.val + "->";
-            if (root.left != null) dfs(root.left, paths, path);
-            if (root.right != null) dfs(root.right, paths, path);
+            if (root.left != null) {
+                dfs(root.left, paths, path);
+            }
+            if (root.right != null) {
+                dfs(root.right, paths, path);
+            }
         }
     }
     
@@ -50,7 +56,9 @@ public class _257 {
         }
 
         private void dfs(TreeNode root, List<String> paths, StringBuilder sb) {
-            if (root == null) return;
+            if (root == null) {
+                return;
+            }
             if (root.left == null && root.right == null) {
                 sb.append(root.val);
                 paths.add(sb.toString());
@@ -58,10 +66,14 @@ public class _257 {
             }
             sb.append(root.val + "->");
             String curr = sb.toString();
-            if (root.left != null) dfs(root.left, paths, sb);
+            if (root.left != null) {
+                dfs(root.left, paths, sb);
+            }
             sb.setLength(0);
             sb.append(curr);
-            if (root.right != null) dfs(root.right, paths, sb);
+            if (root.right != null) {
+                dfs(root.right, paths, sb);
+            }
         }
     }
 }

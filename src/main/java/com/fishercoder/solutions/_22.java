@@ -53,7 +53,9 @@ public class _22 {
     static class Solution2 {
         public List<String> generateParenthesis(int n) {
             List<String> result = new ArrayList();
-            if (n == 0) return result;
+            if (n == 0) {
+                return result;
+            }
             helper(result, "", n, n);
             return result;
         }

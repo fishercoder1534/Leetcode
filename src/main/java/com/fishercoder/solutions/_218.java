@@ -92,12 +92,18 @@ public class _218 {
         for (BuildingPoint bp : bps) {
             //if it's a starting point, we'll add it into the final result
             if (bp.isStart) {
-                if (treeMap.containsKey(bp.h)) treeMap.put(bp.h, treeMap.get(bp.h) + 1);
-                else treeMap.put(bp.h, 1);
+                if (treeMap.containsKey(bp.h)) {
+                    treeMap.put(bp.h, treeMap.get(bp.h) + 1);
+                } else {
+                    treeMap.put(bp.h, 1);
+                }
             } else if (!bp.isStart) {
                 //if it's an ending point, we'll decrement/remove this entry
-                if (treeMap.containsKey(bp.h) && treeMap.get(bp.h) > 1) treeMap.put(bp.h, treeMap.get(bp.h) - 1);
-                else treeMap.remove(bp.h);
+                if (treeMap.containsKey(bp.h) && treeMap.get(bp.h) > 1) {
+                    treeMap.put(bp.h, treeMap.get(bp.h) - 1);
+                } else {
+                    treeMap.remove(bp.h);
+                }
             }
 
             int currMaxH = treeMap.lastKey();

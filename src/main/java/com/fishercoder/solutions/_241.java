@@ -68,7 +68,9 @@ public class _241 {
                 }
             }
         }
-        if (answer.size() == 0) answer.add(Integer.valueOf(input));
+        if (answer.size() == 0) {
+            answer.add(Integer.valueOf(input));
+        }
         return answer;
     }
 

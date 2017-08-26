@@ -54,7 +54,9 @@ public class _210 {
             }
         }
 
-        if (zeroDegree.isEmpty()) return new int[0];
+        if (zeroDegree.isEmpty()) {
+            return new int[0];
+        }
 
         while (!zeroDegree.isEmpty()) {
             Iterator<Integer> it = zeroDegree.iterator();
@@ -72,7 +74,9 @@ public class _210 {
         }
 
         for (int i = 0; i < numCourses; i++) {
-            if (inDegree[i] != 0) return new int[0];
+            if (inDegree[i] != 0) {
+                return new int[0];
+            }
         }
 
         int[] result = new int[queue.size()];

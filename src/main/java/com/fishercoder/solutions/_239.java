@@ -37,7 +37,9 @@ import java.util.PriorityQueue;
 public class _239 {
 
     public int[] maxSlidingWindow(int[] nums, int k) {
-        if (nums == null || nums.length == 0 || k == 0) return new int[0];
+        if (nums == null || nums.length == 0 || k == 0) {
+            return new int[0];
+        }
         PriorityQueue<Integer> heap = new PriorityQueue<>((a, b) -> b - a);
         int[] res = new int[nums.length - k + 1];
         for (int i = 0; i < nums.length; i++) {

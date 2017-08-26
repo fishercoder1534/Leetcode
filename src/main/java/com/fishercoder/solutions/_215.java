@@ -49,9 +49,13 @@ public class _215 {
             int index = nums.length - k;
             while (start < end) {
                 int pivot = partition(nums, start, end);
-                if (pivot < index) start = pivot + 1;
-                else if (pivot > index) end = pivot - 1;
-                else return nums[pivot];
+                if (pivot < index) {
+                    start = pivot + 1;
+                } else if (pivot > index) {
+                    end = pivot - 1;
+                } else {
+                    return nums[pivot];
+                }
             }
             return nums[start];
         }

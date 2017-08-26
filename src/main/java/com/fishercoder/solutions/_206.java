@@ -40,7 +40,9 @@ public class _206 {
     }
 
     ListNode reverse(ListNode head, ListNode newHead) {
-        if (head == null) return newHead;
+        if (head == null) {
+            return newHead;
+        }
         ListNode next = head.next;
         head.next = newHead;
         newHead = head;

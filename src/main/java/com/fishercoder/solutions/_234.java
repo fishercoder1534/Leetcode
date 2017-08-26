@@ -19,7 +19,9 @@ public class _234 {
          * O(1) space
          * */
         public boolean isPalindrome(ListNode head) {
-            if (head == null) return true;
+            if (head == null) {
+                return true;
+            }
 
             ListNode slow = head;
             ListNode fast = head;
@@ -31,7 +33,9 @@ public class _234 {
             ListNode reversedHead = reverse(slow.next);
             ListNode firstHalfHead = head;
             while (firstHalfHead != null && reversedHead != null) {
-                if (firstHalfHead.val != reversedHead.val) return false;
+                if (firstHalfHead.val != reversedHead.val) {
+                    return false;
+                }
                 firstHalfHead = firstHalfHead.next;
                 reversedHead = reversedHead.next;
             }

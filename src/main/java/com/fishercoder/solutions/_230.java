@@ -27,10 +27,16 @@ public class _230 {
         }
 
         private void inorder(TreeNode root, List<Integer> inorderList) {
-            if (root == null) return;
-            if (root.left != null) inorder(root.left, inorderList);
+            if (root == null) {
+                return;
+            }
+            if (root.left != null) {
+                inorder(root.left, inorderList);
+            }
             inorderList.add(root.val);
-            if (root.right != null) inorder(root.right, inorderList);
+            if (root.right != null) {
+                inorder(root.right, inorderList);
+            }
             return;
         }
     }
@@ -45,7 +51,9 @@ public class _230 {
         }
 
         private void inorder(TreeNode root, int k) {
-            if (root == null) return;
+            if (root == null) {
+                return;
+            }
             inorder(root.left, k);
             count++;
             if (count == k) {

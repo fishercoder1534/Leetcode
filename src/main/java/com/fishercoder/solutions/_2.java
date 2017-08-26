@@ -34,8 +34,9 @@ public class _2 {
                 ;
                 tmp = tmp.next;
             }
-            if (sum / 10 == 1)
+            if (sum / 10 == 1) {
                 tmp.next = new ListNode(1);//this means there's a carry, so we add additional 1, e.g. [5] + [5] = [0, 1]
+            }
             return result.val == 0 ? result.next : result;
         }
     }
