@@ -44,17 +44,27 @@ public class _212 {
     private void dfs(TrieNode root, char[][] board, int i, int j, List<String> result) {
         char c = board[i][j];
 
-        if (c == '#' || root.children[c - 'a'] == null) return;
+        if (c == '#' || root.children[c - 'a'] == null) {
+            return;
+        }
 
         if (root.children[c - 'a'].word != null) {
             result.add(root.children[c - 'a'].word);
             root.children[c - 'a'].word = null;//de-duplicate
         }
         board[i][j] = '#';//mark it as visited to avoid cycles
-        if (i > 0) dfs(root.children[c - 'a'], board, i - 1, j, result);
-        if (j > 0) dfs(root.children[c - 'a'], board, i, j - 1, result);
-        if (i + 1 < board.length) dfs(root.children[c - 'a'], board, i + 1, j, result);
-        if (j + 1 < board[0].length) dfs(root.children[c - 'a'], board, i, j + 1, result);
+        if (i > 0) {
+            dfs(root.children[c - 'a'], board, i - 1, j, result);
+        }
+        if (j > 0) {
+            dfs(root.children[c - 'a'], board, i, j - 1, result);
+        }
+        if (i + 1 < board.length) {
+            dfs(root.children[c - 'a'], board, i + 1, j, result);
+        }
+        if (j + 1 < board[0].length) {
+            dfs(root.children[c - 'a'], board, i, j + 1, result);
+        }
 
         board[i][j] = c;
     }

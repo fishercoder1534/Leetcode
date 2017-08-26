@@ -14,7 +14,9 @@ package com.fishercoder.solutions;
 public class _209 {
 
     public int minSubArrayLen(int s, int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         int i = 0;
         int j = 0;
         int min = Integer.MAX_VALUE;

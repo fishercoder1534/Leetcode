@@ -19,7 +19,9 @@ import java.util.Set;
 public class _202 {
 
     public static boolean isHappy(int n) {
-        if (n == 1) return true;
+        if (n == 1) {
+            return true;
+        }
         Set<Integer> set = new HashSet();
         while (n != 1) {
             String str = String.valueOf(n);
@@ -28,8 +30,12 @@ public class _202 {
                 int temp = Character.getNumericValue(str.charAt(i));
                 n += temp * temp;
             }
-            if (n == 1) return true;
-            if (!set.add(n)) return false;
+            if (n == 1) {
+                return true;
+            }
+            if (!set.add(n)) {
+                return false;
+            }
         }
         return false;
     }

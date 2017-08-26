@@ -20,9 +20,15 @@ public class _213 {
      * 2. rob from house 2 to n, get max2
      * take the max from the above two max*/
     public int rob(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
-        if (nums.length == 1) return nums[0];
-        if (nums.length == 2) return Math.max(nums[0], nums[1]);
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        if (nums.length == 1) {
+            return nums[0];
+        }
+        if (nums.length == 2) {
+            return Math.max(nums[0], nums[1]);
+        }
         int[] dp = new int[nums.length - 1];
 
         //rob 1 to n-1

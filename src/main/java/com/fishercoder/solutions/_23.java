@@ -22,7 +22,9 @@ public class _23 {
         });
 
         for (ListNode node : lists) {
-            if (node != null) heap.offer(node);
+            if (node != null) {
+                heap.offer(node);
+            }
         }
 
         ListNode pre = new ListNode(-1);

@@ -29,7 +29,9 @@ public class _200 {
     public static class DFSSolution {
 
         public int numIslands(char[][] grid) {
-            if (grid == null || grid.length == 0) return 0;
+            if (grid == null || grid.length == 0) {
+                return 0;
+            }
             int count = 0;
             int m = grid.length;
             int n = grid[0].length;
@@ -45,7 +47,9 @@ public class _200 {
         }
 
         void dfs(char[][] grid, int i, int j, int m, int n) {
-            if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == '0') return;
+            if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == '0') {
+                return;
+            }
             grid[i][j] = '0';
             dfs(grid, i + 1, j, m, n);
             dfs(grid, i, j + 1, m, n);
@@ -87,13 +91,17 @@ public class _200 {
             }
 
             public int find(int[] ids, int i) {
-                if (ids[i] == i) return i;
+                if (ids[i] == i) {
+                    return i;
+                }
                 return find(ids, ids[i]);
             }
         }
 
         public int numIslands(char[][] grid) {
-            if (grid == null || grid.length == 0 || grid[0].length == 0) return 0;
+            if (grid == null || grid.length == 0 || grid[0].length == 0) {
+                return 0;
+            }
             int[] dirs = new int[]{0, 1, 0, -1, 0};
             UnionFind uf = new UnionFind(grid);
             int m = grid.length;

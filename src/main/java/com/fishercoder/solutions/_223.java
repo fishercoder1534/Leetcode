@@ -18,7 +18,9 @@ public class _223 {
         int right = Math.min(C, G);
 
         int overlap = 0;
-        if (top > bottom && right > left) overlap = (top - bottom) * (right - left);
+        if (top > bottom && right > left) {
+            overlap = (top - bottom) * (right - left);
+        }
         return areaA + areaB - overlap;
     }
 

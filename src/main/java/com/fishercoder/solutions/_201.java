@@ -12,7 +12,9 @@ public class _201 {
 
     //this naive approach works, but will result in TLE as expected for 8256/8266 test cases: (0, 2147483647)
     public int rangeBitwiseAnd_TLE(int m, int n) {
-        if (m == 0) return m;
+        if (m == 0) {
+            return m;
+        }
         int result = m;
         for (int i = m + 1; i <= n; i++) {
             result &= i;

@@ -39,12 +39,18 @@ public class _26 {
             while (j < nums.length && nums[i] == nums[j]) {
                 j++;
             }
-            if (j == nums.length) j--;
+            if (j == nums.length) {
+                j--;
+            }
             int temp = nums[j];
             nums[j] = nums[i + 1];
             nums[i + 1] = temp;
-            if (nums[i] != nums[i + 1]) i++;
-            if (j == nums.length) break;
+            if (nums[i] != nums[i + 1]) {
+                i++;
+            }
+            if (j == nums.length) {
+                break;
+            }
             j++;
         }
         return i + 1;

@@ -20,8 +20,11 @@ public class _222 {
         public int countNodes(TreeNode root) {
             int leftH = getLeftHeight(root);
             int rightH = getRightHeight(root);
-            if (leftH == rightH) return (1 << leftH) - 1;
-            else return 1 + countNodes(root.left) + countNodes(root.right);
+            if (leftH == rightH) {
+                return (1 << leftH) - 1;
+            } else {
+                return 1 + countNodes(root.left) + countNodes(root.right);
+            }
         }
 
         private int getRightHeight(TreeNode root) {

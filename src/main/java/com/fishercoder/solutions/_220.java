@@ -40,14 +40,18 @@ public class _220 {
         TreeSet<Integer> set = new TreeSet<Integer>();
         for (int i = 0; i < nums.length; i++) {
             Integer s = set.ceiling(nums[i]);//take the smallest greater number than nums[i] is there exists
-            if (s != null && s - nums[i] <= t)
+            if (s != null && s - nums[i] <= t) {
                 return true;//it must be s - nums[i] here, otherwise, cases like [4,2] 2, 1 wont' pass, because we'll get 2-4 = -2 which is a negative number that for sure will be smaller than t
+            }
             Integer g = set.floor(nums[i]);//take the biggest smaller number than nums[i] if there exists
-            if (g != null && (long) nums[i] - g <= t) return true;
+            if (g != null && (long) nums[i] - g <= t) {
+                return true;
+            }
             set.add(nums[i]);
-            if (set.size() > k)
+            if (set.size() > k) {
                 set.remove(nums[i - k]);//set doesn't have indices and it's not ordered, we could only specify the element
-            //that we want to remove, this element is nums[i-k]
+                //that we want to remove, this element is nums[i-k]
+            }
         }
         return false;
     }

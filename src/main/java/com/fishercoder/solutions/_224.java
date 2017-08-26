@@ -20,8 +20,9 @@ import java.util.Stack;
 public class _224 {
 
 	public int calculate(String s) {
-		if (s == null || s.isEmpty())
+		if (s == null || s.isEmpty()) {
 			return 0;
+		}
 
 		s = s.replaceAll("\\s", "");
 		char[] chars = s.toCharArray();
@@ -72,15 +73,20 @@ public class _224 {
 					int operand1 = Integer.parseInt(stack2.pop());
 					String operator = stack2.pop();
 					int operand2 = Integer.parseInt(stack2.pop());
-					if (operator.equals("+")) exp = operand1 + operand2;
-					else if (operator.equals("-")) exp = operand1 - operand2;
+					if (operator.equals("+")) {
+						exp = operand1 + operand2;
+					} else if (operator.equals("-")) {
+						exp = operand1 - operand2;
+					}
 					stack2.push(String.valueOf(exp));
 				}
 				i++;
 			}
 		}
 
-		if (stack1.size() == 1) return Integer.parseInt(stack1.pop());
+		if (stack1.size() == 1) {
+			return Integer.parseInt(stack1.pop());
+		}
 
 		while (!stack1.isEmpty()) {
 			stack2.push(stack1.pop());
@@ -94,8 +100,11 @@ public class _224 {
 			int operand1 = Integer.parseInt(stack2.pop());
 			String operator = stack2.pop();
 			int operand2 = Integer.parseInt(stack2.pop());
-			if (operator.equals("+")) exp = operand1 + operand2;
-			else if (operator.equals("-")) exp = operand1 - operand2;
+			if (operator.equals("+")) {
+				exp = operand1 + operand2;
+			} else if (operator.equals("-")) {
+				exp = operand1 - operand2;
+			}
 			stack2.push(String.valueOf(exp));
 		}
 		return Integer.parseInt(stack1.pop());
