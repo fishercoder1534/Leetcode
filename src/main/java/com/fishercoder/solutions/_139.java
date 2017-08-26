@@ -57,7 +57,9 @@ public class _139 {
             dp[0] = true;
             for (int i = 1; i <= n; i++) {
                 for (int j = 0; j < i; j++) {
-                    if ((i - j) > maxLen) continue;
+                    if ((i - j) > maxLen) {
+                        continue;
+                    }
                     if (dp[j] && wordDict.contains(s.substring(j, i))) {
                         dp[i] = true;
                         break;
@@ -83,7 +85,9 @@ public class _139 {
             dp[0] = true;
             for (int i = 1; i <= n; i++) {
                 for (int lastWordLength = 1; lastWordLength <= i && lastWordLength <= maxLen; lastWordLength++) {
-                    if (!dp[i - lastWordLength]) continue;
+                    if (!dp[i - lastWordLength]) {
+                        continue;
+                    }
                     String sub = s.substring(i - lastWordLength, i);
                     if (wordDict.contains(sub)) {
                         dp[i] = true;

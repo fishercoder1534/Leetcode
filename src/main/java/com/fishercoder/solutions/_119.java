@@ -19,7 +19,9 @@ public class _119 {
 
     public static class Solution1 {
         public List<Integer> getRow(int rowIndex) {
-            if (rowIndex < 0) return new ArrayList();
+            if (rowIndex < 0) {
+                return new ArrayList();
+            }
             List<List<Integer>> result = new ArrayList();
             List<Integer> row = new ArrayList();
             row.add(1);

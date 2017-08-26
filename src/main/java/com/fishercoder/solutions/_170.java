@@ -41,8 +41,12 @@ public class _170 {
             int val2 = value - val1;
             if (map.containsKey(val2)) {
                 if (val1 == val2) {
-                    if (map.get(val2) > 1) return true;
-                } else return true;
+                    if (map.get(val2) > 1) {
+                        return true;
+                    }
+                } else {
+                    return true;
+                }
             }
         }
         return false;

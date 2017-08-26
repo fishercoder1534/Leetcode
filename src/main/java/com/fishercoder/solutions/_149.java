@@ -40,7 +40,7 @@ public class _149 {
                                 }
                             }
                         }
-                    } else
+                    } else {
                         for (int k = 0; (k < points.length); k++) {
                         /*
                          * Here, I must put the judgment (k!=i) && (k!=j) in the
@@ -66,14 +66,16 @@ public class _149 {
                                 }
                             }
                         }
+                    }
                 }
             }
             for (int m = 0; m < points.length; m++) {
                 for (int n = 0; n < points.length; n++) {
-                    if (maxPoints[m][n] > max)
+                    if (maxPoints[m][n] > max) {
                         // System.out.print("maxPoints[" + m + "][" + n +"]:" +
                         // maxPoints[m][n] + "\t");
                         max = maxPoints[m][n];
+                    }
                 }
             }
         }

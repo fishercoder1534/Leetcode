@@ -11,7 +11,9 @@ import java.util.Arrays;
 public class _16 {
 
     public int threeSumClosest(int[] nums, int target) {
-        if (nums == null || nums.length == 0) return 0;
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         Arrays.sort(nums);
         int len = nums.length;
         if (len < 3) {
@@ -29,7 +31,9 @@ public class _16 {
                 int thisSum = nums[i] + nums[left] + nums[right];
                 if (Math.abs(target - thisSum) < Math.abs(target - sum)) {
                     sum = thisSum;
-                    if (sum == target) return sum;
+                    if (sum == target) {
+                        return sum;
+                    }
                 } else if (target > thisSum) {
                     left++;
                 } else {

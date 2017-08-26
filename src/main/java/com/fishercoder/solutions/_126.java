@@ -45,8 +45,9 @@ public class _126 {
 
     public List<List<String>> findLadders(String start, String end, List<String> dict) {
         results = new ArrayList<>();
-        if (dict.size() == 0)
+        if (dict.size() == 0) {
             return results;
+        }
 
         int min = Integer.MAX_VALUE;
 
@@ -56,8 +57,9 @@ public class _126 {
         map = new HashMap<>();
 
         Map<String, Integer> ladder = new HashMap<>();
-        for (String string : dict)
+        for (String string : dict) {
             ladder.put(string, Integer.MAX_VALUE);
+        }
         ladder.put(start, 0);
 
         dict.add(end);
@@ -68,7 +70,9 @@ public class _126 {
 
             int step = ladder.get(word) + 1;//'step' indicates how many steps are needed to travel to one word.
 
-            if (step > min) break;
+            if (step > min) {
+                break;
+            }
 
             for (int i = 0; i < word.length(); i++) {
                 StringBuilder builder = new StringBuilder(word);
@@ -83,9 +87,10 @@ public class _126 {
                         } else if (step < ladder.get(newWord)) {
                             queue.add(newWord);
                             ladder.put(newWord, step);
-                        } else ;// It is a KEY line. If one word already appeared in one ladder,
-                        // Do not insert the same word inside the queue twice. Otherwise it gets TLE.
-
+                        } else {
+                            // It is a KEY line. If one word already appeared in one ladder,
+                            // Do not insert the same word inside the queue twice. Otherwise it gets TLE.
+                        }
                         if (map.containsKey(newWord)) {
                             //Build adjacent Graph
                             map.get(newWord).add(word);

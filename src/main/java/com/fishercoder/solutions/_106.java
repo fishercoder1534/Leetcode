@@ -38,7 +38,9 @@ public class _106 {
     }
 
     private TreeNode buildTreeRecursively(int inorderStart, int inorderEnd, int[] postorder, int postorderStart, int postorderEnd, Map<Integer, Integer> inorderMap) {
-        if (postorderStart > postorderEnd || inorderStart > inorderEnd) return null;
+        if (postorderStart > postorderEnd || inorderStart > inorderEnd) {
+            return null;
+        }
         TreeNode root = new TreeNode(postorder[postorderEnd]);
         int inRoot = inorderMap.get(postorder[postorderEnd]);
         int numsLeft = inRoot - inorderStart;

@@ -19,17 +19,24 @@ public class _165 {
         for (int i = 0; i < len; i++) {
             if (v1s.length == i) {
                 while (i < len) {
-                    if (Integer.parseInt(v2s[i]) > 0) return -1;
+                    if (Integer.parseInt(v2s[i]) > 0) {
+                        return -1;
+                    }
                     i++;
                 }
             } else if (v2s.length == i) {
                 while (i < len) {
-                    if (Integer.parseInt(v1s[i]) > 0) return 1;
+                    if (Integer.parseInt(v1s[i]) > 0) {
+                        return 1;
+                    }
                     i++;
                 }
             } else {
-                if (Integer.parseInt(v1s[i]) > Integer.parseInt(v2s[i])) return 1;
-                else if (Integer.parseInt(v2s[i]) > Integer.parseInt(v1s[i])) return -1;
+                if (Integer.parseInt(v1s[i]) > Integer.parseInt(v2s[i])) {
+                    return 1;
+                } else if (Integer.parseInt(v2s[i]) > Integer.parseInt(v1s[i])) {
+                    return -1;
+                }
             }
         }
         return 0;

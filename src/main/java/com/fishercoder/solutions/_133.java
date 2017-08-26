@@ -35,7 +35,9 @@ import java.util.Queue;
 public class _133 {
 
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
-        if (node == null) return node;
+        if (node == null) {
+            return node;
+        }
 
         Map<Integer, UndirectedGraphNode> map = new HashMap();
         Queue<UndirectedGraphNode> queue = new LinkedList();

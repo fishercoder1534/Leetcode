@@ -37,7 +37,9 @@ public class _130 {
     int[] dirs = new int[]{0, 1, 0, -1, 0};
 
     public void solve(char[][] board) {
-        if (board == null || board.length == 0 || board[0].length == 0) return;
+        if (board == null || board.length == 0 || board[0].length == 0) {
+            return;
+        }
         int m = board.length;
         int n = board[0].length;
         Queue<int[]> queue = new LinkedList();
@@ -82,8 +84,11 @@ public class _130 {
         //now we can safely mark all other 'O' to 'X', also remember to put those '+' back to 'O'
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (board[i][j] == 'O') board[i][j] = 'X';
-                else if (board[i][j] == '+') board[i][j] = 'O';
+                if (board[i][j] == 'O') {
+                    board[i][j] = 'X';
+                } else if (board[i][j] == '+') {
+                    board[i][j] = 'O';
+                }
             }
         }
     }

@@ -19,7 +19,9 @@ public class _154 {
     public int findMin(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
-        if (nums[left] < nums[right]) return nums[left];
+        if (nums[left] < nums[right]) {
+            return nums[left];
+        }
         int min = nums[0];
         while (left + 1 < right) {
             int mid = left + (right - left) / 2;

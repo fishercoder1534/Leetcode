@@ -21,7 +21,9 @@ public class _128 {
         //<value, index>
         UnionFind uf = new UnionFind(nums);
         for (int i = 0; i < nums.length; i++) {
-            if (map.containsKey(nums[i])) continue;
+            if (map.containsKey(nums[i])) {
+                continue;
+            }
             map.put(nums[i], i);
             if (map.containsKey(nums[i] - 1)) {
                 uf.union(i, map.get(nums[i] - 1));
@@ -77,10 +79,14 @@ public class _128 {
     class SolutionUsingHashSet {
         //inspired by this solution: https://discuss.leetcode.com/topic/25493/simple-fast-java-solution-using-set
         public int longestConsecutive(int[] nums) {
-            if (nums == null || nums.length == 0) return 0;
+            if (nums == null || nums.length == 0) {
+                return 0;
+            }
 
             Set<Integer> set = new HashSet();
-            for (int i : nums) set.add(i);
+            for (int i : nums) {
+                set.add(i);
+            }
             int max = 1;
 
             for (int num : nums) {
@@ -103,6 +109,5 @@ public class _128 {
             }
             return max;
         }
-
     }
 }

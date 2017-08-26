@@ -29,7 +29,9 @@ public class _191 {
         int count = 0;
         for (int i = 0; i < 32; i++) {
             int one = (n >>> i) & 1;//must use unsigned right shift operator
-            if (one == 1) count++;
+            if (one == 1) {
+                count++;
+            }
         }
         return count;
     }
@@ -40,8 +42,12 @@ public class _191 {
         int count = 0;
         for (int i = 0; i < 32; i++) {
             int one = (n >>> i) & 1;//must use unsigned right shift operator
-            if (one == 1) count++;
-            if (n == 0) return count;
+            if (one == 1) {
+                count++;
+            }
+            if (n == 0) {
+                return count;
+            }
         }
         return count;
     }

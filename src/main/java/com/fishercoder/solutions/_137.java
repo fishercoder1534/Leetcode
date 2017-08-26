@@ -18,7 +18,9 @@ public class _137 {
             map.put(i, map.getOrDefault(i, 0) + 1);
         }
         for (int key : map.keySet()) {
-            if (map.get(key) != 3) return key;
+            if (map.get(key) != 3) {
+                return key;
+            }
         }
         return 0;
     }

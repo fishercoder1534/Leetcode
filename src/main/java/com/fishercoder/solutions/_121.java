@@ -32,7 +32,9 @@ public class _121 {
      * before you buy it.
      */
     public int maxProfit(int[] prices) {
-        if (prices == null || prices.length < 2) return 0;
+        if (prices == null || prices.length < 2) {
+            return 0;
+        }
         int minBuy = prices[0];
         int maxSell = prices[1];
         int maxProfit = (maxSell - minBuy) > 0 ? (maxSell - minBuy) : 0;

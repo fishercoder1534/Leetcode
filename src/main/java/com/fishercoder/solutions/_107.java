@@ -34,7 +34,9 @@ return its bottom-up level order traversal as:
 public class _107 {
 	public List<List<Integer>> levelOrder(TreeNode root) {
 		List<List<Integer>> result = new ArrayList();
-		if (root == null) return result;
+		if (root == null) {
+			return result;
+		}
 
 		Queue<TreeNode> q = new LinkedList();
 		q.offer(root);
@@ -44,8 +46,12 @@ public class _107 {
 			for (int i = 0; i < qSize; i++) {
 				TreeNode curr = q.poll();
 				thisLevel.add(curr.val);
-				if (curr.left != null) q.offer(curr.left);
-				if (curr.right != null) q.offer(curr.right);
+				if (curr.left != null) {
+					q.offer(curr.left);
+				}
+				if (curr.right != null) {
+					q.offer(curr.right);
+				}
 			}
 			result.add(thisLevel);
 		}

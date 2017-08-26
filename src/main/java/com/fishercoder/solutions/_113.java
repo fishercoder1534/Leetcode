@@ -28,7 +28,9 @@ public class _113 {
     //also, it's possible that a node's value could be negative, as long as the sum of root to leaf ends up to sum
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         List<List<Integer>> allPaths = new ArrayList();
-        if (root == null) return allPaths;
+        if (root == null) {
+            return allPaths;
+        }
         List<Integer> path = new ArrayList();
         dfs(root, path, allPaths, sum);
         return allPaths;

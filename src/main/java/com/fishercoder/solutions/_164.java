@@ -11,7 +11,9 @@ import java.util.Arrays;
 public class _164 {
     //brute force
     public int maximumGap(int[] nums) {
-        if (nums.length < 2) return 0;
+        if (nums.length < 2) {
+            return 0;
+        }
 
         Arrays.sort(nums);
         int max = Integer.MIN_VALUE;
@@ -23,7 +25,9 @@ public class _164 {
                 i--;
                 max = (nums[i] - nums[i - 1] > max) ? nums[i] - nums[i - 1] : max;
                 break;
-            } else max = (nums[i] - nums[i - 1] > max) ? nums[i] - nums[i - 1] : max;
+            } else {
+                max = (nums[i] - nums[i - 1] > max) ? nums[i] - nums[i - 1] : max;
+            }
             if (nums[i] != nums[i - 1]) {
                 i++;
             }
@@ -45,7 +49,9 @@ public class _164 {
 
     //compute interval and multiply by interval to get the index
     public int maximumGap_from_programcreek_1(int[] nums) {
-        if (nums == null || nums.length < 2) return 0;
+        if (nums == null || nums.length < 2) {
+            return 0;
+        }
 
         int maxNum = nums[0];
         int minNum = nums[0];
@@ -88,7 +94,9 @@ public class _164 {
 
     //compute gap and divide by gap to get the index
     public int maximumGap_from_programcreek_2(int[] nums) {
-        if (nums == null || nums.length < 2) return 0;
+        if (nums == null || nums.length < 2) {
+            return 0;
+        }
 
         int maxNum = nums[0];
         int minNum = nums[0];

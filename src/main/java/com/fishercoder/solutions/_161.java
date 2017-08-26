@@ -30,7 +30,9 @@ public class _161 {
                 if (schar[i] != tchar[i]) {
                     diffCnt++;
                 }
-                if (diffCnt > 1) return false;
+                if (diffCnt > 1) {
+                    return false;
+                }
             }
             return diffCnt == 1;
         }

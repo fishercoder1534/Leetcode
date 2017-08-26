@@ -17,7 +17,9 @@ public class _169 {
         int[] bit = new int[32];//because an integer is 32 bits, so we use an array of 32 long
         for (int num : nums) {
             for (int i = 0; i < 32; i++) {
-                if ((num >> (31 - i) & 1) == 1) bit[i]++;//this is to compute each number's ones frequency
+                if ((num >> (31 - i) & 1) == 1) {
+                    bit[i]++;//this is to compute each number's ones frequency
+                }
             }
         }
         int res = 0;
@@ -40,7 +42,9 @@ public class _169 {
                 majority = nums[i];
             } else if (nums[i] == majority) {
                 count++;
-            } else count--;
+            } else {
+                count--;
+            }
         }
         return majority;
     }
@@ -58,7 +62,9 @@ public class _169 {
         Map<Integer, Integer> map = new HashMap();
         for (int i : nums) {
             map.put(i, map.getOrDefault(i, 0) + 1);
-            if (map.get(i) > nums.length / 2) return i;
+            if (map.get(i) > nums.length / 2) {
+                return i;
+            }
         }
         return -1;
     }

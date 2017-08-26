@@ -12,8 +12,9 @@ import java.util.HashMap;
 public class _159 {
 
     public int lengthOfLongestSubstringTwoDistinct(String s) {
-        if (s.length() < 1)
+        if (s.length() < 1) {
             return 0;
+        }
         HashMap<Character, Integer> index = new HashMap<Character, Integer>();
         int lo = 0;
         int hi = 0;
