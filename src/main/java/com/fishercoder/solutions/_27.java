@@ -18,7 +18,9 @@ public class _27 {
 		//use two pointers, increment j as long as its not equal to val, return i in the end
 		int i = 0;
 		for (int j = 0; j < nums.length; j++) {
-			if (nums[j] != val) nums[i++] = nums[j];
+			if (nums[j] != val) {
+				nums[i++] = nums[j];
+			}
 		}
 		return i;
 	}
@@ -49,7 +51,9 @@ public class _27 {
 				throwPosition--;
 				count++;
 			}
-			if (throwPosition == -1 || i >= throwPosition) break;
+			if (throwPosition == -1 || i >= throwPosition) {
+				break;
+			}
 			if (nums[i] == val) {
 				count++;
 				int temp = nums[throwPosition];

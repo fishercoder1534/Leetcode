@@ -27,8 +27,12 @@ public class _260 {
         int[] res = new int[2];
         int index = 0;
         for (int key : map.keySet()) {
-            if (map.get(key) == 1) res[index++] = key;
-            if (index == 2) break;
+            if (map.get(key) == 1) {
+                res[index++] = key;
+            }
+            if (index == 2) {
+                break;
+            }
         }
         return res;
     }
