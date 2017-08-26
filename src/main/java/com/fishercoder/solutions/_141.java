@@ -22,7 +22,9 @@ public class _141 {
 			while (fast != null && fast.next != null) {
 				fast = fast.next.next;
 				slow = slow.next;
-				if (fast == slow) return true;
+				if (fast == slow) {
+					return true;
+				}
 			}
 			return false;
 		}
@@ -33,7 +35,9 @@ public class _141 {
 			Map<ListNode, Boolean> visited = new HashMap();
 			ListNode temp = head;
 			while (temp != null) {
-				if (visited.containsKey(temp)) return true;
+				if (visited.containsKey(temp)) {
+					return true;
+				}
 				visited.put(temp, true);
 				temp = temp.next;
 			}

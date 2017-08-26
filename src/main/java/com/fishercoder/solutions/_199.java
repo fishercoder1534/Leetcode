@@ -26,7 +26,9 @@ public class _199 {
 
 	public List<Integer> rightSideView(TreeNode root) {
 		List<Integer> result = new ArrayList<>();
-		if (root == null) return result;
+		if (root == null) {
+			return result;
+		}
 		Queue<TreeNode> q = new LinkedList<>();
 		q.offer(root);
 		while (!q.isEmpty()) {

@@ -27,7 +27,9 @@ public class _19 {
             temp = temp.next;
             len++;
         }
-        if (n == len) return head.next;
+        if (n == len) {
+            return head.next;
+        }
 
         temp = head;
         int cut = len - n;
@@ -80,7 +82,9 @@ public class _19 {
             slow = slow.next;
         }
 
-        if (slow.next != null) slow.next = slow.next.next;
+        if (slow.next != null) {
+            slow.next = slow.next.next;
+        }
         return dummy.next;
     }
 
@@ -91,11 +95,15 @@ public class _19 {
         ListNode slow = dummy;
         ListNode fast = dummy;
         while (fast.next != null) {
-            if (n <= 0) slow = slow.next;
+            if (n <= 0) {
+                slow = slow.next;
+            }
             fast = fast.next;
             n--;
         }
-        if (slow.next != null) slow.next = slow.next.next;
+        if (slow.next != null) {
+            slow.next = slow.next.next;
+        }
         return dummy.next;
     }
 }

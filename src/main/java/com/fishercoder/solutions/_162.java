@@ -21,7 +21,9 @@ public class _162 {
      */
     public static int findPeakElement_Ologn(int[] nums) {
 
-        if (nums == null || nums.length == 0) return 0;
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         int left = 0;
         int right = nums.length - 1;
         while (left + 1 < right) {
@@ -48,7 +50,9 @@ public class _162 {
      * My original O(n) solution.
      */
     public static int findPeakElement(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         int n = nums.length;
         int result = 0;
         for (int i = 0; i < n; i++) {

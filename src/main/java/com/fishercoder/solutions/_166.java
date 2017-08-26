@@ -21,7 +21,9 @@ public class _166 {
     /**credit: https://discuss.leetcode.com/topic/33311/simple-and-short-solution-in-java*/
     public String fractionToDecimal(int numerator, int denominator) {
         String sign = (numerator >= 0 && denominator >= 0) || (numerator < 0 && denominator < 0) ? "" : "-";
-        if (numerator == 0) return "0";
+        if (numerator == 0) {
+            return "0";
+        }
         long num = Math.abs((long) numerator);
         long deno = Math.abs((long) denominator);
         StringBuilder stringBuilder = new StringBuilder();

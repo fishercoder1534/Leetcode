@@ -53,8 +53,11 @@ public class _168 {
         StringBuilder sb = new StringBuilder();
         while (n != 0) {
             int temp = n % 26;
-            if (temp == 0) sb.append("Z");
-            else sb.append((char) (temp + 64));
+            if (temp == 0) {
+                sb.append("Z");
+            } else {
+                sb.append((char) (temp + 64));
+            }
             n = (n - 1) / 26;
         }
         return sb.reverse().toString();

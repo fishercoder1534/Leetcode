@@ -27,7 +27,9 @@ public class _144 {
 
     public List<Integer> preorderTraversal_iterative(TreeNode root) {
         List<Integer> list = new ArrayList();
-        if (root == null) return list;
+        if (root == null) {
+            return list;
+        }
         Deque<TreeNode> stack = new ArrayDeque<>();
         stack.push(root);
         while (!stack.isEmpty()) {
@@ -35,8 +37,12 @@ public class _144 {
             list.add(curr.val);
             /**We push right nodes onto the stack first, since they'll be popped out later than
              * the left nodes, to meet the preorder: root -> left -> right. */
-            if (curr.right != null) stack.push(curr.right);
-            if (curr.left != null) stack.push(curr.left);
+            if (curr.right != null) {
+                stack.push(curr.right);
+            }
+            if (curr.left != null) {
+                stack.push(curr.left);
+            }
         }
         return list;
     }
@@ -47,7 +53,9 @@ public class _144 {
     }
 
     List<Integer> pre(TreeNode root, List<Integer> list) {
-        if (root == null) return list;
+        if (root == null) {
+            return list;
+        }
         list.add(root.val);
         pre(root.left, list);
         pre(root.right, list);

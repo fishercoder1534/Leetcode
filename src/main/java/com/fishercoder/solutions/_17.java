@@ -21,7 +21,9 @@ public class _17 {
 
     public List<String> letterCombinations(String digits) {
         List<String> result = new ArrayList();
-        if (digits.length() == 0) return result;
+        if (digits.length() == 0) {
+            return result;
+        }
 
         String[] digits2Letters = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 

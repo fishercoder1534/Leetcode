@@ -70,7 +70,9 @@ public class _160 {
          * O(1) space
          * credit: https://discuss.leetcode.com/topic/28067/java-solution-without-knowing-the-difference-in-len*/
         public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-            if (headA == null || headB == null) return null;
+            if (headA == null || headB == null) {
+                return null;
+            }
 
             ListNode a = headA;
             ListNode b = headB;
@@ -96,7 +98,9 @@ public class _160 {
             }
 
             while (headB != null) {
-                if (set.contains(headB)) return headB;
+                if (set.contains(headB)) {
+                    return headB;
+                }
                 headB = headB.next;
             }
             return null;

@@ -28,7 +28,9 @@ public class _174 {
     
     /**This problem should fill the dp matrix from bottom right.*/
     public int calculateMinimumHP(int[][] dungeon) {
-        if (dungeon == null || dungeon.length == 0) return 0;
+        if (dungeon == null || dungeon.length == 0) {
+            return 0;
+        }
 
         int height = dungeon.length;
         int width = dungeon[0].length;
@@ -121,7 +123,9 @@ public class _174 {
     }
 
     public int calculateMinimumHP_attemp2_failed(int[][] dungeon) {
-        if (dungeon == null || dungeon.length == 0) return 0;
+        if (dungeon == null || dungeon.length == 0) {
+            return 0;
+        }
 
         int height = dungeon.length;
         int width = dungeon[0].length;

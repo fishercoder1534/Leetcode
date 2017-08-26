@@ -24,14 +24,20 @@ public class _145 {
 	/**A tricky one: Modify the code for pre-order traversal so that it becomes root->right->left, and then reverse the result to get left->right->root.*/
     public static List<Integer> postorderTraversal_iterative(TreeNode root) {
         List<Integer> result = new ArrayList();
-        if (root == null) return result;
+        if (root == null) {
+            return result;
+        }
         Stack<TreeNode> stack = new Stack();
         stack.push(root);
         while (!stack.isEmpty()) {
             root = stack.pop();
             result.add(root.val);
-            if (root.left != null) stack.push(root.left);
-            if (root.right != null) stack.push(root.right);
+            if (root.left != null) {
+                stack.push(root.left);
+            }
+            if (root.right != null) {
+                stack.push(root.right);
+            }
         }
         Collections.reverse(result);
         return result;
@@ -43,7 +49,9 @@ public class _145 {
     }
 
     List<Integer> post(TreeNode root, List<Integer> result) {
-        if (root == null) return result;
+        if (root == null) {
+            return result;
+        }
         post(root.left, result);
         post(root.right, result);
         result.add(root.val);

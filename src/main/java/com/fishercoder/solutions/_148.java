@@ -12,7 +12,9 @@ public class _148 {
     /**Credit: https://discuss.leetcode.com/topic/18100/java-merge-sort-solution
      * But this is not using constant space.*/
     public ListNode sortList(ListNode head) {
-        if (head == null || head.next == null) return head;
+        if (head == null || head.next == null) {
+            return head;
+        }
 
         //Step 1: split the list into halves
         ListNode prev = null;

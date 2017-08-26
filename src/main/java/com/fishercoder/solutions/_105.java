@@ -28,7 +28,9 @@ public class _105 {
 	}
 
 	private TreeNode buildTree(int[] preorder, int preStart, int preEnd, int inStart, int inEnd, Map<Integer, Integer> inorderMap) {
-		if (preStart > preEnd || inStart > inEnd) return null;
+		if (preStart > preEnd || inStart > inEnd) {
+			return null;
+		}
 
 		TreeNode root = new TreeNode(preorder[preStart]);
 		int inRoot = inorderMap.get(preorder[preStart]);

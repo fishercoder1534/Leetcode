@@ -29,14 +29,20 @@ public class _173 {
             //Cheers! Made it AC'ed at first shot! Praise the Lord! Practice does make perfect!
             //I created a new class to do it using Stack to meet O(h) memory: {@link fishercoder.algorithms._173_using_stack}
             public BSTIterator(TreeNode root) {
-                queue = new LinkedList<Integer>();
-                if (root != null) dfs(root, queue);
+                queue = new LinkedList<>();
+                if (root != null) {
+                    dfs(root, queue);
+                }
             }
 
             private void dfs(TreeNode root, Queue<Integer> q) {
-                if (root.left != null) dfs(root.left, q);
+                if (root.left != null) {
+                    dfs(root.left, q);
+                }
                 q.offer(root.val);
-                if (root.right != null) dfs(root.right, q);
+                if (root.right != null) {
+                    dfs(root.right, q);
+                }
             }
 
             /**

@@ -24,8 +24,12 @@ public class _189 {
      * One thing to notice is that when k > nums.length, we'll continue to rotate_naive the array, it just becomes k -= nums.length
      */
     public static void rotate_naive(int[] nums, int k) {
-        if (k == 0 || k == nums.length) return;
-        if (k > nums.length) k -= nums.length;
+        if (k == 0 || k == nums.length) {
+            return;
+        }
+        if (k > nums.length) {
+            k -= nums.length;
+        }
         List<Integer> tmp = new ArrayList();
         int i = 0;
         if (nums.length - k >= 0) {

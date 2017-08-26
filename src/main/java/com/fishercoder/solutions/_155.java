@@ -54,7 +54,9 @@ public class _155 {
             } else {
                 stack.pop();
             }
-            if (stack.isEmpty()) min = Integer.MAX_VALUE;
+            if (stack.isEmpty()) {
+                min = Integer.MAX_VALUE;
+            }
         }
 
         public int top() {

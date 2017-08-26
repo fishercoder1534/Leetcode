@@ -19,7 +19,9 @@ public class _136 {
     public int singleNumber_using_set(int[] nums) {
         Set<Integer> set = new HashSet();
         for (int i : nums) {
-            if (!set.add(i)) set.remove(i);
+            if (!set.add(i)) {
+                set.remove(i);
+            }
         }
         Iterator<Integer> it = set.iterator();
         return it.next();

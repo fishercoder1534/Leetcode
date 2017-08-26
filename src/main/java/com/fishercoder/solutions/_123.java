@@ -12,7 +12,9 @@ public class _123 {
 
     //this is a very clear solution and very highly upvoted in Discuss, but not extensibel to K solution.
     public int maxProfit(int[] prices) {
-        if (prices.length < 2) return 0;
+        if (prices.length < 2) {
+            return 0;
+        }
         int buy1 = Integer.MIN_VALUE;
         int buy2 = Integer.MIN_VALUE;//we use negative numbers to denote buy1 and buy2, thus use Integer.MIN_VALUE here is more convenient.
         int sell1 = 0;
@@ -29,7 +31,9 @@ public class _123 {
     //this one could make it AC'ed on OJ, but when I use this one to BestTimeToBuyAndSellStockIV, it got Memory Limit Exceeded.
     //this one is optimized from maxProfit_optimized() below
     public int maxProfit_optimized(int[] prices) {
-        if (prices.length < 2) return 0;
+        if (prices.length < 2) {
+            return 0;
+        }
         int K = 2;
         int[][] dp = new int[K + 1][prices.length];
         for (int i = 1; i <= K; i++) {
@@ -66,8 +70,9 @@ public class _123 {
          *          we deduct 1 from i
          *
          * */
-        if (prices.length < 2) return 0;
-        else {
+        if (prices.length < 2) {
+            return 0;
+        } else {
             /**First row should be zero because it means, you're allowed to make ZERO transaction, so no profit
              * First column should be zero because it means,  on day ZERO, you could only buy and make no profit*/
             int K = 2;//number of allowed transactions.
@@ -102,15 +107,20 @@ public class _123 {
         boolean flip = false;
         for (int i = 1; i < prices.length; i++) {
             int buyPrice = prices[i - 1];
-            if (prices[i] > prices[i - 1]) flip = true;
-            while (i < prices.length && prices[i] > prices[i - 1]) i++;
-            if (flip) i--;
+            if (prices[i] > prices[i - 1]) {
+                flip = true;
+            }
+            while (i < prices.length && prices[i] > prices[i - 1]) {
+                i++;
+            }
+            if (flip) {
+                i--;
+            }
             int profit = prices[i] - buyPrice;
             //update the smaller profit in profits array
             int smallerIndex = profits[0] < profits[1] ? 0 : 1;
             profits[smallerIndex] = Math.max(profits[smallerIndex], profit);
             flip = false;
-            ;
         }
         return profits[0] + profits[1];
     }
