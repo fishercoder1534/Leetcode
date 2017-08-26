@@ -22,8 +22,12 @@ public class _247 {
     }
 
     private List<String> recursiveHelper(int n, int m) {
-        if (n == 0) return new ArrayList<String>(Arrays.asList(""));
-        if (n == 1) return new ArrayList<String>(Arrays.asList("0", "1", "8"));
+        if (n == 0) {
+            return new ArrayList<>(Arrays.asList(""));
+        }
+        if (n == 1) {
+            return new ArrayList<>(Arrays.asList("0", "1", "8"));
+        }
 
         List<String> list = recursiveHelper(n - 2, m);
         List<String> res = new ArrayList<String>();

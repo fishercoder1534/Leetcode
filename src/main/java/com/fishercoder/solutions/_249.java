@@ -35,7 +35,9 @@ public class _249 {
                 key += (word.charAt(i) - offset + 26) % 26;
             }
 
-            if (!map.containsKey(key)) map.put(key, new ArrayList<String>());
+            if (!map.containsKey(key)) {
+                map.put(key, new ArrayList<>());
+            }
             map.get(key).add(word);
         }
 

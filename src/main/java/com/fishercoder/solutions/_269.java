@@ -35,7 +35,9 @@ public class _269 {
         Map<Character, Set<Character>> map = new HashMap();
         Map<Character, Integer> degree = new HashMap<>();
         String result = "";
-        if (words == null || words.length == 0) return result;
+        if (words == null || words.length == 0) {
+            return result;
+        }
         for (String s : words) {
             for (char c : s.toCharArray()) {
                 degree.put(c, 0);//keeps overwriting it, the purpose is to create one entry
@@ -65,7 +67,9 @@ public class _269 {
         }
         Queue<Character> queue = new LinkedList<>();
         for (char c : degree.keySet()) {
-            if (degree.get(c) == 0) queue.add(c);
+            if (degree.get(c) == 0) {
+                queue.add(c);
+            }
         }
         while (!queue.isEmpty()) {
             char c = queue.remove();
@@ -79,7 +83,9 @@ public class _269 {
                 }
             }
         }
-        if (result.length() != degree.size()) return "";
+        if (result.length() != degree.size()) {
+            return "";
+        }
         return result;
     }
 

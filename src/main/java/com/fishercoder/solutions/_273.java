@@ -22,7 +22,9 @@ public class _273 {
 
     public String numberToWords(int num) {
         String result;
-        if (num == 0) return belowTen[num];
+        if (num == 0) {
+            return belowTen[num];
+        }
 
         result = hundredHelper(num % 1000);
         num = num / 1000;
