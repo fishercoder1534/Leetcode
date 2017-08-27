@@ -3,7 +3,8 @@ package com.fishercoder.solutions;
 /**
  * 516. Longest Palindromic Subsequence
  *
- * Given a string s, find the longest palindromic subsequence's length in s. You may assume that the maximum length of s is 1000.
+ * Given a string s, find the longest palindromic subsequence's length in s.
+ * You may assume that the maximum length of s is 1000.
 
  Example 1:
  Input:
@@ -21,8 +22,13 @@ package com.fishercoder.solutions;
  */
 public class _516 {
 
-    /**Inspired by https://discuss.leetcode.com/topic/78603/straight-forward-java-dp-solution*/
-    public static int longestPalindromeSubseq(String s) {
+    /**
+     * Inspired by https://discuss.leetcode.com/topic/78603/straight-forward-java-dp-solution
+     * dp[i][j] means the longest palindromic subsequence's length of substring(i, j)
+     * so, in the end, we return dp[0][s.length() - 1] which means the longest palindromic subsequence
+     * of this whole string.
+     */
+    public int longestPalindromeSubseq(String s) {
         int[][] dp = new int[s.length()][s.length()];
         for (int i = s.length() - 1; i >= 0; i--) {
             dp[i][i] = 1;//initialization
@@ -35,11 +41,6 @@ public class _516 {
             }
         }
         return dp[0][s.length() - 1];
-    }
-
-    public static void main(String... args) {
-        longestPalindromeSubseq("bbbab");
-        System.out.println("Done.");
     }
 
 }
