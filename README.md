@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|666|[Path Sum IV](https://leetcode.com/problems/path-sum-iv/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_666.java) | O(1) | O(1) | Medium | Tree, DFS
 |665|[Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_665.java) | O(n) | O(n) | Easy |
 |664|[Strange Printer](https://leetcode.com/problems/strange-printer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_664.java) | O(n^3) | O(n^2) | Hard | DP
 |663|[Equal Tree Partition](https://leetcode.com/problems/equal-tree-partition/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_663.java) | O(n) | O(n) | Medium | Tree
