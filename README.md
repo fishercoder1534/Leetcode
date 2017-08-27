@@ -495,7 +495,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_116.java)| O(n)|O(1) | Medium| BFS
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_115.java)| O(m*n)|O(m*n) | Hard| DP
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_114.java)| O(n)|O(h) | Medium| Tree
-|113|[Path Sum II](https://leetcode.com/problems/path-sum-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_113.java)| O(n)|O(h) | Medium| DFS
+|113|[Path Sum II](https://leetcode.com/problems/path-sum-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_113.java)| O(n)|O(h) | Medium| DFS, Backtracking
 |112|[Path Sum](https://leetcode.com/problems/path-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_112.java)| O(n)|O(1) | Easy| DFS
 |111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_111.java)| O(n)|O(1)~O(h) | Easy| BFS, DFS
 |110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_110.java)| O(n)|O(1)~O(h) | Easy| DFS
