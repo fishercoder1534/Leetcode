@@ -80,6 +80,7 @@ public class _662 {
         if (root == null) {
             return 0;
         }
+
         Queue<Map.Entry<TreeNode, Integer>> queue = new LinkedList<>();
         queue.offer(new AbstractMap.SimpleEntry<>(root, 1));
         int max = 1;
