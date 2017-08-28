@@ -9,7 +9,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-
 /**
  * This is a util class to contain all tree related methods.
  */
@@ -26,8 +25,8 @@ public class TreeUtils {
         1
 */
 @Notes(context = "This is usually how Leetcode OJ passes a binary tree into testing: "
-		+ "https://leetcode.com/faq/#binary-tree, I wrote this function for my own ease of testing when copying"
-		+ "the test case from Leetcode in the form of [1, null, 2, 3].")
+	+ "https://leetcode.com/faq/#binary-tree, I wrote this function for my own ease of testing when copying"
+	+ "the test case from Leetcode in the form of [1, null, 2, 3].")
 public static TreeNode constructBinaryTree(List<Integer> treeValues) {
 	TreeNode root = new TreeNode(treeValues.get(0));
 	Queue<TreeNode> queue = new LinkedList<>();
@@ -61,11 +60,11 @@ public static TreeNode constructBinaryTree(List<Integer> treeValues) {
 		}
 
 		return Math.max(TreeUtils.maxLevel(root.left),
-				TreeUtils.maxLevel(root.right)) + 1;
+			TreeUtils.maxLevel(root.right)) + 1;
 	}
 
 	private static void printNodeInternal(
-			List<TreeNode> list, int level, int maxLevel) {
+		List<TreeNode> list, int level, int maxLevel) {
 		if (list.isEmpty() || CommonUtils.isAllElementsNull(list)) {
 			return;
 		}
@@ -98,7 +97,7 @@ public static TreeNode constructBinaryTree(List<Integer> treeValues) {
 				CommonUtils.printWhitespaces(firstSpaces - i);
 				if (list.get(j) == null) {
 					CommonUtils.printWhitespaces(endgeLines + endgeLines + i
-							+ 1);
+						+ 1);
 					continue;
 				}
 
@@ -145,9 +144,9 @@ public static TreeNode constructBinaryTree(List<Integer> treeValues) {
 		List<Integer> treeValues2 = Arrays.asList(0, 1, 2, 3, 4, 5, 6);
 
 		//test tree construction
-//		TreeNode root1 = bruteForceConstructBinaryTree(treeValues2);
-//		inOrderTraversal(root1);
-//		printBinaryTree(root1);
+		//		TreeNode root1 = bruteForceConstructBinaryTree(treeValues2);
+		//		inOrderTraversal(root1);
+		//		printBinaryTree(root1);
 
 		// test tree construction
 		TreeNode root2 = constructBinaryTree(treeValues);
@@ -157,7 +156,7 @@ public static TreeNode constructBinaryTree(List<Integer> treeValues) {
 		List<Integer> treeVals = new ArrayList<>(Arrays.asList(1, null, 2, 3));
 		CommonUtils.printList(treeVals);
 		root2 = constructBinaryTree(treeVals);
-//		inOrderTraversal(root2);
+		//		inOrderTraversal(root2);
 		printBinaryTree(root2);
 	}
 }
