@@ -26,14 +26,6 @@
 
     <property name="severity" value="error"/>
 
-    <!--this cannot be enabled because right now Intellij CE cannot import my fishercoder_checkstyle.xml as -->
-    <!--my chosen Java code style-->
-    <!-- Checks for whitespace                               -->
-    <!-- See http://checkstyle.sf.net/config_whitespace.html -->
-    <!--<module name="FileTabCharacter">-->
-      <!--<property name="eachLine" value="false"/>-->
-    <!--</module>-->
-
     <module name="SuppressionCommentFilter">
         <property name="offCommentFormat" value="CHECKSTYLE_OFF\: ([\w\|]+)"/>
         <property name="onCommentFormat" value="CHECKSTYLE_OFF\: ([\w\|]+)"/>
@@ -183,16 +175,6 @@
             <message key="ws.notPreceded"
                      value="GenericWhitespace ''{0}'' is not preceded with whitespace."/>
         </module>
-
-        <!--I need to import this .xml format as my Intellij Java codestyle to make it work-->
-        <!--<module name="Indentation">-->
-            <!--<property name="basicOffset" value="4"/>-->
-            <!--<property name="braceAdjustment" value="0"/>-->
-            <!--<property name="caseIndent" value="4"/>-->
-            <!--<property name="throwsIndent" value="4"/>-->
-            <!--<property name="lineWrappingIndentation" value="4"/>-->
-            <!--<property name="arrayInitIndent" value="4"/>-->
-        <!--</module>-->
 
         <module name="AbbreviationAsWordInName">
             <property name="ignoreFinal" value="false"/>
