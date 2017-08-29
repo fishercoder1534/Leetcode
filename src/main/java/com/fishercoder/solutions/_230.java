@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class _230 {
 
-    public static class MostNaiveWay {
+    public static class Solution1 {
         public int kthSmallest(TreeNode root, int k) {
             List<Integer> inorderList = new ArrayList<>();
             inorder(root, inorderList);
@@ -41,7 +41,10 @@ public class _230 {
         }
     }
 
-    public static class BetterWay {
+    public static class Solution2 {
+        /**
+         * Inorder traversal gives the natural ordering of a BST, no need to sort.
+         */
         int count = 0;
         int result = Integer.MIN_VALUE;
 
