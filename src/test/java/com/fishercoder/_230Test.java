@@ -11,23 +11,23 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 5/19/17.
  */
 public class _230Test {
-    private static _230.MostNaiveWay naiveWay;
-    private static _230.BetterWay betterWay;
+    private static _230.Solution1 solution1;
+    private static _230.Solution2 solution2;
     private static TreeNode root;
     private static int k;
 
     @BeforeClass
     public static void setup() {
-        naiveWay = new _230.MostNaiveWay();
-        betterWay = new _230.BetterWay();
+        solution1 = new _230.Solution1();
+        solution2 = new _230.Solution2();
     }
 
     @Test
     public void test1() {
         root = new TreeNode(1);
         k = 1;
-        assertEquals(1, naiveWay.kthSmallest(root, k));
-        assertEquals(1, betterWay.kthSmallest(root, k));
+        assertEquals(1, solution1.kthSmallest(root, k));
+        assertEquals(1, solution2.kthSmallest(root, k));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class _230Test {
         root = new TreeNode(2);
         root.left = new TreeNode(1);
         k = 1;
-        assertEquals(1, naiveWay.kthSmallest(root, k));
-        assertEquals(1, betterWay.kthSmallest(root, k));
+        assertEquals(1, solution1.kthSmallest(root, k));
+        assertEquals(1, solution2.kthSmallest(root, k));
     }
 }
