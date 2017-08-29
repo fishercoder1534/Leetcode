@@ -7,14 +7,14 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class _200Test {
-    private static _200.DFSSolution dfsSolution;
-    private static _200.UnionFindSolution unionFindSolution;
+    private static _200.Solution1 solution1;
+    private static _200.Solution2 solution2;
     private static char[][] grid;
 
     @Before
     public void setup() {
-        dfsSolution = new _200.DFSSolution();
-        unionFindSolution = new _200.UnionFindSolution();
+        solution1 = new _200.Solution1();
+        solution2 = new _200.Solution2();
     }
 
     @Test
@@ -24,14 +24,14 @@ public class _200Test {
                 {'0', '1', '0'},
                 {'1', '1', '1'},
         };
-        assertEquals(1, dfsSolution.numIslands(grid));
+        assertEquals(1, solution1.numIslands(grid));
 
         grid = new char[][]{
                 {'1', '1', '1'},
                 {'0', '1', '0'},
                 {'1', '1', '1'},
         };
-        assertEquals(1, unionFindSolution.numIslands(grid));
+        assertEquals(1, solution2.numIslands(grid));
     }
 
     @Test
@@ -42,7 +42,7 @@ public class _200Test {
                 {'1', '1', '0', '0', '0'},
                 {'0', '0', '0', '0', '0'},
         };
-        assertEquals(1, dfsSolution.numIslands(grid));
+        assertEquals(1, solution1.numIslands(grid));
 
         grid = new char[][]{
                 {'1', '1', '1', '1', '0'},
@@ -50,7 +50,7 @@ public class _200Test {
                 {'1', '1', '0', '0', '0'},
                 {'0', '0', '0', '0', '0'},
         };
-        assertEquals(1, unionFindSolution.numIslands(grid));
+        assertEquals(1, solution2.numIslands(grid));
     }
 
     @Test
@@ -61,7 +61,7 @@ public class _200Test {
                 {'0', '0', '1', '0', '0'},
                 {'0', '0', '0', '1', '1'},
         };
-        assertEquals(3, dfsSolution.numIslands(grid));
+        assertEquals(3, solution1.numIslands(grid));
 
         grid = new char[][]{
                 {'1', '1', '0', '0', '0'},
@@ -69,7 +69,7 @@ public class _200Test {
                 {'0', '0', '1', '0', '0'},
                 {'0', '0', '0', '1', '1'},
         };
-        assertEquals(3, unionFindSolution.numIslands(grid));
+        assertEquals(3, solution2.numIslands(grid));
     }
 
 }

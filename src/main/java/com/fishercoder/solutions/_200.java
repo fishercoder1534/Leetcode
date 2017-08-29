@@ -26,7 +26,7 @@ package com.fishercoder.solutions;
  */
 public class _200 {
 
-    public static class DFSSolution {
+    public static class Solution1 {
 
         public int numIslands(char[][] grid) {
             if (grid == null || grid.length == 0) {
@@ -58,7 +58,7 @@ public class _200 {
         }
     }
 
-    public static class UnionFindSolution {
+    public static class Solution2 {
 
         class UnionFind {
             int count;
