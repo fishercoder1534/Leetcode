@@ -41,10 +41,8 @@ public class _538 {
             if (root == null) {
                 return val;
             }
-            int right = dfs(root.right, val);
-            root.val += right;
-            int left = dfs(root.left, root.val);
-            return left;
+            root.val += dfs(root.right, val);
+            return dfs(root.left, root.val);
         }
     }
 
