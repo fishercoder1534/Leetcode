@@ -11,13 +11,13 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 5/6/17.
  */
 public class _572Test {
-    private static _572 test;
+    private static _572.Solution1 solution1;
     private static boolean expected;
     private static boolean actual;
 
     @BeforeClass
     public static void setup() {
-        test = new _572();
+        solution1 = new _572.Solution1();
     }
 
     @Test
@@ -33,7 +33,7 @@ public class _572Test {
         t.left = new TreeNode(1);
         t.right = new TreeNode(2);
         expected = false;
-        actual = test.isSubtree(s, t);
+        actual = solution1.isSubtree(s, t);
         assertEquals(expected, actual);
     }
 
@@ -49,7 +49,7 @@ public class _572Test {
         t.left = new TreeNode(1);
         t.right = new TreeNode(2);
         expected = true;
-        actual = test.isSubtree(s, t);
+        actual = solution1.isSubtree(s, t);
         assertEquals(expected, actual);
     }
 }
