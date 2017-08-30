@@ -60,4 +60,18 @@ public class _517 {
         }
         return max;
     }
+
+    public static class Solution2 {
+        /**TODO: finish it.*/
+        public int findMinMoves(int[] machines) {
+            int totalDresses = 0;
+            for (int i = 0; i < machines.length; i++) {
+                totalDresses += machines[i];
+            }
+            if (totalDresses / machines.length == 0 || totalDresses % machines.length != 0) {
+                return -1;
+            }
+            return -1;
+        }
+    }
 }
