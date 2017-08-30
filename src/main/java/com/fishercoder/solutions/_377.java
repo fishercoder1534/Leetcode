@@ -2,7 +2,9 @@ package com.fishercoder.solutions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 377. Combination Sum IV
@@ -67,6 +69,7 @@ public class _377 {
          * However, it also ended up in TLE by this testcase: [1,2,3], 32
          */
         public static int count = 0;
+
         public int combinationSum4(int[] nums, int target) {
             Arrays.sort(nums);
             backtracking(nums, target, new ArrayList());
@@ -88,6 +91,9 @@ public class _377 {
 
     public static class Solution3 {
         /**
+         * Time: O(n^2)
+         * Space: O(n)
+         *
          * Since this question doesn't require to return all the combination result, instead, it just wants one number, we could use DP
          * the idea is similar to Climbing Stairs.
          *
@@ -114,6 +120,34 @@ public class _377 {
                 }
             }
             return result[target];
+        }
+    }
+
+    public static class Solution4 {
+        /**
+         * Time: O(n)
+         * Space: O(n)
+         *
+         * Reference: https://discuss.leetcode.com/topic/52255/java-recursion-solution-using-hashmap-as-memory
+         */
+        public static Map<Integer, Integer> map = new HashMap<>();//need to remove public static before submitting on Leetcode as it doesn't reset static variables
+
+        public int combinationSum4(int[] nums, int target) {
+            if (nums == null || nums.length == 0 || target < 0) {
+                return 0;
+            }
+            if (target == 0) {
+                return 1;
+            }
+            if (map.containsKey(target)) {
+                return map.get(target);
+            }
+            int count = 0;
+            for (int num : nums) {
+                count += combinationSum4(nums, target - num);
+            }
+            map.put(target, count);
+            return count;
         }
     }
 }
