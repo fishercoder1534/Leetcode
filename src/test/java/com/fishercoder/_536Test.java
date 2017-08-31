@@ -1,10 +1,13 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
+import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions._536;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.Arrays;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -12,7 +15,6 @@ public class _536Test {
     private static _536.Solution1 solution1;
     private static _536.Solution2 solution2;
     private static TreeNode expected;
-    private static TreeNode actual;
     private static String s;
 
     @BeforeClass
@@ -23,19 +25,21 @@ public class _536Test {
 
     @Before
     public void setupForEachTest() {
-        expected = null;
-        actual = null;
-        s = "";
     }
 
     @Test
     public void test1() {
-        s = "";
-        expected = null;
-        actual = solution1.str2tree(s);
-        assertEquals(expected, actual);
+        s = "4(2(3)(1))(6(5))";
+        expected = TreeUtils.constructBinaryTree(Arrays.asList(4, 2, 6, 3, 1, 5));
+        assertEquals(expected, solution1.str2tree(s));
+        assertEquals(expected, solution2.str2tree(s));
+    }
 
-        actual = solution2.str2tree(s);
-        assertEquals(expected, actual);
+    @Test
+    public void test2() {
+        s = "51(232)(434)";
+        expected = TreeUtils.constructBinaryTree(Arrays.asList(51, 232, 434));
+        assertEquals(expected, solution1.str2tree(s));
+        assertEquals(expected, solution2.str2tree(s));
     }
 }
