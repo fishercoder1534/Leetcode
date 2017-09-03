@@ -63,7 +63,7 @@ public class _672 {
                 }
             }
             CommonUtils.print2DIntArray(dp);
-            return dp[m-1][n-1];
+            return dp[m - 1][n - 1];
         }
     }
 
