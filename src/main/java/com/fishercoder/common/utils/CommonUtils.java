@@ -32,6 +32,16 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static void print2DIntArray(int[][] nums) {
+        for (int[] array : nums) {
+            for (int i : array) {
+                System.out.print(i + ", ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
     public static void print(String message) {
         System.out.print(message);
     }
