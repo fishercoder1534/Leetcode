@@ -27,4 +27,12 @@ public class _555Test {
         actual = test.splitLoopedString(strs);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void test2() {
+        strs = new String[]{"lc", "evol", "cdy"};
+        expected = "ylclovecd";
+        actual = test.splitLoopedString(strs);
+        assertEquals(expected, actual);
+    }
 }
