@@ -645,6 +645,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |262|[Trips and Users](https://leetcode.com/problems/trips-and-users/)|[Solution](../master/database/_262.sql)||| Hard| Inner Join
 |197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../master/database/_197.sql)| O(n^2)|O(n) | Easy|
 |196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../master/database/_196.sql)| O(n^2)|O(n) | Easy|
+|185|[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries)|[Solution](../master/database/_185.sql)| | | Hard|
 |184|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary)|[Solution](../master/database/_184.sql)| O(n^2)|O(n) | Medium|
 |183|[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)|[Solution](../master/database/_183.sql)| O(n^2)|O(n) | Easy|
 |182|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)|[Solution](../master/database/_182.sql)| O(n^2)|O(n) | Easy| 
