@@ -27,7 +27,7 @@ public class _548Test {
     public void test1() {
         nums = new int[]{1, 2, 1, 2, 1, 2, 1};
         expected = true;
-        actual = test.splitArray_O_N_3(nums);
+        actual = test.splitArray(nums);
         assertEquals(expected, actual);
     }
 
@@ -35,7 +35,7 @@ public class _548Test {
     public void test2() {
         nums = new int[]{1, 2, 1, 2, 1, 2, 1, 2};
         expected = false;
-        actual = test.splitArray_O_N_3(nums);
+        actual = test.splitArray(nums);
         assertEquals(expected, actual);
     }
 
@@ -2045,7 +2045,7 @@ public class _548Test {
         };
         expected = false;
         long start = System.currentTimeMillis();
-        actual = test.splitArray_O_N_3(nums);
+        actual = test.splitArray(nums);
         System.out.println("It took " + (System.currentTimeMillis() - start) + " ms to solve this test case.");
         assertEquals(expected, actual);
     }
@@ -2055,7 +2055,7 @@ public class _548Test {
         //equalSum is 3, j = 6, k = 9
         nums = new int[]{1, 2, 1, 3, 0, 0, 2, 2, 1, 3, 3};
         expected = true;
-        actual = test.splitArray_O_N_2(nums);
+        actual = test.splitArray(nums);
         assertEquals(expected, actual);
     }
 }
