@@ -2,6 +2,9 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 666. Path Sum IV
  * If the depth of a tree is smaller than 5, then this tree can be represented by a list of three-digits integers.
@@ -16,7 +19,7 @@ import com.fishercoder.common.classes.TreeNode;
  The units digit represents the value V of this node, 0 <= V <= 9.
 
  Given a list of ascending three-digits integers representing a binary with the depth smaller than 5.
- You need to return the sum of all paths from the root towards the leaves.
+ You need to return the totalSum of all paths from the root towards the leaves.
 
  Example 1:
 
@@ -28,7 +31,7 @@ import com.fishercoder.common.classes.TreeNode;
   / \
  5   1
 
- The path sum is (3 + 5) + (3 + 1) = 12.
+ The path totalSum is (3 + 5) + (3 + 1) = 12.
 
  Example 2:
 
@@ -40,7 +43,7 @@ import com.fishercoder.common.classes.TreeNode;
   \
   1
 
- The path sum is (3 + 1) = 4.
+ The path totalSum is (3 + 1) = 4.
 
  */
 public class _666 {
@@ -123,6 +126,40 @@ public class _666 {
             }
 
             return root;
+        }
+    }
+
+    public static class Solution2 {
+        public int totalSum = 0;
+
+        public int pathSum(int[] nums) {
+            Map<Integer, Integer> map = new HashMap<>();
+            for (int i = 0; i < nums.length; i++) {
+                int key = nums[i] / 10;
+                int value = nums[i] % 10;
+                map.put(key, value);
+            }
+            dfs(nums[0] / 10, 0, map);
+            return totalSum;
+        }
+
+        private void dfs(int node, int preSum, Map<Integer, Integer> map) {
+            int level = node / 10;
+            int pos = node % 10;
+            int leftChild = (level + 1) * 10 + pos * 2 - 1;
+            int rightChild = (level + 1) * 10 + pos * 2;
+            int currSum = preSum + map.get(node);
+            if (!map.containsKey(leftChild) && !map.containsKey(rightChild)) {
+                totalSum += currSum;
+                return;
+            }
+
+            if (map.containsKey(leftChild)) {
+                dfs(leftChild, currSum, map);
+            }
+            if (map.containsKey(rightChild)) {
+                dfs(rightChild, currSum, map);
+            }
         }
     }
 }
