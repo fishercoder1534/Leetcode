@@ -642,6 +642,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |577|[Employee Bonus](https://leetcode.com/problems/employee-bonus/)|[Solution](../master/database/_577.sql) | || Easy |
 |574|[Winning Candidate](https://leetcode.com/problems/winning-candidate/)|[Solution](../master/database/_574.sql) | || Medium |
 |570|[Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/)|[Solution](../master/database/_570.sql) | || Medium |
+|569|[Median Employee Salary](https://leetcode.com/problems/median-employee-salary/)|[Solution](../master/database/_569.sql) | || Hard |
 |262|[Trips and Users](https://leetcode.com/problems/trips-and-users/)|[Solution](../master/database/_262.sql)||| Hard| Inner Join
 |197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../master/database/_197.sql)| O(n^2)|O(n) | Easy|
 |196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../master/database/_196.sql)| O(n^2)|O(n) | Easy|
