@@ -79,7 +79,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |604|[Design Compressed String Iterator](https://leetcode.com/problems/design-compressed-string-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_604.java) | O(n) |O(n) | Easy |Design, String
 |600|[Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_600.java) | O(log2(max_int) = 32) | O(log2(max_int) = 32) | Hard | Bit Manipulation, DP
 |599|[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_599.java) | O(max(m,n))|O(max(m,n)) | Easy | HashMap
-|598|[Range Addition II](https://leetcode.com/problems/range-addition-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_598.java) | O(n) (n is the number of operations) |O(1) | Easy | 
+|598|[Range Addition II](https://leetcode.com/problems/range-addition-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_598.java) | O(x) (x is the number of operations) |O(1) | Easy | 
 |594|[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_594.java) | O(n) |O(n) | Easy | Array, HashMap
 |593|[Valid Square](https://leetcode.com/problems/valid-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_593.java) | O(1) |O(1) | Medium | Math
 |592|[Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_592.java) | O(nlogx) |O(n) | Medium | Math

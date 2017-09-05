@@ -38,11 +38,10 @@ package com.fishercoder.solutions;
  The range of a is [1,m], and the range of b is [1,n].
  The range of operations size won't exceed 10,000.
  */
+
 public class _598 {
+
     public int maxCount(int m, int n, int[][] ops) {
-        if (ops == null || ops.length == 0) {
-            return m * n;
-        }
         int x = m;
         int y = n;
         for (int[] op : ops) {
