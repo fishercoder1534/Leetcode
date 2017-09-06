@@ -33,7 +33,7 @@ import java.util.Map;
 
 public class _146 {
 
-    public class LinkedHashMapSolution {
+    public class Solution1 {
         /**
          * The shortest implementation is to use LinkedHashMap:
          * specify a size of the linkedHashMap;
@@ -47,7 +47,7 @@ public class _146 {
         private Map<Integer, Integer> cache;
         private final int max;
 
-        public LinkedHashMapSolution(int capacity) {
+        public Solution1(int capacity) {
             max = capacity;
             cache = new LinkedHashMap<Integer, Integer>(capacity, 1.0f, true) {
                 public boolean removeEldestEntry(Map.Entry eldest) {
@@ -65,13 +65,14 @@ public class _146 {
         }
     }
 
-    public class DoublyLinkedListPlusHashMapSolution {
+    public class Solution2 {
+        /**The more verbose solution is to write a doubly linked list plus a map.*/
         private class Node {
             int key;
             int value;
 
-            DoublyLinkedListPlusHashMapSolution.Node prev;
-            DoublyLinkedListPlusHashMapSolution.Node next;
+            Solution2.Node prev;
+            Solution2.Node next;
 
             Node(int k, int v) {
                 this.key = k;
@@ -86,24 +87,24 @@ public class _146 {
 
         private int capacity;
         private int count;
-        private DoublyLinkedListPlusHashMapSolution.Node head;
-        private DoublyLinkedListPlusHashMapSolution.Node tail;
-        private Map<Integer, DoublyLinkedListPlusHashMapSolution.Node> map;
+        private Solution2.Node head;
+        private Solution2.Node tail;
+        private Map<Integer, Solution2.Node> map;
         // ATTN: the value should be Node type! This is the whole point of having a class called Node!
 
-        public DoublyLinkedListPlusHashMapSolution(int capacity) {
+        public Solution2(int capacity) {
             this.capacity = capacity;
             this.count = 0;// we need a count to keep track of the number of elements in the cache so
             // that we know when to evict the LRU one from the cache
             this.map = new HashMap();
-            head = new DoublyLinkedListPlusHashMapSolution.Node();
-            tail = new DoublyLinkedListPlusHashMapSolution.Node();
+            head = new Solution2.Node();
+            tail = new Solution2.Node();
             head.next = tail;
             tail.prev = head;
         }
 
         public int get(int key) {
-            DoublyLinkedListPlusHashMapSolution.Node node = map.get(key);
+            Solution2.Node node = map.get(key);
             // HashMap allows value to be null, this is superior than HashTable!
             if (node == null) {
                 return -1;
@@ -122,9 +123,9 @@ public class _146 {
         }
 
         public void set(int key, int value) {
-            DoublyLinkedListPlusHashMapSolution.Node node = map.get(key);
+            Solution2.Node node = map.get(key);
             if (node == null) {
-                node = new DoublyLinkedListPlusHashMapSolution.Node(key, value);
+                node = new Solution2.Node(key, value);
                 map.put(key, node);
                 add(node);
                 count++;
@@ -133,7 +134,7 @@ public class _146 {
                     /** ATTN: It's tail.prev, not tail, because tail is always an invalid node, it
                     doesn't contain anything, it's always the tail.prev that is the last node in the
                     cache*/
-                    DoublyLinkedListPlusHashMapSolution.Node toDelete = tail.prev;
+                    Solution2.Node toDelete = tail.prev;
                     map.remove(toDelete.key);
                     remove(toDelete);
                     count--;
@@ -145,16 +146,16 @@ public class _146 {
             }
         }
 
-        private void remove(DoublyLinkedListPlusHashMapSolution.Node node) {
-            DoublyLinkedListPlusHashMapSolution.Node next = node.next;
-            DoublyLinkedListPlusHashMapSolution.Node prev = node.prev;
+        private void remove(Solution2.Node node) {
+            Solution2.Node next = node.next;
+            Solution2.Node prev = node.prev;
             prev.next = next;
             next.prev = prev;
         }
 
-        private void add(DoublyLinkedListPlusHashMapSolution.Node node) {
+        private void add(Solution2.Node node) {
             // ATTN: we'll always add the node into the first position: head.next!!!!
-            DoublyLinkedListPlusHashMapSolution.Node next = head.next;
+            Solution2.Node next = head.next;
             head.next = node;
             node.next = next;
             node.prev = head;
