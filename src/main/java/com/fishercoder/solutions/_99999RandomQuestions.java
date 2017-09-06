@@ -1,0 +1,184 @@
+package com.fishercoder.solutions;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class _99999RandomQuestions {
+
+    public static void main(String... args) {
+        int[] nums = new int[]{1, 2, 3, 4, 5, -1, -3, -6, 3, 2, -4};
+//        int[] nums = new int[]{-1, -2, 1,2,3};
+//        int[] nums = new int[]{-1, -2, 1,2,3,-1, -2};
+//        List<int[]> result = subarraySum_v2(nums);
+
+        System.out.println(rollingString("abc", new String[]{"0 0 L", "2 2 L", "0 2 R"}));
+
+        GetMovies getMovies = new GetMovies();
+        System.out.println(getMovies.getMovieTitles("spiderman"));
+
+        System.out.println(counting("00110"));
+
+    }
+
+    static String rollingString(String s, String[] operations) {
+        char[] chars = s.toCharArray();
+        for (String operation : operations) {
+            String[] ops = operation.split(" ");
+            for (int i = Integer.parseInt(ops[0]); i <= Integer.parseInt(ops[1]); i++) {
+                if ("L".equals(ops[2])) {
+                    if (chars[i] == 'a') {
+                        chars[i] = 'z';
+                    } else {
+                        chars[i] -= 1;
+                    }
+                } else if ("R".equals(ops[2])) {
+                    if (chars[i] == 'z') {
+                        chars[i] = 'a';
+                    } else {
+                        chars[i] += 1;
+                    }
+                }
+            }
+        }
+        return new String(chars);
+    }
+
+    public static class GetMovies {
+        static String[] getMovieTitles(String substr) {
+            final String url = "https://jsonmock.hackerrank.com/api/movies/search/?Title=";
+            List<String> movies = new ArrayList<>();
+            try {
+                String response = getResponse(url + substr);
+                JsonParser parser = new JsonParser();
+                JsonElement rootNode = parser.parse(response);
+
+                JsonObject details = rootNode.getAsJsonObject();
+
+                JsonElement totalMovies = details.get("total");
+                System.out.println(totalMovies.toString());
+
+                JsonElement totalPages = details.get("total_pages");
+                System.out.println(totalPages.toString());
+
+                int currentPage = 0;
+                while (currentPage++ < Integer.parseInt(totalPages.toString())) {
+                    nextPage(movies, currentPage, substr);
+                }
+                Collections.sort(movies);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            String[] result = new String[movies.size()];
+            return movies.toArray(result);
+        }
+
+        static void nextPage(List<String> movies, int currentPage, String substr) throws Exception {
+            final String url = "https://jsonmock.hackerrank.com/api/movies/search/?Title=";
+            String response = getResponse(url + substr + "&page=" + currentPage);
+            JsonParser parser = new JsonParser();
+            JsonElement rootNode = parser.parse(response);
+
+            JsonObject details = rootNode.getAsJsonObject();
+            JsonElement data = details.get("data");
+            JsonArray jsonArray = data.getAsJsonArray();
+            for (JsonElement each : jsonArray) {
+                JsonObject titleObject = each.getAsJsonObject();
+                String title = titleObject.get("Title").getAsString();
+                movies.add(title);
+            }
+        }
+
+        static String getResponse(String urlToRead) throws Exception {
+            StringBuilder result = new StringBuilder();
+            URL url = new URL(urlToRead);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("GET");
+            BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String line;
+            while ((line = rd.readLine()) != null) {
+                result.append(line);
+            }
+            rd.close();
+            return result.toString();
+        }
+    }
+
+    /**Problem: count binary substrings:
+     * The 0's and 1's are grouped consecutively and their numbers are equal
+     * e.g.
+     * 00110 => 3 because there are 3 substrings that have equal number of consecutive 1's and 0's: 0011, 01, 10
+     * 10101 => 4, there are 4 substrings: 10, 01, 10, 01*/
+    static int counting(String s) {
+        int n = s.length();
+        /**a[i][0] denotes from most left up to i (inclusive), how many consecutive 0's
+         * a[i][1] denotes from most left up to i (inclusive), how many consecutive 1's*/
+        int[][] a = new int[n][2];
+        /**a[i][0] denotes from i (inclusive) to the most right, how many consecutive 0's
+         * b[i][0] denotes from i (inclusive) to the most right, how many consecutive 1's*/
+        int[][] b = new int[n][2];
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) == '0') {
+                a[i][0] = 1 + (i - 1 >= 0 ? a[i - 1][0] : 0);
+            } else {
+                a[i][1] = 1 + (i - 1 >= 0 ? a[i - 1][1] : 0);
+            }
+        }
+        for (int i = n - 1; i >= 0; i--) {
+            if (s.charAt(i) == '0') {
+                b[i][0] = 1 + (i + 1 < n ? b[i + 1][0] : 0);
+            } else {
+                b[i][1] = 1 + (i + 1 < n ? b[i + 1][1] : 0);
+            }
+
+        }
+        long ans = 0;
+        for (int i = 0; i + 1 < n; i++) {
+            ans += Math.min(a[i][0], b[i + 1][1]);
+            ans += Math.min(a[i][1], b[i + 1][0]);
+        }
+        return (int) ans;
+    }
+
+    public static class SubArraySum {
+        /**
+         * Given an array, return the start/end indices of the contiguous subarray that have the largest sum.
+         * Note:
+         * 1. There could be multiple subarrays, return all of the indices.
+         */
+        public static List<int[]> subarraySum(int[] nums) {
+            int[] preSums = new int[nums.length + 1];
+            for (int i = 1; i <= nums.length; i++) {
+                preSums[i] = preSums[i - 1] + nums[i - 1];
+            }
+            TreeMap<Integer, List<int[]>> preSum = new TreeMap(Collections.reverseOrder());
+            for (int i = 1; i <= nums.length; i++) {
+                for (int j = 0; j < i - 1; j++) {
+                    int sum = preSums[i] - preSums[j];
+                    if (!preSum.containsKey(sum)) {
+                        List<int[]> value = new ArrayList<>();
+                        value.add(new int[]{j, i - 1});
+                        preSum.put(sum, value);
+                    } else {
+                        List<int[]> value = preSum.get(sum);
+                        value.add(new int[]{j, i - 1});
+                        preSum.put(sum, value);
+                    }
+                }
+            }
+            Map.Entry<Integer, List<int[]>> firstEntry = preSum.firstEntry();
+            return firstEntry.getValue();
+        }
+    }
+}
