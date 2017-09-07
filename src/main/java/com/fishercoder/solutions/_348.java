@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
 /**
+ * 348. Design Tic-Tac-Toe
+ *
  * Design a Tic-tac-toe game that is played between two players on a n x n grid.
 
  You may assume the following rules:
@@ -60,8 +62,10 @@ package com.fishercoder.solutions;
 
  */
 public class _348 {
-    //credit: https://discuss.leetcode.com/topic/44548/java-o-1-solution-easy-to-understand
-    /**Key: in order to win a TicTacToe, you must have the entire row or column,
+    /**
+     * credit: https://discuss.leetcode.com/topic/44548/java-o-1-solution-easy-to-understand
+     *
+     * Key: in order to win a TicTacToe, you must have the entire row or column,
      * thus, we don't need to keep track of the entire n^2 board.
      * We only need to keep a count for each row and column.
      * If at any time, a row or column matches the size of the board, then that player has won.*/
