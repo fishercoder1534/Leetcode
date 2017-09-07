@@ -10,18 +10,18 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 5/27/17.
  */
 public class _295Test {
-    private static _295.MedianFinderVerbose test;
+    private static _295.Solution1.MedianFinder solution1;
 
     @BeforeClass
     public static void setup() {
-        test = new _295.MedianFinderVerbose();
+        solution1 = new _295.Solution1.MedianFinder();
     }
 
     @Test
     public void test1() {
-        test.addNum(1);
-        test.addNum(3);
-        test.addNum(-1);
-        assertEquals(1.0, test.findMedian(), 0);
+        solution1.addNum(1);
+        solution1.addNum(3);
+        solution1.addNum(-1);
+        assertEquals(1.0, solution1.findMedian(), 0);
     }
 }
