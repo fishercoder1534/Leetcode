@@ -32,6 +32,31 @@ public class _99999RandomQuestions {
 
     }
 
+    public boolean isValid(String input) {
+        return rec(input, 0, 0);
+    }
+
+    private boolean rec(String input, int start, int leftParen) {
+        if (start == input.length()) {
+            return leftParen == 0;
+        }
+        if (input.charAt(start) == '(') {
+            return rec(input, start + 1, leftParen + 1);
+        } else if (input.charAt(start) == '*') {
+            if (start + 1 < input.length() && input.charAt(start + 1) == '*') {
+                return rec(input, start + 1, leftParen);
+            } else if (start + 1 < input.length() && input.charAt(start + 1) == ')') {
+                return rec(input, start + 2, leftParen - 1) || rec(input, start + 2, leftParen);
+            }
+        } else if (input.charAt(start) == ')') {
+            if (leftParen <= 0) {
+                return false;
+            }
+            return rec(input, start + 1, leftParen - 1);
+        }
+        return false;
+    }
+
     static String rollingString(String s, String[] operations) {
         char[] chars = s.toCharArray();
         for (String operation : operations) {
@@ -115,11 +140,13 @@ public class _99999RandomQuestions {
         }
     }
 
-    /**Problem: count binary substrings:
+    /**
+     * Problem: count binary substrings:
      * The 0's and 1's are grouped consecutively and their numbers are equal
      * e.g.
      * 00110 => 3 because there are 3 substrings that have equal number of consecutive 1's and 0's: 0011, 01, 10
-     * 10101 => 4, there are 4 substrings: 10, 01, 10, 01*/
+     * 10101 => 4, there are 4 substrings: 10, 01, 10, 01
+     */
     static int counting(String s) {
         int n = s.length();
         /**a[i][0] denotes from most left up to i (inclusive), how many consecutive 0's
