@@ -32,6 +32,26 @@ public class _99999RandomQuestions {
 
     }
 
+    /**
+     * Given a string containing only three types of characters: '(', ')' and '*', write a function to check whether this string is valid. We define the validity of a string by these rules:
+     * 1. one left parenthesis must have a corresponding right parenthesis
+     * 2. left parenthesis must go before the corresponding right parenthesis
+     * 3. '*' could bind with a right parenthesis and be treated as a single right parenthesis or '*' could dissolve this right parenthesis and be treated as an empty string.
+     *
+     * Examples below:
+     * "()" -> true ,
+     * "(*)" -> true ,
+     * "(*))" -> true,
+     * ")(", -> false
+     * "(*()" -> false
+     * "((*)" -> false
+     * "((*)))" -> true
+     * "()()" -> true
+     * "(((())))" -> true
+     * "(((******)))" -> true
+     * "(((******))" -> false
+     * "((*)****)" -> true
+     */
     public boolean isValid(String input) {
         return rec(input, 0, 0);
     }
