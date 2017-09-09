@@ -36,10 +36,15 @@ import java.util.List;
 public class _635 {
 
     /**credit: https://discuss.leetcode.com/topic/94449/concise-java-solution*/
-    public class LogSystem {
+    public static class LogSystem {
 
         List<String[]> timestamps = new LinkedList<>();
+
         List<String> units = Arrays.asList("Year", "Month", "Day", "Hour", "Minute", "Second");
+
+        /**These indices denote and string endings of timestamps of different granularity, i.e.
+         * timestamp[1] in timestamps: "2017:01:01:22:59:59"
+         * -> 2017: 4, 01: 7, 01: 10, 22: 13, 59: 16, 59: 19*/
         int[] indices = new int[]{4, 7, 10, 13, 16, 19};
 
         public LogSystem() {
@@ -51,10 +56,11 @@ public class _635 {
 
         public List<Integer> retrieve(String s, String e, String gra) {
             List<Integer> res = new LinkedList<>();
-            int idx = indices[units.indexOf(gra)];
+            int index = units.indexOf(gra);
+            int stringEnd = indices[index];
             for (String[] timestamp : timestamps) {
-                if (timestamp[1].substring(0, idx).compareTo(s.substring(0, idx)) >= 0
-                    && timestamp[1].substring(0, idx).compareTo(e.substring(0, idx)) <= 0) {
+                if (timestamp[1].substring(0, stringEnd).compareTo(s.substring(0, stringEnd)) >= 0
+                    && timestamp[1].substring(0, stringEnd).compareTo(e.substring(0, stringEnd)) <= 0) {
                     res.add(Integer.parseInt(timestamp[0]));
                 }
             }
