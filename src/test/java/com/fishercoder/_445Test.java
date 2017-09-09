@@ -1,6 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.ListNode;
+import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions._445;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -12,27 +13,44 @@ import static org.junit.Assert.assertEquals;
  */
 public class _445Test {
     private static _445 test;
+    private static _445.Solution2 solution2;
 
     @BeforeClass
     public static void setup() {
         test = new _445();
+        solution2 = new _445.Solution2();
     }
 
     @Test
     public void test1() {
-        ListNode l1 = new ListNode(7);
-        l1.next = new ListNode(2);
-        l1.next.next = new ListNode(4);
-        l1.next.next.next = new ListNode(3);
+        ListNode l1 = LinkedListUtils.contructLinkedList(new int[]{7, 2, 4, 3});
 
-        ListNode l2 = new ListNode(5);
-        l2.next = new ListNode(6);
-        l2.next.next = new ListNode(4);
+        ListNode l2 = LinkedListUtils.contructLinkedList(new int[]{5, 6, 4});
 
-        ListNode expected = new ListNode(7);
-        expected.next = new ListNode(8);
-        expected.next.next = new ListNode(0);
-        expected.next.next.next = new ListNode(7);
+        ListNode expected = LinkedListUtils.contructLinkedList(new int[]{7, 8, 0, 7});
+
         assertEquals(expected, test.addTwoNumbers(l1, l2));
+    }
+
+    @Test
+    public void test2() {
+        ListNode l1 = LinkedListUtils.contructLinkedList(new int[]{7, 2, 4, 3});
+
+        ListNode l2 = LinkedListUtils.contructLinkedList(new int[]{5, 6, 4});
+
+        ListNode expected = LinkedListUtils.contructLinkedList(new int[]{7, 8, 0, 7});
+
+        assertEquals(expected, solution2.addTwoNumbers(l1, l2));
+    }
+
+    @Test
+    public void test3() {
+        ListNode l1 = LinkedListUtils.contructLinkedList(new int[]{5});
+
+        ListNode l2 = LinkedListUtils.contructLinkedList(new int[]{5});
+
+        ListNode expected = LinkedListUtils.contructLinkedList(new int[]{1, 0});
+
+        assertEquals(expected, solution2.addTwoNumbers(l1, l2));
     }
 }
