@@ -40,7 +40,7 @@ public class _673 {
             for (int i = 0; i < nums.length; i++) {
                 int len = 1;
                 int lastNum = nums[i];
-                for (int j = i+1; j < nums.length; j++) {
+                for (int j = i + 1; j < nums.length; j++) {
                     if (lastNum < nums[j]) {
                         len++;
                         lastNum = nums[j];
