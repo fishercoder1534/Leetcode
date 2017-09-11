@@ -22,6 +22,8 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|676|[Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_676.java) | O(n^2) | O(n) | Medium |
+|674|[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_674.java) | O(n^2) | O(1) | Easy | 
 |672|[Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_672.java) | O(1) | O(1) | Medium | Math 
 |671|[Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_671.java) | O(n) | O(n) | Easy | Tree, DFS
 |670|[Maximum Swap](https://leetcode.com/problems/maximum-swap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_670.java) | O(n^2) | O(1) | Medium | String
