@@ -24,7 +24,6 @@ public class _673Test {
     }
 
     @Test
-    @Ignore
     public void test2() {
         nums = new int[]{2, 2, 2, 2, 2};
         assertEquals(5, solution1.findNumberOfLIS(nums));
