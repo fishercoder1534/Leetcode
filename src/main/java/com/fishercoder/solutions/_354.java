@@ -22,8 +22,7 @@ public class _354 {
                 || envelopes[0].length == 0 || envelopes[0].length != 2) {
             return 0;
         }
-        Arrays.sort(envelopes, (int[] a, int[] b) ->
-                {
+        Arrays.sort(envelopes, (int[] a, int[] b) -> {
                     if (a[0] == b[0]) {
                         return b[1] - a[1];
                     } else {
