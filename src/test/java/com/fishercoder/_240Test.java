@@ -8,7 +8,7 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _240Test {
-    private static _240 test;
+    private static _240.Solution1 solution1;
     private static boolean actual;
     private static boolean expected;
     private static int target;
@@ -16,7 +16,7 @@ public class _240Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _240();
+        solution1 = new _240.Solution1();
     }
 
     @Before
@@ -34,7 +34,7 @@ public class _240Test {
                 {18, 21, 23, 26, 30}
         };
         expected = true;
-        actual = test.searchMatrix(matrix, target);
+        actual = solution1.searchMatrix(matrix, target);
         assertEquals(expected, actual);
     }
 
@@ -43,7 +43,7 @@ public class _240Test {
         target = 0;
         matrix = new int[][]{};
         expected = false;
-        actual = test.searchMatrix(matrix, target);
+        actual = solution1.searchMatrix(matrix, target);
         assertEquals(expected, actual);
     }
 }
