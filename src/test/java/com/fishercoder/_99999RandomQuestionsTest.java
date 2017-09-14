@@ -11,10 +11,12 @@ import static org.junit.Assert.assertEquals;
  */
 public class _99999RandomQuestionsTest {
     private static _99999RandomQuestions test;
+    private static _99999RandomQuestions.LongestRepeatedSubstring longestRepeatedSubstring;
 
     @BeforeClass
     public static void setup() {
         test = new _99999RandomQuestions();
+        longestRepeatedSubstring = new _99999RandomQuestions.LongestRepeatedSubstring();
     }
 
     @Test
@@ -75,5 +77,10 @@ public class _99999RandomQuestionsTest {
     @Test
     public void test12() {
         assertEquals(true, test.isValid("((*)****)"));
+    }
+
+    @Test
+    public void test13() {
+        assertEquals("aaaa", longestRepeatedSubstring.findLongestRepeatedSubstring("aaaaa"));
     }
 }
