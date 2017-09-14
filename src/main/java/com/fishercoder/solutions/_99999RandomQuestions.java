@@ -228,4 +228,21 @@ public class _99999RandomQuestions {
             return firstEntry.getValue();
         }
     }
+
+    public static class LongestRepeatedSubstring {
+        public String findLongestRepeatedSubstring(String s) {
+            if (s == null || s.length() == 0) {
+                return s;
+            }
+            for (int end = s.length() - 1; end > 0; end--) {
+                String candidate = s.substring(0, end);
+                for (int start = 1; start <= s.length() - candidate.length(); start++) {
+                    if (candidate.equals(s.substring(start, start + candidate.length()))) {
+                        return candidate;
+                    }
+                }
+            }
+            return s.substring(0, 1);
+        }
+    }
 }
