@@ -3,7 +3,10 @@ package com.fishercoder.solutions;
 import java.util.ArrayList;
 import java.util.List;
 
-/**Given a collection of distinct numbers, return all possible permutations.
+/**
+ * 46. Permutations
+ *
+ * Given a collection of distinct numbers, return all possible permutations.
 
  For example,
  [1,2,3] have the following permutations:
@@ -14,18 +17,21 @@ import java.util.List;
  [2,3,1],
  [3,1,2],
  [3,2,1]
- ]*/
+ ]
+
+ */
+
 public class _46 {
-    static class AcceptedSolution {
+
+    public static class Solution1 {
         //this solution has a backtracking function that has a return type
-        public static List<List<Integer>> permute(int[] nums) {
+        public List<List<Integer>> permute(int[] nums) {
             List<List<Integer>> result = new ArrayList();
-            List<Integer> init = new ArrayList<>();
-            result.add(init);
+            result.add(new ArrayList<>());
             return backtracking(result, nums, 0);
         }
 
-        private static List<List<Integer>> backtracking(List<List<Integer>> result, int[] nums, int pos) {
+        private List<List<Integer>> backtracking(List<List<Integer>> result, int[] nums, int pos) {
             if (pos == nums.length) {
                 return result;
             }
@@ -42,16 +48,15 @@ public class _46 {
         }
     }
 
-    static class AcceptedSolutionWithVoidType {
-        public static List<List<Integer>> permute(int[] nums) {
+    public static class Solution2 {
+        public List<List<Integer>> permute(int[] nums) {
             List<List<Integer>> result = new ArrayList();
-            List<Integer> init = new ArrayList<>();
-            result.add(init);
+            result.add(new ArrayList<>());
             recursive(result, nums, 0);
             return result;
         }
 
-        private static void recursive(List<List<Integer>> result, int[] nums, int pos) {
+        private void recursive(List<List<Integer>> result, int[] nums, int pos) {
             if (pos == nums.length) {
                 return;
             }
@@ -70,11 +75,6 @@ public class _46 {
             //then recursion
             recursive(result, nums, pos + 1);
         }
-    }
-
-    public static void main(String... args) {
-        int[] nums = new int[]{1, 2, 2};
-
     }
 
 }
