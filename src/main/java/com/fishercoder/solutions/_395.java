@@ -35,6 +35,7 @@ public class _395 {
         }
 
         int findLongestSubstring(char[] chars, int start, int end, int k) {
+            /**Base case 1 of 2*/
             if (end - start < k) {
                 return 0;
             }
@@ -44,6 +45,7 @@ public class _395 {
                 count[index]++;
             }
 
+            /**For every character in the above frequency table*/
             for (int i = 0; i < 26; i++) {
                 if (count[i] < k && count[i] > 0) {
                     for (int j = start; j < end; j++) {
@@ -55,6 +57,8 @@ public class _395 {
                     }
                 }
             }
+            /**Base case 2 of 2:
+             * when any characters in this substring has repeated at least k times, then this entire substring is a valid answer*/
             return end - start;
         }
     }
