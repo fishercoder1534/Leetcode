@@ -83,4 +83,9 @@ public class _99999RandomQuestionsTest {
     public void test13() {
         assertEquals("aaaa", longestRepeatedSubstring.findLongestRepeatedSubstring("aaaaa"));
     }
+
+//    @Test
+//    public void test14() {
+//        assertEquals("bc", longestRepeatedSubstring.findLongestRepeatedSubstring("abcbca"));
+//    }
 }
