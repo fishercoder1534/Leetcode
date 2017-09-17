@@ -40,7 +40,7 @@ public class _679 {
                 for (int j = 0; j < nums.length; j++) {
                     if (i != j) {
                         int len = 0;
-                        double[] a = new double[nums.length-1];
+                        double[] a = new double[nums.length - 1];
                         for (int k = 0; k < nums.length; k++) {
                             if (k != i && k != j) {
                                 a[len++] = nums[k];
