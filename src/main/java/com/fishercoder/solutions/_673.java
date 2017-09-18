@@ -21,37 +21,39 @@ package com.fishercoder.solutions;
  */
 public class _673 {
     public static class Solution1 {
+        /**
+         * Reference: https://discuss.leetcode.com/topic/103020/java-c-simple-dp-solution-with-explanation
+         */
         public int findNumberOfLIS(int[] nums) {
-            int longest = findLongestLIS(nums);
-            if (longest == 1) {
-                return nums.length;
-            }
-            int result = 0;
-            for (int i = 0; i < nums.length; i++) {
-                if (i + longest > nums.length) {
-                    break;
-                }
-            }
-            return result;
-        }
-
-        private int findLongestLIS(int[] nums) {
-            int longest = 0;
-            for (int i = 0; i < nums.length; i++) {
-                int len = 1;
-                int lastNum = nums[i];
-                for (int j = i + 1; j < nums.length; j++) {
-                    if (lastNum < nums[j]) {
-                        len++;
-                        lastNum = nums[j];
-                        continue;
-                    } else {
-                        break;
+            int n = nums.length;
+            int[] cnt = new int[n];
+            int[] len = new int[n];
+            int max = 0;
+            int count = 0;
+            for (int i = 0; i < n; i++) {
+                len[i] = cnt[i] = 1;
+                for (int j = 0; j < i; j++) {
+                    if (nums[i] > nums[j]) {
+                        if (len[i] == len[j] + 1) {
+                            cnt[i] += cnt[j];
+                        }
+                        if (len[i] < len[j] + 1) {
+                            len[i] = len[j] + 1;
+                            cnt[i] = cnt[j];
+                        }
                     }
                 }
-                longest = Math.max(longest, len);
+
+                if (max == len[i]) {
+                    count += cnt[i];
+                }
+
+                if (len[i] > max) {
+                    max = len[i];
+                    count = cnt[i];
+                }
             }
-            return longest;
+            return count;
         }
     }
 }
