@@ -23,7 +23,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |680|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_680.java) | O(n) | O(1) | Easy | String
-|679|[24 Game](https://leetcode.com/problems/24-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_679.java) | O(n^2) | O(n) | Hard | Recursion
+|679|[24 Game](https://leetcode.com/problems/24-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_679.java) | O(1) (Upper bound 9216)| O(1) | Hard | Recursion
 |678|[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_678.java) | O(n) | O(1) | Medium| Recursion, Greedy
 |677|[Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_677.java) | O(n) | O(n) | Medium | HashMap
 |676|[Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_676.java) | O(n^2) | O(n) | Medium |
