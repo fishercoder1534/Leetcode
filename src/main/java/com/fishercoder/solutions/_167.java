@@ -19,26 +19,20 @@ public class _167 {
     public int[] twoSum(int[] numbers, int target) {
         int left = 0;
         int right = numbers.length - 1;
-        int[] result = new int[2];
-        while (numbers[right] > target) {
-            right--;
-        }
-        if (right < numbers.length - 1) {
-            right++;
-        }
-        while (left <= right) {
-            int sum = numbers[left] + numbers[right];
+        while (left < right) {
+            long sum = numbers[left] + numbers[right];
             if (sum > target) {
                 right--;
             } else if (sum < target) {
                 left++;
-            } else if (sum == target) {
-                result[0] = left + 1;
-                result[1] = right + 1;
-                break;
+            } else {
+                int[] res = new int[2];
+                res[0] = left + 1;
+                res[1] = right + 1;
+                return res;
             }
         }
-        return result;
+        return new int[]{-1, -1};
     }
 
 }
