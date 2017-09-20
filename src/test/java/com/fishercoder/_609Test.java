@@ -7,9 +7,6 @@ import org.junit.Test;
 
 import java.util.List;
 
-/**
- * Created by stevesun on 6/4/17.
- */
 public class _609Test {
     private static _609 test;
     private static String[] paths;
