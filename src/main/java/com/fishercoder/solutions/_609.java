@@ -53,7 +53,7 @@ import java.util.Map;
 public class _609 {
 
     public List<List<String>> findDuplicate(String[] paths) {
-        Map<String, List<String>> map = new HashMap<>();//key is the file, value is the list of directories that has this file/content
+        Map<String, List<String>> map = new HashMap<>();//key is the file content, value is the list of directories that has this directory/file
         for (String path : paths) {
             String[] dirAndFiles = path.split(" ");
             for (int i = 1; i < dirAndFiles.length; i++) {
