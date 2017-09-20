@@ -23,14 +23,39 @@ public class _99999RandomQuestions {
 //        int[] nums = new int[]{-1, -2, 1,2,3,-1, -2};
 //        List<int[]> result = subarraySum_v2(nums);
 
-        System.out.println(rollingString("abc", new String[]{"0 0 L", "2 2 L", "0 2 R"}));
+//        System.out.println(rollingString("abc", new String[]{"0 0 L", "2 2 L", "0 2 R"}));
+//
+//        GetMovies getMovies = new GetMovies();
+//        System.out.println(getMovies.getMovieTitles("spiderman"));
+//
+//        System.out.println(counting("00110"));
 
-        GetMovies getMovies = new GetMovies();
-        System.out.println(getMovies.getMovieTitles("spiderman"));
-
-        System.out.println(counting("00110"));
+        int total = 0;
+        for (int n = 0; n < 50; n++) {
+            if (method(n)) {
+                total++;
+                System.out.print(n + ", " + method(n) + "\n");
+            }
+        }
+        System.out.println("total = " + total);
 
     }
+
+    /**This below small code snippet checks whether a given number is a prime number or not*/
+    static boolean method(int n) {
+        if (n < 2) {
+            return false;
+        }
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0) {
+//                System.out.print("n = " + n + ", " + "i = " + i + "\t");
+                return false;
+            }
+        }
+        return true;
+    }
+
+
 
     /**
      * Given a string containing only three types of characters: '(', ')' and '*', write a function to check whether this string is valid. We define the validity of a string by these rules:
