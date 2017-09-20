@@ -80,4 +80,24 @@ public class _609 {
         return result;
     }
 
+    /**Answers to follow-up questions:
+     * 1. Imagine you are given a real file system, how will you search files? DFS or BFS ?
+     * A: Both BFS and DFS could do the work, but BFS will use extra memory, however, BFS takes advantage of memory locality, so BFS could be faster.
+     *
+     * 2. If the file content is very large (GB level), how will you modify your solution?
+     * A: We'll fist map all files according to their sizes, since files with different sizes are guaranteed to be different, then
+     * we can hash a small part of the files using MD5, SHA256, etc. Only when their md5 or sha256 is the same, we'll compare the contents byte by byte.
+     *
+     * 3. If you can only read the file by 1kb each time, how will you modify your solution?
+     * A: This is not going to change the solution, we can hash this 1kb chunk, and then also only compare byte by byte when it's necessary.
+     *
+     * 4. What is the time complexity of your modified solution? What is the most time consuming part and memory consuming part of it? How to optimize?
+     * A: O(n^2*k), in the worst time, we'll have to compare the file with every other file, k is the length of the file.
+     * Comparing the file (by size, by hash and eventually byte by byte) is the most time consuming part.
+     * Generating hash for every file will be the most memory consuming part.
+     *
+     * 5. How to make sure the duplicated files you find are not false positive?
+     * A: Size comparision, hash detection, byte by byte check, etc. will pretty sure to rule out false positive.
+     * */
+
 }
