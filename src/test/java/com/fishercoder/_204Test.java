@@ -40,4 +40,34 @@ public class _204Test {
         assertEquals(114155, solution2.countPrimes(1500000));
     }
 
+    @Test
+    public void test5() {
+        assertEquals(10, solution1.countPrimes(30));
+        assertEquals(10, solution2.countPrimes(30));
+    }
+
+    @Test
+    public void test6() {
+        assertEquals(4, solution1.countPrimes(10));
+        assertEquals(4, solution2.countPrimes(10));
+    }
+
+    @Test
+    public void test7() {
+        assertEquals(8, solution1.countPrimes(20));
+        assertEquals(8, solution2.countPrimes(20));
+    }
+
+    @Test
+    public void test8() {
+        assertEquals(12, solution1.countPrimes(40));
+        assertEquals(12, solution2.countPrimes(40));
+    }
+
+    @Test
+    public void test9() {
+        assertEquals(15, solution1.countPrimes(50));
+        assertEquals(15, solution2.countPrimes(50));
+    }
+
 }
