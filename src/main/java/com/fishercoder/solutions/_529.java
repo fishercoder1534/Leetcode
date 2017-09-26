@@ -103,6 +103,8 @@ public class _529 {
                     } else {
                         /**There is no mines around this cell, so update it to be 'B'*/
                         board[currRow][currCol] = 'B';
+
+                        /**then we'll also check all of its four surrounding cells, if it's 'E'. we'll also update it to be 'B' and offer it into the queue*/
                         for (int i = -1; i < 2; i++) {
                             for (int j = -1; j < 2; j++) {
                                 if (i == 0 && j == 0) {
