@@ -1,6 +1,5 @@
 package com.fishercoder.solutions;
 
-
 import java.util.PriorityQueue;
 
 /**
