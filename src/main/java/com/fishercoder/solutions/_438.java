@@ -64,7 +64,7 @@ public class _438 {
 
     public static class Solution2 {
         /**
-         * Slinding Window
+         * Sliding Window
          */
         public List<Integer> findAnagrams(String s, String p) {
             List<Integer> result = new ArrayList();
