@@ -23,7 +23,7 @@ public class _238 {
          * res[i] *= right;
          * right *= nums[i];
          * that's it.
-         * <p>
+         *
          * This could be very well illustrated with this example: [1,2,3,4]
          */
         public int[] productExceptSelf(int[] nums) {
