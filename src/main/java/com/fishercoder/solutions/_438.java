@@ -31,36 +31,41 @@ import java.util.List;
  The substring with start index = 2 is "ab", which is an anagram of "ab".*/
 
 public class _438 {
-    /**
-     * O(m*n) solution, my original and most intuitive one, but kind of brute force.
-     */
-    public List<Integer> findAnagrams(String s, String p) {
-        List<Integer> result = new ArrayList();
-        for (int i = 0; i <= s.length() - p.length(); i++) {
-            if (isAnagram(s.substring(i, i + p.length()), p)) {
-                result.add(i);
+    public static class Solution1 {
+        /**
+         * O(m*n) solution, my original and most intuitive one, but kind of brute force.
+         */
+        public List<Integer> findAnagrams(String s, String p) {
+            List<Integer> result = new ArrayList();
+            for (int i = 0; i <= s.length() - p.length(); i++) {
+                if (isAnagram(s.substring(i, i + p.length()), p)) {
+                    result.add(i);
+                }
             }
+            return result;
         }
-        return result;
+
+        private boolean isAnagram(String s, String p) {
+            int[] c = new int[26];
+            for (int i = 0; i < s.length(); i++) {
+                c[s.charAt(i) - 'a']++;
+                c[p.charAt(i) - 'a']--;
+            }
+
+            for (int i : c) {
+                if (i != 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 
-    private boolean isAnagram(String s, String p) {
-        int[] c = new int[26];
-        for (int i = 0; i < s.length(); i++) {
-            c[s.charAt(i) - 'a']++;
-            c[p.charAt(i) - 'a']--;
-        }
 
-        for (int i : c) {
-            if (i != 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-
-    static class SlidingWindowSolution {
+    public static class Solution2 {
+        /**
+         * Slinding Window
+         */
         public List<Integer> findAnagrams(String s, String p) {
             List<Integer> result = new ArrayList();
             int[] hash = new int[26];
@@ -94,7 +99,7 @@ public class _438 {
     }
 
     public static void main(String... args) {
-        SlidingWindowSolution test = new SlidingWindowSolution();
+        Solution2 test = new Solution2();
         String s = "cbaebabacd";
         String p = "abc";
         test.findAnagrams(s, p);
