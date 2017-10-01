@@ -98,54 +98,54 @@ public class _99999RandomQuestionsTest {
 
     @Test
     public void test15() {
-        rangeModule.AddRange(10, 180);
-        rangeModule.AddRange(150, 200);
-        rangeModule.AddRange(250, 500);
-        assertEquals(true, rangeModule.QueryRange(50, 100));
-        assertEquals(false, rangeModule.QueryRange(180, 300));
-        assertEquals(false, rangeModule.QueryRange(600, 1000));
+        rangeModule.addRange(10, 180);
+        rangeModule.addRange(150, 200);
+        rangeModule.addRange(250, 500);
+        assertEquals(true, rangeModule.queryRange(50, 100));
+        assertEquals(false, rangeModule.queryRange(180, 300));
+        assertEquals(false, rangeModule.queryRange(600, 1000));
 
-        rangeModule.DeleteRange(50, 150);
-        assertEquals(false, rangeModule.QueryRange(50, 100));
+        rangeModule.deleteRange(50, 150);
+        assertEquals(false, rangeModule.queryRange(50, 100));
     }
 
     @Test
     public void test16() {
-        rangeModule.AddRange(10, 100);
-        assertEquals(true, rangeModule.QueryRange(10, 100));
-        assertEquals(false, rangeModule.QueryRange(5, 20));
-        assertEquals(false, rangeModule.QueryRange(0, 9));
-        assertEquals(false, rangeModule.QueryRange(1, 20));
+        rangeModule.addRange(10, 100);
+        assertEquals(true, rangeModule.queryRange(10, 100));
+        assertEquals(false, rangeModule.queryRange(5, 20));
+        assertEquals(false, rangeModule.queryRange(0, 9));
+        assertEquals(false, rangeModule.queryRange(1, 20));
     }
 
     @Test
     public void test17() {
-        rangeModule.AddRange(10, 100);
-        assertEquals(true, rangeModule.QueryRange(10, 100));
+        rangeModule.addRange(10, 100);
+        assertEquals(true, rangeModule.queryRange(10, 100));
 
-        rangeModule.DeleteRange(25, 44);
-        assertEquals(false, rangeModule.QueryRange(10, 100));
-        assertEquals(false, rangeModule.QueryRange(10, 25));
-        assertEquals(false, rangeModule.QueryRange(44, 50));
-        assertEquals(true, rangeModule.QueryRange(10, 24));
-        assertEquals(true, rangeModule.QueryRange(50, 60));
+        rangeModule.deleteRange(25, 44);
+        assertEquals(false, rangeModule.queryRange(10, 100));
+        assertEquals(false, rangeModule.queryRange(10, 25));
+        assertEquals(false, rangeModule.queryRange(44, 50));
+        assertEquals(true, rangeModule.queryRange(10, 24));
+        assertEquals(true, rangeModule.queryRange(50, 60));
 
-        rangeModule.DeleteRange(15, 50);
-        assertEquals(false, rangeModule.QueryRange(10, 24));
-        assertEquals(false, rangeModule.QueryRange(45, 100));
-        assertEquals(true, rangeModule.QueryRange(10, 14));
+        rangeModule.deleteRange(15, 50);
+        assertEquals(false, rangeModule.queryRange(10, 24));
+        assertEquals(false, rangeModule.queryRange(45, 100));
+        assertEquals(true, rangeModule.queryRange(10, 14));
     }
 
     @Test
     public void test18() {
-        rangeModule.AddRange(10, 200);
-        rangeModule.AddRange(150, 180);
-        rangeModule.AddRange(250, 500);
-        assertEquals(true, rangeModule.QueryRange(50, 100));
-        assertEquals(false, rangeModule.QueryRange(180, 300));
-        assertEquals(false, rangeModule.QueryRange(600, 1000));
+        rangeModule.addRange(10, 200);
+        rangeModule.addRange(150, 180);
+        rangeModule.addRange(250, 500);
+        assertEquals(true, rangeModule.queryRange(50, 100));
+        assertEquals(false, rangeModule.queryRange(180, 300));
+        assertEquals(false, rangeModule.queryRange(600, 1000));
 
-        rangeModule.DeleteRange(50, 150);
-        assertEquals(false, rangeModule.QueryRange(50, 100));
+        rangeModule.deleteRange(50, 150);
+        assertEquals(false, rangeModule.queryRange(50, 100));
     }
 }
