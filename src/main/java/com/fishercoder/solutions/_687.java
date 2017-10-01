@@ -37,6 +37,9 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _687 {
     public static class Solution1 {
+        /**
+         * Use a one element array to pass in and out is a common technique for handling tree questions.
+         */
         public int longestUnivaluePath(TreeNode root) {
             int[] result = new int[1];
             if (root != null) {
