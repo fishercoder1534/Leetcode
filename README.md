@@ -24,6 +24,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_690.java) | O(n) | O(h) | Easy | DFS
 |687|[Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_687.java) | O(n) | O(h) | Easy | DFS
+|686|[Repeated String Match](https://leetcode.com/problems/repeated-string-match/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_686.java) | O(n*(m+n)) | O(m+n) | Easy | 
 |682|[Baseball Game](https://leetcode.com/problems/baseball-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_682.java) | O(n) | O(1) | Easy | 
 |680|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_680.java) | O(n) | O(1) | Easy | String
 |679|[24 Game](https://leetcode.com/problems/24-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_679.java) | O(1) (Upper bound 9216)| O(1) | Hard | Recursion
