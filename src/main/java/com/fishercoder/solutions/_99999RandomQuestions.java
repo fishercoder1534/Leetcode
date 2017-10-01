@@ -294,7 +294,7 @@ public class _99999RandomQuestions {
             this.intervals = new ArrayList<>();
         }
 
-        public void AddRange(int lower, int upper) {
+        public void addRange(int lower, int upper) {
             intervals = addRange(intervals, new Interval(lower, upper));
 
         }
@@ -321,7 +321,7 @@ public class _99999RandomQuestions {
             return result;
         }
 
-        public boolean QueryRange(int lower, int upper) {
+        public boolean queryRange(int lower, int upper) {
             /**check two ends first*/
             if (intervals.get(0).start > upper || intervals.get(intervals.size() - 1).end < lower) {
                 return false;
@@ -370,7 +370,7 @@ public class _99999RandomQuestions {
             }
         }
 
-        public void DeleteRange(int lower, int upper) {
+        public void deleteRange(int lower, int upper) {
             /**check two ends first*/
             if (intervals.get(0).start > upper || intervals.get(intervals.size() - 1).end < lower) {
                 return;
@@ -399,11 +399,11 @@ public class _99999RandomQuestions {
             intervals.remove(start);//remove this interval first
 
             if (startInterval.start < lower - 1) {
-                AddRange(startInterval.start, lower - 1);
+                addRange(startInterval.start, lower - 1);
             }
 
             if (startInterval.end > upper + 1) {
-                AddRange(upper + 1, startInterval.end);
+                addRange(upper + 1, startInterval.end);
             }
 
             if (startInterval.end < upper) {
@@ -431,7 +431,7 @@ public class _99999RandomQuestions {
                     intervals.remove(i);
                 }
 
-                AddRange(upper + 1, endInterval.end);
+                addRange(upper + 1, endInterval.end);
             }
 
         }
