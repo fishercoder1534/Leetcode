@@ -23,6 +23,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_690.java) | O(n) | O(h) | Easy | DFS
+|688|[Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_688.java) | O(n^2) | O(n^2) | Medium | DP
 |687|[Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_687.java) | O(n) | O(h) | Easy | DFS
 |686|[Repeated String Match](https://leetcode.com/problems/repeated-string-match/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_686.java) | O(n*(m+n)) | O(m+n) | Easy | 
 |682|[Baseball Game](https://leetcode.com/problems/baseball-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_682.java) | O(n) | O(1) | Easy | 
