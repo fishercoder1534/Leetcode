@@ -356,7 +356,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |294|[Flip Game II](https://leetcode.com/problems/flip-game-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_294.java)| O(?) | O(?)| Medium| Backtracking
 |293|[Flip Game](https://leetcode.com/problems/flip-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_293.java)| O(n) | O(1)| Easy| 
 |292|[Nim Game](https://leetcode.com/problems/nim-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_292.java)| O(1)|O(1) | Easy| 
-|291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_291.java)| O(n)|O(n) | Hard| Recursion
+|291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_291.java)| O(n)|O(n) | Hard| Recursion, Backtracking
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_290.java)| O(n)| O(n) | Easy| HashMap 
 |289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_289.java)| O(m*n)|O(m*n), could be optimized to O(1) | Medium|
 |288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_288.java)| O(n)|O(1) | Easy| 
