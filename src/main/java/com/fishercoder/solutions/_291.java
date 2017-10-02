@@ -57,11 +57,11 @@ public class _291 {
                 }
 
                 //if it's match, great, then let's check the rest
-                return isMatch(str, i + s.length(), pattern, j+1, map, set);
+                return isMatch(str, i + s.length(), pattern, j + 1, map, set);
             }
 
             for (int k = i; k < str.length(); k++) {
-                String p = str.substring(i, k+1);
+                String p = str.substring(i, k + 1);
 
                 if (set.contains(p)) {
                     continue;
@@ -71,7 +71,7 @@ public class _291 {
                 set.add(p);
 
                 //continue to match the rest
-                if (isMatch(str, k+1, pattern, j+1, map, set)) {
+                if (isMatch(str, k + 1, pattern, j + 1, map, set)) {
                     return true;
                 }
 
