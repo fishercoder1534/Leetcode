@@ -95,6 +95,6 @@ public class _688 {
     }
 
     public static void main(String... args) {
-        System.out.println((double) 2/8);
+        System.out.println((double) 2 / 8);
     }
 }
