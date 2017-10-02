@@ -6,48 +6,82 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * 291. Word Pattern II
+ *
  * Given a pattern and a string str, find if str follows the same pattern.
-
- Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty substring in str.
+ * Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty substring in str.
 
  Examples:
  pattern = "abab", str = "redblueredblue" should return true.
  pattern = "aaaa", str = "asdasdasdasd" should return true.
  pattern = "aabb", str = "xyzabcxzyabc" should return false.
+
  Notes:
  You may assume both pattern and str contains only lowercase letters.
  */
 public class _291 {
-    Map<Character, String> map = new HashMap();
-    Set<String> set = new HashSet();
 
-    public boolean wordPatternMatch(String pattern, String str) {
-        if (pattern.isEmpty()) {
-            return str.isEmpty();
+    public static class Solution1 {
+        /**
+         * We can try recursively:
+         * say pattern is "abab", str is "redblueredblue"
+         * first we try if "a" matches with "r", "b" matches with "e", we find it's not, so we try to see if "b" matches "ed", and so on ...
+         * then eventually, we find this pattern:
+         * "a" matches "red"
+         * "b" matches "blue"
+         * then we'll just finish the str check based on this pattern
+         * */
+        public boolean wordPatternMatch(String pattern, String str) {
+            Map<Character, String> map = new HashMap();
+            Set<String> set = new HashSet();
+            return isMatch(str, 0, pattern, 0, map, set);
         }
-        if (map.containsKey(pattern.charAt(0))) {
-            String value = map.get(pattern.charAt(0));
-            if (str.length() < value.length() || !str.substring(0, value.length()).equals(value)) {
-                return false;
-            }
-            if (wordPatternMatch(pattern.substring(1), str.substring(value.length()))) {
+
+        private boolean isMatch(String str, int i, String pattern, int j, Map<Character, String> map, Set<String> set) {
+            //base case
+            if (i == str.length() && j == pattern.length()) {
                 return true;
             }
-        } else {
-            for (int i = 1; i <= str.length(); i++) {
-                if (set.contains(str.substring(0, i))) {
+            if (i == str.length() || j == pattern.length()) {
+                return false;
+            }
+
+            char c = pattern.charAt(j);
+
+            if (map.containsKey(c)) {
+                String s = map.get(c);
+
+                //check to see if we can use s to match str.substring(i, i + s.length())
+                if (!str.startsWith(s, i)) {
+                    return false;
+                }
+
+                //if it's match, great, then let's check the rest
+                return isMatch(str, i + s.length(), pattern, j+1, map, set);
+            }
+
+            for (int k = i; k < str.length(); k++) {
+                String p = str.substring(i, k+1);
+
+                if (set.contains(p)) {
                     continue;
                 }
-                map.put(pattern.charAt(0), str.substring(0, i));
-                set.add(str.substring(0, i));
-                if (wordPatternMatch(pattern.substring(1), str.substring(i))) {
+
+                map.put(c, p);
+                set.add(p);
+
+                //continue to match the rest
+                if (isMatch(str, k+1, pattern, j+1, map, set)) {
                     return true;
                 }
-                set.remove(str.substring(0, i));
-                map.remove(pattern.charAt(0));
-            }
-        }
-        return false;
-    }
 
+                //backtracking
+                map.remove(c);
+                set.remove(p);
+            }
+
+            //we've tried everything, but still no luck
+            return false;
+        }
+    }
 }
