@@ -71,8 +71,12 @@ public class _694 {
 
             @Override
             public boolean equals(Object o) {
-                if (this == o) return true;
-                if (!(o instanceof Quadrilateral)) return false;
+                if (this == o) {
+                    return true;
+                }
+                if (!(o instanceof Quadrilateral)) {
+                    return false;
+                }
 
                 Quadrilateral that = (Quadrilateral) o;
                 return this.area == that.area && checkDistance(that);
@@ -195,8 +199,7 @@ public class _694 {
             return uniqueShapeIslands.size();
         }
 
-        private boolean dfs(int i0, int j0, int i, int j
-                , int[][] grid, int m, int n, List<List<Integer>> island) {
+        private boolean dfs(int i0, int j0, int i, int j, int[][] grid, int m, int n, List<List<Integer>> island) {
             if (i < 0 || j < 0 || i >= m || j >= n || grid[i][j] <= 0) {
                 return false;
             }
