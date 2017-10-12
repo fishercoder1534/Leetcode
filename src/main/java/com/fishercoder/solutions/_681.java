@@ -33,10 +33,11 @@ public class _681 {
             int cur = 60 * Integer.parseInt(time.substring(0, 2));
             cur += Integer.parseInt(time.substring(3));
             Set<Integer> allowed = new HashSet();
-            for (char c : time.toCharArray())
+            for (char c : time.toCharArray()) {
                 if (c != ':') {
                     allowed.add(c - '0');
                 }
+            }
 
             while (true) {
                 cur = (cur + 1) % (24 * 60);
