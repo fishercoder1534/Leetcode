@@ -136,7 +136,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |542|[01 Matrix](https://leetcode.com/problems/01-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_542.java) | O(m*n) |O(n) | Medium | BFS
 |541|[Reverse String II](https://leetcode.com/problems/reverse-string-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_541.java) | O(n) |O(1) | Easy | String
 |540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_540.java) | O(n) |O(1) | Medium | 
-|539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MinimumTimeDifference.java) | O(n) |O(1) | Medium | String
+|539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/)|[Solution](../master/src/main/java/com/fishercoder/solutions/MinimumTimeDifference.java) | O(logn) |O(1) | Medium | String
 |538|[Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_538.java) | O(n) |O(h) | Easy | Tree
 |537|[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_537.java) | O(1) |O(1) | Medium | Math, String
 |536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_536.java) | O(n) |O(h) | Medium | Recursion, Stack
