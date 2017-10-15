@@ -21,4 +21,28 @@ public class _697Test {
         assertEquals(1, solution1.findShortestSubArray(nums));
     }
 
+    @Test
+    public void test2() {
+        nums = new int[]{1, 2, 2, 3, 1};
+        assertEquals(2, solution1.findShortestSubArray(nums));
+    }
+
+    @Test
+    public void test3() {
+        nums = new int[]{1, 2, 2, 3, 1, 1};
+        assertEquals(6, solution1.findShortestSubArray(nums));
+    }
+
+    @Test
+    public void test4() {
+        nums = new int[]{1, 2, 2, 3, 1, 1, 5};
+        assertEquals(6, solution1.findShortestSubArray(nums));
+    }
+
+    @Test
+    public void test5() {
+        nums = new int[]{1, 2, 2, 3, 1, 4, 2};
+        assertEquals(6, solution1.findShortestSubArray(nums));
+    }
+
 }
