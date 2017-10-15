@@ -24,7 +24,7 @@ import java.util.List;
 public class _46 {
 
     public static class Solution1 {
-        //this solution has a backtracking function that has a return type
+        //this solution has a backtracking function that its return type is not void
         public List<List<Integer>> permute(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             result.add(new ArrayList<>());
