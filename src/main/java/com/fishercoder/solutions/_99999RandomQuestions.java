@@ -12,7 +12,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -44,12 +43,6 @@ public class _99999RandomQuestions {
 //        System.out.println(getShiftedString("abcd", 1, 2));
 //        System.out.println(getShiftedString("abcd", 1, 0));
 
-//        int[] arr = new int[]{1,2,2,3,1};//should be 2
-//        int[] arr = new int[]{1,2,2,3,1,1};//should be 6
-//        int[] arr = new int[]{1,2,2,3,1,1,5};//should be 6
-        int[] arr = new int[]{1, 2, 2, 3, 1, 4, 2};//should be 6
-
-        System.out.println(degreeOfArray(arr));
     }
 
     /**
@@ -471,50 +464,6 @@ public class _99999RandomQuestions {
             sb.append(s.charAt(i++));
         }
         return sb.toString();
-    }
-
-    static int degreeOfArray(int[] arr) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < arr.length; i++) {
-            if (map.containsKey(arr[i])) {
-                map.put(arr[i], map.get(arr[i]) + 1);
-            } else {
-                map.put(arr[i], 1);
-            }
-        }
-        int degree = -1;
-        for (int key : map.keySet()) {
-            degree = Math.max(degree, map.get(key));
-        }
-        List<Integer> candidateNums = new ArrayList();
-        for (int key : map.keySet()) {
-            if (map.get(key) == degree) {
-                candidateNums.add(key);
-            }
-        }
-        int shortest = Integer.MAX_VALUE;
-        for (int candidate : candidateNums) {
-            shortest = Math.min(shortest, findLength(arr, candidate));
-        }
-        return shortest;
-    }
-
-    private static int findLength(int[] arr, int candidate) {
-        int firstAppearance = Integer.MAX_VALUE;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == candidate) {
-                firstAppearance = i;
-                break;
-            }
-        }
-        int lastAppearance = Integer.MAX_VALUE;
-        for (int i = arr.length - 1; i > firstAppearance; i--) {
-            if (arr[i] == candidate) {
-                lastAppearance = i;
-                break;
-            }
-        }
-        return (lastAppearance - firstAppearance) + 1;
     }
 
 }
