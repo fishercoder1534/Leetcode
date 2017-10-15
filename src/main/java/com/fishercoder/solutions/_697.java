@@ -58,23 +58,21 @@ public class _697 {
         }
 
         int findLength(int[] arr, int candidate) {
-            {
-                int firstAppearance = Integer.MAX_VALUE;
-                for (int i = 0; i < arr.length; i++) {
-                    if (arr[i] == candidate) {
-                        firstAppearance = i;
-                        break;
-                    }
+            int firstAppearance = Integer.MAX_VALUE;
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] == candidate) {
+                    firstAppearance = i;
+                    break;
                 }
-                int lastAppearance = arr.length - 1;
-                for (int i = arr.length - 1; i > firstAppearance; i--) {
-                    if (arr[i] == candidate) {
-                        lastAppearance = i;
-                        break;
-                    }
-                }
-                return (lastAppearance - firstAppearance) + 1;
             }
+            int lastAppearance = arr.length - 1;
+            for (int i = arr.length - 1; i > firstAppearance; i--) {
+                if (arr[i] == candidate) {
+                    lastAppearance = i;
+                    break;
+                }
+            }
+            return (lastAppearance - firstAppearance) + 1;
         }
     }
 }
