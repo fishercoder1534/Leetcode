@@ -1,6 +1,5 @@
 package com.fishercoder.solutions;
 
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -68,11 +67,15 @@ public class _642 {
     /**reference: https://discuss.leetcode.com/topic/96150/java-solution-trie-and-priorityqueue/3*/
     public class AutocompleteSystem {
 
-        Map<String, Integer> map = new HashMap<>();
-        List<Map.Entry<String, Integer>> answers = new ArrayList<>();
-        StringBuilder stringBuilder = new StringBuilder();
+        Map<String, Integer> map;
+        List<Map.Entry<String, Integer>> answers;
+        StringBuilder stringBuilder;
 
         public AutocompleteSystem(String[] sentences, int[] times) {
+            map = new HashMap<>();
+            answers = new ArrayList<>();
+            stringBuilder = new StringBuilder();
+
             for (int i = 0; i < sentences.length; i++) {
                 map.put(sentences[i], map.getOrDefault(sentences[i], 0) + times[i]);
             }
@@ -83,7 +86,7 @@ public class _642 {
             if (c == '#') {
                 map.put(stringBuilder.toString(), map.getOrDefault(stringBuilder.toString(), 0) + 1);
                 stringBuilder.setLength(0);
-                answers.clear();/**The use has finished typing, so we'll clean answers to get ready for next search*/
+                answers.clear();/**The user has finished typing, so we'll clean answers to get ready for next search*/
             } else {
                 stringBuilder.append(c);
                 /**when its length is 1, we find all the prefix that is a match and put them into answers,
