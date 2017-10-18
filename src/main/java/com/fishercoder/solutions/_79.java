@@ -1,10 +1,11 @@
 package com.fishercoder.solutions;
 
-/**Given a 2D board and a word, find if the word exists in the grid.
-
- The word can be constructed from letters of sequentially adjacent cell,
- where "adjacent" cells are those horizontally or vertically neighboring.
- The same letter cell may not be used more than once.
+/**
+ * 79. Word Search
+ * Given a 2D board and a word, find if the word exists in the grid.
+ * The word can be constructed from letters of sequentially adjacent cell,
+ * where "adjacent" cells are those horizontally or vertically neighboring.
+ * The same letter cell may not be used more than once.
 
  For example,
  Given board =
@@ -16,9 +17,55 @@ package com.fishercoder.solutions;
 
  word = "ABCCED", -> returns true,
  word = "SEE", -> returns true,
- word = "ABCB", -> returns false.*/
+ word = "ABCB", -> returns false.
+ */
+
 public class _79 {
-    class SolutionOnDiscuss {
+    public static class Solution1 {
+        //I made it this time, completely by myself! Cheers! This let me completely understand backtracking!
+        public boolean exist(char[][] board, String word) {
+            int m = board.length;
+            int n = board[0].length;
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    boolean[][] visited = new boolean[m][n];
+                    if (dfs(board, visited, i, j, word, 0)) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        final int[] dirs = new int[]{0, 1, 0, -1, 0};
+
+        boolean dfs(char[][] board, boolean[][] visited, int row, int col, String word, int index) {
+            if (index >= word.length() || word.charAt(index) != board[row][col]) {
+                return false;
+            } else if (index == word.length() - 1 && word.charAt(index) == board[row][col]) {
+                visited[row][col] = true;
+                return true;
+            }
+            visited[row][col] = true;//set it to true for this case
+            boolean result = false;
+            for (int i = 0; i < 4; i++) {
+                int nextRow = row + dirs[i];
+                int nextCol = col + dirs[i + 1];
+                if (nextRow < 0 || nextRow >= board.length || nextCol < 0 || nextCol >= board[0].length || visited[nextRow][nextCol]) {
+                    continue;
+                }
+                result = dfs(board, visited, nextRow, nextCol, word, index + 1);
+                if (result) {
+                    return result;
+                } else {
+                    visited[nextRow][nextCol] = false;//set it back to false if this road doesn't work to allow it for other paths, this is backtracking!!!
+                }
+            }
+            return result;
+        }
+    }
+
+    public static class Solution2 {
         //credit: https://discuss.leetcode.com/topic/21142/my-java-solution
 
         boolean[][] visited;
@@ -58,48 +105,6 @@ public class _79 {
 
     }
 
-    //I made it this time, completely by myself! Cheers! This let me completely understand backtracking!
-    public boolean exist(char[][] board, String word) {
-        int m = board.length;
-        int n = board[0].length;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                boolean[][] visited = new boolean[m][n];
-                if (dfs(board, visited, i, j, word, 0)) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    final int[] dirs = new int[]{0, 1, 0, -1, 0};
-
-    boolean dfs(char[][] board, boolean[][] visited, int row, int col, String word, int index) {
-        if (index >= word.length() || word.charAt(index) != board[row][col]) {
-            return false;
-        } else if (index == word.length() - 1 && word.charAt(index) == board[row][col]) {
-            visited[row][col] = true;
-            return true;
-        }
-        visited[row][col] = true;//set it to true for this case
-        boolean result = false;
-        for (int i = 0; i < 4; i++) {
-            int nextRow = row + dirs[i];
-            int nextCol = col + dirs[i + 1];
-            if (nextRow < 0 || nextRow >= board.length || nextCol < 0 || nextCol >= board[0].length || visited[nextRow][nextCol]) {
-                continue;
-            }
-            result = dfs(board, visited, nextRow, nextCol, word, index + 1);
-            if (result) {
-                return result;
-            } else {
-                visited[nextRow][nextCol] = false;//set it back to false if this road doesn't work to allow it for other paths, this is backtracking!!!
-            }
-        }
-        return result;
-    }
-
     public static void main(String... strings) {
         _79 test = new _79();
 //        char[][] board = new char[][]{
@@ -122,6 +127,7 @@ public class _79 {
                 {'A', 'D', 'E', 'E'},
         };
         String word = "ABCEFSADEESE";
-        System.out.println(test.exist(board, word));
+        Solution1 solution1 = new Solution1();
+        System.out.println(solution1.exist(board, word));
     }
 }
