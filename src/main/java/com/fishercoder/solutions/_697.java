@@ -1,6 +1,7 @@
 package com.fishercoder.solutions;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,7 +9,8 @@ import java.util.Map;
 /**
  * 697. Degree of an Array
  *
- * Given a non-empty array of non-negative integers nums, the degree of this array is defined as the maximum frequency of any one of its elements.
+ * Given a non-empty array of non-negative integers nums,
+ * the degree of this array is defined as the maximum frequency of any one of its elements.
  * Your task is to find the smallest possible length of a (contiguous) subarray of nums, that has the same degree as nums.
 
  Example 1:
@@ -73,6 +75,31 @@ public class _697 {
                 }
             }
             return (lastAppearance - firstAppearance) + 1;
+        }
+    }
+
+    public static class Solution2 {
+        public int findShortestSubArray(int[] nums) {
+            Map<Integer, Integer> count = new HashMap<>();
+            Map<Integer, Integer> left = new HashMap<>();
+            Map<Integer, Integer> right = new HashMap<>();
+
+            for (int i = 0; i < nums.length; i++) {
+                count.put(nums[i], count.getOrDefault(nums[i], 0) + 1);
+                if (!left.containsKey(nums[i])) {
+                    left.put(nums[i], i);
+                }
+                right.put(nums[i], i);
+            }
+
+            int result = nums.length;
+            int degree = Collections.max(count.values());
+            for (int num : count.keySet()) {
+                if (count.get(num) == degree) {
+                    result = Math.min(result, right.get(num) - left.get(num) + 1);
+                }
+            }
+            return result;
         }
     }
 }
