@@ -38,16 +38,18 @@ public class _635 {
     /**credit: https://discuss.leetcode.com/topic/94449/concise-java-solution*/
     public static class LogSystem {
 
-        List<String[]> timestamps = new LinkedList<>();
-
-        List<String> units = Arrays.asList("Year", "Month", "Day", "Hour", "Minute", "Second");
-
         /**These indices denote and string endings of timestamps of different granularity, i.e.
          * timestamp[1] in timestamps: "2017:01:01:22:59:59"
          * -> 2017: 4, 01: 7, 01: 10, 22: 13, 59: 16, 59: 19*/
-        int[] indices = new int[]{4, 7, 10, 13, 16, 19};
+
+        List<String[]> timestamps;
+        List<String> units;
+        int[] indices;
 
         public LogSystem() {
+            timestamps = new LinkedList<>();
+            units = Arrays.asList("Year", "Month", "Day", "Hour", "Minute", "Second");
+            indices = new int[]{4, 7, 10, 13, 16, 19};
         }
 
         public void put(int id, String timestamp) {
