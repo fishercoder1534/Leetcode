@@ -5,16 +5,18 @@ import com.fishercoder.common.classes.TreeNode;
 import java.util.HashMap;
 import java.util.Map;
 
-/**Given preorder and inorder traversal of a tree, construct the binary tree.
+/**
+ * 105. Construct Binary Tree from Preorder and Inorder Traversal
+ * Given preorder and inorder traversal of a tree, construct the binary tree.
 
  Note:
- You may assume that duplicates do not exist in the tree.*/
+ You may assume that duplicates do not exist in the tree.
+ */
 public class _105 {
 
 	/**
 	 * credit: https://discuss.leetcode.com/topic/29838/5ms-java-clean-solution-with-caching
 	 * use HashMap as the cache so that accessing inorder index becomes O(1) time
-	 * <p>
 	 * Note: The first element of preorder array is the root!
 	 */
 	public TreeNode buildTree(int[] preorder, int[] inorder) {
@@ -24,10 +26,10 @@ public class _105 {
 		}
 
 		/**At the beginning, both start from 0 to nums.length-1*/
-		return buildTree(preorder, 0, preorder.length - 1, 0, inorder.length - 1, inorderMap);
+		return buildTree(preorder, 0, preorder.length - 1, inorderMap, 0, inorder.length - 1);
 	}
 
-	private TreeNode buildTree(int[] preorder, int preStart, int preEnd, int inStart, int inEnd, Map<Integer, Integer> inorderMap) {
+	private TreeNode buildTree(int[] preorder, int preStart, int preEnd, Map<Integer, Integer> inorderMap, int inStart, int inEnd) {
 		if (preStart > preEnd || inStart > inEnd) {
 			return null;
 		}
@@ -43,8 +45,8 @@ public class _105 {
 		 *
 		 * since inRoot is being used already in this recursion call, that's why we use inRoot-1 and inRoot+1
 		 * this part is the same for both Leetcode 105 and Leetcode 106.*/
-		root.left = buildTree(preorder, preStart + 1, preStart + numsLeft, inStart, inRoot - 1, inorderMap);
-		root.right = buildTree(preorder, preStart + numsLeft + 1, preEnd, inRoot + 1, inEnd, inorderMap);
+		root.left = buildTree(preorder, preStart + 1, preStart + numsLeft, inorderMap, inStart, inRoot - 1);
+		root.right = buildTree(preorder, preStart + numsLeft + 1, preEnd, inorderMap, inRoot + 1, inEnd);
 		return root;
 	}
 
