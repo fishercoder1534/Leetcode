@@ -331,7 +331,7 @@ public class _99999RandomQuestions {
                 return;
             }
 
-            /**Since intervals are sorted, I can use binary search for this query range to achieve log(n) (best) time complexity*/
+            /**Since intervals are sorted, one can use binary search for this query range to achieve log(n) (best) time complexity*/
             int left = 0;
             int right = intervals.size() - 1;
             int start = Integer.MIN_VALUE;//this is the index of the interval that has overlapping with "lower"
