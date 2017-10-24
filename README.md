@@ -36,6 +36,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |688|[Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_688.java) | O(n^2) | O(n^2) | Medium | DP
 |687|[Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_687.java) | O(n) | O(h) | Easy | DFS
 |686|[Repeated String Match](https://leetcode.com/problems/repeated-string-match/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_686.java) | O(n*(m+n)) | O(m+n) | Easy | 
+|684|[Redundant Connection](https://leetcode.com/problems/redundant-connection/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_684.java) | O(n) | O(n) | Medium | Union Find
 |682|[Baseball Game](https://leetcode.com/problems/baseball-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_682.java) | O(n) | O(1) | Easy | 
 |681|[Next Closest Time](https://leetcode.com/problems/next-closest-time/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_681.java) | O(1) | O(1) | Medium |
 |680|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_680.java) | O(n) | O(1) | Easy | String
