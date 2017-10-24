@@ -35,9 +35,4 @@ public class _684 {
         int[] result = new int[]{};
         return result;
     }
-
-    public static void main(String... args) {
-        System.out.println("a".codePointAt(0));
-    }
-
 }
