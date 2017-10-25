@@ -41,6 +41,7 @@ public class _340 {
     }
 
     public static class Solution2 {
+        /**This is a more generic solution for any characters.*/
         public int lengthOfLongestSubstringKDistinct(String s, int k) {
             Map<Character, Integer> map = new HashMap<>();
             int longest = 0;
