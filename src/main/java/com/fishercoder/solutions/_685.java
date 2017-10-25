@@ -41,7 +41,9 @@ import java.util.Set;
  */
 public class _685 {
     public static class Solution1 {
-        /**My original solution, failed by _685Test.test3*/
+        /**
+         * My original solution, failed by _685Test.test3
+         */
         class UnionFind {
             int[] ids;
             Set<Integer> nodes;
@@ -124,7 +126,7 @@ public class _685 {
                     }
                     return result;
                 } else {
-                    return edges[m-1];
+                    return edges[m - 1];
                 }
             }
 
@@ -198,7 +200,8 @@ public class _685 {
                 if (edges[i][1] == 0) {
                     continue;
                 }
-                int child = edges[i][1], father = edges[i][0];
+                int child = edges[i][1];
+                int father = edges[i][0];
                 if (root(parent, father) == child) {
                     if (can1[0] == -1) {
                         return edges[i];
