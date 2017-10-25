@@ -1,13 +1,12 @@
 package com.fishercoder.solutions;
 
 /**
+ * 375. Guess Number Higher or Lower II
+ *
  * We are playing the Guess Game. The game is as follows:
-
- I pick a number from 1 to n. You have to guess which number I picked.
-
- Every time you guess wrong, I'll tell you whether the number I picked is higher or lower.
-
- However, when you guess a particular number x, and you guess wrong, you pay $x. You win the game when you guess the number I picked.
+ * I pick a number from 1 to n. You have to guess which number I picked.
+ * Every time you guess wrong, I'll tell you whether the number I picked is higher or lower.
+ * However, when you guess a particular number x, and you guess wrong, you pay $x. You win the game when you guess the number I picked.
 
  Example:
 
@@ -31,47 +30,51 @@ package com.fishercoder.solutions;
  As a follow-up, how would you modify your code to solve the problem of minimizing the expected loss, instead of the worst-case loss?
  */
 public class _375 {
-    public int getMoneyAmount(int n) {
-        int[][] table = new int[n + 1][n + 1];
-        return dp(table, 1, n);
+    public static class Solution1 {
+        public int getMoneyAmount(int n) {
+            int[][] table = new int[n + 1][n + 1];
+            return dp(table, 1, n);
+        }
+
+        private int dp(int[][] table, int s, int e) {
+            if (s >= e) {
+                return 0;
+            }
+            if (table[s][e] != 0) {
+                return table[s][e];
+            }
+            int res = Integer.MAX_VALUE;
+            for (int i = s; i <= e; i++) {
+                int temp = i + Math.max(dp(table, s, i - 1), dp(table, i + 1, e));
+                res = Math.min(res, temp);
+            }
+            table[s][e] = res;
+            return res;
+        }
     }
 
-    private int dp(int[][] table, int s, int e) {
-        if (s >= e) {
-            return 0;
-        }
-        if (table[s][e] != 0) {
-            return table[s][e];
-        }
-        int res = Integer.MAX_VALUE;
-        for (int i = s; i <= e; i++) {
-            int temp = i + Math.max(dp(table, s, i - 1), dp(table, i + 1, e));
-            res = Math.min(res, temp);
-        }
-        table[s][e] = res;
-        return res;
-    }
-
-    public int getMoneyAmount2(int n) {
-        if (n == 1) {
-            return 0;
-        }
-        int[][] dp = new int[n + 1][n + 1];
-        for (int x = 1; x < n; x++) {
-            for (int i = 0; i + x <= n; i++) {
-                int j = i + x;
-                dp[i][j] = Integer.MAX_VALUE;
-                for (int k = i; k <= j; k++) {
-                    dp[i][j] = Math.min(dp[i][j], k + Math.max(k - 1 >= i ? dp[i][k - 1] : 0, j >= k + 1 ? dp[k + 1][j] : 0));
+    public static class Solution2 {
+        public int getMoneyAmount(int n) {
+            if (n == 1) {
+                return 0;
+            }
+            int[][] dp = new int[n + 1][n + 1];
+            for (int x = 1; x < n; x++) {
+                for (int i = 0; i + x <= n; i++) {
+                    int j = i + x;
+                    dp[i][j] = Integer.MAX_VALUE;
+                    for (int k = i; k <= j; k++) {
+                        dp[i][j] = Math.min(dp[i][j], k + Math.max(k - 1 >= i ? dp[i][k - 1] : 0, j >= k + 1 ? dp[k + 1][j] : 0));
+                    }
                 }
             }
-        }
-        for (int i = 0; i < n + 1; i++) {
-            for (int j = 0; j < n + 1; j++) {
-                System.out.print(dp[i][j] + " ");
+            for (int i = 0; i < n + 1; i++) {
+                for (int j = 0; j < n + 1; j++) {
+                    System.out.print(dp[i][j] + " ");
+                }
+                System.out.println();
             }
-            System.out.println();
+            return dp[1][n];
         }
-        return dp[1][n];
     }
 }
