@@ -2,6 +2,7 @@ package com.fishercoder.solutions;
 
 /**
  * 79. Word Search
+ *
  * Given a 2D board and a word, find if the word exists in the grid.
  * The word can be constructed from letters of sequentially adjacent cell,
  * where "adjacent" cells are those horizontally or vertically neighboring.
@@ -26,9 +27,9 @@ public class _79 {
         public boolean exist(char[][] board, String word) {
             int m = board.length;
             int n = board[0].length;
+            boolean[][] visited = new boolean[m][n];
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
-                    boolean[][] visited = new boolean[m][n];
                     if (dfs(board, visited, i, j, word, 0)) {
                         return true;
                     }
@@ -105,29 +106,4 @@ public class _79 {
 
     }
 
-    public static void main(String... strings) {
-        _79 test = new _79();
-//        char[][] board = new char[][]{
-//                {'A','B','C','E'},
-//                {'S','F','C','S'},
-//                {'A','D','E','E'},
-//        };
-//        String word = "ABCCED";
-//        String word = "SEE";
-//        String word = "ABCD";
-
-//        char[][] board = new char[][]{
-//                {'a','a'},
-//        };
-//        String word = "aaa";
-
-        char[][] board = new char[][]{
-                {'A', 'B', 'C', 'E'},
-                {'S', 'F', 'E', 'S'},
-                {'A', 'D', 'E', 'E'},
-        };
-        String word = "ABCEFSADEESE";
-        Solution1 solution1 = new Solution1();
-        System.out.println(solution1.exist(board, word));
-    }
 }
