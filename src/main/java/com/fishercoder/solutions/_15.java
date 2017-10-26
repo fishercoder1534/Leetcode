@@ -27,6 +27,7 @@ public class _15 {
         if (nums == null || nums.length == 0) {
             return result;
         }
+
         Arrays.sort(nums);
         for (int i = 0; i < nums.length; i++) {
             if (i >= 1 && nums[i] == nums[i - 1]) {
