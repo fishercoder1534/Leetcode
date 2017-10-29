@@ -23,11 +23,4 @@ public class _719Test {
         assertEquals(0, solution1.smallestDistancePair(nums, 1));
         assertEquals(0, solution2.smallestDistancePair(nums, 1));
     }
-
-    @Test
-    public void test2() {
-        nums = new int[]{};
-        assertEquals(0, solution1.smallestDistancePair(nums, 1));
-        assertEquals(0, solution2.smallestDistancePair(nums, 1));
-    }
 }
