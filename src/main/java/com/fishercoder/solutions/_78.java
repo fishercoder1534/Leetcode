@@ -24,15 +24,13 @@ import java.util.List;
 
 public class _78 {
 
-    public static class IterativeSolution {
-
+    public static class Solution1 {
         public static List<List<Integer>> subsets(int[] nums) {
             List<List<Integer>> result = new ArrayList();
-            List<Integer> empty = new ArrayList();
-            result.add(empty);
             if (nums == null) {
                 return result;
             }
+            result.add(new ArrayList());
             for (int i = 0; i < nums.length; i++) {
                 List<List<Integer>> temp = new ArrayList();
                 //you'll have to create a new one here, otherwise, it'll throw ConcurrentModificationException.
@@ -45,25 +43,44 @@ public class _78 {
             }
             return result;
         }
-
     }
 
-    public static class BacktrackingSolution {
-
+    public static class Solution2 {
         public List<List<Integer>> subsets(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             backtracking(result, new ArrayList(), nums, 0);
             return result;
         }
 
-        void backtracking(List<List<Integer>> result, List<Integer> temp, int[] nums, int start) {
-            result.add(new ArrayList(temp));
+        void backtracking(List<List<Integer>> result, List<Integer> list, int[] nums, int start) {
+            result.add(new ArrayList(list));
             for (int i = start; i < nums.length; i++) {
-                temp.add(nums[i]);
-                backtracking(result, temp, nums, i + 1);
-                temp.remove(temp.size() - 1);
+                list.add(nums[i]);
+                backtracking(result, list, nums, i + 1);
+                list.remove(list.size() - 1);
             }
         }
+    }
 
+    public static class Solution3 {
+        /**
+         * This is just a slight modification of Solution2, pay close to attention to notice the difference between them.
+         */
+        public List<List<Integer>> subsets(int[] nums) {
+            List<List<Integer>> result = new ArrayList<>();
+            List<Integer> list = new ArrayList<>();
+            result.add(list);
+            backtracking(result, list, nums, 0);
+            return result;
+        }
+
+        private void backtracking(List<List<Integer>> result, List<Integer> list, int[] nums, int start) {
+            for (int i = start; i < nums.length; i++) {
+                list.add(nums[i]);
+                result.add(new ArrayList<>(list));
+                backtracking(result, list, nums, i + 1);
+                list.remove(list.size() - 1);
+            }
+        }
     }
 }
