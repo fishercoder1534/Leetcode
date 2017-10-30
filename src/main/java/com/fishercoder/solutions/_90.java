@@ -83,13 +83,13 @@ public class _90 {
 
         private void backtracking(int[] nums, int start, List<List<Integer>> result, List<Integer> list) {
             for (int i = start; i < nums.length; i++) {
-                if (i > start && nums[i] == nums[i-1]) {
+                if (i > start && nums[i] == nums[i - 1]) {
                     continue;
                 }
                 list.add(nums[i]);
                 result.add(new ArrayList<>(list));
-                backtracking(nums, i+1, result, list);
-                list.remove(list.size()-1);
+                backtracking(nums, i + 1, result, list);
+                list.remove(list.size() - 1);
             }
         }
     }

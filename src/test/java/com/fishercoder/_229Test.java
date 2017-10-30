@@ -26,7 +26,7 @@ public class _229Test {
     @Test
     public void test2() {
         nums = new int[]{1, 2};
-        assertEquals(Arrays.asList(1, 2), solution2.majorityElement(nums));
+        assertEquals(Arrays.asList(2, 1), solution2.majorityElement(nums));
     }
 
     @Test
