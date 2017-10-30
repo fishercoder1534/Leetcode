@@ -33,10 +33,7 @@ import java.util.Set;
 
 public class _127 {
 
-    /**this one https://discuss.leetcode.com/topic/29303/two-end-bfs-in-java-31ms fails by test case _127Test.test1().
-     * All transformed words, including endWord must be in wordList.
-     *
-     * And we can share a visited set from both ends since we cannot remove word from dict.*/
+    /**We can share a visited set from both ends since we cannot remove word from dict.*/
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> beginSet = new HashSet<>();
         Set<String> endSet = new HashSet<>();
