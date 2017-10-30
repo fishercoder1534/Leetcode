@@ -1,6 +1,5 @@
 package com.fishercoder.solutions;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -25,7 +24,7 @@ import java.util.Set;
  */
 public class _90 {
 
-    public static class IterativeSolution {
+    public static class Solution1 {
         public static List<List<Integer>> subsetsWithDup(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             List<Integer> empty = new ArrayList();
@@ -51,7 +50,7 @@ public class _90 {
         }
     }
     
-    public static class BacktrackingSolution {
+    public static class Solution2 {
         public List<List<Integer>> subsetsWithDup(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             Arrays.sort(nums);
@@ -72,4 +71,26 @@ public class _90 {
         }
     }
 
+    public static class Solution3 {
+        public List<List<Integer>> subsetsWithDup(int[] nums) {
+            List<List<Integer>> result = new ArrayList<>();
+            List<Integer> list = new ArrayList<>();
+            result.add(list);
+            Arrays.sort(nums);
+            backtracking(nums, 0, result, list);
+            return result;
+        }
+
+        private void backtracking(int[] nums, int start, List<List<Integer>> result, List<Integer> list) {
+            for (int i = start; i < nums.length; i++) {
+                if (i > start && nums[i] == nums[i-1]) {
+                    continue;
+                }
+                list.add(nums[i]);
+                result.add(new ArrayList<>(list));
+                backtracking(nums, i+1, result, list);
+                list.remove(list.size()-1);
+            }
+        }
+    }
 }
