@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by fishercoder on 4/30/17.
- */
 public class _567Test {
     private static _567 test;
     private static boolean expected;
