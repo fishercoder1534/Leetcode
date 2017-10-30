@@ -159,7 +159,9 @@ public class _472 {
 		}
 
 		boolean canForm(String word, Set<String> dict) {
-			if (dict.isEmpty()) return false;
+			if (dict.isEmpty()) {
+				return false;
+			}
 			boolean[] dp = new boolean[word.length() + 1];
 			dp[0] = true;
 			for (int i = 1; i <= word.length(); i++) {
