@@ -38,13 +38,10 @@ public class _216 {
         if (n > 0) {
             for (int i = start; i < nums.length; i++) {
                 curr.add(nums[i]);
-                /** it needs to be a unique set of numbers, so we need to set it
-                 as i+1 here: each number is used only once in this array: [1,2,3,4,5,6,7,8,9]*/
                 backtracking(k, n - nums[i], nums, i + 1, curr, result);
                 curr.remove(curr.size() - 1);
             }
         } else if (n == 0 && curr.size() == k) {
-            //this is the major difference here: check size of curr list is of k before adding it
             result.add(new ArrayList(curr));
         }
     }
