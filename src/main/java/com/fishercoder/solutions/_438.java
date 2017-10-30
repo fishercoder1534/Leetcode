@@ -3,7 +3,9 @@ package com.fishercoder.solutions;
 import java.util.ArrayList;
 import java.util.List;
 
-/**438. Find All Anagrams in a String
+/**
+ * 438. Find All Anagrams in a String
+ *
  * Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
  Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100.
 
@@ -33,7 +35,7 @@ import java.util.List;
 public class _438 {
     public static class Solution1 {
         /**
-         * O(m*n) solution, my original and most intuitive one, but kind of brute force.
+         * O(m*n) solution, my original and most intuitive one, but sort of brute force, when m is close to n, it becomes O(n^2) runtime complexity.
          */
         public List<Integer> findAnagrams(String s, String p) {
             List<Integer> result = new ArrayList();
@@ -96,12 +98,5 @@ public class _438 {
             }
             return result;
         }
-    }
-
-    public static void main(String... args) {
-        Solution2 test = new Solution2();
-        String s = "cbaebabacd";
-        String p = "abc";
-        test.findAnagrams(s, p);
     }
 }
