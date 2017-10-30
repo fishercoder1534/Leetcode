@@ -5,6 +5,7 @@ import java.util.Set;
 
 /**
  * 139. Word Break
+ *
  * Given a non-empty string s and a dictionary wordDict containing a list of non-empty words,
  * determine if s can be segmented into a space-separated sequence of one or more dictionary words.
  * You may assume the dictionary does not contain duplicate words.
@@ -22,10 +23,8 @@ import java.util.Set;
 
 public class _139 {
 
-    public static class PureDPSolution {
-        /**
-         * This beats 70.10% submissions.
-         */
+    public static class Solution1 {
+        /**this beats 70.46% submission. */
         public boolean wordBreak(String s, List<String> wordDict) {
             int n = s.length();
             boolean[] dp = new boolean[n + 1];
@@ -42,9 +41,10 @@ public class _139 {
         }
     }
 
-    public static class ModifiedDPAndPruningSolution {
+    public static class Solution2 {
         /**
-         * This beats 86.09% submissions.
+         * Added pruning.
+         * this beats 89.91% submissions.
          */
         public boolean wordBreak(String s, List<String> wordDict) {
             int maxLen = Integer.MIN_VALUE;
@@ -70,9 +70,10 @@ public class _139 {
         }
     }
 
-    public static class DPAndPruningSolution {
+    public static class Solution3 {
         /**
-         * This beats 97.08% submissions.
+         * Added pruning, plus start from the end to check.
+         * This beats 95.20% submissions.
          */
         public boolean wordBreak(String s, Set<String> wordDict) {
             int maxLen = Integer.MIN_VALUE;
