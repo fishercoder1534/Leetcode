@@ -46,7 +46,7 @@ public class _380 {
      * boolean param_2 = obj.delete(val);
      * int param_3 = obj.getRandom();
      */
-
+//TODO: this is not ideal, optimize it.
     public static class RandomizedSet {
 
         Map<Integer, Integer> forwardMap;//key is auto increment index, value if the inserted val
