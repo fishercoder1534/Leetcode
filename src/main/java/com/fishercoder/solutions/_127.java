@@ -7,8 +7,7 @@ import java.util.Set;
 /**
  * 127. Word Ladder
  *
- *  Given two words (beginWord and endWord),
- *  and a dictionary's word list,
+ *  Given two words (beginWord and endWord), and a dictionary's word list,
  *  find the length of shortest transformation sequence from beginWord to endWord, such that:
  *  Only one letter can be changed at a time.
  *  Each transformed word must exist in the word list. Note that beginWord is not a transformed word.
@@ -33,7 +32,6 @@ import java.util.Set;
 
 public class _127 {
 
-    /**We can share a visited set from both ends since we cannot remove word from dict.*/
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> beginSet = new HashSet<>();
         Set<String> endSet = new HashSet<>();
@@ -48,13 +46,7 @@ public class _127 {
         }
 
         while (!beginSet.isEmpty() && !endSet.isEmpty()) {
-            if (beginSet.size() > endSet.size()) {
-                Set<String> temp = beginSet;
-                beginSet = endSet;
-                endSet = temp;
-            }
-
-            Set<String> temp = new HashSet<>();
+            Set<String> nextBeginSet = new HashSet<>();
             for (String word : beginSet) {
                 char[] chars = word.toCharArray();
                 for (int i = 0; i < chars.length; i++) {
@@ -68,14 +60,14 @@ public class _127 {
 
                         if (!visited.contains(newWord) && dict.contains(newWord)) {
                             visited.add(newWord);
-                            temp.add(newWord);
+                            nextBeginSet.add(newWord);
                         }
                         chars[i] = old;
                     }
                 }
             }
 
-            beginSet = temp;
+            beginSet = nextBeginSet;
             len++;
         }
         return 0;
