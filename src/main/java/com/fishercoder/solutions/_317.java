@@ -4,7 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * You want to build a house on an empty land which reaches all buildings in the shortest amount of distance. You can only move up, down, left and right. You are given a 2D grid of values 0, 1 or 2, where:
+ * 317. Shortest Distance from All Buildings
+ *
+ * You want to build a house on an empty land which reaches all buildings in the shortest amount of distance.
+ * You can only move up, down, left and right. You are given a 2D grid of values 0, 1 or 2, where:
 
  Each 0 marks an empty land which you can pass by freely.
  Each 1 marks a building which you cannot pass through.
@@ -23,6 +26,7 @@ import java.util.Queue;
  Note:
  There will be at least one building. If it is not possible to build such house according to the above rules, return -1.
  */
+
 public class _317 {
 
     public int shortestDistance(int[][] grid) {
