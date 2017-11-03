@@ -36,6 +36,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |693|[Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_693.java) | O(n) | O(1) | Easy | 
 |692|[Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_692.java) | O(nlogk) | O(n) | Medium | 
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_690.java) | O(n) | O(h) | Easy | DFS
+|689|[Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_689.java) | O(n) | O(n) | Hard | DP
 |688|[Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_688.java) | O(n^2) | O(n^2) | Medium | DP
 |687|[Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_687.java) | O(n) | O(h) | Easy | DFS
 |686|[Repeated String Match](https://leetcode.com/problems/repeated-string-match/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_686.java) | O(n*(m+n)) | O(m+n) | Easy | 
