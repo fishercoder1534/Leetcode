@@ -295,7 +295,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |373|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_373.java)| O(klogk)|O(k) | Medium| Heap
 |372|[Super Pow](https://leetcode.com/problems/super-pow/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_372.java)| O(n)|O(1) | Medium| Math
 |371|[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_371.java)| O(n)|O(1) | Easy| 
-|370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_370.java)| O(n+k)|O(1) | Medium| 
+|370|[Range Addition](https://leetcode.com/problems/range-addition/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_370.java)| O(n+k)|O(1) | Medium|Array 
 |369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_369.java)| O(n)|O(1) | Medium| Linked List
 |368|[Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_368.java)| O(n^2)|O(n) | Medium| DP
 |367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_367.java)| O(n)|O(1) | Medium| 
