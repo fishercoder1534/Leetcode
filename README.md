@@ -656,6 +656,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
 |627|[Swap Salary](https://leetcode.com/problems/swap-salary/)|[Solution](../master/database/_627.sql) | | | Easy |
+|626|[Exchange Seats](https://leetcode.com/problems/exchange-seats/)|[Solution](../master/database/_626.sql) | | | Medium |
 |620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|[Solution](../master/database/_620.sql) | | | Easy |
 |619|[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)|[Solution](../master/database/_619.sql) | | | Easy |
 |618|[Students Report By Geography](https://leetcode.com/problems/students-report-by-geography/)|[Solution](../master/database/_618.sql) | | | Hard | Session Variables
