@@ -2,7 +2,6 @@ package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.solutions._515;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -13,21 +12,16 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class _515Test {
-    private static _515 test;
+    private static _515.Solution1 solution1;
+    private static _515.Solution2 solution2;
     private static List<Integer> expected;
     private static List<Integer> actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup() {
-        test = new _515();
-    }
-
-    @Before
-    public void setupForEachTest() {
-        expected = new ArrayList<>();
-        actual = new ArrayList<>();
-        root = new TreeNode(0);
+        solution1 = new _515.Solution1();
+        solution2 = new _515.Solution2();
     }
 
     @Test
@@ -36,16 +30,20 @@ public class _515Test {
         root.left = new TreeNode(3);
         root.right = new TreeNode(2);
         expected = Arrays.asList(1, 3);
-        actual = test.largestValues(root);
+        actual = solution1.largestValues(root);
         assertEquals(expected, actual);
 
+        actual = solution2.largestValues(root);
+        assertEquals(expected, actual);
     }
 
     @Test
     public void test2() {
         expected = new ArrayList<>();
-        actual = test.largestValues(null);
+        actual = solution1.largestValues(null);
         assertEquals(expected, actual);
 
+        actual = solution2.largestValues(null);
+        assertEquals(expected, actual);
     }
 }
