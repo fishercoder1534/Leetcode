@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|721|[Accounts Merge](https://leetcode.com/problems/accounts-merge/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_721.java) |  | | Medium | DFS, Union Find
 |720|[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_720.java) | O(∑wi) where wi is the length of words[i] | O(∑wi) where wi is the length of words[i] | Easy | Trie
 |719|[Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_719.java) | O(nlogw + nlogn) | O(1) | Hard | Binary Search
 |718|[Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_718.java) | O(m*n) | O(m*n) | Medium | DP
