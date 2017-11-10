@@ -48,6 +48,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |686|[Repeated String Match](https://leetcode.com/problems/repeated-string-match/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_686.java) | O(n*(m+n)) | O(m+n) | Easy | 
 |685|[Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_685.java) | O(n) | O(n) | Hard | Union Find
 |684|[Redundant Connection](https://leetcode.com/problems/redundant-connection/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_684.java) | O(n) | O(n) | Medium | Union Find
+|683|[K Empty Slots](https://leetcode.com/problems/k-empty-slots/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_683.java) | O(n) | O(n) | Hard |
 |682|[Baseball Game](https://leetcode.com/problems/baseball-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_682.java) | O(n) | O(1) | Easy | 
 |681|[Next Closest Time](https://leetcode.com/problems/parents-closest-time/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_681.java) | O(1) | O(1) | Medium |
 |680|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_680.java) | O(n) | O(1) | Easy | String
