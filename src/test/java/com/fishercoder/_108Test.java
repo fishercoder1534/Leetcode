@@ -20,4 +20,10 @@ public class _108Test {
         TreeUtils.printBinaryTree(solution1.sortedArrayToBST(nums));
     }
 
+    @Test
+    public void test2() {
+        nums = new int[]{};
+        TreeUtils.printBinaryTree(solution1.sortedArrayToBST(nums));
+    }
+
 }
