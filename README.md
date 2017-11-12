@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|725|[Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_725.java) | O(n) | O(1) | Medium | LinkedList
 |724|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_724.java) | O(n) | O(1) | Easy | Array
 |723|[Candy Crush](https://leetcode.com/problems/candy-crush/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_723.java) | O((r*c)^2) | O((r*c)) | Medium | Array, Two Pointers
 |721|[Accounts Merge](https://leetcode.com/problems/accounts-merge/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_721.java) |  | | Medium | DFS, Union Find
