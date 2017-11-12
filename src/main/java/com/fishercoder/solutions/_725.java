@@ -75,4 +75,36 @@ public class _725 {
             return len;
         }
     }
+
+    public static class Solution2 {
+        /**More concise version*/
+        public ListNode[] splitListToParts(ListNode root, int k) {
+            int len = getLength(root);
+            int aveSize = len / k;
+            int extra = len % k;
+            ListNode[] result = new ListNode[k];
+            ListNode prev = null;
+            for (int i = 0; i < k; i++, extra--) {
+                result[i] = root;
+                for (int j = 0; j < aveSize + (extra > 0 ? 1 : 0); j++) {
+                    prev = root;
+                    root = root.next;
+                }
+                if (prev != null) {
+                    prev.next = null;
+                }
+            }
+            return result;
+        }
+
+        private int getLength(ListNode root) {
+            int len = 0;
+            ListNode tmp = root;
+            while (tmp != null) {
+                len++;
+                tmp = tmp.next;
+            }
+            return len;
+        }
+    }
 }
