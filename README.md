@@ -22,7 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
-|724|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_724.java) | O(n) | O(n) | Easy | Array
+|724|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_724.java) | O(n) | O(1) | Easy | Array
 |723|[Candy Crush](https://leetcode.com/problems/candy-crush/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_723.java) | O((r*c)^2) | O((r*c)) | Medium | Array, Two Pointers
 |721|[Accounts Merge](https://leetcode.com/problems/accounts-merge/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_721.java) |  | | Medium | DFS, Union Find
 |720|[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_720.java) | O(∑wi) where wi is the length of words[i] | O(∑wi) where wi is the length of words[i] | Easy | Trie
