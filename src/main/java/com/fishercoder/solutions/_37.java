@@ -1,57 +1,59 @@
 package com.fishercoder.solutions;
 
 /**
+ * 37. Sudoku Solver
+ *
  * Write a program to solve a Sudoku puzzle by filling the empty cells.
  * Empty cells are indicated by the character '.'.
  * You may assume that there will be only one unique solution.
-  * A sudoku puzzle...
- * ...and its solution numbers marked in red.
  */
 public class _37 {
 
-    public void solveSudoku(char[][] board) {
-        if (board == null || board.length == 0) {
-            return;
+    public static class Solution1 {
+        public void solveSudoku(char[][] board) {
+            if (board == null || board.length == 0) {
+                return;
+            }
+            solve(board);
         }
-        solve(board);
-    }
 
-    private boolean solve(char[][] board) {
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[0].length; j++) {
-                if (board[i][j] == '.') {
-                    for (char c = '1'; c <= '9'; c++) {
-                        //try 1 to 9
-                        if (isValid(board, i, j, c)) {
-                            board[i][j] = c;
+        private boolean solve(char[][] board) {
+            for (int i = 0; i < board.length; i++) {
+                for (int j = 0; j < board[0].length; j++) {
+                    if (board[i][j] == '.') {
+                        for (char c = '1'; c <= '9'; c++) {
+                            //try 1 to 9
+                            if (isValid(board, i, j, c)) {
+                                board[i][j] = c;
 
-                            if (solve(board)) {
-                                return true;
-                            } else {
-                                board[i][j] = '.';//recover it to be '.'
+                                if (solve(board)) {
+                                    return true;
+                                } else {
+                                    board[i][j] = '.';//recover it to be '.'
+                                }
                             }
                         }
+                        return false;
                     }
-                    return false;
                 }
             }
+            return true;
         }
-        return true;
-    }
 
-    private boolean isValid(char[][] board, int row, int col, char c) {
-        for (int i = 0; i < 9; i++) {
-            if (board[i][col] != '.' && board[i][col] == c) {
-                return false;//check row
+        private boolean isValid(char[][] board, int row, int col, char c) {
+            for (int i = 0; i < 9; i++) {
+                if (board[i][col] != '.' && board[i][col] == c) {
+                    return false;//check row
+                }
+                if (board[row][i] != '.' && board[row][i] == c) {
+                    return false;//check column
+                }
+                if (board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] != '.' && board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c) {
+                    return false; //check 3*3 block
+                }
             }
-            if (board[row][i] != '.' && board[row][i] == c) {
-                return false;//check column
-            }
-            if (board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] != '.' && board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c) {
-                return false; //check 3*3 block
-            }
+            return true;
         }
-        return true;
     }
 
 }
