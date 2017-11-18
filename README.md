@@ -685,6 +685,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |585|[Investments in 2016](https://leetcode.com/problems/investments-in-2016/)|[Solution](../master/database/_585.java) | || Medium|
 |584|[Find Customer Referee](https://leetcode.com/problems/find-customer-referee/)|[Solution](../master/database/_584.java) | || Easy|
 |580|[Count Student Number in Departments](https://leetcode.com/problems/count-student-number-in-departments/)|[Solution](../master/database/_580.sql) | || Medium | Left Join
+|578|[Get Highest Answer Rate Question](https://leetcode.com/problems/get-highest-answer-rate-question/)|[Solution](../master/database/_578.sql) | || Medium |
 |577|[Employee Bonus](https://leetcode.com/problems/employee-bonus/)|[Solution](../master/database/_577.sql) | || Easy |
 |574|[Winning Candidate](https://leetcode.com/problems/winning-candidate/)|[Solution](../master/database/_574.sql) | || Medium |
 |571|[Find Median Given Frequency of Numbers](https://leetcode.com/problems/find-median-given-frequency-of-numbers/)|[Solution](../master/database/_571.sql) | || Hard |
