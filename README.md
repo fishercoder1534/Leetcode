@@ -675,6 +675,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |610|[Triangle Judgement](https://leetcode.com/problems/triangle-judgement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_610.java) | | | Easy | 
 |608|[Tree Node](https://leetcode.com/problems/tree-node/)|[Solution](../master/database/_608.sql) | | | Medium | Union
 |607|[Sales Person](https://leetcode.com/problems/sales-person/)|[Solution](../master/database/_607.sql) | | | Easy |
+|603|[Consecutive Available Seats](https://leetcode.com/problems/sales-person/)|[Solution](../master/database/_603.sql) | | | Easy |
 |602|[Friend Requests II: Who Has the Most Friends](https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/)|[Solution](../master/database/_602.sql) | | | Medium |
 |601|[Human Traffic of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/)|[Solution](../master/database/_601.sql) | | | Hard |
 |597|[Friend Requests I: Overall Acceptance Rate](https://leetcode.com/problems/friend-requests-i-overall-acceptance-rate/)|[Solution](../master/database/_597.sql) | | | Easy |
