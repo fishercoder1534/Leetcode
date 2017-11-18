@@ -7,13 +7,13 @@ import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 
 public class _661Test {
-    private static _661 test;
+    private static _661.Solution1 solution1;
     private static int[][] M;
     private static int[][] expected;
 
     @BeforeClass
     public static void setup() {
-        test = new _661();
+        solution1 = new _661.Solution1();
     }
 
     @Test
@@ -28,7 +28,7 @@ public class _661Test {
                 {0, 0, 0},
                 {0, 0, 0}
         };
-        assertArrayEquals(expected, test.imageSmoother(M));
+        assertArrayEquals(expected, solution1.imageSmoother(M));
     }
 
 }
