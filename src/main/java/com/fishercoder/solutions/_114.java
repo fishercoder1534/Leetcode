@@ -3,6 +3,8 @@ package com.fishercoder.solutions;
 import com.fishercoder.common.classes.TreeNode;
 
 /**
+ * 114. Flatten Binary Tree to Linked List
+ *
  * Given a binary tree, flatten it to a linked list in-place.
 
  For example,
@@ -31,31 +33,21 @@ import com.fishercoder.common.classes.TreeNode;
  */
 public class _114 {
 
-    public void flatten(TreeNode root) {
-        while (root != null) {
-            if (root.left != null) {
-                TreeNode previousNode = root.left;
-                while (previousNode.right != null) {
-                    previousNode = previousNode.right;
+    public static class Solution1 {
+        public void flatten(TreeNode root) {
+            while (root != null) {
+                if (root.left != null) {
+                    TreeNode previousNode = root.left;
+                    while (previousNode.right != null) {
+                        previousNode = previousNode.right;
+                    }
+                    previousNode.right = root.right;
+                    root.right = root.left;
+                    root.left = null;
                 }
-                previousNode.right = root.right;
-                root.right = root.left;
-                root.left = null;
+                root = root.right;
             }
-            root = root.right;
         }
-    }
-
-    public static void main(String... args) {
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.left.left = new TreeNode(3);
-        root.left.right = new TreeNode(4);
-        root.right = new TreeNode(5);
-        root.right.right = new TreeNode(6);
-
-        _114 test = new _114();
-        test.flatten(root);
     }
 
 }
