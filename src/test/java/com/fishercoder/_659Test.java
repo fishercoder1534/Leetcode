@@ -7,30 +7,30 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class _659Test {
-    private static _659 test;
+    private static _659.Solution1 solution1;
     private static int[] nums;
 
     @BeforeClass
     public static void setup() {
-        test = new _659();
+        solution1 = new _659.Solution1();
     }
 
     @Test
     public void test1() {
-        nums = new int[]{1,2,3,3,4,5};
-        assertEquals(true, test.isPossible(nums));
+        nums = new int[]{1, 2, 3, 3, 4, 5};
+        assertEquals(true, solution1.isPossible(nums));
     }
 
     @Test
     public void test2() {
-        nums = new int[]{1,2,3,3,4,4,5,5};
-        assertEquals(true, test.isPossible(nums));
+        nums = new int[]{1, 2, 3, 3, 4, 4, 5, 5};
+        assertEquals(true, solution1.isPossible(nums));
     }
 
     @Test
     public void test3() {
-        nums = new int[]{1,2,3,4,4,5};
-        assertEquals(false, test.isPossible(nums));
+        nums = new int[]{1, 2, 3, 4, 4, 5};
+        assertEquals(false, solution1.isPossible(nums));
     }
 
     @Test
@@ -127,7 +127,7 @@ public class _659Test {
                 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98,
                 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99,
                 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100};
-        assertEquals(true, test.isPossible(nums));
+        assertEquals(true, solution1.isPossible(nums));
     }
 
 }
