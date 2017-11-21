@@ -31,7 +31,8 @@ public class _457 {
                     continue;
                 }
                 // slow/fast pointer
-                int j = i, k = getIndex(i, nums);
+                int j = i;
+                int k = getIndex(i, nums);
                 while (nums[k] * nums[i] > 0 && nums[getIndex(k, nums)] * nums[i] > 0) {
                     if (j == k) {
                         // check for loop with only one element
