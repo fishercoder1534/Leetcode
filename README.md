@@ -658,7 +658,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_12.java)|O(1)|O(1)|Medium|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_11.java)|O(n)|O(1)|Medium|
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_10.java)|O(m*n)|O(m*n)|Hard|DP
-|9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_9.java)| O(logn)/(n) | O(1) | Easy
+|9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_9.java)| O(n) | O(1) | Easy
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_8.java)| O(n) | O(1) | Medium
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_7.java) | O(1) | O(1) | Easy | 
 |6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_6.java) | O(n) | O(n) | Easy | 
