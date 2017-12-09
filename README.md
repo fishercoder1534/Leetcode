@@ -27,7 +27,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |737|[Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_737.java) | O(nlogk + k) n is the length of max(words1, words2), k is the length of pairs| O(k) | Medium| Union Find
 |735|[Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_735.java) | O(n) | O(n) | Medium | Stack
 |734|[Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_734.java) | O(n*k) | O(1) | Easy | HashTable
-|733|[Flood Fill](https://leetcode.com/problems/flood-fill/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_733.java) | O(m*n) | O(m*n) | Easy | BFS, DFS
+|733|[Flood Fill](https://leetcode.com/problem**__**s/flood-fill/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_733.java) | O(m*n) | O(m*n) | Easy | BFS, DFS
 |729|[My Calendar I](https://leetcode.com/problems/my-calendar-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_729.java) | O(n) | O(n) | Medium |
 |728|[Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_728.java) | O(n*k) k is the average number of digits of each number in the given array| O(1) | Easy | 
 |727|[Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_727.java) | O(m*n) | O(m*n) | Hard | DP
@@ -653,7 +653,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_17.java)|O(n*4^n)|O(n)|Medium|Backtracking
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_16.java)|O(nlogn)|O(1)|Medium|Two Pointers
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_15.java)|O(n^2)|O(1)|Medium|Two Pointers, Binary Search
-|14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_14.java)| O(n*min(wordLength in this array)) | O(1) | Easy
+|14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_14.java)| O(S) (S is the sum of all characters in all strings) | O(1) | Easy
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](../master/src/main/java/com/fishercoder/solutions/_13.java)| O(1) | O(1) | Easy | Math, String
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_12.java)|O(1)|O(1)|Medium| Math, String
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_11.java)|O(n)|O(1)|Medium|
