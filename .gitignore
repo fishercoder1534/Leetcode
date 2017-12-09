@@ -2,4 +2,6 @@
 gradle/
 gradlew
 gradlew.bat
+.DS_Store
+build/
 
