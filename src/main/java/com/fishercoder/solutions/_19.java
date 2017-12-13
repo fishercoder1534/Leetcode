@@ -6,16 +6,15 @@ import com.fishercoder.common.utils.CommonUtils;
 /**19. Remove Nth Node From End of List
  *
  * Given a linked list, remove the nth node from the end of list and return its head.
-
-    For example,
-
-   Given linked list: 1->2->3->4->5, and n = 2.
-
-   After removing the second node from the end, the linked list becomes 1->2->3->5.
+ * For example, Given linked list: 1->2->3->4->5, and n = 2.
+ * After removing the second node from the end, the linked list becomes 1->2->3->5.
 
 Note:
+
 Given n will always be valid.
-Try to do this in one pass.*/
+Try to do this in one pass.
+ */
+
 public class _19 {
 
     public static class Solution1 {
@@ -87,8 +86,8 @@ public class _19 {
     }
 
     public static class Solution3 {
-        //a more concise version using the same idea found on Discuss
-        public ListNode removeNthFromEnd_one_pass_more_concise_version(ListNode head, int n) {
+        //a more concise version using the same idea
+        public ListNode removeNthFromEnd(ListNode head, int n) {
             ListNode dummy = new ListNode(-1);
             dummy.next = head;
             ListNode slow = dummy;
