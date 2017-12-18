@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
 |-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|750|[Number Of Corner Rectangles](https://leetcode.com/problems/number-of-corner-rectangles/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_750.java) | O((m*n)^2) | O(1) | Medium|
 |748|[Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_748.java) | O(n) | O(1) | Easy|
 |746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_746.java) | O(n) | O(1) | Easy|
 |744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_744.java) | O(logn) | O(1) | Easy|
