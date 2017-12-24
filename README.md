@@ -22,19 +22,19 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
-|750|[Number Of Corner Rectangles](https://leetcode.com/problems/number-of-corner-rectangles/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_750.java) | O((m*n)^2) | O(1) | Medium|
-|748|[Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_748.java) | O(n) | O(1) | Easy|
-|746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_746.java) | O(n) | O(1) | Easy|
-|744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_744.java) | O(logn) | O(1) | Easy|
-|739|[Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_739.java) | O(n^2) | O(1) | Medium| 
-|738|[Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_738.java) | O(n) | O(1) | Medium|
-|737|[Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_737.java) | O(nlogk + k) n is the length of max(words1, words2), k is the length of pairs| O(k) | Medium| Union Find
-|735|[Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_735.java) | O(n) | O(n) | Medium | Stack
-|734|[Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_734.java) | O(n*k) | O(1) | Easy | HashTable
-|733|[Flood Fill](https://leetcode.com/problem**__**s/flood-fill/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_733.java) | O(m*n) | O(m*n) | Easy | BFS, DFS
-|729|[My Calendar I](https://leetcode.com/problems/my-calendar-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_729.java) | O(n) | O(n) | Medium |
-|728|[Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_728.java) | O(n*k) k is the average number of digits of each number in the given array| O(1) | Easy | 
-|727|[Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_727.java) | O(m*n) | O(m*n) | Hard | DP
+|750|[Number Of Corner Rectangles](https://leetcode.com/problems/number-of-corner-rectangles/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_750.java) | O((m*n)^2) | O(1) | |Medium|
+|748|[Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_748.java) | O(n) | O(1) | |Easy|
+|746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_746.java) | O(n) | O(1) | |Easy|
+|744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_744.java) | O(logn) | O(1) || Easy|
+|739|[Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_739.java) | O(n^2) | O(1) | |Medium| 
+|738|[Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_738.java) | O(n) | O(1) | |Medium|
+|737|[Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_737.java) | O(nlogk + k) n is the length of max(words1, words2), k is the length of pairs| O(k) | |Medium| Union Find
+|735|[Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_735.java) | O(n) | O(n) | |Medium | Stack
+|734|[Sentence Similarity](https://leetcode.com/problems/sentence-similarity/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_734.java) | O(n*k) | O(1) | |Easy | HashTable
+|733|[Flood Fill](https://leetcode.com/problem**__**s/flood-fill/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_733.java) | O(m*n) | O(m*n) || Easy | BFS, DFS
+|729|[My Calendar I](https://leetcode.com/problems/my-calendar-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_729.java) | O(n) | O(n) | |Medium |
+|728|[Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_728.java) | O(n*k) k is the average number of digits of each number in the given array| O(1) | |Easy | 
+|727|[Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_727.java) | O(m*n) | O(m*n) | |Hard | DP
 |725|[Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_725.java) | O(n+k) | O(k) | Medium | LinkedList
 |724|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_724.java) | O(n) | O(1) | Easy | Array
 |723|[Candy Crush](https://leetcode.com/problems/candy-crush/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_723.java) | O((r*c)^2) | O((r*c)) | Medium | Array, Two Pointers
