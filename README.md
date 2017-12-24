@@ -674,8 +674,8 @@ Your ideas/fixes/algorithms are more than welcome!
 
 ## Database
 
-|  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
-|-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          
+|-----|----------------|---------------|---------------|---------------|-------------|--------------
 |627|[Swap Salary](https://leetcode.com/problems/swap-salary/)|[Solution](../master/database/_627.sql) | | | Easy |
 |626|[Exchange Seats](https://leetcode.com/problems/exchange-seats/)|[Solution](../master/database/_626.sql) | | | Medium |
 |620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|[Solution](../master/database/_620.sql) | | | Easy |
@@ -721,8 +721,8 @@ Your ideas/fixes/algorithms are more than welcome!
 
 ## Shell
 
-|  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          | Notes
-|-----|----------------|---------------|---------------|---------------|-------------|--------------|-----
+|  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          
+|-----|----------------|---------------|---------------|---------------|-------------|--------------
 |195|[Tenth Line](https://leetcode.com/problems/tenth-line/)|[Solution](../master/shell/TenthLine.sh)| O(n)|O(1) | Easy|
 |194|[Transpose File](https://leetcode.com/problems/transpose-file/)|[Solution](../master/shell/TransposeFile.sh)| O(n^2)|O(n^2) | Medium|
 |193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)|[Solution](../master/shell/ValidPhoneNumbers.sh)| O(n)|O(1) | Easy|
