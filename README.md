@@ -100,25 +100,25 @@ Your ideas/fixes/algorithms are more than welcome!
 |649|[Dota2 Senate](https://leetcode.com/problems/dota2-senate/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_649.java) | O(n) |O(n) | |Medium | Greedy
 |648|[Replace Words](https://leetcode.com/problems/replace-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_648.java) | O(n) |O(n) | |Medium | Trie
 |647|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_647.java) | O(n^2) |O(1) | |Medium | DP
-|646|[Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_646.java) | O(nlogn) |O(1) | Medium | DP, Greedy
-|645|[Set Mismatch](https://leetcode.com/problems/set-mismatch/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_645.java) | O(nlogn) |O(1) | Easy | 
-|644|[Maximum Average Subarray II](https://leetcode.com/problems/maximum-average-subarray-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_644.java) | |O(1) | Hard | Binary Search
-|643|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_643.java) | O(n) |O(1) | Easy |
-|642|[Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_642.java) | O(n) |O(n) | Hard | Design
-|640|[Solve the Equation](https://leetcode.com/problems/solve-the-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_640.java) | O(n) |O(n) | Medium |
-|639|[Decode Ways II](https://leetcode.com/problems/decode-ways-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_639.java) | O(n) |O(n) | Hard| DP
-|638|[Shopping Offers](https://leetcode.com/problems/shopping-offers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_638.java) | O(2^n) |O(n) | Medium | DP, DFS
-|637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_637.java) | O(n) |O(1) | Easy | 
-|636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_636.java) | O(n) |O(n/2) | Medium | Stack
-|635|[Design Log Storage System](https://leetcode.com/problems/design-log-storage-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_635.java) | O(n) |O(n) | Medium | Design
-|634|[Find the Derangement of An Array](https://leetcode.com/problems/find-the-derangement-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_634.java) | O(n) |O(1) | Medium | Math
-|633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_633.java) | O(logn) |O(1) | Easy | Binary Search
-|632|[Smallest Range](https://leetcode.com/problems/smallest-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_632.java) | O(n*logk) |O(k) | Hard| Heap
-|631|[Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_631.java) | | | Hard| Design, Topological Sort
-|630|[Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_630.java) | O(n*logn) |O(n) | Hard| Heap, Greedy
-|629|[K Inverse Pairs Array](https://leetcode.com/problems/k-inverse-pairs-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_629.java) | O(n*k) |O(n*k) | Hard| DP
-|628|[Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_628.java) | O(nlogn) |O(1) | Easy |
-|625|[Minimum Factorization](https://leetcode.com/problems/minimum-factorization/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_625.java) | O(?) |O(?) | Medium | 
+|646|[Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_646.java) | O(nlogn) |O(1) | |Medium | DP, Greedy
+|645|[Set Mismatch](https://leetcode.com/problems/set-mismatch/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_645.java) | O(nlogn) |O(1) | |Easy | 
+|644|[Maximum Average Subarray II](https://leetcode.com/problems/maximum-average-subarray-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_644.java) | |O(1) | |Hard | Binary Search
+|643|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_643.java) | O(n) |O(1) || Easy |
+|642|[Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_642.java) | O(n) |O(n) | |Hard | Design
+|640|[Solve the Equation](https://leetcode.com/problems/solve-the-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_640.java) | O(n) |O(n) | |Medium |
+|639|[Decode Ways II](https://leetcode.com/problems/decode-ways-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_639.java) | O(n) |O(n) | |Hard| DP
+|638|[Shopping Offers](https://leetcode.com/problems/shopping-offers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_638.java) | O(2^n) |O(n) | |Medium | DP, DFS
+|637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_637.java) | O(n) |O(1) | |Easy | 
+|636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_636.java) | O(n) |O(n/2) | |Medium | Stack
+|635|[Design Log Storage System](https://leetcode.com/problems/design-log-storage-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_635.java) | O(n) |O(n) | |Medium | Design
+|634|[Find the Derangement of An Array](https://leetcode.com/problems/find-the-derangement-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_634.java) | O(n) |O(1) | |Medium | Math
+|633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_633.java) | O(logn) |O(1) | |Easy | Binary Search
+|632|[Smallest Range](https://leetcode.com/problems/smallest-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_632.java) | O(n*logk) |O(k) | |Hard| Heap
+|631|[Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_631.java) | | | |Hard| Design, Topological Sort
+|630|[Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_630.java) | O(n*logn) |O(n) | |Hard| Heap, Greedy
+|629|[K Inverse Pairs Array](https://leetcode.com/problems/k-inverse-pairs-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_629.java) | O(n*k) |O(n*k) | Hard|| DP
+|628|[Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_628.java) | O(nlogn) |O(1) | |Easy |
+|625|[Minimum Factorization](https://leetcode.com/problems/minimum-factorization/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_625.java) | O(?) |O(?) | |Medium | 
 |624|[Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_624.java) | O(nlogn) |O(1) | Easy | Sort, Array
 |623|[Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_623.java) | O(n) |O(h) | Medium | Tree
 |621|[Task Scheduler](https://leetcode.com/problems/task-scheduler/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_621.java) | O(n) |O(26) | Medium | Greedy, Queue
