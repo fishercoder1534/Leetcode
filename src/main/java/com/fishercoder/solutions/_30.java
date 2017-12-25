@@ -34,11 +34,11 @@ public class _30 {
       for (int i = 0; i < s.length(); i++) {
         startIndex = i;
         Map<String, Boolean> clone = new HashMap<>(map);
-        for (int j = i +1; j < s.length(); j++) {
+        for (int j = i + 1; j < s.length(); j++) {
           String word = s.substring(i, j);
           if (clone.containsKey(word) && clone.get(word)) {
             clone.put(word, false);
-            i = j+1;
+            i = j + 1;
           } else {
             break;
           }
