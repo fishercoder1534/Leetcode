@@ -24,27 +24,27 @@ import java.util.List;
 public class _40 {
 
     public static class Solution1 {
-        public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-            List<List<Integer>> result = new ArrayList();
-            Arrays.sort(candidates);
-            backtracking(candidates, target, 0, new ArrayList(), result);
-            return result;
-        }
+      public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<List<Integer>> result = new ArrayList();
+        Arrays.sort(candidates);
+        backtracking(candidates, 0, result, target, new ArrayList());
+        return result;
+      }
 
-        void backtracking(int[] candidates, int target, int start, List<Integer> curr, List<List<Integer>> result) {
-            if (target > 0) {
-                for (int i = start; i < candidates.length && target >= candidates[i]; i++) {
-                    if (i > start && candidates[i] == candidates[i - 1]) {
-                        continue;//skip duplicates, this is one difference from Combination Sum I
-                    }
-                    curr.add(candidates[i]);
-                    backtracking(candidates, target - candidates[i], i + 1, curr, result);//i+1 is the other difference from Combination Sum I
-                    curr.remove(curr.size() - 1);
-                }
-            } else if (target == 0) {
-                result.add(new ArrayList(curr));
+      void backtracking(int[] candidates, int start, List<List<Integer>> result, int target,
+          List<Integer> curr) {
+        if (target > 0) {
+          for (int i = start; i < candidates.length; i++) {
+            if (candidates[i] > target || (i > start && candidates[i - 1] == candidates[i])) {
+              continue;
             }
+            curr.add(candidates[i]);
+            backtracking(candidates, i + 1, result, target - candidates[i], curr);
+            curr.remove(curr.size() - 1);
+          }
+        } else if (target == 0) {
+          result.add(new ArrayList(curr));
         }
+      }
     }
-
 }
