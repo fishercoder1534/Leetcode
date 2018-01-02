@@ -14,6 +14,7 @@ package com.fishercoder.solutions;
 
  Note:
  You can assume that you can always reach the last index.
+
  */
 public class _45 {
 
