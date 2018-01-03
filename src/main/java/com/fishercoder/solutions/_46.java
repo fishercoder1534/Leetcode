@@ -36,7 +36,8 @@ public class _46 {
             }
             List<List<Integer>> newResult = new ArrayList();
             for (List<Integer> eachList : result) {
-                for (int i = 0; i <= eachList.size(); i++) {//attn: i starts from 0
+                for (int i = 0; i <= eachList.size(); i++) {
+                    //attn: i starts from 0
                     List<Integer> newList = new ArrayList(eachList);
                     newList.add(i, nums[pos]);
                     newResult.add(newList);
