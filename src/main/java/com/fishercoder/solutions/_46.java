@@ -24,7 +24,6 @@ import java.util.List;
 public class _46 {
 
     public static class Solution1 {
-        //this solution has a backtracking function that its return type is not void
         public List<List<Integer>> permute(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             result.add(new ArrayList<>());
@@ -37,7 +36,7 @@ public class _46 {
             }
             List<List<Integer>> newResult = new ArrayList();
             for (List<Integer> eachList : result) {
-                for (int i = 0; i <= eachList.size(); i++) {
+                for (int i = 0; i <= eachList.size(); i++) {//attn: i starts from 0
                     List<Integer> newList = new ArrayList(eachList);
                     newList.add(i, nums[pos]);
                     newResult.add(newList);
@@ -45,35 +44,6 @@ public class _46 {
             }
             result = newResult;
             return backtracking(result, nums, pos + 1);
-        }
-    }
-
-    public static class Solution2 {
-        public List<List<Integer>> permute(int[] nums) {
-            List<List<Integer>> result = new ArrayList();
-            result.add(new ArrayList<>());
-            recursive(result, nums, 0);
-            return result;
-        }
-
-        private void recursive(List<List<Integer>> result, int[] nums, int pos) {
-            if (pos == nums.length) {
-                return;
-            }
-            List<List<Integer>> newResult = new ArrayList();
-            for (List<Integer> eachList : result) {
-                for (int i = 0; i <= eachList.size(); i++) {
-                    List<Integer> newList = new ArrayList(eachList);
-                    newList.add(i, nums[pos]);
-                    newResult.add(newList);
-                }
-            }
-            /**You'll have to use the two lines, instead of this line: result = newResult; otherwise, it won't work!!!*/
-            result.clear();
-            result.addAll(newResult);
-
-            //then recursion
-            recursive(result, nums, pos + 1);
         }
     }
 
