@@ -5,9 +5,6 @@ import com.fishercoder.solutions._48;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-/**
- * Created by fishercoder on 5/8/17.
- */
 public class _48Test {
     private static _48.Solution1 solution1;
     private static _48.Solution2 solution2;
