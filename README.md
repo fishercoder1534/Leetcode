@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|760|[Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_760.java) | O(n^2) | O(1) | |Easy| 
 |755|[Reach a Number](https://leetcode.com/problems/reach-a-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_755.java) | O(n) | O(1) | |Medium| Math
 |750|[Number Of Corner Rectangles](https://leetcode.com/problems/number-of-corner-rectangles/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_750.java) | O((m*n)^2) | O(1) | |Medium|
 |748|[Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_748.java) | O(n) | O(1) | |Easy|
