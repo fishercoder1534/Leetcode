@@ -1,71 +1,44 @@
 package com.fishercoder.solutions;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
- * Created by fishercoder on 2/19/17.
+ * 52. N-Queens II
+ *
+ * Follow up for N-Queens problem.
+ * Now, instead outputting board configurations, return the total number of distinct solutions.
  */
 public class _52 {
 
+  public static class Solution1 {
+    /**credit: https://discuss.leetcode.com/topic/29626/easiest-java-solution-1ms-98-22*/
+    int count = 0;
+
     public int totalNQueens(int n) {
-        List<List<String>> result = new ArrayList<>();
-        if (n <= 0) {
-            return result.size();
-        }
-        search(n, new ArrayList<>(), result);
-        return result.size();
+      boolean[] cols = new boolean[n];
+      boolean[] diagnol = new boolean[2 * n];
+      boolean[] antiDiagnol = new boolean[2 * n];
+      backtracking(0, cols, diagnol, antiDiagnol, n);
+      return count;
     }
 
-    private void search(int n, ArrayList<Integer> col, List<List<String>> result) {
-        if (col.size() == n) {
-            result.add(drawChessBoard(col));
-            return;
+    private void backtracking(int row, boolean[] cols, boolean[] diagnol, boolean[] antiDiagnol,
+        int n) {
+      if (row == n) {
+        count++;
+      }
+      for (int col = 0; col < n; col++) {
+        int x = col - row + n;
+        int y = col + row;
+        if (cols[col] || diagnol[x] || antiDiagnol[y]) {
+          continue;
         }
-
-        for (int i = 0; i < n; i++) {
-            if (!isValid(col, i)) {
-                continue;
-            }
-            col.add(i);
-            search(n, col, result);
-            col.remove(col.size() - 1);
-        }
+        cols[col] = true;
+        diagnol[x] = true;
+        antiDiagnol[y] = true;
+        backtracking(row + 1, cols, diagnol, antiDiagnol, n);
+        cols[col] = false;
+        diagnol[x] = false;
+        antiDiagnol[y] = false;
+      }
     }
-
-    private boolean isValid(ArrayList<Integer> col, int next) {
-        int row = col.size();
-        for (int i = 0; i < row; i++) {
-            if (next == col.get(i)) {
-                return false;
-            }
-
-            if (i - row == col.get(i) - next) {
-                return false;
-            }
-
-            if (i - row == next - col.get(i)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private ArrayList<String> drawChessBoard(ArrayList<Integer> col) {
-        ArrayList<String> chessBoard = new ArrayList<>();
-
-        for (int i = 0; i < col.size(); i++) {
-            String row = "";
-            for (int j = 0; j < col.size(); j++) {
-                if (col.get(j) == i) {
-                    row += "Q";
-                } else {
-                    row += ".";
-                }
-            }
-            chessBoard.add(row);
-        }
-        return chessBoard;
-    }
-
+  }
 }
