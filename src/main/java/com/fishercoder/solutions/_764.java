@@ -86,11 +86,11 @@ public class _764 {
       for (int row = 0; row < N; row++) {
         for (int col = 0; col < N; col++) {
           int k = 0;
-          while (k <= row && row < N - k && k <= col && col < N - k &&
-              !banned.contains((row - k) * N + col) &&
-              !banned.contains((row + k) * N + col) &&
-              !banned.contains(row * N + col - k) &&
-              !banned.contains(row * N + col + k)) {
+          while (k <= row && row < N - k && k <= col && col < N - k
+              && !banned.contains((row - k) * N + col)
+              && !banned.contains((row + k) * N + col)
+              && !banned.contains(row * N + col - k)
+              && !banned.contains(row * N + col + k)) {
             k++;
           }
           result = Math.max(result, k);
@@ -122,7 +122,7 @@ public class _764 {
         }
 
         count = 0;
-        for (int col = N- 1; col >= 0; col--) {
+        for (int col = N - 1; col >= 0; col--) {
           count = banned.contains(row * N + col) ? 0 : count + 1;
           dp[row][col] = Math.min(dp[row][col], count);
         }
