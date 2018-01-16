@@ -59,7 +59,9 @@ public class _756 {
     }
 
     private boolean helper(String bottom, Map<String, List<String>> map) {
-      if (bottom.length() == 1) return true;
+      if (bottom.length() == 1) {
+        return true;
+      }
       for (int i = 0; i < bottom.length() - 1; i++) {
         if (!map.containsKey(bottom.substring(i, i + 2))) {
           return false;
