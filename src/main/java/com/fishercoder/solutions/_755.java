@@ -138,7 +138,7 @@ public class _755 {
           continue;
         }
 
-        for (int i = K+1; i < heights.length; i++) {
+        for (int i = K + 1; i < heights.length; i++) {
           if (heights[i] > heights[index]) {
             break;
           } else if (heights[i] < heights[index]) {
