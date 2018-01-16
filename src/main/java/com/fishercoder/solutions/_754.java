@@ -1,7 +1,7 @@
 package com.fishercoder.solutions;
 
 /**
- * 755. Reach a Number
+ * 754. Reach a Number
  *
  * You are standing at position 0 on an infinite number line. There is a goal at position target.
  * On each move, you can either go left or right. During the n-th move (starting from 1), you take n steps.
@@ -26,7 +26,7 @@ package com.fishercoder.solutions;
  target will be a non-zero integer in the range [-10^9, 10^9].
  */
 
-public class _755 {
+public class _754 {
   public static class Solution1 {
     /**Two case:
      * 1. go to the right, and reach the goal exactly.
