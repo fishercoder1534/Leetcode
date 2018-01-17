@@ -25,33 +25,37 @@ public class _30 {
 
   public static class Solution1 {
     public List<Integer> findSubstring(String s, String[] words) {
-      Map<String, Boolean> map = new HashMap<>();
+      Map<String, Integer> map = new HashMap<>();
       for (String word : words) {
-        map.put(word, true);
+        map.put(word, 1);
       }
       List<Integer> result = new ArrayList<>();
       int startIndex = 0;
+      int wordLen = words.length;
       for (int i = 0; i < s.length(); i++) {
         startIndex = i;
-        Map<String, Boolean> clone = new HashMap<>(map);
+        Map<String, Integer> clone = new HashMap<>(map);
+        int matchedWord = 0;
         for (int j = i + 1; j < s.length(); j++) {
           String word = s.substring(i, j);
-          if (clone.containsKey(word) && clone.get(word)) {
-            clone.put(word, false);
-            i = j + 1;
-          } else {
-            break;
+          if (clone.containsKey(word) && clone.get(word) == 1) {
+            clone.put(word, 0);
+            i = j;
+            matchedWord++;
           }
-        }
-        boolean all = true;
-        for (String word : clone.keySet()) {
-          if (clone.get(word)) {
-            all = false;
-            break;
+          if (matchedWord == wordLen) {
+            boolean all = true;
+            for (String key : clone.keySet()) {
+              if (clone.get(key) != 0) {
+                all = false;
+                break;
+              }
+            }
+            if (all) {
+              result.add(startIndex);
+            }
+            matchedWord = 0;
           }
-        }
-        if (all) {
-          result.add(startIndex);
         }
       }
       return result;
