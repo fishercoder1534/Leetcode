@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|765|[Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_765.java) | O(n^2) | O(1) | |Hard| 
 |764|[Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_764.java) | O(n^2) | O(n^2) | |Medium| DP
 |763|[Partition Labels](https://leetcode.com/problems/partition-labels/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_763.java) | O(n) | O(1) | |Medium|
 |762|[Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_762.java) | O(n) | O(1) | |Easy|
