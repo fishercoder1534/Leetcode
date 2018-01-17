@@ -1,12 +1,9 @@
 package com.fishercoder.solutions;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 /**
  * 30. Substring with Concatenation of All Words
@@ -24,6 +21,7 @@ import java.util.stream.Collectors;
 public class _30 {
 
   public static class Solution1 {
+    /**TODO: this one is not AC'ed. fix this one.*/
     public List<Integer> findSubstring(String s, String[] words) {
       Map<String, Integer> map = new HashMap<>();
       for (String word : words) {
