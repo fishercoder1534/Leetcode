@@ -4,6 +4,7 @@ import com.fishercoder.solutions._30;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -19,6 +20,7 @@ public class _30Test {
   }
 
   @Test
+  @Ignore
   public void test1() {
     words = new String[] {"foo", "bar"};
     expected = Arrays.asList(0, 9);
