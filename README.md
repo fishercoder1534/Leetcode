@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|767|[Reorganize String](https://leetcode.com/problems/reorganize-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_767.java) | O(klogk) k is the number of unique characters in given String| O(k) | |Medium|
 |766|[Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_766.java) | O(m*n) | O(1) | |Easy|
 |765|[Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_765.java) | O(n^2) | O(1) | |Hard| 
 |764|[Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_764.java) | O(n^2) | O(n^2) | |Medium| DP
