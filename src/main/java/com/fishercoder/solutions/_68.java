@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.
+ * 68. Text Justification
 
- You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ' ' when necessary so that each line has exactly L characters.
-
- Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.
-
+ Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.
+ You should pack your words in a greedy approach; that is, pack as many words as you can in each line.
+ Pad extra spaces ' ' when necessary so that each line has exactly L characters.
+ Extra spaces between words should be distributed as evenly as possible.
+ If the number of spaces on a line do not divide evenly between words,
+ the empty slots on the left will be assigned more spaces than the slots on the right.
  For the last line of text, it should be left justified and no extra space is inserted between words.
 
  For example,
@@ -22,9 +24,8 @@ import java.util.List;
  "example  of text",
  "justification.  "
  ]
- Note: Each word is guaranteed not to exceed L in length.
 
- click to show corner cases.
+ Note: Each word is guaranteed not to exceed L in length.
 
  Corner Cases:
  A line other than the last line might contain only one word. What should you do in this case?
@@ -32,7 +33,8 @@ import java.util.List;
  */
 public class _68 {
 
-    public static List<String> fullJustify(String[] words, int L) {
+  public static class Solution1 {
+    public List<String> fullJustify(String[] words, int L) {
         ArrayList<String> result = new ArrayList();
         if (words == null || words.length == 0) {
             return result;
@@ -82,14 +84,6 @@ public class _68 {
         result.add(sb.toString());
         return result;
     }
+  }
 
-    public static void main(String... args) {
-//        String[] words = new String[]{"This", "is", "an", "example", "of", "text", "justification."};
-        String[] words = new String[]{"This", "is", "a", "good", "test!", "\n", "What", "do", "you", "\n", "think?", "\n", "I", "think", "so", "too!"};
-        int L = 16;
-        List<String> result = fullJustify(words, L);
-        for (String str : result) {
-            System.out.println(str);
-        }
-    }
 }
