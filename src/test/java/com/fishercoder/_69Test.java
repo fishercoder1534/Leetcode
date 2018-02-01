@@ -1,39 +1,26 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._69;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by fishercoder on 1/25/17.
- */
 public class _69Test {
-    private static _69 test;
-    private static int expected;
-    private static int actual;
-    private static int input;
+  private static _69.Solution1 solution1;
 
-    @BeforeClass
-    public static void setup() {
-        test = new _69();
-    }
+  @BeforeClass
+  public static void setup() {
+    solution1 = new _69.Solution1();
+  }
 
-    @Before
-    public void setupForEachTest() {
-        expected = 0;
-        actual = 0;
-        input = 0;
-    }
+  @Test
+  public void test1() {
+    assertEquals(4, solution1.mySqrt(16));
+  }
 
-    @Test
-    public void test1() {
-        expected = 4;
-        input = 16;
-        actual = test.mySqrt(input);
-        assertEquals(expected, actual);
-
-    }
+  @Test
+  public void test2() {
+    assertEquals(2, solution1.mySqrt(8));
+  }
 }
