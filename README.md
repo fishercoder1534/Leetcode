@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|779|[K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_779.java) | O(logn) | O(1) | |Medium|
 |771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_771.java) | O(n) | O(m) | |Easy|
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_767.java) | O(klogk) k is the number of unique characters in given String| O(k) | |Medium|
 |766|[Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_766.java) | O(m*n) | O(1) | |Easy|
