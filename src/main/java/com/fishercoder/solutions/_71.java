@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Set;
 
 /**
- * 70. Climbing Stairs
+ * 71. Simplify Path
 
  Given an absolute path for a file (Unix-style), simplify it.
 
