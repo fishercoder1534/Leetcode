@@ -22,48 +22,49 @@ package com.fishercoder.solutions;
  */
 
 public class _79 {
+
     public static class Solution1 {
-        //I made it this time, completely by myself! Cheers! This let me completely understand backtracking!
-        public boolean exist(char[][] board, String word) {
-            int m = board.length;
-            int n = board[0].length;
-            boolean[][] visited = new boolean[m][n];
-            for (int i = 0; i < m; i++) {
-                for (int j = 0; j < n; j++) {
-                    if (dfs(board, visited, i, j, word, 0)) {
-                        return true;
-                    }
-                }
+
+      public boolean exist(char[][] board, String word) {
+        int m = board.length;
+        int n = board[0].length;
+        boolean[][] visited = new boolean[m][n];
+        for (int i = 0; i < m; i++) {
+          for (int j = 0; j < n; j++) {
+            if (dfs(board, visited, i, j, word, 0)) {
+              return true;
             }
-            return false;
+          }
         }
+        return false;
+      }
 
-        final int[] dirs = new int[]{0, 1, 0, -1, 0};
+      final int[] dirs = new int[] {0, 1, 0, -1, 0};
 
-        boolean dfs(char[][] board, boolean[][] visited, int row, int col, String word, int index) {
-            if (index >= word.length() || word.charAt(index) != board[row][col]) {
-                return false;
-            } else if (index == word.length() - 1 && word.charAt(index) == board[row][col]) {
-                visited[row][col] = true;
-                return true;
-            }
-            visited[row][col] = true;//set it to true for this case
-            boolean result = false;
-            for (int i = 0; i < 4; i++) {
-                int nextRow = row + dirs[i];
-                int nextCol = col + dirs[i + 1];
-                if (nextRow < 0 || nextRow >= board.length || nextCol < 0 || nextCol >= board[0].length || visited[nextRow][nextCol]) {
-                    continue;
-                }
-                result = dfs(board, visited, nextRow, nextCol, word, index + 1);
-                if (result) {
-                    return result;
-                } else {
-                    visited[nextRow][nextCol] = false;//set it back to false if this road doesn't work to allow it for other paths, this is backtracking!!!
-                }
-            }
+      boolean dfs(char[][] board, boolean[][] visited, int row, int col, String word, int index) {
+        if (index >= word.length() || word.charAt(index) != board[row][col]) {
+          return false;
+        } else if (index == word.length() - 1 && word.charAt(index) == board[row][col]) {
+          visited[row][col] = true;
+          return true;
+        }
+        visited[row][col] = true;//set it to true for this case
+        boolean result = false;
+        for (int i = 0; i < 4; i++) {
+          int nextRow = row + dirs[i];
+          int nextCol = col + dirs[i + 1];
+          if (nextRow < 0 || nextRow >= board.length || nextCol < 0 || nextCol >= board[0].length || visited[nextRow][nextCol]) {
+            continue;
+          }
+          result = dfs(board, visited, nextRow, nextCol, word, index + 1);
+          if (result) {
             return result;
+          } else {
+            visited[nextRow][nextCol] = false;//set it back to false if this road doesn't work to allow it for other paths, this is backtracking!!!
+          }
         }
+        return result;
+      }
     }
 
     public static class Solution2 {
@@ -94,16 +95,14 @@ public class _79 {
             }
             visited[i][j] = true;
             if (search(board, word, i + 1, j, pos + 1)
-                    || search(board, word, i - 1, j, pos + 1)
-                    || search(board, word, i, j + 1, pos + 1)
-                    || search(board, word, i, j - 1, pos + 1)) {
+                || search(board, word, i - 1, j, pos + 1)
+                || search(board, word, i, j + 1, pos + 1)
+                || search(board, word, i, j - 1, pos + 1)) {
                 return true;
             }
 
             visited[i][j] = false;
             return false;
         }
-
     }
-
 }
