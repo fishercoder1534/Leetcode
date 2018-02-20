@@ -2,7 +2,9 @@ package com.fishercoder;
 
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.solutions._83;
+import java.util.Arrays;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
@@ -10,20 +12,28 @@ import org.junit.Test;
  */
 public class _83Test {
 
-    @Test
-    public void test1() {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(1);
-        head.next.next = new ListNode(2);
-        head.next.next.next = new ListNode(3);
-        head.next.next.next.next = new ListNode(3);
+  private static _83.Solution1 solution1;
+  private static _83.Solution2 solution2;
+  private static ListNode head;
+  private static ListNode expected;
 
-        _83 test = new _83();
+  @BeforeClass
+  public static void setup() {
+    solution1 = new _83.Solution1();
+    solution2 = new _83.Solution2();
+  }
 
-        ListNode expected = new ListNode(1);
-        expected.next = new ListNode(2);
-        expected.next.next = new ListNode(3);
+  @Test
+  public void test1() {
+    head = ListNode.createSinglyLinkedList(Arrays.asList(1, 1, 2, 3, 3));
+    expected = ListNode.createSinglyLinkedList(Arrays.asList(1, 2, 3));
+    Assert.assertEquals(expected, solution1.deleteDuplicates(head));
+  }
 
-        Assert.assertEquals(expected, test.deleteDuplicates(head));
-    }
+  @Test
+  public void test2() {
+    head = ListNode.createSinglyLinkedList(Arrays.asList(1, 1, 2, 3, 3));
+    expected = ListNode.createSinglyLinkedList(Arrays.asList(1, 2, 3));
+    Assert.assertEquals(expected, solution2.deleteDuplicates(head));
+  }
 }
