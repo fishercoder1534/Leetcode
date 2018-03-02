@@ -1,7 +1,5 @@
 package com.fishercoder.solutions;
 
-import com.fishercoder.common.utils.CommonUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,19 +29,14 @@ import java.util.List;
 
 public class _89 {
 
+  public static class Solution1 {
     public List<Integer> grayCode(int n) {
-        List<Integer> result = new ArrayList();
-        for (int i = 0; i < (1 << n); i++) {
-            result.add(i ^ (i >> 1));
-        }
-        return result;
+      List<Integer> result = new ArrayList();
+      for (int i = 0; i < (1 << n); i++) {
+        result.add(i ^ (i >> 1));
+      }
+      return result;
     }
+  }
 
-    public static void main(String... args) {
-        int n = 3;
-        System.out.println("1 << n = " + (1 << n));
-        _89 test = new _89();
-        List<Integer> result = test.grayCode(n);
-        CommonUtils.printList(result);
-    }
 }
