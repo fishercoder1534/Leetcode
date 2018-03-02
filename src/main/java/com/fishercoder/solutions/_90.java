@@ -6,7 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**90. Subsets II
+/**
+ * 90. Subsets II
  *
  *Given a collection of integers that might contain duplicates, nums, return all possible subsets.
  Note: The solution set must not contain duplicate subsets.
@@ -49,7 +50,7 @@ public class _90 {
             return result;
         }
     }
-    
+
     public static class Solution2 {
         public List<List<Integer>> subsetsWithDup(int[] nums) {
             List<List<Integer>> result = new ArrayList();
