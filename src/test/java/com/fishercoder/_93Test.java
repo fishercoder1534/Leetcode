@@ -11,28 +11,25 @@ import java.util.List;
 import static junit.framework.Assert.assertEquals;
 
 public class _93Test {
-    private static _93 test;
-    private static List<String> expected;
-    private static List<String> actual;
-    private static String s;
+  private static _93.Solution1 solution1;
+  private static List<String> expected;
+  private static String s;
 
-    @BeforeClass
-    public static void setup() {
-        test = new _93();
-    }
+  @BeforeClass
+  public static void setup() {
+    solution1 = new _93.Solution1();
+  }
 
-    @Before
-    public void setupForEachTest() {
-        expected = new ArrayList<>();
-        actual = new ArrayList<>();
-    }
+  @Before
+  public void setupForEachTest() {
+    expected = new ArrayList<>();
+  }
 
-    @Test
-    public void test1() {
-        s = "25525511135";
-        expected.add("255.255.11.135");
-        expected.add("255.255.111.35");
-        actual = test.restoreIpAddresses(s);
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void test1() {
+    s = "25525511135";
+    expected.add("255.255.11.135");
+    expected.add("255.255.111.35");
+    assertEquals(expected, solution1.restoreIpAddresses(s));
+  }
 }
