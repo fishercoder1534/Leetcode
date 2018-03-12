@@ -28,8 +28,10 @@ public class _347Test {
         expected = new ArrayList<>(Arrays.asList(0, 3));
         /**Comment out until Leetcode addresses this test case:
          * https://discuss.leetcode.com/topic/44237/java-o-n-solution-bucket-sort/75
-         * Then I'll update this Solution1 code accordingly.*/
-//        assertEquals(expected, solution1.topKFrequent(nums, 2));
+         * Then I'll update this Solution1 code accordingly.
+         *
+         * My post is still un-addressed. - 3/12/2018*/
+        //assertEquals(expected, solution1.topKFrequent(nums, 2));
     }
 
     @Test
@@ -37,5 +39,12 @@ public class _347Test {
         nums = new int[]{3, 0, 1, 0};
         expected = new ArrayList<>(Arrays.asList(0, 3));
         assertEquals(expected, solution2.topKFrequent(nums, 2));
+    }
+
+    @Test
+    public void test3() {
+        nums = new int[] {1, 1, 1, 2, 2, 3};
+        expected = new ArrayList<>(Arrays.asList(1, 2));
+        assertEquals(expected, solution1.topKFrequent(nums, 2));
     }
 }
