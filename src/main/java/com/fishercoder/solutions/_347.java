@@ -67,14 +67,14 @@ public class _347 {
 
 			// build heap, this is O(logn)
 			Queue<Entry<Integer, Integer>> heap = new PriorityQueue<>((o1, o2) -> {
-                if (o1.getValue() > o2.getValue()) {
-                    return -1;
-                } else if (o1.getValue() < o2.getValue()) {
-                    return 1;
-                } else {
-                    return 0;
-                }
-            });
+				if (o1.getValue() > o2.getValue()) {
+					return -1;
+				} else if (o1.getValue() < o2.getValue()) {
+					return 1;
+				} else {
+					return 0;
+				}
+			});
 			for (Entry<Integer, Integer> entry : map.entrySet()) {
 				heap.offer(entry);
 			}
@@ -86,5 +86,4 @@ public class _347 {
 			return res;
 		}
 	}
-
 }
