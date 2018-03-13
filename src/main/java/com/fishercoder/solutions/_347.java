@@ -25,6 +25,7 @@ public class _347 {
 	public static class Solution1 {
 		/**
 		 * Use buckets to hold numbers of the same frequency
+     * It's averaged at 30 ms on Leetcode.
 		 */
 		public List<Integer> topKFrequent(int[] nums, int k) {
 			Map<Integer, Integer> map = new HashMap();
@@ -55,7 +56,7 @@ public class _347 {
 
 	public static class Solution2 {
 		/**
-		 * Use hashtable and heap
+		 * Use hashtable and heap, it's averaged at 100 ms on Leetocde.
 		 */
 		public List<Integer> topKFrequent(int[] nums, int k) {
 			// construct the frequency map first, and then iterate through the map
@@ -66,15 +67,7 @@ public class _347 {
 			}
 
 			// build heap, this is O(logn)
-			Queue<Entry<Integer, Integer>> heap = new PriorityQueue<>((o1, o2) -> {
-				if (o1.getValue() > o2.getValue()) {
-					return -1;
-				} else if (o1.getValue() < o2.getValue()) {
-					return 1;
-				} else {
-					return 0;
-				}
-			});
+			Queue<Entry<Integer, Integer>> heap = new PriorityQueue<>((o1, o2) -> o2.getValue() - o1.getValue());
 			for (Entry<Integer, Integer> entry : map.entrySet()) {
 				heap.offer(entry);
 			}
