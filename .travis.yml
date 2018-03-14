@@ -1,5 +1,3 @@
-install: gradle wrapper --gradle-version 4.4
-
 language: java
 
 jdk:
