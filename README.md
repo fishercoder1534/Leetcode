@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|799|[Champagne Tower](https://leetcode.com/problems/champagne-tower/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_799.java) | O(r^2) or O(1) | O(r^2) or O(1) | |Medium|
 |796|[Rotate String](https://leetcode.com/problems/rotate-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_796.java) | O(n) | O(1) | |Easy|
 |791|[Custom Sort String](https://leetcode.com/problems/custom-sort-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_791.java) | O(n+m) | O(1) | |Medium|
 |788|[Rotated Digits](https://leetcode.com/problems/rotated-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_788.java) | O(n*m) | O(1) | |Easy|
