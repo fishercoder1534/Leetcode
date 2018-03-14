@@ -1,5 +1,4 @@
 .gradle/
-gradlew.bat
 .DS_Store
 build/
 out/
