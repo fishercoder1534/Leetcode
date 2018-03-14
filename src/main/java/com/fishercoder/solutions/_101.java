@@ -23,22 +23,26 @@ But the following [1,2,2,null,3,null,3] is not:
    3    3
 
 Note:
-Bonus points if you could solve it both recursively and iteratively. */
-public class _101 {
-	public boolean isSymmetric(TreeNode root) {
-		if (root == null) {
-			return true;
-		}
-		return isSymmetric(root.left, root.right);
-	}
+Bonus points if you could solve it both recursively and iteratively.
+ */
 
-	private boolean isSymmetric(TreeNode left, TreeNode right) {
-		if (left == null || right == null) {
-			return left == right;
+public class _101 {
+	public static class Solution1 {
+		public boolean isSymmetric(TreeNode root) {
+			if (root == null) {
+				return true;
+			}
+			return isSymmetric(root.left, root.right);
 		}
-		if (left.val != right.val) {
-			return false;
+
+		private boolean isSymmetric(TreeNode left, TreeNode right) {
+			if (left == null || right == null) {
+				return left == right;
+			}
+			if (left.val != right.val) {
+				return false;
+			}
+			return isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left);
 		}
-		return isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left);
 	}
 }
