@@ -10,11 +10,8 @@ import java.util.Arrays;
 
 import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by fishercoder on 5/12/17.
- */
 public class _106Test {
-    private static _106 test;
+    private static _106.Solution1 solution1;
     private static TreeNode expected;
     private static TreeNode actual;
     private static int[] inorder;
@@ -22,7 +19,7 @@ public class _106Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _106();
+        solution1 = new _106.Solution1();
     }
 
     @Test
@@ -36,7 +33,7 @@ public class _106Test {
          */
         postorder = new int[]{2, 1, 3};
         inorder = new int[]{1, 2, 3};
-        actual = test.buildTree(inorder, postorder);
+        actual = solution1.buildTree(inorder, postorder);
         expected = TreeUtils.constructBinaryTree(Arrays.asList(3, 1, null, null, 2));
         assertEquals(expected, actual);
     }
@@ -56,7 +53,7 @@ public class _106Test {
          */
         postorder = new int[]{4, 2, 5, 1, 3};
         inorder  = new int[]{1, 2, 4, 5, 3};
-        actual = test.buildTree(inorder, postorder);
+        actual = solution1.buildTree(inorder, postorder);
         expected = TreeUtils.constructBinaryTree(Arrays.asList(3, 1, null, null, 5, 2, null, null, 4));
         assertEquals(expected, actual);
     }
@@ -70,7 +67,7 @@ public class _106Test {
          */
         inorder = new int[]{1, 2};
         postorder = new int[]{1, 2};
-        actual = test.buildTree(inorder, postorder);
+        actual = solution1.buildTree(inorder, postorder);
         expected = TreeUtils.constructBinaryTree(Arrays.asList(2, 1));
         assertEquals(expected, actual);
     }
