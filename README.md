@@ -33,6 +33,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |779|[K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_779.java) | O(logn) | O(1) | |Medium|
 |776|[Split BST](https://leetcode.com/problems/split-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_776.java) | O(n) | O(n) | |Medium| Recursion
 |771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_771.java) | O(n) | O(m) | |Easy|
+|769|[Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_769.java) | O(n) | O(1) | |Medium| Array
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_767.java) | O(klogk) k is the number of unique characters in given String| O(k) | |Medium|
 |766|[Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_766.java) | O(m*n) | O(1) | |Easy|
 |765|[Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_765.java) | O(n^2) | O(1) | |Hard| 
