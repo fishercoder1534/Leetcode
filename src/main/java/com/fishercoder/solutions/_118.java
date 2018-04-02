@@ -1,6 +1,5 @@
 package com.fishercoder.solutions;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,24 +21,26 @@ import java.util.List;
  */
 public class _118 {
 
+  public static class Solution1 {
     public List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> result = new ArrayList();
-        int len = 1;
-        for (int i = 0; i < numRows; i++) {
-            List<Integer> row = new ArrayList(len);
-            row.add(1);
-            if (i > 0) {
-                List<Integer> lastRow = result.get(i - 1);
-                for (int j = 1; j < len; j++) {
-                    if (j < lastRow.size()) {
-                        row.add(lastRow.get(j - 1) + lastRow.get(j));
-                    }
-                }
-                row.add(1);
+      List<List<Integer>> result = new ArrayList();
+      int len = 1;
+      for (int i = 0; i < numRows; i++) {
+        List<Integer> row = new ArrayList(len);
+        row.add(1);
+        if (i > 0) {
+          List<Integer> lastRow = result.get(i - 1);
+          for (int j = 1; j < len; j++) {
+            if (j < lastRow.size()) {
+              row.add(lastRow.get(j - 1) + lastRow.get(j));
             }
-            result.add(row);
-            len++;
+          }
+          row.add(1);
         }
-        return result;
+        result.add(row);
+        len++;
+      }
+      return result;
     }
+  }
 }
