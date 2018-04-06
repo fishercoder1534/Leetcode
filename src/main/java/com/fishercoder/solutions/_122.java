@@ -11,7 +11,7 @@ package com.fishercoder.solutions;
 
 public class _122 {
     public static class Solution1 {
-        //peak and valley appraoch
+        //peak and valley approach
         public int maxProfit(int[] prices) {
             int pro = 0;
             int i = 0;
@@ -42,5 +42,4 @@ public class _122 {
             return pro;
         }
     }
-
 }
