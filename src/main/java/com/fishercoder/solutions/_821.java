@@ -35,7 +35,6 @@ public class _821 {
         int leftDist = Integer.MAX_VALUE;
         if (cIndices.floor(i) != null) {
           leftDist = Math.abs(cIndices.floor(i) - i);
-        } else {
         }
         int rightDist = Integer.MAX_VALUE;
         if (cIndices.ceiling(i) != null) {
