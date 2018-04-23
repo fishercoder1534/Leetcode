@@ -14,22 +14,23 @@ package com.fishercoder.solutions;
  */
 public class _134 {
 
-    /**Credit: https://discuss.leetcode.com/topic/5088/my-ac-is-o-1-space-o-n-running-time-solution-does-anybody-have-posted-this-solution*/
+  public static class Solution1 {
+    /** Credit: https://discuss.leetcode.com/topic/5088/my-ac-is-o-1-space-o-n-running-time-solution-does-anybody-have-posted-this-solution */
     public int canCompleteCircuit(int[] gas, int[] cost) {
-        int start = gas.length - 1;
-        int end = 0;
-        int sum = gas[start] - cost[start];
-        while (start > end) {
-            if (sum >= 0) {
-                sum += gas[end] - cost[end];
-                end++;
-            } else {
-                start--;
-                sum += gas[start] - cost[start];
-            }
+      int start = gas.length - 1;
+      int end = 0;
+      int sum = gas[start] - cost[start];
+      while (start > end) {
+        if (sum >= 0) {
+          sum += gas[end] - cost[end];
+          end++;
+        } else {
+          start--;
+          sum += gas[start] - cost[start];
         }
-        return sum >= 0 ? start : -1;
+      }
+      return sum >= 0 ? start : -1;
     }
-
+  }
 
 }
