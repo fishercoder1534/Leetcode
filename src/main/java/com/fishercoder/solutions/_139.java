@@ -1,7 +1,6 @@
 package com.fishercoder.solutions;
 
 import java.util.List;
-import java.util.Set;
 
 /**
  * 139. Word Break
@@ -24,7 +23,7 @@ import java.util.Set;
 public class _139 {
 
     public static class Solution1 {
-        /**this beats 70.46% submission. */
+        /** this beats 70.46% submission. */
         public boolean wordBreak(String s, List<String> wordDict) {
             int n = s.length();
             boolean[] dp = new boolean[n + 1];
@@ -75,7 +74,7 @@ public class _139 {
          * Added pruning, plus start from the end to check.
          * This beats 95.20% submissions.
          */
-        public boolean wordBreak(String s, Set<String> wordDict) {
+        public boolean wordBreak(String s, List<String> wordDict) {
             int maxLen = Integer.MIN_VALUE;
             for (String word : wordDict) {
                 maxLen = (word.length() > maxLen) ? word.length() : maxLen;
@@ -85,7 +84,8 @@ public class _139 {
             boolean[] dp = new boolean[n + 1];
             dp[0] = true;
             for (int i = 1; i <= n; i++) {
-                for (int lastWordLength = 1; lastWordLength <= i && lastWordLength <= maxLen; lastWordLength++) {
+                for (int lastWordLength = 1; lastWordLength <= i && lastWordLength <= maxLen;
+                    lastWordLength++) {
                     if (!dp[i - lastWordLength]) {
                         continue;
                     }
