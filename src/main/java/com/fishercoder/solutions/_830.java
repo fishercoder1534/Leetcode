@@ -33,9 +33,9 @@ public class _830 {
     public List<List<Integer>> largeGroupPositions(String S) {
       List<List<Integer>> result = new ArrayList<>();
       char[] chars = S.toCharArray();
-      for (int i = 0; i < chars.length;) {
+      for (int i = 0; i < chars.length; ) {
         char first = chars[i];
-        int j = i+1;
+        int j = i + 1;
         while (j < chars.length && first == chars[j]) {
           j++;
         }
