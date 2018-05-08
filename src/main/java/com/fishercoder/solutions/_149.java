@@ -1,85 +1,91 @@
 package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.Point;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
+ * 149. Max Points on a Line
+ *
  * Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
+ *
+ * Example 1:
+ * Input: [[1,1],[2,2],[3,3]]
+ * Output: 3
+ * Explanation:
+ * ^
+ * |
+ * |        o
+ * |     o
+ * |  o
+ * +------------->
+ * 0  1  2  3  4
+ *
+ * Example 2:
+ * Input: [[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]
+ * Output: 4
+ * Explanation:
+ * ^
+ * |
+ * |  o
+ * |     o        o
+ * |        o
+ * |  o        o
+ * +------------------->
+ * 0  1  2  3  4  5  6
+ *
  */
 public class _149 {
 
+  public static class Solution1 {
+    /**credit: https://leetcode.com/problems/max-points-on-a-line/discuss/47113/A-java-solution-with-notes*/
     public int maxPoints(Point[] points) {
-        int max = 0;
-        if (points.length == 0) {
-            max = 0;
-        } else if (points.length == 1) {
-            max = 1;
-        } else if (points.length == 2) {
-            max = 2;
-        } else if (points.length == 3) {
-            max = 2;
-            if ((points[0].x - points[1].x) * (points[1].y - points[2].y) == (points[0].y - points[1].y)
-                    * (points[1].x - points[2].x)) {
-                max++;
-            }
-        } else {
-            int[][] maxPoints = new int[points.length][points.length];
-            for (int i = 0; i < points.length; i++) {
-                for (int j = 0; j < points.length && j != i; j++) {
-                    maxPoints[i][j] = 2;
-                    // System.out.print(maxPoints[i][j] + " ");
-                }
-            }
+      if (points == null) return 0;
+      if (points.length <= 2) return points.length;
 
-            for (int i = 0; i < points.length; i++) {
-                for (int j = 0; (j < points.length) && (j != i); j++) {
-                    if (((points[i].x == points[j].x) && (points[i].y == points[j].y))) {
-                        for (int k = 0; (k < points.length); k++) {
-                            if ((k != i) && (k != j)) {
-                                if (((points[k].x == points[i].x) && (points[k].y == points[i].y))) {
-                                    maxPoints[i][j]++;
-                                }
-                            }
-                        }
-                    } else {
-                        for (int k = 0; (k < points.length); k++) {
-                        /*
-                         * Here, I must put the judgment (k!=i) && (k!=j) in the
-						 * if statement instead of in the for, otherwise, when k
-						 * equals i or j, it will stop traversing the rest of
-						 * the points that k represents!
-						 *
-						 * This is the key to solving this problem and Siyuan
-						 * Song helped me spot this error!
-						 *
-						 * It took me an hour and couldn't find any clue!
-						 */
-                            if ((k != i) && (k != j)) {
-                                if (((points[k].x == points[i].x) && (points[k].y == points[i].y))) {
-                                    maxPoints[i][j]++;
-                                } else if (((points[k].x == points[j].x) && (points[k].y == points[j].y))) {
-                                    maxPoints[i][j]++;
-                                } else if ((points[i].x - points[j].x)
-                                        * (points[k].y - points[j].y) == (points[i].y - points[j].y)
-                                        * (points[k].x - points[j].x)) {
-                                    maxPoints[i][j]++;
+      Map<Integer, Map<Integer, Integer>> map = new HashMap<>();
+      int result = 0;
+      for (int i = 0; i < points.length; i++) {
+        map.clear();
+        int overlap = 0, max = 0;
+        for (int j = i + 1; j < points.length; j++) {
+          int x = points[j].x - points[i].x;
+          int y = points[j].y - points[i].y;
+          if (x == 0 && y == 0) {
+            overlap++;
+            continue;
+          }
+          int gcd = generateGCD(x, y);
+          if (gcd != 0) {
+            x /= gcd;
+            y /= gcd;
+          }
 
-                                }
-                            }
-                        }
-                    }
-                }
+          if (map.containsKey(x)) {
+            if (map.get(x).containsKey(y)) {
+              map.get(x).put(y, map.get(x).get(y) + 1);
+            } else {
+              map.get(x).put(y, 1);
             }
-            for (int m = 0; m < points.length; m++) {
-                for (int n = 0; n < points.length; n++) {
-                    if (maxPoints[m][n] > max) {
-                        // System.out.print("maxPoints[" + m + "][" + n +"]:" +
-                        // maxPoints[m][n] + "\t");
-                        max = maxPoints[m][n];
-                    }
-                }
-            }
+          } else {
+            Map<Integer, Integer> m = new HashMap<>();
+            m.put(y, 1);
+            map.put(x, m);
+          }
+          max = Math.max(max, map.get(x).get(y));
         }
-        return max;
+        result = Math.max(result, max + overlap + 1);
+      }
+      return result;
     }
 
+    private int generateGCD(int a, int b) {
+
+      if (b == 0) {
+        return a;
+      } else {
+        return generateGCD(b, a % b);
+      }
+    }
+  }
 }
