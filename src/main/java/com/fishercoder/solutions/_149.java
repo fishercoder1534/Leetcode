@@ -51,7 +51,8 @@ public class _149 {
       int result = 0;
       for (int i = 0; i < points.length; i++) {
         map.clear();
-        int overlap = 0, max = 0;
+        int overlap = 0;
+        int max = 0;
         for (int j = i + 1; j < points.length; j++) {
           int x = points[j].x - points[i].x;
           int y = points[j].y - points[i].y;
@@ -84,7 +85,6 @@ public class _149 {
     }
 
     private int generateGCD(int a, int b) {
-
       if (b == 0) {
         return a;
       } else {
