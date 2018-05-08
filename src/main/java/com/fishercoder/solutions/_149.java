@@ -38,7 +38,7 @@ import java.util.Map;
 public class _149 {
 
   public static class Solution1 {
-    /**credit: https://leetcode.com/problems/max-points-on-a-line/discuss/47113/A-java-solution-with-notes*/
+    /** credit: https://leetcode.com/problems/max-points-on-a-line/discuss/47113/A-java-solution-with-notes */
     public int maxPoints(Point[] points) {
       if (points == null) return 0;
       if (points.length <= 2) return points.length;
