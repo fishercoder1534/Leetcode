@@ -22,6 +22,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|832|[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_832.java) | O(n) | O(1) | |Easy|
 |830|[Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_830.java) | O(n) | O(n) | |Easy|
 |824|[Goat Latin](https://leetcode.com/problems/goat-latin/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_824.java) | O(n) | O(1) | |Easy| 
 |821|[Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_821.java) | O(n) | O(k) (k is the number of char C in S) | |Easy| 
