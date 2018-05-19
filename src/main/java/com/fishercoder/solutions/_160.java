@@ -5,9 +5,9 @@ import com.fishercoder.common.classes.ListNode;
 import java.util.HashSet;
 import java.util.Set;
 
-/**160. Intersection of Two Linked Lists
- *
- * Write a program to find the node at which the intersection of two singly linked lists begins.
+/**
+ * 160. Intersection of Two Linked Lists
+ Write a program to find the node at which the intersection of two singly linked lists begins.
 
 
  For example, the following two linked lists:
