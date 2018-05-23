@@ -1,68 +1,35 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._164;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
 public class _164Test {
-    private static _164 test;
-    private static int expected;
-    private static int actual;
-    private static int[] nums;
+  private static _164.Solution1 solution1;
+  private static int[] nums;
 
-    @BeforeClass
-    public static void setup() {
-        test = new _164();
-    }
+  @BeforeClass
+  public static void setup() {
+    solution1 = new _164.Solution1();
+  }
 
-    @Before
-    public void setupForEachTest() {
-        expected = 0;
-        actual = 0;
-    }
+  @Test
+  public void test1() {
+    nums = new int[] {};
+    assertEquals(0, solution1.maximumGap(nums));
+  }
 
-    @Test
-    public void test1() {
-        nums = new int[]{};
-        expected = 0;
-        actual = test.maximumGap(nums);
-        assertEquals(expected, actual);
+  @Test
+  public void test2() {
+    nums = new int[] {1, 3, 6, 5};
+    assertEquals(2, solution1.maximumGap(nums));
+  }
 
-        actual = test.maximumGap_from_programcreek_1(nums);
-        assertEquals(expected, actual);
-
-        actual = test.maximumGap_from_programcreek_2(nums);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void test2() {
-        nums = new int[]{1, 3, 6, 5};
-        expected = 2;
-        actual = test.maximumGap(nums);
-        assertEquals(expected, actual);
-
-        actual = test.maximumGap_from_programcreek_1(nums);
-        assertEquals(expected, actual);
-
-        actual = test.maximumGap_from_programcreek_2(nums);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void test3() {
-        nums = new int[]{1, 100000};
-        expected = 99999;
-        actual = test.maximumGap(nums);
-        assertEquals(expected, actual);
-
-        actual = test.maximumGap_from_programcreek_1(nums);
-        assertEquals(expected, actual);
-
-        actual = test.maximumGap_from_programcreek_2(nums);
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void test3() {
+    nums = new int[] {1, 100000};
+    assertEquals(99999, solution1.maximumGap(nums));
+  }
 }
