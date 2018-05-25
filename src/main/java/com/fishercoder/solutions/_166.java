@@ -18,39 +18,41 @@ import java.util.Map;
 
  */
 public class _166 {
-    /**credit: https://discuss.leetcode.com/topic/33311/simple-and-short-solution-in-java*/
+  public static class Solution1 {
+    /** credit: https://discuss.leetcode.com/topic/33311/simple-and-short-solution-in-java */
     public String fractionToDecimal(int numerator, int denominator) {
-        String sign = (numerator >= 0 && denominator >= 0) || (numerator < 0 && denominator < 0) ? "" : "-";
-        if (numerator == 0) {
-            return "0";
-        }
-        long num = Math.abs((long) numerator);
-        long deno = Math.abs((long) denominator);
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(sign);
-        long integral = Math.abs(num / deno);
-        stringBuilder.append(integral);
-        if (numerator % denominator == 0) {
-            return stringBuilder.toString();
-        } else {
-            stringBuilder.append(".");
-        }
-        long remainder = num % deno;
-
-        Map<Long, Integer> map = new HashMap<>();
-        while (!map.containsKey(remainder)) {
-            map.put(remainder, stringBuilder.length());
-            long n = remainder * 10 / deno;
-            remainder = remainder * 10 % deno;
-            if (remainder != 0 || (remainder == 0 && !map.containsKey(remainder))) {
-                stringBuilder.append(n);
-            }
-        }
-        if (remainder != 0) {
-            stringBuilder.insert(map.get(remainder), "(");
-            stringBuilder.append(")");
-        }
+      String sign =
+          (numerator >= 0 && denominator >= 0) || (numerator < 0 && denominator < 0) ? "" : "-";
+      if (numerator == 0) {
+        return "0";
+      }
+      long num = Math.abs((long) numerator);
+      long deno = Math.abs((long) denominator);
+      StringBuilder stringBuilder = new StringBuilder();
+      stringBuilder.append(sign);
+      long integral = Math.abs(num / deno);
+      stringBuilder.append(integral);
+      if (numerator % denominator == 0) {
         return stringBuilder.toString();
-    }
+      } else {
+        stringBuilder.append(".");
+      }
+      long remainder = num % deno;
 
+      Map<Long, Integer> map = new HashMap<>();
+      while (!map.containsKey(remainder)) {
+        map.put(remainder, stringBuilder.length());
+        long n = remainder * 10 / deno;
+        remainder = remainder * 10 % deno;
+        if (remainder != 0 || (remainder == 0 && !map.containsKey(remainder))) {
+          stringBuilder.append(n);
+        }
+      }
+      if (remainder != 0) {
+        stringBuilder.insert(map.get(remainder), "(");
+        stringBuilder.append(")");
+      }
+      return stringBuilder.toString();
+    }
+  }
 }
