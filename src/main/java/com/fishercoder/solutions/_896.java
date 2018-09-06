@@ -68,4 +68,5 @@ public class _896 {
         Solution1 solution1 = new Solution1();
         System.out.println(solution1.isMonotonic(A));
     }
+    
 }
