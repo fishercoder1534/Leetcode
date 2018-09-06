@@ -42,7 +42,7 @@ public class _896 {
         public boolean isMonotonic(int[] A) {
             int i = 0;
             for (; i < A.length - 1; i++) {
-                if (A[i] <= A[i+1]) {
+                if (A[i] <= A[i + 1]) {
                     continue;
                 } else {
                     break;
@@ -53,7 +53,7 @@ public class _896 {
             }
             i = 0;
             for (; i < A.length - 1; i++) {
-                if (A[i] >= A[i+1]) {
+                if (A[i] >= A[i + 1]) {
                     continue;
                 } else {
                     break;
