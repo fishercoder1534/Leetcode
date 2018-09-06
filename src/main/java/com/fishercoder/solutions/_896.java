@@ -62,11 +62,4 @@ public class _896 {
             return i == A.length - 1;
         }
     }
-
-    public static void main(String... args) {
-        int[] A = new int[]{1, 3, 2};
-        Solution1 solution1 = new Solution1();
-        System.out.println(solution1.isMonotonic(A));
-    }
-    
 }
