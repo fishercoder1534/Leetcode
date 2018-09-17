@@ -7,7 +7,7 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _207Test {
-    private static _207 test;
+    private static _207.Solution1 test;
     private static boolean actual;
     private static boolean expected;
     private static int[][] prerequisites;
@@ -15,7 +15,7 @@ public class _207Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _207();
+        test = new _207.Solution1();
     }
 
     @Test
