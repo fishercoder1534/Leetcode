@@ -6,7 +6,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
-/**There are a total of n courses you have to take, labeled from 0 to n - 1.
+/**
+ * 210. Course Schedule II
+ *
+ * There are a total of n courses you have to take, labeled from 0 to n - 1.
  Some courses may have prerequisites, for example to take course 0 you have to first take course 1,
  which is expressed as a pair: [0,1]
  Given the total number of courses and a list of prerequisite pairs,
@@ -36,55 +39,57 @@ import java.util.Set;
  Hints:
  This problem is equivalent to finding the topological order in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.
  Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
- Topological sort could also be done via BFS.*/
+ Topological sort could also be done via BFS.
+ */
 public class _210 {
 
-    public int[] findOrder(int numCourses, int[][] prerequisites) {
-        int[] inDegree = new int[numCourses];
-        for (int[] course : prerequisites) {
-            inDegree[course[0]]++;
-        }
-
-        Set<Integer> zeroDegree = new HashSet();
-        Queue<Integer> queue = new LinkedList();
-        for (int i = 0; i < numCourses; i++) {
-            if (inDegree[i] == 0) {
-                zeroDegree.add(i);
-                queue.offer(i);
+    public static class Solution1 {
+        public int[] findOrder(int numCourses, int[][] prerequisites) {
+            int[] inDegree = new int[numCourses];
+            for (int[] course : prerequisites) {
+                inDegree[course[0]]++;
             }
-        }
 
-        if (zeroDegree.isEmpty()) {
-            return new int[0];
-        }
+            Set<Integer> zeroDegree = new HashSet();
+            Queue<Integer> queue = new LinkedList();
+            for (int i = 0; i < numCourses; i++) {
+                if (inDegree[i] == 0) {
+                    zeroDegree.add(i);
+                    queue.offer(i);
+                }
+            }
 
-        while (!zeroDegree.isEmpty()) {
-            Iterator<Integer> it = zeroDegree.iterator();
-            int course = it.next();
-            zeroDegree.remove(course);
-            for (int[] pre : prerequisites) {
-                if (course == pre[1]) {
-                    inDegree[pre[0]]--;
-                    if (inDegree[pre[0]] == 0) {
-                        zeroDegree.add(pre[0]);
-                        queue.offer(pre[0]);
+            if (zeroDegree.isEmpty()) {
+                return new int[0];
+            }
+
+            while (!zeroDegree.isEmpty()) {
+                Iterator<Integer> it = zeroDegree.iterator();
+                int course = it.next();
+                zeroDegree.remove(course);
+                for (int[] pre : prerequisites) {
+                    if (course == pre[1]) {
+                        inDegree[pre[0]]--;
+                        if (inDegree[pre[0]] == 0) {
+                            zeroDegree.add(pre[0]);
+                            queue.offer(pre[0]);
+                        }
                     }
                 }
             }
-        }
 
-        for (int i = 0; i < numCourses; i++) {
-            if (inDegree[i] != 0) {
-                return new int[0];
+            for (int i = 0; i < numCourses; i++) {
+                if (inDegree[i] != 0) {
+                    return new int[0];
+                }
             }
-        }
 
-        int[] result = new int[queue.size()];
-        int i = 0;
-        while (!queue.isEmpty()) {
-            result[i++] = queue.poll();
+            int[] result = new int[queue.size()];
+            int i = 0;
+            while (!queue.isEmpty()) {
+                result[i++] = queue.poll();
+            }
+            return result;
         }
-        return result;
     }
-
 }
