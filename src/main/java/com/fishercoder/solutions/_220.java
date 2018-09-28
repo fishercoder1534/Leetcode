@@ -43,11 +43,15 @@ public class _220 {
             for (int i = 0; i < nums.length; ++i) {
                 // Find the successor of current element
                 Integer s = set.ceiling(nums[i]);
-                if (s != null && s <= nums[i] + t) return true;
+                if (s != null && s <= nums[i] + t) {
+                    return true;
+                }
 
                 // Find the predecessor of current element
                 Integer g = set.floor(nums[i]);
-                if (g != null && nums[i] <= g + t) return true;
+                if (g != null && nums[i] <= g + t) {
+                    return true;
+                }
 
                 set.add(nums[i]);
                 if (set.size() > k) {
