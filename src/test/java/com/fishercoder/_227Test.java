@@ -6,35 +6,32 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 5/29/17.
- */
 public class _227Test {
-    private static _227 test;
+    private static _227.Solution1 solution1;
 
     @BeforeClass
     public static void setup() {
-        test = new _227();
+        solution1 = new _227.Solution1();
     }
 
     @Test
     public void test1() {
-        assertEquals(7, test.calculate("3+2*2"));
+        assertEquals(7, solution1.calculate("3+2*2"));
     }
 
     @Test
     public void test2() {
-        assertEquals(1, test.calculate(" 3/2 "));
+        assertEquals(1, solution1.calculate(" 3/2 "));
     }
 
     @Test
     public void test3() {
-        assertEquals(5, test.calculate(" 3+5 / 2 "));
+        assertEquals(5, solution1.calculate(" 3+5 / 2 "));
     }
 
     @Test
     public void test4() {
-        assertEquals(27, test.calculate("100000000/1/2/3/4/5/6/7/8/9/10"));
+        assertEquals(27, solution1.calculate("100000000/1/2/3/4/5/6/7/8/9/10"));
     }
 
 }
