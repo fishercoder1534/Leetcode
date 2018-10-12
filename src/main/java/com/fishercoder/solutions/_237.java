@@ -10,9 +10,10 @@ import com.fishercoder.common.classes.ListNode;
 */
 public class _237 {
 
-    public void deleteNode(ListNode node) {
-        node.val = node.next.val;
-        node.next = node.next.next;
+    public static class Solution1 {
+        public void deleteNode(ListNode node) {
+            node.val = node.next.val;
+            node.next = node.next.next;
+        }
     }
-
 }
