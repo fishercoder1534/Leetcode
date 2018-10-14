@@ -37,7 +37,7 @@ public class _917 {
                     array[j--] = temp;
                 } else if (Character.isLetter(array[i])) {
                     j--;
-                } else if (Character.isLetter(array[j])){
+                } else if (Character.isLetter(array[j])) {
                     i++;
                 } else {
                     i++;
