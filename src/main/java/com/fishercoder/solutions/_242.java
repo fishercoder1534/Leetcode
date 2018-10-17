@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 public class _242 {
 
-    public static class SortingSolution {
+    public static class Solution1 {
         public boolean isAnagram(String s, String t) {
             char[] schar = s.toCharArray();
             char[] tchar = t.toCharArray();
@@ -29,7 +29,7 @@ public class _242 {
         }
     }
 
-    public static class CountingSolution {
+    public static class Solution2 {
         public boolean isAnagram(String s, String t) {
             if (s == null || t == null || s.length() != t.length()) {
                 return false;
