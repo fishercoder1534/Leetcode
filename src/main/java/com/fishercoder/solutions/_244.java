@@ -23,6 +23,7 @@ import java.util.Map;
 public class _244 {
     public static class Solution1 {
         class WordDistance {
+
             private Map<String, List<Integer>> map;
 
             public WordDistance(String[] words) {
