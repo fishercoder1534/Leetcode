@@ -24,6 +24,7 @@ public class _244 {
     public static class Solution1 {
         class WordDistance {
             private Map<String, List<Integer>> map;
+
             public WordDistance(String[] words) {
                 map = new HashMap<>();
                 for (int i = 0; i < words.length; i++) {
@@ -37,6 +38,7 @@ public class _244 {
                     }
                 }
             }
+
             public int shortest(String word1, String word2) {
                 List<Integer> list1 = map.get(word1);
                 List<Integer> list2 = map.get(word2);
