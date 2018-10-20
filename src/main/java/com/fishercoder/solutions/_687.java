@@ -47,7 +47,9 @@ public class _687 {
             }
             return result[0];
         }
-
+        
+        // calculate longest univalue path from root to leaves
+        // In addition, the maximum univalue path cross the root node is calculated and then global maximum is udpated.
         private int dfs(TreeNode root, int[] result) {
             int leftPath = root.left == null ? 0 : dfs(root.left, result);
             int rightPath = root.right == null ? 0 : dfs(root.right, result);
