@@ -18,11 +18,7 @@ public class _929 {
                 filteredLocalName = filteredLocalName.replace(".", "");
                 map.get(parts[1]).add(filteredLocalName);
             }
-            int n = 0;
-            for (String key : map.keySet()) {
-                n += map.get(key).size();
-            }
-            return n;
+            return map.keySet().stream().mapToInt(key -> map.get(key).size()).sum();
         }
     }
 }
