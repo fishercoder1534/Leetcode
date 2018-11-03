@@ -5,27 +5,11 @@ import com.fishercoder.common.classes.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-/**257. Binary Tree Paths
- *
-Given a binary tree, return all root-to-leaf paths.
-
-For example, given the following binary tree:
-
-   1
- /   \
-2     3
- \
-  5
-All root-to-leaf paths are:
-
-["1->2->5", "1->3"]
-*/
-
 public class _257 {
     public static class Solution1 {
         //a very typical/good question to test your recursion/dfs understanding.
         public List<String> binaryTreePaths_more_concise(TreeNode root) {
-            List<String> paths = new ArrayList<String>();
+            List<String> paths = new ArrayList<>();
             if (root == null) {
                 return paths;
             }
@@ -50,7 +34,7 @@ public class _257 {
     
     public static class Solution2 {
         public List<String> binaryTreePaths(TreeNode root) {
-            List<String> paths = new ArrayList<String>();
+            List<String> paths = new ArrayList<>();
             dfs(root, paths, new StringBuilder());
             return paths;
         }
