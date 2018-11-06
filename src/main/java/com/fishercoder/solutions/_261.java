@@ -2,7 +2,8 @@ package com.fishercoder.solutions;
 
 /**
  *261. Graph Valid Tree
- *Given n nodes labeled from 0 to n - 1 and a list of undirected edges
+ *
+ * Given n nodes labeled from 0 to n - 1 and a list of undirected edges
  * (each edge is a pair of nodes),
  * write a function to check whether these edges make up a valid tree.
 
@@ -24,31 +25,33 @@ package com.fishercoder.solutions;
  */
 public class _261 {
 
-    public boolean validTree(int n, int[][] edges) {
-        int[] nums = new int[n];
-        for (int i = 0; i < n; i++) {
-            nums[i] = i;
-        }
-
-        for (int i = 0; i < edges.length; i++) {
-            int x = find(nums, edges[i][0]);
-            int y = find(nums, edges[i][1]);
-
-            if (x == y) {
-                return false;
+    public static class Solution1 {
+        public boolean validTree(int n, int[][] edges) {
+            int[] nums = new int[n];
+            for (int i = 0; i < n; i++) {
+                nums[i] = i;
             }
 
-            //union
-            nums[x] = y;
+            for (int i = 0; i < edges.length; i++) {
+                int x = find(nums, edges[i][0]);
+                int y = find(nums, edges[i][1]);
+
+                if (x == y) {
+                    return false;
+                }
+
+                //union
+                nums[x] = y;
+            }
+
+            return edges.length == n - 1;
         }
 
-        return edges.length == n - 1;
-    }
-
-    int find(int[] nums, int i) {
-        if (nums[i] == i) {
-            return i;
+        int find(int[] nums, int i) {
+            if (nums[i] == i) {
+                return i;
+            }
+            return find(nums, nums[i]);
         }
-        return find(nums, nums[i]);
     }
 }
