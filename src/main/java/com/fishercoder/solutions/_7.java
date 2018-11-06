@@ -14,15 +14,22 @@ public class _7 {
 
     public static class Solution1 {
         public int reverse(int x) {
-            long rev = 0;
-            while (x != 0) {
-                rev = rev * 10 + x % 10;
-                x /= 10;
-                if (rev > Integer.MAX_VALUE || rev < Integer.MIN_VALUE) {
-                    return 0;
-                }
+            long xL = x; // in case x=Integer.MIN_VALUE and cause error for 'x=-x' in line 7
+            long temp = 0;
+            boolean negative = false;
+            if(xL < 0){
+                xL = -xL;
+                negative = true;
             }
-            return (int) rev;
+            while (xL != 0){
+                temp = temp*10 + xL%10;
+                xL /= 10;
+            }
+        
+            if(negative){
+                return -temp < Integer.MIN_VALUE ? 0 : (int)-temp;
+            } 
+            return temp > Integer.MAX_VALUE ? 0 : (int)temp;
         }
     }
 }
