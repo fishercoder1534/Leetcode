@@ -6,24 +6,21 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 6/7/17.
- */
 public class _264Test {
-    private static _264 test;
+    private static _264.Solution1 solution1;
 
     @BeforeClass
     public static void setup() {
-        test = new _264();
+        solution1 = new _264.Solution1();
     }
 
     @Test
     public void test1() {
-        assertEquals(12, test.nthUglyNumber(10));
+        assertEquals(12, solution1.nthUglyNumber(10));
     }
 
     @Test
     public void test2() {
-        assertEquals(402653184, test.nthUglyNumber(1352));
+        assertEquals(402653184, solution1.nthUglyNumber(1352));
     }
 }
