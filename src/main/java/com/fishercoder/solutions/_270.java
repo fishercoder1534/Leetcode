@@ -2,15 +2,10 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
 
-/**Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
-
- Note:
- Given target value is a floating point.
- You are guaranteed to have only one unique value in the BST that is closest to the target.*/
 public class _270 {
 
-    class GeneralTreeSolution {
-        //this finished in 1 ms
+    public static class Solution1 {
+        //A general tree solution, this finished in 1 ms
         public int closestValue(TreeNode root, double target) {
             if (root == null) {
                 return 0;
@@ -36,8 +31,9 @@ public class _270 {
         }
     }
 
-    class BSTSolutionRecursive {
-        //we can tailor the solution to use the BST feature: left subtrees are always smaller than the root the right subtrees
+    public static class Solution2 {
+        // BST solution
+        // we can tailor the solution to use the BST feature: left subtrees are always smaller than the root the right subtrees
         //this finished in 0 ms
         public int closestValue(TreeNode root, double target) {
             if (root == null) {
@@ -62,7 +58,8 @@ public class _270 {
         }
     }
 
-    class GeneralTreeSolutionMoreConcise {
+    public static class Solution3 {
+        //a more concise solution
         public int closestValue(TreeNode root, double target) {
             if (root == null) {
                 return 0;
@@ -83,7 +80,8 @@ public class _270 {
         }
     }
 
-    class BSTSolutionIterative {
+    public static class Solution4 {
+        //BST iterative solution
         public int closestValue(TreeNode root, double target) {
             long minVal = Long.MAX_VALUE;
             while (root != null) {
