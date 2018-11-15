@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
+ * 271. Encode and Decode Strings
+ *
+ * Design an algorithm to encode a list of strings to a string.
+ * The encoded string is then sent over the network and is decoded back to the original list of strings.
 
  Machine 1 (sender) has the function:
 
@@ -33,25 +36,27 @@ import java.util.List;
  Do not rely on any library method such as eval or serialize methods. You should implement your own encode/decode algorithm.
  */
 public class _271 {
-    // Encodes a list of strings to a single string.
-    public String encode(List<String> strs) {
-        StringBuilder sb = new StringBuilder();
-        for (String s : strs) {
-            sb.append(s.length()).append('/').append(s);
+    public static class Solution1 {
+        // Encodes a list of strings to a single string.
+        public String encode(List<String> strs) {
+            StringBuilder sb = new StringBuilder();
+            for (String s : strs) {
+                sb.append(s.length()).append('/').append(s);
+            }
+            return sb.toString();
         }
-        return sb.toString();
-    }
 
-    // Decodes a single string to a list of strings.
-    public List<String> decode(String s) {
-        List<String> result = new ArrayList<String>();
-        int i = 0;
-        while (i < s.length()) {
-            int slash = s.indexOf('/', i);
-            int size = Integer.valueOf(s.substring(i, slash));
-            result.add(s.substring(slash + 1, slash + 1 + size));
-            i = slash + size + 1;
+        // Decodes a single string to a list of strings.
+        public List<String> decode(String s) {
+            List<String> result = new ArrayList<>();
+            int i = 0;
+            while (i < s.length()) {
+                int slash = s.indexOf('/', i);
+                int size = Integer.valueOf(s.substring(i, slash));
+                result.add(s.substring(slash + 1, slash + 1 + size));
+                i = slash + size + 1;
+            }
+            return result;
         }
-        return result;
     }
 }
