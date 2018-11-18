@@ -29,6 +29,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|941|[Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_941.java) | O(n) | O(1) | |Easy|
 |933|[Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_933.java) | O(n) | O(n) | |Easy|
 |929|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_929.java) | O(n) | O(n) | |Easy|
 |922|[Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_922.java) | O(n) | O(1) | |Easy|
