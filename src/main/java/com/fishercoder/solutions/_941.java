@@ -37,9 +37,9 @@ public class _941 {
         public boolean validMountainArray(int[] A) {
             int i = 0;
             for (; i < A.length - 1; i++) {
-                if (A[i] < A[i+1]) {
+                if (A[i] < A[i + 1]) {
                     continue;
-                } else if (A[i] == A[i+1]) {
+                } else if (A[i] == A[i + 1]) {
                     return false;
                 } else {
                     break;
@@ -48,8 +48,8 @@ public class _941 {
             if (i == 0 || i >= A.length - 1) {
                 return false;
             }
-            for (; i < A.length-1; i++) {
-                if (A[i] > A[i+1]) {
+            for (; i < A.length - 1; i++) {
+                if (A[i] > A[i + 1]) {
                     continue;
                 } else {
                     return false;
