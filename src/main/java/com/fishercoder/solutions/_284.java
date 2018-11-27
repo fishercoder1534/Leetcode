@@ -7,7 +7,9 @@ import java.util.Queue;
 /**
  * 284. Peeking Iterator
  *
- * Given an Iterator class interface with methods: next() and hasNext(), design and implement a PeekingIterator that support the peek() operation -- it essentially peek() at the element that will be returned by the next call to next().
+ * Given an Iterator class interface with methods: next() and hasNext(),
+ * design and implement a PeekingIterator that support
+ * the peek() operation -- it essentially peek() at the element that will be returned by the next call to next().
 
  Here is an example. Assume that the iterator is initialized to the beginning of the queue: [1, 2, 3].
 
@@ -20,33 +22,35 @@ import java.util.Queue;
  Follow up: How would you extend your design to be generic and work with all types, not just integer?
  */
 public class _284 {
-    public static class PeekingIterator implements Iterator<Integer> {
+    public static class Solution1 {
+        public static class PeekingIterator implements Iterator<Integer> {
 
-        private Queue<Integer> queue;
+            private Queue<Integer> queue;
 
-        public PeekingIterator(Iterator<Integer> iterator) {
-            // initialize any member here.
-            queue = new LinkedList<>();
-            while (iterator.hasNext()) {
-                queue.add(iterator.next());
+            public PeekingIterator(Iterator<Integer> iterator) {
+                // initialize any member here.
+                queue = new LinkedList<>();
+                while (iterator.hasNext()) {
+                    queue.add(iterator.next());
+                }
             }
-        }
 
-        // Returns the next element in the iteration without advancing the iterator.
-        public Integer peek() {
-            return queue.peek();
-        }
+            // Returns the next element in the iteration without advancing the iterator.
+            public Integer peek() {
+                return queue.peek();
+            }
 
-        // hasNext() and next() should behave the same as in the Iterator interface.
-        // Override them if needed.
-        @Override
-        public Integer next() {
-            return queue.poll();
-        }
+            // hasNext() and next() should behave the same as in the Iterator interface.
+            // Override them if needed.
+            @Override
+            public Integer next() {
+                return queue.poll();
+            }
 
-        @Override
-        public boolean hasNext() {
-            return !queue.isEmpty();
+            @Override
+            public boolean hasNext() {
+                return !queue.isEmpty();
+            }
         }
     }
 }
