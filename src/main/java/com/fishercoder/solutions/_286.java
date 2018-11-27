@@ -25,7 +25,7 @@ import java.util.Queue;
 
  */
 public class _286 {
-    class BFSSolutionWithoutQueue {
+    public static class Solution1 {
 
         int[] dirs = new int[]{0, 1, 0, -1, 0};
 
@@ -57,7 +57,7 @@ public class _286 {
 
     }
 
-    class BFSSolutionWithAQueue {
+    public static class Solution2 {
 
         //push all gates into the queue first, and then put all its neighbours into the queue with one distance to the gate, then continue to push the rest of the nodes into the queue, and put all their neighbours into the queue with the nodes' value plus one until the queue is empty
         int[] dirs = new int[]{0, 1, 0, -1, 0};
