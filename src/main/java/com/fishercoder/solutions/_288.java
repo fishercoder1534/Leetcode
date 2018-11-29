@@ -38,28 +38,30 @@ import java.util.Set;
  true
  */
 public class _288 {
+    public static class Solution1 {
 
-    public class ValidWordAbbrSolution1 {
-        private Map<String, String> dict;
+        public class ValidWordAbbrSolution1 {
+            private Map<String, String> dict;
 
-        public ValidWordAbbrSolution1(String[] dictionary) {
-            dict = new HashMap();
-            for (String word : dictionary) {
-                String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
-                if (dict.containsKey(key) && !dict.get(key).equals(word)) {
-                    dict.put(key, "");
-                } else {
-                    dict.put(key, word);
+            public ValidWordAbbrSolution1(String[] dictionary) {
+                dict = new HashMap();
+                for (String word : dictionary) {
+                    String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
+                    if (dict.containsKey(key) && !dict.get(key).equals(word)) {
+                        dict.put(key, "");
+                    } else {
+                        dict.put(key, word);
+                    }
                 }
             }
-        }
 
-        public boolean isUnique(String word) {
-            String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
-            if (!dict.containsKey(key)) {
-                return true;
-            } else {
-                return dict.get(key) != "" && dict.get(key).equals(word);
+            private boolean isUnique(String word) {
+                String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
+                if (!dict.containsKey(key)) {
+                    return true;
+                } else {
+                    return dict.get(key) != "" && dict.get(key).equals(word);
+                }
             }
         }
     }
