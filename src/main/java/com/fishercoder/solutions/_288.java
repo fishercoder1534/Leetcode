@@ -40,10 +40,10 @@ import java.util.Set;
 public class _288 {
     public static class Solution1 {
 
-        public class ValidWordAbbrSolution1 {
+        public class ValidWordAbbr {
             private Map<String, String> dict;
 
-            public ValidWordAbbrSolution1(String[] dictionary) {
+            public ValidWordAbbr(String[] dictionary) {
                 dict = new HashMap();
                 for (String word : dictionary) {
                     String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
@@ -55,7 +55,7 @@ public class _288 {
                 }
             }
 
-            private boolean isUnique(String word) {
+            public boolean isUnique(String word) {
                 String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
                 if (!dict.containsKey(key)) {
                     return true;
@@ -66,37 +66,39 @@ public class _288 {
         }
     }
 
-    public class ValidWordAbbrSolution2 {
+    public static class Solution2 {
+        public class ValidWordAbbr {
 
-        private Map<String, Set<String>> dict;
+            private Map<String, Set<String>> dict;
 
-        public ValidWordAbbrSolution2(String[] dictionary) {
-            dict = new HashMap();
-            for (String word : dictionary) {
-                String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
-                if (dict.containsKey(key)) {
-                    Set<String> set = dict.get(key);
-                    set.add(word);
-                    dict.put(key, set);
-                } else {
-                    Set<String> set = new HashSet();
-                    set.add(word);
-                    dict.put(key, set);
+            public ValidWordAbbr(String[] dictionary) {
+                dict = new HashMap();
+                for (String word : dictionary) {
+                    String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
+                    if (dict.containsKey(key)) {
+                        Set<String> set = dict.get(key);
+                        set.add(word);
+                        dict.put(key, set);
+                    } else {
+                        Set<String> set = new HashSet();
+                        set.add(word);
+                        dict.put(key, set);
+                    }
                 }
             }
-        }
 
-        public boolean isUnique(String word) {
-            String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
-            if (!dict.containsKey(key)) {
-                return true;
-            } else {
-                Set<String> set = dict.get(key);
-                if (set.size() != 1) {
-                    return false;
+            public boolean isUnique(String word) {
+                String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
+                if (!dict.containsKey(key)) {
+                    return true;
+                } else {
+                    Set<String> set = dict.get(key);
+                    if (set.size() != 1) {
+                        return false;
+                    }
+                    Iterator<String> it = set.iterator();
+                    return it.next().equals(word);
                 }
-                Iterator<String> it = set.iterator();
-                return it.next().equals(word);
             }
         }
     }
