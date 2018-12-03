@@ -10,15 +10,15 @@ import static org.junit.Assert.assertEquals;
  * Created by stevesun on 5/29/17.
  */
 public class _294Test {
-    private static _294 test;
+  private static _294.Solution1 solution1;
 
-    @BeforeClass
-    public static void setup() {
-        test = new _294();
-    }
+  @BeforeClass
+  public static void setup() {
+    solution1 = new _294.Solution1();
+  }
 
-    @Test
-    public void test1() {
-        assertEquals(true, test.canWin("++++"));
-    }
+  @Test
+  public void test1() {
+    assertEquals(true, solution1.canWin("++++"));
+  }
 }
