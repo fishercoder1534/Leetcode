@@ -1,7 +1,12 @@
 package com.fishercoder.solutions;
 
 /**
- * An image is represented by a binary matrix with 0 as a white pixel and 1 as a black pixel. The black pixels are connected, i.e., there is only one black region. Pixels are connected horizontally and vertically. Given the location (x, y) of one of the black pixels, return the area of the smallest (axis-aligned) rectangle that encloses all black pixels.
+ * 302. Smallest Rectangle Enclosing Black Pixels
+ * 
+ * An image is represented by a binary matrix with 0 as a white pixel and 1 as a black pixel.
+ * The black pixels are connected, i.e., there is only one black region.
+ * Pixels are connected horizontally and vertically.
+ * Given the location (x, y) of one of the black pixels, return the area of the smallest (axis-aligned) rectangle that encloses all black pixels.
 
  For example, given the following image:
 
@@ -14,7 +19,7 @@ package com.fishercoder.solutions;
  Return 6.
  */
 public class _302 {
-    class Solution {
+    public static class Solution1 {
         private char[][] image;
 
         public int minArea(char[][] iImage, int x, int y) {
