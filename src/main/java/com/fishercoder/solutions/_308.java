@@ -1,7 +1,10 @@
 package com.fishercoder.solutions;
 
 /**
- * Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
+ * 308. Range Sum Query 2D - Mutable
+ *
+ * Given a 2D matrix matrix,
+ * find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
 
  Range Sum Query 2D
  The above rectangle (with the red border) is defined by (row1, col1) = (2, 1) and (row2, col2) = (4, 3), which contains sum = 8.
@@ -24,7 +27,7 @@ package com.fishercoder.solutions;
  You may assume that row1 ≤ row2 and col1 ≤ col2.
  */
 public class _308 {
-    class Solution {
+    public static class Solution1 {
         public class NumMatrix {
             int[][] nums;
             int[][] tree;
@@ -63,7 +66,8 @@ public class _308 {
                 if (height == 0 || width == 0) {
                     return 0;
                 }
-                return sum(row2 + 1, col2 + 1) + sum(row1, col1) - sum(row1, col2 + 1) - sum(row2 + 1, col1);
+                return sum(row2 + 1, col2 + 1) + sum(row1, col1) - sum(row1, col2 + 1) - sum(
+                    row2 + 1, col1);
             }
 
             private int sum(int row, int col) {
@@ -75,14 +79,13 @@ public class _308 {
                 }
                 return sum;
             }
-
         }
 
-/**
- * Your NumMatrix object will be instantiated and called as such:
- * NumMatrix obj = new NumMatrix(matrix);
- * obj.update(row,col,val);
- * int param_2 = obj.sumRegion(row1,col1,row2,col2);
- */
+        /**
+         * Your NumMatrix object will be instantiated and called as such:
+         * NumMatrix obj = new NumMatrix(matrix);
+         * obj.update(row,col,val);
+         * int param_2 = obj.sumRegion(row1,col1,row2,col2);
+         */
     }
 }
