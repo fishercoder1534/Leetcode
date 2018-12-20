@@ -8,6 +8,7 @@ package com.fishercoder.solutions;
  * are in the given prime list primes of size k.
  * For example, [1, 2, 4, 7, 8, 13, 14, 16, 19, 26, 28, 32]
  * is the sequence of the first 12 super ugly numbers given primes = [2, 7, 13, 19] of size 4.
+ *
  * Note:
  * (1) 1 is a super ugly number for any given primes.
  * (2) The given numbers in primes are in ascending order.
@@ -16,27 +17,28 @@ package com.fishercoder.solutions;
  */
 public class _313 {
 
-    public int nthSuperUglyNumber(int n, int[] primes) {
-        int[] ret = new int[n];
-        ret[0] = 1;
+    public static class Solution1 {
+        public int nthSuperUglyNumber(int n, int[] primes) {
+            int[] ret = new int[n];
+            ret[0] = 1;
 
-        int[] indexes = new int[primes.length];
+            int[] indexes = new int[primes.length];
 
-        for (int i = 1; i < n; i++) {
-            ret[i] = Integer.MAX_VALUE;
+            for (int i = 1; i < n; i++) {
+                ret[i] = Integer.MAX_VALUE;
 
-            for (int j = 0; j < primes.length; j++) {
-                ret[i] = Math.min(ret[i], primes[j] * ret[indexes[j]]);
-            }
+                for (int j = 0; j < primes.length; j++) {
+                    ret[i] = Math.min(ret[i], primes[j] * ret[indexes[j]]);
+                }
 
-            for (int j = 0; j < indexes.length; j++) {
-                if (ret[i] == primes[j] * ret[indexes[j]]) {
-                    indexes[j]++;
+                for (int j = 0; j < indexes.length; j++) {
+                    if (ret[i] == primes[j] * ret[indexes[j]]) {
+                        indexes[j]++;
+                    }
                 }
             }
+            return ret[n - 1];
         }
-
-        return ret[n - 1];
     }
 
 }
