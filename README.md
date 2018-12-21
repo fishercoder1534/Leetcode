@@ -100,6 +100,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_713.java) | O(n) | O(1) | |Medium |
 |712|[Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_712.java) | O(m*n) | O(m*n) | |Medium | DP
 |709|[To Lower Case](https://leetcode.com/problems/to-lower-case/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_709.java) | O(n) | O(1) | |Easy| String
+|704|[Binary Search](https://leetcode.com/problems/binary-search/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_704.java) | O(logn) | O(1) | |Easy| Binary Search
 |699|[Falling Squares](https://leetcode.com/problems/falling-squares/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_699.java) | O(n^2) | O(n) | |Hard | Segment Tree
 |698|[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_698.java) | O(n*(2^n)) | O(2^n) | |Medium | Backtracking
 |697|[Degree of an Array](https://leetcode.com/problems/degree-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_697.java) | O(n) | O(n) | |Easy | 
