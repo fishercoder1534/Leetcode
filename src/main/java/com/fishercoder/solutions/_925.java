@@ -43,7 +43,7 @@ public class _925 {
             for (int j = 0; i < name.length() && j < typed.length(); i++) {
                 if (name.charAt(i) != typed.charAt(j)) {
                     return false;
-                } else if (i < name.length() - 1 && name.charAt(i) != name.charAt(i+1)) {
+                } else if (i < name.length() - 1 && name.charAt(i) != name.charAt(i + 1)) {
                     j++;
                     while (j < typed.length() && name.charAt(i) == typed.charAt(j)) {
                         j++;
