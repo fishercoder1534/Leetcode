@@ -15,7 +15,7 @@ import java.util.Queue;
 public class TreeUtils {
 /**
 * This method is to construct a normal binary tree. The input reads like
-* this for [5, 3, 6, 2, 4, null, null, 1]:
+* this for [5, 3, 6, 2, 4, null, null, 1], i.e. preorder:
                5
              /   \
             3     6
