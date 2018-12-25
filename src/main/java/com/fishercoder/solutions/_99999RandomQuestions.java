@@ -4,7 +4,6 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -42,6 +41,64 @@ public class _99999RandomQuestions {
 //        System.out.println(getShiftedString("abcd", 1, 2));
 //        System.out.println(getShiftedString("abcd", 1, 0));
 
+        //List<Integer> result = cellCompete(new int[]{1, 0, 0, 0, 0, 1, 0, 0}, 1);
+        //List<Integer> result = cellCompete(new int[]{1, 1, 1, 0, 1, 1, 1, 1}, 2);
+        //CommonUtils.printList(result);
+
+        System.out.println(generalizedGCD(5, new int[] {2, 4, 6, 8, 10}));
+
+    }
+
+    static int generalizedGCD(int num, int[] arr) {
+        int gCD = 0;
+        for (int i = 0; i < arr.length - 1; i++) {
+            gCD = Math.max(gCD, getGCD(arr[i], arr[i + 1]));
+        }
+        return gCD;
+    }
+
+    private static int getGCD(int a, int b) {
+        if (a == 0 || b == 0) {
+            return a + b;
+        }
+        return getGCD(b, a % b);
+    }
+
+    public static List<Integer> cellCompete(int[] states, int days) {
+        List<Integer> result = new ArrayList<>(states.length);
+        for (int i = 0; i < states.length; i++) {
+            result.add(0);
+        }
+        while (days-- > 0) {
+            for (int i = 0; i < states.length; i++) {
+                if (i == 0) {
+                    if (states[i + 1] == 0) {
+                        result.set(i, 0);
+                    } else {
+                        result.set(i, 1);
+                    }
+                } else if (i == states.length - 1) {
+                    if (states[i - 1] == 0) {
+                        result.set(i, 0);
+                    } else {
+                        result.set(i, 1);
+                    }
+                } else {
+                    if ((states[i - 1] == 0 && states[i + 1] == 1) || (states[i - 1] == 1
+                        && states[i + 1] == 0)) {
+                        result.set(i, 1);
+                    } else if ((states[i - 1] == 0 && states[i + 1] == 0) || (states[i - 1] == 1
+                        && states[i + 1] == 1)) {
+                        result.set(i, 0);
+                    }
+                }
+            }
+
+            for (int i = 0; i < states.length; i++) {
+                states[i] = result.get(i);
+            }
+        }
+        return result;
     }
 
     /**
