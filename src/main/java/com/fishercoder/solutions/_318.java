@@ -23,113 +23,41 @@ Given ["a", "aa", "aaa", "aaaa"]
 Return 0
 No such pair of words.*/
 public class _318 {
-    //Inspired by this awesome post: https://discuss.leetcode.com/topic/35539/java-easy-version-to-understand
-    //Idea: this question states that all words consisted of lower case (total only 26 unique chars), 
-    //this is a big hint that we could use integer (total 32 bits) to represent each char
-    //values[i] means how many unique characters this string words[i] has
-    public int maxProduct(String[] words) {
-        if (words == null || words.length == 0) {
-            return 0;
-        }
-        int len = words.length;
-        int[] values = new int[len];
-        for (int i = 0; i < words.length; i++) {
-            String word = words[i];
-            for (int j = 0; j < words[i].length(); j++) {
-                values[i] |= 1 << (word.charAt(j) - 'a');//the reason for left shift by this number "word.charAt(j) -'a'" is for 'a', otherwise 'a' - 'a' will be zero and 'a' will be missed out.
-            }
-        }
-        int maxProduct = 0;
-        for (int i = 0; i < words.length; i++) {
-            for (int j = 0; j < words.length; j++) {
-                //check if values[i] AND values[j] equals to zero, this means they share NO common chars
-                if ((values[i] & values[j]) == 0 && words[i].length() * words[j].length() > maxProduct) {
-                    maxProduct = words[i].length() * words[j].length();
-                }
-            }
-        }
-        return maxProduct;
-    }
-
-    //This is still failed due to TLE, O(n^3) algorithm is the core defect, you'll have to come up with a faster one!
-    public int maxProduct_with_pruning(String[] words) {
-        int maxProduct = 0;
-        //use a customized comparator to make the words list sorted in descending order, brilliant!
-        Arrays.sort(words, (o1, o2) -> {
-            if (o1.length() > o2.length()) {
-                return -1;
-            } else if (o1.length() < o2.length()) {
-                return 1;
-            } else {
+    public static class Solution1 {
+        //Inspired by this awesome post: https://discuss.leetcode.com/topic/35539/java-easy-version-to-understand
+        //Idea: this question states that all words consisted of lower case (total only 26 unique chars),
+        //this is a big hint that we could use integer (total 32 bits) to represent each char
+        //values[i] means how many unique characters this string words[i] has
+        public int maxProduct(String[] words) {
+            if (words == null || words.length == 0) {
                 return 0;
             }
-        });
-        for (int i = 0; i < words.length - 1; i++) {
-            String currWord = words[i];
-            int currWordLen = currWord.length();
-            if (maxProduct > currWordLen * words[i + 1].length()) {
-                break;//pruning
+            int len = words.length;
+            int[] values = new int[len];
+            for (int i = 0; i < words.length; i++) {
+                String word = words[i];
+                for (int j = 0; j < words[i].length(); j++) {
+                    values[i] |= 1 << (word.charAt(j)
+                        - 'a');//the reason for left shift by this number "word.charAt(j) -'a'" is for 'a', otherwise 'a' - 'a' will be zero and 'a' will be missed out.
+                }
             }
-            char[] chars = currWord.toCharArray();
-            Set<Character> set = new HashSet();
-            for (char c : chars) {
-                set.add(c);
-            }
-            for (int j = i + 1; j < words.length; j++) {
-                char[] chars2 = words[j].toCharArray();
-                boolean valid = true;
-                for (char c : chars2) {
-                    if (set.contains(c)) {
-                        valid = false;
-                        break;
+            int maxProduct = 0;
+            for (int i = 0; i < words.length; i++) {
+                for (int j = 0; j < words.length; j++) {
+                    //check if values[i] AND values[j] equals to zero, this means they share NO common chars
+                    if ((values[i] & values[j]) == 0
+                        && words[i].length() * words[j].length() > maxProduct) {
+                        maxProduct = words[i].length() * words[j].length();
                     }
                 }
-                if (valid) {
-                    int thisWordLen = words[j].length();
-                    maxProduct = Math.max(maxProduct, thisWordLen * currWordLen);
-                }
             }
+            return maxProduct;
         }
-        return maxProduct;
-    }
-
-    /**
-     * My natural idea is an O(n^3) algorithm, I thought of Trie, but I don't think it applies well to this question.
-     * This following algorithm made it pass 173/174 test cases, as expected, failed by the last extreme test cases due to TLE.
-     */
-    public int maxProduct_most_brute_force(String[] words) {
-        int maxProduct = 0;
-        for (int i = 0; i < words.length - 1; i++) {
-            String currWord = words[i];
-            int currWordLen = currWord.length();
-            char[] chars = currWord.toCharArray();
-            Set<Character> set = new HashSet();
-            for (char c : chars) {
-                set.add(c);
-            }
-            for (int j = i + 1; j < words.length; j++) {
-                char[] chars2 = words[j].toCharArray();
-                boolean valid = true;
-                for (char c : chars2) {
-                    if (set.contains(c)) {
-                        valid = false;
-                        break;
-                    }
-                }
-                if (valid) {
-                    int thisWordLen = words[j].length();
-                    maxProduct = Math.max(maxProduct, thisWordLen * currWordLen);
-                }
-            }
-        }
-        return maxProduct;
     }
 
     public static void main(String... strings) {
         _318 test = new _318();
         String[] words = new String[]{"abcw", "baz", "foo", "bar", "xtfn", "abcdef"};
-//        System.out.println(test.maxProduct_with_pruning(words));
-//        System.out.println(test.maxProduct(words));
 
         //The following is to understand what does left shift by 1 mean:
         //the tricky part is to understand how it's written for me:
