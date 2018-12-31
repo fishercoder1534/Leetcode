@@ -1,5 +1,6 @@
 package com.fishercoder.solutions;
 
+import com.fishercoder.common.utils.CommonUtils;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -45,9 +46,127 @@ public class _99999RandomQuestions {
         //List<Integer> result = cellCompete(new int[]{1, 1, 1, 0, 1, 1, 1, 1}, 2);
         //CommonUtils.printList(result);
 
-        System.out.println(generalizedGCD(5, new int[] {2, 4, 6, 8, 10}));
+        //System.out.println(generalizedGCD(5, new int[] {2, 4, 6, 8, 10}));
 
+
+        //List<List<Integer>> allLocations = new ArrayList<>();
+        //allLocations.add(List.of(1, 2));
+        //allLocations.add(List.of(3, 4));
+        //allLocations.add(List.of(1, -1));
+        //allLocations.add(List.of(-1, 1));
+        //List<List<Integer>> result = nearestVegetarianRestaurant(3, allLocations, 2);
+        //CommonUtils.printListList(result);
+
+        //List<List<Integer>> foregroundAppList = new ArrayList<>();
+        //foregroundAppList.add(List.of(1, 2));
+        //foregroundAppList.add(List.of(2, 4));
+        //foregroundAppList.add(List.of(3, 6));
+        //List<List<Integer>> backgroundAppList = new ArrayList<>();
+        //backgroundAppList.add(List.of(1, 2));
+        //List<List<Integer>> result = optimalUtilization(7, foregroundAppList, backgroundAppList);
+        //CommonUtils.printListList(result);
+
+        List<List<Integer>> foregroundAppList = new ArrayList<>();
+        foregroundAppList.add(List.of(1, 3));
+        foregroundAppList.add(List.of(2, 5));
+        foregroundAppList.add(List.of(3, 7));
+        foregroundAppList.add(List.of(4, 10));
+        List<List<Integer>> backgroundAppList = new ArrayList<>();
+        backgroundAppList.add(List.of(1, 2));
+        backgroundAppList.add(List.of(2, 3));
+        backgroundAppList.add(List.of(3, 4));
+        backgroundAppList.add(List.of(4, 5));
+        List<List<Integer>> result = optimalUtilization(10, foregroundAppList, backgroundAppList);
+        CommonUtils.printListList(result);
     }
+
+    /**An engineer works on a system that divides application to a mixed cluster of computing devices. Each application is identified by an Integer ID, requires
+     * a fixed non-zero amount of memory to execute, and is defined to be either a foreground or background application. IDs are guaranteed to be unique within their own application type, but not across types.
+     *
+     * Each device should be assigned two applications at once, one foreground application and one background application. Devices have limited amounts of memory and cannot execute applications that require more memory
+     * than the available memory. The goal of the system is to maximize the total utilization of the memory of a given device.
+     * A foreground/background application pair is considered to be optimal if there does not exist another pair that uses more memory than this pair, and also has a total less than or equal to the total memory of the device.
+     * For example, if the device has a total of 10MB memory, a foreground/background pair using a sum total of 9MB memory would be optimal if there does not exist a pair that uses a sum total of 10 MB, but would not
+     * be optimal if such a pair did exist.
+     *
+     * Write an algorithm to help this engineer find the sets of foreground/background app pairs that optimally utilize the given device for a given list of foreground applications and a given list of background applications.
+     *
+     * Example 1:
+     * deviceCapacity: 7
+     * foregroundAppList: [[1,2], [2,4],[3,6]]
+     * backgroundAppList: [[1,2]]
+     *
+     * Output:
+     * [[2,1]]
+     *
+     * Explanation:
+     * There are only three combinations: [1,1,][2,1] and [3,1], which use of a total of 4, 6 and 8 MB of memory, since 6 is the largest use that does not exceed 7, [2,1] becomes the only optimal pair.*/
+    static List<List<Integer>> optimalUtilization(int deviceCapacity,
+        List<List<Integer>> foregroundAppList, List<List<Integer>> backgroundAppList) {
+        TreeMap<Integer, List<List<Integer>>> memorySumToAppMap =
+            new TreeMap<>(Collections.reverseOrder());
+        for (List<Integer> foregroundApp : foregroundAppList) {
+            for (List<Integer> backgroundApp : backgroundAppList) {
+                int memorySum = foregroundApp.get(1) + backgroundApp.get(1);
+                if (!memorySumToAppMap.containsKey(memorySum)) {
+                    memorySumToAppMap.put(memorySum, new ArrayList<>());
+                }
+                List<Integer> appPair = new ArrayList<>();
+                appPair.add(foregroundApp.get(0));
+                appPair.add(backgroundApp.get(0));
+                memorySumToAppMap.get(memorySum).add(appPair);
+            }
+        }
+        List<List<Integer>> result = new ArrayList<>();
+        for (int memorySum : memorySumToAppMap.keySet()) {
+            if (memorySum > deviceCapacity) {
+                continue;
+            } else {
+                result = memorySumToAppMap.get(memorySum);
+                break;
+            }
+        }
+        return result;
+    }
+
+    /**Build a robot to help return nearest X restaurants given an array representing the locations of N vegetarian restaurants.
+     *
+     * Note:
+     * The customer begins at location: [0, 0]
+     * numRestaurants < totalRestaurants
+     * the distance from the customer's current location to a recommended veg restaurant location(x, y) is the sqare root of x2 + y2.
+     * If there are ties, then return any of the locations as long as you satisfy returning X nearby veg restaurants.
+     * */
+    static List<List<Integer>> nearestVegetarianRestaurant(int totalRestaurants,
+        List<List<Integer>> allLocations, int numRestaurants) {
+        TreeMap<Double, List<List<Integer>>> treeMap = new TreeMap<>();
+        for (List<Integer> location : allLocations) {
+            double distance =
+                Math.sqrt(Math.pow(location.get(0), 2) + Math.pow(location.get(1), 2));
+            if (!treeMap.containsKey(distance)) {
+                treeMap.put(distance, new ArrayList<>());
+            }
+            treeMap.get(distance).add(location);
+        }
+        List<List<Integer>> result = new ArrayList<>();
+        for (Double distance : treeMap.keySet()) {
+            if (numRestaurants > 0) {
+                List<List<Integer>> locations = treeMap.get(distance);
+                for (List<Integer> location : locations) {
+                    if (numRestaurants <= 0) {
+                        break;
+                    } else {
+                        result.add(location);
+                        numRestaurants--;
+                    }
+                }
+            } else {
+                break;
+            }
+        }
+        return result;
+    }
+
 
     static int generalizedGCD(int num, int[] arr) {
         int gCD = 0;
