@@ -42,6 +42,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |896|[Monotonic Array](https://leetcode.com/problems/monotonic-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_896.java) | O(n) | O(1) | |Easy|
 |884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_884.java) | O(n) | O(k) | |Easy|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_876.java) | O(n) | O(1) | |Easy|
+|872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_872.java) | O(n) | O(h) | |Easy| DFS, recursion
 |868|[Binary Gap](https://leetcode.com/problems/binary-gap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_868.java) | O(n) | O(n) | |Easy|
 |867|[Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_867.java) | O(r*c) | O(r*c) | |Easy|
 |859|[Buddy Strings](https://leetcode.com/problems/buddy-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_859.java) | O(n) | O(n) | |Easy|
