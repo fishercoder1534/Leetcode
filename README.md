@@ -39,6 +39,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |922|[Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_922.java) | O(n) | O(1) | |Easy|
 |917|[Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_917.java) | O(n) | O(n) | |Easy|
 |900|[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_900.java) | O(n) | O(1) | |Easy|
+|897|[Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_897.java) | O(n) | O(n) | |Easy| DFS, recursion
 |896|[Monotonic Array](https://leetcode.com/problems/monotonic-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_896.java) | O(n) | O(1) | |Easy|
 |884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_884.java) | O(n) | O(k) | |Easy|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_876.java) | O(n) | O(1) | |Easy|
