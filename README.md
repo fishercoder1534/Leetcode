@@ -34,6 +34,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |953|[Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_953.java) | O(1) | O(1) | |Easy|
 |944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_944.java) | O(n) | O(1) | |Easy|
 |941|[Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_941.java) | O(n) | O(1) | |Easy|
+|938|[Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_938.java) | O(n) | O(n) | |Medium| BST, recursion, DFS
 |933|[Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_933.java) | O(n) | O(n) | |Easy|
 |929|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_929.java) | O(n) | O(n) | |Easy|
 |925|[Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_925.java) | O(n) | O(1) | |Easy|
