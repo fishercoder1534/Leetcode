@@ -25,13 +25,13 @@ public class _429Test {
   @Test
   public void test1() {
     root = new Node(1);
-    Node _3 = new Node(3);
-    Node _2 = new Node(2);
-    Node _4 = new Node(4);
-    root.children = Arrays.asList(_3, _2, _4);
-    Node _5 = new Node(5);
-    Node _6 = new Node(6);
-    _3.children = Arrays.asList(_5, _6);
+    Node node3 = new Node(3);
+    Node node2 = new Node(2);
+    Node node4 = new Node(4);
+    root.children = Arrays.asList(node3, node2, node4);
+    Node node5 = new Node(5);
+    Node node6 = new Node(6);
+    node3.children = Arrays.asList(node5, node6);
     expected = new ArrayList<>();
     expected.add(Arrays.asList(1));
     expected.add(Arrays.asList(3, 2, 4));
