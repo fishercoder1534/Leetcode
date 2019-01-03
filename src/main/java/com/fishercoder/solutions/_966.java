@@ -61,14 +61,11 @@ public class _966 {
             for (int i = 0; i < queries.length; i++) {
                 if (set.contains(queries[i])) {
                     ans[i] = queries[i];
-                }
-                else if (caseMap.containsKey(queries[i].toLowerCase())) {
+                } else if (caseMap.containsKey(queries[i].toLowerCase())) {
                     ans[i] = caseMap.get(queries[i].toLowerCase());
-                }
-                else if (vowelMap.containsKey(makeGenericVowel(queries[i]))) {
+                } else if (vowelMap.containsKey(makeGenericVowel(queries[i]))) {
                     ans[i] = vowelMap.get(makeGenericVowel(queries[i]));
-                }
-                else {
+                } else {
                     ans[i] = "";
                 }
             }
