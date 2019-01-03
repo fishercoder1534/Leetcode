@@ -29,7 +29,8 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
-|965|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_965.java) | O(n) | O(h) | |Easy| DFS, recursion
+|966|[Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_966.java) | O(hlogn) | O(n) | |Medium| Hash Table, String
+|965|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_965.java) | O(n) | O(h) | |Easy| DFS, recursion|
 |961|[N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_961.java) | O(n) | O(1) | |Easy|
 |953|[Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_953.java) | O(1) | O(1) | |Easy|
 |944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_944.java) | O(n) | O(1) | |Easy|
