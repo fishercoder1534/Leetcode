@@ -6,44 +6,43 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by fishercoder on 5/29/17.
- */
 public class _331Test {
-    private static _331 test;
+  private static _331.Solution1 solution1;
+  private static _331.Solution2 solution2;
 
-    @BeforeClass
-    public static void setup() {
-        test = new _331();
-    }
+  @BeforeClass
+  public static void setup() {
+    solution1 = new _331.Solution1();
+    solution2 = new _331.Solution2();
+  }
 
-    @Test
-    public void test1() {
-        assertEquals(true, test.isValidSerialization_clever_solution("9,3,4,#,#,1,#,#,2,#,6,#,#"));
-        assertEquals(true, test.isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"));
-    }
+  @Test
+  public void test1() {
+    assertEquals(true, solution1.isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"));
+    assertEquals(true, solution2.isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"));
+  }
 
-    @Test
-    public void test2() {
-        assertEquals(false, test.isValidSerialization_clever_solution("1,#"));
-        assertEquals(false, test.isValidSerialization("1,#"));
-    }
+  @Test
+  public void test2() {
+    assertEquals(false, solution1.isValidSerialization("1,#"));
+    assertEquals(false, solution2.isValidSerialization("1,#"));
+  }
 
-    @Test
-    public void test3() {
-        assertEquals(false, test.isValidSerialization_clever_solution("9,#,#,1"));
-        assertEquals(false, test.isValidSerialization("9,#,#,1"));
-    }
+  @Test
+  public void test3() {
+    assertEquals(false, solution1.isValidSerialization("9,#,#,1"));
+    assertEquals(false, solution2.isValidSerialization("9,#,#,1"));
+  }
 
-    @Test
-    public void test4() {
-        assertEquals(false, test.isValidSerialization_clever_solution("1"));
-        assertEquals(false, test.isValidSerialization("1"));
-    }
+  @Test
+  public void test4() {
+    assertEquals(false, solution1.isValidSerialization("1"));
+    assertEquals(false, solution2.isValidSerialization("1"));
+  }
 
-    @Test
-    public void test5() {
-        assertEquals(true, test.isValidSerialization_clever_solution("#,7,6,9,#,#,#"));
-    }
-
+  @Test
+  public void test5() {
+    assertEquals(true, solution1.isValidSerialization("#,7,6,9,#,#,#"));
+    assertEquals(true, solution2.isValidSerialization("#,7,6,9,#,#,#"));
+  }
 }
