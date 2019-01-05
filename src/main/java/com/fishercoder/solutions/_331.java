@@ -41,34 +41,6 @@ import java.util.Deque;
 public class _331 {
 
     public static class Solution1 {
-        /**
-         * credit: https://discuss.leetcode.com/topic/35976/7-lines-easy-java-solution Some used stack.
-         * Some used the depth of a stack. Here I use a different perspective. In a binary tree, if we
-         * consider null as leaves, then all non-null node provides 2 outdegree and 1 indegree (2
-         * children and 1 parent), except root all null node provides 0 outdegree and 1 indegree (0
-         * child and 1 parent). Suppose we try to build this tree. During building, we record the
-         * difference between out degree and in degree diff = outdegree - indegree. When the next node
-         * comes, we then decrease diff by 1, because the node provides an in degree. If the node is not
-         * null, we increase diff by 2, because it provides two out degrees. If a serialization is
-         * correct, diff should never be negative and diff will be zero when finished.
-         */
-        public boolean isValidSerialization(String preorder) {
-            String[] pre = preorder.split(",");
-            int diff = 1;
-            for (String each : pre) {
-                if (diff < 0) {
-                    return false;
-                }
-                diff--;
-                if (!each.equals("#")) {
-                    diff += 2;
-                }
-            }
-            return diff == 0;
-        }
-    }
-
-    public static class Solution2 {
         public boolean isValidSerialization(String preorder) {
             /**Idea: we keep inserting the string into the stack, if it's a number, we just push it onto the stack;
              * if it's a "#", we see if the top of the stack is a "#" or not,
