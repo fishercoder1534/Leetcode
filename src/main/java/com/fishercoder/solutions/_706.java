@@ -75,7 +75,8 @@ public class _706 {
             }
 
             ListNode find(ListNode bucket, int key) {
-                ListNode node = bucket, prev = null;
+                ListNode node = bucket;
+                ListNode prev = null;
                 while (node != null && node.key != key) {
                     prev = node;
                     node = node.next;
@@ -84,7 +85,8 @@ public class _706 {
             }
 
             class ListNode {
-                int key, val;
+                int key;
+                int val;
                 ListNode next;
 
                 ListNode(int key, int val) {
