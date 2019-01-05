@@ -112,6 +112,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |713|[Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_713.java) | O(n) | O(1) | |Medium |
 |712|[Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_712.java) | O(m*n) | O(m*n) | |Medium | DP
 |709|[To Lower Case](https://leetcode.com/problems/to-lower-case/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_709.java) | O(n) | O(1) | |Easy| String
+|706|[Design HashMap](https://leetcode.com/problems/design-hashmap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_706.java) | O(n) | O(n) | |Easy| Design
 |705|[Design HashSet](https://leetcode.com/problems/design-hashset/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_705.java) | O(1) | O(n) | |Easy| Design
 |704|[Binary Search](https://leetcode.com/problems/binary-search/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_704.java) | O(logn) | O(1) | |Easy| Binary Search
 |700|[Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_700.java) | O(n) | O(h) | |Easy| recusion, dfs
