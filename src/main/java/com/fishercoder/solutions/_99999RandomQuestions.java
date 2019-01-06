@@ -66,19 +66,128 @@ public class _99999RandomQuestions {
         //List<List<Integer>> result = optimalUtilization(7, foregroundAppList, backgroundAppList);
         //CommonUtils.printListList(result);
 
-        List<List<Integer>> foregroundAppList = new ArrayList<>();
-        foregroundAppList.add(List.of(1, 3));
-        foregroundAppList.add(List.of(2, 5));
-        foregroundAppList.add(List.of(3, 7));
-        foregroundAppList.add(List.of(4, 10));
-        List<List<Integer>> backgroundAppList = new ArrayList<>();
-        backgroundAppList.add(List.of(1, 2));
-        backgroundAppList.add(List.of(2, 3));
-        backgroundAppList.add(List.of(3, 4));
-        backgroundAppList.add(List.of(4, 5));
-        List<List<Integer>> result = optimalUtilization(10, foregroundAppList, backgroundAppList);
-        CommonUtils.printListList(result);
+        //List<List<Integer>> foregroundAppList = new ArrayList<>();
+        //foregroundAppList.add(List.of(1, 3));
+        //foregroundAppList.add(List.of(2, 5));
+        //foregroundAppList.add(List.of(3, 7));
+        //foregroundAppList.add(List.of(4, 10));
+        //List<List<Integer>> backgroundAppList = new ArrayList<>();
+        //backgroundAppList.add(List.of(1, 2));
+        //backgroundAppList.add(List.of(2, 3));
+        //backgroundAppList.add(List.of(3, 4));
+        //backgroundAppList.add(List.of(4, 5));
+        //List<List<Integer>> result = optimalUtilization(10, foregroundAppList, backgroundAppList);
+        //CommonUtils.printListList(result);
+
+        int[][] image = {
+            {1, 1, 1, 1, 1, 1, 1},
+            {1, 1, 1, 1, 1, 1, 1},
+            {1, 1, 1, 0, 0, 0, 1},
+            {1, 1, 1, 0, 0, 0, 1},
+            {1, 1, 1, 1, 1, 1, 1}
+        };
+
+        int[][] image2 = {
+            {0, 0, 0, 1},
+            {0, 0, 0, 1},
+            {1, 1, 1, 1}
+        };
+        //should return 0,0 1,2
+
+        int[][] image3 = {
+            {1, 1, 1, 0, 0, 0, 0},
+            {1, 1, 1, 0, 0, 0, 0}
+        };//should return 0,3 1,6
+
+        int[][] image4 = {{0}};
+
+        //this is for follow up question, see description below
+        int[][] image5 = {
+            {1, 1, 1, 1, 1, 1, 1},
+            {1, 1, 1, 1, 1, 1, 1},
+            {1, 1, 1, 0, 0, 0, 1},
+            {1, 0, 1, 0, 0, 0, 1},
+            {1, 0, 1, 1, 1, 1, 1},
+            {1, 0, 1, 0, 0, 1, 1},
+            {1, 1, 1, 0, 0, 1, 1},
+            {1, 1, 1, 1, 1, 1, 1},
+        };
+        //should return
+        // [[[2,3],[3,5]],
+        //  [[3,1],[5,1]],
+        //  [[5,3],[6,4]]]
+
+        int[][] result = findEdges(image4);
+        System.out.println("here");
+        for (int[] list : result) {
+            for (int num : list) {
+                System.out.println(num);
+            }
+        }
+        System.out.println("ended");
     }
+
+    /**
+     * Imagine we have an image. We'll represent this image as a simple 2D array where every pixel is a 1 or a 0.
+     * The image you get is known to have a single rectangle of 0s on a background of 1s.
+     * Write a function that takes in the image and returns the coordinates of the rectangle of 0's --
+     * either top-left and bottom-right; or top-left, width, and height.
+     *
+     * Sample output:
+     * x: 3, y: 2, width: 3, height: 2
+     * 2,3 3,5 -- row,column of the top-left and bottom-right corners
+     * 3,2 5,3 -- x,y of the top-left and bottom-right corners (as long as you stay consistent, either format is fine)
+     *
+     * Follow up:
+     * What if there could be multiple such rectangles in there? How do you design an algorithm to return all of them?
+     * What's the time and space complexity of your algorithm?
+     * E.g. see image5 above*/
+    static int[][] findEdges(int[][] image) {
+        int[][] result = new int[2][2];
+        result[0][0] = -1;
+        result[0][1] = -1;
+        result[1][0] = -1;
+        result[1][1] = -1;
+        if (image == null || image.length == 0) {
+            return result;
+        }
+        int m = image.length;
+        int n = image[0].length;
+        System.out.println(" m = " + m + " n = " + n);
+        int i = 0;
+        int j = 0;
+        for (i = 0; i < m; i++) {
+            System.out.println("In first for loop: i = " + i + " j = " + j);
+            for (j = 0; j < n; j++) {
+                System.out.println("In second for loop: i = " + i + " j = " + j);
+                if (image[i][j] == 0) {
+                    System.out.println(" i = " + i + " j = " + j);
+                    result[0][0] = i;
+                    result[0][1] = j;
+                    break;
+                }
+            }
+            if (result[0][0] != -1) {
+                break;
+            }
+        }
+
+        while (i < m && image[i][j] == 0) {
+            i++;
+        }
+
+        System.out.println("i = " + i);
+        i--;
+        while (j < n && image[i][j] == 0) {
+            j++;
+        }
+
+        result[1][0] = i;
+        result[1][1] = --j;
+        return result;
+    }
+
+
 
     /**An engineer works on a system that divides application to a mixed cluster of computing devices. Each application is identified by an Integer ID, requires
      * a fixed non-zero amount of memory to execute, and is defined to be either a foreground or background application. IDs are guaranteed to be unique within their own application type, but not across types.
