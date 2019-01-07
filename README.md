@@ -29,6 +29,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|970|[Powerful Integers](https://leetcode.com/problems/powerful-integers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_970.java) | O(?) | O(1) | |Easy| Math
 |966|[Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_966.java) | O(hlogn) | O(n) | |Medium| Hash Table, String
 |965|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_965.java) | O(n) | O(h) | |Easy| DFS, recursion|
 |961|[N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_961.java) | O(n) | O(1) | |Easy|
