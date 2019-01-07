@@ -52,8 +52,8 @@ public class _970 {
         big = x;
       }
       int maxPower = bound / small;
-      for (int i = 0; i <= maxPower+1; i++) {
-        for (int j = 0; j <= maxPower+1; j++) {
+      for (int i = 0; i <= maxPower + 1; i++) {
+        for (int j = 0; j <= maxPower + 1; j++) {
           int sum = (int) (Math.pow(small, i) + Math.pow(big, j));
           if (sum <= bound) {
             result.add(sum);
