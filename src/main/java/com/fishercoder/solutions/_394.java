@@ -12,7 +12,7 @@ public class _394 {
             int idx = 0;
             str.push("");
 
-            while(idx < s.length()) {
+            while (idx < s.length()) {
                 if (s.charAt(idx) >= '0' && s.charAt(idx) <= '9') {
                     int start = idx;
                     while (s.charAt(idx + 1) >= '0' && s.charAt(idx + 1) <= '9') {
