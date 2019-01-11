@@ -371,6 +371,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_397.java)| ? | ? | |Easy| BFS
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_396.java)| O(n^2) could be optimized to O(n) | O(1) | |Easy|
 |395|[Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_395.java)| O(n^2) | O(1) | |Medium| Recursion
+|394|[Decode String](https://leetcode.com/problems/decode-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_394.java)| O(n) | O(n) | |Medium| Stack Depth-first-search
 |393|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_393.java)| O(?)|O(?) | |Medium| Bit Manipulation
 |392|[Is Subsequence](https://leetcode.com/problems/is-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_392.java)| O(m*n)|O(1) | |Medium| Array, String
 |391|[Perfect Rectangle](https://leetcode.com/problems/perfect-rectangle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_391.java)| O(n)|O(1) | |Hard| 
