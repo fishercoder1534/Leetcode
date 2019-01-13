@@ -29,6 +29,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|976|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_976.java) | O(nlogn) | O(1) | |Easy| Math Array
 |973|[K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_973.java) | O(nlogn) | O(K) | |Easy| Math Sort
 |970|[Powerful Integers](https://leetcode.com/problems/powerful-integers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_970.java) | O(?) | O(1) | |Easy| Math
 |966|[Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_966.java) | O(hlogn) | O(n) | |Medium| Hash Table, String
