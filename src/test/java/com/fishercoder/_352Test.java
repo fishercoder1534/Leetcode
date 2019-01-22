@@ -8,38 +8,35 @@ import org.junit.Test;
 
 import java.util.List;
 
-/**
- * Created by stevesun on 6/1/17.
- */
 public class _352Test {
-    private static _352.SummaryRanges test;
-    private static List<Interval> actual;
+  private static _352.Solution1.SummaryRanges test;
+  private static List<Interval> actual;
 
-    @BeforeClass
-    public static void setup() {
-        test = new _352.SummaryRanges();
-    }
+  @BeforeClass
+  public static void setup() {
+    test = new _352.Solution1.SummaryRanges();
+  }
 
-    @Test
-    public void test1() {
-        test.addNum(1);
-        actual = test.getIntervals();
-        CommonUtils.printIntervals(actual);
+  @Test
+  public void test1() {
+    test.addNum(1);
+    actual = test.getIntervals();
+    CommonUtils.printIntervals(actual);
 
-        test.addNum(3);
-        actual = test.getIntervals();
-        CommonUtils.printIntervals(actual);
+    test.addNum(3);
+    actual = test.getIntervals();
+    CommonUtils.printIntervals(actual);
 
-        test.addNum(7);
-        actual = test.getIntervals();
-        CommonUtils.printIntervals(actual);
+    test.addNum(7);
+    actual = test.getIntervals();
+    CommonUtils.printIntervals(actual);
 
-        test.addNum(2);
-        actual = test.getIntervals();
-        CommonUtils.printIntervals(actual);
+    test.addNum(2);
+    actual = test.getIntervals();
+    CommonUtils.printIntervals(actual);
 
-        test.addNum(6);
-        actual = test.getIntervals();
-        CommonUtils.printIntervals(actual);
-    }
+    test.addNum(6);
+    actual = test.getIntervals();
+    CommonUtils.printIntervals(actual);
+  }
 }
