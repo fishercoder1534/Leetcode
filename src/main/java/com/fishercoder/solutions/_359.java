@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-/**Design a logger system that receive stream of messages along with its timestamps, each message should be printed if and only if it is not printed in the last 10 seconds.
+/**
+ * 359. Logger Rate Limiter
+ *
+ * Design a logger system that receive stream of messages along with its timestamps, each message should be printed if and only if it is not printed in the last 10 seconds.
 
  Given a message and a timestamp (in seconds granularity), return true if the message should be printed in the given timestamp, otherwise returns false.
 
@@ -33,33 +36,36 @@ import java.util.Set;
  logger.shouldPrintMessage(11,"foo"); returns true;*/
 public class _359 {
 
-    class Logger {
+    public static class Solution1 {
+        class Logger {
 
-        private Map<String, Integer> map;
-        private Set<String> set;
+            private Map<String, Integer> map;
+            private Set<String> set;
 
-        /**
-         * Initialize your data structure here.
-         */
-        public Logger() {
-            map = new HashMap<String, Integer>();
-            set = new HashSet<String>();
-        }
+            /**
+             * Initialize your data structure here.
+             */
+            public Logger() {
+                map = new HashMap<String, Integer>();
+                set = new HashSet<String>();
+            }
 
-        /**
-         * Returns true if the message should be printed in the given timestamp, otherwise returns false. The timestamp is in seconds granularity.
-         */
-        public boolean shouldPrintMessage(int timestamp, String message) {
-            if (!set.contains(message)) {
-                map.put(message, timestamp);
-                set.add(message);
-                return true;
-            } else {
-                if (timestamp - map.get(message) < 10) {
-                    return false;
-                } else {
+            /**
+             * Returns true if the message should be printed in the given timestamp, otherwise returns
+             * false. The timestamp is in seconds granularity.
+             */
+            public boolean shouldPrintMessage(int timestamp, String message) {
+                if (!set.contains(message)) {
                     map.put(message, timestamp);
+                    set.add(message);
                     return true;
+                } else {
+                    if (timestamp - map.get(message) < 10) {
+                        return false;
+                    } else {
+                        map.put(message, timestamp);
+                        return true;
+                    }
                 }
             }
         }
