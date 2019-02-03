@@ -29,6 +29,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|985|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_985.java) | O(n) | O(q) | |Easy| Array
 |977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_977.java) | O(nlogn) | O(1) | |Easy| Array
 |976|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_976.java) | O(nlogn) | O(1) | |Easy| Math Array 
 |974|[Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_974.java) | O(n) | O(n) | |Medium| Array|
