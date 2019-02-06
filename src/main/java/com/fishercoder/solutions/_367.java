@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
 /**
+ * 367. Valid Perfect Square
+ *
  * Given a positive integer num, write a function which returns True if num is a perfect square else False.
 
  Note: Do not use any built-in library function such as sqrt.
@@ -16,14 +18,15 @@ package com.fishercoder.solutions;
  */
 public class _367 {
 
-	public boolean isPerfectSquare(int num) {
-		long i = 1;
-		long temp = 1;
-		while (temp < num) {
-			i += 2;
-			temp += i;
+	public static class Solution1 {
+		public boolean isPerfectSquare(int num) {
+			long i = 1;
+			long temp = 1;
+			while (temp < num) {
+				i += 2;
+				temp += i;
+			}
+			return temp == num;
 		}
-		return temp == num;
 	}
-
 }
