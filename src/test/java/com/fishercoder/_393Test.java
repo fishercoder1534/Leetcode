@@ -7,34 +7,31 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by fishercoder on 5/3/17.
- */
 public class _393Test {
-    private static _393 test;
-    private static boolean expected;
-    private static boolean actual;
-    private static int[] data;
+  private static _393.Solution1 solution1;
+  private static boolean expected;
+  private static boolean actual;
+  private static int[] data;
 
-    @BeforeClass
-    public static void setup() {
-        test = new _393();
-    }
+  @BeforeClass
+  public static void setup() {
+    solution1 = new _393.Solution1();
+  }
 
-    @Test
-    @Ignore
-    public void test1() {
-        data = new int[]{197, 130, 1};
-        expected = true;
-        actual = test.validUtf8(data);
-        assertEquals(expected, actual);
-    }
+  @Test
+  @Ignore
+  public void test1() {
+    data = new int[] {197, 130, 1};
+    expected = true;
+    actual = solution1.validUtf8(data);
+    assertEquals(expected, actual);
+  }
 
-    @Test
-    public void test2() {
-        data = new int[]{5};
-        expected = true;
-        actual = test.validUtf8(data);
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void test2() {
+    data = new int[] {5};
+    expected = true;
+    actual = solution1.validUtf8(data);
+    assertEquals(expected, actual);
+  }
 }
