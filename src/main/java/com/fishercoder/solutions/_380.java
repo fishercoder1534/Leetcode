@@ -46,64 +46,68 @@ public class _380 {
      * boolean param_2 = obj.delete(val);
      * int param_3 = obj.getRandom();
      */
-//TODO: this is not ideal, optimize it.
-    public static class RandomizedSet {
+    public static class Solution1 {
+        //TODO: this is not ideal, optimize it.
+        public static class RandomizedSet {
 
-        Map<Integer, Integer> forwardMap;//key is auto increment index, value if the inserted val
-        Map<Integer, Integer> reverseMap;//the other way around
-        int index;
-        Random random;
+            Map<Integer, Integer> forwardMap;
+                //key is auto increment index, value if the inserted val
+            Map<Integer, Integer> reverseMap;//the other way around
+            int index;
+            Random random;
 
-        /**
-         * Initialize your data structure here.
-         */
-        public RandomizedSet() {
-            forwardMap = new HashMap();
-            reverseMap = new HashMap();
-            index = 0;
-            random = new Random();
-        }
-
-        /**
-         * Inserts a value to the set. Returns true if the set did not already contain the specified element.
-         */
-        public boolean insert(int val) {
-            if (forwardMap.containsValue(val)) {
-                return false;
-            } else {
-                forwardMap.put(index, val);
-                reverseMap.put(val, index++);
-                return true;
+            /**
+             * Initialize your data structure here.
+             */
+            public RandomizedSet() {
+                forwardMap = new HashMap();
+                reverseMap = new HashMap();
+                index = 0;
+                random = new Random();
             }
-        }
 
-        /**
-         * Deletes a value from the set. Returns true if the set contained the specified element.
-         */
-        public boolean remove(int val) {
-            if (forwardMap.containsValue(val)) {
-                int key = reverseMap.get(val);
-                reverseMap.remove(val);
-                forwardMap.remove(key);
-                return true;
-            } else {
-                return false;
+            /**
+             * Inserts a value to the set. Returns true if the set did not already contain the specified
+             * element.
+             */
+            public boolean insert(int val) {
+                if (forwardMap.containsValue(val)) {
+                    return false;
+                } else {
+                    forwardMap.put(index, val);
+                    reverseMap.put(val, index++);
+                    return true;
+                }
             }
-        }
 
-        /**
-         * Get a random element from the set.
-         */
-        public int getRandom() {
-            int max = forwardMap.size();
-            if (max == 1) {
-                return forwardMap.get(index - 1);
+            /**
+             * Deletes a value from the set. Returns true if the set contained the specified element.
+             */
+            public boolean remove(int val) {
+                if (forwardMap.containsValue(val)) {
+                    int key = reverseMap.get(val);
+                    reverseMap.remove(val);
+                    forwardMap.remove(key);
+                    return true;
+                } else {
+                    return false;
+                }
             }
-            int randomNum = random.nextInt(max);
-            while (!forwardMap.containsKey(randomNum)) {
-                randomNum = random.nextInt(max);
+
+            /**
+             * Get a random element from the set.
+             */
+            public int getRandom() {
+                int max = forwardMap.size();
+                if (max == 1) {
+                    return forwardMap.get(index - 1);
+                }
+                int randomNum = random.nextInt(max);
+                while (!forwardMap.containsKey(randomNum)) {
+                    randomNum = random.nextInt(max);
+                }
+                return forwardMap.get(randomNum);
             }
-            return forwardMap.get(randomNum);
         }
     }
 }
