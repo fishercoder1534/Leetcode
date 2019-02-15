@@ -123,6 +123,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |706|[Design HashMap](https://leetcode.com/problems/design-hashmap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_706.java) | O(n) | O(n) | |Easy| Design
 |705|[Design HashSet](https://leetcode.com/problems/design-hashset/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_705.java) | O(1) | O(n) | |Easy| Design
 |704|[Binary Search](https://leetcode.com/problems/binary-search/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_704.java) | O(logn) | O(1) | |Easy| Binary Search
+|703|[Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_703.java) | O(logn) | O(n) | |Easy| 
 |701|[Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_701.java) | O(n) | O(h) | |Medium | DFS, recursion
 |700|[Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_700.java) | O(n) | O(h) | |Easy| recusion, dfs
 |699|[Falling Squares](https://leetcode.com/problems/falling-squares/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_699.java) | O(n^2) | O(n) | |Hard | Segment Tree
