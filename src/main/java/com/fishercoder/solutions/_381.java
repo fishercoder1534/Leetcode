@@ -46,7 +46,7 @@ public class _381 {
         /**
          * Initialize your data structure here.
          */
-        public _381() {
+        public Solution1() {
             forwardMap = new HashMap();
             reverseMap = new HashMap();
             index = 0;
