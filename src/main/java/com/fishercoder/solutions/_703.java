@@ -30,20 +30,20 @@ public class _703 {
   public static class Solution1 {
     public static class KthLargest {
       PriorityQueue<Integer> heap;
-      int K;
+      int maxK;
 
       public KthLargest(int k, int[] nums) {
         heap = new PriorityQueue<>(Collections.reverseOrder());
         for (int num : nums) {
           heap.offer(num);
         }
-        K = k;
+        maxK = k;
       }
 
       public int add(int val) {
         List<Integer> tmp = new ArrayList<>();
         int result = 0;
-        int tmpK = K;
+        int tmpK = maxK;
         heap.offer(val);
         while (tmpK-- > 0) {
           result = heap.poll();
