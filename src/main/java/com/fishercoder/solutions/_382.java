@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Random;
 
 /**382. Linked List Random Node
+ *
 Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen.
 
 Follow up:
@@ -25,14 +26,14 @@ solution.getRandom();
 */
 public class _382 {
 
-    class Solution {
+    public static class Solution1 {
         private Map<Integer, ListNode> map;
         private Random rand;
 
         /**
          * @param head The linked list's head. Note that the head is guanranteed to be not null, so it contains at least one node.
          */
-        public Solution(ListNode head) {
+        public Solution1(ListNode head) {
             map = new HashMap();
             rand = new Random();
             int i = 0;
