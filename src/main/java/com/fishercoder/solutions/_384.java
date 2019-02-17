@@ -1,5 +1,6 @@
 package com.fishercoder.solutions;
-/**384. Shuffle an Array
+/**
+ * 384. Shuffle an Array
 Shuffle a set of numbers without duplicates.
 
 Example:
@@ -8,7 +9,8 @@ Example:
 int[] nums = {1,2,3};
 Solution solution = new Solution(nums);
 
-// Shuffle the array [1,2,3] and return its result. Any permutation of [1,2,3] must equally likely to be returned.
+// Shuffle the array [1,2,3] and return its result.
+ Any permutation of [1,2,3] must equally likely to be returned.
 solution.shuffle();
 
 // Resets the array back to its original configuration [1,2,3].
@@ -24,19 +26,14 @@ import java.util.Random;
 
 public class _384 {
 
-    public static void main(String... strings) {
-        int[] nums = new int[]{1, 2, 3};
-        Solution test = new Solution(nums);
-    }
-
-    public static class Solution {
+    public static class Solution1 {
         //Note: the problem states that this is a set without duplicates which makes building all combinations easier
 
         private List<List<Integer>> combinations;
         private int[] original;
         private Random random;
 
-        public Solution(int[] nums) {
+        public Solution1(int[] nums) {
             original = nums;
             random = new Random();
             combinations = buildAllComb(nums);
