@@ -58,6 +58,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_872.java) | O(n) | O(h) | |Easy| DFS, recursion
 |868|[Binary Gap](https://leetcode.com/problems/binary-gap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_868.java) | O(n) | O(n) | |Easy|
 |867|[Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_867.java) | O(r*c) | O(r*c) | |Easy|
+|860|[Lemonade Change](https://leetcode.com/problems/lemonade-change/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_860.java) | O(n) | O(1) | |Easy|
 |859|[Buddy Strings](https://leetcode.com/problems/buddy-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_859.java) | O(n) | O(n) | |Easy|
 |852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_852.java) | O(n) | O(1) | |Easy|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_844.java) | O(n) | O(1) | |Easy|
