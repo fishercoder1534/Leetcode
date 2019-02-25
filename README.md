@@ -42,6 +42,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |965|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_965.java) | O(n) | O(h) | |Easy| DFS, recursion|
 |961|[N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_961.java) | O(n) | O(1) | |Easy|
 |953|[Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_953.java) | O(1) | O(1) | |Easy|
+|950|[Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_950.java) | O(nlogn) | O(n) | |Medium|
 |944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_944.java) | O(n) | O(1) | |Easy|
 |942|[DI String Match](https://leetcode.com/problems/di-string-match/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_942.java) | O(n) | O(n) | |Easy|
 |941|[Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_941.java) | O(n) | O(1) | |Easy|
