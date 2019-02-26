@@ -6,36 +6,33 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by fishercoder on 5/7/17.
- */
 public class _392Test {
-    private static _392 test;
-    private static String s;
-    private static String t;
-    private static boolean expected;
-    private static boolean actual;
+  private static _392.Solution1 solution1;
+  private static String s;
+  private static String t;
+  private static boolean expected;
+  private static boolean actual;
 
-    @BeforeClass
-    public static void setup() {
-        test = new _392();
-    }
+  @BeforeClass
+  public static void setup() {
+    solution1 = new _392.Solution1();
+  }
 
-    @Test
-    public void test1() {
-        s = "abc";
-        t = "ahbgdc";
-        expected = true;
-        actual = test.isSubsequence(s, t);
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void test1() {
+    s = "abc";
+    t = "ahbgdc";
+    expected = true;
+    actual = solution1.isSubsequence(s, t);
+    assertEquals(expected, actual);
+  }
 
-    @Test
-    public void test2() {
-        s = "axc";
-        t = "ahbgdc";
-        expected = false;
-        actual = test.isSubsequence(s, t);
-        assertEquals(expected, actual);
-    }
+  @Test
+  public void test2() {
+    s = "axc";
+    t = "ahbgdc";
+    expected = false;
+    actual = solution1.isSubsequence(s, t);
+    assertEquals(expected, actual);
+  }
 }
