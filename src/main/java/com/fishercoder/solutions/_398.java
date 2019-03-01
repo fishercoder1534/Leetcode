@@ -1,11 +1,13 @@
 package com.fishercoder.solutions;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-/**Given an array of integers with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.
+/**
+ * 398. Random Pick Index
+ *
+ * Given an array of integers with possible duplicates,
+ * randomly output the index of a given target number. You can assume that the given target number must exist in the array.
 
  Note:
  The array size can be very large. Solution that uses too much extra space will not pass the judge.
@@ -22,9 +24,9 @@ import java.util.Map;
  solution.pick(1);*/
 public class _398 {
 
-//TODO: use reservoir sampling to solve it again
+    //TODO: use reservoir sampling to solve it again
 
-    class Solution {
+    public static class Solution {
         //brute force
         int[] input;
         java.util.Random rand = new java.util.Random();
@@ -40,36 +42,6 @@ public class _398 {
                     list.add(i);
                 }
             }
-            if (list.size() == 1) {
-                return list.get(0);
-            }
-            int randomIndex = rand.nextInt(list.size());
-            return list.get(randomIndex);
-        }
-    }
-
-
-    class SolutionMemoryLimitExceeded {
-
-        private Map<Integer, List<Integer>> map = new HashMap();
-        java.util.Random rand = new java.util.Random();
-
-        public SolutionMemoryLimitExceeded(int[] nums) {
-            for (int i = 0; i < nums.length; i++) {
-                if (map.containsKey(nums[i])) {
-                    List<Integer> list = map.get(nums[i]);
-                    list.add(i);
-                    map.put(nums[i], list);
-                } else {
-                    List<Integer> list = new ArrayList();
-                    list.add(i);
-                    map.put(nums[i], list);
-                }
-            }
-        }
-
-        public int pick(int target) {
-            List<Integer> list = map.get(target);
             if (list.size() == 1) {
                 return list.get(0);
             }
