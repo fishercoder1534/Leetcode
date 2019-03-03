@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 401. Binary Watch
+ *
  * A binary watch has 4 LEDs on the top which represent the hours (0-11), and the 6 LEDs on the bottom represent the minutes (0-59).
-
- Each LED represents a zero or one, with the least significant bit on the right.
-
+ * Each LED represents a zero or one, with the least significant bit on the right.
 
  For example, the above binary watch reads "3:25".
 
@@ -24,16 +24,18 @@ import java.util.List;
  */
 public class _401 {
 
-    public List<String> readBinaryWatch(int num) {
-        List<String> times = new ArrayList<>();
-        for (int h = 0; h < 12; h++) {
-            for (int m = 0; m < 60; m++) {
-                if (Integer.bitCount(h * 60 + m) == num) {
-                    times.add(String.format("%d:%02d", h, m));//%02 means to pad this two-digit decimal number on the left with zeroes
+    public static class Solution1 {
+        public List<String> readBinaryWatch(int num) {
+            List<String> times = new ArrayList<>();
+            for (int h = 0; h < 12; h++) {
+                for (int m = 0; m < 60; m++) {
+                    if (Integer.bitCount(h * 60 + m) == num) {
+                        times.add(String.format("%d:%02d", h,
+                            m));//%02 means to pad this two-digit decimal number on the left with zeroes
+                    }
                 }
             }
+            return times;
         }
-        return times;
     }
-
 }
