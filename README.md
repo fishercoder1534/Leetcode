@@ -27,6 +27,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1002.java) | O(n) | O(1) | |Easy|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_999.java) | O(1) | O(1) | |Easy|
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_997.java) | O(n) | O(n) | |Easy| 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_994.java) | O(m*2*n*2) | O(m*n) | |Easy| BFS
