@@ -1,7 +1,10 @@
 package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
-/**Find the sum of all left leaves in a given binary tree.
+/**
+ * 404. Sum of Left Leaves
+ *
+ * Find the sum of all left leaves in a given binary tree.
 
  Example:
 
@@ -13,33 +16,35 @@ import com.fishercoder.common.classes.TreeNode;
 
  There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.*/
 public class _404 {
-    public int sumOfLeftLeaves(TreeNode root) {
-        int result = 0;
-        if (root == null) {
-            return result;
+    public static class Solution1 {
+        public int sumOfLeftLeaves(TreeNode root) {
+            int result = 0;
+            if (root == null) {
+                return result;
+            }
+            return dfs(root, result, false);
         }
-        return dfs(root, result, false);
+
+        private int dfs(TreeNode root, int result, boolean left) {
+            if (root.left == null && root.right == null && left) {
+                result += root.val;
+                return result;
+            }
+            int leftResult = 0;
+            if (root.left != null) {
+                left = true;
+                leftResult = dfs(root.left, result, left);
+            }
+            int rightResult = 0;
+            if (root.right != null) {
+                left = false;
+                rightResult = dfs(root.right, result, left);
+            }
+            return leftResult + rightResult;
+        }
     }
 
-    private int dfs(TreeNode root, int result, boolean left) {
-        if (root.left == null && root.right == null && left) {
-            result += root.val;
-            return result;
-        }
-        int leftResult = 0;
-        if (root.left != null) {
-            left = true;
-            leftResult = dfs(root.left, result, left);
-        }
-        int rightResult = 0;
-        if (root.right != null) {
-            left = false;
-            rightResult = dfs(root.right, result, left);
-        }
-        return leftResult + rightResult;
-    }
-
-    private class Solution2 {
+    public static class Solution2 {
 
         public int sumOfLeftLeaves(TreeNode root) {
             int sum = 0;
