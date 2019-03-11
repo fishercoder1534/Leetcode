@@ -313,7 +313,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |480|[Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_480.java) | O(nlogk) |O(k) | |Hard| Heap
 |479|[Largest Palindrome Product](https://leetcode.com/problems/largest-palindrome-product/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_479.java) | O(n) |O(1) | |Easy| 
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_477.java) | O(n) |O(1) | |Medium| Bit Manipulation
-|476|[Number Complement](https://leetcode.com/problems/number-complement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/NumberComplement.java) | O(n) |O(1) || Easy| Bit Manipulation
+|476|[Number Complement](https://leetcode.com/problems/number-complement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_476.java) | O(n) |O(1) || Easy| Bit Manipulation
 |475|[Heaters](https://leetcode.com/problems/heaters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_475.java) | max(O(nlogn), O(mlogn)) - m is the length of houses, n is the length of heaters |O(1) | |Easy | Array Binary Search
 |474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_474.java) | O(n) |O(m*n) | |Medium| DP
 |473|[Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_473.java) | O(n!) |O(n) | |Medium| Backtracking, DFS
