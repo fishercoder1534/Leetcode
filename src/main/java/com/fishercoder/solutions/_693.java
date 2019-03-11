@@ -31,6 +31,10 @@ package com.fishercoder.solutions;
  */
 
 public class _693 {
+     public boolean hasAlternatingBits_oneline(int n) {
+        return Integer.bitCount(((n >> 1) ^ n) + 1) == 1;
+    }
+ 
     public boolean hasAlternatingBits(int n) {
         String binaryStr = Integer.toBinaryString(n);
         for (int i = 1; i < binaryStr.length(); i++) {
