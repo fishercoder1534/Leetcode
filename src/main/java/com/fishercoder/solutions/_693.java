@@ -44,7 +44,7 @@ public class _693 {
     }
 
     public static class Solution2 {
-        public boolean hasAlternatingBits_oneline(int n) {
+        public boolean hasAlternatingBits(int n) {
             return Integer.bitCount(((n >> 1) ^ n) + 1) == 1;
         }
     }
