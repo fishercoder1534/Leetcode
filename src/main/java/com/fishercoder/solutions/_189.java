@@ -49,7 +49,7 @@ public class _189 {
      * My original idea and got AC'ed.
      * One thing to notice is that when k > nums.length, we'll continue to rotate_naive the array, it just becomes k -= nums.length
      */
-    public static void rotate_naive(int[] nums, int k) {
+    public static void rotate(int[] nums, int k) {
       if (k == 0 || k == nums.length) {
         return;
       }
@@ -77,7 +77,7 @@ public class _189 {
       }
     }
   }
- 
+
    public static class Solution3 {
     public void rotate(int[] nums, int k) {
         int tmp = 0;
@@ -90,5 +90,5 @@ public class _189 {
         }
     }
   }
- 
+
 }
