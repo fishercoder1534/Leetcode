@@ -18,9 +18,9 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> m;
         vector<int> result;
-        for(int i=0; i<nums.size(); i++){
+        for(int i = 0; i < nums.size(); i++){
         // not found the second one
-            if (m.find(nums[i])==m.end() ) {
+            if (m.find(nums[i]) == m.end() ) {
             // store the first one poisition into the second one's key
                 m[target - nums[i]] = i;
             }else {
