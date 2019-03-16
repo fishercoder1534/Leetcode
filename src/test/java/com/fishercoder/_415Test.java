@@ -7,11 +7,8 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by fishercoder on 1/8/17.
- */
 public class _415Test {
-    private static _415 test;
+    private static _415.Solution1 solution1;
     private static String expected;
     private static String actual;
     private static String num1;
@@ -19,7 +16,7 @@ public class _415Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _415();
+        solution1 = new _415.Solution1();
         expected = new String();
         actual = new String();
         num1 = new String();
@@ -40,7 +37,7 @@ public class _415Test {
         num1 = "123";
         num2 = "34567";
         expected = "34690";
-        actual = test.addStrings(num1, num2);
+        actual = solution1.addStrings(num1, num2);
         assertEquals(expected, actual);
 
     }
@@ -51,7 +48,7 @@ public class _415Test {
         num1 = "1";
         num2 = "9";
         expected = "10";
-        actual = test.addStrings(num1, num2);
+        actual = solution1.addStrings(num1, num2);
         assertEquals(expected, actual);
 
     }
@@ -62,7 +59,7 @@ public class _415Test {
         num1 = "9";
         num2 = "99";
         expected = "108";
-        actual = test.addStrings(num1, num2);
+        actual = solution1.addStrings(num1, num2);
         assertEquals(expected, actual);
 
     }
