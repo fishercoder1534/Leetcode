@@ -6,16 +6,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 6/11/17.
- */
 public class _418Test {
-    private static _418 test;
+    private static _418.Solution1 test;
     private static String[] sentence;
 
     @BeforeClass
     public static void setup() {
-        test = new _418();
+        test = new _418.Solution1();
     }
 
     @Test
