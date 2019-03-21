@@ -2,12 +2,13 @@ package com.fishercoder;
 
 import com.fishercoder.common.classes.Node;
 import com.fishercoder.solutions._589;
-import java.util.List;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 public class _589Test {
@@ -23,7 +24,7 @@ public class _589Test {
   @Test
   @Ignore//todo: Node.createNaryTree method hasn't been implemented yet
   public void test1() {
-    expectedPreOrder = List.of(1, 3, 5, 6, 2, 4);
+    expectedPreOrder = Arrays.asList(1, 3, 5, 6, 2, 4);
     root = Node.createNaryTree(expectedPreOrder);
     assertEquals(expectedPreOrder, solution1.preorder(root));
   }
