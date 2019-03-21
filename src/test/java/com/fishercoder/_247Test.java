@@ -4,6 +4,7 @@ import com.fishercoder.solutions._247;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -19,7 +20,7 @@ public class _247Test {
 
   @Test
   public void test1() {
-    expected = List.of("11","69","88","96");
+    expected = Arrays.asList("11","69","88","96");
     assertEquals(expected, solution1.findStrobogrammatic(2));
   }
 
