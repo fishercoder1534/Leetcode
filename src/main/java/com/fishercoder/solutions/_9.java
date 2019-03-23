@@ -17,28 +17,9 @@ package com.fishercoder.solutions;
  */
 public class _9 {
 
-    public static class Solution1 {
-        public boolean isPalindrome(int x) {
-            if (x == 0) {
-                return true;
-            }
-            if (x < 0) {
-                return false;
-            }
-            int rev = 0;
-            int tmp = x;
-            while (tmp != 0) {
-                rev *= 10;
-                rev += tmp % 10;
-                tmp /= 10;
-            }
-            return rev == x;
-        }
-    }
-
     /**credit: https://discuss.leetcode.com/topic/8090/9-line-accepted-java-code-without-the-need-of-handling-overflow
      * reversing only half and then compare if they're equal.*/
-    public static class Solution2 {
+    public static class Solution1 {
         public boolean isPalindrome(int x) {
             if (x < 0) {
                 return false;
