@@ -13,6 +13,11 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 
 */
+
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
