@@ -6,25 +6,22 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by fishercoder on 4/28/17.
- */
 public class _421Test {
-    private static _421 test;
+    private static _421.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static int[] nums;
 
     @BeforeClass
     public static void setup() {
-        test = new _421();
+        solution1 = new _421.Solution1();
     }
 
     @Test
     public void test1() {
         nums = new int[]{3, 10, 5, 25, 2, 8};
         expected = 28;
-        actual = test.findMaximumXOR(nums);
+        actual = solution1.findMaximumXOR(nums);
         assertEquals(expected, actual);
     }
 }
