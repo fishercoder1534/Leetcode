@@ -620,7 +620,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_149.java)| O(?)|O(?) | |Hard|
 |148|[Sort List](https://leetcode.com/problems/sort-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_148.java) |O(nlogn)|O(h) | |Medium| Linked List, Sort
 |147|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_147.java) |O(n^2)|O(1) | |Medium| Linked List
-|146|[LRU Cache](https://leetcode.com/problems/lru-cache/)|[Solution](../master/leetcode-algorithms/src/main/java/com/fishercoder/solutions/_146.java)| amortized O(1)| O(k) | |Hard| Doubly Linked List, LinkedHashMap
+|146|[LRU Cache](https://leetcode.com/problems/lru-cache/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_146.java)| amortized O(1)| O(k) | |Hard| Doubly Linked List, LinkedHashMap
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_145.java)| O(n)|O(h) | |Hard| Binary Tree
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_144.java)| O(n)|O(h) | |Medium| Binary Tree
 |143|[Reorder List](https://leetcode.com/problems/reorder-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_143.java)| O(n)|O(1) | |Medium|
