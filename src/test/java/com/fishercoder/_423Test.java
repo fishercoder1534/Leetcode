@@ -6,25 +6,22 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by fishercoder on 4/27/17.
- */
 public class _423Test {
-    private static _423 test;
+    private static _423.Solution1 solution1;
     private static String expected;
     private static String actual;
     private static String s;
 
     @BeforeClass
     public static void setup() {
-        test = new _423();
+        solution1 = new _423.Solution1();
     }
 
     @Test
     public void test1() {
         s = "fviefuro";
         expected = "45";
-        actual = test.originalDigits(s);
+        actual = solution1.originalDigits(s);
         assertEquals(expected, actual);
     }
 }
