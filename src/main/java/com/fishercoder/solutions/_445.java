@@ -8,6 +8,7 @@ import java.util.Stack;
 
 /**
  * 445. Add Two Numbers II
+ *
  * You are given two non-empty linked lists representing two non-negative integers.
  * The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
@@ -23,36 +24,38 @@ import java.util.Stack;
  */
 public class _445 {
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        Deque<Integer> stack1 = popIntoStack(l1);
-        Deque<Integer> stack2 = popIntoStack(l2);
+    public static class Solution1 {
+        public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+            Deque<Integer> stack1 = popIntoStack(l1);
+            Deque<Integer> stack2 = popIntoStack(l2);
 
-        int sum = 0;
-        ListNode list = new ListNode(0);
-        while (!stack1.isEmpty() || !stack2.isEmpty()) {
-            if (!stack1.isEmpty()) {
-                sum += stack1.removeFirst();
+            int sum = 0;
+            ListNode list = new ListNode(0);
+            while (!stack1.isEmpty() || !stack2.isEmpty()) {
+                if (!stack1.isEmpty()) {
+                    sum += stack1.removeFirst();
+                }
+                if (!stack2.isEmpty()) {
+                    sum += stack2.removeFirst();
+                }
+                list.val = sum % 10;
+                ListNode head = new ListNode(sum / 10);
+                head.next = list;
+                list = head;
+                sum /= 10;
             }
-            if (!stack2.isEmpty()) {
-                sum += stack2.removeFirst();
-            }
-            list.val = sum % 10;
-            ListNode head = new ListNode(sum / 10);
-            head.next = list;
-            list = head;
-            sum /= 10;
+            return list.val == 0 ? list.next : list;
         }
-        return list.val == 0 ? list.next : list;
-    }
 
-    private Deque<Integer> popIntoStack(ListNode head) {
-        ListNode tmp = head;
-        Deque<Integer> stack = new ArrayDeque<>();
-        while (tmp != null) {
-            stack.push(tmp.val);
-            tmp = tmp.next;
+        private Deque<Integer> popIntoStack(ListNode head) {
+            ListNode tmp = head;
+            Deque<Integer> stack = new ArrayDeque<>();
+            while (tmp != null) {
+                stack.push(tmp.val);
+                tmp = tmp.next;
+            }
+            return stack;
         }
-        return stack;
     }
 
 
