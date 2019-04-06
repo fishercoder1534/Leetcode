@@ -12,12 +12,12 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 5/13/17.
  */
 public class _445Test {
-    private static _445 test;
+    private static _445.Solution1 solution1;
     private static _445.Solution2 solution2;
 
     @BeforeClass
     public static void setup() {
-        test = new _445();
+        solution1 = new _445.Solution1();
         solution2 = new _445.Solution2();
     }
 
@@ -29,7 +29,7 @@ public class _445Test {
 
         ListNode expected = LinkedListUtils.contructLinkedList(new int[]{7, 8, 0, 7});
 
-        assertEquals(expected, test.addTwoNumbers(l1, l2));
+        assertEquals(expected, solution1.addTwoNumbers(l1, l2));
     }
 
     @Test
