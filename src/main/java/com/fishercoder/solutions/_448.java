@@ -64,7 +64,7 @@ public class _448 {
          * O(1) space
          * O(n) time
          */
-        public List<Integer> findDisappearedNumbers_2(int[] nums) {
+        public List<Integer> findDisappearedNumbers(int[] nums) {
 
             for (int i = 0; i < nums.length; i++) {
                 int val = Math.abs(nums[i]) - 1;
