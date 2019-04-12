@@ -7,18 +7,14 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 5/29/17.
- */
 public class _450Test {
-    private static _450 test;
+    private static _450.Solution1 solution1;
     private static TreeNode expected;
-    private static TreeNode actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup() {
-        test = new _450();
+        solution1 = new _450.Solution1();
     }
 
     @Test
@@ -36,6 +32,6 @@ public class _450Test {
         expected.left.left = new TreeNode(2);
         expected.right.right = new TreeNode(7);
 
-        assertEquals(expected, test.deleteNode(root, 3));
+        assertEquals(expected, solution1.deleteNode(root, 3));
     }
 }
