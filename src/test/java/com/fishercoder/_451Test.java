@@ -11,14 +11,14 @@ import static junit.framework.Assert.assertEquals;
  * Created by fishercoder on 1/15/17.
  */
 public class _451Test {
-    private static _451 test;
+    private static _451.Solution1 solution1;
     private static String expected;
     private static String actual;
     private static String input;
 
     @BeforeClass
     public static void setup() {
-        test = new _451();
+        solution1 = new _451.Solution1();
     }
 
     @Before
@@ -31,7 +31,7 @@ public class _451Test {
     public void test1() {
         input = "tree";
         expected = "eert";
-        actual = test.frequencySort(input);
+        actual = solution1.frequencySort(input);
         assertEquals(expected, actual);
     }
 
@@ -39,7 +39,7 @@ public class _451Test {
     public void test2() {
         input = "cccaaa";
         expected = "aaaccc";
-        actual = test.frequencySort(input);
+        actual = solution1.frequencySort(input);
         assertEquals(expected, actual);
     }
 
@@ -47,7 +47,7 @@ public class _451Test {
     public void test3() {
         input = "Aabb";
         expected = "bbAa";
-        actual = test.frequencySort(input);
+        actual = solution1.frequencySort(input);
         assertEquals(expected, actual);
     }
 }
