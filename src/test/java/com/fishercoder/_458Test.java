@@ -8,7 +8,7 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _458Test {
-    private static _458 test;
+    private static _458.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static int buckets;
@@ -17,7 +17,7 @@ public class _458Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _458();
+        solution1 = new _458.Solution1();
     }
 
     @Before
@@ -32,7 +32,7 @@ public class _458Test {
         minutesToDie = 15;
         minutesToTest = 60;
         expected = 5;
-        actual = test.poorPigs(buckets, minutesToDie, minutesToTest);
+        actual = solution1.poorPigs(buckets, minutesToDie, minutesToTest);
         assertEquals(expected, actual);
     }
 
@@ -42,7 +42,7 @@ public class _458Test {
         minutesToDie = 1;
         minutesToTest = 1;
         expected = 0;
-        actual = test.poorPigs(buckets, minutesToDie, minutesToTest);
+        actual = solution1.poorPigs(buckets, minutesToDie, minutesToTest);
         assertEquals(expected, actual);
     }
 
@@ -52,7 +52,7 @@ public class _458Test {
         minutesToDie = 12;
         minutesToTest = 60;
         expected = 4;
-        actual = test.poorPigs(buckets, minutesToDie, minutesToTest);
+        actual = solution1.poorPigs(buckets, minutesToDie, minutesToTest);
         assertEquals(expected, actual);
     }
 }
