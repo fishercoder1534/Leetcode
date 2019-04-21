@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
 /**
+ * 1020. Number of Enclaves
+ *
  * Given a 2D array A, each cell is 0 (representing sea) or 1 (representing land)
  *
  * A move consists of walking from one land square 4-directionally to another land square, or off the boundary of the grid.
