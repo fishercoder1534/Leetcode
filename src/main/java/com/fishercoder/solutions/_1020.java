@@ -13,9 +13,15 @@ package com.fishercoder.solutions;
 public class _1020 {
     public static class Solution1 {
         public void walk(int[][] A, boolean[][] visited, int x, int y) {
-            if (x >= A.length || x < 0 || y >= A[0].length || y < 0) return;
-            if (visited[x][y]) return;
-            if (A[x][y] == 0) return;
+            if (x >= A.length || x < 0 || y >= A[0].length || y < 0) {
+                return;
+            }
+            if (visited[x][y]) {
+                return;
+            }
+            if (A[x][y] == 0) {
+                return;
+            }
 
             visited[x][y] = true;
 
