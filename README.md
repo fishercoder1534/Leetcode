@@ -27,6 +27,8 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|1025|[Divisor Game](https://leetcode.com/problems/divisor-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1025.java)| O(1) | O(1) | |Easy| Math |
+|1023|[Camelcase Matching](https://leetcode.com/problems/camelcase-matching/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1023.java)| O(mn) | O(n) | |Medium| String |
 |1022|[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1022.java) | O(n) | O(n) | |Easy|
 |1021|[Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1021.java) | O(n) | O(n) | |Easy|
 |1018|[Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1018.java) | O(n) | O(1) | |Easy|
