@@ -28,6 +28,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
 |1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1030.java) | O(R*C) | O(1) | |Easy|
+|1023|[Camelcase Matching](https://leetcode.com/problems/camelcase-matching/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1023.java)| O(mn) | O(n) | |Medium| String |
 |1022|[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1022.java) | O(n) | O(n) | |Easy|
 |1021|[Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1021.java) | O(n) | O(n) | |Easy|
 |1020|[Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1020.java) | O(mn) | O(mn) | |Medium|Graph, DFS, BFS, recursion|
