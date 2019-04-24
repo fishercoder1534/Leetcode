@@ -26,8 +26,12 @@ public class _1003 {
 
             for (char c : S.toCharArray()) {
                 if (c == 'c') {
-                    if (stack.isEmpty() || stack.pop() != 'b') return false;
-                    if (stack.isEmpty() || stack.pop() != 'a') return false;
+                    if (stack.isEmpty() || stack.pop() != 'b') {
+                        return false;
+                    }
+                    if (stack.isEmpty() || stack.pop() != 'a') {
+                        return false;
+                    }
                 } else {
                     stack.push(c);
                 }
