@@ -11,7 +11,9 @@ public class _1003Test {
     private static _1003.Solution1 solution1;
 
     @BeforeClass
-    public static void setup() {solution1 = new _1003.Solution1();}
+    public static void setup() {
+        solution1 = new _1003.Solution1();
+    }
 
     @Test
     public void test1() {
