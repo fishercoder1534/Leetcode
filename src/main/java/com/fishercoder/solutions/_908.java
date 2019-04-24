@@ -61,7 +61,7 @@ public class _908 {
             max = Math.max(max, k);
           }
 
-          return Math.max(max - min - 2*K, 0);
+          return Math.max(max - min - 2 * K, 0);
       }
   }
 }
