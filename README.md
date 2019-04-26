@@ -32,6 +32,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |1021|[Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1021.java) | O(n) | O(n) | |Easy|
 |1020|[Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1020.java) | O(mn) | O(mn) | |Medium|Graph, DFS, BFS, recursion|
 |1018|[Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1018.java) | O(n) | O(1) | |Easy|
+|1014|[Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1014.java) | O(n) | O(1) | |Medium|
 |1013|[Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1013.java) | O(n) | O(1) | |Easy|
 |1009|[Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1009.java) | O(n) | O(1) | |Easy|
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1003.java) | O(n) | O(n) | |Medium|
