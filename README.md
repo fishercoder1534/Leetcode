@@ -114,6 +114,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |747|[Largest Number Greater Than Twice of Others](https://leetcode.com/problems/largest-number-greater-than-twice-of-others/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_747.java) | O(n) | O(1) | |Easy|
 |746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_746.java) | O(n) | O(1) | |Easy|
 |744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_744.java) | O(logn) | O(1) || Easy|
+|743|[Network Delay Time](https://leetcode.com/problems/network-delay-time/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_743.java) | O(n^2 + e) | O(n^2) || Medium|Graph, Djikstra|
 |740|[Delete and Earn](https://leetcode.com/problems/delete-and-earn/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_740.java) | O(n) | O(n) | |Medium|
 |739|[Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_739.java) | O(n^2) | O(1) | |Medium| 
 |738|[Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_738.java) | O(n) | O(1) | |Medium|
