@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 1013. Pairs of Songs With Total Durations Divisible by 60
+ * 1010. Pairs of Songs With Total Durations Divisible by 60
  *
  * In a list of songs, the i-th song has a duration of time[i] seconds.
  *
@@ -29,7 +29,7 @@ import java.util.Map;
  * 1 <= time.length <= 60000
  * 1 <= time[i] <= 500
  * */
-public class _1013 {
+public class _1010 {
     public static class Solution1 {
         /**Credit: https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/discuss/256726/Java-O(n)-code-w-comment-similar-to-Two-Sum
          *
