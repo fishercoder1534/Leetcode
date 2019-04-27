@@ -4,7 +4,7 @@ import com.fishercoder.solutions._888;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 
 public class _888Test {
     private static _888.Solution1 solution1;
@@ -19,7 +19,7 @@ public class _888Test {
         int [] A = {1, 1};
         int [] B = {2, 2};
         int [] ans = {1, 2};
-        assertEquals(ans, solution1.fairCandySwap(A, B));
+        assertArrayEquals(ans, solution1.fairCandySwap(A, B));
     }
 
     @Test
@@ -27,7 +27,7 @@ public class _888Test {
         int [] A = {1, 2};
         int [] B = {2, 3};
         int [] ans = {1, 2};
-        assertEquals(ans, solution1.fairCandySwap(A, B));
+        assertArrayEquals(ans, solution1.fairCandySwap(A, B));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class _888Test {
         int [] A = {2};
         int [] B = {1, 3};
         int [] ans = {2, 3};
-        assertEquals(ans, solution1.fairCandySwap(A, B));
+        assertArrayEquals(ans, solution1.fairCandySwap(A, B));
     }
 
     @Test
@@ -43,6 +43,6 @@ public class _888Test {
         int [] A = {1, 2, 5};
         int [] B = {2, 4};
         int [] ans = {5, 4};
-        assertEquals(ans, solution1.fairCandySwap(A, B));
+        assertArrayEquals(ans, solution1.fairCandySwap(A, B));
     }
 }
