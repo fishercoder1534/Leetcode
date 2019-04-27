@@ -40,4 +40,26 @@ public class _905 {
             A[j] = tmp;
         }
     }
+
+    public static class Solution2 {
+        public int[] sortArrayByParity(int[] A) {
+            int [] ans = new int[A.length];
+            int evenInd = 0;
+            int oddInd = A.length - 1;
+            for(int num : A)
+            {
+                if(num % 2 == 0)
+                {
+                    ans[evenInd] = num;
+                    evenInd++;
+                }
+                else
+                {
+                    ans[oddInd] = num;
+                    oddInd--;
+                }
+            }
+            return ans;
+        }
+    }
 }
