@@ -58,7 +58,7 @@ public class _1011 {
 
             // Binary search
             while (lower <= upper) {
-                currentGuess = (upper + lower)/2;
+                currentGuess = (upper + lower) / 2;
                 if (daysToShip(weights, currentGuess) <= D) {
                     bestGuess = currentGuess;
                     upper = currentGuess - 1;
