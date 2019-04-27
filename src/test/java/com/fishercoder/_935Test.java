@@ -10,7 +10,9 @@ public class _935Test {
     private static _935.Solution1 solution1;
 
     @BeforeClass
-    public static void setup() { solution1 = new _935.Solution1(); }
+    public static void setup() {
+        solution1 = new _935.Solution1();
+    }
 
     @Test
     public void test1() {
