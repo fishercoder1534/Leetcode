@@ -41,8 +41,9 @@ public class _474 {
 
         private int[] count(String str) {
             int[] res = new int[2];
-            for (int i = 0; i < str.length(); i++)
+            for (int i = 0; i < str.length(); i++) {
                 res[str.charAt(i) - '0']++;
+            }
             return res;
         }
     }
