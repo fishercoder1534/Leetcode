@@ -10,7 +10,7 @@ import static junit.framework.Assert.assertEquals;
  * Created by fishercoder on 4/23/17.
  */
 public class _475Test {
-    private static _475 test;
+    private static _475.Solution1 test;
     private static int expected;
     private static int actual;
     private static int[] houses;
@@ -18,7 +18,7 @@ public class _475Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _475();
+        test = new _475.Solution1();
     }
 
     @Test
