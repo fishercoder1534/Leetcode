@@ -11,14 +11,16 @@ import static junit.framework.Assert.assertEquals;
  * Created by fishercoder on 1/14/17.
  */
 public class _476Test {
-    private static _476 test;
+    private static _476.Solution1 solution1;
+    private static _476.Solution2 solution2;
     private static int expected;
     private static int actual;
     private static int input;
 
     @BeforeClass
     public static void setup() {
-        test = new _476();
+        solution1 = new _476.Solution1();
+        solution2 = new _476.Solution2();
     }
 
     @Before
@@ -33,7 +35,8 @@ public class _476Test {
 
         input = 5;
         expected = 2;
-        actual = test.findComplement(input);
+        actual = solution1.findComplement(input);
+        actual = solution2.findComplement(input);
         assertEquals(expected, actual);
 
     }
@@ -43,7 +46,8 @@ public class _476Test {
 
         input = 5;
         expected = 2;
-        actual = test.findComplement_oneLiner(input);
+        actual = solution1.findComplement(input);
+        actual = solution2.findComplement(input);
         assertEquals(expected, actual);
 
     }
