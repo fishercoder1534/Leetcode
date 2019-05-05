@@ -27,6 +27,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|1037|[Valid Boomerang](https://leetcode.com/problems/valid-boomerang/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1037.java) | O(1) | O(1) | |Easy|Math|
 |1033|[Moving Stones Until Consecutive](https://leetcode.com/problems/moving-stones-until-consecutive/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1033.java) | O(1) | O(1) | |Easy|Math|
 |1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1030.java) | O(R*C) | O(1) | |Easy|
 |1022|[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1022.java) | O(n) | O(n) | |Easy|
