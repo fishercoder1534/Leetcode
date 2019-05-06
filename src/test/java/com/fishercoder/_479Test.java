@@ -6,19 +6,16 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 7/19/17.
- */
 public class _479Test {
-    private static _479 test;
+    private static _479.Solution1 solution1;
 
     @BeforeClass
     public static void setup() {
-        test = new _479();
+        solution1 = new _479.Solution1();
     }
 
     @Test
     public void test1() {
-        assertEquals(123, test.largestPalindrome(3));
+        assertEquals(123, solution1.largestPalindrome(3));
     }
 }
