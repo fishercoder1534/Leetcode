@@ -8,7 +8,7 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _482Test {
-    private static _482 test;
+    private static _482.Solution1 solution1;
     private static String expected;
     private static String actual;
     private static String S;
@@ -16,7 +16,7 @@ public class _482Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _482();
+        solution1 = new _482.Solution1();
     }
 
     @Before
@@ -30,7 +30,7 @@ public class _482Test {
         S = "2-4A0r7-4k";
         k = 4;
         expected = "24A0-R74K";
-        actual = test.licenseKeyFormatting(S, k);
+        actual = solution1.licenseKeyFormatting(S, k);
         assertEquals(expected, actual);
     }
 
@@ -39,7 +39,7 @@ public class _482Test {
         S = "2-4A0r7-4k";
         k = 3;
         expected = "24-A0R-74K";
-        actual = test.licenseKeyFormatting(S, k);
+        actual = solution1.licenseKeyFormatting(S, k);
         assertEquals(expected, actual);
     }
 
@@ -48,7 +48,7 @@ public class _482Test {
         S = "--a-a-a-a--";
         k = 2;
         expected = "AA-AA";
-        actual = test.licenseKeyFormatting(S, k);
+        actual = solution1.licenseKeyFormatting(S, k);
         assertEquals(expected, actual);
     }
 
@@ -57,7 +57,7 @@ public class _482Test {
         S = "---";
         k = 3;
         expected = "";
-        actual = test.licenseKeyFormatting(S, k);
+        actual = solution1.licenseKeyFormatting(S, k);
         assertEquals(expected, actual);
     }
 }
