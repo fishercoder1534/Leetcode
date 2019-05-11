@@ -1,7 +1,8 @@
 package com.fishercoder.solutions;
 
 /**
- 484. Find Permutation
+ * 484. Find Permutation
+ *
  * By now, you are given a secret signature consisting of character 'D' and 'I'.
  * 'D' represents a decreasing relationship between two numbers, 'I' represents an increasing relationship between two numbers.
  * And our secret signature was constructed by a special integer array, which contains uniquely all the different number from 1 to n (n is the length of the secret signature plus 1).
@@ -26,42 +27,45 @@ package com.fishercoder.solutions;
  The length of input string is a positive integer and will not exceed 10,000
  */
 public class _484 {
+    public static class Solution1 {
 
-    /**credit:https://discuss.leetcode.com/topic/76221/java-o-n-clean-solution-easy-to-understand
-     *
-    For example, given IDIIDD we start with sorted sequence 1234567
-     Then for each k continuous D starting at index i we need to reverse [i, i+k] portion of the sorted sequence.
-
-     e.g.
-     IDIIDD
-
-     1234567 // sorted
-     1324765 // answer
-     */
-    public int[] findPermutation(String s) {
-        int[] result = new int[s.length() + 1];
-        for (int i = 0; i <= s.length(); i++) {
-            result[i] = i + 1;
-        }
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == 'D') {
-                int left = i;
-                while (i < s.length() && s.charAt(i) == 'D') {
-                    i++;
-                }
-                reverse(result, left, i);
+        /**
+         * credit:https://discuss.leetcode.com/topic/76221/java-o-n-clean-solution-easy-to-understand
+         *
+         * For example, given IDIIDD we start with sorted sequence 1234567
+         * Then for each k continuous D starting at index i we need to reverse [i, i+k] portion of the sorted sequence.
+         *
+         * e.g.
+         * IDIIDD
+         *
+         * 1234567 // sorted
+         * 1324765 // answer
+         */
+        public int[] findPermutation(String s) {
+            int[] result = new int[s.length() + 1];
+            for (int i = 0; i <= s.length(); i++) {
+                result[i] = i + 1;
             }
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == 'D') {
+                    int left = i;
+                    while (i < s.length() && s.charAt(i) == 'D') {
+                        i++;
+                    }
+                    reverse(result, left, i);
+                }
+            }
+            return result;
         }
-        return result;
-    }
 
-    private void reverse(int[] result, int left, int i) {
-        while (left < i) {
-            int temp = result[left];
-            result[left] = result[i];
-            result[i] = temp;
-            left++;
-            i--;
+        private void reverse(int[] result, int left, int i) {
+            while (left < i) {
+                int temp = result[left];
+                result[left] = result[i];
+                result[i] = temp;
+                left++;
+                i--;
+            }
         }
     }
 
