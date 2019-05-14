@@ -11,14 +11,14 @@ import static org.junit.Assert.assertArrayEquals;
  * Created by fishercoder on 1/25/17.
  */
 public class _492Test {
-    private static _492 test;
+    private static _492.Solution1 solution1;
     private static int[] expected;
     private static int[] actual;
     private static int area;
 
     @BeforeClass
     public static void setup() {
-        test = new _492();
+        solution1 = new _492.Solution1();
     }
 
     @Before
@@ -32,7 +32,7 @@ public class _492Test {
     public void test1() {
         area = 4;
         expected = new int[]{2, 2};
-        actual = test.constructRectangle(area);
+        actual = solution1.constructRectangle(area);
         assertArrayEquals(expected, actual);
     }
 
@@ -40,7 +40,7 @@ public class _492Test {
     public void test2() {
         area = 3;
         expected = new int[]{3, 1};
-        actual = test.constructRectangle(area);
+        actual = solution1.constructRectangle(area);
         assertArrayEquals(expected, actual);
     }
 }

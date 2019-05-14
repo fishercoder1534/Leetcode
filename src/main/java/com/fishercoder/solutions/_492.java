@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
 /**
+ * 492. Construct the Rectangle
+ *
  * For a web developer, it is very important to know how to design a web page's size.
  * So, given a specific rectangular web page’s area, your job by now is to design a rectangular web page,
  * whose length L and width W satisfy the following requirements:
@@ -23,22 +25,24 @@ package com.fishercoder.solutions;
  */
 public class _492 {
 
-    public int[] constructRectangle(int area) {
-        int i = 0;
-        int j = area;
-        int[] result = new int[2];
-        while (i <= j) {
-            long product = i * j;
-            if (product == area) {
-                result[0] = j--;
-                result[1] = i++;
-            } else if (product > area) {
-                j--;
-            } else {
-                i++;
+    public static class Solution1 {
+        public int[] constructRectangle(int area) {
+            int i = 0;
+            int j = area;
+            int[] result = new int[2];
+            while (i <= j) {
+                long product = i * j;
+                if (product == area) {
+                    result[0] = j--;
+                    result[1] = i++;
+                } else if (product > area) {
+                    j--;
+                } else {
+                    i++;
+                }
             }
+            return result;
         }
-        return result;
     }
 
 }
