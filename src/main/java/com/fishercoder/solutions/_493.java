@@ -50,9 +50,4 @@ public class _493 {
             return cnt;
         }
     }
-
-    public static void main(String... args) {
-        System.out.println(2147483647 * 2);//this is -1
-        System.out.println(2147483647 * 2.0);//this is 4.294967294E9
-    }
 }
