@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 
 public class _496Test {
-    private static _496 test;
+    private static _496.Solution1 solution1;
     private static int[] findNums;
     private static int[] nums;
     private static int[] expected;
@@ -16,7 +16,7 @@ public class _496Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _496();
+        solution1 = new _496.Solution1();
     }
 
     @Before
@@ -32,10 +32,7 @@ public class _496Test {
         findNums = new int[]{4, 1, 2};
         nums = new int[]{1, 3, 4, 2};
         expected = new int[]{-1, 3, -1};
-        actual = test.nextGreaterElement_naive_way(findNums, nums);
-        assertArrayEquals(expected, actual);
-
-        actual = test.nextGreaterElement_clever_way(findNums, nums);
+        actual = solution1.nextGreaterElement(findNums, nums);
         assertArrayEquals(expected, actual);
     }
 }
