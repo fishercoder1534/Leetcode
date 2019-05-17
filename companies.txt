@@ -1,34 +1,54 @@
+1 Two Sum (/problems/two-sum) Array (/tag/array) Hash Table (/tag/hash-table)
+8 String to Integer (atoi) (/probl… Math (/tag/math) String (/tag/string)
 10 Regular Expression Matching… String (/tag/string)
-12 Integer to Roman (/problems/… Math (/tag/math) String (/tag/string)
-20 Valid Parentheses (/problems… String (/tag/string) Stack (/tag/stack)
+13 Roman to Integer (/problems/… Math (/tag/math) String (/tag/string)
+17 Letter Combinations of a Pho… String (/tag/string) Backtracking (/tag/backtracking)
+22 Generate Parentheses (/probl… String (/tag/string) Backtracking (/tag/backtracking)
 23 Merge k Sorted Lists (/proble… Linked List (/tag/linked-list)
-42 Trapping Rain Water (/proble… Array (/tag/array) Two Pointers (/tag/two-pointers)
-43 Multiply Strings (/problems/m… Math (/tag/math) String (/tag/string)
-44 Wildcard Matching (/problem… String (/tag/string)
-56 Merge Intervals (/problems/m… Array (/tag/array) Sort (/tag/sort) Google (/company/google)
-60 Permutation Sequence (/prob… Math (/tag/math) Backtracking (/tag/backtracking)
-118 Pascal's Triangle (/problems/… Array (/tag/array) Twitter (/company/twitter)
+24 Swap Nodes in Pairs (/proble… Linked List (/tag/linked-list) Microsoft (/company/microsoft)
+33 Search in Rotated Sorted Arr… Array (/tag/array) Binary Search (/tag/binary-search)
+36 Valid Sudoku (/problems/vali… Hash Table (/tag/hash-table) Uber (/company/uber)
+37 Sudoku Solver (/problems/su… Hash Table (/tag/hash-table) Backtracking (/tag/backtracking)
+39 Combination Sum (/problems… Array (/tag/array) Backtracking (/tag/backtracking)
+49 Group Anagrams (/problems/… Hash Table (/tag/hash-table) String (/tag/string)
+54 Spiral Matrix (/problems/spira… Array (/tag/array) Google (/company/google)
+76 Minimum Window Substring (… Hash Table (/tag/hash-table) Two Pointers (/tag/two-pointers)
+78 Subsets (/problems/subsets) Array (/tag/array) Backtracking (/tag/backtracking)
+91 Decode Ways (/problems/dec… String (/tag/string)
+104 Maximum Depth of Binary Tre… Tree (/tag/tree) Depth-first Search (/tag/depth-first-search)
+121 Best Time to Buy and Sell St… Array (/tag/array)
+125 Valid Palindrome (/problems/… Two Pointers (/tag/two-pointers) String (/tag/string)
+133 Clone Graph (/problems/clon… Depth-first Search (/tag/depth-first-search)
+138 Copy List with Random Point… Hash Table (/tag/hash-table) Linked List (/tag/linked-list)
+139 Word Break (/problems/word-… Dynamic Programming (/tag/dynamic-programming)
 140 Word Break II (/problems/wor… Dynamic Programming (/tag/dynamic-programming)
 146 LRU Cache (/problems/lru-ca… Design (/tag/design) Google (/company/google)
-149 Max Points on a Line (/proble… Hash Table (/tag/hash-table) Math (/tag/math)
+155 Min Stack (/problems/min-sta… Stack (/tag/stack) Design (/tag/design)
 161 One Edit Distance (/problems…
+186 Reverse Words in a String II (/…
 202 Happy Number (/problems/h… Hash Table (/tag/hash-table) Math (/tag/math)
 206 Reverse Linked List (/proble… Linked List (/tag/linked-list) Facebook (/company/facebook)
+207 Course Schedule (/problems/… Depth-first Search (/tag/depth-first-search)
 208 Implement Trie (Prefix Tree) (/… Design (/tag/design) Trie (/tag/trie) Google (/company/google)
-218 The Skyline Problem (/proble… Divide and Conquer (/tag/divide-and-conquer)
-235 Lowest Common Ancestor of… Tree (/tag/tree) Facebook (/company/facebook)
-251 Flatten 2D Vector (/problems/…
-269 Alien Dictionary (/problems/al…
-296 Best Meeting Point (/problem…
-323 Number of Connected Comp…
-341 Flatten Nested List Iterator (/… Stack (/tag/stack) Design (/tag/design)
-355 Design Twitter (/problems/de… Hash Table (/tag/hash-table) Heap (/tag/heap)
-378 Kth Smallest Element in a Sor… Binary Search (/tag/binary-search) Heap (/tag/heap)
+230 Kth Smallest Element in a BS… Binary Search (/tag/binary-search) Tree (/tag/tree)
+242 Valid Anagram (/problems/val… Hash Table (/tag/hash-table) Sort (/tag/sort)
+249 Group Shifted Strings (/probl…
+254 Factor Combinations (/proble…
+262 Trips and Users (/problems/tri… Uber (/company/uber) 19.7% Hard
+266 Palindrome Permutation (/pro…
+290 Word Pattern (/problems/wor… Hash Table (/tag/hash-table) Uber (/company/uber)
+291 Word Pattern II (/problems/w…
+297 Serialize and Deserialize Bina… Tree (/tag/tree) Design (/tag/design)
+337 House Robber III (/problems/… Tree (/tag/tree) Depth-first Search (/tag/depth-first-search)
+373 Find K Pairs with Smallest Su… Heap (/tag/heap) Google (/company/google)
 380 Insert Delete GetRandom O(1… Array (/tag/array) Hash Table (/tag/hash-table)
-407 Trapping Rain Water II (/probl… Heap (/tag/heap)
-433 Minimum Genetic Mutation (/… Twitter (/company/twitter) 34.9% Medium
-468 Validate IP Address (/problem… String (/tag/string) Twitter (/company/twitter) 20.6% Medium
-580 Count Student Number in De…
-585 Investments in 2016 (/proble…
-586 Customer Placing the Largest…
-608 Tree Node (/problems/tree-no…
+432 All O`one Data Structure (/pro… Design (/tag/design) Uber (/company/uber) 28.0% Hard
+450 Delete Node in a BST (/probl… Tree (/tag/tree) Uber (/company/uber) 37.8% Medium
+516 Longest Palindromic Subseq… Dynamic Programming (/tag/dynamic-programming)
+535 Encode and Decode TinyURL… Hash Table (/tag/hash-table) Math (/tag/math)
+636 Exclusive Time of Functions (… Stack (/tag/stack) Facebook (/company/facebook)
+648 Replace Words (/problems/re… Hash Table (/tag/hash-table) Trie (/tag/trie)
+692 Top K Frequent Words (/probl… Hash Table (/tag/hash-table) Heap (/tag/heap) Trie (/tag/trie)
+699 Falling Squares (/problems/fa… Segment Tree (/tag/segment-tree)
+733 Flood Fill (/problems/flood-fill) Depth-first Search (/tag/depth-first-search)
+735 Asteroid Collision (/problems/… Stack (/tag/stack) Uber (/company/uber) 37.1% Medium
