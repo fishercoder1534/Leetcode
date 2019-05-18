@@ -47,6 +47,7 @@ public class _78 {
     }
 
     public static class Solution2 {
+        /**This is the most straightforward solution and easy to follow.*/
         public List<List<Integer>> subsets(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             backtracking(result, new ArrayList(), nums, 0);
