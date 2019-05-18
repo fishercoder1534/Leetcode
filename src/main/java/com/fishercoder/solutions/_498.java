@@ -23,9 +23,12 @@ package com.fishercoder.solutions;
  */
 public class _498 {
 
-    /**Reference: https://discuss.leetcode.com/topic/77865/concise-java-solution/2
+public static class Solutoin1 {
+    /**
+     * Reference: https://discuss.leetcode.com/topic/77865/concise-java-solution/2
      * Just keep walking the matrix, when hitting the four borders (top, bottom, left or right),
-     * just directions and keep walking.*/
+     * just directions and keep walking.
+     */
     public int[] findDiagonalOrder(int[][] matrix) {
 
         if (matrix == null || matrix.length == 0) {
@@ -62,7 +65,7 @@ public class _498 {
             }
         }
         return result;
-
     }
+}
 
 }
