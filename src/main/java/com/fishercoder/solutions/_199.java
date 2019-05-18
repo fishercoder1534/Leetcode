@@ -24,29 +24,52 @@ You should return [1, 3, 4]. */
 
 public class _199 {
 
-	public List<Integer> rightSideView(TreeNode root) {
-		List<Integer> result = new ArrayList<>();
-		if (root == null) {
+	public static class Solution1 {
+		/**credit: https://leetcode.com/problems/binary-tree-right-side-view/discuss/56012/My-simple-accepted-solution(JAVA)*/
+		public List<Integer> rightSideView(TreeNode root) {
+			List<Integer> result = new ArrayList<>();
+			rightView(root, result, 0);
 			return result;
 		}
-		Queue<TreeNode> q = new LinkedList<>();
-		q.offer(root);
-		while (!q.isEmpty()) {
-			int size = q.size();
-			for (int i = 0; i < size; i++) {
-				TreeNode curr = q.poll();
-				if (i == size - 1) {
-					result.add(curr.val);
-				}
-				if (curr.left != null) {
-					q.offer(curr.left);
-				}
-				if (curr.right != null) {
-					q.offer(curr.right);
+
+		void rightView(TreeNode curr, List<Integer> result, int currDepth) {
+			if (curr == null) {
+				return;
+			}
+			if (currDepth == result.size()) {
+				result.add(curr.val);
+			}
+			rightView(curr.right, result, currDepth + 1);
+			rightView(curr.left, result, currDepth + 1);
+		}
+	}
+
+	public static class Solution2 {
+		/**BFS the tree*/
+		public List<Integer> rightSideView(TreeNode root) {
+			List<Integer> result = new ArrayList<>();
+			if (root == null) {
+				return result;
+			}
+			Queue<TreeNode> q = new LinkedList<>();
+			q.offer(root);
+			while (!q.isEmpty()) {
+				int size = q.size();
+				for (int i = 0; i < size; i++) {
+					TreeNode curr = q.poll();
+					if (i == size - 1) {
+						result.add(curr.val);
+					}
+					if (curr.left != null) {
+						q.offer(curr.left);
+					}
+					if (curr.right != null) {
+						q.offer(curr.right);
+					}
 				}
 			}
+			return result;
 		}
-		return result;
 	}
 
 }
