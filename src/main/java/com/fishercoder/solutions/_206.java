@@ -41,8 +41,7 @@ public class _206 {
          * still, a null newHead proves to be very helpful.
          */
         public ListNode reverseList(ListNode head) {
-            ListNode newHead = null;
-            return reverse(head, newHead);
+            return reverse(head, null);
         }
 
         ListNode reverse(ListNode head, ListNode newHead) {
