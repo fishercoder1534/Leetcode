@@ -37,19 +37,19 @@ public class _102 {
       if (root == null) {
         return result;
       }
-      Queue<TreeNode> q = new LinkedList();
-      q.offer(root);
-      while (!q.isEmpty()) {
+      Queue<TreeNode> queue = new LinkedList();
+      queue.offer(root);
+      while (!queue.isEmpty()) {
         List<Integer> thisLevel = new ArrayList();
-        int qSize = q.size();
-        for (int i = 0; i < qSize; i++) {
-          TreeNode curr = q.poll();
+        int size = queue.size();
+        for (int i = 0; i < size; i++) {
+          TreeNode curr = queue.poll();
           thisLevel.add(curr.val);
           if (curr.left != null) {
-            q.offer(curr.left);
+            queue.offer(curr.left);
           }
           if (curr.right != null) {
-            q.offer(curr.right);
+            queue.offer(curr.right);
           }
         }
         result.add(thisLevel);
