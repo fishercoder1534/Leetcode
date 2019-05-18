@@ -32,6 +32,10 @@ import java.util.List;
 public class _189 {
 
   public static class Solution1 {
+    /**
+     * O(n) space
+     * O(n) time
+     * */
     public void rotate(int[] nums, int k) {
       int len = nums.length;
       int[] tmp = new int[len];
@@ -46,8 +50,25 @@ public class _189 {
 
   public static class Solution2 {
     /**
+     * O(1) space
+     * O(n) time
+     * */
+    public void rotate(int[] nums, int k) {
+      int tmp;
+      for (int i = 0; i < k; i++) {
+        tmp = nums[nums.length - 1];
+        for (int j = nums.length - 1; j > 0; j--) {
+          nums[j] = nums[j - 1];
+        }
+        nums[0] = tmp;
+      }
+    }
+  }
+
+  public static class Solution3 {
+    /**
      * My original idea and got AC'ed.
-     * One thing to notice is that when k > nums.length, we'll continue to rotate_naive the array, it just becomes k -= nums.length
+     * One thing to notice is that when k > nums.length, we'll continue to rotate the array, it just becomes k -= nums.length
      */
     public static void rotate(int[] nums, int k) {
       if (k == 0 || k == nums.length) {
@@ -77,18 +98,4 @@ public class _189 {
       }
     }
   }
-
-   public static class Solution3 {
-    public void rotate(int[] nums, int k) {
-        int tmp;
-        for (int i = 0; i < k; i++) {
-            tmp = nums[nums.length - 1];
-            for (int j = nums.length - 1; j > 0; j--) {
-              nums[j] = nums[j - 1];
-            }
-            nums[0] = tmp;
-        }
-    }
-  }
-
 }
