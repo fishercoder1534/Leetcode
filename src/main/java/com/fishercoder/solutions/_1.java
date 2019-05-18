@@ -18,17 +18,14 @@ public class _1 {
     public static class Solution1 {
         public int[] twoSum(int[] nums, int target) {
             Map<Integer, Integer> map = new HashMap();
-            int[] result = new int[2];
             for (int i = 0; i < nums.length; i++) {
                 if (map.containsKey(target - nums[i])) {
-                    result[0] = map.get(target - nums[i]);
-                    result[1] = i;
-                    break;
+                    return new int[]{map.get(target - nums[i]), i};
                 } else {
                     map.put(nums[i], i);
                 }
             }
-            return result;
+            return new int[]{-1, -1};
         }
     }
 
