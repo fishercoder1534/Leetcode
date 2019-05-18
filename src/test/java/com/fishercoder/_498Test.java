@@ -10,13 +10,13 @@ import static org.junit.Assert.assertArrayEquals;
  * Created by fishercoder on 5/26/17.
  */
 public class _498Test {
-    private static _498 test;
+    private static _498.Solutoin1 solutoin1;
     private static int[][] matrix;
     private static int[] expected;
 
     @BeforeClass
     public static void setup() {
-        test = new _498();
+        solutoin1 = new _498.Solutoin1();
     }
 
     @Test
@@ -27,7 +27,7 @@ public class _498Test {
                 {7, 8, 9},
         };
         expected = new int[]{1, 2, 4, 7, 5, 3, 6, 8, 9};
-        assertArrayEquals(expected, test.findDiagonalOrder(matrix));
+        assertArrayEquals(expected, solutoin1.findDiagonalOrder(matrix));
     }
 
     @Test
@@ -40,6 +40,6 @@ public class _498Test {
                 {13, 14, 15},
         };
         expected = new int[]{1, 2, 4, 7, 5, 3, 6, 8, 10, 13, 11, 9, 12, 14, 15};
-        assertArrayEquals(expected, test.findDiagonalOrder(matrix));
+        assertArrayEquals(expected, solutoin1.findDiagonalOrder(matrix));
     }
 }
