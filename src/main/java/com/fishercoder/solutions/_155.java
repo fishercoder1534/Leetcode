@@ -48,14 +48,10 @@ public class _155 {
             }
 
             public void pop() {
-                if (min == stack.peek()) {
-                    stack.pop();
+                /**if the value on the top of the stack happens to be the current minimum, we'll pop twice and change
+                 * the current min value to be the last min value */
+                if (min == stack.pop()) {
                     min = stack.pop();
-                } else {
-                    stack.pop();
-                }
-                if (stack.isEmpty()) {
-                    min = Integer.MAX_VALUE;
                 }
             }
 
