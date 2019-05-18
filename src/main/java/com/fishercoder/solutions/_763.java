@@ -33,16 +33,14 @@ public class _763 {
       for (int i = 0; i < S.length(); i++) {
         last[S.charAt(i) - 'a'] = i;
       }
-      int start = -1;
-      int end = -1;
+      /**record the last end index of the current substring*/
+      int end = 0;
+      int start = 0;
       for (int i = 0; i < S.length(); i++) {
-        if (start == -1) {
-          start = i;
-        }
         end = Math.max(end, last[S.charAt(i) - 'a']);
         if (end == i) {
           result.add(end - start + 1);
-          start = -1;
+          start = end + 1;
         }
       }
       return result;
