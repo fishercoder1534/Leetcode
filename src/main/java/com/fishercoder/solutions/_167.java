@@ -32,13 +32,10 @@ public class _167 {
                 } else if (sum < target) {
                     left++;
                 } else {
-                    int[] res = new int[2];
-                    res[0] = left + 1;
-                    res[1] = right + 1;
-                    return res;
+                    return new int[]{left + 1, right + 1};
                 }
             }
-            return new int[] {-1, -1};
+            return new int[]{-1, -1};
         }
     }
 }
