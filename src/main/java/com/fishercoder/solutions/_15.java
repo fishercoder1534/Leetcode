@@ -38,11 +38,11 @@ public class _15 {
                     if (sum == 0) {
                         result.add(Arrays.asList(nums[i], nums[left], nums[right]));
 
-                        while (left + 1 < right && nums[left] == nums[left + 1]) {
+                        while (left < right && nums[left] == nums[left + 1]) {
                             left++;
                         }
 
-                        while (right - 1 > left && nums[right] == nums[right - 1]) {
+                        while (right > left && nums[right] == nums[right - 1]) {
                             right--;
                         }
                         left++;
