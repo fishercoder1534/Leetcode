@@ -13,14 +13,14 @@ import java.util.Map;
 
 public class _138 {
   public static class Solution1 {
-    public RandomListNode copyRandomList(RandomListNode head) {
+    public Node copyRandomList(Node head) {
       /**Key is the original nodes, value is the new nodes we're deep copying to.*/
-      Map<RandomListNode, RandomListNode> map = new HashMap();
-      RandomListNode node = head;
+      Map<Node, Node> map = new HashMap();
+      Node node = head;
 
       //loop for the first time: copy the node themselves with only labels
       while (node != null) {
-        map.put(node, new RandomListNode(node.label));
+        map.put(node, new Node(node.val));
         node = node.next;
       }
 
@@ -36,14 +36,14 @@ public class _138 {
     }
 
     // Definition for singly-linked list with a random pointer.
-    class RandomListNode {
-      int label;
+    class Node {
+      int val;
 
-      RandomListNode next;
-      RandomListNode random;
+      Node next;
+      Node random;
 
-      RandomListNode(int x) {
-        this.label = x;
+      Node(int x) {
+        this.val = x;
       }
     }
   }
