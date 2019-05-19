@@ -10,7 +10,6 @@ import static org.junit.Assert.assertEquals;
 
 public class _2Test {
     private static _2.Solution1 solution1;
-    private static _2.Solution2 solution2;
     private static ListNode l1;
     private static ListNode l2;
     private static ListNode expected;
@@ -18,7 +17,6 @@ public class _2Test {
     @BeforeClass
     public static void setup() {
         solution1 = new _2.Solution1();
-        solution2 = new _2.Solution2();
     }
 
     @Test
@@ -26,7 +24,6 @@ public class _2Test {
         l1 = LinkedListUtils.contructLinkedList(new int[]{2, 4, 3});
         l2 = LinkedListUtils.contructLinkedList(new int[]{5, 6, 4});
         expected = LinkedListUtils.contructLinkedList(new int[]{7, 0, 8});
-        assertEquals(expected, solution2.addTwoNumbers(l1, l2));
         assertEquals(expected, solution1.addTwoNumbers(l1, l2));
     }
 
@@ -36,7 +33,6 @@ public class _2Test {
         l2 = LinkedListUtils.contructLinkedList(new int[]{0});
         expected = LinkedListUtils.contructLinkedList(new int[]{1, 8});
         assertEquals(expected, solution1.addTwoNumbers(l1, l2));
-        assertEquals(expected, solution2.addTwoNumbers(l1, l2));
     }
 
     @Test
@@ -45,6 +41,5 @@ public class _2Test {
         l2 = LinkedListUtils.contructLinkedList(new int[]{5});
         expected = LinkedListUtils.contructLinkedList(new int[]{0, 1});
         assertEquals(expected, solution1.addTwoNumbers(l1, l2));
-        assertEquals(expected, solution2.addTwoNumbers(l1, l2));
     }
 }
