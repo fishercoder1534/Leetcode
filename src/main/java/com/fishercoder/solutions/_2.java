@@ -30,7 +30,6 @@ public class _2 {
                     l2 = l2.next;
                 }
                 tmp.next = new ListNode(sum % 10);
-                ;
                 tmp = tmp.next;
             }
             if (sum / 10 == 1) {
