@@ -59,6 +59,8 @@ public class _89 {
     System.out.println("1 << 6: " +  (1 << 6));
     System.out.println("-----------------------------------------------------------------------------------------");
     System.out.println("How to understand i >> 1? It means to shift the number i to the right by 1 bit, see below");
+    System.out.println("0 >> 1: " +  (0 >> 1));
+    System.out.println("1 >> 1: " +  (1 >> 1));
     System.out.println("2 >> 1: " +  (2 >> 1));
     System.out.println("3 >> 1: " +  (3 >> 1));
     System.out.println("4 >> 1: " +  (4 >> 1));
