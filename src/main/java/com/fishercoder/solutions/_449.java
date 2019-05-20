@@ -116,7 +116,7 @@ public class _449 {
 
     public static class Solution3 {
         /**
-         * This is a generic solution that applies to both BT and BST.
+         * This is a generic solution that applies to both BT and BST. And also the easiest to follow.
          */
 
         // Encodes a tree to a single string.

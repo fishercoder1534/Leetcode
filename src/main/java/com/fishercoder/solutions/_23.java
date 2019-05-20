@@ -14,12 +14,7 @@ import java.util.PriorityQueue;
 public class _23 {
 
     public ListNode mergeKLists(ListNode[] lists) {
-        PriorityQueue<ListNode> heap = new PriorityQueue(new Comparator<ListNode>() {
-            @Override
-            public int compare(ListNode o1, ListNode o2) {
-                return o1.val - o2.val;
-            }
-        });
+        PriorityQueue<ListNode> heap = new PriorityQueue((Comparator<ListNode>) (o1, o2) -> o1.val - o2.val);
 
         for (ListNode node : lists) {
             if (node != null) {
