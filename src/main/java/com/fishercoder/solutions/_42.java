@@ -15,7 +15,8 @@ package com.fishercoder.solutions;
 public class _42 {
 
     public static class Solution1 {
-        /**O(n) time and O(1) space, awesome!
+        /**
+         * O(n) time and O(1) space, awesome!
          *
          * 1. first scan to find the max height index
          * 2. then scan from left up to max index and find all the water units up to the max height
