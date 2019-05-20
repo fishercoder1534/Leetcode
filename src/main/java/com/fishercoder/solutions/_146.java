@@ -37,7 +37,7 @@ public class _146 {
         public class LRUCache {
             /**
              * The shortest implementation is to use LinkedHashMap:
-             * specify a size of the linkedHashMap;
+             * specify a size of the LinkedHashMap;
              * override the removeEldestEntry method when its size exceeds max size:
              * https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html#removeEldestEntry-java.util.Map.Entry-
              * in the constructor, set the last boolean variable to be true: it means the ordering mode,
