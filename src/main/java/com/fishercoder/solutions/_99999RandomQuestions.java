@@ -9,11 +9,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class _99999RandomQuestions {
 
@@ -117,14 +113,70 @@ public class _99999RandomQuestions {
         //  [[3,1],[5,1]],
         //  [[5,3],[6,4]]]
 
-        int[][] result = findEdges(image4);
-        System.out.println("here");
-        for (int[] list : result) {
-            for (int num : list) {
-                System.out.println(num);
+//        int[][] result = findEdges(image4);
+//        System.out.println("here");
+//        for (int[] list : result) {
+//            for (int num : list) {
+//                System.out.println(num);
+//            }
+//        }
+
+        System.out.println(isValidString("aabbcd"));//should be false
+        System.out.println(isValidString("abc"));//should be true
+        System.out.println(isValidString("aabbbbc"));//should be false
+        System.out.println("ended");
+    }
+
+    /**
+     Consider a string to be valid if all characters of the string appear the same number of times.
+     It is also valid if he can remove just a character at any one index in the string,
+     and the remaining characters will occur the same number of times. Given a string ,
+     determine if it is valid. If so, return YES, otherwise return NO.
+
+    For example,
+
+    1. abc, is a valid string because frequencies of a, b, c are 1 .
+    2. aabc, is a valid string because you can remove an occurance of a and then frequencies of a, b, c would be 1.
+    3. aaabc, is not a valid string because you remove maximumn one occurance of a, and the frequencies of b and c would be 1, where as a it is 2
+*/
+
+    public static boolean isValidString(String s) {
+        if (s == null || s.length() == 0) {
+            return false;
+        }
+        Map<Character, Integer> map = new HashMap();
+        for (char c : s.toCharArray()) {
+            if (map.containsKey(c)) {
+                int times = map.get(c);
+                map.put(c, times + 1);
+            } else {
+                map.put(c, 1);
             }
         }
-        System.out.println("ended");
+        //a-1, b-1, c-1
+        //a-2, b-4, c-1
+        //a-1, b-1, c-2
+        //a-2, b-2, c-1, d -1
+        // times1 2
+        // times2 0
+        int times1 = 0;//Integer.MIN_VALUE;
+        int times2 = 0;
+        for (Character key : map.keySet()) {
+            times1 = map.get(key);
+            break;
+        }
+        int diff = 0;
+        for (Character key : map.keySet()) {
+            if (map.get(key) != times1 && times2 == 0) {
+                times2 = map.get(key);
+                diff++;
+                continue;
+            }
+            if (map.get(key) != times2 && map.get(key) != times1) {
+                return false;
+            }
+        }
+        return (Math.abs(times1 - times2) == 1) && diff < 2;
     }
 
     /**
