@@ -11,14 +11,14 @@ import static junit.framework.Assert.assertEquals;
  * Created by fishercoder on 1/15/17.
  */
 public class _504Test {
-    private static _504 test;
+    private static _504.Solution1 solution1;
     private static String expected;
     private static String actual;
     private static int num;
 
     @BeforeClass
     public static void setup() {
-        test = new _504();
+        solution1 = new _504.Solution1();
     }
 
     @Before
@@ -32,7 +32,7 @@ public class _504Test {
     public void test1() {
         num = 100;
         expected = "202";
-        actual = test.convertToBase7(num);
+        actual = solution1.convertToBase7(num);
         assertEquals(expected, actual);
     }
 
@@ -40,7 +40,7 @@ public class _504Test {
     public void test2() {
         num = -7;
         expected = "-10";
-        actual = test.convertToBase7(num);
+        actual = solution1.convertToBase7(num);
         assertEquals(expected, actual);
     }
 }
