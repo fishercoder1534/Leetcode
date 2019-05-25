@@ -4,11 +4,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * There is a ball in a maze with empty spaces and walls. The ball can go through empty spaces by rolling up, down, left or right, but it won't stop rolling until hitting a wall. When the ball stops, it could choose the next direction.
-
- Given the ball's start position, the destination and the maze, find the shortest distance for the ball to stop at the destination. The distance is defined by the number of empty spaces traveled by the ball from the start position (excluded) to the destination (included). If the ball cannot stop at the destination, return -1.
-
- The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of the maze are all walls. The start and destination coordinates are represented by row and column indexes.
+ * 505. The Maze II
+ *
+ * There is a ball in a maze with empty spaces and walls. The ball can go through empty spaces by rolling up, down, left or right,
+ * but it won't stop rolling until hitting a wall. When the ball stops, it could choose the next direction.
+ * Given the ball's start position, the destination and the maze, find the shortest distance for the ball to stop at the destination. The distance is defined by the number of empty spaces traveled by the ball from the start position (excluded) to the destination (included). If the ball cannot stop at the destination, return -1.
+ * The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of the maze are all walls. The start and destination coordinates are represented by row and column indexes.
 
  Example 1
 
@@ -51,55 +52,59 @@ import java.util.Queue;
  */
 public class _505 {
 
-    /**The difference between II and I of this problem:
-     * the extra array is not boolean type any more, but int type, and it's recording the length of each point to start point.*/
-    public int shortestDistance(int[][] maze, int[] start, int[] destination) {
+    public static class Solution1 {
+        /**
+         * The difference between II and I of this problem:
+         * the extra array is not boolean type any more, but int type, and it's recording the length of each point to start point.
+         */
+        public int shortestDistance(int[][] maze, int[] start, int[] destination) {
 
-        final int[] directions = new int[]{-1, 0, 1, 0, -1};
-        Queue<Point> queue = new LinkedList<>();
-        queue.offer(new Point(start[0], start[1], 0));
-        int m = maze.length;
-        int n = maze[0].length;
-        int[][] length = new int[m][n];
-        for (int i = 0; i < m * n; i++) {
-            length[i / n][i % n] = Integer.MAX_VALUE;//initialize the length array
-        }
-
-        while (!queue.isEmpty()) {
-            Point curr = queue.poll();
-            if (length[curr.x][curr.y] <= curr.distance) {
-                continue;
+            final int[] directions = new int[]{-1, 0, 1, 0, -1};
+            Queue<Point> queue = new LinkedList<>();
+            queue.offer(new Point(start[0], start[1], 0));
+            int m = maze.length;
+            int n = maze[0].length;
+            int[][] length = new int[m][n];
+            for (int i = 0; i < m * n; i++) {
+                length[i / n][i % n] = Integer.MAX_VALUE;//initialize the length array
             }
-            length[curr.x][curr.y] = curr.distance;
-            for (int i = 0; i < directions.length - 1; i++) {
-                int x = curr.x;
-                int y = curr.y;
-                int distance = curr.distance;//use temp variables to move
-                //we need below while loop to find only "stop" points that could be put into the queue
-                while (x >= 0 && y >= 0 && x < m && y < n && maze[x][y] == 0) {
-                    x += directions[i];
-                    y += directions[i + 1];
-                    distance++;
+
+            while (!queue.isEmpty()) {
+                Point curr = queue.poll();
+                if (length[curr.x][curr.y] <= curr.distance) {
+                    continue;
                 }
-                x -= directions[i];
-                y -= directions[i + 1];
-                distance--;
-                queue.offer(new Point(x, y, distance));
+                length[curr.x][curr.y] = curr.distance;
+                for (int i = 0; i < directions.length - 1; i++) {
+                    int x = curr.x;
+                    int y = curr.y;
+                    int distance = curr.distance;//use temp variables to move
+                    //we need below while loop to find only "stop" points that could be put into the queue
+                    while (x >= 0 && y >= 0 && x < m && y < n && maze[x][y] == 0) {
+                        x += directions[i];
+                        y += directions[i + 1];
+                        distance++;
+                    }
+                    x -= directions[i];
+                    y -= directions[i + 1];
+                    distance--;
+                    queue.offer(new Point(x, y, distance));
+                }
             }
+            return length[destination[0]][destination[1]] == Integer.MAX_VALUE ? -1 : length[destination[0]][destination[1]];
+
         }
-        return length[destination[0]][destination[1]] == Integer.MAX_VALUE ? -1 : length[destination[0]][destination[1]];
 
-    }
+        class Point {
+            int x;
+            int y;
+            int distance;
 
-    class Point {
-        int x;
-        int y;
-        int distance;
-
-        public Point(int x, int y, int distance) {
-            this.x = x;
-            this.y = y;
-            this.distance = distance;
+            public Point(int x, int y, int distance) {
+                this.x = x;
+                this.y = y;
+                this.distance = distance;
+            }
         }
     }
 }

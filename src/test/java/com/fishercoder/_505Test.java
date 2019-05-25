@@ -8,7 +8,7 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _505Test {
-    private static _505 test;
+    private static _505.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static int[][] maze;
@@ -17,7 +17,7 @@ public class _505Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _505();
+        solution1 = new _505.Solution1();
     }
 
     @Before
@@ -35,7 +35,7 @@ public class _505Test {
         };
         start = new int[]{4, 3};
         destination = new int[]{0, 1};
-        actual = test.shortestDistance(maze, start, destination);
+        actual = solution1.shortestDistance(maze, start, destination);
         expected = -1;
         assertEquals(expected, actual);
 
@@ -52,7 +52,7 @@ public class _505Test {
         };
         start = new int[]{0, 4};
         destination = new int[]{4, 4};
-        actual = test.shortestDistance(maze, start, destination);
+        actual = solution1.shortestDistance(maze, start, destination);
         expected = 12;
         assertEquals(expected, actual);
     }
