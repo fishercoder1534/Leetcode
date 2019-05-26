@@ -30,6 +30,7 @@ package com.fishercoder.solutions;
 public class _849 {
     public static class Solution1 {
         int maxDist = 0;
+        
         public int maxDistToClosest(int[] seats) {
             for (int i = 0; i < seats.length; i++) {
                 if (seats[i] == 0) {
