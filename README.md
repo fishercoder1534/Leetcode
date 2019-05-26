@@ -86,6 +86,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |860|[Lemonade Change](https://leetcode.com/problems/lemonade-change/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_860.java) | O(n) | O(1) | |Easy|
 |859|[Buddy Strings](https://leetcode.com/problems/buddy-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_859.java) | O(n) | O(n) | |Easy|
 |852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_852.java) | O(n) | O(1) | |Easy|
+|849|[Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_849.java) | O(n^2) | O(1) | |Easy|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_844.java) | O(n) | O(1) | |Easy|
 |840|[Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_840.java) | O(1) | O(1) | |Easy|
 |832|[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_832.java) | O(n) | O(1) | |Easy|
