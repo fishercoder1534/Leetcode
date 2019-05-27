@@ -29,6 +29,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
 |1051|[Height Checker](https://leetcode.com/problems/height-checker/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1051.java) | O(nlogn) | O(1) | |Easy||
 |1047|[Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1047.java) | O(n) | O(1) | |Easy||
+|1038|[Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1038.java) | O(n) | O(n) | |Medium|DFS, tree|
 |1037|[Valid Boomerang](https://leetcode.com/problems/valid-boomerang/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1037.java) | O(1) | O(1) | |Easy|Math|
 |1033|[Moving Stones Until Consecutive](https://leetcode.com/problems/moving-stones-until-consecutive/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1033.java) | O(1) | O(1) | |Easy|Math|
 |1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1030.java) | O(R*C) | O(1) | |Easy|
