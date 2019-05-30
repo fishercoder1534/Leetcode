@@ -8,14 +8,16 @@ import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 
 public class _503Test {
-    private static _503 test;
+    private static _503.Solution1 solution1;
+    private static _503.Solution2 solution2;
     private static int[] nums;
     private static int[] expected;
     private static int[] actual;
 
     @BeforeClass
     public static void setup() {
-        test = new _503();
+        solution1 = new _503.Solution1();
+        solution2 = new _503.Solution2();
     }
 
     @Before
@@ -28,7 +30,10 @@ public class _503Test {
     public void test1() {
         nums = new int[]{1, 2, 1};
         expected = new int[]{2, -1, 2};
-        actual = test.nextGreaterElements(nums);
+        actual = solution1.nextGreaterElements(nums);
+        assertArrayEquals(expected, actual);
+
+        actual = solution2.nextGreaterElements(nums);
         assertArrayEquals(expected, actual);
     }
 }

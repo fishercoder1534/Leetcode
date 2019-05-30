@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 
-
 /**
  * 501. Find Mode in Binary Search Tree
  * Given a binary search tree with duplicates. You have to find all the mode(s) in given binary tree.
