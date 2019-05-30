@@ -42,6 +42,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |1011|[Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1011.java) | O(nlogn) | O(1) | |Medium|Binary Search|
 |1010|[Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1010.java) | O(n) | O(1) | |Easy|
 |1009|[Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1009.java) | O(n) | O(1) | |Easy|
+|1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1008.java) | O(n) | O(1) | |Medium| Recursion
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1003.java) | O(n) | O(n) | |Medium|
 |1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1002.java) | O(n) | O(1) | |Easy|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_999.java) | O(1) | O(1) | |Easy|
