@@ -50,6 +50,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_994.java) | O(m*2*n*2) | O(m*n) | |Easy| BFS
 |993|[Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_993.java) | O(n) | O(m) (m is length of the nodes that has the max number of nodes on the same level) | |Easy| Tree, BFS
 |989|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_989.java) | O(max(N, logk)) | O(max(N, logk)) | |Easy| Array
+|987|[Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_987.java) | O(n) | O(n) | |Medium| Recursion
 |985|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_985.java) | O(n) | O(n) | |Easy| Array
 |979|[Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_979.java) | O(n) | O(1) | |Medium| Recursion
 |977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_977.java) | O(nlogn) | O(1) | |Easy| Array
