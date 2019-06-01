@@ -12,14 +12,14 @@ import static junit.framework.Assert.assertEquals;
  * Created by fishercoder on 1/15/17.
  */
 public class _513Test {
-    private static _513 test;
+    private static _513.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup() {
-        test = new _513();
+        solution1 = new _513.Solution1();
     }
 
     @Before
@@ -35,7 +35,7 @@ public class _513Test {
         root.left = new TreeNode(1);
         root.right = new TreeNode(3);
         expected = 1;
-        actual = test.findBottomLeftValue(root);
+        actual = solution1.findBottomLeftValue(root);
         assertEquals(expected, actual);
 
     }
@@ -50,7 +50,7 @@ public class _513Test {
         root.right.right = new TreeNode(6);
         root.right.left.left = new TreeNode(7);
         expected = 7;
-        actual = test.findBottomLeftValue(root);
+        actual = solution1.findBottomLeftValue(root);
         assertEquals(expected, actual);
     }
 }
