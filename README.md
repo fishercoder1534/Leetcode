@@ -28,6 +28,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
 |1056|[Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1056.java) | O(nlogn) | O(1) | |Medium||
+|1055|[Fixed Point](https://leetcode.com/problems/fixed-point/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1055.java) | O(n) | O(1) | |Easy||
 |1051|[Height Checker](https://leetcode.com/problems/height-checker/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1051.java) | O(nlogn) | O(1) | |Easy||
 |1047|[Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1047.java) | O(n) | O(1) | |Easy||
 |1038|[Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1038.java) | O(n) | O(n) | |Medium|DFS, tree|
