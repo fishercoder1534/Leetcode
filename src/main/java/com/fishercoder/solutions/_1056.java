@@ -49,7 +49,8 @@ public class _1056 {
             put(8, 8);
             put(6, 9);
             put(9, 6);
-        }};
+        }
+        };
 
         public boolean confusingNumber(int N) {
             if (N == 0) {
