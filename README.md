@@ -800,6 +800,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          
 |-----|----------------|---------------|---------------|---------------|-------------|--------------
 |1069|[Product Sales Analysis II](https://leetcode.com/problems/product-sales-analysis-ii/)|[Solution](../master/database/_1069.sql) | | | Easy |
+|1068|[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/)|[Solution](../master/database/_1068.sql) | | | Easy |
 |627|[Swap Salary](https://leetcode.com/problems/swap-salary/)|[Solution](../master/database/_627.sql) | | | Easy |
 |626|[Exchange Seats](https://leetcode.com/problems/exchange-seats/)|[Solution](../master/database/_626.sql) | | | Medium |
 |620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|[Solution](../master/database/_620.sql) | | | Easy |
