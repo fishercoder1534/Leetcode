@@ -1,16 +1,16 @@
 package com.fishercoder;
 
 import com.fishercoder.common.utils.CommonUtils;
-import com.fishercoder.solutions._1056;
+import com.fishercoder.solutions._1065;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class _1056Test {
-    private static _1056.Solution1 solution1;
+public class _1065Test {
+    private static _1065.Solution1 solution1;
 
     @BeforeClass
     public static void setup() {
-        solution1 = new _1056.Solution1();
+        solution1 = new _1065.Solution1();
     }
 
     @Test

@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * 1056. Index Pairs of a String
+ * 1065. Index Pairs of a String
  *
  * Given a text string and words (a list of strings),
  * return all index pairs [i, j] so that the substring text[i]...text[j] is in the list of words.
@@ -30,7 +30,7 @@ import java.util.List;
  * 1 <= words[i].length <= 50
  * Return the pairs [i,j] in sorted order (i.e. sort them by their first coordinate in case of ties sort them by their second coordinate).
  * */
-public class _1056 {
+public class _1065 {
     public static class Solution1 {
         public int[][] indexPairs(String text, String[] words) {
             List<List<Integer>> lists = new ArrayList<>();
