@@ -4,19 +4,19 @@ import com.fishercoder.solutions._516;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class _516Test {
-    private static _516 test;
+    private static _516.Solution1 solution1;
 
     @BeforeClass
     public static void setup() {
-        test = new _516();
+        solution1 = new _516.Solution1();
     }
 
     @Test
     public void test1() {
-        assertEquals(4, test.longestPalindromeSubseq("bbbab"));
+        assertEquals(4, solution1.longestPalindromeSubseq("bbbab"));
     }
 
 }
