@@ -27,6 +27,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1071.java) | O(m*n) | O(1) | |Easy||
 |1065|[Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1065.java) | O(nlogn) | O(1) | |Medium||
 |1056|[Confusing Number](https://leetcode.com/problems/confusing-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1056.java) | O(n) | O(1) | |Easy||
 |1055|[Fixed Point](https://leetcode.com/problems/fixed-point/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1055.java) | O(n) | O(1) | |Easy||
