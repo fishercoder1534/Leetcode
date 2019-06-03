@@ -62,17 +62,6 @@ public class _1071 {
             return true;
         }
 
-        private int nextPossibleLength(String str2, int bound) {
-            if (bound <= 0) {
-                return -1;
-            }
-            int len = bound;
-            while (str2.length() % len != 0) {
-                len--;
-            }
-            return len;
-        }
-
         private boolean isDivisor(String str1, String commomDivisor) {
             if (str1.length() == commomDivisor.length()) {
                 return str1.equals(commomDivisor);
@@ -86,5 +75,15 @@ public class _1071 {
             return i == (str1.length() - commomDivisor.length());
         }
 
+        private int nextPossibleLength(String str2, int bound) {
+            if (bound <= 0) {
+                return -1;
+            }
+            int len = bound;
+            while (str2.length() % len != 0) {
+                len--;
+            }
+            return len;
+        }
     }
 }
