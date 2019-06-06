@@ -5,3 +5,4 @@ out/
 .idea/
 *.iml
 *.vscode/
+src/main/java/com/fishercoder/solutions/_99999RandomQuestions.java
