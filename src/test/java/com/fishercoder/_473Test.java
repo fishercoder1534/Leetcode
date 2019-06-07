@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 5/30/17.
- */
 public class _473Test {
     private static _473.Solution1 solution1;
     private static int[] nums;
@@ -22,5 +19,11 @@ public class _473Test {
     public void test1() {
         nums = new int[]{1, 1, 2, 2, 2};
         assertEquals(true, solution1.makesquare(nums));
+    }
+
+    @Test
+    public void test2() {
+        nums = new int[]{3, 3, 3, 3, 4};
+        assertEquals(false, solution1.makesquare(nums));
     }
 }

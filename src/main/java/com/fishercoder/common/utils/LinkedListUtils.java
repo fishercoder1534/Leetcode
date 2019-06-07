@@ -2,9 +2,6 @@ package com.fishercoder.common.utils;
 
 import com.fishercoder.common.classes.ListNode;
 
-/**
- * Created by stevesun on 8/12/17.
- */
 public class LinkedListUtils {
 
     public static ListNode contructLinkedList(int[] nums) {
