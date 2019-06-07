@@ -5,9 +5,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 6/10/17.
- */
 public class _604Test {
     private static _604.StringIterator test;
 

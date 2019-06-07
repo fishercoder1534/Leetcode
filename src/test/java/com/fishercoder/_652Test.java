@@ -12,9 +12,6 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 7/30/17.
- */
 public class _652Test {
     private static _652 test;
     private static List<TreeNode> expected;

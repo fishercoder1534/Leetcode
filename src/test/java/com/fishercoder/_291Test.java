@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-/**
- * Created by stevesun on 6/6/17.
- */
 public class _291Test {
     private static _291.Solution1 solution1;
 

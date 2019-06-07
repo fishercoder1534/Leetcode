@@ -10,9 +10,6 @@ import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 6/4/17.
- */
 public class _606Test {
     private static _606.Solution1 solution1;
     private static _606.Solution2 solution2;
