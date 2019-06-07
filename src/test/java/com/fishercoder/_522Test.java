@@ -11,21 +11,21 @@ import static junit.framework.Assert.assertEquals;
  */
 public class _522Test {
 
-    private static _522 test;
+    private static _522.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static String[] strs;
 
     @BeforeClass
     public static void setup() {
-        test = new _522();
+        solution1 = new _522.Solution1();
     }
 
     @Test
     public void test1() {
         strs = new String[]{"aaa", "aaa", "aa"};
         expected = -1;
-        actual = test.findLUSlength(strs);
+        actual = solution1.findLUSlength(strs);
         assertEquals(expected, actual);
     }
 
