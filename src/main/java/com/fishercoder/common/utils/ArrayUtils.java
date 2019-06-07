@@ -3,9 +3,6 @@ package com.fishercoder.common.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by stevesun on 9/12/17.
- */
 public class ArrayUtils {
     public static List<List<Integer>> buildList(int[][] nums) {
         List<List<Integer>> result = new ArrayList<>(nums.length);
