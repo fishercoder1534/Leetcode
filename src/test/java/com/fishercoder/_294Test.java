@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 5/29/17.
- */
 public class _294Test {
   private static _294.Solution1 solution1;
 

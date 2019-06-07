@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 6/4/17.
- */
 public class _605Test {
     private static _605 test;
     private static int[] flowerbed;

@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-/**
- * Created by stevesun on 7/23/17.
- */
 public class _645Test {
     private static _645 test;
     private static int[] nums;

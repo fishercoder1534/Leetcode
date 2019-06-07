@@ -5,9 +5,6 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-/**
- * Created by stevesun on 7/26/17.
- */
 public class _631Test {
     private static _631.Excel excel;
 

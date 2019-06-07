@@ -9,9 +9,6 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by stevesun on 7/24/17.
- */
 public class _648Test {
     private static _648 test;
     private static List<String> dict;
