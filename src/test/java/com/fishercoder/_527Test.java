@@ -9,6 +9,7 @@ import java.util.Arrays;
 import static org.junit.Assert.assertEquals;
 
 public class _527Test {
+    
     private static _527.Solution1 solution1;
 
     @BeforeClass
