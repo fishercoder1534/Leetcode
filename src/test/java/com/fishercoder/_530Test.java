@@ -9,14 +9,14 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _530Test {
-    private static _530 test;
+    private static _530.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup() {
-        test = new _530();
+        solution1 = new _530.Solution1();
     }
 
     @Before
@@ -31,7 +31,7 @@ public class _530Test {
         root.right = new TreeNode(3);
         root.right.left = new TreeNode(2);
         expected = 1;
-        actual = test.getMinimumDifference(root);
+        actual = solution1.getMinimumDifference(root);
         assertEquals(expected, actual);
     }
 
@@ -41,7 +41,7 @@ public class _530Test {
         root.right = new TreeNode(5);
         root.right.left = new TreeNode(3);
         expected = 2;
-        actual = test.getMinimumDifference(root);
+        actual = solution1.getMinimumDifference(root);
         assertEquals(expected, actual);
     }
 
@@ -54,7 +54,7 @@ public class _530Test {
         root.left.right = new TreeNode(445);
         root.right.right = new TreeNode(699);
         expected = 47;
-        actual = test.getMinimumDifference(root);
+        actual = solution1.getMinimumDifference(root);
         assertEquals(expected, actual);
     }
 }
