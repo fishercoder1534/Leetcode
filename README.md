@@ -835,6 +835,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |571|[Find Median Given Frequency of Numbers](https://leetcode.com/problems/find-median-given-frequency-of-numbers/)|[Solution](../master/database/_571.sql) | || Hard |
 |570|[Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/)|[Solution](../master/database/_570.sql) | || Medium |
 |569|[Median Employee Salary](https://leetcode.com/problems/median-employee-salary/)|[Solution](../master/database/_569.sql) | || Hard |
+|511|[Game Play Analysis I](https://leetcode.com/problems/game-play-analysis-i/)|[Solution](../master/database/_511.sql)||| Easy| 
 |262|[Trips and Users](https://leetcode.com/problems/trips-and-users/)|[Solution](../master/database/_262.sql)||| Hard| Inner Join
 |197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|[Solution](../master/database/_197.sql)| O(n^2)|O(n) | Easy|
 |196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|[Solution](../master/database/_196.sql)| O(n^2)|O(n) | Easy|
