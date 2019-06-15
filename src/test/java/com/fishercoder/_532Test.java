@@ -12,7 +12,7 @@ import java.util.Properties;
 import static junit.framework.Assert.assertEquals;
 
 public class _532Test {
-    private static _532 test;
+    private static _532.Solution1 test;
     private static int expected;
     private static int actual;
     private static int k;
@@ -20,7 +20,7 @@ public class _532Test {
 
     @BeforeClass
     public static void setup() throws IOException {
-        test = new _532();
+        test = new _532.Solution1();
         Properties properties = new Properties();
         InputStream inputStream = _532.class.getClassLoader().getResourceAsStream("fishercoder.properties");
         properties.load(inputStream);
