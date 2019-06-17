@@ -28,7 +28,7 @@ import java.util.TreeMap;
 
 public class _538 {
 
-    public static class BSTSolution {
+    public static class Solution1 {
         /**
          * Traverse in this order: right -> root -> left
          */
@@ -46,7 +46,7 @@ public class _538 {
         }
     }
 
-    public static class GenericSolution {
+    public static class Solution2 {
         //This solution is generic for both BST and regular binary trees
         public TreeNode convertBST(TreeNode root) {
             if (root == null) {
