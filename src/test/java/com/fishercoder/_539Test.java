@@ -12,14 +12,14 @@ import java.util.List;
 import static junit.framework.Assert.assertEquals;
 
 public class _539Test {
-    private static _539 test;
+    private static _539.Soluiton1 soluiton1;
     private static int expected;
     private static int actual;
     private static List<String> timePoints;
 
     @BeforeClass
     public static void setup() {
-        test = new _539();
+        soluiton1 = new _539.Soluiton1();
     }
 
     @Before
@@ -32,7 +32,7 @@ public class _539Test {
     public void test1() {
         timePoints = new ArrayList<>(Arrays.asList("23:59", "00:00"));
         expected = 1;
-        actual = test.findMinDifference(timePoints);
+        actual = soluiton1.findMinDifference(timePoints);
         assertEquals(expected, actual);
     }
 
@@ -40,7 +40,7 @@ public class _539Test {
     public void test2() {
         timePoints = new ArrayList<>(Arrays.asList("23:59", "00:00", "01:20"));
         expected = 1;
-        actual = test.findMinDifference(timePoints);
+        actual = soluiton1.findMinDifference(timePoints);
         assertEquals(expected, actual);
     }
 
