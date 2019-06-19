@@ -8,7 +8,7 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _541Test {
-    private static _541 test;
+    private static _541.Solution1 solution1;
     private static String expected;
     private static String actual;
     private static String s;
@@ -16,7 +16,7 @@ public class _541Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _541();
+        solution1 = new _541.Solution1();
     }
 
     @Before
@@ -28,7 +28,7 @@ public class _541Test {
         s = "abcd";
         k = 5;
         expected = "dcba";
-        actual = test.reverseStr(s, k);
+        actual = solution1.reverseStr(s, k);
         assertEquals(expected, actual);
     }
 
@@ -37,7 +37,7 @@ public class _541Test {
         s = "abcdefg";
         k = 2;
         expected = "bacdfeg";
-        actual = test.reverseStr(s, k);
+        actual = solution1.reverseStr(s, k);
         assertEquals(expected, actual);
     }
 
@@ -46,7 +46,7 @@ public class _541Test {
         s = "abcd";
         k = 4;
         expected = "dcba";
-        actual = test.reverseStr(s, k);
+        actual = solution1.reverseStr(s, k);
         assertEquals(expected, actual);
     }
 
@@ -55,7 +55,7 @@ public class _541Test {
         s = "abcdefg";
         k = 3;
         expected = "cbadefg";
-        actual = test.reverseStr(s, k);
+        actual = solution1.reverseStr(s, k);
         assertEquals(expected, actual);
     }
 
@@ -64,7 +64,7 @@ public class _541Test {
         s = "abcd";
         k = 3;
         expected = "cbad";
-        actual = test.reverseStr(s, k);
+        actual = solution1.reverseStr(s, k);
         assertEquals(expected, actual);
     }
 
@@ -74,7 +74,7 @@ public class _541Test {
         System.out.println("s.length() = " + s.length());
         k = 39;
         expected = "fdcqkmxwholhytmhafpesaentdvxginrjlyqzyhehybknvdmfrfvtbsovjbdhevlfxpdaovjgunjqllgsqddebemjanqcqnfkjmi";
-        actual = test.reverseStr(s, k);
+        actual = solution1.reverseStr(s, k);
         assertEquals(expected, actual);
     }
 
