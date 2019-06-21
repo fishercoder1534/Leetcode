@@ -12,13 +12,13 @@ import java.util.List;
 import static junit.framework.Assert.assertEquals;
 
 public class _545Test {
-    private static _545 test;
+    private static _545.Solution1 test;
     private static TreeNode root;
     private static List<Integer> expected;
 
     @BeforeClass
     public static void setup() {
-        test = new _545();
+        test = new _545.Solution1();
     }
 
     @Test
