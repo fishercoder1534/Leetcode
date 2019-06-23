@@ -1,7 +1,6 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._547;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -11,18 +10,15 @@ import static junit.framework.Assert.assertEquals;
  * Created by fishercoder on 1/9/17.
  */
 public class _547Test {
-    private static _547 test;
+    private static _547.Solution1 test;
     private static int expected;
     private static int actual;
     private static int[][] M;
 
     @BeforeClass
     public static void setup() {
-        test = new _547();
+        test = new _547.Solution1();
     }
-
-    @Before
-    public void setupForEachTest() {}
 
     @Test
     public void test1() {
