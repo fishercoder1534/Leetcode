@@ -8,14 +8,14 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class _548Test {
-    private static _548 test;
+    private static _548.Solution1 test;
     private static boolean expected;
     private static boolean actual;
     private static int[] nums;
 
     @BeforeClass
     public static void setup() {
-        test = new _548();
+        test = new _548.Solution1();
     }
 
     @Before
