@@ -12,14 +12,14 @@ import java.util.List;
 import static junit.framework.Assert.assertEquals;
 
 public class _554Test {
-    private static _554 test;
+    private static _554.Solution1 test;
     private static int expected;
     private static int actual;
     private static List<List<Integer>> wall;
 
     @BeforeClass
     public static void setup() {
-        test = new _554();
+        test = new _554.Solution1();
     }
 
     @Before
