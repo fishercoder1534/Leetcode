@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 4/29/17.
  */
 public class _560Test {
-    private static _560 test;
+    private static _560.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static int[] nums;
@@ -18,7 +18,7 @@ public class _560Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _560();
+        solution1 = new _560.Solution1();
     }
 
     @Test
@@ -26,7 +26,7 @@ public class _560Test {
         nums = new int[]{1, 1, 1};
         k = 2;
         expected = 2;
-        actual = test.subarraySum(nums, k);
+        actual = solution1.subarraySum(nums, k);
         assertEquals(expected, actual);
     }
 }
