@@ -10,14 +10,14 @@ import static junit.framework.Assert.assertEquals;
  * Created by fishercoder on 4/23/17.
  */
 public class _562Test {
-    private static _562 test;
+    private static _562.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static int[][] M;
 
     @BeforeClass
     public static void setup() {
-        test = new _562();
+        solution1 = new _562.Solution1();
     }
 
     @Test
@@ -28,7 +28,7 @@ public class _562Test {
                 {0, 0, 0, 1}
         };
         expected = 3;
-        actual = test.longestLine(M);
+        actual = solution1.longestLine(M);
         assertEquals(expected, actual);
     }
 
