@@ -12,14 +12,14 @@ import static junit.framework.Assert.assertEquals;
  * Created by fishercoder on 4/23/17.
  */
 public class _563Test {
-    private static _563 test;
+    private static _563.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup() {
-        test = new _563();
+        solution1 = new _563.Solution1();
         actual = 0;
     }
 
@@ -29,7 +29,7 @@ public class _563Test {
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
         expected = 1;
-        actual = test.findTilt(root);
+        actual = solution1.findTilt(root);
         assertEquals(expected, actual);
     }
 
@@ -42,7 +42,7 @@ public class _563Test {
         root.left.left = new TreeNode(4);
         root.right.left = new TreeNode(5);
         expected = 11;
-        actual = test.findTilt(root);
+        actual = solution1.findTilt(root);
         assertEquals(expected, actual);
     }
 
