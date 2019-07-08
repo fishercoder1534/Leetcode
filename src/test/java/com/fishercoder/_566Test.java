@@ -10,7 +10,7 @@ import static org.junit.Assert.assertArrayEquals;
  * Created by fishercoder on 4/29/17.
  */
 public class _566Test {
-    private static _566 test;
+    private static _566.Solution1 solution1;
     private static int[][] expected;
     private static int[][] actual;
     private static int[][] nums;
@@ -19,7 +19,7 @@ public class _566Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _566();
+        solution1 = new _566.Solution1();
     }
 
     @Test
@@ -31,7 +31,7 @@ public class _566Test {
         r = 1;
         c = 4;
         expected = new int[][]{{1, 2, 3, 4}};
-        actual = test.matrixReshape(nums, r, c);
+        actual = solution1.matrixReshape(nums, r, c);
         assertArrayEquals(expected, actual);
     }
 }
