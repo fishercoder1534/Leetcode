@@ -25,20 +25,22 @@ import java.util.Arrays;
  The number in given array is in range [-100,000, 100,000].
  */
 public class _575 {
-    public int distributeCandies(int[] candies) {
-        Arrays.sort(candies);
-        int sisCount = 0;
-        for (int i = 0; i < candies.length; i++) {
-            int val = candies[i];
-            sisCount++;
-            if (sisCount >= candies.length / 2) {
-                return candies.length / 2;
+    public static class Solution1 {
+        public int distributeCandies(int[] candies) {
+            Arrays.sort(candies);
+            int sisCount = 0;
+            for (int i = 0; i < candies.length; i++) {
+                int val = candies[i];
+                sisCount++;
+                if (sisCount >= candies.length / 2) {
+                    return candies.length / 2;
+                }
+                while (i < candies.length && candies[i] == val) {
+                    i++;
+                }
+                i--;
             }
-            while (i < candies.length && candies[i] == val) {
-                i++;
-            }
-            i--;
+            return sisCount;
         }
-        return sisCount;
     }
 }
