@@ -10,24 +10,27 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 5/17/17.
  */
 public class _581Test {
-    private static _581 test;
+    private static _581.Solution1 solution1;
+    private static _581.Solution2 solution2;
     private static int[] nums;
 
     @BeforeClass
     public static void setup() {
-        test = new _581();
+        solution1 = new _581.Solution1();
+        solution2 = new _581.Solution2();
     }
 
     @Test
     public void test1() {
         nums = new int[]{1, 2, 3, 4};
-        assertEquals(0, test.findUnsortedSubarray(nums));
-        assertEquals(0, test.findUnsortedSubarray_sorting(nums));
+        assertEquals(0, solution1.findUnsortedSubarray(nums));
+        assertEquals(0, solution2.findUnsortedSubarray(nums));
     }
 
     @Test
     public void test2() {
         nums = new int[]{2, 6, 4, 8, 10, 9, 15};
-        assertEquals(5, test.findUnsortedSubarray(nums));
+        assertEquals(5, solution1.findUnsortedSubarray(nums));
+        assertEquals(5, solution2.findUnsortedSubarray(nums));
     }
 }
