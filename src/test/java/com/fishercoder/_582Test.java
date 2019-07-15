@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 5/18/17.
  */
 public class _582Test {
-    private static _582 test;
+    private static _582.Solution1 solution1;
     private static List<Integer> pid;
     private static List<Integer> ppid;
     private static List<Integer> expected;
@@ -21,7 +21,7 @@ public class _582Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _582();
+        solution1 = new _582.Solution1();
     }
 
     @Test
@@ -30,7 +30,7 @@ public class _582Test {
         ppid = Arrays.asList(3, 0, 5, 3);
         kill = 5;
         expected = Arrays.asList(5, 10);
-        assertEquals(expected, test.killProcess(pid, ppid, kill));
+        assertEquals(expected, solution1.killProcess(pid, ppid, kill));
     }
 
     @Test
@@ -39,6 +39,6 @@ public class _582Test {
         ppid = Arrays.asList(3, 0, 5, 3);
         kill = 3;
         expected = Arrays.asList(3, 1, 5, 10);
-        assertEquals(expected, test.killProcess(pid, ppid, kill));
+        assertEquals(expected, solution1.killProcess(pid, ppid, kill));
     }
 }
