@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class _588Test {
 
-    private static _588.FileSystem fileSystem;
+    private static _588.Solution1.FileSystem fileSystem;
 
     @BeforeClass
     public static void setup() {
@@ -22,7 +22,7 @@ public class _588Test {
 
     @Test
     public void test1() {
-        fileSystem = new _588.FileSystem();
+        fileSystem = new _588.Solution1.FileSystem();
         List<String> list = new ArrayList<>();
         assertEquals(list, fileSystem.ls("/"));
         fileSystem.mkdir("/a/b/c");
@@ -34,7 +34,7 @@ public class _588Test {
 
     @Test
     public void test2() {
-        fileSystem = new _588.FileSystem();
+        fileSystem = new _588.Solution1.FileSystem();
         List<String> list = new ArrayList<>();
         assertEquals(list, fileSystem.ls("/"));
         fileSystem.mkdir("/a/b/c");
