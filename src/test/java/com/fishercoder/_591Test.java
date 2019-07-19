@@ -7,11 +7,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class _591Test {
-    private static _591 test;
+    private static _591.Solution1 test;
 
     @BeforeClass
     public static void setup() {
-        test = new _591();
+        test = new _591.Solution1();
     }
 
     @Test
