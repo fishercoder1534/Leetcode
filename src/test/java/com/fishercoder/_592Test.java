@@ -10,12 +10,12 @@ import static org.junit.Assert.assertEquals;
  * Created by fishercoder on 5/23/17.
  */
 public class _592Test {
-    private static _592 test;
+    private static _592.Solution1 test;
     private static String expression;
 
     @BeforeClass
     public static void setup() {
-        test = new _592();
+        test = new _592.Solution1();
     }
 
     @Test
