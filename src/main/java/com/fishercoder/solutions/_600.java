@@ -22,7 +22,7 @@ package com.fishercoder.solutions;
  */
 public class _600 {
 
-    public static class DPSolution {
+    public static class Solution1 {
         /**
          * Credit: https://leetcode.com/articles/non-negative-integers-without-consecutive-ones/#approach-3-using-bit-manipulation-accepted
          */
@@ -51,29 +51,6 @@ public class _600 {
             }
             return sum + 1;
         }
-    }
-
-    /**
-     * Brute force is definitely correct, but too time consuming and resulted in TLE.
-     */
-    public int findIntegers(int num) {
-        int answer = 0;
-        for (int i = 0; i <= num; i++) {
-            if (hasConsecutiveOnes(i)) {
-                answer++;
-            }
-        }
-        return answer;
-    }
-
-    private boolean hasConsecutiveOnes(int num) {
-        String bin = Integer.toBinaryString(num);
-        for (int i = 0; i < bin.length() - 1; i++) {
-            if (bin.charAt(i) == '1' && bin.charAt(i + 1) == '1') {
-                return false;
-            }
-        }
-        return true;
     }
 
 }
