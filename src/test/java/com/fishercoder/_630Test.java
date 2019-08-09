@@ -24,7 +24,7 @@ public class _630Test {
                 {2000, 3200},
                 {300, 1200}
         };
-        assertEquals(3, solution1.scheduleCourse(courses));
+        assertEquals(4, solution1.scheduleCourse(courses));
     }
 
 }
