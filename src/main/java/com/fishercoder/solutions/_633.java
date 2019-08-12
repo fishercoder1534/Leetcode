@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
 /**
+ * 633. Sum of Square Numbers
+ *
  * Given a non-negative integer c, your task is to decide whether there're two integers a and b such that a2 + b2 = c.
 
  Example 1:
@@ -13,22 +15,24 @@ package com.fishercoder.solutions;
  Output: False
  */
 public class _633 {
-    public boolean judgeSquareSum(int c) {
-        if (c < 0) {
+    public static class Solution1 {
+        public boolean judgeSquareSum(int c) {
+            if (c < 0) {
+                return false;
+            }
+            int left = 0;
+            int right = (int) (Math.sqrt(c));
+            while (left <= right) {
+                int curr = left * left + right * right;
+                if (curr > c) {
+                    right--;
+                } else if (curr < c) {
+                    left++;
+                } else {
+                    return true;
+                }
+            }
             return false;
         }
-        int left = 0;
-        int right = (int) (Math.sqrt(c));
-        while (left <= right) {
-            int curr = left * left + right * right;
-            if (curr > c) {
-                right--;
-            } else if (curr < c) {
-                left++;
-            } else {
-                return true;
-            }
-        }
-        return false;
     }
 }
