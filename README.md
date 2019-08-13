@@ -31,6 +31,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |5083|[Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_5083.java) | O(n) | O(1) | |Easy||
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1137.java) | O(n) | O(n) | |Easy||
 |1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1122.java) | O(n) | O(n) | |Easy||
+|1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1089.java) | O(n^2) | O(1) | |Easy||
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1071.java) | O(m*n) | O(1) | |Easy||
 |1065|[Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1065.java) | O(nlogn) | O(1) | |Medium||
 |1056|[Confusing Number](https://leetcode.com/problems/confusing-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1056.java) | O(n) | O(1) | |Easy||
