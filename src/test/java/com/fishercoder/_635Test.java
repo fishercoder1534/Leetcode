@@ -15,17 +15,17 @@ import static junit.framework.TestCase.assertEquals;
  * Created by fishercoder on 9/9/17.
  */
 public class _635Test {
-    private static _635.LogSystem logSystem;
+    private static _635.Solution1.LogSystem logSystem;
     private static List<Integer> expected;
 
     @BeforeClass
     public static void setup() {
-        logSystem = new _635.LogSystem();
+        logSystem = new _635.Solution1.LogSystem();
     }
 
     @Before
     public void clear() {
-        logSystem = new _635.LogSystem();
+        logSystem = new _635.Solution1.LogSystem();
         expected = new ArrayList<>();
     }
 
