@@ -10,20 +10,20 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class _648Test {
-    private static _648 test;
+    private static _648.Solution1 solution1;
     private static List<String> dict;
     private static String sentence;
 
     @BeforeClass
     public static void setup() {
-        test = new _648();
+        solution1 = new _648.Solution1();
     }
 
     @Test
     public void test1() {
         dict = Arrays.asList("cat", "bat", "rat");
         sentence = "the cattle was rattled by the battery";
-        assertEquals("the cat was rat by the bat", test.replaceWords(dict, sentence));
+        assertEquals("the cat was rat by the bat", solution1.replaceWords(dict, sentence));
     }
 
     @Test
@@ -57,7 +57,7 @@ public class _648Test {
                 + "dijhrrpnwjlju muzzrrsypzgwvblf z h q i daee r nlipyfszvxlwqw "
                 + "yoq dewpgtcrzausqwhh q i k bqprarpgnyemzwifqzz "
                 + "oai pnqottd nygesjtlpala q gyvukjpc s mxhlkdaycskj "
-                + "uvwmerplaibeknltuvd ocnn f c pxbd oklwhcppuziixpvihihp", test.replaceWords(dict, sentence));
+                + "uvwmerplaibeknltuvd ocnn f c pxbd oklwhcppuziixpvihihp", solution1.replaceWords(dict, sentence));
     }
 
 }
