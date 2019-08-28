@@ -13,13 +13,13 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class _652Test {
-    private static _652 test;
+    private static _652.Solution1 solution1;
     private static List<TreeNode> expected;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup() {
-        test = new _652();
+        solution1 = new _652.Solution1();
     }
 
     @Before
@@ -41,13 +41,13 @@ public class _652Test {
         tree1.left = new TreeNode(4);
         TreeNode tree2 = new TreeNode(4);
         expected = new ArrayList<>(Arrays.asList(tree2, tree1));
-        assertEquals(expected, test.findDuplicateSubtrees(root));
+        assertEquals(expected, solution1.findDuplicateSubtrees(root));
     }
 
     @Test
     public void test2() {
         expected = new ArrayList<>();
-        assertEquals(expected, test.findDuplicateSubtrees(root));
+        assertEquals(expected, solution1.findDuplicateSubtrees(root));
     }
 
     @Test
@@ -58,6 +58,6 @@ public class _652Test {
 
         TreeNode tree1 = new TreeNode(1);
         expected = new ArrayList<>(Arrays.asList(tree1));
-        assertEquals(expected, test.findDuplicateSubtrees(root));
+        assertEquals(expected, solution1.findDuplicateSubtrees(root));
     }
 }
