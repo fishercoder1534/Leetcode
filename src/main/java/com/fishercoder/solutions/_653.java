@@ -1,12 +1,9 @@
 package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.common.utils.Notes;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 653. Two Sum IV - Input is a BST
@@ -39,7 +36,7 @@ Output: False
  */
 public class _653 {
 
-    public static class ListSolution {
+    public static class Solution1 {
         public boolean findTarget(TreeNode root, int k) {
             if (root == null) {
                 return false;
@@ -65,37 +62,5 @@ public class _653 {
                 dfs(root.right, list);
             }
         }
-    }
-
-    @Notes(todo = "This solution fails by _653Test.test6(), need to fix it.")
-    public static class MapSolution {
-        public boolean findTarget(TreeNode root, int k) {
-            if (root == null) {
-                return false;
-            }
-            Map<Integer, Integer> map = new HashMap();//value is index
-            int index = 0;
-            preorder(root, map, index);
-            for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-                if (map.containsKey(k - entry.getKey()) && map.get(k - entry.getKey()) != entry.getValue()) {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        private void preorder(TreeNode root, Map<Integer, Integer> map, int index) {
-            if (root == null) {
-                return;
-            }
-            map.put(root.val, index++);
-            if (root.left != null) {
-                preorder(root.left, map, ++index);
-            }
-            if (root.right != null) {
-                preorder(root.right, map, ++index);
-            }
-        }
-
     }
 }
