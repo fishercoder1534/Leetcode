@@ -13,15 +13,13 @@ import java.util.Arrays;
 import static junit.framework.Assert.assertEquals;
 
 public class _653Test {
-    private static _653.ListSolution listSolution;
-    private static _653.MapSolution mapSolution;
+    private static _653.Solution1 solution1;
     private static boolean expected;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup() {
-        listSolution = new _653.ListSolution();
-        mapSolution = new _653.MapSolution();
+        solution1 = new _653.Solution1();
     }
 
     @Before
@@ -33,24 +31,21 @@ public class _653Test {
     public void test1() {
         root = TreeUtils.constructBinaryTree(new ArrayList<>(Arrays.asList(5, 3, 2, 4, 6, 7)));
         expected = true;
-        assertEquals(expected, listSolution.findTarget(root, 9));
-        assertEquals(expected, mapSolution.findTarget(root, 9));
+        assertEquals(expected, solution1.findTarget(root, 9));
     }
 
     @Test
     public void test2() {
         root = TreeUtils.constructBinaryTree(new ArrayList<>(Arrays.asList(2, 1, 3)));
         expected = true;
-        assertEquals(expected, listSolution.findTarget(root, 4));
-        assertEquals(expected, mapSolution.findTarget(root, 4));
+        assertEquals(expected, solution1.findTarget(root, 4));
     }
 
     @Test
     public void test3() {
         root = new TreeNode(1);
         expected = false;
-        assertEquals(expected, listSolution.findTarget(root, 2));
-        assertEquals(expected, mapSolution.findTarget(root, 2));
+        assertEquals(expected, solution1.findTarget(root, 2));
     }
 
     @Test
@@ -68,16 +63,14 @@ public class _653Test {
 
         root = TreeUtils.constructBinaryTree(new ArrayList<>(Arrays.asList(2, 0, -4, 1, 3)));
         expected = true;
-        assertEquals(expected, listSolution.findTarget(root, -1));
-        assertEquals(expected, mapSolution.findTarget(root, -1));
+        assertEquals(expected, solution1.findTarget(root, -1));
     }
 
     @Test
     public void test5() {
         root = TreeUtils.constructBinaryTree(new ArrayList<>(Arrays.asList(2, 1, 3, -4, 0)));
         expected = true;
-        assertEquals(expected, listSolution.findTarget(root, 2));
-        assertEquals(expected, mapSolution.findTarget(root, 2));
+        assertEquals(expected, solution1.findTarget(root, 2));
     }
 
     @Test
@@ -93,7 +86,7 @@ public class _653Test {
                 null, null, 170, 376, 1421, 1613, null, null, 2534, null,
                 null, null, 96, null, null, null, 1303)));
         expected = true;
-        assertEquals(expected, listSolution.findTarget(root, 5831));
+        assertEquals(expected, solution1.findTarget(root, 5831));
 //        TreeUtils.printBinaryTree(root);
 //        assertEquals(expected, mapSolution.findTarget(root, 5831));
     }
