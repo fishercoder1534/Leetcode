@@ -16,11 +16,11 @@ import static org.junit.Assert.assertEquals;
 public class _655Test {
     private static List<List<String>> expected;
     private static TreeNode root;
-    private static _655 test;
+    private static _655.Solution1 solution1;
 
     @BeforeClass
     public static void setup() {
-        test = new _655();
+        solution1 = new _655.Solution1();
     }
 
     @Test
@@ -38,21 +38,21 @@ public class _655Test {
         row2.add("");
         expected.add(row2);
         CommonUtils.printListList(expected);
-        assertEquals(expected, test.printTree(root));
+        assertEquals(expected, solution1.printTree(root));
     }
 
     @Test
     public void test2() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, null, 4));
         TreeUtils.printBinaryTree(root);
-        CommonUtils.printListList(test.printTree(root));
+        CommonUtils.printListList(solution1.printTree(root));
     }
 
     @Test
     public void test3() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(3, null, 30, 10, null, null, 15, null, 45));
         TreeUtils.printBinaryTree(root);
-        CommonUtils.printListList(test.printTree(root));
-        System.out.println(test.printTree(root));
+        CommonUtils.printListList(solution1.printTree(root));
+        System.out.println(solution1.printTree(root));
     }
 }
