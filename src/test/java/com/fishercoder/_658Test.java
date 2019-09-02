@@ -11,7 +11,7 @@ import java.util.List;
 import static junit.framework.Assert.assertEquals;
 
 public class _658Test {
-    private static _658 test;
+    private static _658.Solution1 solution1;
     private static List<Integer> arr;
     private static List<Integer> expected;
     private static int k;
@@ -19,7 +19,7 @@ public class _658Test {
 
     @BeforeClass
     public static void setup() {
-        test = new _658();
+        solution1 = new _658.Solution1();
     }
 
     @Test
@@ -28,7 +28,7 @@ public class _658Test {
         x = 3;
         expected = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
         arr = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
-        assertEquals(expected, test.findClosestElements(arr, k, x));
+        assertEquals(expected, solution1.findClosestElements(arr, k, x));
     }
 
     @Test
@@ -37,7 +37,7 @@ public class _658Test {
         x = -1;
         expected = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
         arr = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
-        assertEquals(expected, test.findClosestElements(arr, k, x));
+        assertEquals(expected, solution1.findClosestElements(arr, k, x));
     }
 
     @Test
@@ -46,6 +46,6 @@ public class _658Test {
         x = 5;
         arr = new ArrayList<>(Arrays.asList(0, 0, 1, 2, 3, 3, 4, 7, 7, 8));
         expected = new ArrayList<>(Arrays.asList(3, 3, 4));
-        assertEquals(expected, test.findClosestElements(arr, k, x));
+        assertEquals(expected, solution1.findClosestElements(arr, k, x));
     }
 }
