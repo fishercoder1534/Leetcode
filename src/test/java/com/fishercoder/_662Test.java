@@ -12,34 +12,34 @@ import java.util.Arrays;
 import static junit.framework.TestCase.assertEquals;
 
 public class _662Test {
-    private static _662 test;
+    private static _662.Solution1 solution1;
     private static TreeNode root;
     private static int expected;
 
     @BeforeClass
     public static void setup() {
-        test = new _662();
+        solution1 = new _662.Solution1();
     }
 
     @Test
     public void test1() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, 5, 3, null, 9));
         expected = 4;
-        assertEquals(expected, test.widthOfBinaryTree(root));
+        assertEquals(expected, solution1.widthOfBinaryTree(root));
     }
 
     @Test
     public void test2() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, null, 5, 3));
         expected = 2;
-        assertEquals(expected, test.widthOfBinaryTree(root));
+        assertEquals(expected, solution1.widthOfBinaryTree(root));
     }
 
     @Test
     public void test3() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, 5));
         expected = 2;
-        assertEquals(expected, test.widthOfBinaryTree(root));
+        assertEquals(expected, solution1.widthOfBinaryTree(root));
     }
 
     @Test
@@ -48,13 +48,13 @@ public class _662Test {
     public void test4() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, 5, null, null, 9, 6, null, null, null, null, null, null, 7));
         expected = 8;
-        assertEquals(expected, test.widthOfBinaryTree(root));
+        assertEquals(expected, solution1.widthOfBinaryTree(root));
     }
 
     @Test
     public void test5() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1));
         expected = 1;
-        assertEquals(expected, test.widthOfBinaryTree(root));
+        assertEquals(expected, solution1.widthOfBinaryTree(root));
     }
 }
