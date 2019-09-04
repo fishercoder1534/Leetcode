@@ -11,13 +11,13 @@ import java.util.Arrays;
 import static org.junit.Assert.assertEquals;
 
 public class _663Test {
-    private static _663 test;
+    private static _663.Solution1 solution1;
     private static TreeNode root;
     private static boolean expected;
 
     @BeforeClass
     public static void setup() {
-        test = new _663();
+        solution1 = new _663.Solution1();
     }
 
     @Test
@@ -25,7 +25,7 @@ public class _663Test {
         root = TreeUtils.constructBinaryTree(Arrays.asList(5, 10, 10, null, null, 2, 3));
         TreeUtils.printBinaryTree(root);
         expected = true;
-        assertEquals(expected, test.checkEqualTree(root));
+        assertEquals(expected, solution1.checkEqualTree(root));
     }
 
     @Test
@@ -33,7 +33,7 @@ public class _663Test {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 10, null, null, 2, 20));
         TreeUtils.printBinaryTree(root);
         expected = false;
-        assertEquals(expected, test.checkEqualTree(root));
+        assertEquals(expected, solution1.checkEqualTree(root));
     }
 
     @Test
@@ -41,7 +41,7 @@ public class _663Test {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, null, 2, 2));
         TreeUtils.printBinaryTree(root);
         expected = false;
-        assertEquals(expected, test.checkEqualTree(root));
+        assertEquals(expected, solution1.checkEqualTree(root));
     }
 
     @Test
@@ -49,7 +49,7 @@ public class _663Test {
         root = TreeUtils.constructBinaryTree(Arrays.asList(0));
         TreeUtils.printBinaryTree(root);
         expected = false;
-        assertEquals(expected, test.checkEqualTree(root));
+        assertEquals(expected, solution1.checkEqualTree(root));
     }
 
 }
