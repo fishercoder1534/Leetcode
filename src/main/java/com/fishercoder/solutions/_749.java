@@ -56,7 +56,9 @@ package com.fishercoder.solutions;
  Throughout the described process, there is always a contiguous viral region that will infect strictly more uncontaminated squares in the next round.
  */
 public class _749 {
-  public int containVirus(int[][] grid) {
-    return -1;
+  public static class Solution1 {
+    public int containVirus(int[][] grid) {
+      return -1;
+    }
   }
 }
