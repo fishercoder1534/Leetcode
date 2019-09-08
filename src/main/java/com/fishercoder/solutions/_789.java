@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
 /**
+ * 789. Escape The Ghosts
+ *
  * You are playing a simplified Pacman game. You start at the point (0, 0), and your destination is
  * (target[0], target[1]). There are several ghosts on the map, the i-th ghost starts at (ghosts[i][0], ghosts[i][1]).
  *
@@ -27,10 +29,8 @@ public class _789 {
                     return false;
                 }
             }
-
             return true;
         }
-
         private int getDist(int[] p1, int[] p2) {
             return Math.abs(p1[0] - p2[0]) + Math.abs(p1[1] - p2[1]);
         }
