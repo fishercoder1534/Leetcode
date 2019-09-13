@@ -51,7 +51,7 @@ import java.util.Set;
 
 public class _966 {
 
-    public static class Solution {
+    public static class Solution1 {
         public String[] spellchecker(String[] wordlist, String[] queries) {
             Map<String, String> caseMap = new HashMap<>();
             Set<String> set = new HashSet<>();

@@ -14,11 +14,11 @@ import static org.junit.Assert.assertEquals;
 
 
 public class _966Test {
-    private static _966.Solution test;
+    private static _966.Solution1 solution1;
 
     @BeforeClass
     public static void setup() {
-        test = new _966.Solution();
+        solution1 = new _966.Solution1();
     }
 
 
@@ -26,7 +26,7 @@ public class _966Test {
     public void test1() {
         assertEquals(
                     Arrays.toString(new String[]{"kite","KiTe","KiTe","Hare","hare","","","KiTe","","KiTe"}),
-                    Arrays.toString(test
+                    Arrays.toString(solution1
                                     .spellchecker(
                                         new String[]{"KiTe","kite","hare","Hare"},
                                         new String[]{"kite","Kite","KiTe","Hare","HARE","Hear","hear","keti","keet","keto"})));
