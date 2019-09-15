@@ -1,5 +1,7 @@
 package com.fishercoder.solutions;
 
+import java.util.stream.IntStream;
+
 /**
  * 1055. Fixed Point
  *
@@ -32,12 +34,7 @@ package com.fishercoder.solutions;
 public class _1055 {
     public static class Solution1 {
         public int fixedPoint(int[] A) {
-            for (int i = 0; i < A.length; i++) {
-                if (A[i] == i) {
-                    return i;
-                }
-            }
-            return -1;
+            return IntStream.range(0, A.length).filter(i -> A[i] == i).findFirst().orElse(-1);
         }
     }
 }
