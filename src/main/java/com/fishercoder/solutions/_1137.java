@@ -1,5 +1,7 @@
 package com.fishercoder.solutions;
 
+import java.util.stream.IntStream;
+
 /**
  * 1137. N-th Tribonacci Number
  *
@@ -35,9 +37,7 @@ public class _1137 {
             numbers[0] = 0;
             numbers[1] = 1;
             numbers[2] = 1;
-            for (int i = 3; i <= n; i++) {
-                numbers[i] = numbers[i - 1] + numbers[i - 2] + numbers[i - 3];
-            }
+            IntStream.rangeClosed(3, n).forEach(i -> numbers[i] = numbers[i - 1] + numbers[i - 2] + numbers[i - 3]);
             return numbers[n];
         }
     }
