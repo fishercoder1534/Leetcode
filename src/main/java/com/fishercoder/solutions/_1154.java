@@ -25,7 +25,6 @@ import java.util.Calendar;
  * Input: date = "2004-03-01"
  * Output: 61
  *
- *
  * Constraints:
  *
  * date.length == 10
