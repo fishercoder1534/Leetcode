@@ -1,10 +1,9 @@
 package com.fishercoder.solutions;
 
-import com.fishercoder.common.utils.CommonUtils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 
 /**
  * 5087. Letter Tile Possibilities
@@ -34,7 +33,6 @@ public class _5087 {
             StringBuilder sb = new StringBuilder();
             List<String> result = new ArrayList<>();
             dfs(chars, used, sb, result);
-            CommonUtils.print(result);
             return result.size();
         }
 
@@ -42,19 +40,16 @@ public class _5087 {
             if (sb.length() != 0) {
                 result.add(sb.toString());
             }
-            for (int i = 0; i < chars.length; i++) {
-                if (used[i]) {
-                    continue;
-                }
-                if (i > 0 && chars[i - 1] == chars[i] && !used[i - 1]) {
-                    continue;
-                }
-                used[i] = true;
-                sb.append(chars[i]);
-                dfs(chars, used, sb, result);
-                used[i] = false;
-                sb.deleteCharAt(sb.length() - 1);
-            }
+            IntStream.range(0, chars.length)
+                    .filter(i -> !used[i])
+                    .filter(i -> i <= 0 || chars[i - 1] != chars[i] || used[i - 1])
+                    .forEach(i -> {
+                        used[i] = true;
+                        sb.append(chars[i]);
+                        dfs(chars, used, sb, result);
+                        used[i] = false;
+                        sb.deleteCharAt(sb.length() - 1);
+                    });
         }
     }
 }
