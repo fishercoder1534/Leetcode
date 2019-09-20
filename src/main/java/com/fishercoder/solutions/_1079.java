@@ -24,7 +24,7 @@ import java.util.stream.IntStream;
  * 1. 1 <= tiles.length <= 7
  * 2. tiles consists of uppercase English letters.
  * */
-public class _5087 {
+public class _1079 {
     public static class Solution1 {
         public int numTilePossibilities(String tiles) {
             char[] chars = tiles.toCharArray();
