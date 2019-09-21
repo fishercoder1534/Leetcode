@@ -1,17 +1,17 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions._5083;
+import com.fishercoder.solutions._1078;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class _5083Test {
-    private static _5083.Solution1 solution1;
+public class _1078Test {
+    private static _1078.Solution1 solution1;
 
     @BeforeClass
     public static void setup() {
-        solution1 = new _5083.Solution1();
+        solution1 = new _1078.Solution1();
     }
 
     @Test

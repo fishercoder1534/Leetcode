@@ -24,7 +24,7 @@ import java.util.stream.IntStream;
  * 1 <= first.length, second.length <= 10
  * first and second consist of lowercase English letters.
  */
-public class _5083 {
+public class _1078 {
     public static class Solution1 {
         public String[] findOcurrences(String text, String first, String second) {
             String[] words = text.split(" ");
