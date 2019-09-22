@@ -27,6 +27,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
+|1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1160.java) | O(n) | O(m) | |Easy||
 |5087|[Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_5087.java) | O(1) | O(1) | |Medium||
 |5083|[Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_5083.java) | O(n) | O(1) | |Easy||
 |1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | O(1) | O(1) | |Easy||
