@@ -22,7 +22,7 @@ import static java.lang.Math.min;
  */
 public class _4 {
 
-    class Solution1 {
+    public static class Solution1 {
         /**credit: https://discuss.leetcode.com/topic/28602/concise-java-solution-based-on-binary-search
          *
          * The key point of this problem is to ignore half part of A and B each step recursively by comparing the median of remaining A and B:
@@ -68,7 +68,7 @@ public class _4 {
         }
     }
 
-    class Solution2 {
+    public static class Solution2 {
         /**
          * Reference: https://leetcode.com/discuss/28843/my-accepted-java-solution:
          * Basic Idea is very similar to K-selection. it's easier to understand if you imagine this to be chopping off the last K elements from a total of len(A) + len(B) elements,
