@@ -10,26 +10,28 @@ import java.util.Deque;
  * The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.*/
 public class _20 {
 
-    public boolean isValid(String s) {
-        Deque<Character> stack = new ArrayDeque<>();
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {
-                stack.push(s.charAt(i));
-            } else {
-                if (stack.isEmpty()) {
-                    return false;
+    public static class Solution1 {
+        public boolean isValid(String s) {
+            Deque<Character> stack = new ArrayDeque<>();
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {
+                    stack.push(s.charAt(i));
                 } else {
-                    if (stack.peek() == '(' && s.charAt(i) != ')') {
+                    if (stack.isEmpty()) {
                         return false;
-                    } else if (stack.peek() == '{' && s.charAt(i) != '}') {
-                        return false;
-                    } else if (stack.peek() == '[' && s.charAt(i) != ']') {
-                        return false;
+                    } else {
+                        if (stack.peek() == '(' && s.charAt(i) != ')') {
+                            return false;
+                        } else if (stack.peek() == '{' && s.charAt(i) != '}') {
+                            return false;
+                        } else if (stack.peek() == '[' && s.charAt(i) != ']') {
+                            return false;
+                        }
+                        stack.pop();
                     }
-                    stack.pop();
                 }
             }
+            return stack.isEmpty();
         }
-        return stack.isEmpty();
     }
 }
