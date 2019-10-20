@@ -221,4 +221,14 @@ public class CommonUtils {
         }
         System.out.println();
     }
+
+    public static void print2DCharArray(char[][] arrayArrays) {
+        for (char[] array : arrayArrays) {
+            for (char i : array) {
+                System.out.print(i + ", ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
 }
