@@ -26,7 +26,7 @@ import java.util.List;
 public class _78 {
 
     public static class Solution1 {
-        public static List<List<Integer>> subsets(int[] nums) {
+        public List<List<Integer>> subsets(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             if (nums == null) {
                 return result;
