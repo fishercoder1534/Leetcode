@@ -26,7 +26,7 @@ import java.util.Set;
 public class _90 {
 
     public static class Solution1 {
-        public static List<List<Integer>> subsetsWithDup(int[] nums) {
+        public List<List<Integer>> subsetsWithDup(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             List<Integer> empty = new ArrayList();
             result.add(empty);
