@@ -27,7 +27,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
-|1252|[Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1252.java) | O(m*n) | O(1) | |Easy||
+|1252|[Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1252.java) | O(m*n + k) | O(m*n) | |Easy||
 |1207|[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1207.java) | O(n) | O(1) | |Easy||
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1160.java) | O(n) | O(m) | |Easy||
 |1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | O(1) | O(1) | |Easy||
