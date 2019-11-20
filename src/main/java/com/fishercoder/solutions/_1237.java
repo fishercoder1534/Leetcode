@@ -51,7 +51,7 @@ public class _1237 {
     }
 
     public static class Solution1 {
-        /**Time: O(1) since it's bound by 1 <= x, y <= 1000
+        /**Time: O(x+y) 
          * Space: O(1)*/
         public List<List<Integer>> findSolution(CustomFunction customfunction, int z) {
             List<List<Integer>> result = new ArrayList<>();
