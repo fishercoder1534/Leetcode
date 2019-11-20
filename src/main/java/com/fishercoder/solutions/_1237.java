@@ -51,7 +51,7 @@ public class _1237 {
     }
 
     public static class Solution1 {
-        /**Time: O(x+y) 
+        /**Time: O(x*y)
          * Space: O(1)*/
         public List<List<Integer>> findSolution(CustomFunction customfunction, int z) {
             List<List<Integer>> result = new ArrayList<>();
