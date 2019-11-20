@@ -66,4 +66,41 @@ public class _1237 {
         }
     }
 
+    public static class Solution2 {
+        /**
+         * linear search
+         * 
+         * Time: O(x + y)
+         * Space: O(1)
+         */
+        public List<List<Integer>> findSolution(CustomFunction customfunction, int z) {
+            List<List<Integer>> result = new ArrayList<>();
+            int x = 1;
+            int y = 1000;
+            while (x < 1001 && y > 0) {
+                int functionResult = customfunction.f(x, y);
+                if (functionResult < z) {
+                    x++;
+                } else if (functionResult > z) {
+                    y--;
+                } else {
+                    result.add(Arrays.asList(x++, y--));
+                }
+            }
+            return result;
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * binary search
+         *
+         * Time: O(xlogy)
+         * Space: O(1)*/
+        public List<List<Integer>> findSolution(CustomFunction customfunction, int z) {
+            List<List<Integer>> result = new ArrayList<>();
+            return result;
+        }
+    }
+
 }
