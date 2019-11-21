@@ -813,6 +813,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          
 |-----|----------------|---------------|---------------|---------------|-------------|--------------
+|1179|[Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)|[Solution](../master/database/_1179.sql) | | | Easy |
 |1069|[Product Sales Analysis II](https://leetcode.com/problems/product-sales-analysis-ii/)|[Solution](../master/database/_1069.sql) | | | Easy |
 |1068|[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/)|[Solution](../master/database/_1068.sql) | | | Easy |
 |627|[Swap Salary](https://leetcode.com/problems/swap-salary/)|[Solution](../master/database/_627.sql) | | | Easy |
