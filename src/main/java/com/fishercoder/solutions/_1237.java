@@ -96,9 +96,25 @@ public class _1237 {
          * binary search
          *
          * Time: O(xlogy)
-         * Space: O(1)*/
+         * Space: O(1)
+         * */
         public List<List<Integer>> findSolution(CustomFunction customfunction, int z) {
             List<List<Integer>> result = new ArrayList<>();
+            for (int x = 1; x <= 1000; x++) {
+                int left = 1;
+                int right = 1001;
+                while (left < right) {
+                    int y = (left + right) / 2;
+                    if (customfunction.f(x, y) < z) {
+                        left = y + 1;
+                    } else {
+                        right = y;
+                    }
+                }
+                if (customfunction.f(x, left) == z) {
+                    result.add(Arrays.asList(x, left));
+                }
+            }
             return result;
         }
     }
