@@ -1,6 +1,9 @@
 package com.fishercoder.solutions;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.TreeMap;
 
 /**
  * 1200. Minimum Absolute Difference
@@ -30,8 +33,26 @@ import java.util.List;
  * */
 public class _1200 {
     public static class Solution1 {
+        /**
+         * Time: O(n)
+         * Space: O(k) where k is the distinct number of differences between two numbers in the given array
+         * */
         public List<List<Integer>> minimumAbsDifference(int[] arr) {
-            return null;
+            Arrays.sort(arr);
+            TreeMap<Integer, List<List<Integer>>> map = new TreeMap<>();
+            for (int i = 0; i < arr.length - 1; i++) {
+                int diff = arr[i + 1] - arr[i];
+                if (map.containsKey(diff)) {
+                    List list = map.get(diff);
+                    list.add(Arrays.asList(arr[i], arr[i + 1]));
+                    map.put(diff, list);
+                } else {
+                    List list = new ArrayList<>();
+                    list.add(Arrays.asList(arr[i], arr[i + 1]));
+                    map.put(diff, list);
+                }
+            }
+            return map.firstEntry().getValue();
         }
     }
 }
