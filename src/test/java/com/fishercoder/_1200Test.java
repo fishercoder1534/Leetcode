@@ -30,4 +30,12 @@ public class _1200Test {
         assertEquals(expected, solution1.minimumAbsDifference(arr));
     }
 
+    @Test
+    public void test2() {
+        arr = new int[]{40, 11, 26, 27, -20};
+        expected = new ArrayList<>();
+        expected.add(Arrays.asList(26, 27));
+        assertEquals(expected, solution1.minimumAbsDifference(arr));
+    }
+
 }
