@@ -3,7 +3,6 @@ package com.fishercoder.solutions;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.TreeMap;
 
 /**
  * 1200. Minimum Absolute Difference
@@ -39,20 +38,20 @@ public class _1200 {
          * */
         public List<List<Integer>> minimumAbsDifference(int[] arr) {
             Arrays.sort(arr);
-            TreeMap<Integer, List<List<Integer>>> map = new TreeMap<>();
-            for (int i = 0; i < arr.length - 1; i++) {
+            int minimumDiff = arr[1] - arr[0];
+            List result = new ArrayList();
+            result.add(Arrays.asList(arr[0], arr[1]));
+            for (int i = 1; i < arr.length - 1; i++) {
                 int diff = arr[i + 1] - arr[i];
-                if (map.containsKey(diff)) {
-                    List list = map.get(diff);
-                    list.add(Arrays.asList(arr[i], arr[i + 1]));
-                    map.put(diff, list);
-                } else {
-                    List list = new ArrayList<>();
-                    list.add(Arrays.asList(arr[i], arr[i + 1]));
-                    map.put(diff, list);
+                if (minimumDiff == diff) {
+                    result.add(Arrays.asList(arr[i], arr[i+1]));
+                } else if (minimumDiff > diff) {
+                    minimumDiff = diff;
+                    result = new ArrayList();
+                    result.add(Arrays.asList(arr[i], arr[i+1]));
                 }
             }
-            return map.firstEntry().getValue();
+            return result;
         }
     }
 }
