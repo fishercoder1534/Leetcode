@@ -44,11 +44,11 @@ public class _1200 {
             for (int i = 1; i < arr.length - 1; i++) {
                 int diff = arr[i + 1] - arr[i];
                 if (minimumDiff == diff) {
-                    result.add(Arrays.asList(arr[i], arr[i+1]));
+                    result.add(Arrays.asList(arr[i], arr[i + 1]));
                 } else if (minimumDiff > diff) {
                     minimumDiff = diff;
                     result = new ArrayList();
-                    result.add(Arrays.asList(arr[i], arr[i+1]));
+                    result.add(Arrays.asList(arr[i], arr[i + 1]));
                 }
             }
             return result;
