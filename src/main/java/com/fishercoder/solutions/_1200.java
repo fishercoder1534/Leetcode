@@ -34,7 +34,7 @@ import java.util.TreeMap;
 public class _1200 {
     public static class Solution1 {
         /**
-         * Time: O(n)
+         * Time: O(nlogn) due to sorting
          * Space: O(k) where k is the distinct number of differences between two numbers in the given array
          * */
         public List<List<Integer>> minimumAbsDifference(int[] arr) {
