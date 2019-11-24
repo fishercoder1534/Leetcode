@@ -29,6 +29,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
 |1252|[Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1252.java) | O(m*n + k) | O(m*n) | |Easy||
 |1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1237.java) | | | |Easy||
+|1217|[Play with Chips](https://leetcode.com/problems/play-with-chips/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1217.java) |  |  | |Easy||
 |1207|[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1207.java) | O(n) | O(1) | |Easy||
 |1200|[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1200.java) | || [:tv:](https://www.youtube.com/watch?v=mH1aEjOEjcQ)|Easy||
 |1185|[Day of the Week](https://leetcode.com/problems/day-of-the-week/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1185.java) | | | |Easy||
