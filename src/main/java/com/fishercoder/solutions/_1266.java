@@ -34,13 +34,13 @@ public class _1266 {
         /**
          * Time: O(n)
          * Space: O(1)
-         * 
+         *
          * credit: https://leetcode.com/problems/minimum-time-visiting-all-points/discuss/436142/Sum-of-Chebyshev-distance-between-two-consecutive-points
          * */
         public int minTimeToVisitAllPoints(int[][] points) {
             int minTime = 0;
             for (int i = 0; i < points.length - 1; i++) {
-                minTime += chebyshevDistance(points[i], points[i+1]);
+                minTime += chebyshevDistance(points[i], points[i + 1]);
             }
             return minTime;
         }
