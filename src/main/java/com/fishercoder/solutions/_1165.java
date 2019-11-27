@@ -29,7 +29,15 @@ package com.fishercoder.solutions;
 public class _1165 {
     public static class Solution1 {
         public int calculateTime(String keyboard, String word) {
-            return -1;
+            int time = 0;
+            int fromIndex = 0;
+            int fingerMoves;
+            for (char c : word.toCharArray()) {
+                fingerMoves = Math.abs(fromIndex - keyboard.indexOf(c));
+                fromIndex = keyboard.indexOf(c);
+                time += fingerMoves;
+            }
+            return time;
         }
     }
 }
