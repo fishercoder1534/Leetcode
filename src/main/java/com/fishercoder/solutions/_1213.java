@@ -1,10 +1,7 @@
 package com.fishercoder.solutions;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * 1213. Intersection of Three Sorted Arrays
@@ -24,17 +21,24 @@ import java.util.stream.Collectors;
  * */
 public class _1213 {
     public static class Solution1 {
+        /**credit: https://leetcode.com/problems/intersection-of-three-sorted-arrays/discuss/397603/Simple-Java-solution-beats-100*/
         public List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {
-            List<Integer> result = new ArrayList<>();
-            Set<Integer> set2 = Arrays.stream(arr2).boxed().collect(Collectors.toSet());
-            Set<Integer> set3 = Arrays.stream(arr3).boxed().collect(Collectors.toSet());
-            for (int i = 0; i < arr1.length; i++) {
-                if (i >= arr2.length || i >= arr3.length) {
-                    break;
+            List<Integer> result = new ArrayList();
+            int i = 0;
+            int j = 0;
+            int k = 0;
+            while (i < arr1.length && j < arr2.length && k < arr3.length) {
+                if (arr1[i] == arr2[j] && arr1[i] == arr3[k]) {
+                    result.add(arr1[i]);
+                    i++;
+                    j++;
+                    k++;
+                } else if (arr1[i] < arr2[j]) {
+                    i++;
+                } else if (arr2[j] < arr3[k]) {
+                    j++;
                 } else {
-                    if (set2.contains(arr1[i]) && set3.contains(arr1[i])) {
-                        result.add(arr1[i]);
-                    }
+                    k++;
                 }
             }
             return result;
