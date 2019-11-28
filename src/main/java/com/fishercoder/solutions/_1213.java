@@ -1,6 +1,10 @@
 package com.fishercoder.solutions;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * 1213. Intersection of Three Sorted Arrays
@@ -21,7 +25,19 @@ import java.util.List;
 public class _1213 {
     public static class Solution1 {
         public List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {
-            return null;
+            List<Integer> result = new ArrayList<>();
+            Set<Integer> set2 = Arrays.stream(arr2).boxed().collect(Collectors.toSet());
+            Set<Integer> set3 = Arrays.stream(arr3).boxed().collect(Collectors.toSet());
+            for (int i = 0; i < arr1.length; i++) {
+                if (i >= arr2.length || i >= arr3.length) {
+                    break;
+                } else {
+                    if (set2.contains(arr1[i]) && set3.contains(arr1[i])) {
+                        result.add(arr1[i]);
+                    }
+                }
+            }
+            return result;
         }
     }
 }
