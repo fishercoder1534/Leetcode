@@ -39,6 +39,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1160.java) | O(n) | O(m) | |Easy||
 |1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | O(1) | O(1) | |Easy||
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1137.java) | O(n) | O(n) | |Easy||
+|1134|[Armstrong Number](https://leetcode.com/problems/armstrong-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1134.java) |  |  | |Easy||
 |1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1122.java) | O(n) | O(n) | |Easy||
 |1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1170.java) | | | |Easy||
 |1119|[Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1119.java) | | | [:tv:](https://www.youtube.com/watch?v=6KCBrIWEauw)|Easy||
