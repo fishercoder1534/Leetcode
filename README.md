@@ -43,7 +43,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1122.java) | O(n) | O(n) | |Easy||
 |1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1170.java) | | | |Easy||
 |1119|[Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1119.java) | | | [:tv:](https://www.youtube.com/watch?v=6KCBrIWEauw)|Easy||
-|1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1099.java) | |  | |Easy||
+|1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1099.java) | |  | [:tv:](https://www.youtube.com/watch?v=2Uq7p7HE0TI)|Easy||
 |1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1089.java) | O(n^2) | O(1) | |Easy||
 |1086|[High Five](https://leetcode.com/problems/high-five/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1086.java) | | | |Easy||
 |1085|[Sum of Digits in the Minimum Number](https://leetcode.com/problems/sum-of-digits-in-the-minimum-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1085.java) | | | |Easy||
