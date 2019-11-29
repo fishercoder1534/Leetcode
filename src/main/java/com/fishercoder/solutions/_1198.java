@@ -20,9 +20,8 @@ public class _1198 {
         public int smallestCommonElement(int[][] mat) {
             int m = mat.length;
             int n = mat[0].length;
-            int minCommon;
             for (int j = 0; j < n; j++) {
-                minCommon = mat[0][j];
+                int minCommon = mat[0][j];
                 int i = 1;
                 for (; i < m; i++) {//we'll start from the second row
                     if (thisRowHasThisNumber(mat[i], minCommon)) {
