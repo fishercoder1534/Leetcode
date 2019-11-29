@@ -33,7 +33,6 @@ public class _1198 {
                 if (i == m) {
                     return minCommon;
                 }
-
             }
             return -1;
         }
