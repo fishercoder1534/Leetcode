@@ -4,25 +4,6 @@ _If you like this project, please leave me a star._ &#9733;
 
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
 
-## Contributing
-Your ideas/fixes/algorithms are more than welcome!
-
-1. Fork this repo
-2. Clone your forked repo (`git clone https://github.com/YOUR_GITHUB_USERNAME/Leetcode.git`) onto your local machine
-3. `cd` into your cloned directory, create your feature branch (`git checkout -b my-awesome-fix`)
-4. `git add` your desired changes to this repo
-5. Commit your changes (`git commit -m 'Added some awesome features/fixes'`)
-6. Push to the branch (`git push origin my-awesome-feature`)
-7. Open your forked repo on Github website, create a new Pull Request to this repo!
-
-## Best way to open this project
-
-1. Install Intellij on your machine, either CE or UE.
-2. git clone this repo to your local disk
-3. import this project as a new project (does need to be imported as a gradle project)
-4. If you run into "Could not determine Java version using executable ..." error, use local gradle distribution: "/usr/local/Cellar/gradle/4.8.1/libexec/" instead of the default one. More details, see [Stackoverflow](https://stackoverflow.com/questions/52195643/cannot-find-symbol-intellij-gradle/52196069#52196069).
-
-
 ## Algorithms
 
 |  #  |      Title     |   Solutions   | Time          | Space         | Video  | Difficulty  | Tag                   
@@ -880,5 +861,24 @@ Your ideas/fixes/algorithms are more than welcome!
 |194|[Transpose File](https://leetcode.com/problems/transpose-file/)|[Solution](../master/shell/TransposeFile.sh)| O(n^2)|O(n^2) | Medium|
 |193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)|[Solution](../master/shell/ValidPhoneNumbers.sh)| O(n)|O(1) | Easy|
 |192|[Word Frequency](https://leetcode.com/problems/word-frequency/)|[Solution](../master/shell/_192.sh)| O(n)|O(k) | Medium|
+
+
+## Contributing
+Your ideas/fixes/algorithms are more than welcome!
+
+1. Fork this repo
+2. Clone your forked repo (`git clone https://github.com/YOUR_GITHUB_USERNAME/Leetcode.git`) onto your local machine
+3. `cd` into your cloned directory, create your feature branch (`git checkout -b my-awesome-fix`)
+4. `git add` your desired changes to this repo
+5. Commit your changes (`git commit -m 'Added some awesome features/fixes'`)
+6. Push to the branch (`git push origin my-awesome-feature`)
+7. Open your forked repo on Github website, create a new Pull Request to this repo!
+
+## Best way to open this project
+
+1. Install Intellij on your machine, either CE or UE.
+2. git clone this repo to your local disk
+3. import this project as a new project (does need to be imported as a gradle project)
+4. If you run into "Could not determine Java version using executable ..." error, use local gradle distribution: "/usr/local/Cellar/gradle/4.8.1/libexec/" instead of the default one. More details, see [Stackoverflow](https://stackoverflow.com/questions/52195643/cannot-find-symbol-intellij-gradle/52196069#52196069).
 
 
