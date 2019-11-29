@@ -44,6 +44,7 @@ Your ideas/fixes/algorithms are more than welcome!
 |1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1170.java) | | | |Easy||
 |1119|[Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1119.java) | | | [:tv:](https://www.youtube.com/watch?v=6KCBrIWEauw)|Easy||
 |1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1089.java) | O(n^2) | O(1) | |Easy||
+|1086|[High Five](https://leetcode.com/problems/high-five/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1086.java) | | | |Easy||
 |1085|[Sum of Digits in the Minimum Number](https://leetcode.com/problems/sum-of-digits-in-the-minimum-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1085.java) | | | |Easy||
 |1079|[Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1079.java) | O(1) | O(1) | |Medium||
 |1078|[Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1078.java) | O(n) | O(1) | |Easy||
