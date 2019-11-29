@@ -22,8 +22,9 @@ public class _1198 {
             int n = mat[0].length;
             for (int j = 0; j < n; j++) {
                 int minCommon = mat[0][j];
+                //we'll start from the second row
                 int i = 1;
-                for (; i < m; i++) {//we'll start from the second row
+                for (; i < m; i++) {
                     if (thisRowHasThisNumber(mat[i], minCommon)) {
                         continue;
                     } else {
