@@ -27,7 +27,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1099.java) | |  | [:tv:](https://www.youtube.com/watch?v=2Uq7p7HE0TI)|Easy||
 |1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1089.java) | O(n^2) | O(1) | |Easy||
 |1086|[High Five](https://leetcode.com/problems/high-five/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1086.java) | | | |Easy||
-|1085|[Sum of Digits in the Minimum Number](https://leetcode.com/problems/sum-of-digits-in-the-minimum-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1085.java) | | | |Easy||
+|1085|[Sum of Digits in the Minimum Number](https://leetcode.com/problems/sum-of-digits-in-the-minimum-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1085.java) | | | [:tv:](https://www.youtube.com/watch?v=GKYmPuHZpQg)|Easy||
 |1079|[Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1079.java) | O(1) | O(1) | |Medium||
 |1078|[Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1078.java) | O(n) | O(1) | |Easy||
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1071.java) | O(m*n) | O(1) | |Easy||
