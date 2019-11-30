@@ -28,10 +28,7 @@ package com.fishercoder.solutions;
 public class _1150 {
     public static class Solution1 {
         public boolean isMajorityElement(int[] nums, int target) {
-            int left = 0;
-            int right = nums.length - 1;
-            int mid = left + (right - left) / 2;
-            return nums[mid] == target;
+            return nums[(nums.length - 1) / 2] == target;
         }
     }
 }
