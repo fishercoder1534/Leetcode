@@ -13,7 +13,6 @@ public class _1260Test {
     private static _1260.Solution1 solution1;
     private static int[][] grid;
     private static List<List<Integer>> expected;
-    ;
 
     @BeforeClass
     public static void setup() {
