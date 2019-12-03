@@ -12,7 +12,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1260|[Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1260.java) |  |  | [:tv:](https://www.youtube.com/watch?v=9hBcARSiU0s)|Easy||
 |1252|[Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1252.java) | O(m*n + k) | O(m*n) | |Easy||
 |1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1237.java) | | | |Easy||
-|1243|[Array Transformation](https://leetcode.com/problems/array-transformation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1243.java) |  |  | |Easy||
+|1243|[Array Transformation](https://leetcode.com/problems/array-transformation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1243.java) |  |  | [:tv:](https://www.youtube.com/watch?v=MQ2i4T1l-Gs)|Easy||
 |1217|[Play with Chips](https://leetcode.com/problems/play-with-chips/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1217.java) |  |  | |Easy||
 |1213|[Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1213.java) |  |  | [:tv:](https://www.youtube.com/watch?v=zceoOrHSHNQ)|Easy||
 |1207|[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1207.java) | O(n) | O(1) | |Easy||
