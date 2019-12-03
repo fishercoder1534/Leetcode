@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions._1234;
+import com.fishercoder.solutions._1243;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -8,13 +8,13 @@ import java.util.Arrays;
 
 import static junit.framework.TestCase.assertTrue;
 
-public class _1234Test {
-    private static _1234.Solution1 solution1;
+public class _1243Test {
+    private static _1243.Solution1 solution1;
     private static int[] arr;
 
     @BeforeClass
     public static void setup() {
-        solution1 = new _1234.Solution1();
+        solution1 = new _1243.Solution1();
     }
 
     @Test

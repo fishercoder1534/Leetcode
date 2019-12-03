@@ -1,8 +1,6 @@
 package com.fishercoder.solutions;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -37,7 +35,7 @@ import java.util.stream.Collectors;
  * 1 <= arr.length <= 100
  * 1 <= arr[i] <= 100
  * */
-public class _1234 {
+public class _1243 {
     public static class Solution1 {
         public List<Integer> transformArray(int[] arr) {
             int[] copy;
