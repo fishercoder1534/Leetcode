@@ -19,6 +19,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1200|[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1200.java) | || [:tv:](https://www.youtube.com/watch?v=mH1aEjOEjcQ)|Easy||
 |1198|[Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1198.java) | | | [:tv:](https://www.youtube.com/watch?v=RMiofZrTmWo)|Easy||
 |1185|[Day of the Week](https://leetcode.com/problems/day-of-the-week/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1185.java) | | | |Easy||
+|1184|[Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1184.java) | | | |Easy||
 |1165|[Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1165.java) | | | |Easy||
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1160.java) | O(n) | O(m) | |Easy||
 |1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | O(1) | O(1) | |Easy||
