@@ -26,7 +26,7 @@ public class _15 {
     public static class Solution1 {
         public List<List<Integer>> threeSum(int[] nums) {
             Arrays.sort(nums);
-            
+
             List<List<Integer>> result = new ArrayList<>();
             for (int i = 0; i < nums.length - 2; i++) {
                 if (i >= 1 && nums[i] == nums[i - 1]) {
@@ -43,7 +43,7 @@ public class _15 {
                             left++;
                         }
 
-                        while (right > left && nums[right] == nums[right - 1]) {
+                        while (left < right && nums[right] == nums[right - 1]) {
                             right--;
                         }
                         left++;
