@@ -10,6 +10,7 @@ _If you like this project, please leave me a star._ &#9733;
 |-----|----------------|---------------|---------------|---------------|--------|-------------|-------------
 |1282|[Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1282.java) |  |  | |Medium||
 |1281|[Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1281.java) |  |  | |Easy||
+|1277|[Count Square Submatrices with All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1277.java) |  |  | |Medium||
 |1266|[Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1266.java) |  |  | |Easy||
 |1260|[Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1260.java) |  |  | [:tv:](https://www.youtube.com/watch?v=9hBcARSiU0s)|Easy||
 |1252|[Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1252.java) | O(m*n + k) | O(m*n) | |Easy||
