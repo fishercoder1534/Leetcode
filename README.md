@@ -83,6 +83,7 @@ _If you like this project, please leave me a star._ &#9733;
 |966|[Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_966.java) | O(hlogn) | O(n) | |Medium| Hash Table, String
 |965|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_965.java) | O(n) | O(h) | |Easy| DFS, recursion|
 |961|[N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_961.java) | O(n) | O(1) | |Easy|
+|954|[Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_954.java) | |  | |Medium|
 |953|[Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_953.java) | O(1) | O(1) | |Easy|
 |951|[Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_951.java) | O(n) | O(h) | |Medium| Tree, DFS, recursion|
 |950|[Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_950.java) | O(nlogn) | O(n) | |Medium|
