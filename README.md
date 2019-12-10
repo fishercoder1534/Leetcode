@@ -31,6 +31,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1150.java) | | | |Easy||
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1137.java) | O(n) | O(n) | |Easy||
 |1134|[Armstrong Number](https://leetcode.com/problems/armstrong-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1134.java) |  |  | [:tv:](https://www.youtube.com/watch?v=HTL7fd4HPf4)|Easy||
+|1133|[Largest Unique Number](https://leetcode.com/problems/largest-unique-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1133.java) |  |  | |Easy||
 |1128|[Number of Equivalent Domino Pairs](https://leetcode.com/problems/number-of-equivalent-domino-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1128.java) |  |  | [:tv:](https://www.youtube.com/watch?v=7EpEEHAAxyw)|Easy||
 |1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1122.java) | O(n) | O(n) | |Easy||
 |1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1170.java) | | | |Easy||
