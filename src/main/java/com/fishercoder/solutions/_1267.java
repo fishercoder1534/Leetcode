@@ -1,5 +1,7 @@
 package com.fishercoder.solutions;
 
+import com.fishercoder.common.utils.CommonUtils;
+
 /**
  * 1267. Count Servers that Communicate
  *
@@ -20,7 +22,6 @@ package com.fishercoder.solutions;
  *
  * Example 3:
  * Input: grid = [[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]
- *
  * Output: 4
  * Explanation: The two servers in the first row can communicate with each other.
  * The two servers in the third column can communicate with each other. The server at right bottom corner can't communicate with any other server.
@@ -34,8 +35,30 @@ package com.fishercoder.solutions;
  * */
 public class _1267 {
     public static class Solution1 {
+        /**credit: https://leetcode.com/problems/count-servers-that-communicate/discuss/436188/Java-or-Clean-And-Simple-or-Beats-100*/
         public int countServers(int[][] grid) {
-            return -1;
+            int m = grid.length;
+            int n = grid[0].length;
+            int[] rowCount = new int[m];
+            int[] columnCount = new int[n];
+            int total = 0;
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (grid[i][j] == 1) {
+                        rowCount[i]++;
+                        columnCount[j]++;
+                        total++;
+                    }
+                }
+            }
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (grid[i][j] == 1 && rowCount[i] == 1 && columnCount[j] == 1) {
+                        total--;
+                    }
+                }
+            }
+            return total;
         }
     }
 }
