@@ -106,6 +106,7 @@ _If you like this project, please leave me a star._ &#9733;
 |896|[Monotonic Array](https://leetcode.com/problems/monotonic-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_896.java) | O(n) | O(1) | |Easy|
 |890|[Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_890.java) | O(n) | O(1) | |Medium|
 |888|[Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_888.java) | O(n) | O(1) | |Easy|
+|885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_885.java) | |  | |Medium|
 |884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_884.java) | O(n) | O(k) | |Easy|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_876.java) | O(n) | O(1) | |Easy|
 |872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_872.java) | O(n) | O(h) | |Easy| DFS, recursion
