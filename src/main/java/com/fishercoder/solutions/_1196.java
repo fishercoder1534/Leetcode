@@ -29,9 +29,8 @@ public class _1196 {
             int sum = 0;
             int i = 0;
             for (; i < arr.length; i++) {
-                if (sum + arr[i] < 5000) {
-                    sum += arr[i];
-                } else {
+                sum += arr[i];
+                if (sum > 5000) {
                     break;
                 }
             }
