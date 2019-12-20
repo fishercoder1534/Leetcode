@@ -705,7 +705,7 @@ _If you like this project, please leave me a star._ &#9733;
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_122.java)| O(n)|O(1) | |Easy | Greedy
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_121.java)| O(n)|O(1) | |Easy|
 |120|[Triangle](https://leetcode.com/problems/triangle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_120.java)| O(m*n)|O(n) | |Medium| DP
-|119|[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_119.java)| O(n^2)|O(k) | |Easy| 
+|119|[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_119.java)| O(n^2)|O(k) |[:tv:](https://www.youtube.com/watch?v=iVhmR1bzKoo)|Easy| 
 |118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_118.java)| O(n^2)|O(1) | |Easy| 
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-parents-right-pointers-in-each-node-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_117.java)| O(n)|O(1) | |Medium| BFS
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-parents-right-pointers-in-each-node/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_116.java)| O(n)|O(1) | |Medium| BFS
