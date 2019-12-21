@@ -22,6 +22,7 @@ import java.util.List;
 public class _118 {
 
   public static class Solution1 {
+    /**fill out values from left to right*/
     public List<List<Integer>> generate(int numRows) {
       List<List<Integer>> result = new ArrayList();
       List<Integer> row = new ArrayList();
@@ -30,6 +31,23 @@ public class _118 {
         for (int j = 1; j < row.size() - 1; j++) {
           row.set(j, row.get(j) + row.get(j + 1));
         }
+        result.add(new ArrayList(row));
+      }
+      return result;
+    }
+  }
+
+  public static class Solution2 {
+    /**fill out values from right to left
+     * credit: https://leetcode.com/problems/pascals-triangle/discuss/38141/My-concise-solution-in-Java/36127*/
+    public List<List<Integer>> generate(int numRows) {
+      List<List<Integer>> result = new ArrayList();
+      List<Integer> row = new ArrayList();
+      for (int i = 0; i < numRows; i++) {
+        for (int j = row.size() - 1; j >= 1; j--) {
+          row.set(j, row.get(j) + row.get(j - 1));
+        }
+        row.add(1);
         result.add(new ArrayList(row));
       }
       return result;
