@@ -24,21 +24,13 @@ public class _118 {
   public static class Solution1 {
     public List<List<Integer>> generate(int numRows) {
       List<List<Integer>> result = new ArrayList();
-      int len = 1;
+      List<Integer> row = new ArrayList();
       for (int i = 0; i < numRows; i++) {
-        List<Integer> row = new ArrayList(len);
-        row.add(1);
-        if (i > 0) {
-          List<Integer> lastRow = result.get(i - 1);
-          for (int j = 1; j < len; j++) {
-            if (j < lastRow.size()) {
-              row.add(lastRow.get(j - 1) + lastRow.get(j));
-            }
-          }
-          row.add(1);
+        row.add(0, 1);
+        for (int j = 1; j < row.size() - 1; j++) {
+          row.set(j, row.get(j) + row.get(j + 1));
         }
-        result.add(row);
-        len++;
+        result.add(new ArrayList(row));
       }
       return result;
     }
