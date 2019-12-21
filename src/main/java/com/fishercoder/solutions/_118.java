@@ -48,7 +48,7 @@ public class _118 {
           row.set(j, row.get(j) + row.get(j - 1));
         }
         row.add(1);
-        result.add(new ArrayList(row));
+        result.add(new ArrayList<>(row));
       }
       return result;
     }

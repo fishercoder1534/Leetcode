@@ -18,6 +18,10 @@ public class _118Test {
     @Test
     public void test1() {
         CommonUtils.printListList(solution1.generate(5));
+    }
+
+    @Test
+    public void test2() {
         CommonUtils.printListList(solution2.generate(5));
     }
 
