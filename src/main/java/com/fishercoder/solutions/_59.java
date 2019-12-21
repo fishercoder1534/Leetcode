@@ -18,100 +18,36 @@ package com.fishercoder.solutions;
 public class _59 {
 
   public static class Solution1 {
-    public int[][] generateMatrix(int num) {
-      int temp = num;
-      int[][] fourEdges = new int[num][num];
+    /**credit: https://leetcode.com/problems/spiral-matrix-ii/discuss/22289/My-Super-Simple-Solution.-Can-be-used-for-both-Spiral-Matrix-I-and-II/21907*/
+    public int[][] generateMatrix(int n) {
+      int[][] matrix = new int[n][n];
+      if (n == 0) {
+        return matrix;
+      }
       int value = 1;
-      int i = 0;
-      int j = 0;
-      if (num % 2 == 0) {
-        //when num is even
-        while (i < num / 2 && j < num / 2 && temp >= 0) {
-                /* Assign the top row */
-          while (j < temp) {
-            fourEdges[i][j] = value;
-            j++;
-            value++;
-          }
-
-				/* Assign the right column */
-          while (i < temp - 1) {
-            i++;
-            fourEdges[i][j - 1] = value;
-            value++;
-          }
-          j = j - 2;
-
-				/* Assign the bottom row */
-          while (j >= num - temp) {
-            fourEdges[i][j] = value;
-            j--;
-            value++;
-          }
-          i--;
-          j++;
-
-				/* Assign the left column */
-          while (i > num - temp) {
-            fourEdges[i][j] = value;
-            i--;
-            value++;
-          }
-          //}
-          i++;
-          j++;
-          temp--;
+      int top = 0;
+      int bottom = n - 1;
+      int left = 0;
+      int right = n - 1;
+      while (left <= right && top <= bottom) {
+        for (int j = left; j <= right; j++) {
+          matrix[top][j] = value++;
         }
-      } else {
-        //when num is odd
-        while (i < num / 2 && j < num / 2 && temp >= 0) {
-                /* Assign the top row */
-          while (j < temp) {
-            fourEdges[i][j] = value;
-            j++;
-            value++;
-          }
-
-				/* Assign the right column */
-          while (i < temp - 1) {
-            i++;
-            fourEdges[i][j - 1] = value;
-            value++;
-          }
-          j = j - 2;
-
-				/* Assign the bottom row */
-          while (j >= num - temp) {
-            fourEdges[i][j] = value;
-            j--;
-            value++;
-          }
-          i--;
-          j++;
-
-				/* Assign the left column */
-          while (i > num - temp) {
-            fourEdges[i][j] = value;
-            i--;
-            value++;
-          }
-          //}
-          i++;
-          j++;
-          temp--;
+        top++;
+        for (int i = top; i <= bottom; i++) {
+          matrix[i][right] = value++;
         }
-        fourEdges[num / 2][num / 2] = num * num;
+        right--;
+        for (int j = right; j >= left; j--) {
+          matrix[bottom][j] = value++;
+        }
+        bottom--;
+        for (int i = bottom; i >= top; i--) {
+          matrix[i][left] = value++;
+        }
+        left++;
       }
-
-      for (int m = 0; m < num; m++) {
-        for (int n = 0; n < num; n++) {
-          System.out.print(fourEdges[m][n] + "\t");
-          if ((n + 1) % num == 0) {
-            System.out.println();
-          }
-        }
-      }
-      return fourEdges;
+      return matrix;
     }
   }
 }
