@@ -829,9 +829,9 @@ _If you like this project, please leave me a star._ &#9733;
 
 ## Database
 
-|  #  |      Title     |   Solutions   | Time          | Space         | Difficulty  | Tag          
-|-----|----------------|---------------|---------------|---------------|-------------|--------------
-|1280|[Students and Examinations](https://leetcode.com/problems/students-and-examinations/)|[Solution](../master/database/_1280.sql) | | [:tv:](https://www.youtube.com/watch?v=ThbkV4Fs7iE)| Easy |
+|  #  |      Title     |   Solutions   | Video         | Difficulty    | Tag          
+|-----|----------------|---------------|---------------|---------------|-------------
+|1280|[Students and Examinations](https://leetcode.com/problems/students-and-examinations/)|[Solution](../master/database/_1280.sql) | [:tv:](https://www.youtube.com/watch?v=ThbkV4Fs7iE)| Easy |
 |1251|[Average Selling Price](https://leetcode.com/problems/average-selling-price//)|[Solution](../master/database/_1251.sql) | | | Easy |
 |1179|[Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)|[Solution](../master/database/_1179.sql) | | | Easy |
 |1069|[Product Sales Analysis II](https://leetcode.com/problems/product-sales-analysis-ii/)|[Solution](../master/database/_1069.sql) | | | Easy |
