@@ -39,44 +39,44 @@ _If you like this project, please leave me a star._ &#9733;
 |1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | |Easy||
 |1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1150.java)| |Easy||
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1137.java) | |Easy||
-|1134|[Armstrong Number](https://leetcode.com/problems/armstrong-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1134.java) |  |  | [:tv:](https://www.youtube.com/watch?v=HTL7fd4HPf4)|Easy||
-|1133|[Largest Unique Number](https://leetcode.com/problems/largest-unique-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1133.java) |  |  | |Easy||
-|1128|[Number of Equivalent Domino Pairs](https://leetcode.com/problems/number-of-equivalent-domino-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1128.java) |  |  | [:tv:](https://www.youtube.com/watch?v=7EpEEHAAxyw)|Easy||
-|1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1122.java) | O(n) | O(n) | |Easy||
-|1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1170.java) | | | |Easy||
-|1119|[Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1119.java) | | | [:tv:](https://www.youtube.com/watch?v=6KCBrIWEauw)|Easy||
-|1108|[Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1108.java) | | | [:tv:](https://www.youtube.com/watch?v=FP0Na-pL0qk)|Easy||
-|1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1099.java) | |  | [:tv:](https://www.youtube.com/watch?v=2Uq7p7HE0TI)|Easy||
-|1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1089.java) | O(n^2) | O(1) | |Easy||
-|1086|[High Five](https://leetcode.com/problems/high-five/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1086.java) | | | [:tv:](https://www.youtube.com/watch?v=3iqC5J4l0Cc)|Easy||
-|1085|[Sum of Digits in the Minimum Number](https://leetcode.com/problems/sum-of-digits-in-the-minimum-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1085.java) | | | [:tv:](https://www.youtube.com/watch?v=GKYmPuHZpQg)|Easy||
-|1079|[Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1079.java) | O(1) | O(1) | |Medium||
-|1078|[Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1078.java) | O(n) | O(1) | |Easy||
-|1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1071.java) | O(m*n) | O(1) | |Easy||
-|1065|[Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1065.java) | O(nlogn) | O(1) | |Medium||
-|1056|[Confusing Number](https://leetcode.com/problems/confusing-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1056.java) | O(n) | O(1) | |Easy||
-|1055|[Fixed Point](https://leetcode.com/problems/fixed-point/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1055.java) | O(n) | O(1) | |Easy||
-|1051|[Height Checker](https://leetcode.com/problems/height-checker/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1051.java) | O(nlogn) | O(1) | |Easy||
-|1047|[Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1047.java) | O(n) | O(1) | |Easy||
-|1043|[Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1043.java) | O(nk) | O(n) | |Medium|DP|
-|1038|[Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1038.java) | O(n) | O(n) | |Medium|DFS, tree|
-|1037|[Valid Boomerang](https://leetcode.com/problems/valid-boomerang/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1037.java) | O(1) | O(1) | |Easy|Math|
-|1033|[Moving Stones Until Consecutive](https://leetcode.com/problems/moving-stones-until-consecutive/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1033.java) | O(1) | O(1) | |Easy|Math|
-|1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1030.java) | O(R*C) | O(1) | |Easy|
-|1029|[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1029.java) | O(nlogn) | O(1) | |Easy|
-|1022|[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1022.java) | O(n) | O(n) | |Easy|
-|1021|[Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1021.java) | O(n) | O(n) | |Easy|
-|1020|[Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1020.java) | O(mn) | O(mn) | |Medium|Graph, DFS, BFS, recursion|
-|1018|[Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1018.java) | O(n) | O(1) | |Easy|
-|1014|[Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1014.java) | O(n) | O(1) | |Medium|
-|1013|[Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1013.java) | O(n) | O(1) | |Easy|
-|1011|[Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1011.java) | O(nlogn) | O(1) | |Medium|Binary Search|
-|1010|[Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1010.java) | O(n) | O(1) | |Easy|
-|1009|[Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1009.java) | O(n) | O(1) | |Easy|
-|1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1008.java) | O(n) | O(1) | |Medium| Recursion
-|1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1003.java) | O(n) | O(n) | |Medium|
-|1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1002.java) | O(n) | O(1) | |Easy|
-|999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_999.java) | O(1) | O(1) | |Easy|
+|1134|[Armstrong Number](https://leetcode.com/problems/armstrong-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1134.java) |  [:tv:](https://www.youtube.com/watch?v=HTL7fd4HPf4)|Easy||
+|1133|[Largest Unique Number](https://leetcode.com/problems/largest-unique-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1133.java) | |Easy||
+|1128|[Number of Equivalent Domino Pairs](https://leetcode.com/problems/number-of-equivalent-domino-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1128.java) |  [:tv:](https://www.youtube.com/watch?v=7EpEEHAAxyw)|Easy||
+|1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1122.java) | |Easy||
+|1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1170.java) | |Easy||
+|1119|[Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1119.java) |  [:tv:](https://www.youtube.com/watch?v=6KCBrIWEauw)|Easy||
+|1108|[Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1108.java) |  [:tv:](https://www.youtube.com/watch?v=FP0Na-pL0qk)|Easy||
+|1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1099.java) |  [:tv:](https://www.youtube.com/watch?v=2Uq7p7HE0TI)|Easy||
+|1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1089.java) | |Easy||
+|1086|[High Five](https://leetcode.com/problems/high-five/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1086.java) | [:tv:](https://www.youtube.com/watch?v=3iqC5J4l0Cc)|Easy||
+|1085|[Sum of Digits in the Minimum Number](https://leetcode.com/problems/sum-of-digits-in-the-minimum-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1085.java)| [:tv:](https://www.youtube.com/watch?v=GKYmPuHZpQg)|Easy||
+|1079|[Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1079.java)| |Medium||
+|1078|[Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1078.java) | |Easy||
+|1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1071.java) |  |Easy||
+|1065|[Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1065.java) | |Medium||
+|1056|[Confusing Number](https://leetcode.com/problems/confusing-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1056.java) | |Easy||
+|1055|[Fixed Point](https://leetcode.com/problems/fixed-point/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1055.java) |  |Easy||
+|1051|[Height Checker](https://leetcode.com/problems/height-checker/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1051.java) | |Easy||
+|1047|[Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1047.java) | |Easy||
+|1043|[Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1043.java) |  |Medium|DP|
+|1038|[Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1038.java) | |Medium|DFS, tree|
+|1037|[Valid Boomerang](https://leetcode.com/problems/valid-boomerang/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1037.java) | |Easy|Math|
+|1033|[Moving Stones Until Consecutive](https://leetcode.com/problems/moving-stones-until-consecutive/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1033.java) | |Easy|Math|
+|1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1030.java) | |Easy|
+|1029|[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1029.java) | |Easy|
+|1022|[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1022.java) | |Easy|
+|1021|[Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1021.java) | |Easy|
+|1020|[Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1020.java) | |Medium|Graph, DFS, BFS, recursion|
+|1018|[Binary Prefix Divisible By 5](https://leetcode.com/problems/binary-prefix-divisible-by-5/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1018.java) | |Easy|
+|1014|[Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1014.java) | |Medium|
+|1013|[Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1013.java) | |Easy|
+|1011|[Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1011.java) | |Medium|Binary Search|
+|1010|[Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1010.java) | |Easy|
+|1009|[Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1009.java) | |Easy|
+|1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1008.java) | |Medium| Recursion
+|1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1003.java) | |Medium|
+|1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1002.java) |  |Easy|
+|999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_999.java) | |Easy|
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_997.java) | O(n) | O(n) | |Easy| 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_994.java) | O(m*2*n*2) | O(m*n) | |Easy| BFS
 |993|[Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_993.java) | O(n) | O(m) (m is length of the nodes that has the max number of nodes on the same level) | |Easy| Tree, BFS
