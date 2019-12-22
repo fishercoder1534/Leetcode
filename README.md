@@ -30,15 +30,15 @@ _If you like this project, please leave me a star._ &#9733;
 |1207|[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1207.java) | [:tv:](https://www.youtube.com/watch?v=_NYimlZY1PE)|Easy||
 |1200|[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1200.java) | [:tv:](https://www.youtube.com/watch?v=mH1aEjOEjcQ)|Easy||
 |1198|[Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1198.java) | [:tv:](https://www.youtube.com/watch?v=RMiofZrTmWo)|Easy||
-|1196|[How Many Apples Can You Put into the Basket](https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1196.java) | | | |Easy||
-|1189|[Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1189.java) | | | |Easy||
-|1185|[Day of the Week](https://leetcode.com/problems/day-of-the-week/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1185.java) | | | |Easy||
-|1184|[Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1184.java) | | | [:tv:](https://www.youtube.com/watch?v=RFq7yA5iyhI)|Easy||
-|1165|[Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1165.java) | | | |Easy||
-|1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1160.java) | O(n) | O(m) | |Easy||
-|1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | O(1) | O(1) | |Easy||
-|1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1150.java) | | | |Easy||
-|1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1137.java) | O(n) | O(n) | |Easy||
+|1196|[How Many Apples Can You Put into the Basket](https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1196.java) | |Easy||
+|1189|[Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1189.java) | |Easy||
+|1185|[Day of the Week](https://leetcode.com/problems/day-of-the-week/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1185.java) | |Easy||
+|1184|[Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1184.java) | [:tv:](https://www.youtube.com/watch?v=RFq7yA5iyhI)|Easy||
+|1165|[Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1165.java) | |Easy||
+|1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1160.java)| |Easy||
+|1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | |Easy||
+|1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1150.java)| |Easy||
+|1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1137.java) | |Easy||
 |1134|[Armstrong Number](https://leetcode.com/problems/armstrong-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1134.java) |  |  | [:tv:](https://www.youtube.com/watch?v=HTL7fd4HPf4)|Easy||
 |1133|[Largest Unique Number](https://leetcode.com/problems/largest-unique-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1133.java) |  |  | |Easy||
 |1128|[Number of Equivalent Domino Pairs](https://leetcode.com/problems/number-of-equivalent-domino-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1128.java) |  |  | [:tv:](https://www.youtube.com/watch?v=7EpEEHAAxyw)|Easy||
