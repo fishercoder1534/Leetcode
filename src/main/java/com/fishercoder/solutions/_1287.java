@@ -18,21 +18,13 @@ package com.fishercoder.solutions;
 public class _1287 {
     public static class Solution1 {
         public int findSpecialInteger(int[] arr) {
-            for (int i = 0; i < arr.length - 1; ) {
-                int count = 1;
-                if (arr[i] == arr[i + 1]) {
-                    do {
-                        i++;
-                        count++;
-                        if (count > arr.length / 4) {
-                            return arr[i];
-                        }
-                    } while (i < arr.length - 1 && arr[i] == arr[i + 1]);
-                } else {
-                    i++;
+            int quarter = arr.length / 4;
+            for (int i = 0; i < arr.length - quarter; i++) {
+                if (arr[i] == arr[i + quarter]) {
+                    return arr[i];
                 }
             }
-            return arr[0];
+            return -1;
         }
     }
 }
