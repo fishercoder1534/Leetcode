@@ -23,7 +23,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1252|[Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1252.java) |  |Easy||
 |1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1237.java) | |Easy||
 |1243|[Array Transformation](https://leetcode.com/problems/array-transformation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1243.java) |  [:tv:](https://www.youtube.com/watch?v=MQ2i4T1l-Gs)|Easy||
-|1232|[Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1232.java) |   |Easy||
+|1232|[Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1232.java) | [:tv:](https://www.youtube.com/watch?v=_tfiTQNZCbs)  |Easy||
 |1228|[Missing Number In Arithmetic Progression](https://leetcode.com/problems/missing-number-in-arithmetic-progression/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1228.java) |   |Easy||
 |1217|[Play with Chips](https://leetcode.com/problems/play-with-chips/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1217.java) |   |Easy||
 |1213|[Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1213.java) |   [:tv:](https://www.youtube.com/watch?v=zceoOrHSHNQ)|Easy||
