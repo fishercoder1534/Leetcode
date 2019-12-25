@@ -774,7 +774,7 @@ _If you like this project, please leave me a star._ &#9733;
 |57|[Insert Intervals](https://leetcode.com/problems/insert-interval/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_57.java)||Hard| Array, Sort
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_56.java)||Medium| Array, Sort
 |55|[Jump Game](https://leetcode.com/problems/jump-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_55.java)||Medium| Greedy
-|54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_54.java)||Medium| Array
+|54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_54.java)|[:tv:](https://www.youtube.com/watch?v=uYgoo8BdUAA)|Medium| Array
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_53.java)||Easy| Array
 |52|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_52.java)||Hard| Backtracking
 |51|[N-Queens](https://leetcode.com/problems/n-queens/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_51.java)||Hard|
