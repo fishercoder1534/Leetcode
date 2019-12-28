@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1302|[Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1302.java) | |Medium||
 |1297|[Maximum Number of Occurrences of a Substring](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1297.java) | |Medium||
 |1296|[Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1296.java) | |Medium||
 |1295|[Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1295.java) |  |Easy||
