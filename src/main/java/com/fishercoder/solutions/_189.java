@@ -1,8 +1,5 @@
 package com.fishercoder.solutions;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * 189. Rotate Array
 
@@ -33,9 +30,10 @@ public class _189 {
 
   public static class Solution1 {
     /**
+     * using an extra array of the same size to copy it
      * O(n) space
      * O(n) time
-     * */
+     */
     public void rotate(int[] nums, int k) {
       int len = nums.length;
       int[] tmp = new int[len];
@@ -52,7 +50,7 @@ public class _189 {
     /**
      * O(1) space
      * O(n) time
-     * */
+     */
     public void rotate(int[] nums, int k) {
       int tmp;
       for (int i = 0; i < k; i++) {
@@ -61,40 +59,6 @@ public class _189 {
           nums[j] = nums[j - 1];
         }
         nums[0] = tmp;
-      }
-    }
-  }
-
-  public static class Solution3 {
-    /**
-     * My original idea and got AC'ed.
-     * One thing to notice is that when k > nums.length, we'll continue to rotate the array, it just becomes k -= nums.length
-     */
-    public static void rotate(int[] nums, int k) {
-      if (k == 0 || k == nums.length) {
-        return;
-      }
-      if (k > nums.length) {
-        k -= nums.length;
-      }
-      List<Integer> tmp = new ArrayList();
-      int i = 0;
-      if (nums.length - k >= 0) {
-        i = nums.length - k;
-        for (; i < nums.length; i++) {
-          tmp.add(nums[i]);
-        }
-      } else {
-        i = nums.length - 1;
-        for (; i >= 0; i--) {
-          tmp.add(nums[i]);
-        }
-      }
-      for (i = 0; i < nums.length - k; i++) {
-        tmp.add(nums[i]);
-      }
-      for (i = 0; i < tmp.size(); i++) {
-        nums[i] = tmp.get(i);
       }
     }
   }
