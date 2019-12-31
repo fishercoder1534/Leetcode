@@ -51,4 +51,10 @@ public class _220Test {
         assertEquals(false, solution1.containsNearbyAlmostDuplicate(nums, 1, 2147483647));
     }
 
+    @Test
+    public void test7() {
+        nums = new int[]{-1, 2147483647};
+        assertEquals(false, solution1.containsNearbyAlmostDuplicate(nums, 1, 2147483647));
+    }
+
 }
