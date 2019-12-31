@@ -29,4 +29,10 @@ public class _219Test {
         assertEquals(true, solution2.containsNearbyDuplicate(nums, 3));
     }
 
+    @Test
+    public void test3() {
+        nums = new int[]{1, 2, 3, 1, 2, 3};
+        assertEquals(false, solution2.containsNearbyDuplicate(nums, 2));
+    }
+
 }
