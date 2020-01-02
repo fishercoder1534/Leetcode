@@ -27,4 +27,10 @@ public class _1150Test {
         assertEquals(false, solution1.isMajorityElement(nums, 101));
     }
 
+    @Test
+    public void test3() {
+        nums = new int[]{1, 1, 1, 2, 3, 3, 3};
+        assertEquals(false, solution1.isMajorityElement(nums, 2));
+    }
+
 }
