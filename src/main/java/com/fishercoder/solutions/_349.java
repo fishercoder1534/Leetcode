@@ -2,52 +2,48 @@ package com.fishercoder.solutions;
 
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * 349. Intersection of Two Arrays
  *
  * Given two arrays, write a function to compute their intersection.
  *
- * Example: Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
+ * Example 1:
+ * Input: nums1 = [1,2,2,1], nums2 = [2,2]
+ * Output: [2]
  *
- * Note: Each element in the result must be unique. The result can be in any order.
+ * Example 2:
+ * Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+ * Output: [9,4]
+ *
+ * Note:
+ * Each element in the result must be unique.
+ * The result can be in any order.
  */
 public class _349 {
 
   public static class Solution1 {
+    //credit: https://leetcode.com/articles/intersection-of-two-arrays/
+    //Time: O(m+n) on average, O(m*n) in worse case
+    //Space: O(m+n)
     public int[] intersection(int[] nums1, int[] nums2) {
-      Set<Integer> set = new HashSet();
-      Arrays.sort(nums1);
-      Arrays.sort(nums2);
+      Set<Integer> set1 = Arrays.stream(nums1).boxed().collect(Collectors.toSet());
+      Set<Integer> set2 = Arrays.stream(nums2).boxed().collect(Collectors.toSet());
+      set1.retainAll(set2);
+      int[] intersection = new int[set1.size()];
       int i = 0;
-      int j = 0;
-      for (; i < nums1.length && j < nums2.length; ) {
-        if (nums1[i] < nums2[j]) {
-          i++;
-        } else if (nums1[i] > nums2[j]) {
-          j++;
-        } else {
-          set.add(nums1[i]);
-          i++;
-          j++;
-        }
+      for (int num : set1) {
+        intersection[i++] = num;
       }
-      int[] result = new int[set.size()];
-      Iterator<Integer> it = set.iterator();
-      int k = 0;
-      while (it.hasNext()) {
-        result[k++] = it.next();
-      }
-      return result;
+      return intersection;
     }
   }
 
   public static class Solution2 {
+      //Time: O(nlgn)
     public int[] intersection(int[] nums1, int[] nums2) {
-      //this approach is O(nlgn)
-      Arrays.sort(nums1);
       Arrays.sort(nums2);
       Set<Integer> intersect = new HashSet();
       for (int i : nums1) {
@@ -56,9 +52,9 @@ public class _349 {
         }
       }
       int[] result = new int[intersect.size()];
-      Iterator<Integer> it = intersect.iterator();
-      for (int i = 0; i < intersect.size(); i++) {
-        result[i] = it.next();
+      int i = 0;
+      for (int num : intersect) {
+        result[i++] = num;
       }
       return result;
     }
@@ -77,6 +73,34 @@ public class _349 {
         }
       }
       return false;
+    }
+  }
+
+  public static class Solution3 {
+    //use two pointers
+    //credit: https://leetcode.com/problems/intersection-of-two-arrays/discuss/81969/Three-Java-Solutions
+    public int[] intersection(int[] nums1, int[] nums2) {
+      Arrays.sort(nums1);
+      Arrays.sort(nums2);
+      int i = 0;
+      int j = 0;
+      Set<Integer> set = new HashSet<>();
+      while (i < nums1.length && j < nums2.length) {
+        if (nums1[i] == nums2[j]) {
+          set.add(nums1[i++]);
+          j++;
+        } else if (nums1[i] < nums2[j]) {
+          i++;
+        } else {
+          j++;
+        }
+      }
+      int[] intersection = new int[set.size()];
+      int k = 0;
+      for (int num : set) {
+        intersection[k++] = num;
+      }
+      return intersection;
     }
   }
 }
