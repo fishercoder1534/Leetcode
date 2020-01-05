@@ -3,31 +3,38 @@ package com.fishercoder.solutions;
 /**
  * 66. Plus One
  *
- * Given a non-negative number represented as an array of digits, plus one to the number. The digits
- * are stored such that the most significant digit is at the head of the list.
+ * Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
+ * The digits are stored such that the most significant digit is at the head of the list,
+ * and each element in the array contain a single digit.
+ *
+ * You may assume the integer does not contain any leading zero, except the number 0 itself.
+ *
+ * Example 1:
+ * Input: [1,2,3]
+ * Output: [1,2,4]
+ * Explanation: The array represents the integer 123.
+ *
+ * Example 2:
+ * Input: [4,3,2,1]
+ * Output: [4,3,2,2]
+ * Explanation: The array represents the integer 4321.
  */
 public class _66 {
 
   public static class Solution1 {
+      /**credit: https://leetcode.com/problems/plus-one/discuss/24082/My-Simple-Java-Solution*/
     public int[] plusOne(int[] digits) {
         int len = digits.length;
-        int[] temp = digits;
-        
         for (int i = len - 1; i >= 0; i--) {
-            if (temp[i] + 1 == 10) {
-                temp[i] = 0;
-            } else {
-                temp[i] += 1;
-                return temp;
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
             }
+            digits[i] = 0;
         }
-        if (temp[0] == 0) {
-            int[] res = new int[len + 1];
-            res[0] = 1; //all the rest of the numbers should all be zeroes, so we don't need to copy from the original array
-            return res;
-        } else {
-            return temp;
-        }
+        int[] newNumber = new int[len + 1];
+        newNumber[0] = 1;
+        return newNumber;
     }
   }
 }
