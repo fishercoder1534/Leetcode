@@ -31,8 +31,8 @@ public class _189 {
   public static class Solution1 {
     /**
      * using an extra array of the same size to copy it
-     * O(n) space
      * O(n) time
+     * O(n) space
      */
     public void rotate(int[] nums, int k) {
       int len = nums.length;
@@ -48,8 +48,8 @@ public class _189 {
 
   public static class Solution2 {
     /**
-     * O(1) space
      * O(n) time
+     * O(1) space
      */
     public void rotate(int[] nums, int k) {
       int tmp;
