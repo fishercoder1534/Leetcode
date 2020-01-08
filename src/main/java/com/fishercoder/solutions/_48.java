@@ -15,6 +15,8 @@ public class _48 {
     /**Note: this is an n*n matrix, in other words, it's a square, this makes it easier as well.*/
 
     public static class Solution1 {
+        //Time: O(n^2)
+        //Space: O(1)
         public void rotate(int[][] matrix) {
             /**First swap the elements on the diagonal, then reverse each row:
              * 1, 2, 3                    1, 4, 7                      7, 4, 1

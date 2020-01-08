@@ -37,4 +37,26 @@ public class _48Test {
         solution2.rotate(matrix);
         CommonUtils.print2DIntArray(matrix);
     }
+
+    @Test
+    public void test3() {
+        matrix = new int[][]{
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12},
+                {13, 14, 15, 16}
+        };
+        solution2.rotate(matrix);
+        CommonUtils.print2DIntArray(matrix);
+    }
+
+    @Test
+    public void test4() {
+        matrix = new int[][]{
+                {1, 2},
+                {3, 4}
+        };
+        solution1.rotate(matrix);
+        CommonUtils.print2DIntArray(matrix);
+    }
 }
