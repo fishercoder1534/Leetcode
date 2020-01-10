@@ -1,5 +1,7 @@
 package com.fishercoder.solutions;
 
+import com.fishercoder.common.utils.CommonUtils;
+
 /**
  * 48. Rotate Image
 
@@ -63,6 +65,7 @@ public class _48 {
                     matrix[j][i] = tmp;
                 }
             }
+            CommonUtils.print2DIntArray(matrix);
 
             /**then reverse*/
             for (int i = 0; i < m; i++) {
