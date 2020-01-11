@@ -30,4 +30,9 @@ public class _7Test {
         assertEquals(0, solution2.reverse(1534236469));
     }
 
+    @Test
+    public void test3() {
+        assertEquals(-123, solution2.reverse(-321));
+    }
+
 }
