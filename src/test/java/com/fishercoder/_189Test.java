@@ -21,7 +21,6 @@ public class _189Test {
     @Test
     public void test1() {
         nums = new int[]{1, 2, 3};
-
         solution1.rotate(nums, 1);
         CommonUtils.printArray(nums);
     }
@@ -29,7 +28,6 @@ public class _189Test {
     @Test
     public void test2() {
         nums = new int[]{1, 2, 3};
-
         solution2.rotate(nums, 1);
         CommonUtils.printArray(nums);
     }
@@ -37,8 +35,8 @@ public class _189Test {
     @Test
     public void test3() {
         nums = new int[]{1, 2, 3};
-
         solution3.rotate(nums, 1);
         CommonUtils.printArray(nums);
     }
+
 }

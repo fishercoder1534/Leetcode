@@ -147,7 +147,7 @@ public class CommonUtils {
 
     public static void printList(final ListNode head) {
         ListNode temp = head;
-        System.out.println("--------------------------------------------");
+        System.out.println("\n--------------------------------------------");
         while (temp != null) {
             System.out.print(temp.val);
             temp = temp.next;

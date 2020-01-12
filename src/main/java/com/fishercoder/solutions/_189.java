@@ -1,8 +1,5 @@
 package com.fishercoder.solutions;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * 189. Rotate Array
 
@@ -26,33 +23,15 @@ import java.util.List;
  Note:
  Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.
  Could you do it in-place with O(1) extra space?
-
  * */
 
 public class _189 {
 
   public static class Solution1 {
     /**
-     * O(n) space
-     * O(n) time
-     * */
-    public void rotate(int[] nums, int k) {
-      int len = nums.length;
-      int[] tmp = new int[len];
-      for (int i = 0; i < len; i++) {
-        tmp[(i + k) % len] = nums[i];
-      }
-      for (int i = 0; i < len; i++) {
-        nums[i] = tmp[i];
-      }
-    }
-  }
-
-  public static class Solution2 {
-    /**
+     * O(n*k) time
      * O(1) space
-     * O(n) time
-     * */
+     */
     public void rotate(int[] nums, int k) {
       int tmp;
       for (int i = 0; i < k; i++) {
@@ -65,36 +44,45 @@ public class _189 {
     }
   }
 
+  public static class Solution2 {
+    /**
+     * using an extra array of the same size to copy it
+     * O(n) time
+     * O(n) space
+     */
+    public void rotate(int[] nums, int k) {
+      int len = nums.length;
+      int[] tmp = new int[len];
+      for (int i = 0; i < len; i++) {
+        tmp[(i + k) % len] = nums[i];
+      }
+      for (int i = 0; i < len; i++) {
+        nums[i] = tmp[i];
+      }
+    }
+  }
+
   public static class Solution3 {
     /**
-     * My original idea and got AC'ed.
-     * One thing to notice is that when k > nums.length, we'll continue to rotate the array, it just becomes k -= nums.length
+     * reverse three times
+     * O(n) time
+     * O(1) space
      */
-    public static void rotate(int[] nums, int k) {
-      if (k == 0 || k == nums.length) {
-        return;
-      }
-      if (k > nums.length) {
-        k -= nums.length;
-      }
-      List<Integer> tmp = new ArrayList();
-      int i = 0;
-      if (nums.length - k >= 0) {
-        i = nums.length - k;
-        for (; i < nums.length; i++) {
-          tmp.add(nums[i]);
-        }
-      } else {
-        i = nums.length - 1;
-        for (; i >= 0; i--) {
-          tmp.add(nums[i]);
-        }
-      }
-      for (i = 0; i < nums.length - k; i++) {
-        tmp.add(nums[i]);
-      }
-      for (i = 0; i < tmp.size(); i++) {
-        nums[i] = tmp.get(i);
+    public void rotate(int[] nums, int k) {
+      int len = nums.length;
+      k %= len;
+      reverse(nums, 0, len - 1);
+      reverse(nums, 0, k - 1);
+      reverse(nums, k, len - 1);
+    }
+
+    private void reverse(int[] nums, int start, int end) {
+      while (start < end) {
+        int tmp = nums[start];
+        nums[start] = nums[end];
+        nums[end] = tmp;
+        start++;
+        end--;
       }
     }
   }
