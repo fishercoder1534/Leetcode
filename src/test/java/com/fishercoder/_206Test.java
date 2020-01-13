@@ -21,10 +21,13 @@ public class _206Test {
 
     @Test
     public void test1() {
-        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3});
-        assertEquals(LinkedListUtils.contructLinkedList(new int[]{3, 2, 1}), solution1.reverseList(head));
+        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4});
+        assertEquals(LinkedListUtils.contructLinkedList(new int[]{4, 3, 2, 1}), solution1.reverseList(head));
+    }
 
-        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3});
-        assertEquals(LinkedListUtils.contructLinkedList(new int[]{3, 2, 1}), solution2.reverseList(head));
+    @Test
+    public void test2() {
+        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4});
+        assertEquals(LinkedListUtils.contructLinkedList(new int[]{4, 3, 2, 1}), solution2.reverseList(head));
     }
 }
