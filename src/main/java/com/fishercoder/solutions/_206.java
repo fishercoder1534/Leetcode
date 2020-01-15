@@ -31,11 +31,6 @@ public class _206 {
     }
 
     public static class Solution2 {
-        /**
-         * following the above iterative version, the recursive solution flows out so naturally:
-         * basically, we just replaced the while loop with a recursive function
-         * still, a null newHead proves to be very helpful.
-         */
         public ListNode reverseList(ListNode head) {
             return reverse(head, null);
         }
