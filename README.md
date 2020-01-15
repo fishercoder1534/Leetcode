@@ -808,7 +808,7 @@ _If you like this project, please leave me a star._ &#9733;
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_29.java)||Medium|
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_28.java)||Easy| String
 |27|[Remove Element](https://leetcode.com/problems/remove-element/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_27.java)| |Easy |
-|26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_26.java)||Easy| Array 
+|26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_26.java)|[:tv:](https://youtu.be/nRKZC2JF7LU)|Easy| Array 
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_25.java)| |Hard | Recursion, LinkedList
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_24.java)||Medium| Recursion, LinkedList
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_23.java)|[:tv:](https://www.youtube.com/watch?v=Llse1tImXQA)|Hard|Heap
