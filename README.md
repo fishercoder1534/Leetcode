@@ -631,7 +631,7 @@ _If you like this project, please leave me a star._ &#9733;
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_223.java)| | Easy| 
 |222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_222.java)|  |Medium| Recursion
 |221|[Maximal Square](https://leetcode.com/problems/maximal-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_221.java)|  |Medium| Recursion
-|220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_220.java)| |Medium| TreeSet
+|220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_220.java)| [:tv:](https://youtu.be/Cu7g9ovYHNI)|Medium| TreeSet
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_219.java)| [:tv:](https://youtu.be/SFMCxqSeM94)|Easy| HashMap
 |218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_218.java)| |Hard| TreeMap, Design
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_217.java)| [:tv:](https://youtu.be/SFMCxqSeM94) |Easy| HashSet
