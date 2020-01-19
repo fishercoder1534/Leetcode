@@ -31,14 +31,14 @@ public class _234 {
                 slow = slow.next;
             }
 
-            ListNode reversedHead = reverse(slow.next);
+            ListNode secondHalfHead = reverse(slow.next);
             ListNode firstHalfHead = head;
-            while (firstHalfHead != null && reversedHead != null) {
-                if (firstHalfHead.val != reversedHead.val) {
+            while (firstHalfHead != null && secondHalfHead != null) {
+                if (firstHalfHead.val != secondHalfHead.val) {
                     return false;
                 }
                 firstHalfHead = firstHalfHead.next;
-                reversedHead = reversedHead.next;
+                secondHalfHead = secondHalfHead.next;
             }
             return true;
         }
