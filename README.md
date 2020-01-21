@@ -503,7 +503,7 @@ _If you like this project, please leave me a star._ &#9733;
 |352|[Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_352.java)| |Hard| TreeMap
 |351|[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_351.java)| |Medium|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_350.java)|  |Easy| HashMap, Binary Search
-|349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_349.java)|  |Easy| Two Pointers, Binary Search
+|349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_349.java)| [:tv:](https://youtu.be/XxStWmfXJRs) |Easy| Two Pointers, Binary Search
 |348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_348.java)|  |Medium| Design 
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_347.java)|  |Medium| HashTable, Heap, Bucket Sort
 |346|[Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_346.java)|  |Easy| Queue
