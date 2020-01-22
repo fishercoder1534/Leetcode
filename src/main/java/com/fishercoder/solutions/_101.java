@@ -2,7 +2,8 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
 
-/**101. Symmetric Tree
+/**
+ * 101. Symmetric Tree
 
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 
@@ -39,10 +40,7 @@ public class _101 {
 			if (left == null || right == null) {
 				return left == right;
 			}
-			if (left.val != right.val) {
-				return false;
-			}
-			return isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left);
+			return left.val == right.val && isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left);
 		}
 	}
 }
