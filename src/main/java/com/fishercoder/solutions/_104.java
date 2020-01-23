@@ -24,6 +24,10 @@ import com.fishercoder.common.classes.TreeNode;
 public class _104 {
 
   public static class Solution1 {
+    /**
+     * Time: O(n)
+     * Space: O(n)
+     */
     public int maxDepth(TreeNode root) {
       if (root == null) {
         return 0;
