@@ -569,7 +569,7 @@ _If you like this project, please leave me a star._ &#9733;
 |286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_286.java)| |Medium| BFS
 |285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_285.java)| |Medium| Tree
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_284.java)| |Medium| Design
-|283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_283.java)| |Easy| 
+|283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_283.java)| [:tv:](https://youtu.be/39VJV4KVyi8)|Easy| 
 |282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_282.java)|  |Hard|
 |281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_281.java)|  |Medium|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_280.java)|  |Medium|
