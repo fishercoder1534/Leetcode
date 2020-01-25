@@ -27,4 +27,12 @@ public class _94Test {
         CommonUtils.printList(inorder);
     }
 
+    @Test
+    public void test2() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, null, 5, 6, null, 7, null, null, null, null, 8, 9));
+        TreeUtils.printBinaryTree(root);
+        inorder = solution1.inorderTraversal(root);
+        CommonUtils.printList(inorder);
+    }
+
 }
