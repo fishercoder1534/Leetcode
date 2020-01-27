@@ -23,17 +23,17 @@ public class _108 {
 
   public static class Solution1 {
     public TreeNode sortedArrayToBST(int[] num) {
-      return rec(num, 0, num.length - 1);
+      return dfs(num, 0, num.length - 1);
     }
 
-    public TreeNode rec(int[] num, int low, int high) {
-      if (low > high) {
+    public TreeNode dfs(int[] num, int start, int end) {
+      if (start > end) {
         return null;
       }
-      int mid = low + (high - low) / 2;
+      int mid = start + (end - start) / 2;
       TreeNode root = new TreeNode(num[mid]);
-      root.left = rec(num, low, mid - 1);
-      root.right = rec(num, mid + 1, high);
+      root.left = dfs(num, start, mid - 1);
+      root.right = dfs(num, mid + 1, end);
       return root;
     }
   }
