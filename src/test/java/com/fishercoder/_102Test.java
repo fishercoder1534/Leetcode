@@ -25,4 +25,11 @@ public class _102Test {
         CommonUtils.printListList(solution1.levelOrder(treeRoot));
     }
 
+    @Test
+    public void test2() {
+        treeRoot = TreeUtils.constructBinaryTree(Arrays.asList(3, 9, 20, null, null, 15, 7));
+        TreeUtils.printBinaryTree(treeRoot);
+        CommonUtils.printListList(solution1.levelOrder(treeRoot));
+    }
+
 }
