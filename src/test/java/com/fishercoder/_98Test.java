@@ -1,9 +1,12 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
+import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions._98;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
@@ -37,6 +40,13 @@ public class _98Test {
     public void test3() {
         root = new TreeNode(1);
         root.left = new TreeNode(1);
+        assertEquals(false, solution1.isValidBST(root));
+    }
+
+    @Test
+    public void test4() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(5, 1, 7, null, null, 3, 8));
+        TreeUtils.printBinaryTree(root);
         assertEquals(false, solution1.isValidBST(root));
     }
 }
