@@ -30,7 +30,7 @@ public class _108 {
       if (start > end) {
         return null;
       }
-      int mid = start + (end - start) / 2;
+      int mid = (end + start) / 2;
       TreeNode root = new TreeNode(num[mid]);
       root.left = dfs(num, start, mid - 1);
       root.right = dfs(num, mid + 1, end);
