@@ -25,4 +25,14 @@ public class _70Test {
     public void test2() {
         assertEquals(3, solution2.climbStairs(3));
     }
+
+    @Test
+    public void test3() {
+        assertEquals(13, solution1.climbStairs(6));
+    }
+
+    @Test
+    public void test4() {
+        assertEquals(13, solution2.climbStairs(6));
+    }
 }
