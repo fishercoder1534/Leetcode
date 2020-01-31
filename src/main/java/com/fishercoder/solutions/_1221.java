@@ -54,4 +54,24 @@ public class _1221 {
             return balancedCount;
         }
     }
+
+    public static class Solution2 {
+        public int balancedStringSplit(String s) {
+            int count = 0;
+            int result = 0;
+            int i = 0;
+            while (i < s.length()) {
+                if (s.charAt(i) == 'L') {
+                    count++;
+                } else {
+                    count--;
+                }
+                if (count == 0) {
+                    result++;
+                }
+                i++;
+            }
+            return result;
+        }
+    }
 }
