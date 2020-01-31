@@ -34,7 +34,7 @@ import java.util.stream.IntStream;
  * */
 public class _1323 {
     public static class Solution1 {
-        public int maximum69Number (int num) {
+        public int maximum69Number(int num) {
             char[] chars = Integer.toString(num).toCharArray();
             IntStream.range(0, chars.length).filter(i -> chars[i] == '6').findFirst().ifPresent(i -> chars[i] = '9');
             return Integer.parseInt(new String(chars));
