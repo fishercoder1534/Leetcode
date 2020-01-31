@@ -12,6 +12,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1331|[Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1331.java) | |Easy||
 |1329|[Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1329.java) | |Medium||
 |1317|[Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1317.java) | |Easy||
+|1313|[Decompress Run-Length Encoded List](https://leetcode.com/problems/decompress-run-length-encoded-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1313.java) | |Easy|Array|
 |1305|[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1305.java) | |Medium||
 |1304|[Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1304.java) | |Easy||
 |1302|[Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1302.java) | |Medium||
