@@ -35,6 +35,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1243|[Array Transformation](https://leetcode.com/problems/array-transformation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1243.java) |  [:tv:](https://www.youtube.com/watch?v=MQ2i4T1l-Gs)|Easy||
 |1232|[Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1232.java) | [:tv:](https://www.youtube.com/watch?v=_tfiTQNZCbs)  |Easy||
 |1228|[Missing Number In Arithmetic Progression](https://leetcode.com/problems/missing-number-in-arithmetic-progression/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1228.java) |   |Easy||
+|1221|[Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1221.java) | |Easy|Greedy|
 |1217|[Play with Chips](https://leetcode.com/problems/play-with-chips/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1217.java) |   |Easy||
 |1213|[Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1213.java) |   [:tv:](https://www.youtube.com/watch?v=zceoOrHSHNQ)|Easy||
 |1207|[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1207.java) | [:tv:](https://www.youtube.com/watch?v=_NYimlZY1PE)|Easy||
