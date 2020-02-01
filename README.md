@@ -851,6 +851,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1251|[Average Selling Price](https://leetcode.com/problems/average-selling-price//)|[Solution](../master/database/_1251.sql) | | Easy |
 |1179|[Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)|[Solution](../master/database/_1179.sql) |  | Easy |
 |1173|[Immediate Food Delivery I](https://leetcode.com/problems/immediate-food-delivery-i/)|[Solution](../master/database/_1173.sql) |  | Easy |
+|1148|[Article Views I](https://leetcode.com/problems/article-views-i/)|[Solution](../master/database/_1148.sql) |  | Easy |
 |1069|[Product Sales Analysis II](https://leetcode.com/problems/product-sales-analysis-ii/)|[Solution](../master/database/_1069.sql) |  | Easy |
 |1068|[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/)|[Solution](../master/database/_1068.sql) | | Easy |
 |627|[Swap Salary](https://leetcode.com/problems/swap-salary/)|[Solution](../master/database/_627.sql) | | Easy |
