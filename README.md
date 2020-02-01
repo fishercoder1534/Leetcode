@@ -848,7 +848,8 @@ _If you like this project, please leave me a star._ &#9733;
 |-----|----------------|---------------|---------------|---------------|-------------
 |1327|[List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/)|[Solution](../master/database/_1327.sql) || Easy |
 |1280|[Students and Examinations](https://leetcode.com/problems/students-and-examinations/)|[Solution](../master/database/_1280.sql) | [:tv:](https://www.youtube.com/watch?v=ThbkV4Fs7iE)| Easy |
-|1251|[Average Selling Price](https://leetcode.com/problems/average-selling-price//)|[Solution](../master/database/_1251.sql) | | Easy |
+|1251|[Average Selling Price](https://leetcode.com/problems/average-selling-price/)|[Solution](../master/database/_1251.sql) | | Easy |
+|1241|[Number of Comments per Post](https://leetcode.com/problems/number-of-comments-per-post/)|[Solution](../master/database/_1241.sql) | | Easy |
 |1179|[Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)|[Solution](../master/database/_1179.sql) |  | Easy |
 |1173|[Immediate Food Delivery I](https://leetcode.com/problems/immediate-food-delivery-i/)|[Solution](../master/database/_1173.sql) |  | Easy |
 |1148|[Article Views I](https://leetcode.com/problems/article-views-i/)|[Solution](../master/database/_1148.sql) |  | Easy |
