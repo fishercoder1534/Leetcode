@@ -855,6 +855,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1084|[Sales Analysis III](https://leetcode.com/problems/sales-analysis-iii/)|[Solution](../master/database/_1084.sql) |  | Easy |
 |1083|[Sales Analysis II](https://leetcode.com/problems/sales-analysis-ii/)|[Solution](../master/database/_1083.sql) |  | Easy |
 |1082|[Sales Analysis I](https://leetcode.com/problems/sales-analysis-i/)|[Solution](../master/database/_1082.sql) |  | Easy |
+|1076|[Project Employees II](https://leetcode.com/problems/project-employees-ii/)|[Solution](../master/database/_1076.sql) |  | Easy |
 |1075|[Project Employees I](https://leetcode.com/problems/project-employees-i/)|[Solution](../master/database/_1075.sql) |  | Easy |
 |1069|[Product Sales Analysis II](https://leetcode.com/problems/product-sales-analysis-ii/)|[Solution](../master/database/_1069.sql) |  | Easy |
 |1068|[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/)|[Solution](../master/database/_1068.sql) | | Easy |
