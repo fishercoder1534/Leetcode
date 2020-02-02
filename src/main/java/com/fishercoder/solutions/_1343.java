@@ -10,7 +10,7 @@ public class _1343 {
         public int maxProduct(TreeNode root) {
             Set<Long> set = new HashSet<>();
             int total = dfs(root, set);
-            long result = 0l;
+            long result = 0L;
             for (long sum : set) {
                 result = Math.max(result, sum * (total - sum));
             }
