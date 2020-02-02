@@ -39,11 +39,11 @@ import java.util.Map;
  * */
 public class _1103 {
     public static class Solution1 {
-        public int[] distributeCandies(int candies, int num_people) {
+        public int[] distributeCandies(int candies, int numPeople) {
             Map<Integer, Integer> map = new HashMap<>();
             int candy = 1;
             while (candies > 0) {
-                for (int person = 1; person <= num_people && candies > 0; person++, candy++) {
+                for (int person = 1; person <= numPeople && candies > 0; person++, candy++) {
                     if (candies < candy) {
                         map.put(person, map.getOrDefault(person, 0) + candies);
                         candies -= candy;
@@ -54,8 +54,8 @@ public class _1103 {
                     }
                 }
             }
-            int[] result = new int[num_people];
-            for (int i = 1; i <= num_people; i++) {
+            int[] result = new int[numPeople];
+            for (int i = 1; i <= numPeople; i++) {
                 if (map.containsKey(i)) {
                     result[i - 1] = map.get(i);
                 } else {
