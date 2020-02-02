@@ -851,6 +851,7 @@ _If you like this project, please leave me a star._ &#9733;
 |  #  |      Title     |   Solutions   | Video         | Difficulty    | Tag          
 |-----|----------------|---------------|---------------|---------------|-------------
 |1327|[List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/)|[Solution](../master/database/_1327.sql) || Easy |
+|1322|[Ads Performance](https://leetcode.com/problems/ads-performance/)|[Solution](../master/database/_1322.sql) || Easy |
 |1294|[Weather Type in Each Country](https://leetcode.com/problems/weather-type-in-each-country/)|[Solution](../master/database/_1294.sql) | | Easy |
 |1280|[Students and Examinations](https://leetcode.com/problems/students-and-examinations/)|[Solution](../master/database/_1280.sql) | [:tv:](https://www.youtube.com/watch?v=ThbkV4Fs7iE)| Easy |
 |1251|[Average Selling Price](https://leetcode.com/problems/average-selling-price/)|[Solution](../master/database/_1251.sql) | | Easy |
