@@ -11,6 +11,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1343|[Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1343.java) | |Medium||
 |1342|[Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1342.java) | |Medium||
 |1341|[The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1341.java) | |Easy||
+|1337|[Remove Palindromic Subsequences](https://leetcode.com/problems/remove-palindromic-subsequences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1337.java) | |Easy|String|
 |1333|[Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1333.java) | |Medium||
 |1331|[Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1331.java) | |Easy||
 |1329|[Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1329.java) | |Medium||
