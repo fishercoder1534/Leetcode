@@ -17,6 +17,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1329|[Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1329.java) | |Medium||
 |1323|[Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1323.java) | |Easy|Math|
 |1317|[Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1317.java) | |Easy||
+|1315|[Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1315.java) | |Medium|Tree, DFS|
 |1313|[Decompress Run-Length Encoded List](https://leetcode.com/problems/decompress-run-length-encoded-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1313.java) | |Easy|Array|
 |1305|[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1305.java) | |Medium||
 |1304|[Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1304.java) | |Easy||
