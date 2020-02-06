@@ -61,10 +61,10 @@ public class _229 {
                     count2++;
                 }
             }
-            if (count1 > nums.length/3) {
+            if (count1 > nums.length / 3) {
                 result.add(candidate1);
             }
-            if (count2 > nums.length/3) {
+            if (count2 > nums.length / 3) {
                 result.add(candidate2);
             }
             return result;
