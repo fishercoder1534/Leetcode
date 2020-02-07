@@ -76,16 +76,6 @@ public class _1325 {
             return root;
         }
 
-        private boolean hasTargetLeafNodes(TreeNode root, int target) {
-            if (root == null) {
-                return false;
-            }
-            if (root.left == null && root.right == null && root.val == target) {
-                return true;
-            }
-            return hasTargetLeafNodes(root.left, target) || hasTargetLeafNodes(root.right, target);
-        }
-
         private TreeNode removeLeafNodes(int target, TreeNode root) {
             if (root == null) {
                 return root;
@@ -103,6 +93,16 @@ public class _1325 {
             removeLeafNodes(target, root.left);
             removeLeafNodes(target, root.right);
             return root;
+        }
+
+        private boolean hasTargetLeafNodes(TreeNode root, int target) {
+            if (root == null) {
+                return false;
+            }
+            if (root.left == null && root.right == null && root.val == target) {
+                return true;
+            }
+            return hasTargetLeafNodes(root.left, target) || hasTargetLeafNodes(root.right, target);
         }
     }
 
