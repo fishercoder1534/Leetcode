@@ -865,6 +865,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video         | Difficulty    | Tag          
 |-----|----------------|---------------|---------------|---------------|-------------
+|1341|[Movie Rating](https://leetcode.com/problems/movie-rating/)|[Solution](../master/database/_1341.sql) || Medium |
 |1327|[List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/)|[Solution](../master/database/_1327.sql) || Easy |
 |1322|[Ads Performance](https://leetcode.com/problems/ads-performance/)|[Solution](../master/database/_1322.sql) || Easy |
 |1294|[Weather Type in Each Country](https://leetcode.com/problems/weather-type-in-each-country/)|[Solution](../master/database/_1294.sql) | | Easy |
