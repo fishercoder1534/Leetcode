@@ -8,9 +8,9 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
-|1343|[Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1343.java) | |Medium||
 |1342|[Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1342.java) | |Easy|Bit Manipulation|
 |1341|[The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1341.java) | |Easy||
+|1339|[Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1339.java) | |Medium|DP, Tree|
 |1338|[Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1338.java) | |Medium||
 |1337|[Remove Palindromic Subsequences](https://leetcode.com/problems/remove-palindromic-subsequences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1337.java) | |Easy|String|
 |1333|[Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1333.java) | |Medium||

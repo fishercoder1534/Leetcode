@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 1343. Maximum Product of Splitted Binary Tree
+ * 1339. Maximum Product of Splitted Binary Tree
  *
  * Given a binary tree root. Split the binary tree into two subtrees by removing 1 edge such that the product of the sums of the subtrees are maximized.
  * Since the answer may be too large, return it modulo 10^9 + 7.
@@ -33,7 +33,7 @@ import java.util.Set;
  * Each tree has at most 50000 nodes and at least 2 nodes.
  * Each node's value is between [1, 10000].
  * */
-public class _1343 {
+public class _1339 {
     public static class Solution1 {
         public int maxProduct(TreeNode root) {
             Set<Long> set = new HashSet<>();
