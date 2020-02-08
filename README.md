@@ -37,6 +37,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1271|[Hexspeak](https://leetcode.com/problems/hexspeak/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1271.java) |   |Easy||
 |1267|[Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1267.java) |   |Medium||
 |1266|[Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1266.java) |   |Easy||
+|1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse//)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1265.java) |   |Medium||
 |1261|[Find Elements in a Contaminated Binary Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1261.java) ||Medium|Tree, HashTable|
 |1260|[Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1260.java) | [:tv:](https://www.youtube.com/watch?v=9hBcARSiU0s)|Easy||
 |1252|[Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1252.java) |  |Easy||
