@@ -59,6 +59,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1176|[Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1176.java) | |Easy|Array, Sliding Window|
 |1175|[Prime Arrangements](https://leetcode.com/problems/prime-arrangements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1175.java) | |Easy||
 |1165|[Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1165.java) | |Easy||
+|1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1161.java) | |Medium|Graph|
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1160.java)| |Easy||
 |1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | |Easy||
 |1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1150.java)|[:tv:](https://youtu.be/-t2cdVs9cKk) |Easy||
