@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 1342. Reduce Array Size to The Half
+ * 1338. Reduce Array Size to The Half
  *
  * Given an array arr.  You can choose a set of integers and remove all the occurrences of these integers in the array.
  * Return the minimum size of the set so that at least half of the integers of the array are removed.
@@ -41,7 +41,7 @@ import java.util.Map;
  * arr.length is even.
  * 1 <= arr[i] <= 10^5
  * */
-public class _1342 {
+public class _1338 {
     public static class Solution1 {
         public int minSetSize(int[] arr) {
             Map<Integer, Integer> map = new HashMap<>();
