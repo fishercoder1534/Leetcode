@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1346|[Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1346.java) | |Easy|Array|
 |1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1345.java) | |Hard|BFS|
 |1344|[Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1344.java) | |Medium|Math|
 |1343|[Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1343.java) | |Medium|Array|
