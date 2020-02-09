@@ -46,6 +46,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1265|[Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse//)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1265.java) |   |Medium||
 |1261|[Find Elements in a Contaminated Binary Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1261.java) ||Medium|Tree, HashTable|
 |1260|[Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1260.java) | [:tv:](https://www.youtube.com/watch?v=9hBcARSiU0s)|Easy||
+|1258|[Synonymous Sentences](https://leetcode.com/problems/synonymous-sentences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1258.java) ||Medium|Backtracking|
 |1252|[Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1252.java) |  |Easy||
 |1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1237.java) | |Easy||
 |1243|[Array Transformation](https://leetcode.com/problems/array-transformation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1243.java) |  [:tv:](https://www.youtube.com/watch?v=MQ2i4T1l-Gs)|Easy||
