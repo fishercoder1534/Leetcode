@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1347|[Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1347.java) | |Easy|String|
 |1346|[Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1346.java) | |Easy|Array|
 |1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1345.java) | |Hard|BFS|
 |1344|[Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1344.java) | |Medium|Math|
