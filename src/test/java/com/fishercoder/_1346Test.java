@@ -30,7 +30,7 @@ public class _1346Test {
     @Test
     public void test3() {
         arr = new int[]{3, 1, 7, 11};
-        assertEquals(true, solution1.checkIfExist(arr));
+        assertEquals(false, solution1.checkIfExist(arr));
     }
 
 }
