@@ -22,6 +22,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1331|[Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1331.java) | |Easy||
 |1329|[Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1329.java) | |Medium||
 |1325|[Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1325.java) | |Medium|Tree|
+|1324|[Print Words Vertically](https://leetcode.com/problems/print-words-vertically/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1324.java) | |Medium|String|
 |1323|[Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1323.java) | |Easy|Math|
 |1317|[Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1317.java) | |Easy||
 |1315|[Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1315.java) | |Medium|Tree, DFS|
