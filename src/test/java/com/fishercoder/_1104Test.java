@@ -50,17 +50,13 @@ public class _1104Test {
     }
 
     @Test
-    @Ignore
     public void test6() {
-        //takes too long to finish, ignore to let build pass
         expected = Arrays.asList(1, 2, 6, 11, 24, 47, 97, 188, 390, 754, 1562, 3018, 6250, 12075, 25000, 48303, 100000);
         assertEquals(expected, solution1.pathInZigZagTree(100000));
     }
 
     @Test
-    @Ignore
     public void test7() {
-        //takes too long to finish, ignore to let build pass
         expected = Arrays.asList(1, 3, 5, 12, 23, 48, 94, 195, 377, 781, 1509, 3125, 6037, 12500, 24151, 50000, 96607, 200000);
         assertEquals(expected, solution1.pathInZigZagTree(200000));
     }
