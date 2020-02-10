@@ -1,10 +1,11 @@
 package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
+import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.common.utils.TreeUtils;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Deque;
 import java.util.LinkedList;
@@ -36,6 +37,7 @@ public class _1104 {
         /**This brute force solution is correct but results in TLE on LeetCode.*/
         public List<Integer> pathInZigZagTree(int label) {
             Deque<Integer> deque = buildZigZagOrderList(label);
+            CommonUtils.printDeque(deque);
             TreeNode root = buildZigZagOrderTree(deque);
             TreeUtils.printBinaryTree(root);
             return dfs(root, label, new ArrayList<>());
@@ -95,6 +97,57 @@ public class _1104 {
                 level++;
             } while (deque.getLast() < label);
             return deque;
+        }
+    }
+
+    public static class Solution2 {
+        /**We'll directly compute the index of its parent, it'll be much faster this way.*/
+        public List<Integer> pathInZigZagTree(int label) {
+            List<List<Integer>> lists = buildZigZagOrderList(label);
+            CommonUtils.printListList(lists);
+            List<Integer> result = new ArrayList<>();
+            int index = findIndex(lists.get(lists.size() - 1), label);
+            result.add(label);
+            for (int i = lists.size() - 2; i >= 0; i--) {
+                index /= 2;
+                result.add(lists.get(i).get(index));
+            }
+            Collections.sort(result);
+            return result;
+        }
+
+        private int findIndex(List<Integer> level, int label) {
+            for (int i = 0; i < level.size(); i++) {
+                if (level.get(i) == label) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        private List<List<Integer>> buildZigZagOrderList(int label) {
+            List<List<Integer>> lists = new ArrayList<>();
+            int num = 1;
+            int level = 2;
+            lists.add(Arrays.asList(num));
+            if (label == 1) {
+                return lists;
+            }
+            List<Integer> newLevel = new ArrayList<>();
+            do {
+                newLevel.clear();
+                num++;
+                for (; num < Math.pow(2, level); num++) {
+                    newLevel.add(num);
+                }
+                num--;
+                if (level % 2 == 0) {
+                    Collections.reverse(newLevel);
+                }
+                lists.add(new ArrayList<>(newLevel));
+                level++;
+            } while (newLevel.get(0) < label && newLevel.get(newLevel.size() - 1) < label);
+            return lists;
         }
     }
 }
