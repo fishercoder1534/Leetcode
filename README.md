@@ -84,6 +84,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1119|[Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1119.java) |  [:tv:](https://www.youtube.com/watch?v=6KCBrIWEauw)|Easy||
 |1118|[Number of Days in a Month](https://leetcode.com/problems/number-of-days-in-a-month/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1118.java) | |Easy||
 |1108|[Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1108.java) |  [:tv:](https://www.youtube.com/watch?v=FP0Na-pL0qk)|Easy||
+|1104|[Path In Zigzag Labelled Binary Tree](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1104.java) | |Medium|Math, Tree|
 |1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1103.java) | |Easy|Math|
 |1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1099.java) |  [:tv:](https://www.youtube.com/watch?v=2Uq7p7HE0TI)|Easy||
 |1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1089.java) | |Easy||
