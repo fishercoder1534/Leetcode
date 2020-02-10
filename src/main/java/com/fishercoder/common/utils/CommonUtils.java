@@ -4,6 +4,7 @@ import com.fishercoder.common.classes.Interval;
 import com.fishercoder.common.classes.ListNode;
 
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 import java.util.Random;
 
@@ -161,6 +162,20 @@ public class CommonUtils {
     public static <T> void printList(List<T> list) {
         int count = 0;
         for (T t : list) {
+            count++;
+            System.out.print(t);
+            if (count % 10 != 0) {
+                System.out.print("\t");
+            } else {
+                System.out.println();
+            }
+        }
+        System.out.println();
+    }
+
+    public static <T> void printDeque(Deque<T> deque) {
+        int count = 0;
+        for (T t : deque) {
             count++;
             System.out.print(t);
             if (count % 10 != 0) {
