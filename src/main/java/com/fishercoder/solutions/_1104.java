@@ -104,7 +104,6 @@ public class _1104 {
         /**We'll directly compute the index of its parent, it'll be much faster this way.*/
         public List<Integer> pathInZigZagTree(int label) {
             List<List<Integer>> lists = buildZigZagOrderList(label);
-            CommonUtils.printListList(lists);
             List<Integer> result = new ArrayList<>();
             int index = findIndex(lists.get(lists.size() - 1), label);
             result.add(label);
