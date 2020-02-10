@@ -12,11 +12,13 @@ import static org.junit.Assert.assertEquals;
 
 public class _1104Test {
     private static _1104.Solution1 solution1;
+    private static _1104.Solution2 solution2;
     private static List<Integer> expected;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _1104.Solution1();
+        solution2 = new _1104.Solution2();
     }
 
     @Test
@@ -79,6 +81,24 @@ public class _1104Test {
         //takes too long to finish, ignore to let build pass
         expected = Arrays.asList(1, 2, 7, 8, 30, 34, 122, 139, 488, 559, 1953, 2237, 7812, 8950, 31250, 35803, 125000, 143215, 500000);
         assertEquals(expected, solution1.pathInZigZagTree(500000));
+    }
+
+    @Test
+    public void test10() {
+        expected = Arrays.asList(1);
+        assertEquals(expected, solution1.pathInZigZagTree(1));
+    }
+
+    @Test
+    public void test11() {
+        expected = Arrays.asList(1, 3, 4, 14);
+        assertEquals(expected, solution2.pathInZigZagTree(14));
+    }
+
+    @Test
+    public void test12() {
+        expected = Arrays.asList(1);
+        assertEquals(expected, solution2.pathInZigZagTree(1));
     }
 
 }
