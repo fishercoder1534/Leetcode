@@ -44,6 +44,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1281|[Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1281.java) |   |Easy||
 |1277|[Count Square Submatrices with All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1277.java) |   |Medium||
 |1275|[Find Winner on a Tic Tac Toe Game](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1275.java) |   |Easy|Array|
+|1273|[Delete Tree Nodes](https://leetcode.com/problems/delete-tree-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1273.java) |   |Medium|Dynamic Programming, DFS |
 |1271|[Hexspeak](https://leetcode.com/problems/hexspeak/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1271.java) |   |Easy||
 |1267|[Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1267.java) |   |Medium||
 |1266|[Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1266.java) |   |Easy||
