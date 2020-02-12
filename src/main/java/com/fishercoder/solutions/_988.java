@@ -36,7 +36,7 @@ import java.util.Map;
 public class _988 {
     public static class Solution1 {
         public String smallestFromLeaf(TreeNode root) {
-            List<String> paths = new ArrayList<>();
+            final List<String> paths = new ArrayList<>();
             Map<Integer, Character> map = new HashMap<>();
             map.put(0, 'a');
             map.put(1, 'b');
