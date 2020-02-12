@@ -882,6 +882,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1341|[Movie Rating](https://leetcode.com/problems/movie-rating/)|[Solution](../master/database/_1341.sql) || Medium |
 |1327|[List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/)|[Solution](../master/database/_1327.sql) || Easy |
 |1322|[Ads Performance](https://leetcode.com/problems/ads-performance/)|[Solution](../master/database/_1322.sql) || Easy |
+|1308|[Running Total for Different Genders](https://leetcode.com/problems/running-total-for-different-genders/)|[Solution](../master/database/_1308.sql) || Medium |
 |1294|[Weather Type in Each Country](https://leetcode.com/problems/weather-type-in-each-country/)|[Solution](../master/database/_1294.sql) | | Easy |
 |1280|[Students and Examinations](https://leetcode.com/problems/students-and-examinations/)|[Solution](../master/database/_1280.sql) | [:tv:](https://www.youtube.com/watch?v=ThbkV4Fs7iE)| Easy |
 |1251|[Average Selling Price](https://leetcode.com/problems/average-selling-price/)|[Solution](../master/database/_1251.sql) | | Easy |
