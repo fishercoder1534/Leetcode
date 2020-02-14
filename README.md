@@ -130,6 +130,7 @@ _If you like this project, please leave me a star._ &#9733;
 |989|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_989.java) | |Easy| Array
 |988|[Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_988.java) | |Medium| Tree, DFS
 |987|[Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_987.java) | |Medium| Recursion
+|986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_986.java) | |Medium| Two Pointers
 |985|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_985.java) | |Easy| Array
 |979|[Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_979.java) | |Medium| Recursion
 |977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_977.java) | |Easy| Array
