@@ -179,6 +179,7 @@ _If you like this project, please leave me a star._ &#9733;
 |852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_852.java) |  |Easy|
 |849|[Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_849.java) | |Easy|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_844.java) | |Easy|
+|841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_841.java) |  |Easy|DFS, Graph
 |840|[Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_840.java) |  |Easy|
 |836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_836.java) | [:tv:](https://youtu.be/o6hHUk4DOW0) |Easy|
 |832|[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_832.java) |  |Easy|
