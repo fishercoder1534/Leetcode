@@ -31,7 +31,7 @@ public class _1100 {
             int count = 0;
             Set<Character> set = new HashSet<>();
             for (int i = 0; i <= S.length() - K; i++) {
-                String string = S.substring(i, i+K);
+                String string = S.substring(i, i + K);
                 boolean invalid = false;
                 for (char c : string.toCharArray()) {
                     if (!set.add(c)) {
