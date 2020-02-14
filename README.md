@@ -88,6 +88,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1108|[Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1108.java) |  [:tv:](https://www.youtube.com/watch?v=FP0Na-pL0qk)|Easy||
 |1104|[Path In Zigzag Labelled Binary Tree](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1104.java) | |Medium|Math, Tree|
 |1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1103.java) | |Easy|Math|
+|1100|[Find K-Length Substrings With No Repeated Characters](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1100.java) | |Medium|String, Sliding Window|
 |1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1099.java) |  [:tv:](https://www.youtube.com/watch?v=2Uq7p7HE0TI)|Easy||
 |1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1089.java) | |Easy||
 |1086|[High Five](https://leetcode.com/problems/high-five/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1086.java) | [:tv:](https://www.youtube.com/watch?v=3iqC5J4l0Cc)|Easy||
