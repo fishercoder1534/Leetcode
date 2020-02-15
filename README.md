@@ -177,6 +177,7 @@ _If you like this project, please leave me a star._ &#9733;
 |867|[Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_867.java) |  |Easy|
 |860|[Lemonade Change](https://leetcode.com/problems/lemonade-change/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_860.java) | |Easy|
 |859|[Buddy Strings](https://leetcode.com/problems/buddy-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_859.java) |  |Easy|
+|856|[Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_856.java) |  |Medium| Stack, String
 |852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_852.java) |  |Easy|
 |849|[Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_849.java) | |Easy|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_844.java) | |Easy|
