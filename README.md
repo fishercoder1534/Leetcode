@@ -894,6 +894,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1308|[Running Total for Different Genders](https://leetcode.com/problems/running-total-for-different-genders/)|[Solution](../master/database/_1308.sql) || Medium |
 |1303|[Find the Team Size](https://leetcode.com/problems/find-the-team-size/)|[Solution](../master/database/_1303.sql) || Easy |
 |1294|[Weather Type in Each Country](https://leetcode.com/problems/weather-type-in-each-country/)|[Solution](../master/database/_1294.sql) | | Easy |
+|1285|[Find the Start and End Number of Continuous Ranges](https://leetcode.com/problems/find-the-start-and-end-number-of-continuous-ranges/)|[Solution](../master/database/_1285.sql) || Medium |
 |1280|[Students and Examinations](https://leetcode.com/problems/students-and-examinations/)|[Solution](../master/database/_1280.sql) | [:tv:](https://www.youtube.com/watch?v=ThbkV4Fs7iE)| Easy |
 |1270|[All People Report to the Given Manager](https://leetcode.com/problems/all-people-report-to-the-given-manager/)|[Solution](../master/database/_1270.sql) || Medium |
 |1251|[Average Selling Price](https://leetcode.com/problems/average-selling-price/)|[Solution](../master/database/_1251.sql) | | Easy |
