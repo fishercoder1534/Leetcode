@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1353|[Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1353.java) | |Medium|Greedy, Sort, Segment Tree|
 |1352|[Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1352.java) | |Medium|Array, Design|
 |1351|[Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1351.java) | |Easy|Array, Binary Search|
 |1349|[Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1349.java) | |Hard|Dynamic Programming|
