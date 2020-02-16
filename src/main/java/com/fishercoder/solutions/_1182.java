@@ -76,10 +76,6 @@ public class _1182 {
                 }
                 map.get(colors[i]).add(i);
             }
-            for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
-                Collections.sort(entry.getValue());
-                entry.setValue(entry.getValue());
-            }
             return map;
         }
     }
