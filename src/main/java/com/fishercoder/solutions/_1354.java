@@ -46,7 +46,7 @@ public class _1354 {
          */
         public boolean isPossible(int[] target) {
             PriorityQueue<Long> pq = new PriorityQueue<>(Collections.reverseOrder());
-            long sum = 0l;
+            long sum = 0L;
             for (int v : target) {
                 sum += v;
                 pq.offer((long) v);
