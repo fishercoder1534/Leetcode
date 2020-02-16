@@ -72,6 +72,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1189|[Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1189.java) |[:tv:](https://youtu.be/LGgMZC0vj5s) |Easy||
 |1185|[Day of the Week](https://leetcode.com/problems/day-of-the-week/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1185.java) | |Easy||
 |1184|[Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1184.java) | [:tv:](https://www.youtube.com/watch?v=RFq7yA5iyhI)|Easy||
+|1182|[Shortest Distance to Target Color](https://leetcode.com/problems/shortest-distance-to-target-color/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1182.java) ||Medium|Binary Search|
 |1180|[Count Substrings with Only One Distinct Letter](https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1180.java) | |Easy|Math, String|
 |1176|[Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1176.java) | |Easy|Array, Sliding Window|
 |1175|[Prime Arrangements](https://leetcode.com/problems/prime-arrangements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1175.java) | |Easy||
