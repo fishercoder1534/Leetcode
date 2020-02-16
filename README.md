@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1351|[Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1351.java) | |Easy|Array, Binary Search|
 |1349|[Maximum Students Taking Exam](https://leetcode.com/problems/maximum-students-taking-exam/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1349.java) | |Hard|Dynamic Programming|
 |1348|[Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1348.java) | |Medium|Design|
 |1347|[Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1347.java) | |Easy|String|
