@@ -63,7 +63,7 @@ public class _1219 {
         }
 
         int[] directions = new int[]{0, 1, 0, -1, 0};
-        
+
         private int backtracking(int[][] grid, int[] start, int gold, boolean[][] visited) {
             int max = gold;
             for (int i = 0; i < directions.length - 1; i++) {
