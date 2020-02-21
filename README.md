@@ -105,6 +105,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1079|[Letter Tile Possibilities](https://leetcode.com/problems/letter-tile-possibilities/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1079.java)| |Medium||
 |1078|[Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1078.java) | |Easy||
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1071.java) |  |Easy||
+|1066|[Campus Bikes II](https://leetcode.com/problems/campus-bikes-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1066.java) | |Medium|Backtracking, DP|
 |1065|[Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1065.java) | |Medium||
 |1062|[Longest Repeating Substring](https://leetcode.com/problems/longest-repeating-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1062.java) | |Medium||
 |1057|[Campus Bikes](https://leetcode.com/problems/campus-bikes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1057.java) | |Medium||Greedy, Sort
