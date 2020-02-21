@@ -59,12 +59,10 @@ public class _1057 {
                 PriorityQueue<int[]> workerBikePairs = treeMap.get(dist);
                 while (!workerBikePairs.isEmpty()) {
                     int[] workerBikePair = workerBikePairs.poll();
-                    if (ans[workerBikePair[0]] == -1) {
-                        if (!assigned[workerBikePair[1]]) {
-                            assigned[workerBikePair[1]] = true;
-                            ans[workerBikePair[0]] = workerBikePair[1];
-                            workersHaveBikes++;
-                        }
+                    if (ans[workerBikePair[0]] == -1 && !assigned[workerBikePair[1]]) {
+                        assigned[workerBikePair[1]] = true;
+                        ans[workerBikePair[0]] = workerBikePair[1];
+                        workersHaveBikes++;
                     }
                 }
                 if (workersHaveBikes == w) {
