@@ -40,9 +40,11 @@ public class _1066 {
                 minSum = Math.min(minSum, currentSum);
                 return;
             }
+
             if (currentSum > minSum) {
                 return;
             }
+            
             for (int j = 0; j < bikes.length; j++) {
                 if (!bikesAssigned[j]) {
                     bikesAssigned[j] = true;
