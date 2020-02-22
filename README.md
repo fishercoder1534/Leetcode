@@ -42,6 +42,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1297|[Maximum Number of Occurrences of a Substring](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1297.java) | |Medium||
 |1296|[Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1296.java) | |Medium||
 |1295|[Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1295.java) | [:tv:](https://youtu.be/HRp8mNJvLZ0) |Easy||
+|1291|[Sequential Digits](https://leetcode.com/problems/sequential-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1291.java) |  |Medium||
 |1290|[Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1290.java) |  |Easy||
 |1287|[Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1287.java) | [:tv:](https://youtu.be/G74W8v2yVjY) |Easy||
 |1286|[Iterator for Combination](https://leetcode.com/problems/iterator-for-combination/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1286.java) | |Medium|Backtracking, Design|
