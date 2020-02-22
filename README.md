@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1357|[Apply Discount Every n Orders](https://leetcode.com/problems/apply-discount-every-n-orders/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1357.java) | |Medium|Design|
 |1356|[Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1356.java) | |Easy|Sort, Bit Manipulation|
 |1354|[Construct Target Array With Multiple Sums](https://leetcode.com/problems/construct-target-array-with-multiple-sums/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1354.java) | |Hard|Greedy|
 |1353|[Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1353.java) | |Medium|Greedy, Sort, Segment Tree|
