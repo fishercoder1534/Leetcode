@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1362|[Closest Divisors](https://leetcode.com/problems/closest-divisors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1362.java) | |Medium||Math
 |1361|[Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1361.java) | |Medium||Graph
 |1360|[Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1360.java) | |Easy||
 |1358|[Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1358.java) | |Medium|String|
