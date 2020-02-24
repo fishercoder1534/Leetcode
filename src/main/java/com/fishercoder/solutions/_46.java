@@ -27,24 +27,23 @@ public class _46 {
         public List<List<Integer>> permute(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             result.add(new ArrayList<>());
-            return backtracking(result, nums, 0);
+            return backtracking(nums, 0, result);
         }
 
-        private List<List<Integer>> backtracking(List<List<Integer>> result, int[] nums, int pos) {
-            if (pos == nums.length) {
+        private List<List<Integer>> backtracking(int[] nums, int index, List<List<Integer>> result) {
+            if (index == nums.length) {
                 return result;
             }
-            List<List<Integer>> newResult = new ArrayList();
+            List<List<Integer>> newResult = new ArrayList<>();
             for (List<Integer> eachList : result) {
                 for (int i = 0; i <= eachList.size(); i++) {
-                    //attn: i starts from 0
-                    List<Integer> newList = new ArrayList(eachList);
-                    newList.add(i, nums[pos]);
+                    List<Integer> newList = new ArrayList<>(eachList);
+                    newList.add(i, nums[index]);
                     newResult.add(newList);
                 }
             }
             result = newResult;
-            return backtracking(result, nums, pos + 1);
+            return backtracking(nums, index + 1, result);
         }
     }
 
