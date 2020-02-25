@@ -21,7 +21,7 @@ public class _282 {
 
     public static class Solution1 {
         public List<String> addOperators(String num, int target) {
-            List<String> res = new ArrayList<String>();
+            List<String> res = new ArrayList<>();
             StringBuilder sb = new StringBuilder();
             dfs(res, sb, num, 0, target, 0, 0);
             return res;
