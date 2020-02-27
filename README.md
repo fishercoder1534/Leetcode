@@ -174,6 +174,7 @@ _If you like this project, please leave me a star._ &#9733;
 |937|[Reorder Log Files](https://leetcode.com/problems/reorder-log-files/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_937.java) | |Easy|
 |935|[Knight Dialer](https://leetcode.com/problems/knight-dialer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_935.java) | |Medium|
 |933|[Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_933.java) | |Easy|
+|931|[Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_931.java) | |Medium|Dynamic Programming
 |929|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_929.java) | |Easy|
 |925|[Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_925.java) | |Easy|
 |922|[Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_922.java) |  |Easy|
