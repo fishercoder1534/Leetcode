@@ -104,7 +104,7 @@
 select i.invoice_id,
 c.customer_name,
 i.price,
-count(cont.contact_email) contacts_cnt,
+count(cont.contact_name) contacts_cnt,
 sum(
     if(cont.contact_name in (select distinct customer_name from customers), 1, 0)
 ) as trusted_contacts_cnt
