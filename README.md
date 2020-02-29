@@ -808,7 +808,7 @@ _If you like this project, please leave me a star._ &#9733;
 |101|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_101.java)| [:tv:](https://www.youtube.com/watch?v=F85boSPtfKg)|Easy| DFS
 |100|[Same Tree](https://leetcode.com/problems/same-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_100.java)|  [:tv:](https://www.youtube.com/watch?v=2Pe6e0KbgFI)|Easy| DFS
 |99|[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_99.java) |  |Hard |
-|98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_98.java) |  |Medium | DFS/Recursion
+|98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_98.java) | [:tv:](https://youtu.be/kR5AxWHa9nc) |Medium | DFS/Recursion
 |97|[Interleaving String](https://leetcode.com/problems/interleaving-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_97.java)|  |Hard| DP
 |96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_96.java) | |Medium | Recursion, DP
 |95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_95.java) |  |Medium | Recursion
