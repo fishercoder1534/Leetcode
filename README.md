@@ -9,6 +9,7 @@ _If you like this project, please leave me a star._ &#9733;
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
 |1367|[Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1367.java) | |Medium||DP, Linked List, Tree
+|1365|[How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1365.java) | |Easy||Array, HashTable
 |1362|[Closest Divisors](https://leetcode.com/problems/closest-divisors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1362.java) | |Medium||Math
 |1361|[Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1361.java) | |Medium||Graph
 |1360|[Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1360.java) | |Easy||
