@@ -6,6 +6,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * 144. Binary Tree Preorder Traversal
@@ -26,21 +27,14 @@ import java.util.List;
 public class _144 {
   public static class Solution1 {
     public List<Integer> preorderTraversal(TreeNode root) {
-      List<Integer> list = new ArrayList();
-      if (root == null) {
-        return list;
-      }
-      Deque<TreeNode> stack = new ArrayDeque<>();
+      List<Integer> list = new ArrayList<>();
+      Stack<TreeNode> stack = new Stack<>();
       stack.push(root);
       while (!stack.isEmpty()) {
         TreeNode curr = stack.pop();
-        list.add(curr.val);
-        /**We push right nodes onto the stack first, since they'll be popped out later than
-         * the left nodes, to meet the preorder: root -> left -> right. */
-        if (curr.right != null) {
+        if (curr != null) {
+          list.add(curr.val);
           stack.push(curr.right);
-        }
-        if (curr.left != null) {
           stack.push(curr.left);
         }
       }
