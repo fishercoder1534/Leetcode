@@ -14,6 +14,7 @@ import static org.junit.Assert.assertEquals;
 public class _144Test {
     private static _144.Solution1 solution1;
     private static _144.Solution2 solution2;
+    private static _144.Solution3 solution3;
     private static TreeNode root;
     private static List<Integer> inorder;
 
@@ -21,6 +22,7 @@ public class _144Test {
     public static void setup() {
         solution1 = new _144.Solution1();
         solution2 = new _144.Solution2();
+        solution3 = new _144.Solution3();
     }
 
     @Test
@@ -51,6 +53,22 @@ public class _144Test {
         TreeUtils.printBinaryTree(root);
         inorder = solution2.preorderTraversal(root);
         assertEquals(Arrays.asList(1, 2, 4, 7, 8, 9, 3, 5, 6), inorder);
+    }
+
+    @Test
+    public void test5() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, null, 5, null, null, 6));
+        TreeUtils.printBinaryTree(root);
+        inorder = solution1.preorderTraversal(root);
+        assertEquals(Arrays.asList(1, 2, 4, 6, 3, 5), inorder);
+    }
+
+    @Test
+    public void test6() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, null, 5, null, null, 6));
+        TreeUtils.printBinaryTree(root);
+        inorder = solution3.preorderTraversal(root);
+        assertEquals(Arrays.asList(1, 2, 4, 6, 3, 5), inorder);
     }
 
 }

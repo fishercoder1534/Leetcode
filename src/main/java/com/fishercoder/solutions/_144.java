@@ -58,4 +58,21 @@ public class _144 {
       return list;
     }
   }
+
+  public static class Solution3 {
+    public List<Integer> preorderTraversal(TreeNode root) {
+      List<Integer> list = new ArrayList<>();
+      Stack<TreeNode> stack = new Stack<>();
+      while (!stack.isEmpty() || root != null) {
+        while (root != null) {
+          list.add(root.val);
+          stack.push(root);
+          root = root.left;
+        }
+        root = stack.pop();
+        root = root.right;
+      }
+      return list;
+    }
+  }
 }
