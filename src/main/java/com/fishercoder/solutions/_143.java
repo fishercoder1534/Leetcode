@@ -14,7 +14,6 @@ import com.fishercoder.common.classes.ListNode;
  Given {1,2,3,4}, reorder it to {1,4,2,3}.
  */
 public class _143 {
-
     public static class Solution1 {
         public void reorderList(ListNode head) {
             if (head == null || head.next == null) {
