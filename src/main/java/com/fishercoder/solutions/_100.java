@@ -40,7 +40,6 @@ import com.fishercoder.common.classes.TreeNode;
  */
 
 public class _100 {
-
   public static class Solution1 {
     public boolean isSameTree(TreeNode p, TreeNode q) {
       if (p == null || q == null) {
