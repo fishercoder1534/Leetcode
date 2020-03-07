@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1371|[Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1371.java) | |Medium||String
 |1367|[Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1367.java) | |Medium||DP, Linked List, Tree
 |1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1366.java) | |Medium||Array, Sort
 |1365|[How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1365.java) | |Easy||Array, HashTable
