@@ -917,6 +917,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video         | Difficulty    | Tag          
 |-----|----------------|---------------|---------------|---------------|-------------
+|1369|[Get the Second Most Recent Activity](https://leetcode.com/problems/get-the-second-most-recent-activity/)|[Solution](../master/database/_1369.sql) || Hard |
 |1364|[Number of Trusted Contacts of a Customer](https://leetcode.com/problems/number-of-trusted-contacts-of-a-customer/)|[Solution](../master/database/_1364.sql) || Medium |
 |1355|[Activity Participants](https://leetcode.com/problems/activity-participants/)|[Solution](../master/database/_1355.sql) || Medium |
 |1350|[Students With Invalid Departments](https://leetcode.com/problems/students-with-invalid-departments/)|[Solution](../master/database/_1350.sql) || Easy |
