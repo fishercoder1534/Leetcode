@@ -8,18 +8,18 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
-|1376|[Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1376.java) | |Medium||DFS
-|1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1375.java) | |Medium||Array
-|1374|[Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1374.java) | |Easy||String
-|1373|[Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1373.java) | |Hard||DP, BST
-|1372|[Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1372.java) | |Hard||DP, Tree
-|1371|[Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1371.java) | |Medium||String
-|1370|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1370.java) | |Easy||String, Sort
-|1367|[Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1367.java) | |Medium||DP, Linked List, Tree
-|1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1366.java) | |Medium||Array, Sort
-|1365|[How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1365.java) | |Easy||Array, HashTable
-|1362|[Closest Divisors](https://leetcode.com/problems/closest-divisors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1362.java) | |Medium||Math
-|1361|[Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1361.java) | |Medium||Graph
+|1376|[Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1376.java) | |Medium|DFS|
+|1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1375.java) | |Medium|Array|
+|1374|[Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1374.java) | |Easy|String|
+|1373|[Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1373.java) | |Hard|DP, BST|
+|1372|[Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1372.java) | |Hard|DP, Tree|
+|1371|[Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1371.java) | |Medium|String|
+|1370|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1370.java) | |Easy|String, Sort|
+|1367|[Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1367.java) | |Medium|DP, Linked List, Tree|
+|1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1366.java) | |Medium|Array, Sort|
+|1365|[How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1365.java) | |Easy|Array, HashTable|
+|1362|[Closest Divisors](https://leetcode.com/problems/closest-divisors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1362.java) | |Medium|Math|
+|1361|[Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1361.java) | |Medium|Graph
 |1360|[Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1360.java) | |Easy||
 |1358|[Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1358.java) | |Medium|String|
 |1357|[Apply Discount Every n Orders](https://leetcode.com/problems/apply-discount-every-n-orders/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1357.java) | |Medium|Design|
