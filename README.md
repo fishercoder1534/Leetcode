@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1374|[Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1374.java) | |Easy||String
 |1373|[Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1373.java) | |Hard||DP, BST
 |1372|[Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1372.java) | |Hard||DP, Tree
 |1371|[Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1371.java) | |Medium||String
