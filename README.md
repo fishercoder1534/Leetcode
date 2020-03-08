@@ -9,6 +9,7 @@ _If you like this project, please leave me a star._ &#9733;
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
 |1373|[Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1373.java) | |Hard||DP, BST
+|1372|[Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1372.java) | |Hard||DP, Tree
 |1371|[Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1371.java) | |Medium||String
 |1370|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1370.java) | |Easy||String, Sort
 |1367|[Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1367.java) | |Medium||DP, Linked List, Tree
