@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1377|[Frog Position After T Seconds](https://leetcode.com/problems/frog-position-after-t-seconds/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1377.java) | |Hard|DFS|
 |1376|[Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1376.java) | |Medium|DFS|
 |1375|[Bulb Switcher III](https://leetcode.com/problems/bulb-switcher-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1375.java) | |Medium|Array|
 |1374|[Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1374.java) | |Easy|String|
