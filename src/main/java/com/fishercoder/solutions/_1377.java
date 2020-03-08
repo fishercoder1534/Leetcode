@@ -67,16 +67,16 @@ public class _1377 {
                 for (int i = queue.size(); i > 0; i--) {
                     int vertex = queue.poll();
                     int nextVerticesCount = 0;
-                    for (int v : graph[vertex]) {
-                        if (!visited[v]) {
+                    for (int next : graph[vertex]) {
+                        if (!visited[next]) {
                             nextVerticesCount++;
                         }
                     }
-                    for (int v : graph[vertex]) {
-                        if (!visited[v]) {
-                            visited[v] = true;
-                            queue.offer(v);
-                            probabilities[v] = probabilities[vertex] / nextVerticesCount;
+                    for (int next : graph[vertex]) {
+                        if (!visited[next]) {
+                            visited[next] = true;
+                            queue.offer(next);
+                            probabilities[next] = probabilities[vertex] / nextVerticesCount;
                         }
                     }
                     if (nextVerticesCount > 0) {
