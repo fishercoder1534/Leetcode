@@ -60,7 +60,7 @@ public class _1370 {
                         count[i]--;
                     }
                 }
-                for (int i = 25; i>= 0; i--) {
+                for (int i = 25; i >= 0; i--) {
                     if (count[i] > 0) {
                         char character = (char) (i + 'a');
                         sb.append(character);
