@@ -47,6 +47,7 @@ import java.util.Queue;
  * */
 public class _1377 {
     public static class Solution1 {
+        /**credit: https://leetcode.com/problems/frog-position-after-t-seconds/discuss/532505/Java-Straightforward-BFS-Clean-code-O(N)*/
         public double frogPosition(int n, int[][] edges, int t, int target) {
             List<Integer>[] graph = new ArrayList[n];
             for (int i = 0; i < n; i++) {
