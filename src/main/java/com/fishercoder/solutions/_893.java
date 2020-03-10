@@ -37,6 +37,7 @@ import java.util.stream.Collectors;
  * All A[i] consist of only lowercase letters.
  * */
 public class _893 {
+    
     public static class Solution1 {
         /**my original solution, a bit lengthy:
          * generate a unique signaure as key for each equivelant group and sum them up*/
