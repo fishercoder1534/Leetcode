@@ -8,7 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
-|1382|[Design a Stack With Increment Operation](https://leetcode.com/problems/balance-a-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1382.java) | |Medium|Binary Search Tree|
+|1382|[Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1382.java) | |Medium|Binary Search Tree|
 |1381|[Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1381.java) | |Medium|Stack, Design|
 |1380|[Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1380.java) | |Easy|Array|
 |1379|[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1379.java) | |Medium|Tree|
