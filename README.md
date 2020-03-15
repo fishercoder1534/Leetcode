@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1380|[Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1380.java) | |Easy|Array|
 |1379|[Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1379.java) | |Medium|Tree|
 |1377|[Frog Position After T Seconds](https://leetcode.com/problems/frog-position-after-t-seconds/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1377.java) | |Hard|DFS, BFS|
 |1376|[Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1376.java) | |Medium|DFS|
