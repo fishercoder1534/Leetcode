@@ -23,4 +23,11 @@ public class _1382Test {
         TreeUtils.printBinaryTree(solution1.balanceBST(root));
     }
 
+    @Test
+    public void test2() {
+        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(1, null, 2, null, 3, null, 4, null, 5, null, null));
+        TreeUtils.printBinaryTree(root);
+        TreeUtils.printBinaryTree(solution1.balanceBST(root));
+    }
+
 }
