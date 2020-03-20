@@ -14,27 +14,27 @@ import com.fishercoder.common.classes.TreeNode;
  * One possible answer is: [0,-3,9,-10,null,5], which represents the following height balanced BST:
  *
  *       0
- *      / \
- *    -3   9
- *    /   /
- *  -10  5
+ *     / \
+ *   -3   9
+ *   /   /
+ * -10  5
  */
 public class _108 {
 
-  public static class Solution1 {
-    public TreeNode sortedArrayToBST(int[] num) {
-      return dfs(num, 0, num.length - 1);
-    }
+    public static class Solution1 {
+        public TreeNode sortedArrayToBST(int[] num) {
+            return dfs(num, 0, num.length - 1);
+        }
 
-    public TreeNode dfs(int[] num, int start, int end) {
-      if (start > end) {
-        return null;
-      }
-      int mid = (end + start) / 2;
-      TreeNode root = new TreeNode(num[mid]);
-      root.left = dfs(num, start, mid - 1);
-      root.right = dfs(num, mid + 1, end);
-      return root;
+        public TreeNode dfs(int[] num, int start, int end) {
+            if (start > end) {
+                return null;
+            }
+            int mid = (end + start) / 2;
+            TreeNode root = new TreeNode(num[mid]);
+            root.left = dfs(num, start, mid - 1);
+            root.right = dfs(num, mid + 1, end);
+            return root;
+        }
     }
-  }
 }
