@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1386|[Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1386.java) | |Medium|Array, Greedy|
 |1385|[Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1385.java) | |Easy|Array|
 |1382|[Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1382.java) | |Medium|Binary Search Tree|
 |1381|[Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1381.java) | |Medium|Stack, Design|
