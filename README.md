@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1389|[Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1389.java) | |Easy|Array|
 |1388|[Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1388.java) | |Hard|DP|
 |1387|[Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1387.java) | |Medium|Sort, Graph|
 |1386|[Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1386.java) | |Medium|Array, Greedy|
