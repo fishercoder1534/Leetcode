@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1390|[Four Divisors](https://leetcode.com/problems/four-divisors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1390.java) | |Medium|Math|
 |1389|[Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1389.java) | |Easy|Array|
 |1388|[Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1388.java) | |Hard|DP|
 |1387|[Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1387.java) | |Medium|Sort, Graph|
