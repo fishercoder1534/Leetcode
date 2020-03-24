@@ -48,7 +48,9 @@ package com.fishercoder.solutions;
  But don't let that name scare you, I promise that the concept is surprisingly simple.
 
  Sieve of Eratosthenes: algorithm steps for primes below 121. "Sieve of Eratosthenes Animation" by SKopp is licensed under CC BY 2.0.
- We start off with a table of n numbers. Let's look at the first number, 2. We know all multiples of 2 must not be primes, so we mark them off as non-primes. Then we look at the next number, 3. Similarly, all multiples of 3 such as 3 × 2 = 6, 3 × 3 = 9, ... must not be primes, so we mark them off as well. Now we look at the next number, 4, which was already marked off.
+ We start off with a table of n numbers. Let's look at the first number, 2. We know all multiples of 2 must not be primes, so we mark 
+ them off as non-primes. Then we look at the next number, 3. Similarly, all multiples of 3 such as 3 × 2 = 6, 3 × 3 = 9, ... must not
+ be primes, so we mark them off as well. Now we look at the next number, 4, which was already marked off.
  What does this tell you? Should you mark off all multiples of 4 as well?
  4 is not a prime because it is divisible by 2, which means all multiples of 4 must also be divisible by 2 and were already marked off.
  So we can skip 4 immediately and go to the next number, 5.
