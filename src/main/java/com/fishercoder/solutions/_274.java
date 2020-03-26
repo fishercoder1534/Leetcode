@@ -13,7 +13,6 @@ import java.util.Arrays;
  Note: If there are several possible values for h, the maximum one is taken as the h-index.
 
  Hint:
-
  An easy approach is to sort the array first.
  What are the possible values of h-index?
  A faster approach is to use extra space.
