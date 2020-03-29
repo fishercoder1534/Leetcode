@@ -37,7 +37,7 @@ public class _299 {
                 }
             }
             int cows = 0;
-            for (int i = 0; i < 11; i++) {
+            for (int i = 0; i < 10; i++) {
                 cows += Math.min(secretCows[i], guessCows[i]);
             }
             return bulls + "A" + cows + "B";
