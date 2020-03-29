@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1395|[Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1395.java) | |Medium|Array|
 |1394|[Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1394.java) | |Easy|Array|
 |1392|[Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1392.java) | |Hard|String, Rolling Hash|
 |1390|[Four Divisors](https://leetcode.com/problems/four-divisors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1390.java) | |Medium|Math|
