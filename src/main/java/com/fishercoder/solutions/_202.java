@@ -15,7 +15,6 @@ import java.util.Set;
  * Those numbers for which this process ends in 1 are happy numbers.
  *
  * Example: 19 is a happy number
- *
  * 12 + 92 = 82
  * 82 + 22 = 68
  * 62 + 82 = 100
@@ -27,22 +26,27 @@ public class _202 {
             if (n == 1) {
                 return true;
             }
-            Set<Integer> set = new HashSet();
-            while (n != 1) {
-                String str = String.valueOf(n);
-                n = 0;
-                for (int i = 0; i < str.length(); i++) {
-                    int temp = Character.getNumericValue(str.charAt(i));
-                    n += temp * temp;
-                }
-                if (n == 1) {
-                    return true;
-                }
-                if (!set.add(n)) {
+            Set<Integer> seen = new HashSet();
+            seen.add(n);
+            int result = 0;
+            while (result != 1) {
+                result = getResult(n);
+                if (seen.contains(result)) {
                     return false;
                 }
+                seen.add(result);
+                n = result;
             }
-            return false;
+            return true;
+        }
+
+        private Integer getResult(int num) {
+            int result = 0;
+            while (num != 0) {
+                result += (num % 10) * (num % 10);
+                num /= 10;
+            }
+            return result;
         }
     }
 }
