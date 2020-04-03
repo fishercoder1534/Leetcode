@@ -25,6 +25,7 @@ import java.util.Map;
  */
 public class _677 {
     public static class Solution1 {
+
         public static class MapSum {
 
             Map<String, Integer> map;
