@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1401|[Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1401.java) | |Medium|Geometry|
 |1400|[Construct K Palindrome Strings](https://leetcode.com/problems/construct-k-palindrome-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1400.java) | |Medium|Greedy|
 |1399|[Count Largest Group](https://leetcode.com/problems/count-largest-group/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1399.java) | |Easy|Array|
 |1396|[Design Underground System](https://leetcode.com/problems/design-underground-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1396.java) | |Medium|Design|
