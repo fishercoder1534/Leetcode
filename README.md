@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1400|[Construct K Palindrome Strings](https://leetcode.com/problems/construct-k-palindrome-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1400.java) | |Medium|Greedy|
 |1396|[Design Underground System](https://leetcode.com/problems/design-underground-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1396.java) | |Medium|Design|
 |1395|[Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1395.java) | |Medium|Array|
 |1394|[Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1394.java) | |Easy|Array|
