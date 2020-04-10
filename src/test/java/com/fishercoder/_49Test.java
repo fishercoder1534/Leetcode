@@ -45,6 +45,9 @@ public class _49Test {
                 case 3:
                     assertTrue(CollectionUtils.isEqualCollection(e3, a));
                     break;
+                default:
+                    //Should not have come into this branch ever.
+                    assertTrue(false);
             }
         }
     }
