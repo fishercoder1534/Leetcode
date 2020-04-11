@@ -1,6 +1,5 @@
 package com.fishercoder;
 
-import com.fishercoder.common.classes.Point;
 import com.fishercoder.solutions._149;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -8,17 +7,21 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class _149Test {
-  private static _149.Solution1 solution1;
-  private static Point[] points;
+    private static _149.Solution1 solution1;
+    private static int[][] points;
 
-  @BeforeClass
-  public static void setup() {
-    solution1 = new _149.Solution1();
-  }
+    @BeforeClass
+    public static void setup() {
+        solution1 = new _149.Solution1();
+    }
 
-  @Test
-  public void test1() {
-    points = new Point[] {new Point(0, 0), new Point(1, 65536), new Point(65536, 0)};
-    assertEquals(2, solution1.maxPoints(points));
-  }
+    @Test
+    public void test1() {
+        points = new int[][]{
+                {1, 1},
+                {2, 2},
+                {3, 3}
+        };
+        assertEquals(3, solution1.maxPoints(points));
+    }
 }
