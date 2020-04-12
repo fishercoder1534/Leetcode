@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1409|[Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1409.java) | |Medium|Array|
 |1408|[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1408.java) | |Easy|String|
 |1403|[Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1403.java) | |Easy|Greedy, Sort|
 |1401|[Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1401.java) | |Medium|Geometry|
