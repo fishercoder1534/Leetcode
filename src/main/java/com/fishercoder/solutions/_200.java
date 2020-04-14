@@ -21,7 +21,6 @@ package com.fishercoder.solutions;
  00100
  00011
  Answer: 3
-
  */
 public class _200 {
 
