@@ -1,7 +1,6 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._238;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -16,10 +15,6 @@ public class _238Test {
     @BeforeClass
     public static void setup() {
         solution1 = new _238.Solution1();
-    }
-
-    @Before
-    public void setupForEachTest() {
         expected = new int[]{};
         actual = new int[]{};
     }
