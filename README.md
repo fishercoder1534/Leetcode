@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1413|[Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1413.java) | |Easy|Array|
 |1410|[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1410.java) | |Medium|String, Stack|
 |1409|[Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1409.java) | |Medium|Array|
 |1408|[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1408.java) | |Easy|String|
