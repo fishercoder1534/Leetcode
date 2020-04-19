@@ -9,6 +9,7 @@ _If you like this project, please leave me a star._ &#9733;
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
 |1419|[Reformat The String](https://leetcode.com/problems/reformat-the-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1419.java) | |Easy|String|
+|1418|[Display Table of Food Orders in a Restaurant](https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1418.java) | |Medium|HashTable|
 |1415|[The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1415.java) | |Medium|Backtracking|
 |1413|[Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1413.java) | |Easy|Array|
 |1410|[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1410.java) | |Medium|String, Stack|
