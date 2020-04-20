@@ -682,7 +682,7 @@ _If you like this project, please leave me a star._ &#9733;
 |281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_281.java)|  |Medium|
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_280.java)|  |Medium|
 |279|[Perfect Squares](https://leetcode.com/problems/perfect-squares/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_279.java)|  |Medium| 
-|278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_278.java)|  |Easy| Binary Search
+|278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_278.java)|[:tv:](https://youtu.be/E15djRphPj0)|Easy| Binary Search
 |277|[Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_277.java)|  |Medium| 
 |276|[Paint Fence](https://leetcode.com/problems/paint-fence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_276.java)|  |Easy| DP
 |275|[H-Index II](https://leetcode.com/problems/h-index-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_275.java)|  |Medium| Binary Search
