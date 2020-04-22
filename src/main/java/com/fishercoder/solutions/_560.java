@@ -18,7 +18,6 @@ import java.util.Map;
 public class _560 {
 
     public static class Solution1 {
-
         /**
          * credit: https://discuss.leetcode.com/topic/87850/java-solution-presum-hashmap
          * We know the key to solve this problem is SUM[i, j].
