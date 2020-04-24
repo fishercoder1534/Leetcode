@@ -61,7 +61,7 @@ public class _146 {
                 return cache.getOrDefault(key, -1);
             }
 
-            public void set(int key, int value) {
+            public void put(int key, int value) {
                 cache.put(key, value);
             }
         }
@@ -127,7 +127,7 @@ public class _146 {
                 }
             }
 
-            public void set(int key, int value) {
+            public void put(int key, int value) {
                 LRUCache.Node node = map.get(key);
                 if (node == null) {
                     node = new LRUCache.Node(key, value);
