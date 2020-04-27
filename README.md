@@ -201,7 +201,7 @@ _If you like this project, please leave me a star._ &#9733;
 |965|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_965.java) | |Easy| DFS, recursion|
 |961|[N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_961.java) | |Easy|
 |958|[Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_958.java) | |Medium|Tree
-|954|[Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_954.java) |  [:tv:](https://www.youtube.com/watch?v=y55NlhoOWe4)|Medium|
+|954|[Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_954.java) |  [:tv:](https://youtu.be/Q0WKzdpR74o)|Medium|
 |953|[Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_953.java)| |Easy|
 |951|[Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_951.java) | |Medium| Tree, DFS, recursion|
 |950|[Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_950.java) | |Medium|
