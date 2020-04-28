@@ -1,11 +1,5 @@
 package com.fishercoder.solutions;
 
-/**
- * 29. Divide Two Integers
- *
- * Divide two integers without using multiplication, division and mod operator.
- * If it is overflow, return MAX_INT.
- */
 public class _29 {
 
   public static class Solution1 {
