@@ -12,6 +12,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1436|[Destination City](https://leetcode.com/problems/destination-city/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1436.java) | |Easy|String|
 |1432|[Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1432.java) | |Medium|String|
 |1431|[Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1431.java) | |Easy|Array|
+|1428|[Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1428.java) | |Medium|Array|
 |1427|[Perform String Shifts](https://leetcode.com/problems/perform-string-shifts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1427.java) | |Easy|Array, Math|
 |1426|[Counting Elements](https://leetcode.com/problems/counting-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1426.java) | |Easy|Array|
 |1423|[Maximum Points You Can Obtain from Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1423.java) | |Medium|Array, DP, Sliding Window|
