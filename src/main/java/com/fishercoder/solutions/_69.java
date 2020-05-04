@@ -1,18 +1,13 @@
 package com.fishercoder.solutions;
 
-/**
- * 69. Sqrt(x)
- *
- * Implement int sqrt(int x).
- * Compute and return the square root of x.
- */
-
 public class _69 {
     public static class Solution1 {
-        /**A few key points:
+        /**
+         * A few key points:
          * 1. all variable use long type, otherwise overflow, just cast to int before returning
          * 2. left start from 0, not 1
-         * 3. right start from x/2 + 1, not from x*/
+         * 3. right start from x/2 + 1, not from x
+         */
         public int mySqrt(int x) {
             long left = 0;
             long right = x / 2 + 1;
