@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1448|[Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1448.java) | |Medium|Tree, DFS|
 |1447|[Simplified Fractions](https://leetcode.com/problems/simplified-fractions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1447.java) | |Medium|Math|
 |1446|[Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1446.java) | |Easy|String|
 |1441|[Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1441.java) | |Easy|Stack|
