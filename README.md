@@ -236,6 +236,7 @@ _If you like this project, please leave me a star._ &#9733;
 |914|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_914.java) |  |Easy|
 |912|[Sort an Array](https://leetcode.com/problems/sort-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_912.java) |  |Easy|
 |908|[Smallest Range I](https://leetcode.com/problems/smallest-range-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_908.java) |  |Easy|
+|901|[Online Stock Span](https://leetcode.com/problems/online-stock-span/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_901.java) |  |Medium| Stack
 |900|[RLE Iterator](https://leetcode.com/problems/rle-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_900.java) |  |Medium|
 |897|[Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_897.java) | |Easy| DFS, recursion
 |896|[Monotonic Array](https://leetcode.com/problems/monotonic-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_896.java) |  |Easy|
