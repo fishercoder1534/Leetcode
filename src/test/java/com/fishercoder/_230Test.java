@@ -12,14 +12,12 @@ import static org.junit.Assert.assertEquals;
  */
 public class _230Test {
     private static _230.Solution1 solution1;
-    private static _230.Solution2 solution2;
     private static TreeNode root;
     private static int k;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _230.Solution1();
-        solution2 = new _230.Solution2();
     }
 
     @Test
@@ -27,7 +25,6 @@ public class _230Test {
         root = new TreeNode(1);
         k = 1;
         assertEquals(1, solution1.kthSmallest(root, k));
-        assertEquals(1, solution2.kthSmallest(root, k));
     }
 
     @Test
@@ -36,6 +33,5 @@ public class _230Test {
         root.left = new TreeNode(1);
         k = 1;
         assertEquals(1, solution1.kthSmallest(root, k));
-        assertEquals(1, solution2.kthSmallest(root, k));
     }
 }
