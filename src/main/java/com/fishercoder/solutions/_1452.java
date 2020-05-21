@@ -16,8 +16,10 @@ public class _1452 {
             TreeMap<String, Integer> map = new TreeMap<>(new Comparator<String>() {
                 @Override
                 public int compare(String o1, String o2) {
-                    int diff_length = o1.length() - o2.length();
-                    if (diff_length != 0) return diff_length;
+                    int diffLength = o1.length() - o2.length();
+                    if (diffLength != 0) {
+                        return diffLength;
+                    }
                     return o1.compareTo(o2);
                 }
             });
