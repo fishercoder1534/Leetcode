@@ -1,11 +1,5 @@
 package com.fishercoder.solutions;
 
-/**
- * 275. H-Index II
- *
- * Follow up for H-Index: What if the citations array is sorted in ascending order?
- * Could you optimize your algorithm?
- */
 public class _275 {
     public static class Solution1 {
         public int hIndex(int[] citations) {
