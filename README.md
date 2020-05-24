@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1455|[Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1455.java) | |Easy|String|
 |1452|[People Whose List of Favorite Companies Is Not a Subset of Another List](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1452.java) | |Medium|String, Sort|
 |1451|[Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1451.java) | |Medium|String, Sort|
 |1450|[Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1450.java) | |Easy|Array|
