@@ -8,8 +8,6 @@ import static junit.framework.Assert.assertEquals;
 
 public class _207Test {
     private static _207.Solution1 test;
-    private static boolean actual;
-    private static boolean expected;
     private static int[][] prerequisites;
     private static int numCourses;
 
@@ -22,8 +20,24 @@ public class _207Test {
     public void test1() {
         numCourses = 2;
         prerequisites = new int[][]{{0, 1}};
-        expected = true;
-        actual = test.canFinish(numCourses, prerequisites);
-        assertEquals(expected, actual);
+        assertEquals(true, test.canFinish(numCourses, prerequisites));
+    }
+
+    @Test
+    public void test2() {
+        numCourses = 8;
+        prerequisites = new int[][]{
+                {3, 0},
+                {3, 1},
+                {5, 3},
+                {5, 2},
+                {6, 3},
+                {6, 1},
+                {7, 3},
+                {7, 4},
+                {4, 2},
+
+        };
+        assertEquals(true, test.canFinish(numCourses, prerequisites));
     }
 }
