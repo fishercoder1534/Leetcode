@@ -9,6 +9,7 @@ import static junit.framework.Assert.assertEquals;
 public class _207Test {
     private static _207.Solution1 solution1;
     private static _207.Solution2 solution2;
+    private static _207.Solution3 solution3;
     private static int[][] prerequisites;
     private static int numCourses;
 
@@ -16,6 +17,7 @@ public class _207Test {
     public static void setup() {
         solution1 = new _207.Solution1();
         solution2 = new _207.Solution2();
+        solution3 = new _207.Solution3();
     }
 
     @Test
@@ -24,6 +26,7 @@ public class _207Test {
         prerequisites = new int[][]{{0, 1}};
         assertEquals(true, solution1.canFinish(numCourses, prerequisites));
         assertEquals(true, solution2.canFinish(numCourses, prerequisites));
+        assertEquals(true, solution3.canFinish(numCourses, prerequisites));
     }
 
     @Test
@@ -43,6 +46,7 @@ public class _207Test {
         };
         assertEquals(true, solution1.canFinish(numCourses, prerequisites));
         assertEquals(true, solution2.canFinish(numCourses, prerequisites));
+        assertEquals(true, solution3.canFinish(numCourses, prerequisites));
     }
 
     @Test
@@ -62,5 +66,6 @@ public class _207Test {
         };
         assertEquals(true, solution1.canFinish(numCourses, prerequisites));
         assertEquals(true, solution2.canFinish(numCourses, prerequisites));
+        assertEquals(true, solution3.canFinish(numCourses, prerequisites));
     }
 }
