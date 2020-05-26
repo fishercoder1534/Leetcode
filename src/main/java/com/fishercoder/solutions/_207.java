@@ -1,8 +1,12 @@
 package com.fishercoder.solutions;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
@@ -82,6 +86,48 @@ public class _207 {
                     return false;
                 }
             }
+            return true;
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * DFS, the fastest method in all, with the help of a cache and also converted edges into adjacency list,
+         * although theoretically, all these three methods' time complexity is: O(V+E)
+         */
+        public boolean canFinish(int numCourses, int[][] prerequisites) {
+            List<List<Integer>> courseList = new ArrayList<>();
+            for (int i = 0; i < numCourses; i++) {
+                courseList.add(new ArrayList<>());
+            }
+            for (int[] pre : prerequisites) {
+                courseList.get(pre[1]).add(pre[0]);
+            }
+            int[] visited = new int[numCourses];
+            //visit each course using DFS
+            for (int i = 0; i < numCourses; i++) {
+                if (!dfs(i, courseList, visited)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private boolean dfs(int course, List<List<Integer>> courseList, int[] visited) {
+            visited[course] = 1;//mark as temporarily visited
+            List<Integer> coursesCanBeTaken = courseList.get(course);
+            for (int i = 0; i < coursesCanBeTaken.size(); i++) {
+                int courseToTake = coursesCanBeTaken.get(i);
+                if (visited[courseToTake] == 1) {
+                    return false;
+                }
+                if (visited[courseToTake] == 0) {
+                    if (!dfs(courseToTake, courseList, visited)) {
+                        return false;
+                    }
+                }
+            }
+            visited[course] = 2;//mark it as completely done.
             return true;
         }
     }
