@@ -6,11 +6,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
-/**285. Inorder Successor in BST
-
-Given a binary search tree and a node in it, find the in-order successor of that node in the BST.
-
-Note: If the given node has no in-order successor in the tree, return null. */
 public class _285 {
 
     public static class Solution1 {
