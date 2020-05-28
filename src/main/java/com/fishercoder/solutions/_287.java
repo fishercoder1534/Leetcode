@@ -37,7 +37,7 @@ public class _287 {
                 if (slow == fast) {
                     break;
                 }
-            }w
+            }
 
             while (true) {
                 slow = nums[slow];
