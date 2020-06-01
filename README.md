@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1460|[Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1460.java) | |Easy|Array|
 |1457|[Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1457.java) | |Medium|Bit Manipulation, Tree, DFS|
 |1456|[Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1456.java) | |Medium|String, Sliding Window|
 |1455|[Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1455.java) | |Easy|String|
