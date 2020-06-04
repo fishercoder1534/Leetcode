@@ -2,30 +2,11 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
 
-/**333. Largest BST Subtree
- *
- * Given a binary tree, find the largest subtree which is a Binary Search Tree (BST),
- * where largest means subtree with largest number of nodes in it.
-
- Note:
- A subtree must include all of its descendants.
- Here's an example:
-      10
-     / \
-    5  15
-   / \   \
-  1  8   7
-
- The Largest BST Subtree in this case is the highlighted one (5,1,8).
- The return value is the subtree's size, which is 3.
-
- Follow up:
- Can you figure out ways to solve it with O(n) time complexity?
- */
-
 public class _333 {
     public static class Solution1 {
-        /**credit: https://discuss.leetcode.com/topic/36995/share-my-o-n-java-code-with-brief-explanation-and-comments*/
+        /**
+         * credit: https://discuss.leetcode.com/topic/36995/share-my-o-n-java-code-with-brief-explanation-and-comments
+         */
         class Result {  // (size, rangeLower, rangeUpper) -- size of current tree, range of current tree [rangeLower, rangeUpper]
             int size;
             int lower;
