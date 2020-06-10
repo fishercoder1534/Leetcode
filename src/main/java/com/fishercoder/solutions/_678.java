@@ -26,6 +26,8 @@ import java.util.Stack;
  Input: "(*))"
  Output: True
 
+ Note:
+ The string size will be in the range [1, 100].
  */
 public class _678 {
     public static class Solution1 {

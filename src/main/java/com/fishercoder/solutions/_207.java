@@ -1,40 +1,17 @@
 package com.fishercoder.solutions;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 import java.util.Set;
 
-/**
- * 207. Course Schedule
- *
- * There are a total of n courses you have to take, labeled from 0 to n - 1.
- Some courses may have prerequisites, for example to take course 0 you have to first take course 1,
- which is expressed as a pair: [0,1]
- Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?
-
- For example:
- 2, [[1,0]]
- There are a total of 2 courses to take.
- To take course 1 you should have finished course 0. So it is possible.
-
- 2, [[1,0],[0,1]]
- There are a total of 2 courses to take.
- To take course 1 you should have finished course 0,
- and to take course 0 you should also have finished course 1. So it is impossible.
-
- Note:
- The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
- You may assume that there are no duplicate edges in the input prerequisites.
- click to show more hints.
-
- Hints:
- This problem is equivalent to finding if a cycle exists in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.
- Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
- Topological sort could also be done via BFS.
- */
 public class _207 {
 
     public static class Solution1 {
+        /**Kahn's algorithm for topological sorting*/
         public boolean canFinish(int numCourses, int[][] prerequisites) {
             int[] indegree = new int[numCourses];
             for (int[] prereq : prerequisites) {
@@ -69,6 +46,86 @@ public class _207 {
                     return false;
                 }
             }
+            return true;
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * BFS
+         */
+        public boolean canFinish(int numCourses, int[][] prerequisites) {
+            int[] indegree = new int[numCourses];
+            for (int[] pre : prerequisites) {
+                indegree[pre[0]]++;
+            }
+            Queue<Integer> queue = new LinkedList();
+            for (int i = 0; i < numCourses; i++) {
+                if (indegree[i] == 0) {
+                    queue.offer(i);
+                }
+            }
+            if (queue.isEmpty()) {
+                return false;
+            }
+            while (!queue.isEmpty()) {
+                int course = queue.poll();
+                for (int[] pre : prerequisites) {
+                    if (pre[1] == course) {
+                        indegree[pre[0]]--;
+                        if (indegree[pre[0]] == 0) {
+                            queue.offer(pre[0]);
+                        }
+                    }
+                }
+            }
+            for (int degree : indegree) {
+                if (degree != 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * DFS, the fastest method in all, with the help of a cache and also converted edges into adjacency list,
+         * although theoretically, all these three methods' time complexity is: O(V+E)
+         */
+        public boolean canFinish(int numCourses, int[][] prerequisites) {
+            List<List<Integer>> courseList = new ArrayList<>();
+            for (int i = 0; i < numCourses; i++) {
+                courseList.add(new ArrayList<>());
+            }
+            for (int[] pre : prerequisites) {
+                courseList.get(pre[1]).add(pre[0]);
+            }
+            int[] visited = new int[numCourses];
+            //visit each course using DFS
+            for (int i = 0; i < numCourses; i++) {
+                if (!dfs(i, courseList, visited)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private boolean dfs(int course, List<List<Integer>> courseList, int[] visited) {
+            visited[course] = 1;//mark as temporarily visited
+            List<Integer> coursesCanBeTaken = courseList.get(course);
+            for (int i = 0; i < coursesCanBeTaken.size(); i++) {
+                int courseToTake = coursesCanBeTaken.get(i);
+                if (visited[courseToTake] == 1) {
+                    return false;
+                }
+                if (visited[courseToTake] == 0) {
+                    if (!dfs(courseToTake, courseList, visited)) {
+                        return false;
+                    }
+                }
+            }
+            visited[course] = 2;//mark it as completely done.
             return true;
         }
     }

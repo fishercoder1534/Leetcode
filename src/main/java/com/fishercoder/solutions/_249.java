@@ -11,8 +11,8 @@ public class _249 {
     public static class Solution1 {
         public List<List<String>> groupStrings(String[] strings) {
 
-            List<List<String>> result = new ArrayList<List<String>>();
-            Map<String, List<String>> map = new HashMap<String, List<String>>();
+            List<List<String>> result = new ArrayList<>();
+            Map<String, List<String>> map = new HashMap<>();
 
             for (String word : strings) {
                 String key = "";

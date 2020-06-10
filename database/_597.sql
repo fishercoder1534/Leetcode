@@ -1,5 +1,3 @@
---597. Friend Requests I: Overall Acceptance Rate
-
 select
     round(
         ifnull(
