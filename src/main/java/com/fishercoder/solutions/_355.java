@@ -8,43 +8,6 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Set;
 
-/**
- * 355. Design Twitter
- *
- * Design a simplified version of Twitter where users can post tweets,
- * follow/unfollow another user and is able to see the 10 most recent tweets in the user's news feed. Your design should support the following methods:
- postTweet(userId, tweetId): Compose a new tweet.
- getNewsFeed(userId): Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
- follow(followerId, followeeId): Follower follows a followee.
- unfollow(followerId, followeeId): Follower unfollows a followee.
-
- Example:
-
- Twitter twitter = new Twitter();
-
- // User 1 posts a new tweet (userId = 5).
- twitter.postTweet(1, 5);
-
- // User 1's news feed should return a list with 1 tweet userId -> [5].
- twitter.getNewsFeed(1);
-
- // User 1 follows user 2.
- twitter.follow(1, 2);
-
- // User 2 posts a new tweet (userId = 6).
- twitter.postTweet(2, 6);
-
- // User 1's news feed should return a list with 2 tweet ids -> [6, 5].
- // Tweet userId 6 should precede tweet userId 5 because it is posted after tweet userId 5.
- twitter.getNewsFeed(1);
-
- // User 1 unfollows user 2.
- twitter.unfollow(1, 2);
-
- // User 1's news feed should return a list with 1 tweet userId -> [5],
- // since user 1 is no longer following user 2.
- twitter.getNewsFeed(1);
- */
 public class _355 {
 
     public static class Solution1 {
@@ -60,9 +23,12 @@ public class _355 {
                 public int time;
                 public int id;
                 public Tweet next;
-                /**have a pointer,
+
+                /**
+                 * have a pointer,
                  * so we could be more memory efficient when retrieving tweets,
-                 * think about merging k sorted lists*/
+                 * think about merging k sorted lists
+                 */
 
                 public Tweet(int id) {
                     this.id = id;
@@ -237,13 +203,17 @@ public class _355 {
                 }
             }
 
-            /** Initialize your data structure here. */
+            /**
+             * Initialize your data structure here.
+             */
             public Twitter() {
                 map = new HashMap<>();
                 timestamp = 0;
             }
 
-            /** Compose a new tweet. */
+            /**
+             * Compose a new tweet.
+             */
             public void postTweet(int userId, int tweetId) {
                 if (!map.containsKey(userId)) {
                     User user = new User(userId);
@@ -252,7 +222,9 @@ public class _355 {
                 map.get(userId).postTweet(tweetId);
             }
 
-            /** Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
+            /**
+             * Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
+             */
             public List<Integer> getNewsFeed(int userId) {
                 List<Integer> result = new LinkedList<>();
                 if (!map.containsKey(userId)) {
@@ -282,7 +254,9 @@ public class _355 {
                 return result;
             }
 
-            /** Follower follows a followee. If the operation is invalid, it should be a no-op. */
+            /**
+             * Follower follows a followee. If the operation is invalid, it should be a no-op.
+             */
             public void follow(int followerId, int followeeId) {
                 if (!map.containsKey(followerId)) {
                     map.put(followerId, new User(followerId));
@@ -293,7 +267,9 @@ public class _355 {
                 map.get(followerId).follow(followeeId);
             }
 
-            /** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
+            /**
+             * Follower unfollows a followee. If the operation is invalid, it should be a no-op.
+             */
             public void unfollow(int followerId, int followeeId) {
                 if (!map.containsKey(followerId) || followeeId == followerId) {
                     return;
