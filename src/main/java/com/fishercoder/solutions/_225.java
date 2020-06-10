@@ -1,53 +1,67 @@
-package com.fishercoder.solutions;
-
 import java.util.LinkedList;
 import java.util.Queue;
-/**
- * 225. Implement Stack using Queues
- *
- * Implement the following operations of a stack using queues.
 
- push(x) -- Push element x onto stack.
- pop() -- Removes the element on top of the stack.
- top() -- Get the top element.
- empty() -- Return whether the stack is empty.
-
- Notes:
- You must use only standard operations of a queue -- which means only push to back, peek/pop from front, size, and is empty operations are valid.
- Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.
- You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
- Update (2015-06-11):
- The class name of the Java function had been updated to MyStack instead of Stack.*/
-
-public class _225 {
-
-    public static class Solution1 {
-        class MyStack {
-
-            Queue<Integer> q = new LinkedList();
-
-            // Push element x onto stack.
-            public void push(int x) {
-                q.offer(x);
-                for (int i = 1; i < q.size(); i++) {
-                    q.offer(q.remove());
-                }
-            }
-
-            // Removes the element on top of the stack.
-            public void pop() {
-                q.poll();
-            }
-
-            // Get the top element.
-            public int top() {
-                return q.peek();
-            }
-
-            // Return whether the stack is empty.
-            public boolean empty() {
-                return q.isEmpty();
-            }
-        }
-    }
+public class MyStack {
+	public Queue<Integer> queue1;
+	public Queue<Integer> queue2;
+	public int flag;
+	public int size;
+	    public MyStack() {
+	        queue1=new LinkedList<Integer>();
+	        queue2=new LinkedList<Integer>();
+	        flag=1;
+	        size=0;
+	    }
+	    
+	    public void push(int x) {
+	        if(flag==1){
+	        	queue1.offer(x);
+	        }else{
+	        	queue2.offer(x);
+	        }
+	        size++;
+	    }
+	    
+	    public int pop() {
+	    	int value;
+	        if(flag==1){
+	        	while(queue1.size()>1){
+	        		queue2.offer(queue1.poll());
+	        	}
+	        	value=queue1.poll();
+	        	flag=2;
+	        }else{
+	        	while(queue2.size()>1){
+	        		queue1.offer(queue2.poll());
+	        	}
+	        	value=queue2.poll();
+	        	flag=1;
+	        }
+	        size--;
+	        return value;
+	    }
+	    
+	    public int top() {
+	    	if(flag==1){
+	        	while(queue1.size()>1){
+	        		queue2.offer(queue1.poll());
+	        	}
+	        	int value=queue1.poll();
+	        	queue2.offer(value);
+	        	flag=2;
+	        	return value;
+	        }else{
+	        	while(queue2.size()>1){
+	        		queue1.offer(queue2.poll());
+	        	}
+	        	int value=queue2.poll();
+	        	queue1.offer(value);
+	        	flag=1;
+	        	return value;
+	        }
+	    }
+	    
+	    public boolean empty() {
+	        return size==0?true:false;
+	    }
 }
