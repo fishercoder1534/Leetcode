@@ -4,28 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * 368. Largest Divisible Subset
- *
- * Given a set of distinct positive integers, find the largest subset such that every pair (Si, Sj) of elements in this subset satisfies: Si % Sj = 0 or Sj % Si = 0.
-
- If there are multiple solutions, return any subset is fine.
-
- Example 1:
-
- nums: [1,2,3]
-
- Result: [1,2] (of course, [1,3] will also be ok)
- Example 2:
-
- nums: [1,2,4,8]
-
- Result: [1,2,4,8]
- */
 public class _368 {
 
     public static class Solution1 {
-        /** Credit: https://discuss.leetcode.com/topic/49652/classic-dp-solution-similar-to-lis-o-n-2 */
+        /**
+         * Credit: https://discuss.leetcode.com/topic/49652/classic-dp-solution-similar-to-lis-o-n-2
+         */
         public List<Integer> largestDivisibleSubset(int[] nums) {
             int len = nums.length;
             int[] count = new int[len];
