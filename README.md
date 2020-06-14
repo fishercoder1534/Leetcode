@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|5453|[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_5453.java) | |Easy|Array|
 |1476|[Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1476.java) | |Medium|Array|
 |1475|[Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1475.java) | |Easy|Array|
 |1471|[The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1471.java) | |Medium|Array, Sort|
