@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class _5454 {
+public class _1481 {
     public static class Solution1 {
         public int findLeastNumOfUniqueInts(int[] arr, int k) {
             Map<Integer, Integer> unSortedMap = new HashMap<>();
