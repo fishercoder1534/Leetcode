@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1487|[Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1487.java) | |Medium|HashTable, String|
 |1486|[XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1486.java) | |Medium|Array, Bit Manipulation|
 |1481|[Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1481.java) | |Medium|Array, Sort|
 |1480|[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1480.java) | |Easy|Array|
