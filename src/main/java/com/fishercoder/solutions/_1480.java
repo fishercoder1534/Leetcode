@@ -1,6 +1,6 @@
 package com.fishercoder.solutions;
 
-public class _5453 {
+public class _1480 {
     public static class Solution1 {
         public int[] runningSum(int[] nums) {
             int sum = 0;
