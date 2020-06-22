@@ -1,29 +1,30 @@
 package com.fishercoder.solutions;
 
-import java.util.PriorityQueue;
+import java.util.LinkedList;
 
 public class _239 {
 
     public static class Solution1 {
-        public int[] maxSlidingWindow(int[] nums, int k) {
-            if (nums == null || nums.length == 0 || k == 0) {
-                return new int[0];
-            }
-            PriorityQueue<Integer> heap = new PriorityQueue<>((a, b) -> b - a);
-            int[] res = new int[nums.length - k + 1];
-            for (int i = 0; i < nums.length; i++) {
-                if (i < k) {
-                    heap.offer(nums[i]);
-                    if (i == k - 1) {
-                        res[0] = heap.peek();
-                    }
-                } else {
-                    heap.remove(nums[i - k]);
-                    heap.offer(nums[i]);
-                    res[i - k + 1] = heap.peek();
-                }
-            }
-            return res;
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        int n = nums.length;
+        if (n == 0) {
+            return nums;
         }
+        int[] result = new int[n - k + 1];
+        LinkedList<Integer> dq = new LinkedList<>();
+        for (int i = 0; i < n; i++) {
+            if (!dq.isEmpty() && dq.peek() < i - k + 1) {
+                dq.poll();
+            }
+            while (!dq.isEmpty() && nums[i] >= nums[dq.peekLast()]) {
+                dq.pollLast();
+            }
+            dq.offer(i);
+            if (i - k + 1 >= 0) {
+                result[i - k + 1] = nums[dq.peek()];
+            }
+        }
+        return result;
     }
+  }
 }
