@@ -6,36 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 377. Combination Sum IV
- *
- * Given an integer array with all positive numbers and no duplicates,
- * find the number of possible combinations that add up to a positive integer target.
-
- Example:
-
- nums = [1, 2, 3]
- target = 4
-
- The possible combination ways are:
- (1, 1, 1, 1)
- (1, 1, 2)
- (1, 2, 1)
- (1, 3)
- (2, 1, 1)
- (2, 2)
- (3, 1)
-
- Note that different sequences are counted as different combinations.
-
- Therefore the output is 7.
-
- Follow up:
- What if negative numbers are allowed in the given array?
- How does it change the problem?
- What limitation we need to add to the question to allow negative numbers?
- */
-
 public class _377 {
 
     public static class Solution1 {
@@ -94,16 +64,16 @@ public class _377 {
         /**
          * Time: O(n^2)
          * Space: O(n)
-         *
+         * <p>
          * Since this question doesn't require to return all the combination result, instead, it just wants one number, we could use DP
          * the idea is similar to Climbing Stairs.
-         *
+         * <p>
          * The idea is very clear as the code speaks for itself:
          * It's easy to find the routine
          * dp[0] = 0;
          * dp[1] = 1;
          * ...
-         *
+         * <p>
          * Reference: https://discuss.leetcode.com/topic/52186/my-3ms-java-dp-solution
          */
         public int combinationSum4(int[] nums, int target) {
@@ -128,7 +98,7 @@ public class _377 {
         /**
          * Time: O(n)
          * Space: O(n)
-         *
+         * <p>
          * Reference: https://discuss.leetcode.com/topic/52255/java-recursion-solution-using-hashmap-as-memory
          */
         public static Map<Integer, Integer> map = new HashMap<>();//need to remove public static before submitting on Leetcode as it doesn't reset static variables
