@@ -1,10 +1,30 @@
 package com.fishercoder.solutions;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class _139 {
 
     public static class Solution1 {
+        public boolean wordBreak(String s, List<String> wordDict) {
+            return wordBreak(s, new HashSet(wordDict), 0);
+        }
+
+        public boolean wordBreak(String s, Set<String> wordDict, int start) {
+            if (start == s.length()) {
+                return true;
+            }
+            for (int end = start + 1; end <= s.length(); end++) {
+                if (wordDict.contains(s.substring(start, end)) && wordBreak(s, wordDict, end)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+
+    public static class Solution2 {
         /**
          * this beats 70.46% submission.
          */
@@ -24,7 +44,7 @@ public class _139 {
         }
     }
 
-    public static class Solution2 {
+    public static class Solution3 {
         /**
          * Added pruning.
          * this beats 89.91% submissions.
@@ -53,7 +73,7 @@ public class _139 {
         }
     }
 
-    public static class Solution3 {
+    public static class Solution4 {
         /**
          * Added pruning, plus start from the end to check.
          * This beats 95.20% submissions.
