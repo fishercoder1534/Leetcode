@@ -981,6 +981,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video         | Difficulty    | Tag          
 |-----|----------------|---------------|---------------|---------------|-------------
+|1495|[Friendly Movies Streamed Last Month](https://leetcode.com/problems/friendly-movies-streamed-last-month/)|[Solution](../master/database/_1495.sql) || Easy |
 |1407|[Top Travellers](https://leetcode.com/problems/top-travellers/)|[Solution](../master/database/_1407.sql) || Easy |
 |1384|[Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/)|[Solution](../master/database/_1384.sql) || Hard |
 |1378|[Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/)|[Solution](../master/database/_1378.sql) || Easy |
