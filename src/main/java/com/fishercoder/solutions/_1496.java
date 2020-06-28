@@ -50,11 +50,14 @@ public class _1496 {
 
             @Override
             public boolean equals(Object o) {
-                if (this == o) return true;
-                if (o == null || getClass() != o.getClass()) return false;
+                if (this == o) {
+                    return true;
+                }
+                if (o == null || getClass() != o.getClass()) {
+                    return false;
+                }
                 Coord coord = (Coord) o;
-                return x == coord.x &&
-                        y == coord.y;
+                return x == coord.x && y == coord.y;
             }
 
             @Override
