@@ -21,6 +21,13 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static void printArray(boolean[] booleans) {
+        for (boolean i : booleans) {
+            System.out.print(i + ", ");
+        }
+        System.out.println();
+    }
+
     public static void main(String... strings) {
         Integer[] nums = new Integer[]{1, 2, 3, 4, 5};
         printArray_generic_type(nums);
