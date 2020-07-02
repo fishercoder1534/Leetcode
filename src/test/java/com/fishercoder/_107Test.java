@@ -22,7 +22,7 @@ public class _107Test {
     public void test1() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(3, 9, 20, null, null, 15, 7));
         TreeUtils.printBinaryTree(root);
-        CommonUtils.printListList(solution1.levelOrder(root));
+        CommonUtils.printListList(solution1.levelOrderBottom(root));
     }
 
 }

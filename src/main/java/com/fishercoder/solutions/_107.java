@@ -10,7 +10,7 @@ import java.util.Queue;
 
 public class _107 {
     public static class Solution1 {
-        public List<List<Integer>> levelOrder(TreeNode root) {
+        public List<List<Integer>> levelOrderBottom(TreeNode root) {
             List<List<Integer>> result = new ArrayList();
             if (root == null) {
                 return result;
