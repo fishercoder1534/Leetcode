@@ -33,4 +33,10 @@ public class _957Test {
         assertArrayEquals(new int[]{0, 0, 1, 0, 0, 1, 1, 0}, solution1.prisonAfterNDays(cells, 99));
     }
 
+    @Test
+    public void test4() {
+        cells = new int[]{0, 1, 1, 1, 1, 1, 1, 0};
+        assertArrayEquals(new int[]{0, 0, 1, 1, 1, 1, 0, 0}, solution1.prisonAfterNDays(cells, 99));
+    }
+
 }
