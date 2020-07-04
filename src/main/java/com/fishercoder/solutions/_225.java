@@ -8,7 +8,11 @@ public class _225 {
     public static class Solution1 {
         class MyStack {
 
-            Queue<Integer> q = new LinkedList();
+            Queue<Integer> q;
+
+            public MyStack() {
+                q = new LinkedList();
+            }
 
             // Push element x onto stack.
             public void push(int x) {
@@ -19,8 +23,8 @@ public class _225 {
             }
 
             // Removes the element on top of the stack.
-            public void pop() {
-                q.poll();
+            public int pop() {
+                return q.poll();
             }
 
             // Get the top element.
