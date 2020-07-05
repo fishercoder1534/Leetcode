@@ -15,11 +15,11 @@ _If you like this project, please leave me a star._ &#9733;
 |1487|[Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1487.java) | |Medium|HashTable, String|
 |1486|[XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1486.java) | |Medium|Array, Bit Manipulation|
 |1481|[Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1481.java) | |Medium|Array, Sort|
-|1480|[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1480.java) | |Easy|Array|
+|1480|[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1480.java), [C++](../master/cpp/_1480.cpp)| |Easy|Array|
 |1476|[Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1476.java) | |Medium|Array|
 |1475|[Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1475.java) | |Easy|Array|
 |1471|[The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1471.java) | |Medium|Array, Sort|
-|1470|[Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1470.java) | |Easy|Array|
+|1470|[Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1470.java), [C++](../master/cpp/_1470.cpp) | |Easy|Array|
 |1466|[Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1466.java) | |Medium|Tree, DFS|
 |1464|[Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1464.java) | |Easy|Array|
 |1460|[Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1460.java) | |Easy|Array|
@@ -36,7 +36,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1437|[Check If All 1's Are at Least Length K Places Away](https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1437.java) | |Medium|Array|
 |1436|[Destination City](https://leetcode.com/problems/destination-city/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1436.java) | |Easy|String|
 |1432|[Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1432.java) | |Medium|String|
-|1431|[Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1431.java) | |Easy|Array|
+|1431|[Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1431.java), [C++](../master/cpp/_1431.cpp) | |Easy|Array|
 |1428|[Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1428.java) | |Medium|Array|
 |1427|[Perform String Shifts](https://leetcode.com/problems/perform-string-shifts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1427.java) | |Easy|Array, Math|
 |1426|[Counting Elements](https://leetcode.com/problems/counting-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1426.java) | |Easy|Array|
