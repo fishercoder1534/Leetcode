@@ -3,26 +3,15 @@ package com.fishercoder.solutions;
 public class _208 {
     public static class Solution1 {
         public static class TrieNode {
-
-            char val;
             boolean isWord;
             TrieNode[] children = new TrieNode[26];
-
-            // Initialize your data structure here.
-            public TrieNode() {
-            }
-
-            public TrieNode(char c) {
-                this.val = c;
-            }
         }
 
         public static class Trie {
             private TrieNode root;
 
             public Trie() {
-                root = new TrieNode();
-                root.val = ' ';//initialize root to be an empty char, this is a common practice as how Wiki defines Trie data structure as well
+                root = new TrieNode();//initialize root to be an empty char, this is a common practice as how Wiki defines Trie data structure as well
             }
 
             // Inserts a word into the trie.
@@ -30,7 +19,7 @@ public class _208 {
                 TrieNode node = root;
                 for (int i = 0; i < word.length(); i++) {
                     if (node.children[word.charAt(i) - 'a'] == null) {
-                        node.children[word.charAt(i) - 'a'] = new TrieNode(word.charAt(i));
+                        node.children[word.charAt(i) - 'a'] = new TrieNode();
                     }
                     node = node.children[word.charAt(i) - 'a'];
                 }
