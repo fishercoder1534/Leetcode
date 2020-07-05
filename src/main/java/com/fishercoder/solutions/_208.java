@@ -2,7 +2,7 @@ package com.fishercoder.solutions;
 
 public class _208 {
     public static class Solution1 {
-        class TrieNode {
+        public static class TrieNode {
 
             char val;
             boolean isWord;
@@ -17,7 +17,7 @@ public class _208 {
             }
         }
 
-        public class Trie {
+        public static class Trie {
             private TrieNode root;
 
             public Trie() {
