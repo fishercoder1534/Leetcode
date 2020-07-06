@@ -543,7 +543,7 @@ _If you like this project, please leave me a star._ &#9733;
 |464|[Can I Win](https://leetcode.com/problems/can-i-win/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_464.java)| |Medium| DP
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_463.java)|  |Easy| 
 |462|[Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_462.java) || Medium|
-|461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_461.java) | |Easy|
+|461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_461.java), [C++](../master/cpp/_461.cpp) | |Easy|
 |460|[LFU Cache](https://leetcode.com/problems/lfu-cache/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_460.java) | | Hard| Design, LinkedHashMap, HashMap
 |459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_459.java)|  |Easy| String, KMP
 |458|[Poor Pigs](https://leetcode.com/problems/poor-pigs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_458.java) | |Easy| Math
