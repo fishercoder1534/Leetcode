@@ -1,42 +1,15 @@
 package com.fishercoder.solutions;
 
-/**
- * 410. Split Array Largest Sum
- *
- * Given an array which consists of non-negative integers and an integer m,
- * you can split the array into m non-empty continuous subarrays.
- * Write an algorithm to minimize the largest sum among these m subarrays.
-
- Note:
- If n is the length of array, assume the following constraints are satisfied:
-
- 1 ≤ n ≤ 1000
- 1 ≤ m ≤ min(50, n)
-
- Examples:
-
- Input:
- nums = [7,2,5,10,8]
- m = 2
-
- Output:
- 18
-
- Explanation:
- There are four ways to split nums into two subarrays.
- The best way is to split it into [7,2,5] and [10,8],
- where the largest sum among the two subarrays is only 18.
- */
 public class _410 {
 
     public static class Solution1 {
         /**
          * credit: https://discuss.leetcode.com/topic/61324/clear-explanation-8ms-binary-search-java
-         *
+         * <p>
          * The answer is between maximum value of input array numbers and sum of those numbers. Use
          * binary search to approach the correct answer. We have l = max number of array; r = sum of all
          * numbers in the array; Every time we do mid = (l + r) / 2;
-         *
+         * <p>
          * Use greedy to narrow down left and right boundaries in binary search. 3.1 Cut the array from
          * left. 3.2 Try our best to make sure that the sum of numbers between each two cuts (inclusive)
          * is large enough but still less than mid. 3.3 We'll end up with two results: either we can
