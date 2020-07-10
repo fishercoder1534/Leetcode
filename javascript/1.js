@@ -1,3 +1,5 @@
+// Two sum
+
 var twoSum = function(nums, target) {
     var sum = {}
     for( var i = 0 ; i < nums.length ; i++){
