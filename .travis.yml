@@ -7,7 +7,7 @@ before_script:
 - chmod a+x gradlew
 
 node_js: "v13.7.0"
-install: "npm install"
+install: "npm install && npm install standard --global"
 
 script: ./gradlew clean build
 
