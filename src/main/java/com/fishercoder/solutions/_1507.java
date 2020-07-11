@@ -54,6 +54,8 @@ public class _1507 {
                 case "Dec":
                     result = "12";
                     break;
+                default:
+                    result = "";
             }
             return result;
         }
