@@ -9,7 +9,7 @@ before_script:
 node_js: "v13.7.0"
 install: "npm install && npm install standard --global"
 
-script: ./gradlew clean build && standard javascript/* 
+script: ./gradlew clean build && standard javascript/*
 
 notifications:
   email:
