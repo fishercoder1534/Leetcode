@@ -1088,6 +1088,6 @@ Your ideas/fixes/algorithms are more than welcome!
 1. Install Intellij on your machine, either CE or UE.
 2. git clone this repo to your local disk
 3. import this project as a new project (does need to be imported as a gradle project)
-4. If you run into "Could not determine Java version using executable ..." error, use local gradle distribution: "/usr/local/Cellar/gradle/4.8.1/libexec/" instead of the default one. More details, see [Stackoverflow](https://stackoverflow.com/questions/52195643/cannot-find-symbol-intellij-gradle/52196069#52196069).
+4. If you run into "Could not determine Java version using executable ..." error, use local gradle distribution: "/usr/local/Cellar/gradle/4.8.1/libexec/" instead of the default one. More details, see [this question on Stackoverflow](https://stackoverflow.com/questions/52195643/cannot-find-symbol-intellij-gradle/52196069#52196069).
 
 
