@@ -6,6 +6,9 @@ jdk:
 before_script:
 - chmod a+x gradlew
 
+node_js: "v13.7.0"
+install: "npm install"
+
 script: ./gradlew clean build
 
 notifications:
