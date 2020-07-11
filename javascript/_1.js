@@ -3,7 +3,7 @@
 var twoSum = function (nums, target) {
   var sum = {}
   for (var i = 0; i < nums.length; i++) {
-    if (!sum.hasOwnProperty(target - nums[i])) {
+    if (!Object.prototype.hasOwnProperty.call(sum, (target - nums[i]))) {
       sum[nums[i]] = i
     } else {
       return [i, sum[target - nums[i]]]
