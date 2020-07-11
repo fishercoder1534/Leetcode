@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1508|[Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1508.java) | |Medium|Array, Sort|
 |1507|[Reformat Date](https://leetcode.com/problems/reformat-date/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1507.java) | |Easy|String|
 |1502|[Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1502.java) | |Easy|Array, Sort|
 |1496|[Path Crossing](https://leetcode.com/problems/path-crossing/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1496.java) | |Easy|String|
