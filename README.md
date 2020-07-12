@@ -521,7 +521,7 @@ _If you like this project, please leave me a star._ &#9733;
 |488|[Zuma Game](https://leetcode.com/problems/zuma-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_488.java) |  |Hard | DFS, Backtracking
 |487|[Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_487.java) |  |Medium| Array
 |486|[Predict the Winner](https://leetcode.com/problems/predict-the-winner/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_486.java) | | Medium | DP
-|485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_485.java) | |Easy| Array
+|485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Java](../master/src/main/java/com/fishercoder/solutions/_485.java) [Javascript](../master/javascript/_485.js)| |Easy| Array
 |484|[Find Permutation](https://leetcode.com/problems/find-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_484.java) |  |Medium | Array, String, Greedy
 |483|[Smallest Good Base](https://leetcode.com/problems/smallest-good-base/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_483.java) |  |Hard | Binary Search, Math
 |482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_482.java) | |Medium| 
@@ -979,7 +979,7 @@ _If you like this project, please leave me a star._ &#9733;
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_4.java) | |Hard | Divide and Conquer
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_3.java) |  |Medium | HashMap, Sliding Window
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_2.java) | |Medium | LinkedList
-|1|[Two Sum](https://leetcode.com/problems/two-sum/)|[Java](../master/src/main/java/com/fishercoder/solutions/_1.java), [C++](../master/cpp/_1.cpp), [javascript](../master/javascript/_1.js)|[:tv:](https://www.youtube.com/watch?v=kPXOr6pW8KM&t=)|Easy| HashMap 
+|1|[Two Sum](https://leetcode.com/problems/two-sum/)|[Java](../master/src/main/java/com/fishercoder/solutions/_1.java), [C++](../master/cpp/_1.cpp), [Javascript](../master/javascript/_1.js)|[:tv:](https://www.youtube.com/watch?v=kPXOr6pW8KM&t=)|Easy| HashMap 
 
 ## Database
 
