@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1514|[Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1514.java) | |Medium|Graph|
 |1512|[Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1512.java) | |Easy|Array, HashTable, Math|
 |1508|[Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1508.java) | |Medium|Array, Sort|
 |1507|[Reformat Date](https://leetcode.com/problems/reformat-date/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1507.java) | |Easy|String|
