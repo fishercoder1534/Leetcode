@@ -255,6 +255,13 @@ public class CommonUtils {
     }
 
     public static int[][] convertLeetCodeArrayInputIntoJavaArray(String input) {
+        /**
+         * LeetCode 2-d array input usually comes like this:
+         * [[448,931],[234,889],[214,962],[576,746]]
+         * The expected input for this method is: "[448,931],[234,889],[214,962],[576,746]"
+         * i.e. strip off the beginning and ending square brackets, that's it.
+         * The output of this method will be a standard Java 2-d array.
+         * */
         String[] arrays = input.split("],\\[");
 //        CommonUtils.printArray_generic_type(arrays);
         int size = arrays[1].split(",").length;
