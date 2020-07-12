@@ -253,4 +253,33 @@ public class CommonUtils {
         }
         System.out.println();
     }
+
+    public static int[][] convertLeetCodeArrayInputIntoJavaArray(String input) {
+        String[] arrays = input.split("],\\[");
+//        CommonUtils.printArray_generic_type(arrays);
+        int size = arrays[1].split(",").length;
+        int[][] output = new int[arrays.length][size];
+        for (int i = 0; i < arrays.length; i++) {
+            if (i == 0) {
+                String str = arrays[i].substring(1);
+                String[] nums = str.split(",");
+                for (int j = 0; j < nums.length; j++) {
+                    output[i][j] = Integer.parseInt(nums[j]);
+                }
+            } else if (i == arrays.length - 1) {
+                String str = arrays[i].substring(0, arrays[i].length() - 1);
+                String[] nums = str.split(",");
+                for (int j = 0; j < nums.length; j++) {
+                    output[i][j] = Integer.parseInt(nums[j]);
+                }
+            } else {
+                String[] nums = arrays[i].split(",");
+                for (int j = 0; j < nums.length; j++) {
+                    output[i][j] = Integer.parseInt(nums[j]);
+                }
+            }
+        }
+//        CommonUtils.print2DIntArray(output);
+        return output;
+    }
 }
