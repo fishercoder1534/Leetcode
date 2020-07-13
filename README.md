@@ -1079,6 +1079,7 @@ _If you like this project, please leave me a star._ &#9733;
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
 
+0. Please make sure your PR builds after submitting! Check out here: https://travis-ci.org/github/fishercoder1534/Leetcode/pull_requests and look for your PR build.
 1. Fork this repo
 2. Clone your forked repo (`git clone https://github.com/YOUR_GITHUB_USERNAME/Leetcode.git`) onto your local machine
 3. `cd` into your cloned directory, create your feature branch (`git checkout -b my-awesome-fix`)
