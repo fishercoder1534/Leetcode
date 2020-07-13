@@ -17,3 +17,6 @@ notifications:
       - fishercoder@gmail.com
     on_failure: always
 
+branches:
+  only:
+    - master
