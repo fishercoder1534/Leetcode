@@ -17,9 +17,9 @@ var Solution2 = function (nums, target) {
   while (p1 < p2) {
     if (nums[p1] + nums[p2] < target) {
       p1 += 1
-    }else if (nums[p1] + nums[p2] > target) {
+    } else if (nums[p1] + nums[p2] > target) {
       p2 -= 1
-    }else {
+    } else {
       return [p1, p2]
     }
   }
