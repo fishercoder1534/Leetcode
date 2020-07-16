@@ -6,7 +6,10 @@ jdk:
 before_script:
 - chmod a+x gradlew
 
-script: ./gradlew clean build
+node_js: "v13.7.0"
+install: "npm install && npm install standard --global"
+
+script: ./gradlew clean build && standard javascript/*
 
 notifications:
   email:
@@ -14,3 +17,6 @@ notifications:
       - fishercoder@gmail.com
     on_failure: always
 
+branches:
+  only:
+    - master

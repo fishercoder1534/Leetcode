@@ -8,6 +8,10 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1514|[Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1514.java) | |Medium|Graph|
+|1512|[Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1512.java) | |Easy|Array, HashTable, Math|
+|1508|[Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1508.java) | |Medium|Array, Sort|
+|1507|[Reformat Date](https://leetcode.com/problems/reformat-date/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1507.java) | |Easy|String|
 |1502|[Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1502.java) | |Easy|Array, Sort|
 |1496|[Path Crossing](https://leetcode.com/problems/path-crossing/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1496.java) | |Easy|String|
 |1493|[Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1493.java) | |Medium|Array|
@@ -118,7 +122,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1299|[Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1299.java) | |Easy||
 |1297|[Maximum Number of Occurrences of a Substring](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1297.java) | |Medium||
 |1296|[Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1296.java) | |Medium||
-|1295|[Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1295.java) | [:tv:](https://youtu.be/HRp8mNJvLZ0) |Easy||
+|1295|[Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)|[Java](../master/src/main/java/com/fishercoder/solutions/_1295.java)  [Javascript](../master/javascript/_1295.js)| [:tv:](https://youtu.be/HRp8mNJvLZ0) |Easy||
 |1291|[Sequential Digits](https://leetcode.com/problems/sequential-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1291.java) |  |Medium||
 |1290|[Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1290.java) |  |Easy||
 |1289|[Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1289.java) |  |Hard|Dynamic Programming|
@@ -521,7 +525,7 @@ _If you like this project, please leave me a star._ &#9733;
 |488|[Zuma Game](https://leetcode.com/problems/zuma-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_488.java) |  |Hard | DFS, Backtracking
 |487|[Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_487.java) |  |Medium| Array
 |486|[Predict the Winner](https://leetcode.com/problems/predict-the-winner/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_486.java) | | Medium | DP
-|485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_485.java) | |Easy| Array
+|485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Java](../master/src/main/java/com/fishercoder/solutions/_485.java) [Javascript](../master/javascript/_485.js)| |Easy| Array
 |484|[Find Permutation](https://leetcode.com/problems/find-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_484.java) |  |Medium | Array, String, Greedy
 |483|[Smallest Good Base](https://leetcode.com/problems/smallest-good-base/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_483.java) |  |Hard | Binary Search, Math
 |482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_482.java) | |Medium| 
@@ -979,7 +983,7 @@ _If you like this project, please leave me a star._ &#9733;
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_4.java), [C++](../master/cpp/_4.cpp) | |Hard | Divide and Conquer
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_3.java) |  |Medium | HashMap, Sliding Window
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_2.java) | |Medium | LinkedList
-|1|[Two Sum](https://leetcode.com/problems/two-sum/)|[Java](../master/src/main/java/com/fishercoder/solutions/_1.java), [C++](../master/cpp/_1.cpp)|[:tv:](https://www.youtube.com/watch?v=kPXOr6pW8KM&t=)|Easy| HashMap 
+|1|[Two Sum](https://leetcode.com/problems/two-sum/)|[Java](../master/src/main/java/com/fishercoder/solutions/_1.java), [C++](../master/cpp/_1.cpp), [Javascript](../master/javascript/_1.js)|[:tv:](https://www.youtube.com/watch?v=kPXOr6pW8KM&t=)|Easy| HashMap 
 
 ## Database
 
@@ -1075,6 +1079,7 @@ _If you like this project, please leave me a star._ &#9733;
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
 
+0. Please make sure your PR builds after submitting! Check out here: https://travis-ci.org/github/fishercoder1534/Leetcode/pull_requests and look for your PR build.
 1. Fork this repo
 2. Clone your forked repo (`git clone https://github.com/YOUR_GITHUB_USERNAME/Leetcode.git`) onto your local machine
 3. `cd` into your cloned directory, create your feature branch (`git checkout -b my-awesome-fix`)
@@ -1088,6 +1093,6 @@ Your ideas/fixes/algorithms are more than welcome!
 1. Install Intellij on your machine, either CE or UE.
 2. git clone this repo to your local disk
 3. import this project as a new project (does need to be imported as a gradle project)
-4. If you run into "Could not determine Java version using executable ..." error, use local gradle distribution: "/usr/local/Cellar/gradle/4.8.1/libexec/" instead of the default one. More details, see [Stackoverflow](https://stackoverflow.com/questions/52195643/cannot-find-symbol-intellij-gradle/52196069#52196069).
+4. If you run into "Could not determine Java version using executable ..." error, use local gradle distribution: "/usr/local/Cellar/gradle/4.8.1/libexec/" instead of the default one. More details, see [this question on Stackoverflow](https://stackoverflow.com/questions/52195643/cannot-find-symbol-intellij-gradle/52196069#52196069).
 
 
