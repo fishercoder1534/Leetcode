@@ -4,30 +4,18 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-/**
- * 535. Encode and Decode TinyURL
- *
- * TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/design-tinyurl
- * and it returns a short URL such as http://tinyurl.com/4e9iAk.
- * Design the encode and decode methods for the TinyURL service.
- * There is no restriction on how your encode/decode algorithm should work.
- * You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.
-
- Note: Do not use class member/global/static variables to store states. Your encode and decode algorithms should be stateless.
- */
-
 public class _535 {
 
     public static class Solution1 {
         /**
          * Simple counter approach
          * Analysis:
-         *      The range of URLs that can be decoded is limited by the range of Integer.
-         *      If excessively large number of URLs have to be encoded, after the range of Integer is exceeded,
-         *          integer overflow could lead to overwriting previous URL's encodings.
-         *      The length of the URL isn't necessary shorter than incoming URL.
-         *      One potential security issue with this problem is that it's very easy to predict the next code generated,
-         *          since this pattern is very easy to be detected.
+         * The range of URLs that can be decoded is limited by the range of Integer.
+         * If excessively large number of URLs have to be encoded, after the range of Integer is exceeded,
+         * integer overflow could lead to overwriting previous URL's encodings.
+         * The length of the URL isn't necessary shorter than incoming URL.
+         * One potential security issue with this problem is that it's very easy to predict the next code generated,
+         * since this pattern is very easy to be detected.
          */
         public class Codec {
             int i = 0;
@@ -49,8 +37,8 @@ public class _535 {
         /**
          * Use Java built-in HashCode
          * Analysis:
-         *      hashCode() does NOT generate unique codes for different strings, collision might happen.
-         *          As the number of URLs increase, the probability of getting collision increases which leads to failure.
+         * hashCode() does NOT generate unique codes for different strings, collision might happen.
+         * As the number of URLs increase, the probability of getting collision increases which leads to failure.
          */
         public class Codec {
             Map<Integer, String> map = new HashMap<>();
@@ -72,7 +60,9 @@ public class _535 {
     }
 
     public static class Solution3 {
-        /**Use a random number*/
+        /**
+         * Use a random number
+         */
         Map<Integer, String> map = new HashMap<>();
         Random random = new Random();
         public static final String PREFIX = "http://tinyurl/";
@@ -97,11 +87,11 @@ public class _535 {
         /**
          * Use a random but fixed length encoding
          * Analysis:
-         *      1. This is the most optimal solution so far.
-         *      2. The number of URLs that can be encoded can be as big as Math.pow((10 + 26*2), FIXED_LENGTH)
-         *      3. The length of the shortened URL is fixed at a certain length, which could be a significant reduce for large URLs
-         *      4. The performance of this scheme is pretty good, due to much smaller probability of encountering collision
-         *      5. Predicting pattern/encoding isn't possible in this case since random numbers are used.
+         * 1. This is the most optimal solution so far.
+         * 2. The number of URLs that can be encoded can be as big as Math.pow((10 + 26*2), FIXED_LENGTH)
+         * 3. The length of the shortened URL is fixed at a certain length, which could be a significant reduce for large URLs
+         * 4. The performance of this scheme is pretty good, due to much smaller probability of encountering collision
+         * 5. Predicting pattern/encoding isn't possible in this case since random numbers are used.
          */
         Map<String, String> map = new HashMap<>();
         public static final String PREFIX = "http://tinyurl/";
