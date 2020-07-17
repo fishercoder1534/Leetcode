@@ -15,7 +15,7 @@ public class _347 {
          * Use buckets to hold numbers of the same frequency
          * It's averaged at 30 ms on Leetcode.
          */
-        public List<Integer> topKFrequent(int[] nums, int k) {
+        public int[] topKFrequent(int[] nums, int k) {
             Map<Integer, Integer> map = new HashMap();
             for (int i : nums) {
                 map.put(i, map.getOrDefault(i, 0) + 1);
@@ -37,8 +37,11 @@ public class _347 {
                     }
                 }
             }
-
-            return result;
+            int[] arr = new int[result.size()];
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = result.get(i);
+            }
+            return arr;
         }
     }
 
@@ -46,7 +49,7 @@ public class _347 {
         /**
          * Use hashtable and heap, it's averaged at 100 ms on Leetocde.
          */
-        public List<Integer> topKFrequent(int[] nums, int k) {
+        public int[] topKFrequent(int[] nums, int k) {
             // construct the frequency map first, and then iterate through the map
             // and put them into the heap, this is O(n)
             Map<Integer, Integer> map = new HashMap();
@@ -60,11 +63,15 @@ public class _347 {
                 heap.offer(entry);
             }
 
-            List<Integer> res = new ArrayList();
+            List<Integer> result = new ArrayList();
             while (k-- > 0) {
-                res.add(heap.poll().getKey());
+                result.add(heap.poll().getKey());
             }
-            return res;
+            int[] arr = new int[result.size()];
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = result.get(i);
+            }
+            return arr;
         }
     }
 }
