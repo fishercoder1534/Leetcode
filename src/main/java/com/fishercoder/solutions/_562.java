@@ -1,22 +1,5 @@
 package com.fishercoder.solutions;
 
-/**
- * Created by fishercoder on 4/23/17.
- *
- * 562. Longest Line of Consecutive One in Matrix
- *
- * Given a 01 matrix m, find the longest line of consecutive one in the matrix. The line could be horizontal, vertical, diagonal or anti-diagonal.
-
- Example:
-
- Input:
- [[0,1,1,0],
-  [0,1,1,0],
-  [0,0,0,1]]
-
- Output: 3
- Hint: The number of elements in the given matrix will not exceed 10,000.
- */
 public class _562 {
 
     public static class Solution1 {
