@@ -1,35 +1,10 @@
 package com.fishercoder.solutions;
 
-/**
- * 546. Remove Boxes
- *
- * Given several boxes with different colors represented by different positive numbers.
- * You may experience several rounds to remove boxes until there is no box left.
- * Each time you can choose some continuous boxes with the same color (composed of k boxes, k >= 1), remove them and get k*k points.
- * Find the maximum points you can get.
-
- Example 1:
- Input:
-
- [1, 3, 2, 2, 2, 3, 4, 3, 1]
- Output:
- 23
-
- Explanation:
- [1, 3, 2, 2, 2, 3, 4, 3, 1]
- ----> [1, 3, 3, 4, 3, 1] (3*3=9 points)
- ----> [1, 3, 3, 3, 1] (1*1=1 points)
- ----> [1, 1] (3*3=9 points)
- ----> [] (2*2=4 points)
- Note: The number of boxes n would not exceed 100.
-
- */
-
 public class _546 {
     public static class Solution1 {
         /**
          * credit: https://leetcode.com/articles/remove-boxes/#approach-2-using-dp-with-memorizationaccepted
-         *
+         * <p>
          * For an entry in dp[l][r][k], l represents the starting index of the subarray,
          * r represents the ending index of the subarray
          * and k represents the number of elements similar to the r​th element
