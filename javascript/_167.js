@@ -16,7 +16,7 @@ var twoSum = function (numbers, target) {
       return [p1 + 1, p2 + 1]
     }
   }
-  return [-1 , -1]
+  return [-1, -1]
 }
 
 console.log(twoSum([2, 7, 11, 15], 9))
