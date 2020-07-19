@@ -19,4 +19,14 @@ public class _1518Test {
         assertEquals(13, solution1.numWaterBottles(9, 3));
     }
 
+    @Test
+    public void test2() {
+        assertEquals(19, solution1.numWaterBottles(15, 4));
+    }
+
+    @Test
+    public void test3() {
+        assertEquals(6, solution1.numWaterBottles(5, 5));
+    }
+
 }
