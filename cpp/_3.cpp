@@ -1,4 +1,4 @@
-//Using Array Frequency Method
+//Solution 1: Using Array Frequency Method
 
 class Solution {
 public:
@@ -33,7 +33,7 @@ public:
     }
 };
 
-//Using Map Method (High Memory and Time)
+//Solutio 2: Using Map Method (High Memory and Time)
 
 class Solution {
 public:
