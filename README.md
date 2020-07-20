@@ -21,7 +21,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1487|[Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1487.java) | |Medium|HashTable, String|
 |1486|[XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1486.java) | |Medium|Array, Bit Manipulation|
 |1481|[Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1481.java) | |Medium|Array, Sort|
-|1480|[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1480.java), [C++](../master/cpp/_1480.cpp)| |Easy|Array|
+|1480|[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_1480.java), [C++](../master/cpp/_1480.cpp), [Javascript](../master/javascript/_1480 .js)| |Easy|Array|
 |1476|[Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1476.java) | |Medium|Array|
 |1475|[Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1475.java) | |Easy|Array|
 |1471|[The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1471.java) | |Medium|Array, Sort|
