@@ -975,7 +975,7 @@ _If you like this project, please leave me a star._ &#9733;
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](../master/src/main/java/com/fishercoder/solutions/_13.java)|  |Easy | Math, String
 |12|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_12.java)||Medium| Math, String
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_11.java)||Medium|
-|10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_10.java)||Hard|DP
+|10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[Java](../master/src/main/java/com/fishercoder/solutions/_10.java),  [Javascript](../master/javascript/_10.js)||Hard|DP
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[Java](../master/src/main/java/com/fishercoder/solutions/_9.java), [C++](../master/cpp/_9.cpp)| | Easy
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_8.java)|  |Medium
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_7.java), [C++](../master/cpp/_7.cpp) | [:tv:](https://youtu.be/tm1Yrb_SfBM) |Easy | 
