@@ -22,25 +22,25 @@ public class _1524 {
 
     public static class Solution2 {
         public int numOfSubarrays(int[] arr) {
-            int odd = 0;
-            int even = 1;
-            long count = 0;
+            int oddSumCount = 0;
+            int evenSumCount = 1;
+            long result = 0;
             int sum = 0;
             for (int num : arr) {
                 sum += num;
                 if (sum % 2 == 0) {
-                    count += odd;
+                    result += oddSumCount;
                 } else {
-                    count += even;
+                    result += evenSumCount;
                 }
                 if (sum % 2 == 0) {
-                    even++;
+                    evenSumCount++;
                 } else {
-                    odd++;
+                    oddSumCount++;
                 }
-                count %= 1000000007;
+                result %= 1000000007;
             }
-            return (int) count % 1000000007;
+            return (int) result % 1000000007;
         }
     }
 }

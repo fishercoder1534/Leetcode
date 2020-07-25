@@ -41,4 +41,22 @@ public class _1524Test {
         assertEquals(0, solution2.numOfSubarrays(arr));
     }
 
+    @Test
+    public void test6() {
+        arr = new int[]{1, 2, 3, 4, 5, 6, 7};
+        assertEquals(16, solution2.numOfSubarrays(arr));
+    }
+
+    @Test
+    public void test7() {
+        arr = new int[]{1, 2, 3, 4, 5};
+        assertEquals(9, solution2.numOfSubarrays(arr));
+    }
+
+    @Test
+    public void test8() {
+        arr = new int[]{1, 2, 3, 4};
+        assertEquals(6, solution2.numOfSubarrays(arr));
+    }
+
 }
