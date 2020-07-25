@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1525|[Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1525.java) | |Medium|String, Bit Manipulation|
 |1524|[Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1524.java) | |Medium|Array, Math|
 |1523|[Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1523.java) | |Easy|Math|
 |1518|[Water Bottles](https://leetcode.com/problems/water-bottles/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1518.java) | |Easy|Greedy|
