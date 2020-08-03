@@ -3,13 +3,6 @@ package com.fishercoder.solutions;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 974. Subarray Sums Divisible by K
- *
- * Given an array A of integers, return the number of (contiguous, non-empty) subarrays that have a sum
- * divisible by K.
- * */
-
 public class _974 {
     public static class Solution1 {
         public int subarraysDivByK(int[] A, int K) {
