@@ -722,7 +722,7 @@ _If you like this project, please leave me a star._ &#9733;
 |292|[Nim Game](https://leetcode.com/problems/nim-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_292.java)| | Easy| 
 |291|[Word Pattern II](https://leetcode.com/problems/word-pattern-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_291.java)|  |Hard| Recursion, Backtracking
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_290.java)|  |Easy| HashMap 
-|289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_289.java)| |Medium|
+|289|[Game of Life](https://leetcode.com/problems/game-of-life/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_289.java)|[:tv:](https://youtu.be/YZ-W5DrKPQ0) |Medium|
 |288|[Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_288.java)| |Easy| 
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_287.java)| |Medium| 
 |286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_286.java)| |Medium| BFS
