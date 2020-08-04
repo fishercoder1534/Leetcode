@@ -8,7 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
-|1535|[Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1535.java) | |Medium|Array|
+|1535|[Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1535.java) | [:tv:](https://youtu.be/v6On1TQfMTU) |Medium|Array|
 |1534|[Count Good Triplets](https://leetcode.com/problems/count-good-triplets/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1534.java) | |Easy|Array|
 |1528|[Shuffle String](https://leetcode.com/problems/shuffle-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1528.java) | |Easy|Sort|
 |1526|[Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1526.java) | |Hard|Segment Tree|
