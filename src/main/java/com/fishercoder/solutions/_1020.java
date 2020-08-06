@@ -1,15 +1,5 @@
 package com.fishercoder.solutions;
 
-/**
- * 1020. Number of Enclaves
- *
- * Given a 2D array A, each cell is 0 (representing sea) or 1 (representing land)
- *
- * A move consists of walking from one land square 4-directionally to another land square, or off the boundary of the grid.
- *
- * Return the number of land squares in the grid for which we cannot walk off the boundary of the grid in any number of moves.
- */
-
 public class _1020 {
     public static class Solution1 {
         public void walk(int[][] A, boolean[][] visited, int x, int y) {
