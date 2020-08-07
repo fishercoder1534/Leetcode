@@ -5,25 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
 
-/**
- * 5087. Letter Tile Possibilities
- *
- * You have a set of tiles, where each tile has one letter tiles[i] printed on it.
- * Return the number of possible non-empty sequences of letters you can make.
- *
- * Example 1:
- * Input: "AAB"
- * Output: 8
- * Explanation: The possible sequences are "A", "B", "AA", "AB", "BA", "AAB", "ABA", "BAA".
- *
- * Example 2:
- * Input: "AAABBC"
- * Output: 188
- *
- * Note:
- * 1. 1 <= tiles.length <= 7
- * 2. tiles consists of uppercase English letters.
- * */
 public class _1079 {
     public static class Solution1 {
         public int numTilePossibilities(String tiles) {
