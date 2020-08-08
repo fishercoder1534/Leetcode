@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1539|[Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1539.java) | |Medium|Array, HashTable|
 |1535|[Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1535.java) | [:tv:](https://youtu.be/v6On1TQfMTU) |Medium|Array|
 |1534|[Count Good Triplets](https://leetcode.com/problems/count-good-triplets/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1534.java) | |Easy|Array|
 |1528|[Shuffle String](https://leetcode.com/problems/shuffle-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1528.java) | |Easy|Sort|
