@@ -11,7 +11,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1545|[Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1545.java) | |Medium|String|
 |1544|[Make The String Great](https://leetcode.com/problems/make-the-string-great/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1544.java) | |Easy|String, Stack|
 |1541|[Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1541.java) | |Medium|String, Stack|
-|1539|[Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1539.java) | |Easy|Array, HashTable|
+|1539|[Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1539.java) |[:tv:](https://youtu.be/p0P1JNHAB-c) |Easy|Array, HashTable|
 |1535|[Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1535.java) | [:tv:](https://youtu.be/v6On1TQfMTU) |Medium|Array|
 |1534|[Count Good Triplets](https://leetcode.com/problems/count-good-triplets/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1534.java) | |Easy|Array|
 |1528|[Shuffle String](https://leetcode.com/problems/shuffle-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1528.java) | |Easy|Sort|
