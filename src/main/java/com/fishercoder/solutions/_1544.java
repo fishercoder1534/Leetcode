@@ -6,7 +6,7 @@ public class _1544 {
     public static class Solution1 {
         public String makeGood(String s) {
             Stack<Character> stack = new Stack<>();
-            for (int i = 0; i < s.length() - 1; i++) {
+            for (int i = 0; i < s.length(); i++) {
                 char c = s.charAt(i);
                 if (stack.isEmpty()) {
                     stack.add(c);
@@ -23,18 +23,6 @@ public class _1544 {
                         stack.add(c);
                     }
                 }
-            }
-            char c = s.charAt(s.length() - 1);
-            if (!stack.isEmpty() && Character.toLowerCase(stack.peek()) == Character.toLowerCase(c)) {
-                if ((Character.isLowerCase(stack.peek()) && Character.isUpperCase(c))) {
-                    stack.pop();
-                } else if (Character.isUpperCase(stack.peek()) && Character.isLowerCase(c)) {
-                    stack.pop();
-                } else {
-                    stack.add(c);
-                }
-            } else {
-                stack.add(c);
             }
             StringBuilder sb = new StringBuilder();
             while (!stack.isEmpty()) {
