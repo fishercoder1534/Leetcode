@@ -12,12 +12,12 @@ public class _332 {
         /**
          * credit: https://discuss.leetcode.com/topic/36383/share-my-solution
          */
-        public List<String> findItinerary(String[][] tickets) {
+        public List<String> findItinerary(List<List<String>> tickets) {
             Map<String, PriorityQueue<String>> flights = new HashMap<>();
             LinkedList<String> path = new LinkedList<>();
-            for (String[] ticket : tickets) {
-                flights.putIfAbsent(ticket[0], new PriorityQueue<>());
-                flights.get(ticket[0]).add(ticket[1]);
+            for (List<String> ticket : tickets) {
+                flights.putIfAbsent(ticket.get(0), new PriorityQueue<>());
+                flights.get(ticket.get(0)).add(ticket.get(1));
             }
             dfs("JFK", flights, path);
             return path;
