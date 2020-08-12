@@ -4,7 +4,7 @@ public class _1232 {
     public static class Solution1 {
         /**
          * To check if they share the same slope, we use this formula:
-         *
+         * <p>
          * check whether (y4 - y3)/(x4- x3) equals to (y2 - y1)/(x2 - x1)
          * considering denominator could be zero, we'll change it to use multiplication instead of division,
          * thus it becomes
