@@ -1,6 +1,5 @@
 package com.fishercoder;
 
-import com.fishercoder.common.classes.Interval;
 import com.fishercoder.solutions._435;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -17,11 +16,7 @@ public class _435Test {
 
     @Test
     public void test1() {
-        Interval interval1 = new Interval(1, 100);
-        Interval interval2 = new Interval(11, 22);
-        Interval interval3 = new Interval(1, 11);
-        Interval interval4 = new Interval(2, 12);
-        Interval[] intervals = new Interval[]{interval1, interval2, interval3, interval4};
+        int[][] intervals = new int[][]{new int[]{1, 100}, new int[]{11, 22}, new int[]{1, 11}, new int[]{2, 12}};
         assertEquals(2, solution1.eraseOverlapIntervals(intervals));
     }
 
