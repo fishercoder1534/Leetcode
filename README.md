@@ -189,6 +189,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1170.java) | |Easy||
 |1119|[Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1119.java) |  [:tv:](https://www.youtube.com/watch?v=6KCBrIWEauw)|Easy||
 |1118|[Number of Days in a Month](https://leetcode.com/problems/number-of-days-in-a-month/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1118.java) | |Easy||
+|1114|[Print in Order](https://leetcode.com/problems/print-in-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1114.java) | |Easy||
 |1108|[Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1108.java) |  [:tv:](https://www.youtube.com/watch?v=FP0Na-pL0qk)|Easy||
 |1104|[Path In Zigzag Labelled Binary Tree](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1104.java) | |Medium|Math, Tree|
 |1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1103.java) | |Easy|Math|
