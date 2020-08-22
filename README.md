@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1556|[Thousand Separator](https://leetcode.com/problems/thousand-separator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1556.java) ||Easy|String|
 |1551|[Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1551.java) | [:tv:](https://youtu.be/A-i2sxmBqAA)|Medium|Math|
 |1550|[Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1550.java) | |Easy|Array|
 |1545|[Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1545.java) | |Medium|String|
