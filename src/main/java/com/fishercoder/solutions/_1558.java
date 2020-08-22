@@ -1,11 +1,8 @@
 package com.fishercoder.solutions;
 
-import java.util.Arrays;
-
 public class _1558 {
     public static class Solution1 {
         public int minOperations(int[] nums) {
-            Arrays.sort(nums);
             int ops = 0;
             while (!allZero(nums)) {
                 if (allEvenAndNonZeroes(nums)) {
