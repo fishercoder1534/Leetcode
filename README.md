@@ -8,7 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
-|1561|[Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1561.java) ||Sort|Medium|
+|1561|[Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1561.java) |[:tv:](https://youtu.be/hPe9Z3TiUrA)|Sort|Medium|
 |1560|[Most Visited Sector in a Circular Track](https://leetcode.com/problems/most-visited-sector-in-a-circular-track/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1560.java) ||Array|Easy|
 |1558|[Minimum Numbers of Function Calls to Make Target Array](https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1558.java) ||Medium|Greedy|
 |1557|[Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1557.java) ||Medium|Graph|
