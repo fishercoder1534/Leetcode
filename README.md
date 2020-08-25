@@ -1101,7 +1101,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 
 ## Contributing
-Your ideas/fixes/algorithms are more than welcome!
+Your ideas/fixes/algorithms are more than welcome! Let's keep this about DSA only, nothing else. It'll be easy for every DSA enthusiast to access this AWESOMENESS!!
 
 0. Please make sure your PR builds after submitting! Check out here: https://travis-ci.org/github/fishercoder1534/Leetcode/pull_requests and look for your PR build.
 1. Fork this repo
@@ -1114,7 +1114,7 @@ Your ideas/fixes/algorithms are more than welcome!
 
 ## Best way to open this project
 
-1. Install Intellij on your machine, either CE or UE.
+1. Install IntelliJ on your machine, either CE or UE.
 2. git clone this repo to your local disk
 3. import this project as a new project (does need to be imported as a gradle project)
 4. If you run into "Could not determine Java version using executable ..." error, use local gradle distribution: "/usr/local/Cellar/gradle/4.8.1/libexec/" instead of the default one. More details, see [this question on Stackoverflow](https://stackoverflow.com/questions/52195643/cannot-find-symbol-intellij-gradle/52196069#52196069).
