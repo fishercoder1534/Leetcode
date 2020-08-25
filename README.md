@@ -1101,7 +1101,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 
 ## Contributing
-Your ideas/fixes/algorithms are more than welcome! Let's keep this about DSA only, nothing else. It'll be easy for every DSA enthusiast to access this AWESOMENESS!!
+Your ideas/fixes/algorithms are more than welcome!
 
 0. Please make sure your PR builds after submitting! Check out here: https://travis-ci.org/github/fishercoder1534/Leetcode/pull_requests and look for your PR build.
 1. Fork this repo
