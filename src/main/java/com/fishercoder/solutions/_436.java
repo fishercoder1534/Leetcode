@@ -1,47 +1,21 @@
 package com.fishercoder.solutions;
 
-import com.fishercoder.common.classes.Interval;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.TreeMap;
 
 public class _436 {
 
     public static class Solution1 {
-        public int[] findRightInterval(Interval[] intervals) {
-            if (intervals == null || intervals.length == 0) {
-                return new int[0];
-            }
-            int[] result = new int[intervals.length];
-            result[0] = -1;
-            Interval last = intervals[intervals.length - 1];
-            Interval first = intervals[0];
-            Map<Interval, Integer> map = new HashMap();
+        public int[] findRightInterval(int[][] intervals) {
+            TreeMap<Integer, Integer> map = new TreeMap<>();
+            int[] res = new int[intervals.length];
             for (int i = 0; i < intervals.length; i++) {
-                map.put(intervals[i], i);
+                map.put(intervals[i][0], i);
             }
-
-            Collections.sort(Arrays.asList(intervals), (o1, o2) -> o1.start - o2.start);
-
-            for (int i = 1; i < intervals.length; i++) {
-                //TODO: use binary search for the minimum start interval for interval[i-1] instead of a while loop
-                int tmp = i - 1;
-                int tmpI = i;
-                while (tmpI < intervals.length && intervals[tmpI].start < intervals[tmp].end) {
-                    tmpI++;
-                }
-                if (tmpI < intervals.length) {
-                    result[map.get(intervals[tmp])] = map.get(intervals[tmpI]);
-                } else {
-                    result[map.get(intervals[tmp])] = -1;
-                }
+            for (int i = 0; i < intervals.length; i++) {
+                Integer key = map.ceilingKey(intervals[i][intervals[i].length - 1]);
+                res[i] = key != null ? map.get(key) : -1;
             }
-            if (result[intervals.length - 1] == 0 && last.end > first.start) {
-                result[intervals.length - 1] = -1;
-            }
-            return result;
+            return res;
         }
     }
 
