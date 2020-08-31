@@ -42,7 +42,8 @@ public class _373 {
                 if (result.size() == k) {
                     break;
                 }
-                int i = arr[2], j = arr[3];
+                int i = arr[2];
+                int j = arr[3];
 
                 for (int[] dir : dirs) {
                     int dx = i + dir[0];
