@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1572|[Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1572.java) ||Array|Easy|
 |1567|[Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1567.java) |[:tv:](https://youtu.be/bFer5PdsgpY)|Greedy|Medium|
 |1566|[Detect Pattern of Length M Repeated K or More Times](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1566.java) |[:tv:](https://youtu.be/aJAV_VgmjdE)|Array|Easy|
 |1561|[Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1561.java) |[:tv:](https://youtu.be/hPe9Z3TiUrA)|Sort|Medium|
