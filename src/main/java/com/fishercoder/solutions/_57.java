@@ -1,31 +1,39 @@
 package com.fishercoder.solutions;
 
-import com.fishercoder.common.classes.Interval;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class _57 {
 
     public static class Solution1 {
-        public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
-            List<Interval> result = new ArrayList<>();
+        public int[][] insert(int[][] intervals, int[] newInterval) {
+            List<int[]> list = new ArrayList<>();
             int i = 0;
             // add all the intervals ending before newInterval starts
-            while (i < intervals.size() && intervals.get(i).end < newInterval.start) {
-                result.add(intervals.get(i++));
+            while (i < intervals.length && intervals[i][intervals[i].length - 1] < newInterval[0]) {
+                list.add(intervals[i++]);
             }
             // merge all overlapping intervals to one considering newInterval
-            while (i < intervals.size() && intervals.get(i).start <= newInterval.end) {
-                newInterval = new Interval( // we could mutate newInterval here also
-                        Math.min(newInterval.start, intervals.get(i).start),
-                        Math.max(newInterval.end, intervals.get(i).end));
+            while (i < intervals.length && intervals[i][0] <= newInterval[newInterval.length - 1]) {
+                newInterval = new int[]{ // we could mutate newInterval here also
+                        Math.min(newInterval[0], intervals[i][0]),
+                        Math.max(newInterval[newInterval.length - 1], intervals[i][intervals[i].length - 1])};
                 i++;
             }
-            result.add(newInterval);
+            list.add(newInterval);
             // add all the rest
-            while (i < intervals.size()) {
-                result.add(intervals.get(i++));
+            while (i < intervals.length) {
+                list.add(intervals[i++]);
+            }
+            return convertToArray(list);
+        }
+
+        private int[][] convertToArray(List<int[]> list) {
+            int[][] result = new int[list.size()][list.get(0).length];
+            for (int i = 0; i < list.size(); i++) {
+                for (int j = 0; j < list.get(i).length; j++) {
+                    result[i][j] = list.get(i)[j];
+                }
             }
             return result;
         }
