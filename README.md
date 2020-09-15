@@ -32,7 +32,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1526|[Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1526.java) | |Hard|Segment Tree|
 |1525|[Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1525.java) | [:tv:](https://youtu.be/lRVpVUC5mQ4)|Medium|String, Bit Manipulation|
 |1524|[Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1524.java) | |Medium|Array, Math|
-|1523|[Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1523.java) | |Easy|Math|
+|1523|[Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1523.java) | [:tv:](https://youtu.be/TkT-6WsmqY0)|Easy|Math|
 |1518|[Water Bottles](https://leetcode.com/problems/water-bottles/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1518.java) | |Easy|Greedy|
 |1514|[Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1514.java) | |Medium|Graph|
 |1512|[Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1512.java) | |Easy|Array, HashTable, Math|
