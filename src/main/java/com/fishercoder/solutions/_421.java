@@ -6,7 +6,11 @@ import java.util.Set;
 public class _421 {
 
     public static class Solution1 {
-        //credit: https://discuss.leetcode.com/topic/63213/java-o-n-solution-using-bit-manipulation-and-hashmap/7
+        /**
+         * credit: https://discuss.leetcode.com/topic/63213/java-o-n-solution-using-bit-manipulation-and-hashmap/7
+         * <p>
+         * Note: comment out those system.out.println statements before submitting on LeetCode, otherwise TLE.
+         */
         public int findMaximumXOR(int[] nums) {
             int max = 0;
             int mask = 0;
