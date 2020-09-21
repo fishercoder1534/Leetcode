@@ -8,17 +8,17 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
-|1592|[Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1592.java) ||String|Easy|
-|1588|[Sum of All Odd Length Subarrays](https://leetcode.com/problems/sum-of-all-odd-length-subarrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1588.java) ||Array|Easy|
-|1583|[Count Unhappy Friends](https://leetcode.com/problems/count-unhappy-friends/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1583.java) ||Array|Medium|
-|1582|[Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1582.java) ||Array|Easy|
-|1576|[Replace All ?'s to Avoid Consecutive Repeating Characters](https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1576.java) |[:tv:](https://youtu.be/SJBDLYqrIsM)|String|Easy|
-|1574|[Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1574.java) ||Array, Binary Search|Medium|
-|1572|[Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1572.java) ||Array|Easy|
-|1567|[Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1567.java) |[:tv:](https://youtu.be/bFer5PdsgpY)|Greedy|Medium|
-|1566|[Detect Pattern of Length M Repeated K or More Times](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1566.java) |[:tv:](https://youtu.be/aJAV_VgmjdE)|Array|Easy|
-|1561|[Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1561.java) |[:tv:](https://youtu.be/hPe9Z3TiUrA)|Sort|Medium|
-|1560|[Most Visited Sector in a Circular Track](https://leetcode.com/problems/most-visited-sector-in-a-circular-track/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1560.java) ||Array|Easy|
+|1592|[Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1592.java) ||Easy|String|
+|1588|[Sum of All Odd Length Subarrays](https://leetcode.com/problems/sum-of-all-odd-length-subarrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1588.java) ||Easy|Array|
+|1583|[Count Unhappy Friends](https://leetcode.com/problems/count-unhappy-friends/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1583.java) ||Medium|Array|
+|1582|[Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1582.java) ||Easy|Array|
+|1576|[Replace All ?'s to Avoid Consecutive Repeating Characters](https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1576.java) |[:tv:](https://youtu.be/SJBDLYqrIsM)|Easy|String|
+|1574|[Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1574.java) ||Medium|Array, Binary Search|
+|1572|[Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1572.java) ||Easy|Array|
+|1567|[Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1567.java) |[:tv:](https://youtu.be/bFer5PdsgpY)|Medium|Greedy|
+|1566|[Detect Pattern of Length M Repeated K or More Times](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1566.java) |[:tv:](https://youtu.be/aJAV_VgmjdE)|Easy|Array|
+|1561|[Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1561.java) |[:tv:](https://youtu.be/hPe9Z3TiUrA)|Medium|Sort|
+|1560|[Most Visited Sector in a Circular Track](https://leetcode.com/problems/most-visited-sector-in-a-circular-track/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1560.java) ||Easy|Array|
 |1558|[Minimum Numbers of Function Calls to Make Target Array](https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1558.java) ||Medium|Greedy|
 |1557|[Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1557.java) ||Medium|Graph|
 |1556|[Thousand Separator](https://leetcode.com/problems/thousand-separator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1556.java) |[:tv:](https://youtu.be/re2BnNbg598)|Easy|String|
