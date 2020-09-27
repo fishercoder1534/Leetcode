@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1598|[Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1598.java) ||Easy|Stack|
 |1592|[Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1592.java) ||Easy|String|
 |1588|[Sum of All Odd Length Subarrays](https://leetcode.com/problems/sum-of-all-odd-length-subarrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1588.java) ||Easy|Array|
 |1583|[Count Unhappy Friends](https://leetcode.com/problems/count-unhappy-friends/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1583.java) ||Medium|Array|
