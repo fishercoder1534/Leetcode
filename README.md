@@ -185,6 +185,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1200|[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1200.java) | [:tv:](https://www.youtube.com/watch?v=mH1aEjOEjcQ)|Easy||
 |1198|[Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1198.java) | [:tv:](https://www.youtube.com/watch?v=RMiofZrTmWo)|Easy||
 |1196|[How Many Apples Can You Put into the Basket](https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1196.java) | [:tv:](https://www.youtube.com/watch?v=UelshlMQNJM)|Easy||
+|1192|[Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)|[C++](../master/cpp/_1192.cpp) | |Hard|DFS|
 |1190|[Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1190.java) | |Medium|Stack|
 |1189|[Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1189.java) |[:tv:](https://youtu.be/LGgMZC0vj5s) |Easy||
 |1185|[Day of the Week](https://leetcode.com/problems/day-of-the-week/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1185.java) | |Easy||
