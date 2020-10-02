@@ -10,65 +10,64 @@ public class _399 {
 
     public static class Solution1 {
         /**
-         * Credit: https://discuss.leetcode.com/topic/59146/java-ac-solution-using-graph
-         * <p>
-         * Image a/b = k as a link between node a and b, the weight from a to b is k, the reverse link
-         * is 1/k. Query is to find a path between two nodes.
+         * Credit: https://medium.com/@null00/leetcode-evaluate-division-52a0158488c1
          */
-        public double[] calcEquation(String[][] equations, double[] values, String[][] queries) {
-            Map<String, List<String>> pairs = new HashMap<>();
-            Map<String, List<Double>> valuePairs = new HashMap<>();
-            for (int i = 0; i < equations.length; i++) {
-                String[] equation = equations[i];
-                if (!pairs.containsKey(equation[0])) {
-                    pairs.put(equation[0], new ArrayList<>());
-                    valuePairs.put(equation[0], new ArrayList<>());
-                }
-                if (!pairs.containsKey(equation[1])) {
-                    pairs.put(equation[1], new ArrayList<>());
-                    valuePairs.put(equation[1], new ArrayList<>());
-                }
-                pairs.get(equation[0]).add(equation[1]);
-                pairs.get(equation[1]).add(equation[0]);
-                valuePairs.get(equation[0]).add(values[i]);
-                valuePairs.get(equation[1]).add(1 / values[i]);
-            }
+      private Map<String, String> root;
+      private Map<String, Double> rate;
 
-            double[] result = new double[queries.length];
-            for (int i = 0; i < queries.length; i++) {
-                String[] query = queries[i];
-                result[i] = dfs(query[0], query[1], pairs, valuePairs, new HashSet<>(), 1.0);
-                if (result[i] == 0.0) {
-                    result[i] = -1.0;
-                }
-            }
-            return result;
+      public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
+        root = new HashMap<String, String>();
+        rate = new HashMap<String, Double>();
+        int n = equations.size();
+        for (int i = 0; i < n; ++i) {
+            String X = equations.get(i).get(0);
+            String Y = equations.get(i).get(1);
+            root.put(X, X);
+            root.put(Y, Y);
+            rate.put(X, 1.0);
+            rate.put(Y, 1.0);
         }
 
-        private double dfs(String start, String end, Map<String, List<String>> pairs,
-                           Map<String, List<Double>> valuePairs, HashSet<String> set, double value) {
-            if (set.contains(start)) {
-                return 0.0;
-            }
-            if (!pairs.containsKey(start)) {
-                return 0.0;
-            }
-            if (start.equals(end)) {
-                return value;
-            }
-            set.add(start);
-
-            List<String> stringList = pairs.get(start);
-            List<Double> valueList = valuePairs.get(start);
-            double tmp = 0.0;
-            for (int i = 0; i < stringList.size(); i++) {
-                tmp = dfs(stringList.get(i), end, pairs, valuePairs, set, value * valueList.get(i));
-                if (tmp != 0.0) {
-                    break;
-                }
-            }
-            set.remove(start);
-            return tmp;
+        for (int i = 0; i < n; ++i) {
+            String X = equations.get(i).get(0);
+            String Y = equations.get(i).get(1);
+            union(X, Y, values[i]);
         }
+
+        double[] result = new double[queries.size()];
+        for (int i = 0; i < queries.size(); ++i) {
+            String X = queries.get(i).get(0);
+            String Y = queries.get(i).get(1);
+            if (!root.containsKey(X) || !root.containsKey(Y)) {
+                result[i] = -1;
+                continue;
+            }
+
+            String rootx = findRoot(X, X, 1.0);
+            String rooty = findRoot(Y, Y, 1.0);
+            result[i] = rootx.equals(rooty) ? rate.get(X) / rate.get(Y) : -1.0;
+        }
+        
+        return result;
+      }
+
+      private void union(String X, String Y, double v) {
+        String rootx = findRoot(X, X, 1.0);
+        String rooty = findRoot(Y, Y, 1.0);
+        root.put(rootx, rooty);
+        double r1 = rate.get(X);
+        double r2 = rate.get(Y);
+        rate.put(rootx, v * r2 / r1);
+      }
+
+      private String findRoot(String originalX, String X, double r) {
+        if (root.get(X).equals(X)) {
+            root.put(originalX, X);
+            rate.put(originalX, r * rate.get(X));
+            return X;
+        }
+
+        return findRoot(originalX, root.get(X), r * rate.get(X));
+      }    
     }
 }
