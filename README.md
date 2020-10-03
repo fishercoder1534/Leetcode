@@ -954,7 +954,7 @@ _If you like this project, please leave me a star._ &#9733;
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_34.java)||Medium|Array, Binary Search
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_33.java)||Medium|Binary Search
 |32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_32.java)||Hard|Stack, DP
-|31|[Next Permutation](https://leetcode.com/problems/parents-permutation)|[Solution](../master/src/main/java/com/fishercoder/solutions/_31.java)||Medium|Array
+|31|[Next Permutation](https://leetcode.com/problems/parents-permutation)|[Solution](../master/src/main/java/com/fishercoder/solutions/_31.java), [C++](../master/cpp/_31.cpp)||Medium|Array
 |30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_30.java)||Hard| HashMap
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_29.java)||Medium|
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_28.java)||Easy| String
