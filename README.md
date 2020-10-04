@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1608|[Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1608.java) ||Easy|Array|
 |1604|[Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1604.java) ||Medium|String, Ordered Map|
 |1603|[Design Parking System](https://leetcode.com/problems/design-parking-system/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1603.java) ||Easy|Design|
 |1601|[Maximum Number of Achievable Transfer Requests](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1601.java) ||Hard|Backtracking|
