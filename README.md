@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1624|[Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1624.java) ||String|Easy|
 |1620|[Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1620.java) ||Greedy|Medium|
 |1619|[Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1620.java) ||Array|Easy|
 |1614|[Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1614.java) ||Easy|String|
