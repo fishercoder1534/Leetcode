@@ -7,7 +7,7 @@ import java.util.List;
  * Created by fishercoder1534 on 9/30/16.
  */
 public class UndirectedGraphNode {
-    public int label;
+    public int val;
     public List<UndirectedGraphNode> neighbors;
 
     @Override
@@ -21,7 +21,7 @@ public class UndirectedGraphNode {
 
         UndirectedGraphNode that = (UndirectedGraphNode) o;
 
-        if (label != that.label) {
+        if (val != that.val) {
             return false;
         }
         return neighbors != null ? neighbors.equals(that.neighbors) : that.neighbors == null;
@@ -29,13 +29,13 @@ public class UndirectedGraphNode {
 
     @Override
     public int hashCode() {
-        int result = label;
+        int result = val;
         result = 31 * result + (neighbors != null ? neighbors.hashCode() : 0);
         return result;
     }
 
     public UndirectedGraphNode(int x) {
-        label = x;
+        val = x;
         neighbors = new ArrayList<>();
     }
 }
