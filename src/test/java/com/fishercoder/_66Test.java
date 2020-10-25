@@ -22,31 +22,36 @@ public class _66Test {
     public void test1() {
         digits = new int[]{9, 9, 9, 9};
         assertArrayEquals(new int[]{1, 0, 0, 0, 0}, solution1.plusOne(digits));
-        digits = new int[]{9, 9, 9, 9};
-        assertArrayEquals(new int[]{1, 0, 0, 0, 0}, solution2.plusOne(digits));
     }
 
     @Test
     public void test2() {
         digits = new int[]{8, 9, 9, 9};
         assertArrayEquals(new int[]{9, 0, 0, 0}, solution1.plusOne(digits));
-        digits = new int[]{8, 9, 9, 9};
-        assertArrayEquals(new int[]{9, 0, 0, 0}, solution2.plusOne(digits));
     }
 
     @Test
     public void test3() {
         digits = new int[]{2, 4, 9, 3, 9};
         assertArrayEquals(new int[]{2, 4, 9, 4, 0}, solution1.plusOne(digits));
-        digits = new int[]{2, 4, 9, 3, 9};
-        assertArrayEquals(new int[]{2, 4, 9, 4, 0}, solution2.plusOne(digits));
     }
     
     @Test
     public void test4() {
-        digits = new int[]{2, 4, 9, 3, 9};
-        assertArrayEquals(new int[]{2, 4, 9, 4, 0}, solution1.plusOne(digits));
-        digits = new int[]{2, 4, 9, 3, 9};
-        assertArrayEquals(new int[]{2, 4, 9, 4, 0}, solution2.plusOne(digits));        
+        digits = new int[]{9, 9, 9, 9, 9};
+        assertArrayEquals(new int[]{1, 0, 0, 0, 0, 0}, solution2.plusOne(digits));
     }
+
+    @Test
+    public void test5() {
+        digits = new int[]{8, 9, 9, 9, 9};
+        assertArrayEquals(new int[]{9, 0, 0, 0, 0}, solution2.plusOne(digits));
+    }
+    
+    @Test
+    public void test6() {
+        digits = new int[]{2, 4, 9, 4, 9};
+        assertArrayEquals(new int[]{2, 4, 9, 5, 0}, solution2.plusOne(digits));
+    }
+    
 }
