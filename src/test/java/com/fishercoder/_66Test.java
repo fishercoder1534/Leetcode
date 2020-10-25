@@ -1,11 +1,11 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions._1005;
-import com.fishercoder.solutions._66;
+import static org.junit.Assert.assertArrayEquals;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import com.fishercoder.solutions._66;
 
 public class _66Test {
     private static _66.Solution1 solution1;
