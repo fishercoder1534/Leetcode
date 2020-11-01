@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1636|[Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1636.java) ||Easy|Array, Sort|
 |1630|[Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1630.java) ||Medium|Sort|
 |1629|[Slowest Key](https://leetcode.com/problems/slowest-key/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1629.java) ||Easy|Array|
 |1626|[Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1626.java) ||Medium|DP|
