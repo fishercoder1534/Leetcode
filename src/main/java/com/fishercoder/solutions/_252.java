@@ -1,22 +1,20 @@
 package com.fishercoder.solutions;
 
-import com.fishercoder.common.classes.Interval;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class _252 {
     public static class Solution1 {
-        public boolean canAttendMeetings(Interval[] intervals) {
+        public boolean canAttendMeetings(int[][] intervals) {
 
-            List<Interval> list = new ArrayList();
-            for (Interval interval : intervals) {
+            List<int[]> list = new ArrayList();
+            for (int[] interval : intervals) {
                 list.add(interval);
             }
 
             Collections.sort(list, (o1, o2) -> {
-                if (o1.start > o2.start) {
+                if (o1[0] > o2[0]) {
                     return 1;
                 } else {
                     return -1;
@@ -24,7 +22,7 @@ public class _252 {
             });
 
             for (int i = 0; i < list.size() - 1; i++) {
-                if (list.get(i).end > list.get(i + 1).start) {
+                if (list.get(i)[1] > list.get(i + 1)[0]) {
                     return false;
                 }
             }
