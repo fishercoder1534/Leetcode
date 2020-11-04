@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class _757Test {
     private static _757.Solution solution;
-    int intervals[][];
+    int[][] intervals;
 
     @BeforeClass
     public static void setup() {
