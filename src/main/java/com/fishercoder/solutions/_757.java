@@ -18,7 +18,7 @@ public class _757 {
             int startTime = Integer.MIN_VALUE;
             int endTime = Integer.MIN_VALUE;
 
-            for (int interval[] : intervals) {
+            for (int[] interval : intervals) {
                 if (startTime >= interval[0]) {
                     continue;
                 } else if (endTime >= interval[0]) {
