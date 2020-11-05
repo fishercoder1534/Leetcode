@@ -622,7 +622,7 @@ _If you like this project, please leave me a star._ &#9733;
 |435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_435.java) |  |Medium| Greedy
 |434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_434.java)|  |Easy|
 |432|[All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_432.java)|  |Hard| Design
-|430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_430.java)|  |Medium| Doubly Linked List
+|430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_430.java)|  |Medium| Doubly Linked List, Recursion
 |429|[N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_429.java)|  |Easy| BFS, Tree
 |425|[Word Squares](https://leetcode.com/problems/word-squares/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_425.java)|  |Hard| Trie, Backtracking, Recursion
 |424|[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_424.java)| | Medium| Sliding Window
