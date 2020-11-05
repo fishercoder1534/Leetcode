@@ -46,7 +46,7 @@ public class _1381 {
         public static class CustomStack {
             private int top;
             private int maxSize;
-            private int stack[];
+            private int[] stack;
 
             public CustomStack(int maxSize) {
                 this.maxSize = maxSize;
