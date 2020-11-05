@@ -25,6 +25,7 @@ public class _1381Test {
         assertEquals(201, customStack.pop());
         assertEquals(-1, customStack.pop());
     }
+
     @Test
     public void test2() {
         customStack2 = new _1381.Solution2.CustomStack(3);
