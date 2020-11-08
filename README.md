@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1637|[Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/)|[Javascript](./javascript/_1637.js)| | Medium | Sort |
 |1636|[Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1636.java) ||Easy|Array, Sort|
 |1630|[Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1630.java) ||Medium|Sort|
 |1629|[Slowest Key](https://leetcode.com/problems/slowest-key/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1629.java) ||Easy|Array|
@@ -213,6 +214,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1160.java)| |Easy||
 |1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | |Easy||
 |1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1150.java)|[:tv:](https://youtu.be/-t2cdVs9cKk) |Easy||
+|1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array/)|[Javascript](./javascript/_1146.js)| | Easy ||
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1137.java) | |Easy||
 |1134|[Armstrong Number](https://leetcode.com/problems/armstrong-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1134.java) |  [:tv:](https://www.youtube.com/watch?v=HTL7fd4HPf4)|Easy||
 |1133|[Largest Unique Number](https://leetcode.com/problems/largest-unique-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1133.java) | [:tv:](https://youtu.be/Fecpt1YZlCs)|Easy||
@@ -1061,7 +1063,6 @@ _If you like this project, please leave me a star._ &#9733;
 |1179|[Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)|[Solution](../master/database/_1179.sql) |  | Easy |
 |1173|[Immediate Food Delivery I](https://leetcode.com/problems/immediate-food-delivery-i/)|[Solution](../master/database/_1173.sql) |  | Easy |
 |1148|[Article Views I](https://leetcode.com/problems/article-views-i/)|[Solution](../master/database/_1148.sql) |  | Easy |
-|1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array/)|[Javascript](./javascript/_1146.js)| | Easy |
 |1141|[User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/)|[Solution](../master/database/_1141.sql) |  | Easy |
 |1084|[Sales Analysis III](https://leetcode.com/problems/sales-analysis-iii/)|[Solution](../master/database/_1084.sql) |  | Easy |
 |1083|[Sales Analysis II](https://leetcode.com/problems/sales-analysis-ii/)|[Solution](../master/database/_1083.sql) |  | Easy |
