@@ -5,7 +5,8 @@ public class _1283 {
 
         public int smallestDivisor(int[] nums, int threshold) {
 
-            int start = 1, result = 0;
+            int start = 1;
+            int result = 0;
             int end = Integer.MAX_VALUE;
             while (start <= end) {
                 int middle = start + (end - start) / 2;
@@ -22,10 +23,11 @@ public class _1283 {
         private boolean isSumLessThanThreshold(int middle, int[] nums, int threshold) {
             int sum = 0;
             for (int i = 0; i < nums.length; i++) {
-                if (nums[i] % middle == 0)
+                if (nums[i] % middle == 0) {
                     sum += nums[i] / middle;
-                else
+                } else {
                     sum += nums[i] / middle + 1;
+                }
             }
             return sum <= threshold;
         }
