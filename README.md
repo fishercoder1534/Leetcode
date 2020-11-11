@@ -999,7 +999,7 @@ _If you like this project, please leave me a star._ &#9733;
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_39.java)||Medium|Backtracking
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_38.java)||Easy| Recursion, LinkedList
 |37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_37.java)||Hard|
-|36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_36.java)||Medium| 
+|36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_36.java), [Javascript](./src/javascript/_36.js)||Medium| 
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_35.java)||Easy|Array
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_34.java)||Medium|Array, Binary Search
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_33.java)||Medium|Binary Search
