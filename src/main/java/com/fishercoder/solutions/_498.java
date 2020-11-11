@@ -1,5 +1,9 @@
 package com.fishercoder.solutions;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class _498 {
 
     public static class Solutoin1 {
@@ -47,4 +51,51 @@ public class _498 {
         }
     }
 
+    /*
+        matrix = new int[][]{
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9},
+                {10, 11, 12},
+                {13, 14, 15},
+        };
+        expected = new int[]{1, 2, 4, 7, 5, 3, 6, 8, 10, 13, 11, 9, 12, 14, 15};
+    */
+    public static class Solutoin2 {
+        public int[] findDiagonalOrder(int[][] matrix) {
+                if(matrix == null || matrix.length == 0){
+                    return new int[0];
+                }
+                List<List<Integer>> diagonals = new ArrayList<>();
+    			int maxRow = matrix.length;
+    			int maxCol = matrix[0].length;
+    			int maxDiagonal = maxRow + maxCol - 1;
+    			for (int diagonalIndex = 0; diagonalIndex < maxDiagonal; diagonalIndex++) {
+    				int curRowIdx = (diagonalIndex < maxCol) ? 0 : (diagonalIndex - maxCol + 1);
+    				int curColIdx = (diagonalIndex < maxCol) ? diagonalIndex : (maxCol - 1);
+    				List<Integer> diagonal = new ArrayList<Integer>();
+    				while (curRowIdx >= 0 && curRowIdx < maxRow && curColIdx >= 0 && curColIdx < maxCol) {
+    					int diagonalElement = matrix[curRowIdx][curColIdx];
+    					diagonal.add(diagonalElement);
+    					curRowIdx++;
+    					curColIdx--;
+    				}
+    				diagonals.add(diagonal);
+    			}
+    			int[] result = new int[maxRow * maxCol];
+    			int resultIdx = 0;
+    			for (int i = 0; i < diagonals.size(); i++) {
+    				List<Integer> diagonal = diagonals.get(i);
+    				if (i % 2 == 0) {
+    					Collections.reverse(diagonal);
+    				}
+    				for (int j = 0; j < diagonal.size(); j++) {
+    					result[resultIdx] = diagonal.get(j);
+    					resultIdx++;
+    				}
+    			}
+    			return result;
+        }
+    }
+    
 }
