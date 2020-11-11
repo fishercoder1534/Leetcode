@@ -55,13 +55,26 @@ public class _498Test {
         expected = new int[]{1, 2, 4, 7, 5, 3, 6, 8, 9};
         assertArrayEquals(expected, solutoin2.findDiagonalOrder(matrix));
     }
-    
+
     @Test
     public void test4() {
         matrix = new int[][]{
-        	{2,5},{8,4},{0,-1}
+                {2, 5}, {8, 4}, {0, -1}
         };
-        expected = new int[]{2,5,8,0,4,-1};
+        expected = new int[]{2, 5, 8, 0, 4, -1};
+        assertArrayEquals(expected, solutoin2.findDiagonalOrder(matrix));
+    }
+
+    @Test
+    public void test5() {
+        matrix = new int[][]{
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9},
+                {10, 11, 12},
+                {13, 14, 15},
+        };
+        expected = new int[]{1, 2, 4, 7, 5, 3, 6, 8, 10, 13, 11, 9, 12, 14, 15};
         assertArrayEquals(expected, solutoin2.findDiagonalOrder(matrix));
     }
 }
