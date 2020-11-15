@@ -7,12 +7,12 @@ import java.util.List;
 
 public class _938 {
     public static class Solution1 {
-        public int rangeSumBST(TreeNode root, int L, int R) {
+        public int rangeSumBST(TreeNode root, int low, int high) {
             if (root == null) {
                 return 0;
             }
             List<Integer> list = new ArrayList<>();
-            dfs(root, L, R, list);
+            dfs(root, low, high, list);
             return list.stream().mapToInt(num -> num).sum();
         }
 
