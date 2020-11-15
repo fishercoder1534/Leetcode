@@ -4,6 +4,9 @@ apply plugin: 'checkstyle'
 group = 'com.fishercoder'
 version = '1.0-SNAPSHOT'
 
+javadoc.options.encoding = 'UTF-8'
+compileJava.options.encoding = 'UTF-8'
+
 checkstyle {
     //include ( '**/*.java')
     configFile = file("${rootDir}/fishercoder_checkstyle.xml")
