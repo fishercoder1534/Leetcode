@@ -61,7 +61,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1507|[Reformat Date](https://leetcode.com/problems/reformat-date/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1507.java) | |Easy|String|
 |1502|[Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1502.java) | |Easy|Array, Sort|
 |1496|[Path Crossing](https://leetcode.com/problems/path-crossing/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1496.java) | |Easy|String|
-|1493|[Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1493.java) | |Medium|Array|
+|1493|[Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1493.java) |[:tv:](https://youtu.be/nKhteIRZ2Ok) |Medium|Array|
 |1492|[The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1492.java) | |Medium|Math|
 |1491|[Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1491.java) | |Easy|Array, Sort|
 |1487|[Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1487.java) | |Medium|HashTable, String|
