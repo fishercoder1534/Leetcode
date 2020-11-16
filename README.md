@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1657|[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1657.java) ||Medium|Greedy|
 |1656|[Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1656.java) ||Easy|Array, Design|
 |1652|[Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1652.java) ||Easy|Array|
 |1640|[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1640.java) ||Easy|Array, Sort|
