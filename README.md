@@ -578,7 +578,7 @@ _If you like this project, please leave me a star._ &#9733;
 |488|[Zuma Game](https://leetcode.com/problems/zuma-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_488.java) |  |Hard | DFS, Backtracking
 |487|[Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_487.java) | [:tv:](https://youtu.be/nKhteIRZ2Ok) |Medium| Array
 |486|[Predict the Winner](https://leetcode.com/problems/predict-the-winner/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_486.java) | | Medium | DP
-|485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Java](../master/src/main/java/com/fishercoder/solutions/_485.java) [Javascript](../master/javascript/_485.js)| |Easy| Array
+|485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Java](../master/src/main/java/com/fishercoder/solutions/_485.java) [Javascript](../master/javascript/_485.js)| [:tv:](https://youtu.be/nKhteIRZ2Ok)|Easy| Array
 |484|[Find Permutation](https://leetcode.com/problems/find-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_484.java) |  |Medium | Array, String, Greedy
 |483|[Smallest Good Base](https://leetcode.com/problems/smallest-good-base/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_483.java) |  |Hard | Binary Search, Math
 |482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_482.java) | |Medium| 
