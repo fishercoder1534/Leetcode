@@ -268,7 +268,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1009|[Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1009.java) | |Easy|
 |1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1008.java) | |Medium| Recursion
 |1005|[Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1005.java) | [:tv:](https://youtu.be/spiwTAuz1_4) |Easy|
-|1004|[Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1004.java) |  |Medium| Two Pointers, Sliding Window
+|1004|[Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1004.java) | [:tv:](https://youtu.be/nKhteIRZ2Ok) |Medium| Two Pointers, Sliding Window
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1003.java) | |Medium|
 |1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1002.java) |  |Easy|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_999.java) | |Easy|
