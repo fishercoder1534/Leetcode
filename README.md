@@ -1044,6 +1044,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video         | Difficulty    | Tag          
 |-----|----------------|---------------|---------------|---------------|-------------
+|1607|[Sellers With No Sales](https://leetcode.com/problems/sellers-with-no-sales/)|[Solution](../master/database/_1607.sql) || Easy |
 |1543|[Fix Product Name Format](https://leetcode.com/problems/fix-product-name-format/)|[Solution](../master/database/_1543.sql) || Easy |
 |1517|[Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/)|[Solution](../master/database/_1517.sql) || Easy |
 |1495|[Friendly Movies Streamed Last Month](https://leetcode.com/problems/friendly-movies-streamed-last-month/)|[Solution](../master/database/_1495.sql) || Easy |
