@@ -2,6 +2,9 @@ package com.fishercoder.solutions;
 
 public class _1570 {
     public static class Solution1 {
+        /**This is a brute force but accepted solution.
+         * More optimal solution:
+         *  use a map to store only non-zero values and use the smaller vector to do multiplication to reduce space and save time.*/
         class SparseVector {
             int[] vector;
 
