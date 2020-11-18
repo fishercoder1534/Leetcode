@@ -9,8 +9,7 @@ public class _1268 {
             TrieNode root = buildTrie(products);
             List<List<String>> result = new ArrayList<>();
             for (int i = 1; i <= searchWord.length(); i++) {
-                String searchTerm = searchWord.substring(0, i);
-                result.add(findTopThreeMatches(root, searchTerm));
+                result.add(findTopThreeMatches(root, searchWord.substring(0, i)));
             }
             return result;
         }
