@@ -1,33 +1,36 @@
 package com.fishercoder.solutions;
 
-import com.fishercoder.common.classes.Interval;
-
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 
 public class _56 {
 
     public static class Solution1 {
-        public List<Interval> merge(List<Interval> intervals) {
-            if (intervals.size() <= 1) {
+        public int[][] merge(int[][] intervals) {
+            if (intervals.length <= 1) {
                 return intervals;
             }
 
-            Collections.sort(intervals, (o1, o2) -> o1.start - o2.start);
+            Arrays.sort(intervals, (o1, o2) -> o1[0] - o2[0]);
 
-            List<Interval> result = new ArrayList();
-            for (int i = 0; i < intervals.size(); i++) {
-                int start = intervals.get(i).start;
-                int end = intervals.get(i).end;
-                while (i < intervals.size() && end >= intervals.get(i).start) {
-                    end = Math.max(end, intervals.get(i).end);
+            List<int[]> result = new ArrayList();
+            for (int i = 0; i < intervals.length; i++) {
+                int start = intervals[i][0];
+                int end = intervals[i][1];
+                while (i < intervals.length && end >= intervals[i][0]) {
+                    end = Math.max(end, intervals[i][1]);
                     i++;
                 }
-                result.add(new Interval(start, end));
+                result.add(new int[]{start, end});
                 i--;
             }
-            return result;
+            int[][] finalResult = new int[result.size()][2];
+            for (int i = 0; i < result.size(); i++) {
+                finalResult[i][0] = result.get(i)[0];
+                finalResult[i][1] = result.get(i)[1];
+            }
+            return finalResult;
         }
     }
 
