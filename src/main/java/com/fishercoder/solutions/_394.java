@@ -18,7 +18,6 @@ public class _394 {
                     while (s.charAt(idx + 1) >= '0' && s.charAt(idx + 1) <= '9') {
                         idx++;
                     }
-
                     count.push(Integer.parseInt(s.substring(start, idx + 1)));
                 } else if (s.charAt(idx) == '[') {
                     str.push("");
@@ -26,11 +25,9 @@ public class _394 {
                     String st = str.pop();
                     StringBuilder sb = new StringBuilder();
                     int n = count.pop();
-
                     for (int j = 0; j < n; j++) {
                         sb.append(st);
                     }
-
                     str.push(str.pop() + sb.toString());
                 } else {
                     str.push(str.pop() + s.charAt(idx));
