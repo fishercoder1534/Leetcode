@@ -362,6 +362,7 @@ _If you like this project, please leave me a star._ &#9733;
 |788|[Rotated Digits](https://leetcode.com/problems/rotated-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_788.java) | |Easy|
 |784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_784.java) |  |Easy|
 |783|[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_783.java) |  |Easy|
+|781|[Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_781.java) |  |Medium| HashTable, Math
 |779|[K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_779.java) |  |Medium|
 |776|[Split BST](https://leetcode.com/problems/split-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_776.java) | |Medium| Recursion
 |771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_771.java) |  |Easy|
