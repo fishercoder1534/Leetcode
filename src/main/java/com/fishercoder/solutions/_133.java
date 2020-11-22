@@ -34,7 +34,7 @@ public class _133 {
             return root;
         }
 
-        class Node {
+        public static class Node {
             public int val;
             public List<Node> neighbors;
 
