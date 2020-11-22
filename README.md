@@ -69,6 +69,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1493|[Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1493.java) |[:tv:](https://youtu.be/nKhteIRZ2Ok) |Medium|Array|
 |1492|[The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1492.java) | |Medium|Math|
 |1491|[Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1491.java) | |Easy|Array, Sort|
+|1490|[Clone N-ary Tree](https://leetcode.com/problems/clone-n-ary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1490.java) | |Medium|HashTable, Tree, DFS, BFS|
 |1487|[Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1487.java) | |Medium|HashTable, String|
 |1486|[XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1486.java) | |Medium|Array, Bit Manipulation|
 |1481|[Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1481.java) | |Medium|Array, Sort|
