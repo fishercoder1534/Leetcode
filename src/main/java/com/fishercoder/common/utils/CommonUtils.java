@@ -26,6 +26,7 @@ public class CommonUtils {
         printArray_generic_type(nums);
         CommonUtils.printListList(convertLeetCode2DStringArrayInputIntoJavaArray("[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]"));
         CommonUtils.print(convertLeetCode1DStringArrayInputIntoJavaArray("[\"abcsi\",\"abyzjgj\",\"advz\",\"ag\",\"agkgdkob\",\"agpr\",\"ail\"]"));
+        CommonUtils.print2DIntArray(convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[448,931,123,345],[889],[214,962],[576,746,897]"));
     }
 
     public static void printArray(boolean[] booleans) {
@@ -292,7 +293,7 @@ public class CommonUtils {
         return output;
     }
 
-    public static int[][] convertLeetCodeIrregularRectangleArrayInputIntoJavaArray(String input) {
+    public static int[][] convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(String input) {
         /**
          * LeetCode 2-d array input usually comes like this: each row could have different length
          * [[448,931,123,345],[889],[214,962],[576,746,897]]
@@ -302,27 +303,32 @@ public class CommonUtils {
          * */
         String[] arrays = input.split("],\\[");
         int maxLen = 0;
+        int[] sizes = new int[arrays.length];
         for (int i = 0; i < arrays.length; i++) {
             String[] strs = arrays[i].split(",");
             maxLen = Math.max(maxLen, strs.length);
+            sizes[i] = strs.length;
         }
-        int[][] output = new int[arrays.length][maxLen];
+        int[][] output = new int[arrays.length][];
         for (int i = 0; i < arrays.length; i++) {
             if (i == 0) {
                 String str = arrays[i].substring(1);
                 String[] nums = str.split(",");
-                for (int j = 0; j < nums.length; j++) {
+                output[i] = new int[sizes[i]];
+                for (int j = 0; j < sizes[i]; j++) {
                     output[i][j] = Integer.parseInt(nums[j]);
                 }
             } else if (i == arrays.length - 1) {
                 String str = arrays[i].substring(0, arrays[i].length() - 1);
                 String[] nums = str.split(",");
-                for (int j = 0; j < nums.length; j++) {
+                output[i] = new int[sizes[i]];
+                for (int j = 0; j < sizes[i]; j++) {
                     output[i][j] = Integer.parseInt(nums[j]);
                 }
             } else {
                 String[] nums = arrays[i].split(",");
-                for (int j = 0; j < nums.length; j++) {
+                output[i] = new int[sizes[i]];
+                for (int j = 0; j < sizes[i]; j++) {
                     output[i][j] = Integer.parseInt(nums[j]);
                 }
             }
