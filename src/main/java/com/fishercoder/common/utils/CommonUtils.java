@@ -24,7 +24,8 @@ public class CommonUtils {
     public static void main(String... strings) {
         Integer[] nums = new Integer[]{1, 2, 3, 4, 5};
         printArray_generic_type(nums);
-        CommonUtils.printListList(convertLeetCodeStringArrayInputIntoJavaArray("[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]"));
+        CommonUtils.printListList(convertLeetCode2DStringArrayInputIntoJavaArray("[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]"));
+        CommonUtils.print(convertLeetCode1DStringArrayInputIntoJavaArray("[\"abcsi\",\"abyzjgj\",\"advz\",\"ag\",\"agkgdkob\",\"agpr\",\"ail\"]"));
     }
 
     public static void printArray(boolean[] booleans) {
@@ -329,7 +330,7 @@ public class CommonUtils {
         return output;
     }
 
-    public static List<List<String>> convertLeetCodeStringArrayInputIntoJavaArray(String input) {
+    public static List<List<String>> convertLeetCode2DStringArrayInputIntoJavaArray(String input) {
         /**
          * LeetCode 2-d array input usually comes like this: each row could have different length
          * [["A","B"],["C"],["B","C"],["D"]]
@@ -355,6 +356,31 @@ public class CommonUtils {
                 level.add(strings[j]);
             }
             result.add(level);
+        }
+        return result;
+    }
+
+    public static List<String> convertLeetCode1DStringArrayInputIntoJavaArray(String input) {
+        /**
+         * LeetCode 2-d array input usually comes like this: each row could have different length
+         * ["A","B","C"]
+         * The expected input for this method is: "[\"A\",\"B\",\"C\"]"
+         * just copy the LeetCode input: ["A","B","C"] into double quotes in Java,
+         * it'll auto escape the double quotes.
+         * The output of this method will be a standard Java 1-d array.
+         * */
+        String[] arrays = input.split(",");
+        List<String> result = new ArrayList<>();
+        for (int i = 0; i < arrays.length; i++) {
+            String word;
+            if (i == 0) {
+                word = arrays[i].substring(1);
+            } else if (i == arrays.length - 1) {
+                word = arrays[i].substring(0, arrays[i].length() - 1);
+            } else {
+                word = arrays[i];
+            }
+            result.add(word);
         }
         return result;
     }
