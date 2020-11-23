@@ -75,12 +75,13 @@ public class _1268 {
         }
 
         class TrieNode {
-            TrieNode[] children = new TrieNode[26];
+            TrieNode[] children;
             boolean isWord;
             char c;
 
             public TrieNode(char c) {
                 this.c = c;
+                this.children = new TrieNode[26];
             }
         }
     }

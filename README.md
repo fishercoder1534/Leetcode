@@ -8,7 +8,12 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+<<<<<<< HEAD
 |1658|[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)|[Javascript](./javascript/_1658.js)||Medium|Greedy|
+=======
+|1663|[Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1663.java) ||Medium|Greedy|
+|1662|[Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1662.java) ||Easy|String|
+>>>>>>> 45495dbcdb410961f03610c8b23d13dbba6851d5
 |1657|[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1657.java) ||Medium|Greedy|
 |1656|[Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1656.java) ||Easy|Array, Design|
 |1652|[Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1652.java) ||Easy|Array|
@@ -68,6 +73,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1493|[Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1493.java) |[:tv:](https://youtu.be/nKhteIRZ2Ok) |Medium|Array|
 |1492|[The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1492.java) | |Medium|Math|
 |1491|[Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1491.java) | |Easy|Array, Sort|
+|1490|[Clone N-ary Tree](https://leetcode.com/problems/clone-n-ary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1490.java) | |Medium|HashTable, Tree, DFS, BFS|
 |1487|[Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1487.java) | |Medium|HashTable, String|
 |1486|[XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1486.java) | |Medium|Array, Bit Manipulation|
 |1481|[Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1481.java) | |Medium|Array, Sort|
@@ -224,6 +230,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | |Easy||
 |1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1150.java)|[:tv:](https://youtu.be/-t2cdVs9cKk) |Easy||
 |1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array/)|[Javascript](./javascript/_1146.js)| | Easy ||
+|1138|[Alphabet Board Path](https://leetcode.com/problems/alphabet-board-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1138.java)| | Medium |HashTable, String|
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1137.java) | |Easy||
 |1134|[Armstrong Number](https://leetcode.com/problems/armstrong-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1134.java) |  [:tv:](https://www.youtube.com/watch?v=HTL7fd4HPf4)|Easy||
 |1133|[Largest Unique Number](https://leetcode.com/problems/largest-unique-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1133.java) | [:tv:](https://youtu.be/Fecpt1YZlCs)|Easy||
@@ -238,6 +245,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1103.java) | |Easy|Math|
 |1100|[Find K-Length Substrings With No Repeated Characters](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1100.java) | |Medium|String, Sliding Window|
 |1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1099.java) |  [:tv:](https://www.youtube.com/watch?v=2Uq7p7HE0TI)|Easy||
+|1090|[Largest Values From Labels](https://leetcode.com/problems/largest-values-from-labels/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1090.java) | |Medium|HashTable, Greedy|
 |1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1089.java) | |Easy||
 |1087|[Brace Expansion](https://leetcode.com/problems/brace-expansion/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1087.java) | |Medium|Backtracking|
 |1086|[High Five](https://leetcode.com/problems/high-five/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1086.java) | [:tv:](https://www.youtube.com/watch?v=3iqC5J4l0Cc)|Easy||
@@ -361,6 +369,7 @@ _If you like this project, please leave me a star._ &#9733;
 |788|[Rotated Digits](https://leetcode.com/problems/rotated-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_788.java) | |Easy|
 |784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_784.java) |  |Easy|
 |783|[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_783.java) |  |Easy|
+|781|[Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_781.java) |  |Medium| HashTable, Math
 |779|[K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_779.java) |  |Medium|
 |776|[Split BST](https://leetcode.com/problems/split-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_776.java) | |Medium| Recursion
 |771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_771.java) |  |Easy|
@@ -499,7 +508,7 @@ _If you like this project, please leave me a star._ &#9733;
 |599|[Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_599.java) | |Easy | HashMap
 |598|[Range Addition II](https://leetcode.com/problems/range-addition-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_598.java) |  |Easy | 
 |594|[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_594.java) |  |Easy | Array, HashMap
-|593|[Valid Square](https://leetcode.com/problems/valid-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_593.java) | |Medium | Math
+|593|[Valid Square](https://leetcode.com/problems/valid-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_593.java), [Javascript](./javascript/_593.js) | |Medium | Math
 |592|[Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_592.java) | |Medium | Math
 |591|[Tag Validator](https://leetcode.com/problems/tag-validator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_591.java) |  |Hard | Stack, String
 |590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_590.java) | |Easy| DFS, recursion
