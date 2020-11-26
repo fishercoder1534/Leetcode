@@ -3,7 +3,6 @@ package com.fishercoder.solutions;
 public class _555 {
 
     public static class Solution1 {
-
         /**
          * credit: https://discuss.leetcode.com/topic/86477/neat-java-solution
          * and article: https://leetcode.com/articles/split-assembled-strings/#approach-3-optimized-solution-accepted
