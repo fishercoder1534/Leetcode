@@ -1,5 +1,6 @@
 package com.fishercoder.solutions;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -9,12 +10,7 @@ public class _1456 {
     public static class Solution1 {
         public int maxVowels(String s, int k) {
             Map<Character, Integer> vowels = new HashMap<>();
-            Set<Character> set = new HashSet<>();
-            set.add('a');
-            set.add('e');
-            set.add('i');
-            set.add('o');
-            set.add('u');
+            Set<Character> set = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u'));
             int left = 0;
             for (; left < k; left++) {
                 if (set.contains(s.charAt(left))) {
