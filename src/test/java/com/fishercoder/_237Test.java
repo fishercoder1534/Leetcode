@@ -2,6 +2,7 @@ package com.fishercoder;
 
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.CommonUtils;
+import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions._237;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -19,7 +20,7 @@ public class _237Test {
 
     @Test
     public void test1() {
-        head = ListNode.createSinglyLinkedList(Arrays.asList(4, 5, 1, 9));
+        head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(4, 5, 1, 9));
         CommonUtils.printList(head);
         solution1.deleteNode(head.next);
         CommonUtils.printList(head);

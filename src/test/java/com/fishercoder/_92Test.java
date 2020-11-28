@@ -1,6 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.ListNode;
+import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions._92;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -21,8 +22,8 @@ public class _92Test {
 
     @Test
     public void test1() {
-        head = ListNode.createSinglyLinkedList(Arrays.asList(1, 2, 3, 4, 5));
-        expected = ListNode.createSinglyLinkedList(Arrays.asList(1, 4, 3, 2, 5));
+        head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 3, 4, 5));
+        expected = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 4, 3, 2, 5));
         assertEquals(expected, solution1.reverseBetween(head, 2, 4));
     }
 

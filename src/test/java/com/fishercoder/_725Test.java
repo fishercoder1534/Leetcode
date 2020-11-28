@@ -25,7 +25,7 @@ public class _725Test {
         k = 5;
         actual = solution1.splitListToParts(root, k);
         for (ListNode head : actual) {
-            ListNode.printList(head);
+            LinkedListUtils.printList(head);
         }
     }
 
@@ -35,7 +35,7 @@ public class _725Test {
         k = 3;
         actual = solution1.splitListToParts(root, k);
         for (ListNode head : actual) {
-            ListNode.printList(head);
+            LinkedListUtils.printList(head);
         }
     }
 
@@ -45,7 +45,7 @@ public class _725Test {
         k = 5;
         actual = solution2.splitListToParts(root, k);
         for (ListNode head : actual) {
-            ListNode.printList(head);
+            LinkedListUtils.printList(head);
         }
     }
 
@@ -55,7 +55,7 @@ public class _725Test {
         k = 3;
         actual = solution2.splitListToParts(root, k);
         for (ListNode head : actual) {
-            ListNode.printList(head);
+            LinkedListUtils.printList(head);
         }
     }
 

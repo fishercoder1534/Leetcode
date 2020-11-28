@@ -1,6 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.ListNode;
+import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions._325;
 import com.fishercoder.solutions._876;
 import java.util.Arrays;
@@ -21,15 +22,15 @@ public class _876Test {
 
   @Test
   public void test1() {
-    head = ListNode.createSinglyLinkedList(Arrays.asList(1, 2, 3, 4, 5));
+    head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 3, 4, 5));
     middle = solution1.middleNode(head);
-    assertEquals(middle, ListNode.createSinglyLinkedList(Arrays.asList(3, 4, 5)));
+    assertEquals(middle, LinkedListUtils.createSinglyLinkedList(Arrays.asList(3, 4, 5)));
   }
 
   @Test
   public void test2() {
-    head = ListNode.createSinglyLinkedList(Arrays.asList(1, 2, 3, 4, 5, 6));
+    head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 3, 4, 5, 6));
     middle = solution1.middleNode(head);
-    assertEquals(middle, ListNode.createSinglyLinkedList(Arrays.asList(4, 5, 6)));
+    assertEquals(middle, LinkedListUtils.createSinglyLinkedList(Arrays.asList(4, 5, 6)));
   }
 }
