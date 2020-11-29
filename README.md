@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1673|[Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1673.java) ||Medium|Stack, Greedy|
 |1672|[Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1672.java) ||Easy|Array|
 |1669|[Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1669.java) ||Medium|LinedList|
 |1668|[Maximum Repeating Substring](https://leetcode.com/problems/maximum-repeating-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1668.java) ||Easy|String|
