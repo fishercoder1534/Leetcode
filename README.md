@@ -28,7 +28,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1626|[Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1626.java) ||Medium|DP|
 |1625|[Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1625.java) ||Medium|BFS, DFS|
 |1624|[Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1624.java) ||Easy|String|
-|1620|[Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1620.java) ||Medium|Greedy|
+|1620|[Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1620.java) |[:tv:](https://youtu.be/TqKDnzkRsh0)|Medium|Greedy|
 |1619|[Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1620.java) ||Easy|Array|
 |1614|[Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1614.java) ||Easy|String|
 |1609|[Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1609.java) ||Medium|Tree|
