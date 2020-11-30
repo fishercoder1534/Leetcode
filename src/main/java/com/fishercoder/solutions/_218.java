@@ -38,7 +38,7 @@ public class _218 {
             }
         }
 
-        public List<int[]> getSkyline(int[][] buildings) {
+        public List<List<Integer>> getSkyline(int[][] buildings) {
             BuildingPoint[] bps = new BuildingPoint[buildings.length * 2];
             int index = 0;
             for (int[] building : buildings) {
@@ -51,7 +51,7 @@ public class _218 {
             //this is one key step:
             Arrays.sort(bps);
 
-            List<int[]> result = new ArrayList();
+            List<List<Integer>> result = new ArrayList();
             TreeMap<Integer, Integer> treeMap = new TreeMap();
             treeMap.put(0, 1);
             int prevMaxH = 0;
@@ -74,7 +74,7 @@ public class _218 {
 
                 int currMaxH = treeMap.lastKey();
                 if (currMaxH != prevMaxH) {
-                    result.add(new int[]{bp.x, currMaxH});
+                    result.add(Arrays.asList(bp.x, currMaxH));
                     prevMaxH = currMaxH;
                 }
 
