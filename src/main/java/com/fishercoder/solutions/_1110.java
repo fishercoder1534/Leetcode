@@ -9,10 +9,10 @@ import java.util.Queue;
 
 public class _1110 {
     public static class Solution1 {
-        public List<TreeNode> delNodes(TreeNode root, int[] to_delete) {
+        public List<TreeNode> delNodes(TreeNode root, int[] toDelete) {
             Queue<TreeNode> queue = new LinkedList<>();
             queue.offer(root);
-            for (int d : to_delete) {
+            for (int d : toDelete) {
                 delete(d, queue);
             }
             List<TreeNode> result = new ArrayList<>();
