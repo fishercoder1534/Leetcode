@@ -11,6 +11,7 @@ import java.util.Arrays;
 import static org.junit.Assert.assertEquals;
 
 public class _1038Test {
+    
     private static _1038.Solution1 solution1;
     private static TreeNode root;
     private static TreeNode expected;
