@@ -78,6 +78,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1490|[Clone N-ary Tree](https://leetcode.com/problems/clone-n-ary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1490.java) | |Medium|HashTable, Tree, DFS, BFS|
 |1487|[Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1487.java) | |Medium|HashTable, String|
 |1486|[XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1486.java) | |Medium|Array, Bit Manipulation|
+|1485|[Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1485.java) | |Medium|HashTable, Tree, DFS, BFS|
 |1481|[Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1481.java) | |Medium|Array, Sort|
 |1480|[Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1480.java), [C++](../master/cpp/_1480.cpp)| |Easy|Array|
 |1476|[Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1476.java) | |Medium|Array|
