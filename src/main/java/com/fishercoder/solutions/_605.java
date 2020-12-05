@@ -39,7 +39,8 @@ public class _605 {
             for (int i = 1; i < len - 1; i++) {
                 if (flowerbed[i] == 0 && flowerbed[i - 1] == 0 && flowerbed[i + 1] == 0) {
                     n--;
-                    flowerbed[i] = 1;//modify the input, discuss this with interviwer, if not allowed, then have a copy of this input and modify copy
+                    //modify the input, discuss this with interviwer, if not allowed, then have a copy of this input and modify copy
+                    flowerbed[i] = 1;
                 }
                 if (n <= 0) {
                     return true;
