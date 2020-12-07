@@ -11,6 +11,7 @@ public class _59 {
             if (n == 0) {
                 return matrix;
             }
+
             int value = 1;
             int top = 0;
             int bottom = n - 1;
