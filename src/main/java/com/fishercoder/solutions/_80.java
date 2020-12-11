@@ -9,16 +9,9 @@ public class _80 {
         public int removeDuplicates(int[] nums) {
             int counter = 0;
             int len = nums.length;
-            if (len == 0) {
-                return 0;
+            if (len < 3) {
+                return len;
             }
-            if (len == 1) {
-                return 1;
-            }
-            if (len == 2) {
-                return 2;
-            }
-
             List<Integer> a = new ArrayList();
             a.add(nums[0]);
             a.add(nums[1]);
