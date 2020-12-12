@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1684|[Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1684.java) ||Easy|String|
 |1679|[Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1679.java) ||Medium|HashTable|
 |1678|[Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1678.java) ||Easy|String|
 |1673|[Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1673.java) ||Medium|Stack, Greedy|
