@@ -21,7 +21,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1663|[Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1663.java) ||Medium|Greedy|
 |1662|[Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1662.java) ||Easy|String|
 |1658|[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)|[Javascript](./javascript/_1658.js)||Medium|Greedy|
-|1657|[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1657.java) ||Medium|Greedy|
+|1657|[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1657.java) |[:tv:](https://youtu.be/-jXQK-UeChU)|Medium|Greedy|
 |1656|[Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1656.java) ||Easy|Array, Design|
 |1652|[Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1652.java) ||Easy|Array|
 |1646|[Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1646.java) ||Easy|Array|
