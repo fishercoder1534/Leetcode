@@ -3,6 +3,7 @@ package com.fishercoder.solutions;
 import java.util.Arrays;
 
 public class _985 {
+    
     public static class Solution1 {
 
         public int[] sumEvenAfterQueries(int[] A, int[][] queries) {
