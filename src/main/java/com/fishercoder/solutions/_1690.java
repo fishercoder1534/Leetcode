@@ -33,8 +33,8 @@ public class _1690 {
             } else {
                 maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i][j] = Math.max(
                         this.sumOfTheStonesValueInPosIToJ(i + 1, j)
-                                - maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i + 1][j]
-                        , this.sumOfTheStonesValueInPosIToJ(i, j - 1)
+                                - maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i + 1][j],
+                        this.sumOfTheStonesValueInPosIToJ(i, j - 1)
                                 - maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i][j - 1]);
             }
         }
