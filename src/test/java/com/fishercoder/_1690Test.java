@@ -16,7 +16,7 @@ public class _1690Test {
 
     @Test
     public void test1() {
-        assertEquals(6, solution1.stoneGameVII(new int[]{5,3,1,4,2}));
+        assertEquals(6, solution1.stoneGameVII(new int[]{5, 3, 1, 4, 2}));
     }
 
 }
