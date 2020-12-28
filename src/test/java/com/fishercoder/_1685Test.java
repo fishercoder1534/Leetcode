@@ -21,4 +21,10 @@ public class _1685Test {
         assertArrayEquals(new int[]{4, 3, 5}, solution1.getSumAbsoluteDifferences(nums));
     }
 
+    @Test
+    public void test2() {
+        nums = new int[]{1, 4, 6, 8, 10};
+        assertArrayEquals(new int[]{24, 15, 13, 15, 21}, solution1.getSumAbsoluteDifferences(nums));
+    }
+
 }
