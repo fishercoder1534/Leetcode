@@ -1075,6 +1075,7 @@ _If you like this project, please leave me a star._ &#9733;
 |-----|----------------|---------------|---------------|---------------|-------------
 |1693|[Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/)|[Solution](../master/database/_1693.sql) || Easy |
 |1683|[Invalid Tweets](https://leetcode.com/problems/invalid-tweets/)|[Solution](../master/database/_1683.sql) || Easy |
+|1677|[Product's Worth Over Invoices](https://leetcode.com/problems/products-worth-over-invoices/)|[Solution](../master/database/_1677.sql) || Easy |
 |1607|[Sellers With No Sales](https://leetcode.com/problems/sellers-with-no-sales/)|[Solution](../master/database/_1607.sql) || Easy |
 |1581|[Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/)|[Solution](../master/database/_1581.sql) || Easy |
 |1543|[Fix Product Name Format](https://leetcode.com/problems/fix-product-name-format/)|[Solution](../master/database/_1543.sql) || Easy |
