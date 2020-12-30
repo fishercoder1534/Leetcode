@@ -1,0 +1,2 @@
+--# Write your MySQL query statement below
+select name, sum(rest) as rest, sum(paid) as paid, sum(canceled) as canceled, sum(refunded) as refunded from Product join Invoice using (product_id) group by name order by name;
