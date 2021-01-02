@@ -1082,6 +1082,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1633|[Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/)|[Solution](../master/database/_1633.sql) || Easy |
 |1623|[All Valid Triplets That Can Represent a Country](https://leetcode.com/problems/all-valid-triplets-that-can-represent-a-country/)|[Solution](../master/database/_1623.sql) || Easy |
 |1607|[Sellers With No Sales](https://leetcode.com/problems/sellers-with-no-sales/)|[Solution](../master/database/_1607.sql) || Easy |
+|1587|[Bank Account Summary II](https://leetcode.com/problems/bank-account-summary-ii/)|[Solution](../master/database/_1587.sql) || Easy |
 |1581|[Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/)|[Solution](../master/database/_1581.sql) || Easy |
 |1543|[Fix Product Name Format](https://leetcode.com/problems/fix-product-name-format/)|[Solution](../master/database/_1543.sql) || Easy |
 |1517|[Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/)|[Solution](../master/database/_1517.sql) || Easy |
