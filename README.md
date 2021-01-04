@@ -1086,6 +1086,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1571|[Warehouse Manager](https://leetcode.com/problems/warehouse-manager/)|[Solution](../master/database/_1571.sql) || Easy |
 |1587|[Bank Account Summary II](https://leetcode.com/problems/bank-account-summary-ii/)|[Solution](../master/database/_1587.sql) || Easy |
 |1581|[Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/)|[Solution](../master/database/_1581.sql) || Easy |
+|1565|[Unique Orders and Customers Per Month](https://leetcode.com/problems/unique-orders-and-customers-per-month/)|[Solution](../master/database/_1565.sql) || Easy |
 |1543|[Fix Product Name Format](https://leetcode.com/problems/fix-product-name-format/)|[Solution](../master/database/_1543.sql) || Easy |
 |1517|[Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/)|[Solution](../master/database/_1517.sql) || Easy |
 |1495|[Friendly Movies Streamed Last Month](https://leetcode.com/problems/friendly-movies-streamed-last-month/)|[Solution](../master/database/_1495.sql) || Easy |
