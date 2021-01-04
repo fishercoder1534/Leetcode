@@ -15,7 +15,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1694|[Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1694.java) ||Easy|String|
 |1690|[Stone Game VII](https://leetcode.com/problems/stone-game-vii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1690.java) ||Medium|DP|
 |1688|[Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1688.java) ||Easy|Backtracking|
-|1685|[Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1685.java) ||Medium|Math, Greedy|
+|1685|[Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1685.java) |[:tv:](https://youtu.be/WYe644djV30)|Medium|Math, Greedy|
 |1684|[Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1684.java) ||Easy|String|
 |1679|[Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1679.java) ||Medium|HashTable|
 |1678|[Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1678.java) ||Easy|String|
