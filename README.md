@@ -1113,6 +1113,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1270|[All People Report to the Given Manager](https://leetcode.com/problems/all-people-report-to-the-given-manager/)|[Solution](../master/database/_1270.sql) || Medium |
 |1251|[Average Selling Price](https://leetcode.com/problems/average-selling-price/)|[Solution](../master/database/_1251.sql) | | Easy |
 |1241|[Number of Comments per Post](https://leetcode.com/problems/number-of-comments-per-post/)|[Solution](../master/database/_1241.sql) | | Easy |
+|1211|[Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/)|[Solution](../master/database/_1211.sql) | | Easy |
 |1179|[Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)|[Solution](../master/database/_1179.sql) |  | Easy |
 |1173|[Immediate Food Delivery I](https://leetcode.com/problems/immediate-food-delivery-i/)|[Solution](../master/database/_1173.sql) |  | Easy |
 |1148|[Article Views I](https://leetcode.com/problems/article-views-i/)|[Solution](../master/database/_1148.sql) |  | Easy |
