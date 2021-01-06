@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1711|[Count Good Meals](https://leetcode.com/problems/count-good-meals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1711.java) ||Medium|Array, HashTable, Two Pointers|
 |1710|[Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1710.java) ||Easy|Greedy, Sort|
 |1708|[Largest Subarray Length K](https://leetcode.com/problems/largest-subarray-length-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1708.java) ||Easy|Array, Greedy|
 |1704|[Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1704.java) ||Easy|String|
