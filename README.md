@@ -1093,6 +1093,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1517|[Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/)|[Solution](../master/database/_1517.sql) || Easy |
 |1511|[Customer Order Frequency](https://leetcode.com/problems/customer-order-frequency/)|[Solution](../master/database/_1511.sql) || Easy |
 |1495|[Friendly Movies Streamed Last Month](https://leetcode.com/problems/friendly-movies-streamed-last-month/)|[Solution](../master/database/_1495.sql) || Easy |
+|1435|[Create a Session Bar Chart](https://leetcode.com/problems/create-a-session-bar-chart/)|[Solution](../master/database/_1435.sql) || Easy |
 |1484|[Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)|[Solution](../master/database/_1484.sql) || Easy |
 |1407|[Top Travellers](https://leetcode.com/problems/top-travellers/)|[Solution](../master/database/_1407.sql) || Easy |
 |1384|[Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/)|[Solution](../master/database/_1384.sql) || Hard |
