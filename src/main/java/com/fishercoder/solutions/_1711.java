@@ -12,7 +12,8 @@ public class _1711 {
             long pairs = 0;
             for (int i = 0; i < deliciousness.length; i++) {
                 int power = 1;
-                for (int j = 0; j < 22; j++) {//we only need to go up to 21 since one of the constraints is: 0 <= deliciousness[i] <= 2 to the power of 20
+                //we only need to go up to 21 since one of the constraints is: 0 <= deliciousness[i] <= 2 to the power of 20
+                for (int j = 0; j < 22; j++) {
                     if (map.containsKey(power - deliciousness[i])) {
                         pairs += map.get(power - deliciousness[i]);
                         pairs %= MODUALR;
