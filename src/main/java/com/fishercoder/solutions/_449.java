@@ -2,6 +2,7 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -148,6 +149,45 @@ public class _449 {
                 }
             }
             return root;
+        }
+    }
+    public static class Solution4 {
+        private static final String NULL_SYMBOL = "X";
+        private static final String DELIMITER = ",";
+
+        // Encodes a tree to a single string.
+        public String serialize(TreeNode root) {
+
+            // If we have a null symbol, encode it to NULL_SYMBOL
+            if(root == null)
+                return NULL_SYMBOL + DELIMITER;
+
+            String leftSubtree = serialize(root.left);
+            String rightSubtree = serialize(root.right);
+
+            return root.val + DELIMITER + leftSubtree + rightSubtree;
+        }
+
+        // Decodes your encoded data to tree.
+        public TreeNode deserialize(String data) {
+
+            Queue<String> nodesLeftToSerialize = new LinkedList<>();
+            nodesLeftToSerialize.addAll(Arrays.asList(data.split(DELIMITER)));
+            return deserializeHelper(nodesLeftToSerialize);
+
+        }
+        private TreeNode deserializeHelper(Queue<String> nodesLeft){
+
+            // remove the node
+            String nodeLeftToSerialize = nodesLeft.poll();
+            // base case
+            if(nodeLeftToSerialize.equals(NULL_SYMBOL)){
+                return null;
+            }
+            TreeNode newNode = new TreeNode(Integer.valueOf(nodeLeftToSerialize));
+            newNode.left = deserializeHelper(nodesLeft);
+            newNode.right = deserializeHelper(nodesLeft);
+            return newNode;
         }
     }
 }
