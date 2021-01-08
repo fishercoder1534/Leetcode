@@ -26,4 +26,26 @@ public class _646 {
         }
     }
 
+    public static class Solution2 {
+        /**
+         * credit: https://leetcode.com/problems/maximum-length-of-pair-chain/discuss/105623/Java-Very-Simple-without-DP
+         */
+        public int findLongestChain(int[][] pairs) {
+            Arrays.sort(pairs, (a, b) -> a[0] - b[0]);
+            int len = 0;
+            int pre = Integer.MIN_VALUE;
+            for (int[] pair : pairs) {
+                if (pair[0] > pre) {
+                    //not overlap
+                    len++;
+                    pre = pair[1];
+                } else if (pair[1] < pre) {
+                    //overlap but with a smaller second number
+                    pre = pair[1];
+                }
+            }
+            return len;
+        }
+    }
+
 }
