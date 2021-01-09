@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1716|[Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1716.java) ||Easy|Math, Greedy|
 |1711|[Count Good Meals](https://leetcode.com/problems/count-good-meals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1711.java) ||Medium|Array, HashTable, Two Pointers|
 |1710|[Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1710.java) ||Easy|Greedy, Sort|
 |1708|[Largest Subarray Length K](https://leetcode.com/problems/largest-subarray-length-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1708.java) ||Easy|Array, Greedy|
