@@ -151,6 +151,7 @@ public class _449 {
             return root;
         }
     }
+
     public static class Solution4 {
         private static final String NULL_SYMBOL = "X";
         private static final String DELIMITER = ",";
@@ -159,8 +160,9 @@ public class _449 {
         public String serialize(TreeNode root) {
 
             // If we have a null symbol, encode it to NULL_SYMBOL
-            if(root == null)
+            if (root == null) {
                 return NULL_SYMBOL + DELIMITER;
+            }
 
             String leftSubtree = serialize(root.left);
             String rightSubtree = serialize(root.right);
@@ -176,12 +178,13 @@ public class _449 {
             return deserializeHelper(nodesLeftToSerialize);
 
         }
-        private TreeNode deserializeHelper(Queue<String> nodesLeft){
+
+        private TreeNode deserializeHelper(Queue<String> nodesLeft) {
 
             // remove the node
             String nodeLeftToSerialize = nodesLeft.poll();
             // base case
-            if(nodeLeftToSerialize.equals(NULL_SYMBOL)){
+            if (nodeLeftToSerialize.equals(NULL_SYMBOL)) {
                 return null;
             }
             TreeNode newNode = new TreeNode(Integer.valueOf(nodeLeftToSerialize));
