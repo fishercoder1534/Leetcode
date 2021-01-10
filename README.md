@@ -950,7 +950,7 @@ _If you like this project, please leave me a star._ &#9733;
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_130.java)| |Medium|
 |129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_129.java)|  |Medium| DFS
 |128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_128.java)| |Hard| Union Find 
-|127|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_127.java)| |Medium| BFS
+|127|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_127.java)| |Hard| BFS
 |126|[Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_126.java)|  |Hard| BFS
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_125.java)|  |Easy| Two Pointers
 |124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_124.java)|  |Hard | Tree, DFS
