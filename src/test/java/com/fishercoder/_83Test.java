@@ -1,6 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.ListNode;
+import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions._83;
 import java.util.Arrays;
 import org.junit.Assert;
@@ -25,15 +26,15 @@ public class _83Test {
 
   @Test
   public void test1() {
-    head = ListNode.createSinglyLinkedList(Arrays.asList(1, 1, 2, 3, 3));
-    expected = ListNode.createSinglyLinkedList(Arrays.asList(1, 2, 3));
+    head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 1, 2, 3, 3));
+    expected = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 3));
     Assert.assertEquals(expected, solution1.deleteDuplicates(head));
   }
 
   @Test
   public void test2() {
-    head = ListNode.createSinglyLinkedList(Arrays.asList(1, 1, 2, 3, 3));
-    expected = ListNode.createSinglyLinkedList(Arrays.asList(1, 2, 3));
+    head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 1, 2, 3, 3));
+    expected = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 3));
     Assert.assertEquals(expected, solution2.deleteDuplicates(head));
   }
 }
