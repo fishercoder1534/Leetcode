@@ -45,7 +45,7 @@ public class _1721 {
                 n++;
             }
 
-            int nums[] = new int[n];
+            int[] nums = new int[n];
             current = head;
             int i = 0;
             while (current != null) {
