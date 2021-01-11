@@ -30,4 +30,42 @@ public class _1721 {
             return tmp.next;
         }
     }
+    public static class Solution2 {
+        public ListNode swapNodes(ListNode head, int k) {
+            if(head == null || head.next == null){
+                return head;
+            }
+
+            // find length of list
+            int n = 0;
+            ListNode current = head;
+            while(current != null){
+                current = current.next;
+                n++;
+            }
+
+            int nums[] = new int[n];
+            current = head;
+            int i = 0;
+            while(current != null){
+                nums[i++] = current.val;
+                current = current.next;
+            }
+            int firstIndex = 0;
+            int secondIndex = 0;
+            firstIndex = k;
+            secondIndex = n-k;
+            int temp = nums[firstIndex-1];
+            nums[firstIndex-1] = nums[secondIndex];
+            nums[secondIndex] = temp;
+            ListNode dummy = new ListNode(-1);
+            current = dummy;
+            for(i = 0; i<n; i++){
+                ListNode node = new ListNode(nums[i]);
+                current.next = node;
+                current = current.next;
+            }
+            return dummy.next;
+        }
+    }
 }
