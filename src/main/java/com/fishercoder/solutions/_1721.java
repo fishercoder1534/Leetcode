@@ -51,14 +51,11 @@ public class _1721 {
                 nums[i++] = current.val;
                 current = current.next;
             }
-            int firstIndex = 0, secondIndex = 0;
-
-
+            int firstIndex = 0;
+            int secondIndex = 0;
             firstIndex = k;
             secondIndex = n-k;
             int temp = nums[firstIndex-1];
-            System.out.println("firstIndex: "+firstIndex);
-            System.out.println("secondIndex: "+secondIndex);
             nums[firstIndex-1] = nums[secondIndex];
             nums[secondIndex] = temp;
             ListNode dummy = new ListNode(-1);
