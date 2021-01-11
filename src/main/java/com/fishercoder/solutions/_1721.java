@@ -32,6 +32,9 @@ public class _1721 {
     }
     public static class Solution2 {
         public ListNode swapNodes(ListNode head, int k) {
+            if(head == null || head.next == null){
+                return head;
+            }
 
             // find length of list
             int n = 0;
@@ -49,9 +52,13 @@ public class _1721 {
                 current = current.next;
             }
             int firstIndex = 0, secondIndex = 0;
+
+
             firstIndex = k;
             secondIndex = n-k;
             int temp = nums[firstIndex-1];
+            System.out.println("firstIndex: "+firstIndex);
+            System.out.println("secondIndex: "+secondIndex);
             nums[firstIndex-1] = nums[secondIndex];
             nums[secondIndex] = temp;
             ListNode dummy = new ListNode(-1);
