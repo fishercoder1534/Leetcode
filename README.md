@@ -1127,6 +1127,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1173|[Immediate Food Delivery I](https://leetcode.com/problems/immediate-food-delivery-i/)|[Solution](../master/database/_1173.sql) |  | Easy |
 |1148|[Article Views I](https://leetcode.com/problems/article-views-i/)|[Solution](../master/database/_1148.sql) |  | Easy |
 |1141|[User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/)|[Solution](../master/database/_1141.sql) |  | Easy |
+|1113|[Reported Posts](https://leetcode.com/problems/reported-posts/)|[Solution](../master/database/_1113.sql) |  | Easy |
 |1084|[Sales Analysis III](https://leetcode.com/problems/sales-analysis-iii/)|[Solution](../master/database/_1084.sql) |  | Easy |
 |1083|[Sales Analysis II](https://leetcode.com/problems/sales-analysis-ii/)|[Solution](../master/database/_1083.sql) |  | Easy |
 |1082|[Sales Analysis I](https://leetcode.com/problems/sales-analysis-i/)|[Solution](../master/database/_1082.sql) |  | Easy |
