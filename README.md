@@ -1105,6 +1105,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1484|[Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)|[Solution](../master/database/_1484.sql) || Easy |
 |1445|[Apples & Oranges](https://leetcode.com/problems/apples-oranges/)|[Solution](../master/database/_1445.sql) || Medium |
 |1407|[Top Travellers](https://leetcode.com/problems/top-travellers/)|[Solution](../master/database/_1407.sql) || Easy |
+|1393|[Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/)|[Solution](../master/database/_1393.sql) || Easy |
 |1384|[Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/)|[Solution](../master/database/_1384.sql) || Hard |
 |1378|[Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/)|[Solution](../master/database/_1378.sql) || Easy |
 |1369|[Get the Second Most Recent Activity](https://leetcode.com/problems/get-the-second-most-recent-activity/)|[Solution](../master/database/_1369.sql) || Hard |
