@@ -362,6 +362,7 @@ _If you like this project, please leave me a star._ &#9733;
 |885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_885.java)  |[:tv:](https://www.youtube.com/watch?v=0qep3f9cqVs) |Medium|
 |884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_884.java) | |Easy|
 |883|[Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_883.java) | |Easy|Math
+|881|[Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_881.java) | |Medium|Two Pointers, Greedy
 |880|[Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_880.java) | |Medium|Stack
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_876.java) | |Easy|
 |872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_872.java) |  |Easy| DFS, recursion
