@@ -27,6 +27,7 @@ public class _151 {
             return stringBuilder.substring(0, stringBuilder.length() - 1).toString();
         }
     }
+
     public static class Solution2 {
         public String reverseWords(String s) {
             int len = s.length();
@@ -50,11 +51,10 @@ public class _151 {
                 }
                 // word found
                 String word = s.substring(i, j);
-                if(result.length() == 0) {
+                if (result.length() == 0) {
                     result = word;
-                }
-                else {
-                    result = word + " "+ result;
+                } else {
+                    result = word + " " + result;
                 }
                 i = j + 1;
             }
