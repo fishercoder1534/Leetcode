@@ -32,7 +32,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1664|[Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/)|[Javascript](./javascript/_1664.js) ||Medium|Greedy|
 |1663|[Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1663.java) ||Medium|Greedy|
 |1662|[Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1662.java) ||Easy|String|
-|1658|[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)|[Javascript](./javascript/_1658.js) | [Java](../master/src/main/java/com/fishercoder/solutions/_1658.java)||Medium|Greedy|
+|1658|[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)|[Javascript](./javascript/_1658.js), [Java](../master/src/main/java/com/fishercoder/solutions/_1658.java)||Medium|Greedy|
 |1657|[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1657.java) |[:tv:](https://youtu.be/-jXQK-UeChU)|Medium|Greedy|
 |1656|[Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1656.java) ||Easy|Array, Design|
 |1652|[Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1652.java) ||Easy|Array|
@@ -450,7 +450,7 @@ _If you like this project, please leave me a star._ &#9733;
 |701|[Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_701.java) |  |Medium | DFS, recursion
 |700|[Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_700.java) | |Easy| recusion, dfs
 |699|[Falling Squares](https://leetcode.com/problems/falling-squares/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_699.java) ||Hard | Segment Tree
-|698|[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_698.java), [C++](../master/cpp/_698.cpp) |  |Medium | Backtracking + DP
+|698|[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)|[Java](../master/src/main/java/com/fishercoder/solutions/_698.java), [C++](../master/cpp/_698.cpp) |  |Medium | Backtracking + DP
 |697|[Degree of an Array](https://leetcode.com/problems/degree-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_697.java) ||Easy | 
 |696|[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_696.java) | |Easy | 
 |695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_695.java) |  |Easy | DFS
