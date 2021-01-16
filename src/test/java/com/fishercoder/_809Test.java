@@ -9,7 +9,6 @@ import static junit.framework.TestCase.assertEquals;
 public class _809Test {
     private static _809.Solution1 solution1;
     private String[] words;
-    private String S;
 
     @BeforeClass
     public static void setup() {
@@ -19,7 +18,6 @@ public class _809Test {
     @Test
     public void test1() {
         words = new String[]{"hello", "hi", "helo"};
-        S = "heeellooo";
-        assertEquals(1, solution1.expressiveWords(S, words));
+        assertEquals(1, solution1.expressiveWords("heeellooo", words));
     }
 }
