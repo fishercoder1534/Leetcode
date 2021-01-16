@@ -18,7 +18,7 @@ public class _809Test {
 
     @Test
     public void test1() {
-        words = new String[] {"hello", "hi", "helo"};
+        words = new String[]{"hello", "hi", "helo"};
         S = "heeellooo";
         assertEquals(1, solution1.expressiveWords(S, words));
     }

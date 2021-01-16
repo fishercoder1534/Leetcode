@@ -2,7 +2,7 @@ package com.fishercoder.solutions;
 
 public class _809 {
     public static class Solution1 {
-        public int expressiveWords (String S, String[] words ) {
+        public int expressiveWords(String S, String[] words) {
             int ans = 0;
             for (String w : words) {
                 if (check(S, w)) {
@@ -11,7 +11,8 @@ public class _809 {
             }
             return ans;
         }
-        private boolean check (String S, String w) {
+
+        private boolean check(String S, String w) {
             int i = 0;
             int j = 0;
             /* Logic is to check whether character at same index of S and w are same
@@ -24,37 +25,33 @@ public class _809 {
             while (i < S.length() && j < w.length()) {
                 char ch1 = S.charAt(i);
                 char ch2 = w.charAt(j);
-                
+
                 int len1 = getLen(S, i);
                 int len2 = getLen(w, j);
                 if (ch1 == ch2) {
                     if (len1 == len2) {
                         i = i + len1;
                         j = j + len2;
-                    }
-                    else if (len1 >= 3 && len2 < len1) {
+                    } else if (len1 >= 3 && len2 < len1) {
                         i = i + len1;
                         j = j + len2;
-                    }
-                    else {
+                    } else {
                         return false;
                     }
-                }
-                else {
+                } else {
                     return false;
                 }
             }
             return i == S.length() && j == w.length();
         }
 
-        private int getLen (String value, int i) {
+        private int getLen(String value, int i) {
             i = i + 1;
             int count = 1;
-            for(int j = i; j<value.length(); j++) {
-                if(value.charAt(j) == value.charAt(i-1)) {
+            for (int j = i; j < value.length(); j++) {
+                if (value.charAt(j) == value.charAt(i - 1)) {
                     count++;
-                }
-                else {
+                } else {
                     break;
                 }
             }
