@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1725|[Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1725.java) ||Easy|Greedy|
 |1721|[Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1721.java) ||Medium|LinkedList|
 |1720|[Decode XORed Array](https://leetcode.com/problems/decode-xored-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1720.java) ||Easy|Bit Manipulation|
 |1718|[Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1718.java) ||Medium|Backtracking, Recursion|
