@@ -31,10 +31,6 @@ public class _1641 {
                     sum += arr[j];
                 }
             }
-            sum = 0;
-            for (int j = 0; j < arr.length; j++) {
-                sum += arr[j];
-            }
             return sum;
         }
     }
