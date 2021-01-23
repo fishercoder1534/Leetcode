@@ -1,6 +1,9 @@
 package com.fishercoder.solutions;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class _1733 {
     public static class Solution1 {
