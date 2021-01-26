@@ -381,7 +381,7 @@ _If you like this project, please leave me a star._ &#9733;
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_844.java) | |Easy|
 |841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_841.java) |  |Easy|DFS, Graph
 |840|[Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_840.java) |  |Easy|
-|838|[Push Dominoes](https://leetcode.com/problems/push-dominoes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_838.java) | |Medium| Two Pointers, DP
+|838|[Push Dominoes](https://leetcode.com/problems/push-dominoes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_838.java) |[:tv:](https://youtu.be/0_XmKkgHSdI) |Medium| Two Pointers, DP
 |836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_836.java) | [:tv:](https://youtu.be/o6hHUk4DOW0) |Easy|
 |832|[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_832.java) |  |Easy|
 |830|[Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_830.java) |  |Easy|
