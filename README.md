@@ -1116,6 +1116,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1393|[Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/)|[Solution](../master/database/_1393.sql) || Easy |
 |1384|[Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/)|[Solution](../master/database/_1384.sql) || Hard |
 |1378|[Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/)|[Solution](../master/database/_1378.sql) || Easy |
+|1371|[The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/)|[Solution](../master/database/_1371.sql) || Easy |
 |1369|[Get the Second Most Recent Activity](https://leetcode.com/problems/get-the-second-most-recent-activity/)|[Solution](../master/database/_1369.sql) || Hard |
 |1364|[Number of Trusted Contacts of a Customer](https://leetcode.com/problems/number-of-trusted-contacts-of-a-customer/)|[Solution](../master/database/_1364.sql) || Medium |
 |1355|[Activity Participants](https://leetcode.com/problems/activity-participants/)|[Solution](../master/database/_1355.sql) || Medium |
