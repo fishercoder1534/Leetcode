@@ -16,9 +16,9 @@ public class _987 {
             TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map = new TreeMap<>();
             dfs(root, 0, 0, map);
             List<List<Integer>> list = new ArrayList<>();
-            for (TreeMap<Integer, PriorityQueue<Integer>> ys : map.values()) {
+            for (TreeMap<Integer, PriorityQueue<Integer>> yMap : map.values()) {
                 list.add(new ArrayList<>());
-                for (PriorityQueue<Integer> nodes : ys.values()) {
+                for (PriorityQueue<Integer> nodes : yMap.values()) {
                     while (!nodes.isEmpty()) {
                         list.get(list.size() - 1).add(nodes.poll());
                     }
