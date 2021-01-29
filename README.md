@@ -1091,6 +1091,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video         | Difficulty    | Tag          
 |-----|----------------|---------------|---------------|---------------|-------------
+|1729|[Find Followers Count](https://leetcode.com/problems/find-followers-count/)|[Solution](../master/database/_1729.sql) || Easy |
 |1709|[Biggest Window Between Visits](https://leetcode.com/problems/biggest-window-between-visits/)|[Solution](../master/database/_1709.sql) || Medium |
 |1693|[Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/)|[Solution](../master/database/_1693.sql) || Easy |
 |1683|[Invalid Tweets](https://leetcode.com/problems/invalid-tweets/)|[Solution](../master/database/_1683.sql) || Easy |
