@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1743|[Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1743.java) ||Medium|Greedy|
 |1742|[Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1742.java) ||Easy|Array|
 |1736|[Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1736.java) ||Easy|String, Greedy|
 |1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1733.java) ||Medium|Array, Greedy|
