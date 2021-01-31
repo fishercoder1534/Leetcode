@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1736|[Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1736.java) ||Easy|String, Greedy|
 |1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1733.java) ||Medium|Array, Greedy|
 |1732|[Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1732.java) ||Easy|Array|
 |1727|[Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1727.java) ||Medium|Greedy, Sort|
