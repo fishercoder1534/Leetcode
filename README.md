@@ -8,6 +8,19 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1743|[Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1743.java) ||Medium|Greedy|
+|1742|[Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1742.java) ||Easy|Array|
+|1736|[Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1736.java) ||Easy|String, Greedy|
+|1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1733.java) ||Medium|Array, Greedy|
+|1732|[Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1732.java) ||Easy|Array|
+|1727|[Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1727.java) ||Medium|Greedy, Sort|
+|1726|[Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1726.java) ||Medium|Array|
+|1725|[Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1725.java) ||Easy|Greedy|
+|1721|[Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1721.java) ||Medium|LinkedList|
+|1720|[Decode XORed Array](https://leetcode.com/problems/decode-xored-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1720.java) ||Easy|Bit Manipulation|
+|1718|[Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1718.java) ||Medium|Backtracking, Recursion|
+|1717|[Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1717.java) ||Medium|Greedy|
+|1716|[Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1716.java) ||Easy|Math, Greedy|
 |1711|[Count Good Meals](https://leetcode.com/problems/count-good-meals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1711.java) ||Medium|Array, HashTable, Two Pointers|
 |1710|[Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1710.java) ||Easy|Greedy, Sort|
 |1708|[Largest Subarray Length K](https://leetcode.com/problems/largest-subarray-length-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1708.java) ||Easy|Array, Greedy|
@@ -18,8 +31,10 @@ _If you like this project, please leave me a star._ &#9733;
 |1688|[Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1688.java) ||Easy|Backtracking|
 |1685|[Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1685.java) |[:tv:](https://youtu.be/WYe644djV30)|Medium|Math, Greedy|
 |1684|[Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1684.java) ||Easy|String|
+|1680|[Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1680.java) ||Medium|Math|
 |1679|[Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1679.java) ||Medium|HashTable|
 |1678|[Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1678.java) ||Easy|String|
+|1675|[Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1675.java) ||Hard|Heap, Ordered Map|
 |1673|[Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1673.java) ||Medium|Stack, Greedy|
 |1672|[Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1672.java) ||Easy|Array|
 |1669|[Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1669.java) ||Medium|LinedList|
@@ -27,11 +42,12 @@ _If you like this project, please leave me a star._ &#9733;
 |1664|[Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/)|[Javascript](./javascript/_1664.js) ||Medium|Greedy|
 |1663|[Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1663.java) ||Medium|Greedy|
 |1662|[Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1662.java) ||Easy|String|
-|1658|[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)|[Javascript](./javascript/_1658.js)||Medium|Greedy|
+|1658|[Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)|[Javascript](./javascript/_1658.js), [Java](../master/src/main/java/com/fishercoder/solutions/_1658.java)||Medium|Greedy|
 |1657|[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1657.java) |[:tv:](https://youtu.be/-jXQK-UeChU)|Medium|Greedy|
 |1656|[Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1656.java) ||Easy|Array, Design|
 |1652|[Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1652.java) ||Easy|Array|
 |1646|[Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1646.java) ||Easy|Array|
+|1641|[Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1641.java) ||Medium|Math, DP, Backtracking|
 |1640|[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1640.java) ||Easy|Array, Sort|
 |1637|[Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/)|[Javascript](./javascript/_1637.js)| | Medium | Sort |
 |1636|[Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1636.java) ||Easy|Array, Sort|
@@ -303,7 +319,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1003|[Check If Word Is Valid After Substitutions](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1003.java) | |Medium|
 |1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1002.java) |  |Easy|
 |999|[Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_999.java) | |Easy|
-|981|[Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_981.java) | |Medium|
+|981|[Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_981.java) | [:tv:](https://youtu.be/eVi4gDimCoo)|Medium|
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_997.java) | |Easy| 
 |994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_994.java) | |Easy| BFS
 |993|[Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_993.java) | |Easy| Tree, BFS
@@ -356,6 +372,7 @@ _If you like this project, please leave me a star._ &#9733;
 |885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_885.java)  |[:tv:](https://www.youtube.com/watch?v=0qep3f9cqVs) |Medium|
 |884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_884.java) | |Easy|
 |883|[Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_883.java) | |Easy|Math
+|881|[Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_881.java) | |Medium|Two Pointers, Greedy
 |880|[Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_880.java) | |Medium|Stack
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_876.java) | |Easy|
 |872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_872.java) |  |Easy| DFS, recursion
@@ -369,7 +386,7 @@ _If you like this project, please leave me a star._ &#9733;
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_844.java) | |Easy|
 |841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_841.java) |  |Easy|DFS, Graph
 |840|[Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_840.java) |  |Easy|
-|838|[Push Dominoes](https://leetcode.com/problems/push-dominoes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_838.java) | |Medium| Two Pointers, DP
+|838|[Push Dominoes](https://leetcode.com/problems/push-dominoes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_838.java) |[:tv:](https://youtu.be/0_XmKkgHSdI) |Medium| Two Pointers, DP
 |836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_836.java) | [:tv:](https://youtu.be/o6hHUk4DOW0) |Easy|
 |832|[Flipping an Image](https://leetcode.com/problems/flipping-an-image/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_832.java) |  |Easy|
 |830|[Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_830.java) |  |Easy|
@@ -378,6 +395,7 @@ _If you like this project, please leave me a star._ &#9733;
 |819|[Most Common Word](https://leetcode.com/problems/most-common-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_819.java) |  |Easy| HashMap
 |814|[Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_814.java) |  |Medium| recursion, DFS 
 |811|[Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_811.java) | |Easy| HashMap
+|809|[Expressive Words](https://leetcode.com/problems/expressive-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_809.java) | |Medium|
 |807|[Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_807.java) | |Medium|
 |806|[Number of Lines To Write String](https://leetcode.com/problems/number-of-lines-to-write-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_806.java) |  |Easy|
 |804|[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_804.java) |  |Easy|
@@ -389,7 +407,7 @@ _If you like this project, please leave me a star._ &#9733;
 |788|[Rotated Digits](https://leetcode.com/problems/rotated-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_788.java) | |Easy|
 |784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_784.java) |  |Easy|
 |783|[Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_783.java) |  |Easy|
-|781|[Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_781.java) |  |Medium| HashTable, Math
+|781|[Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_781.java) | [:tv:](https://youtu.be/leiSa1i-QrI) |Medium| HashTable, Math
 |779|[K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_779.java) |  |Medium|
 |776|[Split BST](https://leetcode.com/problems/split-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_776.java) | |Medium| Recursion
 |771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_771.java) |  |Easy|
@@ -443,7 +461,7 @@ _If you like this project, please leave me a star._ &#9733;
 |701|[Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_701.java) |  |Medium | DFS, recursion
 |700|[Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_700.java) | |Easy| recusion, dfs
 |699|[Falling Squares](https://leetcode.com/problems/falling-squares/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_699.java) ||Hard | Segment Tree
-|698|[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_698.java), [C++](../master/cpp/_698.cpp) |  |Medium | Backtracking + DP
+|698|[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)|[Java](../master/src/main/java/com/fishercoder/solutions/_698.java), [C++](../master/cpp/_698.cpp) |  |Medium | Backtracking + DP
 |697|[Degree of an Array](https://leetcode.com/problems/degree-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_697.java) ||Easy | 
 |696|[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_696.java) | |Easy | 
 |695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_695.java) |  |Easy | DFS
@@ -945,7 +963,7 @@ _If you like this project, please leave me a star._ &#9733;
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_130.java)| |Medium|
 |129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_129.java)|  |Medium| DFS
 |128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_128.java)| |Hard| Union Find 
-|127|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_127.java)| |Medium| BFS
+|127|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_127.java)| |Hard| BFS
 |126|[Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_126.java)|  |Hard| BFS
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_125.java)|  |Easy| Two Pointers
 |124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_124.java)|  |Hard | Tree, DFS
@@ -1077,6 +1095,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video         | Difficulty    | Tag          
 |-----|----------------|---------------|---------------|---------------|-------------
+|1729|[Find Followers Count](https://leetcode.com/problems/find-followers-count/)|[Solution](../master/database/_1729.sql) || Easy |
 |1709|[Biggest Window Between Visits](https://leetcode.com/problems/biggest-window-between-visits/)|[Solution](../master/database/_1709.sql) || Medium |
 |1693|[Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/)|[Solution](../master/database/_1693.sql) || Easy |
 |1683|[Invalid Tweets](https://leetcode.com/problems/invalid-tweets/)|[Solution](../master/database/_1683.sql) || Easy |
@@ -1086,6 +1105,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1633|[Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/)|[Solution](../master/database/_1633.sql) || Easy |
 |1623|[All Valid Triplets That Can Represent a Country](https://leetcode.com/problems/all-valid-triplets-that-can-represent-a-country/)|[Solution](../master/database/_1623.sql) || Easy |
 |1607|[Sellers With No Sales](https://leetcode.com/problems/sellers-with-no-sales/)|[Solution](../master/database/_1607.sql) || Easy |
+|1596|[The Most Frequently Ordered Products for Each Customer](https://leetcode.com/problems/the-most-frequently-ordered-products-for-each-customer/)|[Solution](../master/database/_1596.sql) || Medium |
 |1571|[Warehouse Manager](https://leetcode.com/problems/warehouse-manager/)|[Solution](../master/database/_1571.sql) || Easy |
 |1587|[Bank Account Summary II](https://leetcode.com/problems/bank-account-summary-ii/)|[Solution](../master/database/_1587.sql) || Easy |
 |1581|[Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/)|[Solution](../master/database/_1581.sql) || Easy |
@@ -1099,8 +1119,10 @@ _If you like this project, please leave me a star._ &#9733;
 |1484|[Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)|[Solution](../master/database/_1484.sql) || Easy |
 |1445|[Apples & Oranges](https://leetcode.com/problems/apples-oranges/)|[Solution](../master/database/_1445.sql) || Medium |
 |1407|[Top Travellers](https://leetcode.com/problems/top-travellers/)|[Solution](../master/database/_1407.sql) || Easy |
+|1393|[Capital Gain/Loss](https://leetcode.com/problems/capital-gainloss/)|[Solution](../master/database/_1393.sql) || Easy |
 |1384|[Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/)|[Solution](../master/database/_1384.sql) || Hard |
 |1378|[Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/)|[Solution](../master/database/_1378.sql) || Easy |
+|1371|[The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/)|[Solution](../master/database/_1371.sql) || Easy |
 |1369|[Get the Second Most Recent Activity](https://leetcode.com/problems/get-the-second-most-recent-activity/)|[Solution](../master/database/_1369.sql) || Hard |
 |1364|[Number of Trusted Contacts of a Customer](https://leetcode.com/problems/number-of-trusted-contacts-of-a-customer/)|[Solution](../master/database/_1364.sql) || Medium |
 |1355|[Activity Participants](https://leetcode.com/problems/activity-participants/)|[Solution](../master/database/_1355.sql) || Medium |
@@ -1120,7 +1142,9 @@ _If you like this project, please leave me a star._ &#9733;
 |1179|[Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)|[Solution](../master/database/_1179.sql) |  | Easy |
 |1173|[Immediate Food Delivery I](https://leetcode.com/problems/immediate-food-delivery-i/)|[Solution](../master/database/_1173.sql) |  | Easy |
 |1148|[Article Views I](https://leetcode.com/problems/article-views-i/)|[Solution](../master/database/_1148.sql) |  | Easy |
+|1142|[User Activity for the Past 30 Days II](https://leetcode.com/problems/user-activity-for-the-past-30-days-ii/)|[Solution](../master/database/_1142.sql) |  | Easy |
 |1141|[User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/)|[Solution](../master/database/_1141.sql) |  | Easy |
+|1113|[Reported Posts](https://leetcode.com/problems/reported-posts/)|[Solution](../master/database/_1113.sql) |  | Easy |
 |1084|[Sales Analysis III](https://leetcode.com/problems/sales-analysis-iii/)|[Solution](../master/database/_1084.sql) |  | Easy |
 |1083|[Sales Analysis II](https://leetcode.com/problems/sales-analysis-ii/)|[Solution](../master/database/_1083.sql) |  | Easy |
 |1082|[Sales Analysis I](https://leetcode.com/problems/sales-analysis-i/)|[Solution](../master/database/_1082.sql) |  | Easy |

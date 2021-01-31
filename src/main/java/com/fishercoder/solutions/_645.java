@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class _645 {
     public static class Solution1 {
@@ -20,6 +22,27 @@ public class _645 {
             temp += result[0];
             result[1] = (int) temp;
             return result;
+        }
+    }
+
+    public static class Solution2 {
+        public int[] findErrorNums(int[] nums) {
+            Set<Integer> set = new HashSet();
+            boolean[] has = new boolean[nums.length];
+            int dup = -1;
+            for (int i = 0; i < nums.length; i++) {
+                has[nums[i] - 1] = true;
+                if (!set.add(nums[i])) {
+                    dup = nums[i];
+                }
+            }
+            int dup2 = -1;
+            for (int i = 0; i < has.length; i++) {
+                if (!has[i]) {
+                    dup2 = i + 1;
+                }
+            }
+            return new int[]{dup, dup2};
         }
     }
 }
