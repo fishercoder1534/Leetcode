@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1745|[Palindrome Partitioning IV](https://leetcode.com/problems/palindrome-partitioning-iv/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1745.java) ||Hard|String, DP|
 |1743|[Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1743.java) ||Medium|Greedy|
 |1742|[Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1742.java) ||Easy|Array|
 |1736|[Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1736.java) ||Easy|String, Greedy|
