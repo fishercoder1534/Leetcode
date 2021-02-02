@@ -49,4 +49,10 @@ public class _1171Test {
                 solution1.removeZeroSumSublists(LinkedListUtils.contructLinkedList(new int[]{2, 0})));
     }
 
+    @Test
+    public void test7() {
+        assertEquals(LinkedListUtils.contructLinkedList(new int[]{1, 5, 1}),
+                solution1.removeZeroSumSublists(LinkedListUtils.contructLinkedList(new int[]{1, 3, 2, -3, -2, 5, 100, -100, 1})));
+    }
+
 }
