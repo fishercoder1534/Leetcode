@@ -10,20 +10,24 @@ import static org.junit.Assert.assertEquals;
 
 public class _1171Test {
     private static _1171.Solution1 solution1;
+    private static _1171.Solution2 solution2;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _1171.Solution1();
+        solution2 = new _1171.Solution2();
     }
 
     @Test
     public void test1() {
         assertEquals(LinkedListUtils.contructLinkedList(new int[]{3, 1}), solution1.removeZeroSumSublists(LinkedListUtils.contructLinkedList(new int[]{1, 2, -3, 3, 1})));
+        assertEquals(LinkedListUtils.contructLinkedList(new int[]{3, 1}), solution2.removeZeroSumSublists(LinkedListUtils.contructLinkedList(new int[]{1, 2, -3, 3, 1})));
     }
 
     @Test
     public void test2() {
         assertEquals(LinkedListUtils.contructLinkedList(new int[]{1, 2, 4}), solution1.removeZeroSumSublists(LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, -3, 4})));
+        assertEquals(LinkedListUtils.contructLinkedList(new int[]{1, 2, 4}), solution2.removeZeroSumSublists(LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, -3, 4})));
     }
 
     @Test

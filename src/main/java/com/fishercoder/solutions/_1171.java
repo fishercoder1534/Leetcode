@@ -72,4 +72,37 @@ public class _1171 {
             return list;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * credit: https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/discuss/366337/Java-Iterative-and-Recursive-solution
+         * this post explains it all
+         * key of the hashmap is the prefix sum of all the nodes we've gone so far
+         * value of the hashmap is the corresponding linked list node
+         */
+        public ListNode removeZeroSumSublists(ListNode head) {
+            ListNode pre = new ListNode(-1);
+            ListNode curr = pre;
+            pre.next = head;
+            Map<Integer, ListNode> map = new HashMap<>();
+            int preSum = 0;
+            while (curr != null) {
+                preSum += curr.val;
+                if (map.containsKey(preSum)) {
+                    curr = map.get(preSum).next;
+                    int key = preSum + curr.val;
+                    while (key != preSum) {
+                        map.remove(key);
+                        curr = curr.next;
+                        key += curr.val;
+                    }
+                    map.get(preSum).next = curr.next;
+                } else {
+                    map.put(preSum, curr);
+                }
+                curr = curr.next;
+            }
+            return pre.next;
+        }
+    }
 }
