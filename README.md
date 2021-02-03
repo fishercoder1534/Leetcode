@@ -262,7 +262,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1161.java) | |Medium|Graph|
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1160.java)| |Easy||
 |1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1154.java) | |Easy||
-|1152|[Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1152.java) | |Medium|HashTable, Sort, Array|
+|1152|[Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1152.java) |[:tv:](https://youtu.be/V510Lbtrm5s) |Medium|HashTable, Sort, Array|
 |1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1150.java)|[:tv:](https://youtu.be/-t2cdVs9cKk) |Easy||
 |1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array/)|[Javascript](./javascript/_1146.js)| | Easy ||
 |1138|[Alphabet Board Path](https://leetcode.com/problems/alphabet-board-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1138.java)| [:tv:](https://youtu.be/rk-aB4rEOyU)| Medium |HashTable, String|
