@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1750|[Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1750.java) ||Medium|Two Pointers|
 |1749|[Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1749.java) ||Medium|Greedy|
 |1748|[Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1748.java) ||Easy|Array, HashTable|
 |1745|[Palindrome Partitioning IV](https://leetcode.com/problems/palindrome-partitioning-iv/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1745.java) ||Hard|String, DP|
