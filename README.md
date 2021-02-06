@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1749|[Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1749.java) ||Medium|Greedy|
 |1745|[Palindrome Partitioning IV](https://leetcode.com/problems/palindrome-partitioning-iv/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1745.java) ||Hard|String, DP|
 |1743|[Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1743.java) ||Medium|Greedy|
 |1742|[Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1742.java) ||Easy|Array|
