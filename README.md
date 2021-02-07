@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1754|[Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1753.java) ||Medium|Greedy, Suffix Array|
 |1753|[Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1753.java) ||Medium|Math, Heap|
 |1752|[Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1752.java) ||Easy|Array|
 |1750|[Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1750.java) ||Medium|Two Pointers|
