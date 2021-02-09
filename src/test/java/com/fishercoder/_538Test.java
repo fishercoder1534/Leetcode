@@ -14,8 +14,8 @@ public class _538Test {
     private static TreeNode expectedRoot;
     private static TreeNode root;
 
-    @BeforeClass
-    public static void setup() {
+    @Before
+    public void setup() {
         solution1 = new _538.Solution1();
         solution2 = new _538.Solution2();
     }
@@ -29,11 +29,21 @@ public class _538Test {
         expectedRoot.left = new TreeNode(20);
         expectedRoot.right = new TreeNode(13);
         assertEquals(expectedRoot.toString(), solution1.convertBST(root).toString());
-        assertEquals(expectedRoot.toString(), solution2.convertBST(root).toString());
     }
 
     @Test
     public void test2() {
+        root = new TreeNode(5);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(13);
+        expectedRoot = new TreeNode(18);
+        expectedRoot.left = new TreeNode(20);
+        expectedRoot.right = new TreeNode(13);
+        assertEquals(expectedRoot.toString(), solution2.convertBST(root).toString());
+    }
+
+    @Test
+    public void test3() {
         root = null;
         expectedRoot = null;
         assertEquals(expectedRoot, solution1.convertBST(root));
