@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1759|[Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1758.java) ||Medium|String ,Greedy|
 |1758|[Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1758.java) ||Easy|Greedy, Array|
 |1754|[Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1753.java) ||Medium|Greedy, Suffix Array|
 |1753|[Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1753.java) ||Medium|Math, Heap|
