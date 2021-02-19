@@ -244,8 +244,9 @@ _If you like this project, please leave me a star._ &#9733;
 |1260|[Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1260.java) | [:tv:](https://www.youtube.com/watch?v=9hBcARSiU0s)|Easy||
 |1258|[Synonymous Sentences](https://leetcode.com/problems/synonymous-sentences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1258.java) ||Medium|Backtracking|
 |1252|[Cells with Odd Values in a Matrix](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1252.java) |  |Easy||
-|1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1237.java) | |Easy||
+|1249|[Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1249.java) | |Medium|String, Stack|
 |1243|[Array Transformation](https://leetcode.com/problems/array-transformation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1243.java) |  [:tv:](https://www.youtube.com/watch?v=MQ2i4T1l-Gs)|Easy||
+|1237|[Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1237.java) | |Easy||
 |1232|[Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1232.java) | [:tv:](https://www.youtube.com/watch?v=_tfiTQNZCbs)  |Easy||
 |1228|[Missing Number In Arithmetic Progression](https://leetcode.com/problems/missing-number-in-arithmetic-progression/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1228.java) |   |Easy||
 |1221|[Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1221.java) | |Easy|Greedy|
