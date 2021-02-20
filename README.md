@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1764|[Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1764.java) ||Medium|Array, Greedy|
 |1763|[Longest Nice Substring](https://leetcode.com/problems/longest-nice-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1763.java) ||Easy|String|
 |1759|[Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1758.java) ||Medium|String ,Greedy|
 |1758|[Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1758.java) ||Easy|Greedy, Array|
