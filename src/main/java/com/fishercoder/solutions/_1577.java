@@ -21,9 +21,9 @@ public class _1577 {
             long count = 0;
             for (long num : nums) {
                 if (product % num == 0) {
-                    count += map.getOrDefault(product / num, 0l);
+                    count += map.getOrDefault(product / num, 0L);
                 }
-                map.put(num, map.getOrDefault(num, 0l) + 1);
+                map.put(num, map.getOrDefault(num, 0L) + 1);
             }
             return count;
         }
