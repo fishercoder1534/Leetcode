@@ -43,6 +43,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1694|[Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1694.java) ||Easy|String|
 |1690|[Stone Game VII](https://leetcode.com/problems/stone-game-vii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1690.java) ||Medium|DP|
 |1688|[Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1688.java) ||Easy|Backtracking|
+|1686|[Stone Game VI](https://leetcode.com/problems/stone-game-vi/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1686.java) ||Medium|Greedy|
 |1685|[Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1685.java) |[:tv:](https://youtu.be/WYe644djV30)|Medium|Math, Greedy|
 |1684|[Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1684.java) ||Easy|String|
 |1680|[Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1680.java) ||Medium|Math|
