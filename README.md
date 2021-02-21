@@ -392,6 +392,7 @@ _If you like this project, please leave me a star._ &#9733;
 |883|[Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_883.java) | |Easy|Math
 |881|[Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_881.java) | |Medium|Two Pointers, Greedy
 |880|[Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_880.java) | |Medium|Stack
+|877|[Stone Game](https://leetcode.com/problems/stone-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_877.java) | |Medium| Math, DP, Minimax
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_876.java) | |Easy|
 |872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_872.java) |  |Easy| DFS, recursion
 |868|[Binary Gap](https://leetcode.com/problems/binary-gap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_868.java) |  |Easy|
