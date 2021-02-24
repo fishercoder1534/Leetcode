@@ -17,8 +17,7 @@ public class _128Test {
 
     @Test
     public void test1() {
-        nums = new int[]{100,4,200,1,3,2};
-        int result = 4;
+        nums = new int[]{100, 4, 200, 1, 3, 2};
         assertEquals(4, solution3.longestConsecutive(nums));
     }
 }
