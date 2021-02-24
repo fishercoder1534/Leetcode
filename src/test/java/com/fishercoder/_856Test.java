@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-@Ignore
 public class _856Test {
     private static _856.Solution1 solution1;
 
