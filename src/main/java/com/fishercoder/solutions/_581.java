@@ -35,6 +35,38 @@ public class _581 {
 
     public static class Solution2 {
         /**
+         * Time: O(n)
+         * Space: O(1)
+         * <p>
+         * This is just an alternative way of writing Solution1, credit: https://leetcode.com/problems/shortest-unsorted-continuous-subarray/discuss/103057/Java-O(n)-Time-O(1)-Space/106306
+         *
+         * But still, initializing end to be -2 is an art to take care of the corner case as in Solution1.
+         */
+        public int findUnsortedSubarray(int[] nums) {
+            int end = -2;
+            int max = Integer.MIN_VALUE;
+            //go from left to right, find the number that is smaller than the max number on its left side, that should be the end index because it needs to be sorted
+            for (int i = 0; i < nums.length; i++) {
+                max = Math.max(max, nums[i]);
+                if (nums[i] < max) {
+                    end = i;
+                }
+            }
+            int start = -1;
+            int min = Integer.MAX_VALUE;
+            //go from right to left, find the number that is bigger than the min number on its right, that should be the beginning index
+            for (int i = nums.length - 1; i >= 0; i--) {
+                min = Math.min(min, nums[i]);
+                if (nums[i] > min) {
+                    start = i;
+                }
+            }
+            return end - start + 1;
+        }
+    }
+
+    public static class Solution3 {
+        /**
          * Time: O(nlogn)
          * Space: O(n)
          */

@@ -9,12 +9,14 @@ import static org.junit.Assert.assertEquals;
 public class _581Test {
     private static _581.Solution1 solution1;
     private static _581.Solution2 solution2;
+    private static _581.Solution3 solution3;
     private static int[] nums;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _581.Solution1();
         solution2 = new _581.Solution2();
+        solution3 = new _581.Solution3();
     }
 
     @Test
