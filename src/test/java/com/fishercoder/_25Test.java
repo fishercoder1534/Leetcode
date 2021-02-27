@@ -28,6 +28,7 @@ public class _25Test {
         expected = LinkedListUtils.contructLinkedList(new int[]{2, 1, 4, 3, 5});
         assertEquals(actual, expected);
     }
+
     @Test
     public void test2() {
         head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4, 5, 6, 7});
