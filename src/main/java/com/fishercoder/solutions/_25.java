@@ -4,8 +4,10 @@ import com.fishercoder.common.classes.ListNode;
 
 public class _25 {
 
-    /**We use recursion to go all the way until the end: when the number of nodes are smaller than k;
-     * then we start to reverse each group of k nodes from the end towards the start.*/
+    /**
+     * We use recursion to go all the way until the end: when the number of nodes are smaller than k;
+     * then we start to reverse each group of k nodes from the end towards the start.
+     */
     public static class Solution1 {
         public ListNode reverseKGroup(ListNode head, int k) {
             ListNode curr = head;
@@ -44,8 +46,8 @@ public class _25 {
             int n = 0; // number of nodes
 
             ListNode curr = head;
-            while(curr != null){
-                n ++;
+            while (curr != null) {
+                n++;
                 curr = curr.next;
             }
 
@@ -53,7 +55,7 @@ public class _25 {
             ListNode next = null;
             ListNode newHead = null;
             ListNode tail1 = null;
-            ListNode tail2 =  head;
+            ListNode tail2 = head;
 
             curr = head;
 
