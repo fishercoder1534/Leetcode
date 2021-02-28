@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1773|[Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1773.java) ||Easy|Array, String|
 |1769|[Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1769.java) ||Medium|Array, Greedy|
 |1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1768.java) ||Easy|String|
 |1765|[Map of Highest Peak](https://leetcode.com/problems/map-of-highest-peak/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1765.java) ||Medium|BFS, Graph|
