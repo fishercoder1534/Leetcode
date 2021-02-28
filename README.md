@@ -387,6 +387,7 @@ _If you like this project, please leave me a star._ &#9733;
 |900|[RLE Iterator](https://leetcode.com/problems/rle-iterator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_900.java) |  |Medium|
 |897|[Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_897.java) | |Easy| DFS, recursion
 |896|[Monotonic Array](https://leetcode.com/problems/monotonic-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_896.java) |  |Easy|
+|895|[Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_895.java) | HashTable, Stack |Hard|
 |890|[Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_890.java) |  |Medium|
 |893|[Groups of Special-Equivalent Strings](https://leetcode.com/problems/groups-of-special-equivalent-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_893.java) | [:tv:](https://youtu.be/tbtXPKkA2Zw) |Easy|
 |888|[Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_888.java) |  |Easy|
