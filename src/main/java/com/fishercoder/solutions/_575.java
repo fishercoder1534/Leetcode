@@ -1,24 +1,16 @@
 package com.fishercoder.solutions;
 
-import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class _575 {
     public static class Solution1 {
-        public int distributeCandies(int[] candies) {
-            Arrays.sort(candies);
-            int sisCount = 0;
-            for (int i = 0; i < candies.length; i++) {
-                int val = candies[i];
-                sisCount++;
-                if (sisCount >= candies.length / 2) {
-                    return candies.length / 2;
-                }
-                while (i < candies.length && candies[i] == val) {
-                    i++;
-                }
-                i--;
+        public int distributeCandies(int[] candyType) {
+            Set<Integer> map = new HashSet<>();
+            for (int candy : candyType) {
+                map.add(candy);
             }
-            return sisCount;
+            return Math.min(map.size(), candyType.length / 2);
         }
     }
 }
