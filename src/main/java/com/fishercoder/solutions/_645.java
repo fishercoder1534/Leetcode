@@ -45,4 +45,24 @@ public class _645 {
             return new int[]{dup, dup2};
         }
     }
+
+    public static class Solution3 {
+        public int[] findErrorNums(int[] nums) {
+            int[] arr = new int[nums.length];
+            Set<Integer> set = new HashSet<>();
+            int[] result = new int[2];
+            for (int i = 0; i < nums.length; i++) {
+                arr[i] = i + 1;
+                if (!set.add(nums[i])) {
+                    result[0] = nums[i];
+                }
+            }
+            for (int i = 0; i < nums.length; i++) {
+                if (!set.contains(i + 1)) {
+                    result[1] = i + 1;
+                }
+            }
+            return result;
+        }
+    }
 }
