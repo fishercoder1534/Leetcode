@@ -1,6 +1,7 @@
 package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
+
 public class _1145 {
     public static class Solution1 {
         public boolean btreeGameWinningMove(TreeNode root, int n, int x) {

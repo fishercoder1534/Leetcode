@@ -14,7 +14,7 @@ import static junit.framework.Assert.assertEquals;
 public class _1145Test {
 
     private static _1145.Solution1 solution1;
-    private static TreeNode root1;
+    private static TreeNode root;
     private static int n;
     private static int x;
 
@@ -25,9 +25,9 @@ public class _1145Test {
 
     @Test
     public void test1() {
-        root1 = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11));
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11));
         n = 11;
         x = 3;
-        Assert.assertEquals(true, solution1.btreeGameWinningMove(root1, n, x));
+        Assert.assertEquals(true, solution1.btreeGameWinningMove(root, n, x));
     }
 }
