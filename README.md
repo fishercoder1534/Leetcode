@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1780|[Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1780.java) ||Medium|Math, Backtracking, Recursion|
 |1779|[Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1779.java) ||Easy|Array|
 |1774|[Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1774.java) ||Medium|Greedy|
 |1773|[Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1773.java) ||Easy|Array, String|
