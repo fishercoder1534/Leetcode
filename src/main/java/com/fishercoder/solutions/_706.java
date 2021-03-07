@@ -94,13 +94,13 @@ public class _706 {
             }
 
             Node[] nodes;
-            int SIZE = 1000000;
+            int size = 1000000;
 
             /**
              * Initialize your data structure here.
              */
             public MyHashMap() {
-                nodes = new Node[SIZE];
+                nodes = new Node[size];
             }
 
             /**
@@ -123,7 +123,7 @@ public class _706 {
             }
 
             private int getHashedKey(int key) {
-                return Integer.hashCode(key) % SIZE;
+                return Integer.hashCode(key) % size;
             }
 
             /**
