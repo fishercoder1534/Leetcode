@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1784|[Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1784.java) ||Easy|Greedy|
 |1781|[Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1781.java) ||Medium|HashTable, String|
 |1780|[Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1780.java) ||Medium|Math, Backtracking, Recursion|
 |1779|[Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1779.java) ||Easy|Array|
