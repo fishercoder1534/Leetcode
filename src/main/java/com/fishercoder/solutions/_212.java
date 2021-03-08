@@ -1,6 +1,7 @@
 package com.fishercoder.solutions;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class _212 {
@@ -66,6 +67,45 @@ public class _212 {
                 temp.word = word;
             }
             return root;
+        }
+    }
+
+    public static class Solution2 {
+        public List<String> findWords (char[][] board, String[] words) {
+
+            List<String> result = new ArrayList();
+            HashSet<String> set = new HashSet();
+            for (String word : words) {
+                for (int i = 0; i < board.length; i++) {
+                    for (int j = 0; j < board[0].length; j++) {
+                        if (board[i][j] == word.charAt(0) && search(board, i, j, 0, word)) {
+                            set.add(word);
+                        }
+                    }
+                }
+            }
+            result = new ArrayList<>(set);
+            return result;
+        }
+
+        private boolean search(char[][] board, int i, int j, int count, String word) {
+            if (count == word.length()) {
+                return true;
+            }
+
+            if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] != word.charAt(count)) {
+                return false;
+            }
+
+            char temp = board[i][j];
+            board[i][j] = ' ';
+
+            boolean foundWord = search(board, i + 1, j, count + 1, word)
+                    || search(board, i - 1, j, count + 1, word)
+                    || search(board, i, j + 1, count + 1, word)
+                    || search(board, i, j - 1, count + 1, word);
+            board[i][j] = temp;
+            return foundWord;
         }
     }
 }
