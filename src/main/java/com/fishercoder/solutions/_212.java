@@ -71,7 +71,7 @@ public class _212 {
     }
 
     public static class Solution2 {
-        public List<String> findWords (char[][] board, String[] words) {
+        public List<String> findWords(char[][] board, String[] words) {
 
             List<String> result = new ArrayList();
             HashSet<String> set = new HashSet();
