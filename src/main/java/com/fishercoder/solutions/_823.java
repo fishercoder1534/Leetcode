@@ -9,7 +9,7 @@ public class _823 {
         /**
          * credit: https://leetcode.com/problems/binary-trees-with-factors/discuss/126277/Concise-Java-solution-using-HashMap-with-detailed-explanation.-Easily-understand!!!
          */
-        long MOD = 1000000007l;
+        private static final long MOD = 1000000007L;
 
         public int numFactoredBinaryTrees(int[] arr) {
             Arrays.sort(arr);
