@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1791|[Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1791.java) ||Medium|Graph|
 |1785|[Minimum Elements to Add to Form a Given Sum](https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1785.java) ||Medium|Greedy|
 |1784|[Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1784.java) ||Easy|Greedy|
 |1781|[Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1781.java) ||Medium|HashTable, String|
