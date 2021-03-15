@@ -88,7 +88,7 @@ public class _535 {
          * Use a random but fixed length encoding
          * Analysis:
          * 1. This is the most optimal solution so far.
-         * 2. The number of URLs that can be encoded can be as big as Math.pow((10 + 26*2), FIXED_LENGTH)
+         * 2. The number of URLs that can be encoded can be as big as Math.pow((10 + 26*2), FIXED_LENGTH), in below code, FIXED_LENGTH = 7
          * 3. The length of the shortened URL is fixed at a certain length, which could be a significant reduce for large URLs
          * 4. The performance of this scheme is pretty good, due to much smaller probability of encountering collision
          * 5. Predicting pattern/encoding isn't possible in this case since random numbers are used.
