@@ -40,8 +40,8 @@ public class _714 {
             int cash = 0;
             int hold = -prices[0];
             for (int i = 1; i < prices.length; i++) {
-                cash = Math.max(cash, hold + prices[i] - fee);
-                hold = Math.max(hold, cash - prices[i]);
+                cash = Math.max(cash, hold + prices[i] - fee);//this means to sell the stock: gain the current ith day's price and pay the transaction fee
+                hold = Math.max(hold, cash - prices[i]);//this means to buy in this stock on the ith day's price.
             }
             return cash;
         }
