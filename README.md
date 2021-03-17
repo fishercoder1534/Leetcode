@@ -681,6 +681,7 @@ _If you like this project, please leave me a star._ &#9733;
 |480|[Sliding Window Median](https://leetcode.com/problems/sliding-window-median/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_480.java) |  |Hard| Heap
 |479|[Largest Palindrome Product](https://leetcode.com/problems/largest-palindrome-product/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_479.java) |  |Easy| 
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_477.java) |  |Medium| Bit Manipulation
+|478|[Generate Random Point in a Circle](https://leetcode.com/problems/generate-random-point-in-a-circle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_478.java) | | Medium| Math, Random, Rejection Sampling
 |476|[Number Complement](https://leetcode.com/problems/number-complement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_476.java) | | Easy| Bit Manipulation
 |475|[Heaters](https://leetcode.com/problems/heaters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_475.java) | |Easy | Array Binary Search
 |474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_474.java) |  |Medium| DP
