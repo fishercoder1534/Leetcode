@@ -7,7 +7,9 @@ public class _478 {
          * and
          * https://leetcode.com/problems/generate-random-point-in-a-circle/discuss/155650/Explanation-with-Graphs-why-using-Math.sqrt()
          */
-        double radius, xCenter, yCenter;
+        double radius;
+        double xCenter;
+        double yCenter;
 
         public Solution1(double radius, double xCenter, double yCenter) {
             this.radius = radius;
