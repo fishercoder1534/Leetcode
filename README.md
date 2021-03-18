@@ -47,7 +47,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1721|[Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1721.java) ||Medium|LinkedList|
 |1720|[Decode XORed Array](https://leetcode.com/problems/decode-xored-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1720.java) ||Easy|Bit Manipulation|
 |1718|[Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1718.java) ||Medium|Backtracking, Recursion|
-|1717|[Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1717.java) ||Medium|Greedy|
+|1717|[Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1717.java) |[:tv:](https://youtu.be/9wZ-TWBreTg)|Medium|Greedy|
 |1716|[Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1716.java) ||Easy|Math, Greedy|
 |1711|[Count Good Meals](https://leetcode.com/problems/count-good-meals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1711.java) ||Medium|Array, HashTable, Two Pointers|
 |1710|[Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1710.java) ||Easy|Greedy, Sort|
