@@ -12,11 +12,13 @@ import static org.junit.Assert.assertEquals;
 
 public class _841Test {
     private static _841.Solution1 solution1;
+    private static _841.Solution2 solution2;
     private static List<List<Integer>> rooms;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _841.Solution1();
+        solution2 = new _841.Solution2();
     }
 
     @Test
@@ -27,6 +29,7 @@ public class _841Test {
         rooms.add(Arrays.asList(3));
         rooms.add(Arrays.asList());
         assertEquals(true, solution1.canVisitAllRooms(rooms));
+        assertEquals(true, solution2.canVisitAllRooms(rooms));
     }
 
     @Test
@@ -37,5 +40,6 @@ public class _841Test {
         rooms.add(Arrays.asList(2));
         rooms.add(Arrays.asList(0));
         assertEquals(false, solution1.canVisitAllRooms(rooms));
+        assertEquals(false, solution2.canVisitAllRooms(rooms));
     }
 }
