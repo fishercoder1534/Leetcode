@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1796|[Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1796.java) ||Easy|String|
 |1792|[Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1792.java) ||Medium|Heap|
 |1791|[Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1791.java) ||Medium|Graph|
 |1790|[Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1790.java) ||Easy|String|
