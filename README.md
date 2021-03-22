@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1800|[Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1800.java) ||Easy|Two Pointers|
 |1797|[Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1797.java) ||Medium|HashTable, Design|
 |1796|[Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1796.java) ||Easy|String|
 |1792|[Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1792.java) ||Medium|Heap|
