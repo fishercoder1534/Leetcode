@@ -396,6 +396,7 @@ _If you like this project, please leave me a star._ &#9733;
 |931|[Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_931.java) | |Medium|Dynamic Programming
 |929|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_929.java) | |Easy|
 |925|[Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_925.java) | |Easy|
+|923|[3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_923.java) | |Medium|Two Pointers
 |922|[Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_922.java) |  |Easy|
 |921|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_921.java) | |Medium|Stack, Greedy
 |917|[Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_917.java) |  |Easy|
