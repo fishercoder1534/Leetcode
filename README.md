@@ -420,6 +420,7 @@ _If you like this project, please leave me a star._ &#9733;
 |877|[Stone Game](https://leetcode.com/problems/stone-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_877.java) | |Medium| Math, DP, Minimax
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_876.java) | |Easy|
 |872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_872.java) |  |Easy| DFS, recursion
+|870|[Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_870.java) |  |Medium|Array, Greedy
 |868|[Binary Gap](https://leetcode.com/problems/binary-gap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_868.java) |  |Easy|
 |867|[Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_867.java) |  |Easy|
 |860|[Lemonade Change](https://leetcode.com/problems/lemonade-change/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_860.java) | |Easy|
