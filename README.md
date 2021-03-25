@@ -21,7 +21,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1779|[Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1779.java) ||Easy|Array|
 |1775|[Equal Sum Arrays With Minimum Number of Operations](https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1775.java) ||Medium|Greedy|
 |1774|[Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1774.java) ||Medium|Greedy|
-|1773|[Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1773.java) ||Easy|Array, String|
+|1773|[Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1773.java) |[:tv:](https://youtu.be/eHk8TQIhvCk)|Easy|Array, String|
 |1772|[Sort Features by Popularity](https://leetcode.com/problems/sort-features-by-popularity/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1772.java) ||Medium|HashTable, Sort|
 |1769|[Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1769.java) ||Medium|Array, Greedy|
 |1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1768.java) ||Easy|String|
