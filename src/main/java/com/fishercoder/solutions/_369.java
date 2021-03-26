@@ -72,7 +72,7 @@ public class _369 {
             }
 
             // increase the rightmost node value to 1
-            notNineNode.val ++;
+            notNineNode.val++;
             notNineNode = notNineNode.next;
 
             // set all the following node values with 9 to 0
