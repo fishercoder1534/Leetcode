@@ -55,4 +55,33 @@ public class _369 {
         }
     }
 
+    public static class Solution2 {
+
+        public ListNode plusOne(ListNode head) {
+            ListNode dummyNode = new ListNode(0);
+            dummyNode.next = head;
+
+            ListNode notNineNode = dummyNode;
+
+            // find the right most node value != 9
+            while (head != null) {
+                if (head.val != 9) {
+                    notNineNode = head;
+                }
+                head = head.next;
+            }
+
+            // increase the rightmost node value to 1
+            notNineNode.val ++;
+            notNineNode = notNineNode.next;
+
+            // set all the following node values with 9 to 0
+            while (notNineNode != null) {
+                notNineNode.val = 0;
+                notNineNode = notNineNode.next;
+            }
+            return dummyNode.val != 0 ? dummyNode : dummyNode.next;
+        }
+    }
+
 }
