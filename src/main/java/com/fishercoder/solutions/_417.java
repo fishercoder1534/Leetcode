@@ -61,6 +61,7 @@ public class _417 {
     }
 
     public static class Solution2 {
+        /**This is my original solution on 3/25/2021, although brute force, it works.*/
         public List<List<Integer>> pacificAtlantic(int[][] matrix) {
             List<List<Integer>> result = new ArrayList<>();
             if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
