@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1806|[Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1806.java) ||Medium|Array, Greedy|
 |1805|[Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1805.java) ||Medium|String|
 |1800|[Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1800.java) ||Easy|Two Pointers|
 |1797|[Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1797.java) ||Medium|HashTable, Design|
