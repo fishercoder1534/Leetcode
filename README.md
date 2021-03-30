@@ -307,6 +307,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array/)|[Javascript](./javascript/_1146.js)| | Easy ||
 |1138|[Alphabet Board Path](https://leetcode.com/problems/alphabet-board-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1138.java)| [:tv:](https://youtu.be/rk-aB4rEOyU)| Medium |HashTable, String|
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1137.java) | |Easy||
+|1136|[Parallel Courses](https://leetcode.com/problems/parallel-courses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1136.java) | |Medium||
 |1134|[Armstrong Number](https://leetcode.com/problems/armstrong-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1134.java) |  [:tv:](https://www.youtube.com/watch?v=HTL7fd4HPf4)|Easy||
 |1133|[Largest Unique Number](https://leetcode.com/problems/largest-unique-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1133.java) | [:tv:](https://youtu.be/Fecpt1YZlCs)|Easy||
 |1128|[Number of Equivalent Domino Pairs](https://leetcode.com/problems/number-of-equivalent-domino-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1128.java) |  [:tv:](https://www.youtube.com/watch?v=7EpEEHAAxyw)|Easy||
