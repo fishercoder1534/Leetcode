@@ -102,7 +102,11 @@ public class _300 {
          * Time: O(nlogn)
          * Space: O(n)
          * <p>
-         * The reason we can use binary search here is because all numbers we put into dp array are sorted
+         * The reason we can use binary search here is because all numbers we put into dp array are sorted.
+         * Arrays.binarySearch() method returns index of the search key,
+         * if it is contained in the array, else it returns (-(insertion point) - 1).
+         * The insertion point is the point at which the key would be inserted into the array:
+         * the index of the first element greater than the key, or a.length if all elements in the array are less than the specified key.
          */
         public int lengthOfLIS(int[] nums) {
             int[] dp = new int[nums.length];
