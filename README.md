@@ -395,6 +395,7 @@ _If you like this project, please leave me a star._ &#9733;
 |941|[Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_941.java) | |Easy|
 |938|[Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_938.java) | |Medium| BST, recursion, DFS
 |937|[Reorder Log Files](https://leetcode.com/problems/reorder-log-files/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_937.java) | |Easy|
+|936|[Stamping The Sequence](https://leetcode.com/problems/stamping-the-sequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_936.java) | |Hard| String, Greedy
 |935|[Knight Dialer](https://leetcode.com/problems/knight-dialer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_935.java) | |Medium|
 |933|[Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_933.java) | |Easy|
 |931|[Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_931.java) | |Medium|Dynamic Programming
