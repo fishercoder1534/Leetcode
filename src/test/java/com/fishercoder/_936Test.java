@@ -18,4 +18,9 @@ public class _936Test {
     public void test1() {
         assertArrayEquals(new int[]{0, 2}, solution1.movesToStamp("abc", "ababc"));
     }
+
+    @Test
+    public void test2() {
+        assertArrayEquals(new int[]{}, solution1.movesToStamp("aye", "eyeye"));
+    }
 }
