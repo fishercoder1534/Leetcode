@@ -48,7 +48,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1733.java) ||Medium|Array, Greedy|
 |1732|[Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1732.java) ||Easy|Array|
 |1727|[Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1727.java) ||Medium|Greedy, Sort|
-|1726|[Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1726.java) ||Medium|Array|
+|1726|[Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1726.java) |[:tv:](https://youtu.be/asI_UBkXI0M)|Medium|Array|
 |1725|[Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1725.java) ||Easy|Greedy|
 |1721|[Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1721.java) ||Medium|LinkedList|
 |1720|[Decode XORed Array](https://leetcode.com/problems/decode-xored-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1720.java) ||Easy|Bit Manipulation|
