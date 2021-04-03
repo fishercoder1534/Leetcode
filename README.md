@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1812|[Determine Color of a Chessboard Square](https://leetcode.com/problems/determine-color-of-a-chessboard-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1812.java) ||Easy|String|
 |1807|[Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1807.java) ||Medium|HashTable, String|
 |1806|[Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1806.java) ||Medium|Array, Greedy|
 |1805|[Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1805.java) ||Medium|String|
