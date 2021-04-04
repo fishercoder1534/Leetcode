@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1817|[Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1817.java) ||Medium|HashTable|
 |1816|[Truncate Sentence](https://leetcode.com/problems/truncate-sentence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1816.java) ||Easy|String|
 |1813|[Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1813.java) ||Medium|String|
 |1812|[Determine Color of a Chessboard Square](https://leetcode.com/problems/determine-color-of-a-chessboard-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1812.java) ||Easy|String|
