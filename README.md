@@ -591,6 +591,7 @@ _If you like this project, please leave me a star._ &#9733;
 |625|[Minimum Factorization](https://leetcode.com/problems/minimum-factorization/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_625.java) |  |Medium | 
 |624|[Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_624.java) |  |Easy | Sort, Array
 |623|[Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_623.java) | |Medium | Tree
+|622|[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_622.java) |  |Medium | Design, Queue
 |621|[Task Scheduler](https://leetcode.com/problems/task-scheduler/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_621.java) |  |Medium | Greedy, Queue
 |617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_617.java) |  |Easy | Tree, Recursion
 |616|[Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_616.java) | | Medium | String 
