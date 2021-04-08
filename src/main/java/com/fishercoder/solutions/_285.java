@@ -2,7 +2,9 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -17,7 +19,7 @@ public class _285 {
          * <p>
          * The time complexity should be O(h) where h is the depth of the result node.
          * succ is a pointer that keeps the possible successor.
-         * Whenever you go left the current root is the new possible successor, otherwise the it remains the same.
+         * Whenever you go left the current root is the new possible successor, otherwise it remains the same.
          * <p>
          * Only in a balanced BST O(h) = O(log n). In the worst case h can be as large as n.
          */
@@ -61,6 +63,33 @@ public class _285 {
             map.put(root.val, root);
             inorderTraversal(root.right, map);
             return;
+        }
+    }
+
+    public static class Solution3 {
+        public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+            List<TreeNode> inorder = new ArrayList<>();
+            dfs(root, inorder);
+            for (int i = 0; i < inorder.size() - 1; i++) {
+                if (inorder.get(i) == p) {
+                    return inorder.get(i + 1);
+                }
+            }
+            return null;
+        }
+
+        private List<TreeNode> dfs(TreeNode root, List<TreeNode> inorder) {
+            if (root == null) {
+                return inorder;
+            }
+            if (root.left != null) {
+                dfs(root.left, inorder);
+            }
+            inorder.add(root);
+            if (root.right != null) {
+                dfs(root.right, inorder);
+            }
+            return inorder;
         }
     }
 
