@@ -28,4 +28,9 @@ public class _1813Test {
     public void test3() {
         assertEquals(true, solution1.areSentencesSimilar("c h p Ny", "c BDQ r h p Ny"));
     }
+
+    @Test
+    public void test4() {
+        assertEquals(true, solution1.areSentencesSimilar("A", "a A b A"));
+    }
 }

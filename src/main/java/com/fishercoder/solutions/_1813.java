@@ -17,14 +17,35 @@ public class _1813 {
                 } else {
                     breaks++;
                     if (breaks > 1) {
-                        return false;
+                        break;
                     }
                     while (j < longWords.length && !longWords[j].equals(shortWords[i])) {
                         j++;
                     }
                 }
             }
-            return (breaks == 1 && i == shortWords.length && j == longWords.length) || (i == shortWords.length && breaks == 0);
+            if ((breaks == 1 && i == shortWords.length && j == longWords.length) || (i == shortWords.length && breaks == 0)) {
+                return true;
+            }
+            //we'll check from the left side and move towards the right side
+            i = shortWords.length - 1;
+            j = longWords.length - 1;
+            breaks = 0;
+            for (; i >= 0 && j >= 0; ) {
+                if (shortWords[i].equals(longWords[j])) {
+                    i--;
+                    j--;
+                } else {
+                    breaks++;
+                    if (breaks > 1) {
+                        return false;
+                    }
+                    while (j >= 0 && !longWords[j].equals(shortWords[i])) {
+                        j--;
+                    }
+                }
+            }
+            return (breaks == 1 && i == -1 && j == -1) || (breaks == 0 && i == -1);
         }
     }
 }
