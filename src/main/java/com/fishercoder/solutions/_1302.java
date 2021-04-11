@@ -43,4 +43,27 @@ public class _1302 {
             return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
         }
     }
+
+    public static class Solution2 {
+        public int deepestLeavesSum(TreeNode root) {
+            Queue<TreeNode> queue = new LinkedList<>();
+            queue.offer(root);
+            int sum = 0;
+            while (!queue.isEmpty()) {
+                int size = queue.size();
+                sum = 0;
+                for (int i = 0; i < size; i++) {
+                    TreeNode curr = queue.poll();
+                    sum += curr.val;
+                    if (curr.left != null) {
+                        queue.offer(curr.left);
+                    }
+                    if (curr.right != null) {
+                        queue.offer(curr.right);
+                    }
+                }
+            }
+            return sum;
+        }
+    }
 }
