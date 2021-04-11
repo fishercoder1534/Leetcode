@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1822|[Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1822.java) ||Easy|Math|
 |1817|[Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1817.java) ||Medium|HashTable|
 |1816|[Truncate Sentence](https://leetcode.com/problems/truncate-sentence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1816.java) ||Easy|String|
 |1814|[Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1814.java) ||Medium|Array, HashTable|
