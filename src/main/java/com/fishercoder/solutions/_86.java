@@ -45,7 +45,7 @@ public class _86 {
             }
             ListNode pre = new ListNode(-1);
             ListNode tmp = pre;
-            int i = 1;
+            int i = 0;
             int j = 0;
             while (i < first.size() || j < last.size()) {
                 if (i < first.size()) {

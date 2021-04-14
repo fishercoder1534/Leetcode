@@ -27,6 +27,12 @@ public class _86Test {
         head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 4, 3, 2, 5, 2));
         expected = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 2, 4, 3, 5));
         assertEquals(expected, (solution1.partition(head, 3)));
+    }
+
+    @Test
+    public void test2() {
+        head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 4, 3, 2, 5, 2));
+        expected = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 2, 4, 3, 5));
         assertEquals(expected, (solution2.partition(head, 3)));
     }
 
