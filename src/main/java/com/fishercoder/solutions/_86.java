@@ -2,6 +2,9 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.ListNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class _86 {
     public static class Solution1 {
         public ListNode partition(ListNode head, int x) {
@@ -25,6 +28,34 @@ public class _86 {
             greater.next = null;
             less.next = right.next;
             return left.next;
+        }
+    }
+
+    public static class Solution2 {
+        public ListNode partition(ListNode head, int x) {
+            List<Integer> first = new ArrayList<>();
+            List<Integer> last = new ArrayList<>();
+            while (head != null) {
+                if (head.val < x) {
+                    first.add(head.val);
+                } else {
+                    last.add(head.val);
+                }
+                head = head.next;
+            }
+            ListNode pre = new ListNode(-1);
+            ListNode tmp = pre;
+            int i = 1;
+            int j = 0;
+            while (i < first.size() || j < last.size()) {
+                if (i < first.size()) {
+                    tmp.next = new ListNode(first.get(i++));
+                } else if (j < last.size()) {
+                    tmp.next = new ListNode(last.get(j++));
+                }
+                tmp = tmp.next;
+            }
+            return pre.next;
         }
     }
 }
