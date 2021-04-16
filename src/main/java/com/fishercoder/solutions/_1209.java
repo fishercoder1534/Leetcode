@@ -43,4 +43,33 @@ public class _1209 {
             return sb.reverse().toString();
         }
     }
+
+    public static class Solution2 {
+        public String removeDuplicates(String s, int k) {
+            StringBuilder sb = new StringBuilder();
+            int dupCount = 0;
+            for (int i = 0; i < s.length(); i++) {
+                if (sb.length() != 0 && sb.charAt(sb.length() - 1) == s.charAt(i)) {
+                    dupCount++;
+                } else {
+                    dupCount = 1;
+                }
+                sb.append(s.charAt(i));
+                if (dupCount == k) {
+                    sb.setLength(sb.length() - k);
+                    if (i + 1 < s.length()) {
+                        dupCount = 0;
+                        for (int j = sb.length() - 1; j >= 0; j--) {
+                            if (sb.charAt(j) == s.charAt(i + 1)) {
+                                dupCount++;
+                            } else {
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            return sb.toString();
+        }
+    }
 }
