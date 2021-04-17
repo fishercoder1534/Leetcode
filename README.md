@@ -16,7 +16,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1817|[Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1817.java) ||Medium|HashTable|
 |1816|[Truncate Sentence](https://leetcode.com/problems/truncate-sentence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1816.java) ||Easy|String|
 |1814|[Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1814.java) ||Medium|Array, HashTable|
-|1813|[Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1813.java) ||Medium|String|
+|1813|[Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1813.java) |[:tv:](https://youtu.be/MMMd7dMv4Ak)|Medium|String|
 |1812|[Determine Color of a Chessboard Square](https://leetcode.com/problems/determine-color-of-a-chessboard-square/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1812.java) ||Easy|String|
 |1807|[Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1807.java) ||Medium|HashTable, String|
 |1806|[Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1806.java) ||Medium|Array, Greedy|
