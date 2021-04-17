@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1827|[Minimum Operations to Make the Array Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1827.java) ||Easy|Array, Greedy|
 |1823|[Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1823.java) ||Medium|Array|
 |1822|[Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1822.java) ||Easy|Math|
 |1817|[Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1817.java) ||Medium|HashTable|
