@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1833|[Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1833.java) ||Medium|Array, Sort|
 |1832|[Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1832.java) ||Easy|String|
 |1829|[Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1829.java) ||Medium|Bit Manipulation|
 |1828|[Queries on Number of Points Inside a Circle](https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1828.java) ||Medium|Math|
