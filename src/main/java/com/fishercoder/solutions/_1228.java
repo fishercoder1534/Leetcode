@@ -46,4 +46,35 @@ public class _1228 {
             return (max + min) * (arr.length + 1) / 2 - sum;
         }
     }
+
+    public static class Solution3 {
+        public int missingNumber(int[] arr) {
+            if (arr[1] < arr[0]) {
+                reverse(arr);
+            }
+            int diff = -1;
+            for (int i = 0; i < arr.length - 1; i++) {
+                if (i == 0) {
+                    diff = arr[i + 1] - arr[i];
+                } else if (arr[i + 1] - arr[i] > diff) {
+                    return arr[i] + diff;
+                } else if (arr[i + 1] - arr[i] < diff) {
+                    return arr[i] - (arr[i + 1] - arr[i]);
+                }
+            }
+            return arr[arr.length - 1];
+        }
+
+        private void reverse(int[] arr) {
+            int i = 0;
+            int j = arr.length - 1;
+            while (i < j) {
+                int tmp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = tmp;
+                i++;
+                j--;
+            }
+        }
+    }
 }
