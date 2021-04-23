@@ -33,4 +33,25 @@ public class _696 {
             return (int) ans;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * credit: https://leetcode.com/problems/count-binary-substrings/discuss/1172553/JS-Python-Java-C%2B%2B-or-Easy-Rolling-Count-Solution-w-Explanation
+         */
+        public int countBinarySubstrings(String s) {
+            int curr = 1;
+            int prev = 0;
+            int ans = 0;
+            for (int i = 1; i < s.length(); i++) {
+                if (s.charAt(i) == s.charAt(i - 1)) {
+                    curr++;
+                } else {
+                    ans += Math.min(curr, prev);
+                    prev = curr;
+                    curr = 1;
+                }
+            }
+            return ans + Math.min(curr, prev);
+        }
+    }
 }
