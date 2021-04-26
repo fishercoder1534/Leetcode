@@ -97,6 +97,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1656|[Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1656.java) ||Easy|Array, Design|
 |1652|[Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1652.java) ||Easy|Array|
 |1646|[Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1646.java) ||Easy|Array|
+|1642|[Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1642.java) ||Medium|Binary Search, Heap|
 |1641|[Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1641.java) |[:tv:](https://youtu.be/gdH4yfgfwiU)|Medium|Math, DP, Backtracking|
 |1640|[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1640.java) ||Easy|Array, Sort|
 |1637|[Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/)|[Javascript](./javascript/_1637.js)| | Medium | Sort |
