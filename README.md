@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1844|[Replace All Digits with Characters](https://leetcode.com/problems/replace-all-digits-with-characters//)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1844.java) ||Easy|String|
 |1837|[Sum of Digits in Base K](https://leetcode.com/problems/sum-of-digits-in-base-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1837.java) ||Easy|Math, Bit Manipulation|
 |1833|[Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1833.java) ||Medium|Array, Sort|
 |1832|[Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1832.java) ||Easy|String|
