@@ -1,35 +1,30 @@
 package com.fishercoder.solutions;
 
-import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class _1354 {
     public static class Solution1 {
         /**
-         * 1. A good idea/trick to calculate the previous value of the largest number max: (2 * max - total).
-         * 2. Use a PriorityQueue to store the elements in reverse order to help us get the largest element in O(1) time
-         * 3. Also keep a variable of total sum
-         * <p>
-         * reference: https://leetcode.com/problems/construct-target-array-with-multiple-sums/discuss/510214/C%2B%2B-Reaching-Points-Work-Backwards
+         * Use % is the key here to avoid TLE, a good test case for this is [1,1000000000]
          */
         public boolean isPossible(int[] target) {
-            PriorityQueue<Long> pq = new PriorityQueue<>(Collections.reverseOrder());
-            long sum = 0L;
-            for (int v : target) {
-                sum += v;
-                pq.offer((long) v);
+            long sum = 0;
+            PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
+            for (int i = 0; i < target.length; i++) {
+                maxHeap.offer(target[i]);
+                sum += target[i];
             }
-            while (sum > pq.size()) {
-                long max = pq.poll();
-                Long prev = 2 * max - sum;
-                if (prev < 1) {
+            while (maxHeap.peek() != 1) {
+                int max = maxHeap.poll();
+                sum -= max;
+                if (max <= sum || sum < 1) {
                     return false;
                 }
-                pq.offer(prev);
-                sum -= max;
-                sum += prev;
+                max %= sum;
+                sum += max;
+                maxHeap.offer(max);
             }
-            return sum == pq.size();
+            return true;
         }
     }
 }
