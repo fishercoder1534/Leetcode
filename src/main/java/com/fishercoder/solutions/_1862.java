@@ -16,7 +16,7 @@ public class _1862 {
             }
             List<Integer> list = new ArrayList<>(map.keySet());
             int mod = 1000000007;
-            long sum = 0l;
+            long sum = 0L;
             for (int i = list.size() - 1; i >= 0; i--) {
                 for (int j = i; j >= 0; j--) {
                     sum += (list.get(i) / list.get(j)) * map.get(list.get(j)) * map.get(list.get(i));
