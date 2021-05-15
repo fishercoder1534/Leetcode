@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1861|[Rotating the Box](https://leetcode.com/problems/rotating-the-box/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1861.java) ||Medium|Array, Two Pointers|
 |1860|[Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1860.java) ||Medium|Math|
 |1859|[Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1859.java) ||Easy|String, Sort|
 |1854|[Maximum Population Year](https://leetcode.com/problems/maximum-population-year/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1854.java) ||Easy|Array|
