@@ -468,6 +468,7 @@ _If you like this project, please leave me a star._ &#9733;
 |821|[Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_821.java) |  |Easy|
 |820|[Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_820.java) |  |Medium|
 |819|[Most Common Word](https://leetcode.com/problems/most-common-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_819.java) |  |Easy| HashMap
+|816|[Ambiguous Coordinates](https://leetcode.com/problems/ambiguous-coordinates/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_816.java) |  |Medium| String
 |814|[Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_814.java) |  |Medium| recursion, DFS 
 |811|[Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_811.java) | |Easy| HashMap
 |809|[Expressive Words](https://leetcode.com/problems/expressive-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_809.java) | |Medium|
