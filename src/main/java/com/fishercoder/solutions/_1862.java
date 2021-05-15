@@ -6,7 +6,9 @@ import java.util.TreeMap;
 
 public class _1862 {
     public static class Solution1 {
-        /**TODO: this results in TLE, fix it.*/
+        /**
+         * TODO: this results in TLE, fix it.
+         */
         public int sumOfFlooredPairs(int[] nums) {
             TreeMap<Integer, Integer> map = new TreeMap<>();
             for (int num : nums) {
