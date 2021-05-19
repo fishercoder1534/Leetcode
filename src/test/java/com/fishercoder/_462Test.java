@@ -19,4 +19,9 @@ public class _462Test {
         assertEquals(2, solution1.minMoves2(new int[]{1, 2, 3}));
     }
 
+    @Test
+    public void test2() {
+        assertEquals(0, solution1.minMoves2(new int[]{1}));
+    }
+
 }
