@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1869|[Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1869.java) ||Easy|Array, Two Pointers|
 |1863|[Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1863.java) ||Easy|Backtracking, Recursion|
 |1862|[Sum of Floored Pairs](https://leetcode.com/problems/sum-of-floored-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1862.java) ||Hard|Math|
 |1861|[Rotating the Box](https://leetcode.com/problems/rotating-the-box/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1861.java) |[:tv:](https://youtu.be/2LRnTMOiqSI)|Medium|Array, Two Pointers|
