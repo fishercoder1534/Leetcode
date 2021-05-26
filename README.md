@@ -86,6 +86,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1700|[Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1700.java) ||Easy|Array|
 |1694|[Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1694.java) ||Easy|String|
 |1690|[Stone Game VII](https://leetcode.com/problems/stone-game-vii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1690.java) ||Medium|DP|
+|1689|[Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1689.java) ||Medium|Greedy|
 |1688|[Count of Matches in Tournament](https://leetcode.com/problems/count-of-matches-in-tournament/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1688.java) ||Easy|Backtracking|
 |1686|[Stone Game VI](https://leetcode.com/problems/stone-game-vi/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1686.java) ||Medium|Greedy|
 |1685|[Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1685.java) |[:tv:](https://youtu.be/WYe644djV30)|Medium|Math, Greedy|
