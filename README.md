@@ -84,6 +84,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1705|[Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1705.java) ||Medium|Heap, Greedy|
 |1704|[Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1704.java) ||Easy|String|
 |1700|[Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1700.java) ||Easy|Array|
+|1695|[Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1695.java) ||Medium|Two Pointers|
 |1694|[Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1694.java) ||Easy|String|
 |1690|[Stone Game VII](https://leetcode.com/problems/stone-game-vii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1690.java) ||Medium|DP|
 |1689|[Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1689.java) ||Medium|Greedy|
