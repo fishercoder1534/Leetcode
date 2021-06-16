@@ -33,16 +33,16 @@ public class _22 {
             if (n == 0) {
                 return result;
             }
-            helper(result, "", n, n);
+            backtrack(result, "", n, n);
             return result;
         }
 
-        void helper(List<String> result, String par, int left, int right) {
+        void backtrack(List<String> result, String par, int left, int right) {
             if (left > 0) {
-                helper(result, par + "(", left - 1, right);
+                backtrack(result, par + "(", left - 1, right);
             }
             if (right > left) {
-                helper(result, par + ")", left, right - 1);
+                backtrack(result, par + ")", left, right - 1);
             }
             if (right == 0) {
                 result.add(par);
