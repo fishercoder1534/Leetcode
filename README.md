@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
+|1903|[Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1903.java) ||Easy|Greedy|
 |1897|[Redistribute Characters to Make All Strings Equal](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1897.java) ||Easy|String, Greedy|
 |1886|[Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1886.java) ||Easy|Array|
 |1880|[Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1880.java) ||Easy|String|
