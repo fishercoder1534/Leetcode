@@ -490,6 +490,7 @@ _If you like this project, please leave me a star._ &#9733;
 |800|[Similar RGB Color](https://leetcode.com/problems/similar-rgb-color/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_800.java) |  |Easy|
 |799|[Champagne Tower](https://leetcode.com/problems/champagne-tower/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_799.java) | |Medium|
 |796|[Rotate String](https://leetcode.com/problems/rotate-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_796.java) | |Easy|
+|792|[Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_792.java) | |Medium|HashTable, String, Trie, Sorting
 |791|[Custom Sort String](https://leetcode.com/problems/custom-sort-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_791.java) | |Medium|
 |789|[Escape The Ghosts](https://leetcode.com/problems/escape-the-ghosts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_789.java) | |Medium| Math|
 |788|[Rotated Digits](https://leetcode.com/problems/rotated-digits/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_788.java) | |Easy|
