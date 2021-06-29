@@ -6,13 +6,13 @@ _If you like this project, please leave me a star._ &#9733;
 
 ## Algorithms
 
-|  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
+|  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag        1           
 |-----|----------------|---------------|--------|-------------|-------------
 |1913|[Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1913.java) ||Easy|Sort|
 |1910|[Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1904.java) ||Medium|String|
 |1909|[Remove One Element to Make the Array Strictly Increasing](https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1909.java) ||Easy|Array|
 |1904|[The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1904.java) ||Medium|String, Greedy|
-|1903|[Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1903.java) ||Easy|Greedy|
+|1903|[Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1903.java) |[:tv:](https://youtu.be/IIt_ARZzclY)|Easy|Greedy|
 |1897|[Redistribute Characters to Make All Strings Equal](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1897.java) ||Easy|String, Greedy|
 |1886|[Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1886.java) ||Easy|Array|
 |1880|[Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1880.java) ||Easy|String|
