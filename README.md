@@ -453,8 +453,9 @@ _If you like this project, please leave me a star._ &#9733;
 |897|[Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_897.java) | |Easy| DFS, recursion
 |896|[Monotonic Array](https://leetcode.com/problems/monotonic-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_896.java) |  |Easy|
 |895|[Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_895.java) | HashTable, Stack |Hard|
-|890|[Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_890.java) |  |Medium|
 |893|[Groups of Special-Equivalent Strings](https://leetcode.com/problems/groups-of-special-equivalent-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_893.java) | [:tv:](https://youtu.be/tbtXPKkA2Zw) |Easy|
+|892|[Surface Area of 3D Shapes](https://leetcode.com/problems/surface-area-of-3d-shapes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_892.java) |  Array, Math, Geometry, Matrix|Easy|
+|890|[Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_890.java) |  |Medium|
 |888|[Fair Candy Swap](https://leetcode.com/problems/fair-candy-swap/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_888.java) |  |Easy|
 |885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_885.java)  |[:tv:](https://www.youtube.com/watch?v=0qep3f9cqVs) |Medium|
 |884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_884.java) | |Easy|
