@@ -488,6 +488,7 @@ _If you like this project, please leave me a star._ &#9733;
 |819|[Most Common Word](https://leetcode.com/problems/most-common-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_819.java) |  |Easy| HashMap
 |816|[Ambiguous Coordinates](https://leetcode.com/problems/ambiguous-coordinates/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_816.java) |  |Medium| String
 |814|[Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_814.java) |  |Medium| recursion, DFS 
+|812|[Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_812.java) | |Easy| Array, Math, Geometry
 |811|[Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_811.java) | |Easy| HashMap
 |809|[Expressive Words](https://leetcode.com/problems/expressive-words/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_809.java) | |Medium|
 |807|[Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_807.java) | |Medium|
