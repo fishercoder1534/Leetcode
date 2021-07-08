@@ -344,6 +344,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1152|[Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1152.java) |[:tv:](https://youtu.be/V510Lbtrm5s) |Medium|HashTable, Sort, Array|
 |1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1150.java)|[:tv:](https://youtu.be/-t2cdVs9cKk) |Easy||
 |1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array/)|[Javascript](./javascript/_1146.js)| | Easy ||
+|1143|[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1143.java) | |Medium||String, DP
 |1138|[Alphabet Board Path](https://leetcode.com/problems/alphabet-board-path/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1138.java)| [:tv:](https://youtu.be/rk-aB4rEOyU)| Medium |HashTable, String|
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1137.java) | |Easy||
 |1136|[Parallel Courses](https://leetcode.com/problems/parallel-courses/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1136.java) | |Medium||
