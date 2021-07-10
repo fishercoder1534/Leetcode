@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag        1           
 |-----|----------------|---------------|--------|-------------|-------------
+|1925|[Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1925.java) ||Easy|Array, Greedy|
 |1920|[Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1920.java) ||Easy||
 |1913|[Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1913.java) ||Easy|Sort|
 |1910|[Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1904.java) ||Medium|String|
