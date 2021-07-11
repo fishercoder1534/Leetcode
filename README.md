@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag        1           
 |-----|----------------|---------------|--------|-------------|-------------
+|1929|[Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1929.java) ||Easy||
 |1926|[Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1926.java) ||Medium|DP, DFS, BFS|
 |1925|[Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1925.java) ||Easy|Array, Greedy|
 |1920|[Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1920.java) ||Easy||
