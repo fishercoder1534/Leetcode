@@ -13,7 +13,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1925|[Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1925.java) ||Easy|Array, Greedy|
 |1920|[Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1920.java) ||Easy||
 |1913|[Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1913.java) ||Easy|Sort|
-|1910|[Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1904.java) ||Medium|String|
+|1910|[Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1904.java) |[:tv:](https://youtu.be/d74CJIqw268)|Medium|String|
 |1909|[Remove One Element to Make the Array Strictly Increasing](https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1909.java) ||Easy|Array|
 |1904|[The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1904.java) ||Medium|String, Greedy|
 |1903|[Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1903.java) |[:tv:](https://youtu.be/IIt_ARZzclY)|Easy|Greedy|
