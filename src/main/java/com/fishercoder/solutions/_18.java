@@ -2,7 +2,9 @@ package com.fishercoder.solutions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class _18 {
 
@@ -42,6 +44,30 @@ public class _18 {
                         }
                     }
                 }
+            }
+            return result;
+        }
+    }
+
+    public static class Solution2 {
+        public List<List<Integer>> fourSum(int[] nums, int target) {
+            Arrays.sort(nums);
+            Set<List<Integer>> set = new HashSet<>();
+            for (int i = 0; i < nums.length - 3; i++) {
+                for (int j = i + 1; j < nums.length - 2; j++) {
+                    for (int k = j + 1; k < nums.length - 1; k++) {
+                        for (int p = k + 1; p < nums.length; p++) {
+                            int sum = nums[i] + nums[j] + nums[k] + nums[p];
+                            if (sum == target) {
+                                set.add(Arrays.asList(nums[i], nums[j], nums[k], nums[p]));
+                            }
+                        }
+                    }
+                }
+            }
+            List<List<Integer>> result = new ArrayList<>();
+            for (List<Integer> each : set) {
+                result.add(each);
             }
             return result;
         }
