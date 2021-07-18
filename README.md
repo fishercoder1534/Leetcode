@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag        1           
 |-----|----------------|---------------|--------|-------------|-------------
+|1935|[Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1935.java) ||Easy|String|
 |1929|[Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1929.java) ||Easy||
 |1926|[Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1926.java) ||Medium|DP, DFS, BFS|
 |1925|[Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1925.java) ||Easy|Array, Greedy|
