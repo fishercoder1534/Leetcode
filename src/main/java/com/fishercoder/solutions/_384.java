@@ -9,6 +9,7 @@ import java.util.Random;
 public class _384 {
 
     public static class Solution1 {
+        //Note as of 7/20/2021: This solution ends in TLE on LeetCode now.
         //Note: the problem states that this is a set without duplicates which makes building all combinations easier
 
         private List<List<Integer>> combinations;
