@@ -14,7 +14,7 @@ public class _269 {
          * reference: https://discuss.leetcode.com/topic/28308/java-ac-solution-using-bfs
          */
         public String alienOrder(String[] words) {
-            Map<Character, Set<Character>> map = new HashMap();
+            Map<Character, Set<Character>> map = new HashMap<>();
             Map<Character, Integer> degree = new HashMap<>();
             String result = "";
             if (words == null || words.length == 0) {
@@ -22,16 +22,18 @@ public class _269 {
             }
             for (String s : words) {
                 for (char c : s.toCharArray()) {
-                    degree.put(c, 0);//keeps overwriting it, the purpose is to create one entry
-                    //for each letter in the degree map
+                    degree.put(c, 0);
                 }
             }
             for (int i = 0; i < words.length - 1; i++) {
-                String cur = words[i];
+                String curr = words[i];
                 String next = words[i + 1];
-                int length = Math.min(cur.length(), next.length());
-                for (int j = 0; j < length; j++) {
-                    char c1 = cur.charAt(j);
+                if (curr.length() > next.length() && curr.startsWith(next)) {
+                    return "";
+                }
+                int minLen = Math.min(curr.length(), next.length());
+                for (int j = 0; j < minLen; j++) {
+                    char c1 = curr.charAt(j);
                     char c2 = next.charAt(j);
                     if (c1 != c2) {
                         Set<Character> set = new HashSet<>();
@@ -50,17 +52,17 @@ public class _269 {
             Queue<Character> queue = new LinkedList<>();
             for (char c : degree.keySet()) {
                 if (degree.get(c) == 0) {
-                    queue.add(c);
+                    queue.offer(c);
                 }
             }
             while (!queue.isEmpty()) {
-                char c = queue.remove();
-                result += c;
-                if (map.containsKey(c)) {
-                    for (char c2 : map.get(c)) {
-                        degree.put(c2, degree.get(c2) - 1);
-                        if (degree.get(c2) == 0) {
-                            queue.add(c2);
+                char curr = queue.poll();
+                result += curr;
+                if (map.containsKey(curr)) {
+                    for (char c : map.get(curr)) {
+                        degree.put(c, degree.get(c) - 1);
+                        if (degree.get(c) == 0) {
+                            queue.offer(c);
                         }
                     }
                 }
