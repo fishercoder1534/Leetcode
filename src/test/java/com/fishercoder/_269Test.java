@@ -21,4 +21,10 @@ public class _269Test {
         assertEquals("wertf", solution1.alienOrder(words));
     }
 
+    @Test
+    public void test2() {
+        words = new String[]{"abc", "ab"};
+        assertEquals("", solution1.alienOrder(words));
+    }
+
 }
