@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag        1           
 |-----|----------------|---------------|--------|-------------|-------------
+|1941|[Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1941.java) ||Easy||
 |1936|[Add Minimum Number of Rungs](https://leetcode.com/problems/add-minimum-number-of-rungs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1936.java) ||Medium||
 |1935|[Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1935.java) ||Easy|String|
 |1929|[Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1929.java) ||Easy||
