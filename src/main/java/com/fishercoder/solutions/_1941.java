@@ -1,22 +1,17 @@
 package com.fishercoder.solutions;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class _1941 {
     public static class Solution {
         public boolean areOccurrencesEqual(String s) {
             int[] counts = new int[26];
-            for (char c : s.toCharArray()) {
+            char[] charArray = s.toCharArray();
+            for (char c : charArray) {
                 counts[c - 'a']++;
             }
-            Set<Integer> set = new HashSet<>();
-            for (int i : counts) {
-                if (i != 0) {
-                    set.add(i);
-                }
-            }
-            return set.size() == 1;
+            return Arrays.stream(counts).filter(i -> i != 0).boxed().collect(Collectors.toSet()).size() == 1;
         }
     }
 }
