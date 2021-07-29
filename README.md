@@ -115,6 +115,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1680|[Concatenation of Consecutive Binary Numbers](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1680.java) ||Medium|Math|
 |1679|[Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1679.java) ||Medium|HashTable|
 |1678|[Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1678.java) ||Easy|String|
+|1676|[Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1676.java) ||Medium|Tree, DFS, Binary Tree|
 |1675|[Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1675.java) ||Hard|Heap, Ordered Map|
 |1673|[Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1673.java) |[:tv:](https://youtu.be/GBJFxSD3B_s)|Medium|Stack, Greedy|
 |1672|[Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1672.java) ||Easy|Array|
