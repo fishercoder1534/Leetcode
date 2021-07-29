@@ -8,7 +8,6 @@ import static org.junit.Assert.assertEquals;
 
 public class _1675Test {
     private static _1675.Solution1 solution1;
-    private static int[] nums;
 
     @BeforeClass
     public static void setup() {
