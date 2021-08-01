@@ -6,7 +6,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 ## Algorithms
 
-|  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag        1           
+|  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                   
 |-----|----------------|---------------|--------|-------------|-------------
 |1945|[Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1945.java) ||Easy||
 |1941|[Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1941.java) ||Easy||
