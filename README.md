@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|1952|[Three Divisors](https://leetcode.com/problems/three-divisors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1952.java) ||Easy||
 |1945|[Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1945.java) ||Easy||
 |1941|[Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1941.java) ||Easy||
 |1936|[Add Minimum Number of Rungs](https://leetcode.com/problems/add-minimum-number-of-rungs/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1936.java) ||Medium||
