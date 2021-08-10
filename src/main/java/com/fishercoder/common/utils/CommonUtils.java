@@ -36,6 +36,13 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static void printArray(double[] booleans) {
+        for (double i : booleans) {
+            System.out.print(i + ", ");
+        }
+        System.out.println();
+    }
+
     public static void printArray(int[] nums) {
         for (int i : nums) {
             System.out.print(i + ", ");

@@ -8,30 +8,26 @@ import java.util.Set;
 
 public class _970 {
     public static class Solution1 {
-        /**
-         * This approach results in Time Limit Exceeded since it's apparently doing
-         * redundant checks.
-         */
         public List<Integer> powerfulIntegers(int x, int y, int bound) {
-            Set<Integer> result = new HashSet<>();
-            int small = x;
-            int big = y;
-            if (x > y) {
-                small = y;
-                big = x;
-            }
-            int maxPower = bound / small;
-            for (int i = 0; i <= maxPower + 1; i++) {
-                for (int j = 0; j <= maxPower + 1; j++) {
-                    int sum = (int) (Math.pow(small, i) + Math.pow(big, j));
-                    if (sum <= bound) {
-                        result.add(sum);
+            int powerInteger;
+            Set<Integer> set = new HashSet<>();
+            for (int i = 0; i <= bound; i++) {
+                for (int j = 0; j <= bound; j++) {
+                    powerInteger = (int) (Math.pow(x, i) + Math.pow(y, j));
+                    if (powerInteger <= bound) {
+                        set.add(powerInteger);
+                    } else {
+                        break;
+                    }
+                    if (y == 1) {
+                        break;
                     }
                 }
+                if (x == 1) {
+                    break;
+                }
             }
-            List<Integer> list = new ArrayList<>(result);
-            Collections.sort(list);
-            return list;
+            return new ArrayList<>(set);
         }
     }
 

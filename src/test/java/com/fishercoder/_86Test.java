@@ -12,12 +12,14 @@ import static org.junit.Assert.assertEquals;
 
 public class _86Test {
     private static _86.Solution1 solution1;
+    private static _86.Solution2 solution2;
     private static ListNode head;
     private static ListNode expected;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _86.Solution1();
+        solution2 = new _86.Solution2();
     }
 
     @Test
@@ -25,6 +27,13 @@ public class _86Test {
         head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 4, 3, 2, 5, 2));
         expected = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 2, 4, 3, 5));
         assertEquals(expected, (solution1.partition(head, 3)));
+    }
+
+    @Test
+    public void test2() {
+        head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 4, 3, 2, 5, 2));
+        expected = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 2, 4, 3, 5));
+        assertEquals(expected, (solution2.partition(head, 3)));
     }
 
 }
