@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|1967|[Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1967.java) ||Easy||
 |1961|[Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1961.java) ||Easy||
 |1957|[Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1957.java) ||Easy|String|
 |1952|[Three Divisors](https://leetcode.com/problems/three-divisors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1952.java) ||Easy||
