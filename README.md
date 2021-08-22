@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|1981|[Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1981.java) ||Medium|DP|
 |1980|[Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1980.java) ||Medium||
 |1979|[Find Greatest Common Divisor of Array](https://leetcode.com/problems/find-greatest-common-divisor-of-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1979.java) ||Easy||
 |1974|[Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1974.java) ||Easy||
