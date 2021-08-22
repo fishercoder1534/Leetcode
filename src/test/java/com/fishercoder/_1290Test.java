@@ -29,7 +29,7 @@ public class _1290Test {
 
     @Test
     public void test2() {
-        head = ListNode.createSinglyLinkedList(Arrays.asList(1, 1, 1));
+        head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 1, 1));
         assertEquals(7, solution2.getDecimalValue(head));
     }
 }
