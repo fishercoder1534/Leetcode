@@ -13,6 +13,7 @@ public class _1290 {
             return Integer.parseInt(sb.toString(), 2);
         }
     }
+
     public static class Solution2 {
         public int getDecimalValue(ListNode head) {
             int sum = 0;
