@@ -26,6 +26,7 @@ public class _1290Test {
         head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 0, 1));
         assertEquals(5, solution1.getDecimalValue(head));
     }
+
     @Test
     public void test2() {
         head = ListNode.createSinglyLinkedList(Arrays.asList(1, 1, 1));
