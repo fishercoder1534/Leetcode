@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|1979|[Find Greatest Common Divisor of Array](https://leetcode.com/problems/find-greatest-common-divisor-of-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1979.java) ||Easy||
 |1974|[Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1974.java) ||Easy||
 |1968|[Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1968.java) ||Medium||
 |1967|[Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1967.java) ||Easy||
