@@ -3,7 +3,8 @@ package com.fishercoder;
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import org.junit.BeforeClass;
-import org.junit.Test;import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import com.fishercoder.solutions._1669;
 
@@ -34,12 +35,13 @@ public class _1669Test {
         LinkedListUtils.printList(actual);
         assertEquals(expected, actual);
     }
+
     @Test
     public void test2() {
         l1 = ListNode.createSinglyLinkedList(Arrays.asList(0, 1, 2, 3, 4, 5));
-        l2 = ListNode.createSinglyLinkedList(Arrays.asList(1000000,1000001,1000002));
+        l2 = ListNode.createSinglyLinkedList(Arrays.asList(1000000, 1000001, 1000002));
         a = 3;
         b = 4;
-        assertEquals(ListNode.createSinglyLinkedList(Arrays.asList(0,1,2,1000000,1000001,1000002,5)), solution2.mergeInBetween(l1, a, b, l2));
+        assertEquals(ListNode.createSinglyLinkedList(Arrays.asList(0, 1, 2, 1000000, 1000001, 1000002, 5)), solution2.mergeInBetween(l1, a, b, l2));
     }
 }
