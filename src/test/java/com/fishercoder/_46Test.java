@@ -17,4 +17,9 @@ public class _46Test {
     public void test1() {
         CommonUtils.printListList(solution1.permute(new int[]{1, 2, 3}));
     }
+
+    @Test
+    public void test2() {
+        CommonUtils.printListList(solution1.permute(new int[]{1, 2, 3, 4, 5, 6}));
+    }
 }

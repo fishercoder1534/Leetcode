@@ -9,53 +9,33 @@ public class _667 {
 
     public static class Solutoin1 {
         /**
-         * This brute force solution will result in TLE as soon as n = 10 and k = 4.
+         * inspired by this post: https://leetcode.com/problems/beautiful-arrangement-ii/discuss/1154683/Short-and-Simple-Solution-or-Multiple-Approaches-Explained-with-Examples-! and implemented it on my own
          */
         public int[] constructArray(int n, int k) {
-            List<List<Integer>> allPermutaions = findAllPermutations(n);
+            List<Integer> list = new ArrayList<>();
+            int maxSoFar = 1;
+            list.add(1);
+            boolean plus = true;
+            while (k > 0) {
+                if (plus) {
+                    plus = false;
+                    int num = list.get(list.size() - 1) + k;
+                    maxSoFar = Math.max(maxSoFar, num);
+                    list.add(num);
+                } else {
+                    plus = true;
+                    list.add(list.get(list.size() - 1) - k);
+                }
+                k--;
+            }
+            for (int start = maxSoFar + 1; start <= n; start++) {
+                list.add(start);
+            }
             int[] result = new int[n];
-            for (List<Integer> perm : allPermutaions) {
-                if (isBeautifulArrangement(perm, k)) {
-                    convertListToArray(result, perm);
-                    break;
-                }
+            for (int i = 0; i < list.size(); i++) {
+                result[i] = list.get(i);
             }
             return result;
-        }
-
-        private void convertListToArray(int[] result, List<Integer> perm) {
-            for (int i = 0; i < perm.size(); i++) {
-                result[i] = perm.get(i);
-            }
-        }
-
-        private boolean isBeautifulArrangement(List<Integer> perm, int k) {
-            Set<Integer> diff = new HashSet<>();
-            for (int i = 0; i < perm.size() - 1; i++) {
-                diff.add(Math.abs(perm.get(i) - perm.get(i + 1)));
-            }
-            return diff.size() == k;
-        }
-
-        private List<List<Integer>> findAllPermutations(int n) {
-            List<List<Integer>> result = new ArrayList<>();
-            backtracking(new ArrayList<>(), result, n);
-            return result;
-        }
-
-        private void backtracking(List<Integer> list, List<List<Integer>> result, int n) {
-            if (list.size() == n) {
-                result.add(new ArrayList<>(list));
-                return;
-            }
-            for (int i = 1; i <= n; i++) {
-                if (list.contains(i)) {
-                    continue;
-                }
-                list.add(i);
-                backtracking(list, result, n);
-                list.remove(list.size() - 1);
-            }
         }
     }
 
