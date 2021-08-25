@@ -2,47 +2,89 @@ package com.fishercoder.solutions;
 
 public class _29 {
 
-  public static class Solution1 {
-    public int divide(int dividend, int divisor) {
-      if (divisor == 0 || (dividend == Integer.MIN_VALUE && divisor == -1)) {
-        return Integer.MAX_VALUE;
-      }
-      if (dividend != Integer.MIN_VALUE
-          && Math.abs(dividend) < Math.abs(divisor)) {
-        return 0;
-      }
-      if (divisor == Integer.MIN_VALUE) {
-        return (dividend == Integer.MIN_VALUE) ? 1 : 0;
-      }
+    public static class Solution1 {
+        /**
+         * credit: https://leetcode.com/problems/divide-two-integers/solution/ solution 1
+         * <p>
+         * Key notes:
+         * 1. dividend = Integer.MAX_VALUE and divisor = -1 is a special case which will be handled separately;
+         * 2. because within the given range, [-2_31 to 2_31 - 1], every positive integer could be mapped to a corresponding negative integer while the opposite is not true
+         * because of the smallest number: Integer.MIN_VALUE = -2147483648 doesn't have one (Integer.MAX_VALUE is 2147483647). So we'll turn both dividend and divisor into negative numbers to do the operation;
+         * 3. division, in its essence, is subtraction multiple times until it cannot be subtracted any more
+         * <p>
+         * Time: O(n)
+         * Space: O(1)
+         */
+        public int divide(int dividend, int divisor) {
+            if (dividend == Integer.MIN_VALUE && divisor == -1) {
+                return Integer.MAX_VALUE;
+            }
+            int negativeCount = 0;
+            if (dividend < 0) {
+                negativeCount++;
+            } else {
+                dividend = -dividend;
+            }
+            if (divisor < 0) {
+                negativeCount++;
+            } else {
+                divisor = -divisor;
+            }
 
-      boolean flag = (dividend < 0) ^ (divisor < 0);
-      dividend = -Math.abs(dividend);
-      divisor = -Math.abs(divisor);
-      int[] num = new int[40];
-      int[] multiple = new int[40];
-      num[1] = divisor;
-      multiple[1] = 1;
-
-      for (int i = 2; i < 32 && num[i - 1] < 0; ++i) {
-        num[i] = num[i - 1] << 1;
-        multiple[i] = multiple[i - 1] << 1;
-      }
-
-      int result = 0;
-      int index = 1;
-      while (num[index] < 0) {
-        ++index;
-      }
-      index -= 1;
-
-      while (dividend <= divisor) {
-        while (dividend <= num[index]) {
-          result += multiple[index];
-          dividend -= num[index];
+            int quotient = 0;
+            while (dividend <= divisor) {
+                dividend -= divisor;
+                quotient++;
+            }
+            if (negativeCount == 1) {
+                quotient = -quotient;
+            }
+            return quotient;
         }
-        --index;
-      }
-      return !flag ? result : -result;
     }
-  }
+
+    public static class Solution2 {
+        /**
+         * credit: https://leetcode.com/problems/divide-two-integers/solution/ solution 2
+         * <p>
+         * 1. exponetial growth to check to speed up
+         * 2. we still turn all numbers into negatives because negatives are a superset of all numbers in the positives.
+         * <p>
+         * Time: O(log2n)
+         * Space: O(1)
+         */
+        private static final int HALF_INT_MIN = Integer.MIN_VALUE / 2;
+
+        public int divide(int dividend, int divisor) {
+            if (dividend == Integer.MIN_VALUE && divisor == -1) {
+                return Integer.MAX_VALUE;
+            }
+            int negativeCount = 0;
+            if (dividend < 0) {
+                negativeCount++;
+            } else {
+                dividend = -dividend;
+            }
+            if (divisor < 0) {
+                negativeCount++;
+            } else {
+                divisor = -divisor;
+            }
+            int quotient = 0;
+            while (dividend <= divisor) {
+                int powerOfTwo = -1;
+                int value = divisor;
+                while (value >= HALF_INT_MIN && value + value >= dividend) {
+                    value += value;
+                    powerOfTwo += powerOfTwo;
+                }
+                quotient += powerOfTwo;
+                dividend -= value;
+            }
+            if (negativeCount != 1) {
+                quotient = -quotient;
+            }
+            return quotient;
+        }
+    }
 }

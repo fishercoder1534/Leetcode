@@ -40,8 +40,8 @@ public class _729 {
             }
 
             public boolean book(int start, int end) {
-                for (int i = 0; i < calendar.size(); i++) {
-                    if (calendar.get(i)[0] < end && start < calendar.get(i)[1]) {
+                for (int[] event : calendar) {
+                    if (event[0] < end && start < event[1]) {
                         return false;
                     }
                 }

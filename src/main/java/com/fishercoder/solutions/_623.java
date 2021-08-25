@@ -5,7 +5,6 @@ import com.fishercoder.common.classes.TreeNode;
 public class _623 {
 
     public static class Solution1 {
-
         public TreeNode addOneRow(TreeNode root, int v, int d) {
             if (d == 1) {
                 TreeNode newRoot = new TreeNode(v);

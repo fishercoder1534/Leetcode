@@ -3,6 +3,7 @@ package com.fishercoder.solutions;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class _378 {
     public static class Solution1 {
@@ -28,7 +29,7 @@ public class _378 {
          * end of row util we find the element is less than the mid, the left side element is all less than mid; keep tracking elements
          * that less than mid and compare with k, then update the k.
          */
-        public int kthSmallestBS(int[][] matrix, int k) {
+        public int kthSmallest(int[][] matrix, int k) {
             int row = matrix.length - 1;
             int col = matrix[0].length - 1;
             int lo = matrix[0][0];
@@ -50,6 +51,26 @@ public class _378 {
                 }
             }
             return lo;
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * use heap data structure
+         */
+        public int kthSmallest(int[][] matrix, int k) {
+            PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+            for (int i = 0; i < matrix.length; i++) {
+                //we store value, rowIndex, colIndex as an array into this heap
+                heap.offer(new int[]{matrix[i][0], i, 0});
+            }
+            while (k-- > 1) {
+                int[] min = heap.poll();
+                if (min[2] + 1 < matrix[min[1]].length) {
+                    heap.offer(new int[]{matrix[min[1]][min[2] + 1], min[1], min[2] + 1});
+                }
+            }
+            return heap.poll()[0];
         }
     }
 }
