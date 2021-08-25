@@ -34,6 +34,7 @@ public class _1669 {
             return pre.next;
         }
     }
+
     public static class Solution2 {
         public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
             ListNode endList = list1;
