@@ -1,6 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.ListNode;
+import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions._1721;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -9,13 +10,16 @@ import static org.junit.Assert.assertEquals;
 
 public class _1721Test {
     private static _1721.Solution2 solution2;
+    private static _1721.Solution3 solution3;
     private static ListNode expected;
     private static ListNode node;
     private static int k;
 
     @BeforeClass
     public static void setup() {
+
         solution2 = new _1721.Solution2();
+        solution3 = new _1721.Solution3();
     }
 
     @Test
@@ -34,5 +38,13 @@ public class _1721Test {
 
         k = 2;
         assertEquals(expected, solution2.swapNodes(node, k));
+    }
+
+    @Test
+    public void test2(){
+        node = LinkedListUtils.contructLinkedList(new int[]{90, 100});
+        k = 2;
+        expected = LinkedListUtils.contructLinkedList(new int[]{100, 90});
+        assertEquals(expected, solution3.swapNodes(node, k));
     }
 }
