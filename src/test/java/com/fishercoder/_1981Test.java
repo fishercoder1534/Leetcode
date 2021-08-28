@@ -2,6 +2,7 @@ package com.fishercoder;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions._1981;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -9,8 +10,8 @@ import static org.junit.Assert.assertEquals;
 public class _1981Test {
     private static _1981.Solution1 solution1;
 
-    @BeforeEach
-    public static void setup() {
+    @Before
+    public void setup() {
         solution1 = new _1981.Solution1();
     }
 
