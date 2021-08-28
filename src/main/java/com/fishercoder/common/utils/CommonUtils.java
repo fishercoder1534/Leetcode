@@ -317,26 +317,35 @@ public class CommonUtils {
             sizes[i] = strs.length;
         }
         int[][] output = new int[arrays.length][];
-        for (int i = 0; i < arrays.length; i++) {
-            if (i == 0) {
-                String str = arrays[i].substring(1);
-                String[] nums = str.split(",");
-                output[i] = new int[sizes[i]];
-                for (int j = 0; j < sizes[i]; j++) {
-                    output[i][j] = Integer.parseInt(nums[j]);
-                }
-            } else if (i == arrays.length - 1) {
-                String str = arrays[i].substring(0, arrays[i].length() - 1);
-                String[] nums = str.split(",");
-                output[i] = new int[sizes[i]];
-                for (int j = 0; j < sizes[i]; j++) {
-                    output[i][j] = Integer.parseInt(nums[j]);
-                }
-            } else {
-                String[] nums = arrays[i].split(",");
-                output[i] = new int[sizes[i]];
-                for (int j = 0; j < sizes[i]; j++) {
-                    output[i][j] = Integer.parseInt(nums[j]);
+        if (arrays.length == 1) {
+            String str = arrays[0].substring(1, arrays[0].length() - 1);
+            String[] nums = str.split(",");
+            output[0] = new int[sizes[0]];
+            for (int j = 0; j < sizes[0]; j++) {
+                output[0][j] = Integer.parseInt(nums[j]);
+            }
+        } else {
+            for (int i = 0; i < arrays.length; i++) {
+                if (i == 0) {
+                    String str = arrays[i].substring(1);
+                    String[] nums = str.split(",");
+                    output[i] = new int[sizes[i]];
+                    for (int j = 0; j < sizes[i]; j++) {
+                        output[i][j] = Integer.parseInt(nums[j]);
+                    }
+                } else if (i == arrays.length - 1) {
+                    String str = arrays[i].substring(0, arrays[i].length() - 1);
+                    String[] nums = str.split(",");
+                    output[i] = new int[sizes[i]];
+                    for (int j = 0; j < sizes[i]; j++) {
+                        output[i][j] = Integer.parseInt(nums[j]);
+                    }
+                } else {
+                    String[] nums = arrays[i].split(",");
+                    output[i] = new int[sizes[i]];
+                    for (int j = 0; j < sizes[i]; j++) {
+                        output[i][j] = Integer.parseInt(nums[j]);
+                    }
                 }
             }
         }
