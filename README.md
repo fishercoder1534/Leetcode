@@ -138,6 +138,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1657|[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1657.java) |[:tv:](https://youtu.be/-jXQK-UeChU)|Medium|Greedy|
 |1656|[Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1656.java) ||Easy|Array, Design|
 |1652|[Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1652.java) ||Easy|Array|
+|1650|[Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1650.java) ||Medium|HashTable, Binary Tree, Tree|
 |1646|[Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1646.java) ||Easy|Array|
 |1644|[Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1644.java) ||Medium|Binary Tree, DFS|
 |1642|[Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1642.java) ||Medium|Binary Search, Heap|
