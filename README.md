@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|1985|[Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1985.java) ||Medium||
 |1984|[Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1984.java) ||Easy||
 |1981|[Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1981.java) ||Medium|DP|
 |1980|[Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1980.java) ||Medium||
