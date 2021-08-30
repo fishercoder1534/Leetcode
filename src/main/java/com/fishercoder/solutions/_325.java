@@ -7,22 +7,38 @@ public class _325 {
 
     public static class Solution1 {
         public int maxSubArrayLen(int[] nums, int k) {
-            Map<Integer, Integer> map = new HashMap();
-            int sum = 0;
-            int max = 0;
-            for (int i = 0; i < nums.length; i++) {
-                sum += nums[i];
-                if (sum == k) {
-                    max = i + 1;
-                } else if (map.containsKey(sum - k)) {
-                    max = Math.max(max, i - map.get(sum - k));
-                }
-                if (!map.containsKey(sum)) {
-                    map.put(sum, i);
-                }
-            }
-            return max;
-        }
+            int n = nums.length;
+            // HashMap to store (sum, index) tuples
+             HashMap<Integer, Integer> map = new HashMap<>();
+             int sum = 0, maxLen = 0;
+ 
+             // traverse the given array
+             for (int i = 0; i < n; i++) {
+                 
+                  // accumulate sum
+                  sum += arr[i];
+                 
+                  // when subarray starts from index '0'
+                  if (sum == k)
+                      maxLen = i + 1;
+ 
+                  // make an entry for 'sum' if it is
+                  // not present in 'map'
+                  if (!map.containsKey(sum)) {
+                      map.put(sum, i);
+                  }
+ 
+                  // check if 'sum-k' is present in 'map'
+                  // or not
+                  if (map.containsKey(sum - k)) {
+                       
+                      // update maxLength
+                      if (maxLen < (i - map.get(sum - k)))
+                          maxLen = i - map.get(sum - k);
+                  }
+             }
+              
+             return maxLen; 
     }
 
 }
