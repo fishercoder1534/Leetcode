@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|1995|[Count Special Quadruplets](https://leetcode.com/problems/count-special-quadruplets/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1995.java) ||Easy||
 |1992|[Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1992.java) ||Medium||
 |1991|[Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1991.java) ||Easy||
 |1985|[Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1985.java) ||Medium||
