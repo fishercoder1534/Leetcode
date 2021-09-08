@@ -3,7 +3,7 @@ package com.fishercoder.solutions;
 public class _848 {
     public static class Solution1 {
         public String shiftingLetters(String s, int[] shifts) {
-            long[] preSums = new long[shifts.length];
+            long[] preSums = new long[shifts.length];//use long type to avoid integer addition overflow
             for (int i = shifts.length - 1; i >= 0; i--) {
                 if (i < shifts.length - 1) {
                     preSums[i] = preSums[i + 1] + shifts[i];
