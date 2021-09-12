@@ -8,7 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
-|2001|[Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/)|[Python3](../master/python3/2001.py) ||Medium||
+|2001|[Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/)|[Python3](../master/python3/2001.py), [Java](../master/src/main/java/com/fishercoder/solutions/_2001.java) ||Medium||
 |2000|[Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_2000.java) ||Easy||
 |1996|[The Number of Weak Characters in the Game](https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1996.java) ||Medium||
 |1995|[Count Special Quadruplets](https://leetcode.com/problems/count-special-quadruplets/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1995.java) ||Easy||
