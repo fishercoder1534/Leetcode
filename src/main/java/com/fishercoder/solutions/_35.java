@@ -4,13 +4,19 @@ public class _35 {
 
     public static class Solution1 {
         public int searchInsert(int[] nums, int target) {
-            int len = nums.length;
-            for (int i = 0; i < len; i++) {
-                if (target <= nums[i]) {
-                    return i;
+            int left = 0;
+            int right = nums.length - 1;
+            while (left < right) {
+                int mid = left + (right - left) / 2;
+                if (nums[mid] == target) {
+                    return mid;
+                } else if (nums[mid] < target) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
                 }
             }
-            return len;
+            return nums[left] >= target ? left : left + 1;
         }
     }
 
