@@ -61,4 +61,28 @@ public class _189 {
             }
         }
     }
+
+    public static class Solution4 {
+        /**
+         * O(n) time
+         * O(1) space
+         * The most optimal, we can safely ignore all the above three solutions... :)
+         */
+        public void rotate(int[] nums, int k) {
+            k = k % nums.length;
+            int count = 0;
+            for (int start = 0; count < nums.length; start++) {
+                int current = start;
+                int prev = nums[start];
+                do {
+                    int nextIndex = (current + k) % nums.length;
+                    int tmp = nums[nextIndex];
+                    nums[nextIndex] = prev;
+                    prev = tmp;
+                    current = nextIndex;
+                    count++;
+                } while (start != current);
+            }
+        }
+    }
 }
