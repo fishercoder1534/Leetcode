@@ -67,6 +67,7 @@ public class _189 {
          * O(n) time
          * O(1) space
          * The most optimal, we can safely ignore all the above three solutions... :)
+         * Credit: https://leetcode.com/problems/rotate-array/solution/ Approach #3
          */
         public void rotate(int[] nums, int k) {
             k = k % nums.length;
