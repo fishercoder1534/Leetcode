@@ -9,6 +9,8 @@ public class _740 {
          * use the numbers themselves in the indices of another array
          * <p>
          * credit: https://leetcode.com/problems/delete-and-earn/discuss/109895/JavaC++-Clean-Code-with-Explanation
+         * <p>
+         * In essence, this is the same as House Robber: https://leetcode.com/problems/house-robber/
          */
         public int deleteAndEarn(int[] nums) {
             int n = 10001;
