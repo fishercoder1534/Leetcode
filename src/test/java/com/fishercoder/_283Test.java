@@ -103,4 +103,25 @@ public class _283Test {
         solution3.moveZeroes(nums);
         assertArrayEquals(new int[]{1, 0, 0}, nums);
     }
+
+    @Test
+    public void test13() {
+        nums = new int[]{0};
+        solution3.moveZeroes(nums);
+        assertArrayEquals(new int[]{0}, nums);
+    }
+
+    @Test
+    public void test14() {
+        nums = new int[]{0, 0, 1};
+        solution3.moveZeroes(nums);
+        assertArrayEquals(new int[]{1, 0, 0}, nums);
+    }
+
+    @Test
+    public void test15() {
+        nums = new int[]{1, 0, 1};
+        solution3.moveZeroes(nums);
+        assertArrayEquals(new int[]{1, 1, 0}, nums);
+    }
 }
