@@ -1,5 +1,7 @@
 package com.fishercoder.solutions;
 
+import java.util.TreeMap;
+
 public class _740 {
     public static class Solution1 {
         /**
@@ -10,7 +12,9 @@ public class _740 {
          * <p>
          * credit: https://leetcode.com/problems/delete-and-earn/discuss/109895/JavaC++-Clean-Code-with-Explanation
          * <p>
-         * In essence, this is the same as House Robber: https://leetcode.com/problems/house-robber/
+         * Notes:
+         * 1. In essence, this is the same as House Robber: https://leetcode.com/problems/house-robber/
+         * 2. We are adding the number itself into values, instead of its frequency because we will directly use this value to compute the result
          */
         public int deleteAndEarn(int[] nums) {
             int n = 10001;
@@ -28,6 +32,31 @@ public class _740 {
                 skip = skipI;
             }
             return Math.max(take, skip);
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * A simplified version using treemap instead of an array, credit: https://leetcode.com/problems/delete-and-earn/discuss/109895/JavaC++-Clean-Code-with-Explanation/111626
+         */
+        public int deleteAndEarn(int[] nums) {
+            TreeMap<Integer, Integer> treeMap = new TreeMap<>();
+            for (int num : nums) {
+                treeMap.put(num, treeMap.getOrDefault(num, 0) + num);
+            }
+            int prev = 0;
+            int curr = 0;
+            for (int key : treeMap.keySet()) {
+                if (!treeMap.containsKey(key - 1)) {
+                    prev = curr;
+                    curr += treeMap.get(key);
+                } else {
+                    int tmp = Math.max(prev + treeMap.get(key), curr);
+                    prev = curr;
+                    curr = tmp;
+                }
+            }
+            return curr;
         }
     }
 }
