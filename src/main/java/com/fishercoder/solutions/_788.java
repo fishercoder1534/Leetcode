@@ -5,6 +5,9 @@ import java.util.Map;
 
 public class _788 {
     public static class Solution1 {
+        /**
+         * My very original, but non-DP solution.
+         */
         public int rotatedDigits(int N) {
             int count = 0;
             Map<Character, String> map = new HashMap<>();
