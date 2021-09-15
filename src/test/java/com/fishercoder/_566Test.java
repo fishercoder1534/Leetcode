@@ -11,6 +11,7 @@ import static org.junit.Assert.assertArrayEquals;
  */
 public class _566Test {
     private static _566.Solution1 solution1;
+    private static _566.Solution2 solution2;
     private static int[][] expected;
     private static int[][] actual;
     private static int[][] nums;
@@ -20,6 +21,7 @@ public class _566Test {
     @BeforeClass
     public static void setup() {
         solution1 = new _566.Solution1();
+        solution2 = new _566.Solution2();
     }
 
     @Test
@@ -32,6 +34,8 @@ public class _566Test {
         c = 4;
         expected = new int[][]{{1, 2, 3, 4}};
         actual = solution1.matrixReshape(nums, r, c);
+        assertArrayEquals(expected, actual);
+        actual = solution2.matrixReshape(nums, r, c);
         assertArrayEquals(expected, actual);
     }
 }
