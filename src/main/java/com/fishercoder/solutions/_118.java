@@ -1,6 +1,7 @@
 package com.fishercoder.solutions;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class _118 {
@@ -39,6 +40,30 @@ public class _118 {
                 result.add(new ArrayList<>(row));
             }
             return result;
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * my completely original solution on 9/15/2021
+         */
+        public List<List<Integer>> generate(int numRows) {
+            List<List<Integer>> ans = new ArrayList<>();
+            for (int i = 0; i < numRows; i++) {
+                if (ans.isEmpty()) {
+                    ans.add(Arrays.asList(1));
+                } else {
+                    List<Integer> prev = ans.get(ans.size() - 1);
+                    List<Integer> curr = new ArrayList<>(prev.size() + 1);
+                    curr.add(1);
+                    for (int j = 0; j < prev.size() - 1; j++) {
+                        curr.add(prev.get(j) + prev.get(j + 1));
+                    }
+                    curr.add(1);
+                    ans.add(curr);
+                }
+            }
+            return ans;
         }
     }
 }
