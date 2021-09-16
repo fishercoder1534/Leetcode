@@ -4,7 +4,10 @@ public class _53 {
 
     public static class Solution1 {
         /**
-         * https://leetcode.com/problems/maximum-subarray/discuss/20211/accepted-on-solution-in-java
+         * It boils down to:
+         * whether it's worth to include the current element into the sum or not.
+         * <p>
+         * It'll be very straightforward once you draw this array [-2,1,-3,4,-1,2,1,-5,4] out on a paper and walk through it.
          */
         public int maxSubArray(int[] nums) {
             int globalMax = nums[0];
