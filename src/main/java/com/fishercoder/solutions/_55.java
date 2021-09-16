@@ -52,7 +52,7 @@ public class _55 {
          * Top-down DP.
          * Credit: https://leetcode.com/problems/jump-game/solution/ approach 2
          * <p>
-         * Specifically, for this problem, my very own Solution1 and the above Solution2 run much faster than this DP solution.
+         * Specifically, for this problem, my very own Solution1 and the above Solution2 run much faster than this DP solution, likely due to this is top-down, there's stack overhead.
          * But just use this problem to practice DP.
          * <p>
          * The reason it's called top-down is that it's filling the dp array from the right to the left if you set break points and step through this.
@@ -78,5 +78,27 @@ public class _55 {
             dp[index] = 2;
             return false;
         }
+    }
+
+    public static class Solution4 {
+        /**
+         * This is bottom-up DP.
+         */
+        public boolean canJump(int[] nums) {
+            int[] dp = new int[nums.length];
+            //0 means unknown, 1 means reachable, 2 means unreachable
+            dp[nums.length - 1] = 1;
+            for (int i = nums.length - 2; i >= 0; i--) {
+                int furthestReach = Math.min(nums[i] + i, nums.length - 1);
+                for (int j = i + 1; j <= furthestReach; j++) {
+                    if (dp[j] == 1) {
+                        dp[i] = 1;
+                        break;
+                    }
+                }
+            }
+            return dp[0] == 1;
+        }
+
     }
 }
