@@ -43,4 +43,46 @@ public class _567 {
             return true;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * A classic sliding window problem.
+         * I came up with below solution independently on 9/17/2021.
+         * <p>
+         * A few pointers that led me to the sliding window approach:
+         * 1. if it's a valid permutation, the substring from S2 must have equal length as of s1;
+         * 2. I don't want to repeatedly calculate each and every possible substring of s2, if s1 is really long, this could mean lots of redundant calculation.
+         * So sliding window to the rescue!
+         */
+        public boolean checkInclusion(String s1, String s2) {
+            if (s1.length() > s2.length()) {
+                return false;
+            }
+            int[] count = new int[26];
+            for (char c : s1.toCharArray()) {
+                count[c - 'a']++;
+            }
+            for (int i = 0; i < s1.length(); i++) {
+                count[s2.charAt(i) - 'a']--;
+            }
+            for (int i = s1.length(), j = 0; i < s2.length(); i++, j++) {
+                if (isPermutation(count)) {
+                    return true;
+                } else {
+                    count[s2.charAt(j) - 'a']++;
+                    count[s2.charAt(i) - 'a']--;
+                }
+            }
+            return isPermutation(count);
+        }
+
+        private boolean isPermutation(int[] count) {
+            for (int c : count) {
+                if (c != 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
 }
