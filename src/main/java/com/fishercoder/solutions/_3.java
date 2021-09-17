@@ -95,4 +95,29 @@ public class _3 {
             return max;
         }
     }
+
+    public static class Solution5 {
+        /**
+         * Sliding Window, my completely original idea on 9/17/2021.
+         * Basically, keep moving the left boundary towards the right and keep updating the result along the way.
+         * O(n) time
+         * O(n) space
+         */
+        public int lengthOfLongestSubstring(String s) {
+            int startIndex = 0;
+            int longest = 0;
+            Map<Character, Integer> map = new HashMap<>();
+            for (int i = 0; i < s.length(); i++) {
+                if (map.containsKey(s.charAt(i))) {
+                    Integer removedIndex = map.get(s.charAt(i));
+                    if (removedIndex >= startIndex) {
+                        startIndex = removedIndex + 1;
+                    }
+                }
+                map.put(s.charAt(i), i);
+                longest = Math.max(longest, i - startIndex + 1);
+            }
+            return longest;
+        }
+    }
 }
