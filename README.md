@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2011|[Final Value of Variable After Performing Operations](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2011.java) ||Easy||
 |2007|[Find Original Array From Doubled Array](https://leetcode.com/problems/find-original-array-from-doubled-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2007.java) ||Medium||
 |2006|[Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2006.java) ||Easy||
 |2001|[Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/)|[Python3](../master/python3/2001.py), [Java](../master/src/main/java/com/fishercoder/solutions/_2001.java) ||Medium||
