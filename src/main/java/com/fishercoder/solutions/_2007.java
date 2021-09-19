@@ -6,6 +6,9 @@ import java.util.Map;
 
 public class _2007 {
     public static class Solution1 {
+        /**
+         * My completely original, but a bit lengthy solution.
+         */
         public int[] findOriginalArray(int[] changed) {
             if (changed.length % 2 != 0) {
                 return new int[]{};
