@@ -4,6 +4,8 @@ public class _53 {
 
     public static class Solution1 {
         /**
+         * Kadane's algorithm.
+         * <p>
          * It boils down to:
          * whether it's worth to include the current element into the sum or not.
          * <p>
