@@ -6,6 +6,10 @@ import java.util.Map;
 public class _325 {
 
     public static class Solution1 {
+        /**
+         * 1. This is a beautiful and classic solution that combines prefix sum and hashmap for quick search;
+         * 2. This actually covers all possible cases and could find the maximum array size
+         */
         public int maxSubArrayLen(int[] nums, int k) {
             Map<Integer, Integer> map = new HashMap();
             int sum = 0;
