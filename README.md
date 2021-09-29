@@ -9,6 +9,7 @@ _If you like this project, please leave me a star._ &#9733;
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
 |2018|[Check if Word Can Be Placed In Crossword](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2018.java) ||Medium||
+|2017|[Grid Game](https://leetcode.com/problems/grid-game/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2017.java) ||Medium|Array, Matrix, Prefix Sum|
 |2016|[Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2016.java) ||Easy||
 |2012|[Sum of Beauty in the Array](https://leetcode.com/problems/sum-of-beauty-in-the-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2012.java) ||Medium||
 |2011|[Final Value of Variable After Performing Operations](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2011.java) ||Easy||
