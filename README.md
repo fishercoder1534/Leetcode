@@ -740,7 +740,8 @@ _If you like this project, please leave me a star._ &#9733;
 |523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_523.java) | |Medium| DP
 |522|[Longest Uncommon Subsequence II](https://leetcode.com/problems/longest-uncommon-subsequence-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_522.java) | | Medium|
 |521|[Longest Uncommon Subsequence I](https://leetcode.com/problems/longest-uncommon-subsequence-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_521.java) | | Easy|
-|520|[Detect Capital](https://leetcode.com/problems/detect-capital/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_520.java) |  |Easy| 
+|520|[Detect Capital](https://leetcode.com/problems/detect-capital/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_520.java) |  |Easy|
+|518|[Coin Change 2](https://leetcode.com/problems/coin-change-2/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_518.java)  | |Medium| Array, DP
 |517|[Super Washing Machines](https://leetcode.com/problems/super-washing-machines/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_517.java)  | |Hard| DP
 |516|[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_516.java) |  |Medium| DP
 |515|[Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_515.java) |  |Medium| BFS
