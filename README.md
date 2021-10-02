@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2023|[Number of Pairs of Strings With Concatenation Equal to Target](https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2023.java) ||Medium||
 |2022|[Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2022.java) ||Easy||
 |2018|[Check if Word Can Be Placed In Crossword](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2018.java) ||Medium||
 |2017|[Grid Game](https://leetcode.com/problems/grid-game/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2017.java) ||Medium|Array, Matrix, Prefix Sum|
