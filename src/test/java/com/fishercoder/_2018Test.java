@@ -1,5 +1,6 @@
 package com.fishercoder;
 
+import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions._2018;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -75,6 +76,13 @@ public class _2018Test {
                 {' ', '#', '#'},
                 {' ', ' ', 'c'}
         }, "ca"));
+    }
+
+    @Test
+    public void test8() {
+        assertEquals(true, solution1.placeWordInCrossword(
+                CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray("[[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\"c\",\" \"]]"),
+                "abc"));
     }
 
 }

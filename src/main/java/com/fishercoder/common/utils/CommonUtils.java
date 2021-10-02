@@ -264,6 +264,40 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static char[][] convertLeetCodeRegular2DCharArrayInputIntoJavaArray(String input) {
+/**LeetCode 2-d char array usually comes in like this:
+ * [["#"," ","#"],[" "," ","#"],["#","c"," "]] which is wrapped in double quotes instead of single quotes which makes it not usable in Java code.
+ * This method helps with the conversion.*/
+        input = input.substring(1, input.length() - 1);
+        String[] arrays = input.split("],\\[");
+//        CommonUtils.printArray_generic_type(arrays);
+        int m = arrays.length;
+        int n = arrays[1].split(",").length;
+        char[][] ans = new char[m][n];
+        for (int i = 0; i < m; i++) {
+            if (i == 0) {
+                String str = arrays[i].substring(1);
+                String[] strs = str.split(",");
+                for (int j = 0; j < strs.length; j++) {
+                    ans[i][j] = strs[j].charAt(1);
+                }
+            } else if (i == m - 1) {
+                String str = arrays[i].substring(0, arrays[i].length() - 1);
+                String[] strs = str.split(",");
+                for (int j = 0; j < strs.length; j++) {
+                    ans[i][j] = strs[j].charAt(1);
+                }
+            } else {
+                String[] strs = arrays[i].split(",");
+                for (int j = 0; j < strs.length; j++) {
+                    ans[i][j] = strs[j].charAt(1);
+                }
+            }
+        }
+        CommonUtils.print2DCharArray(ans);
+        return ans;
+    }
+
     public static int[][] convertLeetCodeRegularRectangleArrayInputIntoJavaArray(String input) {
         /**
          * LeetCode 2-d array input usually comes like this: it's a REGULAR rectangle
