@@ -88,7 +88,7 @@ public class _79 {
 
     public static class Solution3 {
         /**
-         * I came up with below solution completely independelty on 10/7/2021, although space complexity is O(m*n) instead of constant.
+         * I came up with below solution completely independently on 10/7/2021, although space complexity is O(m*n) instead of constant.
          */
         public boolean exist(char[][] board, String word) {
             int m = board.length;
