@@ -10,6 +10,7 @@ _If you like this project, please leave me a star._ &#9733;
 |-----|----------------|---------------|--------|-------------|-------------
 |2028|[Find Missing Observations](https://leetcode.com/problems/find-missing-observations/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2028.java) ||Medium||
 |2027|[Minimum Moves to Convert String](https://leetcode.com/problems/minimum-moves-to-convert-string/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2027.java) ||Easy||
+|2024|[Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2024.java) ||Medium||
 |2023|[Number of Pairs of Strings With Concatenation Equal to Target](https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2023.java) ||Medium||
 |2022|[Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2022.java) ||Easy||
 |2018|[Check if Word Can Be Placed In Crossword](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2018.java) ||Medium||
