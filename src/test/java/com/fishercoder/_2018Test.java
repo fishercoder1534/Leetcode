@@ -81,7 +81,7 @@ public class _2018Test {
     @Test
     public void test8() {
         assertEquals(true, solution1.placeWordInCrossword(
-                CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray("[[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\"c\",\" \"]]"),
+                CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray("[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\"c\",\" \"]"),
                 "abc"));
     }
 
