@@ -84,6 +84,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1807|[Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1807.java) ||Medium|HashTable, String|
 |1806|[Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1806.java) ||Medium|Array, Greedy|
 |1805|[Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1805.java) ||Medium|String|
+|1804|[Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1804.java) ||Medium|Trie, Design|
 |1800|[Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1800.java) ||Easy|Two Pointers|
 |1797|[Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1797.java) ||Medium|HashTable, Design|
 |1796|[Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1796.java) ||Easy|String|
