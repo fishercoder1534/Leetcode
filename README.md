@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2034|[Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2034.java) ||Medium||
 |2033|[Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2033.java) ||Medium||
 |2032|[Two Out of Three](https://leetcode.com/problems/two-out-of-three/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2032.java) ||Easy||
 |2028|[Find Missing Observations](https://leetcode.com/problems/find-missing-observations/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2028.java) ||Medium||
