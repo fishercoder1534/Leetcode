@@ -1,19 +1,5 @@
 package com.fishercoder.solutions;
 
-/**
- * 201. Bitwise AND of Numbers Range
- *
- * Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of all numbers in this range, inclusive.
- *
- * Example 1:
- * Input: [5,7]
- * Output: 4
- *
- * Example 2:
- * Input: [0,1]
- * Output: 0
- *
- */
 public class _201 {
 
     public static class Solution1 {
@@ -22,15 +8,17 @@ public class _201 {
          * Bitwise AND operation within range actually turns out to be doing some operations with just these two boundary numbers: m and n
          * e.g. 5 and 7, in binary, they are 101 and 111, the result for [5,7] is 5&6&7 which is 101&110&111
          * this we can understand it to be shifting the digits of m and n from left to right until they become the same, then we pad that number with zeroes on the right side
+         * <p>
+         * A more visual explanation here: https://leetcode.com/problems/bitwise-and-of-numbers-range/solution/
          */
-        public int rangeBitwiseAnd(int m, int n) {
-            int i = 0;
-            while (m != n) {
-                m >>= 1;
-                n >>= 1;
-                i++;
+        public int rangeBitwiseAnd(int left, int right) {
+            int shift = 0;
+            while (left != right) {
+                left >>= 1;
+                right >>= 1;
+                shift++;
             }
-            return (n << i);
+            return right << shift;
         }
     }
 }
