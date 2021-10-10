@@ -2,6 +2,9 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeLinkNode;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class _116 {
     public static class Solution1 {
         /**
@@ -42,6 +45,37 @@ public class _116 {
                 head = null;
                 prev = null;
             }
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * My complete original solution on 10/10/2021.
+         */
+        public TreeLinkNode connect(TreeLinkNode root) {
+            if (root == null) {
+                return null;
+            }
+            Queue<TreeLinkNode> queue = new LinkedList<>();
+            queue.offer(root);
+            while (!queue.isEmpty()) {
+                int size = queue.size();
+                for (int i = 0; i < size; i++) {
+                    TreeLinkNode curr = queue.poll();
+                    if (i < size - 1) {
+                        curr.next = queue.peek();
+                    } else {
+                        curr.next = null;
+                    }
+                    if (curr.left != null) {
+                        queue.offer(curr.left);
+                    }
+                    if (curr.right != null) {
+                        queue.offer(curr.right);
+                    }
+                }
+            }
+            return root;
         }
     }
 }
