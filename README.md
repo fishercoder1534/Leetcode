@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2033|[Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2033.java) ||Medium||
 |2032|[Two Out of Three](https://leetcode.com/problems/two-out-of-three/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2032.java) ||Easy||
 |2028|[Find Missing Observations](https://leetcode.com/problems/find-missing-observations/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2028.java) ||Medium||
 |2027|[Minimum Moves to Convert String](https://leetcode.com/problems/minimum-moves-to-convert-string/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2027.java) ||Easy||
