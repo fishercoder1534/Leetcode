@@ -11,10 +11,10 @@ public class _46 {
         public List<List<Integer>> permute(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             result.add(new ArrayList<>());
-            return backtracking(nums, 0, result);
+            return recursion(nums, 0, result);
         }
 
-        private List<List<Integer>> backtracking(int[] nums, int index, List<List<Integer>> result) {
+        private List<List<Integer>> recursion(int[] nums, int index, List<List<Integer>> result) {
             if (index == nums.length) {
                 return result;
             }
@@ -27,7 +27,7 @@ public class _46 {
                 }
             }
             result = newResult;
-            return backtracking(nums, index + 1, result);
+            return recursion(nums, index + 1, result);
         }
     }
 
