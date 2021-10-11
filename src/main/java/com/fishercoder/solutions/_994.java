@@ -1,7 +1,9 @@
 package com.fishercoder.solutions;
 
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Set;
 
 public class _994 {
     public static class Solution1 {
@@ -44,6 +46,51 @@ public class _994 {
                 }
             }
             return times;
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * My completely original solution on 10/11/2021.
+         */
+        public int orangesRotting(int[][] grid) {
+            int m = grid.length;
+            int n = grid[0].length;
+            Queue<int[]> queue = new LinkedList<>();
+            Set<Integer> fresh = new HashSet<>();
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (grid[i][j] == 1) {
+                        fresh.add(i * n + j);
+                    } else if (grid[i][j] == 2) {
+                        queue.offer(new int[]{i, j});
+                    }
+                }
+            }
+            int min = 0;
+            int[] directions = new int[]{0, 1, 0, -1, 0};
+            while (!queue.isEmpty() && !fresh.isEmpty()) {
+                int size = queue.size();
+                if (size > 0) {
+                    min++;
+                }
+                for (int i = 0; i < size; i++) {
+                    int[] curr = queue.poll();
+                    for (int k = 0; k < directions.length - 1; k++) {
+                        int nextX = curr[0] + directions[k];
+                        int nextY = curr[1] + directions[k + 1];
+                        if (nextX >= 0 && nextX < m && nextY >= 0 && nextY < n && grid[nextX][nextY] == 1) {
+                            fresh.remove(nextX * n + nextY);
+                            if (fresh.isEmpty()) {
+                                return min;
+                            }
+                            grid[nextX][nextY] = 2;
+                            queue.offer(new int[]{nextX, nextY});
+                        }
+                    }
+                }
+            }
+            return fresh.isEmpty() ? min : -1;
         }
     }
 }
