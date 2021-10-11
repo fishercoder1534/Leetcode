@@ -27,10 +27,10 @@ public class _543 {
             if (root == null) {
                 return 0;
             }
-            int left = dfs(root.left);
-            int right = dfs(root.right);
-            diameter = Math.max(diameter, left + right);
-            return Math.max(left, right) + 1;
+            int leftPath = dfs(root.left);
+            int rightPath = dfs(root.right);
+            diameter = Math.max(diameter, leftPath + rightPath);
+            return Math.max(leftPath, rightPath) + 1;
         }
     }
 }
