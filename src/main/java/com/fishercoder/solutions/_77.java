@@ -6,25 +6,28 @@ import java.util.List;
 public class _77 {
 
     public static class Solution1 {
+        /**
+         * I'm glad that I worked this one out completely on my own on 10/11/2021! Enjoy the beauty of backtracking!
+         */
         public List<List<Integer>> combine(int n, int k) {
-            List<List<Integer>> result = new ArrayList();
-            int[] nums = new int[n];
-            for (int i = 0; i < n; i++) {
-                nums[i] = i + 1;
+            List<List<Integer>> ans = new ArrayList<>();
+            for (int num = 1; num <= n - k + 1; num++) {
+                List<Integer> list = new ArrayList<>();
+                list.add(num);
+                backtracking(list, k - 1, num + 1, n, ans);
             }
-            backtracking(k, 0, nums, new ArrayList(), result);
-            return result;
+            return ans;
         }
 
-        void backtracking(int k, int start, int[] nums, List<Integer> curr, List<List<Integer>> result) {
-            if (curr.size() == k) {
-                result.add(new ArrayList(curr));
-            } else if (curr.size() < k) {
-                for (int i = start; i < nums.length; i++) {
-                    curr.add(nums[i]);
-                    backtracking(k, i + 1, nums, curr, result);
-                    curr.remove(curr.size() - 1);
-                }
+        private void backtracking(List<Integer> list, int k, int start, int limit, List<List<Integer>> ans) {
+            if (k == 0) {
+                ans.add(new ArrayList<>(list));
+                return;
+            }
+            for (int num = start; num <= limit; num++) {
+                list.add(num);
+                backtracking(list, k - 1, num + 1, limit, ans);
+                list.remove(list.size() - 1);
             }
         }
     }
