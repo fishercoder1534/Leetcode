@@ -42,4 +42,39 @@ public class _784 {
             return new ArrayList<>(result);
         }
     }
+
+    public static class Solution2 {
+        /**
+         * My completely original solution on 10/11/2021.
+         */
+        public List<String> letterCasePermutation(String s) {
+            List<String> ans = new ArrayList<>();
+            ans.add("");
+            return recursion(s, ans, 0);
+        }
+
+        private List<String> recursion(String s, List<String> ans, int start) {
+            if (start >= s.length()) {
+                return ans;
+            }
+            List<String> newList = new ArrayList<>();
+            int index = start;
+            while (start < s.length() && Character.isDigit(s.charAt(start))) {
+                start++;
+            }
+            String digits = "";
+            if (start > index) {
+                digits = s.substring(index, start);
+            }
+            for (String str : ans) {
+                if (start < s.length()) {
+                    newList.add(str + digits + Character.toUpperCase(s.charAt(start)));
+                    newList.add(str + digits + Character.toLowerCase(s.charAt(start)));
+                } else {
+                    newList.add(str + digits);
+                }
+            }
+            return recursion(s, newList, start + 1);
+        }
+    }
 }
