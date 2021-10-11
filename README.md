@@ -451,7 +451,7 @@ _If you like this project, please leave me a star._ &#9733;
 |991|[Broken Calculator](https://leetcode.com/problems/broken-calculator/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_991.java) | |Medium|Math, Greedy
 |981|[Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_981.java) | [:tv:](https://youtu.be/eVi4gDimCoo)|Medium|
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_997.java) | |Easy| 
-|994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_994.java) | |Easy| BFS
+|994|[Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_994.java) | |Medium| BFS
 |993|[Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_993.java) | |Easy| Tree, BFS
 |989|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_989.java) | |Easy| Array
 |988|[Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_988.java) | |Medium| Tree, DFS
