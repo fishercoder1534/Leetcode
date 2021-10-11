@@ -6,6 +6,10 @@ public class _543 {
 
     public static class Solution1 {
         /**
+         * A great observation of this problem is that the longest path must exist between two leaf nodes,
+         * since it's easy to prove its opposite is not the longest by simply adding one to reach its leaf node.
+         *
+         * <p>
          * This is a very great problem for practicing recursion:
          * 1. What dfs() returns is the max height it should pick from either its left or right subtree, that's
          * what the int return type stands for;
