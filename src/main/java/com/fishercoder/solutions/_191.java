@@ -7,6 +7,11 @@ public class _191 {
          * Doing bitwise AND operation between n and n-1 will always flip the least significant 1 bit in n to zero
          * example run for the above editorial solution: input 5, n will be 5&4 and becomes 4,
          * then in the next run, n will become 4&3 which is 0, thus exit the while loop.
+         *
+         * e.g. 5 in binary format: 101
+         *      4 in binary format: 100
+         *      so 5 AND 4 becomes 100, it's the least significant 1-bit in n always maps to a 0-bit in n - 1
+         *      so n ANDs with n - 1, will just set the least significant 1-bit in n to be zero and all other bits remain unchanged
          */
         public int hammingWeight(int n) {
             int bits = 0;
