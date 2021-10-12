@@ -1,5 +1,7 @@
 package com.fishercoder.solutions;
 
+import java.util.Arrays;
+
 public class _706 {
     public static class Solution1 {
         /**
@@ -160,6 +162,33 @@ public class _706 {
                     }
                     tmp = tmp.next;
                 }
+            }
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * My completely original, but hacky and cheaty solution to take full advantage of the problem constraints.
+         */
+        public static class MyHashMap {
+
+            int[] map;
+
+            public MyHashMap() {
+                map = new int[1000001];
+                Arrays.fill(map, -1);
+            }
+
+            public void put(int key, int value) {
+                map[key] = value;
+            }
+
+            public int get(int key) {
+                return map[key];
+            }
+
+            public void remove(int key) {
+                map[key] = -1;
             }
         }
     }
