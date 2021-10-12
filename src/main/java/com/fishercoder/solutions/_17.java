@@ -34,4 +34,33 @@ public class _17 {
             return newResult;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * My completely solution on 10/11/2021, no backtracking involved.
+         */
+        public List<String> letterCombinations(String digits) {
+            List<String> ans = new ArrayList<>();
+            if (digits.length() == 0 || digits.equals("")) {
+                return ans;
+            }
+            String[] options = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+            ans.add("");
+            return recursion(ans, options, digits, 0);
+        }
+
+        private List<String> recursion(List<String> ans, String[] options, String digits, int index) {
+            if (index >= digits.length()) {
+                return ans;
+            }
+            List<String> newAns = new ArrayList<>();
+            String candidates = options[Integer.parseInt(digits.charAt(index) + "")];
+            for (String str : ans) {
+                for (int i = 0; i < candidates.length(); i++) {
+                    newAns.add(str + candidates.charAt(i));
+                }
+            }
+            return recursion(newAns, options, digits, index + 1);
+        }
+    }
 }
