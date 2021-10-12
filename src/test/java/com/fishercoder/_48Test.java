@@ -70,6 +70,7 @@ public class _48Test {
                 {9, 10, 11, 12},
                 {13, 14, 15, 16}
         };
+        CommonUtils.print2DIntArray(matrix);
         solution3.rotate(matrix);
         CommonUtils.print2DIntArray(matrix);
     }
@@ -85,4 +86,5 @@ public class _48Test {
         solution1.rotate(matrix);
         CommonUtils.print2DIntArray(matrix);
     }
+
 }
