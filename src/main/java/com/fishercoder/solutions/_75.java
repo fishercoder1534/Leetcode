@@ -4,13 +4,13 @@ public class _75 {
 
     public static class Solution1 {
         public void sortColors(int[] nums) {
-            int zero = 0;
-            int two = nums.length - 1;
-            for (int i = 0; i <= two; ) {
-                if (nums[i] == 0 && i > zero) {
-                    swap(nums, i, zero++);
-                } else if (nums[i] == 2 && i < two) {
-                    swap(nums, i, two--);
+            int zeroIndex = 0;
+            int twoIndex = nums.length - 1;
+            for (int i = 0; i <= twoIndex; ) {
+                if (nums[i] == 0 && i > zeroIndex) {
+                    swap(nums, i, zeroIndex++);
+                } else if (nums[i] == 2 && i < twoIndex) {
+                    swap(nums, i, twoIndex--);
                 } else {
                     i++;
                 }
