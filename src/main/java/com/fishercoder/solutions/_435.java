@@ -27,4 +27,24 @@ public class _435 {
         }
     }
 
+    public static class Solution2 {
+        /**
+         * This is sorting my starting time, the key here is that we'll want to update end time when an erasure is needed:
+         * we use the smaller end time instead of the bigger one which is more likely to overlap with others.
+         */
+        public int eraseOverlapIntervals(int[][] intervals) {
+            Arrays.sort(intervals, (a, b) -> a[0] != b[0] ? a[0] - b[0] : a[1] - b[1]);
+            int erasures = 0;
+            int end = intervals[0][1];
+            for (int i = 1; i < intervals.length; i++) {
+                if (intervals[i][0] < end) {
+                    erasures++;
+                    end = Math.min(end, intervals[i][1]);
+                } else {
+                    end = intervals[i][1];
+                }
+            }
+            return erasures;
+        }
+    }
 }
