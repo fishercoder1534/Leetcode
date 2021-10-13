@@ -1,5 +1,6 @@
 package com.fishercoder;
 
+import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions._435;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -16,8 +17,8 @@ public class _435Test {
 
     @Test
     public void test1() {
-        int[][] intervals = new int[][]{new int[]{1, 100}, new int[]{11, 22}, new int[]{1, 11}, new int[]{2, 12}};
-        assertEquals(2, solution1.eraseOverlapIntervals(intervals));
+        int[][] intervals = CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[1,2],[2,3],[3,4],[1,3]");
+        assertEquals(1, solution1.eraseOverlapIntervals(intervals));
     }
 
 }
