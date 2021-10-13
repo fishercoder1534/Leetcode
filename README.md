@@ -35,6 +35,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1980|[Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1980.java) ||Medium||
 |1979|[Find Greatest Common Divisor of Array](https://leetcode.com/problems/find-greatest-common-divisor-of-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1979.java) ||Easy||
 |1974|[Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1974.java) ||Easy||
+|1971|[Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1971.java) ||Easy|BFS, DFS, Graph|
 |1968|[Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1968.java) ||Medium||
 |1967|[Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1967.java) ||Easy||
 |1961|[Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1961.java) ||Easy||
