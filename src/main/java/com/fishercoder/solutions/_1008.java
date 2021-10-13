@@ -23,4 +23,30 @@ public class _1008 {
             return root;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * I'm happy to have come up with this solution completely on my own on 10/13/2021.Enjoy the beauty of recursion!
+         */
+        public TreeNode bstFromPreorder(int[] preorder) {
+            return bstFromPreorder(preorder, 0, preorder.length);
+        }
+
+        private TreeNode bstFromPreorder(int[] preorder, int start, int end) {
+            if (start >= end) {
+                return null;
+            }
+            TreeNode root = new TreeNode(preorder[start]);
+            int i = start + 1;
+            for (; i < end; i++) {
+                if (preorder[i] > preorder[start]) {
+                    break;
+                }
+            }
+            root.left = bstFromPreorder(preorder, start + 1, i);
+            root.right = bstFromPreorder(preorder, i, end);
+            return root;
+        }
+
+    }
 }
