@@ -12,31 +12,28 @@ public class _374 {
         public int guessNumber(int n) {
             int left = 1;
             int right = n;
-            while (left + 1 < right) {
+            while (left < right) {
                 int mid = left + (right - left) / 2;
                 int g = guess(mid);
                 if (g == 0) {
                     return mid;
                 } else if (g > 0) {
-                    left = mid;
+                    left = mid + 1;
                 } else {
-                    right = mid;
+                    right = mid - 1;
                 }
             }
-            if (guess(left) == 0) {
-                return left;
-            }
-            return right;
+            return guess(left) == 0 ? left : right;
         }
 
         /**
-         * This is a fake guess method that I wrote just to compile/test, I'll have to change it to
-         * another number other than 6 based on the number to be found.
+         * This is a fake guess method that I wrote just to make the compiler happy,
+         * 7 is just a completely random value.
          */
         private int guess(int num) {
-            if (num > 6) {
+            if (num > 7) {
                 return -1;
-            } else if (num < 6) {
+            } else if (num < 7) {
                 return 1;
             } else {
                 return 0;
