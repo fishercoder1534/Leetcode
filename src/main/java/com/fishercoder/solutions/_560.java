@@ -32,4 +32,30 @@ public class _560 {
         }
     }
 
+    public static class Solution2 {
+        /**
+         * My completely original solution on 10/14/2021.
+         * Again, using a pen and paper to visualize your thought process just clears out all ambiguities.
+         */
+        public int subarraySum(int[] nums, int k) {
+            int ans = 0;
+            int[] prefixSum = new int[nums.length];
+            prefixSum[0] = nums[0];
+            for (int i = 1; i < nums.length; i++) {
+                prefixSum[i] = prefixSum[i - 1] + nums[i];
+            }
+            for (int i = 0; i < nums.length; i++) {
+                if (prefixSum[i] == k) {
+                    ans++;
+                }
+                for (int j = 0; j < i; j++) {
+                    if (prefixSum[i] - prefixSum[j] == k) {
+                        ans++;
+                    }
+                }
+            }
+            return ans;
+        }
+    }
+
 }
