@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2044|[Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2044.java) ||Medium||
 |2043|[Simple Bank System](https://leetcode.com/problems/simple-bank-system/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2043.java) ||Medium||
 |2042|[Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2042.java) ||Easy||
 |2039|[The Time When the Network Becomes Idle](https://leetcode.com/problems/the-time-when-the-network-becomes-idle/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2039.java) ||Medium||
