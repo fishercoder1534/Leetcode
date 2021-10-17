@@ -9,6 +9,7 @@ _If you like this project, please leave me a star._ &#9733;
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
 |2039|[The Time When the Network Becomes Idle](https://leetcode.com/problems/the-time-when-the-network-becomes-idle/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2039.java) ||Medium||
+|2037|[Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2037.java) ||Easy||
 |2034|[Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2034.java) ||Medium||
 |2033|[Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2033.java) ||Medium||
 |2032|[Two Out of Three](https://leetcode.com/problems/two-out-of-three/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2032.java) ||Easy||
