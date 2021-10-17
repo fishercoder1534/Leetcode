@@ -10,6 +10,9 @@ import java.util.Set;
 
 public class _2039 {
     public static class Solution1 {
+        /**
+         * My completely original solution, again, using a pen and paper to visualize my thought process helps out greatly!
+         */
         public int networkBecomesIdle(int[][] edges, int[] patience) {
             int n = patience.length;
             int[] distances = findShortestPathToMasterServer(edges, n);
