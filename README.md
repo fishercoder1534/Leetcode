@@ -178,7 +178,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1642|[Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1642.java) ||Medium|Binary Search, Heap|
 |1641|[Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1641.java) |[:tv:](https://youtu.be/gdH4yfgfwiU)|Medium|Math, DP, Backtracking|
 |1640|[Check Array Formation Through Concatenation](https://leetcode.com/problems/check-array-formation-through-concatenation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1640.java) ||Easy|Array, Sort|
-|1637|[Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/)|[Javascript](./javascript/_1637.js)| | Medium | Sort |
+|1637|[Widest Vertical Area Between Two Points Containing No Points](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/)|[Javascript](./javascript/_1637.js), [Java](../master/src/main/java/com/fishercoder/solutions/_1637.java)| | Medium | Sort |
 |1636|[Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1636.java) ||Easy|Array, Sort|
 |1630|[Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1630.java) ||Medium|Sort|
 |1629|[Slowest Key](https://leetcode.com/problems/slowest-key/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1629.java) ||Easy|Array|
