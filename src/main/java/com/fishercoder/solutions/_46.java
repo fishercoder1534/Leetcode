@@ -68,4 +68,33 @@ public class _46 {
         }
     }
 
+    public static class Solution3 {
+        /**
+         * A more efficient version of backtracking.
+         */
+        public List<List<Integer>> permute(int[] nums) {
+            List<List<Integer>> ans = new ArrayList<>();
+            boolean[] used = new boolean[nums.length];
+            return backtracking(ans, used, new ArrayList<>(), nums);
+        }
+
+        private List<List<Integer>> backtracking(List<List<Integer>> ans, boolean[] used, List<Integer> list, int[] nums) {
+            if (list.size() == nums.length) {
+                ans.add(new ArrayList<>(list));
+                return ans;
+            }
+            for (int i = 0; i < nums.length; i++) {
+                if (used[i]) {
+                    continue;
+                }
+                used[i] = true;
+                list.add(nums[i]);
+                backtracking(ans, used, list, nums);
+                used[i] = false;
+                list.remove(list.size() - 1);
+            }
+            return ans;
+        }
+    }
+
 }
