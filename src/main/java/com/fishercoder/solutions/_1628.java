@@ -25,10 +25,10 @@ public class _1628 {
 
             @Override
             public int evaluate() {
-                return inorder(this);
+                return dfs(this);
             }
 
-            private int inorder(Node node) {
+            private int dfs(Node node) {
                 if (node == null) {
                     return 0;
                 }
@@ -36,8 +36,8 @@ public class _1628 {
                     return Integer.parseInt(node.val);
                 }
                 String op = node.val;
-                int left = inorder(node.left);
-                int right = inorder(node.right);
+                int left = dfs(node.left);
+                int right = dfs(node.right);
                 if (op.equals("+")) {
                     return left + right;
                 } else if (op.equals("-")) {
