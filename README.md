@@ -182,6 +182,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1636|[Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1636.java) ||Easy|Array, Sort|
 |1630|[Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1630.java) ||Medium|Sort|
 |1629|[Slowest Key](https://leetcode.com/problems/slowest-key/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1629.java) ||Easy|Array|
+|1628|[Design an Expression Tree With Evaluate Function](https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1628.java) ||Medium|Stack, Binary Tree, Design, Math|
 |1626|[Best Team With No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1626.java) ||Medium|DP|
 |1625|[Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1625.java) ||Medium|BFS, DFS|
 |1624|[Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1624.java) |[:tv:](https://youtu.be/rfjeFs3JuYM)|Easy|String|
