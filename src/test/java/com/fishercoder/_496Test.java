@@ -9,6 +9,7 @@ import static org.junit.Assert.assertArrayEquals;
 
 public class _496Test {
     private static _496.Solution1 solution1;
+    private static _496.Solution2 solution2;
     private static int[] findNums;
     private static int[] nums;
     private static int[] expected;
@@ -17,6 +18,7 @@ public class _496Test {
     @BeforeClass
     public static void setup() {
         solution1 = new _496.Solution1();
+        solution2 = new _496.Solution2();
     }
 
     @Before
@@ -33,6 +35,8 @@ public class _496Test {
         nums = new int[]{1, 3, 4, 2};
         expected = new int[]{-1, 3, -1};
         actual = solution1.nextGreaterElement(findNums, nums);
+        assertArrayEquals(expected, actual);
+        actual = solution2.nextGreaterElement(findNums, nums);
         assertArrayEquals(expected, actual);
     }
 }
