@@ -9,17 +9,26 @@ import static org.junit.Assert.assertEquals;
 public class _340Test {
     private static _340.Solution1 solution1;
     private static _340.Solution2 solution2;
+    private static _340.Solution3 solution3;
+    private static String s;
+    private static int k;
+    private static int expected;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _340.Solution1();
         solution2 = new _340.Solution2();
+        solution3 = new _340.Solution3();
     }
 
     @Test
     public void test1() {
-        assertEquals(3, solution1.lengthOfLongestSubstringKDistinct("eceba", 2));
-        assertEquals(3, solution2.lengthOfLongestSubstringKDistinct("eceba", 2));
+        s = "eceba";
+        k = 2;
+        expected = 3;
+        assertEquals(expected, solution1.lengthOfLongestSubstringKDistinct(s, k));
+        assertEquals(expected, solution2.lengthOfLongestSubstringKDistinct(s, k));
+        assertEquals(expected, solution3.lengthOfLongestSubstringKDistinct(s, k));
     }
 
     @Test
