@@ -44,6 +44,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1971|[Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1971.java) ||Easy|BFS, DFS, Graph|
 |1968|[Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1968.java) ||Medium||
 |1967|[Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1967.java) ||Easy||
+|1966|[Binary Searchable Numbers in an Unsorted Array](https://leetcode.com/problems/binary-searchable-numbers-in-an-unsorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1966.java) ||Medium|Array, Binary Search|
 |1961|[Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1961.java) ||Easy||
 |1957|[Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1957.java) ||Easy|String|
 |1952|[Three Divisors](https://leetcode.com/problems/three-divisors/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1952.java) ||Easy||
