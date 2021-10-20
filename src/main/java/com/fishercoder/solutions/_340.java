@@ -21,7 +21,6 @@ public class _340 {
                 if (num > k) {
                     while (--count[s.charAt(left++)] > 0) {
                     }
-                    ;
                     num--;
                 }
                 result = Math.max(result, right - left + 1);
@@ -54,6 +53,37 @@ public class _340 {
                 longest = Math.max(longest, i - left + 1);
             }
             return longest;
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * My original solution on 10/20/2021, a very generic sliding window template.
+         */
+        public int lengthOfLongestSubstringKDistinct(String s, int k) {
+            int left = 0;
+            int right = 0;
+            int ans = 0;
+            int[] count = new int[256];
+            int distinctCount = 0;
+            while (right < s.length()) {
+                if (count[s.charAt(right)] == 0) {
+                    distinctCount++;
+                }
+                count[s.charAt(right)]++;
+                right++;
+                if (distinctCount <= k) {
+                    ans = Math.max(ans, right - left);
+                }
+                while (distinctCount > k) {
+                    count[s.charAt(left)]--;
+                    if (count[s.charAt(left)] == 0) {
+                        distinctCount--;
+                    }
+                    left++;
+                }
+            }
+            return ans;
         }
     }
 
