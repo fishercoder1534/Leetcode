@@ -3,10 +3,21 @@ package com.fishercoder.solutions;
 public class _277 {
 
     public static class Solution1 {
+        /**
+         * Credit: https://leetcode.com/problems/find-the-celebrity/solution/ approach 2
+         * 1. we narrow down the possible celebrity candidate to only one person
+         * 2. we check to make sure that every other person knows
+         * this candidate and this candidate doesn't know any one of them, otherwise return -1
+         *
+         * We can think of this is a directed graph problem, a total of n vertices, the one vertex that has zero outgoing edges
+         * and n - 1 incoming edges is the celebrity.
+         */
         public int findCelebrity(int n) {
             int candidate = 0;
             for (int i = 1; i < n; i++) {
                 if (knows(candidate, i)) {
+                    //this rules out the possibility that candidiate is a celebrity since he/she knows i
+                    //so we update candidate to be i, because at least i doesn't know anybody yet.
                     candidate = i;
                 }
             }
