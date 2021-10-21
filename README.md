@@ -787,7 +787,7 @@ _If you like this project, please leave me a star._ &#9733;
 |491|[Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_491.java) | |Medium| Backtracking, DFS
 |490|[The Maze](https://leetcode.com/problems/the-maze/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_490.java) |  |Medium| BFS
 |488|[Zuma Game](https://leetcode.com/problems/zuma-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_488.java) |  |Hard | DFS, Backtracking
-|487|[Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_487.java) | [:tv:](https://youtu.be/nKhteIRZ2Ok) |Medium| Array
+|487|[Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_487.java) | [:tv:](https://youtu.be/nKhteIRZ2Ok) |Medium| Array, Sliding Window
 |486|[Predict the Winner](https://leetcode.com/problems/predict-the-winner/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_486.java) | | Medium | DP
 |485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|[Java](../master/src/main/java/com/fishercoder/solutions/_485.java) [Javascript](../master/javascript/_485.js)| [:tv:](https://youtu.be/nKhteIRZ2Ok)|Easy| Array
 |484|[Find Permutation](https://leetcode.com/problems/find-permutation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_484.java) |  |Medium | Array, String, Greedy
