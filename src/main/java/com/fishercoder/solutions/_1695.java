@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class _1695 {
@@ -24,6 +26,31 @@ public class _1695 {
                 }
             }
             return maxSum;
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * My completely original solution on 10/202/2021. Classic sliding window solution.
+         */
+        public int maximumUniqueSubarray(int[] nums) {
+            Map<Integer, Integer> map = new HashMap<>();
+            int sum = 0;
+            int start = 0;
+            int ans = 0;
+            for (int i = 0; i < nums.length; i++) {
+                if (map.containsKey(nums[i])) {
+                    Integer lastIndex = map.get(nums[i]);
+                    while (start <= lastIndex) {
+                        sum -= nums[start];
+                        start++;
+                    }
+                }
+                sum += nums[i];
+                map.put(nums[i], i);
+                ans = Math.max(ans, sum);
+            }
+            return ans;
         }
     }
 }
