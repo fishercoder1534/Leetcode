@@ -120,4 +120,44 @@ public class _3 {
             return longest;
         }
     }
+
+    public static class Solution6 {
+        /**
+         * Sliding Window, my completely original idea on 10/20/2021. Although less efficient then Solution5, it follows a generic template without any manipulation.
+         * Basically, keep moving the left boundary towards the right and keep updating the result along the way.
+         * O(n) time
+         * O(n) space
+         */
+
+        public int lengthOfLongestSubstring(String s) {
+            int left = 0;
+            int right = 0;
+            int ans = 0;
+            Map<Character, Integer> map = new HashMap<>();
+            while (right < s.length()) {
+                map.put(s.charAt(right), map.getOrDefault(s.charAt(right), 0) + 1);
+                right++;
+                if (allUnique(map)) {
+                    ans = Math.max(ans, right - left);
+                }
+                while (!allUnique(map)) {
+                    map.put(s.charAt(left), map.get(s.charAt(left)) - 1);
+                    if (map.get(s.charAt(left)) == 0) {
+                        map.remove(s.charAt(left));
+                    }
+                    left++;
+                }
+            }
+            return ans;
+        }
+
+        private boolean allUnique(Map<Character, Integer> map) {
+            for (char key : map.keySet()) {
+                if (map.get(key) > 1) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
 }

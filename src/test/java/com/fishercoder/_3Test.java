@@ -12,6 +12,9 @@ public class _3Test {
     private static _3.Solution3 solution3;
     private static _3.Solution4 solution4;
     private static _3.Solution5 solution5;
+    private static _3.Solution6 solution6;
+    private static int expected;
+    private static String s;
 
     @BeforeClass
     public static void setup() {
@@ -20,15 +23,19 @@ public class _3Test {
         solution3 = new _3.Solution3();
         solution4 = new _3.Solution4();
         solution5 = new _3.Solution5();
+        solution6 = new _3.Solution6();
     }
 
     @Test
     public void test1() {
-        assertEquals(3, solution1.lengthOfLongestSubstring("abcabcbb"));
-        assertEquals(3, solution2.lengthOfLongestSubstring("abcabcbb"));
-        assertEquals(3, solution3.lengthOfLongestSubstring("abcabcbb"));
-        assertEquals(3, solution4.lengthOfLongestSubstring("abcabcbb"));
-        assertEquals(3, solution5.lengthOfLongestSubstring("abcabcbb"));
+        expected = 3;
+        s = "abcabcbb";
+        assertEquals(expected, solution1.lengthOfLongestSubstring(s));
+        assertEquals(expected, solution2.lengthOfLongestSubstring(s));
+        assertEquals(expected, solution3.lengthOfLongestSubstring(s));
+        assertEquals(expected, solution4.lengthOfLongestSubstring(s));
+        assertEquals(expected, solution5.lengthOfLongestSubstring(s));
+        assertEquals(expected, solution6.lengthOfLongestSubstring(s));
     }
 
 }
