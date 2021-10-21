@@ -15,4 +15,26 @@ public class _485 {
             return maxLen;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * Apply the sliding window template, i.e. two pointer technique.
+         */
+        public int findMaxConsecutiveOnes(int[] nums) {
+            int left = 0;
+            int right = 0;
+            int ans = 0;
+            while (right < nums.length) {
+                while (right < nums.length && nums[right] == 1) {
+                    right++;
+                }
+                ans = Math.max(ans, right - left);
+                while (right < nums.length && nums[right] != 1) {
+                    right++;
+                }
+                left = right;
+            }
+            return ans;
+        }
+    }
 }
