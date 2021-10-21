@@ -3,23 +3,24 @@ package com.fishercoder.solutions;
 public class _209 {
 
     public static class Solution1 {
-        public int minSubArrayLen(int s, int[] nums) {
-            if (nums == null || nums.length == 0) {
-                return 0;
-            }
-            int i = 0;
-            int j = 0;
-            int min = Integer.MAX_VALUE;
+        /**
+         * A classic sliding window problem/solution.
+         */
+        public int minSubArrayLen(int target, int[] nums) {
+            int left = 0;
+            int right = 0;
             int sum = 0;
-            while (j < nums.length) {
-                sum += nums[j++];
-
-                while (sum >= s) {
-                    min = Math.min(min, j - i);
-                    sum -= nums[i++];
+            int ans = Integer.MAX_VALUE;
+            while (right < nums.length) {
+                sum += nums[right];
+                while (sum >= target) {
+                    ans = Math.min(ans, right - left + 1);
+                    sum -= nums[left];
+                    left++;
                 }
+                right++;
             }
-            return min == Integer.MAX_VALUE ? 0 : min;
+            return ans == Integer.MAX_VALUE ? 0 : ans;
         }
     }
 }
