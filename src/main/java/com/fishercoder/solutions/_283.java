@@ -54,4 +54,26 @@ public class _283 {
         }
     }
 
+    public static class Solution4 {
+        /**
+         * I'm glad that I finally figured this one out completely on my own, this O(n) time, O(1) space solution.
+         */
+        public void moveZeroes(int[] nums) {
+            int i = 0;//zero index
+            int j = 0;//non zero index
+            while (i < nums.length && j < nums.length) {
+                if (nums[j] != 0) {
+                    if (i < j) {
+                        nums[i] = nums[j];
+                        nums[j] = 0;
+                    }
+                }
+                j++;
+                while (i < nums.length && nums[i] != 0) {
+                    i++;
+                }
+            }
+        }
+    }
+
 }
