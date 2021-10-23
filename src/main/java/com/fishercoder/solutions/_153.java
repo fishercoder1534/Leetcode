@@ -4,6 +4,7 @@ public class _153 {
     public static class Solution1 {
         /**
          * My completely original solution on 10/23/2021.
+         * Again, using a pen and paper to visualize your thought process, to draw out all the possible cases helps a lot!
          */
         public int findMin(int[] nums) {
             int left = 0;
