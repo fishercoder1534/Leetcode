@@ -8,7 +8,10 @@ import java.util.Set;
 public class _160 {
 
     public static class Solution1 {
-
+        /**
+         * Time: O(max(m, n))
+         * Space: O(1)
+         */
         public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
             int lenA = findLen(headA);
             int lenB = findLen(headB);
@@ -45,7 +48,6 @@ public class _160 {
     public static class Solution2 {
         /**
          * Most optimal solution:
-         * <p>
          * O(m+n) time
          * O(1) space
          * credit: https://discuss.leetcode.com/topic/28067/java-solution-without-knowing-the-difference-in-len
