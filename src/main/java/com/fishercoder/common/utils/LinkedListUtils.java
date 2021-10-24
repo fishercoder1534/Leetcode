@@ -41,7 +41,6 @@ public class LinkedListUtils {
             tmp.next = next;
             tmp = tmp.next;
         }
-        printList(head);
         return head;
     }
 }
