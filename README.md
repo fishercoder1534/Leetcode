@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2048|[Next Greater Numerically Balanced Number](https://leetcode.com/problems/next-greater-numerically-balanced-number/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2048.java) ||Medium||
 |2047|[Number of Valid Words in a Sentence](https://leetcode.com/problems/number-of-valid-words-in-a-sentence/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2047.java) ||Easy||
 |2044|[Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2044.java) ||Medium||
 |2043|[Simple Bank System](https://leetcode.com/problems/simple-bank-system/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2043.java) ||Medium||
