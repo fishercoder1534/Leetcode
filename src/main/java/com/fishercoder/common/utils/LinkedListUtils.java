@@ -27,6 +27,7 @@ public class LinkedListUtils {
             System.out.print(temp.val() + "\t");
             temp = temp.next;
         }
+        System.out.println();
     }
 
     public static ListNode createSinglyLinkedList(List<Integer> listValues) {
