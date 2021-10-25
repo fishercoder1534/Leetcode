@@ -1,7 +1,9 @@
 package com.fishercoder.solutions;
 
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 import java.util.TreeMap;
@@ -188,6 +190,62 @@ public class _716 {
                     treeMap.remove(max);
                 }
                 return max;
+            }
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * My completely original solution on 10/25/2021.
+         * popMax() takes O(n) time, all other operations take O(1) time.
+         */
+
+        public static class MaxStack {
+
+            Deque<int[]> stack;
+            Deque<int[]> tmp;
+
+            public MaxStack() {
+                stack = new LinkedList<>();
+                tmp = new LinkedList<>();
+            }
+
+            public void push(int x) {
+                if (stack.isEmpty()) {
+                    stack.addLast(new int[]{x, x});
+                } else {
+                    int[] last = stack.peekLast();
+                    stack.addLast(new int[]{x, Math.max(last[1], x)});
+                }
+            }
+
+            public int pop() {
+                return stack.pollLast()[0];
+            }
+
+            public int top() {
+                return stack.peekLast()[0];
+            }
+
+            public int peekMax() {
+                return stack.peekLast()[1];
+            }
+
+            public int popMax() {
+                tmp.clear();
+                while (stack.peekLast()[0] != stack.peekLast()[1]) {
+                    tmp.addLast(stack.pollLast());
+                }
+                int[] max = stack.pollLast();
+                while (!tmp.isEmpty()) {
+                    int[] curr = tmp.pollLast();
+                    if (!stack.isEmpty()) {
+                        stack.addLast(new int[]{curr[0], Math.max(curr[0], stack.peekLast()[1])});
+                    } else {
+                        stack.addLast(new int[]{curr[0], curr[0]});
+                    }
+                }
+                return max[0];
             }
         }
     }
