@@ -51,4 +51,43 @@ public class _143 {
             }
         }
     }
+
+    public static class Solution2 {
+        /**
+         * My completely original solution on 10/25/2021, although not super efficient in time complexity,
+         * since I keep going through the rest of the list to the end at each iteration, it's accepted on LeetCode.
+         */
+        public void reorderList(ListNode head) {
+            int len = getLen(head);
+            if (len <= 2) {
+                return;
+            }
+            ListNode curr = head;
+            for (int i = 0; i < len / 2; i++) {
+                ListNode tmp = curr;
+                ListNode newHead = curr.next;
+                while (tmp.next.next != null) {
+                    tmp = tmp.next;
+                }
+                if (tmp == curr) {
+                    break;
+                }
+                ListNode tail = tmp.next;
+                tmp.next = null;
+                curr.next = tail;
+                tail.next = newHead;
+                curr = newHead;
+            }
+        }
+
+        private int getLen(ListNode head) {
+            int len = 0;
+            ListNode tmp = head;
+            while (tmp != null) {
+                tmp = tmp.next;
+                len++;
+            }
+            return len;
+        }
+    }
 }
