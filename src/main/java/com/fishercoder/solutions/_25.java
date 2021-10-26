@@ -84,4 +84,57 @@ public class _25 {
         }
     }
 
+    public static class Solution3 {
+        /**
+         * My completely original solution on 10/25/2021. Beats 100% submissions on LeetCode in runtime.
+         * Again, using a pen and paper to visualize the process helps a lot!
+         * My helper function returns two nodes: reversed node head and the starting node for the next reversal.
+         */
+        public ListNode reverseKGroup(ListNode head, int k) {
+            ListNode pre = new ListNode(-1);
+            pre.next = head;
+            ListNode tmp = pre;
+            ListNode curr = head;
+            ListNode[] result = new ListNode[]{null, curr};
+            do {
+                result = reverseKGroupHelper(result[1], k);
+                if (result[0] == result[1]) {
+                    tmp.next = result[0];
+                    return pre.next;
+                } else {
+                    tmp.next = result[0];
+                    while (tmp.next != null) {
+                        tmp = tmp.next;
+                    }
+                }
+            } while (true);
+        }
+
+        private ListNode[] reverseKGroupHelper(ListNode head, int k) {
+            int originalK = k;
+            ListNode tmp = head;
+            while (tmp != null) {
+                tmp = tmp.next;
+                k--;
+            }
+            if (k > 0) {
+                return new ListNode[]{head, head};
+            } else {
+                tmp = head;
+                k = originalK;
+                ListNode prev = null;
+                while (tmp != null) {
+                    ListNode next = tmp.next;
+                    tmp.next = prev;
+                    prev = tmp;
+                    tmp = next;
+                    k--;
+                    if (k == 0) {
+                        return new ListNode[]{prev, tmp};
+                    }
+                }
+                return null;
+            }
+        }
+    }
 }
