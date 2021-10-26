@@ -6,15 +6,18 @@ import org.junit.Test;
 
 public class _1249Test {
     private static _1249.Solution1 solution1;
+    private static _1249.Solution2 solution2;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _1249.Solution1();
+        solution2 = new _1249.Solution2();
     }
 
     @Test
     public void test1() {
         System.out.println(solution1.minRemoveToMakeValid("lee(t(c)o)de)"));
+        System.out.println(solution2.minRemoveToMakeValid("lee(t(c)o)de)"));
     }
 
     @Test
