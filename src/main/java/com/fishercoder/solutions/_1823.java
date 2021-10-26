@@ -1,6 +1,8 @@
 package com.fishercoder.solutions;
 
 import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
 
 public class _1823 {
@@ -17,6 +19,27 @@ public class _1823 {
                 startIndex = removeIndex;
             }
             return list.get(0);
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * My completely original solution: use a double linked list to keep moving people from
+         * the tail of the queue to the head of the queue until there's only one person in the queue who is the winner.
+         */
+        public int findTheWinner(int n, int k) {
+            Deque<Integer> doublyLinkedList = new LinkedList<>();
+            for (int i = 1; i <= n; i++) {
+                doublyLinkedList.addFirst(i);
+            }
+            while (doublyLinkedList.size() > 1) {
+                int counter = 1;
+                while (counter++ < k) {
+                    doublyLinkedList.addFirst(doublyLinkedList.pollLast());
+                }
+                doublyLinkedList.pollLast();
+            }
+            return doublyLinkedList.getLast();
         }
     }
 }
