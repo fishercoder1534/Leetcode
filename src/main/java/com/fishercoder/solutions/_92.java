@@ -33,8 +33,39 @@ public class _92 {
                 pre.next = then;
                 then = start.next;
             }
-
             return dummy.next;
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * My completely original solution on 10/25/2021.
+         */
+        public ListNode reverseBetween(ListNode head, int left, int right) {
+            ListNode pre = new ListNode(-1);
+            pre.next = head;
+            ListNode tmp = pre;
+            right -= left;
+            while (left-- > 1 && tmp != null) {
+                tmp = tmp.next;
+            }
+            ListNode intersection = tmp;
+            ListNode reverseHead = tmp.next;
+            ListNode prev = null;
+            right++;
+            int original = right;
+            while (right-- > 0 && reverseHead != null) {
+                ListNode next = reverseHead.next;
+                reverseHead.next = prev;
+                prev = reverseHead;
+                reverseHead = next;
+            }
+            intersection.next = prev;
+            while (original-- > 0) {
+                intersection = intersection.next;
+            }
+            intersection.next = reverseHead;
+            return pre.next;
         }
     }
 }
