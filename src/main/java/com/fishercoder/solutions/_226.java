@@ -55,8 +55,8 @@ public class _226 {
          * A more concise version
          */
         public TreeNode invertTree(TreeNode root) {
-            if (root == null || (root.left == null && root.right == null)) {
-                return root;
+            if (root == null) {
+                return null;
             }
             TreeNode temp = root.left;
             root.left = invertTree(root.right);
