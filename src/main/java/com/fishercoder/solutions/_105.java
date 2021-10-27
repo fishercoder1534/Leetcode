@@ -12,6 +12,10 @@ public class _105 {
          * credit: https://discuss.leetcode.com/topic/29838/5ms-java-clean-solution-with-caching use
          * HashMap as the cache so that accessing inorder index becomes O(1) time Note: The first
          * element of preorder array is the root!
+         *
+         * Using a pen and paper to visualize this helps a great deal!
+         * preorder array has the root at the head, then we could use this number as a pivot in the inorder array: all elements on the left of this pivot should form a left subtree of this pivot
+         * and anything on the right side of this pivot in the inorder array should form a right subtree of this pivot.
          */
         public TreeNode buildTree(int[] preorder, int[] inorder) {
             Map<Integer, Integer> inorderMap = new HashMap();
@@ -23,14 +27,14 @@ public class _105 {
             return buildTree(preorder, 0, preorder.length - 1, inorderMap, 0, inorder.length - 1);
         }
 
-        private TreeNode buildTree(int[] preorder, int preStart, int preEnd,
-                                   Map<Integer, Integer> inorderMap, int inStart, int inEnd) {
+        private TreeNode buildTree(int[] preorder, int preStart, int preEnd, Map<Integer, Integer> inorderMap, int inStart, int inEnd) {
             if (preStart > preEnd || inStart > inEnd) {
                 return null;
             }
 
             TreeNode root = new TreeNode(preorder[preStart]);
             int inRoot = inorderMap.get(preorder[preStart]);
+            //This line is the key to figure out how many nodes should be on the left subtree
             int numsLeft = inRoot - inStart;
 
             /**It's easy to understand and remember:
