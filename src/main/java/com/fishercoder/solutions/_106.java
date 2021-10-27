@@ -56,4 +56,31 @@ public class _106 {
             return root;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * My own solution after inspiration from LeetCode 105.
+         * I go from the right to the left for the postorder array, also, I build the tree by forming the right subtree first and then the left subtree.
+         * A bit different from using numsLeft from LeetCode 106, I use numsRight, meaning the number of nodes needed to form the right subtree in the inorder array.
+         */
+        public TreeNode buildTree(int[] inorder, int[] postorder) {
+            Map<Integer, Integer> inMap = new HashMap<>();
+            for (int i = 0; i < inorder.length; i++) {
+                inMap.put(inorder[i], i);
+            }
+            return helper(postorder, inorder, inMap, postorder.length - 1, 0, 0, inorder.length - 1);
+        }
+
+        private TreeNode helper(int[] postorder, int[] inorder, Map<Integer, Integer> inMap, int postStart, int postEnd, int inStart, int inEnd) {
+            if (postStart < postEnd) {
+                return null;
+            }
+            int inRoot = inMap.get(postorder[postStart]);
+            int numsRight = inEnd - inRoot;
+            TreeNode node = new TreeNode(postorder[postStart]);
+            node.right = helper(postorder, inorder, inMap, postStart - 1, postStart - numsRight, inRoot + 1, inEnd);
+            node.left = helper(postorder, inorder, inMap, postStart - numsRight - 1, postEnd, inStart, inRoot - 1);
+            return node;
+        }
+    }
 }
