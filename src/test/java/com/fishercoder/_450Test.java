@@ -1,37 +1,43 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
+import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions._450;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
 public class _450Test {
     private static _450.Solution1 solution1;
+    private static _450.Solution2 solution2;
+    private static _450.Solution3 solution3;
     private static TreeNode expected;
     private static TreeNode root;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _450.Solution1();
+        solution2 = new _450.Solution2();
+        solution3 = new _450.Solution3();
     }
 
     @Test
     public void test1() {
-        root = new TreeNode(5);
-        root.left = new TreeNode(3);
-        root.left.left = new TreeNode(2);
-        root.left.right = new TreeNode(4);
-        root.right = new TreeNode(6);
-        root.right.right = new TreeNode(7);
+        root = TreeUtils.constructBinaryTree(Arrays.asList(5, 3, 6, 2, 4, null, 7));
+        TreeUtils.printBinaryTree(root);
 
-        expected = new TreeNode(5);
-        expected.left = new TreeNode(4);
-        expected.right = new TreeNode(6);
-        expected.left.left = new TreeNode(2);
-        expected.right.right = new TreeNode(7);
-
+        expected = TreeUtils.constructBinaryTree(Arrays.asList(5, 4, 6, 2, null, null, 7));
+        TreeUtils.printBinaryTree(expected);
         assertEquals(expected, solution1.deleteNode(root, 3));
+
+        expected = TreeUtils.constructBinaryTree(Arrays.asList(5, 2, 6, null, 4, null, 7));
+        TreeUtils.printBinaryTree(expected);
+        assertEquals(expected, solution2.deleteNode(root, 3));
+
+        expected = TreeUtils.constructBinaryTree(Arrays.asList(5, 4, 6, 2, null, null, 7));
+        assertEquals(expected, solution3.deleteNode(root, 3));
     }
 }
