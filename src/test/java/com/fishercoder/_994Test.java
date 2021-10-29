@@ -10,12 +10,14 @@ import static org.junit.Assert.assertEquals;
 public class _994Test {
     private static _994.Solution1 solution1;
     private static _994.Solution2 solution2;
+    private static _994.Solution3 solution3;
     private static int[][] grid;
 
     @BeforeClass
     public static void setUp() {
         solution1 = new _994.Solution1();
         solution2 = new _994.Solution2();
+        solution3 = new _994.Solution3();
     }
 
     @Test
@@ -66,6 +68,7 @@ public class _994Test {
     public void test6() {
         grid = CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[2],[1]");
         assertEquals(1, solution2.orangesRotting(grid));
+        assertEquals(1, solution3.orangesRotting(grid));
     }
 
 }

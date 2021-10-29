@@ -93,4 +93,51 @@ public class _994 {
             return fresh.isEmpty() ? min : -1;
         }
     }
+
+    public static class Solution3 {
+        /**
+         * My original solution on 10/29/2021.
+         */
+        public int orangesRotting(int[][] grid) {
+            int m = grid.length;
+            int n = grid[0].length;
+            int freshOranges = 0;
+            Queue<int[]> queue = new LinkedList<>();
+            boolean[][] visited = new boolean[m][n];
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (grid[i][j] == 2) {
+                        queue.offer(new int[]{i, j});
+                        visited[i][j] = true;
+                    } else if (grid[i][j] == 1) {
+                        freshOranges++;
+                    }
+                }
+            }
+            int mins = 0;
+            int[] directions = new int[]{0, 1, 0, -1, 0};
+            while (!queue.isEmpty()) {
+                int size = queue.size();
+                boolean hasOneToRot = false;
+                for (int i = 0; i < size; i++) {
+                    int[] curr = queue.poll();
+                    for (int j = 0; j < directions.length - 1; j++) {
+                        int newx = directions[j] + curr[0];
+                        int newy = directions[j + 1] + curr[1];
+                        if (newx >= 0 && newx < m && newy >= 0 && newy < n && grid[newx][newy] == 1 && !visited[newx][newy]) {
+                            freshOranges--;
+                            grid[newx][newy] = 2;
+                            visited[newx][newy] = true;
+                            queue.offer(new int[]{newx, newy});
+                            hasOneToRot = true;
+                        }
+                    }
+                }
+                if (hasOneToRot) {
+                    mins++;
+                }
+            }
+            return freshOranges == 0 ? mins : -1;
+        }
+    }
 }
