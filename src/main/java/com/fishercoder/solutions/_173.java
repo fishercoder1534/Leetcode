@@ -2,6 +2,7 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
 
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -71,6 +72,35 @@ public class _173 {
                 TreeNode curr = stack.pop();
                 pushToStack(curr.right, stack);
                 return curr.val;
+            }
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * credit: https://leetcode.com/problems/binary-search-tree-iterator/discuss/52647/Nice-Comparison-(and-short-Solution
+         */
+        public static class BSTIterator {
+            Deque<TreeNode> stack;
+            TreeNode visit;
+
+            public BSTIterator(TreeNode root) {
+                stack = new LinkedList<>();
+                visit = root;
+            }
+
+            public int next() {
+                while (visit != null) {
+                    stack.addLast(visit);
+                    visit = visit.left;
+                }
+                TreeNode next = stack.pollLast();
+                visit = next.right;
+                return next.val;
+            }
+
+            public boolean hasNext() {
+                return visit != null && !stack.isEmpty();
             }
         }
     }
