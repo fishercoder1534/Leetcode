@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2055|[Plates Between Candles](https://leetcode.com/problems/plates-between-candles/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2055.java) ||Medium||
 |2053|[Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2053.java) ||Easy||
 |2050|[Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2050.java) ||Hard||
 |2048|[Next Greater Numerically Balanced Number](https://leetcode.com/problems/next-greater-numerically-balanced-number/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2048.java) ||Medium||
