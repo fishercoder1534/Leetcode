@@ -24,7 +24,10 @@ public class CommonUtils {
     public static void main(String... strings) {
         Integer[] nums = new Integer[]{1, 2, 3, 4, 5};
         printArray_generic_type(nums);
-        CommonUtils.printListList(convertLeetCode2DStringArrayInputIntoJavaArray("[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]"));
+        String input1 = "[\"zDkA\",\"GfAj\",\"lt\"],[\"GfAj\",\"rtupD\",\"og\",\"l\"],[\"rtupD\",\"IT\",\"jGcew\",\"ZwFqF\"],[\"og\",\"yVobt\",\"EjA\",\"piUyQ\"],[\"IT\",\"XFlc\",\"W\",\"rB\"],[\"l\",\"GwQg\",\"shco\",\"Dub\",\"KwgZq\"],[\"oXMG\",\"uqe\"],[\"sNyV\",\"WbrP\"]";
+        String input2 = "[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]";
+        CommonUtils.printListList(convertLeetCode2DStringArrayInputIntoJavaArray(input1));
+        CommonUtils.printListList(convertLeetCode2DStringArrayInputIntoJavaArray(input2));
         CommonUtils.print(convertLeetCode1DStringArrayInputIntoJavaArray("[\"abcsi\",\"abyzjgj\",\"advz\",\"ag\",\"agkgdkob\",\"agpr\",\"ail\"]"));
         CommonUtils.print2DIntArray(convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[448,931,123,345],[889],[214,962],[576,746,897]"));
     }
@@ -387,6 +390,11 @@ public class CommonUtils {
 
     public static List<List<String>> convertLeetCode2DStringArrayInputIntoJavaArray(String input) {
         /**
+         * How to copy LeetCode 2-d String array into this method:
+         * 1. remove the beginning and ending quotes;
+         * 2. put double quotes into this method parameter;
+         * 3. copy the input into the double quotes.
+         *
          * LeetCode 2-d array input usually comes like this: each row could have different length
          * [["A","B"],["C"],["B","C"],["D"]]
          * The expected input for this method is: "[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]"
