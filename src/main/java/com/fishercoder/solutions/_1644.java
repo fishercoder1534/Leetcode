@@ -48,6 +48,9 @@ public class _1644 {
     }
 
     public static class Solution2 {
+        /**
+         * This satisfies the follow-up question: Can you find the LCA traversing the tree, without checking nodes existence?
+         */
         int found = 0;
 
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -57,7 +60,7 @@ public class _1644 {
 
         private TreeNode lca(TreeNode root, TreeNode p, TreeNode q) {
             if (root == null) {
-                return root;
+                return null;
             }
             TreeNode left = lca(root.left, p, q);
             TreeNode right = lca(root.right, p, q);
@@ -65,7 +68,7 @@ public class _1644 {
                 found++;
                 return root;
             }
-            return left == null ? right : right == null ? left : root;
+            return (left != null && right != null) ? root : left != null ? left : right;
         }
     }
 }
