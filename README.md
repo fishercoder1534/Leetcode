@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2058|[Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2058.java) ||Medium||
 |2057|[Smallest Index With Equal Value](https://leetcode.com/problems/smallest-index-with-equal-value/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2057.java) ||Easy||
 |2055|[Plates Between Candles](https://leetcode.com/problems/plates-between-candles/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2055.java) ||Medium||
 |2054|[Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2054.java) ||Medium||
