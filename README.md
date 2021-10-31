@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2057|[Smallest Index With Equal Value](https://leetcode.com/problems/smallest-index-with-equal-value/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2057.java) ||Easy||
 |2055|[Plates Between Candles](https://leetcode.com/problems/plates-between-candles/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2055.java) ||Medium||
 |2054|[Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2054.java) ||Medium||
 |2053|[Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2053.java) ||Easy||
