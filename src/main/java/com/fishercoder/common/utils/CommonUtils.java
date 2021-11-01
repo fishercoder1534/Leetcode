@@ -296,7 +296,6 @@ public class CommonUtils {
                 }
             }
         }
-        CommonUtils.print2DCharArray(ans);
         return ans;
     }
 
