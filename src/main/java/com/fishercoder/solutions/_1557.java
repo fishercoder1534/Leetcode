@@ -1,27 +1,22 @@
 package com.fishercoder.solutions;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.Map;
 
 public class _1557 {
     public static class Solution1 {
         public List<Integer> findSmallestSetOfVertices(int n, List<List<Integer>> edges) {
-            List<Integer> starts = new ArrayList<>();
-            Map<Integer, Integer> indegree = new HashMap<>();
-            for (int i = 0; i < edges.size(); i++) {
-                int end = edges.get(i).get(1);
-                indegree.put(end, indegree.getOrDefault(end, 0) + 1);
+            int[] indegree = new int[n];
+            for (List<Integer> edge : edges) {
+                indegree[edge.get(1)]++;
             }
-            for (int i = 0; i < n; i++) {
-                if (!indegree.containsKey(i)) {
-                    starts.add(i);
+            List<Integer> ans = new ArrayList<>();
+            for (int i = 0; i < indegree.length; i++) {
+                if (indegree[i] == 0) {
+                    ans.add(i);
                 }
             }
-            return starts;
+            return ans;
         }
     }
 }
