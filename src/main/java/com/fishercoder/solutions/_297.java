@@ -48,17 +48,17 @@ public class _297 {
             }
 
             String[] nodes = data.split(" ");
-            TreeNode root = new TreeNode(Integer.valueOf(nodes[0]));
+            TreeNode root = new TreeNode(Integer.parseInt(nodes[0]));
             Queue<TreeNode> queue = new LinkedList();
             queue.offer(root);
             for (int i = 1; i < nodes.length; i++) {
                 TreeNode curr = queue.poll();
                 if (!nodes[i].equals("#")) {
-                    curr.left = new TreeNode(Integer.valueOf(nodes[i]));
+                    curr.left = new TreeNode(Integer.parseInt(nodes[i]));
                     queue.offer(curr.left);
                 }
                 if (!nodes[++i].equals("#")) {
-                    curr.right = new TreeNode(Integer.valueOf(nodes[i]));
+                    curr.right = new TreeNode(Integer.parseInt(nodes[i]));
                     queue.offer(curr.right);
                 }
             }
