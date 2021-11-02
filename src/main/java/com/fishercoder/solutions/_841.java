@@ -58,4 +58,41 @@ public class _841 {
             return false;
         }
     }
+
+    public static class Solution3 {
+        /**
+         * My completely original recursive solution.
+         */
+        public boolean canVisitAllRooms(List<List<Integer>> rooms) {
+            Set<Integer> visited = new HashSet<>();
+            visited.add(0);
+            Set<Integer> keys = new HashSet<>();
+            keys.addAll(rooms.get(0));
+            return dfs(rooms, visited, keys);
+        }
+
+        private boolean dfs(List<List<Integer>> rooms, Set<Integer> visited, Set<Integer> keys) {
+            if (visited.size() == rooms.size()) {
+                return true;
+            }
+            Set<Integer> newKeys = new HashSet<>();
+            for (int key : keys) {
+                if (!visited.contains(key)) {
+                    visited.add(key);
+                    if (!rooms.get(key).isEmpty()) {
+                        newKeys.addAll(rooms.get(key));
+                    }
+                }
+            }
+            if (visited.size() == rooms.size()) {
+                return true;
+            }
+            if (newKeys.size() == 0) {
+                return false;
+            }
+            keys.addAll(newKeys);
+            dfs(rooms, visited, keys);
+            return visited.size() == rooms.size();
+        }
+    }
 }
