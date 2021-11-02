@@ -13,6 +13,8 @@ public class _1439 {
          * 2. priority queue doesn't help in this case unless used in combination with a set to filter out duplicates;
          * 3. implement a customized comparator for treeset: if sum i.e. entry[0] doesn't equal, then it's not a duplicate,
          * then we compare the rest of the elements in the array, as long as anyone of them differs at the same index, it's not a duplicate.
+         *
+         * Again, using a pen and paper to visualize my thought process helps a lot!
          */
         public int kthSmallest(int[][] mat, int k) {
             TreeSet<int[]> treeSet = new TreeSet<>(new Comparator<int[]>() {
