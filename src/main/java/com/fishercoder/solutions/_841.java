@@ -52,10 +52,7 @@ public class _841 {
                 }
                 treeSet.addAll(rooms.get(key));
             }
-            if (visited.size() == rooms.size()) {
-                return true;
-            }
-            return false;
+            return visited.size() == rooms.size();
         }
     }
 
