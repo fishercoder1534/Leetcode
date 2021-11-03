@@ -5,8 +5,8 @@ import java.util.PriorityQueue;
 public class _973 {
 
     public static class Solution1 {
-        public int[][] kClosest(int[][] points, int K) {
-            int[][] ans = new int[K][2];
+        public int[][] kClosest(int[][] points, int k) {
+            int[][] ans = new int[k][2];
 
             PriorityQueue<int[]> pq = new PriorityQueue<>((o1, o2) -> {
                 double dist1 = getDistance(o1);
@@ -25,7 +25,7 @@ public class _973 {
                 pq.add(point);
             }
 
-            for (int i = 0; i < K; i++) {
+            for (int i = 0; i < k; i++) {
                 ans[i] = pq.poll();
             }
 
