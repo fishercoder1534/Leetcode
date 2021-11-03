@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.TreeMap;
 
 public class _347 {
 
@@ -72,6 +73,36 @@ public class _347 {
                 arr[i] = result.get(i);
             }
             return arr;
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * Use hashtable and heap, it's averaged at 10 ms on Leetocde.
+         */
+        public int[] topKFrequent(int[] nums, int k) {
+            Map<Integer, Integer> map = new HashMap<>();
+            for (int i : nums) {
+                map.put(i, map.getOrDefault(i, 0) + 1);
+            }
+            TreeMap<Integer, List<Integer>> treeMap = new TreeMap<>((a, b) -> b - a);
+            for (int key : map.keySet()) {
+                List<Integer> list = treeMap.getOrDefault(map.get(key), new ArrayList<>());
+                list.add(key);
+                treeMap.put(map.get(key), list);
+            }
+            List<Integer> list = new ArrayList<>();
+            while (!treeMap.isEmpty()) {
+                list.addAll(treeMap.pollFirstEntry().getValue());
+                if (list.size() == k) {
+                    break;
+                }
+            }
+            int[] ans = new int[list.size()];
+            for (int i = 0; i < list.size(); i++) {
+                ans[i] = list.get(i);
+            }
+            return ans;
         }
     }
 }
