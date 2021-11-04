@@ -54,4 +54,31 @@ public class _452 {
             return minArrows;
         }
     }
+
+    public static class Solution3 {
+        /**
+         * Another approach of mine: completely original.
+         * 1. Sort the points by start first, if tie, sort by end, both ascendingly.
+         * 2. While checking, we'll keep updating the ending to be the smaller one so that we don't possibly miss to burst a balloon. See test case 4 for this class.
+         */
+
+        public int findMinArrowShots(int[][] points) {
+            int arrowShots = 0;
+            Arrays.sort(points, (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1]));
+            for (int i = 0; i < points.length; ) {
+                int end = points[i][1];
+                int j = i + 1;
+                for (; j < points.length; j++) {
+                    if (points[j][0] <= end) {
+                        end = Math.min(end, points[j][1]);
+                    } else {
+                        break;
+                    }
+                }
+                i = j;
+                arrowShots++;
+            }
+            return arrowShots;
+        }
+    }
 }
