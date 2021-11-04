@@ -2,6 +2,9 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.TreeNode;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class _404 {
     public static class Solution1 {
         public int sumOfLeftLeaves(TreeNode root) {
@@ -47,6 +50,35 @@ public class _404 {
             }
             if (root.right != null) {
                 sum += sumOfLeftLeaves(root.right);
+            }
+            return sum;
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * My completely original solution on 11/4/2021.
+         */
+        public int sumOfLeftLeaves(TreeNode root) {
+            Queue<TreeNode> queue = new LinkedList<>();
+            queue.offer(root);
+            int level = 0;
+            int sum = 0;
+            while (!queue.isEmpty()) {
+                int size = queue.size();
+                for (int i = 0; i < size; i++) {
+                    TreeNode curr = queue.poll();
+                    if (curr == null) {
+                        continue;
+                    }
+                    if (level > 0 && curr.left == null && curr.right == null && i % 2 != 1) {
+                        sum += curr.val;
+                    }
+                    queue.offer(curr.left);
+                    queue.offer(curr.right);
+
+                }
+                level++;
             }
             return sum;
         }
