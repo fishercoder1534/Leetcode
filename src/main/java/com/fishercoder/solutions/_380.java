@@ -36,12 +36,14 @@ public class _380 {
                 if (!map.containsKey(val)) {
                     return false;
                 } else {
-                    int lastElement = list.get(list.size() - 1);
-                    int index = map.get(val);
-                    list.set(index, lastElement);
-                    map.put(lastElement, index);
-                    list.remove(list.size() - 1);
+                    int removeIndex = map.get(val);
+                    if (removeIndex != list.size() - 1) {//if it's not the last element, then we need to swap it with the last element so that this operation is also O(1)
+                        int lastElement = list.get(list.size() - 1);
+                        list.set(removeIndex, lastElement);
+                        map.put(lastElement, removeIndex);
+                    }
                     map.remove(val);
+                    list.remove(list.size() - 1);
                     return true;
                 }
             }
