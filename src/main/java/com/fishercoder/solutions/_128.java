@@ -2,8 +2,10 @@ package com.fishercoder.solutions;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class _128 {
     public static class Solution1 {
@@ -104,19 +106,22 @@ public class _128 {
     }
 
     public static class Solution3 {
+        /**
+         * O(n) time complexity.
+         */
         public int longestConsecutive(int[] nums) {
-            HashSet<Integer> numSet = new HashSet<>();
+            Set<Integer> set = new HashSet<>();
             for (int num : nums) {
-                numSet.add(num);
+                set.add(num);
             }
 
             int longestStreak = 0;
-            for (int num : nums) {
-                if (!numSet.contains(num - 1)) {
+            for (int num : set) {//we'll go through this set instead of nums, this makes a big difference in time complexity, esp. based on LeetCode test cases
+                if (!set.contains(num - 1)) {
                     int currentNum = num;
                     int currentStreak = 1;
 
-                    while (numSet.contains(currentNum + 1)) {
+                    while (set.contains(currentNum + 1)) {
                         currentNum += 1;
                         currentStreak += 1;
                     }
@@ -124,6 +129,37 @@ public class _128 {
                 }
             }
             return longestStreak;
+        }
+    }
+
+    public static class Solution4 {
+        /**
+         * O(nlogn) time complexity
+         */
+        public int longestConsecutive(int[] nums) {
+            if (nums.length == 0) {
+                return 0;
+            }
+            TreeSet<Integer> treeSet = new TreeSet<>();
+            for (int i : nums) {
+                treeSet.add(i);//O(logn) time complexity for each add() call
+            }
+            int ans = 1;
+            Iterator<Integer> it = treeSet.iterator();
+            Integer curr = it.next();
+            int len = 1;
+            while (it.hasNext()) {
+                Integer next = it.next();
+                if (curr + 1 == next) {
+                    len++;
+                } else {
+                    len = 1;
+                }
+                curr = next;
+                ans = Math.max(ans, len);
+            }
+            ans = Math.max(ans, len);
+            return ans;
         }
     }
 }
