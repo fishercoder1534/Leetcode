@@ -34,3 +34,14 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.12'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
 }
+
+allprojects {
+    tasks.withType(Test).configureEach {
+        maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+        if (!project.hasProperty("createReports")) {
+            reports.html.required = false
+            reports.junitXml.required = false
+        }
+    }
+
+}
