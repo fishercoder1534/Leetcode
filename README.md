@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2068|[Check Whether Two Strings are Almost Equivalent](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2068.java) ||Easy||
 |2063|[Vowels of All Substrings](https://leetcode.com/problems/vowels-of-all-substrings/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2063.java) ||Medium||
 |2062|[Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2062.java) ||Easy||
 |2058|[Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2058.java) ||Medium||
