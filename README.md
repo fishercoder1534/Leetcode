@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2075|[Decode the Slanted Ciphertext](https://leetcode.com/problems/decode-the-slanted-ciphertext/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2075.java) ||Medium||
 |2074|[Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2074.java) ||Medium||
 |2073|[Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2073.java) ||Easy||
 |2070|[Most Beautiful Item for Each Query](https://leetcode.com/problems/most-beautiful-item-for-each-query/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2070.java) ||Medium||
