@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2073|[Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2073.java) ||Easy||
 |2070|[Most Beautiful Item for Each Query](https://leetcode.com/problems/most-beautiful-item-for-each-query/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2070.java) ||Medium||
 |2068|[Check Whether Two Strings are Almost Equivalent](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2068.java) ||Easy||
 |2063|[Vowels of All Substrings](https://leetcode.com/problems/vowels-of-all-substrings/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2063.java) ||Medium||
