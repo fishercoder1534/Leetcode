@@ -42,14 +42,14 @@ public class _572 {
     }
 
     public static class Solution2 {
-        public boolean isSubtree(TreeNode s, TreeNode t) {
-            if (s == null) {
+        public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+            if (root == null) {
                 return false;
             }
-            if (same(s, t)) {
+            if (same(root, subRoot)) {
                 return true;
             }
-            return isSubtree(s.left, t) || isSubtree(s.right, t);
+            return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
         }
 
         private boolean same(TreeNode s, TreeNode t) {
