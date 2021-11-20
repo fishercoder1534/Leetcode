@@ -762,7 +762,7 @@ _If you like this project, please leave me a star._ &#9733;
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_543.java) | | Easy | Tree/DFS/Recursion
 |542|[01 Matrix](https://leetcode.com/problems/01-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_542.java) |  |Medium | BFS
 |541|[Reverse String II](https://leetcode.com/problems/reverse-string-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_541.java) |  |Easy | String
-|540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_540.java) |  |Medium | 
+|540|[Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_540.java) |  |Medium |Array, Binary Search 
 |539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_539.java) | | Medium | String
 |538|[Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_538.java) |  |Easy | Tree
 |537|[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_537.java) |  |Medium | Math, String
