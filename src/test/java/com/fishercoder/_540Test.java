@@ -55,4 +55,13 @@ public class _540Test {
         assertEquals(expected, solution2.singleNonDuplicate(nums));
         assertEquals(expected, solution3.singleNonDuplicate(nums));
     }
+
+    @Test
+    public void test5() {
+        nums = new int[]{1, 2, 2, 3, 3};
+        expected = 1;
+        assertEquals(expected, solution1.singleNonDuplicate(nums));
+        assertEquals(expected, solution2.singleNonDuplicate(nums));
+        assertEquals(expected, solution3.singleNonDuplicate(nums));
+    }
 }
