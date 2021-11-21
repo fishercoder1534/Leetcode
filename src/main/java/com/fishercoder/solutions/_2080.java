@@ -35,4 +35,31 @@ public class _2080 {
             }
         }
     }
+
+    public static class Solution2 {
+        public static class RangeFreqQuery {
+            Map<Integer, TreeMap<Integer, Integer>> map;
+
+            public RangeFreqQuery(int[] arr) {
+                map = new HashMap<>();
+                for (int i = 0; i < arr.length; i++) {
+                    map.putIfAbsent(arr[i], new TreeMap<>());
+                    map.get(arr[i]).put(i, map.get(arr[i]).size());
+                }
+            }
+
+            public int query(int left, int right, int value) {
+                if (!map.containsKey(value)) {
+                    return 0;
+                }
+                TreeMap<Integer, Integer> indexMap = map.get(value);
+                Integer start = indexMap.ceilingKey(left);
+                Integer end = indexMap.floorKey(right);
+                if (start == null || end == null) {
+                    return 0;
+                }
+                return indexMap.get(end) - indexMap.get(start) + 1;
+            }
+        }
+    }
 }
