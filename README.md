@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2080|[Range Frequency Queries](https://leetcode.com/problems/range-frequency-queries/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2080.java) ||Medium|Array, Binary Seaarch|
 |2079|[Watering Plants](https://leetcode.com/problems/watering-plants/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2079.java) ||Medium||
 |2078|[Two Furthest Houses With Different Colors](https://leetcode.com/problems/two-furthest-houses-with-different-colors/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2078.java) ||Easy||
 |2076|[Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2076.java) ||Hard||
