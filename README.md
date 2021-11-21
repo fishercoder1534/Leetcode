@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2078|[Two Furthest Houses With Different Colors](https://leetcode.com/problems/two-furthest-houses-with-different-colors/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2078.java) ||Easy||
 |2076|[Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2076.java) ||Hard||
 |2075|[Decode the Slanted Ciphertext](https://leetcode.com/problems/decode-the-slanted-ciphertext/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2075.java) ||Medium||
 |2074|[Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2074.java) ||Medium||
