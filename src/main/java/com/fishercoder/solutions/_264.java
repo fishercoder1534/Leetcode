@@ -41,7 +41,7 @@ public class _264 {
          */
         public int nthUglyNumber(int n) {
             TreeSet<Long> treeSet = new TreeSet<>();
-            treeSet.add(1l);
+            treeSet.add(1L);
             int count = 1;
             int polled = 0;
             int[] primes = new int[]{2, 3, 5};

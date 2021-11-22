@@ -63,8 +63,9 @@ public class _148 {
         ListNode nextSubList = new ListNode(0);
 
         public ListNode sortList(ListNode head) {
-            if (head == null || head.next == null)
+            if (head == null || head.next == null) {
                 return head;
+            }
             int n = getCount(head);
             ListNode start = head;
             ListNode dummyHead = new ListNode(0);

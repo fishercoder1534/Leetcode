@@ -37,7 +37,8 @@ public class _380 {
                     return false;
                 } else {
                     int removeIndex = map.get(val);
-                    if (removeIndex != list.size() - 1) {//if it's not the last element, then we need to swap it with the last element so that this operation is also O(1)
+                    if (removeIndex != list.size() - 1) {
+                        //if it's not the last element, then we need to swap it with the last element so that this operation is also O(1)
                         int lastElement = list.get(list.size() - 1);
                         list.set(removeIndex, lastElement);
                         map.put(lastElement, removeIndex);

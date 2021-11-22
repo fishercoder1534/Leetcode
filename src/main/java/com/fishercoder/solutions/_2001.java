@@ -35,7 +35,7 @@ public class _2001 {
          */
         public long interchangeableRectangles(int[][] rectangles) {
             Map<Double, Integer> map = new HashMap<>();
-            long ans = 0l;
+            long ans = 0L;
             for (int[] rec : rectangles) {
                 double ratio = (double) rec[0] / rec[1];
                 ans += map.getOrDefault(ratio, 0);

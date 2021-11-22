@@ -19,7 +19,7 @@ public class _2063Test {
     @Test
     public void test1() {
         word = "aba";
-        expected = 6l;
+        expected = 6L;
         assertEquals(expected, solution1.countVowels(word));
     }
 

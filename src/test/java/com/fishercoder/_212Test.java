@@ -21,21 +21,21 @@ public class _212Test {
 
     @Test
     public void test1() {
-        assertEquals(Arrays.asList("oa", "oaa"), solution1.findWords(CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray
-                        ("[\"o\",\"a\",\"b\",\"n\"],[\"o\",\"t\",\"a\",\"e\"],[\"a\",\"h\",\"k\",\"r\"],[\"a\",\"f\",\"l\",\"v\"]"),
+        assertEquals(Arrays.asList("oa", "oaa"), solution1.findWords(CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray(
+                        "[\"o\",\"a\",\"b\",\"n\"],[\"o\",\"t\",\"a\",\"e\"],[\"a\",\"h\",\"k\",\"r\"],[\"a\",\"f\",\"l\",\"v\"]"),
                 new String[]{"oa", "oaa"}));
-        assertEquals(Arrays.asList("oa", "oaa"), solution2.findWords(CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray
-                        ("[\"o\",\"a\",\"b\",\"n\"],[\"o\",\"t\",\"a\",\"e\"],[\"a\",\"h\",\"k\",\"r\"],[\"a\",\"f\",\"l\",\"v\"]"),
+        assertEquals(Arrays.asList("oa", "oaa"), solution2.findWords(CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray(
+                        "[\"o\",\"a\",\"b\",\"n\"],[\"o\",\"t\",\"a\",\"e\"],[\"a\",\"h\",\"k\",\"r\"],[\"a\",\"f\",\"l\",\"v\"]"),
                 new String[]{"oa", "oaa"}));
     }
 
     @Test
     public void test2() {
-        assertEquals(Arrays.asList("oath", "eat"), solution1.findWords(CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray
-                        ("[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]"),
+        assertEquals(Arrays.asList("oath", "eat"), solution1.findWords(CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray(
+                        "[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]"),
                 new String[]{"oath", "pea", "eat", "rain"}));
-        assertEquals(Arrays.asList("oath", "eat"), solution2.findWords(CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray
-                        ("[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]"),
+        assertEquals(Arrays.asList("oath", "eat"), solution2.findWords(CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray(
+                        "[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]"),
                 new String[]{"oath", "pea", "eat", "rain"}));
     }
 
