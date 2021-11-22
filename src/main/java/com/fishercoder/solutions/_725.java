@@ -76,43 +76,4 @@ public class _725 {
         }
     }
 
-    public static class Solution3 {
-        /**
-         * My original solution on 9/29/2021.
-         */
-        public ListNode[] splitListToParts(ListNode head, int k) {
-            ListNode[] ans = new ListNode[k];
-            int size = 0;
-            ListNode tmp = head;
-            while (tmp != null) {
-                tmp = tmp.next;
-                size++;
-            }
-            int minSize = size / k;
-            int remainder = size % k;
-            int i = 0;
-            if (head == null) {
-                while (i < k) {
-                    ans[i++] = null;
-                }
-            }
-            while (i < k) {
-                ListNode node = head;
-                tmp = node;
-                int len = minSize;
-                if (remainder > 0) {
-                    remainder--;
-                    len++;
-                }
-                while (len-- > 1) {
-                    tmp = tmp.next;
-                }
-                head = tmp.next;
-                tmp.next = null;
-                ans[i] = node;
-                i++;
-            }
-            return ans;
-        }
-    }
 }

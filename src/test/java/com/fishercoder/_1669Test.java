@@ -21,7 +21,7 @@ public class _1669Test {
     private static ListNode actual;
 
     @Before
-    public static void setup() {
+    public void setup() {
         solution1 = new _1669.Solution1();
         solution2 = new _1669.Solution2();
     }
