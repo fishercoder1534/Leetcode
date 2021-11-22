@@ -3,7 +3,7 @@ package com.fishercoder.solutions;
 public class _2028 {
     public static class Solution1 {
         public int[] missingRolls(int[] rolls, int mean, int n) {
-            long sum = 0l;
+            long sum = 0L;
             for (int num : rolls) {
                 sum += num;
             }

@@ -49,7 +49,7 @@ public class _698 {
          */
         public boolean canPartitionKSubsets(int[] nums, int k) {
             Arrays.sort(nums);
-            long sum = 0l;
+            long sum = 0L;
             for (int num : nums) {
                 sum += num;
             }

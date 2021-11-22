@@ -69,6 +69,7 @@ public class _1721 {
             return dummy.next;
         }
     }
+
     public static class Solution3 {
         public ListNode swapNodes(ListNode head, int k) {
             // O(n) linear time
@@ -80,20 +81,21 @@ public class _1721 {
             int length = 0;
             int secondIndex;
 
-            ListNode temp1 = null, temp2 = null;
+            ListNode temp1 = null;
+            ListNode temp2 = null;
             ListNode temp3 = head;
-            while(temp3 != null){
+            while (temp3 != null) {
                 length++;
                 temp3 = temp3.next;
             }
 
             secondIndex = length - k + 1;
             temp3 = head;
-            for(int i = 1; i <= length; i++){
-                if(i == k){
+            for (int i = 1; i <= length; i++) {
+                if (i == k) {
                     temp1 = temp3;
                 }
-                if(i == secondIndex){
+                if (i == secondIndex) {
                     temp2 = temp3;
                 }
                 temp3 = temp3.next;

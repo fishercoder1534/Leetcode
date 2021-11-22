@@ -9,9 +9,9 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class _1721Test {
+    private static _1721.Solution1 solution1;
     private static _1721.Solution2 solution2;
     private static _1721.Solution3 solution3;
-    private static _1721.Solution1 solution1;
     private static ListNode expected;
     private static ListNode node;
     private static int k;
@@ -40,6 +40,7 @@ public class _1721Test {
         k = 2;
         assertEquals(expected, solution2.swapNodes(node, k));
     }
+
     @Test
     public void test2() {
         node = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4, 5});
@@ -47,11 +48,20 @@ public class _1721Test {
         k = 2;
         assertEquals(expected, solution2.swapNodes(node, k));
     }
+
     @Test
-      public void test3(){
-          node = LinkedListUtils.contructLinkedList(new int[]{90, 100});
-          k = 2;
-          expected = LinkedListUtils.contructLinkedList(new int[]{100, 90});
-          assertEquals(expected, solution3.swapNodes(node, k));
-      }
+    public void test3() {
+        node = LinkedListUtils.contructLinkedList(new int[]{90, 100});
+        k = 2;
+        expected = LinkedListUtils.contructLinkedList(new int[]{100, 90});
+        assertEquals(expected, solution1.swapNodes(node, k));
+    }
+
+    @Test
+    public void test4() {
+        node = LinkedListUtils.contructLinkedList(new int[]{90, 100});
+        k = 2;
+        expected = LinkedListUtils.contructLinkedList(new int[]{100, 90});
+        assertEquals(expected, solution3.swapNodes(node, k));
+    }
 }

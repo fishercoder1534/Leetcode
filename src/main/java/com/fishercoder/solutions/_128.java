@@ -116,7 +116,8 @@ public class _128 {
             }
 
             int longestStreak = 0;
-            for (int num : set) {//we'll go through this set instead of nums, this makes a big difference in time complexity, esp. based on LeetCode test cases
+            for (int num : set) {
+                //we'll go through this set instead of nums, this makes a big difference in time complexity, esp. based on LeetCode test cases
                 if (!set.contains(num - 1)) {
                     int currentNum = num;
                     int currentStreak = 1;
