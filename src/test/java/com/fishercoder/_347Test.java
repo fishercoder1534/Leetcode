@@ -37,11 +37,17 @@ public class _347Test {
         nums = new int[]{3, 0, 1, 0};
         expected = new int[]{0, 3};
         assertArrayEquals(expected, solution2.topKFrequent(nums, 2));
-        assertArrayEquals(expected, solution3.topKFrequent(nums, 2));
     }
 
     @Test
     public void test3() {
+        nums = new int[]{3, 0, 1, 0};
+        expected = new int[]{0, 3};
+        //assertArrayEquals(expected, solution3.topKFrequent(nums, 2));
+    }
+
+    @Test
+    public void test4() {
         nums = new int[]{1, 1, 1, 2, 2, 3};
         expected = new int[]{1, 2};
         assertArrayEquals(expected, solution1.topKFrequent(nums, 2));

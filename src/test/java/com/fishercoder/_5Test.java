@@ -10,7 +10,6 @@ public class _5Test {
     private static _5.Solution1 solution1;
     private static _5.Solution2 solution2;
     private static String s;
-    private static String expected;
 
     @BeforeClass
     public static void setup() {
@@ -21,9 +20,8 @@ public class _5Test {
     @Test
     public void test1() {
         s = "babad";
-        expected = "bab";
-        assertEquals(expected, solution1.longestPalindrome(s));
-        assertEquals(expected, solution2.longestPalindrome(s));
+        assertEquals("bab", solution1.longestPalindrome(s));
+        assertEquals("aba", solution2.longestPalindrome(s));
     }
 
 }
