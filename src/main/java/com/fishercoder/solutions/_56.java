@@ -12,7 +12,7 @@ public class _56 {
          */
         public int[][] merge(int[][] intervals) {
             List<int[]> list = new ArrayList<>();
-            Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));//to avoid integer subtraction overflow
+            Arrays.sort(intervals, (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(b[1], a[1]));//to avoid integer subtraction overflow
             for (int i = 0; i < intervals.length; i++) {
                 int start = intervals[i][0];
                 int end = intervals[i][1];
@@ -22,11 +22,7 @@ public class _56 {
                 }
                 list.add(new int[]{start, end});
             }
-            int[][] ans = new int[list.size()][2];
-            for (int i = 0; i < list.size(); i++) {
-                ans[i] = list.get(i);
-            }
-            return ans;
+            return list.toArray(new int[list.size()][2]);
         }
     }
 
