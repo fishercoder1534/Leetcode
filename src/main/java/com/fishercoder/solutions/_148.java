@@ -140,4 +140,56 @@ public class _148 {
             return cnt;
         }
     }
+
+    public static class Solution3 {
+        /**
+         * Credit: https://leetcode.com/problems/sort-list/solution/ top down approach.
+         */
+        public ListNode sortList(ListNode head) {
+            if (head == null || head.next == null) {
+                return head;
+            }
+            ListNode mid = getMid(head);
+            ListNode left = sortList(head);
+            ListNode right = sortList(mid);
+            return mergeList(left, right);
+        }
+
+        private ListNode mergeList(ListNode left, ListNode right) {
+            ListNode pre = new ListNode(-1);
+            ListNode tmp = pre;
+            while (left != null && right != null) {
+                if (left.val < right.val) {
+                    tmp.next = left;
+                    left = left.next;
+                } else {
+                    tmp.next = right;
+                    right = right.next;
+                }
+                tmp = tmp.next;
+            }
+            if (left != null) {
+                tmp.next = left;
+            } else if (right != null) {
+                tmp.next = right;
+            }
+            return pre.next;
+        }
+
+        private ListNode getMid(ListNode head) {
+            /**The key/trick is in this method:
+             * it directly uses this head to iterate, so that we could use this top down recursive approach.
+             * If we assign head to slow and fast pointers, then this algorithm will run into StackOverflow exception.
+             *
+             * This is an absolutely amazing method!*/
+            ListNode midPrev = null;
+            while (head != null && head.next != null) {
+                midPrev = (midPrev == null) ? head : midPrev.next;
+                head = head.next.next;
+            }
+            ListNode mid = midPrev.next;
+            midPrev.next = null;//this is the key, otherwise, StackOverflow exception will occur.
+            return mid;
+        }
+    }
 }
