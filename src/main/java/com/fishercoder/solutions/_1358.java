@@ -4,7 +4,7 @@ public class _1358 {
     public static class Solution1 {
         /**
          * A classic sliding window problem, no dp or backtracking, just sliding window: use two pointers.
-         * my new favorite queustion!
+         * my new favorite question!
          */
         public int numberOfSubstrings(String s) {
             int[] counts = new int[3];
