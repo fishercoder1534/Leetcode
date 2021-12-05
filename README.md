@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2094|[Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2094.java) ||Easy||
 |2091|[Removing Minimum and Maximum From Array](https://leetcode.com/problems/removing-minimum-and-maximum-from-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2091.java) ||Medium||
 |2090|[K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2090.java) ||Medium||
 |2089|[Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2089.java) ||Easy||
