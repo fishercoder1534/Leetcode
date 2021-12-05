@@ -3,7 +3,7 @@ package com.fishercoder.solutions;
 import java.util.*;
 
 public class _2094 {
-    public static class Soluiton1 {
+    public static class Solution1 {
         public int[] findEvenNumbers(int[] digits) {
             Set<Integer> set = new HashSet<>();
             for (int i = 0; i < digits.length; i++) {
