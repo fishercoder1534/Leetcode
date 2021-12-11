@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2099|[Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2099.java) ||Easy||
 |2095|[Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2095.java) ||Medium||
 |2094|[Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2094.java) ||Easy||
 |2091|[Removing Minimum and Maximum From Array](https://leetcode.com/problems/removing-minimum-and-maximum-from-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2091.java) ||Medium||
