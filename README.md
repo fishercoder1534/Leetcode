@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2110|[Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2110.java) ||Medium||
 |2109|[Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2109.java) ||Medium||
 |2108|[Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2108.java) ||Easy||
 |2103|[Rings and Rods](https://leetcode.com/problems/rings-and-rods/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2103.java) ||Easy||
