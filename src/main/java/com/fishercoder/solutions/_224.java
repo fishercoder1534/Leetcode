@@ -1,103 +1,74 @@
 package com.fishercoder.solutions;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class _224 {
 
     public static class Solution1 {
-
+        /**
+         * My complete original solution on 12/23/2021
+         */
         public int calculate(String s) {
-            if (s == null || s.isEmpty()) {
-                return 0;
-            }
-
-            s = s.replaceAll("\\s", "");
-            char[] chars = s.toCharArray();
-            List<String> filteredStr = new ArrayList();
-            for (int i = 0; i < chars.length; ) {
-                StringBuilder sb = new StringBuilder();
-                while (i < chars.length && Character.isDigit(chars[i])) {
-                    sb.append(chars[i]);
-                    i++;
+            Deque<String> stack = new LinkedList<>();
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == ' ') {
+                    continue;
+                } else {
+                    if (s.charAt(i) == '(' || s.charAt(i) == '+' || s.charAt(i) == '-') {
+                        stack.addLast(s.charAt(i) + "");
+                    } else if (Character.isDigit(s.charAt(i))) {
+                        int start = i;
+                        while (i < s.length() && Character.isDigit(s.charAt(i))) {
+                            i++;
+                        }
+                        stack.addLast(s.substring(start, i));
+                        i--;
+                    } else if (s.charAt(i) == ')') {
+                        int result = 0;
+                        while (!stack.isEmpty() && !stack.peekLast().equals("(")) {
+                            String numStr = stack.pollLast();
+                            int numInt = Integer.parseInt(numStr);
+                            if (!stack.isEmpty() && (stack.peekLast().equals("-") || stack.peekLast().equals("+"))) {
+                                String operator = stack.pollLast();
+                                if (operator.equals("+")) {
+                                    result += numInt;
+                                } else if (operator.equals("-")) {
+                                    result -= numInt;
+                                }
+                            } else {
+                                result += numInt;
+                                if (!stack.isEmpty() && stack.peekLast().equals("(")) {
+                                    stack.pollLast();
+                                    break;
+                                }
+                            }
+                        }
+                        if (!stack.isEmpty() && stack.peekLast().equals("(")) {
+                            stack.pollLast();
+                        }
+                        stack.addLast(result + "");
+                    }
                 }
-                if (i == chars.length) {
-                    if (sb.toString().length() != 0) {
-                        filteredStr.add(sb.toString());
+            }
+            int result = 0;
+            while (!stack.isEmpty() && stack.peekLast() != "(") {
+                String numStr = stack.pollLast();
+                int numInt = Integer.parseInt(numStr);
+                if (!stack.isEmpty()) {
+                    String operator = stack.pollLast();
+                    if (operator.equals("+")) {
+                        result += numInt;
+                    } else if (operator.equals("-")) {
+                        result -= numInt;
                     }
                 } else {
-                    if (sb.toString().length() != 0) {
-                        filteredStr.add(sb.toString());
-                    }
-                    if (chars[i] == '+' || chars[i] == '-' || chars[i] == '(' || chars[i] == ')') {
-                        filteredStr.add(String.valueOf(chars[i]));
-                    }
-                    i++;
+                    result += numInt;
                 }
             }
-
-            for (String str : filteredStr) {
-                System.out.print(str);
-            }
-
-            Stack<String> stack1 = new Stack();
-            Stack<String> stack2 = new Stack();
-            for (int i = 0; i < filteredStr.size(); ) {
-                while (i < filteredStr.size() && !filteredStr.get(i).equals(")")) {
-                    stack1.push(filteredStr.get(i));
-                    i++;
-                }
-                if (i != filteredStr.size()) {
-                    while (!stack1.isEmpty() && !stack1.peek().equals("(")) {
-                        stack2.push(stack1.pop());
-                    }
-                    stack1.pop();
-                    int exp = 0;
-                    while (!stack2.isEmpty()) {
-                        if (stack2.size() == 1) {
-                            stack1.push(stack2.pop());
-                            break;
-                        }
-                        int operand1 = Integer.parseInt(stack2.pop());
-                        String operator = stack2.pop();
-                        int operand2 = Integer.parseInt(stack2.pop());
-                        if (operator.equals("+")) {
-                            exp = operand1 + operand2;
-                        } else if (operator.equals("-")) {
-                            exp = operand1 - operand2;
-                        }
-                        stack2.push(String.valueOf(exp));
-                    }
-                    i++;
-                }
-            }
-
-            if (stack1.size() == 1) {
-                return Integer.parseInt(stack1.pop());
-            }
-
-            while (!stack1.isEmpty()) {
-                stack2.push(stack1.pop());
-            }
-            while (!stack2.isEmpty()) {
-                if (stack2.size() == 1) {
-                    stack1.push(stack2.pop());
-                    break;
-                }
-                int exp = 0;
-                int operand1 = Integer.parseInt(stack2.pop());
-                String operator = stack2.pop();
-                int operand2 = Integer.parseInt(stack2.pop());
-                if (operator.equals("+")) {
-                    exp = operand1 + operand2;
-                } else if (operator.equals("-")) {
-                    exp = operand1 - operand2;
-                }
-                stack2.push(String.valueOf(exp));
-            }
-            return Integer.parseInt(stack1.pop());
+            return !stack.isEmpty() ? Integer.parseInt(stack.peekLast()) + result : result;
         }
+
     }
 
 }
