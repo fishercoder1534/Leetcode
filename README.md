@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2114|[Maximum Number of Words Found in Sentences](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2114.java) ||Easy||
 |2110|[Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2110.java) ||Medium||
 |2109|[Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2109.java) ||Medium||
 |2108|[Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2108.java) ||Easy||
