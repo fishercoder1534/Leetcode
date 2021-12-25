@@ -58,4 +58,47 @@ public class _767 {
             }
         }
     }
+
+    public static class Solution2 {
+        /**
+         * My completely original solution on 12/24/2021.
+         */
+        public String reorganizeString(String s) {
+            Map<Character, Integer> map = new HashMap<>();
+            for (char c : s.toCharArray()) {
+                map.put(c, map.getOrDefault(c, 0) + 1);
+            }
+            PriorityQueue<Tuple> maxHeap = new PriorityQueue<>((a, b) -> b.count - a.count);
+            for (char c : map.keySet()) {
+                maxHeap.add(new Tuple(c, map.get(c)));
+            }
+            StringBuilder sb = new StringBuilder("1");
+            while (!maxHeap.isEmpty()) {
+                PriorityQueue<Tuple> tmp = new PriorityQueue<>((a, b) -> b.count - a.count);
+                Tuple curr = maxHeap.poll();
+                while (sb.length() != 0 && sb.charAt(sb.length() - 1) == curr.c && !maxHeap.isEmpty()) {
+                    tmp.offer(curr);
+                    curr = maxHeap.poll();
+                }
+                if (curr.c != sb.charAt(sb.length() - 1)) {
+                    sb.append(curr.c);
+                }
+                maxHeap.addAll(tmp);
+                if (curr.count > 1) {
+                    maxHeap.offer(new Tuple(curr.c, curr.count - 1));
+                }
+            }
+            return sb.substring(1).length() != s.length() ? "" : sb.substring(1);
+        }
+
+        class Tuple {
+            char c;
+            int count;
+
+            public Tuple(char c, int count) {
+                this.c = c;
+                this.count = count;
+            }
+        }
+    }
 }
