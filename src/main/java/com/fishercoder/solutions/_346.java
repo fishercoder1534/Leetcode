@@ -1,14 +1,14 @@
 package com.fishercoder.solutions;
 
+import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Queue;
 
 public class _346 {
 
     public static class Solution1 {
         class MovingAverage {
 
-            private Queue<Integer> q;
+            private Deque<Integer> q;
             private Long sum;
             private int max;
 
@@ -27,7 +27,7 @@ public class _346 {
                     sum += val;
                     return (double) sum / q.size();
                 } else {
-                    int first = q.poll();
+                    int first = q.pollFirst();
                     sum -= first;
                     q.offer(val);
                     sum += val;
