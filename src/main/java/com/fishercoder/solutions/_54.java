@@ -41,4 +41,55 @@ public class _54 {
             return result;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * My completely original solution on 12/29/2021.
+         */
+        public List<Integer> spiralOrder(int[][] matrix) {
+            List<Integer> ans = new ArrayList<>();
+            int m = matrix.length;
+            int n = matrix[0].length;
+            int direction = 0;
+            int total = m * n;
+            int j = 0;
+            int i = 0;
+            int lowerRow = 0;
+            int lowerCol = 0;
+            while (ans.size() < total) {
+                for (; i < m && i >= lowerRow && j < n && j >= lowerCol; ) {
+                    ans.add(matrix[i][j]);
+                    if (direction == 0) {//east
+                        j++;
+                    } else if (direction == 1) {//south
+                        i++;
+                    } else if (direction == 2) {//west
+                        j--;
+                    } else {
+                        i--;//north
+                    }
+                }
+                if (direction == 0) {
+                    i++;
+                    j--;
+                } else if (direction == 1) {
+                    j--;
+                    i--;
+                } else if (direction == 2) {
+                    j++;
+                    i--;
+                    lowerRow++;
+                    m--;
+                } else {
+                    i++;
+                    j++;
+                    lowerCol++;
+                    n--;
+                }
+                direction++;
+                direction %= 4;
+            }
+            return ans;
+        }
+    }
 }
