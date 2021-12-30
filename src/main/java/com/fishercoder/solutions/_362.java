@@ -13,20 +13,12 @@ public class _362 {
             private int[] hits;
             private int k;
 
-            /**
-             * Initialize your data structure here.
-             */
             public HitCounter() {
                 k = 300;
                 times = new int[k];
                 hits = new int[k];
             }
 
-            /**
-             * Record a hit.
-             *
-             * @param timestamp - The current timestamp (in seconds granularity).
-             */
             public void hit(int timestamp) {
                 int index = timestamp % k;
                 if (times[index] != timestamp) {
@@ -37,11 +29,6 @@ public class _362 {
                 }
             }
 
-            /**
-             * Return the number of hits in the past 5 minutes.
-             *
-             * @param timestamp - The current timestamp (in seconds granularity).
-             */
             public int getHits(int timestamp) {
                 int total = 0;
                 for (int i = 0; i < k; i++) {
