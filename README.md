@@ -482,6 +482,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1033|[Moving Stones Until Consecutive](https://leetcode.com/problems/moving-stones-until-consecutive/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1033.java) | |Easy|Math|
 |1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1030.java) | |Easy|
 |1029|[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1029.java) | |Easy|
+|1026|[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1026.java) | |Medium|Tree, DFS, Binary Tree|
 |1025|[Divisor Game](https://leetcode.com/problems/divisor-game/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1025.java) | |Easy|Math, DP, Brainteaser, Game Theory|
 |1024|[Video Stitching](https://leetcode.com/problems/video-stitching/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1024.java) | |Medium|Array, DP, Greedy|
 |1022|[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1022.java) | |Easy|
