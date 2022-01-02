@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2124|[Check if All A's Appears Before All B's](https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2124.java) ||Easy||
 |2120|[Execution of All Suffix Instructions Staying in a Grid](https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2120.java) ||Medium||
 |2119|[A Number After a Double Reversal](https://leetcode.com/problems/a-number-after-a-double-reversal/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2119.java) ||Easy||
 |2116|[Check if a Parentheses String Can Be Valid](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2116.java) ||Medium||
