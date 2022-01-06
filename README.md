@@ -461,6 +461,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1103.java) | |Easy|Math|
 |1100|[Find K-Length Substrings With No Repeated Characters](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1100.java) | |Medium|String, Sliding Window|
 |1099|[Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1099.java) |  [:tv:](https://www.youtube.com/watch?v=2Uq7p7HE0TI)|Easy||
+|1094|[Car Pooling](https://leetcode.com/problems/car-pooling/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1094.java) | |Medium|Array, Sorting, Heap, Simulation, Prefix Sum|
 |1090|[Largest Values From Labels](https://leetcode.com/problems/largest-values-from-labels/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1090.java) | [:tv:](https://youtu.be/E0OkE3G95vU)|Medium|HashTable, Greedy|
 |1091|[Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1091.java) | |Medium|BFS|
 |1089|[Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1089.java) | |Easy||
