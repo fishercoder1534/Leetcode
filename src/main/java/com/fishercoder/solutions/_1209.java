@@ -1,5 +1,7 @@
 package com.fishercoder.solutions;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class _1209 {
@@ -70,6 +72,47 @@ public class _1209 {
                 }
             }
             return sb.toString();
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * My completely original solution on 1/6/2021.
+         */
+        class CharCount {
+            char c;
+            int count;
+
+            public CharCount(char c, int count) {
+                this.c = c;
+                this.count = count;
+            }
+        }
+
+        public String removeDuplicates(String s, int k) {
+            Deque<CharCount> stack = new LinkedList<>();
+            for (char c : s.toCharArray()) {
+                if (stack.isEmpty()) {
+                    stack.addLast(new CharCount(c, 1));
+                } else {
+                    if (stack.peekLast().c == c && stack.peekLast().count + 1 == k) {
+                        stack.pollLast();
+                    } else if (stack.peekLast().c == c) {
+                        stack.addLast(new CharCount(c, stack.pollLast().count + 1));
+                    } else {
+                        stack.addLast(new CharCount(c, 1));
+                    }
+                }
+            }
+            StringBuilder sb = new StringBuilder();
+            while (!stack.isEmpty()) {
+                CharCount pair = stack.pollLast();
+                int count = pair.count;
+                while (count-- > 0) {
+                    sb.append(pair.c);
+                }
+            }
+            return sb.reverse().toString();
         }
     }
 }
