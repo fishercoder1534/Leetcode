@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2130|[Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2130.java) ||Medium||
 |2129|[Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2129.java) ||Easy||
 |2126|[Destroying Asteroids](https://leetcode.com/problems/destroying-asteroids/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2126.java) ||Medium||
 |2125|[Number of Laser Beams in a Bank](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2125.java) ||Medium||
