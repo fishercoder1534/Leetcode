@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2134|[Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2134.java) ||Medium||
 |2133|[Check if Every Row and Column Contains All Numbers](https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2133.java) ||Easy||
 |2130|[Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2130.java) ||Medium||
 |2129|[Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2129.java) ||Easy||
