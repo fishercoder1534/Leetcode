@@ -9,6 +9,7 @@ import static org.junit.Assert.assertArrayEquals;
 public class _735Test {
     private static _735.Solution1 solution1;
     private static _735.Solution2 solution2;
+    private static _735.Solution3 solution3;
     private static int[] asteroids;
     private static int[] expected;
 
@@ -16,6 +17,7 @@ public class _735Test {
     public static void setup() {
         solution1 = new _735.Solution1();
         solution2 = new _735.Solution2();
+        solution3 = new _735.Solution3();
     }
 
     @Test
@@ -24,6 +26,7 @@ public class _735Test {
         expected = new int[]{5, 10};
         assertArrayEquals(expected, solution1.asteroidCollision(asteroids));
         assertArrayEquals(expected, solution2.asteroidCollision(asteroids));
+        assertArrayEquals(expected, solution3.asteroidCollision(asteroids));
     }
 
     @Test
