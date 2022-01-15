@@ -85,4 +85,52 @@ public class _34 {
             return result;
         }
     }
+
+    public static class Solution3 {
+        /**
+         * My completely original solution on 1/15/2022. A great practice to solidify binary search basics.
+         */
+        public int[] searchRange(int[] nums, int target) {
+            int left = 0;
+            int right = nums.length - 1;
+            int[] ans = new int[]{-1, -1};
+            while (left < right) {
+                int mid = left + (right - left) / 2;
+                if (nums[mid] > target) {
+                    right = mid - 1;
+                } else if (nums[mid] < target) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                    ans[0] = mid;
+                    ans[1] = mid;
+                }
+            }
+            if (left < nums.length && nums[left] != target && right > 0 && nums[right] != target && right + 1 < nums.length && nums[right + 1] != target) {
+                return ans;
+            }
+            if (left < nums.length && nums[left] == target) {
+                ans[0] = left;
+                ans[1] = left;
+            }
+            right = nums.length - 1;
+            while (left < right) {
+                int mid = left + (right - left) / 2;
+                if (nums[mid] < target) {
+                    left = mid + 1;
+                } else if (nums[mid] > target) {
+                    right = mid - 1;
+                } else {
+                    ans[1] = mid;
+                    left = mid + 1;
+                }
+            }
+            if (right >= 0 && nums[right] == target) {
+                ans[1] = right;
+            } else if (left < nums.length && nums[left] == target) {
+                ans[1] = left;
+            }
+            return ans;
+        }
+    }
 }
