@@ -8,9 +8,9 @@ public class _523 {
     public static class Solution1 {
         /**
          * reference: https://discuss.leetcode.com/topic/80793/java-o-n-time-o-k-space/20
-         * "The reason we use modulus is:
+         * "The reason we use modulo is:
          * (a+(n*x))%x is same as (a%x)
-         * e.g. in case of the array [23,2,6,4,7] the running sum is [23,25,31,35,42]
+         * e.g. in case of the array [23,2,6,4,7] and k = 6 the running sum is [23,25,31,35,42]
          * and the remainders are [5,1,1,5,0].
          * We got reminder 5 at index 0 and at index 3.
          * That means, in between these two indexes we must have added a number which is multiple of the k.
@@ -18,7 +18,7 @@ public class _523 {
          */
         public boolean checkSubarraySum(int[] nums, int k) {
             Map<Integer, Integer> map = new HashMap<>();
-            map.put(0, -1);
+            map.put(0, -1);//this line is critical to mark the beginning of the prefix sum, so that next time, when we encounter a running sum of zero, we know that's the answer, see test case 11
             int sum = 0;
             for (int i = 0; i < nums.length; i++) {
                 sum += nums[i];
@@ -41,6 +41,9 @@ public class _523 {
     }
 
     public static class Solution2 {
+        /**
+         * O(n^2), this will time out on LeetCode.
+         */
         public boolean checkSubarraySum(int[] nums, int k) {
             if (nums == null || nums.length == 0) {
                 return false;
