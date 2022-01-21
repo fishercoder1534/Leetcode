@@ -480,7 +480,7 @@ _If you like this project, please leave me a star._ &#9733;
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1071.java) |  |Easy||
 |1066|[Campus Bikes II](https://leetcode.com/problems/campus-bikes-ii/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1066.java) | |Medium|Backtracking, DP|
 |1065|[Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1065.java) | |Medium||
-|1062|[Longest Repeating Substring](https://leetcode.com/problems/longest-repeating-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1062.java) | |Medium||
+|1062|[Longest Repeating Substring](https://leetcode.com/problems/longest-repeating-substring/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1062.java) | |Medium|String, Binary Search, DP, Rolling Hash, Suffix Array, Hash Function|
 |1057|[Campus Bikes](https://leetcode.com/problems/campus-bikes/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1057.java) | |Medium||Greedy, Sort
 |1056|[Confusing Number](https://leetcode.com/problems/confusing-number/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1056.java) | |Easy||
 |1055|[Fixed Point](https://leetcode.com/problems/fixed-point/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_1055.java) |  |Easy||
