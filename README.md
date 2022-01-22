@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2144|[Minimum Cost of Buying Candies With Discount](https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2144.java) ||Easy||
 |2139|[Minimum Moves to Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2139.java) ||Medium||
 |2138|[Divide a String Into Groups of Size k](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2138.java) ||Easy||
 |2134|[Minimum Swaps to Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2134.java) ||Medium||
