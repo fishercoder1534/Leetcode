@@ -4,8 +4,15 @@ public class _1300 {
     public static class Solution1 {
         public int findBestValue(int[] arr, int target) {
             int ave = target / arr.length;
-            int min = findMin(arr);
-            int max = findMax(arr);
+            int max = arr[0];
+            int min = arr[0];
+            for (int i = 1; i < arr.length; i++) {
+                min = Math.min(min, arr[i]);
+                max = Math.max(max, arr[i]);
+            }
+            if (ave >= max) {
+                return max;
+            }
             //if ave is the best value, what's the difference to target?
             int closetDiff = findClosestDiffIfReplaceWithVal(arr, ave, target);
             int bestValue = ave;
@@ -47,20 +54,5 @@ public class _1300 {
             return Math.abs(sum - target);
         }
 
-        private int findMax(int[] arr) {
-            int max = arr[0];
-            for (int i = 1; i < arr.length; i++) {
-                max = Math.max(max, arr[i]);
-            }
-            return max;
-        }
-
-        private int findMin(int[] arr) {
-            int min = arr[0];
-            for (int i = 1; i < arr.length; i++) {
-                min = Math.min(min, arr[i]);
-            }
-            return min;
-        }
     }
 }

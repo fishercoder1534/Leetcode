@@ -33,4 +33,40 @@ public class _1300Test {
         assertEquals(11361, solution1.findBestValue(arr, 56803));
     }
 
+    @Test
+    public void test4() {
+        arr = new int[]{2, 3, 5};
+        assertEquals(5, solution1.findBestValue(arr, 11));
+    }
+
+    @Test
+    public void test5() {
+        arr = new int[]{60864, 25176, 27249, 21296, 20204};
+        assertEquals(11361, solution1.findBestValue(arr, 56803));
+    }
+
+    @Test
+    public void test6() {
+        arr = new int[]{48772, 52931, 14253, 32289, 75263};
+        assertEquals(8175, solution1.findBestValue(arr, 40876));
+    }
+
+    @Test
+    public void test7() {
+        arr = new int[]{1547, 83230, 57084, 93444, 70879};
+        assertEquals(17422, solution1.findBestValue(arr, 71237));
+    }
+
+    @Test
+    public void test8() {
+        arr = new int[]{1, 1, 2};
+        assertEquals(2, solution1.findBestValue(arr, 10));
+    }
+
+    @Test
+    public void test9() {
+        arr = new int[]{1, 1, 1};
+        assertEquals(1, solution1.findBestValue(arr, 10));
+    }
+
 }
