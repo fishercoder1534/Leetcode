@@ -31,4 +31,31 @@ public class _77 {
             }
         }
     }
+
+    public static class Solution2 {
+        /**
+         * My completely own solution on 1/24/2022.
+         */
+        public List<List<Integer>> combine(int n, int k) {
+            List<List<Integer>> ans = new ArrayList<>();
+            int[] nums = new int[n];
+            for (int i = 1; i <= n; i++) {
+                nums[i - 1] = i;
+            }
+            backtrack(ans, nums, k, new ArrayList<>(), 0);
+            return ans;
+        }
+
+        private void backtrack(List<List<Integer>> ans, int[] nums, int k, List<Integer> curr, int start) {
+            if (curr.size() == k) {
+                ans.add(new ArrayList<>(curr));
+            } else if (curr.size() < k) {
+                for (int i = start; i < nums.length; i++) {
+                    curr.add(nums[i]);
+                    backtrack(ans, nums, k, curr, i + 1);
+                    curr.remove(curr.size() - 1);
+                }
+            }
+        }
+    }
 }
