@@ -6,6 +6,8 @@ public class _2156 {
          * Credit: https://leetcode.com/problems/find-substring-with-given-hash-value/discuss/1730100/Java-rolling-hash(back-to-front)/1242659
          * <p>
          * We start from the right side and compute rolling hash when moving the window of size k towards the left.
+         * This post explains why we need to start from the right and move towards the left: https://leetcode.com/problems/find-substring-with-given-hash-value/discuss/1730114/C%2B%2B-Rolling-Hash-O(N)-Time
+         * so that we could use Rabin-Karp algorithm.
          */
         public String subStrHash(String s, int power, int modulo, int k, int hashValue) {
             long weight = 1;
@@ -43,6 +45,6 @@ public class _2156 {
 
             return result;
         }
-
     }
+
 }
