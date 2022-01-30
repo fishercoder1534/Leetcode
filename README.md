@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2156|[Find Substring With Given Hash Value](https://leetcode.com/problems/find-substring-with-given-hash-value/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2156.java) ||Medium||
 |2155|[All Divisions With the Highest Score of a Binary Array](https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2155.java) ||Medium||
 |2154|[Keep Multiplying Found Values by Two](https://leetcode.com/problems/keep-multiplying-found-values-by-two/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2154.java) ||Easy||
 |2150|[Find All Lonely Numbers in the Array](https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2150.java) ||Medium||
