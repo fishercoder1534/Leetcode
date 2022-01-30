@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2154|[Keep Multiplying Found Values by Two](https://leetcode.com/problems/keep-multiplying-found-values-by-two/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2154.java) ||Easy||
 |2150|[Find All Lonely Numbers in the Array](https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2150.java) ||Medium||
 |2149|[Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2149.java) ||Medium||
 |2148|[Count Elements With Strictly Smaller and Greater Elements](https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2148.java) ||Easy||
