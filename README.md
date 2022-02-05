@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2161|[Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2161.java) ||Medium||
 |2160|[Minimum Sum of Four Digit Number After Splitting Digits](https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2160.java) ||Easy||
 |2156|[Find Substring With Given Hash Value](https://leetcode.com/problems/find-substring-with-given-hash-value/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2156.java) ||Medium||
 |2155|[All Divisions With the Highest Score of a Binary Array](https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2155.java) ||Medium||
