@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 |  #  |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |-----|----------------|---------------|--------|-------------|-------------
+|2169|[Count Operations to Obtain Zero](https://leetcode.com/problems/count-operations-to-obtain-zero/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2169.java) ||Easy||
 |2166|[Design Bitset](https://leetcode.com/problems/design-bitset/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2166.java) ||Medium||
 |2165|[Smallest Value of the Rearranged Number](https://leetcode.com/problems/smallest-value-of-the-rearranged-number/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2165.java) ||Medium||
 |2164|[Sort Even and Odd Indices Independently](https://leetcode.com/problems/sort-even-and-odd-indices-independently/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2164.java) ||Easy||
