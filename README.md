@@ -820,6 +820,7 @@ _If you like this project, please leave me a star._ &#9733;
 |531|[Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_531.java) |  |Medium | 
 |530|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_530.java) | |Easy| DFS
 |529|[Minesweeper](https://leetcode.com/problems/minesweeper/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_529.java) | |Medium | BFS
+|528|[Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_528.java) | |Medium | Math, Binary Search, Prefix Sum, Randomized
 |527|[Word Abbreviation](https://leetcode.com/problems/word-abbreviation/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_527.java) | |Hard | 
 |526|[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_526.java) | |Medium | Backtracking
 |525|[Contiguous Array](https://leetcode.com/problems/contiguous-array/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_525.java) |  |Medium | HashMap
