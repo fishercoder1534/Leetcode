@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 | #    |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |------|----------------|---------------|--------|-------------|-------------
+| 2181 |[Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2181.java) ||Medium||
 | 2180 |[Count Integers With Even Digit Sum](https://leetcode.com/problems/count-integers-with-even-digit-sum/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2180.java) ||Easy||
 | 2177 |[Find Three Consecutive Integers That Sum to a Given Number](https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2177.java) ||Medium||
 | 2176 |[Count Equal and Divisible Pairs in an Array](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2176.java) ||Easy||
