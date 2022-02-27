@@ -8,6 +8,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 | #    |      Title     |   Solutions   | Video  | Difficulty  | Tag                  
 |------|----------------|---------------|--------|-------------|-------------
+| 2186 |[Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2186.java) ||Medium||
 | 2185 |[Counting Words With a Given Prefix](https://leetcode.com/problems/counting-words-with-a-given-prefix/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2185.java) ||Easy||
 | 2182 |[Construct String With Repeat Limit](https://leetcode.com/problems/construct-string-with-repeat-limit/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2182.java) ||Medium||
 | 2181 |[Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/)|[Java](../master/src/main/java/com/fishercoder/solutions/_2181.java) ||Medium||
