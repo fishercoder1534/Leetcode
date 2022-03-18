@@ -7,18 +7,18 @@ public class _725 {
         /**
          * My very original solution, but verbose.
          */
-        public ListNode[] splitListToParts(ListNode root, int k) {
-            int len = getLength(root);
+        public ListNode[] splitListToParts(ListNode head, int k) {
+            int len = getLength(head);
             int aveSize = len / k;
             int extra = len % k;
             ListNode[] result = new ListNode[k];
             for (int i = 0; i < k; i++) {
-                result[i] = root;
+                result[i] = head;
                 int aveSizeTmp = aveSize;
                 aveSizeTmp += extra-- > 0 ? 1 : 0;
                 int aveSizeTmp2 = aveSizeTmp;
                 while (aveSizeTmp-- > 0) {
-                    root = root.next;
+                    head = head.next;
                 }
                 if (result[i] != null) {
                     ListNode tmp = result[i];
@@ -46,17 +46,17 @@ public class _725 {
         /**
          * More concise version
          */
-        public ListNode[] splitListToParts(ListNode root, int k) {
-            int len = getLength(root);
+        public ListNode[] splitListToParts(ListNode head, int k) {
+            int len = getLength(head);
             int aveSize = len / k;
             int extra = len % k;
             ListNode[] result = new ListNode[k];
             ListNode prev = null;
             for (int i = 0; i < k; i++, extra--) {
-                result[i] = root;
+                result[i] = head;
                 for (int j = 0; j < aveSize + (extra > 0 ? 1 : 0); j++) {
-                    prev = root;
-                    root = root.next;
+                    prev = head;
+                    head = head.next;
                 }
                 if (prev != null) {
                     prev.next = null;
@@ -75,4 +75,5 @@ public class _725 {
             return len;
         }
     }
+
 }

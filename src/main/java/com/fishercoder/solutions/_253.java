@@ -40,5 +40,32 @@ public class _253 {
             return heap.size();
         }
     }
+
+    public static class Solution2 {
+        /**
+         * I'm so glad to have come up with this solution completely on my own on 10/13/2021.
+         * Drawing on a piece of paper helps A LOT! It helps visualize your thoughts and clear the ambiguity up!
+         */
+        public int minMeetingRooms(int[][] intervals) {
+            //I use the meeting's end time as the room indicate and put them into a heap
+            PriorityQueue<Integer> rooms = new PriorityQueue<>();
+            Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+            for (int i = 0; i < intervals.length; i++) {
+                if (rooms.isEmpty()) {
+                    rooms.add(intervals[i][1]);
+                } else {
+                    if (rooms.peek() > intervals[i][0]) {
+                        //if the room that becomes available the earliest still cannot accommodate this new meeting, then we'll have to add a new room
+                        rooms.add(intervals[i][1]);
+                    } else {
+                        //otherwise, we'll just update the room that finishes the earliest with the new finish time.
+                        rooms.poll();
+                        rooms.add(intervals[i][1]);
+                    }
+                }
+            }
+            return rooms.size();
+        }
+    }
 }
 

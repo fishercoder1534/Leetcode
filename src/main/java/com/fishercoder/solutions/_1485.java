@@ -12,11 +12,11 @@ public class _1485 {
             Map<Node, NodeCopy> map = new HashMap<>();
             map.put(root, new NodeCopy(root.val));
             dfs(root, map);
-            dfsAgain(root, map);
+            dfsConnect(root, map);
             return map.get(root);
         }
 
-        private void dfsAgain(Node root, Map<Node, NodeCopy> map) {
+        private void dfsConnect(Node root, Map<Node, NodeCopy> map) {
             if (root == null) {
                 return;
             }
@@ -31,8 +31,8 @@ public class _1485 {
                 copy.random = map.get(root.random);
             }
             map.put(root, copy);
-            dfsAgain(root.left, map);
-            dfsAgain(root.right, map);
+            dfsConnect(root.left, map);
+            dfsConnect(root.right, map);
         }
 
         private void dfs(Node root, Map<Node, NodeCopy> map) {

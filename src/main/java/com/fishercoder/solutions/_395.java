@@ -37,4 +37,63 @@ public class _395 {
             return end - start;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * classic sliding window approach.
+         * credit: https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/discuss/170010/Java-O(n)-Solution-with-Detailed-Explanation-Sliding-Window/774350
+         */
+        public int longestSubstring(String s, int k) {
+            int res = 0;
+            for (int numUniqueTarget = 1; numUniqueTarget <= 26; numUniqueTarget++) {
+                res = Math.max(res, slidingWindowHelper(s, k, numUniqueTarget));
+            }
+            return res;
+        }
+
+        // sliding window template
+        private int slidingWindowHelper(String s, int k, int numUniqueTarget) {
+            int[] map = new int[26];
+            int start = 0;
+            int end = 0;
+            int res = 0;
+            int uniqueLetterCount = 0;
+            int numNoLessThanK = 0;
+            while (end < s.length()) {
+                char c1 = s.charAt(end);
+                if (map[c1 - 'a'] == 0) {
+                    //we increment this when we include a new letter into our sliding window
+                    uniqueLetterCount++;
+                }
+                map[c1 - 'a']++;
+                if (map[c1 - 'a'] == k) {
+                    //we increment this number when we find a letter's frequency reaches k
+                    numNoLessThanK++;
+                }
+                end++;
+
+                while (uniqueLetterCount > numUniqueTarget) {
+                    //as long as the counter (the number of qualified letters) is greater than our target number,
+                    //we can move the left pointer to the right,
+                    //this keeps the interval within our sliding window always valid
+                    char c2 = s.charAt(start);
+                    if (map[c2 - 'a'] == k) {
+                        //we decrement this numNoLessThanK when we find this letter's frequency equals
+                        //to k because we'll move past this letter, i.e. our sliding window no longer includes it
+                        numNoLessThanK--;
+                    }
+                    map[c2 - 'a']--;
+                    if (map[c2 - 'a'] == 0) {
+                        uniqueLetterCount--;
+                    }
+                    start++;
+                }
+
+                if (uniqueLetterCount == numNoLessThanK) {
+                    res = Math.max(res, end - start);
+                }
+            }
+            return res;
+        }
+    }
 }

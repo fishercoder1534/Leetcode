@@ -21,7 +21,7 @@ public class _259 {
                     int sum = nums[i] + nums[left] + nums[right];
                     if (sum < target) {
                         result += right - left;//this line is key!
-                        left++;
+                        left++;//then increment left to continue to see all possibilities
                     } else {
                         right--;
                     }

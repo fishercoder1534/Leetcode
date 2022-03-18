@@ -3,40 +3,93 @@ package com.fishercoder.solutions;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class _542 {
 
     public static class Solution1 {
-
-        public List<List<Integer>> updateMatrix(List<List<Integer>> matrix) {
-            int m = matrix.size();
-            int n = matrix.get(0).size();
+        public int[][] updateMatrix(int[][] mat) {
+            int m = mat.length;
+            int n = mat[0].length;
+            int[][] ans = new int[m][n];
             Deque<int[]> deque = new LinkedList<>();
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
-                    if (matrix.get(i).get(j) == 0) {
+                    if (mat[i][j] == 0) {
                         deque.offer(new int[]{i, j});
                     } else {
-                        matrix.get(i).set(j, Integer.MAX_VALUE);
+                        ans[i][j] = m * n;
                     }
                 }
             }
-
-            final int[] dirs = new int[]{0, 1, 0, -1, 0};
+            int[] directions = new int[]{0, 1, 0, -1, 0};
             while (!deque.isEmpty()) {
-                int[] currentCell = deque.poll();
-                for (int i = 0; i < dirs.length - 1; i++) {
-                    int nextRow = currentCell[0] + dirs[i];
-                    int nextCol = currentCell[1] + dirs[i + 1];
-                    if (nextRow < 0 || nextCol < 0 || nextRow >= m || nextCol >= n || matrix.get(nextRow).get(nextCol) <= matrix.get(currentCell[0]).get(currentCell[1]) + 1) {
-                        continue;
+                int[] curr = deque.poll();
+                for (int i = 0; i < directions.length - 1; i++) {
+                    int nextX = directions[i] + curr[0];
+                    int nextY = directions[i + 1] + curr[1];
+                    if (nextX >= 0 && nextX < m && nextY >= 0 && nextY < n && ans[nextX][nextY] > ans[curr[0]][curr[1]] + 1) {
+                        deque.offer(new int[]{nextX, nextY});
+                        ans[nextX][nextY] = ans[curr[0]][curr[1]] + 1;
                     }
-                    deque.offer(new int[]{nextRow, nextCol});
-                    matrix.get(nextRow).set(nextCol, matrix.get(currentCell[0]).get(currentCell[1]) + 1);
                 }
             }
-            return matrix;
+            return ans;
         }
+    }
+
+    public static class Solution2 {
+        /**
+         * A silly, but working solution. Apparently, the above BFS approach is a smarter version of this one.
+         */
+        public int[][] updateMatrix(int[][] mat) {
+            int m = mat.length;
+            int n = mat[0].length;
+            int[][] ans = new int[m][n];
+            Queue<int[]> queue = new LinkedList<>();
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (mat[i][j] == 0) {
+                        queue.offer(new int[]{i, j});
+                    } else {
+                        ans[i][j] = m * n;
+                    }
+                }
+            }
+            while (!queue.isEmpty()) {
+                int[] curr = queue.poll();
+                for (int i = curr[0] + 1, j = curr[1]; i < m && mat[i][j] != 0; i++) {
+                    ans[i][j] = Math.min(ans[i][j], i - curr[0]);
+                }
+                for (int i = curr[0] - 1, j = curr[1]; i >= 0 && mat[i][j] != 0; i--) {
+                    ans[i][j] = Math.min(ans[i][j], curr[0] - i);
+                }
+                for (int j = curr[1] + 1, i = curr[0]; j < n && mat[i][j] != 0; j++) {
+                    ans[i][j] = Math.min(ans[i][j], j - curr[1]);
+                }
+                for (int j = curr[1] - 1, i = curr[0]; j >= 0 && mat[i][j] != 0; j--) {
+                    ans[i][j] = Math.min(ans[i][j], curr[1] - j);
+                }
+            }
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (i + 1 < m && ans[i + 1][j] >= 1) {
+                        ans[i][j] = Math.min(ans[i][j], ans[i + 1][j] + 1);
+                    }
+                    if (i - 1 >= 0 && ans[i - 1][j] >= 1) {
+                        ans[i][j] = Math.min(ans[i][j], ans[i - 1][j] + 1);
+                    }
+                    if (j + 1 < n && ans[i][j + 1] >= 1) {
+                        ans[i][j] = Math.min(ans[i][j], ans[i][j + 1] + 1);
+                    }
+                    if (j - 1 >= 0 && ans[i][j - 1] >= 1) {
+                        ans[i][j] = Math.min(ans[i][j], ans[i][j - 1] + 1);
+                    }
+                }
+            }
+            return ans;
+        }
+
     }
 
 }

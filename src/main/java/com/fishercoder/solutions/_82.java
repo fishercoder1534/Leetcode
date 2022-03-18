@@ -5,25 +5,21 @@ import com.fishercoder.common.classes.ListNode;
 public class _82 {
     public static class Solution1 {
         public ListNode deleteDuplicates(ListNode head) {
-            if (head == null) {
-                return head;
-            }
-            ListNode fakeHead = new ListNode(-1);
-            fakeHead.next = head;
-            ListNode pre = fakeHead;
-            ListNode curr = head;
-            while (curr != null) {
-                while (curr.next != null && curr.val == curr.next.val) {
-                    curr = curr.next;
+            ListNode pre = new ListNode(-1);
+            pre.next = head;
+            ListNode tmp = pre;
+            while (head != null) {
+                while (head.next != null && head.val == head.next.val) {
+                    head = head.next;
                 }
-                if (pre.next == curr) {
-                    pre = pre.next;
+                if (tmp.next == head) {
+                    tmp = tmp.next;
                 } else {
-                    pre.next = curr.next;
+                    tmp.next = head.next;
                 }
-                curr = curr.next;
+                head = head.next;
             }
-            return fakeHead.next;
+            return pre.next;
         }
     }
 

@@ -78,19 +78,19 @@ public class _377 {
          */
         public int combinationSum4(int[] nums, int target) {
             Arrays.sort(nums);
-            int[] result = new int[target + 1];
-            for (int i = 1; i < result.length; i++) {
+            int[] dp = new int[target + 1];
+            for (int i = 1; i < dp.length; i++) {
                 for (int num : nums) {
                     if (num > i) {
                         break;
                     } else if (num == i) {
-                        result[i]++;
+                        dp[i]++;
                     } else {
-                        result[i] += result[i - num];
+                        dp[i] += dp[i - num];
                     }
                 }
             }
-            return result[target];
+            return dp[target];
         }
     }
 
@@ -101,7 +101,7 @@ public class _377 {
          * <p>
          * Reference: https://discuss.leetcode.com/topic/52255/java-recursion-solution-using-hashmap-as-memory
          */
-        public static Map<Integer, Integer> map = new HashMap<>();//need to remove public static before submitting on Leetcode as it doesn't reset static variables
+        Map<Integer, Integer> map = new HashMap<>();
 
         public int combinationSum4(int[] nums, int target) {
             if (nums == null || nums.length == 0 || target < 0) {

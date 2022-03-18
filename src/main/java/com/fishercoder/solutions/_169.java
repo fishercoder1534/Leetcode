@@ -48,4 +48,26 @@ public class _169 {
             return res;
         }
     }
+
+    public static class Solution3 {
+        /**
+         * I'm glad to have come up with this idea myself on 10/12/2021.
+         */
+        public int majorityElement(int[] nums) {
+            int count = 1;
+            int candidate = nums[0];
+            for (int i = 1; i < nums.length; i++) {
+                if (nums[i] != candidate) {
+                    count--;
+                    if (count < 0) {
+                        candidate = nums[i];
+                        count = 1;
+                    }
+                } else {
+                    count++;
+                }
+            }
+            return candidate;
+        }
+    }
 }

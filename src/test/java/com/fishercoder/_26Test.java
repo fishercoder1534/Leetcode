@@ -8,17 +8,20 @@ import static org.junit.Assert.assertEquals;
 
 public class _26Test {
     private static _26.Solution1 solution1;
+    private static _26.Solution2 solution2;
     private static int[] nums;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _26.Solution1();
+        solution2 = new _26.Solution2();
     }
 
     @Test
     public void test1() {
         nums = new int[]{1, 1, 2};
         assertEquals(2, solution1.removeDuplicates(nums));
+        assertEquals(2, solution2.removeDuplicates(nums));
     }
 
     @Test

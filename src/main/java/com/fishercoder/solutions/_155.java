@@ -1,26 +1,8 @@
 package com.fishercoder.solutions;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Stack;
-
-/**
- * 155. Min Stack
- * Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-
- * push(x) -- Push element x onto stack.
- * pop() -- Removes the element on top of the stack.
- * top() -- Get the top element.
- * getMin() -- Retrieve the minimum element in the stack.
-
- * Example:
- * MinStack minStack = new MinStack();
- * minStack.push(-2);
- * minStack.push(0);
- * minStack.push(-3);
- * minStack.getMin();   --> Returns -3.
- * minStack.pop();
- * minStack.top();      --> Returns 0.
- * minStack.getMin();   --> Returns -2.
- */
 
 public class _155 {
 
@@ -29,9 +11,6 @@ public class _155 {
             private Stack<Integer> stack;
             private int min;
 
-            /**
-             * initialize your data structure here.
-             */
             public MinStack() {
                 stack = new Stack();
                 min = Integer.MAX_VALUE;
@@ -63,5 +42,46 @@ public class _155 {
                 return min;
             }
         }
+    }
+
+    public static class Solution2 {
+        /**
+         * We could store a pair onto the stack: the first element in the pair is the value itself,
+         * the second element in the pair is the current minimum element so far seen on the stack.
+         */
+        class MinStack {
+            Deque<int[]> stack;
+
+            public MinStack() {
+                stack = new LinkedList<>();
+            }
+
+            public void push(int val) {
+                if (!stack.isEmpty()) {
+                    int[] last = stack.peekLast();
+                    int currentMin = last[1];
+                    if (val < currentMin) {
+                        stack.addLast(new int[]{val, val});
+                    } else {
+                        stack.addLast(new int[]{val, currentMin});
+                    }
+                } else {
+                    stack.addLast(new int[]{val, val});
+                }
+            }
+
+            public void pop() {
+                stack.pollLast();
+            }
+
+            public int top() {
+                return stack.peekLast()[0];
+            }
+
+            public int getMin() {
+                return stack.peekLast()[1];
+            }
+        }
+
     }
 }

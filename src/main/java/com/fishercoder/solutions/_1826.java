@@ -4,7 +4,8 @@ public class _1826 {
     public static class Solution1 {
         public int badSensor(int[] sensor1, int[] sensor2) {
             //check if sensor2 is faulty
-            int i = 0, j = 0;
+            int i = 0;
+            int j = 0;
             for (; i < sensor1.length && j < sensor2.length - 1; ) {
                 if (sensor1[i] != sensor2[j]) {
                     i++;

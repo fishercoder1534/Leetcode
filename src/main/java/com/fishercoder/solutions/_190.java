@@ -26,9 +26,9 @@ public class _190 {
             for (int i = 0; i < 32; i++) {
                 res += n & 1;//get the most right bit each time
                 n >>>= 1;//do UN-signed right shift by 1 each time
+                //n >>= 1;//this line works as well on LeetCode OJ, choosing either one works
                 if (i < 31) {
-                    res <<=
-                            1;//shift this number to the left by 1 each time, so that eventually, this number is reversed
+                    res <<= 1;//shift this number to the left by 1 each time, so that eventually, this number is reversed
                 }
             }
             return res;

@@ -6,6 +6,40 @@ import java.util.List;
 public class _131 {
 
     public static class Solution1 {
+        /**
+         * credit: https://leetcode.com/problems/palindrome-partitioning/solution/
+         * DFS + backtracking
+         */
+        public List<List<String>> partition(String s) {
+            List<List<String>> result = new ArrayList<>();
+            dfs(0, result, new ArrayList<>(), s);
+            return result;
+        }
+
+        private void dfs(int start, List<List<String>> result, List<String> currentList, String s) {
+            if (start >= s.length()) {
+                result.add(new ArrayList<>(currentList));
+            }
+            for (int end = start; end < s.length(); end++) {
+                if (isPalindrome(s, start, end)) {
+                    currentList.add(s.substring(start, end + 1));
+                    dfs(end + 1, result, currentList, s);
+                    currentList.remove(currentList.size() - 1);
+                }
+            }
+        }
+
+        private boolean isPalindrome(String s, int start, int end) {
+            while (start < end) {
+                if (s.charAt(start++) != s.charAt(end--)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    public static class Solution2 {
         public List<List<String>> partition(String s) {
             List<List<String>> result = new ArrayList();
             int n = s.length();
