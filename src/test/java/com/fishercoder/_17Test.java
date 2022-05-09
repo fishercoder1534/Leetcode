@@ -9,12 +9,11 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class _17Test {
     private static _17.Solution1 solution1;
     private static _17.Solution2 solution2;
+    private static _17.Solution3 solution3;
     private static String digits;
     private static List<String> expected;
 
@@ -22,6 +21,7 @@ public class _17Test {
     public static void setup() {
         solution1 = new _17.Solution1();
         solution2 = new _17.Solution2();
+        solution3 = new _17.Solution3();
     }
 
     @Test
@@ -30,6 +30,7 @@ public class _17Test {
         expected = new ArrayList<>(Arrays.asList("a", "b", "c"));
         assertThat(expected).hasSameElementsAs(solution1.letterCombinations(digits));
         assertThat(expected).hasSameElementsAs(solution2.letterCombinations(digits));
+        assertThat(expected).hasSameElementsAs(solution3.letterCombinations(digits));
     }
 
     @Test
@@ -38,5 +39,6 @@ public class _17Test {
         expected = new ArrayList<>(Arrays.asList("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"));
         assertThat(expected).hasSameElementsAs(solution1.letterCombinations(digits));
         assertThat(expected).hasSameElementsAs(solution2.letterCombinations(digits));
+        assertThat(expected).hasSameElementsAs(solution3.letterCombinations(digits));
     }
 }

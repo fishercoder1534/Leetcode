@@ -37,7 +37,7 @@ public class _17 {
 
     public static class Solution2 {
         /**
-         * My completely solution on 10/11/2021, no backtracking involved.
+         * My completely original solution on 10/11/2021, no backtracking involved.
          */
         public List<String> letterCombinations(String digits) {
             List<String> ans = new ArrayList<>();
@@ -61,6 +61,31 @@ public class _17 {
                 }
             }
             return recursion(newAns, options, digits, index + 1);
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * My completely original solution on 5/9/2022, no backtracking involved or helper method involved.
+         */
+        public List<String> letterCombinations(String digits) {
+            List<String> ans = new ArrayList<>();
+            if (digits.equals("")) {
+                return ans;
+            }
+            String[] buttons = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+            ans.add("");
+            for (char c : digits.toCharArray()) {
+                String button = buttons[Integer.parseInt(c + "")];
+                List<String> newList = new ArrayList<>();
+                for (String str : ans) {
+                    for (char b : button.toCharArray()) {
+                        newList.add(str + b);
+                    }
+                }
+                ans = newList;
+            }
+            return ans;
         }
     }
 }
