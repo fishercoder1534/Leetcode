@@ -8,7 +8,7 @@ public class _1641 {
          * I solved this problem using Math, no DP, recursion or backtracking techniques.
          * Time: beat 100% submission consistently since it's O(n), essentialy it's O(1) because the contraints in the problem state: 1 <= n <= 50
          * After writing out from n = 1 to 3, we can see the pattern.
-         * Detailed reasoning to be seen in my youtube video on my channel: https://www.youtube.com/fishercoder.
+         * Detailed reasoning to be seen in my YouTube video on my channel: https://youtu.be/gdH4yfgfwiU
          */
         public int countVowelStrings(int n) {
             if (n == 1) {
