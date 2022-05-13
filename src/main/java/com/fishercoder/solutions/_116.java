@@ -20,7 +20,7 @@ public class _116 {
          * credit: https://discuss.leetcode.com/topic/1106/o-1-space-o-n-complexity-iterative-solution
          * based on level order traversal
          */
-        public void connect(Node root) {
+        public Node connect(Node root) {
 
             Node head = null; //head of the next level
             Node prev = null; //the leading node on the next level
@@ -54,6 +54,7 @@ public class _116 {
                 head = null;
                 prev = null;
             }
+            return root;
         }
     }
 
