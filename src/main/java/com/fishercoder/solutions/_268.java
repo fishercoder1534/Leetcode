@@ -17,4 +17,15 @@ public class _268 {
         }
     }
 
+    public static class Solution2 {
+        public int missingNumber(int[] nums) {
+            int n = nums.length;
+            long sum = n + (n * n - n) / 2;//this is the formula to compute the sum for arithmetic sequence
+            for (int i = 0; i < nums.length; i++) {
+                sum -= nums[i];
+            }
+            return (int) sum;
+        }
+    }
+
 }
