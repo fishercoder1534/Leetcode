@@ -2,11 +2,11 @@ package com.fishercoder.solutions;
 
 public class _867 {
     public static class Solution1 {
-        public int[][] transpose(int[][] A) {
-            int[][] result = new int[A[0].length][A.length];
-            for (int i = 0; i < A.length; i++) {
-                for (int j = 0; j < A[0].length; j++) {
-                    result[j][i] = A[i][j];
+        public int[][] transpose(int[][] matrix) {
+            int[][] result = new int[matrix[0].length][matrix.length];
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[0].length; j++) {
+                    result[j][i] = matrix[i][j];
                 }
             }
             return result;
