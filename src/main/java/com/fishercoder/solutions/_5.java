@@ -60,6 +60,40 @@ public class _5 {
             }
             return r - l - 1;
         }
+    }
+
+    public static class Solution3 {
+        /**
+         * My own implementation using the same idea.
+         */
+        public String longestPalindrome(String s) {
+            String ans = "";
+            int maxLen = 0;
+            for (int i = 0; i < s.length(); i++) {
+                int[] pair = expand(s, i, i);
+                if (pair[1] - pair[0] + 1 > maxLen) {
+                    maxLen = pair[1] - pair[0] + 1;
+                    ans = s.substring(pair[0], pair[1] + 1);
+                }
+                pair = expand(s, i, i + 1);
+                if (pair[1] - pair[0] + 1 > maxLen) {
+                    maxLen = pair[1] - pair[0] + 1;
+                    ans = s.substring(pair[0], pair[1] + 1);
+                }
+            }
+            return ans;
+        }
+
+        private int[] expand(String s, int l, int r) {
+            int[] pair = new int[2];
+            while (l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)) {
+                pair[0] = l;
+                pair[1] = r;
+                l--;
+                r++;
+            }
+            return pair;
+        }
 
     }
 }
