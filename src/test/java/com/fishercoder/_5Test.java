@@ -24,7 +24,7 @@ public class _5Test {
         s = "babad";
         assertEquals("bab", solution1.longestPalindrome(s));
         assertEquals("aba", solution2.longestPalindrome(s));
-        assertEquals("aba", solution3.longestPalindrome(s));
+        assertEquals("bab", solution3.longestPalindrome(s));
     }
 
 }
