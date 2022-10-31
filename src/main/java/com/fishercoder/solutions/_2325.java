@@ -31,6 +31,7 @@ public class _2325 {
             return sb.toString();
         }
     }
+
     public static class Solution2 {
 
         public String decodeMessage(String key, String message) {
@@ -41,7 +42,7 @@ public class _2325 {
             char keyArr[] = key.toCharArray();
             StringBuilder result = new StringBuilder();
 
-            for(int i = 0; i < keyArr.length; i++) {
+            for (int i = 0; i < keyArr.length; i++) {
                 if (keyArr[i] != ' ' && !bucket.containsKey(keyArr[i])) {
                     bucket.put(keyArr[i], ch++);
                 }
@@ -49,9 +50,12 @@ public class _2325 {
 
             // decode the message using the bucket
             char msgArr[] = message.toCharArray();
-            for(int i = 0; i < msgArr.length; i++) {
-                if(msgArr[i] == ' ') result.append(" ");
-                else result.append(bucket.get(msgArr[i]));
+            for (int i = 0; i < msgArr.length; i++) {
+                if (msgArr[i] == ' ') {
+                    result.append(" ");
+                } else {
+                    result.append(bucket.get(msgArr[i]));
+                }
             }
             return result.toString();
         }
