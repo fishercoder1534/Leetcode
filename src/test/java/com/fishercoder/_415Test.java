@@ -1,7 +1,6 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._415;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -23,45 +22,31 @@ public class _415Test {
         num2 = new String();
     }
 
-    @Before
-    public void setupForEachTest() {
-        expected = "";
-        actual = "";
-        num1 = "";
-        num2 = "";
-    }
-
     @Test
     public void test1() {
-
         num1 = "123";
         num2 = "34567";
         expected = "34690";
         actual = solution1.addStrings(num1, num2);
         assertEquals(expected, actual);
-
     }
 
     @Test
     public void test2() {
-
         num1 = "1";
         num2 = "9";
         expected = "10";
         actual = solution1.addStrings(num1, num2);
         assertEquals(expected, actual);
-
     }
 
     @Test
     public void test3() {
-
         num1 = "9";
         num2 = "99";
         expected = "108";
         actual = solution1.addStrings(num1, num2);
         assertEquals(expected, actual);
-
     }
 
 }

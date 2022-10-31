@@ -8,8 +8,11 @@ import java.util.Queue;
 public class _226 {
 
     public static class Solution1 {
+        /**
+         * An iterative solution
+         */
         public TreeNode invertTree(TreeNode root) {
-            if (root == null) {
+            if (root == null || (root.left == null && root.right == null)) {
                 return root;
             }
             Queue<TreeNode> q = new LinkedList();
@@ -31,8 +34,11 @@ public class _226 {
     }
 
     public static class Solution2 {
+        /**
+         * A recursive solution
+         */
         public TreeNode invertTree(TreeNode root) {
-            if (root == null) {
+            if (root == null || (root.left == null && root.right == null)) {
                 return root;
             }
             TreeNode temp = root.left;
@@ -45,10 +51,12 @@ public class _226 {
     }
 
     public static class Solution3 {
-        //more concise version
+        /**
+         * A more concise version
+         */
         public TreeNode invertTree(TreeNode root) {
             if (root == null) {
-                return root;
+                return null;
             }
             TreeNode temp = root.left;
             root.left = invertTree(root.right);

@@ -19,7 +19,7 @@ public class _283 {
 
     public static class Solution2 {
         public void moveZeroes(int[] nums) {
-            //this solutoin is the most optimal since it minimizes the number of operations
+            //this solution is the most optimal since it minimizes the number of operations
             //the idea is to swap the non-zero element to the first zero number position
             for (int i = 0, j = 0; i < nums.length && j < nums.length; j++) {
                 if (nums[j] != 0) {
@@ -49,6 +49,28 @@ public class _283 {
                         nums[j] = nums[i];
                         nums[i] = temp;
                     }
+                }
+            }
+        }
+    }
+
+    public static class Solution4 {
+        /**
+         * I'm glad that I finally figured this one out completely on my own, this O(n) time, O(1) space solution.
+         */
+        public void moveZeroes(int[] nums) {
+            int i = 0;//zero index
+            int j = 0;//non zero index
+            while (i < nums.length && j < nums.length) {
+                if (nums[j] != 0) {
+                    if (i < j) {
+                        nums[i] = nums[j];
+                        nums[j] = 0;
+                    }
+                }
+                j++;
+                while (i < nums.length && nums[i] != 0) {
+                    i++;
                 }
             }
         }

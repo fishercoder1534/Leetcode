@@ -18,7 +18,7 @@ public class _39 {
             if (target > 0) {
                 for (int i = start; i < candidates.length; i++) {
                     if (candidates[i] > target) {
-                        continue;//pruning
+                        break;//pruning
                     }
                     curr.add(candidates[i]);
                     backtracking(candidates, target - candidates[i], i, curr, result);

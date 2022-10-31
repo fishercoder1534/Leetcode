@@ -2,31 +2,18 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.ListNode;
 
-/**
- * 206. Reverse Linked List
- *
- * Reverse a singly linked list.
- *
- * Example:
- * Input: 1->2->3->4->5->NULL
- * Output: 5->4->3->2->1->NULL
- *
- * Follow up:
- * A linked list can be reversed either iteratively or recursively. Could you implement both?
- * */
 public class _206 {
 
     public static class Solution1 {
         public ListNode reverseList(ListNode head) {
-            ListNode prev = null;
-            ListNode curr = head;
-            while (curr != null) {
-                ListNode next = curr.next;
-                curr.next = prev;
-                prev = curr;
-                curr = next;
+            ListNode newHead = null;
+            while (head != null) {
+                ListNode next = head.next;
+                head.next = newHead;
+                newHead = head;
+                head = next;
             }
-            return prev;
+            return newHead;
         }
     }
 
@@ -44,6 +31,25 @@ public class _206 {
             newHead = head;
             head = next;
             return reverse(head, newHead);
+        }
+    }
+
+    public static class Solution3 {
+
+        /**
+         * I feel like using the variable called prev makes more sense to me on 10/25/2021
+         * since it's literally a previous node when we start reversing from the head of the list.
+         * Again, using a pen and paper to visualize the steps helps a lot to convert thoughts into code.
+         */
+        public ListNode reverseList(ListNode head) {
+            ListNode prev = null;
+            while (head != null) {
+                ListNode next = head.next;
+                head.next = prev;
+                prev = head;
+                head = next;
+            }
+            return prev;
         }
     }
 

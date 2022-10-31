@@ -14,4 +14,24 @@ public class _112 {
             return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
         }
     }
+
+    public static class Solution2 {
+        /**
+         * My completely original solution on 9/23/2021.
+         */
+        public boolean hasPathSum(TreeNode root, int targetSum) {
+            return dfs(root, 0, targetSum);
+        }
+
+        private boolean dfs(TreeNode root, int sum, int targetSum) {
+            if (root == null) {
+                return false;
+            }
+            sum += root.val;
+            if (root.left == null && root.right == null) {
+                return sum == targetSum;
+            }
+            return dfs(root.left, sum, targetSum) || dfs(root.right, sum, targetSum);
+        }
+    }
 }

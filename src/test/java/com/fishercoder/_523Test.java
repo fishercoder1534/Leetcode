@@ -109,4 +109,13 @@ public class _523Test {
         assertEquals(expected, solution2.checkSubarraySum(nums, k));
     }
 
+    @Test
+    public void test11() {
+        nums = new int[]{23, 2, 4, 6, 6};
+        expected = true;
+        k = 7;
+        assertEquals(expected, solution1.checkSubarraySum(nums, k));
+        assertEquals(expected, solution2.checkSubarraySum(nums, k));
+    }
+
 }

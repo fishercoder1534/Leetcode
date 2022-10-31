@@ -17,7 +17,6 @@ public class _966 {
                 if (!caseMap.containsKey(word.toLowerCase())) {
                     caseMap.put(word.toLowerCase(), word);
                 }
-
                 set.add(word);
             }
 
@@ -43,7 +42,6 @@ public class _966 {
                     ans[i] = "";
                 }
             }
-
             return ans;
         }
 
@@ -55,7 +53,6 @@ public class _966 {
                     ch[i] = '#';
                 }
             }
-
             return String.valueOf(ch);
         }
     }

@@ -1,7 +1,11 @@
 package com.fishercoder.solutions;
 
+import java.util.Arrays;
+
 public class _985 {
+    
     public static class Solution1 {
+
         public int[] sumEvenAfterQueries(int[] A, int[][] queries) {
             int[] result = new int[A.length];
             for (int i = 0; i < A.length; i++) {
@@ -13,12 +17,7 @@ public class _985 {
         }
 
         private int computeEvenSum(int[] A) {
-            int sum = 0;
-            for (int num : A) {
-                if (num % 2 == 0) {
-                    sum += num;
-                }
-            }
+            int sum = Arrays.stream(A).filter(num -> num % 2 == 0).sum();
             return sum;
         }
     }

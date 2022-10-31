@@ -11,6 +11,7 @@ public class _283Test {
     private static _283.Solution1 solution1;
     private static _283.Solution2 solution2;
     private static _283.Solution3 solution3;
+    private static _283.Solution4 solution4;
     private static int[] nums;
 
     @BeforeClass
@@ -18,6 +19,7 @@ public class _283Test {
         solution1 = new _283.Solution1();
         solution2 = new _283.Solution2();
         solution3 = new _283.Solution3();
+        solution4 = new _283.Solution4();
     }
 
     @Test
@@ -102,5 +104,33 @@ public class _283Test {
         nums = new int[]{1, 0, 0};
         solution3.moveZeroes(nums);
         assertArrayEquals(new int[]{1, 0, 0}, nums);
+    }
+
+    @Test
+    public void test13() {
+        nums = new int[]{0};
+        solution3.moveZeroes(nums);
+        assertArrayEquals(new int[]{0}, nums);
+    }
+
+    @Test
+    public void test14() {
+        nums = new int[]{0, 0, 1};
+        solution3.moveZeroes(nums);
+        assertArrayEquals(new int[]{1, 0, 0}, nums);
+    }
+
+    @Test
+    public void test15() {
+        nums = new int[]{1, 0, 1};
+        solution3.moveZeroes(nums);
+        assertArrayEquals(new int[]{1, 1, 0}, nums);
+    }
+
+    @Test
+    public void test16() {
+        nums = new int[]{2, 1};
+        solution4.moveZeroes(nums);
+        assertArrayEquals(new int[]{2, 1}, nums);
     }
 }

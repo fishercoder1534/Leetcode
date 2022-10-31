@@ -6,11 +6,6 @@ import java.util.List;
 
 public class _593 {
     public static class Solution1 {
-        /**
-         * Note: I don't need to use backtracking to find all permutations, this is an overkill.
-         * This is the most easy one: https://leetcode.com/articles/kill-process-2/#approach-3-checking-every-case-accepted
-         */
-
         public boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {
             List<int[]> input = new ArrayList<>(Arrays.asList(p1, p2, p3, p4));
             List<List<int[]>> allPermuations = getAllPermutations(input);

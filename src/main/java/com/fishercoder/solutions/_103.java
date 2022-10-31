@@ -11,34 +11,31 @@ import java.util.Queue;
 public class _103 {
     public static class Solution1 {
         public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-            Queue<TreeNode> q = new LinkedList();
+            Queue<TreeNode> queue = new LinkedList();
             List<List<Integer>> levels = new ArrayList();
             if (root == null) {
                 return levels;
             }
-            q.offer(root);
+            queue.offer(root);
             boolean forward = true;
-            while (!q.isEmpty()) {
-                int size = q.size();
+            while (!queue.isEmpty()) {
+                int size = queue.size();
                 List<Integer> level = new ArrayList();
                 for (int i = 0; i < size; i++) {
-                    TreeNode curr = q.poll();
+                    TreeNode curr = queue.poll();
                     level.add(curr.val);
                     if (curr.left != null) {
-                        q.offer(curr.left);
+                        queue.offer(curr.left);
                     }
                     if (curr.right != null) {
-                        q.offer(curr.right);
+                        queue.offer(curr.right);
                     }
                 }
-                if (forward) {
-                    forward = false;
-                    levels.add(level);
-                } else {
+                if (!forward) {
                     Collections.reverse(level);
-                    levels.add(level);
-                    forward = true;
                 }
+                forward = !forward;
+                levels.add(level);
             }
             return levels;
         }

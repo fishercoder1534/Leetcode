@@ -24,10 +24,23 @@ public class CommonUtils {
     public static void main(String... strings) {
         Integer[] nums = new Integer[]{1, 2, 3, 4, 5};
         printArray_generic_type(nums);
+        String input1 = "[\"zDkA\",\"GfAj\",\"lt\"],[\"GfAj\",\"rtupD\",\"og\",\"l\"],[\"rtupD\",\"IT\",\"jGcew\",\"ZwFqF\"],[\"og\",\"yVobt\",\"EjA\",\"piUyQ\"],[\"IT\",\"XFlc\",\"W\",\"rB\"],[\"l\",\"GwQg\",\"shco\",\"Dub\",\"KwgZq\"],[\"oXMG\",\"uqe\"],[\"sNyV\",\"WbrP\"]";
+        String input2 = "[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]";
+        CommonUtils.printListList(convertLeetCode2DStringArrayInputIntoJavaArray(input1));
+        CommonUtils.printListList(convertLeetCode2DStringArrayInputIntoJavaArray(input2));
+        CommonUtils.print(convertLeetCode1DStringArrayInputIntoJavaArray("[\"abcsi\",\"abyzjgj\",\"advz\",\"ag\",\"agkgdkob\",\"agpr\",\"ail\"]"));
+        CommonUtils.print2DIntArray(convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[448,931,123,345],[889],[214,962],[576,746,897]"));
     }
 
     public static void printArray(boolean[] booleans) {
         for (boolean i : booleans) {
+            System.out.print(i + ", ");
+        }
+        System.out.println();
+    }
+
+    public static void printArray(double[] booleans) {
+        for (double i : booleans) {
             System.out.print(i + ", ");
         }
         System.out.println();
@@ -254,9 +267,41 @@ public class CommonUtils {
         System.out.println();
     }
 
-    public static int[][] convertLeetCodeArrayInputIntoJavaArray(String input) {
+    public static char[][] convertLeetCodeRegular2DCharArrayInputIntoJavaArray(String input) {
+/**LeetCode 2-d char array usually comes in like this:
+ * ["#"," ","#"],[" "," ","#"],["#","c"," "] which is wrapped in double quotes instead of single quotes which makes it not usable in Java code.
+ * This method helps with the conversion.*/
+        String[] arrays = input.split("],\\[");
+//        CommonUtils.printArray_generic_type(arrays);
+        int m = arrays.length;
+        int n = arrays[1].split(",").length;
+        char[][] ans = new char[m][n];
+        for (int i = 0; i < m; i++) {
+            if (i == 0) {
+                String str = arrays[i].substring(1);
+                String[] strs = str.split(",");
+                for (int j = 0; j < strs.length; j++) {
+                    ans[i][j] = strs[j].charAt(1);
+                }
+            } else if (i == m - 1) {
+                String str = arrays[i].substring(0, arrays[i].length() - 1);
+                String[] strs = str.split(",");
+                for (int j = 0; j < strs.length; j++) {
+                    ans[i][j] = strs[j].charAt(1);
+                }
+            } else {
+                String[] strs = arrays[i].split(",");
+                for (int j = 0; j < strs.length; j++) {
+                    ans[i][j] = strs[j].charAt(1);
+                }
+            }
+        }
+        return ans;
+    }
+
+    public static int[][] convertLeetCodeRegularRectangleArrayInputIntoJavaArray(String input) {
         /**
-         * LeetCode 2-d array input usually comes like this:
+         * LeetCode 2-d array input usually comes like this: it's a REGULAR rectangle
          * [[448,931],[234,889],[214,962],[576,746]]
          * The expected input for this method is: "[448,931],[234,889],[214,962],[576,746]"
          * i.e. strip off the beginning and ending square brackets, that's it.
@@ -288,5 +333,117 @@ public class CommonUtils {
         }
 //        CommonUtils.print2DIntArray(output);
         return output;
+    }
+
+    public static int[][] convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(String input) {
+        /**
+         * LeetCode 2-d array input usually comes like this: each row could have different length
+         * [[448,931,123,345],[889],[214,962],[576,746,897]]
+         * The expected input for this method is: "[448,931,123,345],[889],[214,962],[576,746,897]"
+         * i.e. strip off the beginning and ending square brackets, that's it.
+         * The output of this method will be a standard Java 2-d array.
+         * */
+        String[] arrays = input.split("],\\[");
+        int maxLen = 0;
+        int[] sizes = new int[arrays.length];
+        for (int i = 0; i < arrays.length; i++) {
+            String[] strs = arrays[i].split(",");
+            maxLen = Math.max(maxLen, strs.length);
+            sizes[i] = strs.length;
+        }
+        int[][] output = new int[arrays.length][];
+        if (arrays.length == 1) {
+            String str = arrays[0].substring(1, arrays[0].length() - 1);
+            String[] nums = str.split(",");
+            output[0] = new int[sizes[0]];
+            for (int j = 0; j < sizes[0]; j++) {
+                output[0][j] = Integer.parseInt(nums[j]);
+            }
+        } else {
+            for (int i = 0; i < arrays.length; i++) {
+                if (i == 0) {
+                    String str = arrays[i].substring(1);
+                    String[] nums = str.split(",");
+                    output[i] = new int[sizes[i]];
+                    for (int j = 0; j < sizes[i]; j++) {
+                        output[i][j] = Integer.parseInt(nums[j]);
+                    }
+                } else if (i == arrays.length - 1) {
+                    String str = arrays[i].substring(0, arrays[i].length() - 1);
+                    String[] nums = str.split(",");
+                    output[i] = new int[sizes[i]];
+                    for (int j = 0; j < sizes[i]; j++) {
+                        output[i][j] = Integer.parseInt(nums[j]);
+                    }
+                } else {
+                    String[] nums = arrays[i].split(",");
+                    output[i] = new int[sizes[i]];
+                    for (int j = 0; j < sizes[i]; j++) {
+                        output[i][j] = Integer.parseInt(nums[j]);
+                    }
+                }
+            }
+        }
+        return output;
+    }
+
+    public static List<List<String>> convertLeetCode2DStringArrayInputIntoJavaArray(String input) {
+        /**
+         * How to copy LeetCode 2-d String array into this method:
+         * 1. remove the beginning and ending quotes;
+         * 2. put double quotes into this method parameter;
+         * 3. copy the input into the double quotes.
+         *
+         * LeetCode 2-d array input usually comes like this: each row could have different length
+         * [["A","B"],["C"],["B","C"],["D"]]
+         * The expected input for this method is: "[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]"
+         * just copy the LeetCode input: ["A","B"],["C"],["B","C"],["D"] into double quotes in Java,
+         * it'll auto escape the double quotes.
+         * i.e. strip off the beginning and ending square brackets, that's it.
+         * The output of this method will be a standard Java 2-d array.
+         * */
+        String[] arrays = input.split("],\\[");
+        List<List<String>> result = new ArrayList<>();
+        for (int i = 0; i < arrays.length; i++) {
+            List<String> level = new ArrayList<>();
+            String[] strings;
+            if (i == 0) {
+                strings = arrays[i].substring(1).split(",");
+            } else if (i == arrays.length - 1) {
+                strings = arrays[i].substring(0, arrays[i].length() - 1).split(",");
+            } else {
+                strings = arrays[i].split(",");
+            }
+            for (int j = 0; j < strings.length; j++) {
+                level.add(strings[j]);
+            }
+            result.add(level);
+        }
+        return result;
+    }
+
+    public static List<String> convertLeetCode1DStringArrayInputIntoJavaArray(String input) {
+        /**
+         * LeetCode 2-d array input usually comes like this: each row could have different length
+         * ["A","B","C"]
+         * The expected input for this method is: "[\"A\",\"B\",\"C\"]"
+         * just copy the LeetCode input: ["A","B","C"] into double quotes in Java,
+         * it'll auto escape the double quotes.
+         * The output of this method will be a standard Java 1-d array.
+         * */
+        String[] arrays = input.split(",");
+        List<String> result = new ArrayList<>();
+        for (int i = 0; i < arrays.length; i++) {
+            String word;
+            if (i == 0) {
+                word = arrays[i].substring(1);
+            } else if (i == arrays.length - 1) {
+                word = arrays[i].substring(0, arrays[i].length() - 1);
+            } else {
+                word = arrays[i];
+            }
+            result.add(word);
+        }
+        return result;
     }
 }
