@@ -1,7 +1,7 @@
 package com.fishercoder.solutions;
 
 public class _1844 {
-    public static class Soluiton1 {
+    public static class Solution1 {
         public String replaceDigits(String s) {
             StringBuilder sb = new StringBuilder();
             for (char c : s.toCharArray()) {
@@ -16,9 +16,8 @@ public class _1844 {
     }
     public static class Solution2 {
         public String replaceDigits(String s) {
-
             char inpArr[] = s.toCharArray();
-            for(int i = 1; i < inpArr.length; i+= 2) {
+            for (int i = 1; i < inpArr.length; i += 2) {
                 inpArr[i] = (char) (inpArr[i - 1] + inpArr[i] - '0');
             }
             return String.valueOf(inpArr);
