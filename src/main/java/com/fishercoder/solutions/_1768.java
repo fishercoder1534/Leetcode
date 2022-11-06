@@ -19,21 +19,23 @@ public class _1768 {
             return sb.toString();
         }
     }
+
     public static class Solution2 {
         public String mergeAlternately(String word1, String word2) {
             int len1 = word1.length();
             int len2 = word2.length();
             StringBuilder sb = new StringBuilder();
-
             int diffLen = Math.min(len1, len2);
-            int i = 0;
-            for(i = 0; i < diffLen; i++) {
+            int i;
+            for (i = 0; i < diffLen; i++) {
                 sb.append(word1.charAt(i));
                 sb.append(word2.charAt(i));
             }
-            if (i >= len1) sb.append(word2.substring(i));
-            else sb.append(word1.substring(i));
-
+            if (i >= len1) {
+                sb.append(word2.substring(i));
+            } else {
+                sb.append(word1.substring(i));
+            }
             return sb.toString();
         }
     }
