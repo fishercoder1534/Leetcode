@@ -15,7 +15,7 @@ public class _57 {
             }
             // merge all overlapping intervals to one considering newInterval
             while (i < intervals.length && intervals[i][0] <= newInterval[1]) {
-                newInterval = new int[]{ // we could mutate newInterval here also
+                newInterval = new int[]{
                         Math.min(newInterval[0], intervals[i][0]),
                         Math.max(newInterval[1], intervals[i][1])};
                 i++;
