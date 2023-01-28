@@ -1,7 +1,6 @@
 package com.fishercoder.solutions;
 
 public class _125 {
-
     public static class Solution1 {
         public boolean isPalindrome(String s) {
             int i = 0;
