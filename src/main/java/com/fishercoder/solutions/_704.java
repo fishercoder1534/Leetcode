@@ -41,7 +41,13 @@ public class _704 {
                     right = mid - 1;
                 }
             }
-            return nums[left] == target ? left : (right >= 0 && nums[right] == target) ? right : -1;
+            if (left <= nums.length && nums[left] == target) {
+                return left;
+            }
+            if (right >= 0 && nums[right] == target) {
+                return right;
+            }
+            return -1;
         }
     }
 }
