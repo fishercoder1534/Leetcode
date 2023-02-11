@@ -49,4 +49,18 @@ public class _235Test {
 
         assertEquals(p, solution1.lowestCommonAncestor(root, p, q));
     }
+
+    @Test
+    public void test3() {
+        root = TreeUtils.constructBinaryTree(Arrays.asList(0, -1000000000, 1000000000));
+        TreeUtils.printBinaryTree(root);
+
+        p = TreeUtils.constructBinaryTree(Arrays.asList(-1000000000));
+        TreeUtils.printBinaryTree(p);
+
+        q = TreeUtils.constructBinaryTree(Arrays.asList(1000000000));
+        TreeUtils.printBinaryTree(q);
+
+        assertEquals(root, solution1.lowestCommonAncestor(root, p, q));
+    }
 }
