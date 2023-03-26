@@ -24,7 +24,6 @@ public class _160Test {
   }
 
   @Test
-  @Ignore
   public void test1() {
     headA = new ListNode(3);
     headB = new ListNode(2);
