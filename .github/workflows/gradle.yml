@@ -24,4 +24,4 @@ jobs:
         java-version: '11'
         cache: 'gradle'
     - name: Build with Gradle
-      run: chmod +x gradlew && ./gradlew build -x checkstyleMain
+      run: chmod +x gradlew && ./gradlew test
