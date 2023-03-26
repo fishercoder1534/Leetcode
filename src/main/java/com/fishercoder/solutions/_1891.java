@@ -8,7 +8,7 @@ public class _1891 {
          * My completely original solution on 1/27/2022.
          */
         public int maxLength(int[] ribbons, int k) {
-            long sum = 0l;
+            long sum = 0L;
             int max = ribbons[0];
             for (int num : ribbons) {
                 sum += num;

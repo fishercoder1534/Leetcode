@@ -3,8 +3,8 @@ package com.fishercoder.solutions;
 public class _2535 {
     public static class Solution1 {
         public int differenceOfSum(int[] nums) {
-            long elementSum = 0l;
-            long digitSum = 0l;
+            long elementSum = 0L;
+            long digitSum = 0L;
             for (int num : nums) {
                 elementSum += num;
                 while (num != 0) {

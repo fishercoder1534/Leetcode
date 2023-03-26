@@ -59,14 +59,14 @@ public class _54 {
             while (ans.size() < total) {
                 for (; i < m && i >= lowerRow && j < n && j >= lowerCol; ) {
                     ans.add(matrix[i][j]);
-                    if (direction == 0) {//east
+                    if (direction == 0) { //east
                         j++;
-                    } else if (direction == 1) {//south
+                    } else if (direction == 1) { //south
                         i++;
-                    } else if (direction == 2) {//west
+                    } else if (direction == 2) { //west
                         j--;
                     } else {
-                        i--;//north
+                        i--; //north
                     }
                 }
                 if (direction == 0) {

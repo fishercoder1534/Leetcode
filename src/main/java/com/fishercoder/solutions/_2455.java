@@ -3,7 +3,7 @@ package com.fishercoder.solutions;
 public class _2455 {
     public static class Solution1 {
         public int averageValue(int[] nums) {
-            Long sum = 0l;
+            Long sum = 0L;
             int count = 0;
             for (int num : nums) {
                 if (num % 3 == 0 && num % 2 == 0) {
