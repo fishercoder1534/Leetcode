@@ -13,7 +13,7 @@ public class _2558 {
                 int max = maxHeap.poll();
                 maxHeap.offer((int) Math.sqrt(max));
             }
-            long res = 0l;
+            long res = 0L;
             while (!maxHeap.isEmpty()) {
                 res += maxHeap.poll();
             }

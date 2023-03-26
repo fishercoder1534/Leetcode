@@ -18,16 +18,18 @@ public class _528 {
         public int pickIndex() {
             int len = preSums.length;
             int idx = random.nextInt(preSums[len - 1]) + 1;
-            int left = 0, right = len - 1;
+            int left = 0;
+            int right = len - 1;
             // search position
             while (left < right) {
                 int mid = left + (right - left) / 2;
-                if (preSums[mid] == idx)
+                if (preSums[mid] == idx) {
                     return mid;
-                else if (preSums[mid] < idx)
+                } else if (preSums[mid] < idx) {
                     left = mid + 1;
-                else
+                } else {
                     right = mid;
+                }
             }
             return left;
         }

@@ -12,7 +12,7 @@ public class _2583 {
             queue.offer(root);
             while (!queue.isEmpty()) {
                 int size = queue.size();
-                long thisSum = 0l;
+                long thisSum = 0L;
                 for (int i = 0; i < size; i++) {
                     TreeNode curr = queue.poll();
                     thisSum += curr.val;
