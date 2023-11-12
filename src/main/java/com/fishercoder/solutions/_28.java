@@ -23,12 +23,13 @@ public class _28 {
       int n = needle.length();
       int h = haystack.length();
 
-      for(int i = 0; i <= h - n; i++) {
-        for(int j = 0; j < n && haystack.charAt(i + j) == needle.charAt(j); j++) {
-          if(j == n - 1) return i;
+      for (int i = 0; i <= h - n; i++) {
+        for (int j = 0; j < n && haystack.charAt(i + j) == needle.charAt(j); j++) {
+          if (j == n - 1) {
+            return i;
+          }
         }
       }
-
       return -1;
     }
   }
