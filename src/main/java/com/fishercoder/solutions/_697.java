@@ -1,10 +1,6 @@
 package com.fishercoder.solutions;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class _697 {
     public static class Solution1 {
@@ -73,6 +69,35 @@ public class _697 {
                 if (count.get(num) == degree) {
                     result = Math.min(result, right.get(num) - left.get(num) + 1);
                 }
+            }
+            return result;
+        }
+    }
+
+    public static class Solution3 {
+        public int findShortestSubArray(int[] nums) {
+            Map<Integer, Integer> frequencyMap = new HashMap<>();
+            Map<Integer, List<Integer>> numberToIndicesMap = new HashMap<>();
+            for (int i = 0; i < nums.length; i++) {
+                frequencyMap.put(nums[i], frequencyMap.getOrDefault(nums[i], 0) + 1);
+                List<Integer> indices = numberToIndicesMap.getOrDefault(nums[i], new ArrayList<>());
+                indices.add(i);
+                numberToIndicesMap.put(nums[i], indices);
+            }
+            int degree = 0;
+            Set<Integer> numbersThatOccurTheMost = new HashSet<>();
+            for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
+                degree = Math.max(degree, entry.getValue());
+            }
+            for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
+                if (entry.getValue() == degree) {
+                    numbersThatOccurTheMost.add(entry.getKey());
+                }
+            }
+            int result = nums.length;
+            for (int num : numbersThatOccurTheMost) {
+                List<Integer> indices = numberToIndicesMap.get(num);
+                result = Math.min(result, indices.get(indices.size() - 1) - indices.get(0) + 1);
             }
             return result;
         }

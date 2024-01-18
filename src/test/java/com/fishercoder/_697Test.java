@@ -9,12 +9,14 @@ import static org.junit.Assert.assertEquals;
 public class _697Test {
     private static _697.Solution1 solution1;
     private static _697.Solution2 solution2;
+    private static _697.Solution3 solution3;
     private static int[] nums;
 
     @BeforeClass
     public static void setup() {
         solution1 = new _697.Solution1();
         solution2 = new _697.Solution2();
+        solution3 = new _697.Solution3();
     }
 
     @Test
@@ -22,6 +24,7 @@ public class _697Test {
         nums = new int[]{1};
         assertEquals(1, solution1.findShortestSubArray(nums));
         assertEquals(1, solution2.findShortestSubArray(nums));
+        assertEquals(1, solution3.findShortestSubArray(nums));
     }
 
     @Test
@@ -29,6 +32,7 @@ public class _697Test {
         nums = new int[]{1, 2, 2, 3, 1};
         assertEquals(2, solution1.findShortestSubArray(nums));
         assertEquals(2, solution2.findShortestSubArray(nums));
+        assertEquals(2, solution3.findShortestSubArray(nums));
     }
 
     @Test
@@ -36,6 +40,7 @@ public class _697Test {
         nums = new int[]{1, 2, 2, 3, 1, 1};
         assertEquals(6, solution1.findShortestSubArray(nums));
         assertEquals(6, solution2.findShortestSubArray(nums));
+        assertEquals(6, solution3.findShortestSubArray(nums));
     }
 
     @Test
@@ -43,6 +48,7 @@ public class _697Test {
         nums = new int[]{1, 2, 2, 3, 1, 1, 5};
         assertEquals(6, solution1.findShortestSubArray(nums));
         assertEquals(6, solution2.findShortestSubArray(nums));
+        assertEquals(6, solution3.findShortestSubArray(nums));
     }
 
     @Test
@@ -50,6 +56,7 @@ public class _697Test {
         nums = new int[]{1, 2, 2, 3, 1, 4, 2};
         assertEquals(6, solution1.findShortestSubArray(nums));
         assertEquals(6, solution2.findShortestSubArray(nums));
+        assertEquals(6, solution3.findShortestSubArray(nums));
     }
 
 }
