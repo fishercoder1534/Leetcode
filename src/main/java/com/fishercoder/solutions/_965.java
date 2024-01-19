@@ -21,4 +21,11 @@ public class _965 {
             return dfs(root.left, value) && dfs(root.right, value);
         }
     }
+    public static class Solution2 {
+        public boolean isUnivalTree(TreeNode root) {
+            boolean leftUnivaled = root.left == null || root.left.val == root.val && isUnivalTree(root.left);
+            boolean rightUnivaled = root.right == null || root.right.val == root.val && isUnivalTree(root.right);
+            return leftUnivaled && rightUnivaled;
+        }
+    }
 }
