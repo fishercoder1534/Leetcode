@@ -35,10 +35,17 @@ dependencies {
     compile 'junit:junit:4.13'
     compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
     testCompile "junit:junit:4.13.1"
-    testCompile("org.assertj:assertj-core:3.11.1")
 
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    testCompile("org.assertj:assertj-core:3.11.1")
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
     testCompileOnly 'org.projectlombok:lombok:1.18.12'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+}
+
+test {
+    useJUnitPlatform()
 }
