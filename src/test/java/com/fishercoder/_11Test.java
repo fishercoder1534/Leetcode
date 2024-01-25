@@ -1,10 +1,10 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._11;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _11Test {
     private static _11.Solution1 solution1;
@@ -12,8 +12,8 @@ public class _11Test {
     private static int[] height;
     private static int expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _11.Solution1();
         solution2 = new _11.Solution2();
     }
