@@ -48,8 +48,8 @@ public class _295 {
         public static class MedianFinder {
             /**
              * credit: https://discuss.leetcode.com/topic/27521/short-simple-java-c-python-o-log-n-o-1
-             * The idea is for sure to use two heaps, one is max heap, one is min heap, we always let the max heap be one element
-             * bigger than min heap if the total number of elements is not even.
+             * The idea is for sure to use two heaps, one is max heap, one is min heap, we always let the max heap have one more element
+             * than min heap if the total number of elements is not even.
              * we could always get the median in O(1) time.
              * 1. use Long type to avoid overflow
              * 2. negate the numbers for small heap to save the effort for writing a reverse comparator, brilliant!
@@ -81,6 +81,43 @@ public class _295 {
                     return large.peek();
                 }
                 return (large.peek() - small.peek()) / 2.0;
+            }
+
+        }
+    }
+
+    public static class Solution3 {
+        public static class MedianFinder {
+            /**
+             * The same as Solution2, but not using negation for minHeap.
+             */
+
+            private Queue<Long> maxHeap;
+            private Queue<Long> minHeap;
+
+            /**
+             * initialize your data structure here.
+             */
+            public MedianFinder() {
+                maxHeap = new PriorityQueue<>();
+                minHeap = new PriorityQueue<>((a, b) -> (int) (b - a));
+            }
+
+            // Adds a number into the data structure.
+            public void addNum(int num) {
+                maxHeap.offer((long) num);
+                minHeap.offer(maxHeap.poll());
+                if (maxHeap.size() < minHeap.size()) {
+                    maxHeap.offer(minHeap.poll());
+                }
+            }
+
+            // Returns the median of current data stream
+            public double findMedian() {
+                if (maxHeap.size() > minHeap.size()) {
+                    return maxHeap.peek();
+                }
+                return (maxHeap.peek() + minHeap.peek()) / 2.0;
             }
 
         }
