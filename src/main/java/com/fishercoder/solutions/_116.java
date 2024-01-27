@@ -60,7 +60,7 @@ public class _116 {
 
     public static class Solution2 {
         /**
-         * My complete original solution on 10/10/2021.
+         * My complete original solution on 10/10/2021, although with O(h) extra space.
          */
         public Node connect(Node root) {
             if (root == null) {
