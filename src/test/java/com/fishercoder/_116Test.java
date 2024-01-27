@@ -1,16 +1,16 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._116;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _116Test {
     private static _116.Solution1 solution1;
     private static _116.Solution2 solution2;
     private static _116.Node root;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _116.Solution1();
         solution2 = new _116.Solution2();
     }
