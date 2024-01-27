@@ -1,9 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.common.utils.TreeUtils;
-import com.fishercoder.solutions._2007;
 import com.fishercoder.solutions._222;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -44,9 +42,9 @@ public class _222Test {
 
     @Test
     public void test3() {
-        root = TreeUtils.constructBinaryTree(Arrays.asList());
+        root = TreeUtils.constructBinaryTree(Arrays.asList(0));
         TreeUtils.printBinaryTree(root);
-        expected = 3;
+        expected = 1;
         assertEquals(expected, solution1.countNodes(root));
         assertEquals(expected, solution2.countNodes(root));
     }
