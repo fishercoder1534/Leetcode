@@ -2,6 +2,10 @@ package com.fishercoder.solutions;
 
 import com.fishercoder.common.classes.ListNode;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class _148 {
 
     public static class Solution1 {
@@ -190,6 +194,31 @@ public class _148 {
             ListNode mid = midPrev.next;
             midPrev.next = null;//this is the key, otherwise, StackOverflow exception will occur.
             return mid;
+        }
+    }
+
+    public static class Solution4 {
+        /**This is the most naive, using O(n) extra memory, O(nlogn) time.*/
+        public ListNode sortList(ListNode head) {
+            if (head == null) {
+                return head;
+            }
+            List<Integer> list = new ArrayList<>();
+            ListNode tmp = head;
+            while (tmp != null) {
+                list.add(tmp.val);
+                tmp = tmp.next;
+            }
+            Collections.sort(list);
+            ListNode pre = new ListNode(-1);
+            ListNode newHead = new ListNode(list.get(0));
+            pre.next = newHead;
+            for (int i = 1; i < list.size(); i++) {
+                ListNode next = new ListNode(list.get(i));
+                newHead.next = next;
+                newHead = newHead.next;
+            }
+            return pre.next;
         }
     }
 }
