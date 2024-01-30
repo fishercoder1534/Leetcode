@@ -2,15 +2,15 @@ package com.fishercoder;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions._18;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _18Test {
     private static _18.Solution1 solution1;
     private static int[] nums;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _18.Solution1();
     }
 
