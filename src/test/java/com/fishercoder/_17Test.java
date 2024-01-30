@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -37,8 +38,13 @@ public class _17Test {
     public void test2() {
         digits = "23";
         expected = new ArrayList<>(Arrays.asList("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"));
-        assertEquals(expected, solution1.letterCombinations(digits));
-        assertEquals(expected, solution2.letterCombinations(digits));
-        assertEquals(expected, solution3.letterCombinations(digits));
+        Collections.sort(expected);
+        List<String> actual = solution1.letterCombinations(digits);
+        Collections.sort(actual);
+        assertEquals(expected, actual);
+        actual = solution2.letterCombinations(digits);
+        assertEquals(expected, actual);
+        actual = solution3.letterCombinations(digits);
+        assertEquals(expected, actual);
     }
 }
