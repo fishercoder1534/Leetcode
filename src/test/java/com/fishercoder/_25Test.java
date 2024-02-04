@@ -3,10 +3,10 @@ package com.fishercoder;
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions._25;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _25Test {
     private static _25.Solution1 solution1;
@@ -16,8 +16,8 @@ public class _25Test {
     private static ListNode head;
     private static int k;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _25.Solution1();
         solution2 = new _25.Solution2();
         solution3 = new _25.Solution3();
