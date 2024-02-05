@@ -25,8 +25,7 @@ public class _46 {
                     newResult.add(newList);
                 }
             }
-            result = newResult;
-            return recurse(nums, index + 1, result);
+            return recurse(nums, index + 1, newResult);
         }
     }
 
