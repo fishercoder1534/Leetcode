@@ -3,13 +3,13 @@ package com.fishercoder;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions._144;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _144Test {
     private static _144.Solution1 solution1;
@@ -18,8 +18,8 @@ public class _144Test {
     private static TreeNode root;
     private static List<Integer> inorder;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _144.Solution1();
         solution2 = new _144.Solution2();
         solution3 = new _144.Solution3();

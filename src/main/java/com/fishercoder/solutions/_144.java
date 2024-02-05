@@ -28,8 +28,7 @@ public class _144 {
 
     public static class Solution2 {
         public List<Integer> preorderTraversal(TreeNode root) {
-            List<Integer> list = new ArrayList();
-            return pre(root, list);
+            return pre(root, new ArrayList());
         }
 
         List<Integer> pre(TreeNode root, List<Integer> list) {
