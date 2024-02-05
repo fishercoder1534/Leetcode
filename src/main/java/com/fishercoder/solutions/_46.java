@@ -6,28 +6,27 @@ import java.util.List;
 import java.util.Set;
 
 public class _46 {
-
     public static class Solution1 {
         public List<List<Integer>> permute(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             result.add(new ArrayList<>());
-            return recursion(nums, 0, result);
+            return recurse(nums, 0, result);
         }
 
-        private List<List<Integer>> recursion(int[] nums, int index, List<List<Integer>> result) {
+        private List<List<Integer>> recurse(int[] nums, int index, List<List<Integer>> result) {
             if (index == nums.length) {
                 return result;
             }
             List<List<Integer>> newResult = new ArrayList<>();
-            for (List<Integer> eachList : result) {
-                for (int i = 0; i <= eachList.size(); i++) {
-                    List<Integer> newList = new ArrayList<>(eachList);
+            for (List<Integer> list : result) {
+                for (int i = 0; i <= list.size(); i++) {
+                    List<Integer> newList = new ArrayList<>(list);
                     newList.add(i, nums[index]);
                     newResult.add(newList);
                 }
             }
             result = newResult;
-            return recursion(nums, index + 1, result);
+            return recurse(nums, index + 1, result);
         }
     }
 
