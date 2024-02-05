@@ -17,7 +17,7 @@ public class _47 {
                 return result;
             }
             boolean[] used = new boolean[nums.length];
-            Arrays.sort(nums);//this sorting is critical for the correctness of this backtracking algorithm as we compare the two adjancent neighbors to filter out possible duplicate permutations
+            Arrays.sort(nums);//this sorting is critical for the correctness of this backtracking algorithm as we compare the two adjacent neighbors to filter out possible duplicate permutations
             backtracking(nums, used, new ArrayList(), result);
             return result;
         }
@@ -52,10 +52,9 @@ public class _47 {
 
     public static class Solution2 {
         public List<List<Integer>> permuteUnique(int[] nums) {
-            Arrays.sort(nums);
             Set<List<Integer>> set = new HashSet<>();
             set.add(new ArrayList<>());
-            set = recursion(nums, set, 0);
+            set = recurse(nums, set, 0);
             List<List<Integer>> res = new ArrayList<>();
             for (List<Integer> list : set) {
                 res.add(list);
@@ -63,7 +62,7 @@ public class _47 {
             return res;
         }
 
-        private Set<List<Integer>> recursion(int[] nums, Set<List<Integer>> set, int pos) {
+        private Set<List<Integer>> recurse(int[] nums, Set<List<Integer>> set, int pos) {
             if (pos == nums.length) {
                 return set;
             }
@@ -75,8 +74,7 @@ public class _47 {
                     newSet.add(newList);
                 }
             }
-            set = newSet;
-            return recursion(nums, set, pos + 1);
+            return recurse(nums, newSet, pos + 1);
         }
     }
 }
