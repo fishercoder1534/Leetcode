@@ -1,7 +1,5 @@
 package com.fishercoder.solutions;
 
-import com.fishercoder.common.utils.CommonUtils;
-
 import java.util.List;
 
 public class _139 {
@@ -23,7 +21,6 @@ public class _139 {
                     }
                 }
             }
-            CommonUtils.printArray(dp);
             return dp[n];
         }
     }
