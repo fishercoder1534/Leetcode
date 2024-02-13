@@ -3,6 +3,7 @@ package com.fishercoder.solutions;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class _140 {
     public static class Solution1 {
@@ -10,12 +11,12 @@ public class _140 {
             return dfs(s, wordDict, new HashMap<>());
         }
 
-        List<String> dfs(String s, List<String> wordDict, HashMap<String, List<String>> map) {
+        List<String> dfs(String s, List<String> wordDict, Map<String, List<String>> map) {
             if (map.containsKey(s)) {
                 return map.get(s);
             }
 
-            ArrayList<String> result = new ArrayList<>();
+            List<String> result = new ArrayList<>();
             if (s.length() == 0) {
                 result.add("");
                 return result;
