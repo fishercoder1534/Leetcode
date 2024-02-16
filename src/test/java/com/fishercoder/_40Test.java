@@ -1,14 +1,13 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._40;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _40Test {
     private static _40.Solution1 solution1;
@@ -16,8 +15,8 @@ public class _40Test {
     private static int target;
     private static List<List<Integer>> expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _40.Solution1();
     }
 
