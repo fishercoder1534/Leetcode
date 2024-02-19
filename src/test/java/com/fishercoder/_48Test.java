@@ -2,8 +2,8 @@ package com.fishercoder;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions._48;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _48Test {
     private static _48.Solution1 solution1;
@@ -11,8 +11,8 @@ public class _48Test {
     private static _48.Solution3 solution3;
     private static int[][] matrix;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _48.Solution1();
         solution2 = new _48.Solution2();
         solution3 = new _48.Solution3();
