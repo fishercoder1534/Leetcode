@@ -1,18 +1,15 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._49;
+import org.apache.commons.collections4.CollectionUtils;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.commons.collections4.CollectionUtils;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertTrue;
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _49Test {
     private static _49.Solution1 solution1;
@@ -20,8 +17,8 @@ public class _49Test {
     private static List<List<String>> expected;
     private static List<List<String>> actual;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _49.Solution1();
     }
 
