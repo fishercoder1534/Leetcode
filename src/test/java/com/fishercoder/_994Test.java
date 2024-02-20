@@ -2,10 +2,10 @@ package com.fishercoder;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions._994;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _994Test {
     private static _994.Solution1 solution1;
@@ -13,8 +13,8 @@ public class _994Test {
     private static _994.Solution3 solution3;
     private static int[][] grid;
 
-    @BeforeClass
-    public static void setUp() {
+    @BeforeEach
+    public void setUp() {
         solution1 = new _994.Solution1();
         solution2 = new _994.Solution2();
         solution3 = new _994.Solution3();
