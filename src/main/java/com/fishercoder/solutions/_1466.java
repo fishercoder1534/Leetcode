@@ -1,11 +1,6 @@
 package com.fishercoder.solutions;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 
 public class _1466 {
     public static class Solution1 {
@@ -67,6 +62,43 @@ public class _1466 {
                 }
             }
             return minReorder;
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * build an adjacency list and BFS
+         */
+        public int minReorder(int n, int[][] connections) {
+            //int[] in the below map holds two integers, the first one means the node, the second one means the direction:
+            // 0 means it's pointing to the key, i.e. doesn't need to be flipped,
+            // 1 means it's the opposite direction, i.e. needs to be flipped
+            Map<Integer, List<int[]>> adjList = new HashMap<>();
+            for (int[] conn : connections) {
+                adjList.computeIfAbsent(conn[0], k -> new ArrayList<>()).add(new int[]{conn[1], 1});
+                adjList.computeIfAbsent(conn[1], k -> new ArrayList<>()).add(new int[]{conn[0], 0});
+            }
+            int count = 0;
+            Queue<Integer> queue = new LinkedList<>();
+            queue.offer(0);
+            boolean[] visited = new boolean[n];
+            visited[0] = true;
+            while (!queue.isEmpty()) {
+                Integer curr = queue.poll();
+                if (!adjList.containsKey(curr)) {
+                    continue;
+                }
+                for (int[] next : adjList.get(curr)) {
+                    int neighbor = next[0];
+                    int flip = next[1];
+                    if (!visited[neighbor]) {
+                        count += flip;
+                        visited[neighbor] = true;
+                        queue.offer(neighbor);
+                    }
+                }
+            }
+            return count;
         }
     }
 }
