@@ -1,21 +1,20 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._54;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _54Test {
 
     private static _54.Solution1 solution1;
     private static int[][] matrix;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _54.Solution1();
     }
 
