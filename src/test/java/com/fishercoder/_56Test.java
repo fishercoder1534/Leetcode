@@ -4,7 +4,7 @@ import com.fishercoder.solutions._56;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _56Test {
     private static _56.Solution1 solution1;
@@ -29,7 +29,7 @@ public class _56Test {
                 {2, 4},
                 {5, 5}
         };
-        assertEquals(expected, solution1.merge(intervals));
+        assertArrayEquals(expected, solution1.merge(intervals));
     }
 
 }
