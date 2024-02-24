@@ -1,10 +1,10 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._55;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _55Test {
     private static _55.Solution1 solution1;
@@ -13,8 +13,8 @@ public class _55Test {
     private static _55.Solution4 solution4;
     private static int[] nums;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _55.Solution1();
         solution2 = new _55.Solution2();
         solution3 = new _55.Solution3();
