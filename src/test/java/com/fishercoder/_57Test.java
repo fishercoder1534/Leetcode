@@ -1,10 +1,9 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._57;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _57Test {
     private static _57.Solution1 solution1;
@@ -16,7 +15,7 @@ public class _57Test {
 
     @Test
     public void test1() {
-        assertEquals(new int[][]{
+        Assertions.assertArrayEquals(new int[][]{
                 {1, 5},
                 {6, 9}
         }, solution1.insert(new int[][]{
@@ -28,7 +27,7 @@ public class _57Test {
 
     @Test
     public void test2() {
-        assertEquals(new int[][]{
+        Assertions.assertArrayEquals(new int[][]{
                 {1, 2},
                 {3, 10},
                 {12, 16}
