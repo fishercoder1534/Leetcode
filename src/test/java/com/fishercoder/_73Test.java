@@ -1,10 +1,10 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._73;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _73Test {
     private static _73.Solution1 solution1;
@@ -14,8 +14,8 @@ public class _73Test {
     private static int[][] matrix;
     private static int[][] expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _73.Solution1();
         solution2 = new _73.Solution2();
         solution3 = new _73.Solution3();
