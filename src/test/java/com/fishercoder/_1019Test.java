@@ -10,10 +10,11 @@ import static org.junit.Assert.assertArrayEquals;
 
 public class _1019Test {
     private static _1019.Solution1 solution1;
-
+    private static _1019.Solution2 solution2;
     @BeforeClass
     public static void setup() {
         solution1 = new _1019.Solution1();
+        solution2 = new _1019.Solution2();
     }
 
     @Test
@@ -34,4 +35,9 @@ public class _1019Test {
         assertArrayEquals(new int[]{7, 9, 9, 9, 0, 5, 0, 0}, solution1.nextLargerNodes(head));
     }
 
+    @Test
+    public void test4() {
+        ListNode head = LinkedListUtils.contructLinkedList(new int[]{2, 7, 4, 3, 5});
+        assertArrayEquals(new int[]{7, 0, 5, 5, 0}, solution2.nextLargerNodes(head));
+    }
 }
