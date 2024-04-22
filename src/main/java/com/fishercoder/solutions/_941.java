@@ -2,28 +2,28 @@ package com.fishercoder.solutions;
 
 public class _941 {
     public static class Solution1 {
-        public boolean validMountainArray(int[] A) {
+        public boolean validMountainArray(int[] arr) {
             int i = 0;
-            for (; i < A.length - 1; i++) {
-                if (A[i] < A[i + 1]) {
+            for (; i < arr.length - 1; i++) {
+                if (arr[i] < arr[i + 1]) {
                     continue;
-                } else if (A[i] == A[i + 1]) {
+                } else if (arr[i] == arr[i + 1]) {
                     return false;
                 } else {
                     break;
                 }
             }
-            if (i == 0 || i >= A.length - 1) {
+            if (i == 0 || i >= arr.length - 1) {
                 return false;
             }
-            for (; i < A.length - 1; i++) {
-                if (A[i] > A[i + 1]) {
+            for (; i < arr.length - 1; i++) {
+                if (arr[i] > arr[i + 1]) {
                     continue;
                 } else {
                     return false;
                 }
             }
-            return i == A.length - 1;
+            return i == arr.length - 1;
         }
     }
 }

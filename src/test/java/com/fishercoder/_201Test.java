@@ -6,13 +6,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by fishercoder on 5/3/17.
- */
 public class _201Test {
     private static _201.Solution1 solution1;
-    private static int m;
-    private static int n;
+    private static int left;
+    private static int right;
     private static int actual;
     private static int expected;
 
@@ -23,45 +20,45 @@ public class _201Test {
 
     @Test
     public void test1() {
-        m = 5;
-        n = 7;
-        actual = solution1.rangeBitwiseAnd(m, n);
+        left = 5;
+        right = 7;
+        actual = solution1.rangeBitwiseAnd(left, right);
         expected = 4;
         assertEquals(expected, actual);
-        actual = solution1.rangeBitwiseAnd(m, n);
+        actual = solution1.rangeBitwiseAnd(left, right);
         assertEquals(expected, actual);
     }
 
     @Test
     public void test2() {
-        m = 1;
-        n = 2;
-        actual = solution1.rangeBitwiseAnd(m, n);
+        left = 1;
+        right = 2;
+        actual = solution1.rangeBitwiseAnd(left, right);
         expected = 0;
         assertEquals(expected, actual);
-        actual = solution1.rangeBitwiseAnd(m, n);
+        actual = solution1.rangeBitwiseAnd(left, right);
         assertEquals(expected, actual);
     }
 
     @Test
     public void test3() {
-        m = 0;
-        n = 2147483647;
-        actual = solution1.rangeBitwiseAnd(m, n);
+        left = 0;
+        right = 2147483647;
+        actual = solution1.rangeBitwiseAnd(left, right);
         expected = 0;
         assertEquals(expected, actual);
-        actual = solution1.rangeBitwiseAnd(m, n);
+        actual = solution1.rangeBitwiseAnd(left, right);
         assertEquals(expected, actual);
     }
 
     @Test
     public void test4() {
-        m = 20000;
-        n = 2147483647;
-        actual = solution1.rangeBitwiseAnd(m, n);
+        left = 20000;
+        right = 2147483647;
+        actual = solution1.rangeBitwiseAnd(left, right);
         expected = 0;
         assertEquals(expected, actual);
-        actual = solution1.rangeBitwiseAnd(m, n);
+        actual = solution1.rangeBitwiseAnd(left, right);
         assertEquals(expected, actual);
     }
 }

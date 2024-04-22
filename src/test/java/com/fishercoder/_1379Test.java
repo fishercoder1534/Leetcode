@@ -10,6 +10,7 @@ import java.util.Arrays;
 
 public class _1379Test {
     private static _1379.Solution1 solution1;
+    private static _1379.Solution2 solution2;
     private static TreeNode original;
     private static TreeNode cloned;
     private static TreeNode target;
@@ -17,6 +18,7 @@ public class _1379Test {
     @BeforeClass
     public static void setup() {
         solution1 = new _1379.Solution1();
+        solution2 = new _1379.Solution2();
     }
 
     @Test
@@ -25,6 +27,7 @@ public class _1379Test {
         cloned = TreeUtils.constructBinaryTree(Arrays.asList(7, 4, 3, null, null, 6, 19));
         target = TreeUtils.constructBinaryTree(Arrays.asList(3, 6, 19));
         TreeUtils.printBinaryTree(solution1.getTargetCopy(original, cloned, target));
+        TreeUtils.printBinaryTree(solution2.getTargetCopy(original, cloned, target));
     }
 
     @Test

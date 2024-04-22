@@ -1,19 +1,18 @@
 package com.fishercoder;
 
-import static org.junit.Assert.assertArrayEquals;
-
-import org.junit.BeforeClass;
-import org.junit.Test;
-
 import com.fishercoder.solutions._66;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _66Test {
     private static _66.Solution1 solution1;
     private static _66.Solution2 solution2;
     private static int[] digits;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _66.Solution1();
         solution2 = new _66.Solution2();
     }

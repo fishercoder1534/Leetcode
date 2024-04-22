@@ -32,15 +32,19 @@ public class _334 {
         /**
          * Time: O(n)
          * Space: O(1)
+         *
+         * Idea: we can keep updating these two numbers:
+         * firstSmallestNumber and secondSmallestNumber
+         * until we found one that's bigger than both
          */
         public boolean increasingTriplet(int[] nums) {
-            int small = Integer.MAX_VALUE;
-            int big = Integer.MAX_VALUE;
+            int firstSmallestNumber = Integer.MAX_VALUE;
+            int secondSmallestNumber = Integer.MAX_VALUE;
             for (int num : nums) {
-                if (num <= small) {
-                    small = num;
-                } else if (num <= big) {
-                    big = num;
+                if (num <= firstSmallestNumber) {
+                    firstSmallestNumber = num;
+                } else if (num <= secondSmallestNumber) {
+                    secondSmallestNumber = num;
                 } else {
                     return true;
                 }

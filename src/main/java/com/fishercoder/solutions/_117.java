@@ -1,18 +1,28 @@
 package com.fishercoder.solutions;
 
-import com.fishercoder.common.classes.TreeLinkNode;
-
 public class _117 {
+
+    public static class Node {
+        public int val;
+        public Node left;
+        public Node right;
+        public Node next;
+
+        public Node(int x) {
+            this.val = x;
+        }
+    }
+
     public static class Solution1 {
         /**
          * credit: https://discuss.leetcode.com/topic/1106/o-1-space-o-n-complexity-iterative-solution
          * O(1) space, based on level order traversal
          */
-        public void connect(TreeLinkNode root) {
+        public Node connect(Node root) {
 
-            TreeLinkNode head = null; //head of the next level
-            TreeLinkNode prev = null; //the leading node on the next level
-            TreeLinkNode cur = root;  //current node of current level
+            Node head = null; //head of the next level
+            Node prev = null; //the leading node on the next level
+            Node cur = root;  //current node of current level
 
             while (cur != null) {
 
@@ -44,6 +54,7 @@ public class _117 {
                 head = null;
                 prev = null;
             }
+            return root;
         }
     }
 }

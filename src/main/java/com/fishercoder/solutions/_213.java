@@ -3,39 +3,59 @@ package com.fishercoder.solutions;
 public class _213 {
     public static class Solution1 {
         /**
-         * Another dp problem:
-         * separate them into two cases:
-         * 1. rob from house 1 to n-1, get max1
-         * 2. rob from house 2 to n, get max2 take the max from the above two max
+         * Basically there are two ways to rob the houses: one is to rob from 0 to n - 1, the other is to rob from 1 to n, and then take the max from these two.
+         * Time: O(n)
+         * Space: O(n)
          */
         public int rob(int[] nums) {
-            if (nums == null || nums.length == 0) {
-                return 0;
-            }
             if (nums.length == 1) {
                 return nums[0];
             }
-            if (nums.length == 2) {
-                return Math.max(nums[0], nums[1]);
-            }
-            int[] dp = new int[nums.length - 1];
+            return Math.max(rob(nums, 0, nums.length - 1), rob(nums, 1, nums.length));
+        }
 
-            //rob 1 to n-1
-            dp[0] = nums[0];
-            dp[1] = Math.max(nums[0], nums[1]);
-            for (int i = 2; i < nums.length - 1; i++) {
+        private int rob(int[] nums, int start, int end) {
+            int[] dp = new int[nums.length];
+            dp[start] = nums[start];
+            if (end - start <= 1) {
+                return nums[start];
+            }
+            dp[start + 1] = Math.max(nums[start], nums[start + 1]);
+            for (int i = start + 2; i < end; i++) {
                 dp[i] = Math.max(dp[i - 2] + nums[i], dp[i - 1]);
             }
-            int prevMax = dp[nums.length - 2];
+            return dp[end - 1];
+        }
+    }
 
-            //rob 2 to n
-            dp = new int[nums.length - 1];
-            dp[0] = nums[1];
-            dp[1] = Math.max(nums[1], nums[2]);
-            for (int i = 3; i < nums.length; i++) {
-                dp[i - 1] = Math.max(dp[i - 3] + nums[i], dp[i - 2]);
+    public static class Solution2 {
+        /**
+         * This solution is identical to the above solution 1, the only difference is that instead of using an extra array, we use only two extra variables here to reduce the space complexity to O(1).
+         * Time: O(n)
+         * Space: O(1)
+         * <p>
+         * Just draw out how this rotation works on a piece of paper, it'll be easy to figure out how first, second and tmp variables keep shifting towards the right of the array.
+         */
+        public int rob(int[] nums) {
+            if (nums.length == 1) {
+                return nums[0];
             }
-            return Math.max(prevMax, dp[nums.length - 2]);
+            return Math.max(rob(nums, 0, nums.length - 1), rob(nums, 1, nums.length));
+        }
+
+        private int rob(int[] nums, int start, int end) {
+            int first = nums[start];
+            if (end - start <= 1) {
+                return first;
+            }
+            int second = Math.max(nums[start], nums[start + 1]);
+            int tmp;
+            for (int i = start + 2; i < end; i++) {
+                tmp = Math.max(second, first + nums[i]);
+                first = second;
+                second = tmp;
+            }
+            return Math.max(first, second);
         }
     }
 }

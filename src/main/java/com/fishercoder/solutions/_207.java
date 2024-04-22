@@ -11,7 +11,9 @@ import java.util.Set;
 public class _207 {
 
     public static class Solution1 {
-        /**Kahn's algorithm for topological sorting*/
+        /**
+         * Kahn's algorithm for topological sorting
+         */
         public boolean canFinish(int numCourses, int[][] prerequisites) {
             int[] indegree = new int[numCourses];
             for (int[] prereq : prerequisites) {

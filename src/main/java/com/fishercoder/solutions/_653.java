@@ -3,7 +3,9 @@ package com.fishercoder.solutions;
 import com.fishercoder.common.classes.TreeNode;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class _653 {
 
@@ -32,6 +34,24 @@ public class _653 {
             if (root.right != null) {
                 dfs(root.right, list);
             }
+        }
+    }
+
+    public static class Solution2 {
+        public boolean findTarget(TreeNode root, int k) {
+            return dfs(root, new HashSet(), k);
+        }
+
+        private boolean dfs(TreeNode root, Set<Integer> set, int k) {
+            if (root == null) {
+                return false;
+            }
+
+            if (set.contains(k - root.val)) {
+                return true;
+            }
+            set.add(root.val);
+            return dfs(root.left, set, k) || dfs(root.right, set, k);
         }
     }
 }

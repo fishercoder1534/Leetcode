@@ -1,51 +1,35 @@
 package com.fishercoder;
 
-import com.fishercoder.common.classes.Interval;
 import com.fishercoder.solutions._56;
-import java.util.ArrayList;
-import java.util.List;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _56Test {
-  private static _56.Solution1 solution1;
-  private static List<Interval> intervals;
-  private static List<Interval> expected;
+    private static _56.Solution1 solution1;
+    private static int[][] intervals;
+    private static int[][] expected;
 
-  @BeforeClass
-  public static void setup() {
-    solution1 = new _56.Solution1();
-  }
+    @BeforeEach
+    public void setup() {
+        solution1 = new _56.Solution1();
+    }
 
-  @Test
-  public void test1() {
-    intervals = new ArrayList();
-    intervals.add(new Interval(2, 3));
-    intervals.add(new Interval(5, 5));
-    intervals.add(new Interval(2, 2));
-    intervals.add(new Interval(3, 4));
-    intervals.add(new Interval(3, 4));
+    @Test
+    public void test1() {
+        intervals = new int[][]{
+                {2, 3},
+                {5, 5},
+                {2, 2},
+                {3, 4},
+                {3, 4}
+        };
+        expected = new int[][]{
+                {2, 4},
+                {5, 5}
+        };
+        assertArrayEquals(expected, solution1.merge(intervals));
+    }
 
-    expected = new ArrayList<>();
-    expected.add(new Interval(2, 4));
-    expected.add(new Interval(5, 5));
-    assertEquals(expected, solution1.merge(intervals));
-  }
-
-  @Test
-  public void test2() {
-    intervals = new ArrayList();
-    intervals.add(new Interval(1, 3));
-    intervals.add(new Interval(2, 6));
-    intervals.add(new Interval(8, 10));
-    intervals.add(new Interval(15, 18));
-
-    expected = new ArrayList<>();
-    expected.add(new Interval(1, 6));
-    expected.add(new Interval(8, 10));
-    expected.add(new Interval(15, 18));
-    assertEquals(expected, solution1.merge(intervals));
-  }
 }

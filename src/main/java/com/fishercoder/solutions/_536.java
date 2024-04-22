@@ -8,6 +8,9 @@ import java.util.Deque;
 public class _536 {
 
     public static class Solution1 {
+        /**
+         * recursive solution
+         */
         public TreeNode str2tree(String s) {
             if (s.equals("")) {
                 return null;
@@ -38,6 +41,9 @@ public class _536 {
     }
 
     public static class Solution2 {
+        /**
+         * iterative solution
+         */
         public TreeNode str2tree(String s) {
             Deque<TreeNode> stack = new ArrayDeque<>();
             for (int i = 0, j = i; i < s.length(); i++, j = i) {

@@ -37,4 +37,35 @@ public class _279 {
         }
     }
 
+    public static class Solution3 {
+        /**
+         * My completely original DP solution on 10/14/2021.
+         * <p>
+         * Again, once you use a pen and paper to visualize your thought process, the idea flows out very quickly.
+         * Thinking without a pen and paper is a waste of time in most cases! :)
+         */
+        public int numSquares(int n) {
+            int[] dp = new int[n + 1];
+            for (int i = 1; i <= n; i++) {
+                int x = (int) Math.sqrt(i);
+                if (Math.pow(x, 2) == i) {
+                    dp[i] = 1;
+                } else {
+                    dp[i] = i;
+                    int left = 1;
+                    int right = i - 1;
+                    while (left < right) {
+                        dp[i] = Math.min(dp[i], dp[left] + dp[right]);
+                        left++;
+                        right--;
+                    }
+                    if (left == right && i % left == 0) {
+                        dp[i] = Math.min(dp[i], (i / left) * dp[left]);
+                    }
+                }
+            }
+            return dp[n];
+        }
+    }
+
 }

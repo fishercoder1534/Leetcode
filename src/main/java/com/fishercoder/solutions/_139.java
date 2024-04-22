@@ -1,7 +1,5 @@
 package com.fishercoder.solutions;
 
-import com.fishercoder.common.utils.CommonUtils;
-
 import java.util.List;
 
 public class _139 {
@@ -17,15 +15,12 @@ public class _139 {
             dp[0] = true;
             for (int i = 1; i <= n; i++) {
                 for (int j = 0; j < i; j++) {
-                    if (dp[j]
-                            &&
-                            wordDict.contains(s.substring(j, i))) {
+                    if (dp[j] && wordDict.contains(s.substring(j, i))) {
                         dp[i] = true;
                         break;
                     }
                 }
             }
-            CommonUtils.printArray(dp);
             return dp[n];
         }
     }

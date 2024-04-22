@@ -2,12 +2,10 @@ package com.fishercoder;
 
 import com.fishercoder.solutions._1062;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-@Ignore
 public class _1062Test {
     private static _1062.Solution1 solution1;
 

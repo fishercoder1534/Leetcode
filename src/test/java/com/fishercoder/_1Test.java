@@ -1,17 +1,17 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._1;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1Test {
     private static _1.Solution1 solution1;
     private static int[] nums;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1.Solution1();
     }
 
