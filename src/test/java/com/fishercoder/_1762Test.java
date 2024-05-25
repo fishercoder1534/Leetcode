@@ -1,0 +1,26 @@
+package com.fishercoder;
+
+import com.fishercoder.solutions._1762;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+public class _1762Test {
+    private static _1762.Solution1 solution1;
+    private static int[] heights;
+    private static int[] expected;
+
+    @BeforeEach
+    public void setup() {
+        solution1 = new _1762.Solution1();
+    }
+
+    @Test
+    public void test1() {
+        heights = new int[]{4, 2, 3, 1};
+        expected = new int[]{0, 2, 3};
+        assertArrayEquals(expected, solution1.findBuildings(heights));
+    }
+
+}
