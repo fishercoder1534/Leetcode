@@ -96,4 +96,45 @@ public class _314 {
         }
     }
 
+    public static class Solution3 {
+        public List<List<Integer>> verticalOrder(TreeNode root) {
+            if (root == null) {
+                return new ArrayList<>();
+            }
+            TreeMap<Integer, List<Integer>> map = new TreeMap<>();
+            Queue<NodeWithIndex> queue = new LinkedList<>();
+            queue.offer(new NodeWithIndex(root, 0));
+            while (!queue.isEmpty()) {
+                int size = queue.size();
+                for (int i = 0; i < size; i++) {
+                    NodeWithIndex nodeWithIndex = queue.poll();
+                    List<Integer> thisList = map.getOrDefault(nodeWithIndex.index, new ArrayList<>());
+                    thisList.add(nodeWithIndex.node.val);
+                    map.put(nodeWithIndex.index, thisList);
+                    if (nodeWithIndex.node.left != null) {
+                        queue.offer(new NodeWithIndex(nodeWithIndex.node.left, nodeWithIndex.index - 1));
+                    }
+                    if (nodeWithIndex.node.right != null) {
+                        queue.offer(new NodeWithIndex(nodeWithIndex.node.right, nodeWithIndex.index + 1));
+                    }
+                }
+            }
+            List<List<Integer>> result = new ArrayList<>();
+            for (int index : map.keySet()) {
+                result.add(map.get(index));
+            }
+            return result;
+        }
+
+        class NodeWithIndex {
+            TreeNode node;
+            int index;
+
+            public NodeWithIndex(TreeNode node, int index) {
+                this.node = node;
+                this.index = index;
+            }
+        }
+    }
+
 }
