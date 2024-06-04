@@ -47,7 +47,7 @@ public class _1676 {
          */
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode[] nodes) {
             TreeNode ans = nodes[0];
-            for (int i = 0; i < nodes.length; i++) {
+            for (int i = 1; i < nodes.length; i++) {
                 ans = lca(root, ans, nodes[i]);
             }
             return ans;
