@@ -49,7 +49,7 @@ public class _1644 {
 
     public static class Solution2 {
         /**
-         * This satisfies the follow-up question: Can you find the LCA traversing the tree, without checking nodes existence?
+         * This still checks nodes existence.
          */
         int found = 0;
 
@@ -69,6 +69,39 @@ public class _1644 {
                 return root;
             }
             return (left != null && right != null) ? root : left != null ? left : right;
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * Credit: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/solutions/944963/beat-96-recursion-without-count-easy-understanding/
+         */
+        public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+            if (root == null || p == null || q == null) {
+                return null;
+            }
+            TreeNode result = findLCA(root, p, q);
+            if (result == p) {
+                //if p equals result, we'll check the existence of q in the subtree of p
+                return findLCA(p, q, q) != null ? result : null;
+            } else if (result == q) {
+                //if q equals result, we'll check the existence of p in the subtree of q
+                return findLCA(q, p, p) != null ? result : null;
+            }
+            //otherwise, it's this case: (p != result && q != result) || result == null
+            return result;
+        }
+
+        private TreeNode findLCA(TreeNode root, TreeNode p, TreeNode q) {
+            if (root == null || p == root || q == root) {
+                return root;
+            }
+            TreeNode left = findLCA(root.left, p, q);
+            TreeNode right = findLCA(root.right, p, q);
+            if (left != null && right != null) {
+                return root;
+            }
+            return left != null ? left : right;
         }
     }
 }
