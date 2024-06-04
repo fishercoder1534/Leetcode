@@ -63,4 +63,38 @@ public class _408 {
             }
         }
     }
+
+    public static class Solution2 {
+        public boolean validWordAbbreviation(String word, String abbr) {
+            int aLen = abbr.length();
+            int wLen = word.length();
+            if (aLen > wLen) {
+                return false;
+            }
+            int i = 0;
+            int j = 0;
+            while (i < wLen && j < aLen) {
+                if (word.charAt(i) == abbr.charAt(j)) {
+                    i++;
+                    j++;
+                    continue;
+                }
+
+                //now the two chars don't match, then the char in abbr should be a valid digit: 0 < x <= 9
+                if (abbr.charAt(j) == '0' || !Character.isDigit(abbr.charAt(j))) {
+                    return false;
+                }
+
+                //now we count the number of letters that are abbreviated, i.e. get the number from abbr before next letter shows up in abbr
+                int num = 0;
+                while (j < aLen && Character.isDigit(abbr.charAt(j))) {
+                    num = num * 10 + (abbr.charAt(j) - '0');
+                    j++;
+                }
+
+                i += num;
+            }
+            return i == wLen && j == aLen;
+        }
+    }
 }
