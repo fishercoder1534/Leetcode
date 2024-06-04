@@ -1,26 +1,23 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._408;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _408Test {
     private static _408.Solution1 solution1;
+    private static _408.Solution2 solution2;
     private static Boolean expected;
     private static Boolean actual;
     private static String word;
     private static String abbr;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _408.Solution1();
-    }
-
-    @Before
-    public void setupForEachTest() {
+        solution2 = new _408.Solution2();
         word = "";
         abbr = "";
     }
@@ -31,6 +28,8 @@ public class _408Test {
         abbr = "i12iz4n";
         expected = true;
         actual = solution1.validWordAbbreviation(word, abbr);
+        assertEquals(expected, actual);
+        actual = solution2.validWordAbbreviation(word, abbr);
         assertEquals(expected, actual);
     }
 
