@@ -1,18 +1,20 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._224;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _224Test {
     private static _224.Solution1 solution1;
+    private static _224.Solution2 solution2;
     private static int expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _224.Solution1();
+        solution2 = new _224.Solution2();
     }
 
     @Test
@@ -20,6 +22,7 @@ public class _224Test {
         String s = "1 + 1";
         expected = 2;
         assertEquals(expected, solution1.calculate(s));
+        assertEquals(expected, solution2.calculate(s));
     }
 
     @Test
@@ -27,6 +30,7 @@ public class _224Test {
         String s = " 2-1 + 2 ";
         expected = 3;
         assertEquals(expected, solution1.calculate(s));
+        assertEquals(expected, solution2.calculate(s));
     }
 
     @Test
@@ -34,6 +38,7 @@ public class _224Test {
         String s = "(1+(4+5+2)-3)+(6+8)";
         expected = 23;
         assertEquals(expected, solution1.calculate(s));
+        assertEquals(expected, solution2.calculate(s));
     }
 
     @Test
@@ -41,6 +46,7 @@ public class _224Test {
         String s = "1-(-2)";
         expected = 3;
         assertEquals(expected, solution1.calculate(s));
+        assertEquals(expected, solution2.calculate(s));
     }
 
 }
