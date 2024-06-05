@@ -68,7 +68,45 @@ public class _224 {
             }
             return !stack.isEmpty() ? Integer.parseInt(stack.peekLast()) + result : result;
         }
+    }
 
+    public static class Solution2 {
+        /**
+         * Simple and clean recursion solution, credit: https://leetcode.com/problems/basic-calculator/solutions/2344042/java-2ms-100-recursion-easy-to-understand/
+         * Key points:
+         * 1. it uses a global variable called index to control which char to iterate on;
+         * 2. it passes the entire string s into recursive functions.
+         */
+        int index;
+
+        public int calculate(String s) {
+            index = 0;
+            return cal(s);
+        }
+
+        private int cal(String s) {
+            int result = 0;
+            int num = 0;
+            int sign = 1;
+            while (index < s.length()) {
+                char c = s.charAt(index++);
+                if (c >= '0' && c <= '9') {
+                    num = num * 10 + c - '0';
+                } else if (c == '(') {
+                    //this is the beginning of a new sub-problem, we let recursion do its job
+                    num = cal(s);
+                } else if (c == ')') {
+                    //this is the end of a problem/sub-problem, so we return
+                    return result + sign * num;
+                } else if (c == '+' || c == '-') {
+                    //now we know we finished reading one number and a new number has begun
+                    result += sign * num;
+                    num = 0;
+                    sign = c == '-' ? -1 : 1;
+                }
+            }
+            return result + sign * num;
+        }
     }
 
 }
