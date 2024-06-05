@@ -7,7 +7,7 @@ import java.util.Stack;
 public class _1249 {
     public static class Solution1 {
         public String minRemoveToMakeValid(String s) {
-            Stack<Character> stack = new Stack<>();
+            Deque<Character> stack = new LinkedList<>();
             int leftParen = 0;
             int rightParen = 0;
             for (char c : s.toCharArray()) {
