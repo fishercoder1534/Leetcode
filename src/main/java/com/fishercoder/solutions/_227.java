@@ -29,6 +29,7 @@ public class _227 {
                         stack.addLast(stack.pollLast() * num);
                     }
                     sign = s.charAt(i);
+                    //reset num for the next integer
                     num = 0;
                 }
             }
