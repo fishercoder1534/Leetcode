@@ -22,17 +22,13 @@ public class _346 {
             }
 
             public double next(int val) {
-                if (q.size() < max) {
-                    q.offer(val);
-                    sum += val;
-                    return (double) sum / q.size();
-                } else {
+                if (q.size() >= max) {
                     int first = q.pollFirst();
                     sum -= first;
-                    q.offer(val);
-                    sum += val;
-                    return (double) sum / q.size();
                 }
+                sum += val;
+                q.offer(val);
+                return (double) sum / q.size();
             }
         }
     }
