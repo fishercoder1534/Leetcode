@@ -1,20 +1,21 @@
 package com.fishercoder.solutions;
 
-import java.util.Stack;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class _921 {
     public static class Solution1 {
-        public int minAddToMakeValid(String S) {
-            Stack<Character> stack = new Stack<>();
-            for (char c : S.toCharArray()) {
+        public int minAddToMakeValid(String s) {
+            Deque<Character> stack = new LinkedList<>();
+            for (char c : s.toCharArray()) {
                 if (c == ')') {
-                    if (!stack.isEmpty() && stack.peek() == '(') {
-                        stack.pop();
+                    if (!stack.isEmpty() && stack.peekLast() == '(') {
+                        stack.pollLast();
                     } else {
-                        stack.push(c);
+                        stack.addLast(c);
                     }
                 } else {
-                    stack.push(c);
+                    stack.addLast(c);
                 }
             }
             return stack.size();
