@@ -5,6 +5,7 @@ import java.util.Queue;
 
 public class _1091 {
     public static class Solution1 {
+        //you can count in the normal four directions first, then count the diagonal ones to form this array
         int[] directions = new int[]{0, 1, 1, 0, -1, 1, -1, -1, 0};
 
         public int shortestPathBinaryMatrix(int[][] grid) {
