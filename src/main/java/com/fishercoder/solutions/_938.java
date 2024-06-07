@@ -16,15 +16,19 @@ public class _938 {
             return list.stream().mapToInt(num -> num).sum();
         }
 
-        private void dfs(TreeNode root, int l, int r, List<Integer> list) {
+        private void dfs(TreeNode root, int low, int high, List<Integer> list) {
             if (root == null) {
                 return;
             }
-            if (root.val <= r && root.val >= l) {
+            if (root.val <= high && root.val >= low) {
                 list.add(root.val);
             }
-            dfs(root.left, l, r, list);
-            dfs(root.right, l, r, list);
+            if (root.val > low) {
+                dfs(root.left, low, high, list);
+            }
+            if (root.val < high) {
+                dfs(root.right, low, high, list);
+            }
         }
     }
 }
