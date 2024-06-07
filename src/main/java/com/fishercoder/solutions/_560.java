@@ -14,21 +14,22 @@ public class _560 {
          * To achieve this, we just need to go through the array,
          * calculate the current sum and save number of all seen PreSum to a HashMap.
          * <p>
-         * Time complexity O(n), Space complexity O(n).
+         * Time complexity: O(n);
+         * Space complexity: O(n).
          */
         public int subarraySum(int[] nums, int k) {
-            Map<Integer, Integer> preSum = new HashMap();
+            Map<Integer, Integer> preSumFrequencyMap = new HashMap();
             int sum = 0;
-            int result = 0;
-            preSum.put(0, 1);
+            int count = 0;
+            preSumFrequencyMap.put(0, 1);
             for (int i = 0; i < nums.length; i++) {
                 sum += nums[i];
-                if (preSum.containsKey(sum - k)) {
-                    result += preSum.get(sum - k);
+                if (preSumFrequencyMap.containsKey(sum - k)) {
+                    count += preSumFrequencyMap.get(sum - k);
                 }
-                preSum.put(sum, preSum.getOrDefault(sum, 0) + 1);
+                preSumFrequencyMap.put(sum, preSumFrequencyMap.getOrDefault(sum, 0) + 1);
             }
-            return result;
+            return count;
         }
     }
 
@@ -36,9 +37,12 @@ public class _560 {
         /**
          * My completely original solution on 10/14/2021.
          * Again, using a pen and paper to visualize your thought process just clears out all ambiguities.
+         * <p>
+         * Time: O(n^2)
+         * Space: O(n)
          */
         public int subarraySum(int[] nums, int k) {
-            int ans = 0;
+            int count = 0;
             int[] prefixSum = new int[nums.length];
             prefixSum[0] = nums[0];
             for (int i = 1; i < nums.length; i++) {
@@ -46,15 +50,15 @@ public class _560 {
             }
             for (int i = 0; i < nums.length; i++) {
                 if (prefixSum[i] == k) {
-                    ans++;
+                    count++;
                 }
                 for (int j = 0; j < i; j++) {
                     if (prefixSum[i] - prefixSum[j] == k) {
-                        ans++;
+                        count++;
                     }
                 }
             }
-            return ans;
+            return count;
         }
     }
 
