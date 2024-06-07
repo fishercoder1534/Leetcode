@@ -33,6 +33,8 @@ public class _71 {
     public static class Solution2 {
         /**
          * This solution doesn't vary too much from the above one, except in that it's using pollLast() and addLast() instead of pop() and push().
+         * Key notes:
+         * if using pollLast, then it must be consistent across all calls, including peekLast() and addLast(), cannot mix with pop() and push(), otherwise, unexpected/undesired results will happen.
          */
         public String simplifyPath(String path) {
             Set<String> skip = new HashSet(Arrays.asList("..", ".", ""));
