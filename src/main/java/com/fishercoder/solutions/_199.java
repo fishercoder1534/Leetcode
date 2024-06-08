@@ -26,6 +26,7 @@ public class _199 {
             if (currDepth == result.size()) {
                 result.add(curr.val);
             }
+            //go through right side first as we want right side view, so as soon as we find it, then we won't use the one from left side
             rightView(curr.right, result, currDepth + 1);
             rightView(curr.left, result, currDepth + 1);
         }
