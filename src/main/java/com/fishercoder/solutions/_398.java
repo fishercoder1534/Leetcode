@@ -5,6 +5,7 @@ import java.util.*;
 public class _398 {
 
     //TODO: use reservoir sampling to solve it again
+    //reservoir sampling: the size of the dataset is unknow before hand
 
     public static class Solution {
         Map<Integer, List<Integer>> map;
