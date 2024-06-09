@@ -10,41 +10,48 @@ public class _498 {
         /**
          * Reference: https://discuss.leetcode.com/topic/77865/concise-java-solution/2
          * Just keep walking the matrix, when hitting the four borders (top, bottom, left or right),
-         * just directions and keep walking.
+         * change directions and keep walking:
+         * <p>
+         * if out of bottom border (i >= m), then i = m - 1, j += 2, change walk direction;
+         * if out of top border (i < 0), then i = 0, change walk direction;
+         * if out of left border (j < 0), then j = 0, change walk direction;
+         * if out of right border (j >= n), then j = n - 1, i += 2, change walk direction.
          */
-        public int[] findDiagonalOrder(int[][] matrix) {
-
-            if (matrix == null || matrix.length == 0) {
+        public int[] findDiagonalOrder(int[][] mat) {
+            if (mat == null || mat.length == 0) {
                 return new int[0];
             }
-            int m = matrix.length;
-            int n = matrix[0].length;
+            int m = mat.length;
+            int n = mat[0].length;
             int[] result = new int[m * n];
-            int d = 1;
+            //{-1,1} goes from top left to bottom right
+            //{1,-1} goes from top right to bottom left
+            int[][] dirs = new int[][]{{-1, 1}, {1, -1}};
             int i = 0;
             int j = 0;
+            int d = 0;
             for (int k = 0; k < m * n; ) {
-                result[k++] = matrix[i][j];
-                i -= d;
-                j += d;
+                result[k++] = mat[i][j];
+                i += dirs[d][0];
+                j += dirs[d][1];
 
                 if (i >= m) {
                     i = m - 1;
                     j += 2;
-                    d = -d;
+                    d = 1 - d;
                 }
                 if (j >= n) {
                     j = n - 1;
                     i += 2;
-                    d = -d;
+                    d = 1 - d;
                 }
                 if (i < 0) {
                     i = 0;
-                    d = -d;
+                    d = 1 - d;
                 }
                 if (j < 0) {
                     j = 0;
-                    d = -d;
+                    d = 1 - d;
                 }
             }
             return result;
@@ -87,5 +94,5 @@ public class _498 {
             return result;
         }
     }
-    
+
 }
