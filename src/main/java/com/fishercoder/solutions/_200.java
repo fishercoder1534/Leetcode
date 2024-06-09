@@ -52,9 +52,10 @@ public class _200 {
                 for (int i = 0; i < m; i++) {
                     for (int j = 0; j < n; j++) {
                         if (grid[i][j] == '1') {
+                            //at initialization, we count each '1' as one island, later, during traversal, we'll union them during which we'll dedup the number of islands.
                             count++;
-                            ids[i * n + j] = i * n + j;
                         }
+                        ids[i * n + j] = i * n + j;
                     }
                 }
             }
@@ -63,9 +64,13 @@ public class _200 {
                 int x = find(i);
                 int y = find(j);
                 if (x != y) {
-                    /**note: this is when x != y, only in this case, we should union these two nodes, which makes sense naturally.*/
-                    count--;
+                    /**
+                     * This means when these two nodes should be unioned, however, so far,
+                     * they have not, i.e. they have different ids,
+                     * so we'll have to unify them by assigning one's ids to the other, or vice versa.
+                     * */
                     ids[x] = y;//ids[y] = x; //also works
+                    count--;//since now these two islands are unified/merged, we'll decrement the count by one
                 }
             }
 
