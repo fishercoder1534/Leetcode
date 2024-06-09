@@ -9,12 +9,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class _224Test {
     private static _224.Solution1 solution1;
     private static _224.Solution2 solution2;
+    private static _224.Solution3 solution3;
     private static int expected;
 
     @BeforeEach
     public void setup() {
         solution1 = new _224.Solution1();
         solution2 = new _224.Solution2();
+        solution3 = new _224.Solution3();
     }
 
     @Test
@@ -39,6 +41,7 @@ public class _224Test {
         expected = 23;
         assertEquals(expected, solution1.calculate(s));
         assertEquals(expected, solution2.calculate(s));
+        assertEquals(expected, solution3.calculate(s));
     }
 
     @Test
