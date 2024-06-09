@@ -109,4 +109,53 @@ public class _224 {
         }
     }
 
+    public static class Solution3 {
+        /**
+         * A more elegant solution using stack and iterative approach, credit: https://leetcode.com/problems/basic-calculator/solutions/62361/iterative-java-solution-with-stack/
+         * Key points:
+         * 1. use an integer to represent sign: 1 or -1, so it can be pushed onto a stack that's of Integer type;
+         */
+        public int calculate(String s) {
+            Deque<Integer> stack = new LinkedList<>();
+            int result = 0;
+            int sign = 1;
+            int num = 0;
+            for (int i = 0; i < s.length(); i++) {
+                char c = s.charAt(i);
+                if (Character.isDigit(c)) {
+                    num = num * 10 + c - '0';
+                } else if (c == '(') {
+                    //we push the result onto the stack first, then sign
+                    stack.addLast(result);
+                    stack.addLast(sign);
+
+                    //reset them
+                    sign = 1;
+                    num = 0;
+                } else if (c == ')') {
+                    //this means we reached the end of one parenthesis, so we compute result and reset num
+                    result += num * sign;
+                    num = 0;
+
+                    result *= stack.pollLast();//this is the last sign we pushed onto the stack
+                    result += stack.pollLast();//this is the last number on the stack
+                } else if (c == '+') {
+                    result += num * sign;
+                    //reset below two variables
+                    num = 0;
+                    sign = 1;
+                } else if (c == '-') {
+                    result -= num * sign;
+                    //reset below two variables
+                    num = 0;
+                    sign = 1;
+                }
+            }
+            if (num != 0) {
+                result += num * sign;
+            }
+            return result;
+        }
+    }
+
 }
