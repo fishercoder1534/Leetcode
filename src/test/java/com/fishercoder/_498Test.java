@@ -1,10 +1,10 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._498;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
  * Created by fishercoder on 5/26/17.
@@ -15,8 +15,8 @@ public class _498Test {
     private static int[][] matrix;
     private static int[] expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solutoin1 = new _498.Solutoin1();
         solutoin2 = new _498.Solutoin2();
     }
