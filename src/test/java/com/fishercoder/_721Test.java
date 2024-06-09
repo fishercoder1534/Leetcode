@@ -1,8 +1,8 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._721;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,8 +14,8 @@ public class _721Test {
     private static List<List<String>> accounts;
     private static List<List<String>> expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _721.Solution1();
         solution2 = new _721.Solution2();
     }

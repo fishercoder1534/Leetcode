@@ -66,13 +66,13 @@ public class _721 {
     public static class Solution2 {
         /**
          * credit: https://leetcode.com/articles/accounts-merge/#approach-2-union-find-accepted
-         * DSU stands for Disjoint Set Union: https://en.wikipedia.org/wiki/Disjoint-set_data_structure
+         * DSU stands for Disjoint Set Union: https://en.wikipedia.org/wiki/Disjoint-set_data_structure, a.k.a Union Find data structure.
          * <p>
-         * Time complexity: O(AlogA)
-         * Space complexity: O(A)
+         * Time complexity: O(nlogn)
+         * Space complexity: O(n)
          */
         public List<List<String>> accountsMerge(List<List<String>> accounts) {
-            DSU dsu = new DSU();
+            UnionFind uf = new UnionFind();
             Map<String, String> emailToName = new HashMap<>();
             Map<String, Integer> emailToId = new HashMap<>();
             int id = 0;
@@ -87,28 +87,31 @@ public class _721 {
                     if (!emailToId.containsKey(email)) {
                         emailToId.put(email, id++);
                     }
-                    dsu.union(emailToId.get(account.get(1)), emailToId.get(email));
+                    uf.union(emailToId.get(account.get(1)), emailToId.get(email));
                 }
             }
 
-            Map<Integer, List<String>> ans = new HashMap<>();
+            Map<Integer, List<String>> map = new HashMap<>();
             for (String email : emailToName.keySet()) {
-                int index = dsu.find(emailToId.get(email));
-                ans.computeIfAbsent(index, x -> new ArrayList()).add(email);
+                //find the index of this email first: use this email's ID to find its parent in the Union Find
+                int index = uf.find(emailToId.get(email));
+                map.computeIfAbsent(index, x -> new ArrayList()).add(email);
             }
-            for (List<String> component : ans.values()) {
+            for (List<String> component : map.values()) {
                 Collections.sort(component);
+                //this is to add name to the head of the list
                 component.add(0, emailToName.get(component.get(0)));
             }
-            return new ArrayList<>(ans.values());
+            return new ArrayList<>(map.values());
         }
 
-        class DSU {
+        class UnionFind {
             int[] parent;
+            int size = 10001;
 
-            public DSU() {
-                parent = new int[10001];
-                for (int i = 0; i <= 10000; i++) {
+            public UnionFind() {
+                parent = new int[size];
+                for (int i = 0; i < size; i++) {
                     parent[i] = i;
                 }
             }
@@ -121,7 +124,7 @@ public class _721 {
             }
 
             public void union(int x, int y) {
-                parent[find(x)] = find(y);
+                parent[find(x)] = find(y);//can be written as parent[find(y)] = find(x); they are equivalent
             }
         }
     }
