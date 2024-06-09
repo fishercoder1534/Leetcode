@@ -1,27 +1,5 @@
 package com.fishercoder.solutions;
 
-/**
- * 200. Number of Islands
- * <p>
- * Given a 2d grid map of '1's (land) and '0's (water),
- * count the number of islands.
- * An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
- * You may assume all four edges of the grid are all surrounded by water.
- * <p>
- * Example 1:
- * 11110
- * 11010
- * 11000
- * 00000
- * Answer: 1
- * <p>
- * Example 2:
- * 11000
- * 11000
- * 00100
- * 00011
- * Answer: 3
- */
 public class _200 {
 
     public static class Solution1 {
@@ -82,8 +60,8 @@ public class _200 {
             }
 
             public void union(int i, int j) {
-                int x = find(ids, i);
-                int y = find(ids, j);
+                int x = find(i);
+                int y = find(j);
                 if (x != y) {
                     /**note: this is when x != y, only in this case, we should union these two nodes, which makes sense naturally.*/
                     count--;
@@ -91,11 +69,11 @@ public class _200 {
                 }
             }
 
-            public int find(int[] ids, int i) {
-                if (ids[i] == i) {
-                    return i;
+            public int find(int i) {
+                if (i != ids[i]) {
+                    ids[i] = find((ids[i]));
                 }
-                return find(ids, ids[i]);
+                return ids[i];
             }
         }
 
