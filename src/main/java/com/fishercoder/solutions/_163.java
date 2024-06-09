@@ -1,34 +1,33 @@
 package com.fishercoder.solutions;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-/**
- * 163. Missing Ranges
- *
- * Given a sorted integer array where the range of elements are in the inclusive range [lower, upper], return its missing ranges.
- * For example, given [0, 1, 3, 50, 75], lower = 0 and upper = 99, return ["2", "4->49", "51->74", "76->99"].
- */
 public class _163 {
     public static class Solution1 {
-        public List<String> findMissingRanges(int[] nums, int lower, int upper) {
-            List<String> result = new ArrayList<>();
-            long low = (long) lower - 1;
-            long up = 0;
-            for (int i = 0; i <= nums.length; i++) {
-                if (i == nums.length) {
-                    up = (long) upper + 1;
-                } else {
-                    up = nums[i];
-                }
-                if (up == low + 2) {
-                    result.add(low + 1 + "");
-                } else if (up > low + 2) {
-                    result.add((low + 1) + "->" + (up - 1));
-                }
-                low = up;
+        public List<List<Integer>> findMissingRanges(int[] nums, int lower, int upper) {
+            List<List<Integer>> missingRanges = new ArrayList<>();
+            if (nums == null || nums.length == 0) {
+                missingRanges.add(Arrays.asList(lower, upper));
+                return missingRanges;
             }
-            return result;
+            //check for missing numbers between lower and nums[0]
+            if (lower < nums[0]) {
+                missingRanges.add(Arrays.asList(lower, nums[0] - 1));
+            }
+            //check for missing numbers between nums
+            for (int i = 0; i < nums.length - 1; i++) {
+                if (nums[i] + 1 == nums[i + 1]) {
+                    continue;
+                }
+                missingRanges.add(Arrays.asList(nums[i] + 1, nums[i + 1] - 1));
+            }
+            //check for any missing numbers between nums[n - 1] and upper
+            if (nums[nums.length - 1] < upper) {
+                missingRanges.add(Arrays.asList(nums[nums.length - 1] + 1, upper));
+            }
+            return missingRanges;
         }
     }
 }
