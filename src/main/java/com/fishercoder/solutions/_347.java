@@ -1,54 +1,53 @@
 package com.fishercoder.solutions;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.TreeMap;
 
 public class _347 {
 
     public static class Solution1 {
         /**
-         * Use buckets to hold numbers of the same frequency
-         * It's averaged at 30 ms on Leetcode.
+         * Bucket sort:
+         * Use buckets to hold numbers of the same frequency, some buckets might be empty while the rest might have more than one element.
+         * This editorial explains it well enough: https://leetcode.com/problems/top-k-frequent-elements/editorial/ starting from 08'55".
+         * <p>
+         * This is the most optimal solution.
+         * Time: O(n)
+         * Space: O(n)
          */
         public int[] topKFrequent(int[] nums, int k) {
             Map<Integer, Integer> map = new HashMap();
-            for (int i : nums) {
-                map.put(i, map.getOrDefault(i, 0) + 1);
+            for (int num : nums) {
+                map.put(num, map.getOrDefault(num, 0) + 1);
             }
-
-            ArrayList[] bucket = new ArrayList[nums.length + 1];
-            for (Entry<Integer, Integer> e : map.entrySet()) {
-                int frequency = e.getValue();
-                if (bucket[frequency] == null) {
-                    bucket[frequency] = new ArrayList<Integer>();
+            //use nums.length + 1, so that we can directly use the frequency as the index for this array
+            //how this buckets look like is: buckets[1] holds numbers that have frequency one, buckets[2] holds numbers that have frequency two, etc.
+            //so, the numbers that have the highest frequencies are on the right-most side.
+            List[] bucket = new ArrayList[nums.length + 1];
+            for (Entry<Integer, Integer> entry : map.entrySet()) {
+                int freq = entry.getValue();
+                if (bucket[freq] == null) {
+                    bucket[freq] = new ArrayList<Integer>();
                 }
-                bucket[frequency].add(e.getKey());
+                bucket[freq].add(entry.getKey());
             }
-            List<Integer> result = new ArrayList<>();
-            for (int i = bucket.length - 1; i >= 0 && result.size() < k; i--) {
+            int[] result = new int[k];
+            for (int i = bucket.length - 1, l = 0; i >= 0 && l < k; i--) {
                 if (bucket[i] != null) {
                     for (int j = 0; j < bucket[i].size(); j++) {
-                        result.add((int) bucket[i].get(j));
+                        result[l++] = (int) bucket[i].get(j);
                     }
                 }
             }
-            int[] arr = new int[result.size()];
-            for (int i = 0; i < arr.length; i++) {
-                arr[i] = result.get(i);
-            }
-            return arr;
+            return result;
         }
     }
 
     public static class Solution2 {
         /**
-         * Use hashtable and heap, it's averaged at 100 ms on Leetocde.
+         * Use hashtable and heap.
+         * Time: O(nlogn)
+         * Space: O(n)
          */
         public int[] topKFrequent(int[] nums, int k) {
             // construct the frequency map first, and then iterate through the map
@@ -58,7 +57,7 @@ public class _347 {
                 map.put(num, map.getOrDefault(num, 0) + 1);
             }
 
-            // build heap, this is O(logn)
+            // build heap, this is O(nlogn)
             Queue<Entry<Integer, Integer>> heap = new PriorityQueue<>((o1, o2) -> o2.getValue() - o1.getValue());
             for (Entry<Integer, Integer> entry : map.entrySet()) {
                 heap.offer(entry);
@@ -73,36 +72,6 @@ public class _347 {
                 arr[i] = result.get(i);
             }
             return arr;
-        }
-    }
-
-    public static class Solution3 {
-        /**
-         * Use hashtable and heap, it's averaged at 10 ms on Leetocde.
-         */
-        public int[] topKFrequent(int[] nums, int k) {
-            Map<Integer, Integer> map = new HashMap<>();
-            for (int i : nums) {
-                map.put(i, map.getOrDefault(i, 0) + 1);
-            }
-            TreeMap<Integer, List<Integer>> treeMap = new TreeMap<>((a, b) -> b - a);
-            for (int key : map.keySet()) {
-                List<Integer> list = treeMap.getOrDefault(map.get(key), new ArrayList<>());
-                list.add(key);
-                treeMap.put(map.get(key), list);
-            }
-            List<Integer> list = new ArrayList<>();
-            while (!treeMap.isEmpty()) {
-                list.addAll(treeMap.pollFirstEntry().getValue());
-                if (list.size() == k) {
-                    break;
-                }
-            }
-            int[] ans = new int[list.size()];
-            for (int i = 0; i < list.size(); i++) {
-                ans[i] = list.get(i);
-            }
-            return ans;
         }
     }
 }

@@ -1,23 +1,21 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._347;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _347Test {
     private static _347.Solution1 solution1;
     private static _347.Solution2 solution2;
-    private static _347.Solution3 solution3;
     private static int[] nums;
     private static int[] expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _347.Solution1();
         solution2 = new _347.Solution2();
-        solution3 = new _347.Solution3();
     }
 
     @Test
@@ -43,7 +41,6 @@ public class _347Test {
     public void test3() {
         nums = new int[]{3, 0, 1, 0};
         expected = new int[]{0, 3};
-        //assertArrayEquals(expected, solution3.topKFrequent(nums, 2));
     }
 
     @Test
