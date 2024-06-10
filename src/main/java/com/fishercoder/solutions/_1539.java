@@ -64,4 +64,36 @@ public class _1539 {
             return result;
         }
     }
+
+    public static class Solution3 {
+        /**
+         * Use binary search:
+         * use an array without missing integers to illustrate:
+         * 1, 2, 3, 4, 5
+         * 2, 3, 4, 7, 11
+         * at index = 2, number of missing positive numbers: arr[index] - index - 1
+         * <p>
+         * Space: O(1)
+         * Time: O(logn)
+         * Credit: https://leetcode.com/problems/kth-missing-positive-number/editorial/
+         */
+        public int findKthPositive(int[] arr, int k) {
+            int left = 0;
+            int right = arr.length - 1;
+            while (left <= right) {
+                int mid = left + (right - left) / 2;
+                if (arr[mid] - mid - 1 < k) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                }
+            }
+            //when it exits the above while loop, left = right + 1;
+            //the k-th missing number should be between arr[right] and arr[left]
+            //the number of integers missing before arr[right] is arr[right] - right - 1;
+            //so the number to return is:
+            //arr[right] + k - (arr[right] - right - 1) = k + right + 1 = k + left;
+            return left + k;
+        }
+    }
 }
