@@ -3,6 +3,9 @@ package com.fishercoder.solutions;
 public class _88 {
 
     public static class Solution1 {
+        /**
+         * The key to reach this optimal solution is: start from the right side instead of the left.
+         */
         public void merge(int[] nums1, int m, int[] nums2, int n) {
             int i = m - 1;
             int j = n - 1;
