@@ -35,4 +35,18 @@ public class _31Test {
         solution1.nextPermutation(nums);
         assertArrayEquals(new int[]{1, 2, 6, 1, 2, 3, 4}, nums);
     }
+
+    @Test
+    public void test4() {
+        nums = new int[]{1, 2, 5, 4, 3};
+        solution1.nextPermutation(nums);
+        assertArrayEquals(new int[]{1, 3, 2, 4, 5}, nums);
+    }
+
+    @Test
+    public void test5() {
+        nums = new int[]{3, 2, 1};
+        solution1.nextPermutation(nums);
+        assertArrayEquals(new int[]{1, 2, 3}, nums);
+    }
 }
