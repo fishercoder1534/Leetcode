@@ -8,18 +8,28 @@ public class _348 {
          * Key: in order to win a TicTacToe, you must have the entire row or column, thus, we don't need
          * to keep track of the entire n^2 board. We only need to keep a count for each row and column.
          * If at any time, a row or column matches the size of the board, then that player has won.
+         * <p>
+         * We use 1 to denote a move for Player 1, -1 for Player 2.
          */
         public static class TicTacToe {
 
             private int diagonal;
             /**
-             * This is diagonal: |X| | | | |X| | | | |X| So, its condition is always like this: if (row ==
+             * This is diagonal:
+             * |X| | |
+             * | |X| |
+             * | | |X|
+             * So, its condition is always like this: if (row ==
              * col)
              */
 
             private int antidiagonal;
             /**
-             * This is antidiagonal: | | |X| | |X| | |X| | | So, its condition is always like this: if
+             * This is antidiagonal:
+             * | | |X|
+             * | |X| |
+             * |X| | |
+             * So, its condition is always like this: if
              * (col == size - row - 1)
              */
             private int[] rows;
