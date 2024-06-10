@@ -28,7 +28,7 @@ public class _187 {
     public static class Solution2 {
         /**
          * Use Rolling Hash/Rabin-Karp algorithm to significantly speed up the search.
-         *
+         * <p>
          * Rolling Hash/Rabin-Karp algorithm:
          * Instead of comparing the entire string to the other, we compare only the hash after adding the incoming character
          * and removing the outgoing character, this could be done in constant time.
@@ -40,7 +40,7 @@ public class _187 {
          * so for a DNA sequence that is 10 character long, a total of 10 * 2 = 20 bits is good enough, this is much smaller than
          * an Integer (32-bit) in most modern programming languages, so using one integer could well represent one DNA sequence.
          * Thus we could do bit manipulation to implement the removal of the outgoing character and the addition of the incoming character.
-         *
+         * <p>
          * <<= 2 will shift the integer to the left, i.e. removing the outgoing character;
          * |= val will add the incoming character.
          */
