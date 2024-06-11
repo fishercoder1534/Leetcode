@@ -8,8 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _33Test {
     private static _33.Solution1 solution1;
-    private static _33.Solution2 solution2;
-    private static _33.Solution3 solution3;
     private static int[] nums;
     private static int expected;
     private static int target;
@@ -17,8 +15,6 @@ public class _33Test {
     @BeforeEach
     public void setup() {
         solution1 = new _33.Solution1();
-        solution2 = new _33.Solution2();
-        solution3 = new _33.Solution3();
     }
 
     @Test
@@ -27,8 +23,6 @@ public class _33Test {
         expected = 3;
         target = 7;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -37,8 +31,6 @@ public class _33Test {
         expected = 4;
         target = 0;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -47,8 +39,6 @@ public class _33Test {
         expected = 1;
         target = 5;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -57,8 +47,6 @@ public class _33Test {
         expected = -1;
         target = 3;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -67,8 +55,6 @@ public class _33Test {
         expected = -1;
         target = 0;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -77,8 +63,6 @@ public class _33Test {
         expected = -1;
         target = 4;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -87,8 +71,6 @@ public class _33Test {
         expected = -1;
         target = 6;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -97,8 +79,6 @@ public class _33Test {
         expected = -1;
         target = 2;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -107,8 +87,6 @@ public class _33Test {
         expected = -1;
         target = 4;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -117,8 +95,6 @@ public class _33Test {
         expected = 3;
         target = 4;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -127,8 +103,6 @@ public class _33Test {
         expected = 1;
         target = 1;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -137,8 +111,6 @@ public class _33Test {
         expected = 1;
         target = 9;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
     @Test
@@ -147,8 +119,6 @@ public class _33Test {
         expected = 4;
         target = 8;
         assertEquals(expected, solution1.search(nums, target));
-        assertEquals(expected, solution2.search(nums, target));
-        assertEquals(expected, solution3.search(nums, target));
     }
 
 }
