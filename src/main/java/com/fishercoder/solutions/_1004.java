@@ -2,20 +2,24 @@ package com.fishercoder.solutions;
 
 public class _1004 {
     public static class Solution1 {
-        public int longestOnes(int[] A, int k) {
+        /**
+         * Two pointer technique, a.k.a sliding window.
+         */
+        public int longestOnes(int[] nums, int k) {
             int result = 0;
-            int i = 0;
-            for (int j = 0; j < A.length; j++) {
-                if (A[j] == 0) {
+            int left = 0;
+            for (int right = 0; right < nums.length; right++) {
+                if (nums[right] == 0) {
                     k--;
                 }
                 while (k < 0) {
-                    if (A[i] == 0) {
+                    //in this case, we'll move the left pointer to the right
+                    if (nums[left] == 0) {
                         k++;
                     }
-                    i++;
+                    left++;
                 }
-                result = Math.max(result, j - i + 1);
+                result = Math.max(result, right - left + 1);
             }
             return result;
         }
