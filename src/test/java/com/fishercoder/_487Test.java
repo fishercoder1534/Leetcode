@@ -1,20 +1,22 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._487;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _487Test {
     private static _487.Solution1 soution1;
+    private static _487.Solution2 soution2;
     private static int[] nums;
     private static int expected;
     private static int actual;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         soution1 = new _487.Solution1();
+        soution2 = new _487.Solution2();
     }
 
     @Test
@@ -22,6 +24,8 @@ public class _487Test {
         nums = new int[]{1, 1, 0, 1, 1, 1};
         expected = 6;
         actual = soution1.findMaxConsecutiveOnes(nums);
+        assertEquals(expected, actual);
+        actual = soution2.findMaxConsecutiveOnes(nums);
         assertEquals(expected, actual);
 
     }
