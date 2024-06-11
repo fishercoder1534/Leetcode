@@ -1,7 +1,6 @@
 package com.fishercoder.solutions;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,14 +28,8 @@ public class _953 {
 
         private boolean sorted(String firstWord, String secondWord, Map<Character, Integer> map) {
             for (int i = 0; i < Math.min(firstWord.length(), secondWord.length()); i++) {
-                if (firstWord.charAt(i) == secondWord.charAt(i)) {
-                    continue;
-                } else {
-                    if (map.get(firstWord.charAt(i)) > map.get(secondWord.charAt(i))) {
-                        return false;
-                    } else {
-                        return true;
-                    }
+                if (firstWord.charAt(i) != secondWord.charAt(i)) {
+                    return map.get(firstWord.charAt(i)) <= map.get(secondWord.charAt(i));
                 }
             }
             return firstWord.length() <= secondWord.length();
@@ -44,24 +37,27 @@ public class _953 {
     }
 
     public static class Solution2 {
+        /**
+         * Solution1 above is actually consistently faster than this Solution2 on LeetCode.
+         */
         public boolean isAlienSorted(String[] words, String order) {
             String[] copy = Arrays.copyOf(words, words.length);
-            Arrays.sort(words, new Comparator<String>() {
-                @Override
-                public int compare(String o1, String o2) {
-                    int pos1 = 0;
-                    int pos2 = 0;
-                    for (int i = 0; i < Math.min(o1.length(), o2.length()) && pos1 == pos2; i++) {
-                        pos1 = order.indexOf(o1.charAt(i));
-                        pos2 = order.indexOf(o2.charAt(i));
+            Arrays.sort(words, (o1, o2) -> {
+                int pos1 = 0;
+                int pos2 = 0;
+                for (int i = 0; i < Math.min(o1.length(), o2.length()); i++) {
+                    pos1 = order.indexOf(o1.charAt(i));
+                    pos2 = order.indexOf(o2.charAt(i));
+                    if (pos1 != pos2) {
+                        break;
                     }
-
-                    if (pos1 == pos2 && o1.length() != o2.length()) {
-                        return o1.length() - o2.length();
-                    }
-
-                    return pos1 - pos2;
                 }
+
+                if (pos1 == pos2 && o1.length() != o2.length()) {
+                    return o1.length() - o2.length();
+                }
+
+                return pos1 - pos2;
             });
             for (int i = 0; i < words.length; i++) {
                 if (!copy[i].equals(words[i])) {
