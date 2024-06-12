@@ -5,8 +5,13 @@ _If you like this project, please leave me a star._ &#9733;
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
 
 ## Algorithms
-[For problems 1 to 999](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/algorithms/first_thousand)
-[For problems 1000 to 1999](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/algorithms/second_thousand)
+[For problems 1 to 999](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/algorithms/1st_thousand)
+
+[For problems 1000 to 1999](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/algorithms/2nd_thousand)
+
+[For problems 2000 to 2999](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/algorithms/3rd_thousand)
+
+[For problems 3000 to 3999](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/algorithms/4th_thousand)
 
                                                               
 
