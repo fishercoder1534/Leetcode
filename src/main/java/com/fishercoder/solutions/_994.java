@@ -67,13 +67,11 @@ public class _994 {
                     }
                 }
             }
-            int min = 0;
+            int time = 0;
             int[] directions = new int[]{0, 1, 0, -1, 0};
             while (!queue.isEmpty() && !fresh.isEmpty()) {
                 int size = queue.size();
-                if (size > 0) {
-                    min++;
-                }
+                time++;
                 for (int i = 0; i < size; i++) {
                     int[] curr = queue.poll();
                     for (int k = 0; k < directions.length - 1; k++) {
@@ -82,7 +80,7 @@ public class _994 {
                         if (nextX >= 0 && nextX < m && nextY >= 0 && nextY < n && grid[nextX][nextY] == 1) {
                             fresh.remove(nextX * n + nextY);
                             if (fresh.isEmpty()) {
-                                return min;
+                                return time;
                             }
                             grid[nextX][nextY] = 2;
                             queue.offer(new int[]{nextX, nextY});
@@ -90,7 +88,7 @@ public class _994 {
                     }
                 }
             }
-            return fresh.isEmpty() ? min : -1;
+            return fresh.isEmpty() ? time : -1;
         }
     }
 
