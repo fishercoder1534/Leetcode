@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class _529 {
-
     public static class Solution1 {
         public char[][] updateBoard(char[][] board, int[] click) {
             int m = board.length;
@@ -16,15 +15,14 @@ public class _529 {
                 int currRow = curr[0];
                 int currCol = curr[1];
                 if (board[currRow][currCol] == 'M') {
-                    /**This also covers the corner case: when click[] happens to be on a mine, then it'll exit directly.
-                     * Otherwise, we'll just continue and mark this cell to be 'M' and keep processing all 'E' cells in the queue.*/
                     board[currRow][currCol] = 'X';
                 } else {
-                    /**scan all four directions of this curr cell, count all mines, this includes 'X' and 'M' */
+                    /**checks all eight neighbors of this curr cell, count all mines, this includes 'X' and 'M' */
                     int count = 0;
                     for (int i = -1; i < 2; i++) {
                         for (int j = -1; j < 2; j++) {
                             if (i == 0 && j == 0) {
+                                //this is the curr cell itself, so we skip
                                 continue;
                             }
                             int nextRow = currRow + i;
@@ -45,7 +43,8 @@ public class _529 {
                         /**There is no mines around this cell, so update it to be 'B'*/
                         board[currRow][currCol] = 'B';
 
-                        /**then we'll also check all of its four surrounding cells, if it's 'E'. we'll also update it to be 'B' and offer it into the queue*/
+                        /**then we'll also check all of its eight surrounding cells, if it's 'E'. we'll also update it to be 'B' and offer it into the queue
+                         * Only when we know this is a 'B', we'll offer into the queue, so below check could only happen here, not in the previous nested for loop.*/
                         for (int i = -1; i < 2; i++) {
                             for (int j = -1; j < 2; j++) {
                                 if (i == 0 && j == 0) {
