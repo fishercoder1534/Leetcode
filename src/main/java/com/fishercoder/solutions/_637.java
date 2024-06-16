@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Queue;
 
 public class _637 {
-
     public static class Solution1 {
         public List<Double> averageOfLevels(TreeNode root) {
             List<Double> result = new ArrayList<>();
