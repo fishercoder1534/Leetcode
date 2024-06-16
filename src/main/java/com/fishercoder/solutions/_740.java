@@ -1,5 +1,7 @@
 package com.fishercoder.solutions;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeMap;
 
 public class _740 {
@@ -57,6 +59,35 @@ public class _740 {
                 }
             }
             return curr;
+        }
+    }
+
+    public static class Solution3 {
+        //use DP, this is basically the same code as https://github.com/fishercoder1534/Leetcode/blob/master/src/main/java/com/fishercoder/solutions/_3186.java
+        //except here it's current - 1, in the above it's current - 2
+        public int deleteAndEarn(int[] nums) {
+            TreeMap<Integer, Integer> treeMap = new TreeMap<>();
+            for (int num : nums) {
+                treeMap.put(num, treeMap.getOrDefault(num, 0) + 1);
+            }
+            List<Integer> sortedList = new ArrayList<>(treeMap.keySet());
+            int[] dp = new int[sortedList.size()];
+            dp[0] = sortedList.get(0) * treeMap.get(sortedList.get(0));
+            for (int i = 1; i < sortedList.size(); i++) {
+                int current = sortedList.get(i);
+                int currentTotal = current * treeMap.get(current);
+                int j = i - 1;
+                //we keep going to the left of the sorted list until we find a value that's not in the range of current - 1 if possible
+                while (j >= 0 && sortedList.get(j) >= current - 1) {
+                    j--;
+                }
+                if (j >= 0) {
+                    dp[i] = Math.max(dp[i - 1], currentTotal + dp[j]);
+                } else {
+                    dp[i] = Math.max(dp[i - 1], currentTotal);
+                }
+            }
+            return dp[dp.length - 1];
         }
     }
 }
