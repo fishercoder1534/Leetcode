@@ -3,7 +3,6 @@ package com.fishercoder.solutions;
 import java.util.Arrays;
 
 public class _198 {
-
     public static class Solution1 {
         public int rob(int[] nums) {
             if (nums == null || nums.length == 0) {
