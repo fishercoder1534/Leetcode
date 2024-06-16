@@ -6,9 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class _337 {
-
     public static class Solution1 {
-        //simple recursion without cacheing: 1189 ms
+        //simple recursion without caching: 1189 ms
         public int rob(TreeNode root) {
             if (root == null) {
                 return 0;
@@ -27,8 +26,8 @@ public class _337 {
     }
 
     public static class Solution2 {
-        //same idea, but with cacheing via a hashmap: 8 ms
-        public int rob_dp(TreeNode root) {
+        //same idea, but with caching via a hashmap: 8 ms
+        public int rob(TreeNode root) {
             Map<TreeNode, Integer> map = new HashMap<>();
             return getMaxValue(root, map);
         }
