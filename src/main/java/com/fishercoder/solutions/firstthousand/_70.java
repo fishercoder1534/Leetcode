@@ -29,14 +29,14 @@ public class _70 {
             if (n == 1) {
                 return n;
             }
-            int stepOne = 1;
-            int stepTwo = 2;
+            int secondLastStep = 1;
+            int lastStep = 2;
             for (int i = 3; i <= n; i++) {
-                int tmp = stepTwo;
-                stepTwo = stepOne + stepTwo;
-                stepOne = tmp;
+                int tmp = lastStep;
+                lastStep = secondLastStep + lastStep;
+                secondLastStep = tmp;
             }
-            return stepTwo;
+            return lastStep;
         }
     }
 }
