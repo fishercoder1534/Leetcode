@@ -1,4 +1,4 @@
-package com.fishercoder.solutions;
+package com.fishercoder.solutions.fourththousand;
 
 import com.fishercoder.common.classes.TreeNode;
 
