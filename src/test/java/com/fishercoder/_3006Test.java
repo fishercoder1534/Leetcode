@@ -1,19 +1,19 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions.fourththousand._3006;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3006Test {
     private static _3006.Solution1 solution1;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _3006.Solution1();
     }
 
