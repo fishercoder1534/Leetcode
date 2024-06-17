@@ -2,7 +2,7 @@ package com.fishercoder;
 
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
-import com.fishercoder.solutions._1st_thousand._148;
+import com.fishercoder.solutions.first_thousand._148;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

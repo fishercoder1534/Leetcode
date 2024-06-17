@@ -1,7 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.utils.CommonUtils;
-import com.fishercoder.solutions._1st_thousand._478;
+import com.fishercoder.solutions.first_thousand._478;
 import org.junit.Test;
 
 public class _478Test {
