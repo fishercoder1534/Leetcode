@@ -1,4 +1,4 @@
-package com.fishercoder.solutions;
+package com.fishercoder.solutions.fourththousand;
 
 public class _3120 {
     public static class Solution1 {

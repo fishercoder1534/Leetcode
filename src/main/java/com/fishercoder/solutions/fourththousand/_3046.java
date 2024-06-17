@@ -1,4 +1,4 @@
-package com.fishercoder.solutions;
+package com.fishercoder.solutions.fourththousand;
 
 import java.util.HashMap;
 import java.util.Map;
