@@ -1,7 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.Node;
-import com.fishercoder.solutions._589;
+import com.fishercoder.solutions._1st_thousand._589;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
