@@ -2,7 +2,7 @@ package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
-import com.fishercoder.solutions.first_thousand._783;
+import com.fishercoder.solutions.firstthousand._783;
 import java.util.Arrays;
 import org.junit.BeforeClass;
 import org.junit.Test;

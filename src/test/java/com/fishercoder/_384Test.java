@@ -1,7 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.utils.CommonUtils;
-import com.fishercoder.solutions.first_thousand._384;
+import com.fishercoder.solutions.firstthousand._384;
 import org.junit.Test;
 
 public class _384Test {

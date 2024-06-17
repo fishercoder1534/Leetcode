@@ -1,7 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.solutions.first_thousand._515;
+import com.fishercoder.solutions.firstthousand._515;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.first_thousand._41;
+import com.fishercoder.solutions.firstthousand._41;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

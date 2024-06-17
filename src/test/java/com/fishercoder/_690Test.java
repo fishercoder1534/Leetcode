@@ -1,7 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.classes.Employee;
-import com.fishercoder.solutions.first_thousand._690;
+import com.fishercoder.solutions.firstthousand._690;
 import org.junit.Before;
 import org.junit.Test;
 

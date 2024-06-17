@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions.first_thousand._989;
+import com.fishercoder.solutions.firstthousand._989;
 import java.util.Arrays;
 import org.junit.BeforeClass;
 import org.junit.Test;
