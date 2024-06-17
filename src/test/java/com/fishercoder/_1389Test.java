@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions._1389;
+import com.fishercoder.solutions.secondthousand._1389;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

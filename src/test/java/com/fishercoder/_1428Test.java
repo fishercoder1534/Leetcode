@@ -2,7 +2,7 @@ package com.fishercoder;
 
 import com.fishercoder.common.classes.BinaryMatrix;
 import com.fishercoder.common.classes.BinaryMatrixImpl;
-import com.fishercoder.solutions._1428;
+import com.fishercoder.solutions.secondthousand._1428;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
