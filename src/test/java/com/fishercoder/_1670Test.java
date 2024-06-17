@@ -1,8 +1,6 @@
 package com.fishercoder;
 
 import com.fishercoder.solutions._1670;
-import com.fishercoder.solutions._62;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;

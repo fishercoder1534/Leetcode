@@ -1,8 +1,5 @@
 package com.fishercoder;
 
-import com.fishercoder.common.classes.ListNode;
-import com.fishercoder.common.utils.LinkedListUtils;
-import com.fishercoder.solutions._2;
 import com.fishercoder.solutions._744;
 import org.junit.BeforeClass;
 import org.junit.Test;

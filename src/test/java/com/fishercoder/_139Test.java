@@ -1,8 +1,7 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions._139;
+import com.fishercoder.solutions._1st_thousand._139;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions._131;
+import com.fishercoder.solutions._1st_thousand._131;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
