@@ -1,6 +1,6 @@
 package com.fishercoder;
 
-import com.fishercoder.solutions._1366;
+import com.fishercoder.solutions.secondthousand._1366;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

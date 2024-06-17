@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.common.utils.TreeUtils;
-import com.fishercoder.solutions._1367;
+import com.fishercoder.solutions.secondthousand._1367;
 import org.junit.Test;
 
 import java.util.Arrays;
