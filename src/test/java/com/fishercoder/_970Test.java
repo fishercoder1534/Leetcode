@@ -1,11 +1,9 @@
 package com.fishercoder;
 
 import com.fishercoder.common.utils.CommonUtils;
-import com.fishercoder.solutions._970;
+import com.fishercoder.solutions._1st_thousand._970;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 import org.junit.BeforeClass;
 import org.junit.Test;

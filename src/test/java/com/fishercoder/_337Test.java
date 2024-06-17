@@ -1,7 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.utils.TreeUtils;
-import com.fishercoder.solutions._337;
+import com.fishercoder.solutions._1st_thousand._337;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
