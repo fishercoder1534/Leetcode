@@ -1,7 +1,7 @@
 package com.fishercoder;
 
 import com.fishercoder.common.utils.LinkedListUtils;
-import com.fishercoder.solutions.first_thousand._141;
+import com.fishercoder.solutions.firstthousand._141;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

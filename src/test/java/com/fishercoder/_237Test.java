@@ -3,7 +3,7 @@ package com.fishercoder;
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.common.utils.LinkedListUtils;
-import com.fishercoder.solutions.first_thousand._237;
+import com.fishercoder.solutions.firstthousand._237;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
