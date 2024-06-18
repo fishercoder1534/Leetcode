@@ -29,4 +29,11 @@ public class _15Test {
         assertEquals(expected, solution1.threeSum(nums));
     }
 
+    @Test
+    public void test2() {
+        nums = new int[]{1, 2, -2, -1};
+        expected = new ArrayList<>();
+        assertEquals(expected, solution1.threeSum(nums));
+    }
+
 }
