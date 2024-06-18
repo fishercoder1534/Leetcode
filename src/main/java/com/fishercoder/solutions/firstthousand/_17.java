@@ -37,6 +37,7 @@ public class _17 {
 
     public static class Solution2 {
         /**
+         * It's recommended to use recursion to solve this problem, I got this feedback from a Meta interviewer on 6/17/2024 during the mock interview.
          * My completely original solution on 10/11/2021, no backtracking involved.
          */
         public List<String> letterCombinations(String digits) {
@@ -54,7 +55,7 @@ public class _17 {
                 return ans;
             }
             List<String> newAns = new ArrayList<>();
-            String candidates = options[Integer.parseInt(digits.charAt(index) + "")];
+            String candidates = options[digits.charAt(index) - '0'];
             for (String str : ans) {
                 for (int i = 0; i < candidates.length(); i++) {
                     newAns.add(str + candidates.charAt(i));
