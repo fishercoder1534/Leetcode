@@ -1,5 +1,8 @@
 package com.fishercoder.solutions.secondthousand;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class _1047 {
     public static class Solution1 {
         public String removeDuplicates(String S) {
@@ -10,6 +13,24 @@ public class _1047 {
                 }
             }
             return sb.toString();
+        }
+    }
+
+    public static class Solution2 {
+        public String removeDuplicates(String s) {
+            Deque<Character> stack = new LinkedList<>();
+            for (char c : s.toCharArray()) {
+                if (!stack.isEmpty() && stack.peekLast() == c) {
+                    stack.pollLast();
+                } else {
+                    stack.addLast(c);
+                }
+            }
+            StringBuilder sb = new StringBuilder();
+            while (!stack.isEmpty()) {
+                sb.append(stack.pollLast());
+            }
+            return sb.reverse().toString();
         }
     }
 }
