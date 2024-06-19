@@ -19,7 +19,7 @@ public class _844 {
                     sb.append(str.charAt(i));
                 }
             }
-            return sb.reverse().toString();
+            return sb.toString();
         }
     }
 }
