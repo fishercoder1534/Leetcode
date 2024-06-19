@@ -1,22 +1,24 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1209;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1209Test {
 
     private static _1209.Solution1 solution1;
     private static _1209.Solution2 solution2;
     private static _1209.Solution3 solution3;
+    private static _1209.Solution4 solution4;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1209.Solution1();
         solution2 = new _1209.Solution2();
         solution3 = new _1209.Solution3();
+        solution4 = new _1209.Solution4();
     }
 
     @Test
@@ -24,6 +26,7 @@ public class _1209Test {
         assertEquals("abcd", solution1.removeDuplicates("abcd", 2));
         assertEquals("abcd", solution2.removeDuplicates("abcd", 2));
         assertEquals("abcd", solution3.removeDuplicates("abcd", 2));
+        assertEquals("abcd", solution4.removeDuplicates("abcd", 2));
     }
 
     @Test
