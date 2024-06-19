@@ -115,4 +115,42 @@ public class _1209 {
             return sb.reverse().toString();
         }
     }
+
+    public static class Solution4 {
+        //my completely original solution on 6/19/2024
+        public String removeDuplicates(String s, int k) {
+            Deque<Pair> stack = new LinkedList<>();
+            for (char c : s.toCharArray()) {
+                if (!stack.isEmpty() && stack.peekLast().c == c) {
+                    Pair pair = stack.pollLast();
+                    pair.count = pair.count + 1;
+                    if (pair.count < k) {
+                        stack.addLast(pair);
+                    }
+                } else {
+                    stack.addLast(new Pair(c, 1));
+                }
+            }
+            StringBuilder sb = new StringBuilder();
+            while (!stack.isEmpty()) {
+                Pair pair = stack.pollLast();
+                int count = pair.count;
+                while (count-- > 0) {
+                    sb.append(pair.c);
+                }
+            }
+            return sb.reverse().toString();
+        }
+
+        class Pair {
+            char c;
+            int count;
+
+            public Pair(char c, int count) {
+                this.c = c;
+                this.count = count;
+            }
+        }
+
+    }
 }
