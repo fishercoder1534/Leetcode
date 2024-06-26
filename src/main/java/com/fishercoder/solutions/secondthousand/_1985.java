@@ -15,10 +15,4 @@ public class _1985 {
             return maxHeap.peek();
         }
     }
-
-    public static void main(String... args) {
-        System.out.println("1234".compareTo("2345"));
-        System.out.println("2345".compareTo("1234"));
-//        System.out.println(String.valueOf(Long.MAX_VALUE).length());
-    }
 }
