@@ -5,9 +5,8 @@ import java.util.LinkedList;
 import java.util.Stack;
 
 public class _155 {
-
     public static class Solution1 {
-        class MinStack {
+        public static class MinStack {
             private Stack<Integer> stack;
             private int min;
 
@@ -17,9 +16,9 @@ public class _155 {
             }
 
             public void push(int x) {
-                /**All the trick happens here, we push the second minimum number onto the stack before we push the newer one,
-                 * this way, when popping, we could always get the next minimum one in constant time.*/
                 if (x <= min) {
+                    /**All the trick happens here, we push the second minimum number onto the stack before we push the newer one,
+                     * this way, when popping, we could always get the next minimum one in constant time.*/
                     stack.push(min);
                     min = x;
                 }
@@ -49,7 +48,7 @@ public class _155 {
          * We could store a pair onto the stack: the first element in the pair is the value itself,
          * the second element in the pair is the current minimum element so far seen on the stack.
          */
-        class MinStack {
+        public static class MinStack {
             Deque<int[]> stack;
 
             public MinStack() {
@@ -60,7 +59,7 @@ public class _155 {
                 if (!stack.isEmpty()) {
                     int[] last = stack.peekLast();
                     int currentMin = last[1];
-                    if (val < currentMin) {
+                    if (val <= currentMin) {
                         stack.addLast(new int[]{val, val});
                     } else {
                         stack.addLast(new int[]{val, currentMin});
@@ -82,6 +81,5 @@ public class _155 {
                 return stack.peekLast()[1];
             }
         }
-
     }
 }
