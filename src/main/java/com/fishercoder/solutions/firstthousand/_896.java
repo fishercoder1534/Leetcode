@@ -2,27 +2,25 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _896 {
     public static class Solution1 {
-        public boolean isMonotonic(int[] A) {
+        public boolean isMonotonic(int[] nums) {
             int i = 0;
-            for (; i < A.length - 1; i++) {
-                if (A[i] <= A[i + 1]) {
-                    continue;
-                } else {
+            //check if it's increasing
+            for (; i < nums.length - 1; i++) {
+                if (nums[i] > nums[i + 1]) {
                     break;
                 }
             }
-            if (i == A.length - 1) {
+            if (i == nums.length - 1) {
                 return true;
             }
             i = 0;
-            for (; i < A.length - 1; i++) {
-                if (A[i] >= A[i + 1]) {
-                    continue;
-                } else {
+            //check if it's decreasing
+            for (; i < nums.length - 1; i++) {
+                if (nums[i] < nums[i + 1]) {
                     break;
                 }
             }
-            return i == A.length - 1;
+            return i == nums.length - 1;
         }
     }
 }
