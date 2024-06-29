@@ -20,8 +20,10 @@ public class _1242 {
             Set<String> visited = new HashSet<>();
 
             Queue<Future> tasks = new LinkedList<>();
+            //create a thread pool to crawling the URLs
             ExecutorService executorService = Executors.newFixedThreadPool(4, r -> {
                 Thread t = new Thread(r);
+                //LeetCode doesn't allow executor.shutdown(), so use daemon threads to let the program shutdown, otherwise TLE.
                 t.setDaemon(true);
                 return t;
             });
