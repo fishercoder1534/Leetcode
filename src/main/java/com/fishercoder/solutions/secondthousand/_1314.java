@@ -5,14 +5,17 @@ import java.util.List;
 
 public class _1314 {
     public static class Solution1 {
-        public int[][] matrixBlockSum(int[][] mat, int K) {
+        /**
+         * This is a brute force solution without using prefix sum. i.e. lots of repeated computation.
+         */
+        public int[][] matrixBlockSum(int[][] mat, int k) {
             int m = mat.length;
             int n = mat[0].length;
             int[][] answer = new int[m][n];
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
-                    List<Integer> iRange = findRange(i, K, m);
-                    List<Integer> jRange = findRange(j, K, n);
+                    List<Integer> iRange = findRange(i, k, m);
+                    List<Integer> jRange = findRange(j, k, n);
                     int sum = 0;
                     for (int ii = 0; ii < iRange.size(); ii++) {
                         for (int jj = 0; jj < jRange.size(); jj++) {
