@@ -8,12 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1314Test {
     private static _1314.Solution1 solution1;
+    private static _1314.Solution2 solution2;
     private static int[][] mat;
     private static int[][] expected;
 
     @BeforeEach
     public void setup() {
         solution1 = new _1314.Solution1();
+        solution2 = new _1314.Solution2();
     }
 
     @Test
@@ -29,6 +31,7 @@ public class _1314Test {
                 {24, 39, 28}
         };
         assertArrayEquals(expected, solution1.matrixBlockSum(mat, 1));
+        assertArrayEquals(expected, solution2.matrixBlockSum(mat, 1));
     }
 
     @Test
@@ -44,5 +47,6 @@ public class _1314Test {
                 {45, 45, 45}
         };
         assertArrayEquals(expected, solution1.matrixBlockSum(mat, 2));
+        assertArrayEquals(expected, solution2.matrixBlockSum(mat, 2));
     }
 }
