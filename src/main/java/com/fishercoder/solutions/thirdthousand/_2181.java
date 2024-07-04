@@ -27,4 +27,27 @@ public class _2181 {
             return pre.next;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * Without using an extra list, do sum on the fly.
+         */
+        public ListNode mergeNodes(ListNode head) {
+            ListNode pre = new ListNode(-1);
+            ListNode newHead = pre;
+            while (head != null && head.next != null) {
+                if (head.val == 0) {
+                    int sum = 0;
+                    head = head.next;
+                    while (head.val != 0) {
+                        sum += head.val;
+                        head = head.next;
+                    }
+                    newHead.next = new ListNode(sum);
+                    newHead = newHead.next;
+                }
+            }
+            return pre.next;
+        }
+    }
 }
