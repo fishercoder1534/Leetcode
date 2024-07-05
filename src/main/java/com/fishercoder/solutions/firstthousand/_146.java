@@ -5,7 +5,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class _146 {
-
     public class Solution1 {
         public class LRUCache {
             /**
@@ -43,7 +42,7 @@ public class _146 {
     public class Solution2 {
         public class LRUCache {
             /**
-             * The more verbose solution is to implement a doubly linked list yourself plus a map, i.e. LinkedHashMap.
+             * The more verbose solution is to implement a doubly linked list yourself plus a map.
              * It's very straightforward to implement this, key notes here: https://docs.google.com/spreadsheets/d/1anN6L5OLhUFd1ANtqDdYY6tz2Ao2H1GESfpDiCfeWyM/edit#gid=0
              * (search for the URL of this problem to find it.)
              */
