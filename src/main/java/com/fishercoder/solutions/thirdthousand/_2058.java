@@ -32,4 +32,40 @@ public class _2058 {
             return new int[]{min, criticalPts.get(size - 1) - criticalPts.get(0)};
         }
     }
+
+    public static class Solution2 {
+        /**
+         * Without using an extra list of size N to hold all values.
+         */
+        public int[] nodesBetweenCriticalPoints(ListNode head) {
+            List<Integer> criticalPoints = new ArrayList<>();
+            int prev = head.val;
+            head = head.next;
+            int index = 1;
+            int[] result = new int[2];
+            result[0] = Integer.MAX_VALUE;
+            result[1] = Integer.MIN_VALUE;
+            while (head != null && head.next != null) {
+                if (head.val > prev && head.val > head.next.val) {
+                    criticalPoints.add(index);
+                } else if (head.val < prev && head.val < head.next.val) {
+                    criticalPoints.add(index);
+                }
+                if (criticalPoints.size() > 1) {
+                    int len = criticalPoints.size();
+                    result[0] = Math.min(result[0], criticalPoints.get(len - 1) - criticalPoints.get(len - 2));
+                }
+                prev = head.val;
+                head = head.next;
+                index++;
+            }
+            if (criticalPoints.size() > 1) {
+                int len = criticalPoints.size();
+                result[1] = Math.max(result[1], criticalPoints.get(len - 1) - criticalPoints.get(0));
+                return result;
+            } else {
+                return new int[]{-1, -1};
+            }
+        }
+    }
 }
