@@ -2,6 +2,10 @@ package com.fishercoder.solutions.fourththousand;
 
 public class _3208 {
     public static class Solution1 {
+        /**
+         * My completely original solution:
+         * we just keep looking for the possible k alternating groups, if it encounters the same color, then set i to that pointer and restart.
+         */
         public int numberOfAlternatingGroups(int[] colors, int k) {
             int len = colors.length;
             int groups = 0;
