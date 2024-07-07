@@ -59,7 +59,7 @@ public class _1804 {
                     }
                     node = node.children[c - 'a'];
                 }
-                return node.count < 0 ? 0 : node.count;
+                return Math.max(node.count, 0);
             }
 
             public void erase(String word) {
