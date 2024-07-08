@@ -75,10 +75,10 @@ public class _19 {
     public static class Solution3 {
         //a more concise version using the same idea
         public ListNode removeNthFromEnd(ListNode head, int n) {
-            ListNode dummy = new ListNode(-1);
-            dummy.next = head;
-            ListNode slow = dummy;
-            ListNode fast = dummy;
+            ListNode pre = new ListNode(-1);
+            pre.next = head;
+            ListNode slow = pre;
+            ListNode fast = pre;
             while (fast.next != null) {
                 if (n <= 0) {
                     slow = slow.next;
@@ -89,7 +89,7 @@ public class _19 {
             if (slow.next != null) {
                 slow.next = slow.next.next;
             }
-            return dummy.next;
+            return pre.next;
         }
     }
 }
