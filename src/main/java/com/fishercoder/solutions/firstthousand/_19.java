@@ -74,6 +74,9 @@ public class _19 {
 
     public static class Solution3 {
         //a more concise version using the same idea
+        //i.e. sliding window
+        //Time: O(n)
+        //Space: O(1)
         public ListNode removeNthFromEnd(ListNode head, int n) {
             ListNode pre = new ListNode(-1);
             pre.next = head;
