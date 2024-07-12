@@ -1,35 +1,36 @@
 package com.fishercoder.solutions.secondthousand;
 
-import java.util.Stack;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class _1717 {
     public static class Solution1 {
         public int maximumGain(String s, int x, int y) {
-            Stack<Character> stack1 = new Stack<>();
-            int big = x > y ? x : y;
+            int big = Math.max(x, y);
             int small = big == x ? y : x;
-            char first = x == big ? 'a' : 'b';
+            char first = big == x ? 'a' : 'b';
             char second = first == 'a' ? 'b' : 'a';
-            int maximumGain = 0;
+            Deque<Character> stack1 = new LinkedList<>();
+            int max = 0;
             for (char c : s.toCharArray()) {
-                if (c == second && !stack1.isEmpty() && stack1.peek() == first) {
-                    stack1.pop();
-                    maximumGain += big;
+                if (c == second && !stack1.isEmpty() && stack1.peekLast() == first) {
+                    stack1.pollLast();
+                    max += big;
                 } else {
-                    stack1.push(c);
+                    stack1.addLast(c);
                 }
             }
-            Stack<Character> stack2 = new Stack<>();
+            Deque<Character> stack2 = new LinkedList<>();
             while (!stack1.isEmpty()) {
-                char c = stack1.pop();
-                if (c == second && !stack2.isEmpty() && stack2.peek() == first) {
-                    stack2.pop();
-                    maximumGain += small;
+                char c = stack1.pollLast();
+                if (!stack2.isEmpty() && c == second && stack2.peekLast() == first) {
+                    max += small;
+                    stack2.pollLast();
                 } else {
-                    stack2.push(c);
+                    stack2.addLast(c);
                 }
             }
-            return maximumGain;
+            return max;
         }
     }
 
