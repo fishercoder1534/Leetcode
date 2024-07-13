@@ -20,13 +20,7 @@ _If you like this project, please leave me a star._ &#9733;
 
 
 ## Shell
-
-|  #  |      Title     |   Solutions   | Video         | Difficulty    | Tag          
-|-----|----------------|---------------|---------------|---------------|-------------
-|195|[Tenth Line](https://leetcode.com/problems/tenth-line/)|[Solution](../master/shell/TenthLine.sh)|  | Easy|
-|194|[Transpose File](https://leetcode.com/problems/transpose-file/)|[Solution](../master/shell/TransposeFile.sh)|  | Medium|
-|193|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)|[Solution](../master/shell/ValidPhoneNumbers.sh)| | Easy|
-|192|[Word Frequency](https://leetcode.com/problems/word-frequency/)|[Solution](../master/shell/_192.sh)| | Medium|
+[All shell problems](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/shell)
 
 
 ## Contributing
