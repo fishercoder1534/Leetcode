@@ -25,8 +25,8 @@ public class _1146 {
                 return snapId++;
             }
 
-            public int get(int index, int snap_id) {
-                return snapshots[index].floorEntry(snap_id).getValue();
+            public int get(int index, int snapId) {
+                return snapshots[index].floorEntry(snapId).getValue();
             }
         }
     }
