@@ -8,7 +8,9 @@ public class _2937 {
             }
             int minOps = 0;
             int minLen = Math.min(s1.length(), Math.min(s2.length(), s3.length()));
-            int i = 1, j = 1, k = 1;
+            int i = 1;
+            int j = 1;
+            int k = 1;
             for (; i < minLen && j < minLen && k < minLen; i++, j++, k++) {
                 if (s1.charAt(i) != s2.charAt(j) || s2.charAt(j) != s3.charAt(k)) {
                     minOps += s1.length() - i;
