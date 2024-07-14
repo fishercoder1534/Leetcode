@@ -14,10 +14,7 @@ public class _2937 {
                     minOps += s1.length() - i;
                     minOps += s2.length() - j;
                     minOps += s3.length() - k;
-                    i = s1.length();
-                    j = s2.length();
-                    k = s3.length();
-                    break;
+                    return minOps;
                 }
             }
             minOps += s1.length() - i;
