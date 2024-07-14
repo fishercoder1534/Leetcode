@@ -2,12 +2,12 @@ package com.fishercoder.solutions.fourththousand;
 
 import java.util.PriorityQueue;
 
-public class _3218 {
+public class _3219 {
     public static class Solution1 {
         /**
          * My completely original solution.
          */
-        public int minimumCost(int m, int n, int[] horizontalCut, int[] verticalCut) {
+        public long minimumCost(int m, int n, int[] horizontalCut, int[] verticalCut) {
             PriorityQueue<Integer> maxHeapHorizontal = new PriorityQueue<>((a, b) -> b - a);
             for (int cut : horizontalCut) {
                 maxHeapHorizontal.offer(cut);
@@ -18,7 +18,7 @@ public class _3218 {
             }
             int verticalParts = 1;
             int horizontalParts = 1;
-            int cost = 0;
+            long cost = 0L;
             while (!maxHeapHorizontal.isEmpty() || !maxHeapVertical.isEmpty()) {
                 Integer curr;
                 if (!maxHeapHorizontal.isEmpty() && !maxHeapVertical.isEmpty()) {
