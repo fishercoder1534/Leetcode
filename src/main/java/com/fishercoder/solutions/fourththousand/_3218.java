@@ -4,6 +4,9 @@ import java.util.PriorityQueue;
 
 public class _3218 {
     public static class Solution1 {
+        /**
+         * My completely original solution.
+         */
         public int minimumCost(int m, int n, int[] horizontalCut, int[] verticalCut) {
             PriorityQueue<Integer> maxHeapHorizontal = new PriorityQueue<>((a, b) -> b - a);
             for (int cut : horizontalCut) {
