@@ -5,9 +5,8 @@ import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._109;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
@@ -16,13 +15,9 @@ public class _109Test {
     private static ListNode head;
     private static TreeNode expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _109.Solution1();
-    }
-
-    @Before
-    public void setUp() throws Exception {
     }
 
     @Test
