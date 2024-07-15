@@ -15,6 +15,7 @@ public class _826 {
             Collections.sort(jobs, (a, b) -> a[0] - b[0]);
 
             //update the profit values: because a later (with more difficult) job must be able to handle a prior job, so we take the more profitable one
+            //this makes this jobs list in non-decreasing order in both dimensions
             for (int i = 0; i < jobs.size() - 1; i++) {
                 jobs.get(i + 1)[1] = Math.max(jobs.get(i)[1], jobs.get(i + 1)[1]);
             }
