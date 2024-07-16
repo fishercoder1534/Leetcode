@@ -3,32 +3,26 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._508;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _508Test {
     private static _508.Solution1 solution1;
     private static _508.Solution2 solution2;
+    private static _508.Solution3 solution3;
     private static int[] expected;
     private static int[] actual;
     private static TreeNode root;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _508.Solution1();
         solution2 = new _508.Solution2();
-    }
-
-    @Before
-    public void setupForEachTest() {
-        expected = new int[]{};
-        actual = new int[]{};
-        root = null;
+        solution3 = new _508.Solution3();
     }
 
     @Test
@@ -44,6 +38,10 @@ public class _508Test {
         actual = solution2.findFrequentTreeSum(root);
         Arrays.sort(actual);
         assertArrayEquals(expected, actual);
+
+        actual = solution3.findFrequentTreeSum(root);
+        Arrays.sort(actual);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -54,6 +52,9 @@ public class _508Test {
         assertArrayEquals(expected, actual);
 
         actual = solution2.findFrequentTreeSum(root);
+        assertArrayEquals(expected, actual);
+
+        actual = solution3.findFrequentTreeSum(root);
         assertArrayEquals(expected, actual);
     }
 
@@ -66,6 +67,9 @@ public class _508Test {
         assertArrayEquals(expected, actual);
 
         actual = solution2.findFrequentTreeSum(root);
+        assertArrayEquals(expected, actual);
+
+        actual = solution3.findFrequentTreeSum(root);
         assertArrayEquals(expected, actual);
     }
 }

@@ -1,6 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
+import com.fishercoder.solutions._Contest;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -107,9 +108,42 @@ public class _508 {
             if (root.right != null) {
                 rightVal = dfs(root.right, map);
             }
-            int val = leftVal + rightVal + root.val;
-            map.put(val, map.getOrDefault(val, 0) + 1);
-            return val;
+            int subtreeSum = leftVal + rightVal + root.val;
+            map.put(subtreeSum, map.getOrDefault(subtreeSum, 0) + 1);
+            return subtreeSum;
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * Use post-order traversal for this problem as it needs to process subtree first before processing the root.
+         */
+        Map<Integer, Integer> map = new HashMap<>();
+
+        public int[] findFrequentTreeSum(TreeNode root) {
+            postOrder(root);
+            int mostFreq = -1;
+            for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+                mostFreq = Math.max(mostFreq, entry.getValue());
+            }
+            List<Integer> list = new ArrayList<>();
+            for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+                if (entry.getValue() == mostFreq) {
+                    list.add(entry.getKey());
+                }
+            }
+            return list.stream().mapToInt(integer -> integer).toArray();
+        }
+
+        private int postOrder(TreeNode root) {
+            if (root == null) {
+                return 0;
+            }
+            int leftSum = postOrder(root.left);
+            int rightSum = postOrder(root.right);
+            int subtreeSum = leftSum + rightSum + root.val;
+            map.put(subtreeSum, map.getOrDefault(subtreeSum, 0) + 1);
+            return subtreeSum;
         }
     }
 
