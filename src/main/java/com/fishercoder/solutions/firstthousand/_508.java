@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-import com.fishercoder.solutions._Contest;
 
 import java.util.ArrayList;
 import java.util.Collections;
