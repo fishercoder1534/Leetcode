@@ -13,12 +13,14 @@ import java.util.List;
 public class _1110Test {
     private static _1110.Solution1 solution1;
     private static _1110.Solution2 solution2;
+    private static _1110.Solution3 solution3;
     private static TreeNode root;
 
     @BeforeEach
     public void setup() {
         solution1 = new _1110.Solution1();
         solution2 = new _1110.Solution2();
+        solution3 = new _1110.Solution3();
     }
 
     @Test
@@ -29,9 +31,17 @@ public class _1110Test {
         for (TreeNode node : actual) {
             TreeUtils.printBinaryTree(node);
         }
+
         actual.clear();
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
         actual = solution2.delNodes(root, new int[]{3, 5});
+        for (TreeNode node : actual) {
+            TreeUtils.printBinaryTree(node);
+        }
+
+        actual.clear();
+        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
+        actual = solution3.delNodes(root, new int[]{3, 5});
         for (TreeNode node : actual) {
             TreeUtils.printBinaryTree(node);
         }
