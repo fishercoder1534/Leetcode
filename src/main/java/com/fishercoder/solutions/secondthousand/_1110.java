@@ -124,4 +124,46 @@ public class _1110 {
             return forest;
         }
     }
+
+    public static class Solution3 {
+        //use DFS/Post-order traversal
+        //key to recognize to apply post-order traversal: we need to handle subtree/children first before handling the root.
+        //it is in this case, handle children first in case children do not need to be removed and the parent needs to be removed,
+        //so we avoid the case of prematurely removing the parent before handling its children
+        //credit: https://leetcode.com/problems/delete-nodes-and-return-forest/editorial/
+        public List<TreeNode> delNodes(TreeNode root, int[] toDelete) {
+            List<TreeNode> forest = new ArrayList<>();
+            if (root == null) {
+                return forest;
+            }
+            Set<Integer> deleteSet = new HashSet<>();
+            for (int d : toDelete) {
+                deleteSet.add(d);
+            }
+            root = postOrder(root, deleteSet, forest);
+            if (root != null) {
+                forest.add(root);
+            }
+            return forest;
+        }
+
+        private TreeNode postOrder(TreeNode root, Set<Integer> deleteSet, List<TreeNode> forest) {
+            if (root == null) {
+                return null;
+            }
+            root.left = postOrder(root.left, deleteSet, forest);
+            root.right = postOrder(root.right, deleteSet, forest);
+            if (deleteSet.contains(root.val)) {
+                if (root.left != null) {
+                    forest.add(root.left);
+                }
+                if (root.right != null) {
+                    forest.add(root.right);
+                }
+                //return null to its parent to delete the current node
+                return null;
+            }
+            return root;
+        }
+    }
 }
