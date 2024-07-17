@@ -42,6 +42,7 @@ public class _2049 {
         }
 
         private Long computeScore(int nodeVal, Map<Integer, Long> nodeCountMap, Map<Integer, TreeNode> nodeValueMap) {
+            //since this is a binary tree, so, at most, removing a node, it'll split the original tree into three disjoint trees
             TreeNode node = nodeValueMap.get(nodeVal);
             Long leftSubtree = 1L;
             Long rightSubtree = 1L;
