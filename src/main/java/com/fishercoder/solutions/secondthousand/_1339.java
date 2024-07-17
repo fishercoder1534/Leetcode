@@ -62,12 +62,13 @@ public class _1339 {
             postOrderBuildProductList(root.left, sumMap, productList, total);
             postOrderBuildProductList(root.right, sumMap, productList, total);
             if (root.left != null) {
-                //cut off left child
+                //suppose we cut off left subtree now
                 long leftSum = sumMap.get(root.left);
                 long remainder = total - leftSum;
                 productList.add(new long[]{leftSum, remainder});
             }
             if (root.right != null) {
+                //suppose we cut off right subtree now
                 long rightSum = sumMap.get(root.right);
                 long remainder = total - rightSum;
                 productList.add(new long[]{rightSum, remainder});
