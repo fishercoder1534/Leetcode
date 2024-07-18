@@ -15,7 +15,8 @@ public class _1530 {
     public static class Solution1 {
         public int countPairs(TreeNode root, int distance) {
             Map<TreeNode, TreeNode> childToParentMap = new HashMap<>();
-            List<TreeNode> leafNodes = findAllLeaves(root, childToParentMap, new ArrayList<>());
+            List<TreeNode> leafNodes = new ArrayList();
+            postOrderToFindAllLeavesAndBuildChildParentMap(root, childToParentMap, leafNodes);
             int pairs = 0;
             for (TreeNode leaf : leafNodes) {
                 pairs += bfsToPossibleLeaves(leaf, distance, childToParentMap);
@@ -51,22 +52,21 @@ public class _1530 {
             return count;
         }
 
-        private List<TreeNode> findAllLeaves(TreeNode node, Map<TreeNode, TreeNode> childToParentMap, List<TreeNode> leafNodes) {
+        private void postOrderToFindAllLeavesAndBuildChildParentMap(TreeNode node, Map<TreeNode, TreeNode> childToParentMap, List<TreeNode> leafNodes) {
             if (node == null) {
-                return leafNodes;
-            }
-            if (node.left == null && node.right == null) {
-                leafNodes.add(node);
+                return;
             }
             if (node.left != null) {
                 childToParentMap.put(node.left, node);
-                findAllLeaves(node.left, childToParentMap, leafNodes);
             }
             if (node.right != null) {
                 childToParentMap.put(node.right, node);
-                findAllLeaves(node.right, childToParentMap, leafNodes);
             }
-            return leafNodes;
+            postOrderToFindAllLeavesAndBuildChildParentMap(node.left, childToParentMap, leafNodes);
+            postOrderToFindAllLeavesAndBuildChildParentMap(node.right, childToParentMap, leafNodes);
+            if (node.left == null && node.right == null) {
+                leafNodes.add(node);
+            }
         }
     }
 }
