@@ -37,4 +37,36 @@ public class _1380 {
             return true;
         }
     }
+
+    public static class Solution2 {
+        public List<Integer> luckyNumbers(int[][] matrix) {
+            List<Integer> rowMins = new ArrayList<>();
+            for (int i = 0; i < matrix.length; i++) {
+                int j = 0;
+                int rowMin = matrix[i][j++];
+                for (; j < matrix[0].length; j++) {
+                    rowMin = Math.min(rowMin, matrix[i][j]);
+                }
+                rowMins.add(rowMin);
+            }
+            List<Integer> colMaxs = new ArrayList<>();
+            for (int j = 0; j < matrix[0].length; j++) {
+                int i = 0;
+                int colMax = matrix[i++][j];
+                for (; i < matrix.length; i++) {
+                    colMax = Math.max(colMax, matrix[i][j]);
+                }
+                colMaxs.add(colMax);
+            }
+            List<Integer> result = new ArrayList<>();
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[0].length; j++) {
+                    if (matrix[i][j] == rowMins.get(i) && matrix[i][j] == colMaxs.get(j)) {
+                        result.add(matrix[i][j]);
+                    }
+                }
+            }
+            return result;
+        }
+    }
 }
