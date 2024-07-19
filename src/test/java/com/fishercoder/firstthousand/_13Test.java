@@ -28,4 +28,9 @@ public class _13Test {
     public void test3() {
         assertEquals(3999, solution1.romanToInt("MMMCMXCIX"));
     }
+
+    @Test
+    public void test4() {
+        assertEquals(3045, solution1.romanToInt("MMMXLV"));
+    }
 }
