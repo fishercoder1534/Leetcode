@@ -120,4 +120,38 @@ public class _735 {
             return ans;
         }
     }
+
+    public static class Solution4 {
+        /**
+         * My completely original solution on 7/19/2024.
+         */
+        public int[] asteroidCollision(int[] asteroids) {
+            Deque<Integer> stack = new LinkedList<>();
+            for (int asteroid : asteroids) {
+                if (asteroid < 0 && !stack.isEmpty() && stack.peekLast() > 0) {
+                    boolean bothRemoved = false;
+                    while (!stack.isEmpty() && stack.peekLast() > 0 && stack.peekLast() <= -asteroid) {
+                        if (stack.peekLast() == -asteroid) {
+                            bothRemoved = true;
+                            stack.pollLast();
+                            break;
+                        } else if (stack.peekLast() < -asteroid) {
+                            stack.pollLast();
+                        }
+                    }
+                    if ((stack.isEmpty() || stack.peekLast() < 0) && !bothRemoved) {
+                        stack.addLast(asteroid);
+                    }
+                } else {
+                    stack.addLast(asteroid);
+                }
+            }
+            int[] result = new int[stack.size()];
+            int i = 0;
+            while (!stack.isEmpty()) {
+                result[i++] = stack.pollFirst();
+            }
+            return result;
+        }
+    }
 }
