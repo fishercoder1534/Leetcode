@@ -1,77 +1,57 @@
 package com.fishercoder.solutions.firstthousand;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 
 public class _381 {
     public static class Solution1 {
-
-        Map<Integer, Integer> forwardMap;
-        //key is the to-be-inserted number, value is its auto-incremented index
-        Map<Integer, Integer> reverseMap;//the other way around
-        int index;
-        Random rand;
-
         /**
-         * Initialize your data structure here.
+         * This is a natural extension to the solution from https://leetcode.com/problems/insert-delete-getrandom-o1
+         * You only need to change the value type of the hashmap to be a set instead of Integer to hold all indexes for this value ever inserted.
          */
-        public Solution1() {
-            forwardMap = new HashMap();
-            reverseMap = new HashMap();
-            index = 0;
-            rand = new Random();
-        }
 
-        /**
-         * Inserts a value to the collection. Returns true if the collection did not already contain the
-         * specified element.
-         */
-        public boolean insert(int val) {
-            boolean contains;
-            if (reverseMap.containsValue(val)) {
-                contains = true;
-            } else {
-                contains = false;
+        public static class RandomizedCollection {
+            List<Integer> list;
+            Map<Integer, Set<Integer>> map;
+            Random random;
+
+            public RandomizedCollection() {
+                this.list = new ArrayList<>();
+                this.map = new HashMap<>();
+                this.random = new Random();
             }
-            forwardMap.put(val,
-                    index);//this will overwrite the preivous key with a new index if the key already exists
-            reverseMap.put(index, val);
-            index++;
-            return contains;
-        }
 
-        /**
-         * Removes a value from the collection. Returns true if the collection contained the specified
-         * element.
-         */
-        public boolean remove(int val) {
-            boolean contains;
-            if (reverseMap.containsValue(val)) {
-                contains = true;
-                if (forwardMap.containsKey(val)) {
-                    int i = forwardMap.get(val);
-                    forwardMap.remove(val);
-                    reverseMap.remove(i);
+            public boolean insert(int val) {
+                Set<Integer> indexSet = map.getOrDefault(val, new LinkedHashSet<>());
+                indexSet.add(list.size());
+                map.put(val, indexSet);
+                list.add(val);
+                return indexSet.size() <= 1;
+            }
+
+            public boolean remove(int val) {
+                if (!map.containsKey(val) || map.get(val).size() == 0) {
+                    return false;
                 } else {
-                    //remove the entry in revserve map that has val as its value
-                    reverseMap.values().remove(val);
+                    int removeIndex = map.get(val).iterator().next();
+                    map.get(val).remove(removeIndex);
+                    int lastElement = list.get(list.size() - 1);
+                    list.set(removeIndex, lastElement);
+                    map.get(lastElement).add(removeIndex);
+                    map.get(lastElement).remove(list.size() - 1);
+                    list.remove(list.size() - 1);
+                    return true;
                 }
-            } else {
-                contains = false;
             }
-            return contains;
-        }
 
-        /**
-         * Get a random element from the collection.
-         */
-        public int getRandom() {
-            int randNum = rand.nextInt(index);
-            while (!reverseMap.containsKey(randNum)) {
-                randNum = rand.nextInt(index);
+            public int getRandom() {
+                return list.get(random.nextInt(list.size()));
             }
-            return reverseMap.get(randNum);
         }
     }
 }
