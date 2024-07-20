@@ -27,7 +27,7 @@ public class _3224 {
             List<int[]> modes = new ArrayList<>();
             modes.add(list.get(0));
             int i = 1;
-            //in case there are ties for the same mode
+            //in case there are ties (same frequency, different mode values)
             while (i < list.size() && list.get(i)[1] == list.get(0)[1]) {
                 modes.add(list.get(i++));
             }
