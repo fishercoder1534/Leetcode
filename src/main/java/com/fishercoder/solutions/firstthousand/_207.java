@@ -158,4 +158,55 @@ public class _207 {
             return true;
         }
     }
+
+    public static class Solution4 {
+        /**
+         * This is also Kahn's algorithm, but builds an adjacency list (unncessary for this problem)
+         * which is often times very helpful in other graph problems, doing it here as a practice:
+         * it's a very practical template:
+         * 1. an array of list type to hold all adjacency lists;
+         * 2. an array of integers to hold indegree for each node;
+         * 3. several for loops:
+         *      first for-loop: initialize the adjacency list;
+         *      second for-loop: go through all prerequisites to build both adjacency list and indegree array;
+         *      third for-loop: find all nodes that have indegree == zero and add them into the queue;
+         * 4. start a while loop as long as q is not empty:
+         *      4.1: poll a node from the q, this node has indegree == zero;
+         *      4.2: go through all adjacent nodes of this node, decrement ecah of their indegree by one;
+         *      4.3: if any of their indegree == zero, add that adjacent node into the q
+         * 5. in the end, all nodes' indegree should be zero, otherwise, it's not a valid topological sortably graph.
+         */
+        public boolean canFinish(int numCourses, int[][] prerequisites) {
+            List<Integer>[] adjList = new ArrayList[numCourses];
+            for (int i = 0; i < numCourses; i++) {
+                adjList[i] = new ArrayList<>();
+            }
+            int[] indegree = new int[numCourses];
+            for (int[] pre : prerequisites) {
+                indegree[pre[1]]++;
+                adjList[pre[0]].add(pre[1]);
+            }
+            Queue<Integer> q = new LinkedList<>();
+            for (int i = 0; i < numCourses; i++) {
+                if (indegree[i] == 0) {
+                    q.offer(i);
+                }
+            }
+            while (!q.isEmpty()) {
+                Integer curr = q.poll();
+                for (int v : adjList[curr]) {
+                    indegree[v]--;
+                    if (indegree[v] == 0) {
+                        q.offer(v);
+                    }
+                }
+            }
+            for (int i : indegree) {
+                if (i != 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
 }
