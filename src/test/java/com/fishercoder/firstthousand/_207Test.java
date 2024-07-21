@@ -10,6 +10,7 @@ public class _207Test {
     private static _207.Solution1 solution1;
     private static _207.Solution2 solution2;
     private static _207.Solution3 solution3;
+    private static _207.Solution4 solution4;
     private static int[][] prerequisites;
     private static int numCourses;
 
@@ -18,6 +19,7 @@ public class _207Test {
         solution1 = new _207.Solution1();
         solution2 = new _207.Solution2();
         solution3 = new _207.Solution3();
+        solution4 = new _207.Solution4();
     }
 
     @Test
@@ -27,6 +29,7 @@ public class _207Test {
         assertEquals(true, solution1.canFinish(numCourses, prerequisites));
         assertEquals(true, solution2.canFinish(numCourses, prerequisites));
         assertEquals(true, solution3.canFinish(numCourses, prerequisites));
+        assertEquals(true, solution4.canFinish(numCourses, prerequisites));
     }
 
     @Test
@@ -47,6 +50,7 @@ public class _207Test {
         assertEquals(true, solution1.canFinish(numCourses, prerequisites));
         assertEquals(true, solution2.canFinish(numCourses, prerequisites));
         assertEquals(true, solution3.canFinish(numCourses, prerequisites));
+        assertEquals(true, solution4.canFinish(numCourses, prerequisites));
     }
 
     @Test
@@ -67,5 +71,6 @@ public class _207Test {
         assertEquals(true, solution1.canFinish(numCourses, prerequisites));
         assertEquals(true, solution2.canFinish(numCourses, prerequisites));
         assertEquals(true, solution3.canFinish(numCourses, prerequisites));
+        assertEquals(true, solution4.canFinish(numCourses, prerequisites));
     }
 }
