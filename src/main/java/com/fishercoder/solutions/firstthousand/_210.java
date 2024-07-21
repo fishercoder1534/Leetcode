@@ -71,6 +71,7 @@ public class _210 {
             while (!q.isEmpty()) {
                 Integer curr = q.poll();
                 order[index++] = curr;
+                //NOTE: we only need to go through adjList[curr] here now, instead of going through all prerequisites again now.
                 for (int v : adjList[curr]) {
                     indegree[v]--;
                     if (indegree[v] == 0) {
