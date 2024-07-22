@@ -49,4 +49,49 @@ public class _1136 {
             return taken.size() != n ? -1 : minSemesters;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * A straightforward one to practice topological sort (template).
+         * Use an indegree/outdegree array and an array of list type.
+         */
+
+        public int minimumSemesters(int n, int[][] relations) {
+            List<Integer>[] adjList = new ArrayList[n + 1];
+            for (int i = 1; i <= n; i++) {
+                adjList[i] = new ArrayList<>();
+            }
+            int[] indegree = new int[n + 1];
+            for (int[] rel : relations) {
+                indegree[rel[1]]++;
+                adjList[rel[0]].add(rel[1]);
+            }
+            Queue<Integer> q = new LinkedList<>();
+            for (int i = 1; i <= n; i++) {
+                if (indegree[i] == 0) {
+                    q.offer(i);
+                }
+            }
+            int semesters = 0;
+            while (!q.isEmpty()) {
+                int size = q.size();
+                for (int i = 0; i < size; i++) {
+                    Integer curr = q.poll();
+                    for (int v : adjList[curr]) {
+                        indegree[v]--;
+                        if (indegree[v] == 0) {
+                            q.offer(v);
+                        }
+                    }
+                }
+                semesters++;
+            }
+            for (int i = 1; i <= n; i++) {
+                if (indegree[i] != 0) {
+                    return -1;
+                }
+            }
+            return semesters;
+        }
+    }
 }
