@@ -1,6 +1,7 @@
 package com.fishercoder.solutions.secondthousand;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -34,6 +35,32 @@ public class _1636 {
                     while (k-- > 0) {
                         result[i++] = list.get(j);
                     }
+                }
+            }
+            return result;
+        }
+    }
+
+    public static class Solution2 {
+
+        public int[] frequencySort(int[] nums) {
+            Map<Integer, Integer> map = new HashMap<>();
+            for (int num : nums) {
+                map.put(num, map.getOrDefault(num, 0) + 1);
+            }
+            int[][] pairs = new int[map.size()][2];
+            int i = 0;
+            for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+                pairs[i][0] = entry.getKey();
+                pairs[i++][1] = entry.getValue();
+            }
+            Arrays.sort(pairs, (a, b) -> a[1] != b[1] ? a[1] - b[1] : b[0] - a[0]);
+            int[] result = new int[nums.length];
+            i = 0;
+            for (int[] pair : pairs) {
+                int count = pair[1];
+                while (count-- > 0) {
+                    result[i++] = pair[0];
                 }
             }
             return result;
