@@ -91,6 +91,8 @@ public class _684 {
          * DFS, credit: https://leetcode.com/problems/redundant-connection/editorial/
          * 1. we build the graph one edge at a time, each time, we add both edge[0] to the neighbors of edge[1] and vice versa since this is an un-directed graph;
          * 2. as soon as we encounter an edge that can connect to each other, it must be the redundant one.
+         * In other words, we first check if this new edge is needed or not based on the current existing graph:
+         * if the two nodes connected by this edge is already connected, then this edge is redundant.
          */
         private static final int MAX_VERTICES = 1000;
 
