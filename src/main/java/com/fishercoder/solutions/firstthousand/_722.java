@@ -25,7 +25,8 @@ public class _722 {
                         } else if (line.charAt(i + 1) == '/') {
                             //this is a single line comment, remove
                             if (!possiblyMultilineComment) {
-                                //if this is not part of a possibly multiline comment, then we can safely break out, see test case 4
+                                //only at this time, we know this is not part of a possibly multiline comment,
+                                //then we can safely break out, see test case 4
                                 break;
                             }
                         } else if (!possiblyMultilineComment) {
