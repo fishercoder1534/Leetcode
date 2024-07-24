@@ -25,13 +25,13 @@ public class _2446 {
             return false;
         }
 
-        private int getAbsoluteMinute(String eventStart) {
-            String[] startParts = eventStart.split(":");
-            String startHour = startParts[0];
-            String startMinute = startParts[1];
-            int startHourInt = Integer.parseInt(startHour);
-            int startMinuteInt = Integer.parseInt(startMinute);
-            return startHourInt * 60 + startMinuteInt;
+        private int getAbsoluteMinute(String event) {
+            String[] parts = event.split(":");
+            String hour = parts[0];
+            String minute = parts[1];
+            int hourInt = Integer.parseInt(hour);
+            int minuteInt = Integer.parseInt(minute);
+            return hourInt * 60 + minuteInt;
         }
     }
 }
