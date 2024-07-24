@@ -23,15 +23,7 @@ tasks.withType(Javadoc) {
 }
 
 checkstyle {
-    configFile = file("${rootDir}/fishercoder_checkstyle.xml")
-}
-
-sourceSets {
-    main {
-        java {
-            srcDir 'src/fishercoder'
-        }
-    }
+    configFile = file("fishercoder_checkstyle.xml")
 }
 
 description = ""
