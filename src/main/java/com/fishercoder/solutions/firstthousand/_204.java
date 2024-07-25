@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 public class _204 {
-
     public static class Solution1 {
         public int countPrimes(int n) {
             boolean[] notPrime = new boolean[n];
