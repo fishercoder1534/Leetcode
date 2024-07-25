@@ -3,10 +3,10 @@ package com.fishercoder.solutions.firstthousand;
 public class _912 {
     public static class Solution1 {
         /**
-         * Implementation of MergeSort which is a stable sort, unlike QuickSort which isn't stable.
+         * Implementation of MergeSort which is a stable sort, unlike QuickSort which isn't.
          */
         public int[] sortArray(int[] nums) {
-            //use a helder function to take in two additional parameters for the ease of recursion
+            //use a helper function to take in two additional parameters for the ease of recursion
             return sort(nums, 0, nums.length - 1);
         }
 
