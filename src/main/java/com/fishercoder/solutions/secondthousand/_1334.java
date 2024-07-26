@@ -8,12 +8,15 @@ import java.util.PriorityQueue;
 public class _1334 {
     public static class Solution1 {
         /**
-         * Dijakstra's algorithm to find the shortest path from each node to all possibly reachable nodes within limit.
+         * Dijkstra's algorithm to find the shortest path from each node to all possibly reachable nodes within limit.
+         * Dijkstra's algorithm applies to weights are non-negative problems.
          * Keys to implement Dijkstra's algorithm:
          * 1. use an array to hold the shortest distance to each node for each node;
          * 2. initially, only the starting node distance is zero, all other nodes' distances to be infinity;
          * 3. use a PriorityQueue to poll out the next node that has the shortest distance and scan through all its neighbors,
-         * if the cost can be updated, then put it into the priority queue
+         * if the cost can be updated, then put it into the priority queue (this is a critical key to implement Dijkstra!)
+         * Only when this node's code could be updated/shortened, we'll put it into the priority queue/minHeap,
+         * so that next time, it'll be polled and processed based on priority order
          */
         public int findTheCity(int n, int[][] edges, int distanceThreshold) {
             List<List<int[]>> graph = new ArrayList();
@@ -31,12 +34,12 @@ public class _1334 {
             for (int i = 0; i < n; i++) {
                 dijkstraAlgo(graph, i, shortestPaths[i]);
             }
-            return findCity(shortestPaths, distanceThreshold);
+            return findCityWithFewestReachableCities(shortestPaths, distanceThreshold);
         }
 
-        private int findCity(int[][] shortestPaths, int distanceThreshold) {
+        private int findCityWithFewestReachableCities(int[][] shortestPaths, int distanceThreshold) {
             int ans = 0;
-            int fewestConnected = shortestPaths.length;
+            int fewestReachable = shortestPaths.length;
             for (int i = 0; i < shortestPaths.length; i++) {
                 int reachable = 0;
                 for (int j = 0; j < shortestPaths[0].length; j++) {
@@ -44,8 +47,8 @@ public class _1334 {
                         reachable++;
                     }
                 }
-                if (reachable <= fewestConnected) {
-                    fewestConnected = reachable;
+                if (reachable <= fewestReachable) {
+                    fewestReachable = reachable;
                     ans = i;
                 }
             }
