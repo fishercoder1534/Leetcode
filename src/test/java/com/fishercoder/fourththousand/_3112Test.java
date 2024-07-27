@@ -18,8 +18,8 @@ public class _3112Test {
     @Test
     public void test1() {
         assertArrayEquals(new int[]{0, -1, 4}, solution1
-                .minimumTime(3, CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray
-                                ("[0,1,2],[1,2,1],[0,2,4]"),
+                .minimumTime(3, CommonUtils
+                                .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[0,1,2],[1,2,1],[0,2,4]"),
                         new int[]{1, 1, 5}));
     }
 }
