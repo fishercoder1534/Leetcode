@@ -16,9 +16,9 @@ public class _2976 {
          * the shortest path in a weighted (non-negative) graph.
          */
         public long minimumCost(String source, String target, char[] original, char[] changed, int[] cost) {
-            int ALPHABET_SIZE = 26;
-            List<int[]>[] graph = new ArrayList[ALPHABET_SIZE];
-            for (int i = 0; i < ALPHABET_SIZE; i++) {
+            int alphabetSize = 26;
+            List<int[]>[] graph = new ArrayList[alphabetSize];
+            for (int i = 0; i < alphabetSize; i++) {
                 graph[i] = new ArrayList<>();
             }
             for (int i = 0; i < original.length; i++) {
