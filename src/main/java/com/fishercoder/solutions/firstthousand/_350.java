@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.Arrays;
 
 public class _350 {
-
     public static class Solution1 {
         public int[] intersect(int[] nums1, int[] nums2) {
             Map<Integer, Integer> map = new HashMap();
