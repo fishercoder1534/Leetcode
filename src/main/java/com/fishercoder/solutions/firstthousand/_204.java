@@ -1,5 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
+import java.util.Arrays;
+
 public class _204 {
     public static class Solution1 {
         /**
@@ -9,13 +11,19 @@ public class _204 {
          * starting from 2, then all remaining ones are prime.
          */
         public int countPrimes(int n) {
-            boolean[] notPrimes = new boolean[n];
+            if (n <= 1) {
+                return 0;
+            }
+            boolean[] isPrime = new boolean[n];
+            Arrays.fill(isPrime, true);
+            isPrime[0] = false;
+            isPrime[1] = false;
             int count = 0;
             for (int i = 2; i < n; i++) {
-                if (!notPrimes[i]) {
+                if (isPrime[i]) {
                     count++;
                     for (int j = 2; i * j < n; j++) {
-                        notPrimes[i * j] = true;
+                        isPrime[i * j] = false;
                     }
                 }
             }
