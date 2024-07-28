@@ -14,7 +14,7 @@ public class _1509 {
             int minDiff = Math.abs(nums[len - 4] - nums[0]);
 
             //now try to change the three smallest to biggest
-            minDiff = Math.min(minDiff, nums[len -1] - nums[3]);
+            minDiff = Math.min(minDiff, nums[len - 1] - nums[3]);
 
             //now try to change first two and last one
             minDiff = Math.min(minDiff, nums[len - 2] - nums[2]);
