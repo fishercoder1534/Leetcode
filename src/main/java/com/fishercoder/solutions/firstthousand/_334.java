@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 public class _334 {
-
     public static class Solution1 {
         /**
          * Time: O(n^2)
