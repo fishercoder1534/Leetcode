@@ -4,9 +4,6 @@ import java.util.Arrays;
 
 public class _300 {
 
-    /**
-     * credit: https://leetcode.com/problems/longest-increasing-subsequence/solution/
-     */
     public static class Solution1 {
         /**
          * brute force:
@@ -71,7 +68,7 @@ public class _300 {
 
     public static class Solution3 {
         /**
-         * DP solution
+         * DP solution, credit: https://leetcode.com/problems/longest-increasing-subsequence/editorial/
          * Time: O(n^2)
          * Space: O(n)
          */
@@ -80,19 +77,19 @@ public class _300 {
                 return 0;
             }
             int[] dp = new int[nums.length];
-            dp[0] = 1;
-            int result = 1;
+            Arrays.fill(dp, 1);
             for (int i = 1; i < nums.length; i++) {
-                int maxVal = 0;
                 for (int j = 0; j < i; j++) {
                     if (nums[i] > nums[j]) {
-                        maxVal = Math.max(maxVal, dp[j]);
+                        dp[i] = Math.max(dp[i], dp[j] + 1);
                     }
                 }
-                dp[i] = maxVal + 1;
-                result = Math.max(result, dp[i]);
             }
-            return result;
+            int ans = 1;
+            for (int val : dp) {
+                ans = Math.max(ans, val);
+            }
+            return ans;
         }
     }
 
@@ -102,7 +99,7 @@ public class _300 {
          * Time: O(nlogn)
          * Space: O(n)
          * <p>
-         * The reason we can use binary search here is because all numbers we put into dp array are sorted.
+         * The reason we can use binary search here is all numbers we put into dp array are sorted.
          * Arrays.binarySearch() method returns index of the search key,
          * if it is contained in the array, else it returns (-(insertion point) - 1).
          * The insertion point is the point at which the key would be inserted into the array:
