@@ -1,5 +1,6 @@
 | #    |      Title     | Solutions                                                                                                             | Video         | Difficulty    | Tag          
 |------|----------------|-----------------------------------------------------------------------------------------------------------------------|---------------|---------------|-------------
+| 3198 |[Find Cities in Each State](https://leetcode.com/problems/find-cities-in-each-state/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_3198.sql)                                || Easy |
 | 3172 |[Second Day Verification](https://leetcode.com/problems/second-day-verification/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_3172.sql)                                || Easy |
 | 1757 |[Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_1757.sql)                                || Easy |
 | 1741 |[Find Total Time Spent by Each Employee](https://leetcode.com/problems/find-total-time-spent-by-each-employee/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_1741.sql)                                || Easy |
