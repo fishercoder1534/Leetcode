@@ -3,7 +3,16 @@ package com.fishercoder.solutions.secondthousand;
 public class _1105 {
     public static class Solution1 {
         /**
-         * Bottom up DP.
+         * Bottom up DP:
+         * 1. we place the books sequentially, for each book, there are only two options:
+         * place it on a new level (this will maximize the height of the shelf);
+         * or
+         * place it on the previous level if its remaining width still fits the current book's width
+         * <p>
+         * How it's implemented below is:
+         * we always place the new book onto a new level to maximize its height,
+         * then we try to move previous books onto this new level as long as the width could accommodate,
+         * during this process, we minimize the height for dp[i].
          */
         public int minHeightShelves(int[][] books, int shelfWidth) {
             //dp[i] means the minimum shelf height after placing all books up to and excluding book i
