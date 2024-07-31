@@ -8,15 +8,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3178Test {
     private static _3178.Solution1 solution1;
+    private static _3178.Solution2 solution2;
 
     @BeforeEach
     public void setup() {
         solution1 = new _3178.Solution1();
+        solution2 = new _3178.Solution2();
     }
 
     @Test
     public void test1() {
         assertEquals(1, solution1.numberOfChild(3, 5));
+        assertEquals(1, solution2.numberOfChild(3, 5));
     }
 
     @Test
