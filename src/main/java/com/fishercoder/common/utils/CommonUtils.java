@@ -72,11 +72,11 @@ public class CommonUtils {
     }
 
     public static void print(List<String> list) {
-        System.out.println("----------------------------------------------------");
+        System.out.println("List of string is: ");
         for (String str : list) {
             System.out.print(str + ", ");
         }
-        System.out.println();
+        System.out.println("\n----------------------------------------------------");
     }
 
     public static void println(String message) {
