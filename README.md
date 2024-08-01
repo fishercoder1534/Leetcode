@@ -22,6 +22,9 @@ _If you like this project, please leave me a star._ &#9733;
 ## Shell
 [All shell problems](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/shell)
 
+## Javascript
+[All Javascript problems](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/javascript)
+
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
