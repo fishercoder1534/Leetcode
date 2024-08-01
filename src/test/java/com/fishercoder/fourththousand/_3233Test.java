@@ -1,4 +1,4 @@
-package com.fishercoder.thirdthousand;
+package com.fishercoder.fourththousand;
 
 import com.fishercoder.solutions.fourththousand._3233;
 import org.junit.jupiter.api.BeforeEach;
