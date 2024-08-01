@@ -7,6 +7,8 @@ public class _3237 {
     public static class Solution1 {
         /**
          * My completely original solution, very natural to think of doubly linked list + hashmap.
+         * Whenever a window is chosen (iterating on in the queries array), that window will be put onto the head of the list,
+         * all other windows will be pushed to the right by one position.
          */
         public int[] simulationResult(int[] windows, int[] queries) {
             Map<Integer, DoublyLinkedListNode> map = new HashMap<>();
