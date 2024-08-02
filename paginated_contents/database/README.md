@@ -3,6 +3,7 @@
 | 3198 |[Find Cities in Each State](https://leetcode.com/problems/find-cities-in-each-state/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_3198.sql)                                || Easy |
 | 3172 |[Second Day Verification](https://leetcode.com/problems/second-day-verification/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_3172.sql)                                || Easy |
 | 3150 |[Invalid Tweets II](https://leetcode.com/problems/invalid-tweets-ii/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_3150.sql)                                || Easy |
+| 3059 |[Find All Unique Email Domains](https://leetcode.com/problems/find-all-unique-email-domains/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_3159.sql)                                || Easy |
 | 2990 |[Loan Types](https://leetcode.com/problems/loan-types/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_2990.sql)                                || Easy |
 | 2205 |[The Number of Users That Are Eligible for Discount](https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_2205.sql)                                || Easy |
 | 2082 |[The Number of Rich Customers](https://leetcode.com/problems/the-number-of-rich-customers/)| [Solution](https://github.com/fishercoder1534/Leetcode/blob/master/database/_2082.sql)                                || Easy |
