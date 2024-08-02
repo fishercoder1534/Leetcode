@@ -9,9 +9,7 @@ public class _1151 {
         public int minSwaps(int[] data) {
             int oneCount = 0;
             for (int d : data) {
-                if (d == 1) {
-                    oneCount++;
-                }
+                oneCount += d;
             }
             if (oneCount <= 1) {
                 return 0;
