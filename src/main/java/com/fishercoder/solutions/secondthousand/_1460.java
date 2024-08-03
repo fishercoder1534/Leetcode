@@ -11,11 +11,7 @@ public class _1460 {
                 map.put(num, map.getOrDefault(num, 0) + 1);
             }
             for (int num : arr) {
-                if (!map.containsKey(num)) {
-                    return false;
-                } else {
-                    map.put(num, map.get(num) - 1);
-                }
+                map.put(num, map.getOrDefault(num, 0) - 1);
             }
             for (int key : map.keySet()) {
                 if (map.get(key) != 0) {
