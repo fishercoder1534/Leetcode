@@ -22,9 +22,6 @@ sourceSets {
 
 description = """"""
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
 repositories {
     mavenCentral()
     maven { url "http://repo.maven.apache.org/maven2" }
