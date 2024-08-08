@@ -4,7 +4,6 @@ import com.fishercoder.solutions.firstthousand._351;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _351Test {
@@ -18,5 +17,10 @@ public class _351Test {
     @Test
     public void test1() {
         assertEquals(9, solution1.numberOfPatterns(1, 1));
+    }
+
+    @Test
+    public void test2() {
+        assertEquals(65, solution1.numberOfPatterns(1, 2));
     }
 }
