@@ -13,31 +13,34 @@ public class _840 {
                 for (int j = 0; j < n - 2; j++) {
                     Set<Integer> set = new HashSet<>();
                     int sum = grid[i][j] + grid[i][j + 1] + grid[i][j + 2];
-                    if (sum == grid[i + 1][j] + grid[i + 1][j + 1] + grid[i + 1][j + 2]
-                            && sum == grid[i + 2][j] + grid[i + 2][j + 1] + grid[i + 2][j + 2]
-
-                            && sum == grid[i][j] + grid[i + 1][j] + grid[i + 2][j]
-                            && sum == grid[i][j + 1] + grid[i + 1][j + 1] + grid[i + 2][j + 1]
-                            && sum == grid[i][j + 2] + grid[i + 1][j + 2] + grid[i + 2][j + 2]
-
-                            && sum == grid[i][j] + grid[i + 1][j + 1] + grid[i + 2][j + 2]
-                            && sum == grid[i][j + 2] + grid[i + 1][j + 1] + grid[i + 2][j]
-
-                            && set.add(grid[i][j]) && isLegit(grid[i][j])
-                            && set.add(grid[i][j + 1]) && isLegit(grid[i][j + 1])
-                            && set.add(grid[i][j + 2]) && isLegit(grid[i][j + 2])
-                            && set.add(grid[i + 1][j]) && isLegit(grid[i + 1][j])
-                            && set.add(grid[i + 1][j + 1]) && isLegit(grid[i + 1][j + 1])
-                            && set.add(grid[i + 1][j + 2]) && isLegit(grid[i + 1][j + 2])
-                            && set.add(grid[i + 2][j]) && isLegit(grid[i + 2][j])
-                            && set.add(grid[i + 2][j + 1]) && isLegit(grid[i + 2][j + 1])
-                            && set.add(grid[i + 2][j + 2]) && isLegit(grid[i + 2][j + 2])
-                    ) {
+                    if (isValid(grid, i, j, set, sum)) {
                         count++;
                     }
                 }
             }
             return count;
+        }
+
+        private boolean isValid(int[][] grid, int i, int j, Set<Integer> set, int sum) {
+            return sum == grid[i + 1][j] + grid[i + 1][j + 1] + grid[i + 1][j + 2]
+                    && sum == grid[i + 2][j] + grid[i + 2][j + 1] + grid[i + 2][j + 2]
+
+                    && sum == grid[i][j] + grid[i + 1][j] + grid[i + 2][j]
+                    && sum == grid[i][j + 1] + grid[i + 1][j + 1] + grid[i + 2][j + 1]
+                    && sum == grid[i][j + 2] + grid[i + 1][j + 2] + grid[i + 2][j + 2]
+
+                    && sum == grid[i][j] + grid[i + 1][j + 1] + grid[i + 2][j + 2]
+                    && sum == grid[i][j + 2] + grid[i + 1][j + 1] + grid[i + 2][j]
+
+                    && set.add(grid[i][j]) && isLegit(grid[i][j])
+                    && set.add(grid[i][j + 1]) && isLegit(grid[i][j + 1])
+                    && set.add(grid[i][j + 2]) && isLegit(grid[i][j + 2])
+                    && set.add(grid[i + 1][j]) && isLegit(grid[i + 1][j])
+                    && set.add(grid[i + 1][j + 1]) && isLegit(grid[i + 1][j + 1])
+                    && set.add(grid[i + 1][j + 2]) && isLegit(grid[i + 1][j + 2])
+                    && set.add(grid[i + 2][j]) && isLegit(grid[i + 2][j])
+                    && set.add(grid[i + 2][j + 1]) && isLegit(grid[i + 2][j + 1])
+                    && set.add(grid[i + 2][j + 2]) && isLegit(grid[i + 2][j + 2]);
         }
 
         private boolean isLegit(int num) {
