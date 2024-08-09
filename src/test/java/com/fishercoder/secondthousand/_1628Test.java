@@ -2,19 +2,19 @@ package com.fishercoder.secondthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.secondthousand._1628;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1628Test {
-    private static _1628.Solution1.TreeBuilder treeBuilderSolution1;
+    private _1628.Solution1.TreeBuilder treeBuilderSolution1;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         treeBuilderSolution1 = new _1628.Solution1.TreeBuilder();
     }
 

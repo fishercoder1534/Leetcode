@@ -1,16 +1,16 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._362;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _362Test {
-    private static _362.Solution1.HitCounter hitCounter;
+    private _362.Solution1.HitCounter hitCounter;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         hitCounter = new _362.Solution1.HitCounter();
     }
 

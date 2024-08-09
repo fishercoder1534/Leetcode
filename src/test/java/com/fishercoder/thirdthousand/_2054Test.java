@@ -2,19 +2,19 @@ package com.fishercoder.thirdthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.thirdthousand._2054;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2054Test {
-    private static _2054.Solution1 solution1;
+    private _2054.Solution1 solution1;
     private static int[][] events;
     private static int expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _2054.Solution1();
     }
 

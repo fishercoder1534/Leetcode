@@ -11,7 +11,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2096Test {
-    private static _2096.Solution1 solution1;
+    private _2096.Solution1 solution1;
 
     @BeforeEach
     public void setup() {

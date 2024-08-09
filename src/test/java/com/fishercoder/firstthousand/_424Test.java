@@ -1,20 +1,20 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._424;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _424Test {
-    private static _424.Solution1 solution1;
-    private static _424.Solution2 solution2;
+    private _424.Solution1 solution1;
+    private _424.Solution2 solution2;
     private static String s;
     private static int k;
     private static int expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _424.Solution1();
         solution2 = new _424.Solution2();
     }

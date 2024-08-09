@@ -2,18 +2,18 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._667;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _667Test {
-    private static _667.Solutoin1 solution1;
-    private static _667.Solutoin2 solution2;
+    private _667.Solutoin1 solution1;
+    private _667.Solutoin2 solution2;
     private static int[] expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _667.Solutoin1();
         solution2 = new _667.Solutoin2();
     }

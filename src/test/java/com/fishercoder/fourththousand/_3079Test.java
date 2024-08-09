@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3079Test {
-    private static _3079.Solution1 solution1;
+    private _3079.Solution1 solution1;
 
     @BeforeEach
     public void setup() {

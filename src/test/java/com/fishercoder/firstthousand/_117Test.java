@@ -1,15 +1,15 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._117;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _117Test {
-    private static _117.Solution1 solution1;
-    private static _117.Node root;
+    private _117.Solution1 solution1;
+    private _117.Node root;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _117.Solution1();
     }
 

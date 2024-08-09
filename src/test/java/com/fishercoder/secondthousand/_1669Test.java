@@ -3,14 +3,14 @@ package com.fishercoder.secondthousand;
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.secondthousand._1669;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1669Test {
-    private static _1669.Solution1 solution1;
-    private static _1669.Solution2 solution2;
+    private _1669.Solution1 solution1;
+    private _1669.Solution2 solution2;
     private static ListNode l1;
     private static ListNode l2;
     private static int a;
@@ -20,7 +20,7 @@ public class _1669Test {
     private static ListNode expected;
     private static ListNode actual;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution1 = new _1669.Solution1();
         solution2 = new _1669.Solution2();

@@ -2,15 +2,15 @@ package com.fishercoder.secondthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.secondthousand._1981;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1981Test {
-    private static _1981.Solution1 solution1;
+    private _1981.Solution1 solution1;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution1 = new _1981.Solution1();
     }

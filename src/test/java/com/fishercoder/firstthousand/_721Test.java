@@ -9,8 +9,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class _721Test {
-    private static _721.Solution1 solution1;
-    private static _721.Solution2 solution2;
+    private _721.Solution1 solution1;
+    private _721.Solution2 solution2;
     private static List<List<String>> accounts;
     private static List<List<String>> expected;
 

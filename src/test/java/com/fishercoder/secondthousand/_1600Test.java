@@ -8,7 +8,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1600Test {
-    private static _1600.Solution1.ThroneInheritance throneInheritance;
+    private _1600.Solution1.ThroneInheritance throneInheritance;
 
     @Test
     public void test1() {

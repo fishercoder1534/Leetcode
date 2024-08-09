@@ -1,29 +1,28 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._320;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _320Test {
-  private static _320.Solution1 solution1;
+  private _320.Solution1 solution1;
   private static List<String> expected;
   private static List<String> actual;
   private static String word;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     solution1 = new _320.Solution1();
   }
 
-  @Before
-  public void setupForEachTest() {
+  @BeforeEach
+    public void setupForEachTest() {
     expected = new ArrayList<>();
     actual = new ArrayList<>();
   }

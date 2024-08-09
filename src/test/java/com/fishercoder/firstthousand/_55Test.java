@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _55Test {
-    private static _55.Solution1 solution1;
-    private static _55.Solution2 solution2;
-    private static _55.Solution3 solution3;
-    private static _55.Solution4 solution4;
+    private _55.Solution1 solution1;
+    private _55.Solution2 solution2;
+    private _55.Solution3 solution3;
+    private _55.Solution4 solution4;
     private static int[] nums;
 
     @BeforeEach

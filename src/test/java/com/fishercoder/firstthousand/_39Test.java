@@ -11,7 +11,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _39Test {
-    private static _39.Solution1 solution1;
+    private _39.Solution1 solution1;
     private static int[] candidates;
     private static List<List<Integer>> expected;
 

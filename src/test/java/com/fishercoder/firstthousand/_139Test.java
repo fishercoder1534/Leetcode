@@ -1,24 +1,24 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._139;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _139Test {
-    private static _139.Solution1 solution1;
-    private static _139.Solution2 solution2;
-    private static _139.Solution3 solution3;
+    private _139.Solution1 solution1;
+    private _139.Solution2 solution2;
+    private _139.Solution3 solution3;
     private static String s;
     private static List<String> wordDict;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _139.Solution1();
         solution2 = new _139.Solution2();
         solution3 = new _139.Solution3();

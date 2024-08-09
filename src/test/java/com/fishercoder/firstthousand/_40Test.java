@@ -10,7 +10,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _40Test {
-    private static _40.Solution1 solution1;
+    private _40.Solution1 solution1;
     private static int[] candidates;
     private static int target;
     private static List<List<Integer>> expected;

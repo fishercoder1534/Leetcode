@@ -1,12 +1,12 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._900;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _900Test {
-  private static _900.Solution1.RLEIterator rleIterator;
+  private _900.Solution1.RLEIterator rleIterator;
 
   @Test
   public void test1() {

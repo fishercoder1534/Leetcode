@@ -1,12 +1,12 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1066;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1066Test {
-    private static _1066.Solution1 solution1;
+    private _1066.Solution1 solution1;
     private static int[][] workers;
     private static int[][] bikes;
 

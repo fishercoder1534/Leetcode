@@ -11,7 +11,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _30Test {
-    private static _30.Solution1 solution1;
+    private _30.Solution1 solution1;
     private static String[] words;
     private static List<Integer> expected;
 

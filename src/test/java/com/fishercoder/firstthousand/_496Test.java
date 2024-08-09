@@ -1,27 +1,27 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._496;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _496Test {
-    private static _496.Solution1 solution1;
-    private static _496.Solution2 solution2;
+    private _496.Solution1 solution1;
+    private _496.Solution2 solution2;
     private static int[] findNums;
     private static int[] nums;
     private static int[] expected;
     private static int[] actual;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _496.Solution1();
         solution2 = new _496.Solution2();
     }
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         expected = new int[]{};
         actual = new int[]{};

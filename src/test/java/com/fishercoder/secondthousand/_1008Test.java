@@ -3,15 +3,15 @@ package com.fishercoder.secondthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.secondthousand._1008;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1008Test {
-    private static _1008.Solution1 solution1;
-    private static _1008.Solution2 solution2;
+    private _1008.Solution1 solution1;
+    private _1008.Solution2 solution2;
     private static int[] preorder;
     private static TreeNode expected;
     private static TreeNode actual;

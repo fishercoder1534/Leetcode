@@ -3,29 +3,29 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._501;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
  * Created by fishercoder on 1/28/17.
  */
 public class _501Test {
-    private static _501.Solution1 solution1;
-    private static _501.Solution2 solution2;
+    private _501.Solution1 solution1;
+    private _501.Solution2 solution2;
     private static int[] expected;
     private static int[] actual;
     private static TreeNode treeNode;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _501.Solution1();
         solution2 = new _501.Solution2();
     }
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         expected = new int[]{};
         actual = new int[]{};

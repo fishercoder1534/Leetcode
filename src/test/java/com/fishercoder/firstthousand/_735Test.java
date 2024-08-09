@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _735Test {
-    private static _735.Solution1 solution1;
-    private static _735.Solution2 solution2;
-    private static _735.Solution3 solution3;
-    private static _735.Solution4 solution4;
+    private _735.Solution1 solution1;
+    private _735.Solution2 solution2;
+    private _735.Solution3 solution3;
+    private _735.Solution4 solution4;
     private static int[] asteroids;
     private static int[] expected;
 

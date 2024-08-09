@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _985Test {
-    private static _985.Solution1 solution1;
+    private _985.Solution1 solution1;
     private static int[] expected;
     private static int[] actual;
     private static int[] A;

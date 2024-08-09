@@ -1,13 +1,13 @@
 package com.fishercoder.thirdthousand;
 
 import com.fishercoder.solutions.thirdthousand._2080;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2080Test {
-    private static _2080.Solution1.RangeFreqQuery rangeFreqQuery1;
-    private static _2080.Solution2.RangeFreqQuery rangeFreqQuery2;
+    private _2080.Solution1.RangeFreqQuery rangeFreqQuery1;
+    private _2080.Solution2.RangeFreqQuery rangeFreqQuery2;
 
     @Test
     public void test1() {

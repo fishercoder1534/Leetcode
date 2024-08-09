@@ -8,10 +8,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1209Test {
 
-    private static _1209.Solution1 solution1;
-    private static _1209.Solution2 solution2;
-    private static _1209.Solution3 solution3;
-    private static _1209.Solution4 solution4;
+    private _1209.Solution1 solution1;
+    private _1209.Solution2 solution2;
+    private _1209.Solution3 solution3;
+    private _1209.Solution4 solution4;
 
     @BeforeEach
     public void setup() {

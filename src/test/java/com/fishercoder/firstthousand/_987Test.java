@@ -12,8 +12,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _987Test {
-    private static _987.Solution1 solution1;
-    private static _987.Solution2 solution2;
+    private _987.Solution1 solution1;
+    private _987.Solution2 solution2;
     private static TreeNode root;
     private static List<List<Integer>> expected;
     private static List<List<Integer>> actual;

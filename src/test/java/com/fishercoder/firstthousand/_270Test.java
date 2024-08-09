@@ -11,7 +11,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _270Test {
-    private static _270.Solution1 solution1;
+    private _270.Solution1 solution1;
     private static int expected;
     private static TreeNode root;
     private static double target;

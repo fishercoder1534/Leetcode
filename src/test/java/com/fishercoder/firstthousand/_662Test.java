@@ -3,21 +3,21 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._662;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _662Test {
-    private static _662.Solution1 solution1;
+    private _662.Solution1 solution1;
     private static TreeNode root;
     private static int expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _662.Solution1();
     }
 
@@ -43,7 +43,7 @@ public class _662Test {
     }
 
     @Test
-    @Ignore
+    @Disabled
     /**TODO: need to figure out how to pass in the input for the 4th example on Leetcode*/
     public void test4() {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, 5, null, null, 9, 6, null, null, null, null, null, null, 7));

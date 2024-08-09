@@ -2,19 +2,19 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._617;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _617Test {
-    private static _617.Solution1 solution1;
-    private static _617.Solution2 solution2;
+    private _617.Solution1 solution1;
+    private _617.Solution2 solution2;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _617.Solution1();
         solution2 = new _617.Solution2();
     }

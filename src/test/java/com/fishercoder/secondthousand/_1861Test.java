@@ -1,29 +1,29 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1861;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1861Test {
-    private static _1861.Solution1 solution1;
+    private _1861.Solution1 solution1;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1861.Solution1();
     }
 
     @Test
     public void test1() {
-        assertEquals(new char[][]{{'.'}, {'#'}, {'#'}}, solution1.rotateTheBox(new char[][]{
+        assertArrayEquals(new char[][]{{'.'}, {'#'}, {'#'}}, solution1.rotateTheBox(new char[][]{
                 {'#', '.', '#'}
         }));
     }
 
     @Test
     public void test2() {
-        assertEquals(new char[][]{
+        assertArrayEquals(new char[][]{
                         {'#', '.'},
                         {'#', '#'},
                         {'*', '*'},
@@ -36,7 +36,7 @@ public class _1861Test {
 
     @Test
     public void test3() {
-        assertEquals(new char[][]{
+        assertArrayEquals(new char[][]{
                         {'.', '#', '#'},
                         {'.', '#', '#'},
                         {'#', '#', '*'},

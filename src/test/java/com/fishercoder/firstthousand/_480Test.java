@@ -1,22 +1,22 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._480;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
  * Created by fishercoder on 5/27/17.
  */
 public class _480Test {
-    private static _480.Solution1 solution1;
+    private _480.Solution1 solution1;
     private static int[] nums;
     private static double[] expected;
     private static int k;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _480.Solution1();
     }
 

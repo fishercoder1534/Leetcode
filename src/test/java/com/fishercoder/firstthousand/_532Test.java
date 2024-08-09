@@ -1,32 +1,32 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._532;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _532Test {
-    private static _532.Solution1 test;
+    private _532.Solution1 test;
     private static int expected;
     private static int actual;
     private static int k;
     private static int[] nums;
 
-    @BeforeClass
-    public static void setup() throws IOException {
+    @BeforeEach
+    public void setup() throws IOException {
         test = new _532.Solution1();
         Properties properties = new Properties();
         InputStream inputStream = _532.class.getClassLoader().getResourceAsStream("fishercoder.properties");
         properties.load(inputStream);
     }
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         expected = 0;
         actual = 0;

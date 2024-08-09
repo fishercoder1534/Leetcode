@@ -1,12 +1,12 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1472;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1472Test {
-    private static _1472.Solution1.BrowserHistory browserHistory;
+    private _1472.Solution1.BrowserHistory browserHistory;
 
     @Test
     public void test1() {

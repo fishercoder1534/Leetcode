@@ -3,17 +3,17 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.solutions.firstthousand._756;
 import java.util.Arrays;
 import java.util.List;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _756Test {
-  private static _756.Solution1 solution1;
+  private _756.Solution1 solution1;
   private static List<String> allowed;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     solution1 = new _756.Solution1();
   }
 

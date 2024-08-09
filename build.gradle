@@ -31,10 +31,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.8.0'
     compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
 
-//    TODO: to remove Junit4 after all tests are migrated to Junit5
-    compile 'junit:junit:4.13'
-    testCompile "junit:junit:4.13.1"
-
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 

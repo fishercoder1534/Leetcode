@@ -9,9 +9,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _25Test {
-    private static _25.Solution1 solution1;
-    private static _25.Solution2 solution2;
-    private static _25.Solution3 solution3;
+    private _25.Solution1 solution1;
+    private _25.Solution2 solution2;
+    private _25.Solution3 solution3;
     private static ListNode expected;
     private static ListNode head;
     private static int k;

@@ -8,10 +8,10 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2196Test {
-    private static _2196.Solution1 solution1;
+    private _2196.Solution1 solution1;
 
     @BeforeEach
     public void setup() {

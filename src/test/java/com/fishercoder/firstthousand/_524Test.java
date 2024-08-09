@@ -1,26 +1,26 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._524;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 4/30/17.
  */
 public class _524Test {
-    private static _524.Solution1 solution1;
+    private _524.Solution1 solution1;
     private static String expected;
     private static String actual;
     private static String s;
     private static ArrayList d;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _524.Solution1();
     }
 

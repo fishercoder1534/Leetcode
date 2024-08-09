@@ -4,10 +4,10 @@ import com.fishercoder.solutions.secondthousand._1146;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1146Test {
-    private static _1146.Solution1.SnapshotArray snapshotArray;
+    private _1146.Solution1.SnapshotArray snapshotArray;
 
     @BeforeEach
     public void setup() {

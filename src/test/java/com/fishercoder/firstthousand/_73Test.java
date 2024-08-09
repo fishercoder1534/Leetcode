@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _73Test {
-    private static _73.Solution1 solution1;
-    private static _73.Solution2 solution2;
-    private static _73.Solution3 solution3;
-    private static _73.Solution4 solution4;
+    private _73.Solution1 solution1;
+    private _73.Solution2 solution2;
+    private _73.Solution3 solution3;
+    private _73.Solution4 solution4;
     private static int[][] matrix;
     private static int[][] expected;
 

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class _519Test {
 
-    private static _519.Solution solution1;
+    private _519.Solution solution1;
 
     @Test
     public void test1() {
