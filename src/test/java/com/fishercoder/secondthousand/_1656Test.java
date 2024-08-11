@@ -1,16 +1,16 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1656;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1656Test {
-    private static _1656.Solution1.OrderedStream orderedStream;
+    private _1656.Solution1.OrderedStream orderedStream;
 
     @Test
     public void test1() {

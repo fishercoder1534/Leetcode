@@ -5,14 +5,14 @@ import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.secondthousand._1367;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1367Test {
-    private static _1367.Solution1 solution1;
+    private _1367.Solution1 solution1;
 
     @Test
     public void test1() {

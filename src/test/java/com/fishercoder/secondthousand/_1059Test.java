@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _1059Test {
-    private static _1059.Solution1 solution1;
+    private _1059.Solution1 solution1;
 
     @BeforeEach
     public void setup() {

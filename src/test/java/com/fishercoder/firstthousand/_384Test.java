@@ -2,10 +2,10 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._384;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class _384Test {
-    private static _384.Solution2 solution2;
+    private _384.Solution2 solution2;
 
     @Test
     public void test1() {

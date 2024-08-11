@@ -1,17 +1,17 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._884;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _884Test {
-  private static _884.Solution1 solution1;
+  private _884.Solution1 solution1;
   private static String[] expected;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     solution1 = new _884.Solution1();
   }
 

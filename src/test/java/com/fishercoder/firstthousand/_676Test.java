@@ -1,21 +1,21 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._676;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _676Test {
-    private static _676.Solution1.MagicDictionary magicDictionarySol1;
+    private _676.Solution1.MagicDictionary magicDictionarySol1;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         magicDictionarySol1 = new _676.Solution1.MagicDictionary();
     }
 
-    @Before
+    @BeforeEach
     public void cleanup() {
         magicDictionarySol1 = new _676.Solution1.MagicDictionary();
     }

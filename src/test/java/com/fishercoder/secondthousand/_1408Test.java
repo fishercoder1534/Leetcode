@@ -1,22 +1,22 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1408;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1408Test {
-    private static _1408.Solution1 solution1;
+    private _1408.Solution1 solution1;
     private static String[] words;
     private static List<String> expected;
     private static List<String> actual;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1408.Solution1();
     }
 

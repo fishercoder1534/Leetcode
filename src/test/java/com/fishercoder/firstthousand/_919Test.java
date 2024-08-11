@@ -11,7 +11,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _919Test {
-    private static _919.Solution1.CBTInserter cbtInserter;
+    private _919.Solution1.CBTInserter cbtInserter;
 
     @BeforeEach
     public void setup() {

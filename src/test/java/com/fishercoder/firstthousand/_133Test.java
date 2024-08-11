@@ -2,21 +2,21 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._133;
 import com.fishercoder.solutions.firstthousand._133.Solution1.Node;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _133Test {
-    private static _133.Solution1 solution1;
+    private _133.Solution1 solution1;
     private static Node root;
     private static Node actual;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _133.Solution1();
     }
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         root = null;
         actual = null;

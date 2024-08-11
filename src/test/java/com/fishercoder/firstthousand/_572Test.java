@@ -11,7 +11,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _572Test {
-    private static _572.Solution1 solution1;
+    private _572.Solution1 solution1;
     private static boolean expected;
     private static TreeNode root;
     private static TreeNode subRoot;

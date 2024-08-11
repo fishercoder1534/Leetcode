@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1711Test {
-    private static _1711.Solution1 solution1;
+    private _1711.Solution1 solution1;
     private static int[] deliciousness;
 
     @BeforeEach

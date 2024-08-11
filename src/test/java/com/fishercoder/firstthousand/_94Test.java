@@ -4,20 +4,20 @@ import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._94;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class _94Test {
-    private static _94.Solution1 solution1;
-    private static _94.Solution2 solution2;
+    private _94.Solution1 solution1;
+    private _94.Solution2 solution2;
     private static TreeNode root;
     private static List<Integer> inorder;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _94.Solution1();
         solution2 = new _94.Solution2();
     }

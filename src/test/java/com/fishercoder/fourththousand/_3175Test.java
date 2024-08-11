@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3175Test {
-    private static _3175.Solution1 solution1;
+    private _3175.Solution1 solution1;
     private static int[] skills;
     private static int k;
 

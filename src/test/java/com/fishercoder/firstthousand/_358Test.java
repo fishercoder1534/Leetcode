@@ -1,15 +1,15 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._358;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _358Test {
 
-    private static _358.Solution1 solution1;
+    private _358.Solution1 solution1;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _358.Solution1();
     }
 

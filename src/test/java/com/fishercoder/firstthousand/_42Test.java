@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Created by fishercoder on 5/13/17.
  */
 public class _42Test {
-    private static _42.Solution1 solution1;
+    private _42.Solution1 solution1;
     private static int[] height;
 
     @BeforeEach

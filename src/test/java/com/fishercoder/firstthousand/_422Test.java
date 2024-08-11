@@ -1,29 +1,29 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._422;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _422Test {
-  private static _422.Solution1 test;
+  private _422.Solution1 test;
   private static boolean expected;
   private static boolean actual;
   private static List<String> words;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     test = new _422.Solution1();
   }
 
-  @Before
-  public void setupForEachTest() {
+  @BeforeEach
+    public void setupForEachTest() {
   }
 
   @Test

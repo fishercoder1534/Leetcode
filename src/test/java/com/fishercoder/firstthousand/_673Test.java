@@ -1,23 +1,23 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._673;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _673Test {
-    private static _673.Solution1 solution1;
+    private _673.Solution1 solution1;
     private static int[] nums;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _673.Solution1();
     }
 
     @Test
-    @Ignore
+    @Disabled
     public void test1() {
         nums = new int[]{1, 3, 5, 4, 7};
         assertEquals(2, solution1.findNumberOfLIS(nums));

@@ -1,19 +1,19 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1243;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static junit.framework.TestCase.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _1243Test {
-    private static _1243.Solution1 solution1;
+    private _1243.Solution1 solution1;
     private static int[] arr;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1243.Solution1();
     }
 

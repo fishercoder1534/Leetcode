@@ -6,9 +6,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class _78Test {
-    private static _78.Solution1 solution1;
-    private static _78.Solution2 solution2;
-    private static _78.Solution3 solution3;
+    private _78.Solution1 solution1;
+    private _78.Solution2 solution2;
+    private _78.Solution3 solution3;
 
     @BeforeEach
     public void setup() {

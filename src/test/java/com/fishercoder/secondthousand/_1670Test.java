@@ -1,12 +1,12 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1670;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1670Test {
-    private static _1670.Solution1.FrontMiddleBackQueue solution1;
+    private _1670.Solution1.FrontMiddleBackQueue solution1;
 
     @Test
     public void test1() {

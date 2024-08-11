@@ -11,9 +11,9 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _508Test {
-    private static _508.Solution1 solution1;
-    private static _508.Solution2 solution2;
-    private static _508.Solution3 solution3;
+    private _508.Solution1 solution1;
+    private _508.Solution2 solution2;
+    private _508.Solution3 solution3;
     private static int[] expected;
     private static int[] actual;
     private static TreeNode root;

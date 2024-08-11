@@ -1,17 +1,17 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._819;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _819Test {
-  private static _819.Solution1 solution1;
+  private _819.Solution1 solution1;
   private static String[] banned;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     solution1 = new _819.Solution1();
   }
 

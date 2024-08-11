@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _2839Test {
-    private static _2839.Solution1 solution1;
+    private _2839.Solution1 solution1;
 
     @BeforeEach
     public void setup() {

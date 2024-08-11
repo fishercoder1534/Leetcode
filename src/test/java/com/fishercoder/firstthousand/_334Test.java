@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _334Test {
-    private static _334.Solution1 solution1;
-    private static _334.Solution2 solution2;
+    private _334.Solution1 solution1;
+    private _334.Solution2 solution2;
 
     @BeforeEach
     public void setup() {

@@ -4,16 +4,16 @@ import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._897;
 import java.util.Arrays;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _897Test {
-  private static _897.Solution1 solution1;
+  private _897.Solution1 solution1;
   private static TreeNode root;
   private static TreeNode actual;
 
-  @Before
-  public void setup() {
+  @BeforeEach
+    public void setup() {
     solution1 = new _897.Solution1();
   }
 

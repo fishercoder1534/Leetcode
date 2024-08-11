@@ -6,18 +6,18 @@ import com.fishercoder.solutions.firstthousand._876;
 
 import java.util.Arrays;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _876Test {
-    private static _876.Solution1 solution1;
+    private _876.Solution1 solution1;
     private static ListNode head;
     private static ListNode middle;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _876.Solution1();
     }
 

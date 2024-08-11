@@ -1,12 +1,12 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._703;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _703Test {
-  private static _703.Solution1.KthLargest solution1;
+  private _703.Solution1.KthLargest solution1;
   private static int[] A;
 
   @Test

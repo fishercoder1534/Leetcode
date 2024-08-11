@@ -1,12 +1,12 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1476;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1476Test {
-    private static _1476.Solution1.SubrectangleQueries solution1;
+    private _1476.Solution1.SubrectangleQueries solution1;
     private static int[][] rectangle;
 
     @Test

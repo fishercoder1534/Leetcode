@@ -12,9 +12,9 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _17Test {
-    private static _17.Solution1 solution1;
-    private static _17.Solution2 solution2;
-    private static _17.Solution3 solution3;
+    private _17.Solution1 solution1;
+    private _17.Solution2 solution2;
+    private _17.Solution3 solution3;
     private static String digits;
     private static List<String> expected;
 

@@ -1,16 +1,16 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._211;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _211Test {
-  private static _211.Solution1.WordDictionary wordDictionarySolution1;
+  private _211.Solution1.WordDictionary wordDictionarySolution1;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     wordDictionarySolution1 = new _211.Solution1.WordDictionary();
   }
 

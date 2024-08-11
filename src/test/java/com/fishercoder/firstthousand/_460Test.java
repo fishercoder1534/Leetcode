@@ -1,13 +1,13 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._460;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _460Test {
 
-    private static _460.Solution1.LFUCache lfuCache;
+    private _460.Solution1.LFUCache lfuCache;
 
     @Test
     public void test1() {

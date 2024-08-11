@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _82Test {
 
-    private static _82.Solution1 solution1;
+    private _82.Solution1 solution1;
     private static ListNode head;
     private static ListNode expected;
 

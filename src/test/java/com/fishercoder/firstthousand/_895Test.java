@@ -1,17 +1,17 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._895;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _895Test {
 
-    private static _895.Solution1.FreqStack freqStack;
+    private _895.Solution1.FreqStack freqStack;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         freqStack = new _895.Solution1.FreqStack();
     }
 

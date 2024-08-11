@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _64Test {
-    private static _64.Solution1 solution1;
+    private _64.Solution1 solution1;
     private static int[][] grid;
 
     @BeforeEach

@@ -4,20 +4,20 @@ import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._776;
 import java.util.Arrays;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _776Test {
-  private static _776.Solution1 solution1;
-  private static _776.Solution2 solution2;
+  private _776.Solution1 solution1;
+  private _776.Solution2 solution2;
   private static TreeNode root;
   private static TreeNode small;
   private static TreeNode big;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     solution1 = new _776.Solution1();
     solution2 = new _776.Solution2();
   }

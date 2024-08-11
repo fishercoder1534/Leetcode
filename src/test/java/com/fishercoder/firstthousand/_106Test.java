@@ -3,23 +3,23 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._106;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _106Test {
-    private static _106.Solution1 solution1;
-    private static _106.Solution2 solution2;
+    private _106.Solution1 solution1;
+    private _106.Solution2 solution2;
     private static TreeNode expected;
     private static TreeNode actual;
     private static int[] inorder;
     private static int[] postorder;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _106.Solution1();
         solution2 = new _106.Solution2();
     }

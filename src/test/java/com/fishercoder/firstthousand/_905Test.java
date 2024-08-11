@@ -2,16 +2,16 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._905;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _905Test {
-    private static _905.Solution1 solution1;
+    private _905.Solution1 solution1;
     private static int[] A;
     private static int[] actual;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _905.Solution1();
     }
 

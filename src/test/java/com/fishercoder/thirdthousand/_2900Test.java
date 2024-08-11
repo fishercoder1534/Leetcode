@@ -9,7 +9,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2900Test {
-    private static _2900.Solution1 solution1;
+    private _2900.Solution1 solution1;
 
     @BeforeEach
     public void setup() {

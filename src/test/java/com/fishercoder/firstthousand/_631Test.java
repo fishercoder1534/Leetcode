@@ -1,12 +1,12 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._631;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _631Test {
-    private static _631.Solution1.Excel excel;
+    private _631.Solution1.Excel excel;
 
     @Test
     public void test1() {

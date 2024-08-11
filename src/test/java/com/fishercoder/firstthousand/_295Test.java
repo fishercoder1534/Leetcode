@@ -10,8 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Created by fishercoder on 5/27/17.
  */
 public class _295Test {
-    private static _295.Solution1.MedianFinder solution1;
-    private static _295.Solution2.MedianFinder solution2;
+    private _295.Solution1.MedianFinder solution1;
+    private _295.Solution2.MedianFinder solution2;
 
     @BeforeEach
     public void setup() {

@@ -3,19 +3,19 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._369;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _369Test {
 
-    private static _369.Solution2 solution2;
+    private _369.Solution2 solution2;
     private static ListNode head;
     private static ListNode expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution2 = new _369.Solution2();
     }
 

@@ -1,14 +1,14 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1348;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1348Test {
-    private static _1348.Solution1.TweetCounts tweetCounts;
+    private _1348.Solution1.TweetCounts tweetCounts;
 
     @Test
     public void test1() {

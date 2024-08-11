@@ -2,20 +2,20 @@ package com.fishercoder.thirdthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.thirdthousand._2076;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _2076Test {
-    private static _2076.Solution1 solution1;
+    private _2076.Solution1 solution1;
     private static int[][] restrictions;
     private static int[][] requests;
     private static int n;
     private static boolean[] expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _2076.Solution1();
     }
 

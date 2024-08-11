@@ -5,9 +5,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class _116Test {
-    private static _116.Solution1 solution1;
-    private static _116.Solution2 solution2;
-    private static _116.Node root;
+    private _116.Solution1 solution1;
+    private _116.Solution2 solution2;
+    private _116.Node root;
 
     @BeforeEach
     public void setup() {

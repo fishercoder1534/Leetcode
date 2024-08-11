@@ -1,17 +1,17 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1128;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1128Test {
-    private static _1128.Solution1 solution1;
+    private _1128.Solution1 solution1;
     private static int[][] dominoes;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1128.Solution1();
     }
 

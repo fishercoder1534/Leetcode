@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 public class _109Test {
-    private static _109.Solution1 solution1;
+    private _109.Solution1 solution1;
     private static ListNode head;
     private static TreeNode expected;
 

@@ -1,12 +1,12 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1376;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1376Test {
-    private static _1376.Solution1 solution1;
+    private _1376.Solution1 solution1;
     private static int[] manager;
     private static int[] informTime;
 

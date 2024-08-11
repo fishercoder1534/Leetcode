@@ -8,8 +8,8 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 public class _47Test {
-    private static _47.Solution1 solution1;
-    private static _47.Solution2 solution2;
+    private _47.Solution1 solution1;
+    private _47.Solution2 solution2;
     private static List<List<Integer>> actual;
 
     @BeforeEach

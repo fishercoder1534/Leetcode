@@ -1,15 +1,15 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1118;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1118Test {
-    private static _1118.Solution1 solution1;
+    private _1118.Solution1 solution1;
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         solution1 = new _1118.Solution1();
     }

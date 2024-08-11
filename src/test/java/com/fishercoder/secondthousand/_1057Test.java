@@ -1,18 +1,18 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1057;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1057Test {
-    private static _1057.Solution1 solution1;
+    private _1057.Solution1 solution1;
     private static int[][] workers;
     private static int[][] bikes;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1057.Solution1();
     }
 

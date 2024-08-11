@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class _57Test {
-    private static _57.Solution1 solution1;
+    private _57.Solution1 solution1;
 
     @BeforeEach
     public void setup() {

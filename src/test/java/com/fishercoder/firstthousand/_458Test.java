@@ -1,26 +1,26 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._458;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _458Test {
-    private static _458.Solution1 solution1;
+    private _458.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static int buckets;
     private static int minutesToDie;
     private static int minutesToTest;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _458.Solution1();
     }
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         expected = 0;
         actual = 0;

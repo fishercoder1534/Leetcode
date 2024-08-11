@@ -1,19 +1,19 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._423;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _423Test {
-    private static _423.Solution1 solution1;
+    private _423.Solution1 solution1;
     private static String expected;
     private static String actual;
     private static String s;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _423.Solution1();
     }
 

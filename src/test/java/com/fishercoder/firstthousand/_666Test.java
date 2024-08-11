@@ -1,24 +1,24 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._666;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _666Test {
-    private static _666.Solution1 solution1;
-    private static _666.Solution2 solution2;
+    private _666.Solution1 solution1;
+    private _666.Solution2 solution2;
     private static int[] nums;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _666.Solution1();
         solution2 = new _666.Solution2();
     }
 
-    @Before
+    @BeforeEach
     public void cleanUp() {
         solution1.totalSum = 0;
         solution2.totalSum = 0;

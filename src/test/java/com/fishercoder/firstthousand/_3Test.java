@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3Test {
-    private static _3.Solution1 solution1;
-    private static _3.Solution2 solution2;
-    private static _3.Solution3 solution3;
-    private static _3.Solution4 solution4;
-    private static _3.Solution5 solution5;
-    private static _3.Solution6 solution6;
+    private _3.Solution1 solution1;
+    private _3.Solution2 solution2;
+    private _3.Solution3 solution3;
+    private _3.Solution4 solution4;
+    private _3.Solution5 solution5;
+    private _3.Solution6 solution6;
     private static int expected;
     private static String s;
 

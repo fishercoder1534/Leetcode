@@ -6,19 +6,19 @@ import com.fishercoder.solutions.firstthousand._235;
 
 import java.util.Arrays;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _235Test {
-    private static _235.Solution1 solution1;
+    private _235.Solution1 solution1;
     private static TreeNode root;
     private static TreeNode p;
     private static TreeNode q;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _235.Solution1();
     }
 

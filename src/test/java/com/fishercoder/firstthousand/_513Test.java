@@ -2,27 +2,27 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.solutions.firstthousand._513;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 1/15/17.
  */
 public class _513Test {
-    private static _513.Solution1 solution1;
+    private _513.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static TreeNode root;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _513.Solution1();
     }
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         expected = 0;
         actual = 0;

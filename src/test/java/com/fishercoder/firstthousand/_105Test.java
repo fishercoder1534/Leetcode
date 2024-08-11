@@ -6,20 +6,20 @@ import com.fishercoder.solutions.firstthousand._105;
 
 import java.util.Arrays;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _105Test {
-    private static _105.Solution1 solution1;
+    private _105.Solution1 solution1;
     private static TreeNode expected;
     private static TreeNode actual;
     private static int[] preorder;
     private static int[] inorder;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _105.Solution1();
     }
 

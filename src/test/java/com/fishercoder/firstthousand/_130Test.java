@@ -2,19 +2,19 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._130;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _130Test {
-    private static _130.Solution1 solution1;
-    private static _130.Solution2 solution2;
-    private static char[][] board;
-    private static char[][] expected;
+    private _130.Solution1 solution1;
+    private _130.Solution2 solution2;
+    private char[][] board;
+    private char[][] expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _130.Solution1();
         solution2 = new _130.Solution2();
     }
@@ -28,7 +28,7 @@ public class _130Test {
                 + "[\"O\",\"O\",\"X\",\"X\",\"O\",\"X\",\"X\",\"O\",\"O\",\"O\"],[\"X\",\"O\",\"O\",\"X\",\"X\",\"X\",\"X\",\"X\",\"X\",\"O\"],[\"X\",\"O\",\"X\",\"X\",\"X\",\"X\",\"X\",\"O\",\"X\",\"O\"],[\"X\",\"X\",\"O\",\"X\",\"X\",\"X\",\"X\",\"O\",\"O\",\"X\"],[\"O\",\"O\",\"O\",\"O\",\"X\",\"X\",\"X\",\"O\",\"X\",\"O\"],"
                 + "[\"X\",\"X\",\"O\",\"X\",\"X\",\"X\",\"X\",\"O\",\"O\",\"O\"]");
         solution1.solve(board);
-        assertEquals(expected, board);
+        assertArrayEquals(expected, board);
     }
 
     @Test
@@ -43,7 +43,7 @@ public class _130Test {
         solution2.solve(board);
         CommonUtils.print2DCharArray(board);
         CommonUtils.print2DCharArray(expected);
-        assertEquals(expected, board);
+        assertArrayEquals(expected, board);
     }
 
 }

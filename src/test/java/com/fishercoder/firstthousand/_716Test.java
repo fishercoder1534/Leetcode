@@ -1,17 +1,17 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._716;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _716Test {
-    private static _716.Solution1.MaxStack maxStackSolution1;
-    private static _716.Solution2.MaxStack maxStackSolution2;
-    private static _716.Solution3.MaxStack maxStackSolution3;
+    private _716.Solution1.MaxStack maxStackSolution1;
+    private _716.Solution2.MaxStack maxStackSolution2;
+    private _716.Solution3.MaxStack maxStackSolution3;
 
-    @Before
+    @BeforeEach
     public void setup() {
         maxStackSolution1 = new _716.Solution1.MaxStack();
         maxStackSolution2 = new _716.Solution2.MaxStack();

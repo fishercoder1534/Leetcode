@@ -2,19 +2,19 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._785;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _785Test {
-    private static _785.Solution1 solution1;
-    private static _785.Solution2 solution2;
+    private _785.Solution1 solution1;
+    private _785.Solution2 solution2;
     private static int[][] graph;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _785.Solution1();
         solution2 = new _785.Solution2();
         graph = new int[][]{};

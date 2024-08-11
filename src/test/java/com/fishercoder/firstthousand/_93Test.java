@@ -1,27 +1,27 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._93;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _93Test {
-  private static _93.Solution1 solution1;
+  private _93.Solution1 solution1;
   private static List<String> expected;
   private static String s;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     solution1 = new _93.Solution1();
   }
 
-  @Before
-  public void setupForEachTest() {
+  @BeforeEach
+    public void setupForEachTest() {
     expected = new ArrayList<>();
   }
 

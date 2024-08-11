@@ -1,18 +1,18 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1844;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _1844Test {
-    private static _1844.Solution1 solution1;
-    private static _1844.Solution2 solution2;
+    private _1844.Solution1 solution1;
+    private _1844.Solution2 solution2;
     private static String s;
     private static String actual;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1844.Solution1();
         solution2 = new _1844.Solution2();
     }
@@ -22,7 +22,7 @@ public class _1844Test {
         s = "a1c1e1";
         actual = "abcdef";
         String expected = solution1.replaceDigits(s);
-        Assert.assertEquals(actual, expected);
+        Assertions.assertEquals(actual, expected);
     }
 
     @Test
@@ -30,6 +30,6 @@ public class _1844Test {
         s = "a1c1e1";
         actual = "abcdef";
         String expected = solution2.replaceDigits(s);
-        Assert.assertEquals(actual, expected);
+        Assertions.assertEquals(actual, expected);
     }
 }

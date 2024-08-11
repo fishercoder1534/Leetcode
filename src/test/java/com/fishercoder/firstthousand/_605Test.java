@@ -1,19 +1,19 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._605;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _605Test {
-    private static _605.Solution1 solution1;
-    private static _605.Solution2 solution2;
+    private _605.Solution1 solution1;
+    private _605.Solution2 solution2;
     private static int[] flowerbed;
     private static int n;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _605.Solution1();
         solution2 = new _605.Solution2();
     }

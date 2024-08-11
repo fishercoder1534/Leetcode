@@ -1,21 +1,21 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._648;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _648Test {
-    private static _648.Solution1 solution1;
+    private _648.Solution1 solution1;
     private static List<String> dict;
     private static String sentence;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _648.Solution1();
     }
 

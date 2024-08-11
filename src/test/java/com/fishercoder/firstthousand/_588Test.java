@@ -1,23 +1,23 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._588;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 5/23/17.
  */
 public class _588Test {
 
-    private static _588.Solution1.FileSystem fileSystem;
+    private _588.Solution1.FileSystem fileSystem;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
     }
 
     @Test

@@ -1,22 +1,22 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1104;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1104Test {
-    private static _1104.Solution1 solution1;
-    private static _1104.Solution2 solution2;
+    private _1104.Solution1 solution1;
+    private _1104.Solution2 solution2;
     private static List<Integer> expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1104.Solution1();
         solution2 = new _1104.Solution2();
     }
@@ -52,7 +52,7 @@ public class _1104Test {
     }
 
     @Test
-    @Ignore
+    @Disabled
     public void test6() {
         //takes too long to finish, ignore to let build pass
         expected = Arrays.asList(1, 2, 6, 11, 24, 47, 97, 188, 390, 754, 1562, 3018, 6250, 12075, 25000, 48303, 100000);
@@ -60,7 +60,7 @@ public class _1104Test {
     }
 
     @Test
-    @Ignore
+    @Disabled
     public void test7() {
         //takes too long to finish, ignore to let build pass
         expected = Arrays.asList(1, 3, 5, 12, 23, 48, 94, 195, 377, 781, 1509, 3125, 6037, 12500, 24151, 50000, 96607, 200000);
@@ -68,7 +68,7 @@ public class _1104Test {
     }
 
     @Test
-    @Ignore
+    @Disabled
     public void test8() {
         //takes too long to finish, ignore to let build pass
         expected = Arrays.asList(1, 2, 6, 11, 24, 47, 97, 188, 390, 754, 1562, 3018, 6250, 12075, 25000, 48303, 100000, 193215, 400000);
@@ -76,7 +76,7 @@ public class _1104Test {
     }
 
     @Test
-    @Ignore
+    @Disabled
     public void test9() {
         //takes too long to finish, ignore to let build pass
         expected = Arrays.asList(1, 2, 7, 8, 30, 34, 122, 139, 488, 559, 1953, 2237, 7812, 8950, 31250, 35803, 125000, 143215, 500000);

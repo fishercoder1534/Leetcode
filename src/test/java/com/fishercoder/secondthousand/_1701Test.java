@@ -4,10 +4,10 @@ import com.fishercoder.solutions.secondthousand._1701;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1701Test {
-    private static _1701.Solution1 solution1;
+    private _1701.Solution1 solution1;
     private static int[] A;
 
     @BeforeEach

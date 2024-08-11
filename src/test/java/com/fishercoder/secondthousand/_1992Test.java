@@ -2,22 +2,22 @@ package com.fishercoder.secondthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.secondthousand._1992;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1992Test {
-    private static _1992.Solution1 solution1;
+    private _1992.Solution1 solution1;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1992.Solution1();
     }
 
     @Test
     public void test1() {
-        assertEquals(new int[][]{{13, 1, 28, 1}, {22, 4, 24, 39}}, solution1.findFarmland(CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(""
+        assertArrayEquals(new int[][]{{13, 1, 28, 1}, {22, 4, 24, 39}}, solution1.findFarmland(CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(""
                 + "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"//0
                 + "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"//1
                 + "[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"//2

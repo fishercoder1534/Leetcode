@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class _37Test {
-    private static _37.Solution1 solution1;
+    private _37.Solution1 solution1;
     private static char[][] board;
 
     @BeforeEach

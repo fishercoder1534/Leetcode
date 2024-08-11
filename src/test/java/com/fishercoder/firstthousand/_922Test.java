@@ -2,18 +2,18 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._922;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _922Test {
-    private static _922.Solution1 solution1;
-    private static _922.Solution2 solution2;
-    private static _922.Solution3 solution3;
+    private _922.Solution1 solution1;
+    private _922.Solution2 solution2;
+    private _922.Solution3 solution3;
     private static int[] nums;
     private static int[] result;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _922.Solution1();
         solution2 = new _922.Solution2();
         solution3 = new _922.Solution3();

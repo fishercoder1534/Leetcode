@@ -2,16 +2,16 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._733;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _733Test {
-    private static _733.Solution1 solution1;
+    private _733.Solution1 solution1;
     private static int[][] image;
     private static int[][] result;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _733.Solution1();
     }
 

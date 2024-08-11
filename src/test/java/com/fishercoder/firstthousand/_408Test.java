@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _408Test {
-    private static _408.Solution1 solution1;
-    private static _408.Solution2 solution2;
+    private _408.Solution1 solution1;
+    private _408.Solution2 solution2;
     private static Boolean expected;
     private static Boolean actual;
     private static String word;

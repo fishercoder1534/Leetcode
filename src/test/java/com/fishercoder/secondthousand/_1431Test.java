@@ -1,19 +1,19 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1431;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1431Test {
-    private static _1431.Solution1 solution1;
+    private _1431.Solution1 solution1;
     private static int[] candies;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1431.Solution1();
     }
 

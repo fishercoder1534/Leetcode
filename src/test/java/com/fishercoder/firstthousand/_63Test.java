@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _63Test {
-    private static _63.Solution1 solution1;
+    private _63.Solution1 solution1;
     private static int[][] obstacleGrid;
 
     @BeforeEach

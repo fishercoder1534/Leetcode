@@ -1,29 +1,29 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._635;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 9/9/17.
  */
 public class _635Test {
-    private static _635.Solution1.LogSystem logSystem;
+    private _635.Solution1.LogSystem logSystem;
     private static List<Integer> expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         logSystem = new _635.Solution1.LogSystem();
     }
 
-    @Before
+    @BeforeEach
     public void clear() {
         logSystem = new _635.Solution1.LogSystem();
         expected = new ArrayList<>();

@@ -11,9 +11,9 @@ import java.util.List;
 
 
 public class _1110Test {
-    private static _1110.Solution1 solution1;
-    private static _1110.Solution2 solution2;
-    private static _1110.Solution3 solution3;
+    private _1110.Solution1 solution1;
+    private _1110.Solution2 solution2;
+    private _1110.Solution3 solution3;
     private static TreeNode root;
 
     @BeforeEach

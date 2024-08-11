@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _304Test {
-    private static _304.Solution1.NumMatrix numMatrix;
+    private _304.Solution1.NumMatrix numMatrix;
     private static int[][] matrix;
 
     @BeforeEach

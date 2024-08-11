@@ -1,20 +1,20 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1423;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1423Test {
-    private static _1423.Solution1 solution1;
-    private static _1423.Solution2 solution2;
+    private _1423.Solution1 solution1;
+    private _1423.Solution2 solution2;
     private static int[] cardPoints;
     private static int expected;
     private static int k;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1423.Solution1();
         solution2 = new _1423.Solution2();
     }

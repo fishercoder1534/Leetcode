@@ -3,21 +3,21 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._654;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _654Test {
     private static int[] nums;
     private static TreeNode expected;
-    private static _654.Solution1 solution1;
-    private static _654.Solution2 solution2;
+    private _654.Solution1 solution1;
+    private _654.Solution2 solution2;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _654.Solution1();
         solution2 = new _654.Solution2();
     }

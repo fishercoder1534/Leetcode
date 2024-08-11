@@ -5,17 +5,17 @@ import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._965;
 import java.util.Arrays;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _965Test {
-  private static _965.Solution1 solution1;
+  private _965.Solution1 solution1;
   private static TreeNode root;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     solution1 = new _965.Solution1();
   }
 

@@ -1,16 +1,16 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._936;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _936Test {
-    private static _936.Solution1 solution1;
+    private _936.Solution1 solution1;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _936.Solution1();
     }
 

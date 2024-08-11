@@ -1,22 +1,22 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._555;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 4/29/17.
  */
 public class _555Test {
-    private static _555.Solution1 solution1;
+    private _555.Solution1 solution1;
     private static String expected;
     private static String actual;
     private static String[] strs;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _555.Solution1();
     }
 

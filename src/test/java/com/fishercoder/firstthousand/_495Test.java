@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._495;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 5/8/17.
@@ -16,7 +16,7 @@ public class _495Test {
     private static int[] timeSeries;
     private static int duration = 0;
 
-    @Before
+    @BeforeEach
     public void setup() {
         timeSeries = new int[]{};
         duration = 0;

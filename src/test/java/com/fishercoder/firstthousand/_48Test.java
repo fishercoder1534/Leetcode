@@ -6,9 +6,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class _48Test {
-    private static _48.Solution1 solution1;
-    private static _48.Solution2 solution2;
-    private static _48.Solution3 solution3;
+    private _48.Solution1 solution1;
+    private _48.Solution2 solution2;
+    private _48.Solution3 solution3;
     private static int[][] matrix;
 
     @BeforeEach

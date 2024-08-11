@@ -1,28 +1,28 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._355;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 5/10/17.
  */
 public class _355Test {
-    private static _355.Solution1.Twitter solution1Twitter;
-    private static _355.Solution2.Twitter solution2Twitter;
+    private _355.Solution1.Twitter solution1Twitter;
+    private _355.Solution2.Twitter solution2Twitter;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1Twitter = new _355.Solution1.Twitter();
         solution2Twitter = new _355.Solution2.Twitter();
     }
 
-    @Before
+    @BeforeEach
     public void cleanUp() {
         solution1Twitter = new _355.Solution1.Twitter();
         solution2Twitter = new _355.Solution2.Twitter();

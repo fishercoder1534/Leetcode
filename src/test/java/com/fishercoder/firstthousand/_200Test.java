@@ -1,17 +1,17 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._200;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _200Test {
-    private static _200.Solution1 solution1;
-    private static _200.Solution2 solution2;
-    private static char[][] grid;
+    private _200.Solution1 solution1;
+    private _200.Solution2 solution2;
+    private char[][] grid;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution1 = new _200.Solution1();
         solution2 = new _200.Solution2();

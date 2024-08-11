@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 public class _23Test {
-    private static _23.Solution1 solution1;
+    private _23.Solution1 solution1;
     private static ListNode[] lists;
 
     @BeforeEach

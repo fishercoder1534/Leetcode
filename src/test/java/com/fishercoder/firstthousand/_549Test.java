@@ -3,25 +3,25 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._549;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _549Test {
-    private static _549.Solution1 solution1;
+    private _549.Solution1 solution1;
     private static int expected;
     private static int actual;
     private static TreeNode root;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
     }
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         root = null;
         actual = 0;

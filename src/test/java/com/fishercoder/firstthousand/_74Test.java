@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _74Test {
-    private static _74.Solution1 solution1;
+    private _74.Solution1 solution1;
     private static int target;
     private static int[][] matrix;
 

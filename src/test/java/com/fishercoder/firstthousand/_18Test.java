@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class _18Test {
-    private static _18.Solution1 solution1;
+    private _18.Solution1 solution1;
     private static int[] nums;
 
     @BeforeEach

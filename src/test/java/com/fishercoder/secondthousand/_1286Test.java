@@ -1,12 +1,12 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1286;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1286Test {
-    private static _1286.Solution1.CombinationIterator combinationIterator;
+    private _1286.Solution1.CombinationIterator combinationIterator;
 
     @Test
     public void test1() {

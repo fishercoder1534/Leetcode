@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _994Test {
-    private static _994.Solution1 solution1;
-    private static _994.Solution2 solution2;
-    private static _994.Solution3 solution3;
+    private _994.Solution1 solution1;
+    private _994.Solution2 solution2;
+    private _994.Solution3 solution3;
     private static int[][] grid;
 
     @BeforeEach

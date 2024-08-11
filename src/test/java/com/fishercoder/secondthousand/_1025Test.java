@@ -1,17 +1,17 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1025;
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Ignore
+@Disabled
 public class _1025Test {
-    private static _1025.Solution1 solution1;
+    private _1025.Solution1 solution1;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution1 = new _1025.Solution1();
     }

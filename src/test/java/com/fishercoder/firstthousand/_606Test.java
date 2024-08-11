@@ -3,20 +3,20 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._606;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _606Test {
-    private static _606.Solution1 solution1;
-    private static _606.Solution2 solution2;
+    private _606.Solution1 solution1;
+    private _606.Solution2 solution2;
     private static TreeNode treeNode;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _606.Solution1();
         solution2 = new _606.Solution2();
     }

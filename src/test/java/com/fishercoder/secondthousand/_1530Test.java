@@ -11,7 +11,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1530Test {
-    private static _1530.Solution1 solution1;
+    private _1530.Solution1 solution1;
     private static TreeNode root;
 
     @BeforeEach

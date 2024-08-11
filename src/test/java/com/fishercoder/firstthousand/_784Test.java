@@ -5,18 +5,18 @@ import com.fishercoder.solutions.firstthousand._784;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class _784Test {
-    private static _784.Solution1 solution1;
-    private static _784.Solution2 solution2;
+    private _784.Solution1 solution1;
+    private _784.Solution2 solution2;
     private static List<String> expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _784.Solution1();
         solution2 = new _784.Solution2();
     }

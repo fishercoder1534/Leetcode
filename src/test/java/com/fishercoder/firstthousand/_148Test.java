@@ -9,10 +9,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _148Test {
-    private static _148.Solution1 solution1;
-    private static _148.Solution2 solution2;
-    private static _148.Solution3 solution3;
-    private static _148.Solution4 solution4;
+    private _148.Solution1 solution1;
+    private _148.Solution2 solution2;
+    private _148.Solution3 solution3;
+    private _148.Solution4 solution4;
     private static ListNode head;
     private static ListNode expected;
 

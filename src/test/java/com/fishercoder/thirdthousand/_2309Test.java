@@ -1,16 +1,16 @@
 package com.fishercoder.thirdthousand;
 
 import com.fishercoder.solutions.thirdthousand._2309;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2309Test {
-    private static _2309.Solution1 solution1;
+    private _2309.Solution1 solution1;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _2309.Solution1();
     }
 
