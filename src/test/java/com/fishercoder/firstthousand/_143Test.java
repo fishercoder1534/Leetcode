@@ -3,21 +3,21 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._143;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _143Test {
-    private static _143.Solution1 solution1;
-    private static _143.Solution2 solution2;
+    private _143.Solution1 solution1;
+    private _143.Solution2 solution2;
     private static ListNode head;
     private static ListNode expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _143.Solution1();
         solution2 = new _143.Solution2();
     }

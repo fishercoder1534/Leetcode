@@ -3,18 +3,18 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._234;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _234Test {
-    private static _234.Solution1 solution1;
-    private static _234.Solution2 solution2;
+    private _234.Solution1 solution1;
+    private _234.Solution2 solution2;
     private static ListNode head;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _234.Solution1();
         solution2 = new _234.Solution2();
     }

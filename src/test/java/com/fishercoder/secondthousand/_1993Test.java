@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _1993Test {
-    private static _1993.Solution1.LockingTree lockingTree;
+    private _1993.Solution1.LockingTree lockingTree;
 
     @BeforeEach
     public void setup() {

@@ -1,29 +1,29 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._377;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _377Test {
-    private static _377.Solution1 solution1;
-    private static _377.Solution2 solution2;
-    private static _377.Solution3 solution3;
-    private static _377.Solution4 solution4;
+    private _377.Solution1 solution1;
+    private _377.Solution2 solution2;
+    private _377.Solution3 solution3;
+    private _377.Solution4 solution4;
     private static int[] nums;
     private static int target;
     private static int expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _377.Solution1();
         solution2 = new _377.Solution2();
         solution3 = new _377.Solution3();
     }
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         //always have to reset these global variables before using it again
         solution2.count = 0;

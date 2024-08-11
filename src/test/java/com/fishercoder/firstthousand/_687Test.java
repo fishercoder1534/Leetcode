@@ -3,18 +3,18 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._687;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _687Test {
-    private static _687.Solution1 solution1;
+    private _687.Solution1 solution1;
     private static TreeNode root;
 
-    @Before
+    @BeforeEach
     public void setup() {
         solution1 = new _687.Solution1();
     }

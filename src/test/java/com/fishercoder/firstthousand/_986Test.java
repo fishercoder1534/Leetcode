@@ -2,19 +2,19 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._986;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _986Test {
-    private static _986.Solution1 solution1;
+    private _986.Solution1 solution1;
     private static int[][] A;
     private static int[][] B;
     private static int[][] expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _986.Solution1();
     }
 
@@ -42,7 +42,7 @@ public class _986Test {
         };
         int[][] actual = solution1.intervalIntersection(A, B);
         CommonUtils.print2DIntArray(actual);
-        assertEquals(expected, actual);
+        assertArrayEquals(expected, actual);
     }
 
 

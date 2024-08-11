@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Created by fishercoder on 1/9/17.
  */
 public class _547Test {
-    private static _547.Solution1 test;
+    private _547.Solution1 test;
     private static int expected;
     private static int actual;
     private static int[][] isConnected;

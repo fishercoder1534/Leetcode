@@ -11,8 +11,8 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _24Test {
-    private static _24.Solution1 solution1;
-    private static _24.Solution2 solution2;
+    private _24.Solution1 solution1;
+    private _24.Solution2 solution2;
     private static ListNode head;
     private static ListNode expected;
 

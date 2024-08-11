@@ -1,26 +1,26 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._582;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 5/18/17.
  */
 public class _582Test {
-    private static _582.Solution1 solution1;
+    private _582.Solution1 solution1;
     private static List<Integer> pid;
     private static List<Integer> ppid;
     private static List<Integer> expected;
     private static Integer kill;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _582.Solution1();
     }
 

@@ -1,21 +1,21 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._583;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 5/18/17.
  */
 public class _583Test {
-    private static _583.Solution1 solution1;
+    private _583.Solution1 solution1;
     private static String word1;
     private static String word2;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _583.Solution1();
     }
 

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _2373Test {
 
-    private static _2373.Solution1 solution1;
+    private _2373.Solution1 solution1;
     private static int[][] grid;
     private static int[][] expected;
 

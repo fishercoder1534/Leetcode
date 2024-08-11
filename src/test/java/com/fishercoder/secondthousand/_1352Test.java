@@ -1,12 +1,12 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1352;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1352Test {
-    private static _1352.Solution1.ProductOfNumbers productOfNumbers;
+    private _1352.Solution1.ProductOfNumbers productOfNumbers;
 
     @Test
     public void test1() {

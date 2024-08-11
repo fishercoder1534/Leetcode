@@ -3,17 +3,17 @@ package com.fishercoder.secondthousand;
 import com.fishercoder.common.classes.BinaryMatrix;
 import com.fishercoder.common.classes.BinaryMatrixImpl;
 import com.fishercoder.solutions.secondthousand._1428;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1428Test {
-    private static _1428.Solution1 solution1;
+    private _1428.Solution1 solution1;
     private static BinaryMatrix binaryMatrix;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _1428.Solution1();
     }
 

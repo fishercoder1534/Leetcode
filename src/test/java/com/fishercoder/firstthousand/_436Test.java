@@ -1,14 +1,14 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._436;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _436Test {
-    private static _436.Solution1 solution1;
+    private _436.Solution1 solution1;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _436.Solution1();
     }
 

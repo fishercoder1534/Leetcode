@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _155Test {
-    private static _155.Solution1.MinStack minStack1;
-    private static _155.Solution2.MinStack minStack2;
+    private _155.Solution1.MinStack minStack1;
+    private _155.Solution2.MinStack minStack2;
 
     @BeforeEach
     public void setup() {

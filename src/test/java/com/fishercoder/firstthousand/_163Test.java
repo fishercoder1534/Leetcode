@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _163Test {
 
-    private static _163.Solution1 solution1;
+    private _163.Solution1 solution1;
     private static List<List<Integer>> expected;
     private static List<List<Integer>> actual;
     private static int[] nums;

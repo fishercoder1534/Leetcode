@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _34Test {
-    private static _34.Solution1 solution1;
-    private static _34.Solution2 solution2;
-    private static _34.Solution3 solution3;
+    private _34.Solution1 solution1;
+    private _34.Solution2 solution2;
+    private _34.Solution3 solution3;
     private static int[] nums;
 
     @BeforeEach

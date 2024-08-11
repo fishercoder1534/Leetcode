@@ -1,22 +1,22 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._444;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _444Test {
-    private static _444.Solution1 solution1;
+    private _444.Solution1 solution1;
     private static int[] org;
     private static List<List<Integer>> seqs;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _444.Solution1();
     }
 

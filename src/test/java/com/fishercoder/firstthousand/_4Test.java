@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _4Test {
-    private static _4.Solution1 solution1;
-    private static _4.Solution2 solution2;
+    private _4.Solution1 solution1;
+    private _4.Solution2 solution2;
     private static int[] A;
     private static int[] B;
 

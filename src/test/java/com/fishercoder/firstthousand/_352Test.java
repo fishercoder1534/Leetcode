@@ -3,17 +3,17 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.Interval;
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._352;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 public class _352Test {
-  private static _352.Solution1.SummaryRanges test;
+  private _352.Solution1.SummaryRanges test;
   private static List<Interval> actual;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     test = new _352.Solution1.SummaryRanges();
   }
 

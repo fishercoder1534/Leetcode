@@ -2,21 +2,21 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.classes.NestedInteger;
 import com.fishercoder.solutions.firstthousand._341;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _341Test {
-  private static _341.Solution1 test;
+  private _341.Solution1 test;
   private static List<NestedInteger> nestedList;
 
-  @BeforeClass
-  public static void setup() {
+  @BeforeEach
+    public void setUp() {
     test = new _341.Solution1();
   }
 

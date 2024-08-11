@@ -3,14 +3,14 @@ package com.fishercoder.secondthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.secondthousand._1644;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1644Test {
-    private static _1644.Solution1 solution1;
+    private _1644.Solution1 solution1;
 
     @Test
     public void test1() {

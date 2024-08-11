@@ -10,8 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
  * Created by fishercoder on 5/26/17.
  */
 public class _498Test {
-    private static _498.Solutoin1 solutoin1;
-    private static _498.Solutoin2 solutoin2;
+    private _498.Solutoin1 solutoin1;
+    private _498.Solutoin2 solutoin2;
     private static int[][] matrix;
     private static int[] expected;
 

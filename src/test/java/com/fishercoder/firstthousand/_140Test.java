@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class _140Test {
-    private static _140.Solution1 solution1;
+    private _140.Solution1 solution1;
     private static String s;
     private static List<String> wordDict;
 

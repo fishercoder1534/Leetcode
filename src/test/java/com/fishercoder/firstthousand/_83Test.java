@@ -15,8 +15,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class _83Test {
 
-    private static _83.Solution1 solution1;
-    private static _83.Solution2 solution2;
+    private _83.Solution1 solution1;
+    private _83.Solution2 solution2;
     private static ListNode head;
     private static ListNode expected;
 

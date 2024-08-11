@@ -4,24 +4,24 @@ import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._145;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _145Test {
-    private static _145.Solution1 solution1;
-    private static _145.Solution2 solution2;
-    private static _145.Solution3 solution3;
+    private _145.Solution1 solution1;
+    private _145.Solution2 solution2;
+    private _145.Solution3 solution3;
     private static TreeNode root;
     private static List<Integer> expected;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _145.Solution1();
         solution2 = new _145.Solution2();
         solution3 = new _145.Solution3();

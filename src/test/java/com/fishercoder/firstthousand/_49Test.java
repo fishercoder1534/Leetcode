@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _49Test {
-    private static _49.Solution1 solution1;
+    private _49.Solution1 solution1;
     private static String[] words;
     private static List<List<String>> expected;
     private static List<List<String>> actual;

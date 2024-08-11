@@ -1,12 +1,12 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._706;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _706Test {
-    private static _706.Solution2.MyHashMap myHashMap;
+    private _706.Solution2.MyHashMap myHashMap;
 
     @Test
     public void test1() {

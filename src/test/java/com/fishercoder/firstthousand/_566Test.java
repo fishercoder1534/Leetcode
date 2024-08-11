@@ -1,25 +1,25 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._566;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
  * Created by fishercoder on 4/29/17.
  */
 public class _566Test {
-    private static _566.Solution1 solution1;
-    private static _566.Solution2 solution2;
+    private _566.Solution1 solution1;
+    private _566.Solution2 solution2;
     private static int[][] expected;
     private static int[][] actual;
     private static int[][] nums;
     private static int r;
     private static int c;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _566.Solution1();
         solution2 = new _566.Solution2();
     }

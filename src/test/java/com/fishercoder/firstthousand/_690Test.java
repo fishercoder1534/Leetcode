@@ -2,24 +2,24 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.classes.Employee;
 import com.fishercoder.solutions.firstthousand._690;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 5/18/17.
  */
 public class _690Test {
-    private static _690.Solution1 solution1;
+    private _690.Solution1 solution1;
     private static List<Employee> employees;
     private static int id;
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         solution1 = new _690.Solution1();
     }

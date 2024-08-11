@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _79Test {
-    private static _79.Solution1 solution1;
-    private static _79.Solution2 solution2;
-    private static _79.Solution3 solution3;
+    private _79.Solution1 solution1;
+    private _79.Solution2 solution2;
+    private _79.Solution3 solution3;
     private static char[][] board;
 
     @BeforeEach

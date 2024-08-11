@@ -1,12 +1,12 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._901;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _901Test {
-    private static _901.Solution1.StockSpanner stockSpanner;
+    private _901.Solution1.StockSpanner stockSpanner;
 
     @Test
     public void test1() {

@@ -9,8 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _646Test {
 
-    private static _646.Solution1 solution1;
-    private static _646.Solution2 solution2;
+    private _646.Solution1 solution1;
+    private _646.Solution2 solution2;
     private static int[][] pairs;
 
     @BeforeEach

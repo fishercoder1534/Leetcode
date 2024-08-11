@@ -1,12 +1,12 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._208;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _208Test {
-    private static _208.Solution1.Trie trie;
+    private _208.Solution1.Trie trie;
 
     @Test
     public void test1() {

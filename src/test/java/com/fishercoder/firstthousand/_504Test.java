@@ -1,27 +1,27 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._504;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by fishercoder on 1/15/17.
  */
 public class _504Test {
-    private static _504.Solution1 solution1;
+    private _504.Solution1 solution1;
     private static String expected;
     private static String actual;
     private static int num;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _504.Solution1();
     }
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         expected = "";
         actual = "";

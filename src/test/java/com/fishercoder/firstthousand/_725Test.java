@@ -3,18 +3,18 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._725;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _725Test {
-    private static _725.Solution1 solution1;
-    private static _725.Solution2 solution2;
+    private _725.Solution1 solution1;
+    private _725.Solution2 solution2;
     private static ListNode root;
     private static int k;
     private static ListNode[] actual;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _725.Solution1();
         solution2 = new _725.Solution2();
     }

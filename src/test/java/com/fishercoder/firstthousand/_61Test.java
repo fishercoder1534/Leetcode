@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _61Test {
-    private static _61.Solution1 solution1;
+    private _61.Solution1 solution1;
     private static ListNode expected;
     private static ListNode actual;
     private static ListNode head;

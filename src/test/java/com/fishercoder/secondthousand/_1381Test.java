@@ -1,13 +1,13 @@
 package com.fishercoder.secondthousand;
 
 import com.fishercoder.solutions.secondthousand._1381;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1381Test {
-    private static _1381.Solution1.CustomStack customStack;
-    private static _1381.Solution2.CustomStack customStack2;
+    private _1381.Solution1.CustomStack customStack;
+    private _1381.Solution2.CustomStack customStack2;
 
     @Test
     public void test1() {

@@ -1,24 +1,24 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._239;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _239Test {
-    private static _239.Solution1 solution1;
+    private _239.Solution1 solution1;
     private static int[] expected;
     private static int[] actual;
     private static int[] nums;
     private static int k;
 
-    @BeforeClass
-    public static void setup() {
+    @BeforeEach
+    public void setup() {
         solution1 = new _239.Solution1();
     }
 
-    @Before
+    @BeforeEach
     public void setupForEachTest() {
         expected = new int[]{};
         actual = new int[]{};
@@ -33,7 +33,7 @@ public class _239Test {
         k = 3;
         expected = new int[]{3, 3, 5, 5, 6, 7};
         actual = solution1.maxSlidingWindow(nums, k);
-        Assert.assertArrayEquals(expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
 
     }
 }

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _381Test {
-    private static _381.Solution1.RandomizedCollection randomizedCollection;
+    private _381.Solution1.RandomizedCollection randomizedCollection;
 
     @BeforeEach
     public void setup() {
