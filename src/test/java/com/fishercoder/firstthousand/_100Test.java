@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class _100Test {
     private _100.Solution1 solution1;
@@ -26,7 +26,7 @@ public class _100Test {
         TreeUtils.printBinaryTree(p);
         q = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3));
         TreeUtils.printBinaryTree(p);
-        assertEquals(true, solution1.isSameTree(p, q));
+        assertTrue(solution1.isSameTree(p, q));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class _100Test {
         TreeUtils.printBinaryTree(p);
         q = TreeUtils.constructBinaryTree(Arrays.asList(1, null, 2));
         TreeUtils.printBinaryTree(p);
-        assertEquals(false, solution1.isSameTree(p, q));
+        assertFalse(solution1.isSameTree(p, q));
     }
 
     @Test
@@ -44,6 +44,6 @@ public class _100Test {
         TreeUtils.printBinaryTree(p);
         q = TreeUtils.constructBinaryTree(Arrays.asList(1, 1, 2));
         TreeUtils.printBinaryTree(p);
-        assertEquals(false, solution1.isSameTree(p, q));
+        assertFalse(solution1.isSameTree(p, q));
     }
 }
