@@ -1,37 +1,32 @@
 package com.fishercoder.solutions.firstthousand;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.util.PriorityQueue;
 
 public class _703 {
     public static class Solution1 {
         public static class KthLargest {
-            PriorityQueue<Integer> heap;
+            PriorityQueue<Integer> minHeap;
             int maxK;
 
             public KthLargest(int k, int[] nums) {
-                heap = new PriorityQueue<>(Collections.reverseOrder());
+                minHeap = new PriorityQueue<>();
                 for (int num : nums) {
-                    heap.offer(num);
+                    minHeap.offer(num);
+                    if (minHeap.size() > k) {
+                        minHeap.poll();
+                    }
                 }
                 maxK = k;
             }
 
             public int add(int val) {
-                List<Integer> tmp = new ArrayList<>();
-                int result = 0;
-                int tmpK = maxK;
-                heap.offer(val);
-                while (tmpK-- > 0) {
-                    result = heap.poll();
-                    tmp.add(result);
+                if (minHeap.size() < maxK || minHeap.peek() < val) {
+                    minHeap.offer(val);
+                    if (minHeap.size() > maxK) {
+                        minHeap.poll();
+                    }
                 }
-                for (int num : tmp) {
-                    heap.offer(num);
-                }
-                return result;
+                return minHeap.peek();
             }
         }
     }
