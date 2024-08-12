@@ -1,46 +1,50 @@
-apply plugin: 'java'
-apply plugin: 'checkstyle'
+plugins {
+    id 'java'
+}
 
 group = 'com.fishercoder'
 version = '1.0-SNAPSHOT'
 
-javadoc.options.encoding = 'UTF-8'
-compileJava.options.encoding = 'UTF-8'
-
-checkstyle {
-    //include ( '**/*.java')
-    configFile = file("${rootDir}/fishercoder_checkstyle.xml")
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
 
-sourceSets {
-    main {
-        java {
-            srcDir 'src/fishercoder'
+tasks.javadoc {
+    options.encoding = 'UTF-8'
+}
+
+tasks.compileJava {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'org.apache.commons:commons-collections4:4.0'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.3'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.3'
+
+    testImplementation 'org.assertj:assertj-core:3.11.1'
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+    testCompileOnly 'org.projectlombok:lombok:1.18.32'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
+}
+
+testing {
+    suites {
+        test {
+            useJUnitJupiter()
         }
     }
 }
 
-description = """"""
-
-repositories {
-    mavenCentral()
-    maven { url "http://repo.maven.apache.org/maven2" }
-}
-
-dependencies {
-    compile 'com.google.code.gson:gson:2.8.0'
-    compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
-
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-
-    testCompile("org.assertj:assertj-core:3.11.1")
-    compileOnly 'org.projectlombok:lombok:1.18.12'
-    annotationProcessor 'org.projectlombok:lombok:1.18.12'
-    testCompileOnly 'org.projectlombok:lombok:1.18.12'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
-}
-
-test {
-    useJUnitPlatform()
+tasks.withType(Test).configureEach {
+    maxParallelForks = Runtime.runtime.availableProcessors()
 }
