@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'checkstyle'
 }
 
 group = 'com.fishercoder'
@@ -47,4 +48,9 @@ testing {
 
 tasks.withType(Test).configureEach {
     maxParallelForks = Runtime.runtime.availableProcessors()
+}
+
+checkstyle {
+    toolVersion = '6.17'
+    config = rootProject.resources.text.fromFile('fishercoder_checkstyle.xml')
 }
