@@ -54,4 +54,37 @@ public class _860 {
             return true;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * My original solution on 8/14/2024.
+         * You only need to keep track of the number of $5 and $10 bills at hand.
+         */
+
+        public boolean lemonadeChange(int[] bills) {
+            int[] changes = new int[2];//5 and 10
+            for (int bill : bills) {
+                if (bill == 5) {
+                    changes[0]++;
+                } else if (bill == 10) {
+                    if (changes[0] <= 0) {
+                        return false;
+                    } else {
+                        changes[0]--;
+                    }
+                    changes[1]++;
+                } else if (bill == 20) {
+                    if (changes[1] > 0 && changes[0] > 0) {
+                        changes[1]--;
+                        changes[0]--;
+                    } else if (changes[0] > 2) {
+                        changes[0] -= 3;
+                    } else {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    }
 }
