@@ -75,13 +75,12 @@ public class _264 {
         public int nthUglyNumber(int n) {
             TreeSet<Long> treeSet = new TreeSet<>();
             treeSet.add(1L);
-            int[] arr = new int[]{2, 3, 5};
             long currentUgly = 0;
             for (int i = 0; i < n; i++) {
                 currentUgly = treeSet.pollFirst();
-                treeSet.add(currentUgly * arr[0]);
-                treeSet.add(currentUgly * arr[1]);
-                treeSet.add(currentUgly * arr[2]);
+                treeSet.add(currentUgly * 2);
+                treeSet.add(currentUgly * 3);
+                treeSet.add(currentUgly * 5);
             }
             return (int) currentUgly;
         }
