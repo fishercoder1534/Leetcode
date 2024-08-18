@@ -8,7 +8,7 @@ import java.util.Set;
 public class _684 {
 
     public static class Solution1 {
-        /**
+        /*
          * This is my original solution. A little verbose.
          */
         class UnionFind {
@@ -24,7 +24,7 @@ public class _684 {
                 n = edges[0].length;
                 nodes = new HashSet<>();
                 visitedNodes = new HashSet<>();
-                redundantConn = new int[]{};
+                redundantConn = new int[] {};
                 for (int i = 0; i < m; i++) {
                     for (int j = 0; j < n; j++) {
                         nodes.add(edges[i][j]);
@@ -78,7 +78,7 @@ public class _684 {
 
         public int[] findRedundantConnection(int[][] edges) {
             UnionFind unionFind = new UnionFind(edges);
-            int[] result = new int[]{};
+            int[] result = new int[] {};
             for (int[] edge : edges) {
                 result = unionFind.union(edge);
             }
@@ -87,7 +87,7 @@ public class _684 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * DFS, credit: https://leetcode.com/problems/redundant-connection/editorial/
          * 1. we build the graph one edge at a time, each time, we add both edge[0] to the neighbors of edge[1] and vice versa since this is an un-directed graph;
          * 2. as soon as we encounter an edge that can connect to each other, it must be the redundant one.
@@ -104,7 +104,9 @@ public class _684 {
             Set<Integer> visited = new HashSet<>();
             for (int[] edge : edges) {
                 visited.clear();
-                if (!graph[edge[0]].isEmpty() && !graph[edge[1]].isEmpty() && canConnect(edge[0], edge[1], graph, visited)) {
+                if (!graph[edge[0]].isEmpty()
+                        && !graph[edge[1]].isEmpty()
+                        && canConnect(edge[0], edge[1], graph, visited)) {
                     return edge;
                 }
                 graph[edge[0]].add(edge[1]);
@@ -113,7 +115,8 @@ public class _684 {
             return null;
         }
 
-        private boolean canConnect(int source, int target, List<Integer>[] graph, Set<Integer> visited) {
+        private boolean canConnect(
+                int source, int target, List<Integer>[] graph, Set<Integer> visited) {
             if (visited.add(source)) {
                 if (source == target) {
                     return true;

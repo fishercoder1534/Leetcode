@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _2001 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://github.com/fishercoder1534/Leetcode/blob/master/python3/2001.py
          */
         public long interchangeableRectangles(int[][] rectangles) {
@@ -24,7 +24,7 @@ public class _2001 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/discuss/1458404/Java-or-HashMap
          * <p>
          * This is an even smarter way to solve this problem:

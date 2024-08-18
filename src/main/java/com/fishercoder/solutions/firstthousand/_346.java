@@ -12,7 +12,7 @@ public class _346 {
             private Long sum;
             private int max;
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public MovingAverage(int size) {

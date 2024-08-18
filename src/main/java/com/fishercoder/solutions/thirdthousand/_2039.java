@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class _2039 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution, again, using a pen and paper to visualize my thought process helps out greatly!
          */
         public int networkBecomesIdle(int[][] edges, int[] patience) {
@@ -22,7 +22,11 @@ public class _2039 {
                 int numberOfMessages = roundTripTime / patience[i];
                 int lastMessageArriveTime = roundTripTime;
                 if (roundTripTime > patience[i]) {
-                    lastMessageArriveTime += patience[i] * (roundTripTime % patience[i] == 0 ? (numberOfMessages - 1) : numberOfMessages);
+                    lastMessageArriveTime +=
+                            patience[i]
+                                    * (roundTripTime % patience[i] == 0
+                                            ? (numberOfMessages - 1)
+                                            : numberOfMessages);
                 }
                 seconds = Math.max(seconds, lastMessageArriveTime);
             }

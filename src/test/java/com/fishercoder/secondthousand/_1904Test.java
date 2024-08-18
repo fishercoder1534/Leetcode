@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1904;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1904Test {
     private _1904.Solution1 solution1;
@@ -58,5 +58,4 @@ public class _1904Test {
     public void test8() {
         assertEquals(6, solution1.numberOfRounds("00:01", "01:57"));
     }
-
 }

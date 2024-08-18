@@ -15,7 +15,6 @@ public class _925 {
                 } else {
                     j++;
                 }
-
             }
             return i == name.length();
         }

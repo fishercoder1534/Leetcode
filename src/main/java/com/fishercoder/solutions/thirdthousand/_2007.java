@@ -6,12 +6,12 @@ import java.util.Map;
 
 public class _2007 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original, but a bit lengthy solution.
          */
         public int[] findOriginalArray(int[] changed) {
             if (changed.length % 2 != 0) {
-                return new int[]{};
+                return new int[] {};
             }
             Arrays.sort(changed);
             int[] ans = new int[changed.length / 2];
@@ -25,8 +25,10 @@ public class _2007 {
                 if (map.containsKey(doubledNumber)) {
                     int doubledNumberCount = map.get(doubledNumber);
                     int halfNumber = doubledNumber / 2;
-                    if (!map.containsKey(halfNumber) || map.get(halfNumber) < doubledNumberCount || halfNumber * 2 != doubledNumber) {
-                        return new int[]{};
+                    if (!map.containsKey(halfNumber)
+                            || map.get(halfNumber) < doubledNumberCount
+                            || halfNumber * 2 != doubledNumber) {
+                        return new int[] {};
                     } else {
                         if (doubledNumber == halfNumber && map.get(halfNumber) % 2 == 0) {
                             doubledNumberCount /= 2;

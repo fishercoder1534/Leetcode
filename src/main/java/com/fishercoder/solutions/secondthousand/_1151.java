@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1151 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution on 11/4/2021.
          * Typical sliding window problem/solution
          */

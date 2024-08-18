@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class _588 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://github.com/lydxlx1/LeetCode/blob/master/src/_588.java
          */
         public static class FileSystem {
@@ -43,8 +43,7 @@ public class _588 {
                 return node;
             }
 
-            public FileSystem() {
-            }
+            public FileSystem() {}
 
             public List<String> ls(String path) {
                 TrieNode node = dfs(path);
@@ -73,12 +72,12 @@ public class _588 {
         }
     }
 
-/**
- * Your FileSystem object will be instantiated and called as such:
- * FileSystem obj = new FileSystem();
- * List<String> param_1 = obj.ls(path);
- * obj.mkdir(path);
- * obj.addContentToFile(filePath,content);
- * String param_4 = obj.readContentFromFile(filePath);
- */
+    /*
+     * Your FileSystem object will be instantiated and called as such:
+     * FileSystem obj = new FileSystem();
+     * List<String> param_1 = obj.ls(path);
+     * obj.mkdir(path);
+     * obj.addContentToFile(filePath,content);
+     * String param_4 = obj.readContentFromFile(filePath);
+     */
 }

@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _814 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/binary-tree-pruning/discuss/122730/C%2B%2BJavaPython-Self-Explaining-Solution-and-2-lines
          */
         public TreeNode pruneTree(TreeNode root) {
@@ -19,5 +19,4 @@ public class _814 {
             return root;
         }
     }
-
 }

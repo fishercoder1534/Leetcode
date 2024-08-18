@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.Point;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -10,7 +9,7 @@ import java.util.Set;
 public class _587 {
     public static class Solution1 {
 
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/89323/java-solution-convex-hull-algorithm-gift-wrapping-aka-jarvis-march
          * There are couple of ways to solve Convex Hull problem. https://en.wikipedia.org/wiki/Convex_hull_algorithms
          * The following code implements Gift wrapping aka Jarvis march algorithm
@@ -44,7 +43,8 @@ public class _587 {
                         continue;
                     }
                     int cross = crossProductLength(cur, points[i], next);
-                    if (nextIndex == curIndex || cross > 0
+                    if (nextIndex == curIndex
+                            || cross > 0
                             // Handle collinear points
                             || (cross == 0 && distance(points[i], cur) > distance(next, cur))) {
                         next = points[i];
@@ -85,5 +85,4 @@ public class _587 {
             return (p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y);
         }
     }
-
 }

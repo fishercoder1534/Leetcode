@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _52 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/29626/easiest-java-solution-1ms-98-22
          */
         int count = 0;
@@ -16,8 +16,8 @@ public class _52 {
             return count;
         }
 
-        private void backtracking(int row, boolean[] cols, boolean[] diagnol, boolean[] antiDiagnol,
-                                  int n) {
+        private void backtracking(
+                int row, boolean[] cols, boolean[] diagnol, boolean[] antiDiagnol, int n) {
             if (row == n) {
                 count++;
             }

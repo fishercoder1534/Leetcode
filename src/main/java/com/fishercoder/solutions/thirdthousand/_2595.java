@@ -18,7 +18,7 @@ public class _2595 {
                     }
                 }
             }
-            return new int[]{even, odd};
+            return new int[] {even, odd};
         }
     }
 }

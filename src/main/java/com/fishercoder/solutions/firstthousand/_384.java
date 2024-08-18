@@ -9,8 +9,9 @@ import java.util.Random;
 public class _384 {
 
     public static class Solution1 {
-        //Note as of 7/20/2021: This solution ends in TLE on LeetCode now.
-        //Note: the problem states that this is a set without duplicates which makes building all combinations easier
+        // Note as of 7/20/2021: This solution ends in TLE on LeetCode now.
+        // Note: the problem states that this is a set without duplicates which makes building all
+        // combinations easier
 
         private List<List<Integer>> combinations;
         private int[] original;
@@ -22,8 +23,9 @@ public class _384 {
             combinations = buildAllComb(nums);
         }
 
-        //insert next value into all possible positions, I wrote this method myself, of course it could be simplified to not use a queue
-        //but it just naturally came into my mind that I used a queue
+        // insert next value into all possible positions, I wrote this method myself, of course it
+        // could be simplified to not use a queue
+        // but it just naturally came into my mind that I used a queue
         private List<List<Integer>> buildAllComb(int[] nums) {
             List<List<Integer>> result = new ArrayList();
             if (nums == null || nums.length == 0) {
@@ -51,14 +53,14 @@ public class _384 {
             return result;
         }
 
-        /**
+        /*
          * Resets the array to its original configuration and return it.
          */
         public int[] reset() {
             return original;
         }
 
-        /**
+        /*
          * Returns a random shuffling of the array.
          */
         public int[] shuffle() {
@@ -76,7 +78,7 @@ public class _384 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/shuffle-an-array/discuss/85958/First-Accepted-Solution-Java
          */
         private int[] nums;
@@ -87,14 +89,14 @@ public class _384 {
             this.random = new Random();
         }
 
-        /**
+        /*
          * Resets the array to its original configuration and return it.
          */
         public int[] reset() {
             return this.nums;
         }
 
-        /**
+        /*
          * Returns a random shuffling of the array.
          */
         public int[] shuffle() {
@@ -113,4 +115,3 @@ public class _384 {
         }
     }
 }
-

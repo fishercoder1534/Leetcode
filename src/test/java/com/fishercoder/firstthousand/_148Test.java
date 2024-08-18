@@ -1,12 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._148;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _148Test {
     private _148.Solution1 solution1;
@@ -26,30 +26,29 @@ public class _148Test {
 
     @Test
     public void test1() {
-        head = LinkedListUtils.contructLinkedList(new int[]{4, 2, 1, 3});
-        expected = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4});
+        head = LinkedListUtils.contructLinkedList(new int[] {4, 2, 1, 3});
+        expected = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4});
         assertEquals(expected, solution1.sortList(head));
     }
 
     @Test
     public void test2() {
-        head = LinkedListUtils.contructLinkedList(new int[]{4, 2, 1, 3});
-        expected = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4});
+        head = LinkedListUtils.contructLinkedList(new int[] {4, 2, 1, 3});
+        expected = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4});
         assertEquals(expected, solution2.sortList(head));
     }
 
     @Test
     public void test3() {
-        head = LinkedListUtils.contructLinkedList(new int[]{4, 2, 1, 3});
-        expected = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4});
+        head = LinkedListUtils.contructLinkedList(new int[] {4, 2, 1, 3});
+        expected = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4});
         assertEquals(expected, solution3.sortList(head));
     }
 
     @Test
     public void test4() {
-        head = LinkedListUtils.contructLinkedList(new int[]{4, 2, 1, 3});
-        expected = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4});
+        head = LinkedListUtils.contructLinkedList(new int[] {4, 2, 1, 3});
+        expected = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4});
         assertEquals(expected, solution4.sortList(head));
     }
-
 }

@@ -6,7 +6,7 @@ import java.util.Map;
 public class _447 {
 
     public static class Solution1 {
-        /**
+        /*
          * Looked at these two posts: https://discuss.leetcode.com/topic/66587/clean-java-solution-o-n-2-166ms and
          * https://discuss.leetcode.com/topic/66521/share-my-straightforward-solution-with-hashmap-o-n-2, basically,
          * have a HashMap, key is the distance, value is the number of points that are this distance apart to this point.
@@ -46,5 +46,4 @@ public class _447 {
             return x * x + y * y;
         }
     }
-
 }

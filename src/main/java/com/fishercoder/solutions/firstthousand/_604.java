@@ -18,7 +18,11 @@ public class _604 {
                     while (j < len && Character.isDigit(compressedString.charAt(j))) {
                         j++;
                     }
-                    deque.addLast(new int[]{compressedString.charAt(i) - 'A', Integer.parseInt(compressedString.substring(i + 1, j))});
+                    deque.addLast(
+                            new int[] {
+                                compressedString.charAt(i) - 'A',
+                                Integer.parseInt(compressedString.substring(i + 1, j))
+                            });
                     i = j;
                 }
             }

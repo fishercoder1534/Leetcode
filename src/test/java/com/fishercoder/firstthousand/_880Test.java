@@ -1,11 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._880;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Disabled
 public class _880Test {
@@ -40,5 +40,4 @@ public class _880Test {
     public void test5() {
         assertEquals("a", solution1.decodeAtIndex("a2b3c4d5e6f7g8h9", 10));
     }
-
 }

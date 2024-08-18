@@ -20,7 +20,7 @@ public class _1094 {
                 if (capacity < 0) {
                     return false;
                 }
-                heap.offer(new int[]{peopleCnt, endTime});
+                heap.offer(new int[] {peopleCnt, endTime});
             }
             return true;
         }

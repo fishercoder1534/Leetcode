@@ -28,7 +28,7 @@ public class _15 {
                         while (mid < right && nums[right] == nums[right - 1]) {
                             right--;
                         }
-                        //these two lines are critical and easy to forget, if so, it'll TLE
+                        // these two lines are critical and easy to forget, if so, it'll TLE
                         mid++;
                         right--;
                     } else if (sum > 0) {

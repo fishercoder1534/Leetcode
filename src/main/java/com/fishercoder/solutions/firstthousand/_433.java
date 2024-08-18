@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class _433 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution, BFS.
          */
         public int minMutation(String startGene, String endGene, String[] bank) {

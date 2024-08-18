@@ -48,7 +48,7 @@ public class _218 {
                 bps[index++] = bp2;
             }
 
-            //this is one key step:
+            // this is one key step:
             Arrays.sort(bps);
 
             List<List<Integer>> result = new ArrayList();
@@ -56,7 +56,7 @@ public class _218 {
             treeMap.put(0, 1);
             int prevMaxH = 0;
             for (BuildingPoint bp : bps) {
-                //if it's a starting point, we'll add it into the final result
+                // if it's a starting point, we'll add it into the final result
                 if (bp.isStart) {
                     if (treeMap.containsKey(bp.h)) {
                         treeMap.put(bp.h, treeMap.get(bp.h) + 1);
@@ -64,7 +64,7 @@ public class _218 {
                         treeMap.put(bp.h, 1);
                     }
                 } else if (!bp.isStart) {
-                    //if it's an ending point, we'll decrement/remove this entry
+                    // if it's an ending point, we'll decrement/remove this entry
                     if (treeMap.containsKey(bp.h) && treeMap.get(bp.h) > 1) {
                         treeMap.put(bp.h, treeMap.get(bp.h) - 1);
                     } else {
@@ -77,7 +77,6 @@ public class _218 {
                     result.add(Arrays.asList(bp.x, currMaxH));
                     prevMaxH = currMaxH;
                 }
-
             }
 
             return result;

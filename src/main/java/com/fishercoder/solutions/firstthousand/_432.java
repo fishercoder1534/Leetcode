@@ -9,7 +9,7 @@ public class _432 {
 
     public static class Solution1 {
 
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/65634/java-ac-all-strict-o-1-not-average-o-1-easy-to-read/2
          */
         class AllOne {
@@ -34,7 +34,7 @@ public class _432 {
                 }
             }
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public AllOne() {
@@ -46,7 +46,7 @@ public class _432 {
                 keyCountMap = new HashMap<>();
             }
 
-            /**
+            /*
              * Inserts a new key <Key> with value 1. Or increments an existing key by 1.
              */
             public void inc(String key) {
@@ -62,7 +62,7 @@ public class _432 {
                 }
             }
 
-            /**
+            /*
              * Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.
              */
             public void dec(String key) {
@@ -77,14 +77,14 @@ public class _432 {
                 }
             }
 
-            /**
+            /*
              * Returns one of the keys with maximal value.
              */
             public String getMaxKey() {
                 return tail.pre == head ? "" : (String) tail.pre.keySet.iterator().next();
             }
 
-            /**
+            /*
              * Returns one of the keys with Minimal value.
              */
             public String getMinKey() {
@@ -136,7 +136,7 @@ public class _432 {
     }
 }
 
-/**
+/*
  * Your AllOne object will be instantiated and called as such:
  * AllOne obj = new AllOne();
  * obj.inc(key);

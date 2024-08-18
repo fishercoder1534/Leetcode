@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class _1353 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/discuss/510263/JavaC%2B%2BPython-Priority-Queue
          * <p>
          * 1. Sort events by start time, if ties, by end time;

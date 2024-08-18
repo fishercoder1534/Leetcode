@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -74,10 +73,10 @@ public class _1721 {
         public ListNode swapNodes(ListNode head, int k) {
             // O(n) linear time
             /*
-                1. Calculate length of linked list
-                2. Initialize 3 ptrs, temp1 and temp2 used for pointing to nodes at k, (len - k + 1)
-                and temp3 used to iterate over the linked list
-             */
+               1. Calculate length of linked list
+               2. Initialize 3 ptrs, temp1 and temp2 used for pointing to nodes at k, (len - k + 1)
+               and temp3 used to iterate over the linked list
+            */
             int length = 0;
             int secondIndex;
 

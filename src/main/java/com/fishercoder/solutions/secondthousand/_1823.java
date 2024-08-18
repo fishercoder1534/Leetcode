@@ -23,7 +23,7 @@ public class _1823 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution: use a double linked list to keep moving (k - 1) people from
          * the tail of the queue to the head of the queue, and then remove the kth person,
          * until there's only one person in the queue who is the winner.

@@ -9,7 +9,9 @@ public class _2760 {
                     int start = i;
                     int j = i;
                     for (; j < nums.length - 1; j++) {
-                        if (nums[j] % 2 != nums[j + 1] % 2 && nums[j] <= threshold && nums[j + 1] <= threshold) {
+                        if (nums[j] % 2 != nums[j + 1] % 2
+                                && nums[j] <= threshold
+                                && nums[j + 1] <= threshold) {
                             continue;
                         } else {
                             break;

@@ -21,7 +21,7 @@ public class _137 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/11877/detailed-explanation-and-generalization-of-the-bitwise-operation-method-for-single-numbers/2
          */
         public int singleNumber(int[] nums) {

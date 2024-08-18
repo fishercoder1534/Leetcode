@@ -9,9 +9,13 @@ public class _253 {
             if (intervals == null || intervals.length == 0) {
                 return 0;
             }
-            Arrays.sort(intervals, (a, b) -> a[0] - b[0]);// Sort the intervals by start time
-            PriorityQueue<int[]> heap = new PriorityQueue<>(intervals.length, (a, b) -> a[1] - b[1]);// Use a min heap to track the minimum end time of merged intervals
-            heap.offer(intervals[0]);// start with the first meeting, put it to a meeting room
+            Arrays.sort(intervals, (a, b) -> a[0] - b[0]); // Sort the intervals by start time
+            PriorityQueue<int[]> heap =
+                    new PriorityQueue<>(
+                            intervals.length,
+                            (a, b) -> a[1] - b[1]); // Use a min heap to track the minimum end
+            // time of merged intervals
+            heap.offer(intervals[0]); // start with the first meeting, put it to a meeting room
             for (int i = 1; i < intervals.length; i++) {
                 // get the meeting room that finishes earliest
                 int[] last = heap.poll();
@@ -31,4 +35,3 @@ public class _253 {
         }
     }
 }
-

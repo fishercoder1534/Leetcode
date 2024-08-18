@@ -4,7 +4,7 @@ import java.util.*;
 
 public class _1424 {
     public static class Solution1 {
-        /**
+        /*
          * One key note:
          * For all elements on the same diagonal, the sums of their row index and column index are equal.
          * This is widely applicable to all matrix problems.

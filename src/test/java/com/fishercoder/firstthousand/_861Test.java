@@ -1,11 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._861;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _861Test {
     private _861.Solution1 solution1;
@@ -17,7 +17,10 @@ public class _861Test {
 
     @Test
     public void test1() {
-        assertEquals(39, solution1.matrixScore(CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[0,0,1,1],[1,0,1,0],[1,1,0,0]")));
+        assertEquals(
+                39,
+                solution1.matrixScore(
+                        CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                "[0,0,1,1],[1,0,1,0],[1,1,0,0]")));
     }
-
 }

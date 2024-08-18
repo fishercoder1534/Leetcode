@@ -35,7 +35,6 @@ public class _246 {
         }
     }
 
-
     public static class Solution2 {
         public boolean isStrobogrammatic(String num) {
             Set<Character> set = new HashSet();

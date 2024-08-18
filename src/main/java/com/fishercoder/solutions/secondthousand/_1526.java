@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1526 {
     public static class Solution1 {
-        /**
+        /*
          * This brute force solution results in TLE on LeetCode.
          */
         public int minNumberOperations(int[] target) {

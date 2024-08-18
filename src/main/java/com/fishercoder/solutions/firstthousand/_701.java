@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,7 +49,9 @@ public class _701 {
                     right = mid - 1;
                 }
             }
-            return left == right ? list.get(left) >= target ? left : left + 1 : left;//here's the most tricky/easy to get buggy part!
+            return left == right
+                    ? list.get(left) >= target ? left : left + 1
+                    : left; // here's the most tricky/easy to get buggy part!
         }
 
         private void inorder(TreeNode root, List<Integer> list) {

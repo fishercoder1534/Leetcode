@@ -1,13 +1,12 @@
 package com.fishercoder.secondthousand;
 
-import com.fishercoder.solutions.secondthousand._1408;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.fishercoder.solutions.secondthousand._1408;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _1408Test {
     private _1408.Solution1 solution1;
@@ -22,10 +21,9 @@ public class _1408Test {
 
     @Test
     public void test1() {
-        words = new String[]{"mass", "as", "hero", "superhero"};
+        words = new String[] {"mass", "as", "hero", "superhero"};
         expected = Arrays.asList("as", "hero");
         actual = solution1.stringMatching(words);
         assertEquals(expected.containsAll(actual), actual.containsAll(expected));
     }
-
 }

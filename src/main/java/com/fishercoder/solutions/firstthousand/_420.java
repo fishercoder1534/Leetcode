@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _420 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/63854/o-n-java-solution-by-analyzing-changes-allowed-to-fix-each-condition
          */
         public int strongPasswordChecker(String s) {

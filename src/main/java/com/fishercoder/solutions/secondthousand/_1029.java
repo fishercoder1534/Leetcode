@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _1029 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/two-city-scheduling/discuss/280173/Java-4-lines-intuitive-solution
          * and
          * https://leetcode.com/problems/two-city-scheduling/discuss/278771/Java-sort-solution

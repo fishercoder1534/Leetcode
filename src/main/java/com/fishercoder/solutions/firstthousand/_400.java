@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _400 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/59314/java-solution:
          * <p>
          * 1. find the length of the number where the nth digit is from 2. find the actual number where

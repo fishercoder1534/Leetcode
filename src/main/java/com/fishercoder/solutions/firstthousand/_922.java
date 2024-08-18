@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _922 {
     public static class Solution1 {
-        /**
+        /*
          * Space: O(n)
          * Time: O(n)
          */
@@ -33,7 +33,7 @@ public class _922 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Space: O(1)
          * Time: O(n^2)
          */
@@ -64,7 +64,7 @@ public class _922 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * This is the most efficient solution: one implicit condition is that:
          * we start with index zero for i, so we look for nums[i] that is not an even number to be swapped with;
          * we start with index one for j, so we look for nums[j] that is not an odd number to be swapped with.

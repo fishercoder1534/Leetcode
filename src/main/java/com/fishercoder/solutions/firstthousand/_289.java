@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _289 {
     public static class Solution1 {
-        /**
+        /*
          * Time: O(m*n)
          * Space: O(m*n)
          */
@@ -10,12 +10,14 @@ public class _289 {
             int height = board.length;
             int width = board[0].length;
             int[][] next = new int[height][width];
-            int[][] directions = {{-1, -1}, {-1, 0}, {-1, 1}, {0, 1}, {1, 1}, {1, 0}, {1, -1}, {0, -1}};
+            int[][] directions = {
+                {-1, -1}, {-1, 0}, {-1, 1}, {0, 1}, {1, 1}, {1, 0}, {1, -1}, {0, -1}
+            };
 
             for (int i = 0; i < board.length; i++) {
                 for (int j = 0; j < board[0].length; j++) {
                     int liveCellsCount = 0;
-                    //count all its live cells
+                    // count all its live cells
 
                     for (int[] dir : directions) {
                         int x = i + dir[0];
@@ -46,7 +48,7 @@ public class _289 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Time: O(m*n)
          * Space: O(1)
          * <p>
@@ -81,7 +83,9 @@ public class _289 {
 
                                 // Check the validity of the neighboring cell.
                                 // and whether it was originally a live cell.
-                                if ((r < rows && r >= 0) && (c < cols && c >= 0) && (Math.abs(board[r][c]) == 1)) {
+                                if ((r < rows && r >= 0)
+                                        && (c < cols && c >= 0)
+                                        && (Math.abs(board[r][c]) == 1)) {
                                     liveNeighbors += 1;
                                 }
                             }

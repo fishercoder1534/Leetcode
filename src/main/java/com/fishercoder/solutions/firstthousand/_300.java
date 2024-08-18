@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _300 {
 
     public static class Solution1 {
-        /**
+        /*
          * brute force:
          * Time: O(2^n), size of recursion tree will be: 2^n
          * Space: O(n^2)
@@ -32,7 +32,7 @@ public class _300 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This is an iteration on the previous solution, we use a 2-d array to memoize the previously calculated result
          * Time: O(n^2)
          * Space: O(n^2)
@@ -51,7 +51,7 @@ public class _300 {
                 return 0;
             }
             if (memo[prevIndex + 1][currIndex] >= 0) {
-                //because we initialize all elements in memo to be -1,
+                // because we initialize all elements in memo to be -1,
                 // so if it's not -1, then it means we have computed this value before,
                 // we'll just return it and this way it avoid duplicate recursion
                 return memo[prevIndex + 1][currIndex];
@@ -67,7 +67,7 @@ public class _300 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * DP solution, credit: https://leetcode.com/problems/longest-increasing-subsequence/editorial/
          * Time: O(n^2)
          * Space: O(n)
@@ -94,7 +94,7 @@ public class _300 {
     }
 
     public static class Solution4 {
-        /**
+        /*
          * use binary search.
          * Time: O(nlogn)
          * Space: O(n)

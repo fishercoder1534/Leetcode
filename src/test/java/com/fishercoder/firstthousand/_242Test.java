@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._242;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _242Test {
     private _242.Solution1 solution1;
@@ -33,8 +33,8 @@ public class _242Test {
         s = "代码写开心";
         t = "开心写代码";
         assertEquals(true, solution1.isAnagram(s, t));
-        //assertEquals(true, solution3.isAnagram(s, t));//solution2 won't work for unicode character input
+        // assertEquals(true, solution3.isAnagram(s, t));//solution2 won't work for unicode
+        // character input
         assertEquals(true, solution3.isAnagram(s, t));
     }
-
 }

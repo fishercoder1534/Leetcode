@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._155;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _155Test {
     private _155.Solution1.MinStack minStack1;
@@ -37,5 +37,4 @@ public class _155Test {
         assertEquals(0, minStack2.top());
         assertEquals(-2, minStack2.getMin());
     }
-
 }

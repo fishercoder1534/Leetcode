@@ -24,13 +24,14 @@ public class _1079 {
             IntStream.range(0, chars.length)
                     .filter(i -> !used[i])
                     .filter(i -> i <= 0 || chars[i - 1] != chars[i] || used[i - 1])
-                    .forEach(i -> {
-                        used[i] = true;
-                        sb.append(chars[i]);
-                        dfs(chars, used, sb, result);
-                        used[i] = false;
-                        sb.deleteCharAt(sb.length() - 1);
-                    });
+                    .forEach(
+                            i -> {
+                                used[i] = true;
+                                sb.append(chars[i]);
+                                dfs(chars, used, sb, result);
+                                used[i] = false;
+                                sb.deleteCharAt(sb.length() - 1);
+                            });
         }
     }
 }

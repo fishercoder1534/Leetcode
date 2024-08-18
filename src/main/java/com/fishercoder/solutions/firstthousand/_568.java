@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _568 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/articles/maximum-vacation-days/#approach-2-using-dfs-with-memoization-accepted
          */
         public int maxVacationDays(int[][] flights, int[][] days) {
@@ -34,5 +34,4 @@ public class _568 {
             return maxvac;
         }
     }
-
 }

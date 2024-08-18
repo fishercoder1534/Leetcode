@@ -28,5 +28,4 @@ public class _16 {
             return sum;
         }
     }
-
 }

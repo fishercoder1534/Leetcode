@@ -1,6 +1,6 @@
 package com.fishercoder.common.classes;
 
-/**
+/*
  * This is a class used by one OJ problem: MeetingRooms
  */
 public class Interval implements Comparable<Interval> {
@@ -45,7 +45,7 @@ public class Interval implements Comparable<Interval> {
     @Override
     public int compareTo(Interval o) {
         int compareStart = o.start;
-        //ascending order
+        // ascending order
         return this.start - compareStart;
     }
 

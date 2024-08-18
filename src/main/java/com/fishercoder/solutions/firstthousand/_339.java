@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.NestedInteger;
-
 import java.util.List;
 
 public class _339 {

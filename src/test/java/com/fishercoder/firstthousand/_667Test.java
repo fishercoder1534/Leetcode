@@ -1,11 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._667;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _667Test {
     private _667.Solutoin1 solution1;
@@ -20,7 +20,7 @@ public class _667Test {
 
     @Test
     public void test1() {
-        expected = new int[]{1, 2, 3};
+        expected = new int[] {1, 2, 3};
         assertArrayEquals(expected, solution1.constructArray(3, 1));
         assertArrayEquals(expected, solution2.constructArray(3, 1));
     }
@@ -48,5 +48,4 @@ public class _667Test {
         CommonUtils.printArray(solution1.constructArray(5, 2));
         CommonUtils.printArray(solution2.constructArray(5, 2));
     }
-
 }

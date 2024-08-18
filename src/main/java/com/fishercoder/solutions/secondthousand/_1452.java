@@ -13,16 +13,18 @@ import java.util.TreeMap;
 public class _1452 {
     public static class Solution1 {
         public List<Integer> peopleIndexes(List<List<String>> favoriteCompanies) {
-            TreeMap<String, Integer> map = new TreeMap<>(new Comparator<String>() {
-                @Override
-                public int compare(String o1, String o2) {
-                    int diffLength = o1.length() - o2.length();
-                    if (diffLength != 0) {
-                        return diffLength;
-                    }
-                    return o1.compareTo(o2);
-                }
-            });
+            TreeMap<String, Integer> map =
+                    new TreeMap<>(
+                            new Comparator<String>() {
+                                @Override
+                                public int compare(String o1, String o2) {
+                                    int diffLength = o1.length() - o2.length();
+                                    if (diffLength != 0) {
+                                        return diffLength;
+                                    }
+                                    return o1.compareTo(o2);
+                                }
+                            });
             Map<String, Set<String>> setMap = new HashMap<>();
             for (int i = 0; i < favoriteCompanies.size(); i++) {
                 List<String> list = favoriteCompanies.get(i);

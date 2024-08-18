@@ -42,7 +42,7 @@ public class _645 {
                     dup2 = i + 1;
                 }
             }
-            return new int[]{dup, dup2};
+            return new int[] {dup, dup2};
         }
     }
 

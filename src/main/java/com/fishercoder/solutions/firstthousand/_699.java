@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _699 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/107107/easy-understood-o-n-2-solution-with-explanation
          */
         public List<Integer> fallingSquares(int[][] positions) {
@@ -13,7 +13,8 @@ public class _699 {
             List<Integer> result = new ArrayList<>();
             int height = 0;
             for (int[] position : positions) {
-                Interval curr = new Interval(position[0], position[0] + position[1] - 1, position[1]);
+                Interval curr =
+                        new Interval(position[0], position[0] + position[1] - 1, position[1]);
                 height = Math.max(height, getHeight(intervals, curr));
                 result.add(height);
             }

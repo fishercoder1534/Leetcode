@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _154 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution on 10/23/2021.
          * Again, using a pen and paper to visualize all possible cases helps a great deal!
          */

@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._56;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _56Test {
     private _56.Solution1 solution1;
@@ -18,18 +18,19 @@ public class _56Test {
 
     @Test
     public void test1() {
-        intervals = new int[][]{
-                {2, 3},
-                {5, 5},
-                {2, 2},
-                {3, 4},
-                {3, 4}
-        };
-        expected = new int[][]{
-                {2, 4},
-                {5, 5}
-        };
+        intervals =
+                new int[][] {
+                    {2, 3},
+                    {5, 5},
+                    {2, 2},
+                    {3, 4},
+                    {3, 4}
+                };
+        expected =
+                new int[][] {
+                    {2, 4},
+                    {5, 5}
+                };
         assertArrayEquals(expected, solution1.merge(intervals));
     }
-
 }

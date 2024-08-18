@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _402 {
     public static class Solution1 {
 
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/59412/a-greedy-method-using-stack-o-n-time-and-o-n-space
          */
         public String removeKdigits(String num, int k) {

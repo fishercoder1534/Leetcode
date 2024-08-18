@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._856;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _856Test {
     private _856.Solution1 solution1;
@@ -58,5 +58,4 @@ public class _856Test {
     public void test9() {
         assertEquals(12, solution1.scoreOfParentheses("(()()(()()))"));
     }
-
 }

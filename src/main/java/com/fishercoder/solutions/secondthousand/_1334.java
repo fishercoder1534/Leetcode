@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 public class _1334 {
     public static class Solution1 {
-        /**
+        /*
          * Dijkstra's algorithm to find the shortest path from each node to all possibly reachable nodes within limit.
          * Dijkstra's algorithm applies to weights are non-negative problems.
          * Keys to implement Dijkstra's algorithm:
@@ -28,8 +28,8 @@ public class _1334 {
                 int source = edge[0];
                 int dest = edge[1];
                 int weight = edge[2];
-                graph.get(source).add(new int[]{dest, weight});
-                graph.get(dest).add(new int[]{source, weight});
+                graph.get(source).add(new int[] {dest, weight});
+                graph.get(dest).add(new int[] {source, weight});
             }
             for (int i = 0; i < n; i++) {
                 dijkstraAlgo(graph, i, shortestPaths[i]);
@@ -37,7 +37,8 @@ public class _1334 {
             return findCityWithFewestReachableCities(shortestPaths, distanceThreshold);
         }
 
-        private int findCityWithFewestReachableCities(int[][] shortestPaths, int distanceThreshold) {
+        private int findCityWithFewestReachableCities(
+                int[][] shortestPaths, int distanceThreshold) {
             int ans = 0;
             int fewestReachable = shortestPaths.length;
             for (int i = 0; i < shortestPaths.length; i++) {
@@ -59,7 +60,7 @@ public class _1334 {
             Arrays.fill(shortestPath, Integer.MAX_VALUE);
             shortestPath[startCity] = 0;
             PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[1] - b[1]);
-            minHeap.offer(new int[]{startCity, 0});
+            minHeap.offer(new int[] {startCity, 0});
             while (!minHeap.isEmpty()) {
                 int[] curr = minHeap.poll();
                 int currCity = curr[0];
@@ -72,11 +73,10 @@ public class _1334 {
                     int neighborCost = neighbor[1];
                     if (currCost + neighborCost < shortestPath[neighborCity]) {
                         shortestPath[neighborCity] = currCost + neighborCost;
-                        minHeap.offer(new int[]{neighborCity, shortestPath[neighborCity]});
+                        minHeap.offer(new int[] {neighborCity, shortestPath[neighborCity]});
                     }
                 }
             }
         }
-
     }
 }

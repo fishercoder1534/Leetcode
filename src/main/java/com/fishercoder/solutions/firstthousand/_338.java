@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _338 {
     public static class Solution1 {
-        //use the most regular method to get it AC'ed first
+        // use the most regular method to get it AC'ed first
         public int[] countBits(int num) {
             int[] ones = new int[num + 1];
             for (int i = 0; i <= num; i++) {
@@ -22,7 +22,7 @@ public class _338 {
     }
 
     private class Solution2 {
-        /**
+        /*
          * lixx2100's post is cool:https://discuss.leetcode.com/topic/40162/three-line-java-solution
          * An easy recurrence for this problem is f[i] = f[i / 2] + i % 2
          * and then we'll use bit manipulation to express the above recursion function

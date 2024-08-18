@@ -24,7 +24,8 @@ public class _593 {
             return backTracking(result, input, 0);
         }
 
-        private List<List<int[]>> backTracking(List<List<int[]>> result, List<int[]> input, int pos) {
+        private List<List<int[]>> backTracking(
+                List<List<int[]>> result, List<int[]> input, int pos) {
             if (pos == input.size()) {
                 return result;
             }
@@ -69,5 +70,4 @@ public class _593 {
             return degree % 45 == 0;
         }
     }
-
 }

@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Stack;
@@ -41,7 +40,6 @@ public class _445 {
             return stack;
         }
     }
-
 
     public static class Solution2 {
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

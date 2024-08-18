@@ -17,5 +17,4 @@ public class _236 {
             return left != null ? left : right;
         }
     }
-
 }

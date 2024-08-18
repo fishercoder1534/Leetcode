@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _390 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/55870/share-my-solutions-for-contest-2 instead of
          * literally removing half of the elements in each scan, this solution is just moving the
          * pointer to point to next start position So brilliant!

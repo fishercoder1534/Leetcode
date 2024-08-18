@@ -8,7 +8,7 @@ public class _1775 {
             int[] longer = nums1.length > nums2.length ? nums1 : nums2;
             int[] shorter = nums1.length > nums2.length ? nums2 : nums1;
             if (longer.length > shorter.length * 6) {
-                /**This is the impossible case that we'll rule out first.*/
+                /*This is the impossible case that we'll rule out first.*/
                 return -1;
             }
             Arrays.sort(longer);
@@ -28,7 +28,7 @@ public class _1775 {
             i = 0;
             j = shorter.length - 1;
             if (diff < 0) {
-                /**if diff is negative, this means we'll need to decrease numbers in the shorter array and increase the numbers in the longer array to make the diff to be zero
+                /*if diff is negative, this means we'll need to decrease numbers in the shorter array and increase the numbers in the longer array to make the diff to be zero
                  * and each time, we'll be greedy: take the bigger delta from two of the arrays.*/
                 while (diff < 0) {
                     if (i < longer.length && j >= 0) {
@@ -46,7 +46,7 @@ public class _1775 {
                 }
                 return minOps;
             } else if (diff > 0) {
-                /**if diff is positive, this means we'll need to decrease the numbers in the longer array and increase the numbers in the shorter array to make the diff to be zero
+                /*if diff is positive, this means we'll need to decrease the numbers in the longer array and increase the numbers in the shorter array to make the diff to be zero
                  * and each time, we'll be greedy: take the bigger delta from two of the arrays.*/
                 i = longer.length - 1;
                 j = 0;

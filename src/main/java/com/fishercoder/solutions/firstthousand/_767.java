@@ -13,7 +13,8 @@ public class _767 {
             }
             int len = S.length();
             for (char c : map.keySet()) {
-                if ((len % 2 == 0 && map.get(c) > len / 2) || (len % 2 != 0 && map.get(c) >= len / 2 + 2)) {
+                if ((len % 2 == 0 && map.get(c) > len / 2)
+                        || (len % 2 != 0 && map.get(c) >= len / 2 + 2)) {
                     return "";
                 }
             }
@@ -60,7 +61,7 @@ public class _767 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 12/24/2021.
          */
         public String reorganizeString(String s) {
@@ -76,7 +77,9 @@ public class _767 {
             while (!maxHeap.isEmpty()) {
                 PriorityQueue<Tuple> tmp = new PriorityQueue<>((a, b) -> b.count - a.count);
                 Tuple curr = maxHeap.poll();
-                while (sb.length() != 0 && sb.charAt(sb.length() - 1) == curr.c && !maxHeap.isEmpty()) {
+                while (sb.length() != 0
+                        && sb.charAt(sb.length() - 1) == curr.c
+                        && !maxHeap.isEmpty()) {
                     tmp.offer(curr);
                     curr = maxHeap.poll();
                 }

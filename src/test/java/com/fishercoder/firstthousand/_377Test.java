@@ -1,11 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._377;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _377Test {
     private _377.Solution1 solution1;
@@ -25,14 +24,14 @@ public class _377Test {
 
     @BeforeEach
     public void setUp() throws Exception {
-        //always have to reset these global variables before using it again
+        // always have to reset these global variables before using it again
         solution2.count = 0;
         solution4 = new _377.Solution4();
     }
 
     @Test
     public void test1() {
-        nums = new int[]{1, 2, 3};
+        nums = new int[] {1, 2, 3};
         target = 4;
         expected = 7;
         assertEquals(expected, solution1.combinationSum4(nums, target));
@@ -43,10 +42,11 @@ public class _377Test {
 
     @Test
     public void test2() {
-        nums = new int[]{4, 2, 1};
+        nums = new int[] {4, 2, 1};
         target = 32;
         expected = 39882198;
-//        assertEquals(39882198, solution1.combinationSum4(nums, target));//this results in MLE, so comment out
+        //        assertEquals(39882198, solution1.combinationSum4(nums, target));//this results in
+        // MLE, so comment out
 
         assertEquals(expected, solution2.combinationSum4(nums, target));
 
@@ -57,7 +57,7 @@ public class _377Test {
 
     @Test
     public void test3() {
-        nums = new int[]{9};
+        nums = new int[] {9};
         target = 3;
         expected = 0;
         assertEquals(expected, solution1.combinationSum4(nums, target));
@@ -65,5 +65,4 @@ public class _377Test {
         assertEquals(expected, solution3.combinationSum4(nums, target));
         assertEquals(expected, solution4.combinationSum4(nums, target));
     }
-
 }

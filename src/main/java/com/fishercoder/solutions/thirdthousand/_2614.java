@@ -19,7 +19,7 @@ public class _2614 {
 
         private boolean[] generatePrimes(int n) {
             boolean[] nonPrimes = new boolean[n];
-            //1 is not a prime number
+            // 1 is not a prime number
             nonPrimes[1] = true;
             for (int i = 2; i < n; i++) {
                 if (!nonPrimes[i]) {
@@ -30,6 +30,5 @@ public class _2614 {
             }
             return nonPrimes;
         }
-
     }
 }

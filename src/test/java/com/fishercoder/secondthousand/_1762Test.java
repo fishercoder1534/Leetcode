@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.secondthousand._1762;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1762Test {
     private _1762.Solution1 solution1;
@@ -18,9 +18,8 @@ public class _1762Test {
 
     @Test
     public void test1() {
-        heights = new int[]{4, 2, 3, 1};
-        expected = new int[]{0, 2, 3};
+        heights = new int[] {4, 2, 3, 1};
+        expected = new int[] {0, 2, 3};
         assertArrayEquals(expected, solution1.findBuildings(heights));
     }
-
 }

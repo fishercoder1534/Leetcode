@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _435 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit:: https://discuss.leetcode.com/topic/65828/java-solution-with-clear-explain
          * and https://discuss.leetcode.com/topic/65594/java-least-is-most
          * Sort the intervals by their end time, if equal, then sort by their start time.
@@ -30,7 +30,7 @@ public class _435 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This is sorting my starting time, the key here is that we'll want to update end time when an erasure is needed:
          * we use the smaller end time instead of the bigger one which is more likely to overlap with others.
          */

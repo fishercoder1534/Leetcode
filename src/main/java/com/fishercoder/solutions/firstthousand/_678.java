@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class _678 {
     public static class Solution1 {
-        /**
+        /*
          * This solution is correct, but will result in TLE by test4
          */
         public boolean checkValidString(String s) {
@@ -62,7 +62,7 @@ public class _678 {
                     }
                     cnt--;
                 } else if (c == '*') {
-                    /**Extra caution: start should be i+1, not start+1 !*/
+                    /*Extra caution: start should be i+1, not start+1 !*/
                     return isValid(s, i + 1, cnt + 1)
                             || isValid(s, i + 1, cnt - 1)
                             || isValid(s, i + 1, cnt);
@@ -73,7 +73,7 @@ public class _678 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Greedy solution:
          * 1. Let lo mean the lowest possible open left paren
          * 2. Let hi mean the possibilities of highest possible open left paren, so as long as s.charAt(i) != ')', it's possible to be a '(', so we'll increment hi by 1

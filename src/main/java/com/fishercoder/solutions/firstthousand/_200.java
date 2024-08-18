@@ -4,7 +4,7 @@ public class _200 {
 
     public static class Solution1 {
 
-        /**
+        /*
          * DFS solution, note: this modifies the input.
          */
         public int numIslands(char[][] grid) {
@@ -52,7 +52,9 @@ public class _200 {
                 for (int i = 0; i < m; i++) {
                     for (int j = 0; j < n; j++) {
                         if (grid[i][j] == '1') {
-                            //at initialization, we count each '1' as one island, later, during traversal, we'll union them during which we'll dedup the number of islands.
+                            // at initialization, we count each '1' as one island, later, during
+                            // traversal, we'll union them during which we'll dedup the number of
+                            // islands.
                             count++;
                         }
                         ids[i * n + j] = i * n + j;
@@ -64,13 +66,14 @@ public class _200 {
                 int x = find(i);
                 int y = find(j);
                 if (x != y) {
-                    /**
+                    /*
                      * This means when these two nodes should be unioned, however, so far,
                      * they have not, i.e. they have different ids,
                      * so we'll have to unify them by assigning one's ids to the other, or vice versa.
                      * */
-                    ids[x] = y;//ids[y] = x; //also works
-                    count--;//since now these two islands are unified/merged, we'll decrement the count by one
+                    ids[x] = y; // ids[y] = x; //also works
+                    count--; // since now these two islands are unified/merged, we'll decrement the
+                    // count by one
                 }
             }
 
@@ -86,7 +89,7 @@ public class _200 {
             if (grid == null || grid.length == 0 || grid[0].length == 0) {
                 return 0;
             }
-            int[] dirs = new int[]{0, 1, 0, -1, 0};
+            int[] dirs = new int[] {0, 1, 0, -1, 0};
             UnionFind uf = new UnionFind(grid);
             int m = grid.length;
             int n = grid[0].length;

@@ -6,7 +6,7 @@ public class _1996 {
     public static class Solution1 {
         public int numberOfWeakCharacters(int[][] properties) {
             int count = 0;
-            /**sort them based on:
+            /*sort them based on:
              * if attack values equal, then sort by defense value ascendingly
              * if not, sort by attack values descendingly.
              * */

@@ -4,10 +4,9 @@ import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._102;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 public class _102Test {
     private _102.Solution1 solution1;
@@ -31,5 +30,4 @@ public class _102Test {
         TreeUtils.printBinaryTree(treeRoot);
         CommonUtils.printListList(solution1.levelOrder(treeRoot));
     }
-
 }

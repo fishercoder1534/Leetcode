@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _1727 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/largest-submatrix-with-rearrangements/discuss/1020682/Java-or-6ms-or-easy-understanding-with-comments-and-images
          */
         public int largestSubmatrix(int[][] matrix) {

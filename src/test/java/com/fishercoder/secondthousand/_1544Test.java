@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1544;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1544Test {
     private _1544.Solution1 solution1;
@@ -28,5 +28,4 @@ public class _1544Test {
     public void test3() {
         assertEquals("s", solution1.makeGood("s"));
     }
-
 }

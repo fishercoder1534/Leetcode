@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._621;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _621Test {
     private _621.Solution1 solution1;
@@ -17,7 +17,7 @@ public class _621Test {
 
     @Test
     public void test1() {
-        tasks = new char[]{'A', 'A', 'A', 'B', 'B', 'B'};
+        tasks = new char[] {'A', 'A', 'A', 'B', 'B', 'B'};
         assertEquals(8, solution1.leastInterval(tasks, 2));
     }
 }

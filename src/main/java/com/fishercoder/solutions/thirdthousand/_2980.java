@@ -2,7 +2,7 @@ package com.fishercoder.solutions.thirdthousand;
 
 public class _2980 {
     public static class Solution1 {
-        /**
+        /*
          * 1. bitwise OR can never unset a bit, so if the solution exists, there must be a pair of elements;
          * 2. as the rightmost bit must stay unset, it's essentially looking for a pair of two even numbers.
          */

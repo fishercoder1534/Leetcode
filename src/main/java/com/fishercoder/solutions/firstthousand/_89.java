@@ -26,15 +26,19 @@ public class _89 {
     }
 
     public static void main(String... args) {
-        System.out.println("-----------------------------------------------------------------------------------------");
-        System.out.println("How to understand i << n? It means n to the power of two, see below. So we have an equivalent solution, which is solution2.");
+        System.out.println(
+                "-----------------------------------------------------------------------------------------");
+        System.out.println(
+                "How to understand i << n? It means n to the power of two, see below. So we have an equivalent solution, which is solution2.");
         System.out.println("1 << 2: " + (1 << 2));
         System.out.println("1 << 3: " + (1 << 3));
         System.out.println("1 << 4: " + (1 << 4));
         System.out.println("1 << 5: " + (1 << 5));
         System.out.println("1 << 6: " + (1 << 6));
-        System.out.println("-----------------------------------------------------------------------------------------");
-        System.out.println("How to understand i >> 1? It means to shift the number i to the right by 1 bit, see below");
+        System.out.println(
+                "-----------------------------------------------------------------------------------------");
+        System.out.println(
+                "How to understand i >> 1? It means to shift the number i to the right by 1 bit, see below");
         System.out.println("0 >> 1: " + (0 >> 1));
         System.out.println("1 >> 1: " + (1 >> 1));
         System.out.println("2 >> 1: " + (2 >> 1));
@@ -43,5 +47,4 @@ public class _89 {
         System.out.println("5 >> 1: " + (5 >> 1));
         System.out.println("6 >> 1: " + (6 >> 1));
     }
-
 }

@@ -8,9 +8,9 @@ import java.util.stream.Collectors;
 public class _349 {
 
     public static class Solution1 {
-        //credit: https://leetcode.com/articles/intersection-of-two-arrays/
-        //Time: O(m+n) on average, O(m*n) in worse case
-        //Space: O(m+n)
+        // credit: https://leetcode.com/articles/intersection-of-two-arrays/
+        // Time: O(m+n) on average, O(m*n) in worse case
+        // Space: O(m+n)
         public int[] intersection(int[] nums1, int[] nums2) {
             Set<Integer> set1 = Arrays.stream(nums1).boxed().collect(Collectors.toSet());
             Set<Integer> set2 = Arrays.stream(nums2).boxed().collect(Collectors.toSet());
@@ -25,7 +25,7 @@ public class _349 {
     }
 
     public static class Solution2 {
-        //Time: O(nlgn)
+        // Time: O(nlgn)
         public int[] intersection(int[] nums1, int[] nums2) {
             Arrays.sort(nums2);
             Set<Integer> intersect = new HashSet();
@@ -60,8 +60,9 @@ public class _349 {
     }
 
     public static class Solution3 {
-        //use two pointers
-        //credit: https://leetcode.com/problems/intersection-of-two-arrays/discuss/81969/Three-Java-Solutions
+        // use two pointers
+        // credit:
+        // https://leetcode.com/problems/intersection-of-two-arrays/discuss/81969/Three-Java-Solutions
         public int[] intersection(int[] nums1, int[] nums2) {
             Arrays.sort(nums1);
             Arrays.sort(nums2);

@@ -65,7 +65,7 @@ public class _1138 {
             for (char c = 'a'; c <= 'z'; c++, number++) {
                 row = number / 5;
                 col = number % 5;
-                map.put(c, new int[]{row, col});
+                map.put(c, new int[] {row, col});
             }
             return map;
         }

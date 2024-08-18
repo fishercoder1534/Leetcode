@@ -21,7 +21,7 @@ public class _725Test {
 
     @Test
     public void test1() {
-        root = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3});
+        root = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3});
         k = 5;
         actual = solution1.splitListToParts(root, k);
         for (ListNode head : actual) {
@@ -31,7 +31,7 @@ public class _725Test {
 
     @Test
     public void test2() {
-        root = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
+        root = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
         k = 3;
         actual = solution1.splitListToParts(root, k);
         for (ListNode head : actual) {
@@ -41,7 +41,7 @@ public class _725Test {
 
     @Test
     public void test3() {
-        root = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3});
+        root = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3});
         k = 5;
         actual = solution2.splitListToParts(root, k);
         for (ListNode head : actual) {
@@ -51,12 +51,11 @@ public class _725Test {
 
     @Test
     public void test4() {
-        root = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
+        root = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
         k = 3;
         actual = solution2.splitListToParts(root, k);
         for (ListNode head : actual) {
             LinkedListUtils.printList(head);
         }
     }
-
 }

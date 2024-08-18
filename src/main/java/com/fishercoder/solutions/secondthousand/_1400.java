@@ -3,7 +3,7 @@ package com.fishercoder.solutions.secondthousand;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+/*
  * 1400. Construct K Palindrome Strings
  *
  * Given a string s and an integer k. You should construct k non-empty palindrome strings using all the characters in s.

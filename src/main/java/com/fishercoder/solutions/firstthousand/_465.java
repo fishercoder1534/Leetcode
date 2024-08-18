@@ -9,7 +9,7 @@ import java.util.Stack;
 
 public class _465 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/68948/easy-java-solution-with-explanation
          */
         public int minTransfers(int[][] transactions) {

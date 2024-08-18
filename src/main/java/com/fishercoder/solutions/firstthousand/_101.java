@@ -15,12 +15,14 @@ public class _101 {
             if (left == null || right == null) {
                 return left == right;
             }
-            return left.val == right.val && isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left);
+            return left.val == right.val
+                    && isSymmetric(left.left, right.right)
+                    && isSymmetric(left.right, right.left);
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * The same as the above solution, just a bit more verbose.
          */
         public boolean isSymmetric(TreeNode root) {

@@ -19,17 +19,16 @@ public class _90Test {
 
     @Test
     public void test1() {
-        CommonUtils.printListList(solution1.subsetsWithDup(new int[]{1, 2, 2}));
+        CommonUtils.printListList(solution1.subsetsWithDup(new int[] {1, 2, 2}));
     }
 
     @Test
     public void test2() {
-        CommonUtils.printListList(solution2.subsetsWithDup(new int[]{1, 2, 2}));
+        CommonUtils.printListList(solution2.subsetsWithDup(new int[] {1, 2, 2}));
     }
 
     @Test
     public void test3() {
-        CommonUtils.printListList(solution3.subsetsWithDup(new int[]{1, 2, 2}));
+        CommonUtils.printListList(solution3.subsetsWithDup(new int[] {1, 2, 2}));
     }
-
 }

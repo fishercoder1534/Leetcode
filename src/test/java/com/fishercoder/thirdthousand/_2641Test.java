@@ -1,14 +1,13 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.thirdthousand._2641;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2641Test {
     private _2641.Solution1 solution1;
@@ -31,9 +30,17 @@ public class _2641Test {
 
     @Test
     public void test2() {
-        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(49, 40, 35, 42, 7, null, null, 50, null, null, 44, null, null, null, 27, 21));
+        TreeNode root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                49, 40, 35, 42, 7, null, null, 50, null, null, 44, null, null, null,
+                                27, 21));
         TreeUtils.printBinaryTree(root);
-        TreeNode expected = TreeUtils.constructBinaryTree(Arrays.asList(0, 0, 0, 0, 0, null, null, 44, null, null, 50, null, null, null, 0, 0));
+        TreeNode expected =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                0, 0, 0, 0, 0, null, null, 44, null, null, 50, null, null, null, 0,
+                                0));
         TreeUtils.printBinaryTree(expected);
         TreeNode actual = solution1.replaceValueInTree(root);
         TreeUtils.printBinaryTree(actual);

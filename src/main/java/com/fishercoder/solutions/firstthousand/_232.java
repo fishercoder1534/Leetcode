@@ -5,7 +5,7 @@ import java.util.Stack;
 public class _232 {
 
     public static class Solution1 {
-        /**
+        /*
          * This is amortized O(1) time for each operation, explanation: https://leetcode.com/problems/implement-queue-using-stacks/solution/
          */
         class MyQueue {
@@ -41,4 +41,3 @@ public class _232 {
         }
     }
 }
-

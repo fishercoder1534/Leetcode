@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -76,7 +75,7 @@ public class _1110 {
     }
 
     public static class Solution2 {
-        //use BFS
+        // use BFS
         public List<TreeNode> delNodes(TreeNode root, int[] toDelete) {
             Set<Integer> deleteSet = new HashSet<>();
             for (int d : toDelete) {
@@ -88,16 +87,17 @@ public class _1110 {
             while (!q.isEmpty()) {
                 TreeNode curr = q.poll();
 
-                //process left child if any
+                // process left child if any
                 if (curr.left != null) {
-                    //add it into the q first because we need to process it any ways as it might have children that might not need to be deleted
+                    // add it into the q first because we need to process it any ways as it might
+                    // have children that might not need to be deleted
                     q.offer(curr.left);
                     if (deleteSet.contains(curr.left.val)) {
                         curr.left = null;
                     }
                 }
 
-                //process right child if any
+                // process right child if any
                 if (curr.right != null) {
                     q.offer(curr.right);
                     if (deleteSet.contains(curr.right.val)) {
@@ -105,7 +105,8 @@ public class _1110 {
                     }
                 }
 
-                //process this curr node: if it needs to be deleted, then add its non-null children into forest as we checked its children
+                // process this curr node: if it needs to be deleted, then add its non-null children
+                // into forest as we checked its children
                 // and we know they do not need to be deleted at this point
                 if (deleteSet.contains(curr.val)) {
                     if (curr.left != null) {
@@ -115,9 +116,10 @@ public class _1110 {
                         forest.add(curr.right);
                     }
                 }
-                //we don't add curr into forest here, otherwise there might be duplicate as we might have added them as their parent's child already
+                // we don't add curr into forest here, otherwise there might be duplicate as we
+                // might have added them as their parent's child already
             }
-            //at this point, only root might be missing, so we check root
+            // at this point, only root might be missing, so we check root
             if (!deleteSet.contains(root.val)) {
                 forest.add(root);
             }
@@ -126,11 +128,13 @@ public class _1110 {
     }
 
     public static class Solution3 {
-        //use DFS/Post-order traversal
-        //key to recognize to apply post-order traversal: we need to handle subtree/children first before handling the root.
-        //it is in this case, handle children first in case children do not need to be removed and the parent needs to be removed,
-        //so we avoid the case of prematurely removing the parent before handling its children
-        //credit: https://leetcode.com/problems/delete-nodes-and-return-forest/editorial/
+        // use DFS/Post-order traversal
+        // key to recognize to apply post-order traversal: we need to handle subtree/children first
+        // before handling the root.
+        // it is in this case, handle children first in case children do not need to be removed and
+        // the parent needs to be removed,
+        // so we avoid the case of prematurely removing the parent before handling its children
+        // credit: https://leetcode.com/problems/delete-nodes-and-return-forest/editorial/
         public List<TreeNode> delNodes(TreeNode root, int[] toDelete) {
             List<TreeNode> forest = new ArrayList<>();
             if (root == null) {
@@ -160,7 +164,7 @@ public class _1110 {
                 if (root.right != null) {
                     forest.add(root.right);
                 }
-                //return null to its parent to delete the current node
+                // return null to its parent to delete the current node
                 return null;
             }
             return root;

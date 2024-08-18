@@ -13,7 +13,9 @@ public class _1774 {
         }
 
         private void recursion(int currentCost, int[] toppingCosts, int index, int target) {
-            if (Math.abs(currentCost - target) < Math.abs(result - target) || (Math.abs(currentCost - target) < Math.abs(result - target) && currentCost == result)) {
+            if (Math.abs(currentCost - target) < Math.abs(result - target)
+                    || (Math.abs(currentCost - target) < Math.abs(result - target)
+                            && currentCost == result)) {
                 result = currentCost;
             }
             if (index == toppingCosts.length || currentCost == target) {

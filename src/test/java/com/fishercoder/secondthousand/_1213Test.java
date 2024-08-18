@@ -15,7 +15,10 @@ public class _1213Test {
 
     @Test
     public void test1() {
-        CommonUtils.printList(solution1.arraysIntersection(new int[]{1, 2, 3, 4, 5}, new int[]{1, 2, 5, 7, 9}, new int[]{1, 3, 4, 5, 8}));
+        CommonUtils.printList(
+                solution1.arraysIntersection(
+                        new int[] {1, 2, 3, 4, 5},
+                        new int[] {1, 2, 5, 7, 9},
+                        new int[] {1, 3, 4, 5, 8}));
     }
-
 }

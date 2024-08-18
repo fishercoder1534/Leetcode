@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._207;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _207Test {
     private _207.Solution1 solution1;
@@ -25,7 +25,7 @@ public class _207Test {
     @Test
     public void test1() {
         numCourses = 2;
-        prerequisites = new int[][]{{0, 1}};
+        prerequisites = new int[][] {{0, 1}};
         assertEquals(true, solution1.canFinish(numCourses, prerequisites));
         assertEquals(true, solution2.canFinish(numCourses, prerequisites));
         assertEquals(true, solution3.canFinish(numCourses, prerequisites));
@@ -35,18 +35,18 @@ public class _207Test {
     @Test
     public void test2() {
         numCourses = 8;
-        prerequisites = new int[][]{
-                {3, 0},
-                {3, 1},
-                {5, 3},
-                {5, 2},
-                {6, 3},
-                {6, 1},
-                {7, 3},
-                {7, 4},
-                {4, 2},
-
-        };
+        prerequisites =
+                new int[][] {
+                    {3, 0},
+                    {3, 1},
+                    {5, 3},
+                    {5, 2},
+                    {6, 3},
+                    {6, 1},
+                    {7, 3},
+                    {7, 4},
+                    {4, 2},
+                };
         assertEquals(true, solution1.canFinish(numCourses, prerequisites));
         assertEquals(true, solution2.canFinish(numCourses, prerequisites));
         assertEquals(true, solution3.canFinish(numCourses, prerequisites));
@@ -56,18 +56,18 @@ public class _207Test {
     @Test
     public void test3() {
         numCourses = 8;
-        prerequisites = new int[][]{
-                {3, 2},
-                {3, 0},
-                {5, 3},
-                {5, 1},
-                {7, 3},
-                {7, 0},
-                {6, 3},
-                {6, 4},
-                {4, 1},
-
-        };
+        prerequisites =
+                new int[][] {
+                    {3, 2},
+                    {3, 0},
+                    {5, 3},
+                    {5, 1},
+                    {7, 3},
+                    {7, 0},
+                    {6, 3},
+                    {6, 4},
+                    {4, 1},
+                };
         assertEquals(true, solution1.canFinish(numCourses, prerequisites));
         assertEquals(true, solution2.canFinish(numCourses, prerequisites));
         assertEquals(true, solution3.canFinish(numCourses, prerequisites));

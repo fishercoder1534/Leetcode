@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _453 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/66557/java-o-n-solution-short
          * i.e. Add 1 to n-1 elements basically equals to subtracting 1 from one element. So the easiest way
          * to make all elements in this array equal is to make all of them equal to the minimum element.
@@ -22,5 +22,4 @@ public class _453 {
             return res;
         }
     }
-
 }

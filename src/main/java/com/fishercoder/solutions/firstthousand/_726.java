@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class _726 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution:
          * 1. use a stack;
          * 2. whenever we encounter the open paren, we push it into the top of the stack;
@@ -33,18 +33,21 @@ public class _726 {
                         sb.append(formula.charAt(i++));
                     }
                     if (i < formula.length()) {
-                        if (Character.isUpperCase(formula.charAt(i)) || formula.charAt(i) == '(' || formula.charAt(i) == ')') {
-                            //no numbers
+                        if (Character.isUpperCase(formula.charAt(i))
+                                || formula.charAt(i) == '('
+                                || formula.charAt(i) == ')') {
+                            // no numbers
                             stack.addLast(new Pair(sb.toString(), 1));
                             i--;
                         } else {
-                            //there are numbers
+                            // there are numbers
                             StringBuilder numberSb = new StringBuilder();
                             while (i < formula.length() && Character.isDigit(formula.charAt(i))) {
                                 numberSb.append(formula.charAt(i++));
                             }
                             i--;
-                            stack.addLast(new Pair(sb.toString(), Integer.parseInt(numberSb.toString())));
+                            stack.addLast(
+                                    new Pair(sb.toString(), Integer.parseInt(numberSb.toString())));
                         }
                     } else {
                         stack.addLast(new Pair(sb.toString(), 1));
@@ -66,7 +69,7 @@ public class _726 {
                         Pair pair = stack.pollLast();
                         stack2.addLast(new Pair(pair.atom, pair.count * number));
                     }
-                    stack.pollLast();//poll "(" off of the stack
+                    stack.pollLast(); // poll "(" off of the stack
                     while (!stack2.isEmpty()) {
                         stack.addLast(stack2.pollLast());
                     }
@@ -76,12 +79,12 @@ public class _726 {
             while (!stack.isEmpty()) {
                 list.add(stack.pollLast());
             }
-            //now merge the same atoms
+            // now merge the same atoms
             Map<String, Integer> map = new HashMap<>();
             for (Pair pair : list) {
                 map.put(pair.atom, map.getOrDefault(pair.atom, 0) + pair.count);
             }
-            //now add the merged atoms into the list again before sorting them
+            // now add the merged atoms into the list again before sorting them
             list.clear();
             for (Map.Entry<String, Integer> entry : map.entrySet()) {
                 list.add(new Pair(entry.getKey(), entry.getValue()));

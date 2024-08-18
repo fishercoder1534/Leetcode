@@ -1,13 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.solutions.firstthousand._160;
-
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _160Test {
     private _160.Solution1 solution1;
@@ -31,7 +30,10 @@ public class _160Test {
         headB = new ListNode(2);
         headB.next = new ListNode(3);
         expected = new ListNode(3);
-        /**TODO: both solution1 and solution2 are ACCEPTED on OJ, but somehow it's not passing in this unit test.*/
+        /**
+         * TODO: both solution1 and solution2 are ACCEPTED on OJ, but somehow it's not passing in
+         * this unit test.
+         */
         assertEquals(expected, solution1.getIntersectionNode(headA, headB));
     }
 
@@ -42,7 +44,10 @@ public class _160Test {
         headB = new ListNode(2);
         headB.next = new ListNode(3);
         expected = new ListNode(3);
-        /**TODO: both solution1 and solution2 are ACCEPTED on OJ, but somehow it's not passing in this unit test.*/
+        /**
+         * TODO: both solution1 and solution2 are ACCEPTED on OJ, but somehow it's not passing in
+         * this unit test.
+         */
         assertEquals(expected, solution2.getIntersectionNode(headA, headB));
     }
 

@@ -1,11 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._496;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _496Test {
     private _496.Solution1 solution1;
@@ -23,17 +22,17 @@ public class _496Test {
 
     @BeforeEach
     public void setupForEachTest() {
-        expected = new int[]{};
-        actual = new int[]{};
-        findNums = new int[]{};
-        nums = new int[]{};
+        expected = new int[] {};
+        actual = new int[] {};
+        findNums = new int[] {};
+        nums = new int[] {};
     }
 
     @Test
     public void test1() {
-        findNums = new int[]{4, 1, 2};
-        nums = new int[]{1, 3, 4, 2};
-        expected = new int[]{-1, 3, -1};
+        findNums = new int[] {4, 1, 2};
+        nums = new int[] {1, 3, 4, 2};
+        expected = new int[] {-1, 3, -1};
         actual = solution1.nextGreaterElement(findNums, nums);
         assertArrayEquals(expected, actual);
         actual = solution2.nextGreaterElement(findNums, nums);

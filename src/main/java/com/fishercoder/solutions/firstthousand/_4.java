@@ -6,15 +6,15 @@ import static java.lang.Math.min;
 public class _4 {
 
     public static class Solution1 {
-        /**credit: https://discuss.leetcode.com/topic/28602/concise-java-solution-based-on-binary-search
-         *
-         * The key point of this problem is to ignore half part of A and B each step recursively by comparing the median of remaining A and B:
+        /*credit: https://discuss.leetcode.com/topic/28602/concise-java-solution-based-on-binary-search
+        *
+        * The key point of this problem is to ignore half part of A and B each step recursively by comparing the median of remaining A and B:
 
-         if (aMid < bMid) Keep [aRight + bLeft]
-         else Keep [bRight + aLeft]
+        if (aMid < bMid) Keep [aRight + bLeft]
+        else Keep [bRight + aLeft]
 
-         As the following: time=O(log(m + n))
-         */
+        As the following: time=O(log(m + n))
+        */
         public double findMedianSortedArrays(int[] A, int[] B) {
             int m = A.length;
             int n = B.length;
@@ -44,15 +44,15 @@ public class _4 {
             }
 
             if (aMid < bMid) {
-                return getkth(A, aStart + k / 2, B, bStart, k - k / 2);// Check: aRight + bLeft
+                return getkth(A, aStart + k / 2, B, bStart, k - k / 2); // Check: aRight + bLeft
             } else {
-                return getkth(A, aStart, B, bStart + k / 2, k - k / 2);// Check: bRight + aLeft
+                return getkth(A, aStart, B, bStart + k / 2, k - k / 2); // Check: bRight + aLeft
             }
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Reference: https://leetcode.com/discuss/28843/my-accepted-java-solution:
          * Basic Idea is very similar to K-selection. it's easier to understand if you imagine this to be chopping off the last K elements from a total of len(A) + len(B) elements,
          * where K = (len(A) + len(B))/2.
@@ -62,7 +62,9 @@ public class _4 {
         public double findMedianSortedArrays(int[] nums1, int[] nums2) {
             int K = nums1.length + nums2.length;
             if (K % 2 == 0) {
-                return (findMedianSortedArrays(nums1, nums2, (K - K / 2)) + findMedianSortedArrays(nums1, nums2, (K - (K / 2 + 1)))) / 2;
+                return (findMedianSortedArrays(nums1, nums2, (K - K / 2))
+                                + findMedianSortedArrays(nums1, nums2, (K - (K / 2 + 1))))
+                        / 2;
             } else {
                 return findMedianSortedArrays(nums1, nums2, K - (K / 2 + 1));
             }
@@ -83,7 +85,10 @@ public class _4 {
 
                 midA = highA - chopA;
                 midB = highB - chopB;
-                if (A[midA] < B[midB]) { // here A[0 .. midA] < B[midB], and we know that B[0 .. midB-1] < B[midB], so B[midB..highB] can not possibly be within the first (len(A) + len(B) - K) elements, and can be safely removed.
+                if (A[midA] < B[midB]) { // here A[0 .. midA] < B[midB], and we know that B[0 ..
+                    // midB-1] < B[midB], so B[midB..highB] can not possibly be
+                    // within the first (len(A) + len(B) - K) elements, and can
+                    // be safely removed.
                     highB = midB;
                     K = K - chopB;
                 } else {

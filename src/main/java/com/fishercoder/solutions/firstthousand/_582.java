@@ -30,5 +30,4 @@ public class _582 {
             return result;
         }
     }
-
 }

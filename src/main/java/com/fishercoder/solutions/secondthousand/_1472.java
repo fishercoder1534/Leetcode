@@ -38,6 +38,5 @@ public class _1472 {
                 return history.get(curr);
             }
         }
-
     }
 }

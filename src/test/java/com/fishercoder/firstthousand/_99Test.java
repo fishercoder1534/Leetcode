@@ -35,5 +35,4 @@ public class _99Test {
         solution1.recoverTree(root);
         TreeUtils.printBinaryTree(root);
     }
-
 }

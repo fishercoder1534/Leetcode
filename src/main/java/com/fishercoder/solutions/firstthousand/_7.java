@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _7 {
 
     public static class Solution1 {
-        /**This solution is NOT meeting the problem requirement actually:
+        /*This solution is NOT meeting the problem requirement actually:
          * Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1].*/
         public int reverse(int x) {
             long result = 0;
@@ -21,7 +21,7 @@ public class _7 {
     }
 
     public static class Solution2 {
-        /**credit: https://leetcode.com/problems/reverse-integer/discuss/4060/My-accepted-15-lines-of-code-for-Java*/
+        /*credit: https://leetcode.com/problems/reverse-integer/discuss/4060/My-accepted-15-lines-of-code-for-Java*/
         public int reverse(int x) {
             int result = 0;
             while (x != 0) {

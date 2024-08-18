@@ -10,7 +10,7 @@ public class _677 {
 
             Map<String, Integer> map;
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public MapSum() {
@@ -31,6 +31,5 @@ public class _677 {
                 return sum;
             }
         }
-
     }
 }

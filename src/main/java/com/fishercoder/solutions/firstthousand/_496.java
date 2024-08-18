@@ -31,7 +31,7 @@ public class _496 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Use monotonic stack, using a pen and paper to help visualize this is a great help!
          */
         public int[] nextGreaterElement(int[] nums1, int[] nums2) {
@@ -55,5 +55,4 @@ public class _496 {
             return result;
         }
     }
-
 }

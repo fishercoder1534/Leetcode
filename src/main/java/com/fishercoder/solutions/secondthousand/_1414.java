@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class _1414 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution, heap is not really necessary, a regular array/list works out as well.
          */
         public int findMinFibonacciNumbers(int k) {

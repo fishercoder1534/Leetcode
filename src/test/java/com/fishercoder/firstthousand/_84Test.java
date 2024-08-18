@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._84;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _84Test {
     private _84.Solution1 solution1;
@@ -16,7 +16,6 @@ public class _84Test {
 
     @Test
     public void test1() {
-        assertEquals(10, (solution1.largestRectangleArea(new int[]{2, 1, 5, 6, 2, 3})));
+        assertEquals(10, (solution1.largestRectangleArea(new int[] {2, 1, 5, 6, 2, 3})));
     }
-
 }

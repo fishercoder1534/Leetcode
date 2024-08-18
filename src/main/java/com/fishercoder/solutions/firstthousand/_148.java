@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,7 +8,7 @@ import java.util.List;
 public class _148 {
 
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/18100/java-merge-sort-solution
          * But this is not using constant space.
          */
@@ -18,7 +17,7 @@ public class _148 {
                 return head;
             }
 
-            //Step 1: split the list into halves
+            // Step 1: split the list into halves
             ListNode prev = null;
             ListNode slow = head;
             ListNode fast = head;
@@ -29,11 +28,11 @@ public class _148 {
             }
             prev.next = null;
 
-            //step 2: sort each half
+            // step 2: sort each half
             ListNode l1 = sortList(head);
             ListNode l2 = sortList(slow);
 
-            //step 3: merge the two halves
+            // step 3: merge the two halves
             return merge(l1, l2);
         }
 
@@ -92,8 +91,10 @@ public class _148 {
         ListNode split(ListNode start, int size) {
             ListNode midPrev = start;
             ListNode end = start.next;
-            //use fast and slow approach to find middle and end of second linked list
-            for (int index = 1; index < size && (midPrev.next != null || end.next != null); index++) {
+            // use fast and slow approach to find middle and end of second linked list
+            for (int index = 1;
+                    index < size && (midPrev.next != null || end.next != null);
+                    index++) {
                 if (end.next != null) {
                     end = (end.next.next != null) ? end.next.next : end.next;
                 }
@@ -146,7 +147,7 @@ public class _148 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/sort-list/solution/ top down approach.
          */
         public ListNode sortList(ListNode head) {
@@ -181,7 +182,7 @@ public class _148 {
         }
 
         private ListNode getMid(ListNode head) {
-            /**The key/trick is in this method:
+            /*The key/trick is in this method:
              * it directly uses this head to iterate, so that we could use this top down recursive approach.
              * If we assign head to slow and fast pointers, then this algorithm will run into StackOverflow exception.
              *
@@ -192,13 +193,13 @@ public class _148 {
                 head = head.next.next;
             }
             ListNode mid = midPrev.next;
-            midPrev.next = null;//this is the key, otherwise, StackOverflow exception will occur.
+            midPrev.next = null; // this is the key, otherwise, StackOverflow exception will occur.
             return mid;
         }
     }
 
     public static class Solution4 {
-        /**This is the most naive, using O(n) extra memory, O(nlogn) time.*/
+        /*This is the most naive, using O(n) extra memory, O(nlogn) time.*/
         public ListNode sortList(ListNode head) {
             if (head == null) {
                 return head;

@@ -1,6 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
-/**
+/*
  * 1395. Count Number of Teams
  * <p>
  * There are n soldiers standing in a line. Each soldier is assigned a unique rating value.

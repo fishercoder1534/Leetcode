@@ -17,7 +17,7 @@ public class _155 {
 
             public void push(int x) {
                 if (x <= min) {
-                    /**All the trick happens here, we push the second minimum number onto the stack before we push the newer one,
+                    /*All the trick happens here, we push the second minimum number onto the stack before we push the newer one,
                      * this way, when popping, we could always get the next minimum one in constant time.*/
                     stack.push(min);
                     min = x;
@@ -26,7 +26,7 @@ public class _155 {
             }
 
             public void pop() {
-                /**if the value on the top of the stack happens to be the current minimum, we'll pop twice and change
+                /*if the value on the top of the stack happens to be the current minimum, we'll pop twice and change
                  * the current min value to be the last min value */
                 if (min == stack.pop()) {
                     min = stack.pop();
@@ -44,7 +44,7 @@ public class _155 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * We could store a pair onto the stack: the first element in the pair is the value itself,
          * the second element in the pair is the current minimum element so far seen on the stack.
          */
@@ -60,12 +60,12 @@ public class _155 {
                     int[] last = stack.peekLast();
                     int currentMin = last[1];
                     if (val <= currentMin) {
-                        stack.addLast(new int[]{val, val});
+                        stack.addLast(new int[] {val, val});
                     } else {
-                        stack.addLast(new int[]{val, currentMin});
+                        stack.addLast(new int[] {val, currentMin});
                     }
                 } else {
-                    stack.addLast(new int[]{val, val});
+                    stack.addLast(new int[] {val, val});
                 }
             }
 

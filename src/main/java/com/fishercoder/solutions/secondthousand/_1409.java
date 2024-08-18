@@ -3,7 +3,7 @@ package com.fishercoder.solutions.secondthousand;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+/*
  * 1409. Queries on a Permutation With Key
  *
  * Given the array queries of positive integers between 1 and m, you have to process all queries[i] (from i=0 to i=queries.length-1) according to the following rules:

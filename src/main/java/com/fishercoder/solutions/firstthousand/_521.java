@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _521 {
     public static class Solution1 {
-        /**
+        /*
          * The gotcha point of this question is:
          * 1. if a and b are identical, then there will be no common subsequence, return -1
          * 2. else if a and b are of equal length, then any one of them will be a subsequence of the other string

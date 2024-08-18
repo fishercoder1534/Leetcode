@@ -16,8 +16,7 @@ public class _18Test {
 
     @Test
     public void test1() {
-        nums = new int[]{1, 0, -1, 0, -2, 2};
+        nums = new int[] {1, 0, -1, 0, -2, 2};
         CommonUtils.printListList(solution1.fourSum(nums, 0));
     }
-
 }

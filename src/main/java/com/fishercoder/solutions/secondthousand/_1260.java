@@ -6,7 +6,7 @@ import java.util.List;
 
 public class _1260 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/shift-2d-grid/discuss/431102/JavaPython-3-simple-code-using-mod
          */
         public List<List<Integer>> shiftGrid(int[][] grid, int k) {

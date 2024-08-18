@@ -32,6 +32,5 @@ public class _2248 {
             }
             return intersection;
         }
-
     }
 }

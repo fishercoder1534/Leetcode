@@ -7,10 +7,12 @@ public class _2511 {
             for (int i = 0; i < forts.length; i++) {
                 if (forts[i] == 1 || forts[i] == -1) {
                     for (int j = i + 1; j < forts.length; j++) {
-                        if ((forts[i] == 1 && forts[j] == -1) || (forts[i] == -1 && forts[j] == 1)) {
+                        if ((forts[i] == 1 && forts[j] == -1)
+                                || (forts[i] == -1 && forts[j] == 1)) {
                             max = Math.max(max, j - i - 1);
                             break;
-                        } else if ((forts[j] == 1 && forts[i] == 1) || forts[j] == -1 && forts[i] == -1) {
+                        } else if ((forts[j] == 1 && forts[i] == 1)
+                                || forts[j] == -1 && forts[i] == -1) {
                             break;
                         }
                     }

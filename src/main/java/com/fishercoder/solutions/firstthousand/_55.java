@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _55 {
 
     public static class Solution1 {
-        /**
+        /*
          * My very original but lengthy solution.
          */
         public boolean canJump(int[] nums) {
@@ -34,7 +34,7 @@ public class _55 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * The same idea as mine above, but much more concise.
          * Credit: https://leetcode.com/problems/jump-game/discuss/20917/Linear-and-simple-solution-in-C%2B%2B
          */
@@ -48,7 +48,7 @@ public class _55 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Top-down DP.
          * Credit: https://leetcode.com/problems/jump-game/solution/ approach 2
          * <p>
@@ -59,7 +59,7 @@ public class _55 {
          */
         public boolean canJump(int[] nums) {
             int[] dp = new int[nums.length];
-            //0 means unknown, 1 means reachable, 2 means unreachable
+            // 0 means unknown, 1 means reachable, 2 means unreachable
             dp[nums.length - 1] = 1;
             return canJumpFrom(0, nums, dp);
         }
@@ -81,12 +81,12 @@ public class _55 {
     }
 
     public static class Solution4 {
-        /**
+        /*
          * This is bottom-up DP.
          */
         public boolean canJump(int[] nums) {
             int[] dp = new int[nums.length];
-            //0 means unknown, 1 means reachable, 2 means unreachable
+            // 0 means unknown, 1 means reachable, 2 means unreachable
             dp[nums.length - 1] = 1;
             for (int i = nums.length - 2; i >= 0; i--) {
                 int furthestReach = Math.min(nums[i] + i, nums.length - 1);
@@ -99,6 +99,5 @@ public class _55 {
             }
             return dp[0] == 1;
         }
-
     }
 }

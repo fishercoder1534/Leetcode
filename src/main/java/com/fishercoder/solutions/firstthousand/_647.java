@@ -3,14 +3,14 @@ package com.fishercoder.solutions.firstthousand;
 public class _647 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/96819/java-solution-8-lines-extendpalindrome
          */
         public int countSubstrings(String s) {
             int count = 0;
             for (int i = 0; i < s.length(); i++) {
-                count += extendPalindrome(s, i, i);//odd length
-                count += extendPalindrome(s, i, i + 1);//even length
+                count += extendPalindrome(s, i, i); // odd length
+                count += extendPalindrome(s, i, i + 1); // even length
             }
             return count;
         }
@@ -27,7 +27,7 @@ public class _647 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Simple brute force solution is accepted as well, although not ideal in terms of time complexity: O(n^2)
          */
         public int countSubstrings(String s) {

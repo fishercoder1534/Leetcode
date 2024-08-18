@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.TreeNode;
 
-/**
+/*
  * 1325. Delete Leaves With a Given Value
  *
  * Given a binary tree root and an integer target, delete all the leaf nodes with value target.
@@ -66,7 +66,7 @@ import com.fishercoder.common.classes.TreeNode;
  * */
 public class _1325 {
     public static class Solution1 {
-        /**
+        /*
          * my original but verbose solution
          */
         public TreeNode removeLeafNodes(TreeNode root, int target) {
@@ -84,10 +84,16 @@ public class _1325 {
                 root = null;
                 return root;
             }
-            if (root.left != null && root.left.val == target && root.left.left == null && root.left.right == null) {
+            if (root.left != null
+                    && root.left.val == target
+                    && root.left.left == null
+                    && root.left.right == null) {
                 root.left = null;
             }
-            if (root.right != null && root.right.val == target && root.right.left == null && root.right.right == null) {
+            if (root.right != null
+                    && root.right.val == target
+                    && root.right.left == null
+                    && root.right.right == null) {
                 root.right = null;
             }
             removeLeafNodes(target, root.left);
@@ -107,7 +113,7 @@ public class _1325 {
     }
 
     public static class Solution2 {
-        /**A much more concise and efficient solution.*/
+        /*A much more concise and efficient solution.*/
         public TreeNode removeLeafNodes(TreeNode root, int target) {
             if (root == null) {
                 return root;

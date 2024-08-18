@@ -9,7 +9,7 @@ import java.util.TreeMap;
 public class _1348 {
     public static class Solution1 {
         public static class TweetCounts {
-            /**
+            /*
              * credit: https://leetcode.com/problems/tweet-counts-per-frequency/discuss/503453/Java-TreeMap-Accepted-Solution-Easy-Understand
              */
             private Map<String, TreeMap<Integer, Integer>> map;
@@ -26,7 +26,8 @@ public class _1348 {
                 tweetMap.put(time, tweetMap.getOrDefault(time, 0) + 1);
             }
 
-            public List<Integer> getTweetCountsPerFrequency(String freq, String tweetName, int startTime, int endTime) {
+            public List<Integer> getTweetCountsPerFrequency(
+                    String freq, String tweetName, int startTime, int endTime) {
                 if (!map.containsKey(tweetName)) {
                     return null;
                 }
@@ -41,7 +42,8 @@ public class _1348 {
                 int size = ((endTime - startTime) / interval) + 1;
                 int[] buckets = new int[size];
                 TreeMap<Integer, Integer> tweetMap = map.get(tweetName);
-                for (Map.Entry<Integer, Integer> entry : tweetMap.subMap(startTime, endTime + 1).entrySet()) {
+                for (Map.Entry<Integer, Integer> entry :
+                        tweetMap.subMap(startTime, endTime + 1).entrySet()) {
                     int index = (entry.getKey() - startTime) / interval;
                     buckets[index] += entry.getValue();
                 }

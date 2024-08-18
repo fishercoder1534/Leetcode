@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.PriorityQueue;
 
 public class _23 {
@@ -28,5 +27,4 @@ public class _23 {
             return pre.next;
         }
     }
-
 }

@@ -7,7 +7,7 @@ public class _2418 {
         public String[] sortPeople(String[] names, int[] heights) {
             PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) -> b[1] - a[1]);
             for (int i = 0; i < names.length; i++) {
-                maxHeap.offer(new int[]{i, heights[i]});
+                maxHeap.offer(new int[] {i, heights[i]});
             }
             String[] res = new String[names.length];
             int i = 0;

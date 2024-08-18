@@ -1,13 +1,12 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.LinkedList;
 
 public class _104 {
 
     public static class Solution1 {
-        /**
+        /*
          * Recursive solution:
          * Time: O(n)
          * Space: O(n)
@@ -21,7 +20,7 @@ public class _104 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * A more verbose recursive solution for easier understanding.
          */
         public int maxDepth(TreeNode root) {
@@ -35,7 +34,7 @@ public class _104 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Iterative solution:
          * Time: O(n)
          * Space: O(n)
@@ -64,5 +63,4 @@ public class _104 {
             return depth;
         }
     }
-
 }

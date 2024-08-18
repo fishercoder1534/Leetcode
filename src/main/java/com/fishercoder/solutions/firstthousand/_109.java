@@ -15,7 +15,7 @@ public class _109 {
             } else {
                 ListNode slow = start;
                 ListNode fast = start;
-                //here is the key: we check if fast != end, not fast != null
+                // here is the key: we check if fast != end, not fast != null
                 while (fast != end && fast.next != end) {
                     slow = slow.next;
                     fast = fast.next.next;
@@ -28,5 +28,4 @@ public class _109 {
             }
         }
     }
-
 }

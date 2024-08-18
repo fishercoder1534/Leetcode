@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
+/*
  * 1403. Minimum Subsequence in Non-Increasing Order
  *
  * Given the array nums, obtain a subsequence of the array whose sum of elements is strictly greater than the sum of the non included elements in such subsequence.
@@ -35,10 +35,11 @@ import java.util.stream.Collectors;
 public class _1403 {
     public static class Solution1 {
         public List<Integer> minSubsequence(int[] nums) {
-            List<Integer> list = Arrays.stream(nums)
-                    .boxed()
-                    .sorted(Collections.reverseOrder())
-                    .collect(Collectors.toCollection(() -> new ArrayList<>(nums.length)));
+            List<Integer> list =
+                    Arrays.stream(nums)
+                            .boxed()
+                            .sorted(Collections.reverseOrder())
+                            .collect(Collectors.toCollection(() -> new ArrayList<>(nums.length)));
             int sum = list.stream().mapToInt(num -> num).sum();
             int minSum = 0;
             List<Integer> result = new ArrayList<>();

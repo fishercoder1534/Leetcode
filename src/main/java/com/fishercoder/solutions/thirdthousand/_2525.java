@@ -7,7 +7,10 @@ public class _2525 {
             int volumeLimit = 1000000000;
             boolean isBulky = false;
             long volume = (long) length * width * height;
-            if (length >= dimensionLimit || width >= dimensionLimit || height >= dimensionLimit || volume >= volumeLimit) {
+            if (length >= dimensionLimit
+                    || width >= dimensionLimit
+                    || height >= dimensionLimit
+                    || volume >= volumeLimit) {
                 isBulky = true;
             }
             boolean isHeavy = mass >= 100;

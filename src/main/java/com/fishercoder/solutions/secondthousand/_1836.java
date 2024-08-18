@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.HashMap;
 import java.util.Map;
 

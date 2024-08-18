@@ -19,15 +19,15 @@ public class _46Test {
 
     @Test
     public void test1() {
-        CommonUtils.printListList(solution1.permute(new int[]{1, 2, 3}));
-        CommonUtils.printListList(solution2.permute(new int[]{1, 2, 3}));
-        CommonUtils.printListList(solution3.permute(new int[]{1, 2, 3}));
+        CommonUtils.printListList(solution1.permute(new int[] {1, 2, 3}));
+        CommonUtils.printListList(solution2.permute(new int[] {1, 2, 3}));
+        CommonUtils.printListList(solution3.permute(new int[] {1, 2, 3}));
     }
 
     @Test
     public void test2() {
-        CommonUtils.printListList(solution1.permute(new int[]{1, 2, 3, 4, 5, 6}));
-        CommonUtils.printListList(solution2.permute(new int[]{1, 2, 3, 4, 5, 6}));
-        CommonUtils.printListList(solution3.permute(new int[]{1, 2, 3, 4, 5, 6}));
+        CommonUtils.printListList(solution1.permute(new int[] {1, 2, 3, 4, 5, 6}));
+        CommonUtils.printListList(solution2.permute(new int[] {1, 2, 3, 4, 5, 6}));
+        CommonUtils.printListList(solution3.permute(new int[] {1, 2, 3, 4, 5, 6}));
     }
 }

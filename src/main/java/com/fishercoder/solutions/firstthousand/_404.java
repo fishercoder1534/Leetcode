@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -56,7 +55,7 @@ public class _404 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My completely original solution on 11/4/2021.
          */
         public int sumOfLeftLeaves(TreeNode root) {
@@ -76,7 +75,6 @@ public class _404 {
                     }
                     queue.offer(curr.left);
                     queue.offer(curr.right);
-
                 }
                 level++;
             }

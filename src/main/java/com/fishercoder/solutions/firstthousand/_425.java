@@ -6,7 +6,7 @@ import java.util.List;
 public class _425 {
 
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/63516/explained-my-java-solution-using-trie-126ms-16-16/2
          */
 
@@ -71,8 +71,7 @@ public class _425 {
             return ans;
         }
 
-        private void search(int len, Trie trie, List<List<String>> ans,
-                            List<String> ansBuilder) {
+        private void search(int len, Trie trie, List<List<String>> ans, List<String> ansBuilder) {
             if (ansBuilder.size() == len) {
                 ans.add(new ArrayList<>(ansBuilder));
                 return;
@@ -91,6 +90,4 @@ public class _425 {
             }
         }
     }
-
 }
-

@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1154;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1154Test {
     private _1154.Solution1 solution1;
@@ -23,5 +23,4 @@ public class _1154Test {
     public void test2() {
         assertEquals(271, solution1.dayOfYear("1969-09-28"));
     }
-
 }

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _664 {
     public static class Solution1 {
-        /**
+        /*
          * reference: https://discuss.leetcode.com/topic/100137/java-solution-dp
          */
         public int strangePrinter(String s) {

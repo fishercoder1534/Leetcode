@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class _1354 {
     public static class Solution1 {
-        /**
+        /*
          * Use % is the key here to avoid TLE, a good test case for this is [1,1000000000]
          */
         public boolean isPossible(int[] target) {

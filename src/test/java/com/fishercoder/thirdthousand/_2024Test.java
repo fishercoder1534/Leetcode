@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2024;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2024Test {
     private _2024.Solution1 solution1;
@@ -38,5 +38,4 @@ public class _2024Test {
     public void test5() {
         assertEquals(8, solution1.maxConsecutiveAnswers("FFFTTFTTFT", 3));
     }
-
 }

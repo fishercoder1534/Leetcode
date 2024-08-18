@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _42 {
 
     public static class Solution1 {
-        /**
+        /*
          * O(n) time and O(1) space, awesome!
          *
          * 1. first scan to find the max height index

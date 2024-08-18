@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _758 {
     public static class Solution1 {
-        /**
+        /*
          * Interestingly, this problem is exactly the same as 616, using 616's code could get it AC'ed.
          */
         public String boldWords(String[] words, String S) {

@@ -29,13 +29,15 @@ public class _1690 {
             if (j - i == 0) {
                 maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i][j] = 0;
             } else if (j - i == 1) {
-                maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i][j] = Math.max(stonesRef[i - 1], stonesRef[j - 1]);
+                maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i][j] =
+                        Math.max(stonesRef[i - 1], stonesRef[j - 1]);
             } else {
-                maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i][j] = Math.max(
-                        this.sumOfTheStonesValueInPosIToJ(i + 1, j)
-                                - maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i + 1][j],
-                        this.sumOfTheStonesValueInPosIToJ(i, j - 1)
-                                - maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i][j - 1]);
+                maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i][j] =
+                        Math.max(
+                                this.sumOfTheStonesValueInPosIToJ(i + 1, j)
+                                        - maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i + 1][j],
+                                this.sumOfTheStonesValueInPosIToJ(i, j - 1)
+                                        - maxDiffScoureBetweenTowPlayerWhenPlayInPosItoJ[i][j - 1]);
             }
         }
 

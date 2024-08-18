@@ -6,7 +6,7 @@ import java.util.List;
 
 public class _1200 {
     public static class Solution1 {
-        /**
+        /*
          * Time: O(nlogn) due to sorting
          * Space: O(k) where k is the distinct number of differences between two numbers in the given array
          */

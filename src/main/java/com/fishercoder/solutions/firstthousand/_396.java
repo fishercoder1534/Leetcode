@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _396 {
     public static class Solution1 {
-        /**
+        /*
          * F(k) = 0 * Bk[0] + 1 * Bk[1] + ... + (n-1) * Bk[n-1]
          */
         public int maxRotateFunction(int[] A) {
@@ -39,7 +39,7 @@ public class _396 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Reference: https://discuss.leetcode.com/topic/58459/java-o-n-solution-with-explanation
          */
         public int maxRotateFunction(int[] A) {

@@ -43,13 +43,13 @@ public class _695 {
             int maxArea = 0;
             int m = grid.length;
             int n = grid[0].length;
-            int[] directions = new int[]{0, 1, 0, -1, 0};
+            int[] directions = new int[] {0, 1, 0, -1, 0};
             boolean[][] visited = new boolean[m][n];
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     if (grid[i][j] == 1 && !visited[i][j]) {
                         Queue<int[]> queue = new LinkedList<>();
-                        queue.offer(new int[]{i, j});
+                        queue.offer(new int[] {i, j});
                         int area = 0;
                         while (!queue.isEmpty()) {
                             int size = queue.size();
@@ -62,10 +62,15 @@ public class _695 {
                                 for (int p = 0; p < directions.length - 1; p++) {
                                     int newX = curr[0] + directions[p];
                                     int newY = curr[1] + directions[p + 1];
-                                    if (newX >= 0 && newX < m && newY >= 0 && newY < n && !visited[newX][newY] && grid[newX][newY] == 1) {
+                                    if (newX >= 0
+                                            && newX < m
+                                            && newY >= 0
+                                            && newY < n
+                                            && !visited[newX][newY]
+                                            && grid[newX][newY] == 1) {
                                         visited[newX][newY] = true;
                                         area++;
-                                        queue.offer(new int[]{newX, newY});
+                                        queue.offer(new int[] {newX, newY});
                                     }
                                 }
                             }

@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _66 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/plus-one/discuss/24082/My-Simple-Java-Solution
          */
         public int[] plusOne(int[] digits) {

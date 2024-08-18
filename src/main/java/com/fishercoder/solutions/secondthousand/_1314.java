@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _1314 {
     public static class Solution1 {
-        /**
+        /*
          * This is a brute force solution without using prefix sum. i.e. lots of repeated computation.
          */
         public int[][] matrixBlockSum(int[][] mat, int k) {
@@ -40,7 +40,7 @@ public class _1314 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This is using prefix sum, much more efficient and saves a lot of repeated computation,
          * built on top of this: https://github.com/fishercoder1534/Leetcode/blob/master/src/main/java/com/fishercoder/solutions/firstthousand/_304.java
          */
@@ -50,8 +50,10 @@ public class _1314 {
             int[][] prefixSum = new int[m + 1][n + 1];
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
-                    //because we add prefixSum[i + 1][j] and prefixSum[i][j + 1], this means we added their shared area twice, so we'll deduct it once: prefixSum[i][j]
-                    prefixSum[i + 1][j + 1] = mat[i][j] + prefixSum[i + 1][j] + prefixSum[i][j + 1] - prefixSum[i][j];
+                    // because we add prefixSum[i + 1][j] and prefixSum[i][j + 1], this means we
+                    // added their shared area twice, so we'll deduct it once: prefixSum[i][j]
+                    prefixSum[i + 1][j + 1] =
+                            mat[i][j] + prefixSum[i + 1][j] + prefixSum[i][j + 1] - prefixSum[i][j];
                 }
             }
             int[][] result = new int[m][n];
@@ -62,8 +64,13 @@ public class _1314 {
                     int col1 = range[2];
                     int row2 = range[1];
                     int col2 = range[3];
-                    //because we deducted prefixSum[row2 + 1][col1] and prefixSum[row1][col2 + 1], we deducted the shared area prefixSum[row1][col1] twice, so we added it back
-                    result[i][j] = prefixSum[row2 + 1][col2 + 1] - prefixSum[row2 + 1][col1] - prefixSum[row1][col2 + 1] + prefixSum[row1][col1];
+                    // because we deducted prefixSum[row2 + 1][col1] and prefixSum[row1][col2 + 1],
+                    // we deducted the shared area prefixSum[row1][col1] twice, so we added it back
+                    result[i][j] =
+                            prefixSum[row2 + 1][col2 + 1]
+                                    - prefixSum[row2 + 1][col1]
+                                    - prefixSum[row1][col2 + 1]
+                                    + prefixSum[row1][col1];
                 }
             }
             return result;
@@ -74,7 +81,7 @@ public class _1314 {
             int rowMax = i + k < m ? i + k : m - 1;
             int colMin = j - k < 0 ? 0 : j - k;
             int colMax = j + k < n ? j + k : n - 1;
-            return new int[]{rowMin, rowMax, colMin, colMax};
+            return new int[] {rowMin, rowMax, colMin, colMax};
         }
     }
 }

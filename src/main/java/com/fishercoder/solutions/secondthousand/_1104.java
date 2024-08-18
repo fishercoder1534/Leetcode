@@ -3,7 +3,6 @@ package com.fishercoder.solutions.secondthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.common.utils.TreeUtils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -14,7 +13,7 @@ import java.util.Queue;
 
 public class _1104 {
     public static class Solution1 {
-        /**
+        /*
          * This brute force solution is correct but results in TLE on LeetCode.
          */
         public List<Integer> pathInZigZagTree(int label) {
@@ -83,7 +82,7 @@ public class _1104 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * We'll directly compute the index of its parent, it'll be much faster this way.
          */
         public List<Integer> pathInZigZagTree(int label) {

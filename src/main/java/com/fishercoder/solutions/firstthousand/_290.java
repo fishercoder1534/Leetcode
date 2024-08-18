@@ -20,7 +20,7 @@ public class _290 {
                     }
                 } else {
                     if (map.containsValue(words[i])) {
-                        return false;//this is for this case: "abba", "dog dog dog dog"
+                        return false; // this is for this case: "abba", "dog dog dog dog"
                     }
                     map.put(patterns[i], words[i]);
                 }
@@ -28,5 +28,4 @@ public class _290 {
             return true;
         }
     }
-
 }

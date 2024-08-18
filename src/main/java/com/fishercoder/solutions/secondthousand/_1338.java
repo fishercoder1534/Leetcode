@@ -1,7 +1,7 @@
 package com.fishercoder.solutions.secondthousand;
 
-import java.util.Collections;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,7 +35,7 @@ public class _1338 {
             }
             List<int[]> list = new ArrayList<>();
             for (int key : map.keySet()) {
-                list.add(new int[]{map.get(key), key});
+                list.add(new int[] {map.get(key), key});
             }
             Collections.sort(list, (a, b) -> b[0] - a[0]);
             int minSet = 0;

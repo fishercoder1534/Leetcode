@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.TreeSet;
 
 public class _671 {
@@ -24,6 +23,5 @@ public class _671 {
             dfs(root.left, set);
             dfs(root.right, set);
         }
-
     }
 }

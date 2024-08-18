@@ -8,12 +8,17 @@ public class _537 {
         public String complexNumberMultiply(String a, String b) {
             String[] part1And2 = a.split("\\+");
             String[] part3And4 = b.split("\\+");
-            String product1 = String.valueOf(Integer.parseInt(part1And2[0]) * Integer.parseInt(part3And4[0]));//this is real number multiplication
+            String product1 =
+                    String.valueOf(
+                            Integer.parseInt(part1And2[0])
+                                    * Integer.parseInt(
+                                            part3And4[0])); // this is real number multiplication
             String product2 = multiply(part1And2[0], part3And4[1]);
             String product3 = multiply(part3And4[0], part1And2[1]);
             String product4 = multiplyTwoIs(part3And4[1], part1And2[1]);
             String twoISum = sumTwoI(product2, product3);
-            String numberValue = String.valueOf(Integer.valueOf(product1) + Integer.valueOf(product4));
+            String numberValue =
+                    String.valueOf(Integer.valueOf(product1) + Integer.valueOf(product4));
             return numberValue + "+" + twoISum;
         }
 
@@ -37,16 +42,18 @@ public class _537 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * (a + bi) * (c + di) could become (ac - bd) + (ad + bc)*i
          * Thus, we have the following function
          */
         public String complexNumberMultiply(String a, String b) {
             int[] coefficients1 = Stream.of(a.split("\\+|i")).mapToInt(Integer::parseInt).toArray();
             int[] coefficients2 = Stream.of(b.split("\\+|i")).mapToInt(Integer::parseInt).toArray();
-            return (coefficients1[0] * coefficients2[0] - coefficients1[1] * coefficients2[1]) + "+"
-                    + (coefficients1[0] * coefficients2[1] + coefficients1[1] * coefficients2[0] + "i");
+            return (coefficients1[0] * coefficients2[0] - coefficients1[1] * coefficients2[1])
+                    + "+"
+                    + (coefficients1[0] * coefficients2[1]
+                            + coefficients1[1] * coefficients2[0]
+                            + "i");
         }
     }
-
 }

@@ -4,10 +4,11 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _333 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/36995/share-my-o-n-java-code-with-brief-explanation-and-comments
          */
-        class Result {  // (size, rangeLower, rangeUpper) -- size of current tree, range of current tree [rangeLower, rangeUpper]
+        class Result { // (size, rangeLower, rangeUpper) -- size of current tree, range of current
+            // tree [rangeLower, rangeUpper]
             int size;
             int lower;
             int upper;
@@ -35,12 +36,16 @@ public class _333 {
             }
             Result left = traverse(root.left);
             Result right = traverse(root.right);
-            if (left.size == -1 || right.size == -1 || root.val <= left.upper || root.val >= right.lower) {
+            if (left.size == -1
+                    || right.size == -1
+                    || root.val <= left.upper
+                    || root.val >= right.lower) {
                 return new Result(-1, 0, 0);
             }
             int size = left.size + 1 + right.size;
             max = Math.max(size, max);
-            return new Result(size, Math.min(left.lower, root.val), Math.max(right.upper, root.val));
+            return new Result(
+                    size, Math.min(left.lower, root.val), Math.max(right.upper, root.val));
         }
     }
 
@@ -91,5 +96,4 @@ public class _333 {
         }
         return dfs(root.left, min, root.val) && dfs(root.right, root.val, max);
     }
-
 }

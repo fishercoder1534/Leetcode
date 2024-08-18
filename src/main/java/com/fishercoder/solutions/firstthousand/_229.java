@@ -6,7 +6,7 @@ import java.util.List;
 public class _229 {
 
     public static class Solution1 {
-        /**
+        /*
          * Moore Voting algorithm:
          * This is an extension of Majority Element I, instead of one one majority, there could be a max of two majority elements,
          * so we'll just use two counters to do the job.
@@ -54,5 +54,4 @@ public class _229 {
             return result;
         }
     }
-
 }

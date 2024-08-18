@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1217 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/play-with-chips/discuss/398239/C%2B%2B-3-lines
          */
         public int minCostToMoveChips(int[] position) {
@@ -15,7 +15,9 @@ public class _1217 {
                     chipsAtOddPosition++;
                 }
             }
-            return chipsAtEvenPosition > chipsAtOddPosition ? chipsAtOddPosition : chipsAtEvenPosition;
+            return chipsAtEvenPosition > chipsAtOddPosition
+                    ? chipsAtOddPosition
+                    : chipsAtEvenPosition;
         }
     }
 }

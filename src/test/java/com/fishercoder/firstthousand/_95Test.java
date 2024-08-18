@@ -17,5 +17,4 @@ public class _95Test {
     public void test1() {
         solution1.generateTrees(3).forEach(TreeUtils::printBinaryTree);
     }
-
 }

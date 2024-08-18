@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _1891 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution on 1/27/2022.
          */
         public int maxLength(int[] ribbons, int k) {

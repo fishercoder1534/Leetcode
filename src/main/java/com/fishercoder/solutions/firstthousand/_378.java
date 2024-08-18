@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 public class _378 {
     public static class Solution1 {
-        /**
+        /*
          * brute force made it AC'ed, extreme test case needed for OJ
          */
         public int kthSmallest(int[][] matrix, int k) {
@@ -23,21 +23,20 @@ public class _378 {
         }
     }
 
-
     public static class Solution2 {
-        /**
+        /*
          * use heap data structure
          */
         public int kthSmallest(int[][] matrix, int k) {
             PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
             for (int i = 0; i < Math.min(matrix.length, k); i++) {
-                //we store value, rowIndex, colIndex as an array into this heap
-                heap.offer(new int[]{matrix[i][0], i, 0});
+                // we store value, rowIndex, colIndex as an array into this heap
+                heap.offer(new int[] {matrix[i][0], i, 0});
             }
             while (k-- > 1) {
                 int[] min = heap.poll();
                 if (min[2] + 1 < matrix[min[1]].length) {
-                    heap.offer(new int[]{matrix[min[1]][min[2] + 1], min[1], min[2] + 1});
+                    heap.offer(new int[] {matrix[min[1]][min[2] + 1], min[1], min[2] + 1});
                 }
             }
             return heap.poll()[0];
@@ -45,7 +44,7 @@ public class _378 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Binary Search : The idea is to pick a mid number, then compare it with the elements in each row, we start form
          * end of row util we find the element is less than the mid, the left side element is all less than mid; keep tracking elements
          * that less than mid and compare with k, then update the k.

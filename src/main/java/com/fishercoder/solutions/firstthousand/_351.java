@@ -17,10 +17,14 @@ public class _351 {
             jumps[3][7] = jumps[7][3] = 5;
             visited = new boolean[10];
             int count = 0;
-            count += dfs(1, 1, 0, m, n)
-                    * 4;//1,3,7,9 are symmetric, so we only need to use 1 to do it once and then multiply the result by 4
-            count += dfs(2, 1, 0, m, n)
-                    * 4;//2,4,6,8 are symmetric, so we only need to use 1 to do it once and then multiply the result by 4
+            count +=
+                    dfs(1, 1, 0, m, n)
+                            * 4; // 1,3,7,9 are symmetric, so we only need to use 1 to do it once
+            // and then multiply the result by 4
+            count +=
+                    dfs(2, 1, 0, m, n)
+                            * 4; // 2,4,6,8 are symmetric, so we only need to use 1 to do it once
+            // and then multiply the result by 4
             count += dfs(5, 1, 0, m, n);
             return count;
         }
@@ -40,7 +44,7 @@ public class _351 {
                     count = dfs(next, len, count, m, n);
                 }
             }
-            visited[num] = false;//backtracking
+            visited[num] = false; // backtracking
             return count;
         }
     }

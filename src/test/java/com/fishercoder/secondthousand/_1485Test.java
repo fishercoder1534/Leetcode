@@ -25,5 +25,4 @@ public class _1485Test {
         _1485.NodeCopy actual = solution1.copyRandomBinaryTree(root);
         System.out.println("Finished.");
     }
-
 }

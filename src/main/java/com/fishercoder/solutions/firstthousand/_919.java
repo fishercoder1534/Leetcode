@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -9,7 +8,7 @@ import java.util.Queue;
 
 public class _919 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution.
          * Beats 98.11% submissions.
          */

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1759 {
     public static class Solution1 {
-        /**
+        /*
          * a -> 1
          * aa -> 3
          * aaa -> 6

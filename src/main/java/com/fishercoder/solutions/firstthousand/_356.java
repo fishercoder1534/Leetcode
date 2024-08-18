@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class _356 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/48172/simple-java-hashset-solution
          */
         public boolean isReflected(int[][] points) {

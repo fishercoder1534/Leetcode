@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._1;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1Test {
     private _1.Solution1 solution1;
@@ -17,8 +17,7 @@ public class _1Test {
 
     @Test
     public void test1() {
-        nums = new int[]{2, 7, 11, 15};
-        assertArrayEquals(new int[]{0, 1}, solution1.twoSum(nums, 9));
+        nums = new int[] {2, 7, 11, 15};
+        assertArrayEquals(new int[] {0, 1}, solution1.twoSum(nums, 9));
     }
-
 }

@@ -27,11 +27,11 @@ public class _459 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/68089/repeated-substring-pattern-simple-java-solution-using-kmp
          */
         public static boolean repeatedSubstringPattern(String str) {
-            //build the KMP pattern.
+            // build the KMP pattern.
             int n = str.length();
             int cur = 0;
             int j = 1;
@@ -45,7 +45,7 @@ public class _459 {
                     if (cur == 0) {
                         pattern[j++] = 0;
                     } else {
-                        cur = pattern[cur - 1];//start from beginning of current matching pattern.
+                        cur = pattern[cur - 1]; // start from beginning of current matching pattern.
                     }
                 }
             }

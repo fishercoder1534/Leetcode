@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2126;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2126Test {
     private _2126.Solution1 solution1;
@@ -19,7 +19,7 @@ public class _2126Test {
 
     @Test
     public void test1() {
-        asteroids = new int[]{3, 9, 19, 5, 21};
+        asteroids = new int[] {3, 9, 19, 5, 21};
         mass = 10;
         expected = true;
         assertEquals(expected, solution1.asteroidsDestroyed(mass, asteroids));
@@ -27,7 +27,7 @@ public class _2126Test {
 
     @Test
     public void test2() {
-        asteroids = new int[]{4, 9, 23, 4};
+        asteroids = new int[] {4, 9, 23, 4};
         mass = 5;
         expected = false;
         assertEquals(expected, solution1.asteroidsDestroyed(mass, asteroids));
@@ -35,10 +35,9 @@ public class _2126Test {
 
     @Test
     public void test3() {
-        asteroids = new int[]{156, 197, 192, 14, 97, 160, 14, 5};
+        asteroids = new int[] {156, 197, 192, 14, 97, 160, 14, 5};
         mass = 86;
         expected = true;
         assertEquals(expected, solution1.asteroidsDestroyed(mass, asteroids));
     }
-
 }

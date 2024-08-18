@@ -9,15 +9,16 @@ public class _3175 {
             Deque<int[]> q = new LinkedList<>();
             int highestSkill = 0;
             for (int i = 0; i < skills.length; i++) {
-                q.offer(new int[]{i, skills[i], 0});
+                q.offer(new int[] {i, skills[i], 0});
                 highestSkill = Math.max(highestSkill, skills[i]);
             }
             int count = 0;
             while (true) {
                 int[] first = q.pollFirst();
                 if (first[1] == highestSkill) {
-                    //if the highest skill stands at the head of the queue, then it'll keep standing there
-                    //so it's guaranteed that it'll be the winner
+                    // if the highest skill stands at the head of the queue, then it'll keep
+                    // standing there
+                    // so it's guaranteed that it'll be the winner
                     return first[0];
                 }
                 int[] second = q.pollFirst();

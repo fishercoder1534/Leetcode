@@ -17,7 +17,7 @@ public class _1341 {
                         break;
                     }
                 }
-                list.add(new int[]{i, soldiers});
+                list.add(new int[] {i, soldiers});
             }
             Collections.sort(list, (a, b) -> a[1] == b[1] ? a[0] - b[0] : a[1] - b[1]);
             int[] result = new int[k];

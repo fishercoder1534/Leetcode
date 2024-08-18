@@ -23,7 +23,7 @@ public class _997 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/find-the-town-judge/solution/ solution 2
          * Also, note: is it possible to have more than one town judges?
          * No! It's impossible! If it's possible, suppose there are two town judges, then both of them have to be trusted by everyone else which includes the other judge.

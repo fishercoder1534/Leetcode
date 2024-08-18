@@ -6,12 +6,12 @@ import java.util.Map;
 public class _914 {
     public static class Solution1 {
         public boolean hasGroupsSizeX(int[] deck) {
-            //Size too small for partitions
+            // Size too small for partitions
             if (deck.length < 2) {
                 return false;
             }
 
-            //Track repetitions of values in deck array
+            // Track repetitions of values in deck array
             Map<Integer, Integer> mapReps = new HashMap<>();
             for (int card : deck) {
                 if (!mapReps.containsKey(card)) {
@@ -21,17 +21,17 @@ public class _914 {
                 }
             }
 
-            //Create array of map values
+            // Create array of map values
             int num = 0;
             int[] arrReps = new int[mapReps.size()];
             for (Map.Entry<Integer, Integer> e : mapReps.entrySet()) {
                 arrReps[num++] = e.getValue();
             }
 
-            //Find greatest common denominator
+            // Find greatest common denominator
             num = arrGCD(arrReps, arrReps.length);
 
-            //If gcd of all repetitions is greater than 1, it's partitionable.
+            // If gcd of all repetitions is greater than 1, it's partitionable.
             return num > 1;
         }
 

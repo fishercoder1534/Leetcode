@@ -1,13 +1,12 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.HashMap;
 import java.util.Map;
 
 public class _663 {
     public static class Solution1 {
-        /**
+        /*
          * The idea is that we use a map to store the sum of each node, then in the end,
          * we check if any node has a sum that is exactly half of total sum.
          */

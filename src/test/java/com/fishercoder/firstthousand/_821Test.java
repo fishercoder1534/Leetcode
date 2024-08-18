@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._821;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _821Test {
     private _821.Solution1 solution1;
@@ -19,13 +19,13 @@ public class _821Test {
 
     @Test
     public void test1() {
-        expected = new int[]{3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0};
+        expected = new int[] {3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0};
         assertArrayEquals(expected, solution1.shortestToChar("loveleetcode", 'e'));
     }
 
     @Test
     public void test2() {
-        expected = new int[]{3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0};
+        expected = new int[] {3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0};
         assertArrayEquals(expected, solution2.shortestToChar("loveleetcode", 'e'));
     }
 }

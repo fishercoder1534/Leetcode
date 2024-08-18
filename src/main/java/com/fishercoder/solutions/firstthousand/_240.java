@@ -23,5 +23,4 @@ public class _240 {
             return false;
         }
     }
-
 }

@@ -1,6 +1,5 @@
 package com.fishercoder.solutions.firstthousand;
 
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -42,12 +41,12 @@ public class _210 {
             if (i == numCourses) {
                 return order;
             }
-            return new int[]{};
+            return new int[] {};
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Instead of using a map, we can use an array of list type, it turned out to be even faster on LeetCode.
          */
         public int[] findOrder(int numCourses, int[][] prerequisites) {
@@ -71,7 +70,8 @@ public class _210 {
             while (!q.isEmpty()) {
                 Integer curr = q.poll();
                 order[index++] = curr;
-                //NOTE: we only need to go through adjList[curr] here now, instead of going through all prerequisites again now.
+                // NOTE: we only need to go through adjList[curr] here now, instead of going through
+                // all prerequisites again now.
                 for (int v : adjList[curr]) {
                     indegree[v]--;
                     if (indegree[v] == 0) {
@@ -82,8 +82,7 @@ public class _210 {
             if (index == numCourses) {
                 return order;
             }
-            return new int[]{};
+            return new int[] {};
         }
-
     }
 }

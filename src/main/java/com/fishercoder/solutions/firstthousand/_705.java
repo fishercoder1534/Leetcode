@@ -8,7 +8,7 @@ public class _705 {
         class MyHashSet {
             Map<Integer, Integer> map;
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public MyHashSet() {
@@ -25,7 +25,7 @@ public class _705 {
                 }
             }
 
-            /**
+            /*
              * Returns true if this set contains the specified element
              */
             public boolean contains(int key) {

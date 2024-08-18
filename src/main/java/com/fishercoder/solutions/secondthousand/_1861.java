@@ -19,7 +19,6 @@ public class _1861 {
                             box[i][empty - 1] = '#';
                             box[i][j] = '.';
                         }
-
                     }
                 }
             }

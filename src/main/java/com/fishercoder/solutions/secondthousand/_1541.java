@@ -14,7 +14,8 @@ public class _1541 {
                         stack.add(c);
                     } else {
                         if (stack.peek() == ')') {
-                            //in this case, we need to add one more ')' to get two consecutive right paren, then we could pop the one ')' and one '(' off the stack
+                            // in this case, we need to add one more ')' to get two consecutive
+                            // right paren, then we could pop the one ')' and one '(' off the stack
                             insertionsNeeded++;
                             stack.pop();
                             stack.pop();
@@ -25,13 +26,14 @@ public class _1541 {
                     }
                 } else if (c == ')') {
                     if (stack.isEmpty()) {
-                        //in this case, we need to add one '(' before we add this ')' onto this stack
+                        // in this case, we need to add one '(' before we add this ')' onto this
+                        // stack
                         insertionsNeeded++;
                         stack.add('(');
                         stack.add(c);
                     } else {
                         if (stack.peek() == ')') {
-                            //in this case, we could pop the one ')' and one '(' off the stack
+                            // in this case, we could pop the one ')' and one '(' off the stack
                             stack.pop();
                             stack.pop();
                         } else {

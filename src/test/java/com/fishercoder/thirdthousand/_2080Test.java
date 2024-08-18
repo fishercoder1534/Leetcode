@@ -1,9 +1,9 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2080;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2080Test {
     private _2080.Solution1.RangeFreqQuery rangeFreqQuery1;
@@ -11,24 +11,28 @@ public class _2080Test {
 
     @Test
     public void test1() {
-        rangeFreqQuery1 = new _2080.Solution1.RangeFreqQuery(new int[]{12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56});
+        rangeFreqQuery1 =
+                new _2080.Solution1.RangeFreqQuery(
+                        new int[] {12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56});
         assertEquals(1, rangeFreqQuery1.query(1, 2, 4));
         assertEquals(2, rangeFreqQuery1.query(0, 11, 33));
 
-        rangeFreqQuery2 = new _2080.Solution2.RangeFreqQuery(new int[]{12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56});
+        rangeFreqQuery2 =
+                new _2080.Solution2.RangeFreqQuery(
+                        new int[] {12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56});
         assertEquals(1, rangeFreqQuery2.query(1, 2, 4));
         assertEquals(2, rangeFreqQuery2.query(0, 11, 33));
     }
 
     @Test
     public void test2() {
-        rangeFreqQuery1 = new _2080.Solution1.RangeFreqQuery(new int[]{1, 1, 1, 2, 2});
+        rangeFreqQuery1 = new _2080.Solution1.RangeFreqQuery(new int[] {1, 1, 1, 2, 2});
         assertEquals(0, rangeFreqQuery1.query(0, 1, 2));
         assertEquals(3, rangeFreqQuery1.query(0, 2, 1));
         assertEquals(1, rangeFreqQuery1.query(3, 3, 2));
         assertEquals(1, rangeFreqQuery1.query(2, 2, 1));
 
-        rangeFreqQuery2 = new _2080.Solution2.RangeFreqQuery(new int[]{1, 1, 1, 2, 2});
+        rangeFreqQuery2 = new _2080.Solution2.RangeFreqQuery(new int[] {1, 1, 1, 2, 2});
         assertEquals(0, rangeFreqQuery2.query(0, 1, 2));
         assertEquals(3, rangeFreqQuery2.query(0, 2, 1));
         assertEquals(1, rangeFreqQuery2.query(3, 3, 2));
@@ -37,19 +41,20 @@ public class _2080Test {
 
     @Test
     public void test3() {
-        rangeFreqQuery1 = new _2080.Solution1.RangeFreqQuery(new int[]{3, 4, 5, 3, 3, 2, 2, 2, 5, 4});
+        rangeFreqQuery1 =
+                new _2080.Solution1.RangeFreqQuery(new int[] {3, 4, 5, 3, 3, 2, 2, 2, 5, 4});
         assertEquals(2, rangeFreqQuery1.query(2, 6, 3));
         assertEquals(0, rangeFreqQuery1.query(5, 6, 5));
         assertEquals(2, rangeFreqQuery1.query(1, 6, 2));
         assertEquals(1, rangeFreqQuery1.query(0, 2, 3));
         assertEquals(0, rangeFreqQuery1.query(5, 6, 4));
 
-        rangeFreqQuery2 = new _2080.Solution2.RangeFreqQuery(new int[]{3, 4, 5, 3, 3, 2, 2, 2, 5, 4});
+        rangeFreqQuery2 =
+                new _2080.Solution2.RangeFreqQuery(new int[] {3, 4, 5, 3, 3, 2, 2, 2, 5, 4});
         assertEquals(2, rangeFreqQuery2.query(2, 6, 3));
         assertEquals(0, rangeFreqQuery2.query(5, 6, 5));
         assertEquals(2, rangeFreqQuery2.query(1, 6, 2));
         assertEquals(1, rangeFreqQuery2.query(0, 2, 3));
         assertEquals(0, rangeFreqQuery2.query(5, 6, 4));
     }
-
 }

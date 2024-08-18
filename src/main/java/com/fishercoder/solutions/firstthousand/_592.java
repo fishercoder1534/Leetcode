@@ -7,7 +7,7 @@ public class _592 {
 
     public static class Solution1 {
 
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/89993/java-solution-fraction-addition-and-gcd
          */
         public String fractionAddition(String expression) {
@@ -15,7 +15,8 @@ public class _592 {
             int i = 0;
             int j = 0;
             while (j <= expression.length()) {
-                if (j == expression.length() || j != i && (expression.charAt(j) == '-' || expression.charAt(j) == '+')) {
+                if (j == expression.length()
+                        || j != i && (expression.charAt(j) == '-' || expression.charAt(j) == '+')) {
                     if (expression.charAt(i) == '+') {
                         nums.add(expression.substring(i + 1, j));
                     } else {
@@ -61,5 +62,4 @@ public class _592 {
             return getGCD(b, a % b);
         }
     }
-
 }

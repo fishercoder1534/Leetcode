@@ -33,12 +33,13 @@ public class _301 {
                 }
 
                 if (found) {
-                    continue;//this means if the initial input is already a valid one, we'll just directly return it and there's actually only one valid result
+                    continue; // this means if the initial input is already a valid one, we'll just
+                    // directly return it and there's actually only one valid result
                 }
 
                 for (int i = 0; i < curr.length(); i++) {
                     if (curr.charAt(i) != '(' && curr.charAt(i) != ')') {
-                        continue;//this is to rule out those non-parentheses characters
+                        continue; // this is to rule out those non-parentheses characters
                     }
 
                     String next = curr.substring(0, i) + curr.substring(i + 1);
@@ -47,7 +48,6 @@ public class _301 {
                         visited.add(next);
                     }
                 }
-
             }
             return result;
         }

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _724 {
     public static class Solution1 {
-        /**
+        /*
          * Space: O(n)
          * Time: O(n)
          */
@@ -16,7 +16,8 @@ public class _724 {
                 sums[i] = sums[i - 1] + nums[i];
             }
             for (int i = 0; i < nums.length; i++) {
-                if (i == 0 && 0 == sums[nums.length - 1] - sums[i] || (i > 0 && sums[i - 1] == sums[nums.length - 1] - sums[i])) {
+                if (i == 0 && 0 == sums[nums.length - 1] - sums[i]
+                        || (i > 0 && sums[i - 1] == sums[nums.length - 1] - sums[i])) {
                     return i;
                 }
             }
@@ -25,7 +26,7 @@ public class _724 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Space: O(1)
          * Time: O(n)
          */

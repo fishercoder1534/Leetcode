@@ -20,7 +20,8 @@ public class _1286 {
                 buildAllCombinations(characters, 0, new StringBuilder(), visited);
             }
 
-            private void buildAllCombinations(String characters, int start, StringBuilder sb, boolean[] visited) {
+            private void buildAllCombinations(
+                    String characters, int start, StringBuilder sb, boolean[] visited) {
                 if (sb.length() == combinationLength) {
                     list.add(sb.toString());
                     return;

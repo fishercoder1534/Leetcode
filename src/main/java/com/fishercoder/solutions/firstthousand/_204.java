@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _204 {
     public static class Solution1 {
-        /**
+        /*
          * Reference: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
          * This is an ancient algorithm to efficiently count the number of primes up to a given point:
          * it does so iteratively by marking composite (i.e. not prime) the multiples of each prime,

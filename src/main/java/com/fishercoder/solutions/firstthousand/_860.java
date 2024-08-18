@@ -56,13 +56,13 @@ public class _860 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My original solution on 8/14/2024.
          * You only need to keep track of the number of $5 and $10 bills at hand.
          */
 
         public boolean lemonadeChange(int[] bills) {
-            int[] changes = new int[2];//5 and 10
+            int[] changes = new int[2]; // 5 and 10
             for (int bill : bills) {
                 if (bill == 5) {
                     changes[0]++;

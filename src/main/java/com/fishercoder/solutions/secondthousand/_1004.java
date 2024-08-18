@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1004 {
     public static class Solution1 {
-        /**
+        /*
          * Two pointer technique, a.k.a sliding window.
          */
         public int longestOnes(int[] nums, int k) {
@@ -13,7 +13,7 @@ public class _1004 {
                     k--;
                 }
                 while (k < 0) {
-                    //in this case, we'll move the left pointer to the right
+                    // in this case, we'll move the left pointer to the right
                     if (nums[left] == 0) {
                         k++;
                     }

@@ -27,5 +27,4 @@ public class _1030Test {
     public void test3() {
         CommonUtils.print2DIntArray(solution1.allCellsDistOrder(2, 3, 1, 2));
     }
-
 }

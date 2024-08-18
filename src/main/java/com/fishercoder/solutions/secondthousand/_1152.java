@@ -10,7 +10,8 @@ import java.util.TreeMap;
 
 public class _1152 {
     public static class Solution1 {
-        public List<String> mostVisitedPattern(String[] username, int[] timestamp, String[] website) {
+        public List<String> mostVisitedPattern(
+                String[] username, int[] timestamp, String[] website) {
             Map<String, TreeMap<Integer, String>> userToSiteMap = new HashMap<>();
             for (int i = 0; i < username.length; i++) {
                 if (!userToSiteMap.containsKey(username[i])) {
@@ -34,7 +35,8 @@ public class _1152 {
                     Set<String> encounteredSequence = new HashSet<>();
                     for (String sequence : allSequences) {
                         if (encounteredSequence.add(sequence)) {
-                            sequenceCountMap.put(sequence, sequenceCountMap.getOrDefault(sequence, 0) + 1);
+                            sequenceCountMap.put(
+                                    sequence, sequenceCountMap.getOrDefault(sequence, 0) + 1);
                         }
                     }
                 }
@@ -58,12 +60,18 @@ public class _1152 {
             return mostVisitedPattern;
         }
 
-        private List<String> formAllSequences(List<Integer> times, TreeMap<Integer, String> timeToSiteMap) {
+        private List<String> formAllSequences(
+                List<Integer> times, TreeMap<Integer, String> timeToSiteMap) {
             List<String> result = new ArrayList<>();
             for (int i = 0; i < times.size() - 2; i++) {
                 for (int j = i + 1; j < times.size() - 1; j++) {
                     for (int k = j + 1; k < times.size(); k++) {
-                        result.add(timeToSiteMap.get(times.get(i)) + "->" + timeToSiteMap.get(times.get(j)) + "->" + timeToSiteMap.get(times.get(k)));
+                        result.add(
+                                timeToSiteMap.get(times.get(i))
+                                        + "->"
+                                        + timeToSiteMap.get(times.get(j))
+                                        + "->"
+                                        + timeToSiteMap.get(times.get(k)));
                     }
                 }
             }

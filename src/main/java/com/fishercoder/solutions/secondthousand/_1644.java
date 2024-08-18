@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _1644 {
     public static class Solution1 {
-        /**
+        /*
          * This is my not so elegant but original solution to get it accepted.
          */
         boolean[] exists = new boolean[2];
@@ -48,7 +48,7 @@ public class _1644 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This still checks nodes existence.
          */
         int found = 0;
@@ -73,7 +73,7 @@ public class _1644 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii/solutions/944963/beat-96-recursion-without-count-easy-understanding/
          */
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -82,13 +82,13 @@ public class _1644 {
             }
             TreeNode result = findLCA(root, p, q);
             if (result == p) {
-                //if p equals result, we'll check the existence of q in the subtree of p
+                // if p equals result, we'll check the existence of q in the subtree of p
                 return findLCA(p, q, q) != null ? result : null;
             } else if (result == q) {
-                //if q equals result, we'll check the existence of p in the subtree of q
+                // if q equals result, we'll check the existence of p in the subtree of q
                 return findLCA(q, p, p) != null ? result : null;
             }
-            //otherwise, it's this case: (p != result && q != result) || result == null
+            // otherwise, it's this case: (p != result && q != result) || result == null
             return result;
         }
 

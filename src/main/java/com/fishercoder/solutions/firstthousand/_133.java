@@ -19,7 +19,8 @@ public class _133 {
             Queue<Node> queue = new LinkedList();
             Node root = new Node(node.val);
             map.put(root.val, root);
-            //remember to offer the original input node into the queue which contains all the information
+            // remember to offer the original input node into the queue which contains all the
+            // information
             queue.offer(node);
             while (!queue.isEmpty()) {
                 Node curr = queue.poll();

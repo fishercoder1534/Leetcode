@@ -1,12 +1,11 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1868;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1868Test {
     private _1868.Solution1 solution1;
@@ -18,7 +17,8 @@ public class _1868Test {
 
     @Test
     public void test1() {
-        assertEquals(Arrays.asList(Arrays.asList(6, 6)), solution1.findRLEArray(new int[][]{{1, 3}, {2, 3}}, new int[][]{{6, 3}, {3, 3}}));
+        assertEquals(
+                Arrays.asList(Arrays.asList(6, 6)),
+                solution1.findRLEArray(new int[][] {{1, 3}, {2, 3}}, new int[][] {{6, 3}, {3, 3}}));
     }
-
 }

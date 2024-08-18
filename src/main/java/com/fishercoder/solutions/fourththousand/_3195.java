@@ -2,7 +2,7 @@ package com.fishercoder.solutions.fourththousand;
 
 public class _3195 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution:
          * 1. project all 1's to each of the four sides;
          * 2. use four variables to denote four corners

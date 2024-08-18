@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _276 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/paint-fence/editorial/
          * 1. base case: dp[0] = k; dp[1] = k * k;
          * 2. recurrence: dp[i] = dp[i - 1] * (k - 1) + dp[i - 2] * (k - 1)
@@ -21,7 +21,7 @@ public class _276 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * The above solution could be further optimized to use O(1) space.
          */
         public int numWays(int n, int k) {

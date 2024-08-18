@@ -16,13 +16,13 @@ public class _1002Test {
 
     @Test
     public void test1() {
-        A = new String[]{"bella", "label", "roller"};
+        A = new String[] {"bella", "label", "roller"};
         CommonUtils.print(solution1.commonChars(A));
     }
 
     @Test
     public void test2() {
-        A = new String[]{"cool", "lock", "cook"};
+        A = new String[] {"cool", "lock", "cook"};
         CommonUtils.print(solution1.commonChars(A));
     }
 }

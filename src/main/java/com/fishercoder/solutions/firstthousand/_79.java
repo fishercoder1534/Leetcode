@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _79 {
 
     public static class Solution1 {
-        //credit: https://discuss.leetcode.com/topic/21142/my-java-solution
+        // credit: https://discuss.leetcode.com/topic/21142/my-java-solution
 
         boolean[][] visited;
 
@@ -25,7 +25,12 @@ public class _79 {
             if (pos == word.length()) {
                 return true;
             }
-            if (i < 0 || j < 0 || i >= board.length || j >= board[0].length || word.charAt(pos) != board[i][j] || visited[i][j]) {
+            if (i < 0
+                    || j < 0
+                    || i >= board.length
+                    || j >= board[0].length
+                    || word.charAt(pos) != board[i][j]
+                    || visited[i][j]) {
                 return false;
             }
             visited[i][j] = true;
@@ -66,18 +71,26 @@ public class _79 {
             // store the visited char in a temp variable
             char temp = board[i][j];
             board[i][j] = ' ';
-            if (i > 0 && board[i - 1][j] == word.charAt(index + 1) && search(board, i - 1, j, word, index + 1) == true) {
+            if (i > 0
+                    && board[i - 1][j] == word.charAt(index + 1)
+                    && search(board, i - 1, j, word, index + 1) == true) {
                 return true;
             }
-            if (i < board.length - 1 && board[i + 1][j] == word.charAt(index + 1) && search(board, i + 1, j, word, index + 1) == true) {
+            if (i < board.length - 1
+                    && board[i + 1][j] == word.charAt(index + 1)
+                    && search(board, i + 1, j, word, index + 1) == true) {
                 return true;
             }
 
-            if (j > 0 && board[i][j - 1] == word.charAt(index + 1) && search(board, i, j - 1, word, index + 1) == true) {
+            if (j > 0
+                    && board[i][j - 1] == word.charAt(index + 1)
+                    && search(board, i, j - 1, word, index + 1) == true) {
                 return true;
             }
 
-            if (j < board[0].length - 1 && board[i][j + 1] == word.charAt(index + 1) && search(board, i, j + 1, word, index + 1) == true) {
+            if (j < board[0].length - 1
+                    && board[i][j + 1] == word.charAt(index + 1)
+                    && search(board, i, j + 1, word, index + 1) == true) {
                 return true;
             }
 
@@ -87,7 +100,7 @@ public class _79 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * I came up with below solution completely independently on 10/7/2021, although space complexity is O(m*n) instead of constant.
          */
         public boolean exist(char[][] board, String word) {
@@ -101,7 +114,7 @@ public class _79 {
                         if (existByDfs(board, i, j, word.substring(1), visited, m, n)) {
                             return true;
                         }
-                        //backtracking
+                        // backtracking
                         visited[i][j] = false;
                     }
                 }
@@ -109,21 +122,33 @@ public class _79 {
             return false;
         }
 
-        int[] directions = new int[]{0, 1, 0, -1, 0};
+        int[] directions = new int[] {0, 1, 0, -1, 0};
 
-        private boolean existByDfs(char[][] board, int startI, int startJ, String word, boolean[][] visited, int m, int n) {
+        private boolean existByDfs(
+                char[][] board,
+                int startI,
+                int startJ,
+                String word,
+                boolean[][] visited,
+                int m,
+                int n) {
             if (word.equals("")) {
                 return true;
             }
             for (int i = 0; i < directions.length - 1; i++) {
                 int nextX = startI + directions[i];
                 int nextY = startJ + directions[i + 1];
-                if (nextX >= 0 && nextX < m && nextY >= 0 && nextY < n && !visited[nextX][nextY] && board[nextX][nextY] == word.charAt(0)) {
+                if (nextX >= 0
+                        && nextX < m
+                        && nextY >= 0
+                        && nextY < n
+                        && !visited[nextX][nextY]
+                        && board[nextX][nextY] == word.charAt(0)) {
                     visited[nextX][nextY] = true;
                     if (existByDfs(board, nextX, nextY, word.substring(1), visited, m, n)) {
                         return true;
                     }
-                    //backtracking
+                    // backtracking
                     visited[nextX][nextY] = false;
                 }
             }

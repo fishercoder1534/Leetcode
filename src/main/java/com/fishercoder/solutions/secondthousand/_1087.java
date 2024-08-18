@@ -15,7 +15,8 @@ public class _1087 {
             return r;
         }
 
-        private List<String> backtracking(List<char[]> letters, int start, StringBuilder sb, List<String> result) {
+        private List<String> backtracking(
+                List<char[]> letters, int start, StringBuilder sb, List<String> result) {
             if (start >= letters.size()) {
                 result.add(sb.toString());
                 return result;
@@ -54,7 +55,7 @@ public class _1087 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 1/17/2022.
          */
         public String[] expand(String s) {

@@ -8,7 +8,7 @@ import java.util.Queue;
 
 public class _1345 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/jump-game-iv/discuss/502699/JavaC%2B%2B-BFS-Solution-Clean-code-O(N)
          */
         public int minJumps(int[] arr) {
@@ -36,7 +36,10 @@ public class _1345 {
                             indexQueue.offer(next);
                         }
                     }
-                    nextPossibleIndices.clear();//this line is the key to this entire algorithm to avoid TLE, explanation: https://leetcode.com/problems/jump-game-iv/discuss/502699/JavaC++-BFS-Solution-Clean-code-O(N)/445620
+                    nextPossibleIndices
+                            .clear(); // this line is the key to this entire algorithm to avoid TLE,
+                    // explanation:
+                    // https://leetcode.com/problems/jump-game-iv/discuss/502699/JavaC++-BFS-Solution-Clean-code-O(N)/445620
                 }
                 steps++;
             }

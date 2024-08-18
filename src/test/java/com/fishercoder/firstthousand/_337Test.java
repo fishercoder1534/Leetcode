@@ -1,13 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._337;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _337Test {
     private _337.Solution1 solution1;
@@ -21,8 +20,13 @@ public class _337Test {
 
     @Test
     public void test1() {
-        assertEquals(7, solution1.rob(TreeUtils.constructBinaryTree(Arrays.asList(3, 2, 3, null, 3, null, 1))));
-        assertEquals(7, solution2.rob(TreeUtils.constructBinaryTree(Arrays.asList(3, 2, 3, null, 3, null, 1))));
+        assertEquals(
+                7,
+                solution1.rob(
+                        TreeUtils.constructBinaryTree(Arrays.asList(3, 2, 3, null, 3, null, 1))));
+        assertEquals(
+                7,
+                solution2.rob(
+                        TreeUtils.constructBinaryTree(Arrays.asList(3, 2, 3, null, 3, null, 1))));
     }
-
 }

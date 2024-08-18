@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _238 {
 
     public static class Solution1 {
-        /**
+        /*
          * Very straightforward idea: iterate through the array twice:
          * first time: get res[i] = res[i-1]*nums[i-1]
          * second time: have a variable called right, which means all the numbers product to its right, then do

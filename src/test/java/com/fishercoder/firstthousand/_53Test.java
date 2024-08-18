@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._53;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _53Test {
     private _53.Solution1 solution1;
@@ -17,7 +17,7 @@ public class _53Test {
 
     @Test
     public void test1() {
-        nums = new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        nums = new int[] {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         assertEquals(6, solution1.maxSubArray(nums));
     }
 }

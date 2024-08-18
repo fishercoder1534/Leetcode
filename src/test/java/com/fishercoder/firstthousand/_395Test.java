@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._395;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _395Test {
 
@@ -64,5 +64,4 @@ public class _395Test {
         assertEquals(expected, solution1.longestSubstring(s, k));
         assertEquals(expected, solution2.longestSubstring(s, k));
     }
-
 }

@@ -21,10 +21,12 @@ public class _777 {
                 return false;
             }
 
-            //check R from left, check on the start string for R first
-            //whenever count becomes negative, this means we encounter an R in a more left position in end string than start string
-            //since R could only be moved to the right in the start string, there's no way that start string could be shifted to match end string
-            //test11 illustrates this well
+            // check R from left, check on the start string for R first
+            // whenever count becomes negative, this means we encounter an R in a more left position
+            // in end string than start string
+            // since R could only be moved to the right in the start string, there's no way that
+            // start string could be shifted to match end string
+            // test11 illustrates this well
             int count = 0;
             for (int i = 0; i < start.length(); i++) {
                 if (start.charAt(i) == 'R') {
@@ -37,9 +39,10 @@ public class _777 {
                     return false;
                 }
             }
-            //check L from left, but check on the end string first,
-            //this means if L is in a more left index in start string than end string, it's impossible for start to match end
-            //test12 illustrates this case well
+            // check L from left, but check on the end string first,
+            // this means if L is in a more left index in start string than end string, it's
+            // impossible for start to match end
+            // test12 illustrates this case well
             count = 0;
             for (int i = 0; i < end.length(); i++) {
                 if (end.charAt(i) == 'L') {
@@ -54,6 +57,5 @@ public class _777 {
             }
             return true;
         }
-
     }
 }

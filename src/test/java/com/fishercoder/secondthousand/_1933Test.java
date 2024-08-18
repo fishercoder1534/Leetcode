@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1933;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1933Test {
     private _1933.Solution1 solution1;
@@ -28,5 +28,4 @@ public class _1933Test {
     public void test3() {
         assertEquals(false, solution1.isDecomposable("011100022233"));
     }
-
 }

@@ -3,7 +3,7 @@ package com.fishercoder.solutions.secondthousand;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/*
  * 1324. Print Words Vertically
  *
  * Given a string s. Return all the words vertically in the same order in which they appear in s.

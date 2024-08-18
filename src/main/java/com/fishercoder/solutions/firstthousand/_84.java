@@ -6,7 +6,7 @@ public class _84 {
 
     public static class Solution1 {
 
-        /**
+        /*
          * credit: https://leetcode.com/articles/largest-rectangle-histogram/#approach-5-using-stack-accepted
          * and https://discuss.leetcode.com/topic/7599/o-n-stack-based-java-solution
          */
@@ -27,5 +27,4 @@ public class _84 {
             return maxArea;
         }
     }
-
 }

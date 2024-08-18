@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -30,7 +29,8 @@ public class _1258 {
             return list;
         }
 
-        private List<String> findAllSynonymForThisWord(String sentence, int i, Map<String, Set<String>> map) {
+        private List<String> findAllSynonymForThisWord(
+                String sentence, int i, Map<String, Set<String>> map) {
             String[] words = sentence.split(" ");
             List<String> list = new ArrayList<>();
             Set<String> synonyms = map.get(words[i]);
@@ -50,7 +50,8 @@ public class _1258 {
             return sb.substring(0, sb.length() - 1);
         }
 
-        private Map<String, Set<String>> buildSynonymDict(String[] words, List<List<String>> synonyms) {
+        private Map<String, Set<String>> buildSynonymDict(
+                String[] words, List<List<String>> synonyms) {
             Map<String, Set<String>> map = new HashMap<>();
             for (String key : words) {
                 if (!map.containsKey(key)) {
@@ -69,6 +70,5 @@ public class _1258 {
             }
             return map;
         }
-
     }
 }

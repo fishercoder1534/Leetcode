@@ -17,7 +17,7 @@ public class _485 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Apply the sliding window template, i.e. two pointer technique.
          */
         public int findMaxConsecutiveOnes(int[] nums) {

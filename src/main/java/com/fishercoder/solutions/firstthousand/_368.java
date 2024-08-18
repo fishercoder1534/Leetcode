@@ -7,7 +7,7 @@ import java.util.List;
 public class _368 {
 
     public static class Solution1 {
-        /**
+        /*
          * DP solution, credit: https://leetcode.com/problems/largest-divisible-subset/solution/ Solution 1
          */
         public List<Integer> largestDivisibleSubset(int[] nums) {
@@ -42,7 +42,7 @@ public class _368 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/49652/classic-dp-solution-similar-to-lis-o-n-2
          */
         public List<Integer> largestDivisibleSubset(int[] nums) {
@@ -76,5 +76,4 @@ public class _368 {
             return res;
         }
     }
-
 }

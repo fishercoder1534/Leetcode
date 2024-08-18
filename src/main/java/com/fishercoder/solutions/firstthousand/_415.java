@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _415 {
 
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution on 10/14/2021.
          */
         public String addStrings(String num1, String num2) {
@@ -32,7 +32,7 @@ public class _415 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This is an optimized version of Solution1, on LeetCode, this version beats 100% while Solution1 beats only 67%.
          */
         public String addStrings(String num1, String num2) {
@@ -56,5 +56,4 @@ public class _415 {
             return sb.reverse().toString();
         }
     }
-
 }

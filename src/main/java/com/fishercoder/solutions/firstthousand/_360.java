@@ -5,8 +5,9 @@ import java.util.Arrays;
 public class _360 {
 
     public static class Solution1 {
-        //credit: https://discuss.leetcode.com/topic/48424/java-o-n-incredibly-short-yet-easy-to-understand-ac-solution
-        //in sum, only two cases: when a >= 0 or when a < 0, this simplifies logic
+        // credit:
+        // https://discuss.leetcode.com/topic/48424/java-o-n-incredibly-short-yet-easy-to-understand-ac-solution
+        // in sum, only two cases: when a >= 0 or when a < 0, this simplifies logic
         public int[] sortTransformedArray(int[] nums, int a, int b, int c) {
             int n = nums.length;
             int[] sorted = new int[n];
@@ -16,12 +17,14 @@ public class _360 {
             while (i <= j) {
                 if (a >= 0) {
                     sorted[index--] =
-                            function(nums[i], a, b, c) >= function(nums[j], a, b, c) ? function(
-                                    nums[i++], a, b, c) : function(nums[j--], a, b, c);
+                            function(nums[i], a, b, c) >= function(nums[j], a, b, c)
+                                    ? function(nums[i++], a, b, c)
+                                    : function(nums[j--], a, b, c);
                 } else {
                     sorted[index++] =
-                            function(nums[i], a, b, c) >= function(nums[j], a, b, c) ? function(
-                                    nums[j--], a, b, c) : function(nums[i++], a, b, c);
+                            function(nums[i], a, b, c) >= function(nums[j], a, b, c)
+                                    ? function(nums[j--], a, b, c)
+                                    : function(nums[i++], a, b, c);
                 }
             }
             return sorted;
@@ -46,5 +49,4 @@ public class _360 {
             return a * (num * num) + b * num + c;
         }
     }
-
 }

@@ -15,11 +15,13 @@ public class _1985Test {
 
     @org.junit.jupiter.api.Test
     public void test1() {
-        Assertions.assertEquals("3", solution1.kthLargestNumber(new String[]{"3", "6", "7", "10"}, 4));
+        Assertions.assertEquals(
+                "3", solution1.kthLargestNumber(new String[] {"3", "6", "7", "10"}, 4));
     }
 
     @Test
     public void test2() {
-        Assertions.assertEquals("2", solution1.kthLargestNumber(new String[]{"2", "21", "12", "1"}, 3));
+        Assertions.assertEquals(
+                "2", solution1.kthLargestNumber(new String[] {"2", "21", "12", "1"}, 3));
     }
 }

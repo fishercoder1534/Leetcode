@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._169;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _169Test {
     private _169.Solution1 solution1;
@@ -20,9 +20,11 @@ public class _169Test {
 
     @Test
     public void test1() {
-        assertEquals(1, solution1.majorityElement(new int[]{1, 3, 1, 1, 4, 1, 1, 5, 1, 1, 6, 2, 2}));
-        assertEquals(1, solution2.majorityElement(new int[]{1, 3, 1, 1, 4, 1, 1, 5, 1, 1, 6, 2, 2}));
-        assertEquals(1, solution3.majorityElement(new int[]{1, 3, 1, 1, 4, 1, 1, 5, 1, 1, 6, 2, 2}));
+        assertEquals(
+                1, solution1.majorityElement(new int[] {1, 3, 1, 1, 4, 1, 1, 5, 1, 1, 6, 2, 2}));
+        assertEquals(
+                1, solution2.majorityElement(new int[] {1, 3, 1, 1, 4, 1, 1, 5, 1, 1, 6, 2, 2}));
+        assertEquals(
+                1, solution3.majorityElement(new int[] {1, 3, 1, 1, 4, 1, 1, 5, 1, 1, 6, 2, 2}));
     }
-
 }

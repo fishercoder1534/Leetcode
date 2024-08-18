@@ -20,19 +20,20 @@ public class _773 {
             q.offer(start);
             Set<String> visited = new HashSet<>();
             visited.add(start);
-            //since there are only 6 cells, we just use 0 through 5 to represent the positions:
-            //0, 1, 2
-            //3, 4, 5
-            //the swap positions, go from left to right, top to bottom
-            //swap[index] means the possible positions to swap when '0' is at position index
-            int[][] swap = new int[][]{
-                    {1, 3},
-                    {0, 4, 2},
-                    {1, 5},
-                    {0, 4},
-                    {3, 1, 5},
-                    {2, 4}
-            };
+            // since there are only 6 cells, we just use 0 through 5 to represent the positions:
+            // 0, 1, 2
+            // 3, 4, 5
+            // the swap positions, go from left to right, top to bottom
+            // swap[index] means the possible positions to swap when '0' is at position index
+            int[][] swap =
+                    new int[][] {
+                        {1, 3},
+                        {0, 4, 2},
+                        {1, 5},
+                        {0, 4},
+                        {3, 1, 5},
+                        {2, 4}
+                    };
             int level = 0;
             while (!q.isEmpty()) {
                 int size = q.size();
@@ -46,7 +47,7 @@ public class _773 {
                         sb.setLength(0);
                         sb.append(curr);
 
-                        //swap
+                        // swap
                         sb.setCharAt(index, curr.charAt(swapIndex));
                         sb.setCharAt(swapIndex, '0');
 

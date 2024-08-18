@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1252 {
     public static class Solution1 {
-        /**
+        /*
          * Time: O(m*n + k) where k is the length of indices
          * Space: O(m*n)
          */
@@ -37,7 +37,7 @@ public class _1252 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Time: O(m*n + k) where k is the length of indices
          * Space: O(m + n)
          */

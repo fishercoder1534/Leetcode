@@ -25,7 +25,9 @@ public class _1456 {
             left = 0;
             for (; right < s.length(); right++, left++) {
                 char leftChar = s.charAt(left);
-                if (set.contains(leftChar) && vowels.containsKey(leftChar) && vowels.get(leftChar) > 0) {
+                if (set.contains(leftChar)
+                        && vowels.containsKey(leftChar)
+                        && vowels.get(leftChar) > 0) {
                     vowels.put(leftChar, vowels.get(leftChar) - 1);
                 }
                 char rightChar = s.charAt(right);

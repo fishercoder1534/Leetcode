@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.BinaryMatrix;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -15,7 +14,7 @@ public class _1428 {
             List<int[]> list = new ArrayList();
             for (int i = 0; i < m; i++) {
                 int leftMostColumn = binarySearch(i, binaryMatrix, n - 1);
-                list.add(new int[]{i, leftMostColumn});
+                list.add(new int[] {i, leftMostColumn});
             }
             Collections.sort(list, (a, b) -> a[1] - b[1]);
             return list.get(0)[1] == 101 ? -1 : list.get(0)[1];

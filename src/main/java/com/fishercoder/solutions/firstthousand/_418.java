@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _418 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/62455/21ms-18-lines-java-solution
          * <p>
          * 1. String s = String.join(" ", sentence) + " " ;. This line gives us a formatted sentence to be put to our screen.

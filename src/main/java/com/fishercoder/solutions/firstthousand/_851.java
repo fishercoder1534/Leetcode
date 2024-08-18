@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class _851 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution. Practice does make perfect!
          * Topological sort template does work well for this:
          * 1. make variable names as descriptive as possible to help sort out your logic;
@@ -42,7 +42,7 @@ public class _851 {
                     int quietnessForRicherPerson = quiet[result[curr]];
                     if (quietnessForRicherPerson < quietnessForLessRichPerson) {
                         result[v] = result[curr];
-                        //remember to update the quietness value for this node as well
+                        // remember to update the quietness value for this node as well
                         quiet[v] = quiet[curr];
                     }
                     indegree[v]--;

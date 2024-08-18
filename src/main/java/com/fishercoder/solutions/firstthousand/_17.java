@@ -12,9 +12,12 @@ public class _17 {
                 return result;
             }
 
-            String[] digits2Letters = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+            String[] digits2Letters =
+                    new String[] {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
-            result.add("");//this line is important, otherwise result is empty and Java will default it to an empty String
+            result.add(
+                    ""); // this line is important, otherwise result is empty and Java will default
+            // it to an empty String
             for (int i = 0; i < digits.length(); i++) {
                 result = combine(digits2Letters[digits.charAt(i) - '0'], result);
             }
@@ -26,7 +29,8 @@ public class _17 {
             List<String> newResult = new ArrayList();
 
             for (int i = 0; i < letters.length(); i++) {
-                //the order of the two for loops doesn't matter, you could swap them and it still works.
+                // the order of the two for loops doesn't matter, you could swap them and it still
+                // works.
                 for (String str : result) {
                     newResult.add(str + letters.charAt(i));
                 }
@@ -36,7 +40,7 @@ public class _17 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * It's recommended to use recursion to solve this problem, I got this feedback from a Meta interviewer on 6/17/2024 during the mock interview.
          * My completely original solution on 10/11/2021, no backtracking involved.
          */
@@ -45,12 +49,14 @@ public class _17 {
             if (digits.length() == 0 || digits.equals("")) {
                 return ans;
             }
-            String[] options = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+            String[] options =
+                    new String[] {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
             ans.add("");
             return recursion(ans, options, digits, 0);
         }
 
-        private List<String> recursion(List<String> ans, String[] options, String digits, int index) {
+        private List<String> recursion(
+                List<String> ans, String[] options, String digits, int index) {
             if (index >= digits.length()) {
                 return ans;
             }
@@ -66,7 +72,7 @@ public class _17 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My completely original solution on 5/9/2022, no backtracking involved or helper method involved.
          */
         public List<String> letterCombinations(String digits) {
@@ -74,7 +80,8 @@ public class _17 {
             if (digits.equals("")) {
                 return ans;
             }
-            String[] buttons = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+            String[] buttons =
+                    new String[] {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
             ans.add("");
             for (char c : digits.toCharArray()) {
                 String button = buttons[Integer.parseInt(c + "")];

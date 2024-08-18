@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2103;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2103Test {
     private _2103.Solution1 solution1;
@@ -20,5 +20,4 @@ public class _2103Test {
         expected = 1;
         assertEquals(expected, solution1.countPoints("B0B6G0R6R0R6G9"));
     }
-
 }

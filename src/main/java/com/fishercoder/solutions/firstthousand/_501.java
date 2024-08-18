@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -13,7 +12,7 @@ public class _501 {
 
     public static class Solution1 {
         public int[] findMode(TreeNode root) {
-            int[] result = new int[]{};
+            int[] result = new int[] {};
             Map<Integer, Integer> map = new HashMap();
             if (root == null) {
                 return result;
@@ -89,5 +88,4 @@ public class _501 {
             dfs(root.right, map);
         }
     }
-
 }

@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -54,7 +53,8 @@ public class _988 {
             return reversed.get(0);
         }
 
-        private void dfs(TreeNode root, String path, List<String> paths, Map<Integer, Character> map) {
+        private void dfs(
+                TreeNode root, String path, List<String> paths, Map<Integer, Character> map) {
             if (root == null) {
                 return;
             }
