@@ -69,4 +69,21 @@ public class _264 {
             return -1;
         }
     }
+
+    public static class Solution3 {
+
+        public int nthUglyNumber(int n) {
+            TreeSet<Long> treeSet = new TreeSet<>();
+            treeSet.add(1L);
+            int[] arr = new int[]{2, 3, 5};
+            long currentUgly = 0;
+            for (int i = 0; i < n; i++) {
+                currentUgly = treeSet.pollFirst();
+                treeSet.add(currentUgly * arr[0]);
+                treeSet.add(currentUgly * arr[1]);
+                treeSet.add(currentUgly * arr[2]);
+            }
+            return (int) currentUgly;
+        }
+    }
 }
