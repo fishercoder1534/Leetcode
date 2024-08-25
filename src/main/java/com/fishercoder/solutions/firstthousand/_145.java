@@ -72,8 +72,7 @@ public class _145 {
          * recursive solution is trivial.
          */
         public List<Integer> postorderTraversal(TreeNode root) {
-            List<Integer> result = new ArrayList();
-            return post(root, result);
+            return post(root, new ArrayList());
         }
 
         List<Integer> post(TreeNode root, List<Integer> result) {
