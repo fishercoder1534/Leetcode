@@ -8,25 +8,18 @@ import java.util.List;
 public class _590 {
     public static class Solution1 {
         public List<Integer> postorder(Node root) {
-            List<Integer> result = new ArrayList<>();
-            if (root == null) {
-                return result;
-            }
-            dfs(root, result);
-            result.add(root.val);
-            return result;
+            return post(root, new ArrayList<>());
         }
 
-        private void dfs(Node root, List<Integer> result) {
+        private List<Integer> post(Node root, List<Integer> list) {
             if (root == null) {
-                return;
+                return list;
             }
-            if (root.children.size() > 0) {
-                for (Node child : root.children) {
-                    dfs(child, result);
-                    result.add(child.val);
-                }
+            for (Node child : root.children) {
+                post(child, list);
             }
+            list.add(root.val);
+            return list;
         }
     }
 }
