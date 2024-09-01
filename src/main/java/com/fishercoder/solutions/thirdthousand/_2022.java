@@ -3,8 +3,7 @@ package com.fishercoder.solutions.thirdthousand;
 public class _2022 {
     public static class Solution1 {
         public int[][] construct2DArray(int[] original, int m, int n) {
-            int size = original.length;
-            if (m * n != size) {
+            if (m * n != original.length) {
                 return new int[][]{};
             }
             int[][] ans = new int[m][n];
