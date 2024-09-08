@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _1170 {
     public static class Solution1 {
-        /**
+        /*
          * Use simple iteration when finding counts
          * Time: O(n^m) where m is the size of queries and n is the size of words
          * Space: O(max(m, n) where m is the size of queries and n is the size of words)
@@ -57,7 +57,7 @@ public class _1170 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Use binary search when finding counts
          * Time: O(n^logn) where m is the size of queries and n is the size of words
          * Space: O(max(m, n) where m is the size of queries and n is the size of words)

@@ -45,7 +45,8 @@ public class _151 {
                 }
                 j = i + 1;
 
-                // index j keeps track of non-space characters and gives index of the first occurrence of space after a non-space character
+                // index j keeps track of non-space characters and gives index of the first
+                // occurrence of space after a non-space character
                 while (j < len && s.charAt(j) != ' ') {
                     j++;
                 }

@@ -1,14 +1,13 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._654;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _654Test {
     private static int[] nums;
@@ -24,7 +23,7 @@ public class _654Test {
 
     @Test
     public void test1() {
-        nums = new int[]{3, 2, 1, 6, 0, 5};
+        nums = new int[] {3, 2, 1, 6, 0, 5};
         expected = TreeUtils.constructBinaryTree(Arrays.asList(6, 3, 5, null, 2, 0, null, null, 1));
         assertEquals(expected, solution1.constructMaximumBinaryTree(nums));
         assertEquals(expected, solution2.constructMaximumBinaryTree(nums));

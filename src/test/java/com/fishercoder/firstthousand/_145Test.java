@@ -1,17 +1,16 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._145;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _145Test {
     private _145.Solution1 solution1;
@@ -29,7 +28,10 @@ public class _145Test {
 
     @Test
     public void test1() {
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, null, 5, 6, null, 7, null, null, null, null, 8, 9));
+        root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                1, 2, 3, 4, null, 5, 6, null, 7, null, null, null, null, 8, 9));
         TreeUtils.printBinaryTree(root);
         CommonUtils.printList(solution1.postorderTraversal(root));
         CommonUtils.printList(solution2.postorderTraversal(root));

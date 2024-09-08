@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _546 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/articles/remove-boxes/#approach-2-using-dp-with-memorizationaccepted
          * <p>
          * For an entry in dp[l][r][k], l represents the starting index of the subarray,
@@ -29,8 +29,11 @@ public class _546 {
             dp[l][r][k] = calculatePoints(boxes, dp, l, r - 1, 0) + (k + 1) * (k + 1);
             for (int i = l; i < r; i++) {
                 if (boxes[i] == boxes[r]) {
-                    dp[l][r][k] = Math.max(dp[l][r][k],
-                            calculatePoints(boxes, dp, l, i, k + 1) + calculatePoints(boxes, dp, i + 1, r - 1, 0));
+                    dp[l][r][k] =
+                            Math.max(
+                                    dp[l][r][k],
+                                    calculatePoints(boxes, dp, l, i, k + 1)
+                                            + calculatePoints(boxes, dp, i + 1, r - 1, 0));
                 }
             }
             return dp[l][r][k];

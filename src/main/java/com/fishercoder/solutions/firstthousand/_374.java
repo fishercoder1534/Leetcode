@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _374 {
     public static class Solution1 {
-        /**
+        /*
          * The core problem/trouble to solve this problem is to figure out the problem description: this
          * API: guess(int num) means to take your guess num and let you know if your guessed num is
          * bigger or smaller than the answer. That's why if num > target, it returns -1 which means the
@@ -26,7 +26,7 @@ public class _374 {
             return guess(left) == 0 ? left : right;
         }
 
-        /**
+        /*
          * This is a fake guess method that I wrote just to make the compiler happy,
          * 7 is just a completely random value.
          */
@@ -40,5 +40,4 @@ public class _374 {
             }
         }
     }
-
 }

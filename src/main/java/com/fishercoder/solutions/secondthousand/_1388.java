@@ -18,10 +18,12 @@ public class _1388 {
                         dp[i][j] = Math.max(dp[i][j], dp[i][k - 1] + dp[k][j]);
                     }
                     for (int k = i + 1; k < j; k += 3) {
-                        dp[i][j] = Math.max(dp[i][j],
-                                (i + 1 <= k - 1 ? dp[i + 1][k - 1] : 0)
-                                        + b[k] + (k + 1 <= j - 1 ? dp[k + 1][j - 1] : 0)
-                        );
+                        dp[i][j] =
+                                Math.max(
+                                        dp[i][j],
+                                        (i + 1 <= k - 1 ? dp[i + 1][k - 1] : 0)
+                                                + b[k]
+                                                + (k + 1 <= j - 1 ? dp[k + 1][j - 1] : 0));
                     }
                 }
             }

@@ -31,7 +31,7 @@ public class _409 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 10/14/2021.
          */
         public int longestPalindrome(String s) {

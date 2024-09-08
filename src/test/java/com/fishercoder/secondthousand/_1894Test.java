@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1894;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1894Test {
     private _1894.Solution1 solution1;
@@ -17,8 +17,7 @@ public class _1894Test {
 
     @Test
     public void test1() {
-        chalk = new int[]{3, 4, 1, 2};
+        chalk = new int[] {3, 4, 1, 2};
         assertEquals(1, solution1.chalkReplacer(chalk, 25));
     }
-
 }

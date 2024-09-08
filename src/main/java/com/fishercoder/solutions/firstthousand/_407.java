@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class _407 {
     public static class Solution1 {
-        /**
+        /*
          * Reference: https://discuss.leetcode.com/topic/60418/java-solution-using-priorityqueue
          */
         public class Cell {
@@ -46,9 +46,10 @@ public class _407 {
             }
 
             // from the borders, pick the shortest cell visited and check its neighbors:
-            // if the neighbor is shorter, collect the water it can trap and update its height as its height plus the water trapped
+            // if the neighbor is shorter, collect the water it can trap and update its height as
+            // its height plus the water trapped
             // add all its neighbors to the queue.
-            int[][] dirs = new int[][]{{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+            int[][] dirs = new int[][] {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
             int res = 0;
             while (!queue.isEmpty()) {
                 Cell cell = queue.poll();

@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _209 {
 
     public static class Solution1 {
-        /**
+        /*
          * A classic sliding window problem/solution.
          */
         public int minSubArrayLen(int target, int[] nums) {

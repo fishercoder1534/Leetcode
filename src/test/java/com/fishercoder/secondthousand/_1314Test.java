@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.secondthousand._1314;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1314Test {
     private _1314.Solution1 solution1;
@@ -20,32 +20,36 @@ public class _1314Test {
 
     @Test
     public void test1() {
-        mat = new int[][]{
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
-        };
-        expected = new int[][]{
-                {12, 21, 16},
-                {27, 45, 33},
-                {24, 39, 28}
-        };
+        mat =
+                new int[][] {
+                    {1, 2, 3},
+                    {4, 5, 6},
+                    {7, 8, 9}
+                };
+        expected =
+                new int[][] {
+                    {12, 21, 16},
+                    {27, 45, 33},
+                    {24, 39, 28}
+                };
         assertArrayEquals(expected, solution1.matrixBlockSum(mat, 1));
         assertArrayEquals(expected, solution2.matrixBlockSum(mat, 1));
     }
 
     @Test
     public void test2() {
-        mat = new int[][]{
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
-        };
-        expected = new int[][]{
-                {45, 45, 45},
-                {45, 45, 45},
-                {45, 45, 45}
-        };
+        mat =
+                new int[][] {
+                    {1, 2, 3},
+                    {4, 5, 6},
+                    {7, 8, 9}
+                };
+        expected =
+                new int[][] {
+                    {45, 45, 45},
+                    {45, 45, 45},
+                    {45, 45, 45}
+                };
         assertArrayEquals(expected, solution1.matrixBlockSum(mat, 2));
         assertArrayEquals(expected, solution2.matrixBlockSum(mat, 2));
     }

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class _296 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/best-meeting-point/solution/ Approach 3
          */
         public int minTotalDistance(int[][] grid) {
@@ -35,6 +35,5 @@ public class _296 {
             }
             return distance;
         }
-
     }
 }

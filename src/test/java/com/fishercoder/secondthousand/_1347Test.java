@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1347;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1347Test {
     private _1347.Solution1 solution1;
@@ -38,5 +38,4 @@ public class _1347Test {
     public void test5() {
         assertEquals(4, solution1.minSteps("friend", "family"));
     }
-
 }

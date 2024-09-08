@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._8;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _8Test {
     private _8.Solution1 solution1;
@@ -58,5 +58,4 @@ public class _8Test {
     public void test9() {
         assertEquals(2147483647, solution1.myAtoi("9223372036854775809"));
     }
-
 }

@@ -1,13 +1,12 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class _234 {
     public static class Solution1 {
-        /**
+        /*
          * O(n) time
          * O(1) space
          */
@@ -48,7 +47,7 @@ public class _234 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * O(n) time
          * O(n) space
          */
@@ -81,7 +80,7 @@ public class _234 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * O(n) time
          * O(n) space
          */
@@ -99,5 +98,4 @@ public class _234 {
             return true;
         }
     }
-
 }

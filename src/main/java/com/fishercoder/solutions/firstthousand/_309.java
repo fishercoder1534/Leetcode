@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _309 {
     public static class Solution1 {
-        /**
+        /*
          * The series of problems are typical dp. The key for dp is to find the variables to
          * represent the states and deduce the transition function.
          *
@@ -66,8 +66,8 @@ public class _309 {
     }
 
     public static class Solution2 {
-        /**Surprisingly, this solution is even much faster than the one above provided by the author.*/
-        /**
+        /*Surprisingly, this solution is even much faster than the one above provided by the author.*/
+        /*
          * Here I share my no brainer weapon when it comes to this kind of problems.
          *
          * 1. Define States

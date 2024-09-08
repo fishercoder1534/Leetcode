@@ -1,14 +1,13 @@
 package com.fishercoder.firstthousand;
 
-import com.fishercoder.solutions.firstthousand._139;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.fishercoder.solutions.firstthousand._139;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _139Test {
     private _139.Solution1 solution1;
@@ -47,23 +46,61 @@ public class _139Test {
 
     @Test
     public void test4() {
-        s = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab";
-        wordDict = new ArrayList<>(Arrays.asList("a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"));
+        s =
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab";
+        wordDict =
+                new ArrayList<>(
+                        Arrays.asList(
+                                "a",
+                                "aa",
+                                "aaa",
+                                "aaaa",
+                                "aaaaa",
+                                "aaaaaa",
+                                "aaaaaaa",
+                                "aaaaaaaa",
+                                "aaaaaaaaa",
+                                "aaaaaaaaaa"));
         assertEquals(false, solution1.wordBreak(s, wordDict));
     }
 
     @Test
     public void test5() {
-        s = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab";
-        wordDict = new ArrayList<>(Arrays.asList("a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"));
+        s =
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab";
+        wordDict =
+                new ArrayList<>(
+                        Arrays.asList(
+                                "a",
+                                "aa",
+                                "aaa",
+                                "aaaa",
+                                "aaaaa",
+                                "aaaaaa",
+                                "aaaaaaa",
+                                "aaaaaaaa",
+                                "aaaaaaaaa",
+                                "aaaaaaaaaa"));
         assertEquals(false, solution2.wordBreak(s, wordDict));
     }
 
     @Test
     public void test6() {
-        s = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab";
-        wordDict = new ArrayList<>(Arrays.asList("a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"));
+        s =
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab";
+        wordDict =
+                new ArrayList<>(
+                        Arrays.asList(
+                                "a",
+                                "aa",
+                                "aaa",
+                                "aaaa",
+                                "aaaaa",
+                                "aaaaaa",
+                                "aaaaaaa",
+                                "aaaaaaaa",
+                                "aaaaaaaaa",
+                                "aaaaaaaaaa"));
         assertEquals(false, solution3.wordBreak(s, wordDict));
     }
-
 }

@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class _740 {
     public static class Solution1 {
-        /**
+        /*
          * Since the number is within range [1, 10000], we can build another array:
          * each number in the array denotes the total sum of this number that appears in this array
          * and
@@ -38,7 +38,7 @@ public class _740 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * A simplified version using treemap instead of an array, credit: https://leetcode.com/problems/delete-and-earn/discuss/109895/JavaC++-Clean-Code-with-Explanation/111626
          */
         public int deleteAndEarn(int[] nums) {
@@ -63,8 +63,9 @@ public class _740 {
     }
 
     public static class Solution3 {
-        //use DP, this is basically the same code as https://github.com/fishercoder1534/Leetcode/blob/master/src/main/java/com/fishercoder/solutions/_3186.java
-        //except here it's current - 1, in the above it's current - 2
+        // use DP, this is basically the same code as
+        // https://github.com/fishercoder1534/Leetcode/blob/master/src/main/java/com/fishercoder/solutions/_3186.java
+        // except here it's current - 1, in the above it's current - 2
         public int deleteAndEarn(int[] nums) {
             TreeMap<Integer, Integer> treeMap = new TreeMap<>();
             for (int num : nums) {
@@ -77,7 +78,8 @@ public class _740 {
                 int current = sortedList.get(i);
                 int currentTotal = current * treeMap.get(current);
                 int j = i - 1;
-                //we keep going to the left of the sorted list until we find a value that's not in the range of current - 1 if possible
+                // we keep going to the left of the sorted list until we find a value that's not in
+                // the range of current - 1 if possible
                 while (j >= 0 && sortedList.get(j) >= current - 1) {
                     j--;
                 }

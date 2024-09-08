@@ -14,5 +14,4 @@ public class _561 {
             return sum;
         }
     }
-
 }

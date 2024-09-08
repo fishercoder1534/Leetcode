@@ -1,9 +1,9 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1352;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1352Test {
     private _1352.Solution1.ProductOfNumbers productOfNumbers;
@@ -22,5 +22,4 @@ public class _1352Test {
         productOfNumbers.add(8);
         assertEquals(32, productOfNumbers.getProduct(2));
     }
-
 }

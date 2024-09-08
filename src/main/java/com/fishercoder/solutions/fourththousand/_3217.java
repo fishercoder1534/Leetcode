@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.fourththousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

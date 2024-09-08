@@ -1,10 +1,10 @@
 package com.fishercoder.fourththousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.fourththousand._3234;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3234Test {
     private _3234.Solution1 solution1;
@@ -18,5 +18,4 @@ public class _3234Test {
     public void test1() {
         assertEquals(5, solution1.numberOfSubstrings("00011"));
     }
-
 }

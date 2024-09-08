@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2309;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2309Test {
     private _2309.Solution1 solution1;
@@ -23,5 +23,4 @@ public class _2309Test {
     public void test2() {
         assertEquals("R", solution1.greatestLetter("arRAzFif"));
     }
-
 }

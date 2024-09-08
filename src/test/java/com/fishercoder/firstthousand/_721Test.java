@@ -1,12 +1,11 @@
 package com.fishercoder.firstthousand;
 
 import com.fishercoder.solutions.firstthousand._721;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _721Test {
     private _721.Solution1 solution1;
@@ -23,9 +22,12 @@ public class _721Test {
     @Test
     public void test1() throws Exception {
         accounts = new ArrayList<>();
-        List<String> account1 = new ArrayList<>(Arrays.asList("John", "johnsmith@mail.com", "john00@mail.com"));
+        List<String> account1 =
+                new ArrayList<>(Arrays.asList("John", "johnsmith@mail.com", "john00@mail.com"));
         List<String> account2 = new ArrayList<>(Arrays.asList("John", "johnnybravo@mail.com"));
-        List<String> account3 = new ArrayList<>(Arrays.asList("John", "johnsmith@mail.com", "john_newyork@mail.com"));
+        List<String> account3 =
+                new ArrayList<>(
+                        Arrays.asList("John", "johnsmith@mail.com", "john_newyork@mail.com"));
         List<String> account4 = new ArrayList<>(Arrays.asList("Mary", "mary@mail.com"));
         accounts.add(account1);
         accounts.add(account2);
@@ -34,7 +36,13 @@ public class _721Test {
 
         expected = new ArrayList<>();
         List<String> expected1 = new ArrayList<>(Arrays.asList("Mary", "mary@mail.com"));
-        List<String> expected2 = new ArrayList<>(Arrays.asList("John", "john00@mail.com", "john_newyork@mail.com", "johnsmith@mail.com"));
+        List<String> expected2 =
+                new ArrayList<>(
+                        Arrays.asList(
+                                "John",
+                                "john00@mail.com",
+                                "john_newyork@mail.com",
+                                "johnsmith@mail.com"));
         List<String> expected3 = new ArrayList<>(Arrays.asList("John", "johnnybravo@mail.com"));
         expected.add(expected1);
         expected.add(expected2);
@@ -44,8 +52,9 @@ public class _721Test {
         assertEqualsIgnoreOrdering(expected, solution2.accountsMerge(accounts));
     }
 
-    private void assertEqualsIgnoreOrdering(List<List<String>> expected, List<List<String>> actual) throws Exception {
-        //TODO: implement this method
+    private void assertEqualsIgnoreOrdering(List<List<String>> expected, List<List<String>> actual)
+            throws Exception {
+        // TODO: implement this method
         if (true) {
             return;
         } else {
@@ -56,11 +65,18 @@ public class _721Test {
     @Test
     public void test2() throws Exception {
         accounts = new ArrayList<>();
-        List<String> account1 = new ArrayList<>(Arrays.asList("Alex", "Alex5@m.co", "Alex4@m.co", "Alex0@m.co"));
-        List<String> account2 = new ArrayList<>(Arrays.asList("Ethan", "Ethan3@m.co", "Ethan3@m.co", "Ethan0@m.co"));
-        List<String> account3 = new ArrayList<>(Arrays.asList("Kevin", "Kevin4@m.co", "Kevin2@m.co", "Kevin2@m.co"));
-        List<String> account4 = new ArrayList<>(Arrays.asList("Gabe", "Gabe0@m.co", "Gabe3@m.co", "Gabe2@m.co"));
-        List<String> account5 = new ArrayList<>(Arrays.asList("Gabe", "Gabe3@m.co", "Gabe4@m.co", "Gabe2@m.co"));
+        List<String> account1 =
+                new ArrayList<>(Arrays.asList("Alex", "Alex5@m.co", "Alex4@m.co", "Alex0@m.co"));
+        List<String> account2 =
+                new ArrayList<>(
+                        Arrays.asList("Ethan", "Ethan3@m.co", "Ethan3@m.co", "Ethan0@m.co"));
+        List<String> account3 =
+                new ArrayList<>(
+                        Arrays.asList("Kevin", "Kevin4@m.co", "Kevin2@m.co", "Kevin2@m.co"));
+        List<String> account4 =
+                new ArrayList<>(Arrays.asList("Gabe", "Gabe0@m.co", "Gabe3@m.co", "Gabe2@m.co"));
+        List<String> account5 =
+                new ArrayList<>(Arrays.asList("Gabe", "Gabe3@m.co", "Gabe4@m.co", "Gabe2@m.co"));
         accounts.add(account1);
         accounts.add(account2);
         accounts.add(account3);
@@ -68,10 +84,16 @@ public class _721Test {
         accounts.add(account5);
 
         expected = new ArrayList<>();
-        List<String> expected1 = new ArrayList<>(Arrays.asList("Alex", "Alex0@m.co", "Alex4@m.co", "Alex5@m.co"));
-        List<String> expected2 = new ArrayList<>(Arrays.asList("Kevin", "Kevin2@m.co", "Kevin4@m.co"));
-        List<String> expected3 = new ArrayList<>(Arrays.asList("Ethan", "Ethan0@m.co", "Ethan3@m.co"));
-        List<String> expected4 = new ArrayList<>(Arrays.asList("Gabe", "Gabe0@m.co", "Gabe2@m.co", "Gabe3@m.co", "Gabe4@m.co"));
+        List<String> expected1 =
+                new ArrayList<>(Arrays.asList("Alex", "Alex0@m.co", "Alex4@m.co", "Alex5@m.co"));
+        List<String> expected2 =
+                new ArrayList<>(Arrays.asList("Kevin", "Kevin2@m.co", "Kevin4@m.co"));
+        List<String> expected3 =
+                new ArrayList<>(Arrays.asList("Ethan", "Ethan0@m.co", "Ethan3@m.co"));
+        List<String> expected4 =
+                new ArrayList<>(
+                        Arrays.asList(
+                                "Gabe", "Gabe0@m.co", "Gabe2@m.co", "Gabe3@m.co", "Gabe4@m.co"));
         expected.add(expected1);
         expected.add(expected2);
         expected.add(expected3);
@@ -84,11 +106,16 @@ public class _721Test {
     @Test
     public void test3() throws Exception {
         accounts = new ArrayList<>();
-        List<String> account1 = new ArrayList<>(Arrays.asList("David", "David0@m.co", "David1@m.co"));
-        List<String> account2 = new ArrayList<>(Arrays.asList("David", "David3@m.co", "David4@m.co"));
-        List<String> account3 = new ArrayList<>(Arrays.asList("David", "David4@m.co", "David5@m.co"));
-        List<String> account4 = new ArrayList<>(Arrays.asList("David", "David2@m.co", "David3@m.co"));
-        List<String> account5 = new ArrayList<>(Arrays.asList("David", "David1@m.co", "David2@m.co"));
+        List<String> account1 =
+                new ArrayList<>(Arrays.asList("David", "David0@m.co", "David1@m.co"));
+        List<String> account2 =
+                new ArrayList<>(Arrays.asList("David", "David3@m.co", "David4@m.co"));
+        List<String> account3 =
+                new ArrayList<>(Arrays.asList("David", "David4@m.co", "David5@m.co"));
+        List<String> account4 =
+                new ArrayList<>(Arrays.asList("David", "David2@m.co", "David3@m.co"));
+        List<String> account5 =
+                new ArrayList<>(Arrays.asList("David", "David1@m.co", "David2@m.co"));
         accounts.add(account1);
         accounts.add(account2);
         accounts.add(account3);
@@ -96,11 +123,19 @@ public class _721Test {
         accounts.add(account5);
 
         expected = new ArrayList<>();
-        List<String> expected1 = new ArrayList<>(Arrays.asList("David", "David0@m.co", "David1@m.co", "David2@m.co", "David3@m.co", "David4@m.co", "David5@m.co"));
+        List<String> expected1 =
+                new ArrayList<>(
+                        Arrays.asList(
+                                "David",
+                                "David0@m.co",
+                                "David1@m.co",
+                                "David2@m.co",
+                                "David3@m.co",
+                                "David4@m.co",
+                                "David5@m.co"));
         expected.add(expected1);
 
         assertEqualsIgnoreOrdering(expected, solution1.accountsMerge(accounts));
         assertEqualsIgnoreOrdering(expected, solution2.accountsMerge(accounts));
     }
-
 }

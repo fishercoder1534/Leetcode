@@ -1,14 +1,13 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class _230 {
 
     public static class Solution1 {
-        /**
+        /*
          * Inorder traversal gives the natural ordering of a BST, no need to sort.
          */
         public int kthSmallest(TreeNode root, int k) {
@@ -29,5 +28,4 @@ public class _230 {
             }
         }
     }
-
 }

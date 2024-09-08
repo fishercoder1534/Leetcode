@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'checkstyle'
+    id 'com.diffplug.spotless' version '6.25.0'
 }
 
 group = 'com.fishercoder'
@@ -53,4 +54,19 @@ tasks.withType(Test).configureEach {
 checkstyle {
     toolVersion = '6.17'
     config = rootProject.resources.text.fromFile('fishercoder_checkstyle.xml')
+}
+
+spotless {
+    java {
+        encoding 'UTF-8'
+        target fileTree(projectDir) {
+            include '**/src/**/*.java'
+            exclude '**/build/**'
+        }
+        importOrder '\\#', '', '*'
+        removeUnusedImports()
+        googleJavaFormat('1.22.0').aosp()
+        toggleOffOn()
+        endWithNewline()
+    }
 }

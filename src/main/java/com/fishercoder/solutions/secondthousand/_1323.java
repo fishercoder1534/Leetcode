@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 import java.util.stream.IntStream;
 
-/**
+/*
  * 1323. Maximum 69 Number
  *
  * Given a positive integer num consisting only of digits 6 and 9.
@@ -36,7 +36,10 @@ public class _1323 {
     public static class Solution1 {
         public int maximum69Number(int num) {
             char[] chars = Integer.toString(num).toCharArray();
-            IntStream.range(0, chars.length).filter(i -> chars[i] == '6').findFirst().ifPresent(i -> chars[i] = '9');
+            IntStream.range(0, chars.length)
+                    .filter(i -> chars[i] == '6')
+                    .findFirst()
+                    .ifPresent(i -> chars[i] = '9');
             return Integer.parseInt(new String(chars));
         }
     }

@@ -8,7 +8,10 @@ public class _2748 {
                 for (int j = i + 1; j < nums.length; j++) {
                     String iStr = String.valueOf(nums[i]);
                     String jStr = String.valueOf(nums[j]);
-                    if (gcd(Integer.parseInt(iStr.charAt(0) + ""), Integer.parseInt(jStr.charAt(jStr.length() - 1) + "")) == 1) {
+                    if (gcd(
+                                    Integer.parseInt(iStr.charAt(0) + ""),
+                                    Integer.parseInt(jStr.charAt(jStr.length() - 1) + ""))
+                            == 1) {
                         pairs++;
                     }
                 }

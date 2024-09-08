@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -21,7 +20,7 @@ public class _142 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This comment explains it really well for this solution:
          * https://leetcode.com/problems/linked-list-cycle-ii/discuss/44774/Java-O(1)-space-solution-with-detailed-explanation./44281
          *

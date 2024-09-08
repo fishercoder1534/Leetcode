@@ -1,18 +1,16 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1146;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1146Test {
     private _1146.Solution1.SnapshotArray snapshotArray;
 
     @BeforeEach
-    public void setup() {
-
-    }
+    public void setup() {}
 
     @Test
     public void test1() {
@@ -33,5 +31,4 @@ public class _1146Test {
         snapshotArray.snap();
         snapshotArray.snap();
     }
-
 }

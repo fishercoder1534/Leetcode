@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _769 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/max-chunks-to-make-sorted/discuss/113520/Java-solution-left-max-and-right-min.
          */
         public int maxChunksToSorted(int[] arr) {
@@ -31,7 +31,7 @@ public class _769 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/articles/max-chunks-to-make-sorted-i/
          */
         public int maxChunksToSorted(int[] arr) {

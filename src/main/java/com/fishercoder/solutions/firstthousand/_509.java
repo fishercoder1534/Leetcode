@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _509 {
     public static class Solution1 {
-        /**
+        /*
          * Time: O(n)
          * Space: O(n)
          */
@@ -21,7 +21,7 @@ public class _509 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Time: O(n)
          * Space: O(n)
          */
@@ -40,7 +40,7 @@ public class _509 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Time: O(n)
          * Space: O(1)
          */

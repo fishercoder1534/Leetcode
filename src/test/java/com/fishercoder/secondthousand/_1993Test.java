@@ -1,22 +1,21 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.fishercoder.solutions.secondthousand._1993;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _1993Test {
     private _1993.Solution1.LockingTree lockingTree;
 
     @BeforeEach
-    public void setup() {
-    }
+    public void setup() {}
 
     @Test
     public void test1() {
-        lockingTree = new _1993.Solution1.LockingTree(new int[]{-1, 0, 0, 1, 1, 2, 2});
+        lockingTree = new _1993.Solution1.LockingTree(new int[] {-1, 0, 0, 1, 1, 2, 2});
         assertTrue(lockingTree.lock(2, 2));
         assertFalse(lockingTree.unlock(2, 3));
         assertTrue(lockingTree.unlock(2, 2));
@@ -27,7 +26,7 @@ public class _1993Test {
 
     @Test
     public void test2() {
-        lockingTree = new _1993.Solution1.LockingTree(new int[]{-1, 0, 3, 1, 0});
+        lockingTree = new _1993.Solution1.LockingTree(new int[] {-1, 0, 3, 1, 0});
         assertFalse(lockingTree.upgrade(4, 5));
         assertFalse(lockingTree.upgrade(3, 8));
         assertFalse(lockingTree.unlock(0, 7));
@@ -37,7 +36,7 @@ public class _1993Test {
 
     @Test
     public void test3() {
-        lockingTree = new _1993.Solution1.LockingTree(new int[]{-1, 4, 9, 0, 6, 1, 0, 6, 3, 1});
+        lockingTree = new _1993.Solution1.LockingTree(new int[] {-1, 4, 9, 0, 6, 1, 0, 6, 3, 1});
         assertFalse(lockingTree.upgrade(9, 43));
         assertFalse(lockingTree.upgrade(4, 27));
         assertFalse(lockingTree.upgrade(5, 34));
@@ -59,5 +58,4 @@ public class _1993Test {
         assertFalse(lockingTree.unlock(4, 42));
         assertFalse(lockingTree.upgrade(5, 27));
     }
-
 }

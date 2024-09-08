@@ -24,23 +24,24 @@ public class _1366 {
                     nodes[vote.charAt(i) - 'A'].count[i]++;
                 }
             }
-            Arrays.sort(nodes, new Comparator<Node>() {
-                @Override
-                public int compare(Node o1, Node o2) {
-                    for (int i = 0; i < 26; i++) {
-                        if (o1.count[i] != o2.count[i]) {
-                            return o2.count[i] - o1.count[i];
+            Arrays.sort(
+                    nodes,
+                    new Comparator<Node>() {
+                        @Override
+                        public int compare(Node o1, Node o2) {
+                            for (int i = 0; i < 26; i++) {
+                                if (o1.count[i] != o2.count[i]) {
+                                    return o2.count[i] - o1.count[i];
+                                }
+                            }
+                            return o1.c - o2.c;
                         }
-                    }
-                    return o1.c - o2.c;
-                }
-            });
+                    });
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < votes[0].length(); i++) {
                 sb.append(nodes[i].c);
             }
             return sb.toString();
         }
-
     }
 }

@@ -12,14 +12,13 @@ public class _170 {
             private Map<Integer, Integer> map;
             private List<Integer> list;
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public TwoSum() {
                 map = new HashMap();
                 list = new ArrayList();
             }
-
 
             // Add the number to an internal data structure.
             public void add(int number) {

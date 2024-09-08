@@ -15,5 +15,4 @@ public class _58 {
             return s.length() - n - 1;
         }
     }
-
 }

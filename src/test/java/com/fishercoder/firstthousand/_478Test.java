@@ -12,5 +12,4 @@ public class _478Test {
         solution1 = new _478.Solution1(10.0, 5.0, -7.5);
         CommonUtils.printArray(solution1.randPoint());
     }
-
 }

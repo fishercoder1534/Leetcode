@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _555 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/86477/neat-java-solution
          * and article: https://leetcode.com/articles/split-assembled-strings/#approach-3-optimized-solution-accepted
          */
@@ -20,7 +20,7 @@ public class _555 {
             for (int i = 0; i < strs.length; i++) {
                 sb.setLength(0);
                 String reverse = sb.append(strs[i]).reverse().toString();
-                for (String str : new String[]{strs[i], reverse}) {
+                for (String str : new String[] {strs[i], reverse}) {
                     for (int k = 0; k < str.length(); k++) {
                         sb.setLength(0);
                         sb.append(str.substring(k));

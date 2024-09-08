@@ -3,7 +3,7 @@ package com.fishercoder.solutions.secondthousand;
 public class _1826 {
     public static class Solution1 {
         public int badSensor(int[] sensor1, int[] sensor2) {
-            //check if sensor2 is faulty
+            // check if sensor2 is faulty
             int i = 0;
             int j = 0;
             for (; i < sensor1.length && j < sensor2.length - 1; ) {
@@ -18,7 +18,7 @@ public class _1826 {
             if (j == sensor2.length - 1 && i == sensor1.length) {
                 sensor2Faulty = true;
             }
-            //check sensor1
+            // check sensor1
             i = 0;
             j = 0;
             for (; i < sensor1.length - 1 && j < sensor2.length; ) {

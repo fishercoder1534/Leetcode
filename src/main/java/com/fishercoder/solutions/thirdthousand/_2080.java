@@ -6,7 +6,7 @@ public class _2080 {
     public static class Solution1 {
 
         public static class RangeFreqQuery {
-            /**
+            /*
              * This post explains it well: https://leetcode.com/problems/range-frequency-queries/discuss/1589019/Java-or-Binary-Search-or-Log(n)-for-every-query
              */
 

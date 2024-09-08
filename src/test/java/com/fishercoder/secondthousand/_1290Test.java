@@ -1,14 +1,13 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.secondthousand._1290;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1290Test {
     private _1290.Solution1 solution1;

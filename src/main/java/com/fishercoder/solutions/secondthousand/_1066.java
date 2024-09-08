@@ -9,7 +9,12 @@ public class _1066 {
             return minSum;
         }
 
-        private void backtracking(int[][] workers, int[][] bikes, int workersIndex, boolean[] bikesAssigned, int currentSum) {
+        private void backtracking(
+                int[][] workers,
+                int[][] bikes,
+                int workersIndex,
+                boolean[] bikesAssigned,
+                int currentSum) {
             if (workersIndex >= workers.length) {
                 minSum = Math.min(minSum, currentSum);
                 return;
@@ -22,7 +27,12 @@ public class _1066 {
             for (int j = 0; j < bikes.length; j++) {
                 if (!bikesAssigned[j]) {
                     bikesAssigned[j] = true;
-                    backtracking(workers, bikes, workersIndex + 1, bikesAssigned, currentSum + dist(workers[workersIndex], bikes[j]));
+                    backtracking(
+                            workers,
+                            bikes,
+                            workersIndex + 1,
+                            bikesAssigned,
+                            currentSum + dist(workers[workersIndex], bikes[j]));
                     bikesAssigned[j] = false;
                 }
             }

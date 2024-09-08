@@ -26,7 +26,7 @@ public class _187 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Use Rolling Hash/Rabin-Karp algorithm to significantly speed up the search.
          * <p>
          * Rolling Hash/Rabin-Karp algorithm:

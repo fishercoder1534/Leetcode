@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class _2956 {
     public static class Solution1 {
-        /**
+        /*
          * Although verbose, this is more efficient and faster than using Java.streams
          */
         public int[] findIntersectionValues(int[] nums1, int[] nums2) {

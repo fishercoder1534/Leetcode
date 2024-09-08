@@ -2,7 +2,7 @@ package com.fishercoder.solutions.thirdthousand;
 
 public class _2063 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/nevergiveup/
          */
         public long countVowels(String word) {

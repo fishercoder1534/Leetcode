@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._672;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _672Test {
     private _672.Solution1 solution1;
@@ -105,5 +105,4 @@ public class _672Test {
         assertEquals(8, solution1.flipLights(7, 5));
         assertEquals(8, solution2.flipLights(7, 5));
     }
-
 }

@@ -1,12 +1,11 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.*;
 
 public class _863 {
     public static class Solution1 {
-        /**
+        /*
          * Since it's asking for distance k, a.k.a shortest distance, BFS should be the way to go.
          * For this particular problem: we'll do BFS twice:
          * 1st time: we build a child to parent mapping, in binary tree, there's only parent to children mapping, so we'll need to establish this child to parent link;
@@ -44,7 +43,8 @@ public class _863 {
                     if (curr.right != null && !visited.contains(curr.right.val)) {
                         queue.offer(curr.right);
                     }
-                    if (childToParentMap.containsKey(curr.val) && !visited.contains(childToParentMap.get(curr.val).val)) {
+                    if (childToParentMap.containsKey(curr.val)
+                            && !visited.contains(childToParentMap.get(curr.val).val)) {
                         queue.offer(childToParentMap.get(curr.val));
                     }
                 }

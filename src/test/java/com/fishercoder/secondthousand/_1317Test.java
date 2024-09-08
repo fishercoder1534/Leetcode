@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.secondthousand._1317;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1317Test {
     private _1317.Solution1 solution1;
@@ -16,7 +16,6 @@ public class _1317Test {
 
     @Test
     public void test1() {
-        assertArrayEquals(new int[]{11, 999}, solution1.getNoZeroIntegers(1010));
+        assertArrayEquals(new int[] {11, 999}, solution1.getNoZeroIntegers(1010));
     }
-
 }

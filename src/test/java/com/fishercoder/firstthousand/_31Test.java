@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._31;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _31Test {
     private _31.Solution1 solution1;
@@ -17,36 +17,36 @@ public class _31Test {
 
     @Test
     public void test1() {
-        nums = new int[]{1, 2, 3};
+        nums = new int[] {1, 2, 3};
         solution1.nextPermutation(nums);
-        assertArrayEquals(new int[]{1, 3, 2}, nums);
+        assertArrayEquals(new int[] {1, 3, 2}, nums);
     }
 
     @Test
     public void test2() {
-        nums = new int[]{1, 2, 4, 6, 3};
+        nums = new int[] {1, 2, 4, 6, 3};
         solution1.nextPermutation(nums);
-        assertArrayEquals(new int[]{1, 2, 6, 3, 4}, nums);
+        assertArrayEquals(new int[] {1, 2, 6, 3, 4}, nums);
     }
 
     @Test
     public void test3() {
-        nums = new int[]{1, 2, 4, 6, 3, 2, 1};
+        nums = new int[] {1, 2, 4, 6, 3, 2, 1};
         solution1.nextPermutation(nums);
-        assertArrayEquals(new int[]{1, 2, 6, 1, 2, 3, 4}, nums);
+        assertArrayEquals(new int[] {1, 2, 6, 1, 2, 3, 4}, nums);
     }
 
     @Test
     public void test4() {
-        nums = new int[]{1, 2, 5, 4, 3};
+        nums = new int[] {1, 2, 5, 4, 3};
         solution1.nextPermutation(nums);
-        assertArrayEquals(new int[]{1, 3, 2, 4, 5}, nums);
+        assertArrayEquals(new int[] {1, 3, 2, 4, 5}, nums);
     }
 
     @Test
     public void test5() {
-        nums = new int[]{3, 2, 1};
+        nums = new int[] {3, 2, 1};
         solution1.nextPermutation(nums);
-        assertArrayEquals(new int[]{1, 2, 3}, nums);
+        assertArrayEquals(new int[] {1, 2, 3}, nums);
     }
 }

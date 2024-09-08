@@ -3,10 +3,9 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._701;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 public class _701Test {
     private _701.Solution1 solution1;
@@ -21,7 +20,9 @@ public class _701Test {
     @Test
     public void test1() {
         int val = 88;
-        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(61, 46, 66, 43, null, null, null, 39, null, null, null));
+        TreeNode root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(61, 46, 66, 43, null, null, null, 39, null, null, null));
         TreeUtils.printBinaryTree(root);
         TreeUtils.printBinaryTree(solution1.insertIntoBST(root, val));
     }
@@ -29,7 +30,9 @@ public class _701Test {
     @Test
     public void test2() {
         int val = 88;
-        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(61, 46, 66, 43, null, null, null, 39, null, null, null));
+        TreeNode root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(61, 46, 66, 43, null, null, null, 39, null, null, null));
         TreeUtils.printBinaryTree(root);
         TreeUtils.printBinaryTree(solution2.insertIntoBST(root, val));
     }
@@ -41,5 +44,4 @@ public class _701Test {
         TreeUtils.printBinaryTree(root);
         TreeUtils.printBinaryTree(solution2.insertIntoBST(root, val));
     }
-
 }

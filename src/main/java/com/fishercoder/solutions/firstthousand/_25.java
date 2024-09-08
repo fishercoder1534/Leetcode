@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.ListNode;
 
 public class _25 {
 
-    /**
+    /*
      * We use recursion to go all the way until the end: when the number of nodes are smaller than k;
      * then we start to reverse each group of k nodes from the end towards the start.
      */
@@ -13,13 +13,13 @@ public class _25 {
             ListNode curr = head;
             int count = 0;
             while (curr != null && count != k) {
-                //find the k+1 node
+                // find the k+1 node
                 curr = curr.next;
                 count++;
             }
 
             if (count == k) {
-                /**after this below recursive call finishes, it'll return head;
+                /*after this below recursive call finishes, it'll return head;
                  * then this returned "head" will become "curr", while the head
                  * in its previous callstack is the real head after this call.
                  * Setting up a break point will make all of this crystal clear.*/
@@ -33,7 +33,8 @@ public class _25 {
                 }
                 head = curr;
             }
-            return head;//we run out of nodes before we hit count == k, so we'll just directly return head in this case as well
+            return head; // we run out of nodes before we hit count == k, so we'll just directly
+            // return head in this case as well
         }
     }
 
@@ -85,7 +86,7 @@ public class _25 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My completely original solution on 10/25/2021. Beats 100% submissions on LeetCode in runtime.
          * Again, using a pen and paper to visualize the process helps a lot!
          * My helper function returns two nodes: reversed node head and the starting node for the next reversal.
@@ -95,7 +96,7 @@ public class _25 {
             pre.next = head;
             ListNode tmp = pre;
             ListNode curr = head;
-            ListNode[] result = new ListNode[]{null, curr};
+            ListNode[] result = new ListNode[] {null, curr};
             do {
                 result = reverseKGroupHelper(result[1], k);
                 if (result[0] == result[1]) {
@@ -118,7 +119,7 @@ public class _25 {
                 k--;
             }
             if (k > 0) {
-                return new ListNode[]{head, head};
+                return new ListNode[] {head, head};
             } else {
                 tmp = head;
                 k = originalK;
@@ -130,7 +131,7 @@ public class _25 {
                     tmp = next;
                     k--;
                     if (k == 0) {
-                        return new ListNode[]{prev, tmp};
+                        return new ListNode[] {prev, tmp};
                     }
                 }
                 return null;

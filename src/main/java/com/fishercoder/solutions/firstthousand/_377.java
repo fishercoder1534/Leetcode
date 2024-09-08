@@ -9,7 +9,7 @@ import java.util.Map;
 public class _377 {
 
     public static class Solution1 {
-        /**
+        /*
          * this normal backtracking recursive solution will end up in MLE by this testcase: [4,2,1], 32
          */
         public int combinationSum4(int[] nums, int target) {
@@ -19,8 +19,8 @@ public class _377 {
             return result.size();
         }
 
-        private void backtracking(int[] nums, int target, List<Integer> list,
-                                  List<List<Integer>> result) {
+        private void backtracking(
+                int[] nums, int target, List<Integer> list, List<List<Integer>> result) {
             if (target == 0) {
                 result.add(new ArrayList(list));
             } else if (target > 0) {
@@ -34,7 +34,7 @@ public class _377 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Since we don't need to get all of the combinations, instead,
          * we only need to get the possible count, I can use only a count instead of "List<List<Integer>> result"
          * However, it also ended up in TLE by this testcase: [1,2,3], 32
@@ -61,7 +61,7 @@ public class _377 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Time: O(n^2)
          * Space: O(n)
          * <p>
@@ -95,7 +95,7 @@ public class _377 {
     }
 
     public static class Solution4 {
-        /**
+        /*
          * Time: O(n)
          * Space: O(n)
          * <p>

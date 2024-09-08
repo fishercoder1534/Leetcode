@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._670;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _670Test {
     private _670.Solution1 solution1;
@@ -33,5 +33,4 @@ public class _670Test {
     public void test4() {
         assertEquals(98213, solution1.maximumSwap(91283));
     }
-
 }

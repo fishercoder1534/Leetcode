@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1332 {
     public static class Solution1 {
-        /**
+        /*
          * Notice: there are only two characters in the given string: 'a' and 'b'
          */
         public int removePalindromeSub(String s) {

@@ -1,9 +1,9 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._622;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _622Test {
     private _622.Solution1.MyCircularQueue myCircularQueue;
@@ -21,5 +21,4 @@ public class _622Test {
         assertEquals(true, myCircularQueue.enQueue(4));
         assertEquals(4, myCircularQueue.Rear());
     }
-
 }

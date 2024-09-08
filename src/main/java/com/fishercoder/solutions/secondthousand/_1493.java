@@ -14,9 +14,9 @@ public class _1493 {
                         right++;
                     }
                     if (right < nums.length && nums[right] == 1) {
-                        brackets.add(new int[]{i, right});
+                        brackets.add(new int[] {i, right});
                     } else {
-                        brackets.add(new int[]{i, right - 1});
+                        brackets.add(new int[] {i, right - 1});
                     }
                     i = right;
                 }
@@ -41,7 +41,7 @@ public class _1493 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Sliding window solution
          * Credit: https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/discuss/708112/JavaC%2B%2BPython-Sliding-Window-at-most-one-0
          * <p>

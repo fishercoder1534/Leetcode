@@ -7,8 +7,9 @@ public class _622 {
         public static class MyCircularQueue {
 
             int[] arr;
-            int rearIndex;//this one points to the rear of the queue and could grow to 3000 which is the max calls that this problem is bound to
-            int size;//this is the max size of this circule queue
+            int rearIndex; // this one points to the rear of the queue and could grow to 3000
+            // which is the max calls that this problem is bound to
+            int size; // this is the max size of this circule queue
             int frontIndex;
 
             public MyCircularQueue(int k) {
@@ -55,6 +56,5 @@ public class _622 {
                 return Math.abs(rearIndex - frontIndex) == size;
             }
         }
-
     }
 }

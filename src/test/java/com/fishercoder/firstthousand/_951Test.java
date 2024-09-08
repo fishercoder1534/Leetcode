@@ -1,15 +1,14 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._951;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _951Test {
     private _951.Solution1 solution1;
@@ -21,8 +20,12 @@ public class _951Test {
 
     @Test
     public void test1() {
-        TreeNode root1 = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, 5, 6, null, null, null, 7, 8));
-        TreeNode root2 = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, null, 6, 4, 5, null, null, null, null, 8, 7));
+        TreeNode root1 =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(1, 2, 3, 4, 5, 6, null, null, null, 7, 8));
+        TreeNode root2 =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(1, 3, 2, null, 6, 4, 5, null, null, null, null, 8, 7));
         assertTrue(solution1.flipEquiv(root1, root2));
     }
 

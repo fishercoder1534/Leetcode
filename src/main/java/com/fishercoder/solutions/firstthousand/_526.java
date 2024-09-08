@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _526 {
     public static class Solution1 {
-        /**
+        /*
          * A good post to look at: https://discuss.leetcode.com/topic/79916/java-solution-backtracking
          * and there's a generic template afterwards for backtracking problems
          */
@@ -29,5 +29,4 @@ public class _526 {
             }
         }
     }
-
 }

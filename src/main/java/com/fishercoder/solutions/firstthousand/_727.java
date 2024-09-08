@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _727 {
     public static class Solution1 {
-        /**
+        /*
          * This naive brute force results in TLE.
          */
         public String minWindow(String S, String T) {
@@ -32,7 +32,7 @@ public class _727 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://github.com/lydxlx1/LeetCode/blob/master/src/_727.java
          */
         public String minWindow(String S, String T) {
@@ -58,6 +58,5 @@ public class _727 {
             }
             return ans == INFINITY ? "" : S.substring(tail - ans, tail);
         }
-
     }
 }

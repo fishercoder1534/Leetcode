@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _567 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: sliding window: https://discuss.leetcode.com/topic/87845/java-solution-sliding-window
          */
         public boolean checkInclusion(String s1, String s2) {
@@ -45,7 +45,7 @@ public class _567 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * A classic sliding window problem.
          * I came up with below solution independently on 9/17/2021.
          * <p>

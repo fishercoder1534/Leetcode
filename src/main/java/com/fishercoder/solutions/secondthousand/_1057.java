@@ -11,11 +11,16 @@ public class _1057 {
             TreeMap<Integer, PriorityQueue<int[]>> treeMap = new TreeMap<>();
             for (int i = 0; i < w; i++) {
                 for (int j = 0; j < b; j++) {
-                    int distance = Math.abs(workers[i][0] - bikes[j][0]) + Math.abs(workers[i][1] - bikes[j][1]);
+                    int distance =
+                            Math.abs(workers[i][0] - bikes[j][0])
+                                    + Math.abs(workers[i][1] - bikes[j][1]);
                     if (!treeMap.containsKey(distance)) {
-                        treeMap.put(distance, new PriorityQueue<>((x, y) -> x[0] == y[0] ? x[1] - y[1] : x[0] - y[0]));
+                        treeMap.put(
+                                distance,
+                                new PriorityQueue<>(
+                                        (x, y) -> x[0] == y[0] ? x[1] - y[1] : x[0] - y[0]));
                     }
-                    treeMap.get(distance).add(new int[]{i, j});
+                    treeMap.get(distance).add(new int[] {i, j});
                 }
             }
             int[] ans = new int[w];

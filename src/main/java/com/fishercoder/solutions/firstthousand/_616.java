@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _616 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/92112/java-solution-boolean-array
          */
         public String addBoldTag(String s, String[] dict) {
@@ -32,5 +32,4 @@ public class _616 {
             return stringBuilder.toString();
         }
     }
-
 }

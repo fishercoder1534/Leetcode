@@ -2,10 +2,9 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._47;
+import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.List;
 
 public class _47Test {
     private _47.Solution1 solution1;
@@ -20,10 +19,9 @@ public class _47Test {
 
     @Test
     public void test1() {
-        actual = solution1.permuteUnique(new int[]{1, 1, 2});
+        actual = solution1.permuteUnique(new int[] {1, 1, 2});
         CommonUtils.printListList(actual);
-        actual = solution2.permuteUnique(new int[]{1, 1, 2});
+        actual = solution2.permuteUnique(new int[] {1, 1, 2});
         CommonUtils.printListList(actual);
     }
-
 }

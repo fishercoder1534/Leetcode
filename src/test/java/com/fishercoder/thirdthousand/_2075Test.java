@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2075;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2075Test {
     private _2075.Solution1 solution1;
@@ -48,5 +48,4 @@ public class _2075Test {
         expected = " abc";
         assertEquals(expected, solution1.decodeCiphertext(encodedText, rows));
     }
-
 }

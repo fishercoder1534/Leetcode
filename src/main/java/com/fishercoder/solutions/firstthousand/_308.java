@@ -31,7 +31,7 @@ public class _308 {
                 nums[rowIndex][colIndex] = newVal;
                 for (int i = rowIndex + 1; i <= height; i += i & (-i)) {
                     for (int j = colIndex + 1; j <= width; j += j & (-j)) {
-                        tree[i][j] += delta;//just use its previous value plus delta is good
+                        tree[i][j] += delta; // just use its previous value plus delta is good
                     }
                 }
             }
@@ -40,8 +40,10 @@ public class _308 {
                 if (height == 0 || width == 0) {
                     return 0;
                 }
-                return sum(row2 + 1, col2 + 1) + sum(row1, col1) - sum(row1, col2 + 1) - sum(
-                        row2 + 1, col1);
+                return sum(row2 + 1, col2 + 1)
+                        + sum(row1, col1)
+                        - sum(row1, col2 + 1)
+                        - sum(row2 + 1, col1);
             }
 
             private int sum(int row, int col) {
@@ -55,7 +57,7 @@ public class _308 {
             }
         }
 
-        /**
+        /*
          * Your NumMatrix object will be instantiated and called as such:
          * NumMatrix obj = new NumMatrix(matrix);
          * obj.update(row,col,val);

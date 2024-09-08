@@ -3,7 +3,7 @@ package com.fishercoder.solutions.thirdthousand;
 public class _2437 {
     public static class Solution1 {
         public int countTime(String time) {
-            int[] count = new int[]{2, 10, 0, 6, 10};
+            int[] count = new int[] {2, 10, 0, 6, 10};
             int times = 1;
             for (int i = 0; i < time.length(); i++) {
                 if (time.charAt(i) == '?') {

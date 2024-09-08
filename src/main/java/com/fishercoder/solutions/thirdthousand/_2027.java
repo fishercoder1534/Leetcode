@@ -19,6 +19,5 @@ public class _2027 {
             }
             return moves;
         }
-
     }
 }

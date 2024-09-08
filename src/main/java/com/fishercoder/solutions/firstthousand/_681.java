@@ -17,7 +17,8 @@ public class _681 {
 
             while (true) {
                 cur = (cur + 1) % (24 * 60);
-                int[] digits = new int[]{cur / 60 / 10, cur / 60 % 10, cur % 60 / 10, cur % 60 % 10};
+                int[] digits =
+                        new int[] {cur / 60 / 10, cur / 60 % 10, cur % 60 / 10, cur % 60 % 10};
                 search:
                 {
                     for (int d : digits) {

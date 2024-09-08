@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _335 {
     public static class Solution1 {
-        /**
+        /*
          * reference: https://discuss.leetcode.com/topic/38014/java-oms-with-explanation/2
          */
         public boolean isSelfCrossing(int[] x) {
@@ -13,7 +13,7 @@ public class _335 {
 
             for (int i = 3; i < l; i++) {
                 if (x[i] >= x[i - 2] && x[i - 1] <= x[i - 3]) {
-                    return true;  //Fourth line crosses first line and onward
+                    return true; // Fourth line crosses first line and onward
                 }
                 if (i >= 4) {
                     if (x[i - 1] == x[i - 3] && x[i] + x[i - 4] >= x[i - 2]) {
@@ -25,7 +25,7 @@ public class _335 {
                             && x[i] >= x[i - 2] - x[i - 4]
                             && x[i - 1] >= x[i - 3] - x[i - 5]
                             && x[i - 1] <= x[i - 3]) {
-                        return true;  // Sixth line crosses first line and onward
+                        return true; // Sixth line crosses first line and onward
                     }
                 }
             }

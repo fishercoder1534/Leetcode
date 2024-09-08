@@ -1,12 +1,11 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1152;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1152Test {
     private _1152.Solution1 solution1;
@@ -18,16 +17,64 @@ public class _1152Test {
 
     @Test
     public void test1() {
-        assertEquals(Arrays.asList("home", "about", "career"), solution1.mostVisitedPattern(new String[]{"joe", "joe", "joe", "james", "james", "james", "james", "mary", "mary", "mary"}, new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, new String[]{"home", "about", "career", "home", "cart", "maps", "home", "home", "about", "career"}));
+        assertEquals(
+                Arrays.asList("home", "about", "career"),
+                solution1.mostVisitedPattern(
+                        new String[] {
+                            "joe", "joe", "joe", "james", "james", "james", "james", "mary", "mary",
+                            "mary"
+                        },
+                        new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+                        new String[] {
+                            "home", "about", "career", "home", "cart", "maps", "home", "home",
+                            "about", "career"
+                        }));
     }
 
     @Test
     public void test2() {
-        assertEquals(Arrays.asList("oz", "mryxsjc", "wlarkzzqht"), solution1.mostVisitedPattern(new String[]{"zkiikgv", "zkiikgv", "zkiikgv", "zkiikgv"}, new int[]{436363475, 710406388, 386655081, 797150921}, new String[]{"wnaaxbfhxp", "mryxsjc", "oz", "wlarkzzqht"}));
+        assertEquals(
+                Arrays.asList("oz", "mryxsjc", "wlarkzzqht"),
+                solution1.mostVisitedPattern(
+                        new String[] {"zkiikgv", "zkiikgv", "zkiikgv", "zkiikgv"},
+                        new int[] {436363475, 710406388, 386655081, 797150921},
+                        new String[] {"wnaaxbfhxp", "mryxsjc", "oz", "wlarkzzqht"}));
     }
 
     @Test
     public void test3() {
-        assertEquals(Arrays.asList("hibympufi", "hibympufi", "yljmntrclw"), solution1.mostVisitedPattern(new String[]{"h", "eiy", "cq", "h", "cq", "txldsscx", "cq", "txldsscx", "h", "cq", "cq"}, new int[]{527896567, 334462937, 517687281, 134127993, 859112386, 159548699, 51100299, 444082139, 926837079, 317455832, 411747930}, new String[]{"hibympufi", "hibympufi", "hibympufi", "hibympufi", "hibympufi", "hibympufi", "hibympufi", "hibympufi", "yljmntrclw", "hibympufi", "yljmntrclw"}));
+        assertEquals(
+                Arrays.asList("hibympufi", "hibympufi", "yljmntrclw"),
+                solution1.mostVisitedPattern(
+                        new String[] {
+                            "h",
+                            "eiy",
+                            "cq",
+                            "h",
+                            "cq",
+                            "txldsscx",
+                            "cq",
+                            "txldsscx",
+                            "h",
+                            "cq",
+                            "cq"
+                        },
+                        new int[] {
+                            527896567, 334462937, 517687281, 134127993, 859112386, 159548699,
+                            51100299, 444082139, 926837079, 317455832, 411747930
+                        },
+                        new String[] {
+                            "hibympufi",
+                            "hibympufi",
+                            "hibympufi",
+                            "hibympufi",
+                            "hibympufi",
+                            "hibympufi",
+                            "hibympufi",
+                            "hibympufi",
+                            "yljmntrclw",
+                            "hibympufi",
+                            "yljmntrclw"
+                        }));
     }
 }

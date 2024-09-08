@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._929;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _929Test {
     private _929.Solution1 solution1;
@@ -17,8 +17,12 @@ public class _929Test {
 
     @Test
     public void test1() {
-        emails = new String[]{"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"};
+        emails =
+                new String[] {
+                    "test.email+alex@leetcode.com",
+                    "test.e.mail+bob.cathy@leetcode.com",
+                    "testemail+david@lee.tcode.com"
+                };
         assertEquals(2, solution1.numUniqueEmails(emails));
     }
-
 }

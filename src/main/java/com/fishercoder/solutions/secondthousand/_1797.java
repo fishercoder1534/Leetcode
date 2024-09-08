@@ -9,7 +9,7 @@ public class _1797 {
 
             int timeToLive;
             int currentTime;
-            Map<String, Integer> map;//tokenId -> expireTime
+            Map<String, Integer> map; // tokenId -> expireTime
 
             public AuthenticationManager(int timeToLive) {
                 this.timeToLive = timeToLive;

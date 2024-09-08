@@ -1,12 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.solutions.firstthousand._449;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _449Test {
     private _449.Solution1 solution1;
@@ -24,8 +23,7 @@ public class _449Test {
     }
 
     @BeforeEach
-    public void setupForEachTest() {
-    }
+    public void setupForEachTest() {}
 
     @Test
     public void test1() {
@@ -33,10 +31,18 @@ public class _449Test {
         expectedRoot.left = new TreeNode(1);
         expectedRoot.right = new TreeNode(4);
         expectedRoot.left.right = new TreeNode(2);
-        assertEquals(expectedRoot.toString(), solution1.deserialize(solution1.serialize(expectedRoot)).toString());
-        assertEquals(expectedRoot.toString(), solution2.deserialize(solution2.serialize(expectedRoot)).toString());
-        assertEquals(expectedRoot.toString(), solution3.deserialize(solution3.serialize(expectedRoot)).toString());
-        assertEquals(expectedRoot.toString(), solution4.deserialize(solution4.serialize(expectedRoot)).toString());
+        assertEquals(
+                expectedRoot.toString(),
+                solution1.deserialize(solution1.serialize(expectedRoot)).toString());
+        assertEquals(
+                expectedRoot.toString(),
+                solution2.deserialize(solution2.serialize(expectedRoot)).toString());
+        assertEquals(
+                expectedRoot.toString(),
+                solution3.deserialize(solution3.serialize(expectedRoot)).toString());
+        assertEquals(
+                expectedRoot.toString(),
+                solution4.deserialize(solution4.serialize(expectedRoot)).toString());
     }
 
     @Test
@@ -44,9 +50,17 @@ public class _449Test {
         expectedRoot = new TreeNode(2);
         expectedRoot.left = new TreeNode(1);
         expectedRoot.right = new TreeNode(3);
-        assertEquals(expectedRoot.toString(), solution1.deserialize(solution1.serialize(expectedRoot)).toString());
-        assertEquals(expectedRoot.toString(), solution2.deserialize(solution2.serialize(expectedRoot)).toString());
-        assertEquals(expectedRoot.toString(), solution3.deserialize(solution3.serialize(expectedRoot)).toString());
-        assertEquals(expectedRoot.toString(), solution4.deserialize(solution4.serialize(expectedRoot)).toString());
+        assertEquals(
+                expectedRoot.toString(),
+                solution1.deserialize(solution1.serialize(expectedRoot)).toString());
+        assertEquals(
+                expectedRoot.toString(),
+                solution2.deserialize(solution2.serialize(expectedRoot)).toString());
+        assertEquals(
+                expectedRoot.toString(),
+                solution3.deserialize(solution3.serialize(expectedRoot)).toString());
+        assertEquals(
+                expectedRoot.toString(),
+                solution4.deserialize(solution4.serialize(expectedRoot)).toString());
     }
 }

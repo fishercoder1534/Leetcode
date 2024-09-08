@@ -5,7 +5,7 @@ import java.util.TreeSet;
 public class _264 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/21791/o-n-java-solution
          */
         public int nthUglyNumber(int n) {
@@ -35,7 +35,7 @@ public class _264 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 11/7/2021.
          * Although not super robust, as the input increases, I'll have to increase the times (variable n) on line 61 as some smaller numbers might appear later.
          */
@@ -44,7 +44,7 @@ public class _264 {
             treeSet.add(1L);
             int count = 1;
             int polled = 0;
-            int[] primes = new int[]{2, 3, 5};
+            int[] primes = new int[] {2, 3, 5};
             while (!treeSet.isEmpty()) {
                 int size = treeSet.size();
                 for (int i = 0; i < size; i++) {

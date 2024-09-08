@@ -7,7 +7,7 @@ import java.util.Map;
 public class _146 {
     public class Solution1 {
         public class LRUCache {
-            /**
+            /*
              * The shortest implementation is to use LinkedHashMap:
              * specify a size of the LinkedHashMap;
              * override the removeEldestEntry method when its size exceeds max size:
@@ -22,11 +22,12 @@ public class _146 {
 
             public LRUCache(int capacity) {
                 max = capacity;
-                cache = new LinkedHashMap<Integer, Integer>(capacity, 1.0f, true) {
-                    public boolean removeEldestEntry(Map.Entry eldest) {
-                        return cache.size() > max;
-                    }
-                };
+                cache =
+                        new LinkedHashMap<Integer, Integer>(capacity, 1.0f, true) {
+                            public boolean removeEldestEntry(Map.Entry eldest) {
+                                return cache.size() > max;
+                            }
+                        };
             }
 
             public int get(int key) {
@@ -41,7 +42,7 @@ public class _146 {
 
     public class Solution2 {
         public class LRUCache {
-            /**
+            /*
              * The more verbose solution is to implement a doubly linked list yourself plus a map.
              * It's very straightforward to implement this, key notes here: https://docs.google.com/spreadsheets/d/1anN6L5OLhUFd1ANtqDdYY6tz2Ao2H1GESfpDiCfeWyM/edit#gid=0
              * (search for the URL of this problem to find it.)
@@ -69,11 +70,15 @@ public class _146 {
             private LRUCache.Node head;
             private LRUCache.Node tail;
             private Map<Integer, LRUCache.Node> map;
-            // ATTN: the value should be Node type! This is the whole point of having a class called Node!
+
+            // ATTN: the value should be Node type! This is the whole point of having a class called
+            // Node!
 
             public LRUCache(int capacity) {
                 this.capacity = capacity;
-                this.count = 0;// we need a count to keep track of the number of elements in the cache so
+                this.count =
+                        0; // we need a count to keep track of the number of elements in the cache
+                // so
                 // that we know when to evict the LRU one from the cache
                 this.map = new HashMap();
                 head = new LRUCache.Node();
@@ -88,7 +93,7 @@ public class _146 {
                 if (node == null) {
                     return -1;
                 } else {
-                    /**Do two operations: this makes the process more clear:
+                    /*Do two operations: this makes the process more clear:
                      * remove the old node first, and then
                      * just add the node again.
                      * This will guarantee that this node will be at the latest position:
@@ -109,9 +114,9 @@ public class _146 {
                     count++;
 
                     if (count > capacity) {
-                        /** ATTN: It's tail.prev, not tail, because tail is always an invalid node, it
-                         doesn't contain anything, it's always the tail.prev that is the last node in the
-                         cache*/
+                        /* ATTN: It's tail.prev, not tail, because tail is always an invalid node, it
+                        doesn't contain anything, it's always the tail.prev that is the last node in the
+                        cache*/
                         LRUCache.Node toDelete = tail.prev;
                         map.remove(toDelete.key);
                         remove(toDelete);

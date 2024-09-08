@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.thirdthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +28,7 @@ public class _2181 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Without using an extra list, do sum on the fly.
          */
         public ListNode mergeNodes(ListNode head) {

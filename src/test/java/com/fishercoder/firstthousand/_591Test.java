@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._591;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _591Test {
     private _591.Solution1 test;
@@ -21,6 +21,9 @@ public class _591Test {
 
     @Test
     public void test2() {
-        assertEquals(false, test.isValid("<ABCDEFGHIJKLMN>This is the first line <![CDATA[<div>]]></ABCDEFGHIJKLMN>"));//tag_name is too long (> 9)
+        assertEquals(
+                false,
+                test.isValid(
+                        "<ABCDEFGHIJKLMN>This is the first line <![CDATA[<div>]]></ABCDEFGHIJKLMN>")); // tag_name is too long (> 9)
     }
 }

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _474 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/ones-and-zeroes/discuss/95811/Java-Iterative-DP-Solution-O(mn)-Space and
          * https://leetcode.com/problems/ones-and-zeroes/discuss/95811/Java-Iterative-DP-Solution-O(mn)-Space/100352
          * <p>
@@ -36,5 +36,4 @@ public class _474 {
             return res;
         }
     }
-
 }

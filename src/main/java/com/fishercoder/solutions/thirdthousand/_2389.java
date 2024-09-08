@@ -5,7 +5,7 @@ import java.util.TreeMap;
 
 public class _2389 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution, not sure why it's labeled EASY, IMHO, it should be a soft MEDIUM.
          */
         public int[] answerQueries(int[] nums, int[] queries) {

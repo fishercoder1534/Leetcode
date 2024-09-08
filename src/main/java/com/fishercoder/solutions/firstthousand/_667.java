@@ -6,7 +6,7 @@ import java.util.List;
 public class _667 {
 
     public static class Solutoin1 {
-        /**
+        /*
          * inspired by this post: https://leetcode.com/problems/beautiful-arrangement-ii/discuss/1154683/Short-and-Simple-Solution-or-Multiple-Approaches-Explained-with-Examples-! and implemented it on my own
          */
         public int[] constructArray(int n, int k) {
@@ -38,7 +38,7 @@ public class _667 {
     }
 
     public static class Solutoin2 {
-        /**
+        /*
          * This is a very smart solution:
          * First, we can see that the max value k could reach is n-1 which
          * comes from a sequence like this:

@@ -1,10 +1,10 @@
 package com.fishercoder.fourththousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.fourththousand._3233;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3233Test {
     private _3233.Solution1 solution1;
@@ -53,5 +53,4 @@ public class _3233Test {
     public void test8() {
         assertEquals(433, solution1.nonSpecialCount(1, 441));
     }
-
 }

@@ -25,7 +25,7 @@ public class _32 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * my lengthy but original solution on 4/5/2021, the idea is to convert the valid parenthesis pairs into numbers and push them onto a stack.
          */
         public int longestValidParentheses(String s) {
@@ -47,7 +47,7 @@ public class _32 {
                                 sum += Integer.parseInt(stack.pop());
                             }
                             if (!stack.isEmpty()) {
-                                stack.pop();//pop off the open paren
+                                stack.pop(); // pop off the open paren
                                 sum += 2;
                                 stack.push("" + sum);
                             }

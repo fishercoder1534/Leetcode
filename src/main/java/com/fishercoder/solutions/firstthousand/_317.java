@@ -13,8 +13,11 @@ public class _317 {
             int n = grid[0].length;
             int[][] reach = new int[m][n];
             int[][] distance = new int[m][n];
-            int[] shift = new int[]{0, 1, 0, -1,
-                    0};//how these five elements is ordered is important since it denotes the neighbor of the current node
+            int[] shift =
+                    new int[] {
+                        0, 1, 0, -1, 0
+                    }; // how these five elements is ordered is important since it denotes the
+            // neighbor of the current node
             int numBuilding = 0;
 
             for (int i = 0; i < m; i++) {
@@ -25,7 +28,7 @@ public class _317 {
                         boolean[][] visited = new boolean[m][n];
 
                         Queue<int[]> q = new LinkedList<int[]>();
-                        q.offer(new int[]{i, j});
+                        q.offer(new int[] {i, j});
                         while (!q.isEmpty()) {
                             int size = q.size();
                             for (int l = 0; l < size; l++) {
@@ -42,7 +45,7 @@ public class _317 {
                                         distance[nextRow][nextCol] += dist;
                                         visited[nextRow][nextCol] = true;
                                         reach[nextRow][nextCol]++;
-                                        q.offer(new int[]{nextRow, nextCol});
+                                        q.offer(new int[] {nextRow, nextCol});
                                     }
                                 }
                             }
@@ -63,5 +66,4 @@ public class _317 {
             return result == Integer.MAX_VALUE ? -1 : result;
         }
     }
-
 }

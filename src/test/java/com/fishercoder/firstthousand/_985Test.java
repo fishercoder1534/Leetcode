@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._985;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _985Test {
     private _985.Solution1 solution1;
@@ -20,9 +20,9 @@ public class _985Test {
 
     @Test
     public void test1() {
-        A = new int[]{1, 2, 3, 4};
-        queries = new int[][]{{1, 0}, {-3, 1}, {-4, 0}, {2, 3}};
-        expected = new int[]{8, 6, 2, 4};
+        A = new int[] {1, 2, 3, 4};
+        queries = new int[][] {{1, 0}, {-3, 1}, {-4, 0}, {2, 3}};
+        expected = new int[] {8, 6, 2, 4};
         actual = solution1.sumEvenAfterQueries(A, queries);
         assertArrayEquals(expected, actual);
     }

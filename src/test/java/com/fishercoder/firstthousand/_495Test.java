@@ -1,14 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._495;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 5/8/17.
- */
+/** Created by fishercoder on 5/8/17. */
 public class _495Test {
     _495.Solution1 solution1 = new _495.Solution1();
     private static int actual = 0;
@@ -18,7 +16,7 @@ public class _495Test {
 
     @BeforeEach
     public void setup() {
-        timeSeries = new int[]{};
+        timeSeries = new int[] {};
         duration = 0;
         expected = 0;
         actual = 0;
@@ -26,7 +24,7 @@ public class _495Test {
 
     @Test
     public void test1() {
-        timeSeries = new int[]{1, 4};
+        timeSeries = new int[] {1, 4};
         duration = 2;
         actual = solution1.findPoisonedDuration(timeSeries, duration);
         expected = 4;
@@ -35,7 +33,7 @@ public class _495Test {
 
     @Test
     public void test2() {
-        timeSeries = new int[]{1, 2};
+        timeSeries = new int[] {1, 2};
         duration = 2;
         actual = solution1.findPoisonedDuration(timeSeries, duration);
         expected = 3;
@@ -44,7 +42,7 @@ public class _495Test {
 
     @Test
     public void test3() {
-        timeSeries = new int[]{};
+        timeSeries = new int[] {};
         duration = 100000;
         actual = solution1.findPoisonedDuration(timeSeries, duration);
         expected = 0;

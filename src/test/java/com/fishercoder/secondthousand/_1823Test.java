@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1823;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1823Test {
     private _1823.Solution1 solution1;
@@ -23,5 +23,4 @@ public class _1823Test {
         assertEquals(expected, solution1.findTheWinner(6, 5));
         assertEquals(expected, solution2.findTheWinner(6, 5));
     }
-
 }

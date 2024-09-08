@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _121 {
 
     public static class Solution1 {
-        /**
+        /*
          * My very original but not super optimal solution.
          */
         public int maxProfit(int[] prices) {
@@ -28,7 +28,7 @@ public class _121 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * The key here is that you'll have to buy first, before you can sell. That means, if the lower
          * price comes after a higher price, their combination won't work! Since you cannot sell first
          * before you buy it.

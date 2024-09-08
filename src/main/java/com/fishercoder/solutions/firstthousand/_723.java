@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _723 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/articles/candy-crush/
          */
         public int[][] candyCrush(int[][] board) {
@@ -12,8 +12,10 @@ public class _723 {
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j < col - 2; j++) {
                     int v = Math.abs(board[i][j]);
-                    if (v != 0 && v == Math.abs(board[i][j + 1]) && v == Math.abs(board[i][j + 2])) {
-                        //mark all of them to be negative
+                    if (v != 0
+                            && v == Math.abs(board[i][j + 1])
+                            && v == Math.abs(board[i][j + 2])) {
+                        // mark all of them to be negative
                         board[i][j] = board[i][j + 1] = board[i][j + 2] = -v;
                         todo = true;
                     }
@@ -23,7 +25,9 @@ public class _723 {
             for (int i = 0; i < row - 2; i++) {
                 for (int j = 0; j < col; j++) {
                     int v = Math.abs(board[i][j]);
-                    if (v != 0 && v == Math.abs(board[i + 1][j]) && v == Math.abs(board[i + 2][j])) {
+                    if (v != 0
+                            && v == Math.abs(board[i + 1][j])
+                            && v == Math.abs(board[i + 2][j])) {
                         board[i + 1][j] = board[i + 2][j] = board[i][j] = -v;
                         todo = true;
                     }

@@ -1,14 +1,13 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._199;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _199Test {
     private _199.Solution1 solution1;
@@ -27,5 +26,4 @@ public class _199Test {
         assertEquals(Arrays.asList(1, 3), solution1.rightSideView(root));
         assertEquals(Arrays.asList(1, 3), solution2.rightSideView(root));
     }
-
 }

@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._838;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _838Test {
     private _838.Solution1 solution1;
@@ -38,5 +38,4 @@ public class _838Test {
     public void test5() {
         assertEquals("RRR.L", solution1.pushDominoes("R.R.L"));
     }
-
 }

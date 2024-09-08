@@ -1,13 +1,12 @@
 package com.fishercoder.secondthousand;
 
-import com.fishercoder.solutions.secondthousand._1258;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.fishercoder.solutions.secondthousand._1258;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _1258Test {
 
@@ -21,10 +20,21 @@ public class _1258Test {
 
     @Test
     public void test1() {
-        synonyms = Arrays.asList(Arrays.asList("happy", "joy"), Arrays.asList("sad", "sorrow"), Arrays.asList("joy", "cheerful"));
-        List<String> expected = Arrays.asList("I am cheerful today but was sad yesterday", "I am cheerful today but was sorrow yesterday", "I am happy today but was sad yesterday", "I am happy today but was sorrow yesterday",
-                "I am joy today but was sad yesterday", "I am joy today but was sorrow yesterday");
-        assertEquals(expected, solution1.generateSentences(synonyms, "I am happy today but was sad yesterday"));
+        synonyms =
+                Arrays.asList(
+                        Arrays.asList("happy", "joy"),
+                        Arrays.asList("sad", "sorrow"),
+                        Arrays.asList("joy", "cheerful"));
+        List<String> expected =
+                Arrays.asList(
+                        "I am cheerful today but was sad yesterday",
+                        "I am cheerful today but was sorrow yesterday",
+                        "I am happy today but was sad yesterday",
+                        "I am happy today but was sorrow yesterday",
+                        "I am joy today but was sad yesterday",
+                        "I am joy today but was sorrow yesterday");
+        assertEquals(
+                expected,
+                solution1.generateSentences(synonyms, "I am happy today but was sad yesterday"));
     }
-
 }

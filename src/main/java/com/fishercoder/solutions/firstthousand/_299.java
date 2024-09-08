@@ -26,7 +26,7 @@ public class _299 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 12/24/2021.
          */
         public String getHint(String secret, String guess) {

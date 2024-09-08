@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _478 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/generate-random-point-in-a-circle/discuss/154037/Polar-Coordinates-10-lines
          * and
          * https://leetcode.com/problems/generate-random-point-in-a-circle/discuss/155650/Explanation-with-Graphs-why-using-Math.sqrt()
@@ -22,12 +22,12 @@ public class _478 {
             double degree = Math.random() * 2 * Math.PI;
             double x = xCenter + len * Math.cos(degree);
             double y = yCenter + len * Math.sin(degree);
-            return new double[]{x, y};
+            return new double[] {x, y};
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * How to know one point is within a circle:
          * https://www.geeksforgeeks.org/find-if-a-point-lies-inside-or-on-circle/
          */
@@ -53,7 +53,8 @@ public class _478 {
             double[] result = new double[2];
             result[0] = (Math.random() * (right - left)) + left;
             result[1] = (Math.random() * (top - bottom)) + bottom;
-            while (Math.pow(result[0] - xCenter, 2.0) + Math.pow(result[1] - yCenter, 2.0) > Math.pow(rad, 2.0)) {
+            while (Math.pow(result[0] - xCenter, 2.0) + Math.pow(result[1] - yCenter, 2.0)
+                    > Math.pow(rad, 2.0)) {
                 result[0] = (Math.random() * (right - left)) + left;
                 result[1] = (Math.random() * (top - bottom)) + bottom;
             }

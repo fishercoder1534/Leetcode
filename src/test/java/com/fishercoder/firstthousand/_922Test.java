@@ -21,7 +21,7 @@ public class _922Test {
 
     @Test
     public void test1() {
-        nums = new int[]{4, 2, 5, 7};
+        nums = new int[] {4, 2, 5, 7};
         result = solution1.sortArrayByParityII(nums);
         CommonUtils.printArray(result);
         result = solution2.sortArrayByParityII(nums);
@@ -32,7 +32,7 @@ public class _922Test {
 
     @Test
     public void test2() {
-        nums = new int[]{3, 1, 4, 2};
+        nums = new int[] {3, 1, 4, 2};
         result = solution1.sortArrayByParityII(nums);
         CommonUtils.printArray(result);
         result = solution2.sortArrayByParityII(nums);
@@ -43,7 +43,7 @@ public class _922Test {
 
     @Test
     public void test3() {
-        nums = new int[]{648, 831, 560, 986, 192, 424, 997, 829, 897, 843};
+        nums = new int[] {648, 831, 560, 986, 192, 424, 997, 829, 897, 843};
         result = solution1.sortArrayByParityII(nums);
         CommonUtils.printArray(result);
         result = solution2.sortArrayByParityII(nums);
@@ -54,7 +54,7 @@ public class _922Test {
 
     @Test
     public void test4() {
-        nums = new int[]{3, 4};
+        nums = new int[] {3, 4};
         result = solution1.sortArrayByParityII(nums);
         CommonUtils.printArray(result);
         result = solution2.sortArrayByParityII(nums);
@@ -65,7 +65,7 @@ public class _922Test {
 
     @Test
     public void test5() {
-        nums = new int[]{2, 3, 1, 1, 4, 0, 0, 4, 3, 3};
+        nums = new int[] {2, 3, 1, 1, 4, 0, 0, 4, 3, 3};
         result = solution1.sortArrayByParityII(nums);
         CommonUtils.printArray(result);
         result = solution2.sortArrayByParityII(nums);

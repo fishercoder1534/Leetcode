@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _788 {
     public static class Solution1 {
-        /**
+        /*
          * My very original, but non-DP solution.
          */
         public int rotatedDigits(int n) {
@@ -41,7 +41,7 @@ public class _788 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/rotated-digits/discuss/117975/Java-dp-solution-9ms
          * dp[i] = 0 means invalid;
          * dp[i] = 1 means valid but the same;
@@ -59,7 +59,7 @@ public class _788 {
                         dp[num] = 2;
                     }
                 } else {
-                    /**Here's the key/beauty of this DP solution:
+                    /*Here's the key/beauty of this DP solution:
                      * we could keep checking each number by reusing the previous number we worked on,
                      * basically, always break a bigger number into two parts: a number that's its right most digit and everything else, e.g.
                      * num = 12 -> 1 and 2, so we check dp[1] and dp[2] to know if 12 could be rotated to a valid number,
@@ -69,10 +69,12 @@ public class _788 {
                     int a = dp[num / 10];
                     int b = dp[num % 10];
                     if (a == 1 && b == 1) {
-                        //we first check if both are valid and the same, if that's the case, then we mark it as 1
+                        // we first check if both are valid and the same, if that's the case, then
+                        // we mark it as 1
                         dp[num] = 1;
                     } else if (a >= 1 && b >= 1) {
-                        //then only in this case, either a or b is greater than 1, it's a valid and different number
+                        // then only in this case, either a or b is greater than 1, it's a valid and
+                        // different number
                         dp[num] = 2;
                         count++;
                     }

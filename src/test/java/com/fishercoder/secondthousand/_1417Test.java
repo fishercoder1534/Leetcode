@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1417;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1417Test {
     private _1417.Solution1 solution1;
@@ -23,5 +23,4 @@ public class _1417Test {
     public void test2() {
         assertEquals("c2o0v1i9d", solution1.reformat("covid2019"));
     }
-
 }

@@ -4,7 +4,7 @@ public class _573 {
 
     public static class Solution1 {
 
-        /**
+        /*
          * reference: https://leetcode.com/articles/squirrel-simulation
          * <p>
          * 1. The order in which to pick the nuts does not matter except the first one
@@ -25,7 +25,8 @@ public class _573 {
             int totalDist = 0;
             int savedDist = Integer.MIN_VALUE;
             for (int[] nut : nuts) {
-                totalDist += (getDist(nut, tree) * 2);//it needs to travel back and forth, so times two
+                totalDist +=
+                        (getDist(nut, tree) * 2); // it needs to travel back and forth, so times two
                 savedDist = Math.max(savedDist, getDist(nut, tree) - getDist(nut, squirrel));
             }
             return totalDist - savedDist;

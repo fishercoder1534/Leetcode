@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _327 {
 
     public static class Solution1 {
-        /**
+        /*
          * Time: O(n^2)
          * This results in TLE on Leetcode by the last test case.
          */
@@ -47,7 +47,9 @@ public class _327 {
                 return 0;
             }
             int mid = (start + end) / 2;
-            int count = countWhileMergeSort(sums, start, mid, lower, upper) + countWhileMergeSort(sums, mid, end, lower, upper);
+            int count =
+                    countWhileMergeSort(sums, start, mid, lower, upper)
+                            + countWhileMergeSort(sums, mid, end, lower, upper);
             int j = mid;
             int k = mid;
             int t = mid;
@@ -69,5 +71,4 @@ public class _327 {
             return count;
         }
     }
-
 }

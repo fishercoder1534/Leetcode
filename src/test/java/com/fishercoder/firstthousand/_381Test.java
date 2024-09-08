@@ -1,11 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.fishercoder.solutions.firstthousand._381;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _381Test {
     private _381.Solution1.RandomizedCollection randomizedCollection;
@@ -24,5 +24,4 @@ public class _381Test {
         assertTrue(randomizedCollection.remove(2));
         randomizedCollection.getRandom();
     }
-
 }

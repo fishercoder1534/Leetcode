@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -10,7 +9,7 @@ import java.util.TreeMap;
 public class _538 {
 
     public static class Solution1 {
-        /**
+        /*
          * Traverse in this order: right -> root -> left
          */
         public TreeNode convertBST(TreeNode root) {
@@ -28,7 +27,7 @@ public class _538 {
     }
 
     public static class Solution2 {
-        //This solution is generic for both BST and regular binary trees
+        // This solution is generic for both BST and regular binary trees
         public TreeNode convertBST(TreeNode root) {
             if (root == null) {
                 return root;
@@ -49,7 +48,8 @@ public class _538 {
             return generateResultRoot(root, treeMap, result);
         }
 
-        private TreeNode generateResultRoot(TreeNode root, TreeMap<Integer, Integer> treeMap, TreeNode result) {
+        private TreeNode generateResultRoot(
+                TreeNode root, TreeMap<Integer, Integer> treeMap, TreeNode result) {
             if (root != null) {
                 result.val = treeMap.get(root.val) + root.val;
             }
@@ -76,5 +76,4 @@ public class _538 {
             }
         }
     }
-
 }

@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class _2392 {
     public static class Solution1 {
-        /**
+        /*
          * I figured out I needed to use Kahn's algorithm to topologically sort both rowConditions and colConditions,
          * but unsure how to fill the matrix.
          * https://leetcode.com/problems/build-a-matrix-with-conditions/editorial/ is brilliant as of how to build the matrix:
@@ -17,7 +17,7 @@ public class _2392 {
             int[] topologicallySortedRows = topologicalSort(rowConditions, k);
             int[] topologicallySortedCols = topologicalSort(colConditions, k);
             if (topologicallySortedRows.length == 0 || topologicallySortedCols.length == 0) {
-                return new int[][]{};
+                return new int[][] {};
             }
             int[][] matrix = new int[k][k];
             for (int i = 0; i < k; i++) {

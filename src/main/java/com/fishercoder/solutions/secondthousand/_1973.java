@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _1973 {
     public static class Solution1 {
-        /**
+        /*
          * This problem is almost identical to:
          * https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/
          * https://leetcode.com/problems/maximum-average-subtree/description/

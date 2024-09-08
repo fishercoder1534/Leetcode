@@ -2,7 +2,7 @@ package com.fishercoder.solutions.fourththousand;
 
 public class _3212 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution: (although it could be further optimized.)
          * use a 3-d array, dp[i][j][0] means the number of x's and dp[i][j][1] means the number of y's startring from (0,0) all the way to (i,j)
          * then how to compute prefix sum:

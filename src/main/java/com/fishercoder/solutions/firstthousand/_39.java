@@ -14,11 +14,16 @@ public class _39 {
             return result;
         }
 
-        void backtracking(int[] candidates, int target, int start, List<Integer> curr, List<List<Integer>> result) {
+        void backtracking(
+                int[] candidates,
+                int target,
+                int start,
+                List<Integer> curr,
+                List<List<Integer>> result) {
             if (target > 0) {
                 for (int i = start; i < candidates.length; i++) {
                     if (candidates[i] > target) {
-                        break;//pruning
+                        break; // pruning
                     }
                     curr.add(candidates[i]);
                     backtracking(candidates, target - candidates[i], i, curr, result);

@@ -8,11 +8,11 @@ import java.util.Map;
 
 public class _3224 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution during the contest.
          */
         public int minChanges(int[] nums, int k) {
-            //compute the frequency of each diff
+            // compute the frequency of each diff
             Map<Integer, Integer> map = new HashMap<>();
             for (int i = 0; i < nums.length / 2; i++) {
                 int diff = Math.abs(nums[nums.length - i - 1] - nums[i]);
@@ -20,18 +20,18 @@ public class _3224 {
             }
             List<int[]> list = new ArrayList<>();
             for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-                list.add(new int[]{entry.getKey(), entry.getValue()});
+                list.add(new int[] {entry.getKey(), entry.getValue()});
             }
-            //sort them by their frequency
+            // sort them by their frequency
             Collections.sort(list, (a, b) -> b[1] - a[1]);
             List<int[]> modes = new ArrayList<>();
             modes.add(list.get(0));
             int i = 1;
-            //in case there are ties (same frequency, different mode values)
+            // in case there are ties (same frequency, different mode values)
             while (i < list.size() && list.get(i)[1] == list.get(0)[1]) {
                 modes.add(list.get(i++));
             }
-            //we'll take the second most frequent mode as well, otherwise, test case 4 won't pass
+            // we'll take the second most frequent mode as well, otherwise, test case 4 won't pass
             if (i < list.size()) {
                 modes.add(list.get(i));
             }

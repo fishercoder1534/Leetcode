@@ -9,7 +9,8 @@ public class _2490 {
                     return false;
                 }
             }
-            return words[0].charAt(0) == words[words.length - 1].charAt(words[words.length - 1].length() - 1);
+            return words[0].charAt(0)
+                    == words[words.length - 1].charAt(words[words.length - 1].length() - 1);
         }
     }
 }

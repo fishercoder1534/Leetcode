@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class _381 {
     public static class Solution1 {
-        /**
+        /*
          * This is a natural extension to the solution from https://leetcode.com/problems/insert-delete-getrandom-o1
          * You only need to change the value type of the hashmap to be a set instead of Integer to hold all indexes for this value ever inserted.
          */

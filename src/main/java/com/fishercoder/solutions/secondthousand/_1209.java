@@ -76,7 +76,7 @@ public class _1209 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My completely original solution on 1/6/2021.
          */
         class CharCount {
@@ -117,7 +117,7 @@ public class _1209 {
     }
 
     public static class Solution4 {
-        //my completely original solution on 6/19/2024
+        // my completely original solution on 6/19/2024
         public String removeDuplicates(String s, int k) {
             Deque<Pair> stack = new LinkedList<>();
             for (char c : s.toCharArray()) {
@@ -151,6 +151,5 @@ public class _1209 {
                 this.count = count;
             }
         }
-
     }
 }

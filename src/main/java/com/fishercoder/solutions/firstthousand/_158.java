@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _158 {
 
     public static class Solution1 {
-        /**
+        /*
          * @param buf Destination buffer
          * @param n   Maximum number of characters to read
          * @return The number of characters read
@@ -31,7 +31,7 @@ public class _158 {
             return ptr;
         }
 
-        //This is a fake method to make IDE happy.
+        // This is a fake method to make IDE happy.
         private int read4(char[] buff) {
             return 1;
         }

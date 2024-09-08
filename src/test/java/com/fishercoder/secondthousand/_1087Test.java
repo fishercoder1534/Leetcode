@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.secondthousand._1087;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1087Test {
     private _1087.Solution1 solution1;
@@ -18,20 +18,25 @@ public class _1087Test {
 
     @Test
     public void test1() {
-        assertArrayEquals(new String[]{"ade", "adf", "bde", "bdf", "cde", "cdf"}, solution1.expand("{a,b,c}d{e,f}"));
-        assertArrayEquals(new String[]{"ade", "adf", "bde", "bdf", "cde", "cdf"}, solution2.expand("{a,b,c}d{e,f}"));
+        assertArrayEquals(
+                new String[] {"ade", "adf", "bde", "bdf", "cde", "cdf"},
+                solution1.expand("{a,b,c}d{e,f}"));
+        assertArrayEquals(
+                new String[] {"ade", "adf", "bde", "bdf", "cde", "cdf"},
+                solution2.expand("{a,b,c}d{e,f}"));
     }
 
     @Test
     public void test2() {
-        assertArrayEquals(new String[]{"abcd"}, solution1.expand("abcd"));
-        assertArrayEquals(new String[]{"abcd"}, solution2.expand("abcd"));
+        assertArrayEquals(new String[] {"abcd"}, solution1.expand("abcd"));
+        assertArrayEquals(new String[] {"abcd"}, solution2.expand("abcd"));
     }
 
     @Test
     public void test3() {
-        assertArrayEquals(new String[]{"acdf", "acef", "bcdf", "bcef"}, solution1.expand("{a,b}c{d,e}f"));
-        assertArrayEquals(new String[]{"acdf", "acef", "bcdf", "bcef"}, solution2.expand("{a,b}c{d,e}f"));
+        assertArrayEquals(
+                new String[] {"acdf", "acef", "bcdf", "bcef"}, solution1.expand("{a,b}c{d,e}f"));
+        assertArrayEquals(
+                new String[] {"acdf", "acef", "bcdf", "bcef"}, solution2.expand("{a,b}c{d,e}f"));
     }
-
 }

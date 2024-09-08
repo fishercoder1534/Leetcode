@@ -24,10 +24,11 @@ public class _1813 {
                     }
                 }
             }
-            if ((breaks == 1 && i == shortWords.length && j == longWords.length) || (i == shortWords.length && breaks == 0)) {
+            if ((breaks == 1 && i == shortWords.length && j == longWords.length)
+                    || (i == shortWords.length && breaks == 0)) {
                 return true;
             }
-            //we'll check from the left side and move towards the right side
+            // we'll check from the left side and move towards the right side
             i = shortWords.length - 1;
             j = longWords.length - 1;
             breaks = 0;

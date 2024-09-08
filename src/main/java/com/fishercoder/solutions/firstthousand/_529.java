@@ -17,12 +17,12 @@ public class _529 {
                 if (board[currRow][currCol] == 'M') {
                     board[currRow][currCol] = 'X';
                 } else {
-                    /**checks all eight neighbors of this curr cell, count all mines, this includes 'X' and 'M' */
+                    /*checks all eight neighbors of this curr cell, count all mines, this includes 'X' and 'M' */
                     int count = 0;
                     for (int i = -1; i < 2; i++) {
                         for (int j = -1; j < 2; j++) {
                             if (i == 0 && j == 0) {
-                                //this is the curr cell itself, so we skip
+                                // this is the curr cell itself, so we skip
                                 continue;
                             }
                             int nextRow = currRow + i;
@@ -37,13 +37,13 @@ public class _529 {
                     }
 
                     if (count > 0) {
-                        /**There are mines around this cell, so update it with the number of mines*/
+                        /*There are mines around this cell, so update it with the number of mines*/
                         board[currRow][currCol] = (char) (count + '0');
                     } else {
-                        /**There is no mines around this cell, so update it to be 'B'*/
+                        /*There is no mines around this cell, so update it to be 'B'*/
                         board[currRow][currCol] = 'B';
 
-                        /**then we'll also check all of its eight surrounding cells, if it's 'E'. we'll also update it to be 'B' and offer it into the queue
+                        /*then we'll also check all of its eight surrounding cells, if it's 'E'. we'll also update it to be 'B' and offer it into the queue
                          * Only when we know this is a 'B', we'll offer into the queue, so below check could only happen here, not in the previous nested for loop.*/
                         for (int i = -1; i < 2; i++) {
                             for (int j = -1; j < 2; j++) {
@@ -56,9 +56,9 @@ public class _529 {
                                     continue;
                                 }
                                 if (board[nextRow][nextCol] == 'E') {
-                                    /**we offer 'E' cells into the queue*/
-                                    queue.offer(new int[]{nextRow, nextCol});
-                                    /**then update this cell to be 'B' */
+                                    /*we offer 'E' cells into the queue*/
+                                    queue.offer(new int[] {nextRow, nextCol});
+                                    /*then update this cell to be 'B' */
                                     board[nextRow][nextCol] = 'B';
                                 }
                             }

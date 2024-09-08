@@ -1,13 +1,12 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class _450 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/65792/recursive-easy-to-understand-java-solution
          * Steps:
          * 1. Recursively find the node that has the same value as the key, while setting the left/right nodes equal to the returned subtree
@@ -48,7 +47,7 @@ public class _450 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My original, but brute force solution, time complexity: O(n) instead of O(h)
          */
         public TreeNode deleteNode(TreeNode root, int key) {
@@ -82,7 +81,7 @@ public class _450 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/delete-node-in-a-bst/solution/
          *
          * Again, using a pen and paper to visualize helps a lot.
@@ -101,25 +100,34 @@ public class _450 {
                 return null;
             }
             if (root.val < key) {
-                //delete from the right subtree
+                // delete from the right subtree
                 root.right = deleteNode(root.right, key);
             } else if (root.val > key) {
-                //delete from the left subtree
+                // delete from the left subtree
                 root.left = deleteNode(root.left, key);
             } else {
-                //delete this current node, three cases:
+                // delete this current node, three cases:
                 if (root.left == null && root.right == null) {
-                    //case 1: if this is a leaf
+                    // case 1: if this is a leaf
                     root = null;
                 } else if (root.right != null) {
-                    //case 2: has a right child, regardless whether it has left children or not,
-                    //this is because we want to traverse the tree only once, so we'll want to keep going down the tree
-                    root.val = findSuccessor(root);//we find the value of the successor and assign it to current root.val
-                    root.right = deleteNode(root.right, root.val);//and then we delete this successor's value in the right subtree as it's been moved up
+                    // case 2: has a right child, regardless whether it has left children or not,
+                    // this is because we want to traverse the tree only once, so we'll want to keep
+                    // going down the tree
+                    root.val =
+                            findSuccessor(
+                                    root); // we find the value of the successor and assign it to
+                    // current root.val
+                    root.right =
+                            deleteNode(
+                                    root.right,
+                                    root.val); // and then we delete this successor's value in the
+                    // right subtree as it's been moved up
                 } else if (root.left != null) {
-                    //case 3: this node is not a leaf and no right child, but has a left child
-                    //That means that its successor is somewhere upper in the tree but we don't want to go back.
-                    //Let's use the predecessor here which is somewhere lower in the left subtree.
+                    // case 3: this node is not a leaf and no right child, but has a left child
+                    // That means that its successor is somewhere upper in the tree but we don't
+                    // want to go back.
+                    // Let's use the predecessor here which is somewhere lower in the left subtree.
                     root.val = findPredecessor(root);
                     root.left = deleteNode(root.left, root.val);
                 }
@@ -143,5 +151,4 @@ public class _450 {
             return root.val;
         }
     }
-
 }

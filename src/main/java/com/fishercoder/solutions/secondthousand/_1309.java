@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _1309 {
     public static class Solution1 {
-        //TODO: very silly solution, optimze it
+        // TODO: very silly solution, optimze it
         public String freqAlphabets(String s) {
             Map<String, String> map = new HashMap<>();
             map.put("1", "a");
@@ -36,10 +36,16 @@ public class _1309 {
             map.put("26#", "z");
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < s.length(); ) {
-                if (Integer.parseInt("" + s.charAt(i)) == 1 && i + 1 < s.length() && i + 2 < s.length() && s.charAt(i + 2) == '#') {
+                if (Integer.parseInt("" + s.charAt(i)) == 1
+                        && i + 1 < s.length()
+                        && i + 2 < s.length()
+                        && s.charAt(i + 2) == '#') {
                     sb.append(map.get(s.substring(i, i + 3)));
                     i += 3;
-                } else if (Integer.parseInt("" + s.charAt(i)) == 2 && i + 1 < s.length() && i + 2 < s.length() && s.charAt(i + 2) == '#') {
+                } else if (Integer.parseInt("" + s.charAt(i)) == 2
+                        && i + 1 < s.length()
+                        && i + 2 < s.length()
+                        && s.charAt(i + 2) == '#') {
                     sb.append(map.get(s.substring(i, i + 3)));
                     i += 3;
                 } else {

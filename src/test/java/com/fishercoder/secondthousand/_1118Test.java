@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1118;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1118Test {
     private _1118.Solution1 solution1;
@@ -33,5 +33,4 @@ public class _1118Test {
     public void test4() {
         assertEquals(29, solution1.numberOfDays(1836, 2));
     }
-
 }

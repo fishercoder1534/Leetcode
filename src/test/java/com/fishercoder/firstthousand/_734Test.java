@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._734;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _734Test {
     private _734.Solution1 solution1;
@@ -19,60 +19,61 @@ public class _734Test {
 
     @Test
     public void test1() {
-        words1 = new String[]{"great", "acting", "skills"};
-        words2 = new String[]{"fine", "drama", "talent"};
-        pairs = new String[][]{
-                {"great", "fine"},
-                {"acting", "drama"},
-                {"skills", "talent"}
-        };
+        words1 = new String[] {"great", "acting", "skills"};
+        words2 = new String[] {"fine", "drama", "talent"};
+        pairs =
+                new String[][] {
+                    {"great", "fine"},
+                    {"acting", "drama"},
+                    {"skills", "talent"}
+                };
         assertEquals(true, solution1.areSentencesSimilar(words1, words2, pairs));
     }
 
     @Test
     public void test2() {
-        String[] words1 = new String[]{"one", "excellent", "meal"};
-        String[] words2 = new String[]{"one", "good", "dinner"};
-        String[][] pairs = new String[][]{
-                {"great", "good"},
-                {"extraordinary", "good"},
-                {"well", "good"},
-                {"wonderful", "good"},
-                {"excellent", "good"},
-                {"dinner", "meal"},
-                {"fine", "good"},
-                {"nice", "good"},
-                {"any", "one"},
-                {"unique", "one"},
-                {"some", "one"},
-                {"the", "one"},
-                {"an", "one"},
-                {"single", "one"},
-                {"a", "one"},
-                {"keep", "own"},
-                {"truck", "car"},
-                {"super", "very"},
-                {"really", "very"},
-                {"actually", "very"},
-                {"extremely", "very"},
-                {"have", "own"},
-                {"possess", "own"},
-                {"lunch", "meal"},
-                {"super", "meal"},
-                {"food", "meal"},
-                {"breakfast", "meal"},
-                {"brunch", "meal"},
-                {"wagon", "car"},
-                {"automobile", "car"},
-                {"auto", "car"},
-                {"fruits", "meal"},
-                {"vehicle", "car"},
-                {"entertain", "have"},
-                {"drink", "have"},
-                {"eat", "have"},
-                {"take", "have"},
-        };
+        String[] words1 = new String[] {"one", "excellent", "meal"};
+        String[] words2 = new String[] {"one", "good", "dinner"};
+        String[][] pairs =
+                new String[][] {
+                    {"great", "good"},
+                    {"extraordinary", "good"},
+                    {"well", "good"},
+                    {"wonderful", "good"},
+                    {"excellent", "good"},
+                    {"dinner", "meal"},
+                    {"fine", "good"},
+                    {"nice", "good"},
+                    {"any", "one"},
+                    {"unique", "one"},
+                    {"some", "one"},
+                    {"the", "one"},
+                    {"an", "one"},
+                    {"single", "one"},
+                    {"a", "one"},
+                    {"keep", "own"},
+                    {"truck", "car"},
+                    {"super", "very"},
+                    {"really", "very"},
+                    {"actually", "very"},
+                    {"extremely", "very"},
+                    {"have", "own"},
+                    {"possess", "own"},
+                    {"lunch", "meal"},
+                    {"super", "meal"},
+                    {"food", "meal"},
+                    {"breakfast", "meal"},
+                    {"brunch", "meal"},
+                    {"wagon", "car"},
+                    {"automobile", "car"},
+                    {"auto", "car"},
+                    {"fruits", "meal"},
+                    {"vehicle", "car"},
+                    {"entertain", "have"},
+                    {"drink", "have"},
+                    {"eat", "have"},
+                    {"take", "have"},
+                };
         assertEquals(true, solution1.areSentencesSimilar(words1, words2, pairs));
     }
-
 }

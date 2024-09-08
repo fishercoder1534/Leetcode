@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._468;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _468Test {
     private _468.Solution1 solution1;
@@ -31,7 +31,8 @@ public class _468Test {
 
     @Test
     public void test4() {
-        assertEquals("Neither", solution1.validIPAddress("02001:0db8:85a3:0000:0000:8a2e:0370:7334"));
+        assertEquals(
+                "Neither", solution1.validIPAddress("02001:0db8:85a3:0000:0000:8a2e:0370:7334"));
     }
 
     @Test
@@ -78,5 +79,4 @@ public class _468Test {
     public void test13() {
         assertEquals("Neither", solution1.validIPAddress("1081:db8:85a3:01:z:8A2E:0370:7334"));
     }
-
 }

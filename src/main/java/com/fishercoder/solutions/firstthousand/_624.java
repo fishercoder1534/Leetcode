@@ -15,7 +15,10 @@ public class _624 {
             Collections.sort(max);
             int ans = Integer.MIN_VALUE;
             for (List<Integer> array : arrays) {
-                int big = array.get(array.size() - 1) == max.get(max.size() - 1) ? max.get(max.size() - 2) : max.get(max.size() - 1);
+                int big =
+                        array.get(array.size() - 1) == max.get(max.size() - 1)
+                                ? max.get(max.size() - 2)
+                                : max.get(max.size() - 1);
                 ans = Math.max(ans, big - array.get(0));
             }
             return ans;

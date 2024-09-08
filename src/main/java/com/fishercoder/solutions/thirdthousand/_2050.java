@@ -10,7 +10,7 @@ import java.util.Set;
 public class _2050 {
     public static class Solution1 {
 
-        /**
+        /*
          * My original solution, but results in TLE on LeetCode at 39/40 test cases...
          */
         public int minimumTime(int n, int[][] relations, int[] time) {
@@ -55,6 +55,5 @@ public class _2050 {
             }
             return minTime;
         }
-
     }
 }

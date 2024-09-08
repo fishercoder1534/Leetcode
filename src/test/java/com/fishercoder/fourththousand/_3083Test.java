@@ -1,10 +1,10 @@
 package com.fishercoder.fourththousand;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.fishercoder.solutions.fourththousand._3083;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _3083Test {
     private _3083.Solution1 solution1;
@@ -18,5 +18,4 @@ public class _3083Test {
     public void test1() {
         assertTrue(solution1.isSubstringPresent("leetcode"));
     }
-
 }

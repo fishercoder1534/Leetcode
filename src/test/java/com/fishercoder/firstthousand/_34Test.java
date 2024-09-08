@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._34;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _34Test {
     private _34.Solution1 solution1;
@@ -21,17 +21,17 @@ public class _34Test {
 
     @Test
     public void test1() {
-        nums = new int[]{1, 2, 3};
-        assertArrayEquals(new int[]{1, 1}, solution1.searchRange(nums, 2));
-        assertArrayEquals(new int[]{1, 1}, solution2.searchRange(nums, 2));
-        assertArrayEquals(new int[]{1, 1}, solution3.searchRange(nums, 2));
+        nums = new int[] {1, 2, 3};
+        assertArrayEquals(new int[] {1, 1}, solution1.searchRange(nums, 2));
+        assertArrayEquals(new int[] {1, 1}, solution2.searchRange(nums, 2));
+        assertArrayEquals(new int[] {1, 1}, solution3.searchRange(nums, 2));
     }
 
     @Test
     public void test2() {
-        nums = new int[]{};
-        assertArrayEquals(new int[]{-1, -1}, solution1.searchRange(nums, 0));
-        assertArrayEquals(new int[]{-1, -1}, solution2.searchRange(nums, 0));
-        assertArrayEquals(new int[]{-1, -1}, solution3.searchRange(nums, 0));
+        nums = new int[] {};
+        assertArrayEquals(new int[] {-1, -1}, solution1.searchRange(nums, 0));
+        assertArrayEquals(new int[] {-1, -1}, solution2.searchRange(nums, 0));
+        assertArrayEquals(new int[] {-1, -1}, solution3.searchRange(nums, 0));
     }
 }

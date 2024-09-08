@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1128;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1128Test {
     private _1128.Solution1 solution1;
@@ -17,12 +17,13 @@ public class _1128Test {
 
     @Test
     public void test1() {
-        dominoes = new int[][]{
-                {1, 2},
-                {2, 1},
-                {3, 4},
-                {5, 6}
-        };
+        dominoes =
+                new int[][] {
+                    {1, 2},
+                    {2, 1},
+                    {3, 4},
+                    {5, 6}
+                };
         assertEquals(1, solution1.numEquivDominoPairs(dominoes));
     }
 }

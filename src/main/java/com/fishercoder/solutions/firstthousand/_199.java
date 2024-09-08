@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -10,7 +9,7 @@ import java.util.Queue;
 public class _199 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/binary-tree-right-side-view/discuss/56012/My-simple-accepted-solution(JAVA)
          */
         public List<Integer> rightSideView(TreeNode root) {
@@ -26,14 +25,15 @@ public class _199 {
             if (currDepth == result.size()) {
                 result.add(curr.val);
             }
-            //go through right side first as we want right side view, so as soon as we find it, then we won't use the one from left side
+            // go through right side first as we want right side view, so as soon as we find it,
+            // then we won't use the one from left side
             rightView(curr.right, result, currDepth + 1);
             rightView(curr.left, result, currDepth + 1);
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * BFS the tree
          */
         public List<Integer> rightSideView(TreeNode root) {
@@ -61,5 +61,4 @@ public class _199 {
             return result;
         }
     }
-
 }

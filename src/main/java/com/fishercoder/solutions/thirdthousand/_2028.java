@@ -9,8 +9,11 @@ public class _2028 {
             }
             long totalSum = (rolls.length + n) * mean;
             long remainder = totalSum - sum;
-            if (remainder / n > 6 || (remainder / n == 6 && remainder % n != 0) || remainder / n < 0 || remainder < n) {
-                return new int[]{};
+            if (remainder / n > 6
+                    || (remainder / n == 6 && remainder % n != 0)
+                    || remainder / n < 0
+                    || remainder < n) {
+                return new int[] {};
             }
             int ave = (int) (remainder / n);
             int remain = (int) (remainder % n);

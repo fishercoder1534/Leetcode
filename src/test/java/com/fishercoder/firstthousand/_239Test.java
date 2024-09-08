@@ -3,7 +3,6 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.solutions.firstthousand._239;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class _239Test {
@@ -20,20 +19,19 @@ public class _239Test {
 
     @BeforeEach
     public void setupForEachTest() {
-        expected = new int[]{};
-        actual = new int[]{};
-        nums = new int[]{};
+        expected = new int[] {};
+        actual = new int[] {};
+        nums = new int[] {};
         k = 0;
     }
 
     @Test
     public void test1() {
 
-        nums = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
+        nums = new int[] {1, 3, -1, -3, 5, 3, 6, 7};
         k = 3;
-        expected = new int[]{3, 3, 5, 5, 6, 7};
+        expected = new int[] {3, 3, 5, 5, 6, 7};
         actual = solution1.maxSlidingWindow(nums, k);
         Assertions.assertArrayEquals(expected, actual);
-
     }
 }

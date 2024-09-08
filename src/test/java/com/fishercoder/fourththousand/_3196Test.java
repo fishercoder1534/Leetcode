@@ -1,10 +1,10 @@
 package com.fishercoder.fourththousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.fourththousand._3196;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3196Test {
     private _3196.Solution1 solution1;
@@ -16,12 +16,11 @@ public class _3196Test {
 
     @Test
     public void test1() {
-        assertEquals(10, solution1.maximumTotalCost(new int[]{1, -2, 3, 4}));
+        assertEquals(10, solution1.maximumTotalCost(new int[] {1, -2, 3, 4}));
     }
 
     @Test
     public void test2() {
-        assertEquals(-7, solution1.maximumTotalCost(new int[]{-14, -13, -20}));
+        assertEquals(-7, solution1.maximumTotalCost(new int[] {-14, -13, -20}));
     }
-
 }

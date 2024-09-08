@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._456;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _456Test {
     private _456.Solution1 solution1;
@@ -16,8 +16,6 @@ public class _456Test {
 
     @Test
     public void test1() {
-        assertEquals(true, solution1.find132pattern(new int[]{-1, 3, 2, 0}));
-
+        assertEquals(true, solution1.find132pattern(new int[] {-1, 3, 2, 0}));
     }
-
 }

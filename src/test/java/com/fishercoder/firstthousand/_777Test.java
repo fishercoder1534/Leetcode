@@ -1,11 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.fishercoder.solutions.firstthousand._777;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _777Test {
 
@@ -75,5 +75,4 @@ public class _777Test {
     public void test12() {
         assertFalse(solution1.canTransform("XXXXXLXXXLXXXX", "XXLXXXXXXXXLXX"));
     }
-
 }

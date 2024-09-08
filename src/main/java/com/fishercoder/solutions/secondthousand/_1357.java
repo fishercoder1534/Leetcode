@@ -28,7 +28,7 @@ public class _1357 {
                     totalPrice += productsToPrices.get(product[i]) * amount[i];
                 }
                 if (customerCount + 1 == n) {
-                    //apply discount
+                    // apply discount
                     totalPrice *= (double) (100 - discount) / 100;
                     customerCount = 0;
                 } else {

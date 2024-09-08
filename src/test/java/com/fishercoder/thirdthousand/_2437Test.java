@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2437;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2437Test {
     private _2437.Solution1 solution1;

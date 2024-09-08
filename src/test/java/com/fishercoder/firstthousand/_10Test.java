@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._10;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _10Test {
     private _10.Solution1 solution1;
@@ -28,5 +28,4 @@ public class _10Test {
     public void test3() {
         assertEquals(true, solution1.isMatch("aab", "c*a*b"));
     }
-
 }

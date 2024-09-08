@@ -18,7 +18,7 @@ public class _279 {
     }
 
     public static class Solution2 {
-        //DP solution
+        // DP solution
         public int numSquares(int n) {
             int[] dp = new int[n + 1];
             Arrays.fill(dp, Integer.MAX_VALUE);
@@ -38,7 +38,7 @@ public class _279 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My completely original DP solution on 10/14/2021.
          * <p>
          * Again, once you use a pen and paper to visualize your thought process, the idea flows out very quickly.
@@ -67,5 +67,4 @@ public class _279 {
             return dp[n];
         }
     }
-
 }

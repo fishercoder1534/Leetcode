@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class _802 {
     public static class Solution1 {
-        /**
+        /*
          * This is a variation of the templated topological sort in that it doesn't use indegree array, instead, it uses an outdegree array.
          * <p>
          * For topological sort, it usually makes sense to just keep an array of elements since it's a graph of n nodes,

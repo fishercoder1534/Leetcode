@@ -50,7 +50,7 @@ public class _735 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 11/5/2021.
          */
         public int[] asteroidCollision(int[] asteroids) {
@@ -65,10 +65,14 @@ public class _735 {
                         } else if (stack.peekLast() == Math.abs(a)) {
                             stack.pollLast();
                         } else {
-                            while (!stack.isEmpty() && stack.peekLast() > 0 && stack.peekLast() < Math.abs(a)) {
+                            while (!stack.isEmpty()
+                                    && stack.peekLast() > 0
+                                    && stack.peekLast() < Math.abs(a)) {
                                 stack.pollLast();
                             }
-                            if (!stack.isEmpty() && stack.peekLast() > 0 && stack.peekLast() == Math.abs(a)) {
+                            if (!stack.isEmpty()
+                                    && stack.peekLast() > 0
+                                    && stack.peekLast() == Math.abs(a)) {
                                 stack.pollLast();
                                 continue;
                             } else if (stack.isEmpty() || stack.peekLast() < 0) {
@@ -89,7 +93,7 @@ public class _735 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My completely original solution on 1/14/2022.
          */
         public int[] asteroidCollision(int[] asteroids) {
@@ -122,7 +126,7 @@ public class _735 {
     }
 
     public static class Solution4 {
-        /**
+        /*
          * My completely original solution on 7/19/2024.
          */
         public int[] asteroidCollision(int[] asteroids) {
@@ -130,7 +134,9 @@ public class _735 {
             for (int asteroid : asteroids) {
                 if (asteroid < 0 && !stack.isEmpty() && stack.peekLast() > 0) {
                     boolean bothRemoved = false;
-                    while (!stack.isEmpty() && stack.peekLast() > 0 && stack.peekLast() <= -asteroid) {
+                    while (!stack.isEmpty()
+                            && stack.peekLast() > 0
+                            && stack.peekLast() <= -asteroid) {
                         if (stack.peekLast() == -asteroid) {
                             bothRemoved = true;
                             stack.pollLast();

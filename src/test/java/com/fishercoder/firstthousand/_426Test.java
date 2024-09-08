@@ -26,5 +26,4 @@ public class _426Test {
         _426.Node actual = solution1.treeToDoublyList(node4);
         System.out.println("Finished.");
     }
-
 }

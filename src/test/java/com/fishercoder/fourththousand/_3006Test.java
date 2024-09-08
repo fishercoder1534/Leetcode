@@ -1,13 +1,12 @@
 package com.fishercoder.fourththousand;
 
-import com.fishercoder.solutions.fourththousand._3006;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.fishercoder.solutions.fourththousand._3006;
 import java.util.ArrayList;
 import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _3006Test {
     private _3006.Solution1 solution1;
@@ -19,17 +18,21 @@ public class _3006Test {
 
     @Test
     public void test1() {
-        assertEquals(Arrays.asList(16, 33), solution1.beautifulIndices("isawsquirrelnearmysquirrelhouseohmy", "my", "squirrel", 15));
+        assertEquals(
+                Arrays.asList(16, 33),
+                solution1.beautifulIndices(
+                        "isawsquirrelnearmysquirrelhouseohmy", "my", "squirrel", 15));
     }
 
     @Test
     public void test2() {
-        assertEquals(new ArrayList<>(Arrays.asList(0)), solution1.beautifulIndices("bavgoc", "ba", "c", 6));
+        assertEquals(
+                new ArrayList<>(Arrays.asList(0)),
+                solution1.beautifulIndices("bavgoc", "ba", "c", 6));
     }
 
     @Test
     public void test3() {
         assertEquals(Arrays.asList(), solution1.beautifulIndices("lrtsi", "lrts", "i", 3));
     }
-
 }

@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.ListNode;
 
 public class _725 {
     public static class Solution1 {
-        /**
+        /*
          * My very original solution, but verbose.
          */
         public ListNode[] splitListToParts(ListNode head, int k) {
@@ -43,7 +43,7 @@ public class _725 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * More concise version
          */
         public ListNode[] splitListToParts(ListNode head, int k) {
@@ -75,5 +75,4 @@ public class _725 {
             return len;
         }
     }
-
 }

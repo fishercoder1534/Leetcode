@@ -10,7 +10,8 @@ public class _3136 {
             if (word.length() < 3) {
                 return false;
             }
-            Set<Character> vowels = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'));
+            Set<Character> vowels =
+                    new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'));
             boolean containsVowel = false;
             boolean containsConsonant = false;
             for (char c : word.toCharArray()) {

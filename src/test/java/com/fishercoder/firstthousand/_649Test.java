@@ -1,14 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._649;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 5/8/17.
- */
+/** Created by fishercoder on 5/8/17. */
 public class _649Test {
     private _649.Solution1 solution1;
 

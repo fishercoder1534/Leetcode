@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _440 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/64624/concise-easy-to-understand-java-5ms-solution-with-explaination/2
          */
         public int findKthNumber(int n, int k) {
@@ -22,7 +22,7 @@ public class _440 {
             return curr;
         }
 
-        //use long in case of overflow
+        // use long in case of overflow
         public int calSteps(int n, long n1, long n2) {
             int steps = 0;
             while (n1 <= n) {

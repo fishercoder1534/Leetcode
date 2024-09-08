@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._560;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _560Test {
     private _560.Solution1 solution1;
@@ -22,7 +22,7 @@ public class _560Test {
 
     @Test
     public void test1() {
-        nums = new int[]{1, 1, 1};
+        nums = new int[] {1, 1, 1};
         k = 2;
         expected = 2;
         actual = solution1.subarraySum(nums, k);
@@ -33,7 +33,7 @@ public class _560Test {
 
     @Test
     public void test2() {
-        nums = new int[]{1, 2, 3};
+        nums = new int[] {1, 2, 3};
         k = 3;
         expected = 2;
         actual = solution1.subarraySum(nums, k);
@@ -44,7 +44,7 @@ public class _560Test {
 
     @Test
     public void test3() {
-        nums = new int[]{1, 1};
+        nums = new int[] {1, 1};
         k = 1;
         expected = 2;
         actual = solution1.subarraySum(nums, k);
@@ -55,7 +55,7 @@ public class _560Test {
 
     @Test
     public void test4() {
-        nums = new int[]{0, 0};
+        nums = new int[] {0, 0};
         k = 0;
         expected = 3;
         actual = solution1.subarraySum(nums, k);
@@ -66,7 +66,7 @@ public class _560Test {
 
     @Test
     public void test5() {
-        nums = new int[]{100, 1, 2, 3, 4};
+        nums = new int[] {100, 1, 2, 3, 4};
         k = 3;
         expected = 2;
         actual = solution1.subarraySum(nums, k);
@@ -74,5 +74,4 @@ public class _560Test {
         actual = solution2.subarraySum(nums, k);
         assertEquals(expected, actual);
     }
-
 }

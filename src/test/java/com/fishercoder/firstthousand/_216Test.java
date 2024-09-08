@@ -1,12 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._216;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _216Test {
     private _216.Solution1 solution1;
@@ -24,5 +23,4 @@ public class _216Test {
         n = 7;
         assertEquals(Arrays.asList(Arrays.asList(1, 2, 4)), solution1.combinationSum3(k, n));
     }
-
 }

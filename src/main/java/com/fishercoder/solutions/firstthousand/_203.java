@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.ListNode;
 
 public class _203 {
     public static class Solution1 {
-        /**
+        /*
          * This is a very good question to test your understanding of pointers/memory/addresses, although it's marked as EASY.
          * All the three nodes: dummy, curr and prev are indispensable.
          * <p>

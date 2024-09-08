@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _999 {
     public static class Solution1 {
-        int[] directions = new int[]{0, 1, 0, -1, 0};
+        int[] directions = new int[] {0, 1, 0, -1, 0};
 
         public int numRookCaptures(char[][] board) {
             int m = board.length;
@@ -22,8 +22,10 @@ public class _999 {
             for (int i = 0; i < 4; i++) {
                 int neighborRow = rowR + directions[i];
                 int neighborCol = colR + directions[i + 1];
-                if (neighborRow >= 0 && neighborRow < m
-                        && neighborCol >= 0 && neighborCol < n
+                if (neighborRow >= 0
+                        && neighborRow < m
+                        && neighborCol >= 0
+                        && neighborCol < n
                         && board[neighborRow][neighborCol] != 'B') {
                     if (directions[i] == 0 && directions[i + 1] == 1) {
                         while (neighborCol < n) {

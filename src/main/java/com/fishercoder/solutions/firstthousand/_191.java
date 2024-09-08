@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _191 {
 
     public static class Solution1 {
-        /**
+        /*
          * Doing bitwise AND operation between n and n-1 will always flip the least significant 1 bit in n to zero
          * example run for the above editorial solution: input 5, n will be 5&4 and becomes 4,
          * then in the next run, n will become 4&3 which is 0, thus exit the while loop.
@@ -47,7 +47,7 @@ public class _191 {
                 if (n == 0) {
                     return bits;
                 }
-                /**must use unsigned right shift operator since the problem says this is an unsigned value*/
+                /*must use unsigned right shift operator since the problem says this is an unsigned value*/
                 n >>>= 1;
             }
             return bits;

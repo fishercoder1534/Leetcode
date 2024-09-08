@@ -1,14 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._970;
-
 import java.util.Arrays;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _970Test {
     private _970.Solution1 solution1;

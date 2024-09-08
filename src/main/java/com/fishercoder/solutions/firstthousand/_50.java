@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _50 {
 
     public static class Solution1 {
-        /**
+        /*
          * Time: O(logn)
          * Space: O(logn)
          */
@@ -30,7 +30,7 @@ public class _50 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Time: O(logn)
          * Space: O(1)
          */
@@ -53,7 +53,7 @@ public class _50 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/powx-n/solutions/19546/short-and-easy-to-understand-solution/comments/162293
          */
         public double myPow(double x, int n) {
@@ -61,7 +61,7 @@ public class _50 {
                 return 1;
             }
             if (n < 0) {
-                //this is to avoid integer overflow
+                // this is to avoid integer overflow
                 return 1 / x * myPow(1 / x, -(n + 1));
             }
             if (n % 2 == 0) {

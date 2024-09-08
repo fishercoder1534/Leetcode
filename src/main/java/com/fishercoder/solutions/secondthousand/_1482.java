@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1482 {
     public static class Solution1 {
-        /**
+        /*
          * https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/discuss/686316/JavaC%2B%2BPython-Binary-Search
          */
         public int minDays(int[] bloomDay, int m, int k) {

@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
+/*
  * 1399. Count Largest Group
  *
  * Given an integer n. Each number from 1 to n is grouped according to the sum of its digits.

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _416 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/67539/0-1-knapsack-detailed-explanation
          */
         public boolean canPartition(int[] nums) {
@@ -47,5 +47,4 @@ public class _416 {
             return dp[n][sum];
         }
     }
-
 }

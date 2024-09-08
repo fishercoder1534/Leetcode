@@ -1,15 +1,13 @@
 package com.fishercoder.firstthousand;
 
-import com.fishercoder.solutions.firstthousand._140;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.fishercoder.solutions.firstthousand._140;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _140Test {
     private _140.Solution1 solution1;
@@ -27,8 +25,11 @@ public class _140Test {
         wordDict = new ArrayList<>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
         List<String> actual = solution1.wordBreak(s, wordDict);
         List<String> expected = Arrays.asList("cats and dog", "cat sand dog");
-        //assert equals ignoring order
-        assertTrue(expected.size() == actual.size() && actual.containsAll(expected) && expected.containsAll(actual));
+        // assert equals ignoring order
+        assertTrue(
+                expected.size() == actual.size()
+                        && actual.containsAll(expected)
+                        && expected.containsAll(actual));
     }
 
     @Test
@@ -36,9 +37,13 @@ public class _140Test {
         s = "pineapplepenapple";
         wordDict = new ArrayList<>(Arrays.asList("apple", "pen", "applepen", "pine", "pineapple"));
         List<String> actual = solution1.wordBreak(s, wordDict);
-        List<String> expected = Arrays.asList("pine apple pen apple", "pineapple pen apple", "pine applepen apple");
-        //assert equals ignoring order
-        assertTrue(expected.size() == actual.size() && actual.containsAll(expected) && expected.containsAll(actual));
+        List<String> expected =
+                Arrays.asList("pine apple pen apple", "pineapple pen apple", "pine applepen apple");
+        // assert equals ignoring order
+        assertTrue(
+                expected.size() == actual.size()
+                        && actual.containsAll(expected)
+                        && expected.containsAll(actual));
     }
 
     @Test
@@ -47,8 +52,10 @@ public class _140Test {
         wordDict = new ArrayList<>(Arrays.asList("cats", "dog", "sand", "and", "cat"));
         List<String> actual = solution1.wordBreak(s, wordDict);
         List<String> expected = Arrays.asList();
-        //assert equals ignoring order
-        assertTrue(expected.size() == actual.size() && actual.containsAll(expected) && expected.containsAll(actual));
+        // assert equals ignoring order
+        assertTrue(
+                expected.size() == actual.size()
+                        && actual.containsAll(expected)
+                        && expected.containsAll(actual));
     }
-
 }

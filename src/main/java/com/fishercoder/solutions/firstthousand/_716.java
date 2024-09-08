@@ -10,7 +10,7 @@ import java.util.TreeMap;
 
 public class _716 {
     public static class Solution1 {
-        /**
+        /*
          * This is O(n) for popMax() and pop() while O(1) for the other three operations which is UN-acceptable during an interview!
          * We need to do better than O(n) time complexity in order to ace the interview!
          * But O(1) is impossible, so let's aim for O(logn).
@@ -20,7 +20,7 @@ public class _716 {
             private int max;
             private Stack<Integer> stack;
 
-            /**
+            /*
              * initialize your data structure here.
              */
             public MaxStack() {
@@ -88,7 +88,7 @@ public class _716 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Use a treemap and a doubly linked list to achieve O(logn) time complexity.
          */
 
@@ -114,7 +114,7 @@ public class _716 {
             }
 
             public Node add(int val) {
-                /**For this doubly linked list, we always add it to the end of the list*/
+                /*For this doubly linked list, we always add it to the end of the list*/
                 Node x = new Node(val);
                 x.next = tail;
                 x.prev = tail.prev;
@@ -124,7 +124,7 @@ public class _716 {
             }
 
             public int pop() {
-                /**for pop(), we always pop one from the tail of the doubly linked list*/
+                /*for pop(), we always pop one from the tail of the doubly linked list*/
                 return unlink(tail.prev).val;
             }
 
@@ -141,13 +141,13 @@ public class _716 {
 
         public static class MaxStack {
             TreeMap<Integer, List<Node>> treeMap;
-            /**
+            /*
              * the reason we have a list of nodes as treemap's value is because one value could be pushed
              * multiple times into this MaxStack and we want to keep track of all of them.
              */
             DoublyLinkedList doublyLinkedList;
 
-            /**
+            /*
              * initialize your data structure here.
              */
             public MaxStack() {
@@ -195,7 +195,7 @@ public class _716 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My completely original solution on 10/25/2021.
          * popMax() takes O(n) time, all other operations take O(1) time.
          */
@@ -212,10 +212,10 @@ public class _716 {
 
             public void push(int x) {
                 if (stack.isEmpty()) {
-                    stack.addLast(new int[]{x, x});
+                    stack.addLast(new int[] {x, x});
                 } else {
                     int[] last = stack.peekLast();
-                    stack.addLast(new int[]{x, Math.max(last[1], x)});
+                    stack.addLast(new int[] {x, Math.max(last[1], x)});
                 }
             }
 
@@ -240,9 +240,9 @@ public class _716 {
                 while (!tmp.isEmpty()) {
                     int[] curr = tmp.pollLast();
                     if (!stack.isEmpty()) {
-                        stack.addLast(new int[]{curr[0], Math.max(curr[0], stack.peekLast()[1])});
+                        stack.addLast(new int[] {curr[0], Math.max(curr[0], stack.peekLast()[1])});
                     } else {
-                        stack.addLast(new int[]{curr[0], curr[0]});
+                        stack.addLast(new int[] {curr[0], curr[0]});
                     }
                 }
                 return max[0];

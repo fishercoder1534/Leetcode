@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _410 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/61324/clear-explanation-8ms-binary-search-java
          * <p>
          * The answer is between maximum value of input array numbers and sum of those numbers. Use
@@ -33,7 +33,7 @@ public class _410 {
             if (m == 1) {
                 return (int) sum;
             }
-            //binary search
+            // binary search
             long l = max;
             long r = sum;
             while (l <= r) {

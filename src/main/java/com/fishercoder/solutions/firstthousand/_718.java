@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _718 {
     public static class Solution1 {
-        /**
+        /*
          * This brute force idea results in TLE.
          */
         public int findLength(int[] nums1, int[] nums2) {
@@ -33,7 +33,7 @@ public class _718 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * DP approach:
          * credit: https://leetcode.com/problems/maximum-length-of-repeated-subarray/solution/
          * 1. we initialize a 2D matrix as the cash to hold values, initially, all are zeroes,
@@ -63,5 +63,4 @@ public class _718 {
             return max;
         }
     }
-
 }

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Set;
 
-/**
+/*
  * 207. Course Schedule
  * <p>
  * There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1.
@@ -38,7 +38,7 @@ import java.util.Set;
 public class _207 {
 
     public static class Solution1 {
-        /**
+        /*
          * Kahn's algorithm for topological sorting
          */
         public boolean canFinish(int numCourses, int[][] prerequisites) {
@@ -80,7 +80,7 @@ public class _207 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * BFS
          */
         public boolean canFinish(int numCourses, int[][] prerequisites) {
@@ -118,7 +118,7 @@ public class _207 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * DFS, the fastest method in all, with the help of a cache and also converted edges into adjacency list,
          * although theoretically, all these three methods' time complexity are: O(V+E)
          */
@@ -131,7 +131,7 @@ public class _207 {
                 courseList.get(pre[1]).add(pre[0]);
             }
             int[] visited = new int[numCourses];
-            //visit each course using DFS
+            // visit each course using DFS
             for (int i = 0; i < numCourses; i++) {
                 if (!dfs(i, courseList, visited)) {
                     return false;
@@ -141,7 +141,7 @@ public class _207 {
         }
 
         private boolean dfs(int course, List<List<Integer>> courseList, int[] visited) {
-            visited[course] = 1;//mark as temporarily visited
+            visited[course] = 1; // mark as temporarily visited
             List<Integer> coursesCanBeTaken = courseList.get(course);
             for (int i = 0; i < coursesCanBeTaken.size(); i++) {
                 int courseToTake = coursesCanBeTaken.get(i);
@@ -154,13 +154,13 @@ public class _207 {
                     }
                 }
             }
-            visited[course] = 2;//mark it as completely done.
+            visited[course] = 2; // mark it as completely done.
             return true;
         }
     }
 
     public static class Solution4 {
-        /**
+        /*
          * This is also Kahn's algorithm, but builds an adjacency list (unncessary for this problem)
          * which is often times very helpful in other graph problems, doing it here as a practice:
          * it's a very practical template:

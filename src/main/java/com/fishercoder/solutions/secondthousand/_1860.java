@@ -12,7 +12,7 @@ public class _1860 {
                 }
                 time++;
             }
-            return new int[]{time, memory1, memory2};
+            return new int[] {time, memory1, memory2};
         }
     }
 }

@@ -18,5 +18,4 @@ public class _494 {
             return find(p + 1, nums, sum + nums[p]) + find(p + 1, nums, sum - nums[p]);
         }
     }
-
 }

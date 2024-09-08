@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _452 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/66579/java-greedy-soution/6
          */
         public int findMinArrowShots(int[][] points) {
@@ -18,7 +18,8 @@ public class _452 {
             int count = 1;
             for (int[] p : points) {
                 // if the point starts after currentEnd, it means this balloons not been burst.
-                // Then we shot the balloon in its end point. Otherwise, means this balloon has been burst, then ignore it.
+                // Then we shot the balloon in its end point. Otherwise, means this balloon has been
+                // burst, then ignore it.
                 if (p[0] > currentEnd) {
                     count++;
                     currentEnd = p[1];
@@ -31,7 +32,7 @@ public class _452 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * I'm glad to have come up with this solution on my own on 10/13/2021:
          * we'll have to sort the balloons by its ending points, a counter case to this is below:
          * {{0, 6}, {0, 9}, {7, 8}}
@@ -56,7 +57,7 @@ public class _452 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Another approach of mine: completely original.
          * 1. Sort the points by start first, if tie, sort by end, both ascendingly.
          * 2. While checking, we'll keep updating the ending to be the smaller one so that we don't possibly miss to burst a balloon. See test case 4 for this class.
@@ -64,7 +65,12 @@ public class _452 {
 
         public int findMinArrowShots(int[][] points) {
             int arrowShots = 0;
-            Arrays.sort(points, (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1]));
+            Arrays.sort(
+                    points,
+                    (a, b) ->
+                            a[0] != b[0]
+                                    ? Integer.compare(a[0], b[0])
+                                    : Integer.compare(a[1], b[1]));
             for (int i = 0; i < points.length; ) {
                 int end = points[i][1];
                 int j = i + 1;

@@ -6,14 +6,16 @@ import java.util.Map;
 public class _248 {
 
     public static class Solution1 {
-        /**Credit: https://discuss.leetcode.com/topic/31386/concise-java-solution
-         *
-         Construct char arrays from low.length() to high.length()
-         Add stro pairs from outside
-         When left > right, add eligible count
-         */
+        /*Credit: https://discuss.leetcode.com/topic/31386/concise-java-solution
+        *
+        Construct char arrays from low.length() to high.length()
+        Add stro pairs from outside
+        When left > right, add eligible count
+        */
 
-        private static final char[][] pairs = {{'0', '0'}, {'1', '1'}, {'6', '9'}, {'8', '8'}, {'9', '6'}};
+        private static final char[][] pairs = {
+            {'0', '0'}, {'1', '1'}, {'6', '9'}, {'8', '8'}, {'9', '6'}
+        };
 
         public int strobogrammaticInRange(String low, String high) {
             int[] count = {0};
@@ -24,7 +26,7 @@ public class _248 {
             return count[0];
         }
 
-        public void dfs(String low, String high , char[] c, int left, int right, int[] count) {
+        public void dfs(String low, String high, char[] c, int left, int right, int[] count) {
             if (left > right) {
                 String s = new String(c);
                 if ((s.length() == low.length() && s.compareTo(low) < 0)

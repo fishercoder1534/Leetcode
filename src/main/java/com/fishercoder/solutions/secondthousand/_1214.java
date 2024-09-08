@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,6 +53,5 @@ public class _1214 {
             }
             return list;
         }
-
     }
 }

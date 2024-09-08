@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class _480 {
     public static class Solution1 {
 
-        /**
+        /*
          * You cannot simply use minus sign '-' to denote the descending order, because e.g. 3 and -3 might both exist in this array,
          * so we'll have to use the original numbers themselves to store in the heaps.
          */
@@ -73,5 +73,4 @@ public class _480 {
             }
         }
     }
-
 }

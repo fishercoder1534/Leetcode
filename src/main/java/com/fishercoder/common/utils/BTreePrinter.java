@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
+/*
  * Copied this class from
  * http://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram
  * This is an awesome one! It prints out the tree in a very nice fashion.
@@ -55,8 +55,7 @@ public class BTreePrinter {
             for (int j = 0; j < nodes.size(); j++) {
                 BTreePrinter.printWhitespaces(firstSpaces - i);
                 if (nodes.get(j) == null) {
-                    BTreePrinter.printWhitespaces(endgeLines + endgeLines + i
-                            + 1);
+                    BTreePrinter.printWhitespaces(endgeLines + endgeLines + i + 1);
                     continue;
                 }
 
@@ -94,8 +93,7 @@ public class BTreePrinter {
             return 0;
         }
 
-        return Math.max(BTreePrinter.maxLevel(node.left),
-                BTreePrinter.maxLevel(node.right)) + 1;
+        return Math.max(BTreePrinter.maxLevel(node.left), BTreePrinter.maxLevel(node.right)) + 1;
     }
 
     private static <T> boolean isAllElementsNull(List<T> list) {
@@ -171,7 +169,6 @@ public class BTreePrinter {
         return root;
     }
 
-
     public static class Node<T extends Comparable<?>> {
         Node<T> left;
         Node<T> right;
@@ -181,5 +178,4 @@ public class BTreePrinter {
             this.data = data;
         }
     }
-
 }

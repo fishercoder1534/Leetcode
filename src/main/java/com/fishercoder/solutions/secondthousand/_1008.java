@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _1008 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/discuss/252232/JavaC%2B%2BPython-O(N)-Solution
          */
         int i = 0;
@@ -25,7 +25,7 @@ public class _1008 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * I'm happy to have come up with this solution completely on my own on 10/13/2021.Enjoy the beauty of recursion!
          */
         public TreeNode bstFromPreorder(int[] preorder) {
@@ -47,6 +47,5 @@ public class _1008 {
             root.right = bstFromPreorder(preorder, i, end);
             return root;
         }
-
     }
 }

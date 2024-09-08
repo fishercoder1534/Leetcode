@@ -9,7 +9,6 @@ public class _427 {
         public Node bottomLeft;
         public Node bottomRight;
 
-
         public Node() {
             this.val = false;
             this.isLeaf = false;
@@ -28,7 +27,13 @@ public class _427 {
             this.bottomRight = null;
         }
 
-        public Node(boolean val, boolean isLeaf, Node topLeft, Node topRight, Node bottomLeft, Node bottomRight) {
+        public Node(
+                boolean val,
+                boolean isLeaf,
+                Node topLeft,
+                Node topRight,
+                Node bottomLeft,
+                Node bottomRight) {
             this.val = val;
             this.isLeaf = isLeaf;
             this.topLeft = topLeft;
@@ -48,13 +53,13 @@ public class _427 {
                 return new Node(grid[row][col] == 1, true);
             } else {
                 Node root = new Node(false, false);
-                //top left
+                // top left
                 root.topLeft = recurse(grid, row, col, limit / 2);
-                //top right
+                // top right
                 root.topRight = recurse(grid, row, col + limit / 2, limit / 2);
-                //bottom left
+                // bottom left
                 root.bottomLeft = recurse(grid, row + limit / 2, col, limit / 2);
-                //bottom right
+                // bottom right
                 root.bottomRight = recurse(grid, row + limit / 2, col + limit / 2, limit / 2);
                 return root;
             }
@@ -86,7 +91,13 @@ public class _427 {
             Node topRgith = recurse(grid, row, col + limit / 2, limit / 2);
             Node bottomLeft = recurse(grid, row + limit / 2, col, limit / 2);
             Node bottomRight = recurse(grid, row + limit / 2, col + limit / 2, limit / 2);
-            if (topLeft.isLeaf && topRgith.isLeaf && bottomLeft.isLeaf && bottomRight.isLeaf && topLeft.val == topRgith.val && topLeft.val == bottomLeft.val && topLeft.val == bottomRight.val) {
+            if (topLeft.isLeaf
+                    && topRgith.isLeaf
+                    && bottomLeft.isLeaf
+                    && bottomRight.isLeaf
+                    && topLeft.val == topRgith.val
+                    && topLeft.val == bottomLeft.val
+                    && topLeft.val == bottomRight.val) {
                 return new Node(topLeft.val, true);
             }
             Node root = new Node(grid[row][col] == 1, false);

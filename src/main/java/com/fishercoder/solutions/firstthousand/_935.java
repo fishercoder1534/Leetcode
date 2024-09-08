@@ -20,15 +20,22 @@ public class _935 {
 
         // whereFromHere[i] is an array of keys that can be reached from the ith digit
         private static final int[][] whereFromHere = {
-                {4, 6}, {6, 8}, {7, 9}, {4, 8},  // 0, 1, 2, 3
-                {3, 9, 0}, {}, {1, 7, 0},          // 4, 5, 6
-                {2, 6}, {1, 3}, {2, 4}              // 7, 8, 9
+            {4, 6},
+            {6, 8},
+            {7, 9},
+            {4, 8}, // 0, 1, 2, 3
+            {3, 9, 0},
+            {},
+            {1, 7, 0}, // 4, 5, 6
+            {2, 6},
+            {1, 3},
+            {2, 4} // 7, 8, 9
         };
 
         public int knightDialer(int N) {
             // a[i] is the number of ways we can end up on the ith digit
             // The initial array is for N = 1, i.e. for 0 hops.
-            long[] a = new long[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+            long[] a = new long[] {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 
             // Simulate N - 1 hops
             for (int i = 0; i < N - 1; ++i) {

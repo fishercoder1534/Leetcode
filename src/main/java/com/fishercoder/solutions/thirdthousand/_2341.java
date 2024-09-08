@@ -20,7 +20,7 @@ public class _2341 {
                     leftover++;
                 }
             }
-            return new int[]{pairs, leftover};
+            return new int[] {pairs, leftover};
         }
     }
 }

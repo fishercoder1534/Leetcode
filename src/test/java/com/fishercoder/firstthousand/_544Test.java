@@ -1,11 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._544;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _544Test {
     private _544 test;
@@ -19,8 +18,7 @@ public class _544Test {
     }
 
     @BeforeEach
-    public void setupForEachTest() {
-    }
+    public void setupForEachTest() {}
 
     @Test
     public void test1() {
@@ -45,5 +43,4 @@ public class _544Test {
         actual = test.findContestMatch(n);
         assertEquals(expected, actual);
     }
-
 }

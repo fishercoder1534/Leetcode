@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _2096 {
     public static class Solution1 {
-        /**
+        /*
          * Steps for this problem:
          * 1. find the path from root the start and dest respectively, mark them using two directions: 'L' and 'R', i.e. you can only go down from root, so there's no up, 'U' direction;
          * 2. the LCA (the lowest common ancestor) of start and dest will be the joint of the shortest path;

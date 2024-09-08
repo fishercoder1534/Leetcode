@@ -6,7 +6,7 @@ import java.util.List;
 public class _330 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/articles/patching-array/ and https://discuss.leetcode.com/topic/35494/solution-explanation/2
          * <p>
          * Let miss be the smallest sum in [0,n] that we might be missing. Meaning we already know we
@@ -26,34 +26,33 @@ public class _330 {
          */
 
         public int minPatches(int[] nums, int n) {
-            long misses = 1;//use long to avoid integer addition overflow
+            long misses = 1; // use long to avoid integer addition overflow
             int patches = 0;
             int i = 0;
             while (misses <= n) {
-                if (i < nums.length && nums[i] <= misses) { //miss is covered
+                if (i < nums.length && nums[i] <= misses) { // miss is covered
                     misses += nums[i++];
-                } else { //patch miss to the array
+                } else { // patch miss to the array
                     misses += misses;
-                    patches++;//increase the answer
+                    patches++; // increase the answer
                 }
             }
             return patches;
         }
 
         public List<Integer> findPatches(int[] nums, int n) {
-            long misses = 1;//use long to avoid integer addition overflow
+            long misses = 1; // use long to avoid integer addition overflow
             List<Integer> patches = new ArrayList<>();
             int i = 0;
             while (misses <= n) {
-                if (i < nums.length && nums[i] <= misses) { //miss is covered
+                if (i < nums.length && nums[i] <= misses) { // miss is covered
                     misses += nums[i++];
-                } else { //patch miss to the array
-                    patches.add((int) misses);//increase the answer
+                } else { // patch miss to the array
+                    patches.add((int) misses); // increase the answer
                     misses += misses;
                 }
             }
             return patches;
         }
     }
-
 }

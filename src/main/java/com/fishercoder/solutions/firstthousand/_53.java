@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _53 {
 
     public static class Solution1 {
-        /**
+        /*
          * Kadane's algorithm.
          * <p>
          * It boils down to:

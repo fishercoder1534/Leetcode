@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class _528 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/random-pick-with-weight/editorial/
          * <p>
          * Mental gymnastics (which is explained step by step in the above link):

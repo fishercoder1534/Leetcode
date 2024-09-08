@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class _729 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/111205/java-8-liner-treemap
          */
         public static class MyCalendar {
@@ -45,7 +45,7 @@ public class _729 {
                         return false;
                     }
                 }
-                calendar.add(new int[]{start, end});
+                calendar.add(new int[] {start, end});
                 return true;
             }
         }

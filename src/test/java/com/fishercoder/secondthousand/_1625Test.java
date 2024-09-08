@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1625;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1625Test {
     private _1625.Solution1 solution1;
@@ -33,5 +33,4 @@ public class _1625Test {
     public void test4() {
         assertEquals("00553311", solution1.findLexSmallestString("43987654", 7, 3));
     }
-
 }

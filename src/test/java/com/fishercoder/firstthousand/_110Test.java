@@ -1,14 +1,13 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._110;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _110Test {
     private _110.Solution1 solution1;
@@ -44,6 +43,4 @@ public class _110Test {
         treeNode = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 2, 3, 3, null, null, 4, 4));
         assertEquals(false, solution2.isBalanced(treeNode));
     }
-
-
 }

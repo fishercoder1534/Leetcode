@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _376 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/wiggle-subsequence/discuss/84843/Easy-understanding-DP-solution-with-O(n)-Java-version
          * <p>
          * For every position in the array, there are only three possible statuses for it.
@@ -47,7 +47,7 @@ public class _376 {
             int count = (prevDiff != 0) ? 2 : 1;
             for (int i = 2; i < nums.length; i++) {
                 int diff = nums[i] - nums[i - 1];
-                /**ATTN: prevDiff could be zero. e.g. [3,3,3,2,5]
+                /*ATTN: prevDiff could be zero. e.g. [3,3,3,2,5]
                  * but diff needs to be exactly greater than zero*/
                 if ((prevDiff <= 0 && diff > 0) || (prevDiff >= 0) && diff < 0) {
                     count++;

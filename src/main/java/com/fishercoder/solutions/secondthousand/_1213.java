@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _1213 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/intersection-of-three-sorted-arrays/discuss/397603/Simple-Java-solution-beats-100
          */
         public List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {

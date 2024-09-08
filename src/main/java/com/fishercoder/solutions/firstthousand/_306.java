@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _306 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/29856/java-recursive-and-iterative-solutions/2
          */
         public boolean isAdditiveNumber(String num) {
@@ -38,5 +38,4 @@ public class _306 {
             return true;
         }
     }
-
 }

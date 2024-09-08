@@ -16,14 +16,13 @@ public class _1282Test {
 
     @Test
     public void test1() {
-        groupSizes = new int[]{3, 3, 3, 3, 3, 1, 3};
+        groupSizes = new int[] {3, 3, 3, 3, 3, 1, 3};
         CommonUtils.printListList(solution1.groupThePeople(groupSizes));
     }
 
     @Test
     public void test2() {
-        groupSizes = new int[]{2, 1, 3, 3, 3, 2};
+        groupSizes = new int[] {2, 1, 3, 3, 3, 2};
         CommonUtils.printListList(solution1.groupThePeople(groupSizes));
     }
-
 }

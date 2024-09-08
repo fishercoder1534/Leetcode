@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _221 {
 
     public static class Solution1 {
-        /**
+        /*
          * The idea is pretty straightforward: use a 2d dp table to store the intermediate results
          */
         public int maximalSquare(char[][] matrix) {
@@ -22,7 +22,9 @@ public class _221 {
                         if (matrix[i][j] == '0') {
                             dp[i][j] = 0;
                         } else {
-                            dp[i][j] = Math.min(dp[i - 1][j], Math.min(dp[i][j - 1], dp[i - 1][j - 1])) + 1;
+                            dp[i][j] =
+                                    Math.min(dp[i - 1][j], Math.min(dp[i][j - 1], dp[i - 1][j - 1]))
+                                            + 1;
                         }
                     }
                     max = (max < dp[i][j]) ? dp[i][j] : max;

@@ -1,15 +1,13 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.solutions.firstthousand._230;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 5/19/17.
- */
+/** Created by fishercoder on 5/19/17. */
 public class _230Test {
     private _230.Solution1 solution1;
     private static TreeNode root;

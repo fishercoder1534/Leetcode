@@ -49,7 +49,7 @@ public class _849 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * my completely original solution on 9/13/2021.
          */
         public int maxDistToClosest(int[] seats) {
@@ -65,7 +65,9 @@ public class _849 {
                     Integer leftNeighbor = treeMap.floor(i);
                     Integer rightNeighbor = treeMap.ceiling(i);
                     if (leftNeighbor != null && rightNeighbor != null) {
-                        maxDistance = Math.max(maxDistance, Math.min(i - leftNeighbor, rightNeighbor - i));
+                        maxDistance =
+                                Math.max(
+                                        maxDistance, Math.min(i - leftNeighbor, rightNeighbor - i));
                     } else if (leftNeighbor == null) {
                         maxDistance = Math.max(maxDistance, rightNeighbor - i);
                     } else {

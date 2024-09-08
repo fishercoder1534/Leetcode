@@ -20,7 +20,7 @@ public class _617 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 9/20/2021, no new extra nodes created.
          */
         public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
@@ -35,5 +35,4 @@ public class _617 {
             return root1;
         }
     }
-
 }

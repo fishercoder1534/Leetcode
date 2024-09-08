@@ -5,7 +5,7 @@ import java.math.BigInteger;
 public class _483 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/82130/java-solution-with-hand-writing-explain
          */
         public String smallestGoodBase(String n) {
@@ -19,7 +19,9 @@ public class _483 {
 
                     BigInteger left = BigInteger.valueOf(m);
                     left = left.pow(k).subtract(BigInteger.ONE);
-                    BigInteger right = BigInteger.valueOf(nn).multiply(BigInteger.valueOf(m).subtract(BigInteger.ONE));
+                    BigInteger right =
+                            BigInteger.valueOf(nn)
+                                    .multiply(BigInteger.valueOf(m).subtract(BigInteger.ONE));
                     int cmr = left.compareTo(right);
                     if (cmr == 0) {
                         res = m;
@@ -38,5 +40,4 @@ public class _483 {
             return "" + res;
         }
     }
-
 }

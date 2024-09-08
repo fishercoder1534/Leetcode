@@ -5,8 +5,9 @@ import java.util.Queue;
 
 public class _1091 {
     public static class Solution1 {
-        //you can count in the normal four directions first, then count the diagonal ones to form this array
-        int[] directions = new int[]{0, 1, 1, 0, -1, 1, -1, -1, 0};
+        // you can count in the normal four directions first, then count the diagonal ones to form
+        // this array
+        int[] directions = new int[] {0, 1, 1, 0, -1, 1, -1, -1, 0};
 
         public int shortestPathBinaryMatrix(int[][] grid) {
             int m = grid.length;
@@ -16,7 +17,7 @@ public class _1091 {
             }
             int minPath = 0;
             Queue<int[]> queue = new LinkedList<>();
-            queue.offer(new int[]{0, 0});
+            queue.offer(new int[] {0, 0});
             boolean[][] visited = new boolean[m][n];
             visited[0][0] = true;
             while (!queue.isEmpty()) {
@@ -29,8 +30,13 @@ public class _1091 {
                     for (int j = 0; j < directions.length - 1; j++) {
                         int newx = directions[j] + curr[0];
                         int newy = directions[j + 1] + curr[1];
-                        if (newx >= 0 && newx < n && newy >= 0 && newy < n && !visited[newx][newy] && grid[newx][newy] == 0) {
-                            queue.offer(new int[]{newx, newy});
+                        if (newx >= 0
+                                && newx < n
+                                && newy >= 0
+                                && newy < n
+                                && !visited[newx][newy]
+                                && grid[newx][newy] == 0) {
+                            queue.offer(new int[] {newx, newy});
                             visited[newx][newy] = true;
                         }
                     }

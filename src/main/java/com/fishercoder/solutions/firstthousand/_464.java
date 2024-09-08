@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _464 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/68896/java-solution-using-hashmap-with-detailed-explanation
          */
 

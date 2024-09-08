@@ -6,7 +6,7 @@ import java.util.Map;
 public class _659 {
 
     public static class Solution1 {
-        /**
+        /*
          * reference: https://discuss.leetcode.com/topic/99187/java-o-n-time-o-n-space
          */
         public boolean isPossible(int[] nums) {
@@ -21,7 +21,8 @@ public class _659 {
                 } else if (appendFreqMap.getOrDefault(i, 0) > 0) {
                     appendFreqMap.put(i, appendFreqMap.get(i) - 1);
                     appendFreqMap.put(i + 1, appendFreqMap.getOrDefault(i + 1, 0) + 1);
-                } else if (freqMap.getOrDefault(i + 1, 0) > 0 && freqMap.getOrDefault(i + 2, 0) > 0) {
+                } else if (freqMap.getOrDefault(i + 1, 0) > 0
+                        && freqMap.getOrDefault(i + 2, 0) > 0) {
                     freqMap.put(i + 1, freqMap.get(i + 1) - 1);
                     freqMap.put(i + 2, freqMap.get(i + 2) - 1);
                     appendFreqMap.put(i + 3, appendFreqMap.getOrDefault(i + 3, 0) + 1);

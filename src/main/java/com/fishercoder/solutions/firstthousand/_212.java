@@ -27,9 +27,9 @@ public class _212 {
 
             if (root.children[tmp - 'a'].word != null) {
                 result.add(root.children[tmp - 'a'].word);
-                root.children[tmp - 'a'].word = null;//de-duplicate
+                root.children[tmp - 'a'].word = null; // de-duplicate
             }
-            board[i][j] = '#';//mark it as visited to avoid cycles
+            board[i][j] = '#'; // mark it as visited to avoid cycles
             if (i > 0) {
                 dfs(root.children[tmp - 'a'], board, i - 1, j, result);
             }
@@ -43,7 +43,7 @@ public class _212 {
                 dfs(root.children[tmp - 'a'], board, i, j + 1, result);
             }
 
-            //backtracking
+            // backtracking
             board[i][j] = tmp;
         }
 
@@ -93,17 +93,22 @@ public class _212 {
                 return true;
             }
 
-            if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] != word.charAt(index)) {
+            if (i < 0
+                    || i >= board.length
+                    || j < 0
+                    || j >= board[0].length
+                    || board[i][j] != word.charAt(index)) {
                 return false;
             }
 
             char temp = board[i][j];
             board[i][j] = ' ';
 
-            boolean foundWord = search(board, i + 1, j, index + 1, word)
-                    || search(board, i - 1, j, index + 1, word)
-                    || search(board, i, j + 1, index + 1, word)
-                    || search(board, i, j - 1, index + 1, word);
+            boolean foundWord =
+                    search(board, i + 1, j, index + 1, word)
+                            || search(board, i - 1, j, index + 1, word)
+                            || search(board, i, j + 1, index + 1, word)
+                            || search(board, i, j - 1, index + 1, word);
             board[i][j] = temp;
             return foundWord;
         }

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _64 {
     public static class Solution1 {
-        /**
+        /*
          * Same idea as _70: have to initialize the first row and the first column and start the for
          * loop from i==1 and j==1 for the rest of the matrix.
          */

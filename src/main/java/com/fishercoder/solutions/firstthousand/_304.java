@@ -1,6 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
-/**
+/*
  * 304. Range Sum Query 2D - Immutable
  * Given a 2D matrix matrix, handle multiple queries of the following type:
  * <p>
@@ -44,27 +44,32 @@ public class _304 {
                     return;
                 }
 
-                /**The dimensions of this total matrix is actually 1 bigger than the given matrix to make the index mapping easier*/
+                /*The dimensions of this total matrix is actually 1 bigger than the given matrix to make the index mapping easier*/
                 int m = matrix.length;
                 int n = matrix[0].length;
                 total = new int[m + 1][n + 1];
                 for (int i = 0; i < m; i++) {
                     for (int j = 0; j < n; j++) {
-                        total[i + 1][j + 1] = matrix[i][j] + total[i + 1][j] + total[i][j + 1] - total[i][j];
+                        total[i + 1][j + 1] =
+                                matrix[i][j] + total[i + 1][j] + total[i][j + 1] - total[i][j];
                     }
                 }
             }
 
             public int sumRegion(int row1, int col1, int row2, int col2) {
-                //since we deduct both total[row2 + 1][col1] and total[row1][col2 + 1], this means we deducted their shared area twice
+                // since we deduct both total[row2 + 1][col1] and total[row1][col2 + 1], this means
+                // we deducted their shared area twice
                 // which is total[row1][col1]
-                return total[row2 + 1][col2 + 1] - total[row2 + 1][col1] - total[row1][col2 + 1] + total[row1][col1];
+                return total[row2 + 1][col2 + 1]
+                        - total[row2 + 1][col1]
+                        - total[row1][col2 + 1]
+                        + total[row1][col1];
             }
         }
     }
-/**
- * Your NumMatrix object will be instantiated and called as such:
- * NumMatrix obj = new NumMatrix(matrix);
- * int param_1 = obj.sumRegion(row1,col1,row2,col2);
- */
+    /*
+     * Your NumMatrix object will be instantiated and called as such:
+     * NumMatrix obj = new NumMatrix(matrix);
+     * int param_1 = obj.sumRegion(row1,col1,row2,col2);
+     */
 }

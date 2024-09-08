@@ -1,14 +1,12 @@
 package com.fishercoder.firstthousand;
 
-import com.fishercoder.solutions.firstthousand._763;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.fishercoder.solutions.firstthousand._763;
 import java.util.Arrays;
 import java.util.List;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _763Test {
     private _763.Solution1 solution1;
@@ -45,6 +43,4 @@ public class _763Test {
         assertEquals(expected, solution1.partitionLabels(s));
         assertEquals(expected, solution2.partitionLabels(s));
     }
-
-
 }

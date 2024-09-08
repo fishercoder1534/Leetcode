@@ -36,5 +36,4 @@ public class _544 {
         }
         return "(" + pairs.get(0) + "," + pairs.get(1) + ")";
     }
-
 }

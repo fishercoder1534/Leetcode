@@ -4,10 +4,9 @@ import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._237;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 public class _237Test {
     private _237.Solution1 solution1;
@@ -25,5 +24,4 @@ public class _237Test {
         solution1.deleteNode(head.next);
         CommonUtils.printList(head);
     }
-
 }

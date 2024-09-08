@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 public class _3241 {
     public static class Solution1 {
-        /**
+        /*
          * This is my original solution during the contest, it's correct but not efficient enough, so got TLE on LeetCode.
          * TODO: figure out a more efficient approach.
          */
@@ -29,7 +29,7 @@ public class _3241 {
 
         private int markAllNodes(List<Integer>[] graph, int startNode) {
             PriorityQueue<int[]> q = new PriorityQueue<>((a, b) -> a[1] - b[1]);
-            q.offer(new int[]{startNode, 0});
+            q.offer(new int[] {startNode, 0});
             int[] shortestTime = new int[graph.length];
             Arrays.fill(shortestTime, Integer.MAX_VALUE);
             shortestTime[startNode] = 0;
@@ -47,13 +47,13 @@ public class _3241 {
                         if (currTime + 2 < shortestTime[neighbor]) {
                             shortestTime[neighbor] = currTime + 2;
                             maxTime = Math.max(maxTime, shortestTime[neighbor]);
-                            q.offer(new int[]{neighbor, shortestTime[neighbor]});
+                            q.offer(new int[] {neighbor, shortestTime[neighbor]});
                         }
                     } else {
                         if (currTime + 1 < shortestTime[neighbor]) {
                             shortestTime[neighbor] = currTime + 1;
                             maxTime = Math.max(maxTime, shortestTime[neighbor]);
-                            q.offer(new int[]{neighbor, shortestTime[neighbor]});
+                            q.offer(new int[] {neighbor, shortestTime[neighbor]});
                         }
                     }
                 }

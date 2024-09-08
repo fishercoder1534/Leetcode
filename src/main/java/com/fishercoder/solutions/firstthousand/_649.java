@@ -21,7 +21,7 @@ public class _649 {
                 int radiantIndex = radiantQ.poll();
                 int direIndex = direQ.poll();
                 if (radiantIndex < direIndex) {
-                    /**Radiant will ban Dire in this case, so we'll add radiant index back to the queue plus n*/
+                    /*Radiant will ban Dire in this case, so we'll add radiant index back to the queue plus n*/
                     radiantQ.offer(radiantIndex + len);
                 } else {
                     direQ.offer(direIndex + len);

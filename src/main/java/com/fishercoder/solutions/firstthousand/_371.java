@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _371 {
 
     public static class Solution1 {
-        /**
+        /*
          * reference: http://stackoverflow.com/questions/9070937/adding-two-numbers-without-operator-clarification
          */
         public int getSum(int a, int b) {

@@ -1,14 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._583;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 5/18/17.
- */
+/** Created by fishercoder on 5/18/17. */
 public class _583Test {
     private _583.Solution1 solution1;
     private static String word1;

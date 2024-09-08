@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -67,7 +66,9 @@ public class _993 {
                         childToParentMap.put(curr.right.val, curr.val);
                     }
                 }
-                if (childToParentMap.containsKey(x) && childToParentMap.containsKey(y) && childToParentMap.get(x) != childToParentMap.get(y)) {
+                if (childToParentMap.containsKey(x)
+                        && childToParentMap.containsKey(y)
+                        && childToParentMap.get(x) != childToParentMap.get(y)) {
                     return true;
                 } else if (childToParentMap.containsKey(x) || childToParentMap.containsKey(y)) {
                     return false;

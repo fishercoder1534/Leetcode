@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _457 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/66894/java-slow-fast-pointer-solution
          */
         public boolean circularArrayLoop(int[] nums) {

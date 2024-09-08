@@ -1,10 +1,10 @@
 package com.fishercoder.fourththousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.fourththousand._3038;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3038Test {
     private _3038.Solution1 solution1;
@@ -17,8 +17,7 @@ public class _3038Test {
 
     @Test
     public void test1() {
-        nums = new int[]{2, 2, 3, 2, 4, 2, 3, 3, 1, 3};
+        nums = new int[] {2, 2, 3, 2, 4, 2, 3, 3, 1, 3};
         assertEquals(1, solution1.maxOperations(nums));
     }
-
 }

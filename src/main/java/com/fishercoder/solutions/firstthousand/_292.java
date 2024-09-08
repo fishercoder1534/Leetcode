@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _292 {
 
     public static class Solution1 {
-        /**
+        /*
          * 1. If there are only 1 or 2 or 3 stones, you could always win by taking 1 or 2 or 3 stones;
          * 2. If there are 4 stones, you could never win because no matter you tak 1 or 2 or 3 stones, you could never take the 4th one;
          * 3. If there are 5 or 6 or 7 stones, you could always win because no matter how your opponent works, you'll always get the last one;

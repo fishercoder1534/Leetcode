@@ -13,7 +13,8 @@ public class _5 {
             }
 
             for (int i = 0; i < len - 1; i++) {
-                extendPalindrome(s, i, i); // assume odd length, try to extend Palindrome as possible
+                extendPalindrome(
+                        s, i, i); // assume odd length, try to extend Palindrome as possible
                 extendPalindrome(s, i, i + 1); // assume even length.
             }
             return s.substring(low, low + maxLen);
@@ -32,7 +33,7 @@ public class _5 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Same sliding window idea, but without using global variables.
          * Credit: https://leetcode.com/problems/longest-palindromic-substring/solution/
          */
@@ -63,7 +64,7 @@ public class _5 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My own implementation using the same idea.
          */
         public String longestPalindrome(String s) {
@@ -94,6 +95,5 @@ public class _5 {
             }
             return pair;
         }
-
     }
 }

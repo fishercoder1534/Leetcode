@@ -14,7 +14,7 @@ public class _549 {
 
         private int[] longestPath(TreeNode root) {
             if (root == null) {
-                return new int[]{0, 0};
+                return new int[] {0, 0};
             }
             int increasing = 1;
             int decreasing = 1;
@@ -37,7 +37,7 @@ public class _549 {
             }
 
             max = Math.max(max, decreasing + increasing - 1);
-            return new int[]{increasing, decreasing};
+            return new int[] {increasing, decreasing};
         }
     }
 }

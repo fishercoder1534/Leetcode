@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2335;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2335Test {
     private _2335.Solution1 solution1;
@@ -17,14 +17,13 @@ public class _2335Test {
 
     @Test
     public void test1() {
-        amount = new int[]{5, 4, 4};
+        amount = new int[] {5, 4, 4};
         assertEquals(7, solution1.fillCups(amount));
     }
 
     @Test
     public void test2() {
-        amount = new int[]{0, 0, 0};
+        amount = new int[] {0, 0, 0};
         assertEquals(0, solution1.fillCups(amount));
     }
-
 }

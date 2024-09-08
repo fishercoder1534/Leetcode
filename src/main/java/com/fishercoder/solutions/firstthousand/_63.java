@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _63 {
     public static class Solution1 {
-        /**
+        /*
          * Idea: grid[i][j] has to be set to zero if obstacleGrid[i][j] == 1, otherwise, we can get
          * dp[i][j] from its top and left dp.
          */

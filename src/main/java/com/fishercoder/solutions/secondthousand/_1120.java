@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _1120 {
     public static class Solution1 {
-        /**
+        /*
          * Almost identical idea to https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree
          * When it comes to subtree, or, you need to process subtrees first before processing root, post-order traversal/recursion is handy.
          */
@@ -25,7 +25,7 @@ public class _1120 {
             int nodeCount = left[1] + right[1] + 1;
             double ave = ((double) nodeSum / nodeCount);
             maxAve = Math.max(ave, maxAve);
-            return new int[]{nodeSum, nodeCount};
+            return new int[] {nodeSum, nodeCount};
         }
     }
 }

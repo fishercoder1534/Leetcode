@@ -15,20 +15,24 @@ public class _542 {
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     if (mat[i][j] == 0) {
-                        deque.offer(new int[]{i, j});
+                        deque.offer(new int[] {i, j});
                     } else {
                         ans[i][j] = m * n;
                     }
                 }
             }
-            int[] directions = new int[]{0, 1, 0, -1, 0};
+            int[] directions = new int[] {0, 1, 0, -1, 0};
             while (!deque.isEmpty()) {
                 int[] curr = deque.poll();
                 for (int i = 0; i < directions.length - 1; i++) {
                     int nextX = directions[i] + curr[0];
                     int nextY = directions[i + 1] + curr[1];
-                    if (nextX >= 0 && nextX < m && nextY >= 0 && nextY < n && ans[nextX][nextY] > ans[curr[0]][curr[1]] + 1) {
-                        deque.offer(new int[]{nextX, nextY});
+                    if (nextX >= 0
+                            && nextX < m
+                            && nextY >= 0
+                            && nextY < n
+                            && ans[nextX][nextY] > ans[curr[0]][curr[1]] + 1) {
+                        deque.offer(new int[] {nextX, nextY});
                         ans[nextX][nextY] = ans[curr[0]][curr[1]] + 1;
                     }
                 }
@@ -38,7 +42,7 @@ public class _542 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * A silly, but working solution. Apparently, the above BFS approach is a smarter version of this one.
          */
         public int[][] updateMatrix(int[][] mat) {
@@ -49,7 +53,7 @@ public class _542 {
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     if (mat[i][j] == 0) {
-                        queue.offer(new int[]{i, j});
+                        queue.offer(new int[] {i, j});
                     } else {
                         ans[i][j] = m * n;
                     }
@@ -88,7 +92,5 @@ public class _542 {
             }
             return ans;
         }
-
     }
-
 }

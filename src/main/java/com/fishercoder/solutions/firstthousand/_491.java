@@ -17,8 +17,8 @@ public class _491 {
             return new ArrayList<>(backtracking(nums, 0, list, answer));
         }
 
-        private Set<List<Integer>> backtracking(int[] nums, int start, List<Integer> currList,
-                                                Set<List<Integer>> answer) {
+        private Set<List<Integer>> backtracking(
+                int[] nums, int start, List<Integer> currList, Set<List<Integer>> answer) {
             if (currList.size() >= 2) {
                 answer.add(new ArrayList<>(currList));
             }

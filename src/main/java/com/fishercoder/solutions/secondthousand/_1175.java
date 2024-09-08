@@ -5,7 +5,8 @@ import java.util.Arrays;
 
 public class _1175 {
     public static class Solution1 {
-        //credit: https://leetcode.com/problems/prime-arrangements/discuss/371884/Simple-Java-With-comment-sieve_of_eratosthenes
+        // credit:
+        // https://leetcode.com/problems/prime-arrangements/discuss/371884/Simple-Java-With-comment-sieve_of_eratosthenes
         static int MOD = 1000000007;
 
         public static int numPrimeArrangements(int n) {

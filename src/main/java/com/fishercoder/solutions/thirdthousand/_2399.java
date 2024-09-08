@@ -10,7 +10,7 @@ public class _2399 {
             int i = 0;
             for (char c : s.toCharArray()) {
                 if (!map.containsKey(c)) {
-                    map.put(c, new int[]{-1, -1});
+                    map.put(c, new int[] {-1, -1});
                 }
                 int[] indices = map.get(c);
                 if (indices[0] == -1) {

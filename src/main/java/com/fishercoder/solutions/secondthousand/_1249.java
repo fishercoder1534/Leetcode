@@ -2,7 +2,6 @@ package com.fishercoder.solutions.secondthousand;
 
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Stack;
 
 public class _1249 {
     public static class Solution1 {
@@ -41,7 +40,7 @@ public class _1249 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 10/26/2021.
          */
         public String minRemoveToMakeValid(String s) {

@@ -33,7 +33,8 @@ public class _451 {
             for (char c : s.toCharArray()) {
                 map.put(c, map.getOrDefault(c, 0) + 1);
             }
-            TreeMap<Integer, List<Character>> reverseMap = new TreeMap<>(Collections.reverseOrder());
+            TreeMap<Integer, List<Character>> reverseMap =
+                    new TreeMap<>(Collections.reverseOrder());
             for (char c : map.keySet()) {
                 int freq = map.get(c);
                 if (!reverseMap.containsKey(freq)) {

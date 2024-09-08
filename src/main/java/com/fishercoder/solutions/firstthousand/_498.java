@@ -7,7 +7,7 @@ import java.util.List;
 public class _498 {
 
     public static class Solutoin1 {
-        /**
+        /*
          * Reference: https://discuss.leetcode.com/topic/77865/concise-java-solution/2
          * Just keep walking the matrix, when hitting the four borders (top, bottom, left or right),
          * change directions and keep walking:
@@ -24,9 +24,9 @@ public class _498 {
             int m = mat.length;
             int n = mat[0].length;
             int[] result = new int[m * n];
-            //{-1,1} goes from top left to bottom right
-            //{1,-1} goes from top right to bottom left
-            int[][] dirs = new int[][]{{-1, 1}, {1, -1}};
+            // {-1,1} goes from top left to bottom right
+            // {1,-1} goes from top right to bottom left
+            int[][] dirs = new int[][] {{-1, 1}, {1, -1}};
             int i = 0;
             int j = 0;
             int d = 0;
@@ -71,7 +71,10 @@ public class _498 {
                 int curRowIdx = (diagonalIndex < maxCol) ? 0 : (diagonalIndex - maxCol + 1);
                 int curColIdx = (diagonalIndex < maxCol) ? diagonalIndex : (maxCol - 1);
                 List<Integer> diagonal = new ArrayList<>();
-                while (curRowIdx >= 0 && curRowIdx < maxRow && curColIdx >= 0 && curColIdx < maxCol) {
+                while (curRowIdx >= 0
+                        && curRowIdx < maxRow
+                        && curColIdx >= 0
+                        && curColIdx < maxCol) {
                     int diagonalElement = matrix[curRowIdx][curColIdx];
                     diagonal.add(diagonalElement);
                     curRowIdx++;
@@ -94,5 +97,4 @@ public class _498 {
             return result;
         }
     }
-
 }

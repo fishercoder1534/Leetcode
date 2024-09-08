@@ -8,7 +8,7 @@ import java.util.Set;
 public class _403 {
 
     public static class Solution1 {
-        /**
+        /*
          * Reference: https://discuss.leetcode.com/topic/59903/very-easy-to-understand-java-solution-with-explanations/2
          * and https://leetcode.com/articles/frog-jump/#approach-5-using-dynamic-programmingaccepted
          */

@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _1080 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/solutions/1340243/concise-dfs-solution-cpp-and-java-0ms/
          * DFS does this very cleanly.
          */

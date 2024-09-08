@@ -3,10 +3,9 @@ package com.fishercoder.secondthousand;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.secondthousand._1379;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 public class _1379Test {
     private _1379.Solution1 solution1;
@@ -40,8 +39,12 @@ public class _1379Test {
 
     @Test
     public void test3() {
-        original = TreeUtils.constructBinaryTree(Arrays.asList(8, null, 6, null, 5, null, 4, null, 3, null, 2, null, 1));
-        cloned = TreeUtils.constructBinaryTree(Arrays.asList(8, null, 6, null, 5, null, 4, null, 3, null, 2, null, 1));
+        original =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(8, null, 6, null, 5, null, 4, null, 3, null, 2, null, 1));
+        cloned =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(8, null, 6, null, 5, null, 4, null, 3, null, 2, null, 1));
         target = TreeUtils.constructBinaryTree(Arrays.asList(4, null, 3, null, 2, null, 1));
         TreeUtils.printBinaryTree(solution1.getTargetCopy(original, cloned, target));
     }
@@ -61,5 +64,4 @@ public class _1379Test {
         target = TreeUtils.constructBinaryTree(Arrays.asList(2, 3));
         TreeUtils.printBinaryTree(solution1.getTargetCopy(original, cloned, target));
     }
-
 }

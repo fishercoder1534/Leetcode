@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class _1461 {
     public static class Solution1 {
-        /**
+        /*
          * inspired by https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/discuss/660505/Java-4-lines-solution
          */
         public boolean hasAllCodes(String s, int k) {

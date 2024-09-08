@@ -1,18 +1,15 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._98;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 5/17/17.
- */
+/** Created by fishercoder on 5/17/17. */
 public class _98Test {
     private _98.Solution1 solution1;
     private static TreeNode root;

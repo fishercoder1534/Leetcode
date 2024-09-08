@@ -1,6 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
-/**
+/*
  * 1410. HTML Entity Parser
  *
  * HTML entity parser is the parser that takes HTML code as input and replace all the entities of the special characters by the characters itself.
@@ -51,10 +51,12 @@ public class _1410 {
                     if (i + 7 <= text.length() && text.substring(i, i + 7).equals("&frasl;")) {
                         sb.append("/");
                         i += 6;
-                    } else if (i + 6 <= text.length() && text.substring(i, i + 6).equals("&quot;")) {
+                    } else if (i + 6 <= text.length()
+                            && text.substring(i, i + 6).equals("&quot;")) {
                         sb.append("\"");
                         i += 5;
-                    } else if (i + 6 <= text.length() && text.substring(i, i + 6).equals("&apos;")) {
+                    } else if (i + 6 <= text.length()
+                            && text.substring(i, i + 6).equals("&apos;")) {
                         sb.append("'");
                         i += 5;
                     } else if (i + 5 <= text.length() && text.substring(i, i + 5).equals("&amp;")) {

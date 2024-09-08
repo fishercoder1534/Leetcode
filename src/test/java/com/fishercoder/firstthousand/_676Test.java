@@ -1,11 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._676;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _676Test {
     private _676.Solution1.MagicDictionary magicDictionarySol1;
@@ -22,7 +21,7 @@ public class _676Test {
 
     @Test
     public void test1() {
-        magicDictionarySol1.buildDict(new String[]{"hello", "leetcode"});
+        magicDictionarySol1.buildDict(new String[] {"hello", "leetcode"});
         assertEquals(false, magicDictionarySol1.search("hello"));
         assertEquals(true, magicDictionarySol1.search("hhllo"));
         assertEquals(false, magicDictionarySol1.search("hell"));

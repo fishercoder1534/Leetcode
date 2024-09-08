@@ -1,14 +1,13 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.secondthousand._1214;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1214Test {
     private _1214.Solution1 solution1;
@@ -40,5 +39,4 @@ public class _1214Test {
         root2 = TreeUtils.constructBinaryTree(Arrays.asList(5, 1, 7, 0, 2));
         assertEquals(true, solution1.twoSumBSTs(root1, root2, 17));
     }
-
 }

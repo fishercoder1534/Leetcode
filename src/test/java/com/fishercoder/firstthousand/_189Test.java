@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._189;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _189Test {
     private _189.Solution1 solution1;
@@ -23,37 +23,36 @@ public class _189Test {
 
     @Test
     public void test1() {
-        nums = new int[]{1, 2, 3};
+        nums = new int[] {1, 2, 3};
         solution1.rotate(nums, 1);
-        assertArrayEquals(new int[]{3, 1, 2}, nums);
+        assertArrayEquals(new int[] {3, 1, 2}, nums);
     }
 
     @Test
     public void test2() {
-        nums = new int[]{1, 2, 3};
+        nums = new int[] {1, 2, 3};
         solution2.rotate(nums, 1);
-        assertArrayEquals(new int[]{3, 1, 2}, nums);
+        assertArrayEquals(new int[] {3, 1, 2}, nums);
     }
 
     @Test
     public void test3() {
-        nums = new int[]{1, 2, 3};
+        nums = new int[] {1, 2, 3};
         solution3.rotate(nums, 1);
-        assertArrayEquals(new int[]{3, 1, 2}, nums);
+        assertArrayEquals(new int[] {3, 1, 2}, nums);
     }
 
     @Test
     public void test4() {
-        nums = new int[]{1, 2, 3};
+        nums = new int[] {1, 2, 3};
         solution4.rotate(nums, 1);
-        assertArrayEquals(new int[]{3, 1, 2}, nums);
+        assertArrayEquals(new int[] {3, 1, 2}, nums);
     }
 
     @Test
     public void test5() {
-        nums = new int[]{-1, -100, 3, 99};
+        nums = new int[] {-1, -100, 3, 99};
         solution4.rotate(nums, 2);
-        assertArrayEquals(new int[]{3, 99, -1, -100}, nums);
+        assertArrayEquals(new int[] {3, 99, -1, -100}, nums);
     }
-
 }

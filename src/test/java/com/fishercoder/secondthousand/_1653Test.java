@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1653;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1653Test {
     private _1653.Solution1 solution1;
@@ -27,5 +27,4 @@ public class _1653Test {
         assertEquals(0, solution1.minimumDeletions("aaabbb"));
         assertEquals(0, solution2.minimumDeletions("aaabbb"));
     }
-
 }

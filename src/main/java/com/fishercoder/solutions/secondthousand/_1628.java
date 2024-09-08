@@ -6,7 +6,7 @@ import java.util.List;
 
 public class _1628 {
     public static class Solution1 {
-        /**
+        /*
          * Being able to think of resorting to Stack data structure is the key here to a straightforward solution.
          */
 
@@ -63,7 +63,6 @@ public class _1628 {
                 print(node.right, list);
                 return list;
             }
-
         }
 
         public static class TreeBuilder {
@@ -79,7 +78,6 @@ public class _1628 {
                 }
                 return stack.pop();
             }
-
         }
     }
 }

@@ -1,15 +1,13 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._549;
-import org.junit.jupiter.api.BeforeEach;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _549Test {
     private _549.Solution1 solution1;
@@ -18,8 +16,7 @@ public class _549Test {
     private static TreeNode root;
 
     @BeforeEach
-    public void setup() {
-    }
+    public void setup() {}
 
     @BeforeEach
     public void setupForEachTest() {

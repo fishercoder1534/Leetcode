@@ -16,12 +16,12 @@ public class _809 {
             int i = 0;
             int j = 0;
             /* Logic is to check whether character at same index of S and w are same
-               if same,
-                1. Find the consecutive number of occurrences of the char in S (say len1) and w ( say len2)
-                2. If len1 == len 2 , move to the next char in S and w
-                3. If  len1 >= 3 and len2 < len1, means we can make the char in w stretchy to match len1
-                4. else, return false, because it's not possible to stretch the char in w
-             */
+              if same,
+               1. Find the consecutive number of occurrences of the char in S (say len1) and w ( say len2)
+               2. If len1 == len 2 , move to the next char in S and w
+               3. If  len1 >= 3 and len2 < len1, means we can make the char in w stretchy to match len1
+               4. else, return false, because it's not possible to stretch the char in w
+            */
             while (i < S.length() && j < w.length()) {
                 char ch1 = S.charAt(i);
                 char ch2 = w.charAt(j);

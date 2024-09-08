@@ -1,9 +1,9 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._706;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _706Test {
     private _706.Solution2.MyHashMap myHashMap;
@@ -21,5 +21,4 @@ public class _706Test {
         myHashMap.remove(2);
         assertEquals(-1, myHashMap.get(2));
     }
-
 }

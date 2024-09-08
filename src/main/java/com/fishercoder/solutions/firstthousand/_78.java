@@ -14,7 +14,8 @@ public class _78 {
             result.add(new ArrayList());
             for (int i = 0; i < nums.length; i++) {
                 List<List<Integer>> temp = new ArrayList();
-                //you'll have to create a new one here, otherwise, it'll throw ConcurrentModificationException.
+                // you'll have to create a new one here, otherwise, it'll throw
+                // ConcurrentModificationException.
                 for (List<Integer> list : result) {
                     List<Integer> newList = new ArrayList(list);
                     newList.add(nums[i]);
@@ -27,7 +28,7 @@ public class _78 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This is the most straightforward solution and easy to follow.
          */
         public List<List<Integer>> subsets(int[] nums) {
@@ -47,7 +48,7 @@ public class _78 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * This is just a slight modification of Solution2, pay close to attention to notice the difference between them.
          */
         public List<List<Integer>> subsets(int[] nums) {
@@ -58,7 +59,8 @@ public class _78 {
             return result;
         }
 
-        private void backtracking(List<List<Integer>> result, List<Integer> list, int[] nums, int start) {
+        private void backtracking(
+                List<List<Integer>> result, List<Integer> list, int[] nums, int start) {
             for (int i = start; i < nums.length; i++) {
                 list.add(nums[i]);
                 result.add(new ArrayList<>(list));

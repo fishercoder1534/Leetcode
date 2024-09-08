@@ -2,7 +2,7 @@ package com.fishercoder.solutions.fourththousand;
 
 public class _3196 {
     public static class Solution1 {
-        /**
+        /*
          * I knew it's a DP problem, I was close to figuring out the recurrence relationship.
          * <p>
          * Credit: https://leetcode.com/problems/maximize-total-cost-of-alternating-subarrays/solutions/5355138/dynamic-programming-and-space-optimized-beats-100-easy-to-understand/

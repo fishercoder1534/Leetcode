@@ -1,14 +1,13 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.thirdthousand._2096;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2096Test {
     private _2096.Solution1 solution1;
@@ -41,9 +40,11 @@ public class _2096Test {
 
     @Test
     public void test4() {
-        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(5, 8, 3, 1, null, 4, 7, 6, null, null, null, null, null, null, 2));
+        TreeNode root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                5, 8, 3, 1, null, 4, 7, 6, null, null, null, null, null, null, 2));
         TreeUtils.printBinaryTree(root);
         assertEquals("U", solution1.getDirections(root, 4, 3));
     }
-
 }

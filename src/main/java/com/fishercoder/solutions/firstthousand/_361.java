@@ -18,7 +18,7 @@ public class _361 {
                     if (grid[i][j] == '0') {
                         int count = 0;
 
-                        //count all possible hits in its upward direction
+                        // count all possible hits in its upward direction
                         for (int k = j - 1; k >= 0; k--) {
                             if (grid[i][k] == 'E') {
                                 count++;
@@ -27,7 +27,7 @@ public class _361 {
                             }
                         }
 
-                        //count all possible hits in its downward direction
+                        // count all possible hits in its downward direction
                         for (int k = j + 1; k < n; k++) {
                             if (grid[i][k] == 'E') {
                                 count++;
@@ -36,7 +36,7 @@ public class _361 {
                             }
                         }
 
-                        //count all possible hits in its right direction
+                        // count all possible hits in its right direction
                         for (int k = i + 1; k < m; k++) {
                             if (grid[k][j] == 'E') {
                                 count++;
@@ -45,7 +45,7 @@ public class _361 {
                             }
                         }
 
-                        //count all possible hits in its left direction
+                        // count all possible hits in its left direction
                         for (int k = i - 1; k >= 0; k--) {
                             if (grid[k][j] == 'E') {
                                 count++;

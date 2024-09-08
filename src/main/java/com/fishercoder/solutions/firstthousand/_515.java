@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -43,7 +42,6 @@ public class _515 {
             }
             dfs(root, res, 0);
             return res;
-
         }
 
         public void dfs(TreeNode root, List<Integer> res, int level) {
@@ -58,5 +56,4 @@ public class _515 {
             dfs(root.right, res, level + 1);
         }
     }
-
 }

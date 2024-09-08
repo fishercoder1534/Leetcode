@@ -1,9 +1,9 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._208;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _208Test {
     private _208.Solution1.Trie trie;
@@ -33,5 +33,4 @@ public class _208Test {
         assertEquals(true, trie.search("april"));
         assertEquals(true, trie.search("cad"));
     }
-
 }

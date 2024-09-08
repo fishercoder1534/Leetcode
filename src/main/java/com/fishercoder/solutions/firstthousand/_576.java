@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _576 {
     public static class Solution1 {
-        /**
+        /*
          * reference: https://leetcode.com/articles/out-of-boundary-paths/#approach-2-recursion-with-memoization-accepted
          */
         public int findPaths(int m, int n, int N, int x, int y) {
@@ -26,8 +26,12 @@ public class _576 {
                         if (j == 0) {
                             count = (count + dp[i][j]) % M;
                         }
-                        temp[i][j] = (((i > 0 ? dp[i - 1][j] : 0) + (i < m - 1 ? dp[i + 1][j] : 0)) % M
-                                + ((j > 0 ? dp[i][j - 1] : 0) + (j < n - 1 ? dp[i][j + 1] : 0)) % M) % M;
+                        temp[i][j] =
+                                (((i > 0 ? dp[i - 1][j] : 0) + (i < m - 1 ? dp[i + 1][j] : 0)) % M
+                                                + ((j > 0 ? dp[i][j - 1] : 0)
+                                                                + (j < n - 1 ? dp[i][j + 1] : 0))
+                                                        % M)
+                                        % M;
                     }
                 }
                 dp = temp;
@@ -35,5 +39,4 @@ public class _576 {
             return count;
         }
     }
-
 }

@@ -14,7 +14,7 @@ public class _1625 {
             String smallest = s;
             while (!queue.isEmpty()) {
                 String current = queue.poll();
-                //add
+                // add
                 char[] c = current.toCharArray();
                 for (int i = 1; i < c.length; i++) {
                     if (i % 2 == 1) {
@@ -28,7 +28,7 @@ public class _1625 {
                 if (seen.add(next)) {
                     queue.add(next);
                 }
-                //rotate
+                // rotate
                 next = next.substring(next.length() - b) + next.substring(0, next.length() - b);
                 if (seen.add(next)) {
                     queue.add(next);

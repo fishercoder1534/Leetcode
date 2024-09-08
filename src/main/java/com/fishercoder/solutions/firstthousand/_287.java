@@ -6,7 +6,7 @@ import java.util.Set;
 public class _287 {
 
     public static class Solution1 {
-        /**
+        /*
          * no-brainer, used O(n) space
          */
         public int findDuplicate(int[] nums) {
@@ -23,7 +23,7 @@ public class _287 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * O(1) space
          */
         public int findDuplicate(int[] nums) {

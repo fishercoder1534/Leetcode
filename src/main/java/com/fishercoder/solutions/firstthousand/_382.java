@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -12,7 +11,7 @@ public class _382 {
         private Map<Integer, ListNode> map;
         private Random rand;
 
-        /**
+        /*
          * @param head The linked list's head. Note that the head is guanranteed to be not null, so it contains at least one node.
          */
         public Solution(ListNode head) {
@@ -25,7 +24,7 @@ public class _382 {
             }
         }
 
-        /**
+        /*
          * Returns a random node's value.
          */
         public int getRandom() {
@@ -33,4 +32,3 @@ public class _382 {
         }
     }
 }
-

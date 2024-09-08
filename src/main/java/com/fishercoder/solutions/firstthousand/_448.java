@@ -8,7 +8,7 @@ import java.util.Map;
 public class _448 {
 
     public static class Solution1 {
-        /**
+        /*
          * O(n) space
          * O(n) time
          */
@@ -44,7 +44,7 @@ public class _448 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * O(1) space
          * O(n) time
          */
@@ -66,5 +66,4 @@ public class _448 {
             return result;
         }
     }
-
 }

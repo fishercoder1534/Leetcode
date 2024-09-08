@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _918 {
     public static class Solution1 {
-        /**
+        /*
          * This is my original solution, but results in TLE on LeetCode.
          * Time: O(n^2)
          */
@@ -25,7 +25,7 @@ public class _918 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/maximum-sum-circular-subarray/discuss/178422/One-Pass
          * Think of two cases:
          * 1. the max comes from the contiguous part of the original array
@@ -54,7 +54,7 @@ public class _918 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/maximum-sum-circular-subarray/discuss/633058/Java-or-C%2B%2B-or-Python3-or-With-detailed-explanation-or-O(N)-time-or-O(1)
          * This one is similar to the above Solution2, but only slightly differs in that it starts from i = 1 instead of i = 0
          * And it listed out a few examples to help illustrate why this algorithm makes sense.

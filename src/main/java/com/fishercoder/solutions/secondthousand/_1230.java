@@ -4,9 +4,9 @@ public class _1230 {
     public static class Solution1 {
         public double probabilityOfHeads(double[] prob, int target) {
             int n = prob.length;
-            //initialize a 2-D array, column size should be target + 1
-            //dp[i][j] means the probability of getting j heads using the first i coins
-            //so dp[n][target] is the answer where n is the number of coins
+            // initialize a 2-D array, column size should be target + 1
+            // dp[i][j] means the probability of getting j heads using the first i coins
+            // so dp[n][target] is the answer where n is the number of coins
             double[][] dp = new double[n + 1][target + 1];
             dp[0][0] = 1;
             for (int i = 1; i <= n; i++) {

@@ -1,14 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._593;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 5/22/17.
- */
+/** Created by fishercoder on 5/22/17. */
 public class _593Test {
     private _593.Solution1 solution1;
     private static int[] p1;
@@ -23,28 +21,28 @@ public class _593Test {
 
     @Test
     public void test1() {
-        p1 = new int[]{0, 0};
-        p2 = new int[]{1, 1};
-        p3 = new int[]{1, 0};
-        p4 = new int[]{0, 1};
+        p1 = new int[] {0, 0};
+        p2 = new int[] {1, 1};
+        p3 = new int[] {1, 0};
+        p4 = new int[] {0, 1};
         assertEquals(true, solution1.validSquare(p1, p2, p3, p4));
     }
 
     @Test
     public void test2() {
-        p1 = new int[]{1, 1};
-        p2 = new int[]{5, 3};
-        p3 = new int[]{3, 5};
-        p4 = new int[]{7, 7};
+        p1 = new int[] {1, 1};
+        p2 = new int[] {5, 3};
+        p3 = new int[] {3, 5};
+        p4 = new int[] {7, 7};
         assertEquals(false, solution1.validSquare(p1, p2, p3, p4));
     }
 
     @Test
     public void test3() {
-        p1 = new int[]{0, 0};
-        p2 = new int[]{0, 0};
-        p3 = new int[]{0, 0};
-        p4 = new int[]{0, 0};
+        p1 = new int[] {0, 0};
+        p2 = new int[] {0, 0};
+        p3 = new int[] {0, 0};
+        p4 = new int[] {0, 0};
         System.out.println(solution1.noDuplicate(p1, p2, p3, p4));
         assertEquals(false, solution1.validSquare(p1, p2, p3, p4));
     }

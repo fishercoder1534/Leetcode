@@ -1,15 +1,14 @@
 package com.fishercoder.firstthousand;
 
-import com.fishercoder.solutions.firstthousand._17;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.fishercoder.solutions.firstthousand._17;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _17Test {
     private _17.Solution1 solution1;
@@ -37,7 +36,9 @@ public class _17Test {
     @Test
     public void test2() {
         digits = "23";
-        expected = new ArrayList<>(Arrays.asList("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"));
+        expected =
+                new ArrayList<>(
+                        Arrays.asList("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"));
         Collections.sort(expected);
         List<String> actual = solution1.letterCombinations(digits);
         Collections.sort(actual);

@@ -1,11 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._452;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _452Test {
     private _452.Solution1 solution1;
@@ -21,8 +21,9 @@ public class _452Test {
 
     @Test
     public void test1() {
-        int[][] points = CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                "[3,9],[7,12],[3,8],[6,8],[9,10],[2,9],[0,9],[3,9],[0,6],[2,8]");
+        int[][] points =
+                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                        "[3,9],[7,12],[3,8],[6,8],[9,10],[2,9],[0,9],[3,9],[0,6],[2,8]");
         assertEquals(2, solution1.findMinArrowShots(points));
         assertEquals(2, solution2.findMinArrowShots(points));
         assertEquals(2, solution3.findMinArrowShots(points));
@@ -30,8 +31,9 @@ public class _452Test {
 
     @Test
     public void test2() {
-        int[][] points = CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                "[-2147483646,-2147483645],[2147483646,2147483647]");
+        int[][] points =
+                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                        "[-2147483646,-2147483645],[2147483646,2147483647]");
         assertEquals(2, solution1.findMinArrowShots(points));
         assertEquals(2, solution2.findMinArrowShots(points));
         assertEquals(2, solution3.findMinArrowShots(points));
@@ -39,8 +41,9 @@ public class _452Test {
 
     @Test
     public void test3() {
-        int[][] points = CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                "[0,6],[0,9],[7,8]");
+        int[][] points =
+                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                        "[0,6],[0,9],[7,8]");
         assertEquals(2, solution1.findMinArrowShots(points));
         assertEquals(2, solution2.findMinArrowShots(points));
         assertEquals(2, solution3.findMinArrowShots(points));
@@ -48,11 +51,11 @@ public class _452Test {
 
     @Test
     public void test4() {
-        int[][] points = CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                "[9,12],[1,10],[4,11],[8,12],[3,9],[6,9],[6,7]");
+        int[][] points =
+                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                        "[9,12],[1,10],[4,11],[8,12],[3,9],[6,9],[6,7]");
         assertEquals(2, solution1.findMinArrowShots(points));
         assertEquals(2, solution2.findMinArrowShots(points));
         assertEquals(2, solution3.findMinArrowShots(points));
     }
-
 }

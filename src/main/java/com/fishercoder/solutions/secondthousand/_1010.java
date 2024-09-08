@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _1010 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/discuss/256726/Java-O(n)-code-w-comment-similar-to-Two-Sum
          * <p>
          * Think of Problem 1: Two Sum
@@ -27,7 +27,7 @@ public class _1010 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/solution/
          */
         public int numPairsDivisibleBy60(int[] time) {

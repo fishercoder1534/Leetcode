@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -24,7 +23,7 @@ public class _94 {
     }
 
     public static class Solution2 {
-        //iterative approach
+        // iterative approach
         public List<Integer> inorderTraversal(TreeNode root) {
             List<Integer> result = new ArrayList();
             Stack<TreeNode> stack = new Stack();

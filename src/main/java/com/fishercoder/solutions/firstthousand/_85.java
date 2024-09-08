@@ -21,7 +21,7 @@ public class _85 {
                 int currLeft = 0;
                 int currRight = n;
 
-                //compute height, this can be achieved from either side
+                // compute height, this can be achieved from either side
                 for (int j = 0; j < n; j++) {
                     if (matrix[i][j] == '1') {
                         height[j]++;
@@ -30,7 +30,7 @@ public class _85 {
                     }
                 }
 
-                //compute left, from left to right
+                // compute left, from left to right
                 for (int j = 0; j < n; j++) {
                     if (matrix[i][j] == '1') {
                         left[j] = Math.max(left[j], currLeft);
@@ -40,7 +40,7 @@ public class _85 {
                     }
                 }
 
-                //compute right, from right to left
+                // compute right, from right to left
                 for (int j = n - 1; j >= 0; j--) {
                     if (matrix[i][j] == '1') {
                         right[j] = Math.min(right[j], currRight);
@@ -50,7 +50,7 @@ public class _85 {
                     }
                 }
 
-                //compute rectangle area, this can be achieved from either side
+                // compute rectangle area, this can be achieved from either side
                 for (int j = 0; j < n; j++) {
                     maxA = Math.max(maxA, (right[j] - left[j]) * height[j]);
                 }

@@ -5,7 +5,7 @@ import com.fishercoder.common.utils.CommonUtils;
 public class _26 {
 
     public static class Solution1 {
-        /**
+        /*
          * Key: It doesn't matter what you leave beyond the returned length.
          */
         public int removeDuplicates(int[] nums) {
@@ -21,7 +21,7 @@ public class _26 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 2/2/2022.
          */
         public int removeDuplicates(int[] nums) {
@@ -39,5 +39,4 @@ public class _26 {
             return left + 1;
         }
     }
-
 }

@@ -4,10 +4,10 @@ public class _696 {
     public static class Solution1 {
         public int countBinarySubstrings(String s) {
             int n = s.length();
-            /**a[i][0] denotes from most left up to i (inclusive), how many consecutive 0's
+            /*a[i][0] denotes from most left up to i (inclusive), how many consecutive 0's
              * a[i][1] denotes from most left up to i (inclusive), how many consecutive 1's*/
             int[][] a = new int[n][2];
-            /**a[i][0] denotes from i (inclusive) to the most right, how many consecutive 0's
+            /*a[i][0] denotes from i (inclusive) to the most right, how many consecutive 0's
              * b[i][0] denotes from i (inclusive) to the most right, how many consecutive 1's*/
             int[][] b = new int[n][2];
             for (int i = 0; i < n; i++) {
@@ -23,7 +23,6 @@ public class _696 {
                 } else {
                     b[i][1] = 1 + (i + 1 < n ? b[i + 1][1] : 0);
                 }
-
             }
             long ans = 0;
             for (int i = 0; i + 1 < n; i++) {
@@ -35,7 +34,7 @@ public class _696 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/count-binary-substrings/discuss/1172553/JS-Python-Java-C%2B%2B-or-Easy-Rolling-Count-Solution-w-Explanation
          */
         public int countBinarySubstrings(String s) {

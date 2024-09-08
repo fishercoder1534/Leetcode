@@ -5,14 +5,16 @@ import java.util.List;
 
 public class _638 {
     public static class Solution1 {
-        /**
+        /*
          * reference: https://leetcode.com/articles/shopping-offers/#approach-1-using-recursion-accepted
          */
-        public int shoppingOffers(List<Integer> price, List<List<Integer>> special, List<Integer> needs) {
+        public int shoppingOffers(
+                List<Integer> price, List<List<Integer>> special, List<Integer> needs) {
             return shopping(price, special, needs, 0);
         }
 
-        public int shopping(List<Integer> price, List<List<Integer>> special, List<Integer> needs, int i) {
+        public int shopping(
+                List<Integer> price, List<List<Integer>> special, List<Integer> needs, int i) {
             if (i == special.size()) {
                 return dot(needs, price);
             }
@@ -26,7 +28,9 @@ public class _638 {
                 clone.set(j, diff);
             }
             if (j == special.get(i).size() - 1) {
-                return Math.min(special.get(i).get(j) + shopping(price, special, clone, i), shopping(price, special, needs, i + 1));
+                return Math.min(
+                        special.get(i).get(j) + shopping(price, special, clone, i),
+                        shopping(price, special, needs, i + 1));
             } else {
                 return shopping(price, special, needs, i + 1);
             }

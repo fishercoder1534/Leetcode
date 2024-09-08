@@ -22,7 +22,7 @@ public class _198 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * recursion + memoization, basically the same as the above solution1
          * credit: https://leetcode.com/problems/house-robber/solution/
          */
@@ -41,7 +41,8 @@ public class _198 {
             if (this.memo[start] != -1) {
                 return this.memo[start];
             }
-            this.memo[start] = Math.max(robFrom(start + 1, nums), robFrom(start + 2, nums) + nums[start]);
+            this.memo[start] =
+                    Math.max(robFrom(start + 1, nums), robFrom(start + 2, nums) + nums[start]);
             return this.memo[start];
         }
     }

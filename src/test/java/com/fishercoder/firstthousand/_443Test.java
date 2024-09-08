@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._443;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _443Test {
     private _443.Solution1 solution1;
@@ -17,25 +17,25 @@ public class _443Test {
 
     @Test
     public void test1() {
-        chars = new char[]{'a', 'a', 'b', 'b', 'c', 'c', 'c'};
+        chars = new char[] {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
         assertEquals(6, solution1.compress(chars));
     }
 
     @Test
     public void test2() {
-        chars = new char[]{'a'};
+        chars = new char[] {'a'};
         assertEquals(1, solution1.compress(chars));
     }
 
     @Test
     public void test3() {
-        chars = new char[]{'a', 'b'};
+        chars = new char[] {'a', 'b'};
         assertEquals(2, solution1.compress(chars));
     }
 
     @Test
     public void test4() {
-        chars = new char[]{'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'};
+        chars = new char[] {'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'};
         assertEquals(4, solution1.compress(chars));
     }
 }

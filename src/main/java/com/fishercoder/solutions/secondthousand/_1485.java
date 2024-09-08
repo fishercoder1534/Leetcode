@@ -61,16 +61,11 @@ public class _1485 {
         public Node right;
         public Node random;
 
-        public Node() {
-        }
-
-        ;
+        public Node() {}
 
         public Node(int val) {
             this.val = val;
         }
-
-        ;
 
         public Node(int val, Node left, Node right, Node random) {
             this.val = val;
@@ -86,16 +81,11 @@ public class _1485 {
         public NodeCopy right;
         public NodeCopy random;
 
-        public NodeCopy() {
-        }
-
-        ;
+        public NodeCopy() {}
 
         public NodeCopy(int val) {
             this.val = val;
         }
-
-        ;
 
         public NodeCopy(int val, NodeCopy left, NodeCopy right, NodeCopy random) {
             this.val = val;

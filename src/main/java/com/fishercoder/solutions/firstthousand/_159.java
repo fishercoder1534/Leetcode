@@ -35,7 +35,7 @@ public class _159 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution, classic sliding window problem:
          * use two pointers, one keeps moving towards the right to expand;
          * the other moves only when we are no longer meeting the requirement, i.e. shrinks.

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1745 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/palindrome-partitioning-iv/discuss/1042910/Java-Detailed-Explanation-DP-O(N2)
          *
          * check whether substring(i, j) is a palindrome becomes checking whether substring(i + 1, j -1) is a palindrome
@@ -31,6 +31,5 @@ public class _1745 {
             }
             return false;
         }
-
     }
 }

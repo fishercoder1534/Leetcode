@@ -16,7 +16,9 @@ public class _838 {
                         newSb.append('L');
                         if (i == 1 && currentSb.charAt(i - 1) == '.') {
                             newSb.replace(i - 1, i, "L");
-                        } else if (i > 1 && currentSb.charAt(i - 1) == '.' && currentSb.charAt(i - 2) != 'R') {
+                        } else if (i > 1
+                                && currentSb.charAt(i - 1) == '.'
+                                && currentSb.charAt(i - 2) != 'R') {
                             newSb.replace(i - 1, i, "L");
                         }
                     } else if (currentSb.charAt(i) == 'R') {
@@ -24,7 +26,9 @@ public class _838 {
                         if (i == currentSb.length() - 2 && currentSb.charAt(i + 1) == '.') {
                             newSb.replace(i + 1, i + 2, "R");
                             i++;
-                        } else if (i < currentSb.length() - 2 && currentSb.charAt(i + 1) == '.' && currentSb.charAt(i + 2) != 'L') {
+                        } else if (i < currentSb.length() - 2
+                                && currentSb.charAt(i + 1) == '.'
+                                && currentSb.charAt(i + 2) != 'L') {
                             newSb.replace(i + 1, i + 2, "R");
                             i++;
                         }

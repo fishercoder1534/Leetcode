@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,11 +22,11 @@ public class _545 {
 
         public void leftBoundary(TreeNode root, List<Integer> nodes) {
             if (root == null || (root.left == null && root.right == null)) {
-                /**we don't want to add any LEAVES in leftBoundary and rightBoundary functions either,
+                /*we don't want to add any LEAVES in leftBoundary and rightBoundary functions either,
                  * that's why we have the later condition in the if branch.*/
                 return;
             }
-            nodes.add(root.val);// add BEFORE child visit
+            nodes.add(root.val); // add BEFORE child visit
             if (root.left == null) {
                 leftBoundary(root.right, nodes);
             } else {
@@ -59,5 +58,4 @@ public class _545 {
             addLeaves(root.right, nodes);
         }
     }
-
 }

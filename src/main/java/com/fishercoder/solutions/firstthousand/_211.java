@@ -5,7 +5,7 @@ public class _211 {
         public static class WordDictionary {
             WordNode root;
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public WordDictionary() {
@@ -36,7 +36,7 @@ public class _211 {
                 return search(word.toCharArray(), 0, root);
             }
 
-            /**
+            /*
              * This is also a beautifully designed recursive function.
              */
             private boolean search(char[] chars, int index, WordNode parent) {
@@ -67,7 +67,7 @@ public class _211 {
                 return search(chars, ++index, node);
             }
 
-            /**
+            /*
              * This is a cool/standard design for a Trie node class.
              */
             private class WordNode {
@@ -76,7 +76,7 @@ public class _211 {
             }
         }
 
-        /**
+        /*
          * Your WordDictionary object will be instantiated and called as such:
          * WordDictionary obj = new WordDictionary();
          * obj.addWord(word);

@@ -6,14 +6,14 @@ import java.util.Queue;
 
 public class _2812 {
     public static class Solution1 {
-        /**
+        /*
          * A great problem, credit: https://leetcode.com/problems/find-the-safest-path-in-a-grid/editorial/
          * <p>
          * BFS twice:
          * 1. once: to build the safeness factor for each cell;
          * 2. second time: check if there's a valid path from that cell;
          */
-        final int[] dirs = new int[]{0, 1, 0, -1, 0};
+        final int[] dirs = new int[] {0, 1, 0, -1, 0};
 
         public int maximumSafenessFactor(List<List<Integer>> grid) {
             int n = grid.size();
@@ -25,7 +25,7 @@ public class _2812 {
                 for (int j = 0; j < n; j++) {
                     if (grid.get(i).get(j) == 1) {
                         // Push thief coordinates to the queue
-                        multiSourceQueue.add(new int[]{i, j});
+                        multiSourceQueue.add(new int[] {i, j});
                         // Mark thief cell with 0
                         mat[i][j] = 0;
                     } else {
@@ -49,7 +49,7 @@ public class _2812 {
                         if (isValidCell(mat, di, dj) && mat[di][dj] == -1) {
                             // Update safeness factor and push to the queue
                             mat[di][dj] = val + 1;
-                            multiSourceQueue.add(new int[]{di, dj});
+                            multiSourceQueue.add(new int[] {di, dj});
                         }
                     }
                 }
@@ -89,7 +89,7 @@ public class _2812 {
             }
 
             Queue<int[]> traversalQueue = new LinkedList<>();
-            traversalQueue.add(new int[]{0, 0});
+            traversalQueue.add(new int[] {0, 0});
             boolean[][] visited = new boolean[n][n];
             visited[0][0] = true;
 
@@ -103,10 +103,13 @@ public class _2812 {
                 for (int k = 0; k < dirs.length - 1; k++) {
                     int di = curr[0] + dirs[k];
                     int dj = curr[1] + dirs[k + 1];
-                    // Check if the neighboring cell is valid, unvisited and satisfying minimum safeness
-                    if (isValidCell(grid, di, dj) && !visited[di][dj] && grid[di][dj] >= minSafeness) {
+                    // Check if the neighboring cell is valid, unvisited and satisfying minimum
+                    // safeness
+                    if (isValidCell(grid, di, dj)
+                            && !visited[di][dj]
+                            && grid[di][dj] >= minSafeness) {
                         visited[di][dj] = true;
-                        traversalQueue.add(new int[]{di, dj});
+                        traversalQueue.add(new int[] {di, dj});
                     }
                 }
             }

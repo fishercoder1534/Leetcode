@@ -7,7 +7,7 @@ import java.util.Random;
 public class _535 {
 
     public static class Solution1 {
-        /**
+        /*
          * Simple counter approach
          * Analysis:
          * The range of URLs that can be decoded is limited by the range of Integer.
@@ -34,7 +34,7 @@ public class _535 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Use Java built-in HashCode
          * Analysis:
          * hashCode() does NOT generate unique codes for different strings, collision might happen.
@@ -46,7 +46,7 @@ public class _535 {
 
             // Encodes a URL to a shortened URL.
             public String encode(String longUrl) {
-                /**I don't need to create a local variable to cache longUrl.hashCode()
+                /*I don't need to create a local variable to cache longUrl.hashCode()
                  * since Java's String cache it already. :) Look at its source code.*/
                 map.put(longUrl.hashCode(), longUrl);
                 return PREFIX + longUrl.hashCode();
@@ -60,7 +60,7 @@ public class _535 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Use a random number
          */
         Map<Integer, String> map = new HashMap<>();
@@ -84,7 +84,7 @@ public class _535 {
     }
 
     public static class Solution4 {
-        /**
+        /*
          * Use a random but fixed length encoding
          * Analysis:
          * 1. This is the most optimal solution so far.

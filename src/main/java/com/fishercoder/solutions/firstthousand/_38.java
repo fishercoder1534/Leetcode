@@ -27,5 +27,4 @@ public class _38 {
             return curr.toString();
         }
     }
-
 }

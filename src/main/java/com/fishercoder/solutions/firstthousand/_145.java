@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -10,7 +9,7 @@ import java.util.Stack;
 
 public class _145 {
     public static class Solution1 {
-        /**
+        /*
          * A tricky/hacky one: Modify the code for pre-order traversal
          * so that it becomes root->right->left,
          * and then reverse the result to get left->right->root.
@@ -38,7 +37,7 @@ public class _145 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Or use a LinkedList and add values to the head, then no reverse is needed.
          * the linked list contents get added like this:
          * <p>
@@ -68,7 +67,7 @@ public class _145 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * recursive solution is trivial.
          */
         public List<Integer> postorderTraversal(TreeNode root) {

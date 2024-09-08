@@ -2,11 +2,9 @@ package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.TreeNode;
 
-import java.sql.Struct;
-
 public class _1372 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/discuss/531808/Java-Recursion-Try-each-node-as-a-zigzag-root-then-return-valid-sum-to-parent
          */
         int maxLength = 0;

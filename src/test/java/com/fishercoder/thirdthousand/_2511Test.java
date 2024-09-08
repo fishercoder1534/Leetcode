@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2511;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2511Test {
     private _2511.Solution1 solution1;
@@ -16,6 +16,6 @@ public class _2511Test {
 
     @Test
     public void test1() {
-        assertEquals(4, solution1.captureForts(new int[]{1, 0, 0, -1, 0, 0, 0, 0, 1}));
+        assertEquals(4, solution1.captureForts(new int[] {1, 0, 0, -1, 0, 0, 0, 0, 1}));
     }
 }

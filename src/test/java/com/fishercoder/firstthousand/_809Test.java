@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._809;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _809Test {
     private _809.Solution1 solution1;
@@ -17,7 +17,7 @@ public class _809Test {
 
     @Test
     public void test1() {
-        words = new String[]{"hello", "hi", "helo"};
+        words = new String[] {"hello", "hi", "helo"};
         assertEquals(1, solution1.expressiveWords("heeellooo", words));
     }
 }

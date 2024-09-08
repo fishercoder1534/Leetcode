@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _639 {
     public static class Solution1 {
-        /**
+        /*
          * reference: https://leetcode.com/articles/decode-ways-ii/#approach-2-dynamic-programming-accepted
          */
         int m = 1000000007;

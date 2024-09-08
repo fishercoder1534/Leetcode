@@ -1,12 +1,12 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.secondthousand._1721;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1721Test {
     private _1721.Solution1 solution1;
@@ -43,25 +43,25 @@ public class _1721Test {
 
     @Test
     public void test2() {
-        node = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4, 5});
-        expected = LinkedListUtils.contructLinkedList(new int[]{1, 4, 3, 2, 5});
+        node = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4, 5});
+        expected = LinkedListUtils.contructLinkedList(new int[] {1, 4, 3, 2, 5});
         k = 2;
         assertEquals(expected, solution2.swapNodes(node, k));
     }
 
     @Test
     public void test3() {
-        node = LinkedListUtils.contructLinkedList(new int[]{90, 100});
+        node = LinkedListUtils.contructLinkedList(new int[] {90, 100});
         k = 2;
-        expected = LinkedListUtils.contructLinkedList(new int[]{100, 90});
+        expected = LinkedListUtils.contructLinkedList(new int[] {100, 90});
         assertEquals(expected, solution1.swapNodes(node, k));
     }
 
     @Test
     public void test4() {
-        node = LinkedListUtils.contructLinkedList(new int[]{90, 100});
+        node = LinkedListUtils.contructLinkedList(new int[] {90, 100});
         k = 2;
-        expected = LinkedListUtils.contructLinkedList(new int[]{100, 90});
+        expected = LinkedListUtils.contructLinkedList(new int[] {100, 90});
         assertEquals(expected, solution3.swapNodes(node, k));
     }
 }

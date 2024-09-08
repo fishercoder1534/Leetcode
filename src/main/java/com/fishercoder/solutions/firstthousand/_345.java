@@ -8,8 +8,9 @@ public class _345 {
     public static class Solution1 {
         public String reverseVowels(String s) {
             StringBuilder sb = new StringBuilder(s);
-            Set<Character> vowels = new HashSet(Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'));
-            //use two pointers approach would be the fastest
+            Set<Character> vowels =
+                    new HashSet(Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'));
+            // use two pointers approach would be the fastest
             int i = 0;
             int j = s.length() - 1;
             while (i < j) {

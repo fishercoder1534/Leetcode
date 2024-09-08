@@ -1,12 +1,11 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2848;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2848Test {
     private _2848.Solution1 solution1;
@@ -18,9 +17,10 @@ public class _2848Test {
 
     @Test
     public void test1() {
-        assertEquals(7, solution1.numberOfPoints(Arrays.asList(Arrays.asList(3, 6),
-                Arrays.asList(1, 5),
-                Arrays.asList(4, 7))));
+        assertEquals(
+                7,
+                solution1.numberOfPoints(
+                        Arrays.asList(
+                                Arrays.asList(3, 6), Arrays.asList(1, 5), Arrays.asList(4, 7))));
     }
-
 }

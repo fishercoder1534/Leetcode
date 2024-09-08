@@ -17,5 +17,4 @@ public class _1304Test {
     public void test1() {
         CommonUtils.printArray(solution1.sumZero(5));
     }
-
 }

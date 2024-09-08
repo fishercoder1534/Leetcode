@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _8 {
 
     public static class Solution1 {
-        /**
+        /*
          * four corner cases:
          * 1. discards all leading zeroes
          * 2. sign of the number
@@ -39,5 +39,4 @@ public class _8 {
             return result;
         }
     }
-
 }

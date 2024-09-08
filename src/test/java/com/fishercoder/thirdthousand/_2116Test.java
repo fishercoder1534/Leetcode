@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2116;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2116Test {
     private _2116.Solution1 solution1;
@@ -36,7 +36,10 @@ public class _2116Test {
 
     @Test
     public void test5() {
-        assertEquals(false, solution1.canBeValid("())(()(()(())()())(())((())(()())((())))))(((((((())(()))))(", "100011110110011011010111100111011101111110000101001101001111"));
+        assertEquals(
+                false,
+                solution1.canBeValid(
+                        "())(()(()(())()())(())((())(()())((())))))(((((((())(()))))(",
+                        "100011110110011011010111100111011101111110000101001101001111"));
     }
-
 }

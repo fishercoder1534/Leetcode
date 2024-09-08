@@ -8,7 +8,7 @@ public class _1030 {
         public int[][] allCellsDistOrder(int R, int C, int r0, int c0) {
             int[][] result = new int[R * C][2];
             Queue<int[]> queue = new LinkedList<>();
-            queue.offer(new int[]{r0, c0});
+            queue.offer(new int[] {r0, c0});
             boolean[][] visited = new boolean[R][C];
             int i = 0;
             while (!queue.isEmpty()) {
@@ -21,12 +21,11 @@ public class _1030 {
                 }
 
                 visited[row][col] = true;
-                result[i++] = new int[]{row, col};
-                queue.offer(new int[]{row, col + 1});
-                queue.offer(new int[]{row + 1, col});
-                queue.offer(new int[]{row - 1, col});
-                queue.offer(new int[]{row, col - 1});
-
+                result[i++] = new int[] {row, col};
+                queue.offer(new int[] {row, col + 1});
+                queue.offer(new int[] {row + 1, col});
+                queue.offer(new int[] {row - 1, col});
+                queue.offer(new int[] {row, col - 1});
             }
             return result;
         }

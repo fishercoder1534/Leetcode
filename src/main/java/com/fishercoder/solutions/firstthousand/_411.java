@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _411 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/61346/trie-bruteforce
          */
         class Trie {
@@ -90,10 +90,13 @@ public class _411 {
                 return;
             }
             char cur = target.charAt(i);
-            abbrGenerator(target, i + 1, abbr == 0 ? tmp + cur : tmp + abbr + cur, 0,
+            abbrGenerator(
+                    target,
+                    i + 1,
+                    abbr == 0 ? tmp + cur : tmp + abbr + cur,
+                    0,
                     abbr == 0 ? num - 1 : num - 2);
             abbrGenerator(target, i + 1, tmp, abbr + 1, num);
         }
     }
-
 }

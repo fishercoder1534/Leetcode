@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 import java.util.Arrays;
 
-/**
+/*
  * Approach: Sort the intervals in the ascending order of end range.
  * In case if the end range of any 2 intervals match,
  * sort those intervals based on the descending order of start range

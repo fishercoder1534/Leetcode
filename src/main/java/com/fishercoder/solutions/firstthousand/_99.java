@@ -12,7 +12,7 @@ public class _99 {
         public void recoverTree(TreeNode root) {
             traverseTree(root);
 
-            //swap the two elements
+            // swap the two elements
             int temp = firstElement.val;
             firstElement.val = secondElement.val;
             secondElement.val = temp;
@@ -25,8 +25,10 @@ public class _99 {
 
             traverseTree(root.left);
 
-            //prevElement means the one previous to the current root, refer to in-order traversal, previous element must be smaller than the current root
-            //if it's bigger, then we find the first element, thus we store it in the variable called firstElement
+            // prevElement means the one previous to the current root, refer to in-order traversal,
+            // previous element must be smaller than the current root
+            // if it's bigger, then we find the first element, thus we store it in the variable
+            // called firstElement
             if (firstElement == null && prevElement.val >= root.val) {
                 firstElement = prevElement;
             }
@@ -35,12 +37,12 @@ public class _99 {
                 secondElement = root;
             }
 
-            //this is the last step in the "do some business logic", so we'll always to have update the previous node to be the current root before it traverses the right subtree
-            //since the current root will be the new previous node for the right subtree.
+            // this is the last step in the "do some business logic", so we'll always to have update
+            // the previous node to be the current root before it traverses the right subtree
+            // since the current root will be the new previous node for the right subtree.
             prevElement = root;
 
             traverseTree(root.right);
         }
-
     }
 }

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1143 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/longest-common-subsequence/solution/
          * <p>
          * Recall that there are two different techniques we can use to implement a dynamic programming solution; memoization and tabulation.
@@ -31,9 +31,10 @@ public class _1143 {
             if (dp[i][j] != -1) {
                 return dp[i][j];
             }
-            //option1: we don't include text1.charAt(i) in the optimal solution
+            // option1: we don't include text1.charAt(i) in the optimal solution
             int option1 = topDownRecursiveSolve(dp, i + 1, j, text1, text2);
-            //option2: we do include text1.charAt(i) in the optimal solution as long as a match in text2 at or after j does exist
+            // option2: we do include text1.charAt(i) in the optimal solution as long as a match in
+            // text2 at or after j does exist
             int firstOccurence = text2.indexOf(text1.charAt(i), j);
             int option2 = 0;
             if (firstOccurence != -1) {

@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _189 {
 
     public static class Solution1 {
-        /**
+        /*
          * O(n*k) time
          * O(1) space
          */
@@ -20,7 +20,7 @@ public class _189 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * using an extra array of the same size to copy it
          * O(n) time
          * O(n) space
@@ -38,7 +38,7 @@ public class _189 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * reverse three times
          * O(n) time
          * O(1) space
@@ -63,7 +63,7 @@ public class _189 {
     }
 
     public static class Solution4 {
-        /**
+        /*
          * O(n) time
          * O(1) space
          * The most optimal, we can safely ignore all the above three solutions... :)

@@ -29,5 +29,4 @@ public class _266 {
             return true;
         }
     }
-
 }

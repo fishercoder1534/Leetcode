@@ -39,7 +39,7 @@ public class _1381 {
         }
     }
 
-    /**
+    /*
      * Implementation of Stack using Array
      */
     public static class Solution2 {

@@ -15,7 +15,7 @@ public class _60 {
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < n; i++) {
                 permcount = permcount / (n - i);
-                int idx = k / permcount;// the index that this position should
+                int idx = k / permcount; // the index that this position should
                 // choose
                 sb.append(nums[idx]);
                 // left shift nums[] by one bit

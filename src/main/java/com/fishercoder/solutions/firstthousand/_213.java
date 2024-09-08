@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _213 {
     public static class Solution1 {
-        /**
+        /*
          * Basically there are two ways to rob the houses: one is to rob from 0 to n - 1, the other is to rob from 1 to n, and then take the max from these two.
          * Time: O(n)
          * Space: O(n)
@@ -29,7 +29,7 @@ public class _213 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This solution is identical to the above solution 1, the only difference is that instead of using an extra array, we use only two extra variables here to reduce the space complexity to O(1).
          * Time: O(n)
          * Space: O(1)

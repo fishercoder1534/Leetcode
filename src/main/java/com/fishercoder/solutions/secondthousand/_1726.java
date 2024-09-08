@@ -37,6 +37,5 @@ public class _1726 {
             }
             return count;
         }
-
     }
 }

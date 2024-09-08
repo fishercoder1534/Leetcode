@@ -5,7 +5,7 @@ import java.util.LinkedHashSet;
 
 public class _460 {
     public static class Solution1 {
-        /**
+        /*
          * Wikipedia: The simplest method to employ an LFU algorithm is to assign a counter to every
          * block that is loaded into the cache. Each time a reference is made to that block the counter
          * is increased by one. When the cache reaches capacity and has a new block waiting to be
@@ -15,20 +15,20 @@ public class _460 {
          */
 
         public static class LFUCache {
-            /**
+            /*
              * credit: https://discuss.leetcode.com/topic/69737/java-o-1-very-easy-solution-using-3-hashmaps-and-linkedhashset/2
              */
 
             HashMap<Integer, Integer> keyToValue;
-            /**
+            /*
              * key is the key, value is the value
              */
             HashMap<Integer, Integer> keyToCount;
-            /**
+            /*
              * key is the key, value if the count of the key/value pair
              */
             HashMap<Integer, LinkedHashSet<Integer>> countToLRUKeys;
-            /**
+            /*
              * key is count, value is a set of keys that have the same key, but keeps insertion order
              */
             int cap;
@@ -52,7 +52,7 @@ public class _460 {
                 countToLRUKeys.get(count).remove(key);
 
                 if (count == minimumCount && countToLRUKeys.get(count).size() == 0) {
-                    /**This means this key's count equals to current minimumCount
+                    /*This means this key's count equals to current minimumCount
                      * AND
                      * this count doesn't have any entries in the cache.
                      * So, we'll increment minimumCount by 1 to get the next LFU cache entry
@@ -74,14 +74,14 @@ public class _460 {
                 }
 
                 if (keyToValue.containsKey(key)) {
-                    /**If the key is already in the cache, we can simply overwrite this entry;
+                    /*If the key is already in the cache, we can simply overwrite this entry;
                      * then call get(key) which will do the update work.*/
                     keyToValue.put(key, value);
                     get(key);
                     return;
                 }
 
-                /**If the key is not in the cache, we'll check the size first, evict the LFU entry first,
+                /*If the key is not in the cache, we'll check the size first, evict the LFU entry first,
                  * then insert this one into cache.*/
                 if (keyToValue.size() >= cap) {
                     int evit = countToLRUKeys.get(minimumCount).iterator().next();
@@ -90,10 +90,12 @@ public class _460 {
                 }
                 keyToValue.put(key, value);
                 keyToCount.put(key, 1);
-                countToLRUKeys.get(1).add(key);/**Because we put this key/value into cache for the first time, so its count is 1*/
-                minimumCount = 1;/**For the same above reason, minimumCount is of course 1*/
+                countToLRUKeys
+                        .get(1)
+                        .add(
+                                key); /*Because we put this key/value into cache for the first time, so its count is 1*/
+                minimumCount = 1; /*For the same above reason, minimumCount is of course 1*/
             }
         }
     }
-
 }

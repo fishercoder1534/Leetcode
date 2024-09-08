@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _689 {
     public static class Solution1 {
-        /**
+        /*
          * we basically need to find the interval (i, i+k-1) as the middle interval, where k <= i <= n-2k
          * then this interval (0, i-1) will be the left interval
          * the interval (i+k, n-1) will be the right interval.
@@ -14,7 +14,7 @@ public class _689 {
          */
         public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
             if (nums == null || nums.length == 0) {
-                return new int[]{};
+                return new int[] {};
             }
             int n = nums.length;
             int[] sums = new int[n + 1];
@@ -43,13 +43,16 @@ public class _689 {
                 }
             }
 
-            //try to find all possible middle intervals
+            // try to find all possible middle intervals
             int[] result = new int[3];
             int max = 0;
             for (int i = k; i <= n - 2 * k; i++) {
                 int left = leftMax[i - 1];
                 int right = rightMax[i + k];
-                int total = (sums[i + k] - sums[i]) + (sums[left + k] - sums[left]) + (sums[right + k] - sums[right]);
+                int total =
+                        (sums[i + k] - sums[i])
+                                + (sums[left + k] - sums[left])
+                                + (sums[right + k] - sums[right]);
                 if (total > max) {
                     max = total;
                     result[0] = left;
@@ -62,6 +65,6 @@ public class _689 {
     }
 
     public static class Solution2 {
-        /**reference: https://leetcode.com/articles/maximum-sum-of-3-non-overlapping-intervals*/
+        /*reference: https://leetcode.com/articles/maximum-sum-of-3-non-overlapping-intervals*/
     }
 }

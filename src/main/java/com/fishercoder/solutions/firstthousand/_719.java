@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class _719 {
     public static class Solution1 {
-        /**
+        /*
          * This brute force solution results in TLE of course.
          */
         public int smallestDistancePair(int[] nums, int k) {
@@ -28,7 +28,7 @@ public class _719 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/articles/find-k-th-smallest-pair-distance/#approach-3-binary-search-sliding-window-accepted
          */
         public int smallestDistancePair(int[] nums, int k) {
@@ -45,7 +45,7 @@ public class _719 {
                     }
                     count += right - left;
                 }
-                //count = number of pairs with distance <= mi
+                // count = number of pairs with distance <= mi
                 if (count >= k) {
                     hi = mi;
                 } else {

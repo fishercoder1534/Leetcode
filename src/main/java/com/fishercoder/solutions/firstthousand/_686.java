@@ -27,7 +27,7 @@ public class _686 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Time: O(N(N+M))
          * Space: O(N + M)
          */

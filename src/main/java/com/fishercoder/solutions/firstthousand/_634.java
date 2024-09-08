@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _634 {
     public static class Solution1 {
-        /**
+        /*
          * reference: https://discuss.leetcode.com/topic/94442/java-5-lines-o-1-space-solution
          * and https://leetcode.com/articles/find-derangements/#approach-5-using-formula-accepted
          */

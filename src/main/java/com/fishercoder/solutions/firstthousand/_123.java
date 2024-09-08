@@ -3,7 +3,8 @@ package com.fishercoder.solutions.firstthousand;
 public class _123 {
 
     public static class Solution1 {
-        //this is a very clear solution and very highly upvoted in Discuss, but not extensible to K solution.
+        // this is a very clear solution and very highly upvoted in Discuss, but not extensible to K
+        // solution.
         public int maxProfit(int[] prices) {
             int buy1 = Integer.MIN_VALUE;
             int buy2 = Integer.MIN_VALUE;

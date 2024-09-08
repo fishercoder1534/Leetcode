@@ -23,7 +23,8 @@ public class _161 {
                     }
                 }
                 return diffCnt == 1 || diffCnt == 0;
-                //it could be the last char of the longer is the different one, in that case, diffCnt remains to be zero
+                // it could be the last char of the longer is the different one, in that case,
+                // diffCnt remains to be zero
             } else if (s.length() == t.length()) {
                 int diffCnt = 0;
                 for (int i = 0; i < s.length(); i++) {

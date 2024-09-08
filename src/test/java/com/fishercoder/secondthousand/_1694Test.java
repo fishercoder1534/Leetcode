@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1694;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1694Test {
     private _1694.Solution1 solution1;
@@ -38,5 +38,4 @@ public class _1694Test {
     public void test5() {
         assertEquals("175-229-353-94-75", solution1.reformatNumber("--17-5 229 35-39475 "));
     }
-
 }

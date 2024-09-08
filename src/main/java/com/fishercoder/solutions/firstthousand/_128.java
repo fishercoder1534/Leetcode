@@ -11,7 +11,7 @@ public class _128 {
     public static class Solution1 {
         public int longestConsecutive(int[] nums) {
             Map<Integer, Integer> map = new HashMap();
-            //<value, index>
+            // <value, index>
             UnionFind uf = new UnionFind(nums);
             for (int i = 0; i < nums.length; i++) {
                 if (map.containsKey(nums[i])) {
@@ -20,7 +20,8 @@ public class _128 {
                 map.put(nums[i], i);
                 if (map.containsKey(nums[i] - 1)) {
                     uf.union(i, map.get(nums[i] - 1));
-                    //note: we want to union this index and nums[i]-1's root index which we can get from the map
+                    // note: we want to union this index and nums[i]-1's root index which we can get
+                    // from the map
                 }
                 if (map.containsKey(nums[i] + 1)) {
                     uf.union(i, map.get(nums[i] + 1));
@@ -58,7 +59,7 @@ public class _128 {
             }
 
             public int maxUnion() {
-                //this is O(n)
+                // this is O(n)
                 int max = 0;
                 int[] count = new int[ids.length];
                 for (int i = 0; i < ids.length; i++) {
@@ -71,7 +72,8 @@ public class _128 {
     }
 
     public static class Solution2 {
-        //inspired by this solution: https://discuss.leetcode.com/topic/25493/simple-fast-java-solution-using-set
+        // inspired by this solution:
+        // https://discuss.leetcode.com/topic/25493/simple-fast-java-solution-using-set
         public int longestConsecutive(int[] nums) {
             if (nums == null || nums.length == 0) {
                 return 0;
@@ -88,13 +90,15 @@ public class _128 {
                     int val = num;
                     int count = 1;
                     while (set.remove(val - 1)) {
-                        val--;//we find all numbers that are smaller than num and remove them from the set
+                        val--; // we find all numbers that are smaller than num and remove them from
+                        // the set
                     }
                     count += num - val;
 
                     val = num;
                     while (set.remove(val + 1)) {
-                        val++;//then we find all numbers that are bigger than num and also remove them from the set
+                        val++; // then we find all numbers that are bigger than num and also remove
+                        // them from the set
                     }
                     count += val - num;
 
@@ -106,7 +110,7 @@ public class _128 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * O(n) time complexity.
          */
         public int longestConsecutive(int[] nums) {
@@ -117,7 +121,8 @@ public class _128 {
 
             int longestStreak = 0;
             for (int num : set) {
-                //we'll go through this set instead of nums, this makes a big difference in time complexity, esp. based on LeetCode test cases
+                // we'll go through this set instead of nums, this makes a big difference in time
+                // complexity, esp. based on LeetCode test cases
                 if (!set.contains(num - 1)) {
                     int currentNum = num;
                     int currentStreak = 1;
@@ -134,7 +139,7 @@ public class _128 {
     }
 
     public static class Solution4 {
-        /**
+        /*
          * O(nlogn) time complexity
          */
         public int longestConsecutive(int[] nums) {
@@ -143,7 +148,7 @@ public class _128 {
             }
             TreeSet<Integer> treeSet = new TreeSet<>();
             for (int i : nums) {
-                treeSet.add(i);//O(logn) time complexity for each add() call
+                treeSet.add(i); // O(logn) time complexity for each add() call
             }
             int ans = 1;
             Iterator<Integer> it = treeSet.iterator();

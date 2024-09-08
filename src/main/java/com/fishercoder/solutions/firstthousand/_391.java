@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class _391 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/56052/really-easy-understanding-solution-o-n-java
          */
         public boolean isRectangleCover(int[][] rectangles) {
@@ -48,8 +48,11 @@ public class _391 {
                 }
             }
 
-            if (!set.contains(x1 + " " + y1) || !set.contains(x1 + " " + y2) || !set.contains(
-                    x2 + " " + y1) || !set.contains(x2 + " " + y2) || set.size() != 4) {
+            if (!set.contains(x1 + " " + y1)
+                    || !set.contains(x1 + " " + y2)
+                    || !set.contains(x2 + " " + y1)
+                    || !set.contains(x2 + " " + y2)
+                    || set.size() != 4) {
                 return false;
             }
 

@@ -16,7 +16,8 @@ public class _2559 {
                     if (set.contains(word.charAt(0))) {
                         vowels[i] = true;
                     }
-                } else if (set.contains(word.charAt(0)) && set.contains(word.charAt(word.length() - 1))) {
+                } else if (set.contains(word.charAt(0))
+                        && set.contains(word.charAt(word.length() - 1))) {
                     vowels[i] = true;
                 }
                 i++;

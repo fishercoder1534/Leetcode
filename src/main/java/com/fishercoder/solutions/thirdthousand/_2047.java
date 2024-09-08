@@ -15,11 +15,17 @@ public class _2047 {
                 for (int i = 0; i < token.length(); i++) {
                     if (token.charAt(i) == '-') {
                         hyphenCount++;
-                        if (hyphenCount > 1 || i == 0 || i == token.length() - 1 || !Character.isAlphabetic(token.charAt(i - 1)) || !Character.isAlphabetic(token.charAt(i + 1))) {
+                        if (hyphenCount > 1
+                                || i == 0
+                                || i == token.length() - 1
+                                || !Character.isAlphabetic(token.charAt(i - 1))
+                                || !Character.isAlphabetic(token.charAt(i + 1))) {
                             valid = false;
                             break;
                         }
-                    } else if (token.charAt(i) == '!' || token.charAt(i) == '.' || token.charAt(i) == ',') {
+                    } else if (token.charAt(i) == '!'
+                            || token.charAt(i) == '.'
+                            || token.charAt(i) == ',') {
                         punctuationMarkCount++;
                         if (punctuationMarkCount > 1 || i != token.length() - 1) {
                             valid = false;

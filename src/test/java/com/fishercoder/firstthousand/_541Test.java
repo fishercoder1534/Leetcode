@@ -1,11 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._541;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _541Test {
     private _541.Solution1 solution1;
@@ -20,8 +19,7 @@ public class _541Test {
     }
 
     @BeforeEach
-    public void setupForEachTest() {
-    }
+    public void setupForEachTest() {}
 
     @Test
     public void test1() {
@@ -70,12 +68,13 @@ public class _541Test {
 
     @Test
     public void test6() {
-        s = "hyzqyljrnigxvdtneasepfahmtyhlohwxmkqcdfehybknvdmfrfvtbsovjbdhevlfxpdaovjgunjqlimjkfnqcqnajmebeddqsgl";
+        s =
+                "hyzqyljrnigxvdtneasepfahmtyhlohwxmkqcdfehybknvdmfrfvtbsovjbdhevlfxpdaovjgunjqlimjkfnqcqnajmebeddqsgl";
         System.out.println("s.length() = " + s.length());
         k = 39;
-        expected = "fdcqkmxwholhytmhafpesaentdvxginrjlyqzyhehybknvdmfrfvtbsovjbdhevlfxpdaovjgunjqllgsqddebemjanqcqnfkjmi";
+        expected =
+                "fdcqkmxwholhytmhafpesaentdvxginrjlyqzyhehybknvdmfrfvtbsovjbdhevlfxpdaovjgunjqllgsqddebemjanqcqnfkjmi";
         actual = solution1.reverseStr(s, k);
         assertEquals(expected, actual);
     }
-
 }

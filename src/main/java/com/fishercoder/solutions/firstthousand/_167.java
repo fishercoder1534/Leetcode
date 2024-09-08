@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _167 {
     public static class Solution1 {
-        /**
+        /*
          * This is an amazing solution!
          * Time: O(logn)
          */
@@ -18,22 +18,25 @@ public class _167 {
                 } else if (sum < target) {
                     left++;
                 } else {
-                    return new int[]{left + 1, right + 1};
+                    return new int[] {left + 1, right + 1};
                 }
             }
-            return new int[]{-1, -1};
+            return new int[] {-1, -1};
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Time: O(nlogn)
          */
         public int[] twoSum(int[] numbers, int target) {
             for (int i = 0; i < numbers.length - 1; i++) {
-                int index = exists(Arrays.copyOfRange(numbers, i + 1, numbers.length), target - numbers[i]);
+                int index =
+                        exists(
+                                Arrays.copyOfRange(numbers, i + 1, numbers.length),
+                                target - numbers[i]);
                 if (index >= 0) {
-                    return new int[]{i + 1, index + 2 + i};
+                    return new int[] {i + 1, index + 2 + i};
                 }
             }
             return null;
@@ -57,14 +60,17 @@ public class _167 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Time: O(nlogn)
          */
         public int[] twoSum(int[] numbers, int target) {
             for (int i = 0; i < numbers.length - 1; i++) {
                 int[] ans = new int[2];
                 ans[0] = i + 1;
-                int index = Arrays.binarySearch(Arrays.copyOfRange(numbers, i, numbers.length), target - numbers[i]);
+                int index =
+                        Arrays.binarySearch(
+                                Arrays.copyOfRange(numbers, i, numbers.length),
+                                target - numbers[i]);
                 if (index > 0) {
                     ans[1] = index + 1 + i;
                     return ans;

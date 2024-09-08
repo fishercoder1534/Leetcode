@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _29 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/divide-two-integers/solution/ solution 1
          * <p>
          * Key notes:
@@ -44,7 +44,7 @@ public class _29 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/divide-two-integers/solution/ solution 2
          * <p>
          * 1. exponetial growth to check to speed up

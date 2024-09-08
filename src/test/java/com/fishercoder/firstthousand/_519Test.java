@@ -17,5 +17,4 @@ public class _519Test {
         solution1.reset();
         CommonUtils.printArray(solution1.flip());
     }
-
 }

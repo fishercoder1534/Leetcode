@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.fishercoder.solutions.thirdthousand._2446;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _2446Test {
     private _2446.Solution1 solution1;
@@ -16,7 +16,8 @@ public class _2446Test {
 
     @Test
     public void test1() {
-        assertTrue(solution1.haveConflict(new String[]{"01:15", "02:00"}, new String[]{"02:00", "03:00"}));
+        assertTrue(
+                solution1.haveConflict(
+                        new String[] {"01:15", "02:00"}, new String[] {"02:00", "03:00"}));
     }
-
 }

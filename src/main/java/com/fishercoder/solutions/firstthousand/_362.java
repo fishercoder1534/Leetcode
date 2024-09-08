@@ -4,7 +4,7 @@ public class _362 {
 
     public static class Solution1 {
         public static class HitCounter {
-            /**
+            /*
              * Reference: https://discuss.leetcode.com/topic/48758/super-easy-design-o-1-hit-o-s-gethits-no-fancy-data-structure-is-needed,
              * I added one more field k to make it more generic.
              * It basically maintains a window of size 300, use modular to update the index.

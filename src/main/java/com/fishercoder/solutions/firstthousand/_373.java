@@ -23,11 +23,13 @@ public class _373 {
             boolean[][] visited = new boolean[nums1.length][nums2.length];
 
             // Min Heap
-            PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> {
-                return (a[0] + a[1]) - (b[0] + b[1]);
-            });
+            PriorityQueue<int[]> pq =
+                    new PriorityQueue<>(
+                            (a, b) -> {
+                                return (a[0] + a[1]) - (b[0] + b[1]);
+                            });
 
-            int[] temp = new int[]{nums1[0], nums2[0], 0, 0};
+            int[] temp = new int[] {nums1[0], nums2[0], 0, 0};
             pq.add(temp);
             visited[0][0] = true;
 
@@ -47,8 +49,12 @@ public class _373 {
                 for (int[] dir : dirs) {
                     int dx = i + dir[0];
                     int dy = j + dir[1];
-                    if (dx >= 0 && dx < nums1.length && dy >= 0 && dy < nums2.length && !visited[dx][dy]) {
-                        pq.add(new int[]{nums1[dx], nums2[dy], dx, dy});
+                    if (dx >= 0
+                            && dx < nums1.length
+                            && dy >= 0
+                            && dy < nums2.length
+                            && !visited[dx][dy]) {
+                        pq.add(new int[] {nums1[dx], nums2[dy], dx, dy});
                         visited[dx][dy] = true;
                     }
                 }

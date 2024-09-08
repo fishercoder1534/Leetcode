@@ -18,7 +18,7 @@ public class _1190 {
                         queue.offer(stack.pop());
                     }
                     if (!stack.isEmpty()) {
-                        stack.pop();//pop off the open paren
+                        stack.pop(); // pop off the open paren
                     }
                     while (!queue.isEmpty()) {
                         stack.push(queue.poll());

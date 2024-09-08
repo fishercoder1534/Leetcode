@@ -8,8 +8,7 @@ public class _2689 {
         public RopeTreeNode left;
         public RopeTreeNode right;
 
-        public RopeTreeNode() {
-        }
+        public RopeTreeNode() {}
 
         public RopeTreeNode(String val) {
             this.len = 0;
@@ -30,7 +29,7 @@ public class _2689 {
     }
 
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution.
          */
         public char getKthCharacter(RopeTreeNode root, int k) {

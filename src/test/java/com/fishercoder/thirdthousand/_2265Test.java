@@ -1,14 +1,13 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.thirdthousand._2265;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2265Test {
     private _2265.Solution1 solution1;
@@ -25,5 +24,4 @@ public class _2265Test {
         TreeUtils.printBinaryTree(root);
         assertEquals(5, solution1.averageOfSubtree(root));
     }
-
 }

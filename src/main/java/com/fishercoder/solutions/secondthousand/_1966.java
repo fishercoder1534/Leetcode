@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 public class _1966 {
     public static class Solution1 {
-        /**
+        /*
          * Brute force: this ends in TLE on LeetCode.
          * The idea is: for every single number in the array, check if there's any number on its right side that's smaller than it
          * and if there's any number on its left side that's bigger than it.
@@ -37,7 +37,7 @@ public class _1966 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution.
          */
         public int binarySearchableNumbers(int[] nums) {
@@ -60,7 +60,7 @@ public class _1966 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Using monotonic stack:
          * 1. we only add the ones that are greater than those already on the stack onto the stack.
          * 2. if the existing ones on the stack are greater than the current one,

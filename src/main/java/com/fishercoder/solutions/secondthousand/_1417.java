@@ -3,7 +3,7 @@ package com.fishercoder.solutions.secondthousand;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/*
  * 1417. Reformat The String
  *
  * Given alphanumeric string s. (Alphanumeric string is a string consisting of lowercase English letters and digits).

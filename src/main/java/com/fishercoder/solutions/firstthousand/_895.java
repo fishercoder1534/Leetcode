@@ -18,7 +18,7 @@ public class _895 {
 
             public void push(int x) {
                 map.put(x, map.getOrDefault(x, 0) + 1);
-                maxHeap.offer(new int[]{x, map.get(x), counter++});
+                maxHeap.offer(new int[] {x, map.get(x), counter++});
             }
 
             public int pop() {

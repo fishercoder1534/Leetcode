@@ -1,11 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2689;
-import com.fishercoder.solutions.thirdthousand._2976;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2689Test {
     private _2689.Solution1 solution1;
@@ -50,7 +49,6 @@ public class _2689Test {
         rootRightRight.len = 3;
         rootRightRight.val = "klm";
         rootRight.right = rootRightRight;
-
 
         assertEquals('c', solution1.getKthCharacter(root, 3));
     }

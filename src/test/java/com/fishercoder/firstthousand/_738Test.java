@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._738;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _738Test {
     private _738.Solution1 solution1;
@@ -18,5 +18,4 @@ public class _738Test {
     public void test1() {
         assertEquals(9, solution1.monotoneIncreasingDigits(10));
     }
-
 }

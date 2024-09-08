@@ -1,10 +1,10 @@
 package com.fishercoder.solutions.firstthousand;
 
 public class _644 {
-    /**reference: https://leetcode.com/articles/maximum-average-subarray-ii/#approach-2-using-binary-search-accepted
+    /*reference: https://leetcode.com/articles/maximum-average-subarray-ii/#approach-2-using-binary-search-accepted
      * https://discuss.leetcode.com/topic/96123/java-solution-o-nlogm-binary-search-the-answer/13*/
 
-    /**
+    /*
      * To understand the idea behind this method, let's look at the following points.
      * Firstly, we know that the value of the average could lie between the range (min, max)(min,max).
      * Here, minmin and maxmax refer to the minimum and the maximum values out of the given numsnums array.

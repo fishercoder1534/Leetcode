@@ -11,7 +11,6 @@ public class _1160 {
             for (char c : chars.toCharArray()) {
                 int count = map.getOrDefault(c, 0);
                 map.put(c, count + 1);
-
             }
             for (String word : words) {
                 if (canForm(word, map)) {
@@ -33,6 +32,5 @@ public class _1160 {
             }
             return true;
         }
-
     }
 }

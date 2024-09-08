@@ -1,15 +1,14 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._144;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _144Test {
     private _144.Solution1 solution1;
@@ -34,7 +33,10 @@ public class _144Test {
 
     @Test
     public void test2() {
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, null, 5, 6, null, 7, null, null, null, null, 8, 9));
+        root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                1, 2, 3, 4, null, 5, 6, null, 7, null, null, null, null, 8, 9));
         TreeUtils.printBinaryTree(root);
         inorder = solution1.preorderTraversal(root);
         assertEquals(Arrays.asList(1, 2, 4, 7, 8, 9, 3, 5, 6), inorder);
@@ -49,7 +51,10 @@ public class _144Test {
 
     @Test
     public void test4() {
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, null, 5, 6, null, 7, null, null, null, null, 8, 9));
+        root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                1, 2, 3, 4, null, 5, 6, null, 7, null, null, null, null, 8, 9));
         TreeUtils.printBinaryTree(root);
         inorder = solution2.preorderTraversal(root);
         assertEquals(Arrays.asList(1, 2, 4, 7, 8, 9, 3, 5, 6), inorder);
@@ -70,5 +75,4 @@ public class _144Test {
         inorder = solution3.preorderTraversal(root);
         assertEquals(Arrays.asList(1, 2, 4, 6, 3, 5), inorder);
     }
-
 }

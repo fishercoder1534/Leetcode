@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _883 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/projection-area-of-3d-shapes/discuss/156726/C%2B%2BJavaPython-Straight-Forward-One-Pass
          */
         public int projectionArea(int[][] grid) {

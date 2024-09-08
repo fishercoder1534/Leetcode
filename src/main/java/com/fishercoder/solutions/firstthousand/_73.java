@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _73 {
 
     public static class Solution1 {
-        /**
+        /*
          * Space: O(m*n)
          */
         public void setZeroes(int[][] matrix) {
@@ -36,7 +36,7 @@ public class _73 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Space: O(m+n)
          */
         public void setZeroes(int[][] matrix) {
@@ -72,7 +72,7 @@ public class _73 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Space: O(1)
          */
         public void setZeroes(int[][] matrix) {
@@ -121,7 +121,7 @@ public class _73 {
     }
 
     public static class Solution4 {
-        /**
+        /*
          * Space: O(1)
          * credit: https://leetcode.com/problems/set-matrix-zeroes/discuss/26014/Any-shorter-O(1)-space-solution
          */
@@ -129,7 +129,7 @@ public class _73 {
             int col0 = 1;
             int m = matrix.length;
             int n = matrix[0].length;
-            /**the first iteration (first nested for loop) is to check from top row to bottom row:
+            /*the first iteration (first nested for loop) is to check from top row to bottom row:
              * keep the first column state into variable col0;
              * then starting from the second column, check all the rest of the columns and mark its top cell and its most-left cell if it
              * s a zero.*/
@@ -146,7 +146,7 @@ public class _73 {
                 }
             }
 
-            /**the second iteration (second nested for loop) is to check from bottom row to the top row
+            /*the second iteration (second nested for loop) is to check from bottom row to the top row
              * from the right-most column to the second left-most column: as long as its left-most column cell or its top row cell is zero, then set that cell to be zero
              * at last, check col0 variable, if it's zero, mark that row cell as zero*/
             for (int i = m - 1; i >= 0; i--) {

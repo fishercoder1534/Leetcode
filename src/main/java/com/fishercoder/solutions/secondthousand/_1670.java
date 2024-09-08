@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _1670 {
     public static class Solution1 {
-        /**
+        /*
          * This is a brute force approach.
          * TODO: use two Deques to implement a solution.
          */
@@ -37,7 +37,8 @@ public class _1670 {
 
             public int popMiddle() {
                 if (list.size() > 0) {
-                    return list.remove(list.size() % 2 == 0 ? list.size() / 2 - 1 : list.size() / 2);
+                    return list.remove(
+                            list.size() % 2 == 0 ? list.size() / 2 - 1 : list.size() / 2);
                 }
                 return -1;
             }

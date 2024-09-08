@@ -1,14 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._562;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 4/23/17.
- */
+/** Created by fishercoder on 4/23/17. */
 public class _562Test {
     private _562.Solution1 solution1;
     private static int expected;
@@ -22,14 +20,14 @@ public class _562Test {
 
     @Test
     public void test1() {
-        M = new int[][]{
-                {0, 1, 1, 0},
-                {0, 1, 1, 0},
-                {0, 0, 0, 1}
-        };
+        M =
+                new int[][] {
+                    {0, 1, 1, 0},
+                    {0, 1, 1, 0},
+                    {0, 0, 0, 1}
+                };
         expected = 3;
         actual = solution1.longestLine(M);
         assertEquals(expected, actual);
     }
-
 }

@@ -43,7 +43,7 @@ public class _76 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * I implemented below solution on my own following the hints on LeetCode.
          * In comparison, Solution1 is more optimized and runs faster.
          */

@@ -5,7 +5,7 @@ import com.fishercoder.common.classes.TreeNode;
 public class _543 {
 
     public static class Solution1 {
-        /**
+        /*
          * A great observation of this problem is that the longest path must exist between two leaf nodes,
          * since it's easy to prove its opposite is not the longest by simply adding one to reach its leaf node.
          *

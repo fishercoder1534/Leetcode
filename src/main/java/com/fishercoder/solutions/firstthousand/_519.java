@@ -26,7 +26,7 @@ public class _519 {
                 i = random.nextInt(m);
                 j = random.nextInt(n);
             }
-            return new int[]{i, j};
+            return new int[] {i, j};
         }
 
         public void reset() {

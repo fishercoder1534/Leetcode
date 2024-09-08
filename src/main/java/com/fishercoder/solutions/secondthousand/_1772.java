@@ -23,7 +23,9 @@ public class _1772 {
                     }
                 }
             }
-            PriorityQueue<Node> maxHeap = new PriorityQueue<>((a, b) -> a.freq != b.freq ? b.freq - a.freq : a.index - b.index);
+            PriorityQueue<Node> maxHeap =
+                    new PriorityQueue<>(
+                            (a, b) -> a.freq != b.freq ? b.freq - a.freq : a.index - b.index);
             for (String key : map.keySet()) {
                 maxHeap.offer(new Node(key, countMap.getOrDefault(key, 0), map.get(key)));
             }

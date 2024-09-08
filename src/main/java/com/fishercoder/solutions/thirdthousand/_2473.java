@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 public class _2473 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution, Dijkstra algorithm!
          */
         public long[] minCost(int n, int[][] roads, int[] appleCost, int k) {
@@ -16,8 +16,8 @@ public class _2473 {
                 graph[i] = new ArrayList<>();
             }
             for (int[] road : roads) {
-                graph[road[0] - 1].add(new int[]{road[1] - 1, road[2]});
-                graph[road[1] - 1].add(new int[]{road[0] - 1, road[2]});
+                graph[road[0] - 1].add(new int[] {road[1] - 1, road[2]});
+                graph[road[1] - 1].add(new int[] {road[0] - 1, road[2]});
             }
             long[] ans = new long[n];
             for (int i = 1; i <= n; i++) {
@@ -31,7 +31,7 @@ public class _2473 {
             Arrays.fill(minCostEachCity, Integer.MAX_VALUE);
             minCostEachCity[startCity - 1] = 0;
             PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[1] - b[1]);
-            minHeap.offer(new int[]{startCity - 1, 0});
+            minHeap.offer(new int[] {startCity - 1, 0});
             while (!minHeap.isEmpty()) {
                 int[] curr = minHeap.poll();
                 int currCity = curr[0];
@@ -45,7 +45,8 @@ public class _2473 {
                     int neighborTotalCost = currCost + neighborCost * (k + 1);
                     if (neighborTotalCost < minCostEachCity[neighborCity]) {
                         minCostEachCity[neighborCity] = neighborTotalCost;
-                        minHeap.offer(new int[]{neighborCity, (int) minCostEachCity[neighborCity]});
+                        minHeap.offer(
+                                new int[] {neighborCity, (int) minCostEachCity[neighborCity]});
                     }
                 }
             }

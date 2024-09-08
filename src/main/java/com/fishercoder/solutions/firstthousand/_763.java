@@ -11,12 +11,12 @@ public class _763 {
         public List<Integer> partitionLabels(String s) {
             List<Integer> result = new ArrayList<>();
             int[] last = new int[26];
-            /**This is the key step:
+            /*This is the key step:
              * we find the last occurrence of each letter and record them in last[]*/
             for (int i = 0; i < s.length(); i++) {
                 last[s.charAt(i) - 'a'] = i;
             }
-            /**record the last end index of the current substring*/
+            /*record the last end index of the current substring*/
             int end = 0;
             int start = 0;
             for (int i = 0; i < s.length(); i++) {
@@ -31,7 +31,7 @@ public class _763 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 10/14/2021.
          *
          * Again, using a pen and paper to visualize how this works,
@@ -60,5 +60,4 @@ public class _763 {
             return ans;
         }
     }
-
 }

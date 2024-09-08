@@ -24,6 +24,5 @@ public class _572 {
             }
             return same(s.left, t.left) && same(s.right, t.right);
         }
-
     }
 }

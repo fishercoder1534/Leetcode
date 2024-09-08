@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -10,7 +9,7 @@ public class _655 {
 
     public static class Solution1 {
 
-        /**
+        /*
          * Reference: https://discuss.leetcode.com/topic/98381/java-recursive-solution
          * and https://leetcode.com/articles/print-binary-tree/
          */
@@ -30,7 +29,8 @@ public class _655 {
             return result;
         }
 
-        private void populateResult(TreeNode root, List<List<String>> result, int row, int totalRows, int i, int j) {
+        private void populateResult(
+                TreeNode root, List<List<String>> result, int row, int totalRows, int i, int j) {
             if (row == totalRows || root == null) {
                 return;
             }

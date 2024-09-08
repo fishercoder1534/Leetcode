@@ -17,7 +17,7 @@ public class _1361 {
                     indegree[rightChild[i]]++;
                 }
             }
-            //only one node has in-degree = 0
+            // only one node has in-degree = 0
             int indegreeZero = 0;
             for (int num : indegree) {
                 if (num == 0) {
@@ -26,12 +26,12 @@ public class _1361 {
                         return false;
                     }
                 }
-                //every other node's in-degree must be exactly equal to 1
+                // every other node's in-degree must be exactly equal to 1
                 if (num > 1) {
                     return false;
                 }
             }
-            //no bi-directional pointing
+            // no bi-directional pointing
             Map<Integer, List<Integer>> map = new HashMap<>();
             for (int i = 0; i < n; i++) {
                 map.put(i, new ArrayList<>());

@@ -33,5 +33,4 @@ public class _1717 {
             return max;
         }
     }
-
 }

@@ -22,7 +22,8 @@ public class _1604 {
                 List<Integer> minutes = new ArrayList<>();
                 for (String time : times) {
                     String[] hourAndMin = time.split(":");
-                    Integer minute = Integer.parseInt(hourAndMin[0]) * 60 + Integer.parseInt(hourAndMin[1]);
+                    Integer minute =
+                            Integer.parseInt(hourAndMin[0]) * 60 + Integer.parseInt(hourAndMin[1]);
                     minutes.add(minute);
                 }
                 Collections.sort(minutes);

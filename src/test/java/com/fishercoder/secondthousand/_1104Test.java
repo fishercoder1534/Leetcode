@@ -1,14 +1,13 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1104;
+import java.util.Arrays;
+import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1104Test {
     private _1104.Solution1 solution1;
@@ -54,32 +53,44 @@ public class _1104Test {
     @Test
     @Disabled
     public void test6() {
-        //takes too long to finish, ignore to let build pass
-        expected = Arrays.asList(1, 2, 6, 11, 24, 47, 97, 188, 390, 754, 1562, 3018, 6250, 12075, 25000, 48303, 100000);
+        // takes too long to finish, ignore to let build pass
+        expected =
+                Arrays.asList(
+                        1, 2, 6, 11, 24, 47, 97, 188, 390, 754, 1562, 3018, 6250, 12075, 25000,
+                        48303, 100000);
         assertEquals(expected, solution1.pathInZigZagTree(100000));
     }
 
     @Test
     @Disabled
     public void test7() {
-        //takes too long to finish, ignore to let build pass
-        expected = Arrays.asList(1, 3, 5, 12, 23, 48, 94, 195, 377, 781, 1509, 3125, 6037, 12500, 24151, 50000, 96607, 200000);
+        // takes too long to finish, ignore to let build pass
+        expected =
+                Arrays.asList(
+                        1, 3, 5, 12, 23, 48, 94, 195, 377, 781, 1509, 3125, 6037, 12500, 24151,
+                        50000, 96607, 200000);
         assertEquals(expected, solution1.pathInZigZagTree(200000));
     }
 
     @Test
     @Disabled
     public void test8() {
-        //takes too long to finish, ignore to let build pass
-        expected = Arrays.asList(1, 2, 6, 11, 24, 47, 97, 188, 390, 754, 1562, 3018, 6250, 12075, 25000, 48303, 100000, 193215, 400000);
+        // takes too long to finish, ignore to let build pass
+        expected =
+                Arrays.asList(
+                        1, 2, 6, 11, 24, 47, 97, 188, 390, 754, 1562, 3018, 6250, 12075, 25000,
+                        48303, 100000, 193215, 400000);
         assertEquals(expected, solution1.pathInZigZagTree(400000));
     }
 
     @Test
     @Disabled
     public void test9() {
-        //takes too long to finish, ignore to let build pass
-        expected = Arrays.asList(1, 2, 7, 8, 30, 34, 122, 139, 488, 559, 1953, 2237, 7812, 8950, 31250, 35803, 125000, 143215, 500000);
+        // takes too long to finish, ignore to let build pass
+        expected =
+                Arrays.asList(
+                        1, 2, 7, 8, 30, 34, 122, 139, 488, 559, 1953, 2237, 7812, 8950, 31250,
+                        35803, 125000, 143215, 500000);
         assertEquals(expected, solution1.pathInZigZagTree(500000));
     }
 
@@ -100,5 +111,4 @@ public class _1104Test {
         expected = Arrays.asList(1);
         assertEquals(expected, solution2.pathInZigZagTree(1));
     }
-
 }

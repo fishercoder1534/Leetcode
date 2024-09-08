@@ -25,5 +25,4 @@ public class _313 {
             return ret[n - 1];
         }
     }
-
 }

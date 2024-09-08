@@ -1,16 +1,15 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._113;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _113Test {
     private _113.Solution1 solution1;
@@ -28,7 +27,9 @@ public class _113Test {
     @Test
     public void test1() {
         sum = 22;
-        root = TreeUtils.constructBinaryTree(Arrays.asList(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1));
+        root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1));
         TreeUtils.printBinaryTree(root);
         expected = new ArrayList<>();
         expected.add(Arrays.asList(5, 4, 11, 2));
@@ -36,5 +37,4 @@ public class _113Test {
         assertEquals(expected, solution1.pathSum(root, sum));
         assertEquals(expected, solution2.pathSum(root, sum));
     }
-
 }

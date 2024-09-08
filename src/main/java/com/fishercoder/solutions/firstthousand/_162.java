@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _162 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/find-peak-element/solutions/1290642/intuition-behind-conditions-complete-explanation-diagram-binary-search/
          * Time: O(logn)
          * <p>
@@ -44,7 +44,7 @@ public class _162 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My original O(n) solution.
          */
         public int findPeakElement(int[] nums) {

@@ -23,7 +23,11 @@ public class _1583 {
             return unhappyFriends;
         }
 
-        private boolean isUnHappy(int self, int assignedFriend, int[][] preferences, Map<Integer, Integer> assignedPairs) {
+        private boolean isUnHappy(
+                int self,
+                int assignedFriend,
+                int[][] preferences,
+                Map<Integer, Integer> assignedPairs) {
             int[] preference = preferences[self];
             int assignedFriendPreferenceIndex = findIndex(preference, assignedFriend);
             for (int i = 0; i <= assignedFriendPreferenceIndex; i++) {
@@ -32,7 +36,8 @@ public class _1583 {
                 if (preferredFriendAssignedFriend == self) {
                     return false;
                 }
-                int candidateAssignedFriendIndex = findIndex(preferences[preferredFriend], preferredFriendAssignedFriend);
+                int candidateAssignedFriendIndex =
+                        findIndex(preferences[preferredFriend], preferredFriendAssignedFriend);
                 if (isPreferred(self, preferences[preferredFriend], candidateAssignedFriendIndex)) {
                     return true;
                 }

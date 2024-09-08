@@ -8,7 +8,7 @@ import java.util.Set;
 public class _291 {
 
     public static class Solution1 {
-        /**
+        /*
          * We can try recursively:
          * say pattern is "abab", str is "redblueredblue"
          * first we try if "a" matches with "r", "b" matches with "e", we find it's not, so we try to see if "b" matches "ed", and so on ...
@@ -23,8 +23,14 @@ public class _291 {
             return isMatch(str, 0, pattern, 0, map, set);
         }
 
-        private boolean isMatch(String str, int i, String pattern, int j, Map<Character, String> map, Set<String> set) {
-            //base case
+        private boolean isMatch(
+                String str,
+                int i,
+                String pattern,
+                int j,
+                Map<Character, String> map,
+                Set<String> set) {
+            // base case
             if (i == str.length() && j == pattern.length()) {
                 return true;
             }
@@ -37,12 +43,12 @@ public class _291 {
             if (map.containsKey(c)) {
                 String s = map.get(c);
 
-                //check to see if we can use s to match str.substring(i, i + s.length())
+                // check to see if we can use s to match str.substring(i, i + s.length())
                 if (!str.startsWith(s, i)) {
                     return false;
                 }
 
-                //if it's match, great, then let's check the rest
+                // if it's match, great, then let's check the rest
                 return isMatch(str, i + s.length(), pattern, j + 1, map, set);
             }
 
@@ -56,17 +62,17 @@ public class _291 {
                 map.put(c, p);
                 set.add(p);
 
-                //continue to match the rest
+                // continue to match the rest
                 if (isMatch(str, k + 1, pattern, j + 1, map, set)) {
                     return true;
                 }
 
-                //backtracking
+                // backtracking
                 map.remove(c);
                 set.remove(p);
             }
 
-            //we've tried everything, but still no luck
+            // we've tried everything, but still no luck
             return false;
         }
     }

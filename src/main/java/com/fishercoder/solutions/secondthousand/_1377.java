@@ -1,15 +1,13 @@
 package com.fishercoder.solutions.secondthousand;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Queue;
 
 public class _1377 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/frog-position-after-t-seconds/discuss/532505/Java-Straightforward-BFS-Clean-code-O(N)
          */
         public double frogPosition(int n, int[][] edges, int t, int target) {

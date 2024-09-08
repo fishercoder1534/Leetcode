@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _517 {
     public static class Solution1 {
-        /**
+        /*
          * Reference: https://discuss.leetcode.com/topic/79938/super-short-easy-java-o-n-solution
          */
         public int findMinMoves(int[] machines) {
@@ -17,7 +17,7 @@ public class _517 {
             int cnt = 0;
             int max = 0;
             for (int load : machines) {
-                cnt += load - avg; //load-avg is "gain/lose"
+                cnt += load - avg; // load-avg is "gain/lose"
                 max = Math.max(Math.max(max, Math.abs(cnt)), load - avg);
             }
             return max;

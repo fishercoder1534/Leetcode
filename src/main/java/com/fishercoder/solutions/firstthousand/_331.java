@@ -7,7 +7,7 @@ public class _331 {
 
     public static class Solution1 {
         public boolean isValidSerialization(String preorder) {
-            /**Idea: we keep inserting the string into the stack, if it's a number, we just push it onto the stack;
+            /*Idea: we keep inserting the string into the stack, if it's a number, we just push it onto the stack;
              * if it's a "#", we see if the top of the stack is a "#" or not,
              * 1. if it's a "#", we pop it and keep popping numbers from the stack,
              * 2. if it's not a "#", we push the "#" onto the stack*/
@@ -29,5 +29,4 @@ public class _331 {
             return stack.size() == 1 && stack.peekLast().equals("#");
         }
     }
-
 }

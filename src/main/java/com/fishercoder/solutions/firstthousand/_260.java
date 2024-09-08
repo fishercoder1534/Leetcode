@@ -27,7 +27,7 @@ public class _260 {
     }
 
     public static class Solution2 {
-        /**Credit: https://discuss.leetcode.com/topic/21605/accepted-c-java-o-n-time-o-1-space-easy-solution-with-detail-explanations/2
+        /*Credit: https://discuss.leetcode.com/topic/21605/accepted-c-java-o-n-time-o-1-space-easy-solution-with-detail-explanations/2
          *
          * some more explanation about this algorithm:
          * two's complement: one number's two's complement number is computed as below:
@@ -45,7 +45,7 @@ public class _260 {
                 diff ^= num;
             }
 
-            //get least significant set bit
+            // get least significant set bit
             diff &= -diff;
 
             int[] result = new int[2];

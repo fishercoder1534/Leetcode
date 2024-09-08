@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1781 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/sum-of-beauty-of-all-substrings/discuss/1096380/Java-or-T%3A-O(N2)-or-S%3A-O(1)-Get-the-beauty-of-all-substrings-and-sum-them
          */
         public int beautySum(String s) {
@@ -11,7 +11,7 @@ public class _1781 {
                 int[] charCount = new int[26];
                 for (int j = i; j < s.length(); j++) {
                     charCount[s.charAt(j) - 'a']++;
-                    //get beauty of s.substring(i, j)
+                    // get beauty of s.substring(i, j)
                     int beauty = getMaxCount(charCount) - getMinCount(charCount);
                     sum += beauty;
                 }

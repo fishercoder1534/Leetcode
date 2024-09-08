@@ -6,7 +6,7 @@ import java.util.LinkedList;
 public class _456 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/67881/single-pass-c-o-n-space-and-time-solution-8-lines-with-detailed-explanation
          * It scans only once, this is the power of using correct data structure.
          * It goes from the right to the left.
@@ -31,5 +31,4 @@ public class _456 {
             return false;
         }
     }
-
 }

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _611 {
     public static class Solution1 {
-        /**
+        /*
          * Rule: among three sides, we need to find whether the longest of the three is smaller than the sum of the two shorter one.
          * If so, then these three could form a valid triangle.
          */
@@ -30,5 +30,4 @@ public class _611 {
             return triplets;
         }
     }
-
 }

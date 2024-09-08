@@ -1,7 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
 public class _65 {
-    /**
+    /*
      * credit: https://discuss.leetcode.com/topic/9490/clear-java-solution-with-ifs
      */
     public static class Solution1 {
@@ -41,7 +41,7 @@ public class _65 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/2973/java-solution-with-one-line
          */
         public boolean isNumber(String s) {

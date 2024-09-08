@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _466 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/70707/ugly-java-brute-force-solution-but-accepted-1088ms
          */
         public int getMaxRepetitions(String s1, int n1, String s2, int n2) {
@@ -30,5 +30,4 @@ public class _466 {
             return count2 / n2;
         }
     }
-
 }

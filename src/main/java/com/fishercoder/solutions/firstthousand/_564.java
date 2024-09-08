@@ -25,7 +25,10 @@ public class _564 {
                         s += "9";
                     }
                 }
-                long diff = s.equals(n) ? Long.MAX_VALUE : Math.abs(Long.parseLong(s) - Long.parseLong(n));
+                long diff =
+                        s.equals(n)
+                                ? Long.MAX_VALUE
+                                : Math.abs(Long.parseLong(s) - Long.parseLong(n));
                 if (diff < minDiff) {
                     minDiff = diff;
                     ret = s;

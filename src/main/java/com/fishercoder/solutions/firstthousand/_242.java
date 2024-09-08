@@ -36,7 +36,7 @@ public class _242 {
     }
 
     public static class Solution3 {
-        //to deal with unicode characters
+        // to deal with unicode characters
         public boolean isAnagram(String s, String t) {
             Map<Character, Integer> map = new HashMap<>();
             for (int i = 0; i < s.length(); i++) {

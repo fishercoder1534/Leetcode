@@ -5,7 +5,7 @@ import com.fishercoder.common.utils.CommonUtils;
 public class _174 {
 
     public static class Solution1 {
-        /**
+        /*
          * This problem should fill the dp matrix from bottom right.
          */
         public int calculateMinimumHP(int[][] dungeon) {
@@ -19,13 +19,13 @@ public class _174 {
             dp[height - 1][width - 1] =
                     (dungeon[height - 1][width - 1] > 0) ? 1 : 1 - dungeon[height - 1][width - 1];
 
-            //fill the last column
+            // fill the last column
             for (int i = height - 2; i >= 0; i--) {
                 int temp = dp[i + 1][width - 1] - dungeon[i][width - 1];
                 dp[i][width - 1] = Math.max(1, temp);
             }
 
-            //fill the last row
+            // fill the last row
             for (int j = width - 2; j >= 0; j--) {
                 int temp = dp[height - 1][j + 1] - dungeon[height - 1][j];
                 dp[height - 1][j] = Math.max(temp, 1);

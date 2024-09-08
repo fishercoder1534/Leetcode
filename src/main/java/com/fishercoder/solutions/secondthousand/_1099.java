@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _1099 {
     public static class Solution1 {
-        /**
+        /*
          * Time: O(n^2)
          * Space: O(1)
          */
@@ -22,7 +22,7 @@ public class _1099 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Time: O(nlogn)
          * Space: O(1)
          */

@@ -70,7 +70,7 @@ public class _179 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 11/29/2021:
          * we'll just sort these numbers as if they are strings.
          */

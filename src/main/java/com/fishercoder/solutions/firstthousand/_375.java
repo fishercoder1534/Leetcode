@@ -35,7 +35,13 @@ public class _375 {
                     int j = i + x;
                     dp[i][j] = Integer.MAX_VALUE;
                     for (int k = i; k <= j; k++) {
-                        dp[i][j] = Math.min(dp[i][j], k + Math.max(k - 1 >= i ? dp[i][k - 1] : 0, j >= k + 1 ? dp[k + 1][j] : 0));
+                        dp[i][j] =
+                                Math.min(
+                                        dp[i][j],
+                                        k
+                                                + Math.max(
+                                                        k - 1 >= i ? dp[i][k - 1] : 0,
+                                                        j >= k + 1 ? dp[k + 1][j] : 0));
                     }
                 }
             }

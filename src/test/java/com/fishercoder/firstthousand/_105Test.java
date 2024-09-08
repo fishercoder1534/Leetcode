@@ -1,15 +1,13 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._105;
-
 import java.util.Arrays;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _105Test {
     private _105.Solution1 solution1;
@@ -25,8 +23,8 @@ public class _105Test {
 
     @Test
     public void test1() {
-        preorder = new int[]{1, 2, 3};
-        inorder = new int[]{2, 1, 3};
+        preorder = new int[] {1, 2, 3};
+        inorder = new int[] {2, 1, 3};
         actual = solution1.buildTree(preorder, inorder);
         expected = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3));
         assertEquals(expected, actual);
@@ -34,8 +32,8 @@ public class _105Test {
 
     @Test
     public void test2() {
-        preorder = new int[]{1, 2, 4, 5, 3};
-        inorder = new int[]{4, 2, 5, 1, 3};
+        preorder = new int[] {1, 2, 4, 5, 3};
+        inorder = new int[] {4, 2, 5, 1, 3};
         actual = solution1.buildTree(preorder, inorder);
         expected = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, 5));
         assertEquals(expected, actual);
@@ -43,8 +41,8 @@ public class _105Test {
 
     @Test
     public void test3() {
-        preorder = new int[]{3, 9, 20, 15, 7};
-        inorder = new int[]{9, 3, 15, 20, 7};
+        preorder = new int[] {3, 9, 20, 15, 7};
+        inorder = new int[] {9, 3, 15, 20, 7};
         actual = solution1.buildTree(preorder, inorder);
         expected = TreeUtils.constructBinaryTree(Arrays.asList(3, 9, 20, null, null, 15, 7));
         assertEquals(expected, actual);
@@ -52,8 +50,8 @@ public class _105Test {
 
     @Test
     public void test4() {
-        preorder = new int[]{3, 1, 2, 4};
-        inorder = new int[]{1, 2, 3, 4};
+        preorder = new int[] {3, 1, 2, 4};
+        inorder = new int[] {1, 2, 3, 4};
         actual = solution1.buildTree(preorder, inorder);
         expected = TreeUtils.constructBinaryTree(Arrays.asList(3, 1, 4, null, 2));
         TreeUtils.printBinaryTree(expected);

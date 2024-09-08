@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayList;
 import java.util.List;
 

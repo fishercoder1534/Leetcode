@@ -47,11 +47,12 @@ public class _1396 {
                 String startToEndStation = stationAndTime.getStation() + "->" + stationName;
                 int duration = t - stationAndTime.getTime();
                 if (!averageTimeMap.containsKey(startToEndStation)) {
-                    averageTimeMap.put(startToEndStation, new double[]{duration, 1});
+                    averageTimeMap.put(startToEndStation, new double[] {duration, 1});
                 } else {
                     double[] pair = averageTimeMap.get(startToEndStation);
-                    double newAverage = (double) (pair[0] * pair[1] + duration) / (double) (pair[1] + 1);
-                    averageTimeMap.put(startToEndStation, new double[]{newAverage, pair[1] + 1});
+                    double newAverage =
+                            (double) (pair[0] * pair[1] + duration) / (double) (pair[1] + 1);
+                    averageTimeMap.put(startToEndStation, new double[] {newAverage, pair[1] + 1});
                 }
             }
 

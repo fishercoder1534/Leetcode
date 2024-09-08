@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _446 {
     public static class Solution1 {
-        /**
+        /*
          * reference: https://discuss.leetcode.com/topic/67413/detailed-explanation-for-java-o-n-2-solution
          */
         public int numberOfArithmeticSlices(int[] A) {

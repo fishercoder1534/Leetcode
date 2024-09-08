@@ -20,5 +20,4 @@ public class _383 {
             return true;
         }
     }
-
 }

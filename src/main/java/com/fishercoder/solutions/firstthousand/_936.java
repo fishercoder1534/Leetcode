@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _936 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/stamping-the-sequence/discuss/201546/12ms-Java-Solution-Beats-100
          * <p>
          * Think reversely!

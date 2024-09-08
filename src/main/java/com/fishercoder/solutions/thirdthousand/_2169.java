@@ -14,7 +14,6 @@ public class _2169 {
                     num2 -= num1;
                 }
                 ops++;
-
             }
         }
     }

@@ -7,7 +7,7 @@ import java.util.List;
 public class _656 {
     public static class Solution1 {
 
-        /**
+        /*
          * Time: O(n*B)
          * Reference: https://leetcode.com/articles/coin-path/#approach-3-using-dynamic-programming-accepted
          */

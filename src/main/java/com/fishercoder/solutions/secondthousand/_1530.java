@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -24,7 +23,8 @@ public class _1530 {
             return pairs / 2;
         }
 
-        private int bfsToPossibleLeaves(TreeNode leaf, int distance, Map<TreeNode, TreeNode> childToParentMap) {
+        private int bfsToPossibleLeaves(
+                TreeNode leaf, int distance, Map<TreeNode, TreeNode> childToParentMap) {
             Queue<TreeNode> q = new LinkedList<>();
             q.offer(leaf);
             Set<TreeNode> visited = new HashSet<>();
@@ -43,7 +43,8 @@ public class _1530 {
                     if (curr.right != null && visited.add(curr.right)) {
                         q.offer(curr.right);
                     }
-                    if (childToParentMap.containsKey(curr) && visited.add(childToParentMap.get(curr))) {
+                    if (childToParentMap.containsKey(curr)
+                            && visited.add(childToParentMap.get(curr))) {
                         q.offer(childToParentMap.get(curr));
                     }
                 }
@@ -52,7 +53,8 @@ public class _1530 {
             return count;
         }
 
-        private void postOrderToFindAllLeavesAndBuildChildParentMap(TreeNode node, Map<TreeNode, TreeNode> childToParentMap, List<TreeNode> leafNodes) {
+        private void postOrderToFindAllLeavesAndBuildChildParentMap(
+                TreeNode node, Map<TreeNode, TreeNode> childToParentMap, List<TreeNode> leafNodes) {
             if (node == null) {
                 return;
             }

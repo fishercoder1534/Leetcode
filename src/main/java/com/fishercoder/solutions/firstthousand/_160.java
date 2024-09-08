@@ -1,21 +1,20 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.HashSet;
 import java.util.Set;
 
 public class _160 {
 
     public static class Solution1 {
-        /**
+        /*
          * Time: O(max(m, n))
          * Space: O(1)
          */
         public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
             int lenA = findLen(headA);
             int lenB = findLen(headB);
-            /**align headA and headB to the same starting point and then move together until we find the intersection point*/
+            /*align headA and headB to the same starting point and then move together until we find the intersection point*/
             while (lenA < lenB) {
                 headB = headB.next;
                 lenB--;
@@ -42,11 +41,10 @@ public class _160 {
             }
             return len;
         }
-
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Most optimal solution:
          * O(m+n) time
          * O(1) space
@@ -60,9 +58,9 @@ public class _160 {
             ListNode a = headA;
             ListNode b = headB;
 
-            /**if a and b have different lengths, then it will stop the loop after second iteration*/
+            /*if a and b have different lengths, then it will stop the loop after second iteration*/
             while (a != b) {
-                /**for the first iteration, it'll just reset the pointer to the head of another linkedlist*/
+                /*for the first iteration, it'll just reset the pointer to the head of another linkedlist*/
                 a = a == null ? headB : a.next;
                 b = b == null ? headA : b.next;
             }
@@ -71,7 +69,7 @@ public class _160 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * O(m+n) time
          * O(Math.max(m, n)) space
          */

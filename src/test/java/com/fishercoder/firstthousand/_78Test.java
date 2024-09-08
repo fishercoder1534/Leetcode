@@ -19,16 +19,16 @@ public class _78Test {
 
     @Test
     public void test1() {
-        CommonUtils.printListList(solution1.subsets(new int[]{1, 2, 3}));
+        CommonUtils.printListList(solution1.subsets(new int[] {1, 2, 3}));
     }
 
     @Test
     public void test2() {
-        CommonUtils.printListList(solution2.subsets(new int[]{1, 2, 3}));
+        CommonUtils.printListList(solution2.subsets(new int[] {1, 2, 3}));
     }
 
     @Test
     public void test3() {
-        CommonUtils.printListList(solution3.subsets(new int[]{1, 2, 3}));
+        CommonUtils.printListList(solution3.subsets(new int[] {1, 2, 3}));
     }
 }

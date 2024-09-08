@@ -2,7 +2,7 @@ package com.fishercoder.solutions.thirdthousand;
 
 public class _2673 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution, although verbose and could be further optimized.
          * Practice makes perfect!
          */
@@ -28,9 +28,11 @@ public class _2673 {
             TreeNodeWithCost root = new TreeNodeWithCost(1, cost[0]);
             preOrderBuildTree(root, n, cost, 1);
             inOrderFindMaxCostPath(root);
-            // in order to do the minimum increments, we want to increment as many times as possible on the nodes as close to the root as possible
+            // in order to do the minimum increments, we want to increment as many times as possible
+            // on the nodes as close to the root as possible
             // but to how many?
-            // then we need to know the maximum cost of all paths from each node to all of its possible leaf nodes
+            // then we need to know the maximum cost of all paths from each node to all of its
+            // possible leaf nodes
             // the difference is the number of increments we can do on this node
             postOrderFindMaxCostForEachNode(root);
             preOrderToIncrementCost(root);
@@ -68,11 +70,12 @@ public class _2673 {
             int leftMaxCost = postOrderFindMaxCostForEachNode(node.left);
             int rightMaxCost = postOrderFindMaxCostForEachNode(node.right);
             if (leftMaxCost == 0 && rightMaxCost == 0) {
-                //this means this node is a leaf node
+                // this means this node is a leaf node
                 node.maxCostFromThisNodeToAllPossibleLeafNodes = node.costSumFromRootToThisNode;
             } else {
-                //if it's not leaf node, then we take the bigger one from left and right
-                node.maxCostFromThisNodeToAllPossibleLeafNodes = Math.max(leftMaxCost, rightMaxCost);
+                // if it's not leaf node, then we take the bigger one from left and right
+                node.maxCostFromThisNodeToAllPossibleLeafNodes =
+                        Math.max(leftMaxCost, rightMaxCost);
             }
             return node.maxCostFromThisNodeToAllPossibleLeafNodes;
         }
@@ -83,7 +86,8 @@ public class _2673 {
             }
             inOrderFindMaxCostPath(root.left);
             if (root.left == null && root.right == null) {
-                maxCostFromRootToLeaf = Math.max(maxCostFromRootToLeaf, root.costSumFromRootToThisNode);
+                maxCostFromRootToLeaf =
+                        Math.max(maxCostFromRootToLeaf, root.costSumFromRootToThisNode);
             }
             inOrderFindMaxCostPath(root.right);
         }

@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class _444 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/65948/java-solution-using-bfs-topological-sort
          */
         public boolean sequenceReconstruction(int[] org, List<List<Integer>> seqs) {

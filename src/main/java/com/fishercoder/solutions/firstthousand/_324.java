@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class _324 {
 
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/41464/step-by-step-explanation-of-index-mapping-in-java
          */
         public void wiggleSort(int[] nums) {

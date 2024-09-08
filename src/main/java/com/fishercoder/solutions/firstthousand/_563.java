@@ -31,5 +31,4 @@ public class _563 {
             return leftTilt + rightTilt + root.val;
         }
     }
-
 }

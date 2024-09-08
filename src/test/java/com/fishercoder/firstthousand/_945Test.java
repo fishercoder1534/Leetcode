@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._945;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _945Test {
     private _945.Solution1 solution1;
@@ -17,8 +17,7 @@ public class _945Test {
 
     @Test
     public void test1() {
-        nums = new int[]{3, 2, 1, 2, 1, 7};
+        nums = new int[] {3, 2, 1, 2, 1, 7};
         assertEquals(6, solution1.minIncrementForUnique(nums));
     }
-
 }

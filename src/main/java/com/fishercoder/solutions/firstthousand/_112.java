@@ -16,7 +16,7 @@ public class _112 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 9/23/2021.
          */
         public boolean hasPathSum(TreeNode root, int targetSum) {

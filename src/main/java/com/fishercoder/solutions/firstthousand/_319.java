@@ -10,5 +10,4 @@ public class _319 {
             return (int) Math.sqrt(n);
         }
     }
-
 }

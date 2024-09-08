@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _487 {
 
     public static class Solution1 {
-        /**
+        /*
          * I implemented this on my own after a quick read from https://leetcode.com/problems/max-consecutive-ones-ii/solution/
          */
         public static int findMaxConsecutiveOnes(int[] nums) {
@@ -32,7 +32,7 @@ public class _487 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This is a more generic solution adapted from https://leetcode.com/problems/max-consecutive-ones-iii/, just set k = 1 here.
          */
         public static int findMaxConsecutiveOnes(int[] nums) {

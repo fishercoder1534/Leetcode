@@ -9,7 +9,7 @@ public class _2070 {
             Arrays.sort(items, (a, b) -> Integer.compare(a[0], b[0]));
             int[][] queryPairs = new int[len][2];
             for (int i = 0; i < len; i++) {
-                queryPairs[i] = new int[]{queries[i], i};
+                queryPairs[i] = new int[] {queries[i], i};
             }
             Arrays.sort(queryPairs, (a, b) -> Integer.compare(a[0], b[0]));
             int[] ans = new int[len];

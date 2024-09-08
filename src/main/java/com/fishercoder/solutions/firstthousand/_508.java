@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -12,10 +11,10 @@ import java.util.Map;
 public class _508 {
 
     public static class Solution1 {
-        //my purely original but verbose solution
+        // my purely original but verbose solution
         public int[] findFrequentTreeSum(TreeNode root) {
             if (root == null) {
-                return new int[]{};
+                return new int[] {};
             }
 
             Map<TreeNode, Integer> map = new HashMap();
@@ -23,7 +22,9 @@ public class _508 {
 
             Map<Integer, Integer> frequencyMap = new HashMap<>();
             for (Map.Entry entry : map.entrySet()) {
-                frequencyMap.put((Integer) entry.getValue(), frequencyMap.getOrDefault(entry.getValue(), 0) + 1);
+                frequencyMap.put(
+                        (Integer) entry.getValue(),
+                        frequencyMap.getOrDefault(entry.getValue(), 0) + 1);
             }
 
             List<Map.Entry<Integer, Integer>> list = new LinkedList<>(frequencyMap.entrySet());
@@ -66,7 +67,7 @@ public class _508 {
     }
 
     public static class Solution2 {
-        //my 2nd purely original but verbose solution
+        // my 2nd purely original but verbose solution
         public int[] findFrequentTreeSum(TreeNode root) {
             Map<Integer, Integer> map = new HashMap<>();
             dfs(root, map);
@@ -114,7 +115,7 @@ public class _508 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Use post-order traversal for this problem as it needs to process subtree first before processing the root.
          */
         Map<Integer, Integer> map = new HashMap<>();
@@ -146,6 +147,8 @@ public class _508 {
         }
     }
 
-    //a more concise and space-efficient solution: https://discuss.leetcode.com/topic/77775/verbose-java-solution-postorder-traverse-hashmap-18ms
-    //the key difference between the above post and my original solution is that it's using Frequency as the key of the HashMap
+    // a more concise and space-efficient solution:
+    // https://discuss.leetcode.com/topic/77775/verbose-java-solution-postorder-traverse-hashmap-18ms
+    // the key difference between the above post and my original solution is that it's using
+    // Frequency as the key of the HashMap
 }

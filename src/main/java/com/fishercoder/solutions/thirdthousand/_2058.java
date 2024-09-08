@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.thirdthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,19 +21,19 @@ public class _2058 {
                 }
             }
             if (criticalPts.size() < 2) {
-                return new int[]{-1, -1};
+                return new int[] {-1, -1};
             }
             int min = Integer.MAX_VALUE;
             for (int i = 0; i < criticalPts.size() - 1; i++) {
                 min = Math.min(min, criticalPts.get(i + 1) - criticalPts.get(i));
             }
             int size = criticalPts.size();
-            return new int[]{min, criticalPts.get(size - 1) - criticalPts.get(0)};
+            return new int[] {min, criticalPts.get(size - 1) - criticalPts.get(0)};
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Without using an extra list of size N to hold all values.
          */
         public int[] nodesBetweenCriticalPoints(ListNode head) {
@@ -53,7 +52,10 @@ public class _2058 {
                 }
                 if (criticalPoints.size() > 1) {
                     int len = criticalPoints.size();
-                    result[0] = Math.min(result[0], criticalPoints.get(len - 1) - criticalPoints.get(len - 2));
+                    result[0] =
+                            Math.min(
+                                    result[0],
+                                    criticalPoints.get(len - 1) - criticalPoints.get(len - 2));
                 }
                 prev = head.val;
                 head = head.next;
@@ -61,10 +63,11 @@ public class _2058 {
             }
             if (criticalPoints.size() > 1) {
                 int len = criticalPoints.size();
-                result[1] = Math.max(result[1], criticalPoints.get(len - 1) - criticalPoints.get(0));
+                result[1] =
+                        Math.max(result[1], criticalPoints.get(len - 1) - criticalPoints.get(0));
                 return result;
             } else {
-                return new int[]{-1, -1};
+                return new int[] {-1, -1};
             }
         }
     }

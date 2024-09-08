@@ -9,7 +9,7 @@ public class _1242 {
     }
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/web-crawler-multithreaded/solutions/699006/java-blockingqueue-executorservice/
          */
         public List<String> crawl(String startUrl, HtmlParser htmlParser) {
@@ -20,36 +20,43 @@ public class _1242 {
             Set<String> visited = new HashSet<>();
 
             Queue<Future> tasks = new LinkedList<>();
-            //create a thread pool to crawling the URLs
-            ExecutorService executorService = Executors.newFixedThreadPool(4, r -> {
-                Thread t = new Thread(r);
-                //LeetCode doesn't allow executor.shutdown(), so use daemon threads to let the program shutdown, otherwise TLE.
-                t.setDaemon(true);
-                return t;
-            });
+            // create a thread pool to crawling the URLs
+            ExecutorService executorService =
+                    Executors.newFixedThreadPool(
+                            4,
+                            r -> {
+                                Thread t = new Thread(r);
+                                // LeetCode doesn't allow executor.shutdown(), so use daemon threads
+                                // to let the program shutdown, otherwise TLE.
+                                t.setDaemon(true);
+                                return t;
+                            });
 
             while (true) {
                 String url = queue.poll();
                 if (url != null) {
                     if (getHostName(url).equals(targetHostName) && visited.add(url)) {
                         result.add(url);
-                        tasks.add(executorService.submit(() -> {
-                            List<String> urls = htmlParser.getUrls(url);
-                            for (String u : urls) {
-                                queue.offer(u);
-                            }
-                        }));
+                        tasks.add(
+                                executorService.submit(
+                                        () -> {
+                                            List<String> urls = htmlParser.getUrls(url);
+                                            for (String u : urls) {
+                                                queue.offer(u);
+                                            }
+                                        }));
                     }
                 } else {
                     if (!tasks.isEmpty()) {
-                        //wait for the next task to complete which might add new URLs into the queue
+                        // wait for the next task to complete which might add new URLs into the
+                        // queue
                         Future nextTask = tasks.poll();
                         try {
                             nextTask.get();
                         } catch (InterruptedException | ExecutionException e) {
                         }
                     } else {
-                        //exit when all tasks are completed.
+                        // exit when all tasks are completed.
                         break;
                     }
                 }

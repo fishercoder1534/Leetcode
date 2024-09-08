@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class _1228 {
     public static class Solution1 {
-        /**
+        /*
          * A super verbose and inefficient but working way...
          */
         public int missingNumber(int[] arr) {
@@ -31,7 +31,7 @@ public class _1228 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/missing-number-in-arithmetic-progression/discuss/408474/JavaC%2B%2BPython-Arithmetic-Sum-and-Binary-Search
          */
         public int missingNumber(int[] arr) {

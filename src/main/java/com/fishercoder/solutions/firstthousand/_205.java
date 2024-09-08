@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class _205 {
-    /**
+    /*
      * space should be O(1) since it only has alphabetic letters which are capped at 52.
      */
 
@@ -29,7 +29,7 @@ public class _205 {
                     }
                 } else {
                     if (map.containsValue(tchar[i])) {
-                        return false;//this line is necessary for this case: ("ab", "aa")
+                        return false; // this line is necessary for this case: ("ab", "aa")
                     }
                     map.put(schar[i], tchar[i]);
                 }

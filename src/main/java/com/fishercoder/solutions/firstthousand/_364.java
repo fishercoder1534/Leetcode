@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.NestedInteger;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -37,5 +36,4 @@ public class _364 {
             return total;
         }
     }
-
 }

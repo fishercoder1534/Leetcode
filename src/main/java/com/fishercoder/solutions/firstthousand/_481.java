@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _481 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/74917/simple-java-solution-using-one-array-and-two-pointers
          * Algorithm:
          * <p>
@@ -46,5 +46,4 @@ public class _481 {
             return result;
         }
     }
-
 }

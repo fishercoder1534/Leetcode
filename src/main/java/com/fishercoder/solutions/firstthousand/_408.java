@@ -44,8 +44,8 @@ public class _408 {
                             j += number;
                             stringBuilder.setLength(0);
                         }
-                        if ((i >= abbrChars.length && j < wordChars.length) || (i < abbrChars.length
-                                && j >= wordChars.length)) {
+                        if ((i >= abbrChars.length && j < wordChars.length)
+                                || (i < abbrChars.length && j >= wordChars.length)) {
                             return false;
                         }
                         if (i < abbrChars.length
@@ -80,12 +80,14 @@ public class _408 {
                     continue;
                 }
 
-                //now the two chars don't match, then the char in abbr should be a valid digit: 0 < x <= 9
+                // now the two chars don't match, then the char in abbr should be a valid digit: 0 <
+                // x <= 9
                 if (abbr.charAt(j) == '0' || !Character.isDigit(abbr.charAt(j))) {
                     return false;
                 }
 
-                //now we count the number of letters that are abbreviated, i.e. get the number from abbr before next letter shows up in abbr
+                // now we count the number of letters that are abbreviated, i.e. get the number from
+                // abbr before next letter shows up in abbr
                 int num = 0;
                 while (j < aLen && Character.isDigit(abbr.charAt(j))) {
                     num = num * 10 + (abbr.charAt(j) - '0');

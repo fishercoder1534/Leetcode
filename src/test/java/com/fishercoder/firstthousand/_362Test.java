@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._362;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _362Test {
     private _362.Solution1.HitCounter hitCounter;
@@ -28,5 +28,4 @@ public class _362Test {
         hitCounter.hit(301);
         assertEquals(4, hitCounter.getHits(300));
     }
-
 }

@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _486 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/76312/java-1-line-recursion-solution
          * Explanation
          * So assuming the sum of the array it SUM, so eventually player1 and player2 will split the SUM between themselves.
@@ -24,12 +24,14 @@ public class _486 {
 
         private int helper(int[] nums, int start, int end, Integer[][] mem) {
             if (mem[start][end] == null) {
-                mem[start][end] = start == end ? nums[end] :
-                        Math.max(nums[end] - helper(nums, start, end - 1, mem),
-                                nums[start] - helper(nums, start + 1, end, mem));
+                mem[start][end] =
+                        start == end
+                                ? nums[end]
+                                : Math.max(
+                                        nums[end] - helper(nums, start, end - 1, mem),
+                                        nums[start] - helper(nums, start + 1, end, mem));
             }
             return mem[start][end];
         }
     }
-
 }

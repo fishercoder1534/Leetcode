@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -34,7 +33,7 @@ public class _1339 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution, but much more verbose and uses more extra space.
          */
         public int maxProduct(TreeNode root) {
@@ -52,7 +51,8 @@ public class _1339 {
             return (int) (result % modulo);
         }
 
-        private void postOrderBuildProductList(TreeNode root, Map<TreeNode, Long> sumMap, List<long[]> productList, Long total) {
+        private void postOrderBuildProductList(
+                TreeNode root, Map<TreeNode, Long> sumMap, List<long[]> productList, Long total) {
             if (root == null) {
                 return;
             }
@@ -62,16 +62,16 @@ public class _1339 {
             postOrderBuildProductList(root.left, sumMap, productList, total);
             postOrderBuildProductList(root.right, sumMap, productList, total);
             if (root.left != null) {
-                //suppose we cut off left subtree now
+                // suppose we cut off left subtree now
                 long leftSum = sumMap.get(root.left);
                 long remainder = total - leftSum;
-                productList.add(new long[]{leftSum, remainder});
+                productList.add(new long[] {leftSum, remainder});
             }
             if (root.right != null) {
-                //suppose we cut off right subtree now
+                // suppose we cut off right subtree now
                 long rightSum = sumMap.get(root.right);
                 long remainder = total - rightSum;
-                productList.add(new long[]{rightSum, remainder});
+                productList.add(new long[] {rightSum, remainder});
             }
         }
 
@@ -85,6 +85,5 @@ public class _1339 {
             sumMap.put(root, sum);
             return sum;
         }
-
     }
 }

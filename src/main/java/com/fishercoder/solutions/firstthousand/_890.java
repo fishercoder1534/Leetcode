@@ -48,19 +48,21 @@ public class _890 {
         }
 
         private boolean matches(String word, String pattern) {
-            Map<Character, Character> map1 = new HashMap<>();//word -> p
-            Map<Character, Character> map2 = new HashMap<>();//p -> word
+            Map<Character, Character> map1 = new HashMap<>(); // word -> p
+            Map<Character, Character> map2 = new HashMap<>(); // p -> word
             for (int i = 0; i < pattern.length(); i++) {
                 if (!map1.containsKey(word.charAt(i))) {
                     map1.put(word.charAt(i), pattern.charAt(i));
                 }
-                if (map1.containsKey(word.charAt(i)) && map1.get(word.charAt(i)) != pattern.charAt(i)) {
+                if (map1.containsKey(word.charAt(i))
+                        && map1.get(word.charAt(i)) != pattern.charAt(i)) {
                     return false;
                 }
                 if (!map2.containsKey(pattern.charAt(i))) {
                     map2.put(pattern.charAt(i), word.charAt(i));
                 }
-                if (map2.containsKey(pattern.charAt(i)) && map2.get(pattern.charAt(i)) != word.charAt(i)) {
+                if (map2.containsKey(pattern.charAt(i))
+                        && map2.get(pattern.charAt(i)) != word.charAt(i)) {
                     return false;
                 }
             }

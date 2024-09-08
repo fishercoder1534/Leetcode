@@ -12,8 +12,8 @@ public class _320 {
             return result;
         }
 
-        private void backtrack(String word, List<String> result, int position, String current,
-                               int count) {
+        private void backtrack(
+                String word, List<String> result, int position, String current, int count) {
             if (position == word.length()) {
                 if (count > 0) {
                     current += count;
@@ -21,10 +21,13 @@ public class _320 {
                 result.add(current);
             } else {
                 backtrack(word, result, position + 1, current, count + 1);
-                backtrack(word, result, position + 1,
-                        current + (count > 0 ? count : "") + word.charAt(position), 0);
+                backtrack(
+                        word,
+                        result,
+                        position + 1,
+                        current + (count > 0 ? count : "") + word.charAt(position),
+                        0);
             }
         }
     }
-
 }

@@ -1,11 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.fishercoder.solutions.firstthousand._556;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _556Test {
     private _556.Solution1 solution1;
@@ -58,5 +58,4 @@ public class _556Test {
         actual = solution1.nextGreaterElement(n);
         assertEquals(expected, actual);
     }
-
 }

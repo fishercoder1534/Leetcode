@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1576 {
     public static class Solution1 {
-        /**
+        /*
          * Each char could have at most two neighbors, so we only need to toggle between three character candidates to avoid repetition.
          */
         public String modifyString(String s) {
@@ -23,6 +23,5 @@ public class _1576 {
             }
             return String.valueOf(arr);
         }
-
     }
 }

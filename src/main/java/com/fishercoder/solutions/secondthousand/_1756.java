@@ -21,6 +21,5 @@ public class _1756 {
                 return fetched;
             }
         }
-
     }
 }

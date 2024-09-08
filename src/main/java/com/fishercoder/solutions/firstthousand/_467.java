@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _467 {
     public static class Solution1 {
-        /**
+        /*
          * A naive solution would definitely result in TLE.
          * Since the pattern keeps repeating, DP is the way to go.
          * Because the input consists merely of lowercase English letters, we could maintain an array of size 26,
@@ -22,7 +22,8 @@ public class _467 {
             dp[p.charAt(0) - 'a'] = 1;
             int len = 1;
             for (int i = 1; i < p.length(); i++) {
-                if (p.charAt(i) - 1 == p.charAt(i - 1) || (p.charAt(i) == 'a' && p.charAt(i - 1) == 'z')) {
+                if (p.charAt(i) - 1 == p.charAt(i - 1)
+                        || (p.charAt(i) == 'a' && p.charAt(i - 1) == 'z')) {
                     len++;
                 } else {
                     len = 1;
@@ -36,5 +37,4 @@ public class _467 {
             return count;
         }
     }
-
 }

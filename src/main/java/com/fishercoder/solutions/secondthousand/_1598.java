@@ -10,7 +10,7 @@ public class _1598 {
                         steps--;
                     }
                 } else if (log.equals("./")) {
-                    //do nothing
+                    // do nothing
                 } else {
                     steps++;
                 }

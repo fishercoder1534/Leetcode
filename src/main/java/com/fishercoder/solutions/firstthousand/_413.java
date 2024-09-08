@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _413 {
 
     public static class Solution1 {
-        //credit: https://discuss.leetcode.com/topic/62884/2ms-java-o-n-time-o-1-space-solution
+        // credit: https://discuss.leetcode.com/topic/62884/2ms-java-o-n-time-o-1-space-solution
         public int numberOfArithmeticSlices(int[] A) {
             int sum = 0;
             int len = 2;
@@ -14,7 +14,7 @@ public class _413 {
                     if (len > 2) {
                         sum += calculateSlices(len);
                     }
-                    len = 2;//reset it to 2
+                    len = 2; // reset it to 2
                 }
             }
             if (len > 2) {
@@ -29,7 +29,7 @@ public class _413 {
     }
 
     class Solution2 {
-        //credit: https://discuss.leetcode.com/topic/63302/simple-java-solution-9-lines-2ms
+        // credit: https://discuss.leetcode.com/topic/63302/simple-java-solution-9-lines-2ms
         public int numberOfArithmeticSlices(int[] A) {
             int sum = 0;
             int curr = 0;
@@ -44,5 +44,4 @@ public class _413 {
             return sum;
         }
     }
-
 }

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _977 {
     public static class Solution1 {
-        /**
+        /*
          * O(nlogn) solution
          */
         public int[] sortedSquares(int[] nums) {
@@ -18,12 +18,14 @@ public class _977 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * O(n) solution
          */
         public int[] sortedSquares(int[] nums) {
             int[] ans = new int[nums.length];
-            for (int i = nums.length - 1, left = 0, right = nums.length - 1; i < nums.length && left <= right; i--) {
+            for (int i = nums.length - 1, left = 0, right = nums.length - 1;
+                    i < nums.length && left <= right;
+                    i--) {
                 if (Math.abs(nums[left]) < Math.abs(nums[right])) {
                     ans[i] = nums[right] * nums[right];
                     right--;

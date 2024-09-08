@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.thirdthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -9,7 +8,7 @@ import java.util.Queue;
 
 public class _2641 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution.
          * Note: It's not really replacing the values in the original tree nodes, instead, I'm building a new tree with updated values.
          */

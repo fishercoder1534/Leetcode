@@ -5,7 +5,7 @@ import java.util.Stack;
 public class _503 {
 
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/77881/typical-ways-to-solve-circular-array-problems-java-solution
          * Note: we store INDEX into the stack, reversely, the larger index put at the bottom of the stack, the smaller index at the top
          */
@@ -17,12 +17,13 @@ public class _503 {
             Stack<Integer> stack = new Stack<>();
             for (int i = len - 1; i >= 0; i--) {
                 stack.push(i);
-                //push all indexes into the stack reversely
+                // push all indexes into the stack reversely
             }
             int[] result = new int[len];
             for (int i = len - 1; i >= 0; i--) {
                 result[i] = -1;
-                //initialize it to be -1 in case we cannot find its next greater element in the array
+                // initialize it to be -1 in case we cannot find its next greater element in the
+                // array
                 while (!stack.isEmpty() && (nums[stack.peek()] <= nums[i])) {
                     stack.pop();
                 }
@@ -36,7 +37,7 @@ public class _503 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/articles/next-greater-element-ii/
          */
         public int[] nextGreaterElements(int[] nums) {
@@ -52,5 +53,4 @@ public class _503 {
             return result;
         }
     }
-
 }

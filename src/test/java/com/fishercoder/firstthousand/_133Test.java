@@ -3,7 +3,6 @@ package com.fishercoder.firstthousand;
 import com.fishercoder.solutions.firstthousand._133;
 import com.fishercoder.solutions.firstthousand._133.Solution1.Node;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class _133Test {
@@ -24,6 +23,6 @@ public class _133Test {
 
     @Test
     public void test1() {
-        //TODO: implement it
+        // TODO: implement it
     }
 }

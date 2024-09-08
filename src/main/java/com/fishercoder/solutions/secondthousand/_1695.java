@@ -30,7 +30,7 @@ public class _1695 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 10/202/2021. Classic sliding window solution.
          */
         public int maximumUniqueSubarray(int[] nums) {

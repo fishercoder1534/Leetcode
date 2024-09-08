@@ -9,9 +9,9 @@ public class _10 {
             }
             boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
             dp[0][0] = true;
-            for (int i = 0; i < p.length(); i++) { //here's the p's length, not s's
+            for (int i = 0; i < p.length(); i++) { // here's the p's length, not s's
                 if (p.charAt(i) == '*' && dp[0][i - 1]) {
-                    dp[0][i + 1] = true; //here's y axis should be i+1
+                    dp[0][i + 1] = true; // here's y axis should be i+1
                 }
             }
             for (int i = 0; i < s.length(); i++) {
@@ -31,5 +31,4 @@ public class _10 {
             return dp[s.length()][p.length()];
         }
     }
-
 }

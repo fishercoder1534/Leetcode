@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1701 {
     public static class Solution1 {
-        /**
+        /*
          * A simple one-pass, just simulate what the problem describes.
          */
         public double averageWaitingTime(int[][] customers) {

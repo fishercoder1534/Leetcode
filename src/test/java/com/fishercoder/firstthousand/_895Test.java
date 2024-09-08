@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._895;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _895Test {
 
@@ -28,5 +28,4 @@ public class _895Test {
         assertEquals(5, freqStack.pop());
         assertEquals(4, freqStack.pop());
     }
-
 }

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class _779 {
     public static class Solution1 {
-        /**
+        /*
          * Time: O(2^n)
          * Space: O(2^n)
          * This will result int TLE.
@@ -33,14 +33,12 @@ public class _779 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Time: O(logn)
          * Space: O(1)
          */
         public int kthGrammar(int N, int K) {
             return Integer.bitCount(K - 1) % 2;
         }
-
     }
-
 }

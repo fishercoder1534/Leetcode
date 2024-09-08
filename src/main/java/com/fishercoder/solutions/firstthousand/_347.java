@@ -6,7 +6,7 @@ import java.util.Map.Entry;
 public class _347 {
 
     public static class Solution1 {
-        /**
+        /*
          * Bucket sort:
          * Use buckets to hold numbers of the same frequency, some buckets might be empty while the rest might have more than one element.
          * This editorial explains it well enough: https://leetcode.com/problems/top-k-frequent-elements/editorial/ starting from 08'55".
@@ -20,9 +20,11 @@ public class _347 {
             for (int num : nums) {
                 map.put(num, map.getOrDefault(num, 0) + 1);
             }
-            //use nums.length + 1, so that we can directly use the frequency as the index for this array
-            //how this buckets look like is: buckets[1] holds numbers that have frequency one, buckets[2] holds numbers that have frequency two, etc.
-            //so, the numbers that have the highest frequencies are on the right-most side.
+            // use nums.length + 1, so that we can directly use the frequency as the index for this
+            // array
+            // how this buckets look like is: buckets[1] holds numbers that have frequency one,
+            // buckets[2] holds numbers that have frequency two, etc.
+            // so, the numbers that have the highest frequencies are on the right-most side.
             List[] bucket = new ArrayList[nums.length + 1];
             for (Entry<Integer, Integer> entry : map.entrySet()) {
                 int freq = entry.getValue();
@@ -44,7 +46,7 @@ public class _347 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Use hashtable and heap.
          * Time: O(nlogn)
          * Space: O(n)
@@ -58,7 +60,8 @@ public class _347 {
             }
 
             // build heap, this is O(nlogn)
-            Queue<Entry<Integer, Integer>> heap = new PriorityQueue<>((o1, o2) -> o2.getValue() - o1.getValue());
+            Queue<Entry<Integer, Integer>> heap =
+                    new PriorityQueue<>((o1, o2) -> o2.getValue() - o1.getValue());
             for (Entry<Integer, Integer> entry : map.entrySet()) {
                 heap.offer(entry);
             }

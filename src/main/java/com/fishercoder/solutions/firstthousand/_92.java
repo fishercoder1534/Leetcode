@@ -5,7 +5,7 @@ import com.fishercoder.common.classes.ListNode;
 public class _92 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/8976/simple-java-solution-with-clear-explanation
          */
         public ListNode reverseBetween(ListNode head, int m, int n) {
@@ -18,15 +18,19 @@ public class _92 {
                 pre = pre.next;
             }
 
-            ListNode start = pre.next;// start is the node prior to reversing, in the given example,
+            ListNode start =
+                    pre.next; // start is the node prior to reversing, in the given example,
             // start is node with value 1
-            ListNode then = start.next;// then is the node that we'll start to reverse, in the given
+            ListNode then =
+                    start.next; // then is the node that we'll start to reverse, in the given
             // example, it's 2
 
             for (int i = 0; i < n - m; i++) {
-                // pay special attention to this for loop, it's assigning then.next to start.next, it
+                // pay special attention to this for loop, it's assigning then.next to start.next,
+                // it
                 // didn't initialize a new node
-                // this does exactly what I desired to do, but I just didn't figure out how to implement
+                // this does exactly what I desired to do, but I just didn't figure out how to
+                // implement
                 // it, thumbs up to the OP!
                 start.next = then.next;
                 then.next = pre.next;
@@ -38,7 +42,7 @@ public class _92 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 10/25/2021.
          */
         public ListNode reverseBetween(ListNode head, int left, int right) {

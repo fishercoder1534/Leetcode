@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _861 {
     public static class Solution1 {
-        /**
+        /*
          * We can simply apply greedy methodology here.
          * 1. we check if the left most digits are ones or not, if it's a zero,
          * then we'll just flip this entire row, reason being the left most digit carries the biggest weight when interpreting this binary row/number;

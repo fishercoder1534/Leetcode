@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _640 {
     public static class Solution1 {
-        /**
+        /*
          * Reference: https://discuss.leetcode.com/topic/95203/concise-java-solution/7
          */
         public String solveEquation(String equation) {
@@ -18,8 +18,13 @@ public class _640 {
         }
 
         private int[] evaluate(String part) {
-            int[] result = new int[2];//result[0] is the coefficient for x, result[1] is the coefficient for constants
-            String[] tokens = part.split("(?=[+-])");  // ()for match group; ?= for match and include in res; [+-] means + or -;
+            int[] result =
+                    new int[2]; // result[0] is the coefficient for x, result[1] is the coefficient
+            // for constants
+            String[] tokens =
+                    part.split(
+                            "(?=[+-])"); // ()for match group; ?= for match and include in res; [+-]
+            // means + or -;
             for (String token : tokens) {
                 if (token.equals("+x") || token.equals("x")) {
                     result[0]++;

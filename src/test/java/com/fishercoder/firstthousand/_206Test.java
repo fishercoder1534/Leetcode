@@ -1,12 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._206;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _206Test {
     private _206.Solution1 solution1;
@@ -23,19 +23,25 @@ public class _206Test {
 
     @Test
     public void test1() {
-        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4});
-        assertEquals(LinkedListUtils.contructLinkedList(new int[]{4, 3, 2, 1}), solution1.reverseList(head));
+        head = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4});
+        assertEquals(
+                LinkedListUtils.contructLinkedList(new int[] {4, 3, 2, 1}),
+                solution1.reverseList(head));
     }
 
     @Test
     public void test2() {
-        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4});
-        assertEquals(LinkedListUtils.contructLinkedList(new int[]{4, 3, 2, 1}), solution2.reverseList(head));
+        head = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4});
+        assertEquals(
+                LinkedListUtils.contructLinkedList(new int[] {4, 3, 2, 1}),
+                solution2.reverseList(head));
     }
 
     @Test
     public void test3() {
-        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4});
-        assertEquals(LinkedListUtils.contructLinkedList(new int[]{4, 3, 2, 1}), solution3.reverseList(head));
+        head = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4});
+        assertEquals(
+                LinkedListUtils.contructLinkedList(new int[] {4, 3, 2, 1}),
+                solution3.reverseList(head));
     }
 }

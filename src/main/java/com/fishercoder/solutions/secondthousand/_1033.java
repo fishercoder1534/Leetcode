@@ -33,7 +33,7 @@ public class _1033 {
             int min = minMoves(t[0], t[1], t[2]);
             int max = maxMoves(t[0], t[1], t[2]);
 
-            return new int[]{min, max};
+            return new int[] {min, max};
         }
     }
 }

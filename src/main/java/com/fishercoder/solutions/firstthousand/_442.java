@@ -8,8 +8,8 @@ import java.util.Set;
 public class _442 {
 
     public static class Solution1 {
-        //O(n) space
-        //O(n) time
+        // O(n) space
+        // O(n) time
         public List<Integer> findDuplicates(int[] nums) {
             Set<Integer> set = new HashSet();
             List<Integer> result = new ArrayList();
@@ -23,7 +23,7 @@ public class _442 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * O(1) space
          * O(n) time
          * <p>
@@ -49,5 +49,4 @@ public class _442 {
             return result;
         }
     }
-
 }

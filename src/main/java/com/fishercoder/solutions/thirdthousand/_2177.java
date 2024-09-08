@@ -6,9 +6,9 @@ public class _2177 {
             long remainder = num % 3;
             long ave = num / 3;
             if (remainder == 0) {
-                return new long[]{ave - 1, ave, ave + 1};
+                return new long[] {ave - 1, ave, ave + 1};
             } else {
-                return new long[]{};
+                return new long[] {};
             }
         }
     }

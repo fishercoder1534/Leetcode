@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class _954 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/array-of-doubled-pairs/solution/
          */
         public boolean canReorderDoubled(int[] A) {

@@ -17,5 +17,4 @@ public class _2806 {
             return balance;
         }
     }
-
 }

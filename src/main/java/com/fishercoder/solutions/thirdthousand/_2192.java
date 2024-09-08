@@ -9,7 +9,7 @@ import java.util.TreeSet;
 
 public class _2192 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution:
          * topological sort template comes in handy here.
          */

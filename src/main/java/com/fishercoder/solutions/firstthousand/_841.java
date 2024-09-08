@@ -57,7 +57,7 @@ public class _841 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My completely original recursive solution.
          */
         public boolean canVisitAllRooms(List<List<Integer>> rooms) {

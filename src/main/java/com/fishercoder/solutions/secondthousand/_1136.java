@@ -51,7 +51,7 @@ public class _1136 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * A straightforward one to practice topological sort (template).
          * Use an indegree/outdegree array and an array of list type.
          */

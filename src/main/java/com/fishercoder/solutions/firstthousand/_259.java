@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _259 {
 
     public static class Solution1 {
-        /**
+        /*
          * Basically, very similar to 3Sum, but the key is that you'll have to add result by (right-left), not just increment result by 1!
          */
         public int threeSumSmaller(int[] nums, int target) {
@@ -20,8 +20,8 @@ public class _259 {
                 while (left < right) {
                     int sum = nums[i] + nums[left] + nums[right];
                     if (sum < target) {
-                        result += right - left;//this line is key!
-                        left++;//then increment left to continue to see all possibilities
+                        result += right - left; // this line is key!
+                        left++; // then increment left to continue to see all possibilities
                     } else {
                         right--;
                     }

@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class _3004 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution.
          * Practice makes perfect!
          * Post-order traversal is the way to go since we need to process all children first before processing any particular node.
@@ -23,8 +23,9 @@ public class _3004 {
                 this.val = val;
                 this.color = color;
                 this.children = new ArrayList<>();
-                this.allSubtreeSameColor = true;//initialize to be true until it's built/proven to be false
-                this.totalChildrenCount = 1;//count itself as its own child
+                this.allSubtreeSameColor =
+                        true; // initialize to be true until it's built/proven to be false
+                this.totalChildrenCount = 1; // count itself as its own child
             }
         }
 
@@ -46,7 +47,7 @@ public class _3004 {
             if (root == null) {
                 return 0;
             }
-            int totalChildrenCount = 1;//count itself as a child
+            int totalChildrenCount = 1; // count itself as a child
             for (ColoredTreeNode child : root.children) {
                 int count = postOrder(child);
                 totalChildrenCount += count;
@@ -64,8 +65,12 @@ public class _3004 {
         private ColoredTreeNode buildTree(int[][] edges, int[] colors) {
             Map<Integer, ColoredTreeNode> map = new HashMap<>();
             for (int i = 0; i < edges.length; i++) {
-                ColoredTreeNode parent = map.getOrDefault(edges[i][0], new ColoredTreeNode(edges[i][0], colors[edges[i][0]]));
-                ColoredTreeNode child = map.getOrDefault(edges[i][1], new ColoredTreeNode(edges[i][1], colors[edges[i][1]]));
+                ColoredTreeNode parent =
+                        map.getOrDefault(
+                                edges[i][0], new ColoredTreeNode(edges[i][0], colors[edges[i][0]]));
+                ColoredTreeNode child =
+                        map.getOrDefault(
+                                edges[i][1], new ColoredTreeNode(edges[i][1], colors[edges[i][1]]));
                 parent.children.add(child);
                 map.put(edges[i][0], parent);
                 map.put(edges[i][1], child);

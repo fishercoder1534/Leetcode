@@ -1,18 +1,15 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._537;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 1/25/17.
- */
+/** Created by fishercoder on 1/25/17. */
 public class _537Test {
-    private _537 .Solution1 solution1;
-    private _537 .Solution2 solution2;
+    private _537.Solution1 solution1;
+    private _537.Solution2 solution2;
     private static String expected;
     private static String a;
     private static String b;
@@ -24,8 +21,7 @@ public class _537Test {
     }
 
     @BeforeEach
-    public void setupForEachTest() {
-    }
+    public void setupForEachTest() {}
 
     @Test
     public void test1() {

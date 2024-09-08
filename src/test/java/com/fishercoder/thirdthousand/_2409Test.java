@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2409;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2409Test {
     private _2409.Solution1 solution1;
@@ -38,5 +38,4 @@ public class _2409Test {
     public void test5() {
         assertEquals(27, solution1.countDaysTogether("08-06", "12-08", "02-04", "09-01"));
     }
-
 }

@@ -19,7 +19,9 @@ public class _1764 {
                 for (int num : group) {
                     groupInt.add(num);
                 }
-                int index = Collections.indexOfSubList(numsInt.subList(prevIndex, numsInt.size()), groupInt);
+                int index =
+                        Collections.indexOfSubList(
+                                numsInt.subList(prevIndex, numsInt.size()), groupInt);
                 if (index != -1) {
                     prevIndex = index + group.length;
                 } else {

@@ -7,7 +7,7 @@ import java.util.List;
 public class _118 {
 
     public static class Solution1 {
-        /**
+        /*
          * fill out values from left to right
          */
         public List<List<Integer>> generate(int numRows) {
@@ -25,7 +25,7 @@ public class _118 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * fill out values from right to left
          * credit: https://leetcode.com/problems/pascals-triangle/discuss/38141/My-concise-solution-in-Java/36127
          */
@@ -44,7 +44,7 @@ public class _118 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * my completely original solution on 9/15/2021
          */
         public List<List<Integer>> generate(int numRows) {

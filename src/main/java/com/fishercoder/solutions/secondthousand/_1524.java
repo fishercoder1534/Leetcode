@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1524 {
     public static class Solution1 {
-        /**
+        /*
          * This brute force solution will throw exceed time limit exceeded exception on LeetCode.
          */
         public int numOfSubarrays(int[] arr) {

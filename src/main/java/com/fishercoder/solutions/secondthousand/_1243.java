@@ -18,9 +18,7 @@ public class _1243 {
                     }
                 }
             } while (!Arrays.equals(copy, arr));
-            return Arrays.stream(arr)
-                    .boxed()
-                    .collect(Collectors.toList());
+            return Arrays.stream(arr).boxed().collect(Collectors.toList());
         }
     }
 }

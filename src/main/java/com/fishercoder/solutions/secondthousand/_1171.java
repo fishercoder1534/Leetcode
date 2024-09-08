@@ -1,12 +1,11 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.*;
 
 public class _1171 {
     public static class Solution1 {
-        /**
+        /*
          * I keep shrinking the array whenever I found there's a range of sum that equals to zero
          * until the size of the list doesn't change any more.
          * This is probably not super efficient, but accepted on LeetCode.
@@ -35,7 +34,8 @@ public class _1171 {
             List<Integer> list = new ArrayList<>();
             while (head != null) {
                 if (head.val != 0) {
-                    //if it's zero, we'll just ignore it, this can help us take care of the zero values
+                    // if it's zero, we'll just ignore it, this can help us take care of the zero
+                    // values
                     list.add(head.val);
                 }
                 head = head.next;
@@ -74,7 +74,7 @@ public class _1171 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/discuss/366337/Java-Iterative-and-Recursive-solution
          * this post explains it all
          * key of the hashmap is the prefix sum of all the nodes we've gone so far

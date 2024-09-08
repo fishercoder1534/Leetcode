@@ -30,7 +30,7 @@ public class _46 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 10/11/2021, although a little verbose and super as efficient as the above one.
          * Basically, insert the next unused number into all possible positions in the currently formed list,
          * as soon as the size of this list equals nums.length, add this new permutation into the result;
@@ -47,7 +47,8 @@ public class _46 {
             return result;
         }
 
-        private void backtracking(List<Integer> list, int[] nums, Set<List<Integer>> ans, boolean[] used) {
+        private void backtracking(
+                List<Integer> list, int[] nums, Set<List<Integer>> ans, boolean[] used) {
             if (list.size() == nums.length) {
                 ans.add(new ArrayList<>(list));
                 return;
@@ -67,7 +68,7 @@ public class _46 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * A more efficient version of backtracking.
          */
         public List<List<Integer>> permute(int[] nums) {
@@ -76,7 +77,8 @@ public class _46 {
             return backtracking(ans, used, new ArrayList<>(), nums);
         }
 
-        private List<List<Integer>> backtracking(List<List<Integer>> ans, boolean[] used, List<Integer> list, int[] nums) {
+        private List<List<Integer>> backtracking(
+                List<List<Integer>> ans, boolean[] used, List<Integer> list, int[] nums) {
             if (list.size() == nums.length) {
                 ans.add(new ArrayList<>(list));
                 return ans;
@@ -94,5 +96,4 @@ public class _46 {
             return ans;
         }
     }
-
 }

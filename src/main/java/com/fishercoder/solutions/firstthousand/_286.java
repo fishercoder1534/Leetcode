@@ -6,7 +6,7 @@ import java.util.Queue;
 public class _286 {
     public static class Solution1 {
 
-        int[] dirs = new int[]{0, 1, 0, -1, 0};
+        int[] dirs = new int[] {0, 1, 0, -1, 0};
 
         public void wallsAndGates(int[][] rooms) {
             if (rooms == null || rooms.length == 0 || rooms[0].length == 0) {
@@ -33,13 +33,15 @@ public class _286 {
                 }
             }
         }
-
     }
 
     public static class Solution2 {
 
-        //push all gates into the queue first, and then put all its neighbours into the queue with one distance to the gate, then continue to push the rest of the nodes into the queue, and put all their neighbours into the queue with the nodes' value plus one until the queue is empty
-        int[] dirs = new int[]{0, 1, 0, -1, 0};
+        // push all gates into the queue first, and then put all its neighbours into the queue with
+        // one distance to the gate, then continue to push the rest of the nodes into the queue, and
+        // put all their neighbours into the queue with the nodes' value plus one until the queue is
+        // empty
+        int[] dirs = new int[] {0, 1, 0, -1, 0};
 
         public void wallsAndGates(int[][] rooms) {
             if (rooms == null || rooms.length == 0 || rooms[0].length == 0) {
@@ -51,7 +53,7 @@ public class _286 {
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     if (rooms[i][j] == 0) {
-                        queue.offer(new int[]{i, j});
+                        queue.offer(new int[] {i, j});
                     }
                 }
             }
@@ -63,11 +65,10 @@ public class _286 {
                     int y = curr[1] + dirs[k + 1];
                     if (x >= 0 && x < m && y >= 0 && y < n && rooms[x][y] == Integer.MAX_VALUE) {
                         rooms[x][y] = rooms[curr[0]][curr[1]] + 1;
-                        queue.offer(new int[]{x, y});
+                        queue.offer(new int[] {x, y});
                     }
                 }
             }
         }
-
     }
 }

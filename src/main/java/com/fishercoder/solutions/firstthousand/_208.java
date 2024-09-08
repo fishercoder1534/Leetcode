@@ -11,7 +11,8 @@ public class _208 {
             private TrieNode root;
 
             public Trie() {
-                root = new TrieNode();//initialize root to be an empty char, this is a common practice as how Wiki defines Trie data structure as well
+                root = new TrieNode(); // initialize root to be an empty char, this is a common
+                // practice as how Wiki defines Trie data structure as well
             }
 
             // Inserts a word into the trie.

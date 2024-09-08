@@ -1,11 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._79;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _79Test {
     private _79.Solution1 solution1;
@@ -22,21 +22,23 @@ public class _79Test {
 
     @Test
     public void test1() {
-        board = new char[][]{
-                {'A', 'B', 'C', 'E'},
-                {'S', 'F', 'E', 'S'},
-                {'A', 'D', 'E', 'E'},
-        };
+        board =
+                new char[][] {
+                    {'A', 'B', 'C', 'E'},
+                    {'S', 'F', 'E', 'S'},
+                    {'A', 'D', 'E', 'E'},
+                };
         assertEquals(true, solution1.exist(board, "ABCEFSADEESE"));
     }
 
     @Test
     public void test2() {
-        board = new char[][]{
-                {'A', 'B', 'C', 'E'},
-                {'S', 'F', 'C', 'S'},
-                {'A', 'D', 'E', 'E'},
-        };
+        board =
+                new char[][] {
+                    {'A', 'B', 'C', 'E'},
+                    {'S', 'F', 'C', 'S'},
+                    {'A', 'D', 'E', 'E'},
+                };
         assertEquals(true, solution1.exist(board, "ABCCED"));
 
         assertEquals(true, solution1.exist(board, "SEE"));
@@ -46,27 +48,29 @@ public class _79Test {
 
     @Test
     public void test3() {
-        board = new char[][]{
-                {'a'},
-                {'a'},
-        };
+        board =
+                new char[][] {
+                    {'a'}, {'a'},
+                };
         assertEquals(false, solution1.exist(board, "aaa"));
     }
 
     @Test
     public void test4() {
-        board = new char[][]{
-                {'A', 'B', 'H', 'I'},
-                {'K', 'E', 'H', 'S'},
-                {'A', 'D', 'E', 'E'},
-        };
+        board =
+                new char[][] {
+                    {'A', 'B', 'H', 'I'},
+                    {'K', 'E', 'H', 'S'},
+                    {'A', 'D', 'E', 'E'},
+                };
         assertEquals(true, solution2.exist(board, "ABHISHEK"));
     }
 
     @Test
     public void test5() {
-        board = CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray("[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]");
+        board =
+                CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray(
+                        "[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]");
         assertEquals(true, solution3.exist(board, "ABCCED"));
     }
-
 }

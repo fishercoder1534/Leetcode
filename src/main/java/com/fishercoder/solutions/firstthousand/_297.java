@@ -1,14 +1,13 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class _297 {
 
     public static class Solution1 {
-        /**
+        /*
          * The idea is very straightforward:
          * use "#" as the terminator, do BFS, level order traversal to store all nodes values into a StringBuilder.
          * When deserializing, also use a queue: pop the root into the queue first, then use a for loop to construct each node,

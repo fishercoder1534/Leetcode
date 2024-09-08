@@ -6,7 +6,7 @@ import java.util.List;
 public class _77 {
 
     public static class Solution1 {
-        /**
+        /*
          * I'm glad that I worked this one out completely on my own on 10/11/2021! Enjoy the beauty of backtracking!
          */
         public List<List<Integer>> combine(int n, int k) {
@@ -19,7 +19,8 @@ public class _77 {
             return ans;
         }
 
-        private void backtracking(List<Integer> list, int k, int start, int limit, List<List<Integer>> ans) {
+        private void backtracking(
+                List<Integer> list, int k, int start, int limit, List<List<Integer>> ans) {
             if (k == 0) {
                 ans.add(new ArrayList<>(list));
                 return;
@@ -33,7 +34,7 @@ public class _77 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely own solution on 1/24/2022.
          */
         public List<List<Integer>> combine(int n, int k) {
@@ -46,7 +47,8 @@ public class _77 {
             return ans;
         }
 
-        private void backtrack(List<List<Integer>> ans, int[] nums, int k, List<Integer> curr, int start) {
+        private void backtrack(
+                List<List<Integer>> ans, int[] nums, int k, List<Integer> curr, int start) {
             if (curr.size() == k) {
                 ans.add(new ArrayList<>(curr));
             } else if (curr.size() < k) {

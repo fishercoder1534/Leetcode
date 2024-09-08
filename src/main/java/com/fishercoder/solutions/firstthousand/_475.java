@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class _475 {
 
     public static class Solution1 {
-        //credit: https://discuss.leetcode.com/topic/71460/short-and-clean-java-binary-search-solution
+        // credit:
+        // https://discuss.leetcode.com/topic/71460/short-and-clean-java-binary-search-solution
         public int findRadius(int[] houses, int[] heaters) {
             Arrays.sort(heaters);
             int radius = Integer.MIN_VALUE;

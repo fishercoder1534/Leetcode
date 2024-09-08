@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class _685 {
     public static class Solution1 {
-        /**
+        /*
          * My original solution, failed by _685Test.test3
          */
         class UnionFind {
@@ -21,7 +21,7 @@ public class _685 {
             int n;
 
             class LinkedNode {
-                List<LinkedNode> parents;//at most, there's one node that has two parents
+                List<LinkedNode> parents; // at most, there's one node that has two parents
                 int val;
 
                 public LinkedNode(int val) {
@@ -51,7 +51,7 @@ public class _685 {
                 nodes = new HashSet<>();
                 visitedLinkedNodes = new ArrayList<>();
                 visitedValues = new HashSet<>();
-                redundantConn = new int[]{};
+                redundantConn = new int[] {};
                 for (int i = 0; i < m; i++) {
                     for (int j = 0; j < n; j++) {
                         nodes.add(edges[i][j]);
@@ -82,11 +82,15 @@ public class _685 {
             public int[] findRedundantDirectedConnection() {
                 int index = hasTwoParents();
                 if (index != -1) {
-                    List<LinkedNode> parents = visitedLinkedNodes.get(index).parents;//parents size is fixed, only 2
+                    List<LinkedNode> parents =
+                            visitedLinkedNodes.get(index).parents; // parents size is fixed, only 2
                     int[] result = new int[2];
                     for (int i = 0; i < parents.size(); i++) {
                         if (hasCycle(visitedLinkedNodes.get(index), parents.get(i))) {
-                            result = new int[]{parents.get(i).val, visitedLinkedNodes.get(index).val};
+                            result =
+                                    new int[] {
+                                        parents.get(i).val, visitedLinkedNodes.get(index).val
+                                    };
                             break;
                         }
                     }
@@ -130,7 +134,7 @@ public class _685 {
 
         public int[] findRedundantDirectedConnection(int[][] edges) {
             UnionFind unionFind = new UnionFind(edges);
-            /**two cases:
+            /*two cases:
              * 1. the entire edges are just one directed loop, in this case, just return the last edge, see test2 in _685Test.java
              * 2. there's one directed loop, but one node of the loop has two parents, in this case, what we'll need to do
              * is just to return the edge in this loop that points to the child that has two parents, see test1 in _685Test.java
@@ -145,7 +149,7 @@ public class _685 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/105108/c-java-union-find-with-explanation-o-n
          */
         public int[] findRedundantDirectedConnection(int[][] edges) {
@@ -156,8 +160,8 @@ public class _685 {
                 if (parent[edges[i][1]] == 0) {
                     parent[edges[i][1]] = edges[i][0];
                 } else {
-                    can2 = new int[]{edges[i][0], edges[i][1]};
-                    can1 = new int[]{parent[edges[i][1]], edges[i][1]};
+                    can2 = new int[] {edges[i][0], edges[i][1]};
+                    can1 = new int[] {parent[edges[i][1]], edges[i][1]};
                     edges[i][1] = 0;
                 }
             }

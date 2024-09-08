@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1716;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1716Test {
     private _1716.Solution1 solution1;
@@ -28,5 +28,4 @@ public class _1716Test {
     public void test3() {
         assertEquals(96, solution1.totalMoney(20));
     }
-
 }

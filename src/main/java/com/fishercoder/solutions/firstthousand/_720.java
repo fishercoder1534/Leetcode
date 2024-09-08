@@ -10,7 +10,9 @@ public class _720 {
         private String findLongestWord(TrieNode root, String[] words) {
             String longestWord = "";
             for (String word : words) {
-                if (longestWord.length() > word.length() || (longestWord.length() == word.length() && (longestWord.compareToIgnoreCase(word) < 0))) {
+                if (longestWord.length() > word.length()
+                        || (longestWord.length() == word.length()
+                                && (longestWord.compareToIgnoreCase(word) < 0))) {
                     continue;
                 }
                 TrieNode tmp = root;

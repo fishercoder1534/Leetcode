@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class _1600 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution:
          * 1. use a tree structure to represent the king family;
          * 2. then use preorder traversal to find the inheritance order;

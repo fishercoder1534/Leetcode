@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
+/*
  * 202. Happy Number
  *
  * Write an algorithm to determine if a number is "happy".

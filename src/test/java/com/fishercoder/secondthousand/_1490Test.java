@@ -1,11 +1,11 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.Node;
 import com.fishercoder.solutions.secondthousand._1490;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1490Test {
     private _1490.Solution1 solution1;
@@ -26,5 +26,4 @@ public class _1490Test {
         child.children.add(rightGrandChild);
         assertEquals(root, solution1.cloneTree(root));
     }
-
 }

@@ -7,12 +7,14 @@ public class _2316 {
     public static class Solution1 {
         public long countPairs(int n, int[][] edges) {
             UnionFind uf = new UnionFind(n);
-            //this union is a first pass which doesn't union all nodes completely, if you set a debug point, you can clearly see that
+            // this union is a first pass which doesn't union all nodes completely, if you set a
+            // debug point, you can clearly see that
             for (int[] edge : edges) {
                 uf.union(edge[0], edge[1]);
             }
             Map<Integer, Integer> countMap = new HashMap<>();
-            //run i = 0 through to n - 1 again, and call find(), this will completely union all connected nodes
+            // run i = 0 through to n - 1 again, and call find(), this will completely union all
+            // connected nodes
             for (int i = 0; i < n; i++) {
                 int id = uf.find(i);
                 countMap.put(id, countMap.getOrDefault(id, 0) + 1);

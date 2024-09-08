@@ -5,7 +5,7 @@ import com.fishercoder.common.classes.TreeNode;
 public class _654 {
 
     public static class Solution1 {
-        /**
+        /*
          * Completely my original solution:
          * <p>
          * As the problem states, I always broke the array into two halves and make notes
@@ -26,7 +26,8 @@ public class _654 {
             return constructMaxTree(root, maxIndex, nums, 0, nums.length - 1);
         }
 
-        private TreeNode constructMaxTree(TreeNode root, int rootIndex, int[] nums, int start, int end) {
+        private TreeNode constructMaxTree(
+                TreeNode root, int rootIndex, int[] nums, int start, int end) {
             if (rootIndex > start) {
                 int max = Integer.MIN_VALUE;
                 int maxIndex = -1;
@@ -36,7 +37,8 @@ public class _654 {
                         maxIndex = i;
                     }
                 }
-                root.left = constructMaxTree(new TreeNode(max), maxIndex, nums, start, rootIndex - 1);
+                root.left =
+                        constructMaxTree(new TreeNode(max), maxIndex, nums, start, rootIndex - 1);
             }
             if (rootIndex < end) {
                 int max = Integer.MIN_VALUE;
@@ -47,14 +49,15 @@ public class _654 {
                         maxIndex = i;
                     }
                 }
-                root.right = constructMaxTree(new TreeNode(max), maxIndex, nums, rootIndex + 1, end);
+                root.right =
+                        constructMaxTree(new TreeNode(max), maxIndex, nums, rootIndex + 1, end);
             }
             return root;
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Completely my original solution as well, but more concise.
          */
         public TreeNode constructMaximumBinaryTree(int[] nums) {
@@ -84,7 +87,7 @@ public class _654 {
                     max = nums[i];
                 }
             }
-            return new int[]{max, maxIndex};
+            return new int[] {max, maxIndex};
         }
     }
 }

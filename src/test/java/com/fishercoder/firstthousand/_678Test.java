@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._678;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _678Test {
     private _678.Solution1 solution1;
@@ -41,9 +41,18 @@ public class _678Test {
 
     @Test
     public void test4() {
-        assertEquals(false, solution1.checkValidString("(((()))())))*))())()(**(((())(()(*()((((())))*())(())*(*(()(*)))()*())**((()(()))())(*(*))*))())"));
-        assertEquals(false, solution2.checkValidString("(((()))())))*))())()(**(((())(()(*()((((())))*())(())*(*(()(*)))()*())**((()(()))())(*(*))*))())"));
-        assertEquals(false, solution3.checkValidString("(((()))())))*))())()(**(((())(()(*()((((())))*())(())*(*(()(*)))()*())**((()(()))())(*(*))*))())"));
+        assertEquals(
+                false,
+                solution1.checkValidString(
+                        "(((()))())))*))())()(**(((())(()(*()((((())))*())(())*(*(()(*)))()*())**((()(()))())(*(*))*))())"));
+        assertEquals(
+                false,
+                solution2.checkValidString(
+                        "(((()))())))*))())()(**(((())(()(*()((((())))*())(())*(*(()(*)))()*())**((()(()))())(*(*))*))())"));
+        assertEquals(
+                false,
+                solution3.checkValidString(
+                        "(((()))())))*))())()(**(((())(()(*()((((())))*())(())*(*(()(*)))()*())**((()(()))())(*(*))*))())"));
     }
 
     @Test
@@ -52,5 +61,4 @@ public class _678Test {
         assertEquals(true, solution2.checkValidString("(((******)))"));
         assertEquals(true, solution3.checkValidString("(((******)))"));
     }
-
 }

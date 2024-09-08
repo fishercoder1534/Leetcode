@@ -2,7 +2,7 @@ package com.fishercoder.solutions.thirdthousand;
 
 public class _2017 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/uwi/
          */
         public long gridGame(int[][] grid) {

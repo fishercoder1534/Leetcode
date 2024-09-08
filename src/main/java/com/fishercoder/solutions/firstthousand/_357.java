@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _357 {
 
     public static class Solution1 {
-        /**
+        /*
          * reference: https://discuss.leetcode.com/topic/47983/java-dp-o-1-solution Following the hint.
          * Let f(n) = count of number with unique digits of length n. f(1) = 10. (0, 1, 2, 3, ...., 9)
          * f(2) = 9 * 9. Because for each number i from 1, ..., 9, we can pick j to form a 2-digit
@@ -31,5 +31,4 @@ public class _357 {
             return res;
         }
     }
-
 }

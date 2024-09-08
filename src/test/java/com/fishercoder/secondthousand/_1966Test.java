@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1966;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1966Test {
     private _1966.Solution1 solution1;
@@ -22,7 +22,7 @@ public class _1966Test {
 
     @Test
     public void test1() {
-        nums = new int[]{7};
+        nums = new int[] {7};
         expected = 1;
         assertEquals(expected, solution1.binarySearchableNumbers(nums));
         assertEquals(expected, solution2.binarySearchableNumbers(nums));
@@ -31,7 +31,7 @@ public class _1966Test {
 
     @Test
     public void test2() {
-        nums = new int[]{-1, 5, 2};
+        nums = new int[] {-1, 5, 2};
         expected = 1;
         assertEquals(expected, solution1.binarySearchableNumbers(nums));
         assertEquals(expected, solution2.binarySearchableNumbers(nums));
@@ -40,8 +40,8 @@ public class _1966Test {
 
     @Test
     public void test3() {
-        /**This is to answer the follow-up question, what if duplicates are allowed in the input*/
-        nums = new int[]{-1, -1, 5, 2};
+        /** This is to answer the follow-up question, what if duplicates are allowed in the input */
+        nums = new int[] {-1, -1, 5, 2};
         expected = 2;
         assertEquals(expected, solution1.binarySearchableNumbers(nums));
         assertEquals(expected, solution2.binarySearchableNumbers(nums));
@@ -50,8 +50,8 @@ public class _1966Test {
 
     @Test
     public void test4() {
-        /**This is to answer the follow-up question, what if duplicates are allowed in the input*/
-        nums = new int[]{-1, -1, 5, 2, 2, 5};
+        /** This is to answer the follow-up question, what if duplicates are allowed in the input */
+        nums = new int[] {-1, -1, 5, 2, 2, 5};
         expected = 3;
         assertEquals(expected, solution1.binarySearchableNumbers(nums));
         assertEquals(expected, solution2.binarySearchableNumbers(nums));

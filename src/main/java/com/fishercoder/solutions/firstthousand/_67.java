@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _67 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/13698/short-ac-solution-in-java-with-explanation
          * 1. use StringBuilder.reverse() function! Nice!
          * 2. if a numeric number is represented/stored in String, how to get its value: use Character.getNumericValue(s.charAt(i))

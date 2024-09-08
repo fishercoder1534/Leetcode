@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _691 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/106273/c-java-python-dp-memoization-with-optimization-29-ms-c/2
          */
         public int minStickers(String[] stickers, String target) {

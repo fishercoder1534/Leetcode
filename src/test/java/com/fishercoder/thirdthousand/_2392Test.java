@@ -15,14 +15,8 @@ public class _2392Test {
 
     @Test
     public void test1() {
-        CommonUtils.print2DIntArray(solution1.buildMatrix(
-                3,
-                new int[][]{
-                        {1, 2}, {3, 2}
-                },
-                new int[][]{
-                        {2, 1}, {3, 2}
-                }));
+        CommonUtils.print2DIntArray(
+                solution1.buildMatrix(
+                        3, new int[][] {{1, 2}, {3, 2}}, new int[][] {{2, 1}, {3, 2}}));
     }
-
 }

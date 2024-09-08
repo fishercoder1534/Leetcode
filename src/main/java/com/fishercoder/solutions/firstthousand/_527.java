@@ -7,7 +7,7 @@ import java.util.List;
 public class _527 {
 
     public static class Solution1 {
-        /**
+        /*
          * reference: https://discuss.leetcode.com/topic/82613/really-simple-and-straightforward-java-solution
          */
         public List<String> wordsAbbreviation(List<String> dict) {
@@ -49,5 +49,4 @@ public class _527 {
             return stringBuilder.toString();
         }
     }
-
 }

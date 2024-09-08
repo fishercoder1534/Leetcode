@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 

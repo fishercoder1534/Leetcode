@@ -31,7 +31,7 @@ public class _970 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/powerful-integers/discuss/214212/JavaC%2B%2BPython-Brute-Force
          */
         public List<Integer> powerfulIntegers(int x, int y, int bound) {

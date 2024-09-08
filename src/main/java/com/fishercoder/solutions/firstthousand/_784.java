@@ -44,7 +44,7 @@ public class _784 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 10/11/2021.
          */
         public List<String> letterCasePermutation(String s) {

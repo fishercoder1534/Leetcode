@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _393 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/58338/bit-manipulation-java-6ms/4
          */
         public boolean validUtf8(int[] data) {
@@ -30,5 +30,4 @@ public class _393 {
             return count == 0;
         }
     }
-
 }

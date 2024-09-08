@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -43,7 +42,7 @@ public class _173 {
 
     public static class Solution2 {
         public static class BSTIterator {
-            /**
+            /*
              * This is a super cool/clever idea: use a stack to store all the current left nodes of the BST, when pop(), we
              * push all its right nodes into the stack if there are any.
              * This way, we use only O(h) memory for this iterator, this is a huge saving when the tree is huge
@@ -77,7 +76,7 @@ public class _173 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/binary-search-tree-iterator/discuss/52647/Nice-Comparison-(and-short-Solution
          */
         public static class BSTIterator {

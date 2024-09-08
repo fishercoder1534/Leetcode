@@ -7,9 +7,11 @@ public class _804 {
     public static class Solution1 {
         public int uniqueMorseRepresentations(String[] words) {
             String[] morseCodes =
-                    new String[]{".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---",
-                            "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-",
-                            ".--", "-..-", "-.--", "--.."};
+                    new String[] {
+                        ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---",
+                        "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-",
+                        "...-", ".--", "-..-", "-.--", "--.."
+                    };
             Set<String> concatenation = new HashSet<>();
             StringBuilder sb = new StringBuilder();
             for (String word : words) {

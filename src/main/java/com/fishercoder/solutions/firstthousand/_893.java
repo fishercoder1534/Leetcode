@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class _893 {
 
     public static class Solution1 {
-        /**
+        /*
          * my original solution, a bit lengthy:
          * generate a unique signaure as key for each equivelant group and sum them up
          */
@@ -29,12 +29,15 @@ public class _893 {
             }
             Arrays.sort(oddIndexed);
             Arrays.sort(evenIndexed);
-            return new StringBuffer().append(new String(evenIndexed)).append(new String(oddIndexed)).toString();
+            return new StringBuffer()
+                    .append(new String(evenIndexed))
+                    .append(new String(oddIndexed))
+                    .toString();
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * more concise solution: https://leetcode.com/problems/groups-of-special-equivalent-strings/discuss/163413/Java-Concise-Set-Solution
          * but somehow a bit slower than mine: 12 ms vs 7ms
          * I guess due to the problem constraint and this: "1 <= A[i].length <= 20" to have made this problem simpler

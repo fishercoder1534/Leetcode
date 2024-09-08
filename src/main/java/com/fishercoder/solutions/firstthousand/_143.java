@@ -36,7 +36,7 @@ public class _143 {
                 cur = post;
                 post = temp;
             }
-            head2 = cur;// the new head of the reversed sublist
+            head2 = cur; // the new head of the reversed sublist
 
             // merge the two sublists as required
             ListNode p = head1;
@@ -53,7 +53,7 @@ public class _143 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 10/25/2021, although not super efficient in time complexity,
          * since I keep going through the rest of the list to the end at each iteration, it's accepted on LeetCode.
          */

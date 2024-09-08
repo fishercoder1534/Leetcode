@@ -2,7 +2,6 @@ package com.fishercoder.common.utils;
 
 import com.fishercoder.common.classes.Interval;
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
@@ -13,7 +12,7 @@ public class CommonUtils {
     private static final int DEFAULT_TREE_SIZE = 10;
     private static final int DEFAULT_UPPER_BOUND = 100;
 
-    //How to make a method generic: declare <T> in its method signature
+    // How to make a method generic: declare <T> in its method signature
     public static <T> void printArray_generic_type(T[] nums) {
         for (T i : nums) {
             System.out.print(i + ", ");
@@ -22,14 +21,19 @@ public class CommonUtils {
     }
 
     public static void main(String... strings) {
-        Integer[] nums = new Integer[]{1, 2, 3, 4, 5};
+        Integer[] nums = new Integer[] {1, 2, 3, 4, 5};
         printArray_generic_type(nums);
-        String input1 = "[\"zDkA\",\"GfAj\",\"lt\"],[\"GfAj\",\"rtupD\",\"og\",\"l\"],[\"rtupD\",\"IT\",\"jGcew\",\"ZwFqF\"],[\"og\",\"yVobt\",\"EjA\",\"piUyQ\"],[\"IT\",\"XFlc\",\"W\",\"rB\"],[\"l\",\"GwQg\",\"shco\",\"Dub\",\"KwgZq\"],[\"oXMG\",\"uqe\"],[\"sNyV\",\"WbrP\"]";
+        String input1 =
+                "[\"zDkA\",\"GfAj\",\"lt\"],[\"GfAj\",\"rtupD\",\"og\",\"l\"],[\"rtupD\",\"IT\",\"jGcew\",\"ZwFqF\"],[\"og\",\"yVobt\",\"EjA\",\"piUyQ\"],[\"IT\",\"XFlc\",\"W\",\"rB\"],[\"l\",\"GwQg\",\"shco\",\"Dub\",\"KwgZq\"],[\"oXMG\",\"uqe\"],[\"sNyV\",\"WbrP\"]";
         String input2 = "[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]";
         CommonUtils.printListList(convertLeetCode2DStringArrayInputIntoJavaArray(input1));
         CommonUtils.printListList(convertLeetCode2DStringArrayInputIntoJavaArray(input2));
-        CommonUtils.print(convertLeetCode1DStringArrayInputIntoJavaArray("[\"abcsi\",\"abyzjgj\",\"advz\",\"ag\",\"agkgdkob\",\"agpr\",\"ail\"]"));
-        CommonUtils.print2DIntArray(convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[448,931,123,345],[889],[214,962],[576,746,897]"));
+        CommonUtils.print(
+                convertLeetCode1DStringArrayInputIntoJavaArray(
+                        "[\"abcsi\",\"abyzjgj\",\"advz\",\"ag\",\"agkgdkob\",\"agpr\",\"ail\"]"));
+        CommonUtils.print2DIntArray(
+                convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                        "[448,931,123,345],[889],[214,962],[576,746,897]"));
     }
 
     public static void printArray(boolean[] booleans) {
@@ -98,8 +102,8 @@ public class CommonUtils {
 
     // overloaded method to take no argument
     public static List<Integer> randomIntArrayGenerator() {
-        return CommonUtils.randomIntArrayGenerator(CommonUtils.DEFAULT_TREE_SIZE,
-                DEFAULT_UPPER_BOUND);
+        return CommonUtils.randomIntArrayGenerator(
+                CommonUtils.DEFAULT_TREE_SIZE, DEFAULT_UPPER_BOUND);
     }
 
     // this one has two other overloaded methods as above
@@ -126,7 +130,8 @@ public class CommonUtils {
     }
 
     // @Notes(context =
-    // "I'm assuing only classes in this PACKAGE will call the following two methods, so just leave the modifier as default, i.e. no public, private, or protected.")
+    // "I'm assuing only classes in this PACKAGE will call the following two methods, so just leave
+    // the modifier as default, i.e. no public, private, or protected.")
     public static void printWhitespaces(int count) {
         for (int i = 0; i < count; i++) {
             System.out.print(" ");
@@ -143,7 +148,7 @@ public class CommonUtils {
         return true;
     }
 
-    /**
+    /*
      * If you want to print the reversed list out, you need to return the reversed list's head,
      * which was the end node of the original node. using the following function.
      */
@@ -228,7 +233,6 @@ public class CommonUtils {
             System.out.println();
         }
         System.out.println("----------------------------------------------------");
-
     }
 
     public static <T> void printListList(List<List<T>> res) {
@@ -268,11 +272,11 @@ public class CommonUtils {
     }
 
     public static char[][] convertLeetCodeRegular2DCharArrayInputIntoJavaArray(String input) {
-/**LeetCode 2-d char array usually comes in like this:
- * ["#"," ","#"],[" "," ","#"],["#","c"," "] which is wrapped in double quotes instead of single quotes which makes it not usable in Java code.
- * This method helps with the conversion.*/
+        /*LeetCode 2-d char array usually comes in like this:
+         * ["#"," ","#"],[" "," ","#"],["#","c"," "] which is wrapped in double quotes instead of single quotes which makes it not usable in Java code.
+         * This method helps with the conversion.*/
         String[] arrays = input.split("],\\[");
-//        CommonUtils.printArray_generic_type(arrays);
+        //        CommonUtils.printArray_generic_type(arrays);
         int m = arrays.length;
         int n = arrays[1].split(",").length;
         char[][] ans = new char[m][n];
@@ -300,7 +304,7 @@ public class CommonUtils {
     }
 
     public static int[][] convertLeetCodeRegularRectangleArrayInputIntoJavaArray(String input) {
-        /**
+        /*
          * LeetCode 2-d array input usually comes like this: it's a REGULAR rectangle
          * [[448,931],[234,889],[214,962],[576,746]]
          * The expected input for this method is: "[448,931],[234,889],[214,962],[576,746]"
@@ -308,7 +312,7 @@ public class CommonUtils {
          * The output of this method will be a standard Java 2-d array.
          * */
         String[] arrays = input.split("],\\[");
-//        CommonUtils.printArray_generic_type(arrays);
+        //        CommonUtils.printArray_generic_type(arrays);
         int size = arrays[1].split(",").length;
         int[][] output = new int[arrays.length][size];
         for (int i = 0; i < arrays.length; i++) {
@@ -331,12 +335,12 @@ public class CommonUtils {
                 }
             }
         }
-//        CommonUtils.print2DIntArray(output);
+        //        CommonUtils.print2DIntArray(output);
         return output;
     }
 
     public static int[][] convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(String input) {
-        /**
+        /*
          * LeetCode 2-d array input usually comes like this: each row could have different length
          * [[448,931,123,345],[889],[214,962],[576,746,897]]
          * The expected input for this method is: "[448,931,123,345],[889],[214,962],[576,746,897]"
@@ -388,7 +392,7 @@ public class CommonUtils {
     }
 
     public static List<List<String>> convertLeetCode2DStringArrayInputIntoJavaArray(String input) {
-        /**
+        /*
          * How to copy LeetCode 2-d String array into this method:
          * 1. remove the beginning and ending quotes;
          * 2. put double quotes into this method parameter;
@@ -423,7 +427,7 @@ public class CommonUtils {
     }
 
     public static List<String> convertLeetCode1DStringArrayInputIntoJavaArray(String input) {
-        /**
+        /*
          * LeetCode 2-d array input usually comes like this: each row could have different length
          * ["A","B","C"]
          * The expected input for this method is: "[\"A\",\"B\",\"C\"]"

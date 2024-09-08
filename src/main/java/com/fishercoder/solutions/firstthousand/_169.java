@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _169 {
     public static class Solution1 {
-        /**
+        /*
          * Moore Voting Algorithm
          * How to understand this:
          * 1. For a number to qualify as a majority element, it needs to occur more than 1/2 times, which
@@ -28,21 +28,25 @@ public class _169 {
     }
 
     public static class Solution2 {
-        //bit manipulation
+        // bit manipulation
         public int majorityElement(int[] nums) {
-            int[] bit = new int[32];//because an integer is 32 bits, so we use an array of 32 long
+            int[] bit = new int[32]; // because an integer is 32 bits, so we use an array of 32 long
             for (int num : nums) {
                 for (int i = 0; i < 32; i++) {
                     if ((num >> (31 - i) & 1) == 1) {
-                        bit[i]++;//this is to compute each number's ones frequency
+                        bit[i]++; // this is to compute each number's ones frequency
                     }
                 }
             }
             int res = 0;
-            //this below for loop is to construct the majority element: since every bit of this element would have appeared more than n/2 times
+            // this below for loop is to construct the majority element: since every bit of this
+            // element would have appeared more than n/2 times
             for (int i = 0; i < 32; i++) {
-                bit[i] = bit[i] > nums.length / 2 ? 1
-                        : 0;//we get rid of those that bits that are not part of the majority number
+                bit[i] =
+                        bit[i] > nums.length / 2
+                                ? 1
+                                : 0; // we get rid of those that bits that are not part of the
+                // majority number
                 res += bit[i] * (1 << (31 - i));
             }
             return res;
@@ -50,7 +54,7 @@ public class _169 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * I'm glad to have come up with this idea myself on 10/12/2021.
          */
         public int majorityElement(int[] nums) {

@@ -1,15 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._476;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 1/14/17.
- */
+/** Created by fishercoder on 1/14/17. */
 public class _476Test {
     private _476.Solution1 solution1;
     private _476.Solution2 solution2;
@@ -38,7 +35,6 @@ public class _476Test {
         actual = solution1.findComplement(input);
         actual = solution2.findComplement(input);
         assertEquals(expected, actual);
-
     }
 
     @Test
@@ -49,6 +45,5 @@ public class _476Test {
         actual = solution1.findComplement(input);
         actual = solution2.findComplement(input);
         assertEquals(expected, actual);
-
     }
 }

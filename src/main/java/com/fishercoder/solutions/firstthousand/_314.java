@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -21,7 +20,7 @@ public class _314 {
             TreeMap<Integer, List<Integer>> map = new TreeMap();
             bfsQ.offer(root);
             indexQ.offer(
-                    0);//we set the root as index 0, left will be negative, right will be positive
+                    0); // we set the root as index 0, left will be negative, right will be positive
             while (!bfsQ.isEmpty()) {
                 int qSize = bfsQ.size();
                 for (int i = 0; i < qSize; i++) {
@@ -62,7 +61,7 @@ public class _314 {
             HashMap<Integer, List<Integer>> map = new HashMap();
             bfsQ.offer(root);
             indexQ.offer(
-                    0);//we set the root as index 0, left will be negative, right will be positive
+                    0); // we set the root as index 0, left will be negative, right will be positive
             int min = 0;
             int max = 0;
             while (!bfsQ.isEmpty()) {
@@ -108,14 +107,19 @@ public class _314 {
                 int size = queue.size();
                 for (int i = 0; i < size; i++) {
                     NodeWithIndex nodeWithIndex = queue.poll();
-                    List<Integer> thisList = map.getOrDefault(nodeWithIndex.index, new ArrayList<>());
+                    List<Integer> thisList =
+                            map.getOrDefault(nodeWithIndex.index, new ArrayList<>());
                     thisList.add(nodeWithIndex.node.val);
                     map.put(nodeWithIndex.index, thisList);
                     if (nodeWithIndex.node.left != null) {
-                        queue.offer(new NodeWithIndex(nodeWithIndex.node.left, nodeWithIndex.index - 1));
+                        queue.offer(
+                                new NodeWithIndex(
+                                        nodeWithIndex.node.left, nodeWithIndex.index - 1));
                     }
                     if (nodeWithIndex.node.right != null) {
-                        queue.offer(new NodeWithIndex(nodeWithIndex.node.right, nodeWithIndex.index + 1));
+                        queue.offer(
+                                new NodeWithIndex(
+                                        nodeWithIndex.node.right, nodeWithIndex.index + 1));
                     }
                 }
             }
@@ -136,5 +140,4 @@ public class _314 {
             }
         }
     }
-
 }

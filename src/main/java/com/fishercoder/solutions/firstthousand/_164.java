@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 import java.util.Arrays;
 
-/**
+/*
  * 164. Maximum Gap
  *
  * Given an unsorted array, find the maximum difference between the successive elements in its sorted form.
@@ -24,31 +24,31 @@ import java.util.Arrays;
  *  Try to solve it in linear time/space.
  */
 public class _164 {
-  public static class Solution1 {
-    /** brute force solution */
-    public int maximumGap(int[] nums) {
-      if (nums.length < 2) {
-        return 0;
-      }
+    public static class Solution1 {
+        /* brute force solution */
+        public int maximumGap(int[] nums) {
+            if (nums.length < 2) {
+                return 0;
+            }
 
-      Arrays.sort(nums);
-      int max = Integer.MIN_VALUE;
-      for (int i = 1; i < nums.length; ) {
-        while (i < nums.length && nums[i] == nums[i - 1]) {
-          i++;
+            Arrays.sort(nums);
+            int max = Integer.MIN_VALUE;
+            for (int i = 1; i < nums.length; ) {
+                while (i < nums.length && nums[i] == nums[i - 1]) {
+                    i++;
+                }
+                if (i == nums.length) {
+                    i--;
+                    max = (nums[i] - nums[i - 1] > max) ? nums[i] - nums[i - 1] : max;
+                    break;
+                } else {
+                    max = (nums[i] - nums[i - 1] > max) ? nums[i] - nums[i - 1] : max;
+                }
+                if (nums[i] != nums[i - 1]) {
+                    i++;
+                }
+            }
+            return max;
         }
-        if (i == nums.length) {
-          i--;
-          max = (nums[i] - nums[i - 1] > max) ? nums[i] - nums[i - 1] : max;
-          break;
-        } else {
-          max = (nums[i] - nums[i - 1] > max) ? nums[i] - nums[i - 1] : max;
-        }
-        if (nums[i] != nums[i - 1]) {
-          i++;
-        }
-      }
-      return max;
     }
-  }
 }

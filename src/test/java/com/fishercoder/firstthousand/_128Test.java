@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._128;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _128Test {
     private _128.Solution3 solution3;
@@ -19,7 +19,7 @@ public class _128Test {
 
     @Test
     public void test1() {
-        nums = new int[]{100, 4, 200, 1, 3, 2};
+        nums = new int[] {100, 4, 200, 1, 3, 2};
         assertEquals(4, solution3.longestConsecutive(nums));
         assertEquals(4, solution4.longestConsecutive(nums));
     }

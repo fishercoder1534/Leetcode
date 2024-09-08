@@ -1,7 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
 public class _9 {
-    /**credit: https://discuss.leetcode.com/topic/8090/9-line-accepted-java-code-without-the-need-of-handling-overflow
+    /*credit: https://discuss.leetcode.com/topic/8090/9-line-accepted-java-code-without-the-need-of-handling-overflow
      * reversing only half and then compare if they're equal.*/
     public static class Solution1 {
         public boolean isPalindrome(int x) {
@@ -22,5 +22,4 @@ public class _9 {
             return (x == reversed || x == reversed / 10);
         }
     }
-
 }

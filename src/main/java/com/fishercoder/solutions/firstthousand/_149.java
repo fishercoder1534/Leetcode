@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _149 {
 
-    /**
+    /*
      * credits: https://leetcode.com/problems/max-points-on-a-line/discuss/328269/A-Java-solution-with-my-understanding
      */
     public static class Solution1 {

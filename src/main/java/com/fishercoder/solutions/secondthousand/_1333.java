@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
+/*
  * 1333. Filter Restaurants by Vegan-Friendly, Price and Distance
  *
  * Given the array restaurants where  restaurants[i] = [idi, ratingi, veganFriendlyi, pricei, distancei].
@@ -49,11 +49,13 @@ import java.util.stream.Collectors;
  * */
 public class _1333 {
     public static class Solution1 {
-        public List<Integer> filterRestaurants(int[][] restaurants, int veganFriendly, int maxPrice, int maxDistance) {
+        public List<Integer> filterRestaurants(
+                int[][] restaurants, int veganFriendly, int maxPrice, int maxDistance) {
             List<int[]> list = new ArrayList<>();
             for (int[] restaurant : restaurants) {
                 if (((veganFriendly == 1 && restaurant[2] == 1) || veganFriendly == 0)
-                        && restaurant[3] <= maxPrice && restaurant[4] <= maxDistance) {
+                        && restaurant[3] <= maxPrice
+                        && restaurant[4] <= maxDistance) {
                     list.add(restaurant);
                 }
             }

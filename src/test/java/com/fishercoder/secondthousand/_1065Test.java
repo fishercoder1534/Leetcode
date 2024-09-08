@@ -15,22 +15,46 @@ public class _1065Test {
 
     @Test
     public void test1() {
-        CommonUtils.print2DIntArray(solution1.indexPairs("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", new String[]{"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}));
+        CommonUtils.print2DIntArray(
+                solution1.indexPairs(
+                        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        new String[] {
+                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }));
     }
 
     @Test
     public void test2() {
-        CommonUtils.print2DIntArray(solution1.indexPairs("thestoryofleetcodeandme", new String[]{"story", "fleet", "leetcode"}));
+        CommonUtils.print2DIntArray(
+                solution1.indexPairs(
+                        "thestoryofleetcodeandme", new String[] {"story", "fleet", "leetcode"}));
     }
 
     @Test
     public void test3() {
-        CommonUtils.print2DIntArray(solution1.indexPairs("ababa", new String[]{"aba", "ab"}));
+        CommonUtils.print2DIntArray(solution1.indexPairs("ababa", new String[] {"aba", "ab"}));
     }
 
     @Test
     public void test4() {
-        CommonUtils.print2DIntArray(solution1.indexPairs("aabaabbaabbaababaaaaaababaabaabaabaababbaabbbbaabbaaababbbbaabbabbabbababbabaabaaaabaabbbb", new String[]{"aabaaabbaba", "bbabbbaaabaaaab", "ababaabaababb", "bbbaaabababbba", "baaaabbaa"}));
+        CommonUtils.print2DIntArray(
+                solution1.indexPairs(
+                        "aabaabbaabbaababaaaaaababaabaabaabaababbaabbbbaabbaaababbbbaabbabbabbababbabaabaaaabaabbbb",
+                        new String[] {
+                            "aabaaabbaba",
+                            "bbabbbaaabaaaab",
+                            "ababaabaababb",
+                            "bbbaaabababbba",
+                            "baaaabbaa"
+                        }));
     }
-
 }

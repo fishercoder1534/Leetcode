@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _1018 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/binary-prefix-divisible-by-5/discuss/266051/Java-beats-100
          */
         public List<Boolean> prefixesDivBy5(int[] A) {

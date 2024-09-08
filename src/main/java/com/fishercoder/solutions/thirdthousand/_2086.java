@@ -35,7 +35,9 @@ public class _2086 {
                             minBuckets++;
                             buckets[i - 1] = 1;
                         }
-                    } else if (i + 1 >= street.length() && i - 1 >= 0 && street.charAt(i - 1) == 'H') {
+                    } else if (i + 1 >= street.length()
+                            && i - 1 >= 0
+                            && street.charAt(i - 1) == 'H') {
                         return -1;
                     }
                 }

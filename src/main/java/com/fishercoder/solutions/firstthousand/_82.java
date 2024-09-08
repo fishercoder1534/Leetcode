@@ -22,5 +22,4 @@ public class _82 {
             return pre.next;
         }
     }
-
 }

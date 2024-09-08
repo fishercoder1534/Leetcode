@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2063;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2063Test {
     private _2063.Solution1 solution1;
@@ -22,5 +22,4 @@ public class _2063Test {
         expected = 6L;
         assertEquals(expected, solution1.countVowels(word));
     }
-
 }

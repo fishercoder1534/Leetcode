@@ -5,9 +5,10 @@ import java.util.List;
 
 public class _386 {
     public static class Solution1 {
-        //Radix sort doesn't apply here! Don't confuse yourself!
+        // Radix sort doesn't apply here! Don't confuse yourself!
 
-        //rewrote their solution from Python to Java:https://discuss.leetcode.com/topic/54986/python-memory-limit-exceeded-for-problem-386/17
+        // rewrote their solution from Python to
+        // Java:https://discuss.leetcode.com/topic/54986/python-memory-limit-exceeded-for-problem-386/17
         public List<Integer> lexicalOrder(int n) {
             List<Integer> result = new ArrayList();
             int i = 1;

@@ -3,7 +3,7 @@ package com.fishercoder.solutions.secondthousand;
 import java.util.Arrays;
 
 public class _1051 {
-    
+
     public static class Solution1 {
         public int heightChecker(int[] heights) {
             int[] originals = Arrays.copyOf(heights, heights.length);

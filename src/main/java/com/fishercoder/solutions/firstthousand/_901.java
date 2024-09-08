@@ -16,7 +16,7 @@ public class _901 {
                 while (!stack.isEmpty() && stack.peek()[0] <= price) {
                     result += stack.pop()[1];
                 }
-                stack.push(new int[]{price, result});
+                stack.push(new int[] {price, result});
                 return result;
             }
         }

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _70 {
     public static class Solution1 {
-        /**
+        /*
          * O(n) time
          * O(n) space
          */
@@ -21,7 +21,7 @@ public class _70 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * O(n) time
          * O(1) space
          */

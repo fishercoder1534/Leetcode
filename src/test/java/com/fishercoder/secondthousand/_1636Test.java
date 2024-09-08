@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.secondthousand._1636;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1636Test {
     private _1636.Solution1 solution1;
@@ -19,15 +19,27 @@ public class _1636Test {
 
     @Test
     public void test1() {
-        nums = new int[]{1, 1, 2, 2, 2, 3};
-        assertArrayEquals(new int[]{3, 1, 1, 2, 2, 2}, solution2.frequencySort(nums));
-        assertArrayEquals(new int[]{3, 1, 1, 2, 2, 2}, solution1.frequencySort(nums));
+        nums = new int[] {1, 1, 2, 2, 2, 3};
+        assertArrayEquals(new int[] {3, 1, 1, 2, 2, 2}, solution2.frequencySort(nums));
+        assertArrayEquals(new int[] {3, 1, 1, 2, 2, 2}, solution1.frequencySort(nums));
     }
 
     @Test
     public void test2() {
-        nums = new int[]{-53, -53, 52, 52, 52, 52, -53, -53, 52, -53, 52, 52, 52, -53, 52, 52, -53, 52, -53, 52, -53, 52, 52, 52, 52, 52, 52, 52, 52, 52, -53, 52, -53, 52, -53, 52, 52, 52, -53, -53, 52, -53, 52, 52, 52, 52, -53, -53, -53, -53, -53, 52, 52, -53, 52, -53, 52, 52, 52};
-        assertArrayEquals(new int[]{-53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52}, solution1.frequencySort(nums));
+        nums =
+                new int[] {
+                    -53, -53, 52, 52, 52, 52, -53, -53, 52, -53, 52, 52, 52, -53, 52, 52, -53, 52,
+                    -53, 52, -53, 52, 52, 52, 52, 52, 52, 52, 52, 52, -53, 52, -53, 52, -53, 52, 52,
+                    52, -53, -53, 52, -53, 52, 52, 52, 52, -53, -53, -53, -53, -53, 52, 52, -53, 52,
+                    -53, 52, 52, 52
+                };
+        assertArrayEquals(
+                new int[] {
+                    -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53, -53,
+                    -53, -53, -53, -53, -53, -53, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52,
+                    52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52, 52,
+                    52, 52, 52, 52, 52
+                },
+                solution1.frequencySort(nums));
     }
-
 }

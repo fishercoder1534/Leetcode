@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _473 {
 
     public static class Solution1 {
-        /**
+        /*
          * Partially inspired by: https://discuss.leetcode.com/topic/72107/java-dfs-solution-with-explanation/2
          * One hidden requirement: you'll have to use up all of the given matchsticks, nothing could be left behind.
          */
@@ -58,5 +58,4 @@ public class _473 {
             }
         }
     }
-
 }

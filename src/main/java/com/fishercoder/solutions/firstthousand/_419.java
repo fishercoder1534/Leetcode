@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _419 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/62970/simple-java-solution,
          * <p>
          * This solution does NOT modify original input.
@@ -21,13 +21,13 @@ public class _419 {
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     if (board[i][j] == '.') {
-                        continue;//if it can pass this line, then board[i][j] must be 'X'
+                        continue; // if it can pass this line, then board[i][j] must be 'X'
                     }
                     if (j > 0 && board[i][j - 1] == 'X') {
-                        continue;//then we check if its left is 'X'
+                        continue; // then we check if its left is 'X'
                     }
                     if (i > 0 && board[i - 1][j] == 'X') {
-                        continue;//also check if its top is 'X'
+                        continue; // also check if its top is 'X'
                     }
                     count++;
                 }
@@ -37,7 +37,7 @@ public class _419 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My original solution, actually modified the input. I just undo it at the end.
          */
         public int countBattleships(char[][] board) {
@@ -79,5 +79,4 @@ public class _419 {
             dfs(board, x, y - 1, m, n);
         }
     }
-
 }

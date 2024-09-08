@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _1352 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/product-of-the-last-k-numbers/discuss/510260/JavaC%2B%2BPython-Prefix-Product
          */
         public static class ProductOfNumbers {

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _430 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/solution/
          */
         public Node flatten(Node head) {

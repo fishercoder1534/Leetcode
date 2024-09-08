@@ -35,7 +35,8 @@ public class _2325 {
     public static class Solution2 {
 
         public String decodeMessage(String key, String message) {
-            // put first occurrence of each char of key in hashmap, where <k,v> k = char in key, v = incremental a - z alphabets
+            // put first occurrence of each char of key in hashmap, where <k,v> k = char in key, v =
+            // incremental a - z alphabets
 
             Map<Character, Character> bucket = new HashMap<>();
             char ch = 'a';

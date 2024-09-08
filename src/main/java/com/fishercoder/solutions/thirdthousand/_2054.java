@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _2054 {
     public static class Solution1 {
         public int maxTwoEvents(int[][] events) {
-            /**Credit: https://leetcode.com/nevergiveup/ on https://leetcode.com/contest/biweekly-contest-64/ranking/*/
+            /*Credit: https://leetcode.com/nevergiveup/ on https://leetcode.com/contest/biweekly-contest-64/ranking/*/
             Arrays.sort(events, (a, b) -> a[0] - b[0]);
             int[] max = new int[events.length];
             for (int i = events.length - 1; i >= 0; i--) {

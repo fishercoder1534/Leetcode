@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _877 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/stone-game/discuss/154660/Java-This-is-minimax-%2B-dp-(fully-detailed-explanation-%2B-generalization-%2B-easy-understand-code)
          * <p>
          * Suppose the ID for Alex is 1, that for Lee is 0
@@ -31,9 +31,15 @@ public class _877 {
             }
             int next = Math.abs(identifier - 1);
             if (identifier == 1) {
-                dp[left][right][identifier] = Math.max(piles[left] + recursion(dp, left + 1, right, next, piles), piles[right] + recursion(dp, left, right - 1, next, piles));
+                dp[left][right][identifier] =
+                        Math.max(
+                                piles[left] + recursion(dp, left + 1, right, next, piles),
+                                piles[right] + recursion(dp, left, right - 1, next, piles));
             } else {
-                dp[left][right][identifier] = Math.min(-piles[left] + recursion(dp, left + 1, right, next, piles), -piles[right] + recursion(dp, left, right - 1, next, piles));
+                dp[left][right][identifier] =
+                        Math.min(
+                                -piles[left] + recursion(dp, left + 1, right, next, piles),
+                                -piles[right] + recursion(dp, left, right - 1, next, piles));
             }
             return dp[left][right][identifier];
         }

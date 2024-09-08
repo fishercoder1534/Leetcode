@@ -4,7 +4,7 @@ public class _2024 {
     public static class Solution1 {
         public int maxConsecutiveAnswers(String answerKey, int k) {
             int max;
-            //change T to F and count number of Fs
+            // change T to F and count number of Fs
             int right = 0;
             int originalK = k;
             while (k > 0 && right < answerKey.length()) {
@@ -28,7 +28,7 @@ public class _2024 {
                 }
             }
 
-            //change F to T
+            // change F to T
             right = 0;
             k = originalK;
             while (k > 0 && right < answerKey.length()) {

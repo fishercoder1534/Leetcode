@@ -15,7 +15,7 @@ public class _157 {
         }
 
         private int read4(char[] buffer) {
-            //this is a dummy method to make it compile
+            // this is a dummy method to make it compile
             return 0;
         }
     }

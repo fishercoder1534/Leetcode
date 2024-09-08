@@ -1,12 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._442;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _442Test {
     private _442.Solution1 solution1;
@@ -20,8 +19,9 @@ public class _442Test {
 
     @Test
     public void test1() {
-        assertEquals(Arrays.asList(2, 3), solution1.findDuplicates(new int[]{4, 3, 2, 7, 8, 2, 3, 1}));
-        assertEquals(Arrays.asList(2, 3), solution2.findDuplicates(new int[]{4, 3, 2, 7, 8, 2, 3, 1}));
+        assertEquals(
+                Arrays.asList(2, 3), solution1.findDuplicates(new int[] {4, 3, 2, 7, 8, 2, 3, 1}));
+        assertEquals(
+                Arrays.asList(2, 3), solution2.findDuplicates(new int[] {4, 3, 2, 7, 8, 2, 3, 1}));
     }
-
 }

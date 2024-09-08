@@ -3,8 +3,8 @@ package com.fishercoder.solutions.thirdthousand;
 public class _2717 {
     public static class Solution1 {
         public int semiOrderedPermutation(int[] nums) {
-            int[] max = new int[]{nums[0], 0};
-            int[] min = new int[]{nums[0], 0};
+            int[] max = new int[] {nums[0], 0};
+            int[] min = new int[] {nums[0], 0};
             for (int i = 1; i < nums.length; i++) {
                 if (nums[i] > max[0]) {
                     max[0] = nums[i];

@@ -11,12 +11,13 @@ public class _3016 {
             for (char c : word.toCharArray()) {
                 map.put(c, map.getOrDefault(c, 0) + 1);
             }
-            PriorityQueue<Map.Entry<Character, Integer>> maxHeap = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
+            PriorityQueue<Map.Entry<Character, Integer>> maxHeap =
+                    new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
             for (Map.Entry<Character, Integer> entry : map.entrySet()) {
                 maxHeap.offer(entry);
             }
-            int[] possibleSets = new int[]{1, 2, 3, 4};
-            int digitsLength = 8;//a total of 8 digits that can be assigned
+            int[] possibleSets = new int[] {1, 2, 3, 4};
+            int digitsLength = 8; // a total of 8 digits that can be assigned
             Map<Character, Integer> assigned = new HashMap<>();
             for (int j = 0; j < possibleSets.length && !maxHeap.isEmpty(); j++) {
                 for (int i = 0; i < digitsLength && !maxHeap.isEmpty(); i++) {

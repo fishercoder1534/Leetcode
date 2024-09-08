@@ -15,8 +15,11 @@ public class _1145 {
                 int rightCount = countNodes(root.right);
                 int parent = n - (leftCount + rightCount + 1);
 
-                // possible to win if no. of nodes in 1 path is > than sum of nodes in the other 2 paths
-                return parent > (leftCount + rightCount) || leftCount > (parent + rightCount) || rightCount > (parent + leftCount);
+                // possible to win if no. of nodes in 1 path is > than sum of nodes in the other 2
+                // paths
+                return parent > (leftCount + rightCount)
+                        || leftCount > (parent + rightCount)
+                        || rightCount > (parent + leftCount);
             }
             return btreeGameWinningMove(root.left, n, x) || btreeGameWinningMove(root.right, n, x);
         }

@@ -1,14 +1,13 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class _226 {
 
     public static class Solution1 {
-        /**
+        /*
          * An iterative solution
          */
         public TreeNode invertTree(TreeNode root) {
@@ -34,7 +33,7 @@ public class _226 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * A recursive solution
          */
         public TreeNode invertTree(TreeNode root) {
@@ -51,7 +50,7 @@ public class _226 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * A more concise version
          */
         public TreeNode invertTree(TreeNode root) {

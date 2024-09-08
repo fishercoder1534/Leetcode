@@ -9,7 +9,7 @@ public class _1387 {
         public int getKth(int lo, int hi, int k) {
             List<int[]> power = new ArrayList<>();
             for (int i = lo; i <= hi; i++) {
-                power.add(new int[]{getSteps(i), i});
+                power.add(new int[] {getSteps(i), i});
             }
             Collections.sort(power, (a, b) -> a[0] != b[0] ? a[0] - b[0] : a[1] - b[1]);
             return power.get(k - 1)[1];

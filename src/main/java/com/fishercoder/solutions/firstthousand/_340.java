@@ -6,7 +6,7 @@ import java.util.Map;
 public class _340 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/41671/15-lines-java-solution-using-slide-window
          */
         public int lengthOfLongestSubstringKDistinct(String s, int k) {
@@ -19,8 +19,7 @@ public class _340 {
                     num++;
                 }
                 if (num > k) {
-                    while (--count[s.charAt(left++)] > 0) {
-                    }
+                    while (--count[s.charAt(left++)] > 0) {}
                     num--;
                 }
                 result = Math.max(result, right - left + 1);
@@ -30,7 +29,7 @@ public class _340 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This is a more generic solution for any characters, not limited to ASCII characters.
          */
         public int lengthOfLongestSubstringKDistinct(String s, int k) {
@@ -57,7 +56,7 @@ public class _340 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My original solution on 10/20/2021, a very generic sliding window template.
          */
         public int lengthOfLongestSubstringKDistinct(String s, int k) {
@@ -86,5 +85,4 @@ public class _340 {
             return ans;
         }
     }
-
 }

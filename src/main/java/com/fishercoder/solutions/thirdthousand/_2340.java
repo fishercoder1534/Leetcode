@@ -17,7 +17,7 @@ public class _2340 {
                 }
             }
             int minSwaps = 0;
-            //now move the leftmost smallest index to the beginning of the array
+            // now move the leftmost smallest index to the beginning of the array
             for (int i = minIndex; i > 0; i--) {
                 swap(nums, i, i - 1);
                 minSwaps++;
@@ -31,9 +31,9 @@ public class _2340 {
                 }
             }
 
-            //now move the leftmost smallest index to the beginning of the array
+            // now move the leftmost smallest index to the beginning of the array
             for (int i = maxIndex; i < nums.length - 1; i++) {
-                swap(nums, i, i + 1);//this line is optional at this point
+                swap(nums, i, i + 1); // this line is optional at this point
                 minSwaps++;
             }
 

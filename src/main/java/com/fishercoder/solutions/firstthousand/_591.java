@@ -7,7 +7,7 @@ public class _591 {
 
     public static class Solution1 {
 
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/91300/java-solution-use-startswith-and-indexof
          */
         public boolean isValid(String code) {
@@ -17,12 +17,12 @@ public class _591 {
                     return false;
                 }
                 if (code.startsWith("<![CDATA[", i)) {
-                    int j = i + 9;//"<![CDATA[" length is 9
+                    int j = i + 9; // "<![CDATA[" length is 9
                     i = code.indexOf("]]>", j);
                     if (i < 0) {
                         return false;
                     }
-                    i += 3;//"]]>" length is 3
+                    i += 3; // "]]>" length is 3
                 } else if (code.startsWith("</", i)) {
                     int j = i + 2;
                     i = code.indexOf(">", j);
@@ -58,5 +58,4 @@ public class _591 {
             return stack.isEmpty();
         }
     }
-
 }

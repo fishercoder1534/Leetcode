@@ -13,7 +13,7 @@ public class _397 {
             long min = Long.MAX_VALUE;
             Set<long[]> set = new HashSet();
             Queue<long[]> q = new LinkedList();
-            long[] pair = new long[]{n, 0};
+            long[] pair = new long[] {n, 0};
             q.offer(pair);
             while (!q.isEmpty()) {
                 int size = q.size();
@@ -49,5 +49,4 @@ public class _397 {
             return (int) min;
         }
     }
-
 }

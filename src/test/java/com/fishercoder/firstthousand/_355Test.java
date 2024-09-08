@@ -1,17 +1,13 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._355;
-import org.junit.jupiter.api.BeforeEach;
+import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 5/10/17.
- */
+/** Created by fishercoder on 5/10/17. */
 public class _355Test {
     private _355.Solution1.Twitter solution1Twitter;
     private _355.Solution2.Twitter solution2Twitter;

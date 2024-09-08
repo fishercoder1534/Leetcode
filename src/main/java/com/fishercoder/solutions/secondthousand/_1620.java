@@ -8,7 +8,11 @@ public class _1620 {
             for (int i = 0; i < towers.length; i++) {
                 int thisQuality = 0;
                 for (int j = 0; j < towers.length; j++) {
-                    double distance = Math.sqrt((towers[i][0] - towers[j][0]) * (towers[i][0] - towers[j][0]) + (towers[i][1] - towers[j][1]) * (towers[i][1] - towers[j][1]));
+                    double distance =
+                            Math.sqrt(
+                                    (towers[i][0] - towers[j][0]) * (towers[i][0] - towers[j][0])
+                                            + (towers[i][1] - towers[j][1])
+                                                    * (towers[i][1] - towers[j][1]));
                     if (distance <= radius) {
                         thisQuality += Math.floor(towers[j][2] / (1 + distance));
                     }

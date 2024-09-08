@@ -16,19 +16,19 @@ public class _116 {
     }
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/1106/o-1-space-o-n-complexity-iterative-solution
          * based on level order traversal
          */
         public Node connect(Node root) {
 
-            Node head = null; //head of the next level
-            Node prev = null; //the leading node on the next level
-            Node curr = root;  //current node of current level
+            Node head = null; // head of the next level
+            Node prev = null; // the leading node on the next level
+            Node curr = root; // current node of current level
 
             while (curr != null) {
-                while (curr != null) { //iterate on the current level
-                    //left child
+                while (curr != null) { // iterate on the current level
+                    // left child
                     if (curr.left != null) {
                         if (prev != null) {
                             prev.next = curr.left;
@@ -37,7 +37,7 @@ public class _116 {
                         }
                         prev = curr.left;
                     }
-                    //right child
+                    // right child
                     if (curr.right != null) {
                         if (prev != null) {
                             prev.next = curr.right;
@@ -46,10 +46,10 @@ public class _116 {
                         }
                         prev = curr.right;
                     }
-                    //move to next node
+                    // move to next node
                     curr = curr.next;
                 }
-                //move to next level
+                // move to next level
                 curr = head;
                 head = null;
                 prev = null;
@@ -59,7 +59,7 @@ public class _116 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My complete original solution on 10/10/2021, although with O(h) extra space.
          */
         public Node connect(Node root) {

@@ -1,14 +1,13 @@
 package com.fishercoder.firstthousand;
 
-import com.fishercoder.solutions.firstthousand._39;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.fishercoder.solutions.firstthousand._39;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _39Test {
     private _39.Solution1 solution1;
@@ -22,7 +21,7 @@ public class _39Test {
 
     @Test
     public void test1() {
-        candidates = new int[]{2, 3, 6, 7};
+        candidates = new int[] {2, 3, 6, 7};
         expected = new ArrayList<>();
         expected.add(Arrays.asList(2, 2, 3));
         expected.add(Arrays.asList(7));

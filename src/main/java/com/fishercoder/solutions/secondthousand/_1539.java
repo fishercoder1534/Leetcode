@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class _1539 {
     public static class Solution1 {
-        /**
+        /*
          * Space: O(n)
          * Time: O(n)
          */
@@ -33,7 +33,7 @@ public class _1539 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Space: O(1)
          * Time: O(n)
          */
@@ -66,7 +66,7 @@ public class _1539 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Use binary search:
          * use an array without missing integers to illustrate:
          * 1, 2, 3, 4, 5
@@ -88,11 +88,11 @@ public class _1539 {
                     right = mid - 1;
                 }
             }
-            //when it exits the above while loop, left = right + 1;
-            //the k-th missing number should be between arr[right] and arr[left]
-            //the number of integers missing before arr[right] is arr[right] - right - 1;
-            //so the number to return is:
-            //arr[right] + k - (arr[right] - right - 1) = k + right + 1 = k + left;
+            // when it exits the above while loop, left = right + 1;
+            // the k-th missing number should be between arr[right] and arr[left]
+            // the number of integers missing before arr[right] is arr[right] - right - 1;
+            // so the number to return is:
+            // arr[right] + k - (arr[right] - right - 1) = k + right + 1 = k + left;
             return left + k;
         }
     }

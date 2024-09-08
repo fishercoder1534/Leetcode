@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _443 {
     public static class Solution1 {
-        /**
+        /*
          * This is breaking the rules, it's not in-place.
          */
         public int compress(char[] chars) {

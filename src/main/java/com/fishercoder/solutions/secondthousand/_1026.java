@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _1026 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution on 12/31/2021.
          */
         int maxDiff = 0;
@@ -18,9 +18,14 @@ public class _1026 {
             if (root == null) {
                 return;
             }
-            int[] minmax = new int[]{root.val, root.val};
+            int[] minmax = new int[] {root.val, root.val};
             findMinMax(root, minmax);
-            maxDiff = Math.max(maxDiff, Math.max(Math.abs(root.val - minmax[0]), Math.abs(minmax[1] - root.val)));
+            maxDiff =
+                    Math.max(
+                            maxDiff,
+                            Math.max(
+                                    Math.abs(root.val - minmax[0]),
+                                    Math.abs(minmax[1] - root.val)));
             dfs(root.left);
             dfs(root.right);
         }

@@ -1,13 +1,12 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class _257 {
     public static class Solution1 {
-        //a very typical/good question to test your recursion/dfs understanding.
+        // a very typical/good question to test your recursion/dfs understanding.
         public List<String> binaryTreePaths_more_concise(TreeNode root) {
             List<String> paths = new ArrayList<>();
             if (root == null) {
@@ -31,7 +30,7 @@ public class _257 {
             }
         }
     }
-    
+
     public static class Solution2 {
         public List<String> binaryTreePaths(TreeNode root) {
             List<String> paths = new ArrayList<>();

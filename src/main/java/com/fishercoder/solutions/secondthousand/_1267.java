@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1267 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/count-servers-that-communicate/discuss/436188/Java-or-Clean-And-Simple-or-Beats-100
          */
         public int countServers(int[][] grid) {

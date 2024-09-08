@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class _1993 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution:
          * 1. use hashmap1 to store num to node mapping;
          * 2. use hashmap2 to store num to user lock mapping;
@@ -39,7 +39,10 @@ public class _1993 {
                 this.lockMap = new HashMap<>();
             }
 
-            private void constructTree(int[] parent, Map<Integer, TreeNode> map, Map<TreeNode, TreeNode> childToParentMap) {
+            private void constructTree(
+                    int[] parent,
+                    Map<Integer, TreeNode> map,
+                    Map<TreeNode, TreeNode> childToParentMap) {
                 for (int i = 1; i < parent.length; i++) {
                     TreeNode parentNode = map.getOrDefault(parent[i], new TreeNode(parent[i]));
                     TreeNode childNode = map.getOrDefault(i, new TreeNode(i));

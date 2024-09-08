@@ -9,7 +9,8 @@ public class _2460 {
                     nums[i + 1] = 0;
                 }
             }
-            //i points at the first zero element, j keeps moving and bypassing zeroes to find the next non-zero element
+            // i points at the first zero element, j keeps moving and bypassing zeroes to find the
+            // next non-zero element
             for (int i = 0, j = 0; i < nums.length && j < nums.length; ) {
                 while (i < nums.length && nums[i] != 0) {
                     i++;
@@ -27,6 +28,5 @@ public class _2460 {
             }
             return nums;
         }
-
     }
 }

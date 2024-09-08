@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -9,7 +8,7 @@ import java.util.Queue;
 public class _449 {
 
     public static class Solution1 {
-        /**
+        /*
          * Preorder
          * Reference: https://discuss.leetcode.com/topic/97922/pre-or-post-order-with-only-keeping-one-bound-beat-98-and-95
          */
@@ -39,7 +38,8 @@ public class _449 {
                 return null;
             }
             String[] values = data.split(" ");
-            int[] index = new int[]{0};/**TODO: Why must use an int array, instead of just an int?*/
+            int[] index =
+                    new int[] {0}; /*TODO: Why must use an int array, instead of just an int?*/
             return deserialize(values, index, Integer.MAX_VALUE);
         }
 
@@ -55,7 +55,7 @@ public class _449 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Postorder
          * Reference: https://discuss.leetcode.com/topic/97922/pre-or-post-order-with-only-keeping-one-bound-beat-98-and-95
          */
@@ -84,7 +84,10 @@ public class _449 {
                 return null;
             }
             String[] values = data.split(" ");
-            int[] index = new int[]{values.length - 1};/**TODO: This is not just one element any more like in the preorder solution above*/
+            int[] index =
+                    new int[] {
+                        values.length - 1
+                    }; /*TODO: This is not just one element any more like in the preorder solution above*/
             return deserialize(values, index, Integer.MIN_VALUE);
         }
 
@@ -100,7 +103,7 @@ public class _449 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * This is a generic solution that applies to both BT and BST. And also the easiest to follow.
          */
 
@@ -176,7 +179,6 @@ public class _449 {
             Queue<String> nodesLeftToSerialize = new LinkedList<>();
             nodesLeftToSerialize.addAll(Arrays.asList(data.split(DELIMITER)));
             return deserializeHelper(nodesLeftToSerialize);
-
         }
 
         private TreeNode deserializeHelper(Queue<String> nodesLeft) {

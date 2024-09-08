@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _484 {
     public static class Solution1 {
 
-        /**
+        /*
          * credit:https://discuss.leetcode.com/topic/76221/java-o-n-clean-solution-easy-to-understand
          * <p>
          * For example, given IDIIDD we start with sorted sequence 1234567
@@ -42,5 +42,4 @@ public class _484 {
             }
         }
     }
-
 }

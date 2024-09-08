@@ -11,11 +11,10 @@ public class _1481 {
             for (int num : arr) {
                 unSortedMap.put(num, unSortedMap.getOrDefault(num, 0) + 1);
             }
-            //LinkedHashMap preserve the ordering of elements in which they are inserted
+            // LinkedHashMap preserve the ordering of elements in which they are inserted
             LinkedHashMap<Integer, Integer> sortedMap = new LinkedHashMap<>();
 
-            unSortedMap.entrySet()
-                    .stream()
+            unSortedMap.entrySet().stream()
                     .sorted(Map.Entry.comparingByValue())
                     .forEachOrdered(x -> sortedMap.put(x.getKey(), x.getValue()));
             int leastUniq = 0;

@@ -4,7 +4,7 @@ public class _629 {
 
     public static class Solution1 {
 
-        /**
+        /*
          * reference: https://leetcode.com/articles/k-inverse-pairs-array/#approach-5-another-optimized-dynamic-programming-approachaccepted
          * and
          * https://discuss.leetcode.com/topic/93815/java-dp-o-nk-solution

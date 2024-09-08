@@ -16,7 +16,7 @@ public class _806 {
                     offsetInCurrentLine = widths[c - 'a'];
                 }
             }
-            return new int[]{numOfLines, offsetInCurrentLine};
+            return new int[] {numOfLines, offsetInCurrentLine};
         }
     }
 }

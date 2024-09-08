@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.thirdthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +22,7 @@ public class _2326 {
             int top = 1;
             int count = 0;
             while (index < m * n) {
-                //go right
+                // go right
                 while (j <= rightBorder) {
                     matrix[i][j++] = index < list.size() ? list.get(index++) : -1;
                     count++;
@@ -34,7 +33,7 @@ public class _2326 {
                 rightBorder--;
                 j--;
 
-                //go down
+                // go down
                 i++;
                 while (i <= bottom) {
                     matrix[i++][j] = index < list.size() ? list.get(index++) : -1;
@@ -46,7 +45,7 @@ public class _2326 {
                 i--;
                 bottom--;
 
-                //go left
+                // go left
                 j--;
                 while (j >= leftBorder) {
                     matrix[i][j--] = index < list.size() ? list.get(index++) : -1;
@@ -58,7 +57,7 @@ public class _2326 {
                 j++;
                 leftBorder++;
 
-                //go top
+                // go top
                 i--;
                 while (i >= top) {
                     matrix[i--][j] = index < list.size() ? list.get(index++) : -1;

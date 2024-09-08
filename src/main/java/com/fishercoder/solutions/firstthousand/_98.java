@@ -20,5 +20,4 @@ public class _98 {
             return valid(root.left, min, root.val) && valid(root.right, root.val, max);
         }
     }
-
 }

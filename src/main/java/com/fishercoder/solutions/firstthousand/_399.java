@@ -7,13 +7,14 @@ import java.util.Map;
 public class _399 {
 
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://medium.com/@null00/leetcode-evaluate-division-52a0158488c1
          */
         private Map<String, String> root;
         private Map<String, Double> rate;
 
-        public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
+        public double[] calcEquation(
+                List<List<String>> equations, double[] values, List<List<String>> queries) {
             root = new HashMap<>();
             rate = new HashMap<>();
             int n = equations.size();

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _62 {
     public static class Solution1 {
-        /**
+        /*
          * Another typical DP question, use a 2d array: the first row and the first column need to be
          * initialized to be 1 since there's only one way to reach every position in the first row and
          * the first column: either from left or top.

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _792 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/number-of-matching-subsequences/discuss/1290406/C%2B%2BJavaPython-Next-Letter-Pointers-Picture-explain-O(N-%2B-S)
          */
         public int numMatchingSubseq(String s, String[] words) {

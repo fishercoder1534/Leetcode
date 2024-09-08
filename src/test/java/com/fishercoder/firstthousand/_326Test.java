@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._326;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _326Test {
     private _326.Solution1 solution1;
@@ -24,5 +24,4 @@ public class _326Test {
         assertEquals(false, solution2.isPowerOfThree(12));
         assertEquals(false, solution3.isPowerOfThree(12));
     }
-
 }

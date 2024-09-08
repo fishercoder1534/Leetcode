@@ -37,7 +37,7 @@ public class _1405 {
                     two.count--;
                 }
 
-                //only after the above two poll() calls, then do below:
+                // only after the above two poll() calls, then do below:
                 if (one.count > 0) {
                     maxHeap.offer(one);
                 }

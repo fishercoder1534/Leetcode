@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _43 {
 
     public static class Solution1 {
-        /**
+        /*
          * Inspired by https://discuss.leetcode.com/topic/30508/easiest-java-solution-with-graph-explanation
          * Basically, the rule we can find is that products of each two digits will land in this position in the final product:
          * i+j and i+j+1
@@ -18,7 +18,9 @@ public class _43 {
 
             for (int i = a1.length - 1; i >= 0; i--) {
                 for (int j = a2.length - 1; j >= 0; j--) {
-                    int thisProduct = Character.getNumericValue(num1.charAt(i)) * Character.getNumericValue(num2.charAt(j));
+                    int thisProduct =
+                            Character.getNumericValue(num1.charAt(i))
+                                    * Character.getNumericValue(num2.charAt(j));
                     product[i + j + 1] += thisProduct % 10;
                     if (product[i + j + 1] >= 10) {
                         product[i + j + 1] %= 10;
@@ -42,7 +44,6 @@ public class _43 {
             return stringBuilder.toString();
         }
 
-
         private boolean isZero(String num) {
             for (char c : num.toCharArray()) {
                 if (c != '0') {
@@ -54,7 +55,7 @@ public class _43 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 10/14/2021.
          *
          * Gist: just use string instead of integers for times variable, otherwise guaranteed to overflow/underflow!
@@ -64,7 +65,8 @@ public class _43 {
             String previous = "";
             String j = "";
             for (int i = num2.length() - 1; i >= 0; i--, j += "0") {
-                String intermediate = multiplyBySingleDigit(num1, Character.getNumericValue(num2.charAt(i)), j);
+                String intermediate =
+                        multiplyBySingleDigit(num1, Character.getNumericValue(num2.charAt(i)), j);
                 String result = add(intermediate, previous);
                 previous = result;
             }
@@ -120,5 +122,4 @@ public class _43 {
             return sb.reverse() + times;
         }
     }
-
 }

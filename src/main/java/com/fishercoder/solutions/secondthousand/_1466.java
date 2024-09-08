@@ -5,7 +5,7 @@ import java.util.*;
 public class _1466 {
     public static class Solution1 {
         public int minReorder(int n, int[][] connections) {
-            //key is entering city, value is departure city
+            // key is entering city, value is departure city
             Map<Integer, Set<Integer>> map = new HashMap<>();
             Queue<Integer> queue = new LinkedList<>();
             int minReorder = 0;
@@ -14,7 +14,7 @@ public class _1466 {
                 visited.add(i);
             }
 
-            //key is departure city, value is entering city
+            // key is departure city, value is entering city
             Map<Integer, Set<Integer>> reverseMap = new HashMap<>();
             for (int[] con : connections) {
                 if (!map.containsKey(con[1])) {
@@ -27,8 +27,8 @@ public class _1466 {
                 }
                 reverseMap.get(con[0]).add(con[1]);
 
-                //for all those directly connected to city 0, must be reordered if not yet
-                //and they are the start nodes of BFS
+                // for all those directly connected to city 0, must be reordered if not yet
+                // and they are the start nodes of BFS
                 if (con[0] == 0) {
                     minReorder++;
                     queue.offer(con[1]);
@@ -66,17 +66,20 @@ public class _1466 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * build an adjacency list and BFS
          */
         public int minReorder(int n, int[][] connections) {
-            //int[] in the below map holds two integers, the first one means the node, the second one means the direction:
+            // int[] in the below map holds two integers, the first one means the node, the second
+            // one means the direction:
             // 0 means it's pointing to the key, i.e. doesn't need to be flipped,
             // 1 means it's the opposite direction, i.e. needs to be flipped
             Map<Integer, List<int[]>> adjList = new HashMap<>();
             for (int[] conn : connections) {
-                adjList.computeIfAbsent(conn[0], k -> new ArrayList<>()).add(new int[]{conn[1], 1});
-                adjList.computeIfAbsent(conn[1], k -> new ArrayList<>()).add(new int[]{conn[0], 0});
+                adjList.computeIfAbsent(conn[0], k -> new ArrayList<>())
+                        .add(new int[] {conn[1], 1});
+                adjList.computeIfAbsent(conn[1], k -> new ArrayList<>())
+                        .add(new int[] {conn[0], 0});
             }
             int count = 0;
             Queue<Integer> queue = new LinkedList<>();

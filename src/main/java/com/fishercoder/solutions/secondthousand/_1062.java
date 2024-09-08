@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class _1062 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution, although kind of brute-force, on 1/20/2022.
          * Two pointer technique:
          * j starts from the right, i starts from the left,

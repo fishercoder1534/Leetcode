@@ -17,8 +17,10 @@ public class _388 {
             while (i < input.length()) {
                 currLevel = nextLevel;
                 int currStrLen = 0;
-                while (i < input.length() && (Character.isLetterOrDigit(input.charAt(i))
-                        || period.equals(input.charAt(i)) || space.equals(input.charAt(i)))) {
+                while (i < input.length()
+                        && (Character.isLetterOrDigit(input.charAt(i))
+                                || period.equals(input.charAt(i))
+                                || space.equals(input.charAt(i)))) {
                     if (period.equals(input.charAt(i))) {
                         isFile = true;
                     }
@@ -33,7 +35,7 @@ public class _388 {
                 }
 
                 nextLevel = 0;
-                i = i + 1;//increment one to let it pass "\n" and start from "\t"
+                i = i + 1; // increment one to let it pass "\n" and start from "\t"
                 while (i < input.length() - 1 && input.substring(i, i + 1).equals("\t")) {
                     nextLevel++;
                     i = i + 1;

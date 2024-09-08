@@ -27,7 +27,9 @@ public class _1296 {
         }
 
         private int findNextMin(TreeMap<Integer, Integer> treeMap) {
-            return treeMap.isEmpty() ? Integer.MIN_VALUE : treeMap.entrySet().iterator().next().getKey();
+            return treeMap.isEmpty()
+                    ? Integer.MIN_VALUE
+                    : treeMap.entrySet().iterator().next().getKey();
         }
 
         private boolean isConsecutiveK(TreeMap<Integer, Integer> treeMap, int min, int k) {

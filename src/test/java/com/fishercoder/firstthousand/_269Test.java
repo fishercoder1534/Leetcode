@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._269;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _269Test {
     private _269.Solution1 solution1;
@@ -17,14 +17,13 @@ public class _269Test {
 
     @Test
     public void test1() {
-        words = new String[]{"wrt", "wrf", "er", "ett", "rftt"};
+        words = new String[] {"wrt", "wrf", "er", "ett", "rftt"};
         assertEquals("wertf", solution1.alienOrder(words));
     }
 
     @Test
     public void test2() {
-        words = new String[]{"abc", "ab"};
+        words = new String[] {"abc", "ab"};
         assertEquals("", solution1.alienOrder(words));
     }
-
 }

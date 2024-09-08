@@ -1,6 +1,5 @@
 package com.fishercoder.solutions.thirdthousand;
 
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -20,7 +19,8 @@ public class _2135 {
                 Arrays.sort(charArray);
                 String sortedTarget = new String(charArray);
                 for (int i = 0; i < sortedTarget.length(); i++) {
-                    String formedTargetByOmittingOneLetter = sortedTarget.substring(0, i) + sortedTarget.substring(i + 1);
+                    String formedTargetByOmittingOneLetter =
+                            sortedTarget.substring(0, i) + sortedTarget.substring(i + 1);
                     if (startSet.contains(formedTargetByOmittingOneLetter)) {
                         count++;
                         break;

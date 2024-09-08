@@ -41,5 +41,4 @@ public class _265 {
             return costs[n - 1][min1];
         }
     }
-
 }

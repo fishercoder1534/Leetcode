@@ -13,7 +13,7 @@ public class _986 {
                 int start = Math.max(firstList[i][0], secondList[j][0]);
                 int end = Math.min(firstList[i][1], secondList[j][1]);
                 if (start <= end) {
-                    list.add(new int[]{start, end});
+                    list.add(new int[] {start, end});
                 }
                 if (end == firstList[i][1]) {
                     i++;

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _673 {
     public static class Solution1 {
-        /**
+        /*
          * Reference: https://discuss.leetcode.com/topic/103020/java-c-simple-dp-solution-with-explanation
          */
         public int findNumberOfLIS(int[] nums) {

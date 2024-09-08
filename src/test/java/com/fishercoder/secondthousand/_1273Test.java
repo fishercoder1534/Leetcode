@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1273;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1273Test {
     private _1273.Solution1 solution1;
@@ -18,30 +18,29 @@ public class _1273Test {
 
     @Test
     public void test1() {
-        parent = new int[]{-1, 0, 0, 1, 2, 2, 2};
-        value = new int[]{1, -2, 4, 0, -2, -1, -1};
+        parent = new int[] {-1, 0, 0, 1, 2, 2, 2};
+        value = new int[] {1, -2, 4, 0, -2, -1, -1};
         assertEquals(2, solution1.deleteTreeNodes(7, parent, value));
     }
 
     @Test
     public void test2() {
-        parent = new int[]{-1, 0, 0, 1, 2, 2, 2};
-        value = new int[]{1, -2, 3, 0, -2, -1, 0};
+        parent = new int[] {-1, 0, 0, 1, 2, 2, 2};
+        value = new int[] {1, -2, 3, 0, -2, -1, 0};
         assertEquals(2, solution1.deleteTreeNodes(7, parent, value));
     }
 
     @Test
     public void test3() {
-        parent = new int[]{-1, 0, 0, 1, 2, 2, 2};
-        value = new int[]{1, -2, 4, 0, -2, -1, -2};
+        parent = new int[] {-1, 0, 0, 1, 2, 2, 2};
+        value = new int[] {1, -2, 4, 0, -2, -1, -2};
         assertEquals(6, solution1.deleteTreeNodes(7, parent, value));
     }
 
     @Test
     public void test4() {
-        parent = new int[]{-1, 0, 0, 1, 2, 2, 2};
-        value = new int[]{3, -2, 4, 0, -2, -1, -2};
+        parent = new int[] {-1, 0, 0, 1, 2, 2, 2};
+        value = new int[] {3, -2, 4, 0, -2, -1, -2};
         assertEquals(0, solution1.deleteTreeNodes(7, parent, value));
     }
-
 }

@@ -14,7 +14,7 @@ public class _2946 {
             int[][] updated = new int[m][n];
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
-                    //regardless i is even or odd, it's the same formula below!
+                    // regardless i is even or odd, it's the same formula below!
                     updated[i][(j + k) % n] = mat[i][j];
                 }
             }

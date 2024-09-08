@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _706 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/design-hashmap/discuss/152746/Java-Solution
          */
         class MyHashMap {
@@ -75,13 +75,13 @@ public class _706 {
     public static class Solution2 {
 
         public static class MyHashMap {
-            /**
+            /*
              * Considering the given constraints for this problem on LeetCode, load factors and resizing/rehashing are not considered. Thus an EASY problem.
              * <p>
              * inspired by: https://leetcode.com/problems/design-hashmap/discuss/225312/hashmaparraylinkedlistcollision
              */
             class Node {
-                /**
+                /*
                  * We need to have both key and val in this ListNode because all values input key are hashed to the same bucket, so we need its original key
                  * to be a differentiator within this bucket.
                  */
@@ -98,14 +98,14 @@ public class _706 {
             Node[] nodes;
             int size = 1000000;
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public MyHashMap() {
                 nodes = new Node[size];
             }
 
-            /**
+            /*
              * value will always be non-negative.
              */
             public void put(int key, int value) {
@@ -128,7 +128,7 @@ public class _706 {
                 return Integer.hashCode(key) % size;
             }
 
-            /**
+            /*
              * Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key
              */
             public int get(int key) {
@@ -146,11 +146,11 @@ public class _706 {
                 return -1;
             }
 
-            /**
+            /*
              * Removes the mapping of the specified value key if this map contains a mapping for the key
              */
             public void remove(int key) {
-                /**We can just set the value of this key to -1 since the constraint for this problem is that all values are >= 0*/
+                /*We can just set the value of this key to -1 since the constraint for this problem is that all values are >= 0*/
                 Node node = nodes[getHashedKey(key)];
                 Node tmp = node;
                 Node pre = new Node(-1, -1);
@@ -167,7 +167,7 @@ public class _706 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * My completely original, but hacky and cheaty solution to take full advantage of the problem constraints.
          */
         public static class MyHashMap {

@@ -3,10 +3,28 @@ package com.fishercoder.solutions.firstthousand;
 public class _273 {
 
     public static class Solution1 {
-        private String[] belowTen = new String[]{"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
-        private String[] belowTwenty = new String[]{"Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
-        private String[] belowHundred = new String[]{"Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
-        private String[] overThousand = new String[]{"Thousand", "Million", "Billion"};
+        private String[] belowTen =
+                new String[] {
+                    "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"
+                };
+        private String[] belowTwenty =
+                new String[] {
+                    "Ten",
+                    "Eleven",
+                    "Twelve",
+                    "Thirteen",
+                    "Fourteen",
+                    "Fifteen",
+                    "Sixteen",
+                    "Seventeen",
+                    "Eighteen",
+                    "Nineteen"
+                };
+        private String[] belowHundred =
+                new String[] {
+                    "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"
+                };
+        private String[] overThousand = new String[] {"Thousand", "Million", "Billion"};
 
         public String numberToWords(int num) {
             String result;

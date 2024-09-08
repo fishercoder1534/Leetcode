@@ -15,12 +15,12 @@ public class _1730 {
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     if (grid[i][j] == '*') {
-                        q.offer(new int[]{i, j});
+                        q.offer(new int[] {i, j});
                         visited.add(i * n + j);
                     }
                 }
             }
-            int[] dirs = new int[]{0, 1, 0, -1, 0};
+            int[] dirs = new int[] {0, 1, 0, -1, 0};
             int steps = 0;
             while (!q.isEmpty()) {
                 int size = q.size();
@@ -29,9 +29,13 @@ public class _1730 {
                     for (int j = 0; j < dirs.length - 1; j++) {
                         int nextx = curr[0] + dirs[j];
                         int nexty = curr[1] + dirs[j + 1];
-                        if (nextx >= 0 && nextx < m && nexty >= 0 && nexty < n && visited.add(nextx * n + nexty)) {
+                        if (nextx >= 0
+                                && nextx < m
+                                && nexty >= 0
+                                && nexty < n
+                                && visited.add(nextx * n + nexty)) {
                             if (grid[nextx][nexty] == 'O') {
-                                q.offer(new int[]{nextx, nexty});
+                                q.offer(new int[] {nextx, nexty});
                             } else if (grid[nextx][nexty] == '#') {
                                 return steps + 1;
                             }

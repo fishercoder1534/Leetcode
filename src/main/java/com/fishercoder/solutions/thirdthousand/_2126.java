@@ -1,11 +1,8 @@
 package com.fishercoder.solutions.thirdthousand;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class _2126 {
     public static class Solution1 {

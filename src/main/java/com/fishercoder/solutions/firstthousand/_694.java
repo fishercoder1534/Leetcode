@@ -8,12 +8,13 @@ import java.util.Set;
 
 public class _694 {
     public static class Solution1 {
-        int[][] directions = new int[][]{
-                {0, 1},
-                {1, 0},
-                {0, -1},
-                {-1, 0}
-        };
+        int[][] directions =
+                new int[][] {
+                    {0, 1},
+                    {1, 0},
+                    {0, -1},
+                    {-1, 0}
+                };
 
         public int numDistinctIslands(int[][] grid) {
             int m = grid.length;
@@ -30,7 +31,15 @@ public class _694 {
             return uniqueShapeIslands.size();
         }
 
-        private boolean dfs(int i0, int j0, int i, int j, int[][] grid, int m, int n, List<List<Integer>> island) {
+        private boolean dfs(
+                int i0,
+                int j0,
+                int i,
+                int j,
+                int[][] grid,
+                int m,
+                int n,
+                List<List<Integer>> island) {
             if (i < 0 || j < 0 || i >= m || j >= n || grid[i][j] <= 0) {
                 return false;
             }

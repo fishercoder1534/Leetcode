@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2928;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2928Test {
     private _2928.Solution1 solution1;
@@ -23,5 +23,4 @@ public class _2928Test {
     public void test2() {
         assertEquals(10, solution1.distributeCandies(3, 3));
     }
-
 }

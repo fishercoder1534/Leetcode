@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,8 +14,7 @@ public class _872 {
             return leaves1.equals(leaves2);
         }
 
-        private void preorder(TreeNode root,
-                              List<Integer> leaves) {
+        private void preorder(TreeNode root, List<Integer> leaves) {
             if (root == null) {
                 return;
             }

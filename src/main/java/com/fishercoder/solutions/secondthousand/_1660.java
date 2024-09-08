@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -9,7 +8,7 @@ import java.util.Set;
 
 public class _1660 {
     public static class Solution1 {
-        /**
+        /*
          * First off, this problem description is confusing.
          * Second, that aside, I learned a cool technique to pass TreeNode[]{node, nodeParent} into the queue
          * so that you can easily reference one node's parent without building an additional hashmap.
@@ -17,7 +16,7 @@ public class _1660 {
          */
         public TreeNode correctBinaryTree(TreeNode root) {
             Queue<TreeNode[]> q = new LinkedList<>();
-            q.offer(new TreeNode[]{root, null});
+            q.offer(new TreeNode[] {root, null});
             Set<Integer> visited = new HashSet<>();
             visited.add(root.val);
             while (!q.isEmpty()) {
@@ -35,11 +34,11 @@ public class _1660 {
                         return root;
                     }
                     if (node.left != null) {
-                        q.offer(new TreeNode[]{node.left, node});
+                        q.offer(new TreeNode[] {node.left, node});
                         visited.add(node.left.val);
                     }
                     if (node.right != null) {
-                        q.offer(new TreeNode[]{node.right, node});
+                        q.offer(new TreeNode[] {node.right, node});
                         visited.add(node.right.val);
                     }
                 }

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _188 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/8984/a-concise-dp-solution-in-java
          */
         public int maxProfit(int k, int[] prices) {

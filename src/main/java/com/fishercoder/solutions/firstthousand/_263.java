@@ -7,7 +7,7 @@ public class _263 {
             if (num == 0) {
                 return false;
             }
-            int[] divisors = new int[]{5, 3, 2};
+            int[] divisors = new int[] {5, 3, 2};
             for (int divisor : divisors) {
                 while (num % divisor == 0) {
                     num /= divisor;
@@ -16,5 +16,4 @@ public class _263 {
             return num == 1;
         }
     }
-
 }

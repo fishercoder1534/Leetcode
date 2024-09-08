@@ -2,7 +2,7 @@ package com.fishercoder.solutions.fourththousand;
 
 public class _3240 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/solutions/5580937/java-o-m-n/
          */
         public int minFlips(int[][] grid) {
@@ -22,7 +22,7 @@ public class _3240 {
             int diff = 0;
             int p0 = 0;
             int p1 = 0;
-            //process if there's odd number of rows
+            // process if there's odd number of rows
             if (m % 2 == 1) {
                 for (int j = 0; j < n / 2; j++) {
                     if (grid[m / 2][j] != grid[m / 2][n - j - 1]) {
@@ -36,7 +36,7 @@ public class _3240 {
                     }
                 }
             }
-            //process if there's odd number of columns
+            // process if there's odd number of columns
             if (n % 2 == 1) {
                 for (int i = 0; i < m / 2; i++) {
                     if (grid[i][n / 2] != grid[m - i - 1][n / 2]) {

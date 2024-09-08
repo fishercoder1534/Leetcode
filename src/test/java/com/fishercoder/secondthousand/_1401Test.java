@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1401;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1401Test {
     private _1401.Solution1 solution1;
@@ -38,5 +38,4 @@ public class _1401Test {
     public void test5() {
         assertEquals(false, solution1.checkOverlap(1, 1, 1, 1, -3, 2, -1));
     }
-
 }

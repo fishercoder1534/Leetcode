@@ -11,7 +11,7 @@ import java.util.TreeSet;
 public class _692 {
 
     public static class Solution1 {
-        /**
+        /*
          * O(n) extra space
          * O(nlogk) time
          */
@@ -21,14 +21,15 @@ public class _692 {
                 map.put(word, map.getOrDefault(word, 0) + 1);
             }
 
-            SortedSet<Map.Entry<String, Integer>> sortedset = new TreeSet<>(
-                    (e1, e2) -> {
-                        if (e1.getValue() != e2.getValue()) {
-                            return e2.getValue() - e1.getValue();
-                        } else {
-                            return e1.getKey().compareToIgnoreCase(e2.getKey());
-                        }
-                    });
+            SortedSet<Map.Entry<String, Integer>> sortedset =
+                    new TreeSet<>(
+                            (e1, e2) -> {
+                                if (e1.getValue() != e2.getValue()) {
+                                    return e2.getValue() - e1.getValue();
+                                } else {
+                                    return e1.getKey().compareToIgnoreCase(e2.getKey());
+                                }
+                            });
             sortedset.addAll(map.entrySet());
 
             List<String> result = new ArrayList<>();

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1909 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/discuss/1298827/Java-Short
          */
         public boolean canBeIncreasing(int[] nums) {
