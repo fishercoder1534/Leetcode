@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class _668 {
     public static class Solution1 {
-        /**
+        /*
          * This brute force approach resulted in
          * TLE on Leetcode and
          * OOM error by _668test.test3() when running in my localhost:
@@ -29,7 +29,7 @@ public class _668 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * reference: https://discuss.leetcode.com/topic/101132/java-solution-binary-search
          */
         public int findKthNumber(int m, int n, int k) {

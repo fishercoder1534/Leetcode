@@ -29,7 +29,7 @@ public class _119 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * O(k) space
          */
         public List<Integer> getRow(int rowIndex) {

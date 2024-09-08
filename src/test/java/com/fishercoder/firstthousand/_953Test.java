@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._953;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _953Test {
     private _953.Solution1 solution1;
@@ -20,7 +20,7 @@ public class _953Test {
 
     @Test
     public void test1() {
-        words = new String[]{"hello", "leetcode"};
+        words = new String[] {"hello", "leetcode"};
         order = "hlabcdefgijkmnopqrstuvwxyz";
         assertEquals(true, solution1.isAlienSorted(words, order));
         assertEquals(true, solution2.isAlienSorted(words, order));
@@ -28,7 +28,7 @@ public class _953Test {
 
     @Test
     public void test2() {
-        words = new String[]{"word", "world", "row"};
+        words = new String[] {"word", "world", "row"};
         order = "worldabcefghijkmnpqstuvxyz";
         assertEquals(false, solution1.isAlienSorted(words, order));
         assertEquals(false, solution2.isAlienSorted(words, order));
@@ -36,7 +36,7 @@ public class _953Test {
 
     @Test
     public void test3() {
-        words = new String[]{"apple", "app"};
+        words = new String[] {"apple", "app"};
         order = "abcdefghijklmnopqrstuvwxyz";
         assertEquals(false, solution1.isAlienSorted(words, order));
         assertEquals(false, solution2.isAlienSorted(words, order));

@@ -33,6 +33,5 @@ public class _2335 {
             }
             return seconds;
         }
-
     }
 }

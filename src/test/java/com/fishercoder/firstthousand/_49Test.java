@@ -1,15 +1,14 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.fishercoder.solutions.firstthousand._49;
+import java.util.Arrays;
+import java.util.List;
 import org.apache.commons.collections4.CollectionUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class _49Test {
     private _49.Solution1 solution1;
@@ -24,7 +23,7 @@ public class _49Test {
 
     @Test
     public void test1() {
-        words = new String[]{"eat", "tea", "tan", "ate", "nat", "bat"};
+        words = new String[] {"eat", "tea", "tan", "ate", "nat", "bat"};
         List<String> e1 = Arrays.asList("bat");
         List<String> e2 = Arrays.asList("tan", "nat");
         List<String> e3 = Arrays.asList("ate", "eat", "tea");
@@ -44,7 +43,7 @@ public class _49Test {
                     assertTrue(CollectionUtils.isEqualCollection(e3, a));
                     break;
                 default:
-                    //Should not have come into this branch ever.
+                    // Should not have come into this branch ever.
                     assertTrue(false);
             }
         }

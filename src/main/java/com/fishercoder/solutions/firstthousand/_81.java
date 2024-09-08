@@ -1,6 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
-/**
+/*
  * 81. Search in Rotated Sorted Array II
  * <p>
  * There is an integer array nums sorted in non-decreasing order (not necessarily with distinct values).
@@ -30,9 +30,9 @@ public class _81 {
             int left = 0;
             int right = nums.length - 1;
 
-            //check each num so we will check left == right
-            //We always get a sorted part and a half part
-            //we can check sorted part to decide where to go next
+            // check each num so we will check left == right
+            // We always get a sorted part and a half part
+            // we can check sorted part to decide where to go next
             while (left <= right) {
                 int mid = left + (right - left) / 2;
                 if (nums[mid] == target) {
@@ -40,26 +40,27 @@ public class _81 {
                 }
 
                 if (nums[left] < nums[mid]) {
-                    //if left part is sorted
+                    // if left part is sorted
                     if (target < nums[left] || target > nums[mid]) {
-                        //target is in rotated part
+                        // target is in rotated part
                         left = mid + 1;
                     } else {
                         right = mid - 1;
                     }
                 } else if (nums[left] > nums[mid]) {
-                    //right part is sorted
+                    // right part is sorted
                     if (target < nums[mid] || target > nums[right]) {
-                        //target is in rotated part
+                        // target is in rotated part
                         right = mid - 1;
                     } else {
                         left = mid + 1;
                     }
                 } else {
-                    //duplicates, we know nums[mid] != target, so nums[left] != target
-                    //based on current information, we can only move left pointer to skip one cell
-                    //thus in the worst case, we would have target: 2, and array like 11111111, then
-                    //the running time would be O(n)
+                    // duplicates, we know nums[mid] != target, so nums[left] != target
+                    // based on current information, we can only move left pointer to skip one cell
+                    // thus in the worst case, we would have target: 2, and array like 11111111,
+                    // then
+                    // the running time would be O(n)
                     left++;
                 }
             }

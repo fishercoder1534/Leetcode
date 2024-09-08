@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _348 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/44548/java-o-1-solution-easy-to-understand
          * <p>
          * Key: in order to win a TicTacToe, you must have the entire row or column, thus, we don't need
@@ -14,7 +14,7 @@ public class _348 {
         public static class TicTacToe {
 
             private int diagonal;
-            /**
+            /*
              * This is diagonal:
              * |X| | |
              * | |X| |
@@ -24,7 +24,7 @@ public class _348 {
              */
 
             private int antidiagonal;
-            /**
+            /*
              * This is antidiagonal:
              * | | |X|
              * | |X| |
@@ -35,7 +35,7 @@ public class _348 {
             private int[] rows;
             private int[] cols;
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public TicTacToe(int n) {
@@ -43,7 +43,7 @@ public class _348 {
                 cols = new int[n];
             }
 
-            /**
+            /*
              * Player {player} makes a move at ({row}, {col}).
              *
              * @param row    The row of the board.

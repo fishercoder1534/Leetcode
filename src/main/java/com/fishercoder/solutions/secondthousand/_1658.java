@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1658 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/discuss/936074/JavaPython-3-Sliding-window%3A-Longest-subarray-sum-to-the-target-sum(nums)-x.
          */
         public int minOperations(int[] nums, int x) {
@@ -25,6 +25,5 @@ public class _1658 {
             }
             return size < 0 ? -1 : len - size;
         }
-
     }
 }

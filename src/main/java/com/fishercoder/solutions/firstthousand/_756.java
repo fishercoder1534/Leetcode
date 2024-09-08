@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class _756 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/116042/java-solution-map-backtracking
          */
         public boolean pyramidTransition(String bottom, List<String> allowed) {
@@ -42,8 +42,12 @@ public class _756 {
             return false;
         }
 
-        private void getList(String bottom, int idx, StringBuilder sb, List<String> ls,
-                             Map<String, List<String>> map) {
+        private void getList(
+                String bottom,
+                int idx,
+                StringBuilder sb,
+                List<String> ls,
+                Map<String, List<String>> map) {
             if (idx == bottom.length() - 1) {
                 ls.add(sb.toString());
                 return;

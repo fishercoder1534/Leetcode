@@ -14,12 +14,11 @@ public class _708 {
             this.val = val;
         }
 
-        public Node() {
-        }
+        public Node() {}
     }
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list/solutions/995676/java-concise-o-n/
          */
         public Node insert(Node head, int insertVal) {
@@ -31,20 +30,20 @@ public class _708 {
             Node node = head;
             while (node.next != head) {
                 if (node.val <= node.next.val) {
-                    //increasing
+                    // increasing
                     if (node.val <= insertVal && insertVal <= node.next.val) {
-                        //this is the place to insert
+                        // this is the place to insert
                         break;
                     }
                 } else {
-                    //transition point, higher value to lower value
+                    // transition point, higher value to lower value
                     if (node.val < insertVal || insertVal < node.next.val) {
                         break;
                     }
                 }
                 node = node.next;
             }
-            //insert this new node
+            // insert this new node
             insertNode.next = node.next;
             node.next = insertNode;
 

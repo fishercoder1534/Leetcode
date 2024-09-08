@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1150 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/discuss/358130/Java-just-one-binary-search-O(logN))-0ms-beats-100
          */
         public boolean isMajorityElement(int[] nums, int target) {

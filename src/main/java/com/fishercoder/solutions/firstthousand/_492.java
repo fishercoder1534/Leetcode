@@ -21,5 +21,4 @@ public class _492 {
             return result;
         }
     }
-
 }

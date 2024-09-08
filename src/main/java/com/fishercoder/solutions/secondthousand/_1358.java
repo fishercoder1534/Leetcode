@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1358 {
     public static class Solution1 {
-        /**
+        /*
          * A classic sliding window problem, no dp or backtracking, just sliding window: use two pointers.
          * my new favorite question!
          */
@@ -20,6 +20,5 @@ public class _1358 {
             }
             return result;
         }
-
     }
 }

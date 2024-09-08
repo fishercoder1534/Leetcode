@@ -19,5 +19,4 @@ public class _35 {
             return nums[left] >= target ? left : left + 1;
         }
     }
-
 }

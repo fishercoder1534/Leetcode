@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class _823 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/binary-trees-with-factors/discuss/126277/Concise-Java-solution-using-HashMap-with-detailed-explanation.-Easily-understand!!!
          */
         private static final long MOD = 1000000007L;

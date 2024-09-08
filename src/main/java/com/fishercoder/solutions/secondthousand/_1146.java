@@ -5,7 +5,9 @@ import java.util.*;
 public class _1146 {
     public static class Solution1 {
         public static class SnapshotArray {
-            TreeMap<Integer, Integer>[] snapshots;//using this data structure is much more efficient in terms of storage, esp. if snap() calls happen frequently
+            TreeMap<Integer, Integer>[]
+                    snapshots; // using this data structure is much more efficient in terms of
+            // storage, esp. if snap() calls happen frequently
             int snapId;
 
             public SnapshotArray(int length) {

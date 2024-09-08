@@ -1,24 +1,20 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._588;
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 5/23/17.
- */
+/** Created by fishercoder on 5/23/17. */
 public class _588Test {
 
     private _588.Solution1.FileSystem fileSystem;
 
     @BeforeEach
-    public void setup() {
-    }
+    public void setup() {}
 
     @Test
     public void test1() {

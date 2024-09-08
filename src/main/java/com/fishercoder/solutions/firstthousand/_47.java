@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class _47 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/31445/really-easy-java-solution-much-easier-than-the-solutions-with-very-high-vote
          */
         public List<List<Integer>> permuteUnique(int[] nums) {
@@ -17,13 +17,15 @@ public class _47 {
                 return result;
             }
             boolean[] used = new boolean[nums.length];
-            Arrays.sort(nums);//this sorting is critical for the correctness of this backtracking algorithm as we compare the two adjacent neighbors to filter out possible duplicate permutations
+            Arrays.sort(nums); // this sorting is critical for the correctness of this backtracking
+            // algorithm as we compare the two adjacent neighbors to filter out
+            // possible duplicate permutations
             backtracking(nums, used, new ArrayList(), result);
             return result;
         }
 
-
-        private void backtracking(int[] nums, boolean[] used, List<Integer> list, List<List<Integer>> result) {
+        private void backtracking(
+                int[] nums, boolean[] used, List<Integer> list, List<List<Integer>> result) {
             if (list.size() == nums.length) {
                 result.add(new ArrayList(list));
                 return;
@@ -33,7 +35,7 @@ public class _47 {
                     continue;
                 }
                 if (i > 0 && nums[i - 1] == nums[i] && used[i - 1]) {
-                    /**
+                    /*
                      * For this line, both !used[i-1] and used[i-1] will AC.
                      * It is because the first one makes sure when duplicates are selected, the order is ascending (index from small to large).
                      * However, the second one means the descending order.

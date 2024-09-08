@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.ListNode;
 
 public class _2 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution on 10/24/2021.
          */
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -32,5 +32,4 @@ public class _2 {
             return pre.next;
         }
     }
-
 }

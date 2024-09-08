@@ -6,7 +6,7 @@ import java.util.Map;
 public class _560 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/87850/java-solution-presum-hashmap
          * We know the key to solve this problem is SUM[i, j].
          * So if we know SUM[0, i - 1] and SUM[0, j],
@@ -34,7 +34,7 @@ public class _560 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 10/14/2021.
          * Again, using a pen and paper to visualize your thought process just clears out all ambiguities.
          * <p>
@@ -61,5 +61,4 @@ public class _560 {
             return count;
         }
     }
-
 }

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _714 {
     public static class Solution1 {
-        /**
+        /*
          * O(n) time
          * O(n) space
          * credit: https://discuss.leetcode.com/topic/108009/java-c-clean-code-dp-greedy
@@ -24,7 +24,7 @@ public class _714 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * O(n) time
          * O(1) space
          * credit: https://leetcode.com/articles/best-time-to-buy-and-sell-stock-with-transaction-fee/
@@ -40,8 +40,17 @@ public class _714 {
             int cash = 0;
             int hold = -prices[0];
             for (int i = 1; i < prices.length; i++) {
-                cash = Math.max(cash, hold + prices[i] - fee);//this means to sell the stock: gain the current ith day's price and pay the transaction fee
-                hold = Math.max(hold, cash - prices[i]);//this means to buy in this stock on the ith day's price.
+                cash =
+                        Math.max(
+                                cash,
+                                hold + prices[i]
+                                        - fee); // this means to sell the stock: gain the current
+                // ith day's price and pay the transaction fee
+                hold =
+                        Math.max(
+                                hold,
+                                cash - prices[i]); // this means to buy in this stock on the ith
+                // day's price.
             }
             return cash;
         }

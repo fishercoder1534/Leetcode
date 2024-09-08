@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _1024 {
     public static class Solution1 {
-        /**
+        /*
          * Greedy
          * Time: O(nlogn) where n is the number of clips
          * Space: O(1)
@@ -26,13 +26,13 @@ public class _1024 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * DP
          * Time: ?
          * Space: ?
          */
         public int videoStitching(int[][] clips, int time) {
-            //TODO: implement it.
+            // TODO: implement it.
             return -1;
         }
     }

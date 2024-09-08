@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-/**
+/*
  * 1418. Display Table of Food Orders in a Restaurant
  *
  * Given the array orders, which represents the orders that customers have done in a restaurant.

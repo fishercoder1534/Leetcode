@@ -5,15 +5,16 @@ import java.util.Map;
 
 public class _1056 {
     public static class Solution1 {
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>() {
-            {
-                put(0, 0);
-                put(1, 1);
-                put(8, 8);
-                put(6, 9);
-                put(9, 6);
-            }
-        };
+        Map<Integer, Integer> map =
+                new HashMap<Integer, Integer>() {
+                    {
+                        put(0, 0);
+                        put(1, 1);
+                        put(8, 8);
+                        put(6, 9);
+                        put(9, 6);
+                    }
+                };
 
         public boolean confusingNumber(int N) {
             if (N == 0) {

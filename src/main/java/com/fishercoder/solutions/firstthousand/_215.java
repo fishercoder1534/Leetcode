@@ -27,7 +27,7 @@ public class _215 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Quick Select algorithm
          * Time: O(n) in average, O(n^2) in worst case
          * Reference: https://discuss.leetcode.com/topic/14611/java-quick-select

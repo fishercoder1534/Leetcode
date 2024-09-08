@@ -7,7 +7,7 @@ public class _321 {
             int m = nums2.length;
             int[] ans = new int[k];
             for (int i = Math.max(0, k - m); i <= k && i <= n; ++i) {
-                //what is this and why?
+                // what is this and why?
                 int[] candidate = merge(maxArray(nums1, i), maxArray(nums2, k - i), k);
                 if (greater(candidate, 0, ans, 0)) {
                     ans = candidate;

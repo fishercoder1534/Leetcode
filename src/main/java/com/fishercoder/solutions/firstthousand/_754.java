@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _754 {
     public static class Solution1 {
-        /**
+        /*
          * Two case:
          * 1. go to the right, and reach the goal exactly.
          * 2. go over the goal by several steps:

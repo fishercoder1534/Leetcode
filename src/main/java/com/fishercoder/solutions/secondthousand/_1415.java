@@ -3,7 +3,7 @@ package com.fishercoder.solutions.secondthousand;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/*
  * 1415. The k-th Lexicographical String of All Happy Strings of Length n
  *
  * A happy string is a string that:
@@ -44,7 +44,7 @@ import java.util.List;
 public class _1415 {
     public static class Solution1 {
         public String getHappyString(int n, int k) {
-            char[] chars = new char[]{'a', 'b', 'c'};
+            char[] chars = new char[] {'a', 'b', 'c'};
             List<String> happyStrings = new ArrayList<>();
             happyStrings.add("");
             happyStrings = findAllHappyStrings(chars, n, happyStrings);

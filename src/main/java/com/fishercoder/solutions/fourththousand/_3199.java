@@ -19,8 +19,8 @@ public class _3199 {
 
         private boolean evenSetBits(int num) {
             int bits = 0;
-            //this is the idea of calculating hamming weight:
-            //https://github.com/fishercoder1534/Leetcode/blob/master/src/main/java/com/fishercoder/solutions/firstthousand/_191.java#L16_L23
+            // this is the idea of calculating hamming weight:
+            // https://github.com/fishercoder1534/Leetcode/blob/master/src/main/java/com/fishercoder/solutions/firstthousand/_191.java#L16_L23
             while (num != 0) {
                 bits++;
                 num &= num - 1;

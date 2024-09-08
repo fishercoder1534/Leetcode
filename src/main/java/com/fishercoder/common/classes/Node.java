@@ -22,9 +22,9 @@ public class Node {
         this.children = children;
     }
 
-    //todo: implement this method
+    // todo: implement this method
 
-    /**
+    /*
      * return a N-ary tree based on the preorder values
      */
     public static Node createNaryTree(List<Integer> preorderValues) {

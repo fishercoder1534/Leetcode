@@ -14,20 +14,20 @@ public class _117 {
     }
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/1106/o-1-space-o-n-complexity-iterative-solution
          * O(1) space, based on level order traversal
          */
         public Node connect(Node root) {
 
-            Node head = null; //head of the next level
-            Node prev = null; //the leading node on the next level
-            Node cur = root;  //current node of current level
+            Node head = null; // head of the next level
+            Node prev = null; // the leading node on the next level
+            Node cur = root; // current node of current level
 
             while (cur != null) {
 
-                while (cur != null) { //iterate on the current level
-                    //left child
+                while (cur != null) { // iterate on the current level
+                    // left child
                     if (cur.left != null) {
                         if (prev != null) {
                             prev.next = cur.left;
@@ -36,7 +36,7 @@ public class _117 {
                         }
                         prev = cur.left;
                     }
-                    //right child
+                    // right child
                     if (cur.right != null) {
                         if (prev != null) {
                             prev.next = cur.right;
@@ -45,11 +45,11 @@ public class _117 {
                         }
                         prev = cur.right;
                     }
-                    //move to next node
+                    // move to next node
                     cur = cur.next;
                 }
 
-                //move to next level
+                // move to next level
                 cur = head;
                 head = null;
                 prev = null;

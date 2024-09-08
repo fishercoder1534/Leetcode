@@ -1,14 +1,13 @@
 package com.fishercoder.firstthousand;
 
-import com.fishercoder.solutions.firstthousand._444;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.fishercoder.solutions.firstthousand._444;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _444Test {
     private _444.Solution1 solution1;
@@ -22,7 +21,7 @@ public class _444Test {
 
     @Test
     public void test1() {
-        org = new int[]{1, 2, 3};
+        org = new int[] {1, 2, 3};
         seqs = new ArrayList<>();
         seqs.add(Arrays.asList(1, 2));
         seqs.add(Arrays.asList(1, 3));

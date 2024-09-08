@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class _3219 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution.
          */
         public long minimumCost(int m, int n, int[] horizontalCut, int[] verticalCut) {

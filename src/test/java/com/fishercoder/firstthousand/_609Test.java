@@ -2,10 +2,9 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._609;
+import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.List;
 
 public class _609Test {
     private _609.Solution1 solution1;
@@ -19,7 +18,13 @@ public class _609Test {
 
     @Test
     public void test1() {
-        paths = new String[]{"root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"};
+        paths =
+                new String[] {
+                    "root/a 1.txt(abcd) 2.txt(efgh)",
+                    "root/c 3.txt(abcd)",
+                    "root/c/d 4.txt(efgh)",
+                    "root 4.txt(efgh)"
+                };
         actual = solution1.findDuplicate(paths);
         CommonUtils.printListList(actual);
     }

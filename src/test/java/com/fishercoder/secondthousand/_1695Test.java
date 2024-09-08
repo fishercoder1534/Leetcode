@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1695;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1695Test {
     private _1695.Solution1 solution1;
@@ -20,10 +20,9 @@ public class _1695Test {
 
     @Test
     public void test1() {
-        nums = new int[]{4, 2, 4, 5, 6};
+        nums = new int[] {4, 2, 4, 5, 6};
         expected = 17;
         assertEquals(expected, solution1.maximumUniqueSubarray(nums));
         assertEquals(expected, solution2.maximumUniqueSubarray(nums));
     }
-
 }

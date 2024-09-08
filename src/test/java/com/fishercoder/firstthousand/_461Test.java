@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._461;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _461Test {
     private _461.Solution1 solution1;
@@ -40,5 +40,4 @@ public class _461Test {
         assertEquals(expected, solution2.hammingDistance(x, y));
         assertEquals(expected, solution3.hammingDistance(x, y));
     }
-
 }

@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _979 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/distribute-coins-in-binary-tree/discuss/221930/JavaC%2B%2BPython-Recursive-Solution
          */
         int moves = 0;

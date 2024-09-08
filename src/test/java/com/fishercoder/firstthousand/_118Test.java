@@ -31,5 +31,4 @@ public class _118Test {
     public void test3() {
         CommonUtils.printListList(solution3.generate(5));
     }
-
 }

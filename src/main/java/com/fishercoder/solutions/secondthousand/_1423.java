@@ -23,7 +23,7 @@ public class _1423 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My own implementation after looking at hints on LeetCode.
          */
         public int maxScore(int[] cardPoints, int k) {
@@ -37,7 +37,8 @@ public class _1423 {
             }
             long windowSum = 0;
             int ans = 0;
-            for (int i = 0, j = i; i < cardPoints.length - windowSize && j <= cardPoints.length + 1; ) {
+            for (int i = 0, j = i;
+                    i < cardPoints.length - windowSize && j <= cardPoints.length + 1; ) {
                 if (j - i < windowSize) {
                     windowSum += cardPoints[j];
                     j++;

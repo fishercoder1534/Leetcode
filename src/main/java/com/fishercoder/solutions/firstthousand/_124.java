@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -30,7 +29,7 @@ public class _124 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This one uses a map to cache, but surprisingly, it's 10% slower than all submissions compared
          * with solution1
          */

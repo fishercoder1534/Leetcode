@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _201 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/28538/java-python-easy-solution-with-explanation
          * Bitwise AND operation within range actually turns out to be doing some operations with just these two boundary numbers: m and n
          * e.g. 5 and 7, in binary, they are 101 and 111, the result for [5,7] is 5&6&7 which is 101&110&111

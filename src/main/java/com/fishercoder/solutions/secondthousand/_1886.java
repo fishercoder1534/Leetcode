@@ -19,7 +19,7 @@ public class _1886 {
                 }
             }
 
-            //rotate 90 degrees once
+            // rotate 90 degrees once
             for (int i = 0, k = n - 1; i < m; i++, k--) {
                 int j = 0;
                 for (; j < n; j++) {
@@ -40,7 +40,7 @@ public class _1886 {
                 }
             }
 
-            //rotate 90 degrees the second time
+            // rotate 90 degrees the second time
             for (int i = 0, k = n - 1; i < m; i++, k--) {
                 int j = 0;
                 for (; j < n; j++) {
@@ -62,7 +62,7 @@ public class _1886 {
                 }
             }
 
-            //rotate 90 degrees the third time
+            // rotate 90 degrees the third time
             for (int i = 0, k = n - 1; i < m; i++, k--) {
                 int j = 0;
                 for (; j < n; j++) {

@@ -15,7 +15,7 @@ public class _1362 {
                 }
                 product = left * right;
             }
-            return new int[]{left, right};
+            return new int[] {left, right};
         }
     }
 }

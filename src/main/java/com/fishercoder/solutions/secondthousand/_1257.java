@@ -7,7 +7,8 @@ import java.util.Map;
 
 public class _1257 {
     public static class Solution1 {
-        public String findSmallestRegion(List<List<String>> regions, String region1, String region2) {
+        public String findSmallestRegion(
+                List<List<String>> regions, String region1, String region2) {
             Map<String, String> childToParent = new HashMap<>();
             for (List<String> region : regions) {
                 for (int i = 1; i < region.size(); i++) {

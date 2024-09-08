@@ -17,5 +17,4 @@ public class _235 {
             return root;
         }
     }
-
 }

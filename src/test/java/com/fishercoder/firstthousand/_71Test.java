@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._71;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _71Test {
     private _71.Solution1 solution1;
@@ -38,8 +38,10 @@ public class _71Test {
 
     @Test
     public void test5() {
-//        assertEquals("/home/user/Pictures", solution1.simplifyPath("/home/user/Documents/../Pictures"));
-        assertEquals("/home/user/Pictures", solution2.simplifyPath("/home/user/Documents/../Pictures"));
+        //        assertEquals("/home/user/Pictures",
+        // solution1.simplifyPath("/home/user/Documents/../Pictures"));
+        assertEquals(
+                "/home/user/Pictures", solution2.simplifyPath("/home/user/Documents/../Pictures"));
     }
 
     @Test

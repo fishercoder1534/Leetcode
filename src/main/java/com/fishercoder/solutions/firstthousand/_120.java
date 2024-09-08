@@ -9,10 +9,11 @@ public class _120 {
             List<Integer> cache = triangle.get(n - 1);
 
             for (int layer = n - 2; layer >= 0; layer--) {
-                //for each layer
+                // for each layer
                 for (int i = 0; i <= layer; i++) {
-                    //check its very node
-                    int value = Math.min(cache.get(i), cache.get(i + 1)) + triangle.get(layer).get(i);
+                    // check its very node
+                    int value =
+                            Math.min(cache.get(i), cache.get(i + 1)) + triangle.get(layer).get(i);
                     cache.set(i, value);
                 }
             }

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _533 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://discuss.leetcode.com/topic/81686/verbose-java-o-m-n-solution-hashmap/5
          * This program is very well designed to do things:
          * 1. it scans the entire matrix once, but does two things in this scan:
@@ -34,8 +34,10 @@ public class _533 {
                     stringBuilder.append(picture[i][j]);
                 }
                 if (count == N) {
-                    /**we use this entire row string as key for the map*/
-                    map.put(stringBuilder.toString(), map.getOrDefault(stringBuilder.toString(), 0) + 1);
+                    /*we use this entire row string as key for the map*/
+                    map.put(
+                            stringBuilder.toString(),
+                            map.getOrDefault(stringBuilder.toString(), 0) + 1);
                 }
                 stringBuilder.setLength(0);
             }
@@ -54,5 +56,4 @@ public class _533 {
             return answer;
         }
     }
-
 }

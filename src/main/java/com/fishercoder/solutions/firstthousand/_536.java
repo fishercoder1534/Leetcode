@@ -1,14 +1,13 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class _536 {
 
     public static class Solution1 {
-        /**
+        /*
          * recursive solution
          */
         public TreeNode str2tree(String s) {
@@ -16,7 +15,10 @@ public class _536 {
                 return null;
             }
             int firstParen = s.indexOf("(");
-            int val = firstParen == -1 ? Integer.parseInt(s) : Integer.parseInt(s.substring(0, firstParen));
+            int val =
+                    firstParen == -1
+                            ? Integer.parseInt(s)
+                            : Integer.parseInt(s.substring(0, firstParen));
             TreeNode cur = new TreeNode(val);
             if (firstParen == -1) {
                 return cur;
@@ -41,7 +43,7 @@ public class _536 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * iterative solution
          */
         public TreeNode str2tree(String s) {
@@ -69,5 +71,4 @@ public class _536 {
             return stack.isEmpty() ? null : stack.peek();
         }
     }
-
 }

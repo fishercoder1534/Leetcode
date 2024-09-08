@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class _295 {
-    /**
+    /*
      * A few key points for both following solutions:
      * <p>
      * 1. always keep one queue one element more than the other if the number is odd, offer into that one
@@ -46,7 +46,7 @@ public class _295 {
 
     public static class Solution2 {
         public static class MedianFinder {
-            /**
+            /*
              * credit: https://discuss.leetcode.com/topic/27521/short-simple-java-c-python-o-log-n-o-1
              * The idea is for sure to use two heaps, one is max heap, one is min heap, we always let the max heap have one more element
              * than min heap if the total number of elements is not even.
@@ -58,7 +58,7 @@ public class _295 {
             private Queue<Long> large;
             private Queue<Long> small;
 
-            /**
+            /*
              * initialize your data structure here.
              */
             public MedianFinder() {
@@ -82,20 +82,19 @@ public class _295 {
                 }
                 return (large.peek() - small.peek()) / 2.0;
             }
-
         }
     }
 
     public static class Solution3 {
         public static class MedianFinder {
-            /**
+            /*
              * The same as Solution2, but not using negation for minHeap.
              */
 
             private Queue<Long> maxHeap;
             private Queue<Long> minHeap;
 
-            /**
+            /*
              * initialize your data structure here.
              */
             public MedianFinder() {
@@ -119,7 +118,6 @@ public class _295 {
                 }
                 return (maxHeap.peek() + minHeap.peek()) / 2.0;
             }
-
         }
     }
 }

@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _322 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/coin-change-2/discuss/99212/Knapsack-problem-Java-solution-with-thinking-process-O(nm)-Time-and-O(m)-Space
          */
         public int coinChange(int[] coins, int amount) {
@@ -34,5 +34,4 @@ public class _322 {
             return count[rem - 1];
         }
     }
-
 }

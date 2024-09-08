@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _2423 {
     public static class Solution1 {
-        /**
+        /*
          * This is my original, but unnecessarily verbose solution.
          * Instead, you can just brute force each one of the 26 letters, as long as any one of them makes it meet the requirement, it returns true.
          */

@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.thirdthousand._2460;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _2460Test {
     private _2460.Solution1 solution1;
@@ -16,12 +16,13 @@ public class _2460Test {
 
     @Test
     public void test1() {
-        assertArrayEquals(new int[]{1, 4, 2, 0, 0, 0}, solution1.applyOperations(new int[]{1, 2, 2, 1, 1, 0}));
+        assertArrayEquals(
+                new int[] {1, 4, 2, 0, 0, 0},
+                solution1.applyOperations(new int[] {1, 2, 2, 1, 1, 0}));
     }
 
     @Test
     public void test2() {
-        assertArrayEquals(new int[]{1, 0}, solution1.applyOperations(new int[]{0, 1}));
+        assertArrayEquals(new int[] {1, 0}, solution1.applyOperations(new int[] {0, 1}));
     }
-
 }

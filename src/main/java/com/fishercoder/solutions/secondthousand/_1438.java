@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class _1438 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution on 1/19/2022.
          */
         public int longestSubarray(int[] nums, int limit) {
@@ -17,7 +17,9 @@ public class _1438 {
                 }
                 maxHeap.offer(nums[right]);
                 minHeap.offer(nums[right]);
-                if (!maxHeap.isEmpty() && !minHeap.isEmpty() && (maxHeap.peek() - minHeap.peek() <= limit)) {
+                if (!maxHeap.isEmpty()
+                        && !minHeap.isEmpty()
+                        && (maxHeap.peek() - minHeap.peek() <= limit)) {
                     ans = Math.max(ans, right - left + 1);
                 } else {
                     maxHeap.remove(nums[left]);

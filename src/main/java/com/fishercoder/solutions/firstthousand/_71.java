@@ -9,7 +9,7 @@ import java.util.Set;
 public class _71 {
 
     public static class Solution1 {
-        /**
+        /*
          * For LinkedList class in Java, if you use pop(), then you'll have to use push() as its corresponding method to remove from the "top" of the stack, using pollLast() will not work.
          */
         public String simplifyPath(String path) {
@@ -31,7 +31,7 @@ public class _71 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This solution doesn't vary too much from the above one, except in that it's using pollLast() and addLast() instead of pop() and push().
          * Key notes:
          * if using pollLast, then it must be consistent across all calls, including peekLast() and addLast(), cannot mix with pop() and push(), otherwise, unexpected/undesired results will happen.

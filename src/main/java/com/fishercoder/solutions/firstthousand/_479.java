@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _479 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/74125/java-solution-using-assumed-max-palindrom
          */
         public int largestPalindrome(int n) {
@@ -30,7 +30,8 @@ public class _479 {
 
                 // here i and palindrom/i forms the two factor of assumed palindrom
                 for (long i = upperBound; upperBound > lowerBound; i--) {
-                    // if n= 3 none of the factor of palindrom  can be more than 999 or less than square root of assumed palindrom
+                    // if n= 3 none of the factor of palindrom  can be more than 999 or less than
+                    // square root of assumed palindrom
                     if (palindrom / i > maxNumber || i * i < palindrom) {
                         break;
                     }

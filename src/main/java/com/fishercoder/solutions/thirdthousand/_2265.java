@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _2265 {
     public static class Solution1 {
-        /**
+        /*
          * When it comes to process all subtrees first, and then process the root, it's a good candidate to use post-order traversal recursion.
          * Credit: https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/editorial/
          */
@@ -27,7 +27,7 @@ public class _2265 {
             if (root.val == nodeSum / nodeCount) {
                 count++;
             }
-            return new int[]{nodeSum, nodeCount};
+            return new int[] {nodeSum, nodeCount};
         }
     }
 }

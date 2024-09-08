@@ -44,6 +44,5 @@ public class _1971 {
             }
             return false;
         }
-
     }
 }

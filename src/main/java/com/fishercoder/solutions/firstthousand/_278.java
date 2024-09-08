@@ -18,7 +18,7 @@ public class _278 {
         }
 
         private boolean isBadVersion(int left) {
-            //this is a fake method to make Eclipse happy
+            // this is a fake method to make Eclipse happy
             return false;
         }
     }

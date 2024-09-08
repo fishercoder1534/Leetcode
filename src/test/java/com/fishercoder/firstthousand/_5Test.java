@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._5;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _5Test {
     private _5.Solution1 solution1;
@@ -26,5 +26,4 @@ public class _5Test {
         assertEquals("aba", solution2.longestPalindrome(s));
         assertEquals("bab", solution3.longestPalindrome(s));
     }
-
 }

@@ -22,5 +22,4 @@ public class _565 {
             return answer;
         }
     }
-
 }

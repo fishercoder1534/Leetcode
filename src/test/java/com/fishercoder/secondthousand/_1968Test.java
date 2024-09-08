@@ -15,7 +15,6 @@ public class _1968Test {
 
     @Test
     public void test1() {
-        CommonUtils.printArray(solution1.rearrangeArray(new int[]{1, 2, 3, 4, 5}));
+        CommonUtils.printArray(solution1.rearrangeArray(new int[] {1, 2, 3, 4, 5}));
     }
-
 }

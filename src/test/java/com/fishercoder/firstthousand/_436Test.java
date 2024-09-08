@@ -14,21 +14,23 @@ public class _436Test {
 
     @Test
     public void test1() {
-        int[][] intervals = new int[][]{
-                {3, 4},
-                {2, 3},
-                {1, 2}
-        };
+        int[][] intervals =
+                new int[][] {
+                    {3, 4},
+                    {2, 3},
+                    {1, 2}
+                };
         solution1.findRightInterval(intervals);
     }
 
     @Test
     public void test2() {
-        int[][] intervals = new int[][]{
-                {1, 4},
-                {2, 3},
-                {3, 4}
-        };
+        int[][] intervals =
+                new int[][] {
+                    {1, 4},
+                    {2, 3},
+                    {3, 4}
+                };
         solution1.findRightInterval(intervals);
     }
 }

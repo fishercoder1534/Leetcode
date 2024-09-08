@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _892 {
     public static class Solution1 {
-        /**
+        /*
          * It's the way that you approach a problem like this matters. This is why we practice LeetCode - train your thought process, i.e. how do you approach a seemingly complex problem.
          * <p>
          * Inspired by: https://leetcode.com/problems/surface-area-of-3d-shapes/discuss/163414/C%2B%2BJava1-line-Python-Minus-Hidden-Area
@@ -24,7 +24,7 @@ public class _892 {
                     }
                 }
             }
-            //check its right side neighbors
+            // check its right side neighbors
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n - 1; j++) {
                     if (grid[i][j] != 0 && grid[i][j + 1] != 0) {
@@ -32,7 +32,7 @@ public class _892 {
                     }
                 }
             }
-            //check its downside neighbors
+            // check its downside neighbors
             for (int i = 0; i < m - 1; i++) {
                 for (int j = 0; j < n; j++) {
                     if (grid[i][j] != 0 && grid[i + 1][j] != 0) {

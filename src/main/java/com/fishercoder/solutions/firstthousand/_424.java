@@ -6,7 +6,8 @@ import java.util.Set;
 public class _424 {
 
     public static class Solution1 {
-        //credit: https://discuss.leetcode.com/topic/63494/java-12-lines-o-n-sliding-window-solution-with-explanation
+        // credit:
+        // https://discuss.leetcode.com/topic/63494/java-12-lines-o-n-sliding-window-solution-with-explanation
         public int characterReplacement(String s, int k) {
             int len = s.length();
             int[] count = new int[26];
@@ -26,7 +27,7 @@ public class _424 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My original solution using Sliding Window technique:
          * I try to use each character as the possible candidate to find all solutions and compare.
          */

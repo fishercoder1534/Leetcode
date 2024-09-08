@@ -12,10 +12,11 @@ import java.util.Set;
 
 public class _2115 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution, topological sort template comes in pretty handy.
          */
-        public List<String> findAllRecipes(String[] recipes, List<List<String>> ingredients, String[] supplies) {
+        public List<String> findAllRecipes(
+                String[] recipes, List<List<String>> ingredients, String[] supplies) {
             Set<String> allRecipes = new HashSet<>();
             Collections.addAll(allRecipes, recipes);
 
@@ -40,7 +41,8 @@ public class _2115 {
             }
             Queue<String> q = new LinkedList<>();
             for (Map.Entry<String, Integer> entry : indegree.entrySet()) {
-                if (entry.getValue() == 0 && allSupplies.containsAll(ingredientMap.get(entry.getKey()))) {
+                if (entry.getValue() == 0
+                        && allSupplies.containsAll(ingredientMap.get(entry.getKey()))) {
                     q.offer(entry.getKey());
                 }
             }
@@ -57,6 +59,5 @@ public class _2115 {
             }
             return result;
         }
-
     }
 }

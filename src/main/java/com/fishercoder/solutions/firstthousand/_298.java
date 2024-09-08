@@ -31,7 +31,7 @@ public class _298 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This is a better solution since it doesn't involve a global variable.
          */
         public int longestConsecutive(TreeNode root) {

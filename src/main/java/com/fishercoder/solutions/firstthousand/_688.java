@@ -7,13 +7,15 @@ import java.util.Queue;
 public class _688 {
 
     public static class Solution1 {
-        /**
+        /*
          * This BFS solution results in TLE on Leetcode.
          */
         public double knightProbability(int N, int K, int r, int c) {
-            int[][] directions = {{-2, 1}, {-1, 2}, {1, 2}, {2, 1}, {2, -1}, {1, -2}, {-1, -2}, {-2, -1}};
+            int[][] directions = {
+                {-2, 1}, {-1, 2}, {1, 2}, {2, 1}, {2, -1}, {1, -2}, {-1, -2}, {-2, -1}
+            };
             Queue<int[]> queue = new LinkedList<>();
-            queue.offer(new int[]{r, c});
+            queue.offer(new int[] {r, c});
             int level = K;
             while (level-- > 0) {
                 int size = queue.size();
@@ -23,7 +25,7 @@ public class _688 {
                         int x = curr[0] + direction[0];
                         int y = curr[1] + direction[1];
                         if (x >= 0 && x < N && y >= 0 && y < N) {
-                            queue.offer(new int[]{x, y});
+                            queue.offer(new int[] {x, y});
                         }
                     }
                 }
@@ -37,14 +39,16 @@ public class _688 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Let f[r][c][k] mean the probability that the knight is still on board after k steps,
          * we can deduce a recursion from its k-1 steps
          * In addition, instead of using a 3-d array, we can only keep the most recent two layers,
          * i.e. using only two 2-d arrays.
          */
         public double knightProbability(int N, int K, int r, int c) {
-            int[][] directions = {{-2, 1}, {-1, 2}, {1, 2}, {2, 1}, {2, -1}, {1, -2}, {-1, -2}, {-2, -1}};
+            int[][] directions = {
+                {-2, 1}, {-1, 2}, {1, 2}, {2, 1}, {2, -1}, {1, -2}, {-1, -2}, {-2, -1}
+            };
             double[][] dp0 = new double[N][N];
             for (double[] row : dp0) {
                 Arrays.fill(row, 1);

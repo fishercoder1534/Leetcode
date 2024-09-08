@@ -32,12 +32,16 @@ public class _1899 {
         }
 
         private int[] mergeTriplets(int[] triplet, int[] base) {
-            return new int[]{Math.max(triplet[0], base[0]), Math.max(triplet[1], base[1]), Math.max(triplet[2], base[2])};
+            return new int[] {
+                Math.max(triplet[0], base[0]),
+                Math.max(triplet[1], base[1]),
+                Math.max(triplet[2], base[2])
+            };
         }
 
         private boolean shouldMerge(int[] triplet, int[] target, int i) {
             if (triplet[i] == target[i]) {
-                //check the other two indexes not exceeding target
+                // check the other two indexes not exceeding target
                 if (i == 0) {
                     return triplet[1] <= target[1] && triplet[2] <= target[2];
                 } else if (i == 1) {

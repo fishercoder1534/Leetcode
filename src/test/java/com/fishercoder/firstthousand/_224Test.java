@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._224;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _224Test {
     private _224.Solution1 solution1;
@@ -41,7 +41,7 @@ public class _224Test {
         expected = 23;
         assertEquals(expected, solution1.calculate(s));
         assertEquals(expected, solution2.calculate(s));
-        //assertEquals(expected, solution3.calculate(s));//TODO: fix this
+        // assertEquals(expected, solution3.calculate(s));//TODO: fix this
     }
 
     @Test
@@ -51,5 +51,4 @@ public class _224Test {
         assertEquals(expected, solution1.calculate(s));
         assertEquals(expected, solution2.calculate(s));
     }
-
 }

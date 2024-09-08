@@ -16,7 +16,7 @@ public class _1237 {
     }
 
     public static class Solution1 {
-        /**
+        /*
          * Time: O(x*y)
          * Space: O(1)
          */
@@ -34,7 +34,7 @@ public class _1237 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * linear search
          * <p>
          * Time: O(x + y)
@@ -59,7 +59,7 @@ public class _1237 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * binary search
          * <p>
          * Time: O(xlogy)
@@ -85,5 +85,4 @@ public class _1237 {
             return result;
         }
     }
-
 }

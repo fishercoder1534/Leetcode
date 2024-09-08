@@ -1,14 +1,13 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._24;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _24Test {
     private _24.Solution1 solution1;
@@ -35,5 +34,4 @@ public class _24Test {
         expected = LinkedListUtils.createSinglyLinkedList(Arrays.asList(2, 1, 4, 3));
         assertEquals(expected, solution2.swapPairs(head));
     }
-
 }

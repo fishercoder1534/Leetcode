@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2441;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2441Test {
     private _2441.Solution1 solution1;
@@ -16,6 +16,6 @@ public class _2441Test {
 
     @Test
     public void test1() {
-        assertEquals(7, solution1.findMaxK(new int[]{-1, 10, 6, 7, -7, 1}));
+        assertEquals(7, solution1.findMaxK(new int[] {-1, 10, 6, 7, -7, 1}));
     }
 }

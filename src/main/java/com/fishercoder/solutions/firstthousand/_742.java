@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -18,10 +17,12 @@ public class _742 {
             if (leaves.contains(k)) {
                 return k;
             }
-            //Now we can do a BFS traversal
+            // Now we can do a BFS traversal
             Queue<Integer> queue = new LinkedList<>();
             Set<Integer> directNeighbors = graph.get(k);
-            Set<Integer> visited = new HashSet<>();//use a visited set to prevent cycles and not adding the target node itself
+            Set<Integer> visited =
+                    new HashSet<>(); // use a visited set to prevent cycles and not adding the
+            // target node itself
             visited.add(k);
             for (int node : directNeighbors) {
                 queue.offer(node);
@@ -46,7 +47,11 @@ public class _742 {
             return root.val;
         }
 
-        private void buildGraph(TreeNode root, Map<Integer, Set<Integer>> map, TreeNode parent, Set<Integer> leaves) {
+        private void buildGraph(
+                TreeNode root,
+                Map<Integer, Set<Integer>> map,
+                TreeNode parent,
+                Set<Integer> leaves) {
             if (root == null) {
                 return;
             }
@@ -68,6 +73,5 @@ public class _742 {
             buildGraph(root.left, map, root, leaves);
             buildGraph(root.right, map, root, leaves);
         }
-
     }
 }

@@ -31,7 +31,6 @@ public class _900 {
                 }
                 return lastElement;
             }
-
         }
     }
 }

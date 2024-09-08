@@ -6,7 +6,7 @@ import java.util.Deque;
 public class _439 {
 
     public static class Solution1 {
-        /**
+        /*
          * Below is my original solution, but looking at Discuss, a more concise way is to use just one
          * stack, process it from right to left, example: https://discuss.leetcode.com/topic/64409/very-easy-1-pass-stack-solution-in-java-no-string-concat
          */
@@ -22,9 +22,9 @@ public class _439 {
                     tmpStack.addFirst(stack.pollFirst());
                 } else {
                     char char1 = tmpStack.removeFirst();
-                    tmpStack.removeFirst();//remove ':'
+                    tmpStack.removeFirst(); // remove ':'
                     char char2 = tmpStack.removeFirst();
-                    stack.removeFirst();//remove '?'
+                    stack.removeFirst(); // remove '?'
                     char judge = stack.removeFirst();
                     tmpStack.addFirst(judge == 'T' ? char1 : char2);
                     while (!tmpStack.isEmpty()) {
@@ -38,5 +38,4 @@ public class _439 {
             return Character.toString(stack.removeFirst());
         }
     }
-
 }

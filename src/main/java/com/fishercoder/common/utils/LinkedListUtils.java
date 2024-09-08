@@ -1,7 +1,6 @@
 package com.fishercoder.common.utils;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.List;
 
 public class LinkedListUtils {

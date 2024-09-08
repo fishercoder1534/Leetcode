@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _980 {
     public static class Solution1 {
 
-        int[] directions = new int[]{0, 1, 0, -1, 0};
+        int[] directions = new int[] {0, 1, 0, -1, 0};
         int paths = 0;
 
         public int uniquePathsIII(int[][] grid) {
@@ -19,7 +19,12 @@ public class _980 {
             for (int i = 0; i < directions.length - 1; i++) {
                 int nextX = directions[i] + start[0];
                 int nextY = directions[i + 1] + start[1];
-                if (nextX >= 0 && nextX < m && nextY >= 0 && nextY < n && grid[nextX][nextY] != -1 && !visited[nextX][nextY]) {
+                if (nextX >= 0
+                        && nextX < m
+                        && nextY >= 0
+                        && nextY < n
+                        && grid[nextX][nextY] != -1
+                        && !visited[nextX][nextY]) {
                     if (grid[nextX][nextY] == 2) {
                         if (allZeroesVisited(visited, grid)) {
                             paths++;
@@ -29,7 +34,7 @@ public class _980 {
                         }
                     }
                     visited[nextX][nextY] = true;
-                    backtracking(grid, m, n, visited, new int[]{nextX, nextY});
+                    backtracking(grid, m, n, visited, new int[] {nextX, nextY});
                     visited[nextX][nextY] = false;
                 }
             }
@@ -51,7 +56,7 @@ public class _980 {
             for (int i = 0; i < grid.length; i++) {
                 for (int j = 0; j < grid[0].length; j++) {
                     if (grid[i][j] == 1) {
-                        return new int[]{i, j};
+                        return new int[] {i, j};
                     }
                 }
             }

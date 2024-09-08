@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _312 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/burst-balloons/discuss/76228/Share-some-analysis-and-explanations
          * <p>
          * Divide and conquer with memoization
@@ -32,7 +32,12 @@ public class _312 {
             }
             int ans = 0;
             for (int i = left + 1; i < right; i++) {
-                ans = Math.max(ans, nums[left] * nums[i] * nums[right] + burst(memo, nums, left, i) + burst(memo, nums, i, right));
+                ans =
+                        Math.max(
+                                ans,
+                                nums[left] * nums[i] * nums[right]
+                                        + burst(memo, nums, left, i)
+                                        + burst(memo, nums, i, right));
             }
             memo[left][right] = ans;
             return ans;

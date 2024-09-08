@@ -33,5 +33,4 @@ public class _506 {
             return result;
         }
     }
-
 }

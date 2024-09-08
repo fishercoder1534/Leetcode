@@ -27,7 +27,8 @@ public class _1763 {
                 }
             }
             for (int i = 0; i < uppercount.length; i++) {
-                if (uppercount[i] > 0 && lowercount[i] > 0 || (uppercount[i] == 0 && lowercount[i] == 0)) {
+                if (uppercount[i] > 0 && lowercount[i] > 0
+                        || (uppercount[i] == 0 && lowercount[i] == 0)) {
                     continue;
                 } else {
                     return false;

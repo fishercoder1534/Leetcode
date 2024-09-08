@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.secondthousand._1487;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _1487Test {
     private _1487.Solution1 solution1;
@@ -17,8 +17,8 @@ public class _1487Test {
 
     @Test
     public void test1() {
-        names = new String[]{"pes", "fifa", "gta", "pes(2019)"};
-        assertArrayEquals(new String[]{"pes", "fifa", "gta", "pes(2019)"}, solution1.getFolderNames(names));
+        names = new String[] {"pes", "fifa", "gta", "pes(2019)"};
+        assertArrayEquals(
+                new String[] {"pes", "fifa", "gta", "pes(2019)"}, solution1.getFolderNames(names));
     }
-
 }

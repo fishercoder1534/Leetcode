@@ -22,7 +22,9 @@ public class _472 {
                 if (word == null || word.length() == 0) {
                     continue;
                 }
-                remove(word, root);/** every word is comprised of every word itself, thus this word itself needs to be removed first for checking it*/
+                remove(
+                        word,
+                        root); /* every word is comprised of every word itself, thus this word itself needs to be removed first for checking it*/
                 int n = word.length();
                 boolean[] dp = new boolean[n + 1];
                 dp[0] = true;
@@ -113,8 +115,7 @@ public class _472 {
             boolean isWord;
             TrieNode[] children = new TrieNode[26];
 
-            public TrieNode() {
-            }
+            public TrieNode() {}
         }
     }
 
@@ -122,7 +123,7 @@ public class _472 {
         public List<String> findAllConcatenatedWordsInADict(String[] words) {
             List<String> result = new ArrayList<>();
             Set<String> preWords = new HashSet<>();
-            /**Words could only be formed by other words that are shorter than itself, so we sort them based on their lengths first.*/
+            /*Words could only be formed by other words that are shorter than itself, so we sort them based on their lengths first.*/
             Arrays.sort(words, (s1, s2) -> s1.length() - s2.length());
 
             for (int i = 0; i < words.length; i++) {

@@ -18,19 +18,27 @@ public class _698 {
             return canPartition(nums, visited, 0, k, 0, 0, equalSum);
         }
 
-        private boolean canPartition(int[] nums, boolean[] visited, int startIndex, int k, int currSum, int currNum, int target) {
+        private boolean canPartition(
+                int[] nums,
+                boolean[] visited,
+                int startIndex,
+                int k,
+                int currSum,
+                int currNum,
+                int target) {
             if (k == 1) {
                 return true;
             }
             if (currSum == target && currNum > 0) {
-                /**Everytime when we get currSum == target, we'll start from index 0 and look up the numbers that are not used yet
+                /*Everytime when we get currSum == target, we'll start from index 0 and look up the numbers that are not used yet
                  * and try to find another sum that could equal to target*/
                 return canPartition(nums, visited, 0, k - 1, 0, 0, target);
             }
             for (int i = startIndex; i < nums.length; i++) {
                 if (!visited[i]) {
                     visited[i] = true;
-                    if (canPartition(nums, visited, i + 1, k, currSum + nums[i], currNum++, target)) {
+                    if (canPartition(
+                            nums, visited, i + 1, k, currSum + nums[i], currNum++, target)) {
                         return true;
                     }
                     visited[i] = false;
@@ -41,7 +49,7 @@ public class _698 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * I'm glad that I figured out below solution completely on my own on 9/30/2021.
          * Backtracking is so beautiful!
          * <p>
@@ -68,7 +76,8 @@ public class _698 {
             return k == found;
         }
 
-        private int recursive(int[] nums, boolean[] used, int targetSum, int currSum, int currIndex) {
+        private int recursive(
+                int[] nums, boolean[] used, int targetSum, int currSum, int currIndex) {
             if (currSum == targetSum) {
                 return 1;
             } else if (currSum > targetSum) {
@@ -79,11 +88,14 @@ public class _698 {
                     for (int i = currIndex; i > 0; i--) {
                         if (!used[i - 1]) {
                             used[i - 1] = true;
-                            int found = recursive(nums, used, targetSum, currSum + nums[i - 1], i - 1);
+                            int found =
+                                    recursive(nums, used, targetSum, currSum + nums[i - 1], i - 1);
                             if (found == 1) {
                                 return found;
                             }
-                            used[i - 1] = false;//this is the backtracking step: reset this number to be available if not found
+                            used[i - 1] =
+                                    false; // this is the backtracking step: reset this number to be
+                            // available if not found
                         }
                     }
                 }
@@ -91,5 +103,4 @@ public class _698 {
             }
         }
     }
-
 }

@@ -3,15 +3,17 @@ package com.fishercoder.solutions.firstthousand;
 public class _41 {
 
     public static class Solution1 {
-        /**
+        /*
          * Time: O(n) Space: O(1)
          * Idea: put every number in its right position, e.g. put 5 in nums[4].
          */
         public int firstMissingPositive(int[] nums) {
             int i = 0;
             while (i < nums.length) {
-                if (nums[i] > 0 && nums[i] != i + 1 && nums[i] - 1 < nums.length && nums[i] != nums[nums[i]
-                        - 1]) {
+                if (nums[i] > 0
+                        && nums[i] != i + 1
+                        && nums[i] - 1 < nums.length
+                        && nums[i] != nums[nums[i] - 1]) {
                     swap(nums, i, nums[i] - 1);
                 } else {
                     i++;

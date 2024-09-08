@@ -1,12 +1,11 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.*;
 
 public class _987 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/discuss/231148/Java-TreeMap-Solution
          */
         public List<List<Integer>> verticalTraversal(TreeNode root) {
@@ -24,7 +23,11 @@ public class _987 {
             return list;
         }
 
-        private void dfs(TreeNode root, int x, int y, TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map) {
+        private void dfs(
+                TreeNode root,
+                int x,
+                int y,
+                TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map) {
             if (root == null) {
                 return;
             }
@@ -42,7 +45,7 @@ public class _987 {
 
     public static class Solution2 {
 
-        /**
+        /*
          * My completely original solution on 6/13/2024.
          */
         public List<List<Integer>> verticalTraversal(TreeNode root) {
@@ -69,15 +72,17 @@ public class _987 {
             List<List<Integer>> result = new ArrayList<>();
             for (Integer key : map.keySet()) {
                 List<NodeWithCoords> list = map.get(key);
-                Collections.sort(list, (a, b) -> {
-                    if (a.row != b.row) {
-                        return a.row - b.row;
-                    } else if (a.col != b.col) {
-                        return a.col - b.col;
-                    } else {
-                        return a.node.val - b.node.val;
-                    }
-                });
+                Collections.sort(
+                        list,
+                        (a, b) -> {
+                            if (a.row != b.row) {
+                                return a.row - b.row;
+                            } else if (a.col != b.col) {
+                                return a.col - b.col;
+                            } else {
+                                return a.node.val - b.node.val;
+                            }
+                        });
                 List<Integer> intList = new ArrayList<>();
                 for (NodeWithCoords nodeWithCoords : list) {
                     intList.add(nodeWithCoords.node.val);

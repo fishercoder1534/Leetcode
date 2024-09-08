@@ -1,6 +1,6 @@
 package com.fishercoder.common.classes;
 
-/**
+/*
  * Created by fishercoder on 12/31/16.
  */
 public class Point {

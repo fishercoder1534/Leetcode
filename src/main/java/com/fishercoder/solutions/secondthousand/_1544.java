@@ -14,7 +14,8 @@ public class _1544 {
                     if (Character.toLowerCase(stack.peek()) == Character.toLowerCase(c)) {
                         if ((Character.isLowerCase(stack.peek()) && Character.isUpperCase(c))) {
                             stack.pop();
-                        } else if (Character.isUpperCase(stack.peek()) && Character.isLowerCase(c)) {
+                        } else if (Character.isUpperCase(stack.peek())
+                                && Character.isLowerCase(c)) {
                             stack.pop();
                         } else {
                             stack.add(c);

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1043 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/partition-array-for-maximum-sum/discuss/290863/JavaC%2B%2BPython-DP
          */
         public int maxSumAfterPartitioning(int[] A, int K) {

@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1663;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1663Test {
     private _1663.Solution1 solution1;
@@ -23,5 +23,4 @@ public class _1663Test {
     public void test2() {
         assertEquals("aaszz", solution1.getSmallestString(5, 73));
     }
-
 }

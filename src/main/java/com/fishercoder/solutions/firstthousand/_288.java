@@ -15,7 +15,12 @@ public class _288 {
             public ValidWordAbbr(String[] dictionary) {
                 dict = new HashMap();
                 for (String word : dictionary) {
-                    String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
+                    String key =
+                            word.length() <= 2
+                                    ? word
+                                    : (word.charAt(0)
+                                            + String.valueOf(word.length() - 2)
+                                            + word.charAt(word.length() - 1));
                     if (dict.containsKey(key) && !dict.get(key).equals(word)) {
                         dict.put(key, "");
                     } else {
@@ -25,7 +30,12 @@ public class _288 {
             }
 
             public boolean isUnique(String word) {
-                String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
+                String key =
+                        word.length() <= 2
+                                ? word
+                                : (word.charAt(0)
+                                        + String.valueOf(word.length() - 2)
+                                        + word.charAt(word.length() - 1));
                 if (!dict.containsKey(key)) {
                     return true;
                 } else {
@@ -43,7 +53,12 @@ public class _288 {
             public ValidWordAbbr(String[] dictionary) {
                 dict = new HashMap();
                 for (String word : dictionary) {
-                    String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
+                    String key =
+                            word.length() <= 2
+                                    ? word
+                                    : (word.charAt(0)
+                                            + String.valueOf(word.length() - 2)
+                                            + word.charAt(word.length() - 1));
                     if (dict.containsKey(key)) {
                         Set<String> set = dict.get(key);
                         set.add(word);
@@ -57,7 +72,12 @@ public class _288 {
             }
 
             public boolean isUnique(String word) {
-                String key = word.length() <= 2 ? word : (word.charAt(0) + String.valueOf(word.length() - 2) + word.charAt(word.length() - 1));
+                String key =
+                        word.length() <= 2
+                                ? word
+                                : (word.charAt(0)
+                                        + String.valueOf(word.length() - 2)
+                                        + word.charAt(word.length() - 1));
                 if (!dict.containsKey(key)) {
                     return true;
                 } else {

@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _69 {
     public static class Solution1 {
-        /**
+        /*
          * A few key points:
          * 1. all variable use long type, otherwise overflow, just cast to int before returning
          * 2. left start from 0, not 1

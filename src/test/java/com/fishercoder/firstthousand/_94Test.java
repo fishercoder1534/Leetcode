@@ -4,11 +4,10 @@ import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._94;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.List;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _94Test {
     private _94.Solution1 solution1;
@@ -31,7 +30,10 @@ public class _94Test {
 
     @Test
     public void test2() {
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3, 4, null, 5, 6, null, 7, null, null, null, null, 8, 9));
+        root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                1, 2, 3, 4, null, 5, 6, null, 7, null, null, null, null, 8, 9));
         TreeUtils.printBinaryTree(root);
         inorder = solution1.inorderTraversal(root);
         CommonUtils.printList(inorder);
@@ -44,5 +46,4 @@ public class _94Test {
         inorder = solution2.inorderTraversal(root);
         CommonUtils.printList(inorder);
     }
-
 }

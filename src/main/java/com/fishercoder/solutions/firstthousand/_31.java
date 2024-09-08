@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _31 {
     public static class Solution1 {
-        /**
+        /*
          * Leetcode has a very good article to illustrate this problem and with animation:
          * https://leetcode.com/articles/next-permutation/
          * 1. if the array is already in decrementing order, then there's no next larger permutation possible.

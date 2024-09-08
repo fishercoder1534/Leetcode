@@ -1,11 +1,11 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._141;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _141Test {
     private _141.Solution1 solution1;
@@ -19,11 +19,15 @@ public class _141Test {
 
     @Test
     public void test1() {
-        assertEquals(false, solution1.hasCycle(LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4})));
+        assertEquals(
+                false,
+                solution1.hasCycle(LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4})));
     }
 
     @Test
     public void test2() {
-        assertEquals(false, solution2.hasCycle(LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4})));
+        assertEquals(
+                false,
+                solution2.hasCycle(LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4})));
     }
 }

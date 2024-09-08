@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.thirdthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -9,7 +8,7 @@ import java.util.Map;
 
 public class _2049 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution.
          * Practice makes perfect!
          */
@@ -17,14 +16,18 @@ public class _2049 {
             Map<Integer, TreeNode> valToNodeMap = new HashMap<>();
             TreeNode root = buildBinaryTree(parents, valToNodeMap);
 
-            //it'll be handy if we can cache the number of children each node has as we'll do this many times, so we can quickly calculate the score for each node
-            //key is the node since each node's value is unique, value if the number of children this node has
+            // it'll be handy if we can cache the number of children each node has as we'll do this
+            // many times, so we can quickly calculate the score for each node
+            // key is the node since each node's value is unique, value if the number of children
+            // this node has
             Map<Integer, Long> nodeCountMap = new HashMap<>();
-            //naturally we should use post-order traversal since we need to count the children for each child first, then we can roll up to add one to get the number of children for the root node
+            // naturally we should use post-order traversal since we need to count the children for
+            // each child first, then we can roll up to add one to get the number of children for
+            // the root node
             long allNodeCount = postOrder(root, nodeCountMap);
             nodeCountMap.put(root.val, allNodeCount);
 
-            //now calculate the score of each node
+            // now calculate the score of each node
             List<Long> scoreList = new ArrayList<>();
             long highestScore = 0;
             for (int i = 0; i < parents.length; i++) {
@@ -41,8 +44,10 @@ public class _2049 {
             return count;
         }
 
-        private Long computeScore(int nodeVal, Map<Integer, Long> nodeCountMap, Map<Integer, TreeNode> nodeValueMap) {
-            //since this is a binary tree, so, at most, removing a node, it'll split the original tree into three disjoint trees
+        private Long computeScore(
+                int nodeVal, Map<Integer, Long> nodeCountMap, Map<Integer, TreeNode> nodeValueMap) {
+            // since this is a binary tree, so, at most, removing a node, it'll split the original
+            // tree into three disjoint trees
             TreeNode node = nodeValueMap.get(nodeVal);
             Long leftSubtree = 1L;
             Long rightSubtree = 1L;

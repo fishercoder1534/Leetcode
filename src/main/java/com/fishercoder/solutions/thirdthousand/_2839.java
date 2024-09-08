@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _2839 {
     public static class Solution1 {
-        /**
+        /*
          * Only a total of 6 possibilities, try them all.
          */
         public boolean canBeEqual(String s1, String s2) {
@@ -21,7 +21,7 @@ public class _2839 {
             }
             c1 = s1.toCharArray();
             c2 = s2.toCharArray();
-            //swap only (1,3) for c1 now
+            // swap only (1,3) for c1 now
             swap(c1, 1);
             if (Arrays.equals(c1, c2)) {
                 return true;
@@ -37,7 +37,7 @@ public class _2839 {
             }
             c1 = s1.toCharArray();
             c2 = s2.toCharArray();
-            //swap only (1,3) for c2 now
+            // swap only (1,3) for c2 now
             swap(c2, 1);
             if (Arrays.equals(c1, c2)) {
                 return true;

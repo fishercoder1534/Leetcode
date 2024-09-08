@@ -15,7 +15,6 @@ public class _2007Test {
 
     @Test
     public void test1() {
-        CommonUtils.printArray(solution1.findOriginalArray(new int[]{1, 3, 4, 2, 6, 8}));
+        CommonUtils.printArray(solution1.findOriginalArray(new int[] {1, 3, 4, 2, 6, 8}));
     }
-
 }

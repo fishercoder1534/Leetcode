@@ -26,5 +26,4 @@ public class _551 {
             return true;
         }
     }
-
 }

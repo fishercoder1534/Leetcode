@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _1570 {
     public static class Solution1 {
-        /**
+        /*
          * This is a brute force but accepted solution.
          */
         class SparseVector {
@@ -28,7 +28,7 @@ public class _1570 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * More optimal solution:
          * 1. use a map to store only non-zero values to save space;
          * 2. loop through the smaller list;
@@ -41,7 +41,7 @@ public class _1570 {
                 this.indexAndNumList = new ArrayList<>();
                 for (int i = 0; i < nums.length; i++) {
                     if (nums[i] != 0) {
-                        this.indexAndNumList.add(new int[]{i, nums[i]});
+                        this.indexAndNumList.add(new int[] {i, nums[i]});
                     }
                 }
             }
@@ -70,8 +70,9 @@ public class _1570 {
             private int[] binarySearch(List<int[]> indexAndNumList, int target) {
                 int left = 0;
                 int right = indexAndNumList.size() - 1;
-                int[] result = new int[]{-1, 0};
-                if (indexAndNumList.get(right)[0] < target || indexAndNumList.get(left)[0] > target) {
+                int[] result = new int[] {-1, 0};
+                if (indexAndNumList.get(right)[0] < target
+                        || indexAndNumList.get(left)[0] > target) {
                     return result;
                 }
                 while (left <= right) {
@@ -84,7 +85,7 @@ public class _1570 {
                         left = mid + 1;
                     }
                 }
-                return new int[]{-1, 0};
+                return new int[] {-1, 0};
             }
         }
     }

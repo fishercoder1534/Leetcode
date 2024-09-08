@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.thirdthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -9,7 +8,7 @@ import java.util.Set;
 
 public class _2196 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution.
          */
         public TreeNode createBinaryTree(int[][] descriptions) {

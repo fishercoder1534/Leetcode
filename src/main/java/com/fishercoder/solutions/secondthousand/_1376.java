@@ -33,7 +33,14 @@ public class _1376 {
             return maxMinutes;
         }
 
-        private void backtracking(boolean[] visited, int managerId, int currentMinutes, int[] informTime, Set<Integer> managerIdSet, Set<Integer> visitedEmployees, Map<Integer, List<Integer>> map) {
+        private void backtracking(
+                boolean[] visited,
+                int managerId,
+                int currentMinutes,
+                int[] informTime,
+                Set<Integer> managerIdSet,
+                Set<Integer> visitedEmployees,
+                Map<Integer, List<Integer>> map) {
             if (visitedEmployees.contains(managerId)) {
                 visitedEmployees.remove(managerId);
             }
@@ -49,7 +56,14 @@ public class _1376 {
                 List<Integer> suboridnates = map.get(managerId);
                 for (int subordinate : suboridnates) {
                     if (!visited[subordinate]) {
-                        backtracking(visited, subordinate, currentMinutes + informTime[managerId], informTime, managerIdSet, visitedEmployees, map);
+                        backtracking(
+                                visited,
+                                subordinate,
+                                currentMinutes + informTime[managerId],
+                                informTime,
+                                managerIdSet,
+                                visitedEmployees,
+                                map);
                     }
                 }
             }

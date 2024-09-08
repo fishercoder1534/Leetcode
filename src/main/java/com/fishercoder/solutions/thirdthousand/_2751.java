@@ -8,10 +8,11 @@ import java.util.List;
 
 public class _2751 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution.
          */
-        public List<Integer> survivedRobotsHealths(int[] positions, int[] healths, String directions) {
+        public List<Integer> survivedRobotsHealths(
+                int[] positions, int[] healths, String directions) {
             List<Robot> list = new ArrayList<>();
             for (int i = 0; i < positions.length; i++) {
                 list.add(new Robot(positions[i], healths[i], directions.charAt(i), i));
@@ -43,7 +44,8 @@ public class _2751 {
                                         break;
                                     }
                                 }
-                                if (stack.isEmpty() || stack.peekLast().direction == 'L' && curr.health > 0) {
+                                if (stack.isEmpty()
+                                        || stack.peekLast().direction == 'L' && curr.health > 0) {
                                     stack.addLast(curr);
                                 }
                             } else {

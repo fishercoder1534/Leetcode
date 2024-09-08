@@ -18,13 +18,13 @@ public class _3242 {
                 this.map = new HashMap<>();
                 for (int i = 0; i < m; i++) {
                     for (int j = 0; j < n; j++) {
-                        map.put(grid[i][j], new int[]{i, j});
+                        map.put(grid[i][j], new int[] {i, j});
                     }
                 }
             }
 
             public int adjacentSum(int value) {
-                int[] dirs = new int[]{0, 1, 0, -1, 0};
+                int[] dirs = new int[] {0, 1, 0, -1, 0};
                 int[] pos = this.map.get(value);
                 int sum = 0;
                 for (int i = 0; i < dirs.length - 1; i++) {
@@ -38,12 +38,13 @@ public class _3242 {
             }
 
             public int diagonalSum(int value) {
-                int[][] dirs = new int[][]{
-                        {-1, 1},
-                        {1, 1},
-                        {1, -1},
-                        {-1, -1}
-                };
+                int[][] dirs =
+                        new int[][] {
+                            {-1, 1},
+                            {1, 1},
+                            {1, -1},
+                            {-1, -1}
+                        };
                 int[] pos = this.map.get(value);
                 int sum = 0;
                 for (int[] dir : dirs) {

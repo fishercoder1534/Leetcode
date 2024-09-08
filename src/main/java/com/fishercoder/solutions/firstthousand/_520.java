@@ -13,7 +13,7 @@ public class _520 {
                 if (words.length >= 2) {
                     int i = 2;
                     if (Character.isUpperCase(words[1])) {
-                        //then all following must be all uppercase
+                        // then all following must be all uppercase
                         while (i < words.length) {
                             if (!Character.isUpperCase(words[i])) {
                                 return false;
@@ -22,7 +22,7 @@ public class _520 {
                         }
                         return true;
                     } else {
-                        //then all following must be all lowercase
+                        // then all following must be all lowercase
                         while (i < words.length) {
                             if (!Character.isLowerCase(words[i])) {
                                 return false;
@@ -34,7 +34,7 @@ public class _520 {
                 }
                 return true;
             } else {
-                //then all following must be all lowercase
+                // then all following must be all lowercase
                 int i = 1;
                 while (i < words.length) {
                     if (!Character.isLowerCase(words[i])) {

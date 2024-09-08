@@ -37,7 +37,6 @@ public class _1249Test {
 
     @Test
     public void test5() {
-        System.out.println(solution1.minRemoveToMakeValid("())()((("));//should be "()()"
+        System.out.println(solution1.minRemoveToMakeValid("())()(((")); // should be "()()"
     }
-
 }

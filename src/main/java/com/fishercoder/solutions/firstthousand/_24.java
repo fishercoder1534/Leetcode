@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.ListNode;
 
 public class _24 {
     public static class Solution1 {
-        /**
+        /*
          * Recursive solution.
          */
         public ListNode swapPairs(ListNode head) {
@@ -20,7 +20,7 @@ public class _24 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Iterative approach:
          * My completely original on 10/24/2021.
          */
@@ -46,5 +46,4 @@ public class _24 {
             return pre.next;
         }
     }
-
 }

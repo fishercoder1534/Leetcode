@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._32;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _32Test {
     private _32.Solution1 solution1;
@@ -63,5 +63,4 @@ public class _32Test {
         assertEquals(10, solution1.longestValidParentheses(")()(((())))("));
         assertEquals(10, solution2.longestValidParentheses(")()(((())))("));
     }
-
 }

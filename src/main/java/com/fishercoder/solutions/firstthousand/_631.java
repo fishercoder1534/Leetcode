@@ -6,7 +6,7 @@ import java.util.Stack;
 public class _631 {
 
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://leetcode.com/articles/design-excel-sum-formula/#approach-1-using-topological-sortaccepted
          */
         public static class Excel {
@@ -53,12 +53,14 @@ public class _631 {
             public void topologicalSort(int r, int c) {
                 for (int i = 0; i < formulas.length; i++) {
                     for (int j = 0; j < formulas[0].length; j++) {
-                        if (formulas[i][j] != null && formulas[i][j].cells.containsKey("" + (char) ('A' + c) + (r + 1))) {
+                        if (formulas[i][j] != null
+                                && formulas[i][j].cells.containsKey(
+                                        "" + (char) ('A' + c) + (r + 1))) {
                             topologicalSort(i, j);
                         }
                     }
                 }
-                stack.push(new int[]{r, c});
+                stack.push(new int[] {r, c});
             }
 
             public void execute_stack() {
@@ -104,7 +106,7 @@ public class _631 {
         }
     }
 
-    /**
+    /*
      * Your Excel object will be instantiated and called as such:
      * Excel obj = new Excel(H, W);
      * obj.set(r,c,v);

@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._421;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _421Test {
     private _421.Solution1 solution1;
@@ -19,7 +19,7 @@ public class _421Test {
 
     @Test
     public void test1() {
-        nums = new int[]{3, 10, 5, 25, 2, 8};
+        nums = new int[] {3, 10, 5, 25, 2, 8};
         expected = 28;
         actual = solution1.findMaximumXOR(nums);
         assertEquals(expected, actual);

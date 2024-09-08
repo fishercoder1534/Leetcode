@@ -1,16 +1,14 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.solutions.firstthousand._563;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-/**
- * Created by fishercoder on 4/23/17.
- */
+/** Created by fishercoder on 4/23/17. */
 public class _563Test {
     private _563.Solution1 solution1;
     private static int expected;
@@ -45,5 +43,4 @@ public class _563Test {
         actual = solution1.findTilt(root);
         assertEquals(expected, actual);
     }
-
 }

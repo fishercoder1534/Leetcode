@@ -29,7 +29,7 @@ public class _20 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * A more concise solution:
          * credit: https://leetcode.com/problems/valid-parentheses/discuss/9178/Short-java-solution
          * */

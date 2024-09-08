@@ -1,14 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._500;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-
-/**
- * Created by fishercoder on 1/15/17.
- */
+/** Created by fishercoder on 1/15/17. */
 public class _500Test {
     private _500 test;
     private static String[] expected;
@@ -22,8 +20,8 @@ public class _500Test {
 
     @Test
     public void test1() {
-        words = new String[]{"Alaska", "Hello", "Dad", "Peace"};
-        expected = new String[]{"Alaska", "Dad"};
+        words = new String[] {"Alaska", "Hello", "Dad", "Peace"};
+        expected = new String[] {"Alaska", "Dad"};
         actual = test.findWords(words);
         assertArrayEquals(expected, actual);
     }

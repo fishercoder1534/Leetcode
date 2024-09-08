@@ -1,14 +1,12 @@
 package com.fishercoder.firstthousand;
 
-import com.fishercoder.solutions.firstthousand._784;
+import static org.assertj.core.api.Assertions.assertThat;
 
+import com.fishercoder.solutions.firstthousand._784;
 import java.util.Arrays;
 import java.util.List;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class _784Test {
     private _784.Solution1 solution1;

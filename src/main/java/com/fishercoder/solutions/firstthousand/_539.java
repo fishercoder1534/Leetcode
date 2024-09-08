@@ -7,7 +7,7 @@ public class _539 {
     public static class Soluiton1 {
 
         public int findMinDifference(List<String> timePoints) {
-            /**there are in total 24*60 = 1440 possible time points*/
+            /*there are in total 24*60 = 1440 possible time points*/
             final int ALL_POSSIBLE_TIMEPOINTS = 1440;
             boolean[] allTimePoints = new boolean[ALL_POSSIBLE_TIMEPOINTS];
             for (String eachTime : timePoints) {
@@ -39,5 +39,4 @@ public class _539 {
             return min;
         }
     }
-
 }

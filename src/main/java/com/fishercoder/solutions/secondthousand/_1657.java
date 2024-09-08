@@ -23,6 +23,5 @@ public class _1657 {
             Arrays.sort(counts2);
             return set1.equals(set2) && Arrays.equals(counts1, counts2);
         }
-
     }
 }

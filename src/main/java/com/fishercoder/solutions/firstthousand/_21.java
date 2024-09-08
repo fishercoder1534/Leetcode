@@ -4,7 +4,7 @@ import com.fishercoder.common.classes.ListNode;
 
 public class _21 {
     public static class Solution1 {
-        /**
+        /*
          * recursive solution
          * Time: O(m+n)
          * Space: O(m+n)
@@ -27,7 +27,7 @@ public class _21 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * iterative solution
          * Time: O(m+n)
          * Space: O(1)
@@ -51,5 +51,4 @@ public class _21 {
             return pre.next;
         }
     }
-
 }

@@ -1,12 +1,12 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.secondthousand._1669;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1669Test {
     private _1669.Solution1 solution1;
@@ -28,9 +28,11 @@ public class _1669Test {
 
     @Test
     public void test1() {
-        list1 = LinkedListUtils.contructLinkedList(new int[]{0, 1, 2, 3, 4, 5});
-        list2 = LinkedListUtils.contructLinkedList(new int[]{1000000, 1000001, 1000002});
-        expected = LinkedListUtils.contructLinkedList(new int[]{0, 1, 2, 1000000, 1000001, 1000002, 5});
+        list1 = LinkedListUtils.contructLinkedList(new int[] {0, 1, 2, 3, 4, 5});
+        list2 = LinkedListUtils.contructLinkedList(new int[] {1000000, 1000001, 1000002});
+        expected =
+                LinkedListUtils.contructLinkedList(
+                        new int[] {0, 1, 2, 1000000, 1000001, 1000002, 5});
         actual = solution1.mergeInBetween(list1, 3, 4, list2);
         LinkedListUtils.printList(actual);
         assertEquals(expected, actual);
@@ -38,10 +40,13 @@ public class _1669Test {
 
     @Test
     public void test2() {
-        l1 = LinkedListUtils.contructLinkedList(new int[]{0, 1, 2, 3, 4, 5});
-        l2 = LinkedListUtils.contructLinkedList(new int[]{1000000, 1000001, 1000002});
+        l1 = LinkedListUtils.contructLinkedList(new int[] {0, 1, 2, 3, 4, 5});
+        l2 = LinkedListUtils.contructLinkedList(new int[] {1000000, 1000001, 1000002});
         a = 3;
         b = 4;
-        assertEquals(LinkedListUtils.contructLinkedList(new int[]{0, 1, 2, 1000000, 1000001, 1000002, 5}), solution2.mergeInBetween(l1, a, b, l2));
+        assertEquals(
+                LinkedListUtils.contructLinkedList(
+                        new int[] {0, 1, 2, 1000000, 1000001, 1000002, 5}),
+                solution2.mergeInBetween(l1, a, b, l2));
     }
 }

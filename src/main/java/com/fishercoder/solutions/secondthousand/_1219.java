@@ -12,7 +12,7 @@ public class _1219 {
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     if (grid[i][j] > 0) {
-                        queue.offer(new int[]{i, j});
+                        queue.offer(new int[] {i, j});
                     }
                 }
             }
@@ -21,21 +21,36 @@ public class _1219 {
                 int[] start = queue.poll();
                 boolean[][] visited = new boolean[m][n];
                 visited[start[0]][start[1]] = true;
-                maxGold = Math.max(maxGold, backtracking(grid, start, grid[start[0]][start[1]], visited));
+                maxGold =
+                        Math.max(
+                                maxGold,
+                                backtracking(grid, start, grid[start[0]][start[1]], visited));
             }
             return maxGold;
         }
 
-        int[] directions = new int[]{0, 1, 0, -1, 0};
+        int[] directions = new int[] {0, 1, 0, -1, 0};
 
         private int backtracking(int[][] grid, int[] start, int gold, boolean[][] visited) {
             int max = gold;
             for (int i = 0; i < directions.length - 1; i++) {
                 int nextX = start[0] + directions[i];
                 int nextY = start[1] + directions[i + 1];
-                if (nextX >= 0 && nextX < grid.length && nextY >= 0 && nextY < grid[0].length && !visited[nextX][nextY] && grid[nextX][nextY] > 0) {
+                if (nextX >= 0
+                        && nextX < grid.length
+                        && nextY >= 0
+                        && nextY < grid[0].length
+                        && !visited[nextX][nextY]
+                        && grid[nextX][nextY] > 0) {
                     visited[nextX][nextY] = true;
-                    max = Math.max(max, backtracking(grid, new int[]{nextX, nextY}, gold + grid[nextX][nextY], visited));
+                    max =
+                            Math.max(
+                                    max,
+                                    backtracking(
+                                            grid,
+                                            new int[] {nextX, nextY},
+                                            gold + grid[nextX][nextY],
+                                            visited));
                     visited[nextX][nextY] = false;
                 }
             }

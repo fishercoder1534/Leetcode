@@ -62,5 +62,4 @@ public class NestedInteger {
         sb.append("]");
         return sb.toString();
     }
-
 }

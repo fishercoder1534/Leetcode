@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _1349 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/maximum-students-taking-exam/discuss/503686/A-simple-tutorial-on-this-bitmasking-problem
          */
         public int maxStudents(char[][] seats) {
@@ -29,8 +29,11 @@ public class _1349 {
                             dp[i][j] = Integer.bitCount(j);
                         } else {
                             for (int k = 0; k < stateSize; k++) {
-                                if (((k << 1) & j) == 0 && ((j << 1) & k) == 0 && dp[i - 1][k] != -1) {
-                                    dp[i][j] = Math.max(dp[i][j], dp[i - 1][k] + Integer.bitCount(j));
+                                if (((k << 1) & j) == 0
+                                        && ((j << 1) & k) == 0
+                                        && dp[i - 1][k] != -1) {
+                                    dp[i][j] =
+                                            Math.max(dp[i][j], dp[i - 1][k] + Integer.bitCount(j));
                                 }
                             }
                         }

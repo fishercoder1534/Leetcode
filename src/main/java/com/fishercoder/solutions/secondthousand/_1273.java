@@ -12,10 +12,11 @@ public class _1273 {
                 while (i > 0 && parent[i] == parentIndex) {
                     sum += value[i--];
                 }
-                //we'll reset the value to be the newly computed sum of this node and all of its children
+                // we'll reset the value to be the newly computed sum of this node and all of its
+                // children
                 value[parentIndex] = value[parentIndex] + sum;
             }
-            //then we'll reset this node's children to be zero if this node's computed sum is zero
+            // then we'll reset this node's children to be zero if this node's computed sum is zero
             for (int i = 0; i < value.length; i++) {
                 if (value[i] == 0) {
                     for (int j = 0; j < parent.length; j++) {

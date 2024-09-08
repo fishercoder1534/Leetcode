@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1143;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1143Test {
     private _1143.Solution1 solution1;
@@ -33,5 +33,4 @@ public class _1143Test {
     public void test4() {
         assertEquals(2, solution1.longestCommonSubsequence("ezupkr", "ubmrapg"));
     }
-
 }

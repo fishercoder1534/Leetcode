@@ -2,7 +2,7 @@ package com.fishercoder.solutions.fourththousand;
 
 public class _3228 {
     public static class Solution1 {
-        /**
+        /*
          * This is literal simulation and swap the 1s and 0s, but ended up in TLE, so you'll have to do better.
          */
         public int maxOperations(String s) {
@@ -14,7 +14,8 @@ public class _3228 {
             while (oneIndex < len && arr[oneIndex] == '0') {
                 oneIndex++;
             }
-            //now we found the first one, then we'll have to find the last one in case there's a consecutive group of 1's
+            // now we found the first one, then we'll have to find the last one in case there's a
+            // consecutive group of 1's
             int firstOneOccurrence = oneIndex;
             while (oneIndex < len && zeroIndex < len) {
                 while (oneIndex < len && arr[oneIndex] == '1') {
@@ -26,7 +27,8 @@ public class _3228 {
                 while (zeroIndex < len && arr[zeroIndex] == '1') {
                     zeroIndex++;
                 }
-                //likewise, we need to find the last occurrence of 0 in case there's a group of consecutive 0's
+                // likewise, we need to find the last occurrence of 0 in case there's a group of
+                // consecutive 0's
                 while (zeroIndex < len && arr[zeroIndex] == '0') {
                     zeroIndex++;
                 }
@@ -54,12 +56,12 @@ public class _3228 {
             char tmp = arr[zeroIndex];
             arr[zeroIndex] = arr[oneIndex];
             arr[oneIndex] = tmp;
-            return new int[]{oneIndex - 1, zeroIndex - 1};
+            return new int[] {oneIndex - 1, zeroIndex - 1};
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * TODO: finish this.
          */
         public int maxOperations(String s) {

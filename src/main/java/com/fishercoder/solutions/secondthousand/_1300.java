@@ -13,10 +13,10 @@ public class _1300 {
             if (ave >= max) {
                 return max;
             }
-            //if ave is the best value, what's the difference to target?
+            // if ave is the best value, what's the difference to target?
             int closetDiff = findClosestDiffIfReplaceWithVal(arr, ave, target);
             int bestValue = ave;
-            //extend candidate towards the right to see how close the sum could be to target
+            // extend candidate towards the right to see how close the sum could be to target
             int candidateOnTheRight = ave;
             while (candidateOnTheRight <= max) {
                 int thisOne = findClosestDiffIfReplaceWithVal(arr, ++candidateOnTheRight, target);
@@ -28,7 +28,7 @@ public class _1300 {
                 }
             }
 
-            //extend candidate towards the left to see how close the sum could be to target
+            // extend candidate towards the left to see how close the sum could be to target
             int candidateOnTheLeft = ave;
             while (candidateOnTheLeft >= min) {
                 int thisOne = findClosestDiffIfReplaceWithVal(arr, --candidateOnTheLeft, target);
@@ -53,6 +53,5 @@ public class _1300 {
             }
             return Math.abs(sum - target);
         }
-
     }
 }

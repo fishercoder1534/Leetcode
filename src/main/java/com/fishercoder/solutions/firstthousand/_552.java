@@ -3,14 +3,14 @@ package com.fishercoder.solutions.firstthousand;
 public class _552 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/86526/improving-the-runtime-from-o-n-to-o-log-n
          */
         public int checkRecord(int n) {
             final int MOD = 1000000007;
             int[][][] f = new int[n + 1][2][3];
 
-            f[0] = new int[][]{{1, 1, 1}, {1, 1, 1}};
+            f[0] = new int[][] {{1, 1, 1}, {1, 1, 1}};
             for (int i = 1; i <= n; i++) {
                 for (int j = 0; j < 2; j++) {
                     for (int k = 0; k < 3; k++) {
@@ -28,5 +28,4 @@ public class _552 {
             return f[n][1][2];
         }
     }
-
 }

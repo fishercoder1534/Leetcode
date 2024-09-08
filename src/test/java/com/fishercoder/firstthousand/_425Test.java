@@ -2,10 +2,9 @@ package com.fishercoder.firstthousand;
 
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.firstthousand._425;
+import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.List;
 
 public class _425Test {
     private _425.Solution1 solution1;
@@ -18,7 +17,7 @@ public class _425Test {
 
     @Test
     public void test1() {
-        words = new String[]{"area", "lead", "wall", "lady", "ball"};
+        words = new String[] {"area", "lead", "wall", "lady", "ball"};
         List<List<String>> result = solution1.wordSquares(words);
         CommonUtils.printListList(result);
     }

@@ -1,13 +1,12 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class _111 {
     public static class Solution1 {
-        /**
+        /*
          * DFS
          */
         public int minDepth(TreeNode root) {
@@ -27,7 +26,7 @@ public class _111 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * BFS
          */
         public int minDepth(TreeNode root) {

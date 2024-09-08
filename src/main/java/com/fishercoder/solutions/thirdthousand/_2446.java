@@ -10,7 +10,8 @@ public class _2446 {
             for (int h = 0; h <= 23; h++) {
                 for (int m = 0; m <= 59; m++) {
                     int currentTime = h * 60 + m;
-                    if (inTime(currentTime, startMinute1, endMinute1) && inTime(currentTime, startMinute2, endMinute2)) {
+                    if (inTime(currentTime, startMinute1, endMinute1)
+                            && inTime(currentTime, startMinute2, endMinute2)) {
                         return true;
                     }
                 }

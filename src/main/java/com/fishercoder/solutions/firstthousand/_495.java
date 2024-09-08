@@ -15,9 +15,8 @@ public class _495 {
                     totalDuration += (timeSeries[i + 1] - timeSeries[i]);
                 }
             }
-            totalDuration += duration;//plus the last one duration
+            totalDuration += duration; // plus the last one duration
             return totalDuration;
         }
     }
-
 }

@@ -25,7 +25,7 @@ public class _1904 {
                 }
                 return rounds;
             } else {
-                //compute all full rounds in the start hour
+                // compute all full rounds in the start hour
                 if (startMin == 0) {
                     rounds += 4;
                 } else if (startMin <= 15) {
@@ -36,7 +36,7 @@ public class _1904 {
                     rounds++;
                 }
 
-                //compute all full rounds in the finish hour
+                // compute all full rounds in the finish hour
                 if (endMin >= 45) {
                     rounds += 3;
                 } else if (endMin >= 30) {
@@ -45,7 +45,7 @@ public class _1904 {
                     rounds++;
                 }
 
-                //compute all full rounds in the all full hours between finishHour and startHour
+                // compute all full rounds in the all full hours between finishHour and startHour
                 rounds += (endHour - startHour - 1) * 4;
                 return rounds;
             }

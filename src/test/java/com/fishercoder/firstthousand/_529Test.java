@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._529;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _529Test {
     private _529.Solution1 solution1;
@@ -16,18 +16,22 @@ public class _529Test {
 
     @Test
     public void test1() {
-        char[][] actual = solution1.updateBoard(new char[][]{
-                {'E', 'E', 'E', 'E', 'E'},
-                {'E', 'E', 'M', 'E', 'E'},
-                {'E', 'E', 'E', 'E', 'E'},
-                {'E', 'E', 'E', 'E', 'E'},
-        }, new int[]{3, 0});
-        char[][] expected = new char[][]{
-                {'B', '1', 'E', '1', 'B'},
-                {'B', '1', 'M', '1', 'B'},
-                {'B', '1', '1', '1', 'B'},
-                {'B', 'B', 'B', 'B', 'B'},
-        };
+        char[][] actual =
+                solution1.updateBoard(
+                        new char[][] {
+                            {'E', 'E', 'E', 'E', 'E'},
+                            {'E', 'E', 'M', 'E', 'E'},
+                            {'E', 'E', 'E', 'E', 'E'},
+                            {'E', 'E', 'E', 'E', 'E'},
+                        },
+                        new int[] {3, 0});
+        char[][] expected =
+                new char[][] {
+                    {'B', '1', 'E', '1', 'B'},
+                    {'B', '1', 'M', '1', 'B'},
+                    {'B', '1', '1', '1', 'B'},
+                    {'B', 'B', 'B', 'B', 'B'},
+                };
         assertArrayEquals(expected, actual);
     }
 }

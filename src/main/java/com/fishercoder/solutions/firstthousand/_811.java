@@ -18,7 +18,9 @@ public class _811 {
                         sb.insert(0, ".");
                     }
                     sb.insert(0, subDomains[i]);
-                    map.put(sb.toString(), map.getOrDefault(sb.toString(), 0) + Integer.parseInt(pair[0]));
+                    map.put(
+                            sb.toString(),
+                            map.getOrDefault(sb.toString(), 0) + Integer.parseInt(pair[0]));
                 }
             }
             List<String> result = new ArrayList<>();

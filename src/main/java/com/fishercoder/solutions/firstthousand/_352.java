@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.Interval;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
@@ -11,12 +10,12 @@ public class _352 {
     public static class Solution1 {
         public static class SummaryRanges {
 
-            /**
+            /*
              * Use treemap, key is the start of the interval.
              */
             TreeMap<Integer, Interval> treeMap;
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public SummaryRanges() {

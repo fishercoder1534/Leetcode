@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1014;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1014Test {
     private _1014.Solution1 solution1;
@@ -16,11 +16,11 @@ public class _1014Test {
 
     @Test
     public void test1() {
-        assertEquals(solution1.maxScoreSightseeingPair(new int[]{1, 3, 5}), 7);
+        assertEquals(solution1.maxScoreSightseeingPair(new int[] {1, 3, 5}), 7);
     }
 
     @Test
     public void test2() {
-        assertEquals(solution1.maxScoreSightseeingPair(new int[]{8, 1, 5, 2, 6}), 11);
+        assertEquals(solution1.maxScoreSightseeingPair(new int[] {8, 1, 5, 2, 6}), 11);
     }
 }

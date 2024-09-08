@@ -6,7 +6,7 @@ import java.util.Map;
 public class _523 {
 
     public static class Solution1 {
-        /**
+        /*
          * reference: https://discuss.leetcode.com/topic/80793/java-o-n-time-o-k-space/20
          * "The reason we use modulo is:
          * (a+(n*x))%x is same as (a%x)
@@ -18,18 +18,22 @@ public class _523 {
          */
         public boolean checkSubarraySum(int[] nums, int k) {
             Map<Integer, Integer> map = new HashMap<>();
-            map.put(0, -1);//this line is critical to mark the beginning of the prefix sum, so that next time, when we encounter a running sum of zero, we know that's the answer, see test case 11
+            map.put(
+                    0,
+                    -1); // this line is critical to mark the beginning of the prefix sum, so that
+            // next time, when we encounter a running sum of zero, we know that's the
+            // answer, see test case 11
             int sum = 0;
             for (int i = 0; i < nums.length; i++) {
                 sum += nums[i];
                 if (k != 0) {
-                    /**Because if k == 0, sum %= k will throw ArithmeticException.*/
+                    /*Because if k == 0, sum %= k will throw ArithmeticException.*/
                     sum %= k;
                 }
                 Integer prev = map.get(sum);
                 if (prev != null) {
                     if (i - prev > 1) {
-                        /**This makes sure that it has length at least 2*/
+                        /*This makes sure that it has length at least 2*/
                         return true;
                     }
                 } else {
@@ -41,7 +45,7 @@ public class _523 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * O(n^2), this will time out on LeetCode.
          */
         public boolean checkSubarraySum(int[] nums, int k) {
@@ -49,14 +53,15 @@ public class _523 {
                 return false;
             }
 
-            //Two continuous zeroes will form a subarray of length 2 with sum 0, 0*k = 0 will always be true
+            // Two continuous zeroes will form a subarray of length 2 with sum 0, 0*k = 0 will
+            // always be true
             for (int i = 0; i < nums.length - 1; i++) {
                 if (nums[i] == 0 && nums[i + 1] == 0) {
                     return true;
                 }
             }
 
-            //then k cannot be zero any more
+            // then k cannot be zero any more
             if (k == 0 || nums.length < 2) {
                 return false;
             }
@@ -76,5 +81,4 @@ public class _523 {
             return false;
         }
     }
-
 }

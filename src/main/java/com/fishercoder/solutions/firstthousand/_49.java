@@ -9,7 +9,7 @@ import java.util.Map;
 public class _49 {
 
     public static class Solution1 {
-        /**
+        /*
          * Time: O(n*k*logk) where n is the # of strings in the given input and k is the maximum length of each string
          */
         public List<List<String>> groupAnagrams(String[] strs) {
@@ -28,7 +28,7 @@ public class _49 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * This is an improvement to the above solution in terms of time complexity.
          * Time: O(n*k) where n is the # of strings in the given input and k is the maximum length of each string
          */

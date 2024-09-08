@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _2076 {
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://leetcode.com/SaveVMK/ on https://leetcode.com/contest/weekly-contest-267/ranking/
          */
         public boolean[] friendRequests(int n, int[][] restrictions, int[][] requests) {
@@ -46,6 +46,5 @@ public class _2076 {
             }
             return ans;
         }
-
     }
 }

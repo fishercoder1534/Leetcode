@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._55;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _55Test {
     private _55.Solution1 solution1;
@@ -23,7 +23,7 @@ public class _55Test {
 
     @Test
     public void test1() {
-        nums = new int[]{0, 2, 3};
+        nums = new int[] {0, 2, 3};
         assertEquals(false, solution1.canJump(nums));
         assertEquals(false, solution2.canJump(nums));
         assertEquals(false, solution3.canJump(nums));
@@ -32,7 +32,7 @@ public class _55Test {
 
     @Test
     public void test2() {
-        nums = new int[]{1, 2};
+        nums = new int[] {1, 2};
         assertEquals(true, solution1.canJump(nums));
         assertEquals(true, solution2.canJump(nums));
         assertEquals(true, solution3.canJump(nums));
@@ -41,7 +41,7 @@ public class _55Test {
 
     @Test
     public void test3() {
-        nums = new int[]{2, 3, 1, 1, 4};
+        nums = new int[] {2, 3, 1, 1, 4};
         assertEquals(true, solution1.canJump(nums));
         assertEquals(true, solution2.canJump(nums));
         assertEquals(true, solution3.canJump(nums));
@@ -50,7 +50,7 @@ public class _55Test {
 
     @Test
     public void test4() {
-        nums = new int[]{5, 9, 3, 2, 1, 0, 2, 3, 3, 1, 0, 0};
+        nums = new int[] {5, 9, 3, 2, 1, 0, 2, 3, 3, 1, 0, 0};
         assertEquals(true, solution1.canJump(nums));
         assertEquals(true, solution2.canJump(nums));
         assertEquals(true, solution3.canJump(nums));
@@ -59,7 +59,7 @@ public class _55Test {
 
     @Test
     public void test5() {
-        nums = new int[]{2, 0, 0};
+        nums = new int[] {2, 0, 0};
         assertEquals(true, solution1.canJump(nums));
         assertEquals(true, solution2.canJump(nums));
         assertEquals(true, solution3.canJump(nums));
@@ -68,7 +68,7 @@ public class _55Test {
 
     @Test
     public void test6() {
-        nums = new int[]{2, 0};
+        nums = new int[] {2, 0};
         assertEquals(true, solution1.canJump(nums));
         assertEquals(true, solution2.canJump(nums));
         assertEquals(true, solution3.canJump(nums));
@@ -77,7 +77,7 @@ public class _55Test {
 
     @Test
     public void test7() {
-        nums = new int[]{1, 1, 0, 1};
+        nums = new int[] {1, 1, 0, 1};
         assertEquals(false, solution1.canJump(nums));
         assertEquals(false, solution2.canJump(nums));
         assertEquals(false, solution3.canJump(nums));
@@ -86,7 +86,7 @@ public class _55Test {
 
     @Test
     public void test8() {
-        nums = new int[]{0};
+        nums = new int[] {0};
         assertEquals(true, solution1.canJump(nums));
         assertEquals(true, solution2.canJump(nums));
         assertEquals(true, solution3.canJump(nums));
@@ -95,12 +95,10 @@ public class _55Test {
 
     @Test
     public void test9() {
-        nums = new int[]{3, 2, 1, 0, 4};
+        nums = new int[] {3, 2, 1, 0, 4};
         assertEquals(false, solution1.canJump(nums));
         assertEquals(false, solution2.canJump(nums));
         assertEquals(false, solution3.canJump(nums));
         assertEquals(false, solution4.canJump(nums));
     }
-
-
 }

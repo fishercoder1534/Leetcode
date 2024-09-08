@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _600 {
 
     public static class Solution1 {
-        /**
+        /*
          * Credit: https://leetcode.com/articles/non-negative-integers-without-consecutive-ones/#approach-3-using-bit-manipulation-accepted
          */
         public int findIntegers(int num) {
@@ -32,5 +32,4 @@ public class _600 {
             return sum + 1;
         }
     }
-
 }

@@ -1,13 +1,12 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.HashMap;
 import java.util.Map;
 
 public class _337 {
     public static class Solution1 {
-        //simple recursion without caching: 1189 ms
+        // simple recursion without caching: 1189 ms
         public int rob(TreeNode root) {
             if (root == null) {
                 return 0;
@@ -26,7 +25,7 @@ public class _337 {
     }
 
     public static class Solution2 {
-        //same idea, but with caching via a hashmap: 8 ms
+        // same idea, but with caching via a hashmap: 8 ms
         public int rob(TreeNode root) {
             Map<TreeNode, Integer> map = new HashMap<>();
             return getMaxValue(root, map);
@@ -47,11 +46,12 @@ public class _337 {
             if (root.right != null) {
                 val += getMaxValue(root.right.left, map) + getMaxValue(root.right.right, map);
             }
-            int max = Math.max(root.val + val,
-                    getMaxValue(root.left, map) + getMaxValue(root.right, map));
+            int max =
+                    Math.max(
+                            root.val + val,
+                            getMaxValue(root.left, map) + getMaxValue(root.right, map));
             map.put(root, max);
             return max;
         }
     }
-
 }

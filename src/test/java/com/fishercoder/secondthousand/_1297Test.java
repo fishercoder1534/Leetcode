@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1297;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1297Test {
     private _1297.Solution1 solution1;
@@ -33,5 +33,4 @@ public class _1297Test {
     public void test4() {
         assertEquals(0, solution1.maxFreq("abcde", 2, 3, 3));
     }
-
 }

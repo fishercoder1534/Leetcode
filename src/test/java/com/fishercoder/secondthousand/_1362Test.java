@@ -5,8 +5,6 @@ import com.fishercoder.solutions.secondthousand._1362;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-
 public class _1362Test {
     private _1362.Solution1 solution1;
 
@@ -29,5 +27,4 @@ public class _1362Test {
     public void test3() {
         CommonUtils.printArray(solution1.closestDivisors(999));
     }
-
 }

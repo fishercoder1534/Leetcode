@@ -1,13 +1,12 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.secondthousand._1373;
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class _1373Test {
     private _1373.Solution1 solution1;
@@ -48,7 +47,10 @@ public class _1373Test {
     @Test
     public void test5() {
         solution1 = new _1373.Solution1();
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 4, 3, 2, 4, 2, 5, null, null, null, null, null, null, 4, 6));
+        root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                1, 4, 3, 2, 4, 2, 5, null, null, null, null, null, null, 4, 6));
         TreeUtils.printBinaryTree(root);
         assertEquals(20, solution1.maxSumBST(root));
     }
@@ -56,9 +58,11 @@ public class _1373Test {
     @Test
     public void test6() {
         solution1 = new _1373.Solution1();
-        root = TreeUtils.constructBinaryTree(Arrays.asList(4, 8, null, 6, 1, 9, null, -5, 4, null, null, null, -3, null, 10));
+        root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                4, 8, null, 6, 1, 9, null, -5, 4, null, null, null, -3, null, 10));
         TreeUtils.printBinaryTree(root);
         assertEquals(14, solution1.maxSumBST(root));
     }
-
 }

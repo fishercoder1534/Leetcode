@@ -1,10 +1,10 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1466;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1466Test {
     private _1466.Solution1 solution1;
@@ -19,18 +19,13 @@ public class _1466Test {
 
     @Test
     public void test1() {
-        connections = new int[][]{
-                {0, 1}, {1, 3}, {2, 3}, {4, 0}, {4, 5}
-        };
+        connections = new int[][] {{0, 1}, {1, 3}, {2, 3}, {4, 0}, {4, 5}};
         assertEquals(3, solution1.minReorder(6, connections));
     }
 
     @Test
     public void test2() {
-        connections = new int[][]{
-                {0, 1}, {1, 3}, {2, 3}, {4, 0}, {4, 5}
-        };
+        connections = new int[][] {{0, 1}, {1, 3}, {2, 3}, {4, 0}, {4, 5}};
         assertEquals(3, solution2.minReorder(6, connections));
     }
-
 }

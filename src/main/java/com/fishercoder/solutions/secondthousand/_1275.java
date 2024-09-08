@@ -20,7 +20,7 @@ public class _1275 {
         }
 
         private String wins(String[][] board) {
-            //check rows
+            // check rows
             for (int i = 0; i < 3; i++) {
                 if (board[i][0] == null) {
                     break;
@@ -31,7 +31,7 @@ public class _1275 {
                 }
             }
 
-            //check columns
+            // check columns
             for (int j = 0; j < 3; j++) {
                 if (board[0][j] == null) {
                     break;
@@ -42,12 +42,13 @@ public class _1275 {
                 }
             }
 
-            //check diagonals
+            // check diagonals
             if (board[1][1] == null) {
                 return "";
             }
             String str = board[1][1];
-            if (str.equals(board[0][0]) && str.equals(board[2][2]) || (str.equals(board[0][2]) && str.equals(board[2][0]))) {
+            if (str.equals(board[0][0]) && str.equals(board[2][2])
+                    || (str.equals(board[0][2]) && str.equals(board[2][0]))) {
                 return getWinner(str);
             }
             return "";

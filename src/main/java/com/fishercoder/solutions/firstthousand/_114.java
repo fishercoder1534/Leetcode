@@ -23,7 +23,7 @@ public class _114 {
 
     public static class Solution2 {
 
-        /**
+        /*
          * Credit: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/solution/
          */
         public void flatten(TreeNode root) {

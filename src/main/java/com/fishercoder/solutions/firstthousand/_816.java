@@ -31,9 +31,12 @@ public class _816 {
                 for (int i = 1; i < str.length(); i++) {
                     String integerPart = str.substring(0, i);
                     String floatPart = str.substring(i);
-                    if (integerPart.length() > 1 && integerPart.charAt(0) != '0' && floatPart.charAt(floatPart.length() - 1) != '0') {
+                    if (integerPart.length() > 1
+                            && integerPart.charAt(0) != '0'
+                            && floatPart.charAt(floatPart.length() - 1) != '0') {
                         result.add(integerPart + "." + floatPart);
-                    } else if (integerPart.length() == 1 && floatPart.charAt(floatPart.length() - 1) != '0') {
+                    } else if (integerPart.length() == 1
+                            && floatPart.charAt(floatPart.length() - 1) != '0') {
                         result.add(integerPart + "." + floatPart);
                     }
                 }

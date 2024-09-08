@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._575;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _575Test {
     private _575.Solution1 solution1;
@@ -19,7 +19,7 @@ public class _575Test {
 
     @Test
     public void test1() {
-        candyType = new int[]{1, 1, 2, 3};
+        candyType = new int[] {1, 1, 2, 3};
         expected = 2;
         actual = solution1.distributeCandies(candyType);
         assertEquals(expected, actual);
@@ -27,7 +27,7 @@ public class _575Test {
 
     @Test
     public void test2() {
-        candyType = new int[]{1, 1, 2, 2, 3, 3};
+        candyType = new int[] {1, 1, 2, 2, 3, 3};
         expected = 3;
         actual = solution1.distributeCandies(candyType);
         assertEquals(expected, actual);
@@ -35,7 +35,7 @@ public class _575Test {
 
     @Test
     public void test3() {
-        candyType = new int[]{1000, 1, 1, 1};
+        candyType = new int[] {1000, 1, 1, 1};
         expected = 2;
         actual = solution1.distributeCandies(candyType);
         assertEquals(expected, actual);

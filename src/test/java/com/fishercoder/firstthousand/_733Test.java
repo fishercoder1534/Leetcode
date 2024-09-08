@@ -17,23 +17,24 @@ public class _733Test {
 
     @Test
     public void test1() {
-        image = new int[][]{
-                {1, 1, 1},
-                {1, 1, 0},
-                {1, 0, 1}
-        };
+        image =
+                new int[][] {
+                    {1, 1, 1},
+                    {1, 1, 0},
+                    {1, 0, 1}
+                };
         result = solution1.floodFill(image, 1, 1, 2);
         CommonUtils.print2DIntArray(result);
     }
 
     @Test
     public void test2() {
-        image = new int[][]{
-                {0, 0, 0},
-                {0, 0, 0}
-        };
+        image =
+                new int[][] {
+                    {0, 0, 0},
+                    {0, 0, 0}
+                };
         result = solution1.floodFill(image, 0, 0, 2);
         CommonUtils.print2DIntArray(result);
     }
-
 }

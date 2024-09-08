@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _651 {
 
     public static class Solution1 {
-        /**
+        /*
          * Minimum needs to be more than 3 A's in a row, otherwise "Ctrl A, Ctrl C, Ctrl V" will make fewer A's than directly
          * copying A's with the equal number of steps.
          * E.g. when n == 5,
@@ -23,5 +23,4 @@ public class _651 {
             return dp[N];
         }
     }
-
 }

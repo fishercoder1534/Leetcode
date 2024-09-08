@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -11,7 +10,7 @@ import java.util.TreeMap;
 public class _285 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/25698/java-python-solution-o-h-time-and-o-1-space-iterative
          * The inorder traversal of a BST is the nodes in ascending order.
          * To find a successor, you just need to find the smallest one that is larger than the given value since there are no duplicate values in a BST.
@@ -92,5 +91,4 @@ public class _285 {
             return inorder;
         }
     }
-
 }

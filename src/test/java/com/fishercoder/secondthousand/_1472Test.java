@@ -1,9 +1,9 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1472;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1472Test {
     private _1472.Solution1.BrowserHistory browserHistory;
@@ -22,5 +22,4 @@ public class _1472Test {
         assertEquals("google.com", browserHistory.back(2));
         assertEquals("leetcode.com", browserHistory.back(7));
     }
-
 }

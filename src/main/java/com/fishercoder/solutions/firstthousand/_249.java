@@ -14,8 +14,9 @@ public class _249 {
             Map<String, List<String>> map = new HashMap<>();
 
             for (String word : strings) {
-                //calculate the representative/key that's unique for the entire group
-                //i.e. if the two string belong to the same group, after shifting n times, they all will end up having the same key
+                // calculate the representative/key that's unique for the entire group
+                // i.e. if the two string belong to the same group, after shifting n times, they all
+                // will end up having the same key
                 // abc -> "2021"
                 // xyz -> "2021"
                 // acef -> "212324"
@@ -40,5 +41,4 @@ public class _249 {
             return result;
         }
     }
-
 }

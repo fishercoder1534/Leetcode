@@ -6,7 +6,7 @@ public class _462 {
 
     public static class Solution1 {
         public int minMoves2(int[] nums) {
-            /**sort this array, find the median of this array as the pivot*/
+            /*sort this array, find the median of this array as the pivot*/
             Arrays.sort(nums);
             int result = 0;
             int result1 = 0;
@@ -31,5 +31,4 @@ public class _462 {
             }
         }
     }
-
 }

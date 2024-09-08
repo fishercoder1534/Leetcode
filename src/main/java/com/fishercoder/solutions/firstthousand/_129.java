@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +26,9 @@ public class _129 {
             if (root.left == null && root.right == null) {
                 allNumbers.add(Integer.parseInt(sb.toString()));
             }
-            //this is to delete the last value. since it's guaranteed that the value is between [0,9], so only one char needs to be deleted.
-            //however if the value is >= 10 then this approach needs to be adjusted
+            // this is to delete the last value. since it's guaranteed that the value is between
+            // [0,9], so only one char needs to be deleted.
+            // however if the value is >= 10 then this approach needs to be adjusted
             sb.deleteCharAt(sb.length() - 1);
         }
     }
@@ -50,5 +50,4 @@ public class _129 {
             return left + right;
         }
     }
-
 }

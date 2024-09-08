@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class _1005 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/discuss/252228/A-very-simple-java-solution
          */
         public int largestSumAfterKNegations(int[] A, int K) {
@@ -25,7 +25,7 @@ public class _1005 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/discuss/252254/JavaC%2B%2BPython-Sort
          */
         public int largestSumAfterKNegations(int[] A, int K) {

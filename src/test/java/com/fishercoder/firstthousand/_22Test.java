@@ -24,5 +24,4 @@ public class _22Test {
     public void test2() {
         CommonUtils.printList(solution2.generateParenthesis(3));
     }
-
 }

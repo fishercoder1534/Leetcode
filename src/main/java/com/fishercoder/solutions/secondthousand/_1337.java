@@ -1,6 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
-/**
+/*
  * 1337. Remove Palindromic Subsequences
  *
  * Given a string s consisting only of letters 'a' and 'b'. In a single step you can remove one palindromic subsequence from s.

@@ -11,10 +11,16 @@ public class _282 {
             StringBuilder sb = new StringBuilder();
             dfs(res, sb, num, 0, target, 0, 0);
             return res;
-
         }
 
-        private void dfs(List<String> res, StringBuilder sb, String num, int pos, int target, long prev, long multi) {
+        private void dfs(
+                List<String> res,
+                StringBuilder sb,
+                String num,
+                int pos,
+                int target,
+                long prev,
+                long multi) {
             if (pos == num.length()) {
                 if (target == prev) {
                     res.add(sb.toString());
@@ -37,11 +43,17 @@ public class _282 {
                     dfs(res, sb.append("-").append(curr), num, i + 1, target, prev - curr, -curr);
                     sb.setLength(len);
 
-                    dfs(res, sb.append("*").append(curr), num, i + 1, target, prev - multi + multi * curr, multi * curr);
+                    dfs(
+                            res,
+                            sb.append("*").append(curr),
+                            num,
+                            i + 1,
+                            target,
+                            prev - multi + multi * curr,
+                            multi * curr);
                     sb.setLength(len);
                 }
             }
         }
     }
-
 }

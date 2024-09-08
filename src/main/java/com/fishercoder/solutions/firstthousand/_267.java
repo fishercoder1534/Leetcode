@@ -48,8 +48,12 @@ public class _267 {
         }
 
         // generate all unique permutation from list
-        void getPerm(List<Character> list, String mid, boolean[] used, StringBuilder sb,
-                     List<String> res) {
+        void getPerm(
+                List<Character> list,
+                String mid,
+                boolean[] used,
+                StringBuilder sb,
+                List<String> res) {
             if (sb.length() == list.size()) {
                 // form the palindromic string
                 res.add(sb.toString() + mid + sb.reverse().toString());

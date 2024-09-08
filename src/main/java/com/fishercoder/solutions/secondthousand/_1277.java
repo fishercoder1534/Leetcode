@@ -2,7 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1277 {
     public static class Solution1 {
-        /**
+        /*
          * In-place solution.
          * credit: https://leetcode.com/problems/count-square-submatrices-with-all-ones/discuss/441306/Python-DP-solution
          */
@@ -13,7 +13,11 @@ public class _1277 {
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     if (matrix[i][j] > 0 && i > 0 && j > 0) {
-                        matrix[i][j] = Math.min(matrix[i - 1][j - 1], Math.min(matrix[i - 1][j], matrix[i][j - 1])) + 1;
+                        matrix[i][j] =
+                                Math.min(
+                                                matrix[i - 1][j - 1],
+                                                Math.min(matrix[i - 1][j], matrix[i][j - 1]))
+                                        + 1;
                     }
                     count += matrix[i][j];
                 }
@@ -23,7 +27,7 @@ public class _1277 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Use m*n extra space solution.
          * credit: https://leetcode.com/problems/count-square-submatrices-with-all-ones/discuss/441312/Java-Simple-DP-solution
          */
@@ -44,7 +48,9 @@ public class _1277 {
             for (int i = 1; i < m; i++) {
                 for (int j = 1; j < n; j++) {
                     if (matrix[i][j] == 1) {
-                        dp[i][j] = Math.min(dp[i - 1][j - 1], Math.min(dp[i - 1][j], dp[i][j - 1])) + 1;
+                        dp[i][j] =
+                                Math.min(dp[i - 1][j - 1], Math.min(dp[i - 1][j], dp[i][j - 1]))
+                                        + 1;
                     }
                 }
             }

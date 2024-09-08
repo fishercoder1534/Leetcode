@@ -1,6 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
-/**
+/*
  * 1317. Convert Integer to the Sum of Two No-Zero Integers
  *
  * Given an integer n. No-Zero integer is a positive integer which doesn't contain any 0 in its decimal representation.
@@ -41,7 +41,7 @@ public class _1317 {
             int right = n - 1;
             while (left <= right) {
                 if (noZero(left) && noZero(right)) {
-                    return new int[]{left, right};
+                    return new int[] {left, right};
                 } else {
                     left++;
                     right--;

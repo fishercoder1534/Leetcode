@@ -1,15 +1,14 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._662;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _662Test {
     private _662.Solution1 solution1;
@@ -44,9 +43,13 @@ public class _662Test {
 
     @Test
     @Disabled
-    /**TODO: need to figure out how to pass in the input for the 4th example on Leetcode*/
+    /** TODO: need to figure out how to pass in the input for the 4th example on Leetcode */
     public void test4() {
-        root = TreeUtils.constructBinaryTree(Arrays.asList(1, 3, 2, 5, null, null, 9, 6, null, null, null, null, null, null, 7));
+        root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                1, 3, 2, 5, null, null, 9, 6, null, null, null, null, null, null,
+                                7));
         expected = 8;
         assertEquals(expected, solution1.widthOfBinaryTree(root));
     }

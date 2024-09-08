@@ -21,7 +21,8 @@ public class _2815 {
                 List<Integer> list = entry.getValue();
                 if (list.size() > 1) {
                     Collections.sort(list);
-                    maxSum = Math.max(maxSum, list.get(list.size() - 1) + list.get(list.size() - 2));
+                    maxSum =
+                            Math.max(maxSum, list.get(list.size() - 1) + list.get(list.size() - 2));
                 }
             }
             return maxSum;

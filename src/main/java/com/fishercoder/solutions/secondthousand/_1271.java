@@ -10,7 +10,11 @@ public class _1271 {
             long numInt = Long.parseLong(num);
             String hexString = Long.toHexString(numInt);
             StringBuilder sb = new StringBuilder();
-            Set<Character> set = new HashSet<>(Arrays.asList('A', 'B', 'C', 'D', 'E', 'F', '1', '0', 'a', 'b', 'c', 'd', 'e', 'f'));
+            Set<Character> set =
+                    new HashSet<>(
+                            Arrays.asList(
+                                    'A', 'B', 'C', 'D', 'E', 'F', '1', '0', 'a', 'b', 'c', 'd', 'e',
+                                    'f'));
             for (char c : hexString.toCharArray()) {
                 if (!set.contains(c)) {
                     return "ERROR";

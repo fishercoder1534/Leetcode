@@ -9,7 +9,8 @@ public class _2288 {
                 if (word.charAt(0) == '$') {
                     try {
                         long num = Long.parseLong(word.substring(1));
-                        double newNum = Math.round(num * (1 - ((discount * 1.0) / 100)) * 100.00) / 100.00;
+                        double newNum =
+                                Math.round(num * (1 - ((discount * 1.0) / 100)) * 100.00) / 100.00;
                         sb.append("$");
                         sb.append(String.format("%.2f", newNum));
                     } catch (Exception e) {

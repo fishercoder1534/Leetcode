@@ -1,13 +1,12 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.secondthousand._1026;
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class _1026Test {
     private _1026.Solution1 solution1;
@@ -16,7 +15,9 @@ public class _1026Test {
     @Test
     public void test1() {
         solution1 = new _1026.Solution1();
-        root = TreeUtils.constructBinaryTree(Arrays.asList(8, 3, 10, 1, 6, null, 14, null, null, 4, 7, 13));
+        root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(8, 3, 10, 1, 6, null, 14, null, null, 4, 7, 13));
         assertEquals(7, solution1.maxAncestorDiff(root));
     }
 
@@ -26,5 +27,4 @@ public class _1026Test {
         root = TreeUtils.constructBinaryTree(Arrays.asList(1, null, 2, null, 0, 3));
         assertEquals(3, solution1.maxAncestorDiff(root));
     }
-
 }

@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class _554 {
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/articles/brick-wall/
          * <p>
          * we make use of a HashMap
@@ -28,7 +28,7 @@ public class _554 {
             for (List<Integer> row : wall) {
                 int sum = 0;
                 for (int i = 0; i < row.size() - 1; i++) {
-                    //NOTE: i < row.size()-1
+                    // NOTE: i < row.size()-1
                     sum += row.get(i);
                     if (map.containsKey(sum)) {
                         map.put(sum, map.get(sum) + 1);

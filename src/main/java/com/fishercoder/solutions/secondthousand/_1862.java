@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class _1862 {
     public static class Solution1 {
-        /**
+        /*
          * TODO: this results in TLE, fix it.
          */
         public int sumOfFlooredPairs(int[] nums) {
@@ -19,7 +19,10 @@ public class _1862 {
             long sum = 0L;
             for (int i = list.size() - 1; i >= 0; i--) {
                 for (int j = i; j >= 0; j--) {
-                    sum += (list.get(i) / list.get(j)) * map.get(list.get(j)) * map.get(list.get(i));
+                    sum +=
+                            (list.get(i) / list.get(j))
+                                    * map.get(list.get(j))
+                                    * map.get(list.get(i));
                     sum %= mod;
                 }
             }

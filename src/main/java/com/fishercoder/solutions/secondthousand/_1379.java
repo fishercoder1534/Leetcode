@@ -4,7 +4,8 @@ import com.fishercoder.common.classes.TreeNode;
 
 public class _1379 {
     public static class Solution1 {
-        public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
+        public final TreeNode getTargetCopy(
+                final TreeNode original, final TreeNode cloned, final TreeNode target) {
             if (original == null) {
                 return null;
             }
@@ -20,10 +21,11 @@ public class _1379 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * My completely original solution on 5/17/2022.
          */
-        public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
+        public final TreeNode getTargetCopy(
+                final TreeNode original, final TreeNode cloned, final TreeNode target) {
             if (original == null || cloned == null) {
                 return null;
             }

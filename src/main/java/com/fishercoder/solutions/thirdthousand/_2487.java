@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.thirdthousand;
 
 import com.fishercoder.common.classes.ListNode;
-
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
@@ -9,7 +8,7 @@ import java.util.List;
 
 public class _2487 {
     public static class Solution1 {
-        /**
+        /*
          * This is sort of cheating, i.e. transforming the linked list into an array instead of operating on the linked list itself.
          */
         public ListNode removeNodes(ListNode head) {
@@ -49,6 +48,6 @@ public class _2487 {
     }
 
     public static class Solution2 {
-        //TODO: use stack to solve this problem
+        // TODO: use stack to solve this problem
     }
 }

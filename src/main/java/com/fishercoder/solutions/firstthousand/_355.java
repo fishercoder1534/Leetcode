@@ -11,7 +11,7 @@ import java.util.Set;
 public class _355 {
 
     public static class Solution1 {
-        /**
+        /*
          * reference: https://discuss.leetcode.com/topic/48100/java-oo-design-with-most-efficient-function-getnewsfeed
          */
         public static class Twitter {
@@ -24,7 +24,7 @@ public class _355 {
                 public int id;
                 public Tweet next;
 
-                /**
+                /*
                  * have a pointer,
                  * so we could be more memory efficient when retrieving tweets,
                  * think about merging k sorted lists
@@ -37,7 +37,7 @@ public class _355 {
                 }
             }
 
-            /**
+            /*
              * the meat part of this OO design problem,
              * have a User object itself,
              * have follow() and unfollow() method embedded inside it
@@ -50,7 +50,7 @@ public class _355 {
                 public User(int id) {
                     this.id = id;
                     followed = new HashSet<>();
-                    followed.add(id);//follow oneself first
+                    followed.add(id); // follow oneself first
                     this.tweetHead = null;
                 }
 
@@ -63,25 +63,25 @@ public class _355 {
                 }
 
                 public void postTweet(int tweetId) {
-                    //every time we post, we prepend it to the head of the tweet
+                    // every time we post, we prepend it to the head of the tweet
                     Tweet head = new Tweet(tweetId);
                     head.next = tweetHead;
-                    tweetHead = head;//don't forget to overwrite tweetHead with the new head
+                    tweetHead = head; // don't forget to overwrite tweetHead with the new head
                 }
             }
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public Twitter() {
                 map = new HashMap();
             }
 
-            /**
+            /*
              * Compose a new tweet.
              */
             public void postTweet(int userId, int tweetId) {
-                /**update oneself newsFeed first and also all of his followers' newsFeed*/
+                /*update oneself newsFeed first and also all of his followers' newsFeed*/
                 if (!map.containsKey(userId)) {
                     User user = new User(userId);
                     map.put(userId, user);
@@ -89,7 +89,7 @@ public class _355 {
                 map.get(userId).postTweet(tweetId);
             }
 
-            /**
+            /*
              * Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
              */
             public List<Integer> getNewsFeed(int userId) {
@@ -98,10 +98,11 @@ public class _355 {
                     return newsFeed;
                 }
                 Set<Integer> users = map.get(userId).followed;
-                PriorityQueue<Tweet> heap = new PriorityQueue<>(users.size(), (a, b) -> b.time - a.time);
+                PriorityQueue<Tweet> heap =
+                        new PriorityQueue<>(users.size(), (a, b) -> b.time - a.time);
                 for (int user : users) {
                     Tweet tweet = map.get(user).tweetHead;
-                    //it's super important to check null before putting into the heap
+                    // it's super important to check null before putting into the heap
                     if (tweet != null) {
                         heap.offer(tweet);
                     }
@@ -120,7 +121,7 @@ public class _355 {
                 return newsFeed;
             }
 
-            /**
+            /*
              * Follower follows a followee. If the operation is invalid, it should be a no-op.
              */
             public void follow(int followerId, int followeeId) {
@@ -137,7 +138,7 @@ public class _355 {
                 map.get(followerId).follow(followeeId);
             }
 
-            /**
+            /*
              * Follower unfollows a followee. If the operation is invalid, it should be a no-op.
              */
             public void unfollow(int followerId, int followeeId) {
@@ -146,7 +147,7 @@ public class _355 {
                 }
                 map.get(followerId).unfollow(followeeId);
             }
-            /**
+            /*
              * Your Twitter object will be instantiated and called as such:
              * Twitter obj = new Twitter();
              * obj.postTweet(userId,tweetId);
@@ -188,7 +189,6 @@ public class _355 {
                 public void unfollow(int followeeId) {
                     followed.remove(followeeId);
                 }
-
             }
 
             private class Tweet {
@@ -203,7 +203,7 @@ public class _355 {
                 }
             }
 
-            /**
+            /*
              * Initialize your data structure here.
              */
             public Twitter() {
@@ -211,7 +211,7 @@ public class _355 {
                 timestamp = 0;
             }
 
-            /**
+            /*
              * Compose a new tweet.
              */
             public void postTweet(int userId, int tweetId) {
@@ -222,7 +222,7 @@ public class _355 {
                 map.get(userId).postTweet(tweetId);
             }
 
-            /**
+            /*
              * Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
              */
             public List<Integer> getNewsFeed(int userId) {
@@ -254,7 +254,7 @@ public class _355 {
                 return result;
             }
 
-            /**
+            /*
              * Follower follows a followee. If the operation is invalid, it should be a no-op.
              */
             public void follow(int followerId, int followeeId) {
@@ -267,7 +267,7 @@ public class _355 {
                 map.get(followerId).follow(followeeId);
             }
 
-            /**
+            /*
              * Follower unfollows a followee. If the operation is invalid, it should be a no-op.
              */
             public void unfollow(int followerId, int followeeId) {

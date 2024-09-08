@@ -1,11 +1,10 @@
 package com.fishercoder.secondthousand;
 
-import com.fishercoder.solutions.secondthousand._1600;
-import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import com.fishercoder.solutions.secondthousand._1600;
+import java.util.Arrays;
+import org.junit.jupiter.api.Test;
 
 public class _1600Test {
     private _1600.Solution1.ThroneInheritance throneInheritance;
@@ -19,9 +18,13 @@ public class _1600Test {
         throneInheritance.birth("andy", "matthew");
         throneInheritance.birth("bob", "alex");
         throneInheritance.birth("bob", "asha");
-        assertEquals(Arrays.asList("king", "andy", "matthew", "bob", "alex", "asha", "catherine"), throneInheritance.getInheritanceOrder());
+        assertEquals(
+                Arrays.asList("king", "andy", "matthew", "bob", "alex", "asha", "catherine"),
+                throneInheritance.getInheritanceOrder());
         throneInheritance.death("bob");
-        assertEquals(Arrays.asList("king", "andy", "matthew", "alex", "asha", "catherine"), throneInheritance.getInheritanceOrder());
+        assertEquals(
+                Arrays.asList("king", "andy", "matthew", "alex", "asha", "catherine"),
+                throneInheritance.getInheritanceOrder());
     }
 
     @Test
@@ -32,9 +35,12 @@ public class _1600Test {
         throneInheritance.birth("clyde", "shannon");
         throneInheritance.birth("shannon", "scott");
         throneInheritance.birth("king", "keith");
-        assertEquals(Arrays.asList("king", "clyde", "shannon", "scott", "keith"), throneInheritance.getInheritanceOrder());
+        assertEquals(
+                Arrays.asList("king", "clyde", "shannon", "scott", "keith"),
+                throneInheritance.getInheritanceOrder());
         throneInheritance.birth("clyde", "joseph");
-        assertEquals(Arrays.asList("king", "clyde", "shannon", "scott", "joseph", "keith"), throneInheritance.getInheritanceOrder());
+        assertEquals(
+                Arrays.asList("king", "clyde", "shannon", "scott", "joseph", "keith"),
+                throneInheritance.getInheritanceOrder());
     }
-
 }

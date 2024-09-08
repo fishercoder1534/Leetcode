@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._976;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _976Test {
 
@@ -17,21 +17,21 @@ public class _976Test {
 
     @Test
     public void test1() {
-        assertEquals(5, test.largestPerimeter(new int[]{2, 1, 2}));
+        assertEquals(5, test.largestPerimeter(new int[] {2, 1, 2}));
     }
 
     @Test
     public void test2() {
-        assertEquals(0, test.largestPerimeter(new int[]{1, 2, 1}));
+        assertEquals(0, test.largestPerimeter(new int[] {1, 2, 1}));
     }
 
     @Test
     public void test3() {
-        assertEquals(10, test.largestPerimeter(new int[]{3, 2, 3, 4}));
+        assertEquals(10, test.largestPerimeter(new int[] {3, 2, 3, 4}));
     }
 
     @Test
     public void test4() {
-        assertEquals(8, test.largestPerimeter(new int[]{3, 6, 2, 3}));
+        assertEquals(8, test.largestPerimeter(new int[] {3, 6, 2, 3}));
     }
 }

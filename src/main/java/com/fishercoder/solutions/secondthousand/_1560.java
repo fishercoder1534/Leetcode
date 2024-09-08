@@ -1,10 +1,10 @@
 package com.fishercoder.solutions.secondthousand;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Collections;
 
 public class _1560 {
     public static class Solution1 {

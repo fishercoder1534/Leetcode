@@ -28,7 +28,7 @@ public class _358 {
                 entry.setValue(entry.getValue() - 1);
                 waitQueue.offer(entry);
                 if (waitQueue.size() < k) {
-                    continue; //there's only k-1 chars in the waitHeap, not full yet
+                    continue; // there's only k-1 chars in the waitHeap, not full yet
                 }
                 Map.Entry<Character, Integer> front = waitQueue.poll();
                 if (front.getValue() > 0) {
@@ -39,5 +39,4 @@ public class _358 {
             return stringBuilder.length() == s.length() ? stringBuilder.toString() : "";
         }
     }
-
 }

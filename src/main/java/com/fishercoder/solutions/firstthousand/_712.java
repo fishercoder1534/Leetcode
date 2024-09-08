@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _712 {
     public static class Solution1 {
-        //credit: https://leetcode.com/articles/minimum-ascii-delete-sum-for-two-strings/
+        // credit: https://leetcode.com/articles/minimum-ascii-delete-sum-for-two-strings/
         public int minimumDeleteSum(String s1, String s2) {
             int[][] dp = new int[s1.length() + 1][s2.length() + 1];
 
@@ -19,7 +19,10 @@ public class _712 {
                     if (s1.charAt(i) == s2.charAt(j)) {
                         dp[i][j] = dp[i + 1][j + 1];
                     } else {
-                        dp[i][j] = Math.min(dp[i + 1][j] + s1.codePointAt(i), dp[i][j + 1] + s2.codePointAt(j));
+                        dp[i][j] =
+                                Math.min(
+                                        dp[i + 1][j] + s1.codePointAt(i),
+                                        dp[i][j + 1] + s2.codePointAt(j));
                     }
                 }
             }

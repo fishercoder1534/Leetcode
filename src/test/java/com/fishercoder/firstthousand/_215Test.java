@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._215;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _215Test {
     private _215.Solution1 solution1;
@@ -24,7 +24,7 @@ public class _215Test {
     @Test
     public void test1() {
         k = 2;
-        nums = new int[]{3, 2, 1, 5, 6, 4};
+        nums = new int[] {3, 2, 1, 5, 6, 4};
         expected = 5;
         assertEquals(expected, solution1.findKthLargest(nums, k));
         assertEquals(expected, solution2.findKthLargest(nums, k));
@@ -34,7 +34,7 @@ public class _215Test {
     @Test
     public void test2() {
         k = 1;
-        nums = new int[]{1};
+        nums = new int[] {1};
         expected = 1;
         assertEquals(expected, solution1.findKthLargest(nums, k));
         assertEquals(expected, solution2.findKthLargest(nums, k));
@@ -44,7 +44,7 @@ public class _215Test {
     @Test
     public void test3() {
         k = 2;
-        nums = new int[]{2, 1};
+        nums = new int[] {2, 1};
         expected = 1;
         assertEquals(expected, solution1.findKthLargest(nums, k));
         assertEquals(expected, solution2.findKthLargest(nums, k));

@@ -37,28 +37,30 @@ public class _953 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Solution1 above is actually consistently faster than this Solution2 on LeetCode.
          */
         public boolean isAlienSorted(String[] words, String order) {
             String[] copy = Arrays.copyOf(words, words.length);
-            Arrays.sort(words, (o1, o2) -> {
-                int pos1 = 0;
-                int pos2 = 0;
-                for (int i = 0; i < Math.min(o1.length(), o2.length()); i++) {
-                    pos1 = order.indexOf(o1.charAt(i));
-                    pos2 = order.indexOf(o2.charAt(i));
-                    if (pos1 != pos2) {
-                        break;
-                    }
-                }
+            Arrays.sort(
+                    words,
+                    (o1, o2) -> {
+                        int pos1 = 0;
+                        int pos2 = 0;
+                        for (int i = 0; i < Math.min(o1.length(), o2.length()); i++) {
+                            pos1 = order.indexOf(o1.charAt(i));
+                            pos2 = order.indexOf(o2.charAt(i));
+                            if (pos1 != pos2) {
+                                break;
+                            }
+                        }
 
-                if (pos1 == pos2 && o1.length() != o2.length()) {
-                    return o1.length() - o2.length();
-                }
+                        if (pos1 == pos2 && o1.length() != o2.length()) {
+                            return o1.length() - o2.length();
+                        }
 
-                return pos1 - pos2;
-            });
+                        return pos1 - pos2;
+                    });
             for (int i = 0; i < words.length; i++) {
                 if (!copy[i].equals(words[i])) {
                     return false;

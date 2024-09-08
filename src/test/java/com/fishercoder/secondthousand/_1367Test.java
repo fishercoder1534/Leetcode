@@ -1,15 +1,14 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.secondthousand._1367;
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class _1367Test {
     private _1367.Solution1 solution1;
@@ -17,25 +16,36 @@ public class _1367Test {
     @Test
     public void test1() {
         solution1 = new _1367.Solution1();
-        ListNode head = LinkedListUtils.contructLinkedList(new int[]{4, 2, 8});
-        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3));
+        ListNode head = LinkedListUtils.contructLinkedList(new int[] {4, 2, 8});
+        TreeNode root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1,
+                                3));
         assertEquals(true, solution1.isSubPath(head, root));
     }
 
     @Test
     public void test2() {
         solution1 = new _1367.Solution1();
-        ListNode head = LinkedListUtils.contructLinkedList(new int[]{1, 4, 2, 6});
-        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3));
+        ListNode head = LinkedListUtils.contructLinkedList(new int[] {1, 4, 2, 6});
+        TreeNode root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1,
+                                3));
         assertEquals(true, solution1.isSubPath(head, root));
     }
 
     @Test
     public void test3() {
         solution1 = new _1367.Solution1();
-        ListNode head = LinkedListUtils.contructLinkedList(new int[]{1, 4, 2, 6, 8});
-        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3));
+        ListNode head = LinkedListUtils.contructLinkedList(new int[] {1, 4, 2, 6, 8});
+        TreeNode root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(
+                                1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1,
+                                3));
         assertEquals(false, solution1.isSubPath(head, root));
     }
-
 }

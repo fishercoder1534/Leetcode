@@ -3,7 +3,7 @@ package com.fishercoder.solutions.firstthousand;
 public class _14 {
 
     public static class Solution1 {
-        //horizontal scan
+        // horizontal scan
         public String longestCommonPrefix(String[] strs) {
             if (strs.length == 0) {
                 return "";
@@ -22,7 +22,7 @@ public class _14 {
     }
 
     public static class Solution2 {
-        //vertical scan
+        // vertical scan
         public String longestCommonPrefix(String[] strs) {
             if (strs.length == 0) {
                 return "";

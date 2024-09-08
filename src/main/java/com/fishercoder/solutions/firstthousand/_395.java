@@ -2,7 +2,7 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _395 {
     public static class Solution1 {
-        /**
+        /*
          * Reference: https://discuss.leetcode.com/topic/57372/java-divide-and-conquer-recursion-solution
          */
         public int longestSubstring(String s, int k) {
@@ -10,7 +10,7 @@ public class _395 {
         }
 
         int findLongestSubstring(char[] chars, int start, int end, int k) {
-            /**Base case 1 of 2*/
+            /*Base case 1 of 2*/
             if (end - start < k) {
                 return 0;
             }
@@ -20,7 +20,7 @@ public class _395 {
                 count[index]++;
             }
 
-            /**For every character in the above frequency table*/
+            /*For every character in the above frequency table*/
             for (int i = 0; i < 26; i++) {
                 if (count[i] < k && count[i] > 0) {
                     for (int j = start; j < end; j++) {
@@ -32,14 +32,14 @@ public class _395 {
                     }
                 }
             }
-            /**Base case 2 of 2:
+            /*Base case 2 of 2:
              * when any characters in this substring has repeated at least k times, then this entire substring is a valid answer*/
             return end - start;
         }
     }
 
     public static class Solution2 {
-        /**
+        /*
          * classic sliding window approach.
          * credit: https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/discuss/170010/Java-O(n)-Solution-with-Detailed-Explanation-Sliding-Window/774350
          */
@@ -62,24 +62,27 @@ public class _395 {
             while (end < s.length()) {
                 char c1 = s.charAt(end);
                 if (map[c1 - 'a'] == 0) {
-                    //we increment this when we include a new letter into our sliding window
+                    // we increment this when we include a new letter into our sliding window
                     uniqueLetterCount++;
                 }
                 map[c1 - 'a']++;
                 if (map[c1 - 'a'] == k) {
-                    //we increment this number when we find a letter's frequency reaches k
+                    // we increment this number when we find a letter's frequency reaches k
                     numNoLessThanK++;
                 }
                 end++;
 
                 while (uniqueLetterCount > numUniqueTarget) {
-                    //as long as the counter (the number of qualified letters) is greater than our target number,
-                    //we can move the left pointer to the right,
-                    //this keeps the interval within our sliding window always valid
+                    // as long as the counter (the number of qualified letters) is greater than our
+                    // target number,
+                    // we can move the left pointer to the right,
+                    // this keeps the interval within our sliding window always valid
                     char c2 = s.charAt(start);
                     if (map[c2 - 'a'] == k) {
-                        //we decrement this numNoLessThanK when we find this letter's frequency equals
-                        //to k because we'll move past this letter, i.e. our sliding window no longer includes it
+                        // we decrement this numNoLessThanK when we find this letter's frequency
+                        // equals
+                        // to k because we'll move past this letter, i.e. our sliding window no
+                        // longer includes it
                         numNoLessThanK--;
                     }
                     map[c2 - 'a']--;

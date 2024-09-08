@@ -19,7 +19,6 @@ public class _243 {
                 }
             }
             return min;
-
         }
     }
 }

@@ -1,10 +1,10 @@
 package com.fishercoder.fourththousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.fourththousand._3095;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3095Test {
     private _3095.Solution1 solution1;
@@ -16,12 +16,11 @@ public class _3095Test {
 
     @Test
     public void test1() {
-        assertEquals(3, solution1.minimumSubarrayLength(new int[]{2, 1, 8}, 10));
+        assertEquals(3, solution1.minimumSubarrayLength(new int[] {2, 1, 8}, 10));
     }
 
     @Test
     public void test2() {
-        assertEquals(-1, solution1.minimumSubarrayLength(new int[]{1, 12, 2, 5}, 43));
+        assertEquals(-1, solution1.minimumSubarrayLength(new int[] {1, 12, 2, 5}, 43));
     }
-
 }

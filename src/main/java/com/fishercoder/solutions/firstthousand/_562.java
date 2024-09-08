@@ -7,16 +7,17 @@ public class _562 {
             if (M == null || M.length == 0) {
                 return 0;
             }
-            int[][] directions = new int[][]{
-                    {-1, 0},
-                    {-1, 1},
-                    {0, 1},
-                    {1, 1},
-                    {1, 0},
-                    {1, -1},
-                    {0, -1},
-                    {-1, -1},
-            };
+            int[][] directions =
+                    new int[][] {
+                        {-1, 0},
+                        {-1, 1},
+                        {0, 1},
+                        {1, 1},
+                        {1, 0},
+                        {1, -1},
+                        {0, -1},
+                        {-1, -1},
+                    };
             int longestLine = 0;
             int m = M.length;
             int n = M[0].length;
@@ -28,11 +29,19 @@ public class _562 {
                             int nextI = i + directions[k][0];
                             int nextJ = j + directions[k][1];
                             int thisLine = 1;
-                            if (nextI >= 0 && nextI < m && nextJ >= 0 && nextJ < n && cache[nextI][nextJ][k] != 0) {
+                            if (nextI >= 0
+                                    && nextI < m
+                                    && nextJ >= 0
+                                    && nextJ < n
+                                    && cache[nextI][nextJ][k] != 0) {
                                 thisLine += cache[nextI][nextJ][k];
                                 cache[i][j][k] = thisLine;
                             } else {
-                                while (nextI >= 0 && nextI < m && nextJ >= 0 && nextJ < n && M[nextI][nextJ] == 1) {
+                                while (nextI >= 0
+                                        && nextI < m
+                                        && nextJ >= 0
+                                        && nextJ < n
+                                        && M[nextI][nextJ] == 1) {
                                     thisLine++;
                                     cache[i][j][k] = thisLine;
                                     nextI += directions[k][0];
@@ -47,5 +56,4 @@ public class _562 {
             return longestLine;
         }
     }
-
 }

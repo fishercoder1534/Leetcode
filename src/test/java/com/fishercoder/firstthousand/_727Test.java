@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._727;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _727Test {
     private _727.Solution1 solution1;
@@ -33,5 +33,4 @@ public class _727Test {
         assertEquals("l", solution1.minWindow(S, T));
         assertEquals("l", solution2.minWindow(S, T));
     }
-
 }

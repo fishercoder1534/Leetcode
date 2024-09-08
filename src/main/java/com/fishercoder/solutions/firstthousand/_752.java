@@ -6,35 +6,37 @@ public class _752 {
     public static class Solution1 {
         public int openLock(String[] deadends, String target) {
             // Map the next slot digit for each current slot digit.
-            Map<Character, Character> nextSlot = new HashMap<Character, Character>() {
-                {
-                    put('0', '1');
-                    put('1', '2');
-                    put('2', '3');
-                    put('3', '4');
-                    put('4', '5');
-                    put('5', '6');
-                    put('6', '7');
-                    put('7', '8');
-                    put('8', '9');
-                    put('9', '0');
-                }
-            };
+            Map<Character, Character> nextSlot =
+                    new HashMap<Character, Character>() {
+                        {
+                            put('0', '1');
+                            put('1', '2');
+                            put('2', '3');
+                            put('3', '4');
+                            put('4', '5');
+                            put('5', '6');
+                            put('6', '7');
+                            put('7', '8');
+                            put('8', '9');
+                            put('9', '0');
+                        }
+                    };
             // Map the previous slot digit for each current slot digit.
-            Map<Character, Character> prevSlot = new HashMap<Character, Character>() {
-                {
-                    put('0', '9');
-                    put('1', '0');
-                    put('2', '1');
-                    put('3', '2');
-                    put('4', '3');
-                    put('5', '4');
-                    put('6', '5');
-                    put('7', '6');
-                    put('8', '7');
-                    put('9', '8');
-                }
-            };
+            Map<Character, Character> prevSlot =
+                    new HashMap<Character, Character>() {
+                        {
+                            put('0', '9');
+                            put('1', '0');
+                            put('2', '1');
+                            put('3', '2');
+                            put('4', '3');
+                            put('5', '4');
+                            put('6', '5');
+                            put('7', '6');
+                            put('8', '7');
+                            put('9', '8');
+                        }
+                    };
 
             // Set to store visited and dead-end combinations.
             Set<String> visited = new HashSet<>(Arrays.asList(deadends));
@@ -67,7 +69,8 @@ public class _752 {
                         return turns;
                     }
 
-                    // Explore all possible new combinations by turning each wheel in both directions.
+                    // Explore all possible new combinations by turning each wheel in both
+                    // directions.
                     for (int j = 0; j < curr.length(); j += 1) {
                         // Generate the new combination by turning the wheel to the next digit.
                         StringBuilder newCombination = new StringBuilder(curr);

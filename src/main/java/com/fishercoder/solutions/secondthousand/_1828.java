@@ -8,7 +8,9 @@ public class _1828 {
             for (int[] query : queries) {
                 int pts = 0;
                 for (int[] point : points) {
-                    if ((point[0] - query[0]) * (point[0] - query[0]) + (point[1] - query[1]) * (point[1] - query[1]) <= query[2] * query[2]) {
+                    if ((point[0] - query[0]) * (point[0] - query[0])
+                                    + (point[1] - query[1]) * (point[1] - query[1])
+                            <= query[2] * query[2]) {
                         pts++;
                     }
                 }

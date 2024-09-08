@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._97;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _97Test {
     private _97.Solution1 solution1;
@@ -23,5 +23,4 @@ public class _97Test {
     public void test2() {
         assertEquals(false, solution1.isInterleave("aabcc", "dbbca", "aadbbbaccc"));
     }
-
 }

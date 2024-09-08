@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._605;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _605Test {
     private _605.Solution1 solution1;
@@ -20,140 +20,140 @@ public class _605Test {
 
     @Test
     public void test1() {
-        flowerbed = new int[]{1, 0, 0, 0, 1};
+        flowerbed = new int[] {1, 0, 0, 0, 1};
         n = 1;
         assertEquals(true, solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test2() {
-        flowerbed = new int[]{1, 0, 0, 0, 1};
+        flowerbed = new int[] {1, 0, 0, 0, 1};
         n = 2;
         assertEquals(false, solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test3() {
-        flowerbed = new int[]{1, 0, 0, 0, 0, 1};
+        flowerbed = new int[] {1, 0, 0, 0, 0, 1};
         n = 2;
         assertEquals(false, solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test4() {
-        flowerbed = new int[]{1, 0, 1, 0, 1, 0, 1};
+        flowerbed = new int[] {1, 0, 1, 0, 1, 0, 1};
         n = 1;
         assertEquals(false, solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test5() {
-        flowerbed = new int[]{0, 0, 1, 0, 1};
+        flowerbed = new int[] {0, 0, 1, 0, 1};
         n = 1;
         assertEquals(true, solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test6() {
-        flowerbed = new int[]{1, 0, 0, 0, 1, 0, 0};
+        flowerbed = new int[] {1, 0, 0, 0, 1, 0, 0};
         n = 2;
         assertEquals(true, solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test7() {
-        flowerbed = new int[]{0, 0, 1, 0, 0};
+        flowerbed = new int[] {0, 0, 1, 0, 0};
         n = 2;
         assertEquals(true, solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test8() {
-        flowerbed = new int[]{1};
+        flowerbed = new int[] {1};
         n = 0;
         assertEquals(true, solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test9() {
-        flowerbed = new int[]{0};
+        flowerbed = new int[] {0};
         n = 0;
         assertEquals(true, solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test10() {
-        flowerbed = new int[]{0};
+        flowerbed = new int[] {0};
         n = 1;
         assertEquals(true, solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test11() {
-        flowerbed = new int[]{1, 0, 0, 0, 1};
+        flowerbed = new int[] {1, 0, 0, 0, 1};
         n = 1;
         assertEquals(true, solution2.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test12() {
-        flowerbed = new int[]{1, 0, 0, 0, 1};
+        flowerbed = new int[] {1, 0, 0, 0, 1};
         n = 2;
         assertEquals(false, solution2.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test13() {
-        flowerbed = new int[]{1, 0, 0, 0, 0, 1};
+        flowerbed = new int[] {1, 0, 0, 0, 0, 1};
         n = 2;
         assertEquals(false, solution2.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test14() {
-        flowerbed = new int[]{1, 0, 1, 0, 1, 0, 1};
+        flowerbed = new int[] {1, 0, 1, 0, 1, 0, 1};
         n = 1;
         assertEquals(false, solution2.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test15() {
-        flowerbed = new int[]{0, 0, 1, 0, 1};
+        flowerbed = new int[] {0, 0, 1, 0, 1};
         n = 1;
         assertEquals(true, solution2.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test16() {
-        flowerbed = new int[]{1, 0, 0, 0, 1, 0, 0};
+        flowerbed = new int[] {1, 0, 0, 0, 1, 0, 0};
         n = 2;
         assertEquals(true, solution2.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test17() {
-        flowerbed = new int[]{0, 0, 1, 0, 0};
+        flowerbed = new int[] {0, 0, 1, 0, 0};
         n = 2;
         assertEquals(true, solution2.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test18() {
-        flowerbed = new int[]{1};
+        flowerbed = new int[] {1};
         n = 0;
         assertEquals(true, solution2.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test19() {
-        flowerbed = new int[]{0};
+        flowerbed = new int[] {0};
         n = 0;
         assertEquals(true, solution2.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test20() {
-        flowerbed = new int[]{0};
+        flowerbed = new int[] {0};
         n = 1;
         assertEquals(true, solution2.canPlaceFlowers(flowerbed, n));
     }

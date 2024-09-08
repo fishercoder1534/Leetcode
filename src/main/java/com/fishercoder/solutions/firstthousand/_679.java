@@ -4,7 +4,7 @@ import java.util.stream.IntStream;
 
 public class _679 {
     public static class Solution1 {
-        /**
+        /*
          * Since there are only 4 cards and only 4 operations, we can iterate through all possible combinations, there's a total of 9216 possibilities:
          * 1. we pick two out of four cards, with order (since order matters for division), 4 * 3 = 12, then pick one of four operations: 12 * 4 = 48;
          * 2. then we pick two from these three numbers: 12 * 4 * 3 * 4 * 2 = 1152
@@ -16,7 +16,7 @@ public class _679 {
 
         private boolean dfs(double[] nums) {
             if (nums.length == 1) {
-                return Math.abs(nums[0] - 24) < 1e-8;//1e-8 means 0.000000001, i.e. 10^(-8)
+                return Math.abs(nums[0] - 24) < 1e-8; // 1e-8 means 0.000000001, i.e. 10^(-8)
             }
 
             for (int i = 0; i < nums.length; i++) {

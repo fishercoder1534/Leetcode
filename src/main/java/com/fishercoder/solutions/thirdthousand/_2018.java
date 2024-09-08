@@ -8,8 +8,10 @@ public class _2018 {
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     if (board[i][j] == ' ' || board[i][j] == word.charAt(0)) {
-                        if (canPlaceTopDown(word, board, i, j) || canPlaceLeftRight(word, board, i, j)
-                                || canPlaceBottomUp(word, board, i, j) || canPlaceRightLeft(word, board, i, j)) {
+                        if (canPlaceTopDown(word, board, i, j)
+                                || canPlaceLeftRight(word, board, i, j)
+                                || canPlaceBottomUp(word, board, i, j)
+                                || canPlaceRightLeft(word, board, i, j)) {
                             return true;
                         }
                     }
@@ -19,7 +21,8 @@ public class _2018 {
         }
 
         private boolean canPlaceRightLeft(String word, char[][] board, int row, int col) {
-            if (col + 1 < board[0].length && (Character.isLowerCase(board[row][col + 1]) || board[row][col + 1] == ' ')) {
+            if (col + 1 < board[0].length
+                    && (Character.isLowerCase(board[row][col + 1]) || board[row][col + 1] == ' ')) {
                 return false;
             }
             int k = 0;
@@ -35,7 +38,8 @@ public class _2018 {
         }
 
         private boolean canPlaceBottomUp(String word, char[][] board, int row, int col) {
-            if (row + 1 < board.length && (Character.isLowerCase(board[row + 1][col]) || board[row + 1][col] == ' ')) {
+            if (row + 1 < board.length
+                    && (Character.isLowerCase(board[row + 1][col]) || board[row + 1][col] == ' ')) {
                 return false;
             }
             int k = 0;
@@ -51,7 +55,8 @@ public class _2018 {
         }
 
         private boolean canPlaceLeftRight(String word, char[][] board, int row, int col) {
-            if (col > 0 && (Character.isLowerCase(board[row][col - 1]) || board[row][col - 1] == ' ')) {
+            if (col > 0
+                    && (Character.isLowerCase(board[row][col - 1]) || board[row][col - 1] == ' ')) {
                 return false;
             }
             int k = 0;
@@ -67,7 +72,8 @@ public class _2018 {
         }
 
         private boolean canPlaceTopDown(String word, char[][] board, int row, int col) {
-            if (row > 0 && (Character.isLowerCase(board[row - 1][col]) || board[row - 1][col] == ' ')) {
+            if (row > 0
+                    && (Character.isLowerCase(board[row - 1][col]) || board[row - 1][col] == ' ')) {
                 return false;
             }
             int k = 0;

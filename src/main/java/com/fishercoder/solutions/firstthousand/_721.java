@@ -12,7 +12,7 @@ import java.util.Stack;
 public class _721 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/articles/accounts-merge/#approach-1-depth-first-search-accepted
          * <p>
          * Time Complexity: O(∑ai*logai) where a​i is the length of accounts[i].
@@ -64,7 +64,7 @@ public class _721 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * credit: https://leetcode.com/articles/accounts-merge/#approach-2-union-find-accepted
          * DSU stands for Disjoint Set Union: https://en.wikipedia.org/wiki/Disjoint-set_data_structure, a.k.a Union Find data structure.
          * <p>
@@ -93,13 +93,14 @@ public class _721 {
 
             Map<Integer, List<String>> map = new HashMap<>();
             for (String email : emailToName.keySet()) {
-                //find the index of this email first: use this email's ID to find its parent in the Union Find
+                // find the index of this email first: use this email's ID to find its parent in the
+                // Union Find
                 int index = uf.find(emailToId.get(email));
                 map.computeIfAbsent(index, x -> new ArrayList()).add(email);
             }
             for (List<String> component : map.values()) {
                 Collections.sort(component);
-                //this is to add name to the head of the list
+                // this is to add name to the head of the list
                 component.add(0, emailToName.get(component.get(0)));
             }
             return new ArrayList<>(map.values());
@@ -124,7 +125,8 @@ public class _721 {
             }
 
             public void union(int x, int y) {
-                parent[find(x)] = find(y);//can be written as parent[find(y)] = find(x); they are equivalent
+                parent[find(x)] =
+                        find(y); // can be written as parent[find(y)] = find(x); they are equivalent
             }
         }
     }

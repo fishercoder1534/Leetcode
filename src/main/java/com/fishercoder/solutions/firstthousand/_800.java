@@ -21,22 +21,27 @@ public class _800 {
         }
 
         private int computeSimilarity(String candidate, String color) {
-            return -(Integer.parseInt(candidate.substring(1, 3), 16) - Integer.parseInt(
-                    color.substring(1, 3), 16)) * (Integer.parseInt(candidate.substring(1, 3), 16)
-                    - Integer.parseInt(color.substring(1, 3), 16))
-                    - (Integer.parseInt(candidate.substring(3, 5), 16) - Integer.parseInt(
-                    color.substring(3, 5), 16)) * (Integer.parseInt(candidate.substring(3, 5), 16)
-                    - Integer.parseInt(color.substring(3, 5), 16))
-                    - (Integer.parseInt(candidate.substring(5, 7), 16) - Integer.parseInt(
-                    color.substring(5, 7), 16)) * (Integer.parseInt(candidate.substring(5, 7), 16)
-                    - Integer.parseInt(color.substring(5, 7), 16));
+            return -(Integer.parseInt(candidate.substring(1, 3), 16)
+                                    - Integer.parseInt(color.substring(1, 3), 16))
+                            * (Integer.parseInt(candidate.substring(1, 3), 16)
+                                    - Integer.parseInt(color.substring(1, 3), 16))
+                    - (Integer.parseInt(candidate.substring(3, 5), 16)
+                                    - Integer.parseInt(color.substring(3, 5), 16))
+                            * (Integer.parseInt(candidate.substring(3, 5), 16)
+                                    - Integer.parseInt(color.substring(3, 5), 16))
+                    - (Integer.parseInt(candidate.substring(5, 7), 16)
+                                    - Integer.parseInt(color.substring(5, 7), 16))
+                            * (Integer.parseInt(candidate.substring(5, 7), 16)
+                                    - Integer.parseInt(color.substring(5, 7), 16));
         }
 
         private List<String> computeAllShorthandCombinations() {
             List<String> result = new ArrayList<>();
-            List<Character> hexNumber = new ArrayList<>(
-                    Arrays.asList('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e',
-                            'f'));
+            List<Character> hexNumber =
+                    new ArrayList<>(
+                            Arrays.asList(
+                                    '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c',
+                                    'd', 'e', 'f'));
             for (int i = 0; i < hexNumber.size(); i++) {
                 for (int j = 0; j < hexNumber.size(); j++) {
                     for (int k = 0; k < hexNumber.size(); k++) {

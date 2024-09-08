@@ -1,9 +1,9 @@
 package com.fishercoder.secondthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.secondthousand._1381;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _1381Test {
     private _1381.Solution1.CustomStack customStack;
@@ -39,7 +39,5 @@ public class _1381Test {
         assertEquals(140, customStack2.pop());
         assertEquals(130, customStack2.pop());
         assertEquals(99, customStack2.pop());
-
     }
-
 }

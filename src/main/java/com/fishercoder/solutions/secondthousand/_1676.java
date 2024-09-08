@@ -1,13 +1,12 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-
 import java.util.HashSet;
 import java.util.Set;
 
 public class _1676 {
     public static class Solution1 {
-        /**
+        /*
          * Since there are conditions for this problem: all values in the tree and given nodes are unique,
          * we could simply use a HashSet to track the number of nodes we've found so far during the traversal.
          * <p>
@@ -42,7 +41,7 @@ public class _1676 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Silly brute force way.
          */
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode[] nodes) {

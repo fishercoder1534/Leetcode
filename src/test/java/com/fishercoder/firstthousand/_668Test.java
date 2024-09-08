@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.firstthousand._668;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _668Test {
     private _668.Solution1 solution1;
@@ -30,8 +30,8 @@ public class _668Test {
 
     @Test
     public void test3() {
-//        assertEquals(31666344, solution1.findKthNumber(9895, 28405, 100787757));//this will run into OOM error, so comment out
+        //        assertEquals(31666344, solution1.findKthNumber(9895, 28405, 100787757));//this
+        // will run into OOM error, so comment out
         assertEquals(31666344, solution2.findKthNumber(9895, 28405, 100787757));
     }
-
 }

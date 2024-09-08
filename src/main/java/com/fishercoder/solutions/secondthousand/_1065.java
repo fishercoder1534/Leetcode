@@ -13,21 +13,23 @@ public class _1065 {
                 lists.addAll(findAllMatchsForThisWord(word, text));
             }
             if (lists.isEmpty()) {
-                return new int[][]{};
+                return new int[][] {};
             }
-            Collections.sort(lists, (o1, o2) -> {
-                if (o1.get(0) > o2.get(0)) {
-                    return 1;
-                } else if (o1.get(0) < o2.get(0)) {
-                    return -1;
-                } else {
-                    if (o1.get(1) > o2.get(1)) {
-                        return 1;
-                    } else {
-                        return -1;
-                    }
-                }
-            });
+            Collections.sort(
+                    lists,
+                    (o1, o2) -> {
+                        if (o1.get(0) > o2.get(0)) {
+                            return 1;
+                        } else if (o1.get(0) < o2.get(0)) {
+                            return -1;
+                        } else {
+                            if (o1.get(1) > o2.get(1)) {
+                                return 1;
+                            } else {
+                                return -1;
+                            }
+                        }
+                    });
             int[][] result = new int[lists.size()][lists.get(0).size()];
             for (int i = 0; i < lists.size(); i++) {
                 result[i][0] = lists.get(i).get(0);

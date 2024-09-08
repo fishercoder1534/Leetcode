@@ -1,15 +1,13 @@
 package com.fishercoder.firstthousand;
 
-import com.fishercoder.solutions.firstthousand._539;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.fishercoder.solutions.firstthousand._539;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _539Test {
     private _539.Soluiton1 soluiton1;
@@ -43,5 +41,4 @@ public class _539Test {
         actual = soluiton1.findMinDifference(timePoints);
         assertEquals(expected, actual);
     }
-
 }

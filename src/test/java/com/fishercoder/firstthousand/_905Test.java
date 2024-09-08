@@ -17,14 +17,14 @@ public class _905Test {
 
     @Test
     public void test1() {
-        A = new int[]{3, 1, 2, 4};
+        A = new int[] {3, 1, 2, 4};
         actual = solution1.sortArrayByParity(A);
         CommonUtils.printArray(actual);
     }
 
     @Test
     public void test2() {
-        A = new int[]{1, 3};
+        A = new int[] {1, 3};
         actual = solution1.sortArrayByParity(A);
         CommonUtils.printArray(actual);
     }

@@ -1,14 +1,13 @@
 package com.fishercoder.secondthousand;
 
-import com.fishercoder.solutions.secondthousand._1452;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.fishercoder.solutions.secondthousand._1452;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class _1452Test {
     private _1452.Solution1 solution1;
@@ -33,10 +32,28 @@ public class _1452Test {
     @Test
     public void test2() {
         favoriteCompanies = new ArrayList<>();
-        favoriteCompanies.add(Arrays.asList("nxaqhyoprhlhvhyojanr", "ovqdyfqmlpxapbjwtssm", "qmsbphxzmnvflrwyvxlc", "udfuxjdxkxwqnqvgjjsp", "yawoixzhsdkaaauramvg", "zycidpyopumzgdpamnty"));//6
-        favoriteCompanies.add(Arrays.asList("nxaqhyoprhlhvhyojanr", "ovqdyfqmlpxapbjwtssm", "udfuxjdxkxwqnqvgjjsp", "yawoixzhsdkaaauramvg", "zycidpyopumzgdpamnty"));//5
-        favoriteCompanies.add(Arrays.asList("ovqdyfqmlpxapbjwtssm", "qmsbphxzmnvflrwyvxlc", "udfuxjdxkxwqnqvgjjsp", "yawoixzhsdkaaauramvg", "zycidpyopumzgdpamnty"));//5
+        favoriteCompanies.add(
+                Arrays.asList(
+                        "nxaqhyoprhlhvhyojanr",
+                        "ovqdyfqmlpxapbjwtssm",
+                        "qmsbphxzmnvflrwyvxlc",
+                        "udfuxjdxkxwqnqvgjjsp",
+                        "yawoixzhsdkaaauramvg",
+                        "zycidpyopumzgdpamnty")); // 6
+        favoriteCompanies.add(
+                Arrays.asList(
+                        "nxaqhyoprhlhvhyojanr",
+                        "ovqdyfqmlpxapbjwtssm",
+                        "udfuxjdxkxwqnqvgjjsp",
+                        "yawoixzhsdkaaauramvg",
+                        "zycidpyopumzgdpamnty")); // 5
+        favoriteCompanies.add(
+                Arrays.asList(
+                        "ovqdyfqmlpxapbjwtssm",
+                        "qmsbphxzmnvflrwyvxlc",
+                        "udfuxjdxkxwqnqvgjjsp",
+                        "yawoixzhsdkaaauramvg",
+                        "zycidpyopumzgdpamnty")); // 5
         assertEquals(Arrays.asList(0), solution1.peopleIndexes(favoriteCompanies));
     }
-
 }

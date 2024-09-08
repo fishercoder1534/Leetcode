@@ -1,12 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._25;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _25Test {
     private _25.Solution1 solution1;
@@ -25,23 +25,23 @@ public class _25Test {
 
     @Test
     public void test1() {
-        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4, 5});
+        head = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4, 5});
         k = 2;
-        expected = LinkedListUtils.contructLinkedList(new int[]{2, 1, 4, 3, 5});
+        expected = LinkedListUtils.contructLinkedList(new int[] {2, 1, 4, 3, 5});
         assertEquals(expected, solution1.reverseKGroup(head, k));
     }
 
     @Test
     public void test2() {
-        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4, 5, 6, 7});
-        expected = LinkedListUtils.contructLinkedList(new int[]{4, 3, 2, 1, 5, 6, 7});
+        head = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4, 5, 6, 7});
+        expected = LinkedListUtils.contructLinkedList(new int[] {4, 3, 2, 1, 5, 6, 7});
         assertEquals(expected, solution2.reverseKGroup(head, 4));
     }
 
     @Test
     public void test3() {
-        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 4, 5, 6, 7});
-        expected = LinkedListUtils.contructLinkedList(new int[]{4, 3, 2, 1, 5, 6, 7});
+        head = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4, 5, 6, 7});
+        expected = LinkedListUtils.contructLinkedList(new int[] {4, 3, 2, 1, 5, 6, 7});
         assertEquals(expected, solution3.reverseKGroup(head, 4));
     }
 }

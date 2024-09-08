@@ -6,7 +6,7 @@ import java.util.List;
 public class _131 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://leetcode.com/problems/palindrome-partitioning/solution/
          * DFS + backtracking
          */
@@ -47,8 +47,10 @@ public class _131 {
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j <= i; j++) {
                     if (s.charAt(j) == s.charAt(i) && (j + 1 >= i - 1 || dp[j + 1][i - 1])) {
-                        // j+1 >= i-1 means j and i are adjance to each other or only one char apart from each other
-                        //dp[j+1][i-1] means its inner substring is a palindrome, so as long as s.charAt(j) == s.charAt(i), then dp[j][i] must be a palindrome.
+                        // j+1 >= i-1 means j and i are adjance to each other or only one char apart
+                        // from each other
+                        // dp[j+1][i-1] means its inner substring is a palindrome, so as long as
+                        // s.charAt(j) == s.charAt(i), then dp[j][i] must be a palindrome.
                         dp[j][i] = true;
                     }
                 }
@@ -67,8 +69,8 @@ public class _131 {
             return result;
         }
 
-        void backtracking(String s, int start, boolean[][] dp, List<String> temp,
-                          List<List<String>> result) {
+        void backtracking(
+                String s, int start, boolean[][] dp, List<String> temp, List<List<String>> result) {
             if (start == s.length()) {
                 List<String> newTemp = new ArrayList(temp);
                 result.add(newTemp);

@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class _3249 {
     public static class Solution1 {
-        /**
+        /*
          * My completely original solution during the contest.
          */
         class TreeNode {
@@ -18,7 +18,7 @@ public class _3249 {
             public TreeNode(int val) {
                 this.val = val;
                 this.children = new ArrayList<>();
-                this.totalChildrenCount = 1;//count itself as its own child
+                this.totalChildrenCount = 1; // count itself as its own child
             }
         }
 

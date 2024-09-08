@@ -1,10 +1,10 @@
 package com.fishercoder.thirdthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.thirdthousand._2156;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _2156Test {
     private _2156.Solution1 solution1;
@@ -54,5 +54,4 @@ public class _2156Test {
         System.out.println(Math.pow(power, k - 1) % modulo);
         assertEquals(expected, solution1.subStrHash(s, power, modulo, k, hashValue));
     }
-
 }

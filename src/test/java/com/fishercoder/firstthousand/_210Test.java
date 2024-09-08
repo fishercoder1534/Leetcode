@@ -1,10 +1,10 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import com.fishercoder.solutions.firstthousand._210;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class _210Test {
     private _210.Solution1 solution1;
@@ -18,12 +18,7 @@ public class _210Test {
 
     @Test
     public void test1() {
-        assertArrayEquals(new int[]{0, 1}, solution1.findOrder(2, new int[][]{
-                {1, 0}
-        }));
-        assertArrayEquals(new int[]{0, 1}, solution2.findOrder(2, new int[][]{
-                {1, 0}
-        }));
+        assertArrayEquals(new int[] {0, 1}, solution1.findOrder(2, new int[][] {{1, 0}}));
+        assertArrayEquals(new int[] {0, 1}, solution2.findOrder(2, new int[][] {{1, 0}}));
     }
-
 }

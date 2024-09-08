@@ -6,17 +6,17 @@ import java.util.Map;
 public class _138 {
     public static class Solution1 {
         public Node copyRandomList(Node head) {
-            /**Key is the original nodes, value is the new nodes we're deep copying to.*/
+            /*Key is the original nodes, value is the new nodes we're deep copying to.*/
             Map<Node, Node> map = new HashMap();
             Node node = head;
 
-            //loop for the first time: copy the node themselves with only labels
+            // loop for the first time: copy the node themselves with only labels
             while (node != null) {
                 map.put(node, new Node(node.val));
                 node = node.next;
             }
 
-            //loop for the second time: copy random and next pointers
+            // loop for the second time: copy random and next pointers
             node = head;
             while (node != null) {
                 map.get(node).next = map.get(node.next);

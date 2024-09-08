@@ -143,7 +143,6 @@ public class _1268 {
                         tmp.isWord = true;
                     }
                 }
-
             }
             return root;
         }

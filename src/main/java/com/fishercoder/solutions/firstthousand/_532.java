@@ -31,5 +31,4 @@ public class _532 {
             return answer;
         }
     }
-
 }

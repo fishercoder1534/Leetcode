@@ -1,12 +1,12 @@
 package com.fishercoder.firstthousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.classes.ListNode;
 import com.fishercoder.common.utils.LinkedListUtils;
 import com.fishercoder.solutions.firstthousand._82;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _82Test {
 
@@ -21,15 +21,15 @@ public class _82Test {
 
     @Test
     public void test1() {
-        head = LinkedListUtils.contructLinkedList(new int[]{1, 2, 3, 3, 4, 4, 5});
-        expected = LinkedListUtils.contructLinkedList(new int[]{1, 2, 5});
+        head = LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 3, 4, 4, 5});
+        expected = LinkedListUtils.contructLinkedList(new int[] {1, 2, 5});
         assertEquals(expected, solution1.deleteDuplicates(head));
     }
 
     @Test
     public void test2() {
-        head = LinkedListUtils.contructLinkedList(new int[]{1, 1, 1, 2, 3});
-        expected = LinkedListUtils.contructLinkedList(new int[]{2, 3});
+        head = LinkedListUtils.contructLinkedList(new int[] {1, 1, 1, 2, 3});
+        expected = LinkedListUtils.contructLinkedList(new int[] {2, 3});
         assertEquals(expected, solution1.deleteDuplicates(head));
     }
 }

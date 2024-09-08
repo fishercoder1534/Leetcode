@@ -11,7 +11,12 @@ public class _1941 {
             for (char c : charArray) {
                 counts[c - 'a']++;
             }
-            return Arrays.stream(counts).filter(i -> i != 0).boxed().collect(Collectors.toSet()).size() == 1;
+            return Arrays.stream(counts)
+                            .filter(i -> i != 0)
+                            .boxed()
+                            .collect(Collectors.toSet())
+                            .size()
+                    == 1;
         }
     }
 }

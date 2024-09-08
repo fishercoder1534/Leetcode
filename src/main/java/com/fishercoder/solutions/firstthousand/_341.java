@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.NestedInteger;
-
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -40,5 +39,4 @@ public class _341 {
             }
         }
     }
-
 }

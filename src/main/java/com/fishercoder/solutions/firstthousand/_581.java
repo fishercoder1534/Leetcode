@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class _581 {
 
     public static class Solution1 {
-        /**
+        /*
          * credit: https://discuss.leetcode.com/topic/89282/java-o-n-time-o-1-space
          * Use start and end to keep track of the minimum subarray nums[start...end] which must be sorted for the entire array nums.
          * If start < end < 0 at the end of the for loop, then the array is already fully sorted.
@@ -34,7 +34,7 @@ public class _581 {
     }
 
     public static class Solution2 {
-        /**
+        /*
          * Time: O(n)
          * Space: O(1)
          * <p>
@@ -45,7 +45,8 @@ public class _581 {
         public int findUnsortedSubarray(int[] nums) {
             int end = -2;
             int max = Integer.MIN_VALUE;
-            //go from left to right, find the number that is smaller than the max number on its left side, that should be the end index because it needs to be sorted
+            // go from left to right, find the number that is smaller than the max number on its
+            // left side, that should be the end index because it needs to be sorted
             for (int i = 0; i < nums.length; i++) {
                 max = Math.max(max, nums[i]);
                 if (nums[i] < max) {
@@ -54,7 +55,8 @@ public class _581 {
             }
             int start = -1;
             int min = Integer.MAX_VALUE;
-            //go from right to left, find the number that is bigger than the min number on its right, that should be the beginning index
+            // go from right to left, find the number that is bigger than the min number on its
+            // right, that should be the beginning index
             for (int i = nums.length - 1; i >= 0; i--) {
                 min = Math.min(min, nums[i]);
                 if (nums[i] > min) {
@@ -66,7 +68,7 @@ public class _581 {
     }
 
     public static class Solution3 {
-        /**
+        /*
          * Time: O(nlogn)
          * Space: O(n)
          */
@@ -84,5 +86,4 @@ public class _581 {
             return (end - start > 0) ? end - start + 1 : 0;
         }
     }
-
 }

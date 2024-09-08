@@ -25,7 +25,9 @@ public class _2300 {
                     left = mid + 1;
                 }
             }
-            if (left == right && left == potions.length - 1 && (long) spell * potions[left] < success) {
+            if (left == right
+                    && left == potions.length - 1
+                    && (long) spell * potions[left] < success) {
                 return potions.length;
             }
             return right;

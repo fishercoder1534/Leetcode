@@ -16,20 +16,19 @@ public class _108Test {
 
     @Test
     public void test1() {
-        nums = new int[]{1, 2, 3};
+        nums = new int[] {1, 2, 3};
         TreeUtils.printBinaryTree(solution1.sortedArrayToBST(nums));
     }
 
     @Test
     public void test2() {
-        nums = new int[]{};
+        nums = new int[] {};
         TreeUtils.printBinaryTree(solution1.sortedArrayToBST(nums));
     }
 
     @Test
     public void test3() {
-        nums = new int[]{-10, -3, 0, 5, 9};
+        nums = new int[] {-10, -3, 0, 5, 9};
         TreeUtils.printBinaryTree(solution1.sortedArrayToBST(nums));
     }
-
 }
