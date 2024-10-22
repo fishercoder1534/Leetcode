@@ -7,7 +7,13 @@ import java.util.PriorityQueue;
 public class _3318 {
     public static class Solution1 {
         public int[] findXSum(int[] nums, int k, int x) {
-            PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) -> a[1] != b[1] ? b[1] - a[1] : b[0] - a[0]);//a[0] is the number itself, a[1] is the frequency
+            PriorityQueue<int[]> maxHeap =
+                    new PriorityQueue<>(
+                            (a, b) ->
+                                    a[1] != b[1]
+                                            ? b[1] - a[1]
+                                            : b[0] - a[0]); // a[0] is the number itself, a[1]
+            // is the frequency
             Map<Integer, int[]> map = new HashMap<>();
             int i = 0;
             for (; i < k; i++) {
