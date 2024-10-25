@@ -1,10 +1,10 @@
 package com.fishercoder.fourththousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.solutions.fourththousand._3270;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3270Test {
     private _3270.Solution1 solution1;
@@ -18,5 +18,4 @@ public class _3270Test {
     public void test1() {
         assertEquals(0, solution1.generateKey(1, 10, 1000));
     }
-
 }

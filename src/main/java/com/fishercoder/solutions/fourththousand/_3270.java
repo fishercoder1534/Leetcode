@@ -9,10 +9,14 @@ public class _3270 {
             padded[2] = String.format("%04d", num3);
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < padded[0].length(); i++) {
-                sb.append(Math.min(Character.getNumericValue(padded[0].charAt(i)), Math.min(Character.getNumericValue(padded[1].charAt(i)), Character.getNumericValue(padded[2].charAt(i)))));
+                sb.append(
+                        Math.min(
+                                Character.getNumericValue(padded[0].charAt(i)),
+                                Math.min(
+                                        Character.getNumericValue(padded[1].charAt(i)),
+                                        Character.getNumericValue(padded[2].charAt(i)))));
             }
             return Integer.parseInt(sb.toString());
         }
-
     }
 }
