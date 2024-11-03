@@ -1,6 +1,7 @@
 package com.fishercoder.firstthousand;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.fishercoder.solutions.firstthousand._796;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,11 +17,11 @@ public class _796Test {
 
     @Test
     public void test1() {
-        assertEquals(true, solution1.rotateString("abcde", "cdeab"));
+        assertTrue(solution1.rotateString("abcde", "cdeab"));
     }
 
     @Test
     public void test2() {
-        assertEquals(false, solution1.rotateString("abcde", "abced"));
+        assertFalse(solution1.rotateString("abcde", "abced"));
     }
 }
