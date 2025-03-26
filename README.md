@@ -25,6 +25,8 @@ _If you like this project, please leave me a star._ &#9733;
 ## Javascript
 [All Javascript problems](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/javascript)
 
+## CPP
+[All cpp problems](https://github.com/fishercoder1534/Leetcode/tree/master/cpp)
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
