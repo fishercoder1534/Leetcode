@@ -1,11 +1,11 @@
 package com.fishercoder.fourththousand;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.fishercoder.common.utils.CommonUtils;
 import com.fishercoder.solutions.fourththousand._3450;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3450Test {
     private _3450.Solution1 solution1;
@@ -17,6 +17,10 @@ public class _3450Test {
 
     @Test
     public void test1() {
-        assertEquals(3, solution1.maxStudentsOnBench(CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[1,2],[2,2],[3,3],[1,3],[2,3]")));
+        assertEquals(
+                3,
+                solution1.maxStudentsOnBench(
+                        CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                "[1,2],[2,2],[3,3],[1,3],[2,3]")));
     }
 }
