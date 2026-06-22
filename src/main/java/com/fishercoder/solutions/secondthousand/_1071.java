@@ -2,6 +2,7 @@ package com.fishercoder.solutions.secondthousand;
 
 public class _1071 {
     public static class Solution1 {
+        /** Time: O(min(m, n) * (m+n)) Space: O(min(m, n)) */
         public String gcdOfStrings(String str1, String str2) {
             int len1 = str1.length();
             int len2 = str2.length();
