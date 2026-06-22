@@ -17,7 +17,7 @@ public class _1071 {
         private boolean valid(String str1, String str2, int k) {
             int len1 = str1.length();
             int len2 = str2.length();
-            if (len1 % k > 0 || len2 % k > 0) {
+            if (len1 % k != 0 || len2 % k != 0) {
                 return false;
             } else {
                 String base = str1.substring(0, k);
