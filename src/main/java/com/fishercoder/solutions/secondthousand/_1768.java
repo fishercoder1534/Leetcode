@@ -1,5 +1,6 @@
 package com.fishercoder.solutions.secondthousand;
 
+
 public class _1768 {
     public static class Solution1 {
         public String mergeAlternately(String word1, String word2) {
