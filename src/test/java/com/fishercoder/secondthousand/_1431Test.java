@@ -23,4 +23,12 @@ public class _1431Test {
                 Arrays.asList(true, true, true, false, true),
                 solution1.kidsWithCandies(candies, 3));
     }
+
+    @Test
+    public void test2() {
+        candies = new int[] {4, 2, 1, 1, 2};
+        assertEquals(
+                Arrays.asList(true, false, false, false, false),
+                solution1.kidsWithCandies(candies, 1));
+    }
 }
