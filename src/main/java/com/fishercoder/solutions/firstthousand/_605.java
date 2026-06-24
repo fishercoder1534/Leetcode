@@ -58,4 +58,35 @@ public class _605 {
             return false;
         }
     }
+
+    public static class Solution3 {
+        public boolean canPlaceFlowers(int[] flowerbed, int n) {
+            if (flowerbed.length == 1) {
+                if (flowerbed[0] == 0) {
+                    return n <= 1;
+                } else {
+                    return n <= 0;
+                }
+            }
+            for (int i = 0; i < flowerbed.length; i++) {
+                if (i == 0) {
+                    if (flowerbed[i] == 0 && (i + 1) < flowerbed.length && flowerbed[i + 1] == 0) {
+                        n--;
+                        flowerbed[i] = 1;
+                    }
+                } else if (i < flowerbed.length - 1) {
+                    if (flowerbed[i - 1] == 0 && flowerbed[i + 1] == 0 && flowerbed[i] == 0) {
+                        n--;
+                        flowerbed[i] = 1;
+                    }
+                } else if (flowerbed[i] == 0) {
+                    if (flowerbed[i - 1] == 0) {
+                        n--;
+                        flowerbed[i] = 1;
+                    }
+                }
+            }
+            return n <= 0;
+        }
+    }
 }

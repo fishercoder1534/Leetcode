@@ -1,6 +1,6 @@
 package com.fishercoder.firstthousand;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 import com.fishercoder.solutions.firstthousand._605;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 public class _605Test {
     private _605.Solution1 solution1;
     private _605.Solution2 solution2;
+    private _605.Solution3 solution3;
     private static int[] flowerbed;
     private static int n;
 
@@ -16,20 +17,21 @@ public class _605Test {
     public void setup() {
         solution1 = new _605.Solution1();
         solution2 = new _605.Solution2();
+        solution3 = new _605.Solution3();
     }
 
     @Test
     public void test1() {
         flowerbed = new int[] {1, 0, 0, 0, 1};
         n = 1;
-        assertEquals(true, solution1.canPlaceFlowers(flowerbed, n));
+        assertTrue(solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
     public void test2() {
         flowerbed = new int[] {1, 0, 0, 0, 1};
         n = 2;
-        assertEquals(false, solution1.canPlaceFlowers(flowerbed, n));
+        assertFalse(solution1.canPlaceFlowers(flowerbed, n));
     }
 
     @Test
@@ -156,5 +158,12 @@ public class _605Test {
         flowerbed = new int[] {0};
         n = 1;
         assertEquals(true, solution2.canPlaceFlowers(flowerbed, n));
+    }
+
+    @Test
+    public void test21() {
+        flowerbed = new int[] {0};
+        n = 1;
+        assertTrue(solution3.canPlaceFlowers(flowerbed, n));
     }
 }
