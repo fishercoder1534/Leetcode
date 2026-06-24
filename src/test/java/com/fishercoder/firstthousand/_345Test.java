@@ -1,0 +1,21 @@
+package com.fishercoder.firstthousand;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import com.fishercoder.solutions.firstthousand._345;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class _345Test {
+    private _345.Solution1 solution1;
+
+    @BeforeEach
+    public void setup() {
+        solution1 = new _345.Solution1();
+    }
+
+    @Test
+    public void test1() {
+        assertEquals("AceCreIm", solution1.reverseVowels("IceCreAm"));
+    }
+}
