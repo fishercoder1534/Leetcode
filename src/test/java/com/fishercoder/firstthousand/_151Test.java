@@ -10,6 +10,7 @@ public class _151Test {
     private _151.Solution1 solution1;
     private _151.Solution2 solution2;
     private _151.Solution3 solution3;
+    private _151.Solution4 solution4;
     private static String s;
 
     @BeforeEach
@@ -17,6 +18,7 @@ public class _151Test {
         solution1 = new _151.Solution1();
         solution2 = new _151.Solution2();
         solution3 = new _151.Solution3();
+        solution4 = new _151.Solution4();
     }
 
     @Test
@@ -55,5 +57,6 @@ public class _151Test {
         s = "Bob    Loves  Alice   ";
         assertEquals("Alice Loves Bob", solution2.reverseWords(s));
         assertEquals("Alice Loves Bob", solution3.reverseWords(s));
+        assertEquals("Alice Loves Bob", solution4.reverseWords(s));
     }
 }
