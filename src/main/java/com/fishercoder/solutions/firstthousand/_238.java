@@ -3,6 +3,11 @@ package com.fishercoder.solutions.firstthousand;
 public class _238 {
 
     public static class Solution1 {
+        /**
+         * Have two arrays to help out: one array holds all the products of elements to the left of
+         * nums[i] the 2nd array holds all the products of elements to the right of nums[i[ then
+         * multiply them together.
+         */
         public int[] productExceptSelf(int[] nums) {
             int[] left = new int[nums.length];
             left[0] = 1;
