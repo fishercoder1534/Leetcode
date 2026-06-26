@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class _238Test {
     private _238.Solution1 solution1;
+    private _238.Solution2 solution2;
     private static int[] expected;
     private static int[] actual;
     private static int[] nums;
@@ -15,6 +16,7 @@ public class _238Test {
     @BeforeEach
     public void setup() {
         solution1 = new _238.Solution1();
+        solution2 = new _238.Solution2();
         expected = new int[] {};
         actual = new int[] {};
     }
@@ -24,6 +26,7 @@ public class _238Test {
         nums = new int[] {0, 0};
         expected = new int[] {0, 0};
         actual = solution1.productExceptSelf(nums);
+        actual = solution2.productExceptSelf(nums);
         assertArrayEquals(expected, actual);
     }
 
