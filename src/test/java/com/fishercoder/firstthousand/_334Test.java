@@ -40,4 +40,10 @@ public class _334Test {
         assertFalse(solution1.increasingTriplet(new int[] {1, 1, 1, 1, 1, 1, 1}));
         assertFalse(solution2.increasingTriplet(new int[] {1, 1, 1, 1, 1, 1, 1}));
     }
+
+    @Test
+    public void test5() {
+        assertFalse(solution1.increasingTriplet(new int[] {6, 7, 1, 2}));
+        assertFalse(solution2.increasingTriplet(new int[] {6, 7, 1, 2}));
+    }
 }
