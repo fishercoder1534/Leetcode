@@ -8,12 +8,14 @@ import org.junit.jupiter.api.Test;
 
 public class _1679Test {
     private _1679.Solution1 solution1;
+    private _1679.Solution2 solution2;
     private static int[] nums;
     private static int k;
 
     @BeforeEach
     public void setup() {
         solution1 = new _1679.Solution1();
+        solution2 = new _1679.Solution2();
     }
 
     @Test
@@ -21,5 +23,6 @@ public class _1679Test {
         nums = new int[] {2, 5, 4, 4, 1, 3, 4, 4, 1, 4, 4, 1, 2, 1, 2, 2, 3, 2, 4, 2};
         k = 3;
         assertEquals(4, solution1.maxOperations(nums, k));
+        assertEquals(4, solution2.maxOperations(nums, k));
     }
 }
