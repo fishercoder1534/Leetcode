@@ -8,17 +8,20 @@ import org.junit.jupiter.api.Test;
 
 public class _643Test {
     private _643.Solution1 solution1;
+    private _643.Solution2 solution2;
     private static int[] nums;
 
     @BeforeEach
     public void setup() {
         solution1 = new _643.Solution1();
+        solution2 = new _643.Solution2();
     }
 
     @Test
     public void test1() {
         nums = new int[] {1, 12, -5, -6, 50, 3};
         assertEquals(12.75, solution1.findMaxAverage(nums, 4), 0.01);
+        assertEquals(12.75, solution2.findMaxAverage(nums, 4), 0.01);
     }
 
     @Test
