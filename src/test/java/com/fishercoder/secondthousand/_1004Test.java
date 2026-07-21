@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class _1004Test {
     private _1004.Solution1 solution1;
-    private static int[] A;
+    private static int[] nums;
 
     @BeforeEach
     public void setup() {
@@ -17,7 +17,13 @@ public class _1004Test {
 
     @Test
     public void test1() {
-        A = new int[] {1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0};
-        assertEquals(6, solution1.longestOnes(A, 2));
+        nums = new int[] {1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0};
+        assertEquals(6, solution1.longestOnes(nums, 2));
+    }
+
+    @Test
+    public void test2() {
+        nums = new int[] {0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1};
+        assertEquals(10, solution1.longestOnes(nums, 3));
     }
 }
