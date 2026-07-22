@@ -16,8 +16,7 @@ public class _724 {
                 sums[i] = sums[i - 1] + nums[i];
             }
             for (int i = 0; i < nums.length; i++) {
-                if (i == 0 && 0 == sums[nums.length - 1] - sums[i]
-                        || (i > 0 && sums[i - 1] == sums[nums.length - 1] - sums[i])) {
+                if (sums[i] - nums[i] == sums[nums.length - 1] - sums[i]) {
                     return i;
                 }
             }
