@@ -6,26 +6,26 @@ public class _2352 {
     public static class Solution1 {
         /** Time: O(n^2) Space: O(n^2) */
         public int equalPairs(int[][] grid) {
-            Map<List<Integer>, Integer> rows = new HashMap<>();
+            Map<List<Integer>, Integer> rowMap = new HashMap<>();
             for (int i = 0; i < grid.length; i++) {
-                List<Integer> row = new ArrayList<>();
+                List<Integer> rowList = new ArrayList<>();
                 for (int j = 0; j < grid[0].length; j++) {
-                    row.add(grid[i][j]);
+                    rowList.add(grid[i][j]);
                 }
-                rows.put(row, rows.getOrDefault(row, 0) + 1);
+                rowMap.put(rowList, rowMap.getOrDefault(rowList, 0) + 1);
             }
-            Map<List<Integer>, Integer> columns = new HashMap<>();
+            Map<List<Integer>, Integer> columnMap = new HashMap<>();
             for (int j = 0; j < grid[0].length; j++) {
-                List<Integer> column = new ArrayList<>();
+                List<Integer> columnList = new ArrayList<>();
                 for (int i = 0; i < grid.length; i++) {
-                    column.add(grid[i][j]);
+                    columnList.add(grid[i][j]);
                 }
-                columns.put(column, columns.getOrDefault(column, 0) + 1);
+                columnMap.put(columnList, columnMap.getOrDefault(columnList, 0) + 1);
             }
             int pairs = 0;
-            for (List<Integer> row : rows.keySet()) {
-                if (columns.containsKey(row)) {
-                    pairs += rows.get(row) * columns.get(row);
+            for (List<Integer> rowList : rowMap.keySet()) {
+                if (columnMap.containsKey(rowList)) {
+                    pairs += rowMap.get(rowList) * columnMap.get(rowList);
                 }
             }
             return pairs;
