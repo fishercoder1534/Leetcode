@@ -22,4 +22,34 @@ public class _2215 {
             return new ArrayList<>(Arrays.asList(list1, list2));
         }
     }
+
+    public static class Solution2 {
+
+        public List<List<Integer>> findDifference(int[] nums1, int[] nums2) {
+            List<List<Integer>> ans = new ArrayList<>();
+            Set<Integer> list1 = new HashSet<>();
+            Set<Integer> list2 = new HashSet<>();
+            Set<Integer> set1 = new HashSet<>();
+            for (int num : nums1) {
+                set1.add(num);
+            }
+            Set<Integer> set2 = new HashSet<>();
+            for (int num : nums2) {
+                set2.add(num);
+            }
+            for (int num : nums1) {
+                if (!set2.contains(num)) {
+                    list1.add(num);
+                }
+            }
+            ans.add(new ArrayList<>(list1));
+            for (int num : nums2) {
+                if (!set1.contains(num)) {
+                    list2.add(num);
+                }
+            }
+            ans.add(new ArrayList<>(list2));
+            return ans;
+        }
+    }
 }
