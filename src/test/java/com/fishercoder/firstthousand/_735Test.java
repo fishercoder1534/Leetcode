@@ -11,6 +11,7 @@ public class _735Test {
     private _735.Solution2 solution2;
     private _735.Solution3 solution3;
     private _735.Solution4 solution4;
+    private _735.Solution5 solution5;
     private static int[] asteroids;
     private static int[] expected;
 
@@ -20,6 +21,7 @@ public class _735Test {
         solution2 = new _735.Solution2();
         solution3 = new _735.Solution3();
         solution4 = new _735.Solution4();
+        solution5 = new _735.Solution5();
     }
 
     @Test
@@ -30,6 +32,7 @@ public class _735Test {
         assertArrayEquals(expected, solution2.asteroidCollision(asteroids));
         assertArrayEquals(expected, solution3.asteroidCollision(asteroids));
         assertArrayEquals(expected, solution4.asteroidCollision(asteroids));
+        assertArrayEquals(expected, solution5.asteroidCollision(asteroids));
     }
 
     @Test
