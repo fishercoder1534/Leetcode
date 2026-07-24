@@ -1,5 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
+import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -74,7 +75,6 @@ public class _735 {
                                     && stack.peekLast() > 0
                                     && stack.peekLast() == Math.abs(a)) {
                                 stack.pollLast();
-                                continue;
                             } else if (stack.isEmpty() || stack.peekLast() < 0) {
                                 stack.addLast(a);
                             }
@@ -156,6 +156,36 @@ public class _735 {
             int i = 0;
             while (!stack.isEmpty()) {
                 result[i++] = stack.pollFirst();
+            }
+            return result;
+        }
+    }
+
+    public static class Solution5 {
+        /** A more concise one. */
+        public int[] asteroidCollision(int[] asteroids) {
+            Deque<Integer> stack = new ArrayDeque<>();
+            for (int i = 0; i < asteroids.length; i++) {
+                boolean shouldAddToStack = true;
+                while (!stack.isEmpty() && (stack.peek() > 0 && asteroids[i] < 0)) {
+                    if (Math.abs(stack.peek()) < Math.abs(asteroids[i])) {
+                        stack.pop();
+                    } else if (Math.abs(stack.peek()) > Math.abs(asteroids[i])) {
+                        shouldAddToStack = false;
+                        break;
+                    } else {
+                        stack.pop();
+                        shouldAddToStack = false;
+                        break;
+                    }
+                }
+                if (shouldAddToStack) {
+                    stack.push(asteroids[i]);
+                }
+            }
+            int[] result = new int[stack.size()];
+            for (int i = 0; i < result.length; i++) {
+                result[i] = stack.pollLast();
             }
             return result;
         }
