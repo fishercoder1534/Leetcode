@@ -1,5 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Stack;
 
 public class _394 {
@@ -32,11 +34,47 @@ public class _394 {
                 } else {
                     str.push(str.pop() + s.charAt(idx));
                 }
-
                 idx++;
             }
-
             return str.pop();
+        }
+    }
+
+    public static class Solution2 {
+        /** My completely original solution on 7/27/2026 */
+        public String decodeString(String s) {
+            Deque<String> stack = new ArrayDeque<>();
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == ']') {
+                    StringBuilder sb = new StringBuilder();
+                    while (!stack.isEmpty() && !stack.peek().equals("[")) {
+                        sb.append(stack.pop());
+                    }
+                    stack.pop(); // pop '['
+                    String str = sb.toString();
+                    int times = Integer.parseInt(stack.pop());
+                    sb.setLength(0);
+                    while (times-- > 0) {
+                        sb.append(str);
+                    }
+                    stack.push(sb.toString());
+                } else if (Character.isDigit(s.charAt(i))) {
+                    StringBuilder sb = new StringBuilder();
+                    while (i < s.length() && Character.isDigit(s.charAt(i))) {
+                        sb.append(s.charAt(i++));
+                    }
+                    i--;
+                    int times = Integer.parseInt(sb.toString());
+                    stack.push(String.valueOf(times));
+                } else {
+                    stack.push(s.charAt(i) + "");
+                }
+            }
+            StringBuilder sb = new StringBuilder();
+            while (!stack.isEmpty()) {
+                sb.append(stack.pop());
+            }
+            return sb.reverse().toString();
         }
     }
 }
