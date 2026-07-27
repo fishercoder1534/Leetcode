@@ -44,6 +44,13 @@ public class _394 {
         /** My completely original solution on 7/27/2026 */
         public String decodeString(String s) {
             Deque<String> stack = new ArrayDeque<>();
+            /**
+             * The idea is: 1. if we encounter ], then we'll have to start popping chars off of the
+             * stack and duplicate the string to how many times we are supposed to; 2. if we
+             * encounter a digit, we'll find all connected digits and parse them into a number and
+             * throw it back onto the stack; 3. for all other s.charAt[i], we just add them onto the
+             * stack pop.
+             */
             for (int i = 0; i < s.length(); i++) {
                 if (s.charAt(i) == ']') {
                     StringBuilder sb = new StringBuilder();
@@ -63,7 +70,8 @@ public class _394 {
                     while (i < s.length() && Character.isDigit(s.charAt(i))) {
                         sb.append(s.charAt(i++));
                     }
-                    i--;
+                    i--; // decrement one here because we over-increment by one when the while
+                    // condition no longer holds
                     int times = Integer.parseInt(sb.toString());
                     stack.push(String.valueOf(times));
                 } else {
