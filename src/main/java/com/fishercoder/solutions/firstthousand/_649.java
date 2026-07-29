@@ -17,13 +17,18 @@ public class _649 {
                     direQ.offer(i);
                 }
             }
+
+            // Simulate rounds until one queue becomes empty
             while (!radiantQ.isEmpty() && !direQ.isEmpty()) {
                 int radiantIndex = radiantQ.poll();
                 int direIndex = direQ.poll();
+
+                // The senator with the lower index votes first and bans the other
                 if (radiantIndex < direIndex) {
-                    /*Radiant will ban Dire in this case, so we'll add radiant index back to the queue plus n*/
+                    // Radiant votes first -> ban Dire -> Radiant moves to next round
                     radiantQ.offer(radiantIndex + len);
                 } else {
+                    // Dire votes first -> ban Radiant -> Dire moves to next round
                     direQ.offer(direIndex + len);
                 }
             }
