@@ -1,24 +1,23 @@
 package com.fishercoder.solutions.firstthousand;
 
-import java.util.Deque;
 import java.util.LinkedList;
 
 public class _933 {
     public static class Solution1 {
         public static class RecentCounter {
 
-            Deque<Integer> deque;
+            LinkedList<Integer> slidingWindow;
 
             public RecentCounter() {
-                deque = new LinkedList<>();
+                slidingWindow = new LinkedList<>();
             }
 
             public int ping(int t) {
-                while (!deque.isEmpty() && t - deque.getFirst() > 3000) {
-                    deque.removeFirst();
+                slidingWindow.addLast(t);
+                while (!slidingWindow.isEmpty() && t - slidingWindow.getFirst() > 3000) {
+                    slidingWindow.removeFirst();
                 }
-                deque.addLast(t);
-                return deque.size();
+                return slidingWindow.size();
             }
         }
     }
