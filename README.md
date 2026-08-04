@@ -13,6 +13,8 @@ _If you like this project, please leave me a star._ &#9733;
 
 [For problems 3000 to 3999](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/algorithms/4th_thousand)
 
+[For problems 4000 to 4999](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/algorithms/5th_thousand)
+
                                                               
 
 ## Database
