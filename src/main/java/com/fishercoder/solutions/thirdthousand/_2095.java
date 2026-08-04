@@ -26,7 +26,9 @@ public class _2095 {
 
     public static class Solution2 {
         public ListNode deleteMiddle(ListNode head) {
-            if (head.next == null) return null;
+            if (head.next == null) {
+                return null;
+            }
             /**
              * We want to delete the middle node instead of finding it, so we'll have to move the
              * fast node one step ahead to begin with.
