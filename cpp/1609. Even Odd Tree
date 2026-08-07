@@ -1,0 +1,61 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    bool isEvenOddTree(TreeNode* root) {
+        vector<vector<int>> v;
+        queue<pair<TreeNode*, int>> q;
+        q.push({root, 0});
+        
+        while(!q.empty()) {
+            int sz = q.size();
+            vector<int> tmp;
+            for(int i = 0; i < sz; ++i) {
+                pair<TreeNode*, int> p = q.front();
+                q.pop();
+                int val = p.first->val, l = p.second;
+                tmp.push_back(val);
+                
+                if(p.first->left) q.push({p.first->left, l+1});
+                if(p.first->right) q.push({p.first->right, l+1});
+            }
+            
+            v.push_back(tmp);
+        }
+        
+        for(int i = 0; i < v.size(); ++i) {
+            if(i%2 == 0) {
+                if(v[i].size() > 0) {
+                    vector<int> tmp = v[i];
+                    sort(tmp.begin(), tmp.end());
+                    if(v[i] != tmp) return false;
+                    for(int i = 0; i < tmp.size(); ++i) {
+                        if(i > 0 and tmp[i-1] == tmp[i]) return false; 
+                        if(tmp[i]%2 == 0) return false;
+                    }
+                }
+            } else {
+                if(v[i].size() > 0) {
+                    vector<int> tmp = v[i];
+                    sort(tmp.rbegin(), tmp.rend());
+                    if(v[i] != tmp) return false;
+                    for(int i = 0; i < tmp.size(); ++i) {
+                        if(i > 0 and tmp[i-1] == tmp[i]) return false; 
+                        if(tmp[i]%2 != 0) return false;
+                    }
+                }
+            }
+        }
+        
+        return true;
+    }
+};
