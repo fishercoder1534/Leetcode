@@ -1,33 +1,27 @@
 package com.fishercoder.solutions.secondthousand;
 
 import com.fishercoder.common.classes.TreeNode;
-import java.util.Collections;
-import java.util.PriorityQueue;
 
 public class _1448 {
     public static class Solution1 {
-        int count;
 
         public int goodNodes(TreeNode root) {
-            dfs(root, new PriorityQueue<>(Collections.reverseOrder()));
-            return count;
+            return dfs(root, root.val);
         }
 
-        private void dfs(TreeNode root, PriorityQueue<Integer> maxHeap) {
+        private int dfs(TreeNode root, int maxSofar) {
             if (root == null) {
-                return;
+                return 0;
             }
-            maxHeap.offer(root.val);
-            if (root.val >= maxHeap.peek()) {
+
+            int count = 0;
+            if (root.val >= maxSofar) {
                 count++;
+                maxSofar = root.val;
             }
-            if (root.left != null) {
-                dfs(root.left, maxHeap);
-            }
-            if (root.right != null) {
-                dfs(root.right, maxHeap);
-            }
-            maxHeap.remove(root.val);
+            count += dfs(root.left, maxSofar);
+            count += dfs(root.right, maxSofar);
+            return count;
         }
     }
 }
