@@ -35,6 +35,7 @@ public class _3606 {
             }
             for (char c : code.toCharArray()) {
                 if (Character.isAlphabetic(c) || Character.isDigit(c) || '_' == c) {
+                    continue;
                 } else {
                     return false;
                 }
