@@ -1,0 +1,21 @@
+package com.fishercoder.fourththousand;
+
+import com.fishercoder.solutions.fourththousand._3880;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class _3880Test {
+    private _3880.Solution1 solution1;
+
+    @BeforeEach
+    public void setup() {
+        solution1 = new _3880.Solution1();
+    }
+
+    @Test
+    public void test1() {
+        assertEquals(1, solution1.minAbsoluteDifference(new int[]{2, 1}));
+    }
+}
