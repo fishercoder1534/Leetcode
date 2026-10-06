@@ -1,6 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -71,15 +72,15 @@ public class _145 {
          * recursive solution is trivial.
          */
         public List<Integer> postorderTraversal(TreeNode root) {
-            return post(root, new ArrayList());
+            return postorder(root, new ArrayList());
         }
 
-        List<Integer> post(TreeNode root, List<Integer> result) {
+        List<Integer> postorder(TreeNode root, List<Integer> result) {
             if (root == null) {
                 return result;
             }
-            post(root.left, result);
-            post(root.right, result);
+            postorder(root.left, result);
+            postorder(root.right, result);
             result.add(root.val);
             return result;
         }
