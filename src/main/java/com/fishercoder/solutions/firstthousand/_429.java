@@ -1,6 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.Node;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,10 +20,10 @@ public class _429 {
                 int size = queue.size();
                 List<Integer> level = new ArrayList<>();
                 for (int i = 0; i < size; i++) {
-                    Node currentNode = queue.poll();
-                    if (currentNode != null) {
-                        level.add(currentNode.val);
-                        for (Node child : currentNode.children) {
+                    Node node = queue.poll();
+                    if (node != null) {
+                        level.add(node.val);
+                        for (Node child : node.children) {
                             queue.offer(child);
                         }
                     }
