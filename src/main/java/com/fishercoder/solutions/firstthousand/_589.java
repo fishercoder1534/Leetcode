@@ -1,30 +1,25 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.Node;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class _589 {
     public static class Solution1 {
         public List<Integer> preorder(Node root) {
-            List<Integer> result = new ArrayList<>();
-            if (root == null) {
-                return result;
-            }
-            dfs(root, result);
-            return result;
+            return preorder(root, new ArrayList<>());
         }
 
-        private void dfs(Node root, List<Integer> result) {
+        private List<Integer> preorder(Node root, List<Integer> list) {
             if (root == null) {
-                return;
+                return list;
             }
-            result.add(root.val);
-            if (root.children.size() > 0) {
-                for (Node child : root.children) {
-                    dfs(child, result);
-                }
+            list.add(root.val);
+            for (Node child : root.children) {
+                preorder(child, list);
             }
+            return list;
         }
     }
 }
