@@ -8,15 +8,18 @@ import org.junit.jupiter.api.Test;
 
 public class _921Test {
     private _921.Solution1 solution1;
+    private _921.Solution2 solution2;
 
     @BeforeEach
     public void setup() {
         solution1 = new _921.Solution1();
+        solution2 = new _921.Solution2();
     }
 
     @Test
     public void test1() {
         assertEquals(1, solution1.minAddToMakeValid("())"));
+        assertEquals(1, solution2.minAddToMakeValid("())"));
     }
 
     @Test
