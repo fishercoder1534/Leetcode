@@ -1,6 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -25,16 +26,16 @@ public class _144 {
 
     public static class Solution2 {
         public List<Integer> preorderTraversal(TreeNode root) {
-            return pre(root, new ArrayList());
+            return preorder(root, new ArrayList());
         }
 
-        List<Integer> pre(TreeNode root, List<Integer> list) {
+        List<Integer> preorder(TreeNode root, List<Integer> list) {
             if (root == null) {
                 return list;
             }
             list.add(root.val);
-            pre(root.left, list);
-            pre(root.right, list);
+            preorder(root.left, list);
+            preorder(root.right, list);
             return list;
         }
     }
