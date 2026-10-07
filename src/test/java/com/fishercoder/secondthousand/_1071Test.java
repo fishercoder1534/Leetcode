@@ -8,10 +8,12 @@ import org.junit.jupiter.api.Test;
 
 public class _1071Test {
     private _1071.Solution1 solution1;
+    private _1071.Solution2 solution2;
 
     @BeforeEach
     public void setup() {
         solution1 = new _1071.Solution1();
+        solution2 = new _1071.Solution2();
     }
 
     @Test
@@ -32,5 +34,10 @@ public class _1071Test {
     @Test
     public void test4() {
         assertEquals("", solution1.gcdOfStrings("ABCABCD", "ABC"));
+    }
+
+    @Test
+    public void test5() {
+        assertEquals("TAUXX", solution2.gcdOfStrings("TAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"));
     }
 }
