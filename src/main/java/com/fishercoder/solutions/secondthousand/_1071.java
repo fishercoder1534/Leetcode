@@ -3,7 +3,8 @@ package com.fishercoder.solutions.secondthousand;
 public class _1071 {
     public static class Solution1 {
         /**
-         * Time: O(min(m, n) * (m+n)) Space: O(min(m, n))
+         * Time: O(min(m, n) * (m+n))
+         * Space: O(min(m, n))
          */
         public String gcdOfStrings(String str1, String str2) {
             int len1 = str1.length();
@@ -58,6 +59,28 @@ public class _1071 {
                 }
             }
             return "";
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * This is the most optimal solution recommended by Gemini :)
+         */
+        public String gcdOfStrings(String str1, String str2) {
+            if (!(str1 + str2).equals(str2 + str1)) {
+                return "";
+            }
+            int gcdLength = gcd(str1.length(), str2.length());
+            return str1.substring(0, gcdLength);
+        }
+
+        private int gcd(int a, int b) {
+            while (a != 0) {
+                int tmp = a;
+                a = b % a;
+                b = tmp;
+            }
+            return b;
         }
     }
 }
