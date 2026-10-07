@@ -14,9 +14,9 @@ public class _1979 {
 
         private int getGcd(int a, int b) {
             while (b != 0) {
-                int temp = b;
+                int tmp = b;
                 b = a % b;
-                a = temp;
+                a = tmp;
             }
             return a;
         }
