@@ -1,6 +1,8 @@
 package com.fishercoder.solutions.secondthousand;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 public class _1021 {
@@ -49,6 +51,25 @@ public class _1021 {
                 }
                 if (c == '(') {
                     level++;
+                }
+            }
+            return sb.toString();
+        }
+    }
+
+    public static class Solution3 {
+        public String removeOuterParentheses(String s) {
+            StringBuilder sb = new StringBuilder();
+            Deque<Character> stack = new ArrayDeque<>();
+            for (char c : s.toCharArray()) {
+                if (c == ')') {
+                    stack.pop();
+                }
+                if (!stack.isEmpty()) {
+                    sb.append(c);
+                }
+                if (c == '(') {
+                    stack.push('(');
                 }
             }
             return sb.toString();
