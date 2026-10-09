@@ -115,16 +115,11 @@ public class _450 {
                     // case 2: has a right child, regardless whether it has left children or not,
                     // this is because we want to traverse the tree only once, so we'll want to keep
                     // going down the tree
-                    root.val =
-                            successor(
-                                    root); // we find the value of the successor and assign it to
+                    root.val = successor(root); // we find the value of the successor and assign it to
                     // current root.val
-                    root.right =
-                            deleteNode(
-                                    root.right,
-                                    root.val); // and then we delete this successor's value in the
+                    root.right = deleteNode(root.right, root.val); // and then we delete this successor's value in the
                     // right subtree as it's been moved up
-                } else if (root.left != null) {
+                } else {
                     // case 3: this node is not a leaf and no right child, but has a left child
                     // That means that its successor is somewhere upper in the tree but we don't
                     // want to go back.
