@@ -1,6 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -115,7 +116,7 @@ public class _450 {
                     // this is because we want to traverse the tree only once, so we'll want to keep
                     // going down the tree
                     root.val =
-                            findSuccessor(
+                            successor(
                                     root); // we find the value of the successor and assign it to
                     // current root.val
                     root.right =
@@ -128,14 +129,14 @@ public class _450 {
                     // That means that its successor is somewhere upper in the tree but we don't
                     // want to go back.
                     // Let's use the predecessor here which is somewhere lower in the left subtree.
-                    root.val = findPredecessor(root);
+                    root.val = predecessor(root);
                     root.left = deleteNode(root.left, root.val);
                 }
             }
             return root;
         }
 
-        private int findPredecessor(TreeNode root) {
+        private int predecessor(TreeNode root) {
             root = root.left;
             while (root.right != null) {
                 root = root.right;
@@ -143,7 +144,7 @@ public class _450 {
             return root.val;
         }
 
-        private int findSuccessor(TreeNode root) {
+        private int successor(TreeNode root) {
             root = root.right;
             while (root.left != null) {
                 root = root.left;
