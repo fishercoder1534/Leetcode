@@ -55,7 +55,7 @@ public class _190 {
                 //make room for reversed by shifting all bits to the left by one bit:
                 reversed = reversed << 1;
 
-                //insert the extracted last bit onto the empty spot on the rightmost bit:
+                //insert the extracted last bit onto the empty spot on the rightmost bit: OR is used to combine bits, while AND is used to mask bits.
                 reversed = reversed | lastBit;
 
                 //move n to the right by one bit using logical shift >>>
