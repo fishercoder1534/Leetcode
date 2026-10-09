@@ -15,7 +15,7 @@ public class _3769 {
                 String binNum = Integer.toBinaryString(num);
                 StringBuilder sb = new StringBuilder(binNum);
                 String reversed = sb.reverse().toString();
-                long newNumber = Long.parseLong(reversed, 2);
+                long newNumber = Long.parseLong(reversed, 2);//this radix = 2 param is important, otherwise, this Long.parseLong() function will parse it based on radix=10, i.e. decimal, Long.parseLong("1011") = 1011L
                 pq.offer(new long[]{newNumber, num});
             }
             int[] res = new int[nums.length];
