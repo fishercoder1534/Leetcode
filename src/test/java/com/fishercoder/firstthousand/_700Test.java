@@ -5,7 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._700;
+
 import java.util.Arrays;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
