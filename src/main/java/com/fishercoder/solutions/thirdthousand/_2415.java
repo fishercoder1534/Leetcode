@@ -92,6 +92,13 @@ public class _2415 {
                 leftChild.val = rightChild.val;
                 rightChild.val = tmp;
             }
+            /** Here also needs attention: it's
+             * leftChild.left, rightChild.right
+             * to continue this recursion
+             * and
+             * leftChild.right, rightChild.left
+             * because for a perfect binary tree, it's mirror effect.
+             * */
             dfs(leftChild.left, rightChild.right, level + 1);
             dfs(leftChild.right, rightChild.left, level + 1);
         }
