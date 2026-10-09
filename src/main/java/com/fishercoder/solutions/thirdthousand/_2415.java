@@ -70,4 +70,30 @@ public class _2415 {
             return newRoot;
         }
     }
+
+    public static class Solution2 {
+        public TreeNode reverseOddLevels(TreeNode root) {
+            if (root == null) {
+                return root;
+            }
+            dfs(root.left, root.right, 0);
+            return root;
+        }
+
+        private void dfs(TreeNode leftChild, TreeNode rightChild, int level) {
+            if (leftChild == null || rightChild == null) {
+                return;
+            }
+            if (level % 2 == 0) {
+                /**Note: this only updates the values of the two nodes,
+                 * their left and right children nodes are not updated,
+                 * that's how the rest of the function could work as expected.*/
+                int tmp = leftChild.val;
+                leftChild.val = rightChild.val;
+                rightChild.val = tmp;
+            }
+            dfs(leftChild.left, rightChild.right, level + 1);
+            dfs(leftChild.right, rightChild.left, level + 1);
+        }
+    }
 }
