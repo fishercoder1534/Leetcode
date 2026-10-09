@@ -2,7 +2,6 @@ package com.fishercoder.solutions.secondthousand;
 
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Stack;
 
 public class _1541 {
     public static class Solution1 {
