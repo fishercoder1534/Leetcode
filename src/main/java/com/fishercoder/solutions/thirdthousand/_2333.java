@@ -17,7 +17,7 @@ public class _2333 {
         public long minSumSquareDiff(int[] nums1, int[] nums2, int k1, int k2) {
             int len = nums1.length;
             long k = k1 + k2;
-            long totalDiffSum = 0l;
+            long totalDiffSum = 0L;
             //group their differences by their value
             Map<Integer, Integer> freqMap = new HashMap<>();
             for (int i = 0; i < len; i++) {
