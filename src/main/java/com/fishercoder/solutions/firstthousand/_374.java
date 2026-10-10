@@ -27,17 +27,40 @@ public class _374 {
         }
 
         /*
-         * This is a fake guess method that I wrote just to make the compiler happy,
-         * 7 is just a completely random value.
+         * This is a fake guess method that I wrote just to make the compiler happy.
          */
         private int guess(int num) {
-            if (num > 7) {
-                return -1;
-            } else if (num < 7) {
-                return 1;
-            } else {
-                return 0;
+            return 1;
+        }
+    }
+
+    public static class Solution2 {
+        public int guessNumber(int n) {
+            int left = 1;
+            int right = n;
+            /**The difference between this solution2 vs the above solution1 is the condition of the while loop:
+             * here, I'm using left <= right
+             * so it'll guarantee to return within the while loop,
+             * this is just another way of handling all cases for binary search
+             * */
+            while (left <= right) {
+                int mid = left + (right - left) / 2;
+                if (guess(mid) == -1) {
+                    right = mid - 1;
+                } else if (guess(mid) == 1) {
+                    left = mid + 1;
+                } else {
+                    return mid;
+                }
             }
+            return -1;
+        }
+
+        /*
+         * This is a fake guess method that I wrote just to make the compiler happy.
+         */
+        private int guess(int num) {
+            return 1;
         }
     }
 }
