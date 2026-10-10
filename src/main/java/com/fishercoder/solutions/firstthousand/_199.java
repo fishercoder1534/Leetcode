@@ -1,6 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -41,20 +42,20 @@ public class _199 {
             if (root == null) {
                 return result;
             }
-            Queue<TreeNode> q = new LinkedList<>();
-            q.offer(root);
-            while (!q.isEmpty()) {
-                int size = q.size();
+            Queue<TreeNode> queue = new LinkedList<>();
+            queue.offer(root);
+            while (!queue.isEmpty()) {
+                int size = queue.size();
                 for (int i = 0; i < size; i++) {
-                    TreeNode curr = q.poll();
+                    TreeNode curr = queue.poll();
                     if (i == size - 1) {
                         result.add(curr.val);
                     }
                     if (curr.left != null) {
-                        q.offer(curr.left);
+                        queue.offer(curr.left);
                     }
                     if (curr.right != null) {
-                        q.offer(curr.right);
+                        queue.offer(curr.right);
                     }
                 }
             }
