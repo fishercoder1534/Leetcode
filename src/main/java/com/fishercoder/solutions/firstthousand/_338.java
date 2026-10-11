@@ -81,12 +81,16 @@ public class _338 {
             int lastBatchSize = 1;
             int startIndex = 1;
             while (list.size() <= n) {
+                //this is to get the exact copy
                 for (int i = startIndex; i < startIndex + lastBatchSize; i++) {
                     list.add(list.get(i));
                 }
+
+                //this is to get the copy + 1 for each of the numbers in the previous group
                 for (int i = startIndex; i < startIndex + lastBatchSize; i++) {
                     list.add(list.get(i) + 1);
                 }
+
                 startIndex += lastBatchSize;
                 lastBatchSize *= 2;
             }
