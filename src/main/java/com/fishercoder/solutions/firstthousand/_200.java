@@ -57,17 +57,18 @@ public class _200 {
                             // islands.
                             count++;
                         }
-                        ids[i * n + j] = i * n + j;
+                        ids[i * n + j] = i * n + j;//this is a common strategy to flatten a 2-d array into 1-day for easy manipulation.
                     }
                 }
             }
 
+            //call this method when i and j should be union'ed:
             public void union(int i, int j) {
                 int x = find(i);
                 int y = find(j);
                 if (x != y) {
-                    /*
-                     * This means when these two nodes should be unioned, however, so far,
+                    /**
+                     * This means when these two nodes should be union'ed, however, so far,
                      * they have not, i.e. they have different ids,
                      * so we'll have to unify them by assigning one's ids to the other, or vice versa.
                      * */
