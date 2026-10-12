@@ -1,11 +1,14 @@
 package com.fishercoder.firstthousand;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.fishercoder.solutions.firstthousand._841;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +16,7 @@ public class _841Test {
     private _841.Solution1 solution1;
     private _841.Solution2 solution2;
     private _841.Solution3 solution3;
+    private _841.Solution4 solution4;
     private static List<List<Integer>> rooms;
 
     @BeforeEach
@@ -20,6 +24,7 @@ public class _841Test {
         solution1 = new _841.Solution1();
         solution2 = new _841.Solution2();
         solution3 = new _841.Solution3();
+        solution4 = new _841.Solution4();
     }
 
     @Test
@@ -29,9 +34,10 @@ public class _841Test {
         rooms.add(Arrays.asList(2));
         rooms.add(Arrays.asList(3));
         rooms.add(Arrays.asList());
-        assertEquals(true, solution1.canVisitAllRooms(rooms));
-        assertEquals(true, solution2.canVisitAllRooms(rooms));
-        assertEquals(true, solution3.canVisitAllRooms(rooms));
+        assertTrue(solution1.canVisitAllRooms(rooms));
+        assertTrue(solution2.canVisitAllRooms(rooms));
+        assertTrue(solution3.canVisitAllRooms(rooms));
+        assertTrue(solution4.canVisitAllRooms(rooms));
     }
 
     @Test
