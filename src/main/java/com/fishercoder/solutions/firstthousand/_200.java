@@ -89,7 +89,7 @@ public class _200 {
             if (grid == null || grid.length == 0 || grid[0].length == 0) {
                 return 0;
             }
-            int[] dirs = new int[] {0, 1, 0, -1, 0};
+            int[] dirs = new int[]{0, 1, 0, -1, 0};
             UnionFind uf = new UnionFind(grid);
             int m = grid.length;
             int n = grid[0].length;
@@ -97,12 +97,13 @@ public class _200 {
                 for (int j = 0; j < n; j++) {
                     if (grid[i][j] == '1') {
                         for (int k = 0; k < 4; k++) {
+                            //x and y denoting the coordinates of the next possible neighbor in each of the four directions
                             int x = i + dirs[k];
                             int y = j + dirs[k + 1];
                             if (x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == '1') {
-                                int id1 = i * n + j;
-                                int id2 = x * n + y;
-                                uf.union(id1, id2);
+                                int id1 = i * n + j;//this is the id of the existing known island
+                                int id2 = x * n + y;//this is the id of the newly found island
+                                uf.union(id1, id2);//we attempt to union find them to merge all known islands.
                             }
                         }
                     }
