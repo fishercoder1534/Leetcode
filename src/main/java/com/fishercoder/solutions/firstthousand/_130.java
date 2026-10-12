@@ -165,4 +165,74 @@ public class _130 {
             return capturable;
         }
     }
+
+    public static class Solution3 {
+        /**
+         * Use UnionFind to solve this problem.
+         */
+        public void solve(char[][] board) {
+            int m = board.length;
+            int n = board[0].length;
+            int dummyNode = m * n;//this is used to indicate the head of all un-capturable nodes.
+            UnionFind uf = new UnionFind(m * n + 1);//give it one more position for a dummyNode
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (board[i][j] == 'O') {
+                        if (i == 0 || i == m - 1 || j == 0 || j == n - 1) {
+                            uf.union(dummyNode, i * n + j);//union this edge node with dummyNode so it cannot be captured
+                        }
+
+                        //we'll try to union nodes to the right of this 'O' node
+                        if (j + 1 < n && board[i][j + 1] == 'O') {
+                            uf.union(i * n + j, i * n + j + 1);
+                        }
+
+                        //we'll try to union nodes to the bottom of this 'O' node
+                        if (i + 1 < m && board[i + 1][j] == 'O') {
+                            uf.union(i * n + j, (i + 1) * n + j);
+                        }
+                    }
+                }
+            }
+
+            //now we can flip all 'O' cells that are not connected to the dummyNode
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (board[i][j] == 'O' && !uf.isConnected(dummyNode, i * n + j)) {
+                        board[i][j] = 'X';
+                    }
+                }
+            }
+        }
+
+        class UnionFind {
+            private int[] ids;
+
+            public UnionFind(int length) {
+                this.ids = new int[length];
+                for (int i = 0; i < length; i++) {
+                    this.ids[i] = i;
+                }
+            }
+
+            public void union(int i, int j) {
+                int rootI = find(i);
+                int rootJ = find(j);
+                if (rootI != rootJ) {
+                    this.ids[rootI] = rootJ;
+                }
+            }
+
+            private int find(int i) {
+                if (i != ids[i]) {
+                    ids[i] = find(ids[i]);
+                }
+                return ids[i];
+            }
+
+            public boolean isConnected(int i, int j) {
+                return find(i) == find(j);
+            }
+        }
+    }
 }
