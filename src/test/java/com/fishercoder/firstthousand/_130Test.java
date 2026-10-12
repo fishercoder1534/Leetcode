@@ -22,10 +22,35 @@ public class _130Test {
     @Test
     public void test1() {
         board =
+                CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray("[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]");
+        expected =
+                CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray("[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]");
+        CommonUtils.print2DCharArray(board);
+        solution2.solve(board);
+        CommonUtils.print2DCharArray(board);
+        assertArrayEquals(expected, board);
+    }
+
+    @Test
+    public void test2() {
+        board =
+                CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray("[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"O\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]");
+        expected =
+                CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray("[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"O\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]");
+        CommonUtils.print2DCharArray(board);
+        solution2.solve(board);
+        CommonUtils.print2DCharArray(board);
+        assertArrayEquals(expected, board);
+    }
+
+    @Test
+    public void test3() {
+        board =
                 CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray(
                         "[\"X\",\"O\",\"X\",\"O\",\"X\",\"O\",\"O\",\"O\",\"X\",\"O\"],[\"X\",\"O\",\"O\",\"X\",\"X\",\"X\",\"O\",\"O\",\"O\",\"X\"],[\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"X\",\"X\"],[\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"X\",\"O\",\"O\",\"X\"],"
                                 + "[\"O\",\"O\",\"X\",\"X\",\"O\",\"X\",\"X\",\"O\",\"O\",\"O\"],[\"X\",\"O\",\"O\",\"X\",\"X\",\"X\",\"O\",\"X\",\"X\",\"O\"],[\"X\",\"O\",\"X\",\"O\",\"O\",\"X\",\"X\",\"O\",\"X\",\"O\"],[\"X\",\"X\",\"O\",\"X\",\"X\",\"O\",\"X\",\"O\",\"O\",\"X\"],[\"O\",\"O\",\"O\",\"O\",\"X\",\"O\",\"X\",\"O\",\"X\",\"O\"],"
                                 + "[\"X\",\"X\",\"O\",\"X\",\"X\",\"X\",\"X\",\"O\",\"O\",\"O\"]");
+        CommonUtils.print2DCharArray(board);
         expected =
                 CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray(
                         "[\"X\",\"O\",\"X\",\"O\",\"X\",\"O\",\"O\",\"O\",\"X\",\"O\"],[\"X\",\"O\",\"O\",\"X\",\"X\",\"X\",\"O\",\"O\",\"O\",\"X\"],[\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"X\",\"X\"],[\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"X\",\"O\",\"O\",\"X\"],"
@@ -36,7 +61,7 @@ public class _130Test {
     }
 
     @Test
-    public void test2() {
+    public void test4() {
         board =
                 CommonUtils.convertLeetCodeRegular2DCharArrayInputIntoJavaArray(
                         "[\"X\",\"O\",\"X\",\"O\",\"X\",\"O\",\"O\",\"O\",\"X\",\"O\"],[\"X\",\"O\",\"O\",\"X\",\"X\",\"X\",\"O\",\"O\",\"O\",\"X\"],[\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"X\",\"X\"],[\"O\",\"O\",\"O\",\"O\",\"O\",\"O\",\"X\",\"O\",\"O\",\"X\"],"
