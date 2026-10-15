@@ -26,33 +26,32 @@ public class _547 {
 
         static class UnionFind {
             int count;
-            int[] root;
+            int[] ids;
 
             public UnionFind(int m) {
-                root = new int[m];
+                ids = new int[m];
                 for (int i = 0; i < m; i++) {
-                    root[i] = i;
+                    ids[i] = i;
                 }
                 count = m;
             }
 
             public void union(int i, int j) {
-                int x = find(root, i);
-                int y = find(root, j);
+                int x = find(i);
+                int y = find(j);
                 // at this point, x and y should equal, if not, then we should union them into the
                 // same value
                 if (x != y) {
                     count--;
-                    root[x] = y; // path compression, i.e. union
+                    ids[x] = y; // path compression, i.e. union
                 }
             }
 
-            public int find(int[] ids, int i) {
-                if (ids[i] == i) {
-                    // this is the base case, so nothing to recurse on
-                    return i;
+            public int find(int i) {
+                if (ids[i] != i) {
+                    ids[i] = find(ids[i]);
                 }
-                return find(ids, ids[i]);
+                return ids[i];
             }
         }
     }
