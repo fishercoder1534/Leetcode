@@ -33,8 +33,8 @@ public class _2685 {
                             }
                         }
                     }
-                    edgeCount /= 2;//in an un-directed graph, each edge will be counted twice, so we'll need to half it before we can use it
-                    if (edgeCount == (nodeCount * (nodeCount - 1) / 2)) {//this is the formula to use if one component is a complete one: each node is directly connected with every other node in the component
+                    edgeCount /= 2; //in an un-directed graph, each edge will be counted twice, so we'll need to half it before we can use it
+                    if (edgeCount == (nodeCount * (nodeCount - 1) / 2)) { //this is the formula to use if one component is a complete one: each node is directly connected with every other node in the component
                         count++;
                     }
                 }
