@@ -27,21 +27,20 @@ public class _323 {
             for (int i = 0; i < n; i++) {
                 if (!visited[i]) {
                     count++;
-                    Queue<Integer> queue = new LinkedList<>();
-                    queue.offer(i);
+                    Queue<Integer> q = new LinkedList<>();
+                    q.offer(i);
 
-                    while (!queue.isEmpty()) {
-                        int currNode = queue.poll();
+                    while (!q.isEmpty()) {
+                        int currNode = q.poll();
                         visited[currNode] = true;
                         for (int neighbor : adj.get(currNode)) {
                             if (!visited[neighbor]) {
-                                queue.offer(neighbor);
+                                q.offer(neighbor);
                             }
                         }
                     }
                 }
             }
-
             return count;
         }
     }
