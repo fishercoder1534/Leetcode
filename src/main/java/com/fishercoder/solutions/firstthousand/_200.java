@@ -4,7 +4,7 @@ public class _200 {
 
     public static class Solution1 {
 
-        /*
+        /**
          * DFS solution, note: this modifies the input.
          */
         public int numIslands(char[][] grid) {
@@ -102,9 +102,9 @@ public class _200 {
                             int x = i + dirs[k];
                             int y = j + dirs[k + 1];
                             if (x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == '1') {
-                                int id1 = i * n + j;//this is the id of the existing known island
-                                int id2 = x * n + y;//this is the id of the newly found island
-                                uf.union(id1, id2);//we attempt to union find them to merge all known islands.
+                                int id1 = i * n + j; //this is the id of the existing known island
+                                int id2 = x * n + y; //this is the id of the newly found island
+                                uf.union(id1, id2); //we attempt to union find them to merge all known islands.
                             }
                         }
                     }
