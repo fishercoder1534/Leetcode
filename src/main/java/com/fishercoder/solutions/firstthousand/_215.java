@@ -1,7 +1,6 @@
 package com.fishercoder.solutions.firstthousand;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class _215 {
@@ -15,7 +14,7 @@ public class _215 {
 
     public static class Solution2 {
         public int findKthLargest(int[] nums, int k) {
-            PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+            PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
             for (int i : nums) {
                 maxHeap.offer(i);
             }
