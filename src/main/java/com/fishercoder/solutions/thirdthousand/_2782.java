@@ -3,7 +3,7 @@ package com.fishercoder.solutions.thirdthousand;
 public class _2782 {
     public static class Solution1 {
         /**
-         * My completely original solution: beats 100% on LeetCode submissions.
+         * My completely original solution:
          * A perfect problem to apply UnionFind template.
          */
         public int numberOfCategories(int n, CategoryHandler categoryHandler) {
