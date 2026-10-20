@@ -26,24 +26,15 @@ public class _2368 {
             Queue<Integer> queue = new LinkedList<>();
             Set<Integer> visited = new HashSet<>();
             visited.add(0);
-            for (int neighbor : adj.get(0)) {
-                if (restrictedSet.contains(neighbor)) {
-                    continue;
-                }
-                uf.union(0, neighbor);
-                if (visited.add(neighbor)) {
-                    queue.add(neighbor);
-                }
-            }
+            queue.add(0);
             while (!queue.isEmpty()) {
                 int u = queue.poll();
                 for (int v : adj.get(u)) {
-                    if (restrictedSet.contains(v)) {
-                        continue;
-                    }
-                    uf.union(v, u);
-                    if (visited.add(v)) {
-                        queue.add(v);
+                    if (!restrictedSet.contains(v)) {
+                        uf.union(v, u);
+                        if (visited.add(v)) {
+                            queue.add(v);
+                        }
                     }
                 }
             }
