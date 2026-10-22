@@ -17,6 +17,8 @@ public class _1268 {
         private List<String> findTopThreeMatches(TrieNode root, String searchTerm) {
             List<String> result = new ArrayList<>();
             TrieNode node = root;
+
+            //we'll finish iterating through the given searchTerm first to move the node to the right place in the Trie if the searchTerm does have a match in the Trie, else, we'll return an empty list.
             for (char c : searchTerm.toCharArray()) {
                 if (node.children[c - 'a'] == null) {
                     return result;
@@ -24,13 +26,14 @@ public class _1268 {
                     node = node.children[c - 'a'];
                 }
             }
+
             if (node.isWord) {
                 result.add(searchTerm);
             }
-            for (TrieNode child : node.children) {
-                if (child != null) {
-                    List<String> thisResult = dfs(child, searchTerm, new ArrayList<>());
-                    result.addAll(thisResult);
+
+            for (TrieNode childNode : node.children) {
+                if (childNode != null) {
+                    dfs(childNode, searchTerm + childNode.c, result);
                     if (result.size() >= 3) {
                         return result.subList(0, 3);
                     }
@@ -39,39 +42,38 @@ public class _1268 {
             return result;
         }
 
-        private List<String> dfs(TrieNode node, String substring, List<String> result) {
-            if (node.isWord) {
-                result.add(substring + node.c);
-                if (result.size() >= 3) {
-                    return result;
+        private void dfs(TrieNode currentNode, String substring, List<String> result) {
+            if (result.size() >= 3) {
+                return;
+            }
+            if (currentNode.isWord) {
+                result.add(substring);
+            }
+            for (TrieNode childNode : currentNode.children) {
+                if (childNode != null) {
+                    dfs(childNode, substring + childNode.c, result);
                 }
             }
-            for (TrieNode child : node.children) {
-                if (child != null) {
-                    dfs(child, substring + node.c, result);
-                }
-            }
-            return result;
         }
 
         private TrieNode buildTrie(String[] products) {
             TrieNode root = new TrieNode(' ');
-            for (String pro : products) {
-                insert(pro, root);
+            for (String product : products) {
+                insert(product, root);
             }
             return root;
         }
 
         private void insert(String word, TrieNode root) {
-            TrieNode node = root;
+            TrieNode currentNode = root;
             for (int i = 0; i < word.length(); i++) {
                 char c = word.charAt(i);
-                if (node.children[c - 'a'] == null) {
-                    node.children[c - 'a'] = new TrieNode(c);
+                if (currentNode.children[c - 'a'] == null) {
+                    currentNode.children[c - 'a'] = new TrieNode(c);
                 }
-                node = node.children[c - 'a'];
+                currentNode = currentNode.children[c - 'a'];
             }
-            node.isWord = true;
+            currentNode.isWord = true;
         }
 
         class TrieNode {
@@ -110,17 +112,15 @@ public class _1268 {
             return result;
         }
 
-        private List<String> findAllWords(TrieNode trieNode, String prefix) {
+        //this is a beautiful recursive program
+        private List<String> findAllWords(TrieNode currentNode, String prefix) {
             List<String> result = new ArrayList<>();
-            if (trieNode.isWord) {
+            if (currentNode.isWord) {
                 result.add(prefix);
-                if (result.size() > 3) {
-                    return result;
-                }
             }
-            for (TrieNode node : trieNode.children) {
-                if (node != null) {
-                    result.addAll(findAllWords(node, prefix + node.val));
+            for (TrieNode childNode : currentNode.children) {
+                if (childNode != null) {
+                    result.addAll(findAllWords(childNode, prefix + childNode.val));
                     if (result.size() > 3) {
                         return result;
                     }
@@ -132,17 +132,14 @@ public class _1268 {
         private TrieNode buildTrie(String[] words) {
             TrieNode root = new TrieNode(' ');
             for (String word : words) {
-                TrieNode tmp = root;
-                for (int i = 0; i < word.length(); i++) {
-                    char c = word.charAt(i);
-                    if (tmp.children[c - 'a'] == null) {
-                        tmp.children[c - 'a'] = new TrieNode(c);
+                TrieNode currentNode = root;
+                for (char c : word.toCharArray()) {
+                    if (currentNode.children[c - 'a'] == null) {
+                        currentNode.children[c - 'a'] = new TrieNode(c);
                     }
-                    tmp = tmp.children[c - 'a'];
-                    if (i == word.length() - 1) {
-                        tmp.isWord = true;
-                    }
+                    currentNode = currentNode.children[c - 'a'];
                 }
+                currentNode.isWord = true;
             }
             return root;
         }
