@@ -17,20 +17,17 @@ public class _2300 {
         private int binarySearch(int[] potions, long success, int spell) {
             int left = 0;
             int right = potions.length - 1;
-            while (left < right) {
+            int firstValidIndex = potions.length;
+            while (left <= right) {
                 int mid = left + (right - left) / 2;
                 if ((long) potions[mid] * spell >= success) {
-                    right = mid;
+                    firstValidIndex = mid;
+                    right = mid - 1;
                 } else {
                     left = mid + 1;
                 }
             }
-            if (left == right
-                    && left == potions.length - 1
-                    && (long) spell * potions[left] < success) {
-                return potions.length;
-            }
-            return right;
+            return firstValidIndex;
         }
     }
 }
