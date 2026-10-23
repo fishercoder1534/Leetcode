@@ -42,8 +42,16 @@ public class _17 {
     public static class Solution2 {
         /**
          * It's recommended to use recursion to solve this problem, I got this feedback from a Meta interviewer on 6/17/2024 during the mock interview.
-         * My completely original solution on 10/11/2021, no backtracking involved: it lacks the core "choose-explore-undo" paradigm that defines backtracking.
+         * My completely original solution on 10/11/2021.
          * This is basically a recursive version of the above iterative/BFS strategy.
+         *
+         *
+         Why this is Backtracking (The "Hidden" Choose-Explore-Undo)
+
+         The code actually does have the "choose-explore-undo" paradigm, but it relies on immutable string copying instead of an explicit pop() or delete step:
+         • Choose: The loop picks a character candidates.charAt(i) and chooses it by concatenating it to an existing string: str + candidates.charAt(i).
+         • Explore: It passes the newly generated strings (newResult) down into the next recursive call to process the remaining digits.
+         • Undo: Because Java strings are immutable, creating str + candidates.charAt(i) does not modify the original prefix str. When the loop finishes processing one character and moves to the next index i + 1, the original str is still intact. This loop increment is the implicit "undo" step.
          */
         public List<String> letterCombinations(String digits) {
             List<String> ans = new ArrayList<>();
@@ -77,7 +85,10 @@ public class _17 {
 
     public static class Solution3 {
         /**
-         * My completely original solution on 5/9/2022, no backtracking involved or helper method involved.
+         * My completely original solution on 5/9/2022, this is technically also backtracking:
+         * The "Undo" Step: In recursive backtracking, you undo a choice explicitly via a remove() or pop() step.
+         * In this iterative version, the "undoing" and "moving to the next option" is handled automatically by
+         * the inner loops transitioning from one character ('d') to the next ('e') without modifying the original prefix (str).
          */
         public List<String> letterCombinations(String digits) {
             List<String> ans = new ArrayList<>();
