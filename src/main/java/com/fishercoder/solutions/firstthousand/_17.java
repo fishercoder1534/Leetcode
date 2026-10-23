@@ -42,7 +42,8 @@ public class _17 {
     public static class Solution2 {
         /**
          * It's recommended to use recursion to solve this problem, I got this feedback from a Meta interviewer on 6/17/2024 during the mock interview.
-         * My completely original solution on 10/11/2021, no backtracking involved.
+         * My completely original solution on 10/11/2021, no backtracking involved: it lacks the core "choose-explore-undo" paradigm that defines backtracking.
+         * This is basically a recursive version of the above iterative/BFS strategy.
          */
         public List<String> letterCombinations(String digits) {
             List<String> ans = new ArrayList<>();
