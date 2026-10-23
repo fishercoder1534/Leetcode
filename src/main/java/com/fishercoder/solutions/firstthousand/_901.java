@@ -8,7 +8,7 @@ public class _901 {
         /**
          * This is employing monotonic stack strategy:
          * We maintain a stack of elements that's monotonically decreasing, if we encounter an element that's bigger or equal to the current one at the top of the stack, we'll pop it off of the stack.
-         * The additional part of this problem is we'll maintain the index and the value, so we'll use an array as the element to operate on the stack.
+         * The additional part of this problem is we'll maintain the count and the value, so we'll use an array as the element to operate on the stack.
          */
         public static class StockSpanner {
             Deque<int[]> stack;
