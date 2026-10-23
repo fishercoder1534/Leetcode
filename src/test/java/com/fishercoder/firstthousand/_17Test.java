@@ -3,10 +3,12 @@ package com.fishercoder.firstthousand;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.fishercoder.solutions.firstthousand._17;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,6 +16,7 @@ public class _17Test {
     private _17.Solution1 solution1;
     private _17.Solution2 solution2;
     private _17.Solution3 solution3;
+    private _17.Solution4 solution4;
     private static String digits;
     private static List<String> expected;
 
@@ -22,6 +25,7 @@ public class _17Test {
         solution1 = new _17.Solution1();
         solution2 = new _17.Solution2();
         solution3 = new _17.Solution3();
+        solution4 = new _17.Solution4();
     }
 
     @Test
@@ -31,6 +35,7 @@ public class _17Test {
         assertEquals(expected, solution1.letterCombinations(digits));
         assertEquals(expected, solution2.letterCombinations(digits));
         assertEquals(expected, solution3.letterCombinations(digits));
+        assertEquals(expected, solution4.letterCombinations(digits));
     }
 
     @Test
