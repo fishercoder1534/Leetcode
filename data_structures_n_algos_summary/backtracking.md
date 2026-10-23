@@ -7,6 +7,7 @@
   point in time.
 * It systematically searches the solution space by building a state, exploring branches down a state-space tree, and
   then reverting the choice when hitting a dead end.
+* It typically employes DFS (Depth-First Search) strategy.
 * **Core Components:**
     * **Choice:** The decision made at the current step (e.g., adding a letter, placing a piece).
     * **Constraints:** Rules that validate whether the current path is worth pursuing.
