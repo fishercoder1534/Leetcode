@@ -104,4 +104,47 @@ public class _1466 {
             return count;
         }
     }
+
+    public static class Solution3 {
+        /**
+         * This is DFS, very similar to the above BFS, we treat the directed connections as undirected first to build an adjacency list and recursively visit all nodes, starting from node 0.
+         */
+
+        /*
+         * Time Complexity: O(V + E) where V = n (cities) and E = n - 1 (roads).
+         * We visit every city and check every road exactly once.
+         *
+         * Space Complexity: O(V + E) to store the adjacency list representation
+         * of the graph, plus O(V) for the recursion stack in the worst-case
+         * scenario (a linear graph).
+         */
+        public int minReorder(int n, int[][] connections) {
+            List<List<int[]>> adjList = new ArrayList<>();
+            for (int i = 0; i < n; i++) {
+                adjList.add(new ArrayList<>());
+            }
+            for (int[] conn : connections) {
+                int u = conn[0];
+                int v = conn[1];
+                adjList.get(u).add(new int[]{v, 1});//this is pointing away from u, and needs to be reversed
+                adjList.get(v).add(new int[]{u, 0});//this is pointing into u, no need to be reversed
+            }
+            boolean[] visited = new boolean[n];
+            return dfs(0, adjList, visited);
+        }
+
+        private int dfs(int curr, List<List<int[]>> adjList, boolean[] visited) {
+            visited[curr] = true;
+            int count = 0;
+            for (int[] next : adjList.get(curr)) {
+                int neighbor = next[0];
+                int flip = next[1];
+                if (!visited[neighbor]) {
+                    count += flip;
+                    count += dfs(neighbor, adjList, visited);
+                }
+            }
+            return count;
+        }
+    }
 }
