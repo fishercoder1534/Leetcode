@@ -67,19 +67,22 @@ public class _1466 {
 
     public static class Solution2 {
         /*
-         * build an adjacency list and BFS
+         * Build an adjacency list and then BFS
+         * Although this is a directed graph, we'll have to treat it as undirected graph first so that we can traverse all nodes
          */
         public int minReorder(int n, int[][] connections) {
-            // int[] in the below map holds two integers, the first one means the node, the second
-            // one means the direction:
-            // 0 means it's pointing to the key, i.e. doesn't need to be flipped,
+            // int[] in the adjacency list that holds two integers, the first one means the node, the second one means the direction:
+            // 0 means it's pointing to the capital or a city that's correctly pointing to the capital indirectly, i.e. doesn't need to be flipped,
             // 1 means it's the opposite direction, i.e. needs to be flipped
-            Map<Integer, List<int[]>> adjList = new HashMap<>();
+            List<List<int[]>> adjList = new ArrayList<>();
+            for (int i = 0; i < n; i++) {
+                adjList.add(new ArrayList<>());
+            }
             for (int[] conn : connections) {
-                adjList.computeIfAbsent(conn[0], k -> new ArrayList<>())
-                        .add(new int[] {conn[1], 1});
-                adjList.computeIfAbsent(conn[1], k -> new ArrayList<>())
-                        .add(new int[] {conn[0], 0});
+                int u = conn[0];
+                int v = conn[1];
+                adjList.get(u).add(new int[]{v, 1});
+                adjList.get(v).add(new int[]{u, 0});
             }
             int count = 0;
             Queue<Integer> queue = new LinkedList<>();
@@ -88,9 +91,6 @@ public class _1466 {
             visited[0] = true;
             while (!queue.isEmpty()) {
                 Integer curr = queue.poll();
-                if (!adjList.containsKey(curr)) {
-                    continue;
-                }
                 for (int[] next : adjList.get(curr)) {
                     int neighbor = next[0];
                     int flip = next[1];
