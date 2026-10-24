@@ -20,8 +20,8 @@ public class _641 {
                 deque = new int[k];
                 size = 0;
                 capacity = k;
-                front = 0;
-                rear = 0; //both front and rear pointers point at zero to begin with since it's an empty deque in the beginning
+                front = 0; //both front and rear pointers point at zero to begin with since it's an empty deque in the beginning
+                rear = 0; //rear pointer points to the next empty cell at the tail, NOT the last non-filled element
             }
 
             public boolean insertFront(int value) {
