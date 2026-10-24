@@ -4,6 +4,10 @@ public class _162 {
 
     public static class Solution1 {
         /*
+         * This is a brilliant solution: because it uses the given condition:
+         * You may imagine that nums[-1] = nums[n] = -∞. In other words, an element is always considered to be strictly greater than a neighbor that is outside the array.
+         * fully:
+         *
          * credit: https://leetcode.com/problems/find-peak-element/solutions/1290642/intuition-behind-conditions-complete-explanation-diagram-binary-search/
          * Time: O(logn)
          * <p>
@@ -33,7 +37,7 @@ public class _162 {
                 int mid = left + (right - left) / 2;
                 if (nums[mid] > nums[mid - 1] && nums[mid] > nums[mid + 1]) {
                     return mid;
-                } else if (nums[mid] < nums[mid - 1]) {
+                } else if (nums[mid - 1] > nums[mid]) {
                     right = mid - 1;
                 } else if (nums[mid] < nums[mid + 1]) {
                     left = mid + 1;
@@ -45,7 +49,7 @@ public class _162 {
 
     public static class Solution2 {
         /*
-         * My original O(n) solution.
+         * My original solution but it runs in O(n) time.
          */
         public int findPeakElement(int[] nums) {
             for (int i = 1; i < nums.length; i++) {
