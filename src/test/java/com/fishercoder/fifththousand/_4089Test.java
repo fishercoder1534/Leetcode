@@ -18,4 +18,9 @@ public class _4089Test {
     public void test1() {
         assertEquals(6, solution1.countSubarrays(new int[]{2, 4, 3}, 2, 5));
     }
+
+    @Test
+    public void test2() {
+        assertEquals(4, solution1.countSubarrays(new int[]{1, 4, 7, 3}, 1, 5));
+    }
 }
