@@ -26,4 +26,30 @@ public class _817 {
             return total;
         }
     }
+
+    public static class Solution2 {
+        /**
+         * This one is even simpler.
+         */
+        public int numComponents(ListNode head, int[] nums) {
+            boolean inComponent = false;
+            Set<Integer> set = new HashSet<>();
+            for (int num : nums) {
+                set.add(num);
+            }
+            int count = 0;
+            while (head != null) {
+                if (set.contains(head.val)) {
+                    if (!inComponent) {
+                        inComponent = true;
+                        count++;
+                    }
+                } else {
+                    inComponent = false;
+                }
+                head = head.next;
+            }
+            return count;
+        }
+    }
 }

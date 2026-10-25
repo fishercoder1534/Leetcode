@@ -12,10 +12,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _817Test {
     private _817.Solution1 solution1;
+    private _817.Solution2 solution2;
 
     @BeforeEach
     public void setup() {
         solution1 = new _817.Solution1();
+        solution2 = new _817.Solution2();
     }
 
     @Test
@@ -34,6 +36,12 @@ public class _817Test {
     public void test3() {
         ListNode head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(0, 1, 2));
         assertEquals(1, solution1.numComponents(head, new int[]{1, 0}));
+    }
+
+    @Test
+    public void test4() {
+        ListNode head = LinkedListUtils.createSinglyLinkedList(Arrays.asList(0, 1, 2));
+        assertEquals(1, solution2.numComponents(head, new int[]{1, 0}));
     }
 
 }
