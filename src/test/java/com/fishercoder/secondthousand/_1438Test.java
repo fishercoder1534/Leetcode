@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class _1438Test {
     private _1438.Solution1 solution1;
+    private _1438.Solution2 solution2;
     private static int[] nums;
     private static int limit;
     private static int expected;
@@ -15,20 +16,22 @@ public class _1438Test {
     @BeforeEach
     public void setup() {
         solution1 = new _1438.Solution1();
+        solution2 = new _1438.Solution2();
     }
 
     @Test
     public void test1() {
         expected = 2;
-        nums = new int[] {8, 2, 4, 7};
+        nums = new int[]{8, 2, 4, 7};
         limit = 4;
         assertEquals(expected, solution1.longestSubarray(nums, limit));
+        assertEquals(expected, solution2.longestSubarray(nums, limit));
     }
 
     @Test
     public void test2() {
         expected = 4;
-        nums = new int[] {10, 1, 2, 4, 7, 2};
+        nums = new int[]{10, 1, 2, 4, 7, 2};
         limit = 5;
         assertEquals(expected, solution1.longestSubarray(nums, limit));
     }
@@ -36,7 +39,7 @@ public class _1438Test {
     @Test
     public void test3() {
         expected = 3;
-        nums = new int[] {4, 2, 2, 2, 4, 4, 2, 2};
+        nums = new int[]{4, 2, 2, 2, 4, 4, 2, 2};
         limit = 0;
         assertEquals(expected, solution1.longestSubarray(nums, limit));
     }
