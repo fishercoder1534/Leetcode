@@ -9,28 +9,31 @@ public class _2762 {
          * Sliding window + monotonic deque to achieve O(n) space and O(n) time.
          */
         public long continuousSubarrays(int[] nums) {
-            Deque<Integer> decreasing = new ArrayDeque<>();
-            Deque<Integer> increasing = new ArrayDeque<>();
+            Deque<Integer> maxDeque = new ArrayDeque<>();
+            Deque<Integer> minDeque = new ArrayDeque<>();
             long ans = 0;
             int left = 0;
             for (int right = 0; right < nums.length; right++) {
-                while (!decreasing.isEmpty() && nums[decreasing.peekLast()] <= nums[right]) {
-                    decreasing.pollLast();
+                //maintain the decreasing order (max tracker)
+                while (!maxDeque.isEmpty() && nums[maxDeque.peekLast()] <= nums[right]) {
+                    maxDeque.pollLast();
                 }
-                decreasing.addLast(right);
+                maxDeque.addLast(right);
 
-                while (!increasing.isEmpty() && nums[increasing.peekLast()] >= nums[right]) {
-                    increasing.pollLast();
+                //maintain the increasing order (min tracker)
+                while (!minDeque.isEmpty() && nums[minDeque.peekLast()] >= nums[right]) {
+                    minDeque.pollLast();
                 }
-                increasing.addLast(right);
+                minDeque.addLast(right);
 
-                while (nums[decreasing.peekFirst()] - nums[increasing.peekFirst()] > 2) {
+                //contract the window when the condition is broken, you can change this condition depending on the problem variant
+                while (nums[maxDeque.peekFirst()] - nums[minDeque.peekFirst()] > 2) {
                     left++;
-                    if (decreasing.peekFirst() < left) {
-                        decreasing.pollFirst();
+                    if (maxDeque.peekFirst() < left) {
+                        maxDeque.pollFirst();
                     }
-                    if (increasing.peekFirst() < left) {
-                        increasing.pollFirst();
+                    if (minDeque.peekFirst() < left) {
+                        minDeque.pollFirst();
                     }
                 }
 
