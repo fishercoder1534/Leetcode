@@ -46,7 +46,8 @@ for (int right = 0; right < n; right++) {
     }
 }
 ```
-
+1. https://leetcode.com/problems/subarray-product-less-than-k/description/
+2. https://leetcode.com/problems/count-subarrays-with-loose-bounds/description/
 ---
 
 ## 📑 Strategy 2: [Placeholder for Next Strategy]
