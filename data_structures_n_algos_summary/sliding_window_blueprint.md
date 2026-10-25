@@ -48,6 +48,7 @@ for (int right = 0; right < n; right++) {
 ```
 1. https://leetcode.com/problems/subarray-product-less-than-k/description/
 2. https://leetcode.com/problems/count-subarrays-with-loose-bounds/description/
+3. https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/description/
 ---
 
 ## 📑 Strategy 2: [Placeholder for Next Strategy]

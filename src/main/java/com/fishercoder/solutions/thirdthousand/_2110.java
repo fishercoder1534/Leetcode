@@ -2,16 +2,20 @@ package com.fishercoder.solutions.thirdthousand;
 
 public class _2110 {
     public static class Solution1 {
+        /**
+         * Use this sliding window template, it's truly handy!
+         * This one is almost identical to https://leetcode.com/problems/count-subarrays-with-loose-bounds/description/
+         */
         public long getDescentPeriods(int[] prices) {
-            long ans = prices.length;
+            long ans = 0;
+            int count = 0;
             for (int i = 0; i < prices.length; i++) {
-                long startI = i;
-                while (i + 1 < prices.length && prices[i] - 1 == prices[i + 1]) {
-                    i++;
-                }
-                long totalNum = i - startI + 1;
-                if (totalNum > 1) {
-                    ans += ((totalNum - 1) * totalNum) / 2;
+                ans++;
+                if (i + 1 < prices.length && prices[i] == prices[i + 1] + 1) {
+                    count++;
+                    ans += count;
+                } else {
+                    count = 0;
                 }
             }
             return ans;
