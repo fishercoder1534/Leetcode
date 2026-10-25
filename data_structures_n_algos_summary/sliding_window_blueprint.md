@@ -61,9 +61,9 @@ Whenever a problem asks to **"Count subarrays satisfying condition X"**, utilize
 
 ```
 
-1. [LeetCode 713: Subarray Product Less Than K](https://leetcode.com)
-2. [LeetCode 2444: Count Subarrays With Fixed Bounds](https://leetcode.com)
-3. [LeetCode 2110: Number of Smooth Descent Periods of a Stock](https://leetcode.com)
+1. [LeetCode 713: Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/description/)
+2. [LeetCode 2444: Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/)
+3. [LeetCode 2110: Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/description/)
 
 ---
 
@@ -153,8 +153,8 @@ challenges:
 * **Variant B: Shortest Subarray Breaking Constraint**
     * *Adjustment:* Invert the loop contraction mechanism to minimize the frame whenever the target conditions are hit.
 
-1. [LeetCode 2762: Continuous Subarrays](https://leetcode.com)
-2. [LeetCode 1438: Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com)
+1. [LeetCode 2762: Continuous Subarrays](https://leetcode.com/problems/continuous-subarrays/description/)
+2. [LeetCode 1438: Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/description/)
 
 ---
 
