@@ -6,8 +6,9 @@ import java.util.PriorityQueue;
 
 public class _1438 {
     public static class Solution1 {
-        /*
+        /**
          * My completely original solution on 1/19/2022.
+         * Time: O(n^2)
          */
         public int longestSubarray(int[] nums, int limit) {
             int ans = 0;
@@ -36,6 +37,7 @@ public class _1438 {
     public static class Solution2 {
         /**
          * A good problem to apply standard sliding window paradigm:
+         * Time: O(n)
          * we use two deques to maintain the max and min indices for quick O(1) access.
          */
         public int longestSubarray(int[] nums, int limit) {
