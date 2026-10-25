@@ -33,7 +33,7 @@ A comprehensive collection of guides, blueprints, and cheat sheets covering esse
 
 ### 💻 Fundamentals
 * **[Computer Science Fundamentals](data_structures_n_algos_summary/computer_science_fundamentals.md)** — Essential theoretical building blocks and interview preparation notes.
-* **[Character Manipulation & Rotational Cipher](data_structures_n_algos_summary/character_manipulation_cipher.md)** - central reference for bitwise/ASCII shifts and cipher implementation strategies.
+* **[Character Manipulation & Rotational Cipher](data_structures_n_algos_summary/character_manipulation_cipher.md)** - Central reference for bitwise/ASCII shifts and cipher implementation strategies.
 
                                                               
 
