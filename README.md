@@ -15,6 +15,24 @@ _If you like this project, please leave me a star._ &#9733;
 
 [For problems 4000 to 4999](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/algorithms/5th_thousand)
 
+## 📚 Data Structures & Algorithms Summaries
+
+A comprehensive collection of guides, blueprints, and cheat sheets covering essential data structures and algorithmic paradigms.
+
+### 🧩 Algorithmic Paradigms & Patterns
+* **[Backtracking](data_structures_n_algos_summary/backtracking.md)** — Core concepts and patterns for systematic exhaustive searches.
+* **[Binary Search](data_structures_n_algos_summary/binary_search.md)** — Blueprints for searching sorted spaces efficiently.
+* **[Depth-First Search (DFS)](data_structures_n_algos_summary/depth_first_search.md)** — Traversal techniques and recursion patterns for graphs and trees.
+* **[Sliding Window Blueprint](data_structures_n_algos_summary/sliding_window_blueprint.md)** — Templates for optimizing sub-array and substring problems.
+
+### 📐 Advanced Structures & Techniques
+* **[Binary Search Tree (BST)](data_structures_n_algos_summary/binary_search_tree.md)** — Structural properties, insertion, deletion, and balancing concepts.
+* **[Bit Manipulation](data_structures_n_algos_summary/bit_manipulation.md)** — Common bitwise tricks and low-level optimization cheat sheets.
+* **[Graph Theory & Trees](data_structures_n_algos_summary/graph_theory_trees.md)** — Fundamentals of nodes, edges, network topologies, and tree structures.
+* **[Monotonic Stack Guide](data_structures_n_algos_summary/monotonic_stack_guide.md)** — Next greater/smaller element problem patterns explained.
+
+### 💻 Fundamentals
+* **[Computer Science Fundamentals](data_structures_n_algos_summary/computer_science_fundamentals.md)** — Essential theoretical building blocks and interview preparation notes.
                                                               
 
 ## Database
