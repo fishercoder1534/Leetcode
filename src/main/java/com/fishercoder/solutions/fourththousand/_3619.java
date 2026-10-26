@@ -4,6 +4,43 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class _3619 {
+    /**
+     * ============================================================================
+     * DFS vs. Union-Find Comparison for 'Count Islands with Total Value Divisible by K'
+     * ============================================================================
+     *
+     * PERFORMANCE & DESIGN ANALYSIS:
+     *
+     * 1. Efficiency (Winner: DFS)
+     *    - DFS runs in strict O(M * N) time with low constant overhead. Each cell
+     *      is processed and permanently "sunk" (set to 0) exactly once.
+     *    - Union-Find runs in O(M * N * α(M * N)) time. It incurs a performance
+     *      penalty due to path compression hops, pointer lookups, and a mandatory
+     *      second nested-loop pass to map-reduce cell weights into a HashMap.
+     *
+     * 2. Component Aggregation Fit (Winner: DFS)
+     *    - DFS naturally aggregates structural values via the local recursion stack.
+     *      The exact weight of an entire island is resolved in a single exploration
+     *      pass before unwinding to the root loop.
+     *    - Union-Find requires separate, clunky multi-step accounting phases to group
+     *      and sum cell criteria under their canonical parent root IDs.
+     *
+     * 3. Visited Array Anti-Pattern in Union-Find
+     *    - In the provided UF implementation, tracking a `visited[][]` grid state is
+     *      not only redundant for a static cell check but introduces a critical bug:
+     *      prematurely marking an adjacent neighbor cell as visited can block subsequent
+     *      legitimate union operations when multi-branched shapes fold around themselves,
+     *      resulting in split/fragmented subsets.
+     *
+     * RECOMMENDATION:
+     * Prefer DFS for static grid-component aggregation puzzles due to its superior execution
+     * speed and cleaner code pattern.
+     * Reserve Union-Find exclusively for dynamic stream
+     * graph updates or scenarios where modifying/destroying the original input grid is strictly
+     * prohibited.
+     * ============================================================================
+     */
+
     public static class Solution1 {
         public int countIslands(int[][] grid, int k) {
             UnionFind uf = new UnionFind(grid);

@@ -74,7 +74,7 @@ public class UnionFind {
 }
 ```
 
-1. [3619. Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k)
+1. [3619. Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k) (The more efficient way to solve this is actually DFS instead of UnionFind, see comparison in that class: _3619.java)
 
 ---
 
