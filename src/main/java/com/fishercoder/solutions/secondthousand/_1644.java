@@ -49,13 +49,14 @@ public class _1644 {
 
     public static class Solution2 {
         /*
-         * This still checks nodes existence.
+         * This is the most optimal solution.
          */
-        int found = 0;
+        boolean pFound = false;
+        boolean qFound = false;
 
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
             TreeNode lca = lca(root, p, q);
-            return found == 2 ? lca : null;
+            return pFound && qFound ? lca : null;
         }
 
         private TreeNode lca(TreeNode root, TreeNode p, TreeNode q) {
@@ -64,8 +65,12 @@ public class _1644 {
             }
             TreeNode left = lca(root.left, p, q);
             TreeNode right = lca(root.right, p, q);
-            if (root == p || root == q) {
-                found++;
+            if (root == p) {
+                pFound = true;
+                return root;
+            }
+            if (root == q) {
+                qFound = true;
                 return root;
             }
             return (left != null && right != null) ? root : left != null ? left : right;
