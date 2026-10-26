@@ -30,10 +30,12 @@ A comprehensive collection of guides, blueprints, and cheat sheets covering esse
 * **[Bit Manipulation](data_structures_n_algos_summary/bit_manipulation.md)** — Common bitwise tricks and low-level optimization cheat sheets.
 * **[Graph Theory & Trees](data_structures_n_algos_summary/graph_theory_trees.md)** — Fundamentals of nodes, edges, network topologies, and tree structures.
 * **[Monotonic Stack Guide](data_structures_n_algos_summary/monotonic_stack_guide.md)** — Next greater/smaller element problem patterns explained.
+* **[Union Find Guide](data_structures_n_algos_summary/union_find_guide.md)** — Disjoint-set data structure mechanisms and path compression techniques.
 
 ### 💻 Fundamentals
 * **[Computer Science Fundamentals](data_structures_n_algos_summary/computer_science_fundamentals.md)** — Essential theoretical building blocks and interview preparation notes.
 * **[Character Manipulation & Rotational Cipher](data_structures_n_algos_summary/character_manipulation_cipher.md)** - Central reference for bitwise/ASCII shifts and cipher implementation strategies.
+
 
                                                               
 
