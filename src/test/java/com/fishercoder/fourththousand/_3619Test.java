@@ -9,15 +9,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _3619Test {
     private _3619.Solution1 solution1;
+    private _3619.Solution2 solution2;
 
     @BeforeEach
     public void setup() {
         solution1 = new _3619.Solution1();
+        solution2 = new _3619.Solution2();
     }
 
     @Test
     public void test1() {
         assertEquals(2, solution1.countIslands(CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[0,2,1,0,0],[0,5,0,0,5],[0,0,1,0,0],[0,1,4,7,0],[0,2,0,0,8]"), 5));
+        assertEquals(2, solution2.countIslands(CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[0,2,1,0,0],[0,5,0,0,5],[0,0,1,0,0],[0,1,4,7,0],[0,2,0,0,8]"), 5));
     }
 
     @Test
