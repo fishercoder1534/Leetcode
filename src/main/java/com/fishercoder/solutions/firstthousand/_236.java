@@ -14,7 +14,8 @@ public class _236 {
             if (left != null && right != null) {
                 return root;
             }
-            return left != null ? left : right;
+            // return left != null ? left : right; // works, pick either one
+            return right != null ? right : left; // also works
         }
     }
 }
