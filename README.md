@@ -24,6 +24,7 @@ A comprehensive collection of guides, blueprints, and cheat sheets covering esse
 * **[Binary Search](data_structures_n_algos_summary/binary_search.md)** — Blueprints for searching sorted spaces efficiently.
 * **[Depth-First Search (DFS)](data_structures_n_algos_summary/depth_first_search.md)** — Traversal techniques and recursion patterns for graphs and trees.
 * **[Sliding Window Blueprint](data_structures_n_algos_summary/sliding_window_blueprint.md)** — Templates for optimizing sub-array and substring problems.
+* **[Dynamic Programming](data_structures_n_algos_summary/dynamic_programming_blueprint.md)** — Templates for dynamic programming.
 
 ### 📐 Advanced Structures & Techniques
 * **[Binary Search Tree (BST)](data_structures_n_algos_summary/binary_search_tree.md)** — Structural properties, insertion, deletion, and balancing concepts.
