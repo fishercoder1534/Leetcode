@@ -2,6 +2,10 @@ package com.fishercoder.solutions.firstthousand;
 
 public class _746 {
     public static class Solution1 {
+        /**
+         * Time: O(n)
+         * Space: O(n)
+         */
         public int minCostClimbingStairs(int[] cost) {
             int[] dp = new int[cost.length];
             dp[0] = cost[0];
@@ -10,6 +14,23 @@ public class _746 {
                 dp[i] = cost[i] + Math.min(dp[i - 1], dp[i - 2]);
             }
             return Math.min(dp[cost.length - 1], dp[cost.length - 2]);
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * Time: O(n)
+         * Space: O(1)
+         */
+        public int minCostClimbingStairs(int[] cost) {
+            int first = cost[0];
+            int second = cost[1];
+            for (int i = 2; i < cost.length; i++) {
+                int current = cost[i] + Math.min(first, second);
+                first = second;
+                second = current;
+            }
+            return Math.min(first, second);
         }
     }
 }

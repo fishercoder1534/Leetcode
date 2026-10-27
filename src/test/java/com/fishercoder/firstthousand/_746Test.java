@@ -8,22 +8,25 @@ import org.junit.jupiter.api.Test;
 
 public class _746Test {
     private _746.Solution1 solution1;
+    private _746.Solution2 solution2;
     private static int[] cost;
 
     @BeforeEach
     public void setUp() {
         solution1 = new _746.Solution1();
+        solution2 = new _746.Solution2();
     }
 
     @Test
     public void test1() {
-        cost = new int[] {10, 15, 20};
+        cost = new int[]{10, 15, 20};
         assertEquals(15, solution1.minCostClimbingStairs(cost));
+        assertEquals(15, solution2.minCostClimbingStairs(cost));
     }
 
     @Test
     public void test2() {
-        cost = new int[] {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
+        cost = new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
         assertEquals(6, solution1.minCostClimbingStairs(cost));
     }
 }
