@@ -123,11 +123,81 @@ public int solveSpaceOptimized(int[] input) {
     return second;
 }
 ```
+---
+
+## 📂 Strategy 4: 2D Multi-Variable State Tracking (Grid & Alignment)
+
+### Core Mechanics
+When decisions depend on multiple independent variables (e.g., coordinates in a grid `(i, j)`, matching characters between two strings `s1[i]` and `s2[j]`), states are represented using a 2D matrix where coordinates track indices across both dimensions.
+
+#### 💡 Case A: Grid Traversal & Paths
+Used for problems calculating optimal paths, path counts, or minimum costs across a matrix.
+
+```java
+// Standard 2D Grid Path Template
+public int minPathSum(int[][] grid) {
+    int rows = grid.length;
+    int cols = grid[0].length;
+    int[][] dp = new int[rows][cols];
+    
+    // 1. Base Case: Starting Cell
+    dp[0][0] = grid[0][0];
+    
+    // 2. Base Cases: First Row (Can only move right)
+    for (int j = 1; j < cols; j++) {
+        dp[0][j] = dp[0][j - 1] + grid[0][j];
+    }
+    
+    // 3. Base Cases: First Column (Can only move down)
+    for (int i = 1; i < rows; i++) {
+        dp[i][0] = dp[i - 1][0] + grid[i][0];
+    }
+    
+    // 4. State Transition for Inner Cells
+    for (int i = 1; i < rows; i++) {
+        for (int j = 1; j < cols; j++) {
+            dp[i][j] = grid[i][j] + Math.min(dp[i - 1][j], dp[i][j - 1]);
+        }
+    }
+    
+    return dp[rows - 1][cols - 1];
+}
+```
+
+#### 💡 Case B: String Sequence Alignment (LCS / Edit Distance)
+Used when matching subsequences or editing text across two structural input dimensions.
+
+```java
+// Standard Longest Common Subsequence Template
+public int longestCommonSubsequence(String text1, String text2) {
+    int m = text1.length();
+    int n = text2.length();
+    // dp[i][j] tracks LCS length for text1[0...i-1] and text2[0...j-1]
+    int[][] dp = new int[m + 1][n + 1];
+    
+    // Iterative Sequence Matching Loop
+    for (int i = 1; i <= m; i++) {
+        for (int j = 1; j <= n; j++) {
+            if (text1.charAt(i - 1) == text2.charAt(j - 1)) {
+                // Characters match -> extend current sequence
+                dp[i][j] = 1 + dp[i - 1][j - 1];
+            } else {
+                // Mismatch -> choose the best option from dropping one character
+                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+    
+    return dp[m][n];
+}
+```
 
 ---
 
-## 🎯 Standard LeetCode Classifications
+## 🎯 Canonical LeetCode Mappings
 
-1. [LeetCode 70: Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) (Linear State Progression)
-2. [LeetCode 198: House Robber](https://leetcode.com/problems/house-robber/) (Include/Exclude Decision State)
-3. [LeetCode 322: Coin Change](https://leetcode.com/problems/coin-change/) (Unbounded Knapsack / Min-Max Optimization)
+1. [LeetCode 70: Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+2. [LeetCode 746: Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
+3. [LeetCode 198: House Robber](https://leetcode.com/problems/house-robber/)
+4. [LeetCode 64: Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
+5. [LeetCode 1143: Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
