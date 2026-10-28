@@ -102,4 +102,28 @@ public class _1319 {
             }
         }
     }
+
+    /*
+     * =========================================================================================================================
+     *                                      COMPARISON OF SOLUTIONS (Union-Find vs. DFS) FOR THIS PROBLEM
+     * =========================================================================================================================
+     * Feature            |      Union-Find Solution                                | DFS Solution
+     * -------------------|---------------------------------------------------------|-------------------------------------------
+     * Core Concept       | Dynamically merges sets as it reads edges.              | Traverses an already built, static graph
+     *                    |                                                         | structure depth-first.
+     * -------------------|---------------------------------------------------------|-------------------------------------------
+     * Graph Storage      | No graph construction needed. Uses only an internal     | Requires an explicit Adjacency List
+     *                    | `ids` parent array.                                     | (List<List<Integer>>) built from the input.
+     * -------------------|---------------------------------------------------------|-------------------------------------------
+     * Component Counting | Counts unique representative parents (`heads`) at       | Increments a counter each time a new
+     *                    | the very end.                                           | traversal must kick off from an unvisited node.
+     * -------------------|---------------------------------------------------------|-------------------------------------------
+     * Memory Overheads   | Low. Only allocates a primitive `ids` array of size `n` | Higher. Allocates lists for every node and
+     *                    | and a `HashSet`.                                        | edge, plus recursive call stack memory.
+     * -------------------|---------------------------------------------------------|-------------------------------------------
+     * Recursion Risk     | Very deep recursion is avoided because path             | Risk of `StackOverflowError` if `n` is
+     *                    | compression flattens the tree.                          | massive and the graph is a straight line.
+     * =========================================================================================================================
+     */
+
 }
