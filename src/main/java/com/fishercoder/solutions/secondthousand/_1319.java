@@ -1,6 +1,8 @@
 package com.fishercoder.solutions.secondthousand;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class _1319 {
@@ -23,7 +25,7 @@ public class _1319 {
                 uf.union(a, b);
             }
 
-            //this for loop is needed to be sure all nodes have found its representative
+            //this for loop is needed to be sure all nodes have found its representative, i.e. its absolute root node, to enforce path compression
             for (int i = 0; i < n; i++) {
                 uf.find(i);
             }
@@ -58,6 +60,45 @@ public class _1319 {
                     ids[a] = find(ids[a]);
                 }
                 return ids[a];
+            }
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * DFS solution.
+         */
+        public int makeConnected(int n, int[][] connections) {
+            int m = connections.length;
+            if (m + 1 < n) {
+                return -1;
+            }
+            List<List<Integer>> adj = new ArrayList<>();
+            for (int i = 0; i < n; i++) {
+                adj.add(new ArrayList<>());
+            }
+            for (int[] connection : connections) {
+                adj.get(connection[0]).add(connection[1]);
+                adj.get(connection[1]).add(connection[0]);
+            }
+            boolean[] visited = new boolean[n];
+            int count = 0;
+            for (int i = 0; i < n; i++) {
+                if (!visited[i]) {
+                    visited[i] = true;
+                    count++;
+                    dfs(i, adj, visited);
+                }
+            }
+            return count;
+        }
+
+        private void dfs(int i, List<List<Integer>> adj, boolean[] visited) {
+            for (int neighbor : adj.get(i)) {
+                if (!visited[neighbor]) {
+                    visited[neighbor] = true;
+                    dfs(neighbor, adj, visited);
+                }
             }
         }
     }
