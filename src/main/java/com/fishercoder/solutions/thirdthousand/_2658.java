@@ -89,4 +89,17 @@ public class _2658 {
             return count;
         }
     }
+
+    /**
+     * Performance & Comparison Overview
+     *
+     * | Metric / Aspect    | DFS                                                                          | BFS                                                                                        |
+     * | :----------------- | :--------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
+     * | Time Complexity    | O(M x N) — visits each cell a constant number of times.                      | O(M x N) — visits each cell a constant number of times.                                     |
+     * | Space Complexity   | O(M x N) — due to the recursion stack (worst case of a fully connected grid).| O(M x N) — due to the queue storage space.                                                  |
+     * | Memory Allocation  | Uses the internal JVM call stack (no explicit object creation per cell).     | Uses the Heap, allocating a new int[] object for every neighbor added to the queue.         |
+     * | Traversal Style    | Explores as deep as possible along a single path before backtracking.        | Explores cell by cell in expanding concentric layers (radial expansion).                     |
+     * | Risk Factor        | Can cause a StackOverflowError if the grid is exceptionally large.           | Higher Garbage Collection (GC) overhead due to frequent new int[]{x, y} array allocations.   |
+     */
+
 }
