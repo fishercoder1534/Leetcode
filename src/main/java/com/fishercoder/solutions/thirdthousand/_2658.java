@@ -70,18 +70,15 @@ public class _2658 {
             queue.add(new int[]{i, j});
             int[] directions = new int[]{0, 1, 0, -1, 0};
             while (!queue.isEmpty()) {
-                int size = queue.size();
-                for (int k = 0; k < size; k++) {
-                    int[] curr = queue.poll();
-                    if (!visited[curr[0]][curr[1]]) {
-                        count += grid[curr[0]][curr[1]];
-                        visited[curr[0]][curr[1]] = true;
-                        for (int n = 0; n < directions.length - 1; n++) {
-                            int x = curr[0] + directions[n];
-                            int y = curr[1] + directions[n + 1];
-                            if (x >= 0 && x < grid.length && y >= 0 && y < grid[0].length && !visited[x][y] && grid[x][y] != 0) {
-                                queue.offer(new int[]{x, y});
-                            }
+                int[] curr = queue.poll();
+                if (!visited[curr[0]][curr[1]]) {
+                    count += grid[curr[0]][curr[1]];
+                    visited[curr[0]][curr[1]] = true;
+                    for (int n = 0; n < directions.length - 1; n++) {
+                        int x = curr[0] + directions[n];
+                        int y = curr[1] + directions[n + 1];
+                        if (x >= 0 && x < grid.length && y >= 0 && y < grid[0].length && !visited[x][y] && grid[x][y] != 0) {
+                            queue.offer(new int[]{x, y});
                         }
                     }
                 }
