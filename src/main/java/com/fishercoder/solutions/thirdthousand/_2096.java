@@ -5,7 +5,7 @@ import com.fishercoder.common.classes.TreeNode;
 public class _2096 {
     public static class Solution1 {
         /*
-         * Steps for this problem:
+         * Steps for this problem: (This is the most optimal solution algorithm strategy wise, Solution2 below only further optimizes this from String allocation perspectives)
          * 1. find the path from root the start and dest respectively, mark them using two directions: 'L' and 'R', i.e. you can only go down from root, so there's no up, 'U' direction;
          * 2. the LCA (the lowest common ancestor) of start and dest will be the joint of the shortest path;
          * 3. find the longest common prefix of these two paths, that can be cut off;
@@ -57,6 +57,51 @@ public class _2096 {
                 return true;
             }
             sb.setLength(sb.length() - 1);
+            return false;
+        }
+    }
+
+    public static class Solution2 {
+        public String getDirections(TreeNode root, int startValue, int destValue) {
+            StringBuilder pathFromRootToStart = new StringBuilder();
+            StringBuilder pathFromRootToEnd = new StringBuilder();
+            findPathToNode(root, startValue, pathFromRootToStart);
+            findPathToNode(root, destValue, pathFromRootToEnd);
+            int i = 0;
+            int minLen = Math.min(pathFromRootToStart.length(), pathFromRootToEnd.length());
+            while (i < minLen && pathFromRootToStart.charAt(i) == pathFromRootToEnd.charAt(i)) {
+                i++;
+            }
+            StringBuilder sb = new StringBuilder();
+
+            //every remaining step up to LCA from start node becomes a 'U'
+            for (int j = i; j < pathFromRootToStart.length(); j++) {
+                sb.append('U');
+            }
+
+            sb.append(pathFromRootToEnd.substring(i));
+            return sb.toString();
+        }
+
+        private boolean findPathToNode(TreeNode root, int target, StringBuilder path) {
+            if (root == null) {
+                return false;
+            }
+            if (root.val == target) {
+                return true;
+            }
+            path.append('L');
+            if (findPathToNode(root.left, target, path)) {
+                return true;
+            }
+            path.setLength(path.length() - 1); //backtrack
+
+            path.append('R');
+            if (findPathToNode(root.right, target, path)) {
+                return true;
+            }
+            path.setLength(path.length() - 1); //backtrack
+
             return false;
         }
     }

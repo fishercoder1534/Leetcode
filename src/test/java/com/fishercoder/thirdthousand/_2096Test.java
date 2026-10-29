@@ -11,10 +11,12 @@ import org.junit.jupiter.api.Test;
 
 public class _2096Test {
     private _2096.Solution1 solution1;
+    private _2096.Solution2 solution2;
 
     @BeforeEach
     public void setup() {
         solution1 = new _2096.Solution1();
+        solution2 = new _2096.Solution2();
     }
 
     @Test
@@ -22,6 +24,7 @@ public class _2096Test {
         TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(5, 1, 2, 3, null, 6, 4));
         TreeUtils.printBinaryTree(root);
         assertEquals("UURL", solution1.getDirections(root, 3, 6));
+        assertEquals("UURL", solution2.getDirections(root, 3, 6));
     }
 
     @Test
