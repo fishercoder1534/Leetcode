@@ -31,7 +31,7 @@ public class _3067 {
                     int weight = neighbor[1];
 
                     //count how many servers in this branch can pair with any valid server found in previous branches
-                    int connectableInSubtree = dfs(tree, nextNode, weight, i, signalSpeed);
+                    int connectableInSubtree = preorderDfs(tree, nextNode, weight, i, signalSpeed);
 
                     //each connectable pair in this branch can pair up with any valid server that can be found in previous branches
                     currentPairsForRoot += connectableInSubtree * totalConnectableFromPreviousBranches;
@@ -42,8 +42,9 @@ public class _3067 {
             return res;
         }
 
-        private int dfs(List<List<int[]>> tree, int node, int currentDistance, int parent, int signalSpeed) {
+        private int preorderDfs(List<List<int[]>> tree, int node, int currentDistance, int parent, int signalSpeed) {
             int count = 0;
+            //process the current node first, then proceed to its children, this is preorder traversal
             if (currentDistance % signalSpeed == 0) {
                 count++;
             }
@@ -52,7 +53,7 @@ public class _3067 {
                 int nextNode = nei[0];
                 int weight = nei[1];
                 if (nextNode != parent) {
-                    count += dfs(tree, nextNode, currentDistance + weight, node, signalSpeed);
+                    count += preorderDfs(tree, nextNode, currentDistance + weight, node, signalSpeed);
                 }
             }
             return count;
