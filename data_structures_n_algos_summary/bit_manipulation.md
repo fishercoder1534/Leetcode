@@ -2,21 +2,21 @@
 
 * **`^` exclusive or:**
     * This is incredibly useful in CS:
-        * ** The XOR operator (`^`) outputs `true` if only one condition is true, canceling out identical values:
+        1. ** The XOR operator (`^`) outputs `true` if only one condition is true, canceling out identical values:
           * | Value A | Value B | Result (A ^ B) |
             | :--- | :--- | :--- |
             | `false` | `false` | `false` |
             | `false` | `true` | `true` |
             | `true` | `false` | `true` |
             | `true` | `true` | `false` |
-        * **A number `^` with itself will result in zero:**
+        2. **A number `^` with itself will result in zero:**
             * `num1 ^ num1 = 0`
-        * **Toggling state:** Any number `^` with **_one_** will toggle every bit of this number:
+        3. **Toggling state:** Any number `^` with **_one_** will toggle every bit of this number:
             * It flips between 0 and 1 each time it runs:
             * `8 ^ 1 = 9` $\rightarrow$ `1000 ^ 0001 = 1001` $\rightarrow$ `9`
             * `7 ^ 1 = 6` $\rightarrow$ `0111 ^ 0001 = 0110` $\rightarrow$ `6`
             * `3 ^ 1 = 2` $\rightarrow$ `0011 ^ 0001 = 0010` $\rightarrow$ `2`
-        * **It's perfectly reversible:**
+        4. **It's perfectly reversible:**
             * **Encrypting:** Message `^` Key = Secret
                 * 12 (message) `^` 7 (key) = 11 (secret)
                 * `1100 ^ 0111 = 1011`
