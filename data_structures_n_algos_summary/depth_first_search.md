@@ -46,3 +46,4 @@ void dfs(Node node, State state, ResultContainer result) {
 * Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
 * **State Management:** Tracking matching subtrees using bubble-up values or global collection states.
 * **Post-Order Strategy:** Validating both the left branch and the right branch outcomes before assembling the current node solution context.
+2. [LeetCode 2658. Maximum Number of Fish in a Grid](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/)
