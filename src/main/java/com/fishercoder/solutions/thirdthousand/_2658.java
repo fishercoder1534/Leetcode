@@ -46,6 +46,40 @@ public class _2658 {
 
     public static class Solution2 {
         /**
+         * DFS again
+         */
+        public int findMaxFish(int[][] grid) {
+            int m = grid.length;
+            int n = grid[0].length;
+            int maxFish = 0;
+            boolean[][] visited = new boolean[m][n];
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (grid[i][j] != 0 && !visited[i][j]) {
+                        maxFish = Math.max(maxFish, preorderDfs(grid, i, j, visited));
+                    }
+                }
+            }
+            return maxFish;
+        }
+
+        private int preorderDfs(int[][] grid, int i, int j, boolean[][] visited) {
+            //base case
+            if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || visited[i][j] || grid[i][j] == 0) {
+                return 0;
+            }
+            visited[i][j] = true;
+            int fishCount = grid[i][j];
+            fishCount += preorderDfs(grid, i + 1, j, visited);
+            fishCount += preorderDfs(grid, i, j + 1, visited);
+            fishCount += preorderDfs(grid, i, j - 1, visited);
+            fishCount += preorderDfs(grid, i + 1, j, visited);
+            return fishCount;
+        }
+    }
+
+    public static class Solution3 {
+        /**
          * BFS
          */
         public int findMaxFish(int[][] grid) {
