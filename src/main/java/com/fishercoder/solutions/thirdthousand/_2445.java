@@ -32,8 +32,11 @@ public class _2445 {
                 return root;
             }
             BinaryTreeNode left = findNodeDfs(query, root.left);
+            if (left != null) {
+                return left;
+            }
             BinaryTreeNode right = findNodeDfs(query, root.right);
-            return left == null ? right : left;
+            return right;
         }
 
         private void markNodeDfs(BinaryTreeNode root) {
