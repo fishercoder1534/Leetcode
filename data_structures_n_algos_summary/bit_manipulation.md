@@ -2,6 +2,13 @@
 
 * **`^` exclusive or:**
     * This is incredibly useful in CS:
+        * ** The XOR operator (`^`) outputs `true` if only one condition is true, canceling out identical values:
+          * | Value A | Value B | Result (A ^ B) |
+            | :--- | :--- | :--- |
+            | `false` | `false` | `false` |
+            | `false` | `true` | `true` |
+            | `true` | `false` | `true` |
+            | `true` | `true` | `false` |
         * **A number `^` with itself will result in zero:**
             * `num1 ^ num1 = 0`
         * **Toggling state:** Any number `^` with **_one_** will toggle every bit of this number:
