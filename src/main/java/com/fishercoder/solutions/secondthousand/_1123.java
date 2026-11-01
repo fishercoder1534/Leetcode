@@ -8,17 +8,17 @@ public class _1123 {
             if (root == null) {
                 return null;
             }
-            Dual dual = dfs(root);
+            Dual dual = postorderDfs(root);
             return dual.node;
         }
 
-        private Dual dfs(TreeNode root) {
+        private Dual postorderDfs(TreeNode root) {
             if (root == null) {
                 //give them a base case
                 return new Dual(0, root);
             }
-            Dual left = dfs(root.left);
-            Dual right = dfs(root.right);
+            Dual left = postorderDfs(root.left);
+            Dual right = postorderDfs(root.right);
 
             //if their depth are equal, then this node is their lowest LCA
             if (left.depth == right.depth) {
