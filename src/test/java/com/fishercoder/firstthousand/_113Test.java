@@ -5,15 +5,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.firstthousand._113;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class _113Test {
     private _113.Solution1 solution1;
     private _113.Solution2 solution2;
+    private _113.Solution3 solution3;
     private static TreeNode root;
     private static int sum;
     private static List<List<Integer>> expected;
@@ -22,6 +25,7 @@ public class _113Test {
     public void setup() {
         solution1 = new _113.Solution1();
         solution2 = new _113.Solution2();
+        solution3 = new _113.Solution3();
     }
 
     @Test
@@ -36,5 +40,6 @@ public class _113Test {
         expected.add(Arrays.asList(5, 8, 4, 5));
         assertEquals(expected, solution1.pathSum(root, sum));
         assertEquals(expected, solution2.pathSum(root, sum));
+        assertEquals(expected, solution3.pathSum(root, sum));
     }
 }

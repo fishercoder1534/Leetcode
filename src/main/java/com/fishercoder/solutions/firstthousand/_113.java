@@ -1,6 +1,7 @@
 package com.fishercoder.solutions.firstthousand;
 
 import com.fishercoder.common.classes.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,12 +46,7 @@ public class _113 {
             return ans;
         }
 
-        private void backtracking(
-                TreeNode root,
-                List<Integer> path,
-                int targetSum,
-                int currentSum,
-                List<List<Integer>> ans) {
+        private void backtracking(TreeNode root, List<Integer> path, int targetSum, int currentSum, List<List<Integer>> ans) {
             if (root == null) {
                 return;
             }
@@ -64,6 +60,40 @@ public class _113 {
             backtracking(root.left, path, targetSum, currentSum, ans);
             backtracking(root.right, path, targetSum, currentSum, ans);
             path.remove(path.size() - 1); // backtracking
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * My completely original solution, a great one to practice DFS and backtracking.
+         */
+        public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+            List<List<Integer>> ans = new ArrayList<>();
+            if (root == null) {
+                return ans;
+            }
+            List<Integer> path = new ArrayList<>();
+            path.add(root.val);
+            dfs(root, targetSum, root.val, ans, path);
+            return ans;
+        }
+
+        private void dfs(TreeNode root, int targetSum, int currentSum, List<List<Integer>> ans, List<Integer> path) {
+            //base case
+            if (targetSum == currentSum && root.left == null && root.right == null) {
+                ans.add(new ArrayList<>(path));
+                return;
+            }
+            if (root.left != null) {
+                path.add(root.left.val);
+                dfs(root.left, targetSum, currentSum + root.left.val, ans, path);
+                path.remove(path.size() - 1); //backtrack
+            }
+            if (root.right != null) {
+                path.add(root.right.val);
+                dfs(root.right, targetSum, currentSum + root.right.val, ans, path);
+                path.remove(path.size() - 1); //backtrack
+            }
         }
     }
 }
