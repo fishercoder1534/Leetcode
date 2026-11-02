@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _3535 {
     public static class Solution1 {
-        int MOD = 1_000_000_007;
+        int mod = 1_000_000_007;
 
         public int[] queryConversions(int[][] conversions, int[][] queries) {
             Map<Integer, int[]> map = new HashMap<>();
@@ -28,20 +28,20 @@ public class _3535 {
                 long baseZeroSource = memo.get(sourceUnit);
                 long baseZeroTarget = memo.get(targetUnit);
 
-                long inverseSource = power(baseZeroSource, MOD - 2);
-                ans[i] = (int) ((baseZeroTarget * inverseSource) % MOD);
+                long inverseSource = power(baseZeroSource, mod - 2);
+                ans[i] = (int) ((baseZeroTarget * inverseSource) % mod);
             }
             return ans;
         }
 
         private long power(long base, long exp) {
             long result = 1;
-            base %= MOD;
+            base %= mod;
             while (exp > 0) {
                 if (exp % 2 == 1) {
-                    result = (result * base) % MOD;
+                    result = (result * base) % mod;
                 }
-                base = (base * base) % MOD;
+                base = (base * base) % mod;
                 exp /= 2;
             }
             return result;
@@ -56,7 +56,7 @@ public class _3535 {
             int sourceUnit = arr[0];
             int factor = arr[1];
             long value = postorderDfs(sourceUnit, memo, map);
-            long product = ((long) factor * value) % MOD;
+            long product = ((long) factor * value) % mod;
             memo.put(target, (int) product);
             return memo.get(target);
         }
