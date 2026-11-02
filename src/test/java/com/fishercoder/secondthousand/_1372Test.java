@@ -5,16 +5,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import com.fishercoder.common.classes.TreeNode;
 import com.fishercoder.common.utils.TreeUtils;
 import com.fishercoder.solutions.secondthousand._1372;
+
 import java.util.Arrays;
+
 import org.junit.jupiter.api.Test;
 
 public class _1372Test {
     private _1372.Solution1 solution1;
+    private _1372.Solution2 solution2;
     private static TreeNode root;
 
     @Test
     public void test1() {
         solution1 = new _1372.Solution1();
+        solution2 = new _1372.Solution2();
         root =
                 TreeUtils.constructBinaryTree(
                         Arrays.asList(
@@ -22,6 +26,7 @@ public class _1372Test {
                                 null, 1));
         TreeUtils.printBinaryTree(root);
         assertEquals(3, solution1.longestZigZag(root));
+        assertEquals(3, solution2.longestZigZag(root));
     }
 
     @Test
