@@ -33,6 +33,7 @@ public class _2477 {
 
             //if we are not at the capital, all people need to travel to the parent node
             if (curr != 0) {
+                // Formula for ceiling division: (people + seats - 1) / seats
                 totalFuel += (people + seats - 1) / seats;
             }
             return people;
