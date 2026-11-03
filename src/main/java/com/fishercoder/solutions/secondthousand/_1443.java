@@ -14,16 +14,16 @@ public class _1443 {
                 graph.get(edge[0]).add(edge[1]);
                 graph.get(edge[1]).add(edge[0]);
             }
-            return dfs(0, -1, graph, hasApple);
+            return postorderDfs(0, -1, graph, hasApple);
         }
 
-        private int dfs(int curr, int parent, List<List<Integer>> graph, List<Boolean> hasApple) {
+        private int postorderDfs(int curr, int parent, List<List<Integer>> graph, List<Boolean> hasApple) {
             int totalTime = 0;
             for (int neighbor : graph.get(curr)) {
                 if (neighbor == parent) {
                     continue; //avoid going back to the parent, i.e. this is a key step in a graph/tree problem where it's being represented in an adjacency list data structure
                 }
-                int timeFromChild = dfs(neighbor, curr, graph, hasApple);
+                int timeFromChild = postorderDfs(neighbor, curr, graph, hasApple);
 
                 //if the child subtree has apples, or the child node itself has an apple
                 if (timeFromChild > 0 || hasApple.get(neighbor)) {
