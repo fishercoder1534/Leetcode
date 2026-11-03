@@ -22,6 +22,7 @@ public class _2477Test {
 
     @Test
     public void test2() {
+        /**Step through this one, it's super illustrative that post-order DFS visits all children first, the deepest nodes first, then goes back up, aka bottom up approach.*/
         assertEquals(7, solution1.minimumFuelCost(CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]"), 2));
     }
 

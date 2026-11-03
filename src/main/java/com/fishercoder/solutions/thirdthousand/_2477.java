@@ -7,6 +7,10 @@ public class _2477 {
     public static class Solution1 {
         private long totalFuel = 0;
 
+        /**
+         * Step through test2 for this class is very helpful to understand how post-order DFS comes so handy!
+         * It takes care of all deepest nodes, leaves first, then goes back up, aka bottom up approach.
+         */
         public long minimumFuelCost(int[][] roads, int seats) {
             int n = roads.length + 1;
             List<List<Integer>> graph = new ArrayList<>();
