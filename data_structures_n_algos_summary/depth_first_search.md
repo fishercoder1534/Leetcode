@@ -131,3 +131,4 @@ if (subtreeCost > 0 || hasTarget.get(neighbor)) {
 Whenever a tree problem requires information from the bottom leaves to dictate the choices of the nodes above them (like calculating tree height, diameter, or conditional path costs), **post-order DFS** is almost always the required pattern.
 
 1. [LeetCode 1443. Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/)
+2. [LeetCode 2477. Minimum Fuel Cost to Report to the Capital](https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/)
