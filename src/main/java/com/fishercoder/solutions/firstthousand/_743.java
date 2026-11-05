@@ -113,7 +113,9 @@ public class _743 {
                 int d = curr[1];
 
                 // If we found a shorter path to u already, skip processing
-                if (d > dist[u]) continue;
+                if (d > dist[u]) {
+                    continue;
+                }
 
                 // Explore neighbors
                 for (int[] neighbor : graph.get(u)) {
