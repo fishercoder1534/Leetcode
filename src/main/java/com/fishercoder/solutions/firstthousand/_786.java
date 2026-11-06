@@ -34,12 +34,17 @@ public class _786 {
 
         public int[] kthSmallestPrimeFraction(int[] arr, int k) {
             int n = arr.length;
-            double left = 0.0, right = 1.0;
+            double left = 0.0;
+            double right = 1.0;
 
             while (left < right) {
                 double mid = left + (right - left) / 2;
                 int count = 0;
-                int p = 0, q = 1; // Tracks the maximum fraction <= mid
+
+                // Tracks the maximum fraction <= mid
+                int p = 0;
+                int q = 1;
+
                 int j = 1;
 
                 for (int i = 0; i < n; i++) {
