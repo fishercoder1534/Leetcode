@@ -27,17 +27,28 @@
 ---
 
 
-## Common Bit Manipulation Recipes
+# Common Bit Manipulation Recipes
 
-| Task | Bitwise Expression | How It Works |
-| :--- | :--- | :--- |
-| **Check if i-th bit is set** | `(num & (1 << i)) != 0` | Shifts `1` left by `i` and masks `num` with `&`. |
-| **Set i-th bit** | `num \| (1 << i)` | Uses `\|` to set the i-th bit to `1`. |
-| **Clear i-th bit** | `num & ~(1 << i)` | Uses `&` with the inverse of the shifted mask. |
-| **Toggle i-th bit** | `num ^ (1 << i)` | Flips the i-th bit using `^`. |
-| **Check if number is a power of 2** | `n > 0 && (n & (n - 1)) == 0` | Powers of 2 have only a single `1` bit; subtracting 1 flips all trailing bits. |
-| **Clear the rightmost set bit** | `n & (n - 1)` | Quickly strips off the lowest active `1` bit. |
-| **Isolate the rightmost set bit** | `n & (-n)` | Returns a number with only the lowest `1` bit left. |
+| Task | Bitwise Expression | How It Works | Examples |
+| :--- | :--- | :--- | :--- |
+| **Check if i-th bit is set** | `(num & (1 << i)) != 0` | Shifts `1` left by `i` and masks `num` with `&`. | `(5 & (1 << 2)) != 0` &rarr; `True` (since `5` is `0101` and `1<<2` is `0100`) |
+| **Set i-th bit** | `num \| (1 << i)` | Uses `\|` to set the i-th bit to `1`. | `5 \| (1 << 1)` &rarr; `7` (`0101 \| 0010 = 0111`) |
+| **Clear i-th bit** | `num & ~(1 << i)` | Uses `&` with the inverse of the shifted mask. | `5 & ~(1 << 2)` &rarr; `1` (`0101 & ~0100 = 0001`) |
+| **Toggle i-th bit** | `num ^ (1 << i)` | Flips the i-th bit using `^`. | `5 ^ (1 << 1)` &rarr; `7` (`0101 ^ 0010 = 0111`) |
+| **Bitwise NOT / Complement** | `~num` | Flips every single bit in its binary representation (`0`s become `1`s, `1`s become `0`s). | `~5` &rarr; `-6` (using 32-bit signed integers, flips `0101` to `...1010`) |
+| **Check if number is a power of 2** | `n > 0 && (n & (n - 1)) == 0` | Powers of 2 have only a single `1` bit; subtracting 1 flips all trailing bits. | `4 & 3` &rarr; `0` (`True`) |
+| **Clear the rightmost set bit** | `n & (n - 1)` | Quickly strips off the lowest active `1` bit. | `6 & 5` &rarr; `4` (`0110 & 0101 = 0100`) |
+| **Isolate the rightmost set bit** | `n & (-n)` | Returns a number with only the lowest `1` bit left. | `6 & -6` &rarr; `2` (`0110 & 1010 = 0010`) |
+
+# 32-Bit Bitwise NOT (~) Deep Dive
+
+Below are the comprehensive 32-bit binary representations and mathematical formulas for the bitwise NOT operation on both positive and negative integers.
+
+| Operation | Mathematical Formula | 32-Bit Input Binary Representation | 32-Bit Flipped Binary Output | Decimal Result | Explanation |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **`~5`** | `~x = -(x + 1)`<br>`~5 = -(5 + 1) = -6` | `00000000 00000000 00000000 00000101` | `11111111 11111111 11111111 11111010` | **`-6`** | Flipping all bits of positive `5` sets the sign bit (the first bit) to `1`, signaling a negative integer. In standard Two's Complement encoding, this specific sequence evaluates to `-6`. |
+| **`~-5`** | `~x = -(x + 1)`<br>`~(-5) = -(-5 + 1) = 4` | `11111111 11111111 11111111 11111011` | `00000000 00000000 00000000 00000100` | **`4`** | Flipped from negative `-5` (which begins with all `1`s), the output clearing all higher-order bits to `0` leaves only the 3rd bit set, which evaluates to a positive `4`. |
+A good way to help memorize this is: step 1: add one to it; step 2: change the sign. Then you'll get the Bitwise NOT result of a given number.
 
 
 ## Advanced Recipes & Use Cases
