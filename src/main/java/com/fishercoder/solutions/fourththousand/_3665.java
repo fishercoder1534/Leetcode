@@ -6,7 +6,7 @@ public class _3665 {
          * DP
          * Credit: Gemini
          */
-        int mod_constant = 1_000_000_007;
+        int modConstant = 1_000_000_007;
 
         public int uniquePaths(int[][] grid) {
             int m = grid.length;
@@ -21,26 +21,26 @@ public class _3665 {
                     }
                     if (grid[i][j] == 0) {
                         //this is an empty cell, we can combine all incoming traffic and distribute to both choices
-                        int totalPaths = (down[i][j] + right[i][j]) % mod_constant;
+                        int totalPaths = (down[i][j] + right[i][j]) % modConstant;
 
                         if (j + 1 < n) {
-                            right[i][j + 1] = (right[i][j + 1] + totalPaths) % mod_constant;
+                            right[i][j + 1] = (right[i][j + 1] + totalPaths) % modConstant;
                         }
                         if (i + 1 < m) {
-                            down[i + 1][j] = (down[i + 1][j] + totalPaths) % mod_constant;
+                            down[i + 1][j] = (down[i + 1][j] + totalPaths) % modConstant;
                         }
                     } else {
                         //it'll be redirected
                         if (j + 1 < n) {
-                            right[i][j + 1] = (right[i][j + 1] + down[i][j]) % mod_constant;
+                            right[i][j + 1] = (right[i][j + 1] + down[i][j]) % modConstant;
                         }
                         if (i + 1 < m) {
-                            down[i + 1][j] = (down[i + 1][j] + right[i][j]) % mod_constant;
+                            down[i + 1][j] = (down[i + 1][j] + right[i][j]) % modConstant;
                         }
                     }
                 }
             }
-            return (down[m - 1][n - 1] + right[m - 1][n - 1]) % mod_constant;
+            return (down[m - 1][n - 1] + right[m - 1][n - 1]) % modConstant;
         }
 
     }
