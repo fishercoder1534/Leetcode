@@ -26,6 +26,20 @@
 
 ---
 
+
+## Common Bit Manipulation Recipes
+
+| Task | Bitwise Expression | How It Works |
+| :--- | :--- | :--- |
+| **Check if i-th bit is set** | `(num & (1 << i)) != 0` | Shifts `1` left by `i` and masks `num` with `&`. |
+| **Set i-th bit** | `num \| (1 << i)` | Uses `\|` to set the i-th bit to `1`. |
+| **Clear i-th bit** | `num & ~(1 << i)` | Uses `&` with the inverse of the shifted mask. |
+| **Toggle i-th bit** | `num ^ (1 << i)` | Flips the i-th bit using `^`. |
+| **Check if number is a power of 2** | `n > 0 && (n & (n - 1)) == 0` | Powers of 2 have only a single `1` bit; subtracting 1 flips all trailing bits. |
+| **Clear the rightmost set bit** | `n & (n - 1)` | Quickly strips off the lowest active `1` bit. |
+| **Isolate the rightmost set bit** | `n & (-n)` | Returns a number with only the lowest `1` bit left. |
+
+
 ## Advanced Recipes & Use Cases
 
 ### 1. Parity Checking & State Tracking via Bitmasks
