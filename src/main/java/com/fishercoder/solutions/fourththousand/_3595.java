@@ -7,7 +7,8 @@ public class _3595 {
          */
         public int[] onceTwice(int[] nums) {
             // Pass 1: Find X ^ Y
-            int once = 0, twice = 0;
+            int once = 0;
+            int twice = 0;
             for (int num : nums) {
                 once = (once ^ num) & (~twice);
                 twice = (twice ^ num) & (~once);
@@ -21,7 +22,8 @@ public class _3595 {
 
             // Pass 2: Separate into two groups based on diffBit
             // We only need to run the state machine on the group containing the 'diffBit'
-            int groupOnce = 0, groupTwice = 0;
+            int groupOnce = 0;
+            int groupTwice = 0;
 
             for (int num : nums) {
                 if ((num & diffBit) != 0) {
