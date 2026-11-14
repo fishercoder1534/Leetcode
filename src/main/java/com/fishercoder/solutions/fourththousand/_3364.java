@@ -35,4 +35,33 @@ public class _3364 {
             return minSum;
         }
     }
+
+    public static class Solution2 {
+
+        /**
+         * My completely original solution using prefix sum.
+         */
+        public int minimumSumSubarray(List<Integer> nums, int l, int r) {
+            int[] prefixSums = new int[nums.size()];
+            prefixSums[0] = nums.get(0);
+            for (int i = 1; i < nums.size(); i++) {
+                prefixSums[i] = prefixSums[i - 1] + nums.get(i);
+            }
+            int ans = Integer.MAX_VALUE;
+            int len = l;
+            while (len <= r) {
+                for (int i = len - 1; i < nums.size(); i++) {
+                    if (i - len >= 0) {
+                        if (prefixSums[i] - prefixSums[i - len] > 0) {
+                            ans = Math.min(ans, prefixSums[i] - prefixSums[i - len]);
+                        }
+                    } else if (prefixSums[i] > 0) {
+                        ans = Math.min(ans, prefixSums[i]);
+                    }
+                }
+                len++;
+            }
+            return ans == Integer.MAX_VALUE ? -1 : ans;
+        }
+    }
 }
