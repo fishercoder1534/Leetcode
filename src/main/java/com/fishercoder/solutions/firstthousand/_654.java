@@ -87,7 +87,37 @@ public class _654 {
                     max = nums[i];
                 }
             }
-            return new int[] {max, maxIndex};
+            return new int[]{max, maxIndex};
+        }
+    }
+
+    public static class Solution3 {
+        /**
+         * Completely my original solution, just typical preorder DFS would solve this elegantly.
+         */
+        public TreeNode constructMaximumBinaryTree(int[] nums) {
+            return preorderDfs(nums, 0, nums.length - 1);
+        }
+
+        private TreeNode preorderDfs(int[] nums, int left, int right) {
+            if (left > right) {
+                return null;
+            }
+            if (left == right) {
+                return new TreeNode(nums[left]);
+            }
+            int maxIndex = left;
+            int maxVal = nums[left];
+            for (int i = left + 1; i <= right; i++) {
+                if (nums[i] > maxVal) {
+                    maxIndex = i;
+                    maxVal = nums[i];
+                }
+            }
+            TreeNode root = new TreeNode(nums[maxIndex]);
+            root.left = preorderDfs(nums, left, maxIndex - 1);
+            root.right = preorderDfs(nums, maxIndex + 1, right);
+            return root;
         }
     }
 }
