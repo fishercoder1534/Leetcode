@@ -15,6 +15,13 @@ public class _751 {
                 //if x == 0, any power of 2 up to 2^32 is aligned
                 //ensure the block size does not exceed remaining IPs (n)
                 long blockSize = (x == 0) ? (1L << 32) : (x & -x);
+                //The purpose of x & -x is to instantly find the largest power of 2 that divides x evenly (which also tells you the position of its rightmost 1 bit) in O(1) time—a single CPU instruction—without needing any loops.
+                /**
+                 * In IP networking (CIDR), a subnet block of size 2ᵏ must start at an address that is a multiple of 2ᵏ.
+                 * • For IP ending in .12, 12 & -12 = 4. This tells you immediately that 4 is the largest valid CIDR block size that can start at .12 (covering .12, .13, .14, .15).
+                 * • You cannot start a block of 8 at .12 because 12 is not divisible by 8 (a block of 8 would have to start at .8 or .16).
+                 * • For IP ending in .13, 13 & -13 = 1. This tells you immediately that 1 is the largest valid CIDR block size that can start at .13 (covering only an IP address ending in .13)
+                 * */
 
                 while (blockSize > n) {
                     blockSize >>= 1; //then we keep shifting to the right by one bit, changing blockSize from 16 -> 8 -> 4 -> 2 -> 1
