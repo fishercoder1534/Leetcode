@@ -29,16 +29,43 @@
 
 # Common Bit Manipulation Recipes
 
-| Task | Bitwise Expression | How It Works | Examples |
-| :--- | :--- | :--- | :--- |
-| **Check if i-th bit is set** | `(num & (1 << i)) != 0` | Shifts `1` left by `i` and masks `num` with `&`. | `(5 & (1 << 2)) != 0` &rarr; `True` (since `5` is `0101` and `1<<2` is `0100`) |
-| **Set i-th bit** | `num \| (1 << i)` | Uses `\|` to set the i-th bit to `1`. | `5 \| (1 << 1)` &rarr; `7` (`0101 \| 0010 = 0111`) |
-| **Clear i-th bit** | `num & ~(1 << i)` | Uses `&` with the inverse of the shifted mask. | `5 & ~(1 << 2)` &rarr; `1` (`0101 & ~0100 = 0001`) |
-| **Toggle i-th bit** | `num ^ (1 << i)` | Flips the i-th bit using `^`. | `5 ^ (1 << 1)` &rarr; `7` (`0101 ^ 0010 = 0111`) |
-| **Bitwise NOT / Complement** | `~num` | Flips every single bit in its binary representation (`0`s become `1`s, `1`s become `0`s). | `~5` &rarr; `-6` (using 32-bit signed integers, flips `0101` to `...1010`) |
+| Task | Bitwise Expression            | How It Works | Examples |
+| :--- |:------------------------------| :--- | :--- |
+| **Check if i-th bit is set** | `(num & (1 << i)) != 0`       | Shifts `1` left by `i` and masks `num` with `&`. | `(5 & (1 << 2)) != 0` &rarr; `True` (since `5` is `0101` and `1<<2` is `0100`) |
+| **Set i-th bit** | `num \| (1 << i)`             | Uses `\|` to set the i-th bit to `1`. | `5 \| (1 << 1)` &rarr; `7` (`0101 \| 0010 = 0111`) |
+| **Clear i-th bit** | `num & ~(1 << i)`             | Uses `&` with the inverse of the shifted mask. | `5 & ~(1 << 2)` &rarr; `1` (`0101 & ~0100 = 0001`) |
+| **Toggle i-th bit** | `num ^ (1 << i)`              | Flips the i-th bit using `^`. | `5 ^ (1 << 1)` &rarr; `7` (`0101 ^ 0010 = 0111`) |
+| **Bitwise NOT / Complement** | `~num`                        | Flips every single bit in its binary representation (`0`s become `1`s, `1`s become `0`s). | `~5` &rarr; `-6` (using 32-bit signed integers, flips `0101` to `...1010`) |
 | **Check if number is a power of 2** | `n > 0 && (n & (n - 1)) == 0` | Powers of 2 have only a single `1` bit; subtracting 1 flips all trailing bits. | `4 & 3` &rarr; `0` (`True`) |
-| **Clear the rightmost set bit** | `n & (n - 1)` | Quickly strips off the lowest active `1` bit. | `6 & 5` &rarr; `4` (`0110 & 0101 = 0100`) |
-| **Isolate the rightmost set bit** | `n & (-n)` | Returns a number with only the lowest `1` bit left. | `6 & -6` &rarr; `2` (`0110 & 1010 = 0010`) |
+| **Clear the rightmost set bit** | `n & (n - 1)`                 | Quickly strips off the lowest active `1` bit. | `6 & 5` &rarr; `4` (`0110 & 0101 = 0100`) |
+| **Isolate the rightmost set bit** | `x & (-x)`                    | Returns a number with only the lowest `1` bit left. | `6 & -6` &rarr; `2` (`0110 & 1010 = 0010`) |
+
+
+## Isolating the Lowest Set Bit (`x & -x`)
+
+The bitwise trick `x & -x` extracts the **rightmost `1` bit** of `x` and turns all other bits to `0`.
+
+* **Alignment & Block Size:** If `x` ends with \(k\) trailing zeros in binary, `x & -x` evaluates to \(2^k\), giving the exact maximum power-of-2 block size aligned with `x`.
+* **How Two's Complement Works:** Computers represent `-x` by flipping all bits of `x` (`~x`) and adding `1`. Adding `1` triggers a carry that flips all trailing zeros back to `0` until it hits the rightmost `1`, leaving only that single bit matching `x` while every bit to its left is inverted.
+
+### Step-by-Step Example (`x = 12`)
+
+1. **Binary representation of `12`:**
+   `0000 1100` (8 + 4 = 12; ends in two `0`s, so aligned to \(2^2 = 4\))
+2. **Flip all bits (`~12`):**
+   `1111 0011`
+3. **Add `1` to get `-12` (Two's Complement):**
+   `1111 0011 + 1 = 1111 0100`
+4. **Perform Bitwise AND (`12 & -12`):**
+   ```text
+     0000 1100   (12)
+   & 1111 0100  (-12)
+   -----------
+     0000 0100   (Decimal: 4)
+   ```
+
+* **Result Takeaway:** Every bit to the left of the rightmost `1` is opposite between `x` and `-x` (`1 & 0 = 0`), and every bit to the right is `0` in both (`0 & 0 = 0`), so only the lowest `1` bit survives. Because `12` ends in two zeros, it can start a CIDR block of at most **4** IPs (`12, 13, 14, 15`), but not a block of 8 (which must start at `8` or `16`).
+
 
 # 32-Bit Bitwise NOT (~) Deep Dive
 
