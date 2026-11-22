@@ -2,6 +2,7 @@ package com.fishercoder.common.utils;
 
 import com.fishercoder.common.classes.Interval;
 import com.fishercoder.common.classes.ListNode;
+
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
@@ -21,7 +22,7 @@ public class CommonUtils {
     }
 
     public static void main(String... strings) {
-        Integer[] nums = new Integer[] {1, 2, 3, 4, 5};
+        Integer[] nums = new Integer[]{1, 2, 3, 4, 5};
         printArray_generic_type(nums);
         String input1 =
                 "[\"zDkA\",\"GfAj\",\"lt\"],[\"GfAj\",\"rtupD\",\"og\",\"l\"],[\"rtupD\",\"IT\",\"jGcew\",\"ZwFqF\"],[\"og\",\"yVobt\",\"EjA\",\"piUyQ\"],[\"IT\",\"XFlc\",\"W\",\"rB\"],[\"l\",\"GwQg\",\"shco\",\"Dub\",\"KwgZq\"],[\"oXMG\",\"uqe\"],[\"sNyV\",\"WbrP\"]";
@@ -38,6 +39,13 @@ public class CommonUtils {
 
     public static void printArray(boolean[] booleans) {
         for (boolean i : booleans) {
+            System.out.print(i + ", ");
+        }
+        System.out.println();
+    }
+
+    public static void printArray(long[] booleans) {
+        for (long i : booleans) {
             System.out.print(i + ", ");
         }
         System.out.println();
