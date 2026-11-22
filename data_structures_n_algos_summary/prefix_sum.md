@@ -25,6 +25,50 @@ void prefixSumPattern(int[] nums) {
 }
 ```
 
+### Alternative Pattern: Size `n` (0-Indexed)
+
+* **Overview:** Instead of allocating `N + 1`, this approach allocates an array of size `N` where `prefix[i]` stores the **inclusive** cumulative sum from index `0` up to `i`.
+* **Core Components:**
+  * **0-Indexed Prefix Array:** Allocate size `N` and manually seed `prefix[0] = nums[0]` (requires an `n == 0` guard).
+  * **Range Query Formula:** Compute the sum of inclusive range `[left, right]` using `prefix[right] - prefix[left - 1]`, guarding against `left == 0`.
+  * **Best Use Case:** Ideal when building state arrays aligned 1-to-1 with `nums` indices (e.g., `oddPrefix[i]`, `evenPrefix[i]`) without frequent arbitrary sub-range queries.
+
+```java
+void prefixSumSizeN(int[] nums) {
+    int n = nums.length;
+    if (n == 0) return;
+
+    // 1. INITIALIZE: size n, manually seed index 0
+    long[] prefix = new long[n];
+    prefix[0] = nums[0];
+
+    // 2. BUILD: prefix[i] stores sum of nums[0...i] (inclusive)
+    for (int i = 1; i < n; i++) {
+        prefix[i] = prefix[i - 1] + nums[i];
+    }
+
+    // 3. QUERY: Get sum of any inclusive range [left, right] in O(1)
+    // Must guard against left == 0 to avoid ArrayIndexOutOfBoundsException
+    long rangeSum = (left == 0) ? prefix[right] : prefix[right] - prefix[left - 1];
+}
+```
+
+### Comparison: Size `n` vs. Size `n + 1`
+
+| Feature | Size `n` (0-Indexed) | Size `n + 1` (1-Indexed) |
+| :--- | :--- | :--- |
+| **Definition of `prefix[i]`** | Sum of `nums[0 ... i]` (**inclusive** of `i`) | Sum of `nums[0 ... i-1]` (**exclusive** of `i`) |
+| **Initialization** | `prefix[0] = nums[0]` (requires `n > 0` check) | `prefix[0] = 0` (works naturally even if `n == 0`) |
+| **Loop Bounds** | `for (int i = 1; i < n; i++)` | `for (int i = 0; i < n; i++)` |
+| **Range Query `[left, right]`** | `prefix[right] - (left == 0 ? 0 : prefix[left - 1])` | `prefix[right + 1] - prefix[left]` |
+| **Strictly Left of `i` (`[0, i-1]`)** | `(i == 0) ? 0 : prefix[i - 1]` | `prefix[i]` |
+| **Strictly Right of `i` (`[i+1, n-1]`)** | `prefix[n - 1] - prefix[i]` | `prefix[n] - prefix[i + 1]` |
+
+
+
+-----------------
+
+
 ### Example: Subarray Sum Equals K
 * Given an array of integers `nums` and an integer `k`, return the total number of continuous subarrays whose sum equals `k`.
 * **State Management:** A `HashMap<Long, Integer>` tracks running prefix sums and their frequencies (`{prefixSum : count}`).
