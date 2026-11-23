@@ -65,6 +65,47 @@ void prefixSumSizeN(int[] nums) {
 | **Strictly Right of `i` (`[i+1, n-1]`)** | `prefix[n - 1] - prefix[i]` | `prefix[n] - prefix[i + 1]` |
 
 
+### Variation: Prefix **Product** (Dynamic Stream with Zero Reset)
+
+* **Overview:** Adapts the 1-indexed prefix pattern from addition to multiplication, enabling O(1) suffix/range **product** queries on a dynamic stream while handling `0` resets.
+* Core Components:
+  * **Multiplicative Identity Base:** Initialize with `prefix[0] = 1` (instead of `0`) as the neutral base multiplier.
+  * **Zero Reset Handling:** Because multiplying by `0` invalidates all prior cumulative products, clear the prefix list and reset it to `[1]` whenever `num == 0` arrives.
+  * **Division Query Formula:** Compute the product of the last `k` elements using `prefix.get(n - 1) / prefix.get(n - 1 - k)`. If `k >= n`, a `0` occurred within the last `k` elements, so return `0`.
+  * **Data Type Safety:** Default to `Long` instead of `Integer` if intermediate prefix products can exceed `Integer.MAX_VALUE` before a reset.
+
+```java
+class ProductOfNumbers {
+    private List<Integer> prefix;
+
+    public ProductOfNumbers() {
+        // 1. INITIALIZE: 1-indexed base with multiplicative identity 1
+        prefix = new ArrayList<>();
+        prefix.add(1);
+    }
+
+    public void add(int num) {
+        // 2. BUILD: Reset on 0, otherwise append running cumulative product in O(1)
+        if (num == 0) {
+            prefix.clear();
+            prefix.add(1);
+        } else {
+            int lastProduct = prefix.get(prefix.size() - 1);
+            prefix.add(lastProduct * num);
+        }
+    }
+
+    public int getProduct(int k) {
+        // 3. QUERY: Get product of the last k elements in O(1)
+        int n = prefix.size();
+        if (k >= n) {
+            return 0; // A zero was encountered within the last k elements
+        }
+        return prefix.get(n - 1) / prefix.get(n - 1 - k);
+    }
+}
+```
+
 
 -----------------
 
