@@ -105,6 +105,8 @@ class ProductOfNumbers {
     }
 }
 ```
+Example:
+1. https://leetcode.com/problems/product-of-the-last-k-numbers/
 
 
 -----------------
