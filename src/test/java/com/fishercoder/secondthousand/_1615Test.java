@@ -20,4 +20,9 @@ public class _1615Test {
         assertEquals(4, solution1.maximalNetworkRank(4, CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[0,1],[0,3],[1,2],[1,3]")));
     }
 
+    @Test
+    public void test2() {
+        assertEquals(5, solution1.maximalNetworkRank(8, CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[0,1],[1,2],[2,3],[2,4],[5,6],[5,7]")));
+    }
+
 }
