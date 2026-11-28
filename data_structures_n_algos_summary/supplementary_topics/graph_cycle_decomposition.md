@@ -1,39 +1,26 @@
 # Graph Cycle Decomposition & Sorting Permutations Blueprint
 
-This repository section serves as a centralized reference for the **Graph Cycle Decomposition** paradigm, specifically
-focusing on sorting array permutations, finding minimum swap thresholds, and utilizing primitive index arrays over heavy
-object structures.
+This repository section serves as a centralized reference for the **Graph Cycle Decomposition** paradigm, specifically focusing on sorting array permutations, finding minimum swap thresholds, and utilizing primitive index arrays over heavy object structures.
 
-## 💡 Core Conceptual Framework
+## Core Conceptual Framework
 
-The graph cycle decomposition pattern treats an array permutation as a **directed graph**. Every mismatched element at
-index `i` points to the target index `j` where it belongs in the fully sorted array.
+The graph cycle decomposition pattern treats an array permutation as a **directed graph**. Every mismatched element at index `i` points to the target index `j` where it belongs in the fully sorted array.
 
 ### Fundamental Mechanics
 
-* **Closed Loop Networks:** Because every element has exactly one correct target destination, the entire array can be
-  broken down into isolated, independent closed loops (cycles).
-* **The Cycle Swap Rule (\(L - 1\)):** For any isolated cycle of length \(L\), it always takes exactly **\(L - 1\)**
-  swaps to restore all elements in that cycle to their correct positions.
-* **Self-Loops (\(L = 1\)):** If an element is already in its proper position, its target index matches its current
-  index (\(i == \text{target}[i]\)). Its cycle length is \(1\), requiring \(1 - 1 = 0\) swaps.
+* **Closed Loop Networks:** Because every element has exactly one correct target destination, the entire array can be broken down into isolated, independent closed loops (cycles).
+* **The Cycle Swap Rule ($L - 1$):** For any isolated cycle of length $L$, it always takes exactly **$L - 1$** swaps to restore all elements in that cycle to their correct positions.
+* **Self-Loops ($L = 1$):** If an element is already in its proper position, its target index matches its current index ($i == \text{target}[i]$). Its cycle length is $1$, requiring $1 - 1 = 0$ swaps.
 
 ---
 
-## 🛠️ Strategy: Index Arrays & Cycle Counting
+## Strategy: Index Arrays & Cycle Counting
 
 ### Core Mechanics
 
-* **Primitive Arrays over Heaps:** Avoid using heavy object/heap wrappers like `PriorityQueue`. Instead, map metadata
-  directly into primitive multi-dimensional layouts (e.g., `int[][]` containing
-  `[original_index, sort_key_1, sort_key_2]`) and sort with `Arrays.sort()`. This leverages contiguous sequential blocks
-  of memory and avoids garbage collection overhead.
-* **Skipping Simulation:** Never physically swap elements sequentially. Simulating the permutation steps leads to
-  sub-optimal complexity and fragile edge-case handling. Instead, find the cycle tracks to compute the swap count
-  mathematically in a single linear pass (\(O(N)\)).
-* **Single-Pass Visited Inversion:** Use a small boolean `visited` tracking array. Once a cycle path is traced, mark
-  every node in that cycle as `true`. This prevents redundant traversals, keeping the overall cycle checking loop
-  strictly linear.
+* **Primitive Arrays over Heaps:** Avoid using heavy object/heap wrappers like `PriorityQueue`. Instead, map metadata directly into primitive multi-dimensional layouts (e.g., `int[][]` containing `[original_index, sort_key_1, sort_key_2]`) and sort with `Arrays.sort()`. This leverages contiguous sequential blocks of memory and avoids garbage collection overhead.
+* **Skipping Simulation:** Never physically swap elements sequentially. Simulating the permutation steps leads to sub-optimal complexity and fragile edge-case handling. Instead, find the cycle tracks to compute the swap count mathematically in a single linear pass ($O(N)$).
+* **Single-Pass Visited Inversion:** Use a small boolean `visited` tracking array. Once a cycle path is traced, mark every node in that cycle as `true`. This prevents redundant traversals, keeping the overall cycle checking loop strictly linear.
 
 ### Concrete Example & Walkthrough
 
@@ -54,10 +41,9 @@ Let's trace how the tracking logic processes this cycle starting at `i = 0`:
 
 ---
 
-## 📋 Implementation Blueprint
+## Implementation Blueprint
 
-Whenever a problem asks to find the minimum swaps needed to arrange or sort elements under a specific condition, utilize
-this standardized layout:
+Whenever a problem asks to find the minimum swaps needed to arrange or sort elements under a specific condition, utilize this standardized layout:
 
 ```java
 import java.util.Arrays;
@@ -67,9 +53,9 @@ class GraphCycleBlueprint {
         int n = nums.length;
 
         // 1. Pack data into an index layout: [original_index, custom_sort_key]
-        int[][] elements = new int[n];
+        int[][] elements = new int[n][2];
         for (int i = 0; i < n; i++) {
-            elements[i][0] = i;                  // Keep track of original index
+            elements[i][0] = i;                   // Keep track of original index
             elements[i][1] = getSortKey(nums[i]); // Compute primary sort criteria
         }
 
@@ -113,7 +99,7 @@ class GraphCycleBlueprint {
 
 ---
 
-## 📚 Related LeetCode Problems
+## Related LeetCode Problems
 
 1. [LeetCode 3551: Minimum Swaps to Sort by Digit Sum](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum)
 2. [LeetCode 765: Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/description/)
