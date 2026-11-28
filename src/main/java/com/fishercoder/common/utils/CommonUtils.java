@@ -355,47 +355,40 @@ public class CommonUtils {
          * i.e. strip off the beginning and ending square brackets, that's it.
          * The output of this method will be a standard Java 2-d array.
          * */
-        String[] arrays = input.split("],\\[");
-        int maxLen = 0;
-        int[] sizes = new int[arrays.length];
-        for (int i = 0; i < arrays.length; i++) {
-            String[] strs = arrays[i].split(",");
-            maxLen = Math.max(maxLen, strs.length);
-            sizes[i] = strs.length;
+        if (input == null) {
+            return new int[0][0];
         }
-        int[][] output = new int[arrays.length][];
-        if (arrays.length == 1) {
-            String str = arrays[0].substring(1, arrays[0].length() - 1);
-            String[] nums = str.split(",");
-            output[0] = new int[sizes[0]];
-            for (int j = 0; j < sizes[0]; j++) {
-                output[0][j] = Integer.parseInt(nums[j]);
+
+        String trimmed = input.trim();
+        // Strip outer brackets if a full 2D array string like "[[1,2],[3,4]]" is passed
+        if (trimmed.startsWith("[[") && trimmed.endsWith("]]")) {
+            trimmed = trimmed.substring(1, trimmed.length() - 1).trim();
+        }
+
+        if (trimmed.isEmpty() || trimmed.equals("[]")) {
+            return new int[0][0];
+        }
+
+        // Split rows on "],[" allowing optional whitespace around the comma
+        String[] rows = trimmed.split("\\]\\s*,\\s*\\[");
+        int[][] output = new int[rows.length][];
+
+        for (int i = 0; i < rows.length; i++) {
+            // Remove any remaining leading/trailing brackets from the first/last/single row
+            String row = rows[i].replace("[", "").replace("]", "").trim();
+
+            if (row.isEmpty()) {
+                output[i] = new int[0];
+                continue;
             }
-        } else {
-            for (int i = 0; i < arrays.length; i++) {
-                if (i == 0) {
-                    String str = arrays[i].substring(1);
-                    String[] nums = str.split(",");
-                    output[i] = new int[sizes[i]];
-                    for (int j = 0; j < sizes[i]; j++) {
-                        output[i][j] = Integer.parseInt(nums[j]);
-                    }
-                } else if (i == arrays.length - 1) {
-                    String str = arrays[i].substring(0, arrays[i].length() - 1);
-                    String[] nums = str.split(",");
-                    output[i] = new int[sizes[i]];
-                    for (int j = 0; j < sizes[i]; j++) {
-                        output[i][j] = Integer.parseInt(nums[j]);
-                    }
-                } else {
-                    String[] nums = arrays[i].split(",");
-                    output[i] = new int[sizes[i]];
-                    for (int j = 0; j < sizes[i]; j++) {
-                        output[i][j] = Integer.parseInt(nums[j]);
-                    }
-                }
+
+            String[] nums = row.split(",");
+            output[i] = new int[nums.length];
+            for (int j = 0; j < nums.length; j++) {
+                output[i][j] = Integer.parseInt(nums[j].trim());
             }
         }
+
         return output;
     }
 
