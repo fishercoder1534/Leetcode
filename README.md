@@ -28,7 +28,7 @@ A comprehensive collection of guides, blueprints, and cheat sheets covering esse
 
 ### 📐 Advanced Structures & Techniques
 * **[Binary Search Tree (BST)](data_structures_n_algos_summary/11_binary_search_tree.md)** — Structural properties, insertion, deletion, and balancing concepts.
-* **[Bit Manipulation](data_structures_n_algos_summary/bit_manipulation.md)** — Common bitwise tricks and low-level optimization cheat sheets.
+* **[Bit Manipulation](data_structures_n_algos_summary/19_bit_manipulation.md)** — Common bitwise tricks and low-level optimization cheat sheets.
 * **[Graph Theory & Trees](data_structures_n_algos_summary/graph_theory_trees.md)** — Fundamentals of nodes, edges, network topologies, and tree structures.
 * **[Monotonic Stack Guide](data_structures_n_algos_summary/monotonic_stack_guide.md)** — Next greater/smaller element problem patterns explained.
 * **[Union Find Guide](data_structures_n_algos_summary/union_find_guide.md)** — Disjoint-set data structure mechanisms and path compression techniques.
