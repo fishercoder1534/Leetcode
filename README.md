@@ -27,7 +27,7 @@ A comprehensive collection of guides, blueprints, and cheat sheets covering esse
 * **[Dynamic Programming](data_structures_n_algos_summary/dynamic_programming_blueprint.md)** — Templates for dynamic programming.
 
 ### 📐 Advanced Structures & Techniques
-* **[Binary Search Tree (BST)](data_structures_n_algos_summary/binary_search_tree.md)** — Structural properties, insertion, deletion, and balancing concepts.
+* **[Binary Search Tree (BST)](data_structures_n_algos_summary/11_binary_search_tree.md)** — Structural properties, insertion, deletion, and balancing concepts.
 * **[Bit Manipulation](data_structures_n_algos_summary/bit_manipulation.md)** — Common bitwise tricks and low-level optimization cheat sheets.
 * **[Graph Theory & Trees](data_structures_n_algos_summary/graph_theory_trees.md)** — Fundamentals of nodes, edges, network topologies, and tree structures.
 * **[Monotonic Stack Guide](data_structures_n_algos_summary/monotonic_stack_guide.md)** — Next greater/smaller element problem patterns explained.
