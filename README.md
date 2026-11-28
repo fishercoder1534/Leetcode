@@ -18,10 +18,6 @@ _If you like this project, please leave me a star._ &#9733;
 ## 📚 Data Structures & Algorithms Summaries
 [A comprehensive collection of guides, blueprints, and cheat sheets organized by LeetCode 75 patterns](https://github.com/fishercoder1534/Leetcode/tree/master/data_structures_n_algos_summary)
 
-### 💻 Fundamentals
-* **[Computer Science Fundamentals](data_structures_n_algos_summary/computer_science_fundamentals.md)** — Essential theoretical building blocks and interview preparation notes.
-* **[Character Manipulation & Rotational Cipher](data_structures_n_algos_summary/character_manipulation_cipher.md)** - Central reference for bitwise/ASCII shifts and cipher implementation strategies.
-
 ## Database
 [All database problems](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/database)
 
