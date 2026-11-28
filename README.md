@@ -16,8 +16,7 @@ _If you like this project, please leave me a star._ &#9733;
 [For problems 4000 to 4999](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/algorithms/5th_thousand)
 
 ## 📚 Data Structures & Algorithms Summaries
-
-A comprehensive collection of guides, blueprints, and cheat sheets covering essential data structures and algorithmic paradigms.
+[A comprehensive collection of guides, blueprints, and cheat sheets organized by LeetCode 75 patterns](https://github.com/fishercoder1534/Leetcode/tree/master/data_structures_n_algos_summary)
 
 ### 🧩 Algorithmic Paradigms & Patterns
 * **[Backtracking](data_structures_n_algos_summary/16_backtracking.md)** — Core concepts and patterns for systematic exhaustive searches.
