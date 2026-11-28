@@ -46,7 +46,7 @@ A structured, template-driven reference guide to core data structures, algorithm
 | **19** | **Bit Manipulation** | [`bit_manipulation.md`](19_bit_manipulation.md) | $O(1)$–$O(N)$ / $O(1)$ | Bitmasks, XOR cancellation, Two's Complement, PopCount tricks |
 | **20** | **Trie (Prefix Tree)** | [`20_trie.md`](./20_trie.md) | $O(L)$ / $O(\Sigma \cdot N \cdot L)$ | Prefix lookups, autocomplete search suggestions, word dictionaries |
 | **21** | **Intervals** | [`21_intervals.md`](./21_intervals.md) | $O(N \log N)$ / $O(N)$ | Sorting by start/end times, merging overlaps, greedy scheduling |
-| **22** | **Monotonic Stack** | [`monotonic_stack_guide.md`](./monotonic_stack_guide.md) | $O(N)$ / $O(N)$ | Single-pass next greater/smaller, two-pass reverse scan ramps |
+| **22** | **Monotonic Stack** | [`monotonic_stack_guide.md`](22_monotonic_stack.md) | $O(N)$ / $O(N)$ | Single-pass next greater/smaller, two-pass reverse scan ramps |
 
 ---
 
