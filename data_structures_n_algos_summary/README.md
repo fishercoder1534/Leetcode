@@ -39,14 +39,14 @@ A structured, template-driven reference guide to core data structures, algorithm
 | **16** | **Backtracking** | [`16_backtracking.md`](./16_backtracking.md) | $O(B^D)$ / $O(D)$ | Decision trees, subsets, combinations, state pruning |
 
 ### Phase 5: Dynamic Programming & Specialized Structures
-| # | Topic | Guide | Primary Time / Space | Key Patterns & Use Cases |
-| :---: | :--- | :--- | :--- | :--- |
-| **17** | **DP — 1D** | [`17_dp_1d.md`](./17_dp_1d.md) | $O(N)$ / $O(N)$ or $O(1)$ | State transitions, recurrence relations, space optimization |
+| # | Topic | Guide                                                      | Primary Time / Space | Key Patterns & Use Cases |
+| :---: | :--- |:-----------------------------------------------------------| :--- | :--- |
+| **17** | **DP — 1D** | [`17_dp_1d.md`](./17_dp_1d.md)                             | $O(N)$ / $O(N)$ or $O(1)$ | State transitions, recurrence relations, space optimization |
 | **18** | **DP — Multidimensional** | [`18_dp_multidimensional.md`](./18_dp_multidimensional.md) | $O(M \cdot N)$ / $O(M \cdot N)$ | Grid path counting, LCS, edit distance, 2D state tables |
-| **19** | **Bit Manipulation** | [`bit_manipulation.md`](19_bit_manipulation.md) | $O(1)$–$O(N)$ / $O(1)$ | Bitmasks, XOR cancellation, Two's Complement, PopCount tricks |
-| **20** | **Trie (Prefix Tree)** | [`20_trie.md`](./20_trie.md) | $O(L)$ / $O(\Sigma \cdot N \cdot L)$ | Prefix lookups, autocomplete search suggestions, word dictionaries |
-| **21** | **Intervals** | [`21_intervals.md`](./21_intervals.md) | $O(N \log N)$ / $O(N)$ | Sorting by start/end times, merging overlaps, greedy scheduling |
-| **22** | **Monotonic Stack** | [`monotonic_stack_guide.md`](22_monotonic_stack.md) | $O(N)$ / $O(N)$ | Single-pass next greater/smaller, two-pass reverse scan ramps |
+| **19** | **Bit Manipulation** | [`bit_manipulation.md`](19_bit_manipulation.md)            | $O(1)$–$O(N)$ / $O(1)$ | Bitmasks, XOR cancellation, Two's Complement, PopCount tricks |
+| **20** | **Trie (Prefix Tree)** | [`20_trie.md`](./20_trie.md)                               | $O(L)$ / $O(\Sigma \cdot N \cdot L)$ | Prefix lookups, autocomplete search suggestions, word dictionaries |
+| **21** | **Intervals** | [`21_intervals.md`](./21_intervals.md)                     | $O(N \log N)$ / $O(N)$ | Sorting by start/end times, merging overlaps, greedy scheduling |
+| **22** | **Monotonic Stack** | [`22_monotonic_stack_guide.md`](22_monotonic_stack.md)     | $O(N)$ / $O(N)$ | Single-pass next greater/smaller, two-pass reverse scan ramps |
 
 ---
 
