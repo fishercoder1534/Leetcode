@@ -8,18 +8,12 @@ public class _216 {
     public static class Solution1 {
         public List<List<Integer>> combinationSum3(int k, int n) {
             List<List<Integer>> result = new ArrayList();
-            int[] nums = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
+            int[] nums = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
             backtracking(k, n, nums, 0, new ArrayList(), result);
             return result;
         }
 
-        void backtracking(
-                int k,
-                int n,
-                int[] nums,
-                int start,
-                List<Integer> curr,
-                List<List<Integer>> result) {
+        void backtracking(int k, int n, int[] nums, int start, List<Integer> curr, List<List<Integer>> result) {
             if (n > 0) {
                 for (int i = start; i < nums.length; i++) {
                     curr.add(nums[i]);
@@ -28,6 +22,37 @@ public class _216 {
                 }
             } else if (n == 0 && curr.size() == k) {
                 result.add(new ArrayList(curr));
+            }
+        }
+    }
+
+    public static class Solution2 {
+        /**
+         * My completely original solution! Yeah! Praise the Lord! Practice makes perfect!
+         */
+        public List<List<Integer>> combinationSum3(int k, int n) {
+            int[] numbers = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+            List<List<Integer>> ans = new ArrayList<>();
+            for (int i = 0; i < numbers.length; i++) {
+                List<Integer> list = new ArrayList<>();
+                list.add(numbers[i]);
+                backtracking(i, numbers, list, numbers[i], ans, k, n);
+            }
+            return ans;
+        }
+
+        private void backtracking(int curr, int[] numbers, List<Integer> list, int sum, List<List<Integer>> ans, int k, int n) {
+            if (list.size() == k && sum == n) {
+                ans.add(new ArrayList<>(list));
+                return;
+            }
+            for (int i = curr + 1; i < numbers.length; i++) {
+                if (sum + numbers[i] > n) {
+                    break;
+                }
+                list.add(numbers[i]);
+                backtracking(i, numbers, list, sum + numbers[i], ans, k, n);
+                list.remove(list.size() - 1);
             }
         }
     }
