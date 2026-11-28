@@ -20,7 +20,7 @@ _If you like this project, please leave me a star._ &#9733;
 A comprehensive collection of guides, blueprints, and cheat sheets covering essential data structures and algorithmic paradigms.
 
 ### 🧩 Algorithmic Paradigms & Patterns
-* **[Backtracking](data_structures_n_algos_summary/backtracking.md)** — Core concepts and patterns for systematic exhaustive searches.
+* **[Backtracking](data_structures_n_algos_summary/16_backtracking.md)** — Core concepts and patterns for systematic exhaustive searches.
 * **[Binary Search](data_structures_n_algos_summary/15_binary_search.md)** — Blueprints for searching sorted spaces efficiently.
 * **[Depth-First Search (DFS)](data_structures_n_algos_summary/depth_first_search.md)** — Traversal techniques and recursion patterns for graphs and trees.
 * **[Sliding Window Blueprint](data_structures_n_algos_summary/sliding_window_blueprint.md)** — Templates for optimizing sub-array and substring problems.
