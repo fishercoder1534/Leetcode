@@ -1,10 +1,10 @@
-# The Monotonic Stack Paradigm: A Comprehensive Guide
+# 22. The Monotonic Stack Paradigm: A Comprehensive Guide
 
 A **monotonic stack** is a specialized stack data structure that maintains its elements in a strict sorted order (either strictly increasing or strictly decreasing) from bottom to top. It optimizes brute-force $O(N^2)$ backward/forward nested lookups into highly efficient **$O(N)$ time** complexity.
 
 ---
 
-## ⚡ Java Performance Note: `Deque` vs. `Stack`
+## Java Performance Note: `Deque` vs. `Stack`
 
 In Java, **`ArrayDeque` performs significantly better than `Stack`**.
 
@@ -13,7 +13,7 @@ In Java, **`ArrayDeque` performs significantly better than `Stack`**.
 
 ---
 
-## 🔍 How to Identify Monotonic Stack Problems
+## How to Identify Monotonic Stack Problems
 
 Look for problems that fit this specific mental checklist:
 
@@ -23,7 +23,7 @@ Look for problems that fit this specific mental checklist:
 
 ---
 
-## 📋 Universal Master Template: Single-Pass (Java)
+## Universal Master Template: Single-Pass (Java)
 
 This reusable structural blueprint fits standard next/previous element problems. You only need to configure the **comparison operator** inside the `while` block and your specific evaluation logic.
 
@@ -59,7 +59,7 @@ public int[] masterMonotonicStack(int[] arr) {
 
 ---
 
-## 🔄 Two-Pass Monotonic Stack (Index Candidate + Reverse Scan)
+## Two-Pass Monotonic Stack (Index Candidate + Reverse Scan)
 
 This pattern applies to problems like **LeetCode 962 (Maximum Width Ramp)** and **LeetCode 1124 (Longest Well-Performing Interval)**, where:
 1. You need to find pairs $(i, j)$ such that $i < j$ satisfying a specific condition (e.g., $nums[i] \le nums[j]$).
@@ -115,7 +115,7 @@ public class MonotonicStackTwoPassTemplate {
 
 ---
 
-## 🛠️ Selection Decision Matrix
+## Selection Decision Matrix
 
 | Intended Goal | Required Stack Property | Loop Comparison Condition |
 | :--- | :--- | :--- |
@@ -126,7 +126,7 @@ public class MonotonicStackTwoPassTemplate {
 
 ---
 
-## ⚖️ When to Use Single-Pass vs. Two-Pass Monotonic Stack
+## When to Use Single-Pass vs. Two-Pass Monotonic Stack
 
 | Property | Single-Pass Stack | Two-Pass Candidate Stack |
 | :--- | :--- | :--- |
@@ -137,7 +137,7 @@ public class MonotonicStackTwoPassTemplate {
 
 ---
 
-## 🏗️ Structural Stack Topology Visualization
+## Structural Stack Topology Visualization
 
 #### Monotonic Decreasing Stack Layout
 
@@ -152,7 +152,7 @@ BOTTOM OF STACK -->  [ Index holding the WARMEST / LARGEST element ]
 
 ---
 
-## 📝 Real-World Case Study: LeetCode 739. Daily Temperatures
+## Real-World Case Study: LeetCode 739. Daily Temperatures
 
 **Problem Statement:** Given an array of integers `temperatures`, return an array `answer` such that `answer[i]` is the number of days you have to wait after the $i$-th day to get a warmer temperature. If no such day is possible, keep it `0`.
 
@@ -180,7 +180,7 @@ class Solution {
 }
 ```
 
-### ⚡ Ultra-Performance Primitive Array Variant
+### Ultra-Performance Primitive Array Variant
 
 In extreme competitive programming scenarios, you can completely eliminate standard object wrappers and garbage-collection overhead by simulating a stack allocation directly inside a raw integer array.
 
