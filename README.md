@@ -18,27 +18,9 @@ _If you like this project, please leave me a star._ &#9733;
 ## 📚 Data Structures & Algorithms Summaries
 [A comprehensive collection of guides, blueprints, and cheat sheets organized by LeetCode 75 patterns](https://github.com/fishercoder1534/Leetcode/tree/master/data_structures_n_algos_summary)
 
-### 🧩 Algorithmic Paradigms & Patterns
-* **[Backtracking](data_structures_n_algos_summary/16_backtracking.md)** — Core concepts and patterns for systematic exhaustive searches.
-* **[Binary Search](data_structures_n_algos_summary/15_binary_search.md)** — Blueprints for searching sorted spaces efficiently.
-* **[Depth-First Search (DFS)](data_structures_n_algos_summary/depth_first_search.md)** — Traversal techniques and recursion patterns for graphs and trees.
-* **[Sliding Window Blueprint](data_structures_n_algos_summary/sliding_window_blueprint.md)** — Templates for optimizing sub-array and substring problems.
-* **[Dynamic Programming](data_structures_n_algos_summary/dynamic_programming_blueprint.md)** — Templates for dynamic programming.
-
-### 📐 Advanced Structures & Techniques
-* **[Binary Search Tree (BST)](data_structures_n_algos_summary/11_binary_search_tree.md)** — Structural properties, insertion, deletion, and balancing concepts.
-* **[Bit Manipulation](data_structures_n_algos_summary/19_bit_manipulation.md)** — Common bitwise tricks and low-level optimization cheat sheets.
-* **[Graph Theory & Trees](data_structures_n_algos_summary/graph_theory_trees.md)** — Fundamentals of nodes, edges, network topologies, and tree structures.
-* **[Monotonic Stack Guide](data_structures_n_algos_summary/22_monotonic_stack.md)** — Next greater/smaller element problem patterns explained.
-* **[Union Find Guide](data_structures_n_algos_summary/union_find_guide.md)** — Disjoint-set data structure mechanisms and path compression techniques.
-* **[Graph Cycle Decomposition](data_structures_n_algos_summary/graph_cycle_decomposition_blueprint.md)** — Graph cycle decomposition techniques.
-
 ### 💻 Fundamentals
 * **[Computer Science Fundamentals](data_structures_n_algos_summary/computer_science_fundamentals.md)** — Essential theoretical building blocks and interview preparation notes.
 * **[Character Manipulation & Rotational Cipher](data_structures_n_algos_summary/character_manipulation_cipher.md)** - Central reference for bitwise/ASCII shifts and cipher implementation strategies.
-
-
-                                                              
 
 ## Database
 [All database problems](https://github.com/fishercoder1534/Leetcode/tree/master/paginated_contents/database)
